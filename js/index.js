@@ -10,6 +10,9 @@ let currentPage = 1;
 let selectedTags = []; // Now strictly stores 'slugs' (e.g. 'dynamic-programming')
 const tagMap = new Map(); // Maps slug -> name for UI display
 
+const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+
 // DOM Elements
 const tableBody = document.getElementById('tableBody');
 const searchInput = document.getElementById('searchInput');
@@ -41,7 +44,9 @@ const pageInfo = document.getElementById('page-info');
 // --- 2. Data Fetching & Storage ---
 async function loadProblems() {
 	try {
-		const response = await fetch('./data/lc-problem-list.json');
+		// const response = await fetch('./data/lc-problem-list.json');
+		const response = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
+
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
 		allProblems = await response.json();
