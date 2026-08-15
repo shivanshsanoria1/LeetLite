@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Leetcode Lite</title>
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 shadow-sm">
+		<div class="container-fluid">
+			<a class="navbar-brand fw-bold" href="#">Leetcode Lite ⚡</a>
+		</div>
+	</nav>
+
+	<!-- Main Container -->
+	<div class="container-fluid px-4">
+
+		<!-- Controls Section -->
+		<div class="card shadow-sm mb-4 border-0 bg-body-tertiary">
+			<div class="card-body">
+
+				<!-- Row 1: Search & Stats -->
+				<div class="row g-3 mb-3">
+					<div class="col-md-6">
+						<div class="input-group">
+							<span class="input-group-text bg-dark border-secondary text-secondary">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									viewBox="0 0 16 16">
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+								</svg>
+							</span>
+							<input type="text" id="searchInput" class="form-control bg-dark border-secondary text-light"
+								placeholder="Search by ID or Title...">
+						</div>
+					</div>
+
+					<div class="col-md-6 d-flex flex-wrap align-items-center justify-content-start fs-6 gap-2">
+						<div class="pe-2 border-end border-secondary">
+							<span class="text-secondary me-1">Total:</span> <span id="stat-total"
+								class="text-primary fw-bold">0</span>
+						</div>
+						<div class="px-2 border-end border-secondary">
+							<span class="text-secondary me-1">Easy:</span> <span id="stat-easy"
+								class="color-green fw-bold">0</span>
+						</div>
+						<div class="px-2 border-end border-secondary">
+							<span class="text-secondary me-1">Medium:</span> <span id="stat-medium"
+								class="color-yellow fw-bold">0</span>
+						</div>
+						<div class="px-2 border-end border-secondary">
+							<span class="text-secondary me-1">Hard:</span> <span id="stat-hard"
+								class="color-red fw-bold">0</span>
+						</div>
+						<div class="px-2 border-end border-secondary">
+							<span class="text-secondary me-1">Free:</span> <span id="stat-free"
+								class="color-green fw-bold">0</span>
+						</div>
+						<div class="ps-2">
+							<span class="text-secondary me-1">Paid:</span> <span id="stat-paid"
+								class="color-yellow fw-bold">0</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2: Filters -->
+				<div class="row g-3">
+					<div class="col-md-2">
+						<select id="diffFilter" class="form-select filter-ctrl bg-dark border-secondary">
+							<option value="All">All Difficulties</option>
+							<option value="Easy">Easy</option>
+							<option value="Medium">Medium</option>
+							<option value="Hard">Hard</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<select id="paidFilter" class="form-select filter-ctrl bg-dark border-secondary">
+							<option value="All">All Status</option>
+							<option value="Free">Free Only</option>
+							<option value="Paid">Paid Only</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<select id="categoryFilter" class="form-select filter-ctrl bg-dark border-secondary">
+							<option value="All">All Categories</option>
+							<option value="Algorithms">Algorithms</option>
+							<option value="Database">Database</option>
+							<option value="Shell">Shell</option>
+						</select>
+					</div>
+
+					<!-- Multi-Select Checkbox Dropdown for Tags -->
+					<div class="col-md-3">
+						<div class="dropdown">
+							<button
+								class="btn form-select bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center"
+								type="button" id="tagDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false"
+								data-bs-auto-close="outside">
+								<span id="tagDropdownText" class="text-truncate">Select Tags...</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm"
+								style="max-height: 300px; overflow-y: auto;" id="tagDropdownMenu">
+								<li>
+									<div class="px-3 py-1 text-muted small">Loading tags...</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-2">
+						<select id="pageSizeSelect" class="form-select filter-ctrl bg-dark border-secondary">
+							<option value="25">25 items per page</option>
+							<option value="50" selected>50 items per page</option>
+							<option value="75">75 items per page</option>
+							<option value="100">100 items per page</option>
+						</select>
+					</div>
+					<div class="col-md-1">
+						<button id="resetBtn"
+							class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								viewBox="0 0 16 16">
+								<path fill-rule="evenodd"
+									d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+								<path
+									d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+							</svg>
+							Reset
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Table Section -->
+		<div class="card shadow-sm border-0 mb-5">
+			<div class="table-responsive">
+				<table class="table table-hover align-middle mb-0">
+					<thead class="table-dark">
+						<tr>
+							<th class="sortable" data-sort="id" style="width: 8%;">ID <span class="sort-icon"
+									id="icon-id">▲▼</span></th>
+							<th class="sortable" data-sort="title" style="width: 30%;">Title <span class="sort-icon"
+									id="icon-title">▲▼</span></th>
+							<th class="sortable" data-sort="difficulty" style="width: 10%;">Difficulty <span
+									class="sort-icon" id="icon-difficulty">▲▼</span></th>
+							<th class="sortable" data-sort="likeRate" style="width: 10%;">Like Rate <span
+									class="sort-icon" id="icon-likeRate">▲▼</span></th>
+							<th class="sortable" data-sort="acRate" style="width: 12%;">Acceptance <span
+									class="sort-icon" id="icon-acRate">▲▼</span></th>
+							<th style="width: 18%;">Topic Tags</th>
+							<th class="sortable" data-sort="category" style="width: 12%;">Category <span
+									class="sort-icon" id="icon-category">▲▼</span></th>
+						</tr>
+					</thead>
+					<tbody id="tableBody">
+						<tr>
+							<td colspan="7" class="text-center text-muted py-4">Loading problems...</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Pagination Controls -->
+			<div class="card-footer bg-body-tertiary border-top border-secondary d-flex justify-content-center py-3">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-outline-primary" id="btn-first">&lt;&lt;</button>
+					<button type="button" class="btn btn-outline-primary" id="btn-prev">&lt;</button>
+					<button type="button" class="btn btn-outline-secondary disabled fw-bold text-secondary"
+						id="page-info" style="min-width: 130px; opacity: 1;">Page 1 of 1</button>
+					<button type="button" class="btn btn-outline-primary" id="btn-next">&gt;</button>
+					<button type="button" class="btn btn-outline-primary" id="btn-last">&gt;&gt;</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS Bundle (Required for Dropdowns to function) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/index.js"></script>
+</body>
+
+</html>

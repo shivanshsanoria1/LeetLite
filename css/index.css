@@ -1,0 +1,67 @@
+/* Table Sorting Interactions */
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+th.sortable:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sort-icon {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-left: 5px;
+}
+
+/* Updated active sort icon to blue */
+.sort-icon.active {
+    color: #0d6efd; 
+}
+
+/* Base Colors for Dark Mode */
+.color-green { color: #2cbb5d !important; font-weight: 500; }
+.color-yellow { color: #ffc01e !important; font-weight: 500; }
+.color-red { color: #ef4743 !important; font-weight: 500; }
+
+.paid-star {
+    color: #ffc01e;
+    margin-left: 6px;
+    font-size: 1.1em;
+}
+
+/* Topic Tags Truncation */
+.tags-wrapper {
+    max-width: 250px;      
+    white-space: nowrap;   
+    overflow: hidden;      
+    text-overflow: ellipsis; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tag-badge {
+    margin-right: 5px;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #e0e0e0 !important;
+    background-color: #343a40 !important; 
+    border: 1px solid #495057;
+}
+
+/* Sticky Table Header */
+.table-responsive {
+    /* Calculates viewport height minus the navbar and controls to prevent page scrolling */
+    max-height: calc(100vh - 240px); 
+    overflow-y: auto;
+}
+
+.table-responsive thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* Explicitly match Bootstrap's dark theme background so rows don't show through */
+    background-color: #212529 !important; 
+    /* Maintains the header bottom border while scrolling */
+    box-shadow: inset 0 -1px 0 #373b3e; 
+}
