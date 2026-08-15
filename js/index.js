@@ -41,7 +41,7 @@ const pageInfo = document.getElementById('page-info');
 // --- 2. Data Fetching & Storage ---
 async function loadProblems() {
 	try {
-		const response = await fetch('/data/lc-problem-list.json');
+		const response = await fetch('./data/lc-problem-list.json');
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
 		allProblems = await response.json();
