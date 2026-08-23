@@ -439,21 +439,20 @@ async function fetchAndDisplayCode() {
 		const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
 
 		if (complexityBlock) {
-			document.getElementById('tc-val').textContent = tcMatch ? tcMatch[1] : 'N/A';
-			document.getElementById('sc-val').textContent = scMatch ? scMatch[1] : 'N/A';
+			// Wrap the extracted string in $ delimiters for MathJax, or default to N/A
+			const tcText = tcMatch ? `$${tcMatch[1]}$` : 'N/A';
+			const scText = scMatch ? `$${scMatch[1]}$` : 'N/A';
+
+			document.getElementById('tc-val').textContent = tcText;
+			document.getElementById('sc-val').textContent = scText;
 
 			complexityBlock.classList.remove('d-none');
 			complexityBlock.classList.add('d-flex');
-		}
-		// -----------------------------------
 
-		if (complexityBlock) {
-			// ALWAYS show the block since code was successfully found
-			document.getElementById('tc-val').textContent = tcMatch ? tcMatch[1] : 'N/A';
-			document.getElementById('sc-val').textContent = scMatch ? scMatch[1] : 'N/A';
-
-			complexityBlock.classList.remove('d-none');
-			complexityBlock.classList.add('d-flex');
+			// Tell MathJax to process the newly injected LaTeX in this specific block
+			if (window.MathJax) {
+				MathJax.typesetPromise([complexityBlock]).catch((err) => console.error('MathJax rendering failed:', err));
+			}
 		}
 		// -----------------------------------
 
