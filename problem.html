@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Problem Details - LeetLite</title>
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/problem.css" rel="stylesheet">
+	<!-- MathJax for rendering LeetCode LaTeX -->
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body class="overflow-hidden bg-body d-flex flex-column" style="height: 100vh;">
+
+	<!-- Navbar (Exact match to index.html) -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 shadow-sm">
+		<div class="container-fluid d-flex justify-content-between align-items-center">
+			<a class="navbar-brand fw-bold" href="index.html">LeetLite ⚡</a>
+
+			<!-- GitHub Logo Link -->
+			<a href="https://github.com/shivanshsanoria1/LeetLite" target="_blank"
+				class="text-secondary text-decoration-none" title="View Source on GitHub">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+					viewBox="0 0 16 16">
+					<path
+						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+				</svg>
+			</a>
+		</div>
+	</nav>
+
+	<!-- Split Workspace -->
+	<div class="d-flex flex-grow-1 workspace-container">
+
+		<!-- Left Panel: Problem Details -->
+		<div id="left-pane" class="pane p-4 overflow-auto">
+			<!-- Loading Spinner -->
+			<div id="loading-spinner" class="text-center mt-5">
+				<div class="spinner-border text-secondary" role="status"></div>
+			</div>
+
+			<div id="problem-content-wrapper" style="display: none;">
+				<h3 class="fw-bold mb-3"><span id="prob-id"></span>. <span id="prob-title"></span></h3>
+
+				<!-- Expanded Stats Row with SVGs -->
+				<!-- Row 1: Difficulty, Likes, Dislikes, Like Rate -->
+				<div class="d-flex flex-wrap align-items-center gap-3 mb-2 text-secondary fs-6">
+					<span id="prob-difficulty" class="fw-bold"></span>
+					<div class="vr"></div>
+
+					<span class="d-flex align-items-center gap-1 text-success" title="Likes">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							viewBox="0 0 16 16">
+							<path
+								d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+						</svg>
+						<span id="prob-likes" class="fw-bold">0</span>
+					</span>
+					<div class="vr"></div>
+
+					<span class="d-flex align-items-center gap-1 text-danger" title="Dislikes">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							viewBox="0 0 16 16">
+							<path
+								d="M6.956 14.255c.065.935.952 1.658 1.908 1.42l.261-.065a1.38 1.38 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272.184-.532.16-1.162-.234-1.733a2.1 2.1 0 0 0 .138-.364c.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2 2 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.2 3.2 0 0 0-.488-.901 2 2 0 0 0-.076-.465c0-.305-.089-.625-.253-.912C13.1.478 12.437 0 11.5 0H8c-.605 0-1.07.081-1.466.218a4.8 4.8 0 0 0-.97.484l-.048.03c-.504.307-.999.609-2.068.722C2.682 1.536 2 2.154 2 3v4c0 .85.685 1.432 1.357 1.615.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.539.428 2.59z" />
+						</svg>
+						<span id="prob-dislikes" class="fw-bold">0</span>
+					</span>
+					<div class="vr"></div>
+
+					<span>Like Rate: <span id="prob-like-rate" class="fw-bold">0%</span></span>
+				</div>
+
+				<!-- Row 2: Accepted, Submissions, Acceptance Rate, Category -->
+				<div
+					class="d-flex flex-wrap align-items-center gap-3 mb-4 text-secondary fs-6 border-bottom border-secondary pb-3">
+					<span>Accepted: <span id="prob-accepted" class="text-light fw-bold">0</span></span>
+					<div class="vr"></div>
+
+					<span>Submissions: <span id="prob-submissions" class="text-light fw-bold">0</span></span>
+					<div class="vr"></div>
+
+					<span>Acceptance: <span id="prob-ac" class="fw-bold">0%</span></span>
+					<div class="vr"></div>
+
+					<span id="prob-category" class="badge bg-secondary border border-secondary text-light"></span>
+				</div>
+
+				<!-- Problem Description -->
+				<div id="prob-content" class="problem-description mb-4 text-light"></div>
+
+				<hr class="border-secondary mb-4">
+
+				<!-- Topic Tags -->
+				<div class="mb-4">
+					<h6 class="fw-bold text-secondary mb-2">Topic Tags</h6>
+					<div id="prob-tags" class="d-flex flex-wrap gap-2"></div>
+				</div>
+
+				<!-- Hints Accordion -->
+				<div class="mb-4">
+					<h6 class="fw-bold text-secondary mb-2">Hints</h6>
+					<div class="accordion accordion-flush border border-secondary rounded" id="hintsAccordion"></div>
+				</div>
+
+				<!-- Similar Questions List -->
+				<div class="mb-4">
+					<h6 class="fw-bold text-secondary mb-2">Similar Questions</h6>
+					<div id="prob-similar-list"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vertical Resizer with 3 dots -->
+		<div id="resizer"
+			class="resizer bg-dark border-start border-end border-secondary d-flex align-items-center justify-content-center text-secondary">
+			<span>&#8942;</span>
+		</div>
+
+		<!-- Right Panel: Code Editor -->
+		<div id="right-pane" class="pane bg-dark d-flex flex-column">
+
+			<!-- Editor Toolbar -->
+			<div class="d-flex align-items-center p-2 bg-body border-bottom border-secondary gap-3">
+				<div class="d-flex align-items-center gap-2">
+					<label for="lang-select" class="text-secondary fw-bold mb-0">Language</label>
+					<select id="lang-select" class="form-select form-select-sm bg-dark text-light border-secondary"
+						style="width: auto;">
+						<option value="">-</option>
+					</select>
+				</div>
+
+				<div class="d-flex align-items-center gap-2">
+					<label for="version-select" class="text-secondary fw-bold mb-0">Version</label>
+					<select id="version-select" class="form-select form-select-sm bg-dark text-light border-secondary"
+						style="width: auto;">
+						<option value="">-</option>
+					</select>
+				</div>
+
+				<button id="reset-editor-btn"
+					class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1 ms-auto"
+					title="Reset default language and version">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+						viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+						<path
+							d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+					</svg>
+					Reset
+				</button>
+			</div>
+
+			<!-- Code Editor Placeholder -->
+			<!-- <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center text-secondary">
+				<h5>Code Editor Pane</h5>
+				<p class="text-muted">(Coming Soon)</p>
+			</div> -->
+
+			<!-- Code Editor Content -->
+			<div id="code-editor-container" class="flex-grow-1 p-3 overflow-auto bg-dark text-light w-100"
+				style="font-family: monospace; white-space: pre;">
+				<div class="d-flex h-100 align-items-center justify-content-center text-secondary">
+					<h5>Select a language and version to view code</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/problem.js"></script>
+</body>
+
+</html>

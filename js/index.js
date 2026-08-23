@@ -1,3 +1,6 @@
+const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+
 // --- 1. State Management ---
 let allProblems = [];
 let currentProblems = [];
@@ -7,11 +10,8 @@ const STORAGE_KEY = 'leetcode_lite_settings';
 // Pagination & Tag variables
 let pageSize = 50;
 let currentPage = 1;
-let selectedTags = []; // Now strictly stores 'slugs' (e.g. 'dynamic-programming')
-const tagMap = new Map(); // Maps slug -> name for UI display
-
-const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+let selectedTags = []; // Stores slugs
+const tagMap = new Map();
 
 // DOM Elements
 const tableBody = document.getElementById('tableBody');
@@ -44,18 +44,13 @@ const pageInfo = document.getElementById('page-info');
 // --- 2. Data Fetching & Storage ---
 async function loadProblems() {
 	try {
-		// const response = await fetch('./data/lc-problem-list.json');
 		const response = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
-
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
 		allProblems = await response.json();
 		currentProblems = [...allProblems];
 
-		// Generate the tags list dynamically from the data
 		populateTagDropdown();
-
-		// Load settings, which will automatically check the correct tag boxes
 		loadSettings();
 		applyFilters();
 
@@ -71,7 +66,7 @@ function saveSettings() {
 		diff: diffFilter.value,
 		paid: paidFilter.value,
 		category: categoryFilter.value,
-		tags: selectedTags, // Saves array of slugs
+		tags: selectedTags,
 		sort: currentSort,
 		page: currentPage,
 		pageSize: pageSize
@@ -100,7 +95,6 @@ function loadSettings() {
 				selectedTags = settings.tags;
 				updateTagDropdownText();
 
-				// Tick the boxes that were previously saved (matching by slug)
 				document.querySelectorAll('.tag-checkbox').forEach(cb => {
 					if (selectedTags.includes(cb.value)) {
 						cb.checked = true;
@@ -116,7 +110,6 @@ function loadSettings() {
 
 // --- 3. Tag Dropdown Setup ---
 function populateTagDropdown() {
-	// Extract unique tags and map their slugs to names
 	allProblems.forEach(p => {
 		if (p.topicTags) {
 			p.topicTags.forEach(t => {
@@ -127,9 +120,7 @@ function populateTagDropdown() {
 		}
 	});
 
-	// Convert map to array and alphabetize by name for UI
 	const sortedTags = Array.from(tagMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
-
 	tagDropdownMenu.innerHTML = '';
 
 	sortedTags.forEach(([slug, name]) => {
@@ -145,11 +136,10 @@ function populateTagDropdown() {
 		tagDropdownMenu.appendChild(li);
 	});
 
-	// Add listeners to newly created checkboxes
 	document.querySelectorAll('.tag-checkbox').forEach(cb => {
 		cb.addEventListener('change', (e) => {
 			if (e.target.checked) {
-				selectedTags.push(e.target.value); // Push the slug
+				selectedTags.push(e.target.value);
 			} else {
 				selectedTags = selectedTags.filter(t => t !== e.target.value);
 			}
@@ -165,7 +155,6 @@ function updateTagDropdownText() {
 	if (selectedTags.length === 0) {
 		tagDropdownText.textContent = 'Select Tags...';
 	} else if (selectedTags.length === 1) {
-		// Look up the display name using the stored slug
 		tagDropdownText.textContent = tagMap.get(selectedTags[0]) || selectedTags[0];
 	} else {
 		tagDropdownText.textContent = `${selectedTags.length} Tags Selected`;
@@ -177,6 +166,11 @@ function calculateLikeRate(likes, dislikes) {
 	const total = likes + dislikes;
 	if (total === 0) return 0;
 	return ((likes / total) * 100);
+}
+
+// Strictly truncates a number to 2 decimal places without rounding
+function truncateToTwoDecimals(num) {
+	return Math.trunc(num * 100) / 100;
 }
 
 function getRateColor(rate) {
@@ -252,13 +246,13 @@ function renderTable() {
 		const tagsHTML = tags.map(t => `<span class="badge tag-badge">${t.name}</span>`).join('');
 		const tagsTitle = tags.map(t => t.name).join(', ');
 
-		const category = p.meta?.categoryTitle || '';
+		const category = p.categoryTitle || '';
 
 		const tr = document.createElement('tr');
 		tr.innerHTML = `
             <td class="text-secondary fw-bold">${p.quesId}</td>
             <td>
-                <a href="problem.html?slug=${p.titleSlug}" class="text-decoration-none text-reset fw-semibold" target="_blank">
+                <a href="problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
                     ${p.title}
                 </a>${star}
             </td>
@@ -270,7 +264,7 @@ function renderTable() {
                     ${tagsHTML}
                 </div>
             </td>
-            <td class="text-secondary">${category}</td>
+            <td class="${getCategoryColor(category)}">${category}</td>
         `;
 		tableBody.appendChild(tr);
 	});
@@ -294,9 +288,8 @@ function applyFilters() {
 		if (diff !== "All" && p.difficulty !== diff) return false;
 		if (paid === "Free" && p.isPaidOnly) return false;
 		if (paid === "Paid" && !p.isPaidOnly) return false;
-		if (cat !== "All" && p.meta?.categoryTitle !== cat) return false;
+		if (cat !== "All" && p.categoryTitle !== cat) return false;
 
-		// TAG FILTERING LOGIC: Match ANY selected tags (OR condition) explicitly matching pt.slug
 		if (selectedTags.length > 0) {
 			const problemTags = p.topicTags || [];
 			const hasAnySelectedTag = selectedTags.some(selectedTagSlug =>
@@ -325,13 +318,16 @@ function applySort() {
 			const weight = { "Easy": 1, "Medium": 2, "Hard": 3 };
 			valA = weight[a.difficulty] || 0; valB = weight[b.difficulty] || 0;
 		} else if (currentSort.column === 'likeRate') {
-			valA = calculateLikeRate(a.stats.likes || 0, a.stats.dislikes || 0);
-			valB = calculateLikeRate(b.stats.likes || 0, b.stats.dislikes || 0);
+			// Apply strict truncation for comparison
+			valA = truncateToTwoDecimals(calculateLikeRate(a.stats.likes || 0, a.stats.dislikes || 0));
+			valB = truncateToTwoDecimals(calculateLikeRate(b.stats.likes || 0, b.stats.dislikes || 0));
 		} else if (currentSort.column === 'acRate') {
-			valA = a.stats.acRateRaw || 0; valB = b.stats.acRateRaw || 0;
+			// Apply strict truncation for comparison
+			valA = truncateToTwoDecimals(a.stats.acRateRaw || 0);
+			valB = truncateToTwoDecimals(b.stats.acRateRaw || 0);
 		} else if (currentSort.column === 'category') {
-			valA = (a.meta?.categoryTitle || '').toLowerCase();
-			valB = (b.meta?.categoryTitle || '').toLowerCase();
+			valA = (a.categoryTitle || '').toLowerCase();
+			valB = (b.categoryTitle || '').toLowerCase();
 		}
 
 		if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
@@ -385,19 +381,16 @@ document.querySelectorAll('th.sortable').forEach(th => {
 });
 
 resetBtn.addEventListener('click', () => {
-	// Reset Standard Inputs
 	searchInput.value = '';
 	diffFilter.value = 'All';
 	paidFilter.value = 'All';
 	categoryFilter.value = 'All';
 	pageSizeSelect.value = '50';
 
-	// Reset Tag Selection
 	selectedTags = [];
 	document.querySelectorAll('.tag-checkbox').forEach(cb => cb.checked = false);
 	updateTagDropdownText();
 
-	// Reset Globals
 	currentSort = { column: 'id', direction: 'asc' };
 	currentPage = 1;
 	pageSize = 50;
@@ -438,3 +431,14 @@ btnLast.addEventListener('click', () => {
 
 // --- 8. Initialization ---
 loadProblems();
+
+function getCategoryColor(category) {
+	if (!category) return 'text-secondary';
+	const cat = category.toLowerCase();
+
+	if (cat === 'algorithms') return 'color-green';
+	if (cat === 'database') return 'color-blue';
+	if (cat.includes('javascript') || cat.includes('typescript')) return 'color-yellow';
+
+	return 'text-secondary'; // Fallback for any other categories
+}
