@@ -4,9 +4,11 @@ const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
+const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
+const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
+
 // Initialize Highlight.js Copy Plugin
 if (window.hljs && window.CopyButtonPlugin) {
-	console.log('hhhhhhhhhhhhhhh')
 	hljs.addPlugin(new CopyButtonPlugin());
 }
 
@@ -109,6 +111,45 @@ async function loadProblem() {
 	}
 }
 
+// --- Helper Formatting ---
+function parseOfficialSolution(markdownContent) {
+	if (!markdownContent) return '<span class="text-muted">No solution available.</span>';
+
+	let text = markdownContent;
+
+	// 1. Remove the [TOC] (Table of Contents) marker
+	text = text.replace(/\[TOC\]/gi, '');
+
+	// 2. Skip the Video Solution section entirely
+	const articleMarker = "## Solution Article";
+	if (text.includes(articleMarker)) {
+		// Drop everything before the actual article
+		text = text.substring(text.indexOf(articleMarker));
+	} else {
+		// Fallback regex if the exact marker isn't found
+		text = text.replace(/## Video Solution[\s\S]*?(?=##|$)/i, '');
+	}
+
+	// 3. Skip the Implementation Section
+	// Matches "**Implementation**" or "### Implementation" and removes everything until "**Complexity" or the next "###"
+	text = text.replace(/(?:\*\*|###)\s*Implementation[\s\S]*?(?=\*\*Complexity|###|$)/gi, '');
+
+	// As a strict fallback, strip any embedded iframes (Leetcode playgrounds) since they are being blocked
+	text = text.replace(/<iframe[\s\S]*?<\/iframe>/gi, '');
+
+	// 4. Fix Broken Image Links
+	// Replaces all instances of "../Figures/" with the absolute LeetCode assets URL
+	text = text.replace(/\.\.\/Figures\//gi, LC_ASSETS_BASE_URL + '/');
+
+	// 5. Parse the remaining clean Markdown into HTML
+	if (window.marked) {
+		return marked.parse(text);
+	}
+
+	// Fallback if marked.js fails to load
+	return `<pre style="white-space: pre-wrap; font-family: inherit;">${text}</pre>`;
+}
+
 function populateUI(data, allProblems) {
 	document.getElementById('loading-spinner').style.display = 'none';
 	document.getElementById('problem-content-wrapper').style.display = 'block';
@@ -117,7 +158,21 @@ function populateUI(data, allProblems) {
 	document.getElementById('prob-id').textContent = data.quesId;
 
 	const star = data.isPaidOnly ? `<span class="text-warning ms-2" title="Premium">★</span>` : '';
-	document.getElementById('prob-title').innerHTML = `${data.title} ${star}`;
+
+	// Construct the official LeetCode URL using the titleSlug
+	const lcProblemUrl = LC_PROBLEM_BASE_URL + `/${data.titleSlug}/description/`;
+
+	// Create the external link SVG
+	const extLink = `
+        <a href="${lcProblemUrl}" target="_blank" class="text-secondary ms-2 hover-primary align-middle" title="Open in LeetCode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg>
+        </a>`;
+
+	// Append the title, star (if paid), and the external link
+	document.getElementById('prob-title').innerHTML = `${data.title} ${star} ${extLink}`;
 
 	// --- Row 1: Difficulty, Likes, Dislikes, Like Rate ---
 	const diffEl = document.getElementById('prob-difficulty');
@@ -181,7 +236,17 @@ function populateUI(data, allProblems) {
         </div>
     `).join('') || '<div class="text-muted fs-6 p-2">No hints available.</div>';
 
-	// Similar Questions - Mapped, Sorted, and rendered as an Ordered List
+	// Official Solution
+	const solutionWrapper = document.getElementById('solution-wrapper');
+	if (data.solution && data.solution.canSeeDetail && data.solution.content) {
+		// Using our new parser function here
+		document.getElementById('prob-solution-content').innerHTML = parseOfficialSolution(data.solution.content);
+		solutionWrapper.style.display = 'block';
+	} else {
+		solutionWrapper.style.display = 'none';
+	}
+
+	// Similar Questions - Mapped, Sorted, and rendered as an Ordered List with Stars
 	const similarContainer = document.getElementById('prob-similar-list');
 	if (data.similarQuestions && data.similarQuestions.length > 0) {
 		const mappedSimilarProbs = data.similarQuestions
@@ -192,13 +257,15 @@ function populateUI(data, allProblems) {
 
 		if (mappedSimilarProbs.length > 0) {
 			similarContainer.innerHTML = `<ul class="list-unstyled mb-0 d-flex flex-column gap-2">` +
-				mappedSimilarProbs.map(p => `
+				mappedSimilarProbs.map(p => {
+					const simStar = p.isPaidOnly ? `<span class="text-warning ms-1" title="Premium Problem">★</span>` : '';
+					return `
                     <li>
                         <a href="problem.html?quesId=${p.quesId}" class="text-decoration-none text-light fw-semibold hover-primary">
-                            ${p.quesId}. ${p.title}
+                            ${p.quesId}. ${p.title} ${simStar}
                         </a>
                     </li>
-                `).join('') +
+                `}).join('') +
 				`</ul>`;
 		} else {
 			similarContainer.innerHTML = '<span class="text-muted">None</span>';

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About - LeetLite</title>
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS matching index/problem pages -->
+	<link href="css/index.css" rel="stylesheet">
+	<style>
+		.feature-card {
+			transition: transform 0.2s ease-in-out;
+			height: 100%;
+		}
+
+		.feature-card:hover {
+			transform: translateY(-3px);
+		}
+	</style>
+</head>
+
+<body class="bg-body d-flex flex-column min-vh-100">
+
+	<!-- Navbar Placeholder -->
+	<div id="navbar-placeholder"></div>
+
+	<!-- Main Content Container -->
+	<div class="container my-4 flex-grow-1" style="max-width: 850px;">
+
+		<!-- Header Section -->
+		<div class="text-center mb-5">
+			<h1 class="fw-bold display-6 mb-2">About LeetLite ⚡</h1>
+			<p class="text-secondary">
+				A lightweight, lightning-fast alternative designed purely for speed and efficiency.
+			</p>
+		</div>
+
+		<!-- Overview Card -->
+		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4">
+			<div class="card-body p-4">
+				<h5 class="fw-bold text-light mb-3">Overview</h5>
+				<p class="text-secondary mb-0">
+					LeetLite is built as a static application using vanilla HTML, CSS, JavaScript, and Bootstrap.
+					By omitting heavy backend frameworks and live server lookups, it ensures instant navigation,
+					real-time filtering, and zero network latency.
+				</p>
+			</div>
+		</div>
+
+		<!-- Key Features Grid -->
+		<h5 class="fw-bold text-light mb-3">Core Features</h5>
+		<div class="row g-3 mb-4">
+			<div class="col-md-4">
+				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+					<div class="card-body">
+						<h6 class="fw-bold color-green mb-1">⚡ Instant Search</h6>
+						<p class="text-secondary small mb-0">
+							Search thousands of problems instantly by ID or title using dynamic keyup event listeners.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+					<div class="card-body">
+						<h6 class="fw-bold color-yellow mb-1">🔍 Fast Filtering</h6>
+						<p class="text-secondary small mb-0">
+							Filter seamlessly by difficulty, free/paid status, categories, and topic tags.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+					<div class="card-body">
+						<h6 class="fw-bold text-primary mb-1">📊 Quick Sorting</h6>
+						<p class="text-secondary small mb-0">
+							Click any table header to instantly sort columns like acceptance rate and like ratios.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Creator Solutions & Statistics -->
+		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4">
+			<div class="card-body p-4">
+				<h5 class="fw-bold text-light mb-3">Solutions & Statistics</h5>
+				<p class="text-secondary mb-2">
+					Features problem details alongside code solutions crafted strictly by the creator.
+				</p>
+				<ul class="text-secondary mb-0 small">
+					<li>Custom code solutions for numerous problems.</li>
+					<li>Aggregated statistics tracking available solutions and total problem metrics across the
+						platform.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Disclaimer Box -->
+		<div class="card bg-dark border-warning shadow-sm mb-4">
+			<div class="card-body p-4">
+				<h6 class="fw-bold text-warning mb-2">⚠️ Disclaimer</h6>
+				<p class="text-secondary small mb-0" style="line-height: 1.5;">
+					LeetLite is an independent personal project and is <strong>not associated, affiliated, or
+						connected with LeetCode</strong> in any way shape or form. It utilizes data available from
+					LeetCode's public APIs. No details or contents regarding premium problems are available. AI
+					assistance tools were utilized during the development of this site.
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Footer Placeholder -->
+	<div id="footer-placeholder"></div>
+
+	<!-- Bootstrap JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Component Loader -->
+	<script src="js/components.js"></script>
+</body>
+
+</html>
