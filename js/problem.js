@@ -4,8 +4,18 @@ const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
+// Initialize Highlight.js Copy Plugin
+if (window.hljs && window.CopyButtonPlugin) {
+	console.log('hhhhhhhhhhhhhhh')
+	hljs.addPlugin(new CopyButtonPlugin());
+}
+
 let currentProblemSolvedStats = null;
 let currentProblemMasterData = null; // Stores global problem metadata for URL generation
+
+// Elements
+const codeViewer = document.getElementById('codeViewer');
+let currentCode = ''; // Store the fetched code globally for the copy function
 
 // --- 2. Resizer Logic ---
 const resizer = document.getElementById('resizer');
@@ -310,12 +320,13 @@ function generateCodeUrl(lang, version) {
 	return `${GITHUB_LCS_URL}/${encodeURIComponent(dirName)}/${encodeURIComponent(fileName)}`;
 }
 
+// --- 5. Code Fetching Logic ---
 async function fetchAndDisplayCode() {
 	const lang = document.getElementById('lang-select').value;
 	const version = document.getElementById('version-select').value;
 	const container = document.getElementById('code-editor-container');
 
-	if (!container) return; // Guard clause in case placeholder HTML isn't updated yet
+	if (!container) return;
 
 	if (!lang || !version) {
 		container.innerHTML = `<div class="d-flex h-100 align-items-center justify-content-center text-secondary"><h5>Select a language and version to view code</h5></div>`;
@@ -328,21 +339,34 @@ async function fetchAndDisplayCode() {
 
 	try {
 		const response = await fetch(codeUrl);
-		if (!response.ok) throw new Error("Code snippet not found on server.");
+		if (!response.ok) {
+			throw new Error("solution not available currently");
+		}
 
 		const codeText = await response.text();
 
 		// Escape HTML to prevent injection and rendering issues
 		const escapedCode = codeText.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-		container.innerHTML = `<code>${escapedCode}</code>`;
+
+		// Map internal language identifiers to Highlight.js classes
+		let hljsLang = lang.toLowerCase();
+		if (hljsLang === 'mysql') hljsLang = 'sql';
+		if (hljsLang === 'js') hljsLang = 'javascript';
+		if (hljsLang === 'python3') hljsLang = 'python';
+
+		// Inject with proper tags for Highlight.js
+		container.innerHTML = `<pre class="m-0 h-100"><code class="language-${hljsLang} h-100" style="border-radius: 0; font-family: monospace; font-size: 14px;">${escapedCode}</code></pre>`;
+
+		if (window.hljs) {
+			hljs.highlightElement(container.querySelector('code'));
+		}
 
 	} catch (error) {
-		console.warn(error);
-		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-danger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mb-2" viewBox="0 0 16 16">
-              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <p>Failed to load code: ${error.message}</p>
+
+		const errorMsg = error.message === "solution not available currently" ? error.message : `Failed to load code: ${error.message}`;
+
+		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-secondary">
+            <h5>${errorMsg}</h5>
         </div>`;
 	}
 }
@@ -389,4 +413,23 @@ function getCategoryColor(category) {
 	if (cat.includes('javascript') || cat.includes('typescript')) return 'color-yellow';
 
 	return 'text-secondary'; // Fallback for any other categories
+}
+
+// 1. Function to fetch and display the code
+async function loadSolutionCode(solutionUrl) {
+	try {
+		const response = await fetch(solutionUrl);
+
+		// Throw an error if the file doesn't exist or we hit a 404
+		if (!response.ok) {
+			throw new Error(`Failed to fetch code: ${response.status}`);
+		}
+
+		currentCode = await response.text();
+		codeViewer.textContent = currentCode;
+	} catch (error) {
+		// Handle the missing file explicitly
+		currentCode = '';
+		codeViewer.textContent = 'solution not available currently';
+	}
 }
