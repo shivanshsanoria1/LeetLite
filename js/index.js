@@ -1,5 +1,5 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list-min.json';
 
 // --- 1. State Management ---
 let allProblems = [];

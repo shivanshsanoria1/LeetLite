@@ -1,14 +1,14 @@
 // --- 1. Constants & State ---
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list-min.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
 const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
 const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
 
-// Initialize Highlight.js Copy Plugin
-if (window.hljs && window.CopyButtonPlugin) {
+// Initialize Highlight.js Copy Plugin Safely
+if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 	hljs.addPlugin(new CopyButtonPlugin());
 }
 
@@ -121,20 +121,26 @@ function parseOfficialSolution(markdownContent) {
 	text = text.replace(/\[TOC\]/gi, '');
 
 	// 2. Skip the Video Solution section entirely
+	// Account for both "## Solution Article" and "## Solution" variations
 	const articleMarker = "## Solution Article";
+	const altArticleMarker = "## Solution";
+
 	if (text.includes(articleMarker)) {
-		// Drop everything before the actual article
 		text = text.substring(text.indexOf(articleMarker));
+	} else if (text.includes(altArticleMarker)) {
+		// Drops prepended videos that lack the explicit "Video Solution" header
+		text = text.substring(text.indexOf(altArticleMarker));
 	} else {
-		// Fallback regex if the exact marker isn't found
-		text = text.replace(/## Video Solution[\s\S]*?(?=##|$)/i, '');
+		// Fallback regex if markers are completely missing
+		text = text.replace(/##\s*Video Solution[\s\S]*?(?=##|$)/i, '');
 	}
 
 	// 3. Skip the Implementation Section
-	// Matches "**Implementation**" or "### Implementation" and removes everything until "**Complexity" or the next "###"
-	text = text.replace(/(?:\*\*|###)\s*Implementation[\s\S]*?(?=\*\*Complexity|###|$)/gi, '');
+	// Matches "**Implementation**", "### Implementation", "#### Implementation", etc.
+	// and explicitly removes everything until the next "Complexity" heading or end of string.
+	text = text.replace(/(?:#+|\*\*)\s*Implementation[\s\S]*?(?=(?:#+|\*\*)\s*Complexity|$)/gi, '');
 
-	// As a strict fallback, strip any embedded iframes (Leetcode playgrounds) since they are being blocked
+	// As a strict fallback, strip any remaining embedded iframes (Leetcode playgrounds)
 	text = text.replace(/<iframe[\s\S]*?<\/iframe>/gi, '');
 
 	// 4. Fix Broken Image Links
@@ -392,11 +398,23 @@ async function fetchAndDisplayCode() {
 	const lang = document.getElementById('lang-select').value;
 	const version = document.getElementById('version-select').value;
 	const container = document.getElementById('code-editor-container');
+	const complexityBlock = document.getElementById('complexity-block');
 
 	if (!container) return;
 
+	const fallbackMsg = "Solution not found. Keep tuned for future release";
+
+	// Hide complexity block initially while loading or if no selection
+	if (complexityBlock) {
+		complexityBlock.classList.remove('d-flex');
+		complexityBlock.classList.add('d-none');
+	}
+
 	if (!lang || !version) {
-		container.innerHTML = `<div class="d-flex h-100 align-items-center justify-content-center text-secondary"><h5>Select a language and version to view code</h5></div>`;
+		currentRawCode = '';
+		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-secondary text-center p-4">
+            <h5 class="mb-0">${fallbackMsg}</h5>
+        </div>`;
 		return;
 	}
 
@@ -407,21 +425,46 @@ async function fetchAndDisplayCode() {
 	try {
 		const response = await fetch(codeUrl);
 		if (!response.ok) {
-			throw new Error("solution not available currently");
+			throw new Error(fallbackMsg);
 		}
 
 		const codeText = await response.text();
+		currentRawCode = codeText;
+
+		// --- Complexity Extraction Regex ---
+		// Safely handles nested parentheses like O(n*log(n)) or O(V+E)
+		const regexPattern = /=\s*(O\((?:[^()]+|\([^()]+\))*\))/i;
+
+		const tcMatch = codeText.match(new RegExp(`T\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
+		const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
+
+		if (complexityBlock) {
+			document.getElementById('tc-val').textContent = tcMatch ? tcMatch[1] : 'N/A';
+			document.getElementById('sc-val').textContent = scMatch ? scMatch[1] : 'N/A';
+
+			complexityBlock.classList.remove('d-none');
+			complexityBlock.classList.add('d-flex');
+		}
+		// -----------------------------------
+
+		if (complexityBlock) {
+			// ALWAYS show the block since code was successfully found
+			document.getElementById('tc-val').textContent = tcMatch ? tcMatch[1] : 'N/A';
+			document.getElementById('sc-val').textContent = scMatch ? scMatch[1] : 'N/A';
+
+			complexityBlock.classList.remove('d-none');
+			complexityBlock.classList.add('d-flex');
+		}
+		// -----------------------------------
 
 		// Escape HTML to prevent injection and rendering issues
 		const escapedCode = codeText.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-		// Map internal language identifiers to Highlight.js classes
 		let hljsLang = lang.toLowerCase();
 		if (hljsLang === 'mysql') hljsLang = 'sql';
 		if (hljsLang === 'js') hljsLang = 'javascript';
 		if (hljsLang === 'python3') hljsLang = 'python';
 
-		// Inject with proper tags for Highlight.js
 		container.innerHTML = `<pre class="m-0 h-100"><code class="language-${hljsLang} h-100" style="border-radius: 0; font-family: monospace; font-size: 14px;">${escapedCode}</code></pre>`;
 
 		if (window.hljs) {
@@ -429,11 +472,18 @@ async function fetchAndDisplayCode() {
 		}
 
 	} catch (error) {
+		currentRawCode = '';
 
-		const errorMsg = error.message === "solution not available currently" ? error.message : `Failed to load code: ${error.message}`;
+		// Ensure complexity block remains hidden if code is not found
+		if (complexityBlock) {
+			complexityBlock.classList.remove('d-flex');
+			complexityBlock.classList.add('d-none');
+		}
 
-		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-secondary">
-            <h5>${errorMsg}</h5>
+		const errorMsg = error.message === fallbackMsg ? error.message : fallbackMsg;
+
+		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-secondary text-center p-4">
+            <h5 class="mb-0">${errorMsg}</h5>
         </div>`;
 	}
 }

@@ -12,12 +12,22 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-	<!-- Highlight.js Copy Button Plugin CSS & JS -->
+	<!-- Highlight.js Copy Button Plugin -->
 	<link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
 	<script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
 
 	<!-- Add this in your <head>, right below Highlight.js -->
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+	<!-- MathJax Configuration to allow single $ delimiters -->
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']],
+				displayMath: [['$$', '$$'], ['\\[', '\\]']]
+			}
+		};
+	</script>
 
 	<!-- MathJax for rendering LeetCode LaTeX -->
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -81,7 +91,7 @@
 					<span>Submissions: <span id="prob-submissions" class="text-light fw-bold">0</span></span>
 					<div class="vr"></div>
 
-					<span>Acceptance: <span id="prob-ac" class="fw-bold">0%</span></span>
+					<span>Acceptance Rate: <span id="prob-ac" class="fw-bold">0%</span></span>
 					<div class="vr"></div>
 
 					<span id="prob-category" class="badge bg-dark border border-secondary text-light"></span>
@@ -100,13 +110,13 @@
 
 				<!-- Hints Accordion -->
 				<div class="mb-4">
-					<h6 class="fw-bold text-secondary mb-2">Hints</h6>
+					<h6 class="fw-bold text-success mb-2">Hints</h6>
 					<div class="accordion accordion-flush border border-secondary rounded" id="hintsAccordion"></div>
 				</div>
 
 				<!-- NEW: Official Solution -->
 				<div class="mb-4" id="solution-wrapper" style="display: none;">
-					<h6 class="fw-bold text-secondary mb-2">Official Solution</h6>
+					<h6 class="fw-bold text-primary mb-2">Official Solution</h6>
 					<div class="accordion accordion-flush border border-secondary rounded" id="solutionAccordion">
 						<div class="accordion-item bg-dark border-secondary">
 							<h2 class="accordion-header">
@@ -127,7 +137,7 @@
 
 				<!-- Similar Questions List -->
 				<div class="mb-4">
-					<h6 class="fw-bold text-secondary mb-2">Similar Questions</h6>
+					<h6 class="fw-bold text-info mb-2">Similar Questions</h6>
 					<div id="prob-similar-list"></div>
 				</div>
 
@@ -161,6 +171,15 @@
 						style="width: auto;">
 						<option value="">-</option>
 					</select>
+				</div>
+
+				<!-- Complexity Display Block -->
+				<div id="complexity-block"
+					class="d-none align-items-center gap-2 px-2 py-1 rounded border border-secondary ms-2"
+					style="background-color: #121416; font-family: monospace; font-size: 13px;">
+					<span class="text-secondary">T.C: <span id="tc-val" class="text-success fw-bold">-</span></span>
+					<div class="vr text-secondary"></div>
+					<span class="text-secondary">S.C: <span id="sc-val" class="text-success fw-bold">-</span></span>
 				</div>
 
 				<!-- Right-aligned buttons (Copy & Reset) -->

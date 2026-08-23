@@ -84,3 +84,21 @@
     overflow-x: auto;
     white-space: pre;
 }
+
+/* Prevent images from overflowing their containers */
+.problem-description img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures aspect ratio is strictly maintained */
+}
+
+/* Ensure the Highlight.js copy button fits seamlessly into the Monokai theme */
+.hljs-copy-button {
+    background-color: #272822 !important; /* Matches Monokai background */
+    color: #a6e22e !important; /* Matches Monokai green text */
+    border: 1px solid #49483e !important;
+}
+
+.hljs-copy-button:hover {
+    background-color: #49483e !important;
+}
