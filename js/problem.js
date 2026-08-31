@@ -1,6 +1,6 @@
 // --- 1. Constants & State ---
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list-min.json';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
