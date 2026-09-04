@@ -101,7 +101,7 @@ async function loadProblem() {
 		populateUI(data, allProblems);
 		populateEditorToolbar();
 
-		if (window.MathJax) {
+		if (window.MathJax && window.MathJax.typesetPromise) {
 			MathJax.typesetPromise();
 		}
 
@@ -168,6 +168,32 @@ function populateUI(data, allProblems) {
 	// Construct the official LeetCode URL using the titleSlug
 	const lcProblemUrl = LC_PROBLEM_BASE_URL + `/${data.titleSlug}/description/`;
 
+	// Format the sync time for the tooltip in dd-mmm-yyyy hh:mm:ss (UTC)
+	let titleHtml = data.title;
+	if (data.LAST_UPDATED_ISO) {
+		const d = new Date(data.LAST_UPDATED_ISO);
+
+		const day = String(d.getUTCDate()).padStart(2, '0');
+		const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		const month = monthNames[d.getUTCMonth()];
+		const year = d.getUTCFullYear();
+
+		const hours = String(d.getUTCHours()).padStart(2, '0');
+		const minutes = String(d.getUTCMinutes()).padStart(2, '0');
+		const seconds = String(d.getUTCSeconds()).padStart(2, '0');
+
+		const syncDate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds} (UTC)`;
+
+		// Append a clean info-circle SVG to the title
+		titleHtml = `${data.title} 
+            <span title="Last synced with LeetCode: ${syncDate}" style="cursor: pointer;" class="text-secondary align-middle ms-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+            </span>`;
+	}
+
 	// Create the external link SVG
 	const extLink = `
         <a href="${lcProblemUrl}" target="_blank" class="text-secondary ms-2 hover-primary align-middle" title="Open in LeetCode">
@@ -177,8 +203,8 @@ function populateUI(data, allProblems) {
             </svg>
         </a>`;
 
-	// Append the title, star (if paid), and the external link
-	document.getElementById('prob-title').innerHTML = `${data.title} ${star} ${extLink}`;
+	// Append the formatted title, star (if paid), and the external link
+	document.getElementById('prob-title').innerHTML = `${titleHtml} ${star} ${extLink}`;
 
 	// --- Row 1: Difficulty, Likes, Dislikes, Like Rate ---
 	const diffEl = document.getElementById('prob-difficulty');
@@ -254,12 +280,16 @@ function populateUI(data, allProblems) {
 
 	// Similar Questions - Mapped, Sorted, and rendered as an Ordered List with Stars
 	const similarContainer = document.getElementById('prob-similar-list');
-	if (data.similarQuestions && data.similarQuestions.length > 0) {
-		const mappedSimilarProbs = data.similarQuestions
-			.map(slug => allProblems.find(p => p.titleSlug === slug))
+
+	// Safely check for the new array
+	if (data.similarQuesIds && data.similarQuesIds.length > 0) {
+		const mappedSimilarProbs = data.similarQuesIds
+			// Cast both to Number to prevent String vs Integer strict equality failures
+			.map(id => allProblems.find(p => Number(p.quesId) === Number(id)))
 			.filter(p => p !== undefined);
 
-		mappedSimilarProbs.sort((a, b) => a.quesId - b.quesId);
+		// Cast to Number for the tie-breaker sort
+		mappedSimilarProbs.sort((a, b) => Number(a.quesId) - Number(b.quesId));
 
 		if (mappedSimilarProbs.length > 0) {
 			similarContainer.innerHTML = `<ul class="list-unstyled mb-0 d-flex flex-column gap-2">` +
@@ -443,14 +473,22 @@ async function fetchAndDisplayCode() {
 			const tcText = tcMatch ? `$${tcMatch[1]}$` : 'N/A';
 			const scText = scMatch ? `$${scMatch[1]}$` : 'N/A';
 
-			document.getElementById('tc-val').textContent = tcText;
-			document.getElementById('sc-val').textContent = scText;
+			// Build the block content with Bootstrap success (green) text and no icon
+			complexityBlock.innerHTML = `
+                <span class="text-secondary">T.C: <span class="text-success fw-bold">${tcText}</span></span>
+                <div class="vr text-secondary mx-1"></div>
+                <span class="text-secondary">S.C: <span class="text-success fw-bold">${scText}</span></span>
+            `;
+
+			// Apply the warning tooltip and cursor directly to the entire block
+			complexityBlock.title = "Complexity metrics are auto-extracted from code comments and may contain inaccuracies. Please verify manually.";
+			complexityBlock.style.cursor = "pointer";
 
 			complexityBlock.classList.remove('d-none');
 			complexityBlock.classList.add('d-flex');
 
 			// Tell MathJax to process the newly injected LaTeX in this specific block
-			if (window.MathJax) {
+			if (window.MathJax && window.MathJax.typesetPromise) {
 				MathJax.typesetPromise([complexityBlock]).catch((err) => console.error('MathJax rendering failed:', err));
 			}
 		}

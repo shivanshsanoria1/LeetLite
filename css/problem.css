@@ -102,3 +102,27 @@
 .hljs-copy-button:hover {
     background-color: #49483e !important;
 }
+
+/* Style LeetCode's newer .example-block containers */
+.problem-description .example-block {
+    background-color: #121416;
+    border: 1px solid #495057; /* Matches Bootstrap border-secondary */
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+/* Ensure internal paragraph spacing is tight */
+.problem-description .example-block p {
+    margin-bottom: 0.5rem;
+}
+
+.problem-description .example-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Ensure inner span formatting matches dark mode */
+.problem-description .example-block .example-io {
+    color: #e0e0e0;
+}
