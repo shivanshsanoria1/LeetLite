@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Similar Problems Visualizer - LeetLite</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/visualizer.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden bg-body d-flex flex-column" style="height: 100vh;">
+	<div id="navbar-placeholder"></div>
+
+	<div class="d-flex flex-grow-1 overflow-hidden">
+		<!-- Left Half: Search & Details (Strict 40% Width) -->
+		<div class="p-4 border-end border-secondary d-flex flex-column overflow-auto bg-body-tertiary"
+			style="flex: 0 0 40%; max-width: 40%; min-width: 380px;">
+
+			<!-- Search Bar -->
+			<div class="input-group shadow-sm mb-3">
+				<span class="input-group-text bg-dark border-secondary text-secondary">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						viewBox="0 0 16 16">
+						<path
+							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+					</svg>
+				</span>
+				<input type="number" id="quesIdInput" class="form-control bg-dark border-secondary text-light"
+					placeholder="Enter root Ques ID (e.g. 1)">
+				<button class="btn btn-outline-primary" id="searchGraphBtn">Visualize</button>
+			</div>
+			<div id="search-error" class="text-danger small mb-3 d-none fw-semibold">Problem not found.</div>
+
+			<!-- Root Node Information Panel -->
+			<div id="root-details" class="d-none mt-2">
+
+				<!-- Title Block -->
+				<div class="vis-stat-row justify-content-start gap-2 mb-4">
+					<h4 class="fw-bold mb-0">
+						<a href="#" id="det-title-link" target="_blank"
+							class="text-light text-decoration-none hover-primary"
+							title="Open problem details in new tab">
+							<span id="det-id"></span>. <span id="det-title"></span>
+						</a>
+					</h4>
+				</div>
+
+				<!-- Row 1: Difficulty & Ques Type -->
+				<div class="vis-stat-row justify-content-start gap-3">
+					<span class="text-secondary fw-semibold">Difficulty:</span>
+					<span id="det-difficulty" class="fw-bold"></span>
+					<div class="vr text-secondary"></div>
+
+					<span class="text-secondary fw-semibold">Type:</span>
+					<span id="det-type" class="fw-bold badge bg-dark border border-secondary"></span>
+				</div>
+
+				<!-- Row 2: Likes, Dislikes, Like Rate -->
+				<div class="vis-stat-row justify-content-start gap-3">
+					<span class="text-secondary fw-semibold">Likes:</span>
+					<span class="d-flex align-items-center gap-1 text-success" title="Likes">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							viewBox="0 0 16 16">
+							<path
+								d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+						</svg>
+						<span id="det-likes" class="fw-bold">0</span>
+					</span>
+					<div class="vr text-secondary"></div>
+
+					<span class="text-secondary fw-semibold">Dislikes:</span>
+					<span class="d-flex align-items-center gap-1 text-danger" title="Dislikes">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							viewBox="0 0 16 16">
+							<path
+								d="M6.956 14.255c.065.935.952 1.658 1.908 1.42l.261-.065a1.38 1.38 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272.184-.532.16-1.162-.234-1.733a2.1 2.1 0 0 0 .138-.364c.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2 2 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.2 3.2 0 0 0-.488-.901 2 2 0 0 0-.076-.465c0-.305-.089-.625-.253-.912C13.1.478 12.437 0 11.5 0H8c-.605 0-1.07.081-1.466.218a4.8 4.8 0 0 0-.97.484l-.048.03c-.504.307-.999.609-2.068.722C2.682 1.536 2 2.154 2 3v4c0 .85.685 1.432 1.357 1.615.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.539.428 2.59z" />
+						</svg>
+						<span id="det-dislikes" class="fw-bold">0</span>
+					</span>
+					<div class="vr text-secondary"></div>
+
+					<span class="text-secondary fw-semibold">Like Rate: <span id="det-like-rate"
+							class="fw-bold">0%</span></span>
+				</div>
+
+				<!-- Row 3: Accepted, Submissions, Acceptance Rate -->
+				<div class="vis-stat-row justify-content-start gap-3">
+					<span class="text-secondary fw-semibold">Accepted: <span id="det-accepted"
+							class="fw-bold text-light">0</span></span>
+					<div class="vr text-secondary"></div>
+
+					<span class="text-secondary fw-semibold">Submissions: <span id="det-submissions"
+							class="fw-bold text-light">0</span></span>
+					<div class="vr text-secondary"></div>
+
+					<span class="text-secondary fw-semibold">Acceptance Rate: <span id="det-ac"
+							class="fw-bold">0%</span></span>
+				</div>
+
+				<!-- Topic Tags -->
+				<div class="vis-stat-row flex-column align-items-start gap-3 border-0 bg-transparent px-0 shadow-none">
+					<span class="text-secondary fw-semibold">Topic Tags</span>
+					<div id="det-tags" class="d-flex flex-wrap gap-2 w-100"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Right Half: Graph Viewport (60% Width) -->
+		<div class="flex-grow-1 position-relative graph-viewport" id="graphContainer">
+			<!-- Info Button -->
+			<button
+				class="btn btn-outline-secondary position-absolute top-0 end-0 m-3 z-3 rounded-circle p-2 d-flex align-items-center justify-content-center"
+				data-bs-toggle="modal" data-bs-target="#instructionsModal" title="How to use the Visualizer"
+				style="width: 40px; height: 40px;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+					<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+					<path
+						d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+				</svg>
+			</button>
+
+			<svg class="edges-layer" id="svgEdges"></svg>
+			<div id="nodesContainer"></div>
+		</div>
+	</div>
+
+	<!-- Instructions Modal -->
+	<div class="modal fade" id="instructionsModal" tabindex="-1" aria-labelledby="instructionsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content bg-dark border-secondary">
+				<div class="modal-header border-secondary">
+					<h5 class="modal-title fw-bold text-light" id="instructionsModalLabel">How to use the Visualizer
+					</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-secondary">
+					<ul class="mb-0">
+						<li class="mb-2"><strong>Search:</strong> Enter a Question ID in the top-left search bar to
+							generate its similarity network.</li>
+						<li class="mb-2"><strong>Navigate:</strong> Click any outer node to re-root the graph and
+							explore problems similar to it.</li>
+						<li class="mb-2"><strong>Open Details:</strong> Double-click the center (root) node, or click
+							the title in the left panel, to open the problem details in a new tab.</li>
+						<li><strong>Color Coding:</strong> Nodes are outlined based on difficulty (Green = Easy, Yellow
+							= Medium, Red = Hard). The root node is always highlighted in blue.</li>
+					</ul>
+				</div>
+				<div class="modal-footer border-secondary">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-placeholder"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/components.js"></script>
+	<script src="js/visualizer.js"></script>
+</body>
+
+</html>
