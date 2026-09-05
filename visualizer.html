@@ -47,17 +47,19 @@
 				</div>
 
 				<!-- Row 1: Difficulty & Ques Type -->
-				<div class="vis-stat-row justify-content-start gap-3">
+				<!-- Added flex-wrap here -->
+				<div class="vis-stat-row flex-wrap justify-content-start gap-3">
 					<span class="text-secondary fw-semibold">Difficulty:</span>
 					<span id="det-difficulty" class="fw-bold"></span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Type:</span>
 					<span id="det-type" class="fw-bold badge bg-dark border border-secondary"></span>
 				</div>
 
 				<!-- Row 2: Likes, Dislikes, Like Rate -->
-				<div class="vis-stat-row justify-content-start gap-3">
+				<!-- Added flex-wrap here -->
+				<div class="vis-stat-row flex-wrap justify-content-start gap-3">
 					<span class="text-secondary fw-semibold">Likes:</span>
 					<span class="d-flex align-items-center gap-1 text-success" title="Likes">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -67,7 +69,7 @@
 						</svg>
 						<span id="det-likes" class="fw-bold">0</span>
 					</span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Dislikes:</span>
 					<span class="d-flex align-items-center gap-1 text-danger" title="Dislikes">
@@ -78,38 +80,42 @@
 						</svg>
 						<span id="det-dislikes" class="fw-bold">0</span>
 					</span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Like Rate: <span id="det-like-rate"
 							class="fw-bold">0%</span></span>
 				</div>
 
 				<!-- Row 3: Accepted, Submissions, Acceptance Rate -->
-				<div class="vis-stat-row justify-content-start gap-3">
+				<!-- Added flex-wrap here -->
+				<div class="vis-stat-row flex-wrap justify-content-start gap-3">
 					<span class="text-secondary fw-semibold">Accepted: <span id="det-accepted"
 							class="fw-bold text-light">0</span></span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Submissions: <span id="det-submissions"
 							class="fw-bold text-light">0</span></span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Acceptance Rate: <span id="det-ac"
 							class="fw-bold">0%</span></span>
 				</div>
 
 				<!-- Row 4: Solution Flags -->
-				<div class="vis-stat-row justify-content-start gap-3">
+				<!-- Added flex-wrap here -->
+				<div class="vis-stat-row flex-wrap justify-content-start gap-3">
 					<span class="text-secondary fw-semibold">Official Solution: <span id="det-has-solution"
 							class="fw-bold"></span></span>
-					<div class="vr text-secondary"></div>
+					<div class="vr text-secondary d-none d-sm-block"></div>
 
 					<span class="text-secondary fw-semibold">Video Solution: <span id="det-has-video"
 							class="fw-bold"></span></span>
 				</div>
 
 				<!-- Topic Tags -->
-				<div class="vis-stat-row flex-column align-items-start gap-3 border-0 bg-transparent px-0 shadow-none">
+				<!-- Already has flex-wrap naturally applied on the inner div, but adding it to the parent ensures structural consistency -->
+				<div
+					class="vis-stat-row flex-wrap flex-column align-items-start gap-3 border-0 bg-transparent px-0 shadow-none">
 					<span class="text-secondary fw-semibold">Topic Tags</span>
 					<div id="det-tags" class="d-flex flex-wrap gap-2 w-100"></div>
 				</div>

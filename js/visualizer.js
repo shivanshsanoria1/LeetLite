@@ -13,6 +13,7 @@ const svg = document.getElementById('svgEdges');
 const viewport = document.getElementById('graphContainer');
 const rootDetails = document.getElementById('root-details');
 
+// --- Initialization & Random Fallback ---
 async function initGraph() {
 	try {
 		const res = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
@@ -21,7 +22,19 @@ async function initGraph() {
 		const allProblems = await res.json();
 		allProblems.forEach(p => problemMap.set(Number(p.quesId), p));
 
-		if (problemMap.has(1)) renderGraph(1);
+		// 1. Check Session Storage for a previously valid searched/clicked ID
+		const savedId = sessionStorage.getItem('vis_last_root');
+
+		if (savedId && problemMap.has(Number(savedId))) {
+			renderGraph(Number(savedId));
+		} else {
+			// 2. Fallback: Pick a random valid ID from the master list
+			const allIds = Array.from(problemMap.keys());
+			if (allIds.length > 0) {
+				const randomId = allIds[Math.floor(Math.random() * allIds.length)];
+				renderGraph(randomId);
+			}
+		}
 	} catch (err) {
 		console.error("Graph initialization failed:", err);
 	}
@@ -61,16 +74,17 @@ function handleSearch() {
 			errorMsg.classList.add('d-none');
 		}, 5000);
 
-		searchInput.value = ''; // Clear the bar even on invalid input
+		searchInput.value = '';
 		return;
 	}
 
-	renderGraph(Number(val));
+	// Pass 'true' to indicate this was an explicit search
+	renderGraph(Number(val), true);
 	searchInput.value = '';
 }
 
 // --- Render Graph Logic ---
-function renderGraph(rootId) {
+function renderGraph(rootId, isExplicitSearch = false) {
 	const rootData = problemMap.get(Number(rootId));
 
 	if (!rootData) {
@@ -91,6 +105,12 @@ function renderGraph(rootId) {
 	errorMsg.classList.add('d-none');
 
 	currentRootId = rootId;
+
+	// Save to sessionStorage ONLY if triggered via the search bar
+	if (isExplicitSearch) {
+		sessionStorage.setItem('vis_last_root', rootId);
+	}
+
 	populateSidePanel(rootData);
 
 	container.innerHTML = '';
