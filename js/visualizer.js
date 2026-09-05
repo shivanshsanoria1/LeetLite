@@ -132,14 +132,13 @@ function renderGraph(rootId) {
 	});
 }
 
-// --- Side Panel Population with Sync Time Tooltip ---
+// --- Side Panel Population ---
 function populateSidePanel(data) {
 	rootDetails.classList.remove('d-none');
 
 	document.getElementById('det-id').textContent = data.quesId;
 	document.getElementById('det-title-link').href = `problem.html?quesId=${data.quesId}`;
 
-	// Format the sync time for the tooltip in dd-mmm-yyyy hh:mm:ss (UTC)[cite: 1]
 	let titleHtml = data.title;
 	if (data.LAST_UPDATED_ISO) {
 		const d = new Date(data.LAST_UPDATED_ISO);
@@ -155,7 +154,6 @@ function populateSidePanel(data) {
 
 		const syncDate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds} (UTC)`;
 
-		// Append a clean info-circle SVG to the title[cite: 1]
 		titleHtml = `${data.title} 
             <span title="Last synced with LeetCode: ${syncDate}" style="cursor: help;" class="text-secondary align-middle ms-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -166,7 +164,7 @@ function populateSidePanel(data) {
 	}
 	document.getElementById('det-title').innerHTML = titleHtml;
 
-	// Row 1: Difficulty & Type
+	// Row 1
 	const diffEl = document.getElementById('det-difficulty');
 	diffEl.textContent = data.difficulty;
 	diffEl.className = `fw-bold diff-${data.difficulty}`;
@@ -176,7 +174,7 @@ function populateSidePanel(data) {
 	categoryEl.textContent = categoryTitle;
 	categoryEl.className = `fw-bold badge bg-dark border border-secondary ${getCategoryColor(categoryTitle)}`;
 
-	// Row 2: Likes, Dislikes, Like Rate
+	// Row 2
 	const likes = data.stats?.likes || 0;
 	const dislikes = data.stats?.dislikes || 0;
 	document.getElementById('det-likes').textContent = likes;
@@ -189,13 +187,31 @@ function populateSidePanel(data) {
 	likeRateEl.className = `fw-bold ${totalVotes === 0 ? 'text-secondary' : getRateColor(likeRate)}`;
 
 	// Row 3: Accepted, Submissions, Acceptance Rate
-	document.getElementById('det-accepted').textContent = data.stats?.totalAccepted || '0';
-	document.getElementById('det-submissions').textContent = data.stats?.totalSubmission || '0';
+	const acceptedEl = document.getElementById('det-accepted');
+	acceptedEl.textContent = data.stats?.totalAccepted || '0';
+	acceptedEl.title = `Accepted: ${Number(data.stats?.totalAcceptedRaw || 0).toLocaleString('en-US')}`;
+	acceptedEl.style.cursor = 'help';
+
+	const submissionsEl = document.getElementById('det-submissions');
+	submissionsEl.textContent = data.stats?.totalSubmission || '0';
+	submissionsEl.title = `Submissions: ${Number(data.stats?.totalSubmissionRaw || 0).toLocaleString('en-US')}`;
+	submissionsEl.style.cursor = 'help';
 
 	const acRateRaw = data.stats?.acRateRaw || 0;
 	const acRateEl = document.getElementById('det-ac');
 	acRateEl.textContent = `${acRateRaw.toFixed(2)}%`;
 	acRateEl.className = `fw-bold ${getRateColor(acRateRaw)}`;
+
+	// Row 4 (Solutions)
+	const hasSol = data.meta?.hasSolution || false;
+	const solEl = document.getElementById('det-has-solution');
+	solEl.textContent = hasSol ? 'Yes' : 'No';
+	solEl.className = `fw-bold ${hasSol ? 'text-primary' : 'text-secondary'}`;
+
+	const hasVid = data.meta?.hasVideoSolution || false;
+	const vidEl = document.getElementById('det-has-video');
+	vidEl.textContent = hasVid ? 'Yes' : 'No';
+	vidEl.className = `fw-bold ${hasVid ? 'text-primary' : 'text-secondary'}`;
 
 	// Topic Tags
 	const tagsContainer = document.getElementById('det-tags');
@@ -204,6 +220,7 @@ function populateSidePanel(data) {
 	).join('') || '<span class="text-muted">None</span>';
 }
 
+// --- Node Creation with Lock ---
 function createNode(prob, startX, startY, endX, endY, isRoot) {
 	const el = document.createElement('div');
 	el.className = `node-card border-${prob.difficulty} diff-${prob.difficulty} ${isRoot ? 'node-root' : ''}`;
@@ -214,16 +231,18 @@ function createNode(prob, startX, startY, endX, endY, isRoot) {
 	const titleText = isRoot ? `${prob.title} (Double-click to open)` : prob.title;
 	el.setAttribute('data-title', titleText);
 
-	// Add Yellow Star for Premium Problems moved strictly outside the boundary
+	// Add Lock for Premium Problems
 	if (prob.isPaidOnly) {
-		const star = document.createElement('div');
-		star.innerHTML = '★';
-		star.className = 'position-absolute text-warning';
-		star.style.top = '-12px';
-		star.style.right = '-12px';
-		star.style.fontSize = '15px';
-		star.style.pointerEvents = 'none'; // Prevent star from blocking hover/click events
-		el.appendChild(star);
+		const lock = document.createElement('div');
+		lock.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+            </svg>`;
+		lock.className = 'position-absolute text-warning bg-dark rounded-circle d-flex align-items-center justify-content-center p-1';
+		lock.style.top = '-10px';
+		lock.style.right = '-10px';
+		lock.style.pointerEvents = 'none';
+		el.appendChild(lock);
 	}
 
 	el.addEventListener('click', () => {
