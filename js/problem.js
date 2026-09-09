@@ -252,7 +252,18 @@ function populateUI(data, allProblems) {
 	}
 
 	// Main Description Content
-	document.getElementById('prob-content').innerHTML = data.content || '<p>No description available.</p>';
+	const probContentEl = document.getElementById('prob-content');
+	if (data.isPaidOnly) {
+		probContentEl.innerHTML = `
+            <p class="text-secondary fw-semibold mt-3 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-exclamation-triangle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                Paid problem description is not offered.
+            </p>`;
+	} else {
+		probContentEl.innerHTML = data.content || '<p>No description available.</p>';
+	}
 
 	// Topic Tags
 	const tagsContainer = document.getElementById('prob-tags');
@@ -350,6 +361,7 @@ function formatLanguageName(lang) {
 function populateEditorToolbar() {
 	const langSelect = document.getElementById('lang-select');
 	const versionSelect = document.getElementById('version-select');
+	const themeSelect = document.getElementById('theme-select'); // Target the theme dropdown
 
 	if (currentProblemSolvedStats && currentProblemSolvedStats.counter) {
 		const languages = Object.keys(currentProblemSolvedStats.counter);
@@ -372,12 +384,14 @@ function populateEditorToolbar() {
 			versionSelect.innerHTML = '<option value="">-</option>';
 			langSelect.disabled = true;
 			versionSelect.disabled = true;
+			if (themeSelect) themeSelect.disabled = true;
 		}
 	} else {
 		langSelect.innerHTML = '<option value="">-</option>';
 		versionSelect.innerHTML = '<option value="">-</option>';
 		langSelect.disabled = true;
 		versionSelect.disabled = true;
+		if (themeSelect) themeSelect.disabled = true;
 	}
 
 	// Event listeners trigger code fetch
@@ -464,19 +478,37 @@ async function fetchAndDisplayCode() {
 	const version = document.getElementById('version-select').value;
 	const container = document.getElementById('code-editor-container');
 	const complexityBlock = document.getElementById('complexity-block');
+	const themeSelect = document.getElementById('theme-select');
 
 	if (!container) return;
 
 	const fallbackMsg = "Solution not found. Keep tuned for future release";
+	const paidMsg = "Paid problem solution is unavailable.";
 
-	// Hide complexity block initially while loading or if no selection
+	// Hide complexity block initially
 	if (complexityBlock) {
 		complexityBlock.classList.remove('d-flex');
 		complexityBlock.classList.add('d-none');
 	}
 
+	// Check for paid problem first
+	if (currentProblemMasterData && currentProblemMasterData.isPaidOnly) {
+		currentRawCode = '';
+		if (themeSelect) themeSelect.disabled = true;
+		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-warning text-center p-4">
+            <h5 class="mb-0 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-exclamation-triangle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                ${paidMsg}
+            </h5>
+        </div>`;
+		return;
+	}
+
 	if (!lang || !version) {
 		currentRawCode = '';
+		if (themeSelect) themeSelect.disabled = true;
 		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-secondary text-center p-4">
             <h5 class="mb-0">${fallbackMsg}</h5>
         </div>`;
@@ -495,6 +527,7 @@ async function fetchAndDisplayCode() {
 
 		const codeText = await response.text();
 		currentRawCode = codeText;
+		if (themeSelect) themeSelect.disabled = false; // Enable theme selector on success
 
 		// --- Complexity Extraction Regex ---
 		// Safely handles nested parentheses like O(n*log(n)) or O(V+E)
@@ -504,32 +537,27 @@ async function fetchAndDisplayCode() {
 		const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
 
 		if (complexityBlock) {
-			// Wrap the extracted string in $ delimiters for MathJax, or default to N/A
 			const tcText = tcMatch ? `$${tcMatch[1]}$` : 'N/A';
 			const scText = scMatch ? `$${scMatch[1]}$` : 'N/A';
 
-			// Build the block content with Bootstrap success (green) text and no icon
 			complexityBlock.innerHTML = `
                 <span class="text-secondary">T.C: <span class="text-success fw-bold">${tcText}</span></span>
                 <div class="vr text-secondary mx-1"></div>
                 <span class="text-secondary">S.C: <span class="text-success fw-bold">${scText}</span></span>
             `;
 
-			// Apply the warning tooltip and cursor directly to the entire block
 			complexityBlock.title = "Complexity metrics are auto-extracted from code comments and may contain inaccuracies. Please verify manually.";
 			complexityBlock.style.cursor = "pointer";
 
 			complexityBlock.classList.remove('d-none');
 			complexityBlock.classList.add('d-flex');
 
-			// Tell MathJax to process the newly injected LaTeX in this specific block
 			if (window.MathJax && window.MathJax.typesetPromise) {
 				MathJax.typesetPromise([complexityBlock]).catch((err) => console.error('MathJax rendering failed:', err));
 			}
 		}
 		// -----------------------------------
 
-		// Escape HTML to prevent injection and rendering issues
 		const escapedCode = codeText.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 		let hljsLang = lang.toLowerCase();
@@ -543,7 +571,6 @@ async function fetchAndDisplayCode() {
 			const codeBlock = container.querySelector('code');
 			hljs.highlightElement(codeBlock);
 
-			// Initialize line numbers after highlighting
 			if (window.hljs.lineNumbersBlock) {
 				hljs.lineNumbersBlock(codeBlock);
 			}
@@ -551,8 +578,8 @@ async function fetchAndDisplayCode() {
 
 	} catch (error) {
 		currentRawCode = '';
+		if (themeSelect) themeSelect.disabled = true; // Disable theme on failure
 
-		// Ensure complexity block remains hidden if code is not found
 		if (complexityBlock) {
 			complexityBlock.classList.remove('d-flex');
 			complexityBlock.classList.add('d-none');

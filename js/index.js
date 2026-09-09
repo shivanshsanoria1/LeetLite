@@ -51,6 +51,7 @@ async function loadProblems() {
 		currentProblems = [...allProblems];
 
 		populateTagDropdown();
+		populateCategoryDropdown();
 		loadSettings();
 		applyFilters();
 
@@ -216,6 +217,31 @@ function updatePaginationUI(totalPages) {
 	btnLast.disabled = currentPage === totalPages;
 }
 
+// --- Category Dropdown Setup ---
+function populateCategoryDropdown() {
+	const categorySet = new Set();
+
+	// Extract unique categories, ignoring empty or null values
+	allProblems.forEach(p => {
+		if (p.categoryTitle && p.categoryTitle.trim() !== '') {
+			categorySet.add(p.categoryTitle);
+		}
+	});
+
+	// Alphabetize the categories
+	const sortedCategories = Array.from(categorySet).sort();
+
+	// Preserve the default "All Categories" option, then append dynamic options
+	categoryFilter.innerHTML = '<option value="All">All Categories</option>';
+
+	sortedCategories.forEach(cat => {
+		const option = document.createElement('option');
+		option.value = cat;
+		option.textContent = cat;
+		categoryFilter.appendChild(option);
+	});
+}
+
 function renderTable() {
 	tableBody.innerHTML = '';
 
@@ -240,7 +266,14 @@ function renderTable() {
 		const likeRateClass = totalVotes === 0 ? "text-secondary" : getRateColor(likeRate);
 
 		const acRate = p.stats.acRateRaw || 0;
-		const star = p.isPaidOnly ? `<span class="paid-star" title="Premium Problem">★</span>` : '';
+
+		// Replace the star with a Bootstrap lock SVG for premium problems
+		const premiumLock = p.isPaidOnly ? `
+            <span class="text-warning ms-1 align-middle" title="Premium Problem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                </svg>
+            </span>` : '';
 
 		const tags = p.topicTags || [];
 		const tagsHTML = tags.map(t => `<span class="badge tag-badge">${t.name}</span>`).join('');
@@ -254,7 +287,7 @@ function renderTable() {
             <td>
                 <a href="problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
                     ${p.title}
-                </a>${star}
+                </a>${premiumLock}
             </td>
             <td class="${getDifficultyColor(p.difficulty)}">${p.difficulty}</td>
             <td class="${likeRateClass}">${likeRateDisplay}</td>
