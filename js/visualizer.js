@@ -1,5 +1,5 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/lc-problem-list.json';
+const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
 
 let problemMap = new Map();
 let currentRootId = null;
@@ -160,8 +160,8 @@ function populateSidePanel(data) {
 	document.getElementById('det-title-link').href = `problem.html?quesId=${data.quesId}`;
 
 	let titleHtml = data.title;
-	if (data.LAST_UPDATED_ISO) {
-		const d = new Date(data.LAST_UPDATED_ISO);
+	if (data.LC_SYNC_ISO) {
+		const d = new Date(data.LC_SYNC_ISO);
 
 		const day = String(d.getUTCDate()).padStart(2, '0');
 		const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

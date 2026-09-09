@@ -126,3 +126,26 @@
 .problem-description .example-block .example-io {
     color: #e0e0e0;
 }
+
+/* Highlight.js Line Numbers Styling */
+.hljs-ln td {
+    padding: 0;
+}
+
+.hljs-ln-numbers {
+    text-align: right;
+    color: #6c757d; 
+    border-right: 1px solid #495057; 
+    padding-right: 8px !important; /* Reduced from 12px */
+    user-select: none; 
+    width: 30px !important; /* Reduced from 40px */
+    vertical-align: top;
+}
+
+.hljs-ln-code {
+    padding-left: 8px !important; /* Reduced from 16px */
+}
+
+.hljs-copy-button {
+    z-index: 10;
+}

@@ -7,6 +7,9 @@ const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
 const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
 
+const THEME_STORAGE_KEY = 'leetcode_lite_hljs_theme';
+const DEFAULT_THEME = 'monokai';
+
 // Initialize Highlight.js Copy Plugin Safely
 if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 	hljs.addPlugin(new CopyButtonPlugin());
@@ -163,15 +166,21 @@ function populateUI(data, allProblems) {
 	// Header & Meta 
 	document.getElementById('prob-id').textContent = data.quesId;
 
-	const star = data.isPaidOnly ? `<span class="text-warning ms-2" title="Premium">★</span>` : '';
+	// Replace the star with a Bootstrap lock SVG for premium problems
+	const premiumLock = data.isPaidOnly ? `
+        <span class="text-warning ms-2 align-middle" title="Premium Problem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+            </svg>
+        </span>` : '';
 
 	// Construct the official LeetCode URL using the titleSlug
 	const lcProblemUrl = LC_PROBLEM_BASE_URL + `/${data.titleSlug}/description/`;
 
-	// Format the sync time for the tooltip in dd-mmm-yyyy hh:mm:ss (UTC)
+	// Format the sync time using the updated LC_SYNC_ISO key
 	let titleHtml = data.title;
-	if (data.LAST_UPDATED_ISO) {
-		const d = new Date(data.LAST_UPDATED_ISO);
+	if (data.LC_SYNC_ISO) {
+		const d = new Date(data.LC_SYNC_ISO);
 
 		const day = String(d.getUTCDate()).padStart(2, '0');
 		const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -203,8 +212,8 @@ function populateUI(data, allProblems) {
             </svg>
         </a>`;
 
-	// Append the formatted title, star (if paid), and the external link
-	document.getElementById('prob-title').innerHTML = `${titleHtml} ${star} ${extLink}`;
+	// Append the formatted title, lock (if paid), and the external link
+	document.getElementById('prob-title').innerHTML = `${titleHtml} ${premiumLock} ${extLink}`;
 
 	// --- Row 1: Difficulty, Likes, Dislikes, Like Rate ---
 	const diffEl = document.getElementById('prob-difficulty');
@@ -216,7 +225,6 @@ function populateUI(data, allProblems) {
 	document.getElementById('prob-likes').textContent = likes;
 	document.getElementById('prob-dislikes').textContent = dislikes;
 
-	// Like Rate Calculation with Traffic Light Colors
 	const totalVotes = likes + dislikes;
 	const likeRate = totalVotes === 0 ? 0 : (likes / totalVotes) * 100;
 	const likeRateDisplay = totalVotes === 0 ? "NA" : `${likeRate.toFixed(2)}%`;
@@ -226,23 +234,22 @@ function populateUI(data, allProblems) {
 		likeRateElement.className = `fw-bold ${totalVotes === 0 ? 'text-secondary' : getRateColor(likeRate)}`;
 	}
 
-	// --- Row 2: Accepted, Submissions, Acceptance Rate, Category ---
+	// --- Row 2: Category, Accepted, Submissions, Acceptance Rate ---
+	const categoryEl = document.getElementById('prob-category');
+	const categoryTitle = data.categoryTitle || 'Unknown';
+	categoryEl.textContent = categoryTitle;
+	// Apply dynamic text color based on category, removing the old ms-2 offset
+	categoryEl.className = `badge bg-dark border border-secondary ${getCategoryColor(categoryTitle)}`;
+
 	document.getElementById('prob-accepted').textContent = data.stats?.totalAccepted || '0';
 	document.getElementById('prob-submissions').textContent = data.stats?.totalSubmission || '0';
 
-	// Acceptance Rate with Traffic Light Colors
 	const acRateRaw = data.stats?.acRateRaw || 0;
 	const acRateElement = document.getElementById('prob-ac');
 	if (acRateElement) {
 		acRateElement.textContent = `${acRateRaw.toFixed(2)}%`;
 		acRateElement.className = `fw-bold ${getRateColor(acRateRaw)}`;
 	}
-
-	const categoryEl = document.getElementById('prob-category');
-	const categoryTitle = data.categoryTitle || 'Unknown';
-	categoryEl.textContent = categoryTitle;
-	// Replace solid grey bg with dark bg and apply the dynamic text color
-	categoryEl.className = `badge bg-dark border border-secondary ms-2 ${getCategoryColor(categoryTitle)}`;
 
 	// Main Description Content
 	document.getElementById('prob-content').innerHTML = data.content || '<p>No description available.</p>';
@@ -278,7 +285,7 @@ function populateUI(data, allProblems) {
 		solutionWrapper.style.display = 'none';
 	}
 
-	// Similar Questions - Mapped, Sorted, and rendered as an Ordered List with Stars
+	// Similar Questions - Mapped, Sorted, and rendered as an Ordered List
 	const similarContainer = document.getElementById('prob-similar-list');
 
 	// Safely check for the new array
@@ -294,11 +301,18 @@ function populateUI(data, allProblems) {
 		if (mappedSimilarProbs.length > 0) {
 			similarContainer.innerHTML = `<ul class="list-unstyled mb-0 d-flex flex-column gap-2">` +
 				mappedSimilarProbs.map(p => {
-					const simStar = p.isPaidOnly ? `<span class="text-warning ms-1" title="Premium Problem">★</span>` : '';
+					// Replace the star with the Bootstrap lock SVG for premium problems
+					const simLock = p.isPaidOnly ? `
+                        <span class="text-warning ms-1 align-middle" title="Premium Problem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                            </svg>
+                        </span>` : '';
+
 					return `
                     <li>
                         <a href="problem.html?quesId=${p.quesId}" class="text-decoration-none text-light fw-semibold hover-primary">
-                            ${p.quesId}. ${p.title} ${simStar}
+                            ${p.quesId}. ${p.title} ${simLock}
                         </a>
                     </li>
                 `}).join('') +
@@ -311,6 +325,27 @@ function populateUI(data, allProblems) {
 	}
 }
 
+function formatLanguageName(lang) {
+	const map = {
+		'cpp': 'C++',
+		'js': 'Javascript',
+		'javascript': 'Javascript',
+		'ts': 'TypeScript',
+		'typescript': 'TypeScript',
+		'mysql': 'MySQL',
+		'python': 'Python',
+		'python3': 'Python 3',
+		'java': 'Java',
+		'csharp': 'C#',
+		'ruby': 'Ruby',
+		'swift': 'Swift',
+		'golang': 'Go',
+		'rust': 'Rust',
+		'php': 'PHP'
+	};
+	return map[lang.toLowerCase()] || lang; // Fallback to raw string if not in map
+}
+
 // --- 4. Right Pane Editor Logic ---
 function populateEditorToolbar() {
 	const langSelect = document.getElementById('lang-select');
@@ -320,7 +355,7 @@ function populateEditorToolbar() {
 		const languages = Object.keys(currentProblemSolvedStats.counter);
 
 		if (languages.length > 0) {
-			langSelect.innerHTML = languages.map(lang => `<option value="${lang}">${lang}</option>`).join('');
+			langSelect.innerHTML = languages.map(lang => `<option value="${lang}">${formatLanguageName(lang)}</option>`).join('');
 
 			// Apply default language logic
 			const expectedDefaultLang = getDefaultLanguageForType(currentProblemSolvedStats.type);
@@ -505,7 +540,13 @@ async function fetchAndDisplayCode() {
 		container.innerHTML = `<pre class="m-0 h-100"><code class="language-${hljsLang} h-100" style="border-radius: 0; font-family: monospace; font-size: 14px;">${escapedCode}</code></pre>`;
 
 		if (window.hljs) {
-			hljs.highlightElement(container.querySelector('code'));
+			const codeBlock = container.querySelector('code');
+			hljs.highlightElement(codeBlock);
+
+			// Initialize line numbers after highlighting
+			if (window.hljs.lineNumbersBlock) {
+				hljs.lineNumbersBlock(codeBlock);
+			}
 		}
 
 	} catch (error) {
@@ -545,6 +586,9 @@ if (resetEditorBtn) {
 			populateVersions(langSelect.value);
 			fetchAndDisplayCode();
 		}
+
+		// Reset Theme to default
+		applyTheme(DEFAULT_THEME);
 	});
 }
 
@@ -554,9 +598,6 @@ function showError(msg) {
 	wrapper.style.display = 'block';
 	wrapper.innerHTML = `<div class="alert alert-danger border-danger bg-dark text-danger">${msg}</div>`;
 }
-
-// Initialize
-loadProblem();
 
 function getCategoryColor(category) {
 	if (!category) return 'text-secondary';
@@ -587,3 +628,32 @@ async function loadSolutionCode(solutionUrl) {
 		codeViewer.textContent = 'solution not available currently';
 	}
 }
+
+// --- Theme Selector Logic ---
+const themeSelect = document.getElementById('theme-select');
+const themeLink = document.getElementById('hljs-theme-link');
+
+function applyTheme(themeName) {
+	if (themeLink) {
+		themeLink.href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/${themeName}.min.css`;
+	}
+	if (themeSelect) {
+		themeSelect.value = themeName;
+	}
+	localStorage.setItem(THEME_STORAGE_KEY, themeName);
+}
+
+function initTheme() {
+	const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || DEFAULT_THEME;
+	applyTheme(savedTheme);
+}
+
+if (themeSelect) {
+	themeSelect.addEventListener('change', (e) => {
+		applyTheme(e.target.value);
+	});
+}
+
+// Initialize
+initTheme();
+loadProblem();
