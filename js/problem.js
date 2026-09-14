@@ -485,13 +485,30 @@ async function fetchAndDisplayCode() {
 	const fallbackMsg = "Solution not found. Keep tuned for future release";
 	const paidMsg = "Paid problem solution is unavailable.";
 
-	// Hide complexity block initially
+	const isAlgorithm = currentProblemMasterData && currentProblemMasterData.categoryTitle === 'Algorithms';
+
+	// 1. Initialize Complexity Block Visibility & Default State
 	if (complexityBlock) {
-		complexityBlock.classList.remove('d-flex');
-		complexityBlock.classList.add('d-none');
+		if (isAlgorithm) {
+			// Show for all algorithm problems with a default N/A state
+			complexityBlock.innerHTML = `
+                <span class="text-secondary">T.C: <span class="text-success fw-bold">N/A</span></span>
+                <div class="vr text-secondary mx-1"></div>
+                <span class="text-secondary">S.C: <span class="text-success fw-bold">N/A</span></span>
+            `;
+			complexityBlock.title = "Complexity metrics are auto-extracted from code comments and may contain inaccuracies. Please verify manually.";
+			complexityBlock.style.cursor = "pointer";
+
+			complexityBlock.classList.remove('d-none');
+			complexityBlock.classList.add('d-flex');
+		} else {
+			// Strictly hide for Database, Shell, Concurrency, etc.
+			complexityBlock.classList.remove('d-flex');
+			complexityBlock.classList.add('d-none');
+		}
 	}
 
-	// Check for paid problem first
+	// 2. Check for paid problem
 	if (currentProblemMasterData && currentProblemMasterData.isPaidOnly) {
 		currentRawCode = '';
 		if (themeSelect) themeSelect.disabled = true;
@@ -529,14 +546,14 @@ async function fetchAndDisplayCode() {
 		currentRawCode = codeText;
 		if (themeSelect) themeSelect.disabled = false; // Enable theme selector on success
 
-		// --- Complexity Extraction Regex ---
-		// Safely handles nested parentheses like O(n*log(n)) or O(V+E)
-		const regexPattern = /=\s*(O\((?:[^()]+|\([^()]+\))*\))/i;
+		// --- 3. Complexity Extraction Regex ---
+		if (complexityBlock && isAlgorithm) {
+			// Safely handles nested parentheses like O(n*log(n)) or O(V+E)
+			const regexPattern = /=\s*(O\((?:[^()]+|\([^()]+\))*\))/i;
 
-		const tcMatch = codeText.match(new RegExp(`T\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
-		const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
+			const tcMatch = codeText.match(new RegExp(`T\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
+			const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
 
-		if (complexityBlock) {
 			const tcText = tcMatch ? `$${tcMatch[1]}$` : 'N/A';
 			const scText = scMatch ? `$${scMatch[1]}$` : 'N/A';
 
@@ -545,12 +562,6 @@ async function fetchAndDisplayCode() {
                 <div class="vr text-secondary mx-1"></div>
                 <span class="text-secondary">S.C: <span class="text-success fw-bold">${scText}</span></span>
             `;
-
-			complexityBlock.title = "Complexity metrics are auto-extracted from code comments and may contain inaccuracies. Please verify manually.";
-			complexityBlock.style.cursor = "pointer";
-
-			complexityBlock.classList.remove('d-none');
-			complexityBlock.classList.add('d-flex');
 
 			if (window.MathJax && window.MathJax.typesetPromise) {
 				MathJax.typesetPromise([complexityBlock]).catch((err) => console.error('MathJax rendering failed:', err));
@@ -579,11 +590,6 @@ async function fetchAndDisplayCode() {
 	} catch (error) {
 		currentRawCode = '';
 		if (themeSelect) themeSelect.disabled = true; // Disable theme on failure
-
-		if (complexityBlock) {
-			complexityBlock.classList.remove('d-flex');
-			complexityBlock.classList.add('d-none');
-		}
 
 		const errorMsg = error.message === fallbackMsg ? error.message : fallbackMsg;
 
