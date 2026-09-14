@@ -88,7 +88,6 @@ function renderGraph(rootId, isExplicitSearch = false) {
 	const rootData = problemMap.get(Number(rootId));
 
 	if (!rootData) {
-		// Reset the error text to the default before displaying
 		errorMsg.textContent = "Problem not found.";
 		errorMsg.classList.remove('d-none');
 
@@ -100,13 +99,11 @@ function renderGraph(rootId, isExplicitSearch = false) {
 		return;
 	}
 
-	// If successful, clear error state
 	if (errorTimeout) clearTimeout(errorTimeout);
 	errorMsg.classList.add('d-none');
 
 	currentRootId = rootId;
 
-	// Save to sessionStorage ONLY if triggered via the search bar
 	if (isExplicitSearch) {
 		sessionStorage.setItem('vis_last_root', rootId);
 	}
@@ -120,20 +117,42 @@ function renderGraph(rootId, isExplicitSearch = false) {
 	const height = viewport.clientHeight;
 	const centerX = width / 2;
 	const centerY = height / 2;
-	const radius = Math.min(centerX, centerY) * 0.55;
+
+	// Base radius (R)
+	const baseRadius = Math.min(centerX, centerY) * 0.40;
 
 	createNode(rootData, centerX, centerY, centerX, centerY, true);
 
+	// Limit to 24 maximum similar problems
 	const neighbours = (rootData.similarQuesIds || [])
 		.map(id => problemMap.get(Number(id)))
-		.filter(p => p !== undefined);
+		.filter(p => p !== undefined)
+		.slice(0, 24);
 
 	const total = neighbours.length;
+	const innerCount = Math.min(12, total); // Up to 12 nodes in the inner ring
 
 	neighbours.forEach((prob, i) => {
-		const angle = (i * 2 * Math.PI) / total - (Math.PI / 2);
-		const nodeX = centerX + radius * Math.cos(angle);
-		const nodeY = centerY + radius * Math.sin(angle);
+		let angle, currentRadius;
+
+		if (i < innerCount) {
+			// Inner Ring: Spread equally based on the actual number of inner nodes
+			const angleStep = (2 * Math.PI) / innerCount;
+			angle = (i * angleStep) - (Math.PI / 2);
+			currentRadius = baseRadius * 1.0;
+		} else {
+			// Outer Ring: Only exists if inner is full (12 slots).
+			// Start filling at the 0th gap (between 12 and 1 o'clock) sequentially.
+			const outerIndex = i - innerCount;
+			const angleStep = (2 * Math.PI) / 12; // Fixed 12-slot geometry
+
+			// Apply 50% phase shift to perfectly bisect the inner ring gaps
+			angle = (outerIndex * angleStep) + (angleStep / 2) - (Math.PI / 2);
+			currentRadius = baseRadius * 1.5;
+		}
+
+		const nodeX = centerX + currentRadius * Math.cos(angle);
+		const nodeY = centerY + currentRadius * Math.sin(angle);
 
 		const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
 		line.setAttribute('x1', centerX);
