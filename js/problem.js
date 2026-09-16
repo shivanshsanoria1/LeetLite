@@ -1,6 +1,7 @@
 // --- 1. Constants & State ---
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
 const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
@@ -17,6 +18,12 @@ if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 
 let currentProblemSolvedStats = null;
 let currentProblemMasterData = null; // Stores global problem metadata for URL generation
+const topicTagMap = new Map(); // New map to store tag colors and order
+
+// Initialize Highlight.js Copy Plugin Safely
+if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
+	hljs.addPlugin(new CopyButtonPlugin());
+}
 
 // Elements
 const codeViewer = document.getElementById('codeViewer');
@@ -74,10 +81,22 @@ async function loadProblem() {
 	const quesId = Number(quesIdParam);
 
 	try {
-		// Step 1: Fetch master list
-		const listResponse = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
+		// Step 1: Fetch master list & topic tags concurrently
+		const [listResponse, tagsResponse] = await Promise.all([
+			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
+			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+		]);
+
 		if (!listResponse.ok) throw new Error("Failed to load master problem list.");
+		if (!tagsResponse.ok) throw new Error("Failed to load topic tags list.");
+
 		const allProblems = await listResponse.json();
+		const masterTagsList = await tagsResponse.json();
+
+		// Map the tags for O(1) lookup of color and sorting order
+		masterTagsList.forEach((tag, index) => {
+			topicTagMap.set(tag.slug, { ...tag, order: index });
+		});
 
 		currentProblemMasterData = allProblems.find(p => p.quesId === quesId);
 		if (!currentProblemMasterData) throw new Error(`Problem ID ${quesId} not found.`);
@@ -267,9 +286,24 @@ function populateUI(data, allProblems) {
 
 	// Topic Tags
 	const tagsContainer = document.getElementById('prob-tags');
-	tagsContainer.innerHTML = (data.topicTags || []).map(t =>
-		`<span class="badge bg-secondary opacity-75">${t.name}</span>`
-	).join('') || '<span class="text-muted">None</span>';
+	const tags = data.topicTags || [];
+
+	if (tags.length > 0) {
+		// Sort tags using the exact order index from the backend master list
+		tags.sort((a, b) => {
+			const orderA = topicTagMap.has(a.slug) ? topicTagMap.get(a.slug).order : 9999;
+			const orderB = topicTagMap.has(b.slug) ? topicTagMap.get(b.slug).order : 9999;
+			return orderA - orderB;
+		});
+
+		// Build HTML using the custom color
+		tagsContainer.innerHTML = tags.map(t => {
+			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#6c757d'; // Fallback to Bootstrap secondary
+			return `<span class="badge" style="background-color: ${tagColor} !important; color: #fff; font-weight: 500; font-size: 0.85em;">${t.name}</span>`;
+		}).join('');
+	} else {
+		tagsContainer.innerHTML = '<span class="text-muted">None</span>';
+	}
 
 	// Hints
 	const hintsContainer = document.getElementById('hintsAccordion');

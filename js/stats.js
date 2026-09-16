@@ -1,15 +1,19 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
 const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
 const PATH_LC_SOLVED_PROBLEM_LIST = '/util/web/generated/json-min/lc-solved-problems-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json'; // New Path
 
 let officialChartInstance = null;
 let solvedChartInstance = null;
 let tagsBarChartInstance = null;
 
+// Removed "tags" from statsData since we fetch them directly now
 const statsData = {
-	official: { difficulty: { Easy: 0, Medium: 0, Hard: 0 }, category: {}, tags: {}, total: 0 },
+	official: { difficulty: { Easy: 0, Medium: 0, Hard: 0 }, category: {}, total: 0 },
 	solved: { difficulty: { Easy: 0, Medium: 0, Hard: 0 }, category: {}, total: 0 }
 };
+
+let masterTagsList = []; // Stores the raw pre-sorted, pre-colored array from backend
 
 const colorPalettes = {
 	difficulty: {
@@ -30,15 +34,20 @@ const colorPalettes = {
 
 async function loadStats() {
 	try {
-		const [masterRes, solvedRes] = await Promise.all([
+		// Fetch all three JSON files concurrently
+		const [masterRes, solvedRes, tagsRes] = await Promise.all([
 			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
-			fetch(GITHUB_LCS_URL + PATH_LC_SOLVED_PROBLEM_LIST)
+			fetch(GITHUB_LCS_URL + PATH_LC_SOLVED_PROBLEM_LIST),
+			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
 		]);
 
-		if (!masterRes.ok || !solvedRes.ok) throw new Error("Failed to load problem lists.");
+		if (!masterRes.ok || !solvedRes.ok || !tagsRes.ok) throw new Error("Failed to load problem or tag lists.");
 
 		const masterProblems = await masterRes.json();
 		const solvedProblems = await solvedRes.json();
+
+		// Save the pre-formatted backend tags list globally
+		masterTagsList = await tagsRes.json();
 
 		const diffMap = {};
 		const catMap = {};
@@ -55,15 +64,7 @@ async function loadStats() {
 			diffMap[p.quesId] = p.difficulty;
 			catMap[p.quesId] = cat;
 
-			// Processing for Tags Bar Chart
-			if (p.topicTags) {
-				p.topicTags.forEach(tag => {
-					if (!statsData.official.tags[tag.slug]) {
-						statsData.official.tags[tag.slug] = { count: 0, name: tag.name };
-					}
-					statsData.official.tags[tag.slug].count++;
-				});
-			}
+			// Note: Topic tags aggregation removed! Backend handles it now.
 		});
 
 		solvedProblems.forEach(p => {
@@ -117,13 +118,11 @@ function renderDashboard(type) {
 	const title = document.getElementById('chart-main-title');
 
 	if (type === 'tags') {
-		// Show Bar Chart, hide Doughnuts
 		doughnutWrapper.classList.add('d-none');
 		barWrapper.classList.remove('d-none');
 		title.textContent = 'Topic Tags Distribution';
 		renderBarChart();
 	} else {
-		// Show Doughnuts, hide Bar Chart
 		barWrapper.classList.add('d-none');
 		doughnutWrapper.classList.remove('d-none');
 		title.textContent = type === 'difficulty' ? 'Difficulty Distribution' : 'Problem Type Distribution';
@@ -159,7 +158,6 @@ function generateHTMLLegend(legendContainerId, dataPack) {
 function renderDoughnutChart(canvasId, chartInstance, dataPack) {
 	const ctx = document.getElementById(canvasId).getContext('2d');
 
-	// Check global references to destroy old instances safely
 	if (canvasId === 'officialChart' && officialChartInstance) officialChartInstance.destroy();
 	if (canvasId === 'solvedChart' && solvedChartInstance) solvedChartInstance.destroy();
 
@@ -204,134 +202,14 @@ function renderDoughnutChart(canvasId, chartInstance, dataPack) {
 	if (canvasId === 'solvedChart') solvedChartInstance = newChart;
 }
 
-function getFrequencyColorMap_highToLow(frequencies) {
-	const vibgyor = [
-		'#a371f7', // Violet (Highest frequency)
-		'#6610f2', // Indigo
-		'#0d6efd', // Blue
-		'#2cbb5d', // Green
-		'#ffc01e', // Yellow
-		'#fd7e14', // Orange
-		'#ef4743'  // Red (Lowest frequency)
-	];
-
-	// 1. Group by frequency to know how many tags share each exact count
-	const freqCounts = {};
-	let totalTags = 0;
-	frequencies.forEach(f => {
-		freqCounts[f] = (freqCounts[f] || 0) + 1;
-		totalTags++;
-	});
-
-	// 2. Sort unique frequencies in descending order
-	const uniqueFreqs = Object.keys(freqCounts).map(Number).sort((a, b) => b - a);
-
-	// 3. Allocate to 7 buckets roughly equally
-	const mapping = {};
-	let currentBucket = 0;
-	let currentItemsInBucket = 0;
-	let remainingTags = totalTags;
-	let remainingBuckets = vibgyor.length;
-
-	let targetPerBucket = remainingTags / remainingBuckets;
-
-	for (let i = 0; i < uniqueFreqs.length; i++) {
-		const freq = uniqueFreqs[i];
-		const count = freqCounts[freq];
-
-		// Assign the current frequency to the current color bucket
-		mapping[freq] = vibgyor[currentBucket];
-		currentItemsInBucket += count;
-
-		// If the bucket hits the target size (and we aren't on the last bucket), move to the next color
-		if (currentItemsInBucket >= targetPerBucket && currentBucket < vibgyor.length - 1) {
-			remainingTags -= currentItemsInBucket;
-			remainingBuckets--;
-			targetPerBucket = remainingTags / remainingBuckets; // Recalculate target for remaining buckets
-
-			currentBucket++;
-			currentItemsInBucket = 0;
-		}
-	}
-
-	return mapping;
-}
-
-function getFrequencyColorMap(frequencies) {
-	const vibgyor = [
-		'#a371f7', // Violet (Highest frequency)
-		'#6610f2', // Indigo
-		'#0d6efd', // Blue
-		'#2cbb5d', // Green
-		'#ffc01e', // Yellow
-		'#fd7e14', // Orange
-		'#ef4743'  // Red (Lowest frequency)
-	];
-
-	// 1. Group by frequency to know how many tags share each exact count
-	const freqCounts = {};
-	let totalTags = 0;
-	frequencies.forEach(f => {
-		freqCounts[f] = (freqCounts[f] || 0) + 1;
-		totalTags++;
-	});
-
-	// 2. Sort unique frequencies in ASCENDING order (lowest first)
-	const uniqueFreqs = Object.keys(freqCounts).map(Number).sort((a, b) => a - b);
-
-	// 3. Allocate to 7 buckets roughly equally
-	const mapping = {};
-
-	// Start from the end of the array (Red) since we are processing lowest frequencies first
-	let currentBucket = vibgyor.length - 1;
-	let currentItemsInBucket = 0;
-	let remainingTags = totalTags;
-	let remainingBuckets = vibgyor.length;
-
-	let targetPerBucket = remainingTags / remainingBuckets;
-
-	for (let i = 0; i < uniqueFreqs.length; i++) {
-		const freq = uniqueFreqs[i];
-		const count = freqCounts[freq];
-
-		// Assign the current frequency to the current color bucket
-		mapping[freq] = vibgyor[currentBucket];
-		currentItemsInBucket += count;
-
-		// If the bucket hits the target size (and we aren't on the last available bucket), move to the next color
-		if (currentItemsInBucket >= targetPerBucket && currentBucket > 0) {
-			remainingTags -= currentItemsInBucket;
-			remainingBuckets--;
-			targetPerBucket = remainingTags / remainingBuckets; // Recalculate target for remaining buckets
-
-			currentBucket--; // Move towards Violet
-			currentItemsInBucket = 0;
-		}
-	}
-
-	return mapping;
-}
-
 function renderBarChart() {
 	const scrollContainer = document.getElementById('bar-scroll-container');
 	const ctx = document.getElementById('tagsBarChart').getContext('2d');
 
-	// Sort by frequency (decreasing), tie-break by slug (increasing lexicographical)
-	const sortedSlugs = Object.keys(statsData.official.tags).sort((a, b) => {
-		const countDiff = statsData.official.tags[b].count - statsData.official.tags[a].count;
-		if (countDiff !== 0) return countDiff;
-		return a.localeCompare(b);
-	});
-
-	// Extract labels and counts
-	const labels = sortedSlugs.map(slug => statsData.official.tags[slug].name);
-	const dataCounts = sortedSlugs.map(slug => statsData.official.tags[slug].count);
-
-	// Get the dynamic color map based on the actual frequencies
-	const freqColorMap = getFrequencyColorMap(dataCounts);
-
-	// Apply the mapped color to each bar
-	const bgColors = dataCounts.map(count => freqColorMap[count]);
+	// Extract strictly from the master list fetched from the backend, keeping exact order
+	const labels = masterTagsList.map(tag => tag.name);
+	const dataCounts = masterTagsList.map(tag => tag.freq);
+	const bgColors = masterTagsList.map(tag => tag.color);
 
 	// Dynamically set container height to enable scrolling (approx 25px per bar)
 	const minHeight = labels.length * 25;
@@ -356,7 +234,7 @@ function renderBarChart() {
 		options: {
 			responsive: true,
 			maintainAspectRatio: false,
-			indexAxis: 'y',
+			indexAxis: 'y', // Horizontal
 			plugins: {
 				legend: { display: false },
 				tooltip: {

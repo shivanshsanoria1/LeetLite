@@ -1,5 +1,6 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
 const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
 
 // --- 1. State Management ---
 let allProblems = [];
@@ -11,8 +12,9 @@ const STORAGE_KEY = 'leetcode_lite_settings';
 let pageSize = 50;
 let currentPage = 1;
 let selectedTags = []; // Stores slugs
-let tagLogic = 'OR'; // Default logic state
-const tagDataMap = new Map(); // Maps slug -> { name, count }
+let tagLogic = 'OR';
+let masterTagsList = []; // Will store the raw array from backend
+const topicTagMap = new Map(); // Maps slug -> { name, color, order }
 
 // DOM Elements: Tag Dropdown
 const tagDropdownMenu = document.getElementById('tagDropdownMenu');
@@ -48,10 +50,22 @@ const pageInfo = document.getElementById('page-info');
 // --- 2. Data Fetching & Storage ---
 async function loadProblems() {
 	try {
-		const response = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
-		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+		// Fetch both JSON files concurrently
+		const [probRes, tagsRes] = await Promise.all([
+			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
+			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+		]);
 
-		allProblems = await response.json();
+		if (!probRes.ok || !tagsRes.ok) throw new Error(`HTTP error! status: ${probRes.status}`);
+
+		allProblems = await probRes.json();
+		masterTagsList = await tagsRes.json();
+
+		// Store tags in a Map to record their exact backend order and color for the table
+		masterTagsList.forEach((tag, index) => {
+			topicTagMap.set(tag.slug, { ...tag, order: index });
+		});
+
 		currentProblems = [...allProblems];
 
 		populateTagDropdown();
@@ -124,39 +138,19 @@ function loadSettings() {
 
 // --- 3. Tag Dropdown Setup ---
 function populateTagDropdown() {
-	// Extract unique tags and calculate frequencies
-	allProblems.forEach(p => {
-		if (p.topicTags) {
-			p.topicTags.forEach(t => {
-				if (t.slug && t.name) {
-					if (!tagDataMap.has(t.slug)) {
-						tagDataMap.set(t.slug, { name: t.name, count: 0 });
-					}
-					tagDataMap.get(t.slug).count++;
-				}
-			});
-		}
-	});
-
-	// Sort: Decreasing order of frequency, tie-break by slug lexicographically
-	const sortedTags = Array.from(tagDataMap.entries()).sort((a, b) => {
-		const countDiff = b[1].count - a[1].count;
-		if (countDiff !== 0) return countDiff;
-		return a[0].localeCompare(b[0]);
-	});
-
 	tagDropdownMenu.innerHTML = '';
 
-	sortedTags.forEach(([slug, data]) => {
+	// Directly iterate over the pre-sorted list from the backend
+	masterTagsList.forEach(tag => {
 		const li = document.createElement('li');
 		li.className = 'tag-item';
-		li.dataset.name = data.name.toLowerCase();
+		li.dataset.name = tag.name.toLowerCase();
 		li.innerHTML = `
             <div class="dropdown-item form-check ms-1 me-1 mb-0 rounded" style="padding-left: 2.2rem;">
-                <input class="form-check-input tag-checkbox" type="checkbox" value="${slug}" id="tag-${slug}">
-                <label class="form-check-label w-100 d-flex justify-content-between pe-2" for="tag-${slug}">
-                    <span class="text-truncate" style="max-width: 80%;">${data.name}</span>
-                    <span class="text-secondary small">(${data.count})</span>
+                <input class="form-check-input tag-checkbox" type="checkbox" value="${tag.slug}" id="tag-${tag.slug}">
+                <label class="form-check-label w-100 d-flex justify-content-between pe-2" for="tag-${tag.slug}">
+                    <span class="text-truncate" style="max-width: 80%;">${tag.name}</span>
+                    <span class="small fw-semibold" style="color: ${tag.color};">(${tag.freq})</span>
                 </label>
             </div>
         `;
@@ -195,7 +189,7 @@ function updateTagDropdownText() {
 	if (selectedTags.length === 0) {
 		tagDropdownText.textContent = 'Select Tags...';
 	} else if (selectedTags.length === 1) {
-		const tagData = tagDataMap.get(selectedTags[0]);
+		const tagData = topicTagMap.get(selectedTags[0]);
 		tagDropdownText.textContent = tagData ? tagData.name : selectedTags[0];
 	} else {
 		tagDropdownText.textContent = `${selectedTags.length} Tags Selected`;
@@ -317,14 +311,25 @@ function renderTable() {
 
 		const tags = p.topicTags || [];
 
-		// Show N/A if there are no topic tags
-		const tagsHTML = tags.length > 0
-			? tags.map(t => `<span class="badge tag-badge">${t.name}</span>`).join('')
-			: '<span class="text-muted fw-semibold">N/A</span>';
+		let tagsHTML = '<span class="text-muted fw-semibold">N/A</span>';
+		let tagsTitle = 'N/A';
 
-		const tagsTitle = tags.length > 0
-			? tags.map(t => t.name).join(', ')
-			: 'N/A';
+		if (tags.length > 0) {
+			// Sort tags using the exact order index from the backend master list
+			tags.sort((a, b) => {
+				const orderA = topicTagMap.has(a.slug) ? topicTagMap.get(a.slug).order : 9999;
+				const orderB = topicTagMap.has(b.slug) ? topicTagMap.get(b.slug).order : 9999;
+				return orderA - orderB;
+			});
+
+			// Build HTML using standard badge classes but overriding the background color dynamically
+			tagsHTML = tags.map(t => {
+				const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#343a40';
+				return `<span class="badge" style="background-color: ${tagColor} !important; border: 1px solid #495057; margin-right: 5px; font-weight: 400; color: #fff;">${t.name}</span>`;
+			}).join('');
+
+			tagsTitle = tags.map(t => t.name).join(', ');
+		}
 
 		const category = p.categoryTitle || '';
 
