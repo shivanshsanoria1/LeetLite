@@ -11,7 +11,15 @@ const STORAGE_KEY = 'leetcode_lite_settings';
 let pageSize = 50;
 let currentPage = 1;
 let selectedTags = []; // Stores slugs
-const tagMap = new Map();
+let tagLogic = 'OR'; // Default logic state
+const tagDataMap = new Map(); // Maps slug -> { name, count }
+
+// DOM Elements: Tag Dropdown
+const tagDropdownMenu = document.getElementById('tagDropdownMenu');
+const tagDropdownText = document.getElementById('tagDropdownText');
+const tagSearchInput = document.getElementById('tagSearchInput');
+const tagLogicToggle = document.getElementById('tagLogicToggle');
+const tagLogicLabel = document.getElementById('tagLogicLabel');
 
 // DOM Elements
 const tableBody = document.getElementById('tableBody');
@@ -21,10 +29,6 @@ const paidFilter = document.getElementById('paidFilter');
 const categoryFilter = document.getElementById('categoryFilter');
 const pageSizeSelect = document.getElementById('pageSizeSelect');
 const resetBtn = document.getElementById('resetBtn');
-
-// DOM Elements: Tag Dropdown
-const tagDropdownMenu = document.getElementById('tagDropdownMenu');
-const tagDropdownText = document.getElementById('tagDropdownText');
 
 // DOM Elements: Stats
 const statTotal = document.getElementById('stat-total');
@@ -68,6 +72,7 @@ function saveSettings() {
 		paid: paidFilter.value,
 		category: categoryFilter.value,
 		tags: selectedTags,
+		tagLogic: tagLogic, // Save the state
 		sort: currentSort,
 		page: currentPage,
 		pageSize: pageSize
@@ -102,6 +107,14 @@ function loadSettings() {
 					}
 				});
 			}
+			if (settings.tagLogic) {
+				tagLogic = settings.tagLogic;
+				tagLogicToggle.checked = (tagLogic === 'AND');
+				tagLogicLabel.textContent = tagLogic;
+				if (tagLogic === 'AND') {
+					tagLogicLabel.classList.replace('text-secondary', 'text-primary');
+				}
+			}
 
 		} catch (e) {
 			console.error("Failed to parse local settings", e);
@@ -111,32 +124,46 @@ function loadSettings() {
 
 // --- 3. Tag Dropdown Setup ---
 function populateTagDropdown() {
+	// Extract unique tags and calculate frequencies
 	allProblems.forEach(p => {
 		if (p.topicTags) {
 			p.topicTags.forEach(t => {
 				if (t.slug && t.name) {
-					tagMap.set(t.slug, t.name);
+					if (!tagDataMap.has(t.slug)) {
+						tagDataMap.set(t.slug, { name: t.name, count: 0 });
+					}
+					tagDataMap.get(t.slug).count++;
 				}
 			});
 		}
 	});
 
-	const sortedTags = Array.from(tagMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
+	// Sort: Decreasing order of frequency, tie-break by slug lexicographically
+	const sortedTags = Array.from(tagDataMap.entries()).sort((a, b) => {
+		const countDiff = b[1].count - a[1].count;
+		if (countDiff !== 0) return countDiff;
+		return a[0].localeCompare(b[0]);
+	});
+
 	tagDropdownMenu.innerHTML = '';
 
-	sortedTags.forEach(([slug, name]) => {
+	sortedTags.forEach(([slug, data]) => {
 		const li = document.createElement('li');
+		li.className = 'tag-item';
+		li.dataset.name = data.name.toLowerCase();
 		li.innerHTML = `
-            <div class="dropdown-item form-check ms-3 me-3 mb-0">
+            <div class="dropdown-item form-check ms-1 me-1 mb-0 rounded" style="padding-left: 2.2rem;">
                 <input class="form-check-input tag-checkbox" type="checkbox" value="${slug}" id="tag-${slug}">
-                <label class="form-check-label w-100" for="tag-${slug}">
-                    ${name}
+                <label class="form-check-label w-100 d-flex justify-content-between pe-2" for="tag-${slug}">
+                    <span class="text-truncate" style="max-width: 80%;">${data.name}</span>
+                    <span class="text-secondary small">(${data.count})</span>
                 </label>
             </div>
         `;
 		tagDropdownMenu.appendChild(li);
 	});
 
+	// Checkbox change listener
 	document.querySelectorAll('.tag-checkbox').forEach(cb => {
 		cb.addEventListener('change', (e) => {
 			if (e.target.checked) {
@@ -150,13 +177,26 @@ function populateTagDropdown() {
 			saveSettings();
 		});
 	});
+
+	// Search Input listener for real-time filtering
+	tagSearchInput.addEventListener('input', (e) => {
+		const term = e.target.value.toLowerCase();
+		document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => {
+			if (li.dataset.name.includes(term)) {
+				li.style.display = '';
+			} else {
+				li.style.display = 'none';
+			}
+		});
+	});
 }
 
 function updateTagDropdownText() {
 	if (selectedTags.length === 0) {
 		tagDropdownText.textContent = 'Select Tags...';
 	} else if (selectedTags.length === 1) {
-		tagDropdownText.textContent = tagMap.get(selectedTags[0]) || selectedTags[0];
+		const tagData = tagDataMap.get(selectedTags[0]);
+		tagDropdownText.textContent = tagData ? tagData.name : selectedTags[0];
 	} else {
 		tagDropdownText.textContent = `${selectedTags.length} Tags Selected`;
 	}
@@ -276,8 +316,15 @@ function renderTable() {
             </span>` : '';
 
 		const tags = p.topicTags || [];
-		const tagsHTML = tags.map(t => `<span class="badge tag-badge">${t.name}</span>`).join('');
-		const tagsTitle = tags.map(t => t.name).join(', ');
+
+		// Show N/A if there are no topic tags
+		const tagsHTML = tags.length > 0
+			? tags.map(t => `<span class="badge tag-badge">${t.name}</span>`).join('')
+			: '<span class="text-muted fw-semibold">N/A</span>';
+
+		const tagsTitle = tags.length > 0
+			? tags.map(t => t.name).join(', ')
+			: 'N/A';
 
 		const category = p.categoryTitle || '';
 
@@ -323,12 +370,21 @@ function applyFilters() {
 		if (paid === "Paid" && !p.isPaidOnly) return false;
 		if (cat !== "All" && p.categoryTitle !== cat) return false;
 
+		// TAG FILTERING LOGIC: OR / AND condition
 		if (selectedTags.length > 0) {
 			const problemTags = p.topicTags || [];
-			const hasAnySelectedTag = selectedTags.some(selectedTagSlug =>
-				problemTags.some(pt => pt.slug === selectedTagSlug)
-			);
-			if (!hasAnySelectedTag) return false;
+
+			if (tagLogic === 'OR') {
+				const hasAnySelectedTag = selectedTags.some(selectedTagSlug =>
+					problemTags.some(pt => pt.slug === selectedTagSlug)
+				);
+				if (!hasAnySelectedTag) return false;
+			} else {
+				const hasAllSelectedTags = selectedTags.every(selectedTagSlug =>
+					problemTags.some(pt => pt.slug === selectedTagSlug)
+				);
+				if (!hasAllSelectedTags) return false;
+			}
 		}
 
 		return true;
@@ -420,9 +476,18 @@ resetBtn.addEventListener('click', () => {
 	categoryFilter.value = 'All';
 	pageSizeSelect.value = '50';
 
+	// Reset Tag Selection & Search
 	selectedTags = [];
+	tagSearchInput.value = '';
 	document.querySelectorAll('.tag-checkbox').forEach(cb => cb.checked = false);
+	document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => li.style.display = ''); // Show all items
 	updateTagDropdownText();
+
+	// Reset Tag Logic Toggle
+	tagLogic = 'OR';
+	tagLogicToggle.checked = false;
+	tagLogicLabel.textContent = 'OR';
+	tagLogicLabel.classList.replace('text-primary', 'text-secondary');
 
 	currentSort = { column: 'id', direction: 'asc' };
 	currentPage = 1;
@@ -459,6 +524,36 @@ btnNext.addEventListener('click', () => {
 btnLast.addEventListener('click', () => {
 	currentPage = Math.ceil(currentProblems.length / pageSize) || 1;
 	renderTable();
+	saveSettings();
+});
+
+// tagLogicToggle.addEventListener('click', () => {
+// 	tagLogic = tagLogic === 'OR' ? 'AND' : 'OR';
+// 	tagLogicToggle.textContent = tagLogic;
+
+// 	if (tagLogic === 'AND') {
+// 		tagLogicToggle.classList.replace('btn-outline-secondary', 'btn-outline-primary');
+// 	} else {
+// 		tagLogicToggle.classList.replace('btn-outline-primary', 'btn-outline-secondary');
+// 	}
+
+// 	currentPage = 1;
+// 	applyFilters();
+// 	saveSettings();
+// });
+
+tagLogicToggle.addEventListener('change', (e) => {
+	if (e.target.checked) {
+		tagLogic = 'AND';
+		tagLogicLabel.textContent = 'AND';
+		tagLogicLabel.classList.replace('text-secondary', 'text-primary');
+	} else {
+		tagLogic = 'OR';
+		tagLogicLabel.textContent = 'OR';
+		tagLogicLabel.classList.replace('text-primary', 'text-secondary');
+	}
+	currentPage = 1;
+	applyFilters();
 	saveSettings();
 });
 
