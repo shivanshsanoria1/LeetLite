@@ -176,6 +176,34 @@
 				</div>
 			</div>
 
+			<!-- History Stack (LRU Policy) -->
+			<div
+				class="position-absolute top-50 end-0 translate-middle-y me-3 z-3 d-flex flex-column align-items-center gap-2">
+				<!-- Label -->
+				<span class="text-secondary fw-semibold small mb-1" title="Return to previous problem"
+					style="cursor: help;">History</span>
+
+				<!-- Dynamic Button Group -->
+				<div id="history-stack" class="btn-group-vertical shadow-sm" role="group" aria-label="Search History">
+					<!-- Buttons injected via JS -->
+				</div>
+
+				<!-- Clear Button -->
+				<button id="clear-history-btn"
+					class="btn btn-sm btn-outline-danger mt-1 rounded-circle d-flex align-items-center justify-content-center"
+					style="width: 32px; height: 32px;" title="Clear History" disabled>
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+						viewBox="0 0 16 16">
+						<path
+							d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+						<path fill-rule="evenodd"
+							d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+					</svg>
+				</button>
+			</div>
+
+			<svg class="edges-layer" id="svgEdges"></svg>
+
 			<svg class="edges-layer" id="svgEdges"></svg>
 			<div id="nodesContainer"></div>
 		</div>
@@ -194,16 +222,16 @@
 				</div>
 				<div class="modal-body text-secondary">
 					<ul class="mb-0">
-						<li class="mb-2"><strong>Search:</strong> Enter a Question ID in the top-left search bar to
-							generate its similarity network.</li>
-						<li class="mb-2"><strong>Navigate:</strong> Click any outer node to re-root the graph and
-							explore problems similar to it.</li>
+						<li class="mb-2"><strong>Search:</strong> Find problems by Question ID or Title using the
+							autocomplete search bar.</li>
+						<li class="mb-2"><strong>Navigate:</strong> Single-click any outer node to re-root the graph and
+							explore its similar problems.</li>
 						<li class="mb-2"><strong>Open Details:</strong> Double-click the center (root) node, or click
 							the title in the left panel, to open the problem details in a new tab.</li>
-						<li><strong>Color Coding:</strong> Nodes are outlined based on difficulty (Green = Easy, Yellow
-							= Medium, Red = Hard). The root node is always highlighted in blue. Premium problems are
-							marked with a lock icon.</li>
-						<li><strong>Premium problems:</strong> Marked with a lock icon.</li>
+						<li class="mb-2"><strong>History Stack:</strong> Use the stacked buttons on the right to return
+							to recently viewed problems. Hover over a button to see the problem title.</li>
+						<li><strong>Icons & Colors:</strong> Nodes are outlined based on difficulty (Green = Easy,
+							Yellow = Medium, Red = Hard). Premium problems are marked with a lock icon.</li>
 					</ul>
 				</div>
 				<div class="modal-footer border-secondary">

@@ -3,10 +3,16 @@ const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.j
 const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
 const PATH_JSON_DIR = '/util/web/generated/json';
 
+// Configuration
+const HISTORY_SIZE = 6;
+const STORAGE_KEY_HISTORY = 'leetcode_lite_vis_history';
+const STORAGE_KEY_CURRENT_ROOT = 'leetcode_lite_vis_current_root'; // New constant
+
 let problemMap = new Map();
 let currentRootId = null;
 let clickTimeout = null;
 let errorTimeout = null;
+let searchHistory = []; // Stack for LRU
 
 const topicTagMap = new Map();
 
@@ -17,6 +23,8 @@ const container = document.getElementById('nodesContainer');
 const svg = document.getElementById('svgEdges');
 const viewport = document.getElementById('graphContainer');
 const rootDetails = document.getElementById('root-details');
+const historyStack = document.getElementById('history-stack');
+const clearHistoryBtn = document.getElementById('clear-history-btn');
 
 // --- Dynamic Autocomplete Search ---
 const searchAutocomplete = document.getElementById('search-autocomplete');
@@ -80,7 +88,87 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-// --- Initialization & Random Fallback ---
+// --- History Management (LRU Policy) ---
+function loadHistory() {
+	const saved = localStorage.getItem(STORAGE_KEY_HISTORY);
+	if (saved) {
+		try {
+			searchHistory = JSON.parse(saved);
+		} catch (e) {
+			console.error("Failed to parse history", e);
+			searchHistory = [];
+		}
+	}
+	renderHistory();
+}
+
+function saveHistory() {
+	localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(searchHistory));
+}
+
+function updateHistory(oldId, newId) {
+	if (!oldId || oldId === newId) return;
+
+	// Push the previously active ID to the top (front) of the history
+	searchHistory.unshift(oldId);
+
+	// Filter out the new ID to ensure it is not in the history while active
+	searchHistory = searchHistory.filter(id => id !== newId);
+
+	// Maintain the maximum configured size
+	if (searchHistory.length > HISTORY_SIZE) {
+		searchHistory = searchHistory.slice(0, HISTORY_SIZE);
+	}
+
+	saveHistory();
+	renderHistory();
+}
+
+// Clear Button Event Listener
+clearHistoryBtn.addEventListener('click', () => {
+	searchHistory = [];
+	saveHistory();
+	renderHistory();
+});
+
+function renderHistory() {
+	historyStack.innerHTML = '';
+
+	// Safely manage the disabled state using strict DOM attributes
+	if (searchHistory.length === 0) {
+		// Leave the innerHTML empty instead of showing the "Empty" badge
+		if (clearHistoryBtn) {
+			clearHistoryBtn.setAttribute('disabled', 'true');
+		}
+		return;
+	}
+
+	// Forcefully remove the disabled attribute when history exists
+	if (clearHistoryBtn) {
+		clearHistoryBtn.removeAttribute('disabled');
+	}
+
+	// Generate LRU stack buttons (newest at top)
+	searchHistory.forEach(id => {
+		const btn = document.createElement('button');
+		btn.className = 'btn btn-outline-secondary border-secondary bg-dark text-light fw-bold p-0 shadow-sm d-flex align-items-center justify-content-center';
+		btn.style.width = '42px';
+		btn.style.height = '42px';
+		btn.textContent = id;
+
+		// Lookup the problem in the master map to show its title on hover
+		const probData = problemMap.get(Number(id));
+		btn.title = probData ? probData.title : `Problem ${id}`;
+
+		btn.addEventListener('click', () => {
+			renderGraph(id);
+		});
+
+		historyStack.appendChild(btn);
+	});
+}
+
+// --- Initialization & Default Fallback ---
 async function initGraph() {
 	try {
 		// Fetch both JSON files concurrently
@@ -94,26 +182,29 @@ async function initGraph() {
 		const allProblems = await probRes.json();
 		const masterTagsList = await tagsRes.json();
 
-		// Map the tags to record their exact backend order and color
+		// Map tags and problems
 		masterTagsList.forEach((tag, index) => {
 			topicTagMap.set(tag.slug, { ...tag, order: index });
 		});
-
 		allProblems.forEach(p => problemMap.set(Number(p.quesId), p));
 
-		// 1. Check Session Storage for a previously valid searched/clicked ID
-		const savedId = sessionStorage.getItem('vis_last_root');
+		// Load History from localStorage
+		loadHistory();
 
-		if (savedId && problemMap.has(Number(savedId))) {
-			renderGraph(Number(savedId));
-		} else {
-			// 2. Fallback: Pick a random valid ID from the master list
+		// Check Local Storage for persistent reload state
+		const savedRoot = localStorage.getItem(STORAGE_KEY_CURRENT_ROOT);
+		let startId = 1; // Default to Two Sum (ID 1)
+
+		if (savedRoot && problemMap.has(Number(savedRoot))) {
+			startId = Number(savedRoot);
+		} else if (!problemMap.has(1)) {
+			// Safety fallback if ID 1 somehow doesn't exist in the fetched map
 			const allIds = Array.from(problemMap.keys());
-			if (allIds.length > 0) {
-				const randomId = allIds[Math.floor(Math.random() * allIds.length)];
-				renderGraph(randomId);
-			}
+			if (allIds.length > 0) startId = allIds[0];
 		}
+
+		renderGraph(startId);
+
 	} catch (err) {
 		console.error("Graph initialization failed:", err);
 	}
@@ -190,11 +281,15 @@ function renderGraph(rootId, isExplicitSearch = false) {
 	if (errorTimeout) clearTimeout(errorTimeout);
 	errorMsg.classList.add('d-none');
 
-	currentRootId = rootId;
-
-	if (isExplicitSearch) {
-		sessionStorage.setItem('vis_last_root', rootId);
+	// Update LRU History stack before assigning the new active root
+	if (currentRootId) {
+		updateHistory(currentRootId, rootData.quesId);
 	}
+
+	currentRootId = rootData.quesId;
+
+	// Persist the current root ID in local storage for page reloads
+	localStorage.setItem(STORAGE_KEY_CURRENT_ROOT, currentRootId);
 
 	populateSidePanel(rootData);
 
