@@ -1,9 +1,14 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
 const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
+const PATH_JSON_DIR = '/util/web/generated/json';
 
 let problemMap = new Map();
 let currentRootId = null;
 let clickTimeout = null;
+let errorTimeout = null;
+
+const topicTagMap = new Map();
 
 const searchInput = document.getElementById('quesIdInput');
 const searchBtn = document.getElementById('searchGraphBtn');
@@ -13,13 +18,87 @@ const svg = document.getElementById('svgEdges');
 const viewport = document.getElementById('graphContainer');
 const rootDetails = document.getElementById('root-details');
 
+// --- Dynamic Autocomplete Search ---
+const searchAutocomplete = document.getElementById('search-autocomplete');
+
+searchInput.addEventListener('input', (e) => {
+	const term = e.target.value.toLowerCase().trim();
+	searchAutocomplete.innerHTML = '';
+
+	if (!term) {
+		searchAutocomplete.classList.remove('show');
+		return;
+	}
+
+	// Filter problems by ID or Title dynamically[cite: 2]
+	const allProbs = Array.from(problemMap.values());
+	const matches = allProbs.filter(p => {
+		return p.quesId.toString() === term || p.title.toLowerCase().includes(term);
+	}).slice(0, 15); // Limit to top 15 results to prevent DOM overflow
+
+	if (matches.length === 0) {
+		searchAutocomplete.classList.remove('show');
+		return;
+	}
+
+	// Populate the dropdown with matching results
+	matches.forEach(p => {
+		const li = document.createElement('li');
+
+		// Add yellow lock SVG for premium problems[cite: 2]
+		const lockIcon = p.isPaidOnly ? `
+            <span class="text-warning ms-1 align-middle" title="Premium Problem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                </svg>
+            </span>` : '';
+
+		// Inherit difficulty color for both ID and Title, but make the period secondary
+		li.innerHTML = `
+            <button class="dropdown-item text-truncate fw-semibold diff-${p.difficulty}" type="button">
+                ${p.quesId}<span class="text-secondary fw-normal me-1">.</span> ${p.title} ${lockIcon}
+            </button>
+        `;
+
+		// Handle selection
+		li.addEventListener('click', () => {
+			searchInput.value = '';
+			searchAutocomplete.classList.remove('show');
+			renderGraph(p.quesId, true); // True marks it as an explicit search for sessionStorage
+		});
+
+		searchAutocomplete.appendChild(li);
+	});
+
+	searchAutocomplete.classList.add('show');
+});
+
+// Hide autocomplete dropdown when clicking anywhere outside
+document.addEventListener('click', (e) => {
+	if (!searchInput.contains(e.target) && !searchAutocomplete.contains(e.target)) {
+		searchAutocomplete.classList.remove('show');
+	}
+});
+
 // --- Initialization & Random Fallback ---
 async function initGraph() {
 	try {
-		const res = await fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST);
-		if (!res.ok) throw new Error("Could not load problem list");
+		// Fetch both JSON files concurrently
+		const [probRes, tagsRes] = await Promise.all([
+			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
+			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+		]);
 
-		const allProblems = await res.json();
+		if (!probRes.ok || !tagsRes.ok) throw new Error("Could not load data files");
+
+		const allProblems = await probRes.json();
+		const masterTagsList = await tagsRes.json();
+
+		// Map the tags to record their exact backend order and color
+		masterTagsList.forEach((tag, index) => {
+			topicTagMap.set(tag.slug, { ...tag, order: index });
+		});
+
 		allProblems.forEach(p => problemMap.set(Number(p.quesId), p));
 
 		// 1. Check Session Storage for a previously valid searched/clicked ID
@@ -57,16 +136,25 @@ function getCategoryColor(category) {
 	return 'text-secondary';
 }
 
-let errorTimeout = null; // Add this near your other let declarations at the top
-
 // --- Search & Input Validation ---
 function handleSearch() {
 	const val = searchInput.value.trim();
-	if (!val) return;
 
-	// Check if input is exactly a positive integer
+	// 1. Handle empty input
+	if (!val) {
+		errorMsg.textContent = "please enter quesid or title to search";
+		errorMsg.classList.remove('d-none');
+
+		if (errorTimeout) clearTimeout(errorTimeout);
+		errorTimeout = setTimeout(() => {
+			errorMsg.classList.add('d-none');
+		}, 5000);
+		return;
+	}
+
+	// 2. Check if input is a valid positive integer for graph generation
 	if (!/^[1-9]\d*$/.test(val)) {
-		errorMsg.textContent = "invalid ques id";
+		errorMsg.textContent = "invalid quesid/title";
 		errorMsg.classList.remove('d-none');
 
 		if (errorTimeout) clearTimeout(errorTimeout);
@@ -178,9 +266,23 @@ function populateSidePanel(data) {
 	document.getElementById('det-id').textContent = data.quesId;
 	document.getElementById('det-title-link').href = `problem.html?quesId=${data.quesId}`;
 
+	// 1. Build the Title HTML starting with the raw title
 	let titleHtml = data.title;
-	if (data.LC_SYNC_ISO) {
-		const d = new Date(data.LC_SYNC_ISO);
+
+	// 2. Append Lock for Premium Problems
+	if (data.isPaidOnly) {
+		titleHtml += `
+            <span class="text-warning ms-1 align-middle" title="Premium Problem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                </svg>
+            </span>`;
+	}
+
+	// 3. Append Sync Timestamp Info Circle
+	const syncIso = data.LC_SYNC_ISO || data.LAST_UPDATED_ISO;
+	if (syncIso) {
+		const d = new Date(syncIso);
 
 		const day = String(d.getUTCDate()).padStart(2, '0');
 		const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -193,7 +295,7 @@ function populateSidePanel(data) {
 
 		const syncDate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds} (UTC)`;
 
-		titleHtml = `${data.title} 
+		titleHtml += ` 
             <span title="Last synced with LeetCode: ${syncDate}" style="cursor: help;" class="text-secondary align-middle ms-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
@@ -254,9 +356,24 @@ function populateSidePanel(data) {
 
 	// Topic Tags
 	const tagsContainer = document.getElementById('det-tags');
-	tagsContainer.innerHTML = (data.topicTags || []).map(t =>
-		`<span class="badge bg-secondary opacity-75">${t.name}</span>`
-	).join('') || '<span class="text-muted">None</span>';
+	const tags = data.topicTags || [];
+
+	if (tags.length > 0) {
+		// Sort tags using the exact order index from the backend master list[cite: 1]
+		tags.sort((a, b) => {
+			const orderA = topicTagMap.has(a.slug) ? topicTagMap.get(a.slug).order : 9999;
+			const orderB = topicTagMap.has(b.slug) ? topicTagMap.get(b.slug).order : 9999;
+			return orderA - orderB;
+		});
+
+		// Build HTML using the custom color[cite: 1]
+		tagsContainer.innerHTML = tags.map(t => {
+			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#6c757d';
+			return `<span class="badge" style="background-color: ${tagColor} !important; color: #fff; font-weight: 500;">${t.name}</span>`;
+		}).join('');
+	} else {
+		tagsContainer.innerHTML = '<span class="text-muted">None</span>';
+	}
 }
 
 // --- Node Creation with Lock ---
