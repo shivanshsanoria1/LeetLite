@@ -11,9 +11,12 @@ async function loadComponents() {
 			const response = await fetch(`${basePath}components/navbar.html`);
 			if (!response.ok) throw new Error('Failed to fetch navbar');
 
+			// ... inside your navPlaceholder try block ...
 			navPlaceholder.innerHTML = await response.text();
 
 			// --- Dynamically adjust relative navbar paths ---
+			const isInHtmlDir = window.location.pathname.includes('/html/');
+
 			navPlaceholder.querySelectorAll('a').forEach(link => {
 				const href = link.getAttribute('href');
 				if (!href || href.startsWith('http')) return;
@@ -22,6 +25,7 @@ async function loadComponents() {
 					if (href === 'index.html') {
 						link.setAttribute('href', '../index.html');
 					} else if (href.startsWith('html/')) {
+						// Strips "html/" prefix so sibling files link correctly
 						link.setAttribute('href', href.replace('html/', ''));
 					}
 				}
