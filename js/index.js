@@ -377,7 +377,7 @@ function renderTable() {
 		tr.innerHTML = `
             <td class="text-secondary fw-bold">${p.quesId}</td>
             <td>
-                <a href="problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
+                <a href="html/problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
                     ${p.title}
                 </a>${premiumLock}
             </td>
