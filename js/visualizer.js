@@ -1,7 +1,7 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
-const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
-const PATH_JSON_DIR = '/util/web/generated/json';
+
+const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
 
 // Configuration
 const HISTORY_SIZE = 6;
@@ -173,8 +173,8 @@ async function initGraph() {
 	try {
 		// Fetch both JSON files concurrently
 		const [probRes, tagsRes] = await Promise.all([
-			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
-			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+			fetch(PATH_LC_PROBLEM_LIST),
+			fetch(PATH_LC_TOPIC_TAGS)
 		]);
 
 		if (!probRes.ok || !tagsRes.ok) throw new Error("Could not load data files");

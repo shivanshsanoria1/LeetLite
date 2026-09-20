@@ -1,9 +1,10 @@
 // --- 1. Constants & State ---
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
-const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
-const PATH_JSON_DIR = '/util/web/generated/json';
 const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
+
+const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
+const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
+const PATH_JSON_DIR = '/backend/generated/json';
 
 const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
 const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
@@ -83,8 +84,8 @@ async function loadProblem() {
 	try {
 		// Step 1: Fetch master list & topic tags concurrently
 		const [listResponse, tagsResponse] = await Promise.all([
-			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
-			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+			fetch(PATH_LC_PROBLEM_LIST),
+			fetch(PATH_LC_TOPIC_TAGS)
 		]);
 
 		if (!listResponse.ok) throw new Error("Failed to load master problem list.");
@@ -102,7 +103,7 @@ async function loadProblem() {
 		if (!currentProblemMasterData) throw new Error(`Problem ID ${quesId} not found.`);
 
 		// Step 2: Fetch detailed JSON
-		const detailUrl = `${GITHUB_LCS_URL}${PATH_JSON_DIR}/${quesId}.${currentProblemMasterData.titleSlug}.json`;
+		const detailUrl = `${PATH_JSON_DIR}/${quesId}.${currentProblemMasterData.titleSlug}.json`;
 		const detailResponse = await fetch(detailUrl);
 
 		if (!detailResponse.ok) throw new Error(`Failed to load details for problem ${quesId}.`);
