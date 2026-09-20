@@ -1,13 +1,23 @@
 // --- 1. Constants & State ---
-const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
+// const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
+// const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
 
-const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
-const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
-const PATH_JSON_DIR = '/backend/generated/json';
+// const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
+// const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
+// const PATH_JSON_DIR = '/backend/generated/json';
 
-const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
-const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
+// const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
+// const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
+
+import {
+	GITHUB_LCS_URL,
+	PATH_LC_SOLVED_PROBLEM_LIST,
+	PATH_LC_PROBLEM_LIST,
+	PATH_LC_TOPIC_TAGS,
+	PATH_JSON_DIR,
+	LC_ASSETS_BASE_URL,
+	LC_PROBLEM_BASE_URL
+} from './config.js';
 
 const THEME_STORAGE_KEY = 'leetcode_lite_hljs_theme';
 const DEFAULT_THEME = 'monokai';
@@ -19,6 +29,7 @@ if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 
 let currentProblemSolvedStats = null;
 let currentProblemMasterData = null; // Stores global problem metadata for URL generation
+let currentRawCode = '';
 const topicTagMap = new Map(); // New map to store tag colors and order
 
 // Initialize Highlight.js Copy Plugin Safely
@@ -111,7 +122,7 @@ async function loadProblem() {
 
 		// Step 3: Fetch solved stats
 		try {
-			const solvedResponse = await fetch(GITHUB_LCS_URL + PATH_SOLVED_LIST);
+			const solvedResponse = await fetch(GITHUB_LCS_URL + PATH_LC_SOLVED_PROBLEM_LIST);
 			if (solvedResponse.ok) {
 				const solvedList = await solvedResponse.json();
 				currentProblemSolvedStats = solvedList.find(p => p.quesId === quesId);

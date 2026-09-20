@@ -1,8 +1,9 @@
-const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-const PATH_LC_SOLVED_PROBLEM_LIST = '/util/web/generated/json-min/lc-solved-problems-list-min.json';
-
-const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
-const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
+import {
+	GITHUB_LCS_URL,
+	PATH_LC_SOLVED_PROBLEM_LIST,
+	PATH_LC_PROBLEM_LIST,
+	PATH_LC_TOPIC_TAGS,
+} from './config.js';
 
 // --- 1. State Management ---
 let allProblems = [];
