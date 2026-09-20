@@ -11,112 +11,310 @@
 	<link href="css/components.css" rel="stylesheet">
 	<!-- Custom CSS matching index/problem pages -->
 	<link href="css/index.css" rel="stylesheet">
-	<style>
-		.feature-card {
-			transition: transform 0.2s ease-in-out;
-			height: 100%;
-		}
-
-		.feature-card:hover {
-			transform: translateY(-3px);
-		}
-	</style>
+	<!-- Page-specific About CSS -->
+	<link href="css/about.css" rel="stylesheet">
 </head>
 
 <body class="bg-body d-flex flex-column min-vh-100">
 
-	<!-- Navbar Placeholder -->
+	<!-- Modular Navbar Placeholder -->
 	<div id="navbar-placeholder"></div>
 
-	<!-- Main Content Container -->
-	<div class="container my-4 flex-grow-1" style="max-width: 850px;">
+	<!-- Main Content Container with Balanced Width -->
+	<main class="container my-4 flex-grow-1" style="max-width: 1100px;">
 
-		<!-- Header Section -->
-		<div class="text-center mb-5">
-			<h1 class="fw-bold display-6 mb-2">About LeetLite ⚡</h1>
-			<p class="text-secondary">
-				A lightweight, lightning-fast alternative designed purely for speed and efficiency.
+		<!-- Hero Header Section with Site Stoplights Logo Placed After Brand Name -->
+		<div class="text-center mb-5 py-2">
+			<div class="d-inline-flex align-items-center justify-content-center gap-2 mb-2 flex-wrap">
+				<h1 class="fw-bold display-5 mb-0">About <span class="brand-gradient">LeetLite</span></h1>
+				<!-- Stoplights Logo: Top-to-Bottom Gradient -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" class="bi bi-stoplights flex-shrink-0"
+					viewBox="0 0 16 16">
+					<defs>
+						<linearGradient id="about-logo-grad-vertical" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#2cbb5d" />
+							<stop offset="50%" stop-color="#ffc01e" />
+							<stop offset="100%" stop-color="#ef4743" />
+						</linearGradient>
+					</defs>
+					<path fill="url(#about-logo-grad-vertical)"
+						d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m0 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m1.5 2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+					<path fill="url(#about-logo-grad-vertical)"
+						d="M4 2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1c-1.2-.4-1.833-1.5-2-2h2V8c-1.2-.4-1.833-1.5-2-2h2V4c-1.2-.4-1.833-1.5-2-2zm2-1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+				</svg>
+			</div>
+			<p class="about-muted-text lead fs-5 mx-auto" style="max-width: 820px;">
+				An ultra-fast, client-side, bloat-free problem directory and workspace crafted for speed, pattern
+				exploration, and transparent reference solutions.
 			</p>
 		</div>
 
-		<!-- Overview Card -->
-		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4">
-			<div class="card-body p-4">
-				<h5 class="fw-bold text-light mb-3">Overview</h5>
-				<p class="text-secondary mb-0">
-					LeetLite is built as a static application using vanilla HTML, CSS, JavaScript, and Bootstrap.
-					By omitting heavy backend frameworks and live server lookups, it ensures instant navigation,
-					real-time filtering, and zero network latency.
+		<!-- Big Callout: Philosophy -->
+		<div class="card bg-body-tertiary border-secondary shadow-sm mb-5 interactive-card">
+			<div class="card-body p-4 p-md-5">
+				<h3 class="fw-bold text-light mb-3">Built For Speed, Simplicity & Zero Clutter</h3>
+				<p class="about-card-text fs-5 mb-0 leading-relaxed">
+					Modern coding platforms are loaded down with heavy single-page apps, tracking scripts, and sign-in
+					gates.
+					<strong>LeetLite</strong> strips all overhead away: no accounts, zero backend dependencies, and
+					instantaneous client-side operations.
+					Everything runs directly inside your browser powered by pre-computed static JSON files.
 				</p>
 			</div>
 		</div>
 
-		<!-- Key Features Grid -->
-		<h5 class="fw-bold text-light mb-3">Core Features</h5>
-		<div class="row g-3 mb-4">
-			<div class="col-md-4">
-				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+		<!-- Core Features Grid -->
+		<div class="d-flex align-items-center gap-2 mb-3">
+			<span class="fs-4">🚀</span>
+			<h3 class="fw-bold text-light mb-0">What LeetLite Delivers</h3>
+		</div>
+
+		<div class="row g-4 mb-5">
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
 					<div class="card-body">
-						<h6 class="fw-bold color-green mb-1">⚡ Instant Search</h6>
-						<p class="text-secondary small mb-0">
-							Search thousands of problems instantly by ID or title using dynamic keyup event listeners.
+						<h5 class="fw-bold color-green mb-2">Instant Search & Sort</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Type to search instantly by ID or title on keystroke without pressing Enter. Sort columns
+							dynamically by Acceptance, Like Ratios, or ID.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
 					<div class="card-body">
-						<h6 class="fw-bold color-yellow mb-1">🔍 Fast Filtering</h6>
-						<p class="text-secondary small mb-0">
-							Filter seamlessly by difficulty, free/paid status, categories, and topic tags.
+						<h5 class="fw-bold color-yellow mb-2">Multi-Factor Filtering</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Filter on the fly by difficulty, free/paid status, category domains (Algorithms, Database,
+							Shell, Concurrency, Pandas), and multi-tag selectors.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card bg-body-tertiary border-secondary feature-card p-2">
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
 					<div class="card-body">
-						<h6 class="fw-bold text-primary mb-1">📊 Quick Sorting</h6>
-						<p class="text-secondary small mb-0">
-							Click any table header to instantly sort columns like acceptance rate and like ratios.
+						<h5 class="fw-bold text-primary mb-2">Split Problem Workspace</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Draggable, adjustable split-pane layout featuring MathJax LaTeX math rendering, expandable
+							hints, and high-contrast code viewing.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
+					<div class="card-body">
+						<h5 class="fw-bold text-info mb-2">Similar Problems Visualizer</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Explore questions via an interactive radial graph. Click any connected peripheral node to
+							re-root the graph dynamically and uncover problem patterns.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
+					<div class="card-body">
+						<h5 class="fw-bold color-yellow mb-2">Real-Time Analytics & Stats</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Dedicated chart dashboard displaying problem breakdowns and difficulty distributions
+							comparing the full problem pool to solved solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card bg-body-tertiary border-secondary interactive-card h-100 p-3">
+					<div class="card-body">
+						<h5 class="fw-bold text-danger mb-2">Local Persistence</h5>
+						<p class="about-card-text fs-6 mb-0">
+							Active search keywords, sorting directions, selected filters, and pagination preferences are
+							automatically stored via <code>localStorage</code>.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Creator Solutions & Statistics -->
-		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4">
-			<div class="card-body p-4">
-				<h5 class="fw-bold text-light mb-3">Solutions & Statistics</h5>
-				<p class="text-secondary mb-2">
-					Features problem details alongside code solutions crafted strictly by the creator.
+		<!-- Developer-Crafted Solutions Banner -->
+		<div class="card bg-body-tertiary border-success interactive-card shadow-sm mb-5">
+			<div class="card-body p-4 p-md-5">
+				<div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+					<span class="badge badge-lite fs-6 px-3 py-2">100% Handcrafted</span>
+					<h3 class="fw-bold text-light mb-0">Solutions Strictly Written By The Developer</h3>
+				</div>
+				<p class="text-light fs-5 mb-2">
+					Zero synthetic, hallucinated, or mass-scraped code answers. Every single solution snippet available
+					across
+					<strong class="color-yellow">C++</strong>, <strong class="color-yellow">JavaScript</strong>, and
+					<strong class="color-yellow">MySQL</strong> was authored and verified by hand by the creator.
 				</p>
-				<ul class="text-secondary mb-0 small">
-					<li>Custom code solutions for numerous problems.</li>
-					<li>Aggregated statistics tracking available solutions and total problem metrics across the
-						platform.</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Disclaimer Box -->
-		<div class="card bg-dark border-warning shadow-sm mb-4">
-			<div class="card-body p-4">
-				<h6 class="fw-bold text-warning mb-2">⚠️ Disclaimer</h6>
-				<p class="text-secondary small mb-0" style="line-height: 1.5;">
-					LeetLite is an independent personal project and is <strong>not associated, affiliated, or
-						connected with LeetCode</strong> in any way shape or form. It utilizes data available from
-					LeetCode's public APIs. No details or contents regarding premium problems are available. AI
-					assistance tools were utilized during the development of this site.
+				<p class="about-card-text fs-6 mb-0">
+					Where available, problems include multiple iterations, alternative paradigms, and explicit Time and
+					Space complexity breakdowns.
 				</p>
 			</div>
 		</div>
 
-	</div>
+		<!-- Honest Pros & Cons Grid -->
+		<div class="d-flex align-items-center gap-2 mb-3">
+			<span class="fs-4">⚖️</span>
+			<h3 class="fw-bold text-light mb-0">Honest Pros & Cons</h3>
+		</div>
 
-	<!-- Footer Placeholder -->
+		<div class="row g-4 mb-5">
+			<div class="col-md-6">
+				<div class="card bg-body-tertiary border-success interactive-card h-100 shadow-sm">
+					<div class="card-header bg-transparent border-success color-green fw-bold fs-5 py-3">
+						✓ Advantages & Pros
+					</div>
+					<div class="card-body p-4">
+						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
+							<li><strong class="text-light">Dislike Counts & Like Rates Restored:</strong> Unlike the
+								official LeetCode frontend which hid problem dislikes, LeetLite retains and calculates
+								both dislikes and authentic like ratios.</li>
+							<li><strong class="text-light">Instant Client-Side Speed:</strong> Zero API roundtrips for
+								browsing, sorting, or multi-tag filtering.</li>
+							<li><strong class="text-light">Complete Privacy & No Accounts:</strong> No authentication
+								walls, tracking cookies, or profiling.</li>
+							<li><strong class="text-light">Visualizer & Progress Charts:</strong> Built-in graph
+								discovery and side-by-side completion analytics.</li>
+							<li><strong class="text-light">Verified Handcrafted Code:</strong> 100% human-authored
+								developer code tested against LeetCode test suites.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card bg-body-tertiary border-danger interactive-card h-100 shadow-sm">
+					<div class="card-header bg-transparent border-danger color-red fw-bold fs-5 py-3">
+						✕ Limitations & Cons
+					</div>
+					<div class="card-body p-4">
+						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
+							<li><strong class="text-light">No Real-Time Metric Sync:</strong> Statistics like likes,
+								dislikes, total submissions, and acceptance rates are pulled periodically rather than
+								streamed live. Numbers may not be 100% up to the second compared to LeetCode.</li>
+							<li><strong class="text-light">No Online Code Runner:</strong> This is a reference directory
+								and viewer, not a live evaluation judge.</li>
+							<li><strong class="text-light">No Multi-Device Cloud Sync:</strong> Saved tags and page
+								choices remain exclusively in your local browser storage.</li>
+							<li><strong class="text-light">No Premium Problem Data:</strong> Paid subscription
+								descriptions and editorial materials are strictly omitted.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LeetLite vs Official LeetCode Table -->
+		<div class="card bg-body-tertiary border-secondary interactive-card shadow-sm mb-5">
+			<div class="card-header bg-transparent border-secondary fw-bold text-light fs-5 py-3">
+				Feature Comparison: LeetLite vs. LeetCode
+			</div>
+			<div class="card-body p-0">
+				<div class="table-responsive">
+					<table class="table table-dark table-striped table-hover mb-0 fs-6 align-middle text-center">
+						<thead>
+							<tr class="border-secondary text-secondary">
+								<th class="text-start ps-4 py-3" style="width: 40%;">Dimension</th>
+								<th class="py-3" style="width: 30%;"><span
+										class="brand-gradient fw-bold">LeetLite</span></th>
+								<th class="py-3 text-secondary" style="width: 30%;">LeetCode (Official)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Dislike Counts & Like Ratios</td>
+								<td class="color-green fw-bold">Available & Visible</td>
+								<td class="color-red fw-bold">Hidden / Removed from UI</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Metric Synchronization</td>
+								<td class="about-muted-text">Periodic Snapshots (May differ slightly)</td>
+								<td class="color-green fw-bold">Real-Time Live Numbers</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Search & Filter Speed</td>
+								<td class="color-green fw-bold">Instant (Client-Side)</td>
+								<td class="about-muted-text">Network Request Dependent</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Account Requirement</td>
+								<td class="color-green fw-bold">None (100% Open & Anonymous)</td>
+								<td class="about-muted-text">Mandatory for Full Features</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Problem Solutions</td>
+								<td class="color-yellow fw-bold">100% Handcrafted by Developer</td>
+								<td class="about-muted-text">Official Editorials / Public Forums</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Visualizer & Progress Charts</td>
+								<td class="color-green fw-bold">Built-In Radial Graph & Analytics</td>
+								<td class="about-muted-text">Basic Progress Summaries</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">In-Browser Code Execution</td>
+								<td class="color-red fw-bold">None (Viewer Only)</td>
+								<td class="color-green fw-bold">Yes (Online Judge Engine)</td>
+							</tr>
+							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Locked Premium Content</td>
+								<td class="color-red fw-bold">Excluded</td>
+								<td class="color-green fw-bold">Available via Paid Subscription</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Transparent Disclaimers -->
+		<div class="row g-4 mb-4">
+			<div class="col-lg-6">
+				<div class="card bg-dark border-warning h-100 shadow-sm interactive-card">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-warning mb-2">⚠️ Legal & Affiliation Disclaimer</h5>
+						<p class="about-card-text fs-6 mb-0">
+							LeetLite is an independent open-source personal project and is <strong>not associated,
+								affiliated, authorized, endorsed by, or in any way officially connected with
+								LeetCode</strong> or its parent company. All public problem titles, numbers, and basic
+							descriptions are accessed via LeetCode's public GraphQL API structures. No premium, paid, or
+							locked problem descriptions or editorials are bypassed or hosted.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="card bg-dark border-info h-100 shadow-sm interactive-card">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-info mb-2">🤖 AI Usage & Handcrafted Code Policy</h5>
+						<p class="about-card-text fs-6 mb-0">
+							<strong>Website Development:</strong> AI tooling was utilized as an assistant for writing,
+							structuring, and refactoring web frontend layouts (HTML, CSS, JavaScript components).
+							<br><br>
+							<strong>Problem Solutions:</strong> <span class="text-light fw-bold">No AI tools were used
+								to produce problem solutions.</span> Every code implementation across C++, JavaScript,
+							and MySQL was strictly written, tested, and debugged by hand by the developer.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Modular Footer Placeholder -->
 	<div id="footer-placeholder"></div>
 
 	<!-- Bootstrap JS Bundle -->

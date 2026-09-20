@@ -1,0 +1,63 @@
+/* Card Interactivity & Depth */
+.interactive-card {
+    transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                border-color 0.25s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.interactive-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Accentuated Hover States */
+.interactive-card.border-success:hover {
+    border-color: #2cbb5d !important;
+    box-shadow: 0 8px 24px rgba(44, 187, 93, 0.2) !important;
+}
+
+.interactive-card.border-danger:hover {
+    border-color: #ef4743 !important;
+    box-shadow: 0 8px 24px rgba(239, 71, 67, 0.2) !important;
+}
+
+.interactive-card.border-warning:hover {
+    border-color: #ffc01e !important;
+    box-shadow: 0 8px 24px rgba(255, 192, 30, 0.2) !important;
+}
+
+.interactive-card.border-info:hover {
+    border-color: #0dcaf0 !important;
+    box-shadow: 0 8px 24px rgba(13, 202, 240, 0.2) !important;
+}
+
+/* Readability & Text Contrast Overrides */
+.about-card-text {
+    color: #d1d7de !important; /* Noticeably brighter than standard muted grey */
+    line-height: 1.65;
+}
+
+.about-muted-text {
+    color: #a0a6ad !important; /* Clean readable grey for secondary lines */
+}
+
+/* Handcrafted Solution Badge */
+.badge-lite {
+    background-color: #2cbb5d !important;
+    border: 1px solid #3bb765;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Typography Enhancements */
+.leading-relaxed {
+    line-height: 1.75;
+}
+
+/* Table Alignment & Spacing */
+.table th, .table td {
+    vertical-align: middle;
+    padding: 0.85rem 0.75rem;
+}
