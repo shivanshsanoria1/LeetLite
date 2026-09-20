@@ -7,6 +7,8 @@ on:
     branches: ["main"]
     paths-ignore:
       - 'backend/**' # Prevents commits isolated to this directory from triggering a build
+      - '.gitignore'       # Ignores changes to gitignore
+      - '[Rr][Ee][Aa][Dd][Mm][Ee].[Mm][Dd]' # Case-insensitive match for readme.md / README.md / README.MD
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

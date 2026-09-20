@@ -1,0 +1,1052 @@
+[
+    {
+        "slug": "array",
+        "name": "Array",
+        "freq": 2049,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "string",
+        "name": "String",
+        "freq": 830,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "hash-table",
+        "name": "Hash Table",
+        "freq": 770,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "math",
+        "name": "Math",
+        "freq": 628,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "dynamic-programming",
+        "name": "Dynamic Programming",
+        "freq": 624,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "sorting",
+        "name": "Sorting",
+        "freq": 498,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "greedy",
+        "name": "Greedy",
+        "freq": 440,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "depth-first-search",
+        "name": "Depth-First Search",
+        "freq": 334,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "freq": 320,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "database",
+        "name": "Database",
+        "freq": 310,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "matrix",
+        "name": "Matrix",
+        "freq": 268,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "bit-manipulation",
+        "name": "Bit Manipulation",
+        "freq": 266,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "tree",
+        "name": "Tree",
+        "freq": 253,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "breadth-first-search",
+        "name": "Breadth-First Search",
+        "freq": 251,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "two-pointers",
+        "name": "Two Pointers",
+        "freq": 237,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "prefix-sum",
+        "name": "Prefix Sum",
+        "freq": 236,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "heap-priority-queue",
+        "name": "Heap (Priority Queue)",
+        "freq": 208,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "simulation",
+        "name": "Simulation",
+        "freq": 197,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "counting",
+        "name": "Counting",
+        "freq": 188,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "binary-tree",
+        "name": "Binary Tree",
+        "freq": 177,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "graph",
+        "name": "Graph Theory",
+        "freq": 177,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "stack",
+        "name": "Stack",
+        "freq": 174,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "sliding-window",
+        "name": "Sliding Window",
+        "freq": 160,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "enumeration",
+        "name": "Enumeration",
+        "freq": 131,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "design",
+        "name": "Design",
+        "freq": 130,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "backtracking",
+        "name": "Backtracking",
+        "freq": 112,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "union-find",
+        "name": "Union-Find",
+        "freq": 95,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "number-theory",
+        "name": "Number Theory",
+        "freq": 89,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "linked-list",
+        "name": "Linked List",
+        "freq": 82,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "ordered-set",
+        "name": "Ordered Set",
+        "freq": 77,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "monotonic-stack",
+        "name": "Monotonic Stack",
+        "freq": 71,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "segment-tree",
+        "name": "Segment Tree",
+        "freq": 70,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "trie",
+        "name": "Trie",
+        "freq": 59,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "divide-and-conquer",
+        "name": "Divide and Conquer",
+        "freq": 58,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "combinatorics",
+        "name": "Combinatorics",
+        "freq": 57,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "bitmask",
+        "name": "Bitmask",
+        "freq": 55,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "queue",
+        "name": "Queue",
+        "freq": 50,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "recursion",
+        "name": "Recursion",
+        "freq": 50,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "geometry",
+        "name": "Geometry",
+        "freq": 45,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "binary-indexed-tree",
+        "name": "Binary Indexed Tree",
+        "freq": 44,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "binary-search-tree",
+        "name": "Binary Search Tree",
+        "freq": 42,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "memoization",
+        "name": "Memoization",
+        "freq": 42,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "hash-function",
+        "name": "Hash Function",
+        "freq": 41,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "topological-sort",
+        "name": "Topological Sort",
+        "freq": 39,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "shortest-path",
+        "name": "Shortest Path",
+        "freq": 38,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "string-matching",
+        "name": "String Matching",
+        "freq": 37,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "dp-on-trees",
+        "name": "DP on Trees",
+        "freq": 31,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "rolling-hash",
+        "name": "Rolling Hash",
+        "freq": 31,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "game-theory",
+        "name": "Game Theory",
+        "freq": 29,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "greatest-common-divisor",
+        "name": "Greatest Common Divisor",
+        "freq": 25,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "interactive",
+        "name": "Interactive",
+        "freq": 25,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "euclidean-algorithm",
+        "name": "Euclidean Algorithm",
+        "freq": 24,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "data-stream",
+        "name": "Data Stream",
+        "freq": 23,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "brainteaser",
+        "name": "Brainteaser",
+        "freq": 20,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "monotonic-queue",
+        "name": "Monotonic Queue",
+        "freq": 20,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "directed-acyclic-graph",
+        "name": "Directed Acyclic Graph",
+        "freq": 17,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "knapsack-problem",
+        "name": "Knapsack Problem",
+        "freq": 17,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "dijkstra",
+        "name": "Dijkstra's Algorithm",
+        "freq": 16,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "minimax-algorithm",
+        "name": "Minimax",
+        "freq": 16,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "bracket-sequences",
+        "name": "Bracket Sequences",
+        "freq": 15,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "doubly-linked-list",
+        "name": "Doubly-Linked List",
+        "freq": 15,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "prime-factorization",
+        "name": "Prime Factorization",
+        "freq": 14,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "merge-sort",
+        "name": "Merge Sort",
+        "freq": 13,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "binary-lifting",
+        "name": "Binary Lifting",
+        "freq": 12,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "longest-increasing-subsequence",
+        "name": "Longest Increasing Subsequence",
+        "freq": 12,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "randomized",
+        "name": "Randomized",
+        "freq": 12,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "zero-sum-game",
+        "name": "Zero-Sum Game",
+        "freq": 12,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "counting-sort",
+        "name": "Counting Sort",
+        "freq": 11,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "lowest-common-ancestor",
+        "name": "Lowest Common Ancestor",
+        "freq": 11,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "sieve-theory",
+        "name": "Sieve Theory",
+        "freq": 11,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "z-algorithm",
+        "name": "Z Algorithm",
+        "freq": 11,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "bipartite-graph",
+        "name": "Bipartite Graph",
+        "freq": 10,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "fermats-little-theorem",
+        "name": "Fermat's Little Theorem",
+        "freq": 10,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "knuth-morris-pratt-algorithm",
+        "name": "Knuth–Morris–Pratt Algorithm",
+        "freq": 10,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "primality-test",
+        "name": "Primality Test",
+        "freq": 10,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "concurrency",
+        "name": "Concurrency",
+        "freq": 9,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "iterator",
+        "name": "Iterator",
+        "freq": 9,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "0-1-knapsack",
+        "name": "0-1 Knapsack",
+        "freq": 8,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "polygons",
+        "name": "Polygons",
+        "freq": 8,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "sweep-line",
+        "name": "Sweep Line",
+        "freq": 8,
+        "color": "#2cbb5d"
+    },
+    {
+        "slug": "bidirectional-search",
+        "name": "Bidirectional Search",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "flow-network",
+        "name": "Flow Network",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "least-common-multiple",
+        "name": "Least Common Multiple",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "prime-number-sieve",
+        "name": "Prime Number Sieve",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "probability-and-statistics",
+        "name": "Probability and Statistics",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "quickselect",
+        "name": "Quickselect",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "quicksort",
+        "name": "Quicksort",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "suffix-array",
+        "name": "Suffix Array",
+        "freq": 7,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "boyer-moore-string-search-algorithm",
+        "name": "Boyer–Moore String-Search Algorithm",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "bucket-sort",
+        "name": "Bucket Sort",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "floyds-cycle-finding-algorithm",
+        "name": "Floyd's Cycle Finding Algorithm",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "longest-common-subsequence",
+        "name": "Longest Common Subsequence",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "matching-graph",
+        "name": "Matching (Graph)",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "minimum-spanning-tree",
+        "name": "Minimum Spanning Tree",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "sqrt-decomposition",
+        "name": "Sqrt Decomposition",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "treap",
+        "name": "Treap",
+        "freq": 6,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "a-search",
+        "name": "A* Search",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "cartesian-tree",
+        "name": "Cartesian Tree",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "complete-knapsack",
+        "name": "Complete Knapsack",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "graph-coloring",
+        "name": "Graph Coloring",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "heuristic-search",
+        "name": "Heuristic Search",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "impartial-game",
+        "name": "Impartial Game",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "kosarajus-algorithm",
+        "name": "Kosaraju's Algorithm",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "pigeonhole-principle",
+        "name": "Pigeonhole Principle",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "successive-shortest-path-algorithm",
+        "name": "Successive Shortest Path Algorithm",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "tarjans-scc-algorithm",
+        "name": "Tarjan's SCC Algorithm",
+        "freq": 5,
+        "color": "#ffc01e"
+    },
+    {
+        "slug": "aho-corasick-algorithm",
+        "name": "Aho–Corasick Algorithm",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "boyer-moore-majority-vote-algorithm",
+        "name": "Boyer–Moore Majority Vote Algorithm",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "bubble-sort",
+        "name": "Bubble Sort",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "hungarian-algorithm",
+        "name": "Hungarian Algorithm",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "meet-in-the-middle",
+        "name": "Meet in the Middle",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "nim-game",
+        "name": "Nim Game",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "reservoir-sampling",
+        "name": "Reservoir Sampling",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "shell",
+        "name": "Shell",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "sprague-grundy-theorem",
+        "name": "Sprague–Grundy Theorem",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "suffix-automaton",
+        "name": "Suffix Automaton",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "suffix-tree",
+        "name": "Suffix Tree",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "algorithm-x",
+        "name": "Algorithm X",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "boruvkas-algorithm",
+        "name": "Borůvka's Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "dinics-algorithm",
+        "name": "Dinic's Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "edmonds-karp-algorithm",
+        "name": "Edmonds–Karp Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "eulerian-circuit",
+        "name": "Eulerian Circuit",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "eulerian-path",
+        "name": "Eulerian Path",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "inclusion-exclusion-principle",
+        "name": "Inclusion-Exclusion Principle",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "kruskals-algorithm",
+        "name": "Kruskal's Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "linear-algebra",
+        "name": "Linear Algebra",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "manacher",
+        "name": "Manacher",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "minimum-cost-flow",
+        "name": "Minimum-Cost Flow",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "mpm-algorithm",
+        "name": "MPM Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "prims-algorithm",
+        "name": "Prim's Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "push-relabel-algorithm",
+        "name": "Push-Relabel Algorithm",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "radix-sort",
+        "name": "Radix Sort",
+        "freq": 3,
+        "color": "#fd7e14"
+    },
+    {
+        "slug": "0-1-bfs",
+        "name": "0-1 BFS",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "bellman-ford-algorithm",
+        "name": "Bellman–Ford Algorithm",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "bezouts-lemma",
+        "name": "Bézout's Lemma",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "brute-force-search",
+        "name": "Brute-Force Search",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "extended-euclidean-algorithm",
+        "name": "Extended Euclidean Algorithm",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "floyd-warshall-algorithm",
+        "name": "Floyd–Warshall Algorithm",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "hamiltonian-path",
+        "name": "Hamiltonian Path",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "maximum-flow",
+        "name": "Maximum Flow",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "maximum-matching",
+        "name": "Maximum Matching",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "mixed-knapsack",
+        "name": "Mixed Knapsack",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "multiple-knapsack",
+        "name": "Multiple Knapsack",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "nearest-pair-of-points",
+        "name": "Nearest Pair of Points",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "perfect-matching",
+        "name": "Perfect Matching",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "range-minimum-maximum-query",
+        "name": "Range Minimum/Maximum Query",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "rejection-sampling",
+        "name": "Rejection Sampling",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "semi-eulerian-graph",
+        "name": "Semi-Eulerian Graph",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "sort",
+        "name": "Sort",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "strongly-connected-component",
+        "name": "Strongly Connected Component",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "ternary-search",
+        "name": "Ternary Search",
+        "freq": 2,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "articulation-point",
+        "name": "Articulation Point",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "biconnected-component",
+        "name": "Biconnected Component",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "bridge-graph",
+        "name": "Bridge (Graph)",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "convex-hull",
+        "name": "Convex Hull",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "dancing-links",
+        "name": "Dancing Links",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "eulerian-graph",
+        "name": "Eulerian Graph",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "eulers-theorem",
+        "name": "Euler's Theorem",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "eulers-totient-function",
+        "name": "Euler's Totient Function",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "k-d-tree",
+        "name": "K-D Tree",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "k-shortest-path",
+        "name": "K Shortest Path",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "lexicographically-minimal-string-rotation",
+        "name": "Lexicographically Minimal String Rotation",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "li-chao-tree",
+        "name": "Li Chao Tree",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "lyndon-factorization",
+        "name": "Lyndon Factorization",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "minimum-cut",
+        "name": "Minimum Cut",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "minimum-enclosing-circle",
+        "name": "Minimum Enclosing Circle",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "newtons-method",
+        "name": "Newton's Method",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "palindromic-tree",
+        "name": "Palindromic Tree",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "persistent-data-structure",
+        "name": "Persistent Data Structure",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "planar-graph",
+        "name": "Planar Graph",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "sparse-table",
+        "name": "Sparse Table",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "splay-tree",
+        "name": "Splay Tree",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "timsort",
+        "name": "Timsort",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "tournament-sort",
+        "name": "Tournament Sort",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "triangulation",
+        "name": "Triangulation",
+        "freq": 1,
+        "color": "#ef4743"
+    }
+]
