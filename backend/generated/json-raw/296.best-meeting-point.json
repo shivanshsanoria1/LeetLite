@@ -1,0 +1,45 @@
+{
+    "questionId": "296",
+    "questionFrontendId": "296",
+    "title": "Best Meeting Point",
+    "titleSlug": "best-meeting-point",
+    "difficulty": "Hard",
+    "likes": 1219,
+    "dislikes": 108,
+    "acRate": 61.44454352150353,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"98.5K\", \"totalSubmission\": \"160.4K\", \"totalAcceptedRaw\": 98538, \"totalSubmissionRaw\": 160369, \"acRate\": \"61.4%\"}",
+    "similarQuestions": "[{\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Equal Array Elements II\", \"titleSlug\": \"minimum-moves-to-equal-array-elements-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to solve it in one dimension first. How can this solution apply to the two dimension case?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:37.588Z"
+}

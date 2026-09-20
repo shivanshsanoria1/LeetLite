@@ -1,0 +1,30 @@
+{
+    "questionId": "3694",
+    "questionFrontendId": "3353",
+    "title": "Minimum Total Operations",
+    "titleSlug": "minimum-total-operations",
+    "difficulty": "Easy",
+    "likes": 15,
+    "dislikes": 1,
+    "acRate": 63.52841391009329,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.5K\", \"totalSubmission\": \"2.4K\", \"totalAcceptedRaw\": 1498, \"totalSubmissionRaw\": 2358, \"acRate\": \"63.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Would you ever change the last element of the array?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:28.337Z"
+}

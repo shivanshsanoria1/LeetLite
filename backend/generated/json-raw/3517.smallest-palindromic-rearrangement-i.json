@@ -1,0 +1,139 @@
+{
+    "questionId": "3812",
+    "questionFrontendId": "3517",
+    "title": "Smallest Palindromic Rearrangement I",
+    "titleSlug": "smallest-palindromic-rearrangement-i",
+    "difficulty": "Medium",
+    "likes": 402,
+    "dislikes": 5,
+    "acRate": 74.30706586446114,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"187.2K\", \"totalSubmission\": \"252K\", \"totalAcceptedRaw\": 187230, \"totalSubmissionRaw\": 251969, \"acRate\": \"74.3%\"}",
+    "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": "<p>You are given a <strong><span data-keyword=\"palindrome-string\">palindromic</span></strong> string <code>s</code>.</p>\n\n<p>Return the <strong><span data-keyword=\"lexicographically-smaller-string\">lexicographically smallest</span></strong> palindromic <span data-keyword=\"permutation-string\">permutation</span> of <code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;z&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;z&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>A string of only one character is already the lexicographically smallest palindrome.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;babab&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;abbba&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Rearranging <code>&quot;babab&quot;</code> &rarr; <code>&quot;abbba&quot;</code> gives the smallest lexicographic palindrome.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;daccad&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;acddca&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Rearranging <code>&quot;daccad&quot;</code> &rarr; <code>&quot;acddca&quot;</code> gives the smallest lexicographic palindrome.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n\t<li><code>s</code> is guaranteed to be palindromic.</li>\n</ul>\n",
+    "hints": [
+        "Consider a palindrome as composed of two mirror-image halves.",
+        "Construct one half (using <code>s</code>), and then the other half is its reverse to obtain the lexicographically smallest permutation."
+    ],
+    "exampleTestcases": "\"z\"\n\"babab\"\n\"daccad\"",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Sorting\n\n#### Intuition\n\nThe task is to rearrange the palindrome string $s$ to obtain the lexicographically smallest palindrome permutation. Since a palindrome is symmetric and the original string is already a palindrome, the multiset of characters on each side of the center must remain the same after any valid rearrangement. Therefore, once the arrangement of the left half is determined, the arrangement of the right half is uniquely determined. Likewise, when $s$ has odd length, the center character cannot be moved.\n\nTo justify this observation, we only need to show that there is no valid rearrangement in which the multiset of characters in the left half differs from that of the original string.\n\nSuppose, for the sake of contradiction, that there exists a palindrome $s'$ obtained by rearranging $s$ such that the multiset of characters in the left half of $s'$ differs from that of the left half of $s$. Then there must exist at least one character $c$ whose number of occurrences in the left half of $s'$ is $k'$, while its number of occurrences in the left half of $s$ is $k$, where $k' \\ne k$.\n\nSince a palindrome is symmetric, the total number of occurrences of any character is determined by its occurrences in the left half, except for a possible center character. We consider the following two cases.\n\n1. **The length of $s$ is even.**\n   There is no center character. Therefore, the total number of occurrences of character $c$ in $s'$ is $2k'$. Since $s'$ is merely a rearrangement of $s$, the total frequency of $c$ must remain unchanged, namely $2k$. Hence,\n   $$\n   2k' = 2k,\n   $$\n   which implies $k' = k$, contradicting the assumption.\n\n2. **The length of $s$ is odd.**\n   There is exactly one center character whose total frequency is odd.\n\n   * If $c$ is **not** the center character in $s'$, then its total frequency is $2k'$. If $c$ is also not the center character in $s$, its total frequency is $2k$, giving\n     $$\n     2k' = 2k,\n     $$\n\n     which again implies $k' = k$. If $c$ is the center character in $s$, then its total frequency is $2k + 1$, leading to\n\n     $$\n     2k' = 2k + 1,\n     $$\n     which is impossible because the two sides have different parity.\n\n   * If $c$ **is** the center character in $s'$, then its total frequency is $2k' + 1$. If $c$ is not the center character in $s$, we obtain\n     $$\n     2k' + 1 = 2k,\n     $$\n     \n     which is impossible due to parity. If $c$ is also the center character in $s$, then\n     \n     $$\n     2k' + 1 = 2k + 1,\n     $$\n     implying $k' = k$, again contradicting the assumption.\n\nTherefore, the multiset of characters in the left half must remain unchanged. We only need to rearrange the left half of $s$. To obtain the lexicographically smallest palindrome, we sort the left half in ascending order and then mirror it to construct the right half.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/YPXfdyf8/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"YPXfdyf8\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $s$.\n\n- Time complexity: $O(n\\log n)$.\n  \n  The sorting operation dominates the overall complexity.\n\n- Space complexity: $O(n)$ or $O(\\log n)$.\n  \n  Depending on the language implementation, if the string is modified in place, only the $O(\\log n)$ auxiliary space required by the sorting algorithm is needed. Otherwise, if strings are immutable, an additional $O(n)$ space is required.\n\n---\n\n### Approach 2: Counting Sort\n\n#### Intuition\n\nWe can further optimize the sorting step in Approach 1. Since the string contains only lowercase English letters, there are only $26$ possible characters. Instead of using a comparison-based sorting algorithm, we can use counting sort.\n\nWe first count the frequency of each character in the left half of the string. Then, we scan the frequency array in lexicographical order, placing each character into both the left and right halves simultaneously. This directly constructs the lexicographically smallest palindrome without performing an explicit sort.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CEUj8Jwc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"CEUj8Jwc\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $s$.\n\n- Time complexity: $O(n)$.\n  \n  Counting the frequencies and reconstructing the palindrome each require linear time.\n\n- Space complexity: $O(1)$.\n  \n  The auxiliary frequency array has a fixed size of $26$, independent of the input size.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting Sort",
+            "slug": "counting-sort"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string smallestPalindrome(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public String smallestPalindrome(String s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def smallestPalindrome(self, s: str) -> str:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def smallestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar smallestPalindrome = function(s) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function smallestPalindrome(s: string): string {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public string SmallestPalindrome(string s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "char* smallestPalindrome(char* s) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func smallestPalindrome(s string) string {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun smallestPalindrome(s: String): String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func smallestPalindrome(_ s: String) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn smallest_palindrome(s: String) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} s\n# @return {String}\ndef smallest_palindrome(s)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function smallestPalindrome($s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  String smallestPalindrome(String s) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def smallestPalindrome(s: String): String = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec smallest_palindrome(s :: String.t) :: String.t\n  def smallest_palindrome(s) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec smallest_palindrome(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nsmallest_palindrome(S) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (smallest-palindrome s)\n  (-> string? string?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:01.974Z"
+}

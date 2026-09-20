@@ -1,0 +1,35 @@
+{
+    "questionId": "2729",
+    "questionFrontendId": "2702",
+    "title": "Minimum Operations to Make Numbers Non-positive",
+    "titleSlug": "minimum-operations-to-make-numbers-non-positive",
+    "difficulty": "Hard",
+    "likes": 50,
+    "dislikes": 5,
+    "acRate": 44.342407346671045,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.8K\", \"totalSubmission\": \"15.2K\", \"totalAcceptedRaw\": 6760, \"totalSubmissionRaw\": 15245, \"acRate\": \"44.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Given a candidate, can you check if it is possible to decrement all values to be less than or equal to 0 within the given steps in O(N) time?",
+        "If so, run a binary search to look for the minimum such valid candidate."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:41:18.929Z"
+}

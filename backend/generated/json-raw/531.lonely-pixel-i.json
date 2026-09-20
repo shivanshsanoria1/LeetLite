@@ -1,0 +1,39 @@
+{
+    "questionId": "531",
+    "questionFrontendId": "531",
+    "title": "Lonely Pixel I",
+    "titleSlug": "lonely-pixel-i",
+    "difficulty": "Medium",
+    "likes": 454,
+    "dislikes": 41,
+    "acRate": 62.723168479376156,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"48.9K\", \"totalSubmission\": \"78K\", \"totalAcceptedRaw\": 48904, \"totalSubmissionRaw\": 77968, \"acRate\": \"62.7%\"}",
+    "similarQuestions": "[{\"title\": \"Lonely Pixel II\", \"titleSlug\": \"lonely-pixel-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:05.086Z"
+}

@@ -1,0 +1,44 @@
+{
+    "questionId": "2485",
+    "questionFrontendId": "2345",
+    "title": "Finding the Number of Visible Mountains",
+    "titleSlug": "finding-the-number-of-visible-mountains",
+    "difficulty": "Medium",
+    "likes": 189,
+    "dislikes": 80,
+    "acRate": 37.47164793909847,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.4K\", \"totalSubmission\": \"38.4K\", \"totalAcceptedRaw\": 14373, \"totalSubmissionRaw\": 38357, \"acRate\": \"37.5%\"}",
+    "similarQuestions": "[{\"title\": \"Buildings With an Ocean View\", \"titleSlug\": \"buildings-with-an-ocean-view\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can we efficiently find for each mountain the relevant mountains to compare itself against to check whether or not it would be visible?",
+        "Do you notice a pattern after sorting the peaks by their x-coordinates?",
+        "After sorting, process the peaks sequentially and use a monotonic stack to store currently visible mountains."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:25.979Z"
+}

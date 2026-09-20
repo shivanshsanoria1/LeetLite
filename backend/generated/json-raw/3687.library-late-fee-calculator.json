@@ -1,0 +1,35 @@
+{
+    "questionId": "4060",
+    "questionFrontendId": "3687",
+    "title": "Library Late Fee Calculator",
+    "titleSlug": "library-late-fee-calculator",
+    "difficulty": "Easy",
+    "likes": 5,
+    "dislikes": 3,
+    "acRate": 94.6343256155825,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.6K\", \"totalSubmission\": \"2.7K\", \"totalAcceptedRaw\": 2575, \"totalSubmissionRaw\": 2721, \"acRate\": \"94.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Simulate as described"
+    ],
+    "exampleTestcases": "[5,1,7]\n[1,1]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:11:54.124Z"
+}

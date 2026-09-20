@@ -1,0 +1,50 @@
+{
+    "questionId": "1167",
+    "questionFrontendId": "1199",
+    "title": "Minimum Time to Build Blocks",
+    "titleSlug": "minimum-time-to-build-blocks",
+    "difficulty": "Hard",
+    "likes": 251,
+    "dislikes": 33,
+    "acRate": 49.32103655086568,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.7K\", \"totalSubmission\": \"17.7K\", \"totalAcceptedRaw\": 8717, \"totalSubmissionRaw\": 17674, \"acRate\": \"49.3%\"}",
+    "similarQuestions": "[{\"title\": \"Find Time Required to Eliminate Bacterial Strains\", \"titleSlug\": \"find-time-required-to-eliminate-bacterial-strains\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "A greedy approach will not work as the examples show.",
+        "Try all possible moves using DP.",
+        "For the DP state, dp[i][j] is the minimum time cost to build the first i blocks using j workers.",
+        "In one step you can either assign a worker to a block or choose a number of workers to split.",
+        "If you choose to assign a worker to a block it is always better to assign him to the block with the maximum time so we sort the array before using DP.",
+        "To optimize the solution from O(n^3) to O(n^2) notice that if you choose to split, it is always better to split all the workers you have."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:36.167Z"
+}

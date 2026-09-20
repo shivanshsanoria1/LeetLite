@@ -1,0 +1,28 @@
+{
+    "questionId": "3574",
+    "questionFrontendId": "3262",
+    "title": "Find Overlapping Shifts",
+    "titleSlug": "find-overlapping-shifts",
+    "difficulty": "Medium",
+    "likes": 11,
+    "dislikes": 6,
+    "acRate": 57.87592008412198,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"4.8K\", \"totalAcceptedRaw\": 2752, \"totalSubmissionRaw\": 4755, \"acRate\": \"57.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:58:16.012Z"
+}

@@ -1,0 +1,44 @@
+{
+    "questionId": "3304",
+    "questionFrontendId": "3004",
+    "title": "Maximum Subtree of the Same Color",
+    "titleSlug": "maximum-subtree-of-the-same-color",
+    "difficulty": "Medium",
+    "likes": 25,
+    "dislikes": 0,
+    "acRate": 59.34041611332448,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.7K\", \"totalSubmission\": \"4.5K\", \"totalAcceptedRaw\": 2681, \"totalSubmissionRaw\": 4518, \"acRate\": \"59.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "For each node, define a <code>flag[v]</code> indicating that the subtree of this node contains only one color or not.",
+        "In the DFS process, when you call <code>dfs(u)</code> from node <code>v</code>, after that DFS of <code>u</code> has finished, check if <code>flag[u] == false</code>, then <code>flag[v]</code> is also <code>false</code>.",
+        "Also if <code>color[v] != color[u]</code>, <code>flag[v]</code> becomes <code>false</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:27.250Z"
+}

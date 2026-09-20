@@ -1,0 +1,42 @@
+{
+    "questionId": "1107",
+    "questionFrontendId": "1151",
+    "title": "Minimum Swaps to Group All 1's Together",
+    "titleSlug": "minimum-swaps-to-group-all-1s-together",
+    "difficulty": "Medium",
+    "likes": 1283,
+    "dislikes": 18,
+    "acRate": 61.29959119046157,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"89.8K\", \"totalSubmission\": \"146.5K\", \"totalAcceptedRaw\": 89818, \"totalSubmissionRaw\": 146523, \"acRate\": \"61.3%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Adjacent Swaps for K Consecutive Ones\", \"titleSlug\": \"minimum-adjacent-swaps-for-k-consecutive-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Swaps to Group All 1's Together II\", \"titleSlug\": \"minimum-swaps-to-group-all-1s-together-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Time Needed to Rearrange a Binary String\", \"titleSlug\": \"time-needed-to-rearrange-a-binary-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Pick K Ones\", \"titleSlug\": \"minimum-moves-to-pick-k-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How many 1's should be grouped together ? Is not a fixed number?",
+        "Yeah it's just the number of 1's the whole array has. Let's name this number as ones",
+        "Every subarray of size of ones, needs some number of swaps to reach, Can you find the number of swaps needed to group all 1's in this subarray?",
+        "It's the number of zeros in that subarray.",
+        "Do you need to count the number of zeros all over again for every position ?",
+        "Use Sliding Window technique."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:46.296Z"
+}

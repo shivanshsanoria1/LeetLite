@@ -1,0 +1,53 @@
+{
+    "questionId": "760",
+    "questionFrontendId": "758",
+    "title": "Bold Words in String",
+    "titleSlug": "bold-words-in-string",
+    "difficulty": "Medium",
+    "likes": 290,
+    "dislikes": 125,
+    "acRate": 53.5099737593758,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"23K\", \"totalSubmission\": \"43.1K\", \"totalAcceptedRaw\": 23043, \"totalSubmissionRaw\": 43063, \"acRate\": \"53.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "First, determine which letters are bold and store that information in mask[i] = if i-th character is bold.\r\nThen, insert the tags at the beginning and end of groups.  The start of a group is if and only if (mask[i] and (i == 0 or not mask[i-1])), and the end of a group is similar."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Aho–Corasick Algorithm",
+            "slug": "aho-corasick-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:14.691Z"
+}

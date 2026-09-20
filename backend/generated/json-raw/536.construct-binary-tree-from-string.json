@@ -1,0 +1,47 @@
+{
+    "questionId": "536",
+    "questionFrontendId": "536",
+    "title": "Construct Binary Tree from String",
+    "titleSlug": "construct-binary-tree-from-string",
+    "difficulty": "Medium",
+    "likes": 1135,
+    "dislikes": 184,
+    "acRate": 58.67870822967871,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"127.6K\", \"totalSubmission\": \"217.5K\", \"totalAcceptedRaw\": 127608, \"totalSubmissionRaw\": 217469, \"acRate\": \"58.7%\"}",
+    "similarQuestions": "[{\"title\": \"Construct String from Binary Tree\", \"titleSlug\": \"construct-string-from-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:09.339Z"
+}

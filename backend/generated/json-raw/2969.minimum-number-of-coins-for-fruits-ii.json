@@ -1,0 +1,52 @@
+{
+    "questionId": "3268",
+    "questionFrontendId": "2969",
+    "title": "Minimum Number of Coins for Fruits II",
+    "titleSlug": "minimum-number-of-coins-for-fruits-ii",
+    "difficulty": "Hard",
+    "likes": 21,
+    "dislikes": 0,
+    "acRate": 48.39002267573696,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.1K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 1067, \"totalSubmissionRaw\": 2205, \"acRate\": \"48.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use DP + Fenwick tree.",
+        "There is another creative solution using multiset instead of Fenwick.",
+        "Imagine we want to calculate <code>dp[i]</code> which is the answer to the problem for the first <code>i</code> fruits.",
+        "If we buy <code>l<sup>th</sup></code> fruit from the set of indices: <code>[(i + 1) / 2, (i + 1) / 2 + 1, (i + 1) / 2 + 2, ..., i - 1]</code>, then we can get fruits <code>l + 1, l + 2, ..., i</code> for free.",
+        "We just need to get all the first <code>l - 1</code> fruits as well and the minimum price for that, is <code>dp[l - 1]</code>.",
+        "So at the index <code>i</code>, we are looking for such an index <code>l</code> that <code>dp[l - 1] + prices[l]</code> is as minimum as possible.",
+        "We can store these values in a multiset and update the values in it."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Monotonic Queue",
+            "slug": "monotonic-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:46:58.272Z"
+}

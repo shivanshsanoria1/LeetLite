@@ -1,0 +1,28 @@
+{
+    "questionId": "3432",
+    "questionFrontendId": "3124",
+    "title": "Find Longest Calls",
+    "titleSlug": "find-longest-calls",
+    "difficulty": "Medium",
+    "likes": 7,
+    "dislikes": 5,
+    "acRate": 63.87096774193548,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.4K\", \"totalSubmission\": \"5.3K\", \"totalAcceptedRaw\": 3366, \"totalSubmissionRaw\": 5270, \"acRate\": \"63.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:28.848Z"
+}

@@ -1,0 +1,41 @@
+{
+    "questionId": "2517",
+    "questionFrontendId": "2378",
+    "title": "Choose Edges to Maximize Score in a Tree",
+    "titleSlug": "choose-edges-to-maximize-score-in-a-tree",
+    "difficulty": "Medium",
+    "likes": 63,
+    "dislikes": 13,
+    "acRate": 56.53253849975162,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.3K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2276, \"totalSubmissionRaw\": 4026, \"acRate\": \"56.5%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Cameras\", \"titleSlug\": \"binary-tree-cameras\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Path With Different Adjacent Characters\", \"titleSlug\": \"longest-path-with-different-adjacent-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use dynamic programming to recursively solve the problem for smaller subtrees.",
+        "You can ignore the edges with negative weights.",
+        "The states of the dp are the following: the root of the subtree you are at, and a boolean variable that will tell you if you have chosen the edge that connects that node and its parent.",
+        "What are the transitions of this dp?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:52.999Z"
+}

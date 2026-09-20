@@ -1,0 +1,40 @@
+{
+    "questionId": "1123",
+    "questionFrontendId": "1165",
+    "title": "Single-Row Keyboard",
+    "titleSlug": "single-row-keyboard",
+    "difficulty": "Easy",
+    "likes": 546,
+    "dislikes": 23,
+    "acRate": 87.83352105914287,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"95.1K\", \"totalSubmission\": \"108.3K\", \"totalAcceptedRaw\": 95136, \"totalSubmissionRaw\": 108314, \"acRate\": \"87.8%\"}",
+    "similarQuestions": "[{\"title\": \"Total Distance to Type a String Using One Finger\", \"titleSlug\": \"total-distance-to-type-a-string-using-one-finger\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Can be the problem divided in parts, so solving each part and sum their solutions it should return the answer? Yes, you only need to divide the problem in finger jumps.",
+        "In each finger jump you need to move your finger from one character to another, you need to know its index.",
+        "Map each character to it's index.",
+        "Use a hash table to do that."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:01.562Z"
+}

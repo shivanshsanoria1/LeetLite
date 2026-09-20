@@ -1,0 +1,56 @@
+{
+    "questionId": "1865",
+    "questionFrontendId": "1724",
+    "title": "Checking Existence of Edge Length Limited Paths II",
+    "titleSlug": "checking-existence-of-edge-length-limited-paths-ii",
+    "difficulty": "Hard",
+    "likes": 126,
+    "dislikes": 10,
+    "acRate": 51.03777985074627,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.4K\", \"totalSubmission\": \"8.6K\", \"totalAcceptedRaw\": 4377, \"totalSubmissionRaw\": 8576, \"acRate\": \"51.0%\"}",
+    "similarQuestions": "[{\"title\": \"Checking Existence of Edge Length Limited Paths\", \"titleSlug\": \"checking-existence-of-edge-length-limited-paths\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Good Paths\", \"titleSlug\": \"number-of-good-paths\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Score of a Path Between Two Cities\", \"titleSlug\": \"minimum-score-of-a-path-between-two-cities\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Find the minimum spanning tree of the given graph.",
+        "Root the tree in an arbitrary node and calculate the maximum weight of the edge from each node to the chosen root.",
+        "To answer a query, find the lca between the two nodes, and find the maximum weight from each of the query nodes to their lca and compare it to the given limit."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:52:48.850Z"
+}

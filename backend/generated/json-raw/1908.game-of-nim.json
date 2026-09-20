@@ -1,0 +1,65 @@
+{
+    "questionId": "2062",
+    "questionFrontendId": "1908",
+    "title": "Game of Nim",
+    "titleSlug": "game-of-nim",
+    "difficulty": "Medium",
+    "likes": 105,
+    "dislikes": 40,
+    "acRate": 62.36994219653179,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"8.7K\", \"totalAcceptedRaw\": 5395, \"totalSubmissionRaw\": 8650, \"acRate\": \"62.4%\"}",
+    "similarQuestions": "[{\"title\": \"Subtree Removal Game with Fibonacci Tree\", \"titleSlug\": \"subtree-removal-game-with-fibonacci-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Simulate the game and try all possible moves for each player."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Brainteaser",
+            "slug": "brainteaser"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        },
+        {
+            "name": "Nim Game",
+            "slug": "nim-game"
+        },
+        {
+            "name": "Sprague–Grundy Theorem",
+            "slug": "sprague-grundy-theorem"
+        },
+        {
+            "name": "Impartial Game",
+            "slug": "impartial-game"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:34.376Z"
+}

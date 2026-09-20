@@ -1,0 +1,37 @@
+{
+    "questionId": "4108",
+    "questionFrontendId": "3717",
+    "title": "Minimum Operations to Make the Array Beautiful",
+    "titleSlug": "minimum-operations-to-make-the-array-beautiful",
+    "difficulty": "Medium",
+    "likes": 8,
+    "dislikes": 2,
+    "acRate": 37.44250229990801,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"407\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 407, \"totalSubmissionRaw\": 1087, \"acRate\": \"37.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use dynamic programming.",
+        "For each index <code>i</code>, compute <code>dp[i][val]</code> where <code>dp[i][val]</code> is the minimum number of increments needed to make position <code>i</code> equal to <code>val</code>.",
+        "Carefully combine DP states for index <code>i</code> with those for index <code>i - 1</code>."
+    ],
+    "exampleTestcases": "[3,7,9]\n[1,1,1]\n[4]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-16T17:22:29.764Z"
+}

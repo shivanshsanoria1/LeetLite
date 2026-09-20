@@ -1,0 +1,53 @@
+{
+    "questionId": "333",
+    "questionFrontendId": "333",
+    "title": "Largest BST Subtree",
+    "titleSlug": "largest-bst-subtree",
+    "difficulty": "Medium",
+    "likes": 1570,
+    "dislikes": 148,
+    "acRate": 45.922630082808055,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"130K\", \"totalSubmission\": \"283.2K\", \"totalAcceptedRaw\": 130046, \"totalSubmissionRaw\": 283185, \"acRate\": \"45.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "You can recursively use algorithm similar to <a href=\"https://leetcode.com/problems/validate-binary-search-tree/\">98. Validate Binary Search Tree</a> at each node of the tree, which will result in O(nlogn) time complexity."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:08.348Z"
+}

@@ -1,0 +1,31 @@
+{
+    "questionId": "1551",
+    "questionFrontendId": "1421",
+    "title": "NPV Queries",
+    "titleSlug": "npv-queries",
+    "difficulty": "Easy",
+    "likes": 61,
+    "dislikes": 297,
+    "acRate": 82.83156618424786,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"32.1K\", \"totalSubmission\": \"38.8K\", \"totalAcceptedRaw\": 32108, \"totalSubmissionRaw\": 38763, \"acRate\": \"82.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:33:50.143Z"
+}

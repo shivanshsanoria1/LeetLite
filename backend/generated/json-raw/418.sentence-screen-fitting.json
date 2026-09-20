@@ -1,0 +1,36 @@
+{
+    "questionId": "418",
+    "questionFrontendId": "418",
+    "title": "Sentence Screen Fitting",
+    "titleSlug": "sentence-screen-fitting",
+    "difficulty": "Medium",
+    "likes": 1144,
+    "dislikes": 543,
+    "acRate": 36.41970714015049,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"107.6K\", \"totalSubmission\": \"295.6K\", \"totalAcceptedRaw\": 107645, \"totalSubmissionRaw\": 295568, \"acRate\": \"36.4%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost to Separate Sentence Into Rows\", \"titleSlug\": \"minimum-cost-to-separate-sentence-into-rows\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Split Message Based on Limit\", \"titleSlug\": \"split-message-based-on-limit\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:26.379Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "425",
+    "questionFrontendId": "425",
+    "title": "Word Squares",
+    "titleSlug": "word-squares",
+    "difficulty": "Hard",
+    "likes": 1125,
+    "dislikes": 75,
+    "acRate": 54.755847620286936,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"84.2K\", \"totalSubmission\": \"153.7K\", \"totalAcceptedRaw\": 84157, \"totalSubmissionRaw\": 153695, \"acRate\": \"54.8%\"}",
+    "similarQuestions": "[{\"title\": \"Valid Word Square\", \"titleSlug\": \"valid-word-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:32.821Z"
+}

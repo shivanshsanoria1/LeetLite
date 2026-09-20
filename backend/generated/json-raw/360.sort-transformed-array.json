@@ -1,0 +1,46 @@
+{
+    "questionId": "360",
+    "questionFrontendId": "360",
+    "title": "Sort Transformed Array",
+    "titleSlug": "sort-transformed-array",
+    "difficulty": "Medium",
+    "likes": 707,
+    "dislikes": 221,
+    "acRate": 58.28055106916648,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"78.3K\", \"totalSubmission\": \"134.4K\", \"totalAcceptedRaw\": 78304, \"totalSubmissionRaw\": 134357, \"acRate\": \"58.3%\"}",
+    "similarQuestions": "[{\"title\": \"Squares of a Sorted Array\", \"titleSlug\": \"squares-of-a-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Time to Repair Cars\", \"titleSlug\": \"minimum-time-to-repair-cars\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "x^2 + x  will form a parabola.",
+        "Parameter A in:  A * x^2 + B * x + C dictates the shape of the parabola.</br>\r\nPositive A means the parabola remains concave (high-low-high), but negative A inverts the parabola to be convex (low-high-low)."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:31.159Z"
+}

@@ -1,0 +1,56 @@
+{
+    "questionId": "711",
+    "questionFrontendId": "711",
+    "title": "Number of Distinct Islands II",
+    "titleSlug": "number-of-distinct-islands-ii",
+    "difficulty": "Hard",
+    "likes": 282,
+    "dislikes": 286,
+    "acRate": 55.63528109614136,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"26.2K\", \"totalAcceptedRaw\": 14577, \"totalSubmissionRaw\": 26201, \"acRate\": \"55.6%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Distinct Islands\", \"titleSlug\": \"number-of-distinct-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:41.652Z"
+}

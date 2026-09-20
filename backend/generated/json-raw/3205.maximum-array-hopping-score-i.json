@@ -1,0 +1,47 @@
+{
+    "questionId": "3513",
+    "questionFrontendId": "3205",
+    "title": "Maximum Array Hopping Score I",
+    "titleSlug": "maximum-array-hopping-score-i",
+    "difficulty": "Medium",
+    "likes": 28,
+    "dislikes": 1,
+    "acRate": 77.20867208672087,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"3.7K\", \"totalAcceptedRaw\": 2849, \"totalSubmissionRaw\": 3690, \"acRate\": \"77.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Define <code>dp[i]</code> as the maximum score if we start from index <code>i</code>.",
+        "We can calculate <code>dp[i]</code> as the maximum score from hopping to all indices <code>j > i</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:33.810Z"
+}

@@ -1,0 +1,47 @@
+{
+    "questionId": "771",
+    "questionFrontendId": "431",
+    "title": "Encode N-ary Tree to Binary Tree",
+    "titleSlug": "encode-n-ary-tree-to-binary-tree",
+    "difficulty": "Hard",
+    "likes": 538,
+    "dislikes": 30,
+    "acRate": 80.71401346715791,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"25.4K\", \"totalSubmission\": \"31.5K\", \"totalAcceptedRaw\": 25412, \"totalSubmissionRaw\": 31484, \"acRate\": \"80.7%\"}",
+    "similarQuestions": "[{\"title\": \"Serialize and Deserialize N-ary Tree\", \"titleSlug\": \"serialize-and-deserialize-n-ary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:37.851Z"
+}

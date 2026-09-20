@@ -1,0 +1,47 @@
+{
+    "questionId": "4006",
+    "questionFrontendId": "3656",
+    "title": "Determine if a Simple Graph Exists",
+    "titleSlug": "determine-if-a-simple-graph-exists",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 8,
+    "acRate": 47.42468415937804,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"488\", \"totalSubmission\": \"1K\", \"totalAcceptedRaw\": 488, \"totalSubmissionRaw\": 1029, \"acRate\": \"47.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use the Erdős–Gallai theorem"
+    ],
+    "exampleTestcases": "[3,1,2,2]\n[1,3,3,1]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:55:52.396Z"
+}

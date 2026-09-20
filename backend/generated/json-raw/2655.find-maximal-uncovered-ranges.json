@@ -1,0 +1,36 @@
+{
+    "questionId": "2815",
+    "questionFrontendId": "2655",
+    "title": "Find Maximal Uncovered Ranges",
+    "titleSlug": "find-maximal-uncovered-ranges",
+    "difficulty": "Medium",
+    "likes": 34,
+    "dislikes": 3,
+    "acRate": 49.94942342706858,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"4.9K\", \"totalAcceptedRaw\": 2469, \"totalSubmissionRaw\": 4943, \"acRate\": \"49.9%\"}",
+    "similarQuestions": "[{\"title\": \"Missing Ranges\", \"titleSlug\": \"missing-ranges\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Summary Ranges\", \"titleSlug\": \"summary-ranges\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Check if All the Integers in a Range Are Covered\", \"titleSlug\": \"check-if-all-the-integers-in-a-range-are-covered\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "The complexity of the solution is independent of the length of the array nums.",
+        "Sort ranges by their start points.",
+        "An uncovered range should start right after the end of one of the input ranges (or starts at zero) and also ends right before the start of one of the input ranges (or ends at n)."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:39.301Z"
+}

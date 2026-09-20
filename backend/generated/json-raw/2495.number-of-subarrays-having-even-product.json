@@ -1,0 +1,40 @@
+{
+    "questionId": "2638",
+    "questionFrontendId": "2495",
+    "title": "Number of Subarrays Having Even Product",
+    "titleSlug": "number-of-subarrays-having-even-product",
+    "difficulty": "Medium",
+    "likes": 54,
+    "dislikes": 5,
+    "acRate": 63.096252129471885,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"4.7K\", \"totalAcceptedRaw\": 2963, \"totalSubmissionRaw\": 4696, \"acRate\": \"63.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "The product of elements in a subarray is even if it contains at least one even element.",
+        "Iterate from left to right and save the last index of an even number. Let that saved index be “j”.",
+        "It can be seen that every subarray starting from earlier than index “j” and ending at the current index has an even product."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:25:25.918Z"
+}

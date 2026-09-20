@@ -1,0 +1,67 @@
+{
+    "questionId": "505",
+    "questionFrontendId": "505",
+    "title": "The Maze II",
+    "titleSlug": "the-maze-ii",
+    "difficulty": "Medium",
+    "likes": 1405,
+    "dislikes": 64,
+    "acRate": 55.20505928054401,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"131K\", \"totalSubmission\": \"237.3K\", \"totalAcceptedRaw\": 131027, \"totalSubmissionRaw\": 237346, \"acRate\": \"55.2%\"}",
+    "similarQuestions": "[{\"title\": \"The Maze\", \"titleSlug\": \"the-maze\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Maze III\", \"titleSlug\": \"the-maze-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Shortest Path",
+            "slug": "shortest-path"
+        },
+        {
+            "name": "Dijkstra's Algorithm",
+            "slug": "dijkstra"
+        },
+        {
+            "name": "Heuristic Search",
+            "slug": "heuristic-search"
+        },
+        {
+            "name": "A* Search",
+            "slug": "a-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:42.177Z"
+}

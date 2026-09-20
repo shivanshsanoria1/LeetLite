@@ -1,0 +1,35 @@
+{
+    "questionId": "3796",
+    "questionFrontendId": "3460",
+    "title": "Longest Common Prefix After at Most One Removal",
+    "titleSlug": "longest-common-prefix-after-at-most-one-removal",
+    "difficulty": "Medium",
+    "likes": 8,
+    "dislikes": 1,
+    "acRate": 68.42357450886439,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"2.1K\", \"totalAcceptedRaw\": 1428, \"totalSubmissionRaw\": 2087, \"acRate\": \"68.4%\"}",
+    "similarQuestions": "[{\"title\": \"Longest Common Prefix\", \"titleSlug\": \"longest-common-prefix\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Maintain pointers to the beginning of both strings and remove the first position where they differ in <code>s</code> (if any)."
+    ],
+    "exampleTestcases": "\"madxa\"\n\"madam\"\n\"leetcode\"\n\"eetcode\"\n\"one\"\n\"one\"\n\"a\"\n\"b\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:08.910Z"
+}

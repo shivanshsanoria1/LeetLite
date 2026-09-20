@@ -1,0 +1,35 @@
+{
+    "questionId": "3586",
+    "questionFrontendId": "3269",
+    "title": "Constructing Two Increasing Arrays",
+    "titleSlug": "constructing-two-increasing-arrays",
+    "difficulty": "Hard",
+    "likes": 12,
+    "dislikes": 1,
+    "acRate": 61.6304347826087,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"567\", \"totalSubmission\": \"920\", \"totalAcceptedRaw\": 567, \"totalSubmissionRaw\": 920, \"acRate\": \"61.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of dynamic programming.",
+        "Define <code>dp[i][j][flag]</code> as the answer to the problem if we only consider the first <code>i</code> elements of the first array, the first <code>j</code> elements of the second array, and flag is either 0 or 1 indicating which array contains the largest element."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:58:23.186Z"
+}

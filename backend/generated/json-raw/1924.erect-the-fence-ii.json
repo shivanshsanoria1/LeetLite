@@ -1,0 +1,43 @@
+{
+    "questionId": "2074",
+    "questionFrontendId": "1924",
+    "title": "Erect the Fence II",
+    "titleSlug": "erect-the-fence-ii",
+    "difficulty": "Hard",
+    "likes": 15,
+    "dislikes": 44,
+    "acRate": 49.528746465598495,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.1K\", \"totalSubmission\": \"2.1K\", \"totalAcceptedRaw\": 1051, \"totalSubmissionRaw\": 2122, \"acRate\": \"49.5%\"}",
+    "similarQuestions": "[{\"title\": \"Erect the Fence\", \"titleSlug\": \"erect-the-fence\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "First, we need to note that this is a classic problem given n points you need to find the minimum enclosing circle to bind them",
+        "Second, we need to apply a well known algorithm called welzls algorithm to help us find the minimum enclosing circle"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Minimum Enclosing Circle",
+            "slug": "minimum-enclosing-circle"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:47.282Z"
+}

@@ -1,0 +1,147 @@
+{
+    "questionId": "3435",
+    "questionFrontendId": "3161",
+    "title": "Block Placement Queries",
+    "titleSlug": "block-placement-queries",
+    "difficulty": "Hard",
+    "likes": 339,
+    "dislikes": 51,
+    "acRate": 41.09323711141147,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68.1K\", \"totalSubmission\": \"165.7K\", \"totalAcceptedRaw\": 68101, \"totalSubmissionRaw\": 165726, \"acRate\": \"41.1%\"}",
+    "similarQuestions": "[{\"title\": \"Building Boxes\", \"titleSlug\": \"building-boxes\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Fruits Into Baskets III\", \"titleSlug\": \"fruits-into-baskets-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>There exists an infinite number line, with its origin at 0 and extending towards the <strong>positive</strong> x-axis.</p>\n\n<p>You are given a 2D array <code>queries</code>, which contains two types of queries:</p>\n\n<ol>\n\t<li>For a query of type 1, <code>queries[i] = [1, x]</code>. Build an obstacle at distance <code>x</code> from the origin. It is guaranteed that there is <strong>no</strong> obstacle at distance <code>x</code> when the query is asked.</li>\n\t<li>For a query of type 2, <code>queries[i] = [2, x, sz]</code>. Check if it is possible to place a block of size <code>sz</code> <em>anywhere</em> in the range <code>[0, x]</code> on the line, such that the block <strong>entirely</strong> lies in the range <code>[0, x]</code>. A block <strong>cannot </strong>be placed if it intersects with any obstacle, but it may touch it. Note that you do<strong> not</strong> actually place the block. Queries are separate.</li>\n</ol>\n\n<p>Return a boolean array <code>results</code>, where <code>results[i]</code> is <code>true</code> if you can place the block specified in the <code>i<sup>th</sup></code> query of type 2, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">queries = [[1,2],[2,3,3],[2,3,1],[2,2,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[false,true,true]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/04/22/example0block.png\" style=\"padding: 10px; background: rgb(255, 255, 255); border-radius: 0.5rem; width: 309px; height: 129px;\" /></strong></p>\n\n<p>For query 0, place an obstacle at <code>x = 2</code>. A block of size at most 2 can be placed before <code>x = 3</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">queries = </span>[[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]<!-- notionvc: 4a471445-5af1-4d72-b11b-94d351a2c8e9 --></p>\n\n<p><strong>Output:</strong> [true,true,false]</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/04/22/example1block.png\" style=\"padding: 10px; background: rgb(255, 255, 255); border-radius: 0.5rem; width: 310px; height: 130px;\" /></strong></p>\n\n<ul>\n\t<li>Place an obstacle at <code>x = 7</code> for query 0. A block of size at most 7 can be placed before <code>x = 7</code>.</li>\n\t<li>Place an obstacle at <code>x = 2</code> for query 2. Now, a block of size at most 5 can be placed before <code>x = 7</code>, and a block of size at most 2 before <code>x = 2</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= queries.length &lt;= 15 * 10<sup>4</sup></code></li>\n\t<li><code>2 &lt;= queries[i].length &lt;= 3</code></li>\n\t<li><code>1 &lt;= queries[i][0] &lt;= 2</code></li>\n\t<li><code>1 &lt;= x, sz &lt;= min(5 * 10<sup>4</sup>, 3 * queries.length)</code></li>\n\t<li>The input is generated such that for queries of type 1, no obstacle exists at distance <code>x</code> when the query is asked.</li>\n\t<li>The input is generated such that there is at least one query of type 2.</li>\n</ul>\n",
+    "hints": [
+        "Let <code>d[x]</code> be the distance of the next obstacle after <code>x</code>.",
+        "For each query of type 2, we just need to check if <code>max(d[0], d[1], d[2], …d[x - sz]) > sz</code>.",
+        "Use segment tree to maintain <code>d[x]</code>."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Segment Tree\n\n#### Intuition\n\nThe question is essentially asking whether there exists a blank interval of length at least $\\textit{sz}$ that is completely contained within the range $[0, x]$.\n\nTo help maintain these blank intervals, we define $p[i]$ as the position of the nearest obstacle to the left of $i$. Then, $d[i] = i - p[i]$ represents the length of the maximum blank interval ending at position $i$.\n\nFor each query with parameters $x$ and $\\textit{sz}$, the problem becomes determining whether there exists an index $i \\le x$ such that $d[i] \\ge \\textit{sz}$. In other words, we need to check whether the maximum value of $d[i]$ in the interval $[0, x]$ is at least $\\textit{sz}$.\n\nWe do not need to maintain every individual point. Instead, we only need to maintain the lengths of the intervals. The next question is where to store these interval lengths so that queries can be processed efficiently.\n\nObserve that each query consists of several complete intervals and at most one incomplete interval truncated by $x$. We can store the length of each interval at its right endpoint. Specifically, we store $d[r]$ at the right endpoint $r$, where for every complete interval, $d[r]$ equals the distance to the nearest obstacle on the left.\n\nThe remaining problem is how to maintain the $d$ array dynamically. We can use a segment tree to support point updates and range maximum queries.\n\nLet $\\textit{pre}$ and $\\textit{nxt}$ denote the positions of the nearest obstacles to the left and right of $x$, respectively. When inserting an obstacle at position $x$, we need to update both $d[x]$ and $d[\\textit{nxt}]$.\n\nDuring a query, the interval $[0, \\textit{pre}]$ consists entirely of complete intervals, so we can directly query it using the segment tree. The remaining incomplete interval $[\\textit{pre}, x]$ is handled separately by comparing its length with $\\textit{sz}$.\n\nWe also need to efficiently determine the nearest obstacles on both sides of $x$, which requires maintaining an ordered structure during insertions. A balanced binary search tree can be used for this purpose.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/9sSKVEPo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9sSKVEPo\"></iframe>\n\n#### Complexity Analysis\n\nLet $q$ be the length of $\\textit{queries}$, and let $M$ be the maximum value of $x$.\n\n- Time complexity: $O(q \\log q + q \\log M)$.\n  \n  Each balanced tree operation requires $O(\\log q)$ time, and each segment tree update or query requires $O(\\log M)$ time.\n\n- Space complexity: $O(M+q)$.\n  \n  The segment tree requires $O(M)$ space, while the balanced tree stores at most $O(q)$ obstacles.\n---\n\n### Approach 2: Fenwick Tree\n\n#### Intuition\n\nSimilar to a segment tree, a Fenwick tree can also be used to maintain interval maximums. However, after adding an obstacle, interval lengths may decrease, and a Fenwick tree cannot efficiently support such range updates. Therefore, we need a different perspective.\n\nInstead of processing the queries forward, we process them in reverse order. Initially, we assume that all obstacles already exist. Then, while traversing the queries backward, we remove obstacles one by one, causing adjacent intervals to merge into larger intervals.\n\nLet $d[r]$ denote the distance from $r$ to the nearest obstacle on its left. Let $\\textit{pre}$ and $\\textit{nxt}$ represent the positions of the nearest obstacles to the left and right of $x$, respectively. Then:\n\n$$\nd[r] = r - \\textit{pre}\n$$\n\nWhen deleting an obstacle at position $x$, the two original intervals $[\\textit{pre}, x]$ and $[x, \\textit{nxt}]$ merge into a single interval $[\\textit{pre}, \\textit{nxt}]$, whose length becomes:\n\n$$\n\\textit{nxt} - \\textit{pre}\n$$\n\nSince interval lengths only increase during this reverse process, we can use a Fenwick tree to maintain prefix maximums efficiently.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/depyfyER/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"depyfyER\"></iframe>\n\n#### Complexity Analysis\n\nLet $q$ be the length of $\\textit{queries}$, and let $M$ be the maximum value of $x$.\n\n- Time complexity: $O(q \\log q + q \\log M)$.\n  \n  While processing queries in reverse order, each balanced tree operation requires $O(\\log q)$ time, and each Fenwick tree update or prefix maximum query requires $O(\\log M)$ time.\n\n- Space complexity: $O(M + q)$.\n  \n  The Fenwick tree requires $O(M)$ space, and the balanced tree stores at most $O(q)$ obstacles.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> getResults(vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public List<Boolean> getResults(int[][] queries) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def getResults(self, queries: List[List[int]]) -> List[bool]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def getResults(self, queries):\n        \"\"\"\n        :type queries: List[List[int]]\n        :rtype: List[bool]\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar getResults = function(queries) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function getResults(queries: number[][]): boolean[] {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public IList<bool> GetResults(int[][] queries) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nbool* getResults(int** queries, int queriesSize, int* queriesColSize, int* returnSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func getResults(queries [][]int) []bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun getResults(queries: Array<IntArray>): List<Boolean> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func getResults(_ queries: [[Int]]) -> [Bool] {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn get_results(queries: Vec<Vec<i32>>) -> Vec<bool> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[][]} queries\n# @return {Boolean[]}\ndef get_results(queries)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[][] $queries\n     * @return Boolean[]\n     */\n    function getResults($queries) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  List<bool> getResults(List<List<int>> queries) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def getResults(queries: Array[Array[Int]]): List[Boolean] = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec get_results(queries :: [[integer]]) :: [boolean]\n  def get_results(queries) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec get_results(Queries :: [[integer()]]) -> [boolean()].\nget_results(Queries) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (get-results queries)\n  (-> (listof (listof exact-integer?)) (listof boolean?))\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:58.973Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1607",
+    "questionFrontendId": "1459",
+    "title": "Rectangles Area",
+    "titleSlug": "rectangles-area",
+    "difficulty": "Medium",
+    "likes": 100,
+    "dislikes": 162,
+    "acRate": 68.75083948959033,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.5K\", \"totalSubmission\": \"29.8K\", \"totalAcceptedRaw\": 20474, \"totalSubmissionRaw\": 29780, \"acRate\": \"68.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:34:46.156Z"
+}

@@ -1,0 +1,31 @@
+{
+    "questionId": "1718",
+    "questionFrontendId": "1571",
+    "title": "Warehouse Manager",
+    "titleSlug": "warehouse-manager",
+    "difficulty": "Easy",
+    "likes": 166,
+    "dislikes": 12,
+    "acRate": 87.15026759983532,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"52.9K\", \"totalSubmission\": \"60.7K\", \"totalAcceptedRaw\": 52922, \"totalSubmissionRaw\": 60725, \"acRate\": \"87.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:37:23.552Z"
+}

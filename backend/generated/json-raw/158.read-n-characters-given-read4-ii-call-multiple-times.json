@@ -1,0 +1,36 @@
+{
+    "questionId": "158",
+    "questionFrontendId": "158",
+    "title": "Read N Characters Given read4 II - Call Multiple Times",
+    "titleSlug": "read-n-characters-given-read4-ii-call-multiple-times",
+    "difficulty": "Hard",
+    "likes": 889,
+    "dislikes": 1821,
+    "acRate": 43.36331664347616,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"197.9K\", \"totalSubmission\": \"456.4K\", \"totalAcceptedRaw\": 197895, \"totalSubmissionRaw\": 456365, \"acRate\": \"43.4%\"}",
+    "similarQuestions": "[{\"title\": \"Read N Characters Given Read4\", \"titleSlug\": \"read-n-characters-given-read4\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:32.148Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3473",
+    "questionFrontendId": "3166",
+    "title": "Calculate Parking Fees and Duration",
+    "titleSlug": "calculate-parking-fees-and-duration",
+    "difficulty": "Medium",
+    "likes": 16,
+    "dislikes": 5,
+    "acRate": 52.9145546705286,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"5.5K\", \"totalAcceptedRaw\": 2923, \"totalSubmissionRaw\": 5524, \"acRate\": \"52.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:02.556Z"
+}

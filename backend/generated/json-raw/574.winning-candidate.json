@@ -1,0 +1,31 @@
+{
+    "questionId": "574",
+    "questionFrontendId": "574",
+    "title": "Winning Candidate",
+    "titleSlug": "winning-candidate",
+    "difficulty": "Medium",
+    "likes": 184,
+    "dislikes": 414,
+    "acRate": 62.82928064842959,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"79.4K\", \"totalSubmission\": \"126.3K\", \"totalAcceptedRaw\": 79376, \"totalSubmissionRaw\": 126336, \"acRate\": \"62.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:44.801Z"
+}

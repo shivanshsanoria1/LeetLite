@@ -1,0 +1,32 @@
+{
+    "questionId": "3679",
+    "questionFrontendId": "3344",
+    "title": "Maximum Sized Array",
+    "titleSlug": "maximum-sized-array",
+    "difficulty": "Medium",
+    "likes": 8,
+    "dislikes": 3,
+    "acRate": 51.32275132275132,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"679\", \"totalSubmission\": \"1.3K\", \"totalAcceptedRaw\": 679, \"totalSubmissionRaw\": 1323, \"acRate\": \"51.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:20.859Z"
+}

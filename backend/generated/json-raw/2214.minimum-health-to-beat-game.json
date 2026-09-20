@@ -1,0 +1,38 @@
+{
+    "questionId": "2354",
+    "questionFrontendId": "2214",
+    "title": "Minimum Health to Beat Game",
+    "titleSlug": "minimum-health-to-beat-game",
+    "difficulty": "Medium",
+    "likes": 327,
+    "dislikes": 240,
+    "acRate": 58.79984525225316,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"41K\", \"totalSubmission\": \"69.8K\", \"totalAcceptedRaw\": 41037, \"totalSubmissionRaw\": 69791, \"acRate\": \"58.8%\"}",
+    "similarQuestions": "[{\"title\": \"Dungeon Game\", \"titleSlug\": \"dungeon-game\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Eliminate Maximum Number of Monsters\", \"titleSlug\": \"eliminate-maximum-number-of-monsters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "When should you use your armor ability?",
+        "It is always optimal to use your armor ability on the level where you take the most amount of damage."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:21:36.140Z"
+}

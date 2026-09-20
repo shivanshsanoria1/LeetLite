@@ -1,0 +1,138 @@
+{
+    "questionId": "1968",
+    "questionFrontendId": "1840",
+    "title": "Maximum Building Height",
+    "titleSlug": "maximum-building-height",
+    "difficulty": "Hard",
+    "likes": 750,
+    "dislikes": 38,
+    "acRate": 66.95469314507521,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"84.7K\", \"totalSubmission\": \"126.5K\", \"totalAcceptedRaw\": 84693, \"totalSubmissionRaw\": 126493, \"acRate\": \"67.0%\"}",
+    "similarQuestions": "[{\"title\": \"Find Maximum Value in a Constrained Sequence\", \"titleSlug\": \"find-maximum-value-in-a-constrained-sequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>You want to build <code>n</code> new buildings in a city. The new buildings will be built in a line and are labeled from <code>1</code> to <code>n</code>.</p>\n\n<p>However, there are city restrictions on the heights of the new buildings:</p>\n\n<ul>\n\t<li>The height of each building must be a non-negative integer.</li>\n\t<li>The height of the first building <strong>must</strong> be <code>0</code>.</li>\n\t<li>The height difference between any two adjacent buildings <strong>cannot exceed</strong> <code>1</code>.</li>\n</ul>\n\n<p>Additionally, there are city restrictions on the maximum height of specific buildings. These restrictions are given as a 2D integer array <code>restrictions</code> where <code>restrictions[i] = [id<sub>i</sub>, maxHeight<sub>i</sub>]</code> indicates that building <code>id<sub>i</sub></code> must have a height <strong>less than or equal to</strong> <code>maxHeight<sub>i</sub></code>.</p>\n\n<p>It is guaranteed that each building will appear <strong>at most once</strong> in <code>restrictions</code>, and building <code>1</code> will <strong>not</strong> be in <code>restrictions</code>.</p>\n\n<p>Return <em>the <strong>maximum possible height</strong> of the <strong>tallest</strong> building</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex1-1.png\" style=\"width: 400px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> n = 5, restrictions = [[2,1],[4,1]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The green area in the image indicates the maximum allowed height for each building.\nWe can build the buildings with heights [0,1,2,1,2], and the tallest building has a height of 2.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex2.png\" style=\"width: 500px; height: 269px;\" />\n<pre>\n<strong>Input:</strong> n = 6, restrictions = []\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> The green area in the image indicates the maximum allowed height for each building.\nWe can build the buildings with heights [0,1,2,3,4,5], and the tallest building has a height of 5.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex3.png\" style=\"width: 500px; height: 187px;\" />\n<pre>\n<strong>Input:</strong> n = 10, restrictions = [[5,3],[2,5],[7,4],[10,3]]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> The green area in the image indicates the maximum allowed height for each building.\nWe can build the buildings with heights [0,1,2,3,3,4,4,5,4,3], and the tallest building has a height of 5.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= restrictions.length &lt;= min(n - 1, 10<sup>5</sup>)</code></li>\n\t<li><code>2 &lt;= id<sub>i</sub> &lt;= n</code></li>\n\t<li><code>id<sub>i</sub></code>&nbsp;is <strong>unique</strong>.</li>\n\t<li><code>0 &lt;= maxHeight<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Is it possible to find the max height if given the height range of a particular building?",
+        "You can find the height range of a restricted building by doing 2 passes from the left and right."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Transitivity of Restrictions\n\n#### Intuition\n\n**Hint $1$**\n\nSince each building appears at most once in the array $\\textit{restrictions}$, for convenience, we represent a restriction as $(i, h_i)$, indicating that the height of building $i$ cannot exceed $h_i$.\n\nAlthough $(i, h_i)$ is a restriction on building $i$, it also affects other buildings.\n\n**Hint $1$ Explaination**\n\nIf the height of building $i$ cannot exceed $h_i$, and the height difference between adjacent buildings cannot exceed $1$, then:\n\n- The height of building $i - 1$ cannot exceed $h_i + 1$.\n- The height of building $i + 1$ cannot exceed $h_i + 1$.\n\nMore generally:\n\n- The height of building $j$ cannot exceed $h_i + |i - j|$.\n\n**Hint $2$**\n\nAccording to Hint 1, each restriction $(i, h_i)$ effectively imposes a constraint on all $n$ buildings. If we can somehow propagate all restrictions to obtain the true minimum upper bound for each building $i$, denoted by $\\textit{limit}_i$, then the height of building $i$ cannot exceed $\\textit{limit}_i$.\n\nTherefore, an optimal construction is to build building $i$ with height exactly $\\textit{limit}_i$.\n\n**Hint $3$**\n\nAccording to Hint 2, we can determine the height of every building. However, the constraint is $n \\le 10^9$, so even an $O(n)$ algorithm would exceed the time and space limits. Therefore, we can only compute $\\textit{limit}_i$ for the buildings that appear in the restriction array.\n\nCan we determine the maximum building height without explicitly considering every building?\n\n**Hint $3$ Explaination**\n\nIn fact, we only care about the maximum height among all $n$ buildings.\n\nConsider two buildings $i$ and $j$ such that $i < j$, and suppose no other building between them appears in the restriction array. According to the propagated restrictions, the heights of the buildings between $i$ and $j$ will form a \"mountain\" shape: starting from building $i$, the heights increase toward a peak and then decrease toward building $j$.\n\nLet this peak height be $\\textit{best}(i, j)$. Then it must satisfy\n\n$$\n\\big( \\textit{best}(i, j) - \\textit{limit}_i \\big) + \\big( \\textit{best}(i, j) - \\textit{limit}_j \\big) \\leq j-i\n$$\n\nSolving this inequality gives\n\n$$\n\\textit{best}(i, j) = \\lfloor \\frac{(j - i) + \\textit{limit}_i + \\textit{limit}_j}{2} \\rfloor\n$$\n\nThus, we can compute the maximum possible height among all buildings.\n\n**Approach and Algorithm**\n\nFirst, we compute all values of $\\textit{limit}_i$.\n\nTo simplify boundary handling (i.e., for the first and last buildings), we add the two restrictions $(1, 0)$ and $(n, n - 1)$ to the restriction array, then sort the array by building index in ascending order.\n\nNext, we propagate the restrictions. This can be done with two passes over the sorted array: one from left to right and one from right to left.\n\n- During the left-to-right pass, consider two adjacent restrictions $(i, h_i)$ and $(j, h_j)$. The restriction $(i, h_i)$ propagates to building $j$ as $(j, h_i + (j - i))$. Therefore, we update $h_j$ to the minimum of its current value and $h_i + (j - i)$. This propagates all restrictions coming from the left.\n\n- During the right-to-left pass, consider two adjacent restrictions $(i, h_i)$ and $(j, h_j)$. The restriction $(j, h_j)$ propagates to building $i$ as $(i, h_j + (j - i))$. Therefore, we update $h_i$ to the minimum of its current value and $h_j + (j - i)$. This propagates all restrictions coming from the right.\n\nAfter these two passes, every $h_i$ becomes the corresponding $\\textit{limit}_i$.\n\nFinally, for every pair of adjacent restricted buildings, we compute the maximum achievable height between them using the formula derived in Hint 3, and take the maximum over all such values.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/4qqy79XN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4qqy79XN\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the length of the array $\\textit{restrictions}$.\n\n- Time complexity: $O(m \\log m)$.\n  \n  Sorting the restriction array takes $O(m \\log m)$ time. The two propagation passes and the final scan each take $O(m)$ time. Therefore, the overall time complexity is $O(m \\log m)$.\n\n- Space complexity: $O(\\log m)$.\n  \n  This is the auxiliary stack space required by the sorting algorithm.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxBuilding(int n, vector<vector<int>>& restrictions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxBuilding(int n, int[][] restrictions) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxBuilding(self, n: int, restrictions: List[List[int]]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxBuilding(self, n, restrictions):\n        \"\"\"\n        :type n: int\n        :type restrictions: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} restrictions\n * @return {number}\n */\nvar maxBuilding = function(n, restrictions) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxBuilding(n: number, restrictions: number[][]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MaxBuilding(int n, int[][] restrictions) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int maxBuilding(int n, int** restrictions, int restrictionsSize, int* restrictionsColSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxBuilding(n int, restrictions [][]int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxBuilding(n: Int, restrictions: Array<IntArray>): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxBuilding(_ n: Int, _ restrictions: [[Int]]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_building(n: i32, restrictions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} n\n# @param {Integer[][]} restrictions\n# @return {Integer}\ndef max_building(n, restrictions)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $restrictions\n     * @return Integer\n     */\n    function maxBuilding($n, $restrictions) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxBuilding(int n, List<List<int>> restrictions) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxBuilding(n: Int, restrictions: Array[Array[Int]]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_building(n :: integer, restrictions :: [[integer]]) :: integer\n  def max_building(n, restrictions) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_building(N :: integer(), Restrictions :: [[integer()]]) -> integer().\nmax_building(N, Restrictions) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-building n restrictions)\n  (-> exact-integer? (listof (listof exact-integer?)) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:52.749Z"
+}

@@ -1,0 +1,137 @@
+{
+    "questionId": "2892",
+    "questionFrontendId": "2784",
+    "title": "Check if Array is Good",
+    "titleSlug": "check-if-array-is-good",
+    "difficulty": "Easy",
+    "likes": 482,
+    "dislikes": 72,
+    "acRate": 57.19416978408333,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"184.2K\", \"totalSubmission\": \"322.1K\", \"totalAcceptedRaw\": 184231, \"totalSubmissionRaw\": 322115, \"acRate\": \"57.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given an integer array <code>nums</code>. We consider an array <strong>good </strong>if it is a permutation of an array <code>base[n]</code>.</p>\n\n<p><code>base[n] = [1, 2, ..., n - 1, n, n] </code>(in other words, it is an array of length <code>n + 1</code> which contains <code>1</code> to <code>n - 1 </code>exactly once, plus two occurrences of <code>n</code>). For example, <code>base[1] = [1, 1]</code> and<code> base[3] = [1, 2, 3, 3]</code>.</p>\n\n<p>Return <code>true</code> <em>if the given array is good, otherwise return</em><em> </em><code>false</code>.</p>\n\n<p><strong>Note: </strong>A permutation of integers represents an arrangement of these numbers.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2, 1, 3]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Since the maximum element of the array is 3, the only candidate n for which this array could be a permutation of base[n], is n = 3. However, base[3] has four elements but array nums has three. Therefore, it can not be a permutation of base[3] = [1, 2, 3, 3]. So the answer is false.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1, 3, 3, 2]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Since the maximum element of the array is 3, the only candidate n for which this array could be a permutation of base[n], is n = 3. It can be seen that nums is a permutation of base[3] = [1, 2, 3, 3] (by swapping the second and fourth elements in nums, we reach base[3]). Therefore, the answer is true.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1, 1]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Since the maximum element of the array is 1, the only candidate n for which this array could be a permutation of base[n], is n = 1. It can be seen that nums is a permutation of base[1] = [1, 1]. Therefore, the answer is true.</pre>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3, 4, 4, 1, 2, 1]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Since the maximum element of the array is 4, the only candidate n for which this array could be a permutation of base[n], is n = 4. However, base[4] has five elements but array nums has six. Therefore, it can not be a permutation of base[4] = [1, 2, 3, 4, 4]. So the answer is false.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= num[i] &lt;= 200</code></li>\n</ul>\n",
+    "hints": [
+        "Find the maximum element of the array."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Sorting\n\n#### Intuition\n\nSort the array, then traverse the first $n$ elements and check whether each element is equal to $i + 1$. Finally, check whether the last element is equal to $n$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/UH7vPCdm/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"UH7vPCdm\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n\\log n)$.\n\n- Space complexity: $O(\\log n)$.\n\n---\n\n### Approach 2: Frequency Counting\n\n#### Intuition\n\nTraverse the array and use a frequency array to count the occurrences of each element.\n\nDuring the traversal, if a number greater than or equal to $n$ is found, the array is invalid, so we can return `false` immediately. The number $n - 1$ can appear at most 2 times, while all other numbers can appear at most once. If any of these conditions are violated, the array is invalid, and we can return `false` early.\n\nIf all conditions are satisfied, then the array is a good array, so we return `true`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/jZpWU7xk/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"jZpWU7xk\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(n)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isGood(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean isGood(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def isGood(self, nums: List[int]) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def isGood(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar isGood = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function isGood(nums: number[]): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool IsGood(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool isGood(int* nums, int numsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func isGood(nums []int) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun isGood(nums: IntArray): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func isGood(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn is_good(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef is_good(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function isGood($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool isGood(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def isGood(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec is_good(nums :: [integer]) :: boolean\n  def is_good(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec is_good(Nums :: [integer()]) -> boolean().\nis_good(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (is-good nums)\n  (-> (listof exact-integer?) boolean?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:42:25.691Z"
+}

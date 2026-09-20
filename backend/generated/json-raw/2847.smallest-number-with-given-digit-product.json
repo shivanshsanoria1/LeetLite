@@ -1,0 +1,38 @@
+{
+    "questionId": "3111",
+    "questionFrontendId": "2847",
+    "title": "Smallest Number With Given Digit Product",
+    "titleSlug": "smallest-number-with-given-digit-product",
+    "difficulty": "Medium",
+    "likes": 23,
+    "dislikes": 1,
+    "acRate": 43.537964458804524,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"3.7K\", \"totalAcceptedRaw\": 1617, \"totalSubmissionRaw\": 3714, \"acRate\": \"43.5%\"}",
+    "similarQuestions": "[{\"title\": \"Smallest Divisible Digit Product I\", \"titleSlug\": \"smallest-divisible-digit-product-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Smallest Divisible Digit Product II\", \"titleSlug\": \"smallest-divisible-digit-product-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Find the prime factors of <code>n</code>.",
+        "If there is a prime factor <code>p</code> such that <code>p >= 11</code>, the answer is <code>-1</code>. Since there are no digits whose products equal <code>p</code>.",
+        "Factors <code>5</code> and <code>7</code> should be included in the answer since their product with any number bigger than <code>1</code> is a 2-digit number.",
+        "For factors <code>2</code> and <code>3</code>, we group every three <code>2</code> into an <code>8</code> and every two <code>3</code> into a <code>9</code>.",
+        "For any leftover <code>2</code> or <code>3</code>, check all the possible combinations."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:45:15.566Z"
+}

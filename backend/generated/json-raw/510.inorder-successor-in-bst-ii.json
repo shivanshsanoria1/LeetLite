@@ -1,0 +1,39 @@
+{
+    "questionId": "509",
+    "questionFrontendId": "510",
+    "title": "Inorder Successor in BST II",
+    "titleSlug": "inorder-successor-in-bst-ii",
+    "difficulty": "Medium",
+    "likes": 890,
+    "dislikes": 44,
+    "acRate": 61.10898692029505,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"76.7K\", \"totalSubmission\": \"125.5K\", \"totalAcceptedRaw\": 76715, \"totalSubmissionRaw\": 125538, \"acRate\": \"61.1%\"}",
+    "similarQuestions": "[{\"title\": \"Inorder Successor in BST\", \"titleSlug\": \"inorder-successor-in-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:46.791Z"
+}

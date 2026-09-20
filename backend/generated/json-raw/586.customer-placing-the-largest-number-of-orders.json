@@ -1,0 +1,59 @@
+{
+    "questionId": "586",
+    "questionFrontendId": "586",
+    "title": "Customer Placing the Largest Number of Orders",
+    "titleSlug": "customer-placing-the-largest-number-of-orders",
+    "difficulty": "Easy",
+    "likes": 1266,
+    "dislikes": 101,
+    "acRate": 64.72580180558379,
+    "isPaidOnly": false,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"579.7K\", \"totalSubmission\": \"895.7K\", \"totalAcceptedRaw\": 579725, \"totalSubmissionRaw\": 895663, \"acRate\": \"64.7%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>Table: <code>Orders</code></p>\n\n<pre>\n+-----------------+----------+\n| Column Name     | Type     |\n+-----------------+----------+\n| order_number    | int      |\n| customer_number | int      |\n+-----------------+----------+\norder_number is the primary key (column with unique values) for this table.\nThis table contains information about the order ID and the customer ID.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the <code>customer_number</code> for the customer who has placed <strong>the largest number of orders</strong>.</p>\n\n<p>The test cases are generated so that <strong>exactly one customer</strong> will have placed more orders than any other customer.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nOrders table:\n+--------------+-----------------+\n| order_number | customer_number |\n+--------------+-----------------+\n| 1            | 1               |\n| 2            | 2               |\n| 3            | 3               |\n| 4            | 3               |\n+--------------+-----------------+\n<strong>Output:</strong> \n+-----------------+\n| customer_number |\n+-----------------+\n| 3               |\n+-----------------+\n<strong>Explanation:</strong> \nThe customer with number 3 has two orders, which is greater than either customer 1 or 2 because each of them only has one order. \nSo the result is customer_number 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> What if more than one customer has the largest number of orders, can you find all the <code>customer_number</code> in this case?</p>\n",
+    "hints": [
+        "MySQL uses a different expression to get the first records other than MSSQL's TOP expression."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "MySQL",
+            "langSlug": "mysql",
+            "code": "# Write your MySQL query statement below\n"
+        },
+        {
+            "lang": "MS SQL Server",
+            "langSlug": "mssql",
+            "code": "/* Write your T-SQL query statement below */\n"
+        },
+        {
+            "lang": "PostgreSQL",
+            "langSlug": "postgresql",
+            "code": "-- Write your PostgreSQL query statement below\n"
+        },
+        {
+            "lang": "Oracle",
+            "langSlug": "oraclesql",
+            "code": "/* Write your PL/SQL query statement below */\n"
+        },
+        {
+            "lang": "Pandas",
+            "langSlug": "pythondata",
+            "code": "import pandas as pd\n\ndef largest_orders(orders: pd.DataFrame) -> pd.DataFrame:\n    "
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:54.903Z"
+}

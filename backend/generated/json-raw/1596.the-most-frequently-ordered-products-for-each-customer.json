@@ -1,0 +1,28 @@
+{
+    "questionId": "1735",
+    "questionFrontendId": "1596",
+    "title": "The Most Frequently Ordered Products for Each Customer",
+    "titleSlug": "the-most-frequently-ordered-products-for-each-customer",
+    "difficulty": "Medium",
+    "likes": 262,
+    "dislikes": 17,
+    "acRate": 77.6887815049564,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"46.9K\", \"totalSubmission\": \"60.4K\", \"totalAcceptedRaw\": 46945, \"totalSubmissionRaw\": 60427, \"acRate\": \"77.7%\"}",
+    "similarQuestions": "[{\"title\": \"The Most Recent Orders for Each Product\", \"titleSlug\": \"the-most-recent-orders-for-each-product\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:37:53.924Z"
+}

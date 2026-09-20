@@ -1,0 +1,43 @@
+{
+    "questionId": "1176",
+    "questionFrontendId": "1244",
+    "title": "Design A Leaderboard",
+    "titleSlug": "design-a-leaderboard",
+    "difficulty": "Medium",
+    "likes": 826,
+    "dislikes": 99,
+    "acRate": 68.04041689871907,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"102.6K\", \"totalSubmission\": \"150.8K\", \"totalAcceptedRaw\": 102624, \"totalSubmissionRaw\": 150828, \"acRate\": \"68.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "What data structure can we use to keep the players' data?",
+        "Keep a map (dictionary) of player scores.",
+        "For each top(K) function call, find the maximum K scores and add them."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:31.983Z"
+}

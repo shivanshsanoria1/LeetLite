@@ -1,0 +1,28 @@
+{
+    "questionId": "2842",
+    "questionFrontendId": "2688",
+    "title": "Find Active Users",
+    "titleSlug": "find-active-users",
+    "difficulty": "Medium",
+    "likes": 28,
+    "dislikes": 8,
+    "acRate": 45.098591549295776,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"14.2K\", \"totalAcceptedRaw\": 6404, \"totalSubmissionRaw\": 14200, \"acRate\": \"45.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:41:06.846Z"
+}

@@ -1,0 +1,39 @@
+{
+    "questionId": "2458",
+    "questionFrontendId": "2323",
+    "title": "Find Minimum Time to Finish All Jobs II",
+    "titleSlug": "find-minimum-time-to-finish-all-jobs-ii",
+    "difficulty": "Medium",
+    "likes": 70,
+    "dislikes": 19,
+    "acRate": 66.22435439420231,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"13K\", \"totalSubmission\": \"19.6K\", \"totalAcceptedRaw\": 12976, \"totalSubmissionRaw\": 19594, \"acRate\": \"66.2%\"}",
+    "similarQuestions": "[{\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Minimum Time to Finish All Jobs\", \"titleSlug\": \"find-minimum-time-to-finish-all-jobs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Work Sessions to Finish the Tasks\", \"titleSlug\": \"minimum-number-of-work-sessions-to-finish-the-tasks\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "It is always optimal to pair the worker with the least amount of time with the job that requires the least amount of time.",
+        "Sort both arrays."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:06.354Z"
+}

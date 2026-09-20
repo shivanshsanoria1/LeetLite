@@ -1,0 +1,35 @@
+{
+    "questionId": "2540",
+    "questionFrontendId": "2647",
+    "title": "Color the Triangle Red",
+    "titleSlug": "color-the-triangle-red",
+    "difficulty": "Hard",
+    "likes": 11,
+    "dislikes": 19,
+    "acRate": 58.142201834862384,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"507\", \"totalSubmission\": \"872\", \"totalAcceptedRaw\": 507, \"totalSubmissionRaw\": 872, \"acRate\": \"58.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Calculate the minimal value of k by strategically designing a monovariant.",
+        "Construct the solution four rows at a time, going bottom up."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:32.541Z"
+}

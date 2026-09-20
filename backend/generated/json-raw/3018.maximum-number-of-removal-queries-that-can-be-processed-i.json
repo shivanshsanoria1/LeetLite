@@ -1,0 +1,38 @@
+{
+    "questionId": "3323",
+    "questionFrontendId": "3018",
+    "title": "Maximum Number of Removal Queries That Can Be Processed I",
+    "titleSlug": "maximum-number-of-removal-queries-that-can-be-processed-i",
+    "difficulty": "Hard",
+    "likes": 7,
+    "dislikes": 3,
+    "acRate": 44.78964401294498,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"692\", \"totalSubmission\": \"1.5K\", \"totalAcceptedRaw\": 692, \"totalSubmissionRaw\": 1545, \"acRate\": \"44.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of dynamic programming.",
+        "The definition of <code>dp</code> is a little unusual. Try to think more.",
+        "Let <code>dp[l][r]</code> be the maximum number of queries we can process if we want <code>a[l], a[l + 1], ..., a[r - 1]</code> not to be removed after processing <code>dp[l][r]</code> queries.",
+        "So <code>dp[0][n] = 0</code> since we can not remove anything.",
+        "The answer would be <code>max(dp[i][i])</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:38.925Z"
+}

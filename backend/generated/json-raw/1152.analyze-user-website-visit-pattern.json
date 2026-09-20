@@ -1,0 +1,48 @@
+{
+    "questionId": "1108",
+    "questionFrontendId": "1152",
+    "title": "Analyze User Website Visit Pattern",
+    "titleSlug": "analyze-user-website-visit-pattern",
+    "difficulty": "Medium",
+    "likes": 569,
+    "dislikes": 3999,
+    "acRate": 44.34125478770747,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"133K\", \"totalSubmission\": \"300K\", \"totalAcceptedRaw\": 133017, \"totalSubmissionRaw\": 299986, \"acRate\": \"44.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Let's find for every user separately the websites he visited.",
+        "Consider all possible 3-sequences, find the number of distinct users who visited each of them.",
+        "How to check if some user visited some 3-sequence ?",
+        "Store for every user all the 3-sequence he visited."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Brute Force\n\nThis question is more inclined toward engineering issues, mainly involving data processing.\n\n#### Intuition\n\nThe requirement is for a list of **3-length page paths**. The most intuitive approach is to find all paths of length 3, count the number of visitors for each path, and compare them to determine the answer.\n\nThere are several details in the problem statement that we need to pay attention to:\n1. **At least accessed in some order once**. This phrase tells us that we need to sort by time.\n2. **The user may not access these three paths continuously**. For example, if a user visited `a, b, c, d` at four time points `1, 2, 3, 4`, then `a, c, d` is also a valid path.\n3. The requirement is for the path accessed by the **most users**, so even if a single user accesses it many times, it is only counted once.\n\n#### Algorithm\n\n1. First, we need to bind the three elements: `username`, `timestamp`, and `website`. The most direct method is to use a structure. We associate the three arrays using an array of structures.\n   ```C++\n   struct Node { name, timestamp, website };\n   ```\n\n2. Sort the structure array by `timestamp` to ensure the access order of each user.\n3. Use a hash table to store each user’s visited websites, with the key being the username `name`, and the value being an array of strings. Since the array is already sorted, the order can be used directly.\n4. Perform a triple traversal of each user’s `website` list to obtain all access paths. Use another hash table to store all access paths, with the values being the number of distinct users.\n5. Finally, traverse the hash table to obtain the path with the most user visits. In case of ties, choose the lexicographically smallest one.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/C2KgMLbw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"C2KgMLbw\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the `username` array.\n\n- Time complexity:\n  \n    Sorting all access records by timestamp takes ( O(n \\log n) ). Constructing the structure array and grouping visits by user both take ( O(n) ).\n\n    Suppose there are ( k ) distinct users, and each user on average visits ( n/k ) websites.\n    For a single user, generating all possible 3-website sequences requires ( O((n/k)^3) ) time.\n    Summing across all users gives a total of\n    [\n    k \\times O\\left((n/k)^3\\right) = O\\left(\\frac{n^3}{k^2}\\right)\n    ]\n    In the **worst case**, when all visits belong to a single user (( k = 1 )), this becomes ( O(n^3) ).\n\n    However, because **C++** uses balanced binary search trees (`std::map` and `std::set`) for storing routes and temporary paths, each insertion and lookup operation adds a ( \\log n ) factor.\n    Therefore, the overall time complexity becomes\n    [\n    O(n^3 \\log n)\n    ]\n    In contrast, if hash-based data structures are used (as in Go, Java, or Python), the average time complexity would remain ( O(n^3) ).\n\n- Space complexity: $O(n^{3})$.\n\n    The space complexity of insertion sort is $O(1)$. The structure array and hash table storing user web pages each require $O(n)$. The maximum number of unique paths is $n^3$, so the hash table recording paths requires $O(n^3)$. Therefore, the overall space complexity is $O(n^3)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:47.424Z"
+}

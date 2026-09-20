@@ -1,0 +1,55 @@
+{
+    "questionId": "642",
+    "questionFrontendId": "642",
+    "title": "Design Search Autocomplete System",
+    "titleSlug": "design-search-autocomplete-system",
+    "difficulty": "Hard",
+    "likes": 2191,
+    "dislikes": 204,
+    "acRate": 50.0754770762013,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"172.2K\", \"totalSubmission\": \"343.8K\", \"totalAcceptedRaw\": 172166, \"totalSubmissionRaw\": 343813, \"acRate\": \"50.1%\"}",
+    "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:53.337Z"
+}

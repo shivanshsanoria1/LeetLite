@@ -1,0 +1,36 @@
+{
+    "questionId": "1199",
+    "questionFrontendId": "1271",
+    "title": "Hexspeak",
+    "titleSlug": "hexspeak",
+    "difficulty": "Easy",
+    "likes": 80,
+    "dislikes": 127,
+    "acRate": 58.3977972990691,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"13.4K\", \"totalSubmission\": \"22.9K\", \"totalAcceptedRaw\": 13362, \"totalSubmissionRaw\": 22881, \"acRate\": \"58.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Convert the given number to hexadecimal.",
+        "Replace all 0 and 1 with 'O' and 'I'.",
+        "Check if the final string has any numerical digits."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:26.392Z"
+}

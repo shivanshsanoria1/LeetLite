@@ -1,0 +1,37 @@
+{
+    "questionId": "3758",
+    "questionFrontendId": "3431",
+    "title": "Minimum Unlocked Indices to Sort Nums",
+    "titleSlug": "minimum-unlocked-indices-to-sort-nums",
+    "difficulty": "Medium",
+    "likes": 6,
+    "dislikes": 3,
+    "acRate": 57.42481203007519,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"611\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 611, \"totalSubmissionRaw\": 1064, \"acRate\": \"57.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "All positions between the first 2 and the last 1 should be unlocked.",
+        "All positions between the first 3 and the last 2 should be unlocked.",
+        "If the position of the first 3 is less than the position of the last 1, the answer is -1."
+    ],
+    "exampleTestcases": "[1,2,1,2,3,2]\n[1,0,1,1,0,1]\n[1,2,1,1,3,2,2]\n[1,0,1,1,0,1,0]\n[1,2,1,2,3,2,1]\n[0,0,0,0,0,0,0]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:51:39.205Z"
+}

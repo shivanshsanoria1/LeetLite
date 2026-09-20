@@ -1,0 +1,28 @@
+{
+    "questionId": "3256",
+    "questionFrontendId": "3051",
+    "title": "Find Candidates for Data Scientist Position",
+    "titleSlug": "find-candidates-for-data-scientist-position",
+    "difficulty": "Easy",
+    "likes": 15,
+    "dislikes": 0,
+    "acRate": 75.59954320517701,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6K\", \"totalSubmission\": \"7.9K\", \"totalAcceptedRaw\": 5958, \"totalSubmissionRaw\": 7881, \"acRate\": \"75.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:08.108Z"
+}

@@ -1,0 +1,32 @@
+{
+    "questionId": "471",
+    "questionFrontendId": "471",
+    "title": "Encode String with Shortest Length",
+    "titleSlug": "encode-string-with-shortest-length",
+    "difficulty": "Hard",
+    "likes": 633,
+    "dislikes": 54,
+    "acRate": 50.58440134114625,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"32.3K\", \"totalSubmission\": \"63.8K\", \"totalAcceptedRaw\": 32286, \"totalSubmissionRaw\": 63826, \"acRate\": \"50.6%\"}",
+    "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:12.536Z"
+}

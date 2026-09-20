@@ -1,0 +1,31 @@
+{
+    "questionId": "1926",
+    "questionFrontendId": "1777",
+    "title": "Product's Price for Each Store",
+    "titleSlug": "products-price-for-each-store",
+    "difficulty": "Easy",
+    "likes": 143,
+    "dislikes": 13,
+    "acRate": 82.0506181629879,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"25.4K\", \"totalSubmission\": \"30.9K\", \"totalAcceptedRaw\": 25352, \"totalSubmissionRaw\": 30898, \"acRate\": \"82.1%\"}",
+    "similarQuestions": "[{\"title\": \"Rearrange Products Table\", \"titleSlug\": \"rearrange-products-table\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Dynamic Pivoting of a Table\", \"titleSlug\": \"dynamic-pivoting-of-a-table\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "<!-- Don't delete this -->\n[TOC]\n\n# Solution\n\n---\n\n## pandas\n\n<!-- h3 for approaches -->\n### Approach 1: Using `.pivot()`\n\n<!-- h4 for sections -->\n#### Intuition\n\n<!-- Describe your approach to solving the problem. -->\nIn this problem, we are tasked with finding the price of each product for each store in the initial dataframe `products`.\n\n| product_id  | store  | price |\n|-------------|--------|-------|\n| 0           | store1 | 95    |\n| 0           | store3 | 105   |\n| 0           | store2 | 100   |\n| 1           | store1 | 70    |\n| 1           | store3 | 80    |\n\n<br>\n\nWe can utilize pandas's `.pivot()` method to reorganize/reshape the data by converting columns into rows and vice-versa. To do this, we need to pass the columns into their respective parameters:\n- Values passed into the `index` parameter become the DataFrame's new index\n- Values passed into the `columns` parameter become the DataFrame's unique columns\n- Values passed into the `values` parameter become the DataFrame's populated cells\n\nIn this case, we want to pass `product_id` into the `index` and `store` into `columns` to create the structure of our pivot table below.\n\n| product_id  | store1 | store2 | store3 |\n|-------------|--------|--------|--------|\n| 0           |        |        |        |\n| 1           |        |        |        |\n\n<br>\n\nLastly, to populate our pivot table with the prices of each product of each store, we will pass `price` into `values`, resulting in the the DataFrame below.\n\n| product_id  | store1 | store2 | store3 |\n|-------------|--------|--------|--------|\n| 0           | 95     | 100    | 105    |\n| 1           | 70     | null   | 80     |\n\n<br>\n\n<!-- h4 for sections -->\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/cTndWt2A/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"cTndWt2A\"></iframe>\n\n<br>\n---\n\n\n## Database\n\n<!-- h3 for approaches -->\n### Approach 1: Using `MAX, CASE WHEN` to pivot\n\n<!-- h4 for sections -->\n#### Intuition\n\n<!-- Describe your approach to solving the problem. -->\nWe will pivot our table by utilizing `CASE WHEN` and `AS` to produce new rows in our resulting table. While pivoting using `CASE WHEN`, it will not automatically group rows of the same `product_id` to fill the next available value, thus resulting in a null `price` and a singular `product_id`. \n\nTo resolve this, we can use aggregation functions `MAX`, `MIN`, or `SUM` on the column `price` to grab the next available `price` for each `product_id` rather than returning null and using `GROUP BY` to separate by unique `product_id`s. The role of the `MAX` function here is to ensure that only one row of results is returned for each product and to select the correct price for each store.\n\n\n<!-- h4 for sections -->\n#### Implementation\n\n```mysql []\nSELECT\n  product_id,\n  MAX(CASE WHEN store = 'store1' THEN price END) AS store1,\n  MAX(CASE WHEN store = 'store2' THEN price END) AS store2,\n  MAX(CASE WHEN store = 'store3' THEN price END) AS store3\nFROM \n    Products \nGROUP BY \n    product_id\n```\n\n<!-- an empty line to separate approaches -->\n<br>"
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:53:48.007Z"
+}

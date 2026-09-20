@@ -1,0 +1,42 @@
+{
+    "questionId": "1384",
+    "questionFrontendId": "1618",
+    "title": "Maximum Font to Fit a Sentence in a Screen",
+    "titleSlug": "maximum-font-to-fit-a-sentence-in-a-screen",
+    "difficulty": "Medium",
+    "likes": 114,
+    "dislikes": 22,
+    "acRate": 61.9375760032428,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7.6K\", \"totalSubmission\": \"12.3K\", \"totalAcceptedRaw\": 7640, \"totalSubmissionRaw\": 12335, \"acRate\": \"61.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use <i>binary search</i>  to find the last valid font."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:50:51.407Z"
+}

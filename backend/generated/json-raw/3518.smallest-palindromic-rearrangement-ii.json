@@ -1,0 +1,150 @@
+{
+    "questionId": "3813",
+    "questionFrontendId": "3518",
+    "title": "Smallest Palindromic Rearrangement II",
+    "titleSlug": "smallest-palindromic-rearrangement-ii",
+    "difficulty": "Hard",
+    "likes": 311,
+    "dislikes": 28,
+    "acRate": 43.88845528646124,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"74.8K\", \"totalSubmission\": \"170.4K\", \"totalAcceptedRaw\": 74789, \"totalSubmissionRaw\": 170407, \"acRate\": \"43.9%\"}",
+    "similarQuestions": "[]",
+    "content": "<p data-end=\"332\" data-start=\"99\">You are given a <strong><span data-keyword=\"palindrome-string\">palindromic</span></strong> string <code>s</code> and an integer <code>k</code>.</p>\n\n<p>Return the <strong>k-th</strong> <strong><span data-keyword=\"lexicographically-smaller-string\">lexicographically smallest</span></strong> palindromic <span data-keyword=\"permutation-string\">permutation</span> of <code>s</code>. If there are fewer than <code>k</code> distinct palindromic permutations, return an empty string.</p>\n\n<p><strong>Note:</strong> Different rearrangements that yield the same palindromic string are considered identical and are counted once.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abba&quot;, k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;baab&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The two distinct palindromic rearrangements of <code>&quot;abba&quot;</code> are <code>&quot;abba&quot;</code> and <code>&quot;baab&quot;</code>.</li>\n\t<li>Lexicographically, <code>&quot;abba&quot;</code> comes before <code>&quot;baab&quot;</code>. Since <code>k = 2</code>, the output is <code>&quot;baab&quot;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aa&quot;, k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>There is only one palindromic rearrangement: <code data-end=\"1112\" data-start=\"1106\">&quot;aa&quot;</code>.</li>\n\t<li>The output is an empty string since <code>k = 2</code> exceeds the number of possible rearrangements.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;bacab&quot;, k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;abcba&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The two distinct palindromic rearrangements of <code>&quot;bacab&quot;</code> are <code>&quot;abcba&quot;</code> and <code>&quot;bacab&quot;</code>.</li>\n\t<li>Lexicographically, <code>&quot;abcba&quot;</code> comes before <code>&quot;bacab&quot;</code>. Since <code>k = 1</code>, the output is <code>&quot;abcba&quot;</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n\t<li><code>s</code> is guaranteed to be palindromic.</li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Only build <code>floor(n / 2)</code> characters (the rest are determined by symmetry).",
+        "Count character frequencies and use half the counts for construction.",
+        "Incrementally choose each character (from smallest to largest) and calculate how many valid arrangements result if that character is chosen at the current index.",
+        "If the count is at least <code>k</code>, fix that character; otherwise, subtract the count from <code>k</code> and try the next candidate.",
+        "Use combinatorics to compute the number of permutations at each step."
+    ],
+    "exampleTestcases": "\"abba\"\n2\n\"aa\"\n2\n\"bacab\"\n1",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Combinatorial Mathematics + Trial and Error Method\n\n#### Intuition\n\nThis problem is an extension of [3517. Smallest Palindromic Rearrangement I](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/), and it is recommended to solve that problem first.\n\nHere, we are asked to find the $k$-th lexicographically smallest palindromic permutation. Compared with the previous problem, the only difference is that we now need to construct an arbitrary lexicographical rank instead of only the smallest one.\n\nFrom the previous problem, we know that the symmetry of a palindrome implies that the multisets of characters on the left and right halves are completely determined once one half is fixed. Therefore, we do not need to construct the entire palindrome directly. Instead, we only need to consider the permutations of the left half of the string. The proof of this property can be found in the editorial for the previous problem.\n\nThus, the problem is transformed into the following:\n\n> Given a multiset of characters, find its $k$-th lexicographically smallest permutation.\n\nWe solve this using a trial-and-error approach. At each position, we try every available character in lexicographical order.\n\nSuppose the prefix constructed so far is $\\textit{prefix}$, and we are currently trying character $c$. Let $L$ and $R$ denote the lexicographical ranks of the smallest and largest permutations that begin with $\\textit{prefix} \\parallel c$, respectively.\n\nThere are three cases:\n\n* If $R \\ge k$, then the desired permutation lies within this interval. Since characters are tried in lexicographical order, the current character must be part of the answer. We append $c$ to the prefix and continue constructing the next position.\n\n* If $R < k$, then all permutations beginning with this prefix come before the desired one. We restore the character to the multiset, continue trying the next candidate character, and update $L = R + 1$.\n* If every possible character has been tried and still $R < k$, then fewer than $k$ permutations exist, so we return an empty string.\n\nInitially, $L = 1$. The remaining question is how to compute $R$ once the current prefix is fixed.\n\nThe Cantor expansion algorithm computes the lexicographical rank of a given permutation. Here, we essentially perform the inverse process. Since Cantor expansion is based on combinatorial counting, we use combinatorial mathematics to count how many permutations can be formed after fixing the current prefix.\n\nSuppose the remaining number of positions is $\\textit{rem}$ after fixing both the current prefix and the trial character $c$. Let the remaining multiset be $W$.\n\nAssume the distinct characters in $W$ are $c_1, c_2, \\dots, c_\\sigma$, with frequencies $\\textit{cnt}[c_i]$, where\n\n$$\n\\sum \\textit{cnt}[c_i] = \\textit{rem}.\n$$\n\nThe number of distinct permutations of these remaining characters is\n\n$$\nP = \\frac{\\textit{rem}!}{\\textit{cnt}[c_1]! \\times \\textit{cnt}[c_2]! \\times \\cdots \\times \\textit{cnt}[c_\\sigma]!},\n$$\n\nor equivalently,\n\n$$\nP=\\frac{\\textit{rem}!}{\\prod_{c\\in W}\\textit{cnt}[c]!}.\n$$\n\nTherefore,\n$$\nR=L+P-1.\n$$\n\nUnfortunately, directly computing factorials is not practical because the problem does not permit arbitrary-precision arithmetic or modular inverses. Instead, we rewrite the multinomial coefficient as a product of ordinary combinations.\n\n1. Among the $\\textit{rem}$ remaining positions, choose $\\textit{cnt}[c_1]$ positions for character $c_1$. This contributes\n\n$$\nC_{\\textit{rem}}^{\\textit{cnt}[c_1]}.\n$$\n\n2. After placing all copies of $c_1$, choose $\\textit{cnt}[c_2]$ positions from the remaining positions. This contributes\n\n$$\nC_{\\textit{rem}-\\textit{cnt}[c_1]}^{\\textit{cnt}[c_2]}.\n$$\n\n3. Continue in this manner until every character has been placed.\n\nBy the multiplication principle,\n\n$$\nP=\\prod_{i=1}^{\\sigma}\nC_{\\textit{rem}-\\sum_{j=1}^{i-1}\\textit{cnt}[c_j]}^{\\textit{cnt}[c_i]}.\n$$\n\nWe still cannot compute combinations using factorials directly. Instead, we evaluate each combination using its multiplicative formula:\n\n$$\nC_n^m=\\prod_{i=1}^{m}\\frac{n-i+1}{i}.\n$$\n\nFirst, we exploit the symmetry of combinations by replacing $m$ with\n$$\nm=\\min(m,n-m),\n$$\n\nthereby reducing the number of iterations.\n\nDuring the computation, let $\\textit{res}_i$ denote the value after the $i$-th iteration. Then\n\n$$\n\\textit{res}*i=\\textit{res}*{i-1}\\times\\frac{n-i+1}{i}.\n$$\n\nSince the product of any $i$ consecutive integers is divisible by $i!$, we can safely multiply first and divide \nafterward, ensuring that every intermediate result remains an integer.\n\nMoreover, we never need an exact value once it exceeds $k$. Therefore, we terminate the computation immediately whenever $\\textit{res}_i>k$, which avoids overflow while remaining sufficient for our comparison.\n\nUsing this combinatorial counting procedure together with the trial-and-error construction described above, we can determine each character of the left half and finally reconstruct the palindrome.\n\n##### Time Complexity Analysis of the Permutation Count\n\nFirst, consider the complexity of computing a single combination.\n\nEach computation either terminates early or performs at most $\\textit{cnt}[c_i]$ iterations. Suppose the loop executes $x$ iterations, where $x\\le m$. Using the multiplicative expansion,\n\n$$\n\\binom{n}{x} = \\frac{n(n-1)\\cdots(n-x+1)} {x(x-1)\\cdots1} = \\prod_{j=0}^{x-1}\\frac{n-j}{x-j}.\n$$\n\nSince $n\\ge2m\\ge2x$, every term satisfies\n\n$$\n\\frac{n-j}{x-j}\n\\ge\n\\frac{2x-j}{x-j} = 1+\\frac{x}{x-j}\n\\ge2.\n$$\n\nTherefore, the intermediate result at least doubles in every iteration. Because the computation stops as soon as the value exceeds $k$, the number of iterations is bounded by $O(\\log k)$.\n\nHence, the complexity of computing a single combination is\n\n$$\nO(\\min(\\textit{cnt}[c_i],\\log k)).\n$$\n\nNext, consider computing the entire permutation count $P$.\n\nSuppose the combination computations execute $x_1,x_2,\\dots,x_p$ iterations, respectively. Their product grows by at least\n\n$$\n2^{x_1}\\times2^{x_2}\\times\\cdots\\times2^{x_p} = 2^{\\sum x_j}.\n$$\n\nSince the computation stops once the product exceeds $k$,\n\n$$\n2^{\\sum x_j}\\le k,\n$$\n\nwhich implies\n\n$$\n\\sum x_j\\le\\log k.\n$$\n\nTherefore, the total work of all inner combination computations is $O(\\log k)$.\n\nOn the other hand, the total number of iterations is also bounded by the number of remaining characters, namely\n$$\n\\sum x_j\\le\\textit{rem},\n$$\n\nand $\\textit{rem}$ is $O(n)$.\n\nCombining these two bounds, the total number of iterations performed by all combination computations is\n$$\nO(\\min(n,\\log k)).\n$$\n\nFinally, computing $P$ also requires scanning the entire character set once, contributing an additional $O(\\sigma)$ cost.\n\nTherefore, the total time required to compute $P$ is\n\n$$\nO(\\sigma+\\min(n,\\log k)).\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/3y3YCVAx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3y3YCVAx\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the palindrome string $s$, and let $\\sigma$ denote the size of the character set, which is $26$ in this problem.\n\n- Time complexity: $O(n \\cdot \\sigma \\cdot (\\sigma + \\min(n, \\log k)))$.\n  \n  For each position in the left half, we enumerate all candidate characters, which costs $O(\\sigma)$. For every candidate, computing the number of remaining permutations takes $O(\\sigma+\\min(n,\\log k))$. Therefore, the total time complexity is\n  $$\n  O(n\\cdot\\sigma\\cdot(\\sigma+\\min(n,\\log k))).\n  $$\n  The analysis of the permutation-counting procedure is given above.\n\n- Space complexity: $O(1)$ or $O(n)$.\n  \n  The frequency array $\\textit{bucket}$ occupies $O(\\sigma)$ space, which is constant. The overall space complexity depends on whether the palindrome is constructed in place or by creating additional strings.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string smallestPalindrome(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public String smallestPalindrome(String s, int k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def smallestPalindrome(self, s: str, k: int) -> str:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def smallestPalindrome(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar smallestPalindrome = function(s, k) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function smallestPalindrome(s: string, k: number): string {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public string SmallestPalindrome(string s, int k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "char* smallestPalindrome(char* s, int k) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func smallestPalindrome(s string, k int) string {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun smallestPalindrome(s: String, k: Int): String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func smallestPalindrome(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn smallest_palindrome(s: String, k: i32) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef smallest_palindrome(s, k)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function smallestPalindrome($s, $k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  String smallestPalindrome(String s, int k) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def smallestPalindrome(s: String, k: Int): String = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec smallest_palindrome(s :: String.t, k :: integer) :: String.t\n  def smallest_palindrome(s, k) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec smallest_palindrome(S :: unicode:unicode_binary(), K :: integer()) -> unicode:unicode_binary().\nsmallest_palindrome(S, K) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (smallest-palindrome s k)\n  (-> string? exact-integer? string?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:02.997Z"
+}

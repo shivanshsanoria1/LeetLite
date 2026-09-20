@@ -1,0 +1,39 @@
+{
+    "questionId": "271",
+    "questionFrontendId": "271",
+    "title": "Encode and Decode Strings",
+    "titleSlug": "encode-and-decode-strings",
+    "difficulty": "Medium",
+    "likes": 1592,
+    "dislikes": 456,
+    "acRate": 51.9284348716878,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"318.3K\", \"totalSubmission\": \"613K\", \"totalAcceptedRaw\": 318338, \"totalSubmissionRaw\": 613034, \"acRate\": \"51.9%\"}",
+    "similarQuestions": "[{\"title\": \"Count and Say\", \"titleSlug\": \"count-and-say\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"String Compression\", \"titleSlug\": \"string-compression\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Binary Substrings\", \"titleSlug\": \"count-binary-substrings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:16.186Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3539",
+    "questionFrontendId": "3230",
+    "title": "Customer Purchasing Behavior Analysis",
+    "titleSlug": "customer-purchasing-behavior-analysis",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 4,
+    "acRate": 36.48513197460741,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.3K\", \"totalSubmission\": \"9K\", \"totalAcceptedRaw\": 3276, \"totalSubmissionRaw\": 8979, \"acRate\": \"36.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:51.641Z"
+}

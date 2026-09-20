@@ -1,0 +1,31 @@
+{
+    "questionId": "1536",
+    "questionFrontendId": "1398",
+    "title": "Customers Who Bought Products A and B but Not C",
+    "titleSlug": "customers-who-bought-products-a-and-b-but-not-c",
+    "difficulty": "Medium",
+    "likes": 328,
+    "dislikes": 18,
+    "acRate": 71.42350269656542,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"70.5K\", \"totalSubmission\": \"98.6K\", \"totalAcceptedRaw\": 70455, \"totalSubmissionRaw\": 98644, \"acRate\": \"71.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:33:20.651Z"
+}

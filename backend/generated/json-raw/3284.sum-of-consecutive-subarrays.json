@@ -1,0 +1,42 @@
+{
+    "questionId": "3602",
+    "questionFrontendId": "3284",
+    "title": "Sum of Consecutive Subarrays",
+    "titleSlug": "sum-of-consecutive-subarrays",
+    "difficulty": "Medium",
+    "likes": 12,
+    "dislikes": 3,
+    "acRate": 43.29240563892679,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"952\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 952, \"totalSubmissionRaw\": 2199, \"acRate\": \"43.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of dynamic programming.",
+        "Another approach would be a two-pointer.",
+        "Start from the first index and traverse until the last one.",
+        "At each step, store the sum of the suffix that forms a consecutive subarray.",
+        "Do the above for both +1 and -1 and add them up."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:58:35.476Z"
+}

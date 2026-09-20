@@ -1,0 +1,39 @@
+{
+    "questionId": "644",
+    "questionFrontendId": "644",
+    "title": "Maximum Average Subarray II",
+    "titleSlug": "maximum-average-subarray-ii",
+    "difficulty": "Hard",
+    "likes": 641,
+    "dislikes": 74,
+    "acRate": 37.80280870731589,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"23.4K\", \"totalSubmission\": \"61.9K\", \"totalAcceptedRaw\": 23392, \"totalSubmissionRaw\": 61879, \"acRate\": \"37.8%\"}",
+    "similarQuestions": "[{\"title\": \"Maximum Average Subarray I\", \"titleSlug\": \"maximum-average-subarray-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:54.537Z"
+}

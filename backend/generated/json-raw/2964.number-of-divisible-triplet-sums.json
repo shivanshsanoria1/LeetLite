@@ -1,0 +1,37 @@
+{
+    "questionId": "3254",
+    "questionFrontendId": "2964",
+    "title": "Number of Divisible Triplet Sums",
+    "titleSlug": "number-of-divisible-triplet-sums",
+    "difficulty": "Medium",
+    "likes": 36,
+    "dislikes": 7,
+    "acRate": 67.64232872306208,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"10.5K\", \"totalSubmission\": \"15.5K\", \"totalAcceptedRaw\": 10515, \"totalSubmissionRaw\": 15545, \"acRate\": \"67.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Fix index <code>L</code> to be the leftmost element of a triplet.",
+        "Starting from <code>L</code>, go forward and add the remainder of each element to a map.",
+        "Now when you are at index <code>R</code>, consider <code>nums[L] + nums[R]</code> and calculate what the remainder of the third element should be.",
+        "Then use the map to find the number of valid third elements between <code>L</code> and <code>R</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:46:54.384Z"
+}

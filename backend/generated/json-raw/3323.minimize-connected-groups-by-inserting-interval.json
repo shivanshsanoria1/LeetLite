@@ -1,0 +1,44 @@
+{
+    "questionId": "3565",
+    "questionFrontendId": "3323",
+    "title": "Minimize Connected Groups by Inserting Interval",
+    "titleSlug": "minimize-connected-groups-by-inserting-interval",
+    "difficulty": "Medium",
+    "likes": 18,
+    "dislikes": 4,
+    "acRate": 50.543647095371234,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"3.2K\", \"totalAcceptedRaw\": 1627, \"totalSubmissionRaw\": 3219, \"acRate\": \"50.5%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Sort the intervals.",
+        "Merge all the mergeable intervals.",
+        "For each interval, binary search the latest interval that it can be merged with by adding exactly one interval."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:04.388Z"
+}

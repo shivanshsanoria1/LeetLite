@@ -1,0 +1,50 @@
+{
+    "questionId": "1100",
+    "questionFrontendId": "1135",
+    "title": "Connecting Cities With Minimum Cost",
+    "titleSlug": "connecting-cities-with-minimum-cost",
+    "difficulty": "Medium",
+    "likes": 1180,
+    "dislikes": 60,
+    "acRate": 63.6529761015176,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"93.7K\", \"totalSubmission\": \"147.2K\", \"totalAcceptedRaw\": 93701, \"totalSubmissionRaw\": 147206, \"acRate\": \"63.7%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost to Reach City With Discounts\", \"titleSlug\": \"minimum-cost-to-reach-city-with-discounts\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "What if we model the cities as a graph?",
+        "Build a graph of cities and find the minimum spanning tree.",
+        "You can use a variation of the Kruskal's algorithm for that.",
+        "Sort the edges by their cost and use a union-find data structure.",
+        "How to check all cities are connected?",
+        "At the beginning we have n connected components, each time we connect two components the number of connected components is reduced by one. At the end we should end with only a single component otherwise return -1."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:26.327Z"
+}

@@ -1,0 +1,61 @@
+{
+    "questionId": "1144",
+    "questionFrontendId": "1168",
+    "title": "Optimize Water Distribution in a Village",
+    "titleSlug": "optimize-water-distribution-in-a-village",
+    "difficulty": "Hard",
+    "likes": 1221,
+    "dislikes": 40,
+    "acRate": 65.62627542800679,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"61.1K\", \"totalSubmission\": \"93.1K\", \"totalAcceptedRaw\": 61102, \"totalSubmissionRaw\": 93106, \"acRate\": \"65.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "What if we model this problem as a graph problem?",
+        "A house is a node and a pipe is a weighted edge.",
+        "How to represent building wells in the graph model?",
+        "Add a virtual node, connect it to houses with edges weighted by the costs to build wells in these houses.",
+        "The problem is now reduced to a Minimum Spanning Tree problem."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        },
+        {
+            "name": "Prim's Algorithm",
+            "slug": "prims-algorithm"
+        },
+        {
+            "name": "Kruskal's Algorithm",
+            "slug": "kruskals-algorithm"
+        },
+        {
+            "name": "Borůvka's Algorithm",
+            "slug": "boruvkas-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:05.063Z"
+}

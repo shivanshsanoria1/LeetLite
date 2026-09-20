@@ -1,0 +1,40 @@
+{
+    "questionId": "3433",
+    "questionFrontendId": "3125",
+    "title": "Maximum Number That Makes Result of Bitwise AND Zero",
+    "titleSlug": "maximum-number-that-makes-result-of-bitwise-and-zero",
+    "difficulty": "Medium",
+    "likes": 13,
+    "dislikes": 2,
+    "acRate": 70.33773861967695,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"2K\", \"totalAcceptedRaw\": 1437, \"totalSubmissionRaw\": 2043, \"acRate\": \"70.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Examine the set bits of <code>n</code>.",
+        "When performing bitwise AND operations sequentially down from <code>n</code>, the last set bit to turn to 0 identifies the highest set bit.",
+        "If the index of the highest set bit is <code>x</code>, the answer is <code>2<sup>x</sup> - 1</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:29.666Z"
+}

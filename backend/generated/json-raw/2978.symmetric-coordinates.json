@@ -1,0 +1,28 @@
+{
+    "questionId": "3253",
+    "questionFrontendId": "2978",
+    "title": "Symmetric Coordinates",
+    "titleSlug": "symmetric-coordinates",
+    "difficulty": "Medium",
+    "likes": 15,
+    "dislikes": 3,
+    "acRate": 40.96137546918513,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.4K\", \"totalSubmission\": \"8.3K\", \"totalAcceptedRaw\": 3383, \"totalSubmissionRaw\": 8259, \"acRate\": \"41.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:06.118Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "2336",
+    "questionFrontendId": "2205",
+    "title": "The Number of Users That Are Eligible for Discount",
+    "titleSlug": "the-number-of-users-that-are-eligible-for-discount",
+    "difficulty": "Easy",
+    "likes": 32,
+    "dislikes": 77,
+    "acRate": 50.61996457345295,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"17.5K\", \"totalAcceptedRaw\": 8859, \"totalSubmissionRaw\": 17500, \"acRate\": \"50.6%\"}",
+    "similarQuestions": "[{\"title\": \"Nth Highest Salary\", \"titleSlug\": \"nth-highest-salary\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Users That Are Eligible for Discount\", \"titleSlug\": \"the-users-that-are-eligible-for-discount\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:21:28.274Z"
+}

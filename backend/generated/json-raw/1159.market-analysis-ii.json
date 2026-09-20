@@ -1,0 +1,31 @@
+{
+    "questionId": "1269",
+    "questionFrontendId": "1159",
+    "title": "Market Analysis II",
+    "titleSlug": "market-analysis-ii",
+    "difficulty": "Hard",
+    "likes": 124,
+    "dislikes": 81,
+    "acRate": 57.80383198918465,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"24.8K\", \"totalSubmission\": \"42.9K\", \"totalAcceptedRaw\": 24799, \"totalSubmissionRaw\": 42902, \"acRate\": \"57.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:54.901Z"
+}

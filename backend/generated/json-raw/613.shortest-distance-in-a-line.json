@@ -1,0 +1,35 @@
+{
+    "questionId": "613",
+    "questionFrontendId": "613",
+    "title": "Shortest Distance in a Line",
+    "titleSlug": "shortest-distance-in-a-line",
+    "difficulty": "Easy",
+    "likes": 345,
+    "dislikes": 41,
+    "acRate": 79.62974896206354,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"86.5K\", \"totalSubmission\": \"108.6K\", \"totalAcceptedRaw\": 86501, \"totalSubmissionRaw\": 108629, \"acRate\": \"79.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        },
+        {
+            "name": "Nearest Pair of Points",
+            "slug": "nearest-pair-of-points"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:32.241Z"
+}

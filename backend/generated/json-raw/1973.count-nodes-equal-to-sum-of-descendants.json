@@ -1,0 +1,42 @@
+{
+    "questionId": "2126",
+    "questionFrontendId": "1973",
+    "title": "Count Nodes Equal to Sum of Descendants",
+    "titleSlug": "count-nodes-equal-to-sum-of-descendants",
+    "difficulty": "Medium",
+    "likes": 184,
+    "dislikes": 10,
+    "acRate": 76.99627044085302,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"16.1K\", \"totalSubmission\": \"20.9K\", \"totalAcceptedRaw\": 16103, \"totalSubmissionRaw\": 20914, \"acRate\": \"77.0%\"}",
+    "similarQuestions": "[{\"title\": \"Most Frequent Subtree Sum\", \"titleSlug\": \"most-frequent-subtree-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Average Subtree\", \"titleSlug\": \"maximum-average-subtree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Nodes Equal to Average of Subtree\", \"titleSlug\": \"count-nodes-equal-to-average-of-subtree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Can we reuse previously calculated information?",
+        "How can we calculate the sum of the current subtree using the sum of the child's subtree?"
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: Depth-First Search with Postorder Traversal\n\n#### Intuition\n\nWe need to find the sum of all nodes in the given node's subtree and then check if this sum is equal to the value of the given node. One way to find the sum of all nodes in a subtree is to iterate over each node in each subtree, adding their values. This method, however, will be repetitive, re-calculating the sums of subtrees towards the bottom of the tree many times. The efficient way is to recursively find the sum of the subtree for each node and use it to check if the parent node should be counted or not. This is because in the recursive approach, the sum of nodes will be calculated from bottom to top, and hence, the sum of nodes can be reused instead of going all the way to the bottom leaves of the tree each time.\n\nWe start implementing the recursive function with the base case. When the tree is empty, the sum of subtree nodes will be `0`; this will be the base condition. Then, for the other nodes, we will make a recursive call with the left and right child. Nodes should be counted when their value is equal to the sum of the values of their descendants. To check if the current node should be counted in the final answer, we will add the values returned from the left and right child to find the sum of the subtree. If this sum is equal to the value of the current node, we increment the counter variable where we store our answer. The recursive function will return the sum of the left and right subtrees and the current node's value. From `equalToDescendants`, after we call the recursive function, we will return the counter variable.\n\n![Binary Tree with Sums](../Figures/1973/1973A.png)\n\n#### Algorithm\n\n1. Initialize a global variable `count` to `0`. This will store the answer.\n2. Implement the recursive function `countNodes(root)` as follows:\n\n    1. Base condition: If `root` is `NULL`, return `0`.\n    2. Store the sum of the left subtree in the variable `left` by calling `countNodes(root.left)` and the sum of the right subtree in the variable `right` by calling `countNodes(root.right)`.\n    3. Increment the variable `count` if the sum `left + right` is equal to `root.val`.\n    4. Return `left + right + root.val`.\n3. Call `countNodes(root)`.\n4. Return `count`.\n\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/YvR8Utg5/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"YvR8Utg5\"></iframe>\n\n#### Complexity Analysis\n\nLet $N$ be the number of nodes in the tree.\n\n* Time complexity: $O(N)$\n\n  We will visit each node in the tree only once, hence the time complexity will be equal to $O(N)$.\n\n* Space complexity: $O(N)$\n\n  The main space required is by the recursive stack calls. The maximum number of active stack calls will equal the tree's height. In the worst case, if the tree is completely unbalanced (e.g., a linked list), the call stack can grow as deep as the number of nodes, resulting in a space complexity of $O(N)$.\n  <br/>\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:29.465Z"
+}

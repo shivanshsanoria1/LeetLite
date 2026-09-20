@@ -1,0 +1,30 @@
+{
+    "questionId": "2774",
+    "questionFrontendId": "2700",
+    "title": "Differences Between Two Objects",
+    "titleSlug": "differences-between-two-objects",
+    "difficulty": "Medium",
+    "likes": 146,
+    "dislikes": 31,
+    "acRate": 73.76988187145382,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7.9K\", \"totalSubmission\": \"10.8K\", \"totalAcceptedRaw\": 7931, \"totalSubmissionRaw\": 10751, \"acRate\": \"73.8%\"}",
+    "similarQuestions": "[{\"title\": \"JSON Deep Equal\", \"titleSlug\": \"json-deep-equal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Convert Object to JSON String\", \"titleSlug\": \"convert-object-to-json-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Find the intersection of the keys/indices on the two arrays/objects.",
+        "Analyze the data structure recursively.",
+        "For each key in the intersection, omit if there are no differences in the leaves. Otherwise return the difference."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:41:17.391Z"
+}

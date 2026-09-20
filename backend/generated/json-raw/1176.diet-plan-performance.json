@@ -1,0 +1,37 @@
+{
+    "questionId": "1280",
+    "questionFrontendId": "1176",
+    "title": "Diet Plan Performance",
+    "titleSlug": "diet-plan-performance",
+    "difficulty": "Easy",
+    "likes": 175,
+    "dislikes": 297,
+    "acRate": 56.17118537200504,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"42.8K\", \"totalSubmission\": \"76.1K\", \"totalAcceptedRaw\": 42762, \"totalSubmissionRaw\": 76128, \"acRate\": \"56.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use sliding window technique (aka two pointers)."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Sliding Window\n\n#### Intuition\n\nThe most straightforward approach is to traverse the array and calculate the total calories for each $k$-day period, then compare it with $\\textit{low}$ and $\\textit{high}$. The time complexity of this method is $O(k*(n-k))$, which will cause a timeout in this problem.\n\nThe above method counts each number multiple times. We can use the sliding window idea to record the sum of the current $k$ numbers and calculate the total calorie value of all subarrays with window size $k$ in one pass. Below, we simulate the running process of the sliding window through an animation:\n\n![fig1](../Figures/1176_1.gif)\n\n#### Algorithm\n\n1. Calculate the $\\textit{sum}$ of the first $k$ numbers.\n2. Traverse the array starting from index $k$. At this point, the window size is $k$. Compare $\\textit{sum}$ with $\\textit{low}$ and $\\textit{high}$. Then subtract the number at index $i - k$, which is the leftmost number in the window, and add the next number entering the window, repeating the operation.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Qwo5bthb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Qwo5bthb\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{calories}$.\n\n- Time complexity: $O(n)$.\n  \n  Sliding window traverses the array once.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:13.542Z"
+}

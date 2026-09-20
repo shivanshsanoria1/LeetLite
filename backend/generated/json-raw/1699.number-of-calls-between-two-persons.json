@@ -1,0 +1,28 @@
+{
+    "questionId": "1842",
+    "questionFrontendId": "1699",
+    "title": "Number of Calls Between Two Persons",
+    "titleSlug": "number-of-calls-between-two-persons",
+    "difficulty": "Medium",
+    "likes": 312,
+    "dislikes": 16,
+    "acRate": 80.67485570519462,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"54.5K\", \"totalSubmission\": \"67.6K\", \"totalAcceptedRaw\": 54512, \"totalSubmissionRaw\": 67570, \"acRate\": \"80.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:52:21.346Z"
+}

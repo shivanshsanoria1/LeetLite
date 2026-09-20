@@ -1,0 +1,38 @@
+{
+    "questionId": "3740",
+    "questionFrontendId": "3400",
+    "title": "Maximum Number of Matching Indices After Right Shifts",
+    "titleSlug": "maximum-number-of-matching-indices-after-right-shifts",
+    "difficulty": "Medium",
+    "likes": 15,
+    "dislikes": 1,
+    "acRate": 85.03243744207599,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.8K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 1835, \"totalSubmissionRaw\": 2158, \"acRate\": \"85.0%\"}",
+    "similarQuestions": "[{\"title\": \"Rotate Array\", \"titleSlug\": \"rotate-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Simulate the right shifts and check number of equal elements."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T19:00:07.054Z"
+}

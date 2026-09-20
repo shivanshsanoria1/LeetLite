@@ -1,0 +1,53 @@
+{
+    "questionId": "3590",
+    "questionFrontendId": "3279",
+    "title": "Maximum Total Area Occupied by Pistons",
+    "titleSlug": "maximum-total-area-occupied-by-pistons",
+    "difficulty": "Hard",
+    "likes": 5,
+    "dislikes": 3,
+    "acRate": 41.268656716417915,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"553\", \"totalSubmission\": \"1.3K\", \"totalAcceptedRaw\": 553, \"totalSubmissionRaw\": 1340, \"acRate\": \"41.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Simulate the process.",
+        "We only need to keep track of the times when a piston reaches one end and let’s call these critical points.",
+        "For each piston, find the first time it reaches one end and sort these times (these times are critical points).",
+        "Find a way to calculate the area difference between two consecutive critical points in constant time."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:58:31.583Z"
+}

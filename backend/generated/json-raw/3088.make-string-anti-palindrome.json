@@ -1,0 +1,43 @@
+{
+    "questionId": "3393",
+    "questionFrontendId": "3088",
+    "title": "Make String Anti-palindrome",
+    "titleSlug": "make-string-anti-palindrome",
+    "difficulty": "Hard",
+    "likes": 8,
+    "dislikes": 3,
+    "acRate": 46.3425317564608,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.1K\", \"totalSubmission\": \"2.3K\", \"totalAcceptedRaw\": 1058, \"totalSubmissionRaw\": 2283, \"acRate\": \"46.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Sort the string.",
+        "Check if there are equivalent characters in the middle, if there are, shift the ones from the right side more to the right until they don't overlap."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting Sort",
+            "slug": "counting-sort"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:41.477Z"
+}

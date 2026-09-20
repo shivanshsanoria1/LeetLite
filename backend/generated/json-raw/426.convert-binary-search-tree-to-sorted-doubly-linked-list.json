@@ -1,0 +1,55 @@
+{
+    "questionId": "758",
+    "questionFrontendId": "426",
+    "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
+    "titleSlug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+    "difficulty": "Medium",
+    "likes": 2732,
+    "dislikes": 245,
+    "acRate": 65.63426850542115,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"374K\", \"totalSubmission\": \"569.8K\", \"totalAcceptedRaw\": 373988, \"totalSubmissionRaw\": 569806, \"acRate\": \"65.6%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:33.788Z"
+}

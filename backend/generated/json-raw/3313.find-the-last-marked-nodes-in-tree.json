@@ -1,0 +1,37 @@
+{
+    "questionId": "3497",
+    "questionFrontendId": "3313",
+    "title": "Find the Last Marked Nodes in Tree",
+    "titleSlug": "find-the-last-marked-nodes-in-tree",
+    "difficulty": "Hard",
+    "likes": 7,
+    "dislikes": 1,
+    "acRate": 57.234726688102896,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"712\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 712, \"totalSubmissionRaw\": 1244, \"acRate\": \"57.2%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Time to Visit Disappearing Nodes\", \"titleSlug\": \"minimum-time-to-visit-disappearing-nodes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Time Taken to Mark All Nodes\", \"titleSlug\": \"time-taken-to-mark-all-nodes\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "We need to calculate the height of tree when rooted at each node.",
+        "Find a diameter using two DFS.",
+        "The farthest node from each node must be one of the endpoints of the diameter.",
+        "The last marked node will be one of the end of the diameter, whichever is more distant."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:58:56.989Z"
+}

@@ -1,0 +1,140 @@
+{
+    "questionId": "2245",
+    "questionFrontendId": "2126",
+    "title": "Destroying Asteroids",
+    "titleSlug": "destroying-asteroids",
+    "difficulty": "Medium",
+    "likes": 815,
+    "dislikes": 216,
+    "acRate": 59.84099394875756,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"185.9K\", \"totalSubmission\": \"310.7K\", \"totalAcceptedRaw\": 185912, \"totalSubmissionRaw\": 310678, \"acRate\": \"59.8%\"}",
+    "similarQuestions": "[{\"title\": \"Asteroid Collision\", \"titleSlug\": \"asteroid-collision\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>You are given an integer <code>mass</code>, which represents the original mass of a planet. You are further given an integer array <code>asteroids</code>, where <code>asteroids[i]</code> is the mass of the <code>i<sup>th</sup></code> asteroid.</p>\n\n<p>You can arrange for the planet to collide with the asteroids in <strong>any arbitrary order</strong>. If the mass of the planet is <b>greater than or equal to</b> the mass of the asteroid, the asteroid is <strong>destroyed</strong> and the planet <strong>gains</strong> the mass of the asteroid. Otherwise, the planet is destroyed.</p>\n\n<p>Return <code>true</code><em> if <strong>all</strong> asteroids can be destroyed. Otherwise, return </em><code>false</code><em>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> mass = 10, asteroids = [3,9,19,5,21]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One way to order the asteroids is [9,19,5,3,21]:\n- The planet collides with the asteroid with a mass of 9. New planet mass: 10 + 9 = 19\n- The planet collides with the asteroid with a mass of 19. New planet mass: 19 + 19 = 38\n- The planet collides with the asteroid with a mass of 5. New planet mass: 38 + 5 = 43\n- The planet collides with the asteroid with a mass of 3. New planet mass: 43 + 3 = 46\n- The planet collides with the asteroid with a mass of 21. New planet mass: 46 + 21 = 67\nAll asteroids are destroyed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> mass = 5, asteroids = [4,9,23,4]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> \nThe planet cannot ever gain enough mass to destroy the asteroid with a mass of 23.\nAfter the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22.\nThis is less than 23, so a collision would not destroy the last asteroid.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= mass &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= asteroids.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= asteroids[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Choosing the asteroid to collide with can be done greedily.",
+        "If an asteroid will destroy the planet, then every bigger asteroid will also destroy the planet.",
+        "You only need to check the smallest asteroid at each collision. If it will destroy the planet, then every other asteroid will also destroy the planet.",
+        "Sort the asteroids in non-decreasing order by mass, then greedily try to collide with the asteroids in that order."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Greedy\n\n#### Intuition\n\n**Hint $1$**\n\nDestroying the smaller asteroid first allows us to destroy more asteroids.\n\n**Hint $1$ Explanation**\n\nAssume the mass of the smaller asteroid is $m_1$, and the mass of the larger asteroid is $m_2$.\n\nThe necessary and sufficient condition for destroying the smaller asteroid first is:\n\n$$\n\\textit{mass} \\ge m_1.\n$$\n\nAfter destroying it, the planet's mass becomes $\\textit{mass} + m_1$. Therefore, the necessary and sufficient condition for subsequently destroying the larger asteroid is:\n\n$$\n\\textit{mass} + m_1 \\ge m_2.\n$$\n\nCombining the above conditions, the necessary and sufficient condition for being able to destroy both asteroids is:\n\n$$\n\\textit{mass} \\ge \\max(m_1, m_2 - m_1).\n$$\n\nNow consider the opposite strategy, where we attempt to destroy the larger asteroid first.\n\nThe necessary and sufficient condition for destroying the first asteroid is:\n\n$$\n\\textit{mass} \\ge m_2.\n$$\n\nAfter destroying it, the planet's mass becomes $\\textit{mass} + m_2$. The necessary and sufficient condition for destroying both asteroids is therefore:\n\n$$\n\\textit{mass} \\ge \\max(m_2, m_1 - m_2).\n$$\n\nSince $m_1 < m_2$, we have:\n\n$$\nm_1 - m_2 < 0,\n$$\n\nso the above expression simplifies to:\n\n$$\n\\textit{mass} \\ge m_2.\n$$\n\nAlso, since $m_1 < m_2$, it is clear that:\n\n$$\nm_2 > \\max(m_1, m_2 - m_1).\n$$\n\nTherefore, prioritizing the destruction of smaller asteroids requires less initial planetary mass. This means that destroying asteroids in ascending order of mass allows us to destroy the maximum number of asteroids.\n\nBased on the above observation, we sort the array $\\textit{asteroids}$ in ascending order and simulate the process from left to right while maintaining the current planetary mass $\\textit{mass}$.\n\nSpecifically, when traversing to index $i$, there are two possible cases:\n\n* If $\\textit{mass} \\ge \\textit{asteroids}[i]$, the planet can destroy the asteroid, and the planet's mass becomes $\\textit{mass} + \\textit{asteroids}[i]$ afterward.\n\n* If $\\textit{mass} < \\textit{asteroids}[i]$, the planet cannot destroy the asteroid, so we return $\\texttt{false}$.\n\nIf the traversal completes successfully, it means all asteroids can be destroyed, and we return $\\texttt{true}$.\n\n>Note: The total mass of all asteroids may exceed the range of a signed 32-bit integer. Therefore, in languages such as $\\texttt{C++}$, we should use a 64-bit integer type to maintain the planet's mass.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/nq89nSAp/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"nq89nSAp\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{asteroids}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  Sorting the array $\\textit{asteroids}$ takes $O(n \\log n)$ time, and the traversal takes $O(n)$ time.\n\n- Space complexity: $O(\\log n)$.\n  \n  This is the auxiliary stack space used by the sorting algorithm.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool asteroidsDestroyed(int mass, vector<int>& asteroids) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean asteroidsDestroyed(int mass, int[] asteroids) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def asteroidsDestroyed(self, mass, asteroids):\n        \"\"\"\n        :type mass: int\n        :type asteroids: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} mass\n * @param {number[]} asteroids\n * @return {boolean}\n */\nvar asteroidsDestroyed = function(mass, asteroids) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function asteroidsDestroyed(mass: number, asteroids: number[]): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool AsteroidsDestroyed(int mass, int[] asteroids) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool asteroidsDestroyed(int mass, int* asteroids, int asteroidsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func asteroidsDestroyed(mass int, asteroids []int) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun asteroidsDestroyed(mass: Int, asteroids: IntArray): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func asteroidsDestroyed(_ mass: Int, _ asteroids: [Int]) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn asteroids_destroyed(mass: i32, asteroids: Vec<i32>) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} mass\n# @param {Integer[]} asteroids\n# @return {Boolean}\ndef asteroids_destroyed(mass, asteroids)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $mass\n     * @param Integer[] $asteroids\n     * @return Boolean\n     */\n    function asteroidsDestroyed($mass, $asteroids) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool asteroidsDestroyed(int mass, List<int> asteroids) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def asteroidsDestroyed(mass: Int, asteroids: Array[Int]): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec asteroids_destroyed(mass :: integer, asteroids :: [integer]) :: boolean\n  def asteroids_destroyed(mass, asteroids) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec asteroids_destroyed(Mass :: integer(), Asteroids :: [integer()]) -> boolean().\nasteroids_destroyed(Mass, Asteroids) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (asteroids-destroyed mass asteroids)\n  (-> exact-integer? (listof exact-integer?) boolean?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:41.592Z"
+}

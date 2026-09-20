@@ -1,0 +1,40 @@
+{
+    "questionId": "3043",
+    "questionFrontendId": "2814",
+    "title": "Minimum Time Takes to Reach Destination Without Drowning",
+    "titleSlug": "minimum-time-takes-to-reach-destination-without-drowning",
+    "difficulty": "Hard",
+    "likes": 25,
+    "dislikes": 2,
+    "acRate": 54.794962867290934,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"3.1K\", \"totalAcceptedRaw\": 1697, \"totalSubmissionRaw\": 3097, \"acRate\": \"54.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of using breadth-first search.",
+        "Use a BFS to find for each cell the time at which it will become flooded.",
+        "Another BFS then simulates your movement, taking into account information gathered by the first BFS."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:44:48.843Z"
+}

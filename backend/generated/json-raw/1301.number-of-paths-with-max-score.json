@@ -1,0 +1,118 @@
+{
+    "questionId": "1234",
+    "questionFrontendId": "1301",
+    "title": "Number of Paths with Max Score",
+    "titleSlug": "number-of-paths-with-max-score",
+    "difficulty": "Hard",
+    "likes": 786,
+    "dislikes": 41,
+    "acRate": 63.250481960892316,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"91.9K\", \"totalSubmission\": \"145.2K\", \"totalAcceptedRaw\": 91865, \"totalSubmissionRaw\": 145240, \"acRate\": \"63.3%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given a square <code>board</code>&nbsp;of characters. You can move on the board starting at the bottom right square marked with the character&nbsp;<code>&#39;S&#39;</code>.</p>\n\n<p>You need&nbsp;to reach the top left square marked with the character <code>&#39;E&#39;</code>. The rest of the squares are labeled either with a numeric character&nbsp;<code>1, 2, ..., 9</code> or with an obstacle <code>&#39;X&#39;</code>. In one move you can go up, left or up-left (diagonally) only if there is no obstacle there.</p>\n\n<p>Return a list of two integers: the first integer is the maximum sum of numeric characters you can collect, and the second is the number of such paths that you can take to get that maximum sum, <strong>taken modulo <code>10^9 + 7</code></strong>.</p>\n\n<p>In case there is no path, return&nbsp;<code>[0, 0]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> board = [\"E23\",\"2X2\",\"12S\"]\r\n<strong>Output:</strong> [7,1]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> board = [\"E12\",\"1X1\",\"21S\"]\r\n<strong>Output:</strong> [4,2]\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> board = [\"E11\",\"XXX\",\"11S\"]\r\n<strong>Output:</strong> [0,0]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= board.length == board[i].length &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "Use dynamic programming to find the path with the max score.",
+        "Use another dynamic programming array to count the number of paths with max score."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Dynamic Programming\n\n#### Intuition\n\nAccording to the problem statement, starting from the bottom-right corner `\"S\"`, we can only move **up**, **left**, or **diagonally up-left**. Therefore, each position on the board is visited at most once, making dynamic programming a natural approach.\n\nLet `dp[i][j]` represent the state at position `(i, j)` on the board. Since we need to compute both the **maximum score** from `\"S\"` to `(i, j)` and the **number of paths** that achieve this maximum score, each state stores two values:\n* the maximum score from the bottom-right corner to `(i, j)`;\n* the number of paths that achieve this maximum score.\n\nIf position `(i, j)` is unreachable from the bottom-right corner, either because it is an obstacle or because all possible paths are blocked by obstacles, we set the maximum score to `-1`.\n\nSince the starting position is the bottom-right corner, the dynamic programming states must be computed in reverse order, that is, from larger indices to smaller ones:\n\n```\nfor i = n - 1 to 0\nfor j = n - 1 to 0\n// process dp[i][j]\n```\n\nNext, consider the state transition. Position `(i, j)` can be reached from three neighboring positions: `(i + 1, j)`, `(i, j + 1)`, and `(i + 1, j + 1)`. Since each state consists of two values, directly writing a transition such as `dp[i][j] = max(...)` is inconvenient. Instead, we define an `update()` function that updates `dp[i][j]` using one candidate state at a time.\n\nSuppose we use `dp[u][v]` to update `dp[i][j]`. There are three possible cases:\n* If the maximum score stored in `dp[u][v]` is `-1`, then position `(u, v)` is unreachable, so it cannot contribute to `dp[i][j]`.\n* If the maximum scores stored in `dp[u][v]` and `dp[i][j]` are equal, then both states achieve the same maximum score. In this case, we add the number of paths stored in `dp[u][v]` to that of `dp[i][j]`, thereby merging the path counts.\n* If the maximum score stored in `dp[u][v]` is greater than that of `dp[i][j]`, then `dp[u][v]` provides a better solution. We replace both the maximum score and the number of paths in `dp[i][j]` with those from `dp[u][v]`.\n\nAfter considering all three predecessor states, if the maximum score stored in `dp[i][j]` is not `-1`, then position `(i, j)` is reachable. We then add the score of the current cell to the maximum score, obtaining the final state for position `(i, j)`.\n\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/aVHqmFqd/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aVHqmFqd\"></iframe>\n\n#### Complexity Analysis\n\nLet $N$ be the side length of the `board`.\n\n- Time complexity: $O(N^2)$.\n\n- Space complexity: $O(N^2)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> pathsWithMaxScore(vector<string>& board) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int[] pathsWithMaxScore(List<String> board) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def pathsWithMaxScore(self, board: List[str]) -> List[int]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def pathsWithMaxScore(self, board):\n        \"\"\"\n        :type board: List[str]\n        :rtype: List[int]\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} board\n * @return {number[]}\n */\nvar pathsWithMaxScore = function(board) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function pathsWithMaxScore(board: string[]): number[] {\n\n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int[] PathsWithMaxScore(IList<string> board) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* pathsWithMaxScore(char ** board, int boardSize, int* returnSize){\n\n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func pathsWithMaxScore(board []string) []int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun pathsWithMaxScore(board: List<String>): IntArray {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func pathsWithMaxScore(_ board: [String]) -> [Int] {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn paths_with_max_score(board: Vec<String>) -> Vec<i32> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String[]} board\n# @return {Integer[]}\ndef paths_with_max_score(board)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String[] $board\n     * @return Integer[]\n     */\n    function pathsWithMaxScore($board) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def pathsWithMaxScore(board: List[String]): Array[Int] = {\n        \n    }\n}"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T17:31:03.678Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3286",
+    "questionFrontendId": "2989",
+    "title": "Class Performance",
+    "titleSlug": "class-performance",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 3,
+    "acRate": 88.49951328048951,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"7.2K\", \"totalAcceptedRaw\": 6363, \"totalSubmissionRaw\": 7190, \"acRate\": \"88.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:15.066Z"
+}

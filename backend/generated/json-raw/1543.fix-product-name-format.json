@@ -1,0 +1,28 @@
+{
+    "questionId": "1686",
+    "questionFrontendId": "1543",
+    "title": "Fix Product Name Format",
+    "titleSlug": "fix-product-name-format",
+    "difficulty": "Easy",
+    "likes": 93,
+    "dislikes": 45,
+    "acRate": 58.77387613351341,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"24.4K\", \"totalSubmission\": \"41.5K\", \"totalAcceptedRaw\": 24370, \"totalSubmissionRaw\": 41464, \"acRate\": \"58.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:36:50.268Z"
+}

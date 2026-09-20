@@ -1,0 +1,39 @@
+{
+    "questionId": "246",
+    "questionFrontendId": "246",
+    "title": "Strobogrammatic Number",
+    "titleSlug": "strobogrammatic-number",
+    "difficulty": "Easy",
+    "likes": 638,
+    "dislikes": 1054,
+    "acRate": 47.48842615743982,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"213.7K\", \"totalSubmission\": \"449.9K\", \"totalAcceptedRaw\": 213668, \"totalSubmissionRaw\": 449937, \"acRate\": \"47.5%\"}",
+    "similarQuestions": "[{\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number III\", \"titleSlug\": \"strobogrammatic-number-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:52.133Z"
+}

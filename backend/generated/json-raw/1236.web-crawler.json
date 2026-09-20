@@ -1,0 +1,45 @@
+{
+    "questionId": "1271",
+    "questionFrontendId": "1236",
+    "title": "Web Crawler",
+    "titleSlug": "web-crawler",
+    "difficulty": "Medium",
+    "likes": 310,
+    "dislikes": 339,
+    "acRate": 68.76147701088927,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"58.8K\", \"totalSubmission\": \"85.5K\", \"totalAcceptedRaw\": 58788, \"totalSubmissionRaw\": 85496, \"acRate\": \"68.8%\"}",
+    "similarQuestions": "[{\"title\": \"Web Crawler Multithreaded\", \"titleSlug\": \"web-crawler-multithreaded\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use DFS/BFS to search start from the startURL. Remember to get rid of duplicate URLs."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:22.390Z"
+}

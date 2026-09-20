@@ -1,0 +1,48 @@
+{
+    "questionId": "1931",
+    "questionFrontendId": "1778",
+    "title": "Shortest Path in a Hidden Grid",
+    "titleSlug": "shortest-path-in-a-hidden-grid",
+    "difficulty": "Medium",
+    "likes": 210,
+    "dislikes": 89,
+    "acRate": 44.70421895119549,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"17.7K\", \"totalSubmission\": \"39.6K\", \"totalAcceptedRaw\": 17706, \"totalSubmissionRaw\": 39607, \"acRate\": \"44.7%\"}",
+    "similarQuestions": "[{\"title\": \"Robot Room Cleaner\", \"titleSlug\": \"robot-room-cleaner\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Hidden Grid\", \"titleSlug\": \"minimum-path-cost-in-a-hidden-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "The grid is at a maximum 500 x 500, so it is clever to assume that the robot's initial cell is grid[501][501]",
+        "Run a DFS from the robot's position to make sure that you can reach the target, otherwise you should return -1.",
+        "Now that you are sure you can reach the target, run BFS to find the shortest path."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:53:49.158Z"
+}

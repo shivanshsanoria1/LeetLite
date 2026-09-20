@@ -1,0 +1,28 @@
+{
+    "questionId": "1420",
+    "questionFrontendId": "1285",
+    "title": "Find the Start and End Number of Continuous Ranges",
+    "titleSlug": "find-the-start-and-end-number-of-continuous-ranges",
+    "difficulty": "Medium",
+    "likes": 593,
+    "dislikes": 36,
+    "acRate": 81.7994175813626,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"51.1K\", \"totalSubmission\": \"62.5K\", \"totalAcceptedRaw\": 51123, \"totalSubmissionRaw\": 62498, \"acRate\": \"81.8%\"}",
+    "similarQuestions": "[{\"title\": \"Report Contiguous Dates\", \"titleSlug\": \"report-contiguous-dates\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find the Missing IDs\", \"titleSlug\": \"find-the-missing-ids\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Customers With Strictly Increasing Purchases\", \"titleSlug\": \"customers-with-strictly-increasing-purchases\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:44.891Z"
+}

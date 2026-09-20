@@ -1,0 +1,35 @@
+{
+    "questionId": "4066",
+    "questionFrontendId": "3696",
+    "title": "Maximum Distance Between Unequal Words in Array I",
+    "titleSlug": "maximum-distance-between-unequal-words-in-array-i",
+    "difficulty": "Easy",
+    "likes": 6,
+    "dislikes": 1,
+    "acRate": 81.70055452865064,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.3K\", \"totalSubmission\": \"1.6K\", \"totalAcceptedRaw\": 1325, \"totalSubmissionRaw\": 1622, \"acRate\": \"81.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use bruteforce"
+    ],
+    "exampleTestcases": "[\"leetcode\",\"leetcode\",\"codeforces\"]\n[\"a\",\"b\",\"c\",\"a\",\"a\"]\n[\"z\",\"z\",\"z\"]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:12:02.420Z"
+}

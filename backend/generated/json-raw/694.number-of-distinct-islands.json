@@ -1,0 +1,59 @@
+{
+    "questionId": "694",
+    "questionFrontendId": "694",
+    "title": "Number of Distinct Islands",
+    "titleSlug": "number-of-distinct-islands",
+    "difficulty": "Medium",
+    "likes": 2341,
+    "dislikes": 154,
+    "acRate": 62.97482456817926,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"212K\", \"totalSubmission\": \"336.6K\", \"totalAcceptedRaw\": 211972, \"totalSubmissionRaw\": 336598, \"acRate\": \"63.0%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Islands II\", \"titleSlug\": \"number-of-distinct-islands-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Sub Islands\", \"titleSlug\": \"count-sub-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:30.268Z"
+}

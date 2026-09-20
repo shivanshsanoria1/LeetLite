@@ -1,0 +1,28 @@
+{
+    "questionId": "3340",
+    "questionFrontendId": "3056",
+    "title": "Snaps Analysis",
+    "titleSlug": "snaps-analysis",
+    "difficulty": "Medium",
+    "likes": 6,
+    "dislikes": 2,
+    "acRate": 58.9060092449923,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.8K\", \"totalSubmission\": \"6.5K\", \"totalAcceptedRaw\": 3823, \"totalSubmissionRaw\": 6490, \"acRate\": \"58.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:12.100Z"
+}

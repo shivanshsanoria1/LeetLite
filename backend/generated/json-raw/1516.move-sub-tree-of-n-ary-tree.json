@@ -1,0 +1,36 @@
+{
+    "questionId": "1655",
+    "questionFrontendId": "1516",
+    "title": "Move Sub-Tree of N-Ary Tree",
+    "titleSlug": "move-sub-tree-of-n-ary-tree",
+    "difficulty": "Hard",
+    "likes": 34,
+    "dislikes": 67,
+    "acRate": 59.85354296790868,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"4.6K\", \"totalAcceptedRaw\": 2779, \"totalSubmissionRaw\": 4643, \"acRate\": \"59.9%\"}",
+    "similarQuestions": "[{\"title\": \"Find Root of N-Ary Tree\", \"titleSlug\": \"find-root-of-n-ary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Disconnect node p from its parent and append it to the children list of node q.",
+        "If q was in the sub-tree of node p (case 1), get the parent node of p and replace p in its children list with q.",
+        "If p was the root of the tree, make q the root of the tree."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:36:07.257Z"
+}

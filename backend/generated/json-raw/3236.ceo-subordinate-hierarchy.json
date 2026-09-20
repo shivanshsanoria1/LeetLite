@@ -1,0 +1,28 @@
+{
+    "questionId": "3549",
+    "questionFrontendId": "3236",
+    "title": "CEO Subordinate Hierarchy",
+    "titleSlug": "ceo-subordinate-hierarchy",
+    "difficulty": "Hard",
+    "likes": 7,
+    "dislikes": 0,
+    "acRate": 70.14256619144604,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"2.5K\", \"totalAcceptedRaw\": 1722, \"totalSubmissionRaw\": 2455, \"acRate\": \"70.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:56.345Z"
+}

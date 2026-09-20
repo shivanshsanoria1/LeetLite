@@ -1,0 +1,36 @@
+{
+    "questionId": "2875",
+    "questionFrontendId": "2728",
+    "title": "Count Houses in a Circular Street",
+    "titleSlug": "count-houses-in-a-circular-street",
+    "difficulty": "Easy",
+    "likes": 61,
+    "dislikes": 12,
+    "acRate": 85.85020736765064,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.5K\", \"totalSubmission\": \"4.1K\", \"totalAcceptedRaw\": 3519, \"totalSubmissionRaw\": 4099, \"acRate\": \"85.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Close the door of k houses moving in one direction.",
+        "Open the door of the current house.",
+        "Move in one direction and count until you reach the house with the open door."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:41:41.046Z"
+}

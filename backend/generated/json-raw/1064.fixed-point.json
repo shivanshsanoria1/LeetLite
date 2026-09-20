@@ -1,0 +1,37 @@
+{
+    "questionId": "1066",
+    "questionFrontendId": "1064",
+    "title": "Fixed Point",
+    "titleSlug": "fixed-point",
+    "difficulty": "Easy",
+    "likes": 450,
+    "dislikes": 67,
+    "acRate": 64.28141764568679,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"52.4K\", \"totalSubmission\": \"81.5K\", \"totalAcceptedRaw\": 52363, \"totalSubmissionRaw\": 81459, \"acRate\": \"64.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Loop over the array and check the first index i such A[i] == i"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:27.778Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "266",
+    "questionFrontendId": "266",
+    "title": "Palindrome Permutation",
+    "titleSlug": "palindrome-permutation",
+    "difficulty": "Easy",
+    "likes": 1105,
+    "dislikes": 75,
+    "acRate": 68.70893083516509,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"236.3K\", \"totalSubmission\": \"343.9K\", \"totalAcceptedRaw\": 236312, \"totalSubmissionRaw\": 343932, \"acRate\": \"68.7%\"}",
+    "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Anagram\", \"titleSlug\": \"valid-anagram\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation II\", \"titleSlug\": \"palindrome-permutation-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Palindrome\", \"titleSlug\": \"longest-palindrome\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Consider the palindromes of odd vs even length. What difference do you notice?",
+        "Count the frequency of each character.",
+        "If each character occurs even number of times, then it must be a palindrome. How about character which occurs odd number of times?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:11.415Z"
+}

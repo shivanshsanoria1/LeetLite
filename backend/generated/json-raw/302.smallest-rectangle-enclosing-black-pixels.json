@@ -1,0 +1,47 @@
+{
+    "questionId": "302",
+    "questionFrontendId": "302",
+    "title": "Smallest Rectangle Enclosing Black Pixels",
+    "titleSlug": "smallest-rectangle-enclosing-black-pixels",
+    "difficulty": "Hard",
+    "likes": 565,
+    "dislikes": 107,
+    "acRate": 60.93073707046347,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"57.9K\", \"totalSubmission\": \"95K\", \"totalAcceptedRaw\": 57858, \"totalSubmissionRaw\": 94957, \"acRate\": \"60.9%\"}",
+    "similarQuestions": "[{\"title\": \"Find the Minimum Area to Cover All Ones II\", \"titleSlug\": \"find-the-minimum-area-to-cover-all-ones-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find the Minimum Area to Cover All Ones I\", \"titleSlug\": \"find-the-minimum-area-to-cover-all-ones-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:42.962Z"
+}

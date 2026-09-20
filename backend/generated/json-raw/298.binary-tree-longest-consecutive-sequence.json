@@ -1,0 +1,43 @@
+{
+    "questionId": "298",
+    "questionFrontendId": "298",
+    "title": "Binary Tree Longest Consecutive Sequence",
+    "titleSlug": "binary-tree-longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "likes": 1186,
+    "dislikes": 239,
+    "acRate": 54.85947615040292,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"167.5K\", \"totalSubmission\": \"305.4K\", \"totalAcceptedRaw\": 167536, \"totalSubmissionRaw\": 305392, \"acRate\": \"54.9%\"}",
+    "similarQuestions": "[{\"title\": \"Longest Consecutive Sequence\", \"titleSlug\": \"longest-consecutive-sequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Longest Consecutive Sequence II\", \"titleSlug\": \"binary-tree-longest-consecutive-sequence-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Check if an Array Is Consecutive\", \"titleSlug\": \"check-if-an-array-is-consecutive\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:39.227Z"
+}

@@ -1,0 +1,31 @@
+{
+    "questionId": "163",
+    "questionFrontendId": "163",
+    "title": "Missing Ranges",
+    "titleSlug": "missing-ranges",
+    "difficulty": "Easy",
+    "likes": 1193,
+    "dislikes": 3027,
+    "acRate": 35.68804978742881,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"313.4K\", \"totalSubmission\": \"878.3K\", \"totalAcceptedRaw\": 313446, \"totalSubmissionRaw\": 878294, \"acRate\": \"35.7%\"}",
+    "similarQuestions": "[{\"title\": \"Summary Ranges\", \"titleSlug\": \"summary-ranges\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find Maximal Uncovered Ranges\", \"titleSlug\": \"find-maximal-uncovered-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:36.690Z"
+}

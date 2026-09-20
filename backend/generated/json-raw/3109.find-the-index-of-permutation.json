@@ -1,0 +1,56 @@
+{
+    "questionId": "3417",
+    "questionFrontendId": "3109",
+    "title": "Find the Index of Permutation",
+    "titleSlug": "find-the-index-of-permutation",
+    "difficulty": "Medium",
+    "likes": 16,
+    "dislikes": 5,
+    "acRate": 37.223101265822784,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"941\", \"totalSubmission\": \"2.5K\", \"totalAcceptedRaw\": 941, \"totalSubmissionRaw\": 2528, \"acRate\": \"37.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "If <code>perm[0]</code> is <code>x</code>, there are at least <code>(x - 1) * (n - 1)!</code> permutations before <code>perm<c/ode>. (All the ones starting with numbers less than <code>x</code>)",
+        "Can you find out what happens for <code>perm[1]</code> onwards?",
+        "Think about the count of the numbers that can be in place of <code>perm[i]</code> and come before it."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Merge Sort",
+            "slug": "merge-sort"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:16.553Z"
+}

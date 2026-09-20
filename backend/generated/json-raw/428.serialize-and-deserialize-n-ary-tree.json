@@ -1,0 +1,43 @@
+{
+    "questionId": "765",
+    "questionFrontendId": "428",
+    "title": "Serialize and Deserialize N-ary Tree",
+    "titleSlug": "serialize-and-deserialize-n-ary-tree",
+    "difficulty": "Hard",
+    "likes": 1079,
+    "dislikes": 58,
+    "acRate": 68.95547655324191,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"101.8K\", \"totalSubmission\": \"147.7K\", \"totalAcceptedRaw\": 101830, \"totalSubmissionRaw\": 147675, \"acRate\": \"69.0%\"}",
+    "similarQuestions": "[{\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize BST\", \"titleSlug\": \"serialize-and-deserialize-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encode N-ary Tree to Binary Tree\", \"titleSlug\": \"encode-n-ary-tree-to-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:35.510Z"
+}

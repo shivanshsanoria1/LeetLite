@@ -1,0 +1,51 @@
+{
+    "questionId": "1790",
+    "questionFrontendId": "1650",
+    "title": "Lowest Common Ancestor of a Binary Tree III",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree-iii",
+    "difficulty": "Medium",
+    "likes": 1540,
+    "dislikes": 61,
+    "acRate": 83.0221936209782,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"410.3K\", \"totalSubmission\": \"494.2K\", \"totalAcceptedRaw\": 410255, \"totalSubmissionRaw\": 494151, \"acRate\": \"83.0%\"}",
+    "similarQuestions": "[{\"title\": \"Lowest Common Ancestor of a Binary Search Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree II\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree IV\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Store the path from p to the root.",
+        "Traverse the path from q to the root, the first common point of the two paths is the LCA."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Binary Lifting",
+            "slug": "binary-lifting"
+        },
+        {
+            "name": "Lowest Common Ancestor",
+            "slug": "lowest-common-ancestor"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:51:25.188Z"
+}

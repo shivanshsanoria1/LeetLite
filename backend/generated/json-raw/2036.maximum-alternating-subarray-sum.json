@@ -1,0 +1,37 @@
+{
+    "questionId": "512",
+    "questionFrontendId": "2036",
+    "title": "Maximum Alternating Subarray Sum",
+    "titleSlug": "maximum-alternating-subarray-sum",
+    "difficulty": "Medium",
+    "likes": 107,
+    "dislikes": 6,
+    "acRate": 39.78655847592168,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.5K\", \"totalSubmission\": \"11.3K\", \"totalAcceptedRaw\": 4511, \"totalSubmissionRaw\": 11338, \"acRate\": \"39.8%\"}",
+    "similarQuestions": "[{\"title\": \"Maximum Alternating Subsequence Sum\", \"titleSlug\": \"maximum-alternating-subsequence-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can Kadane's Algorithm help us?",
+        "If you convert all the numbers at odd indices to the negative version of that number, the problem simplifies to finding the maximum subarray sum.",
+        "However, this strategy needs you to start each subarray at an even index.",
+        "Do the same except converting all the numbers at even indices to the negative version of that number."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:21.486Z"
+}

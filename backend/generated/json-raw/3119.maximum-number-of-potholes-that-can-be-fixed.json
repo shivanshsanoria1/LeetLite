@@ -1,0 +1,40 @@
+{
+    "questionId": "3425",
+    "questionFrontendId": "3119",
+    "title": "Maximum Number of Potholes That Can Be Fixed",
+    "titleSlug": "maximum-number-of-potholes-that-can-be-fixed",
+    "difficulty": "Medium",
+    "likes": 22,
+    "dislikes": 3,
+    "acRate": 53.61392960040086,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"8K\", \"totalAcceptedRaw\": 4280, \"totalSubmissionRaw\": 7983, \"acRate\": \"53.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Find all consecutive blocks of <code>’x’</code>.",
+        "Sort them by their length.",
+        "Try to fix the block from the largest one until you have enough budget."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:24.342Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "3652",
+    "questionFrontendId": "3359",
+    "title": "Find Sorted Submatrices With Maximum Element at Most K",
+    "titleSlug": "find-sorted-submatrices-with-maximum-element-at-most-k",
+    "difficulty": "Hard",
+    "likes": 7,
+    "dislikes": 3,
+    "acRate": 52.26781857451404,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"484\", \"totalSubmission\": \"926\", \"totalAcceptedRaw\": 484, \"totalSubmissionRaw\": 926, \"acRate\": \"52.3%\"}",
+    "similarQuestions": "[{\"title\": \"Maximal Rectangle\", \"titleSlug\": \"maximal-rectangle\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use monotonic stack.",
+        "Store for each element <code>grid[i][j]</code>, the longest increasing subarray of <code>grid[i]</code> ending at index <code>j</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:33.047Z"
+}

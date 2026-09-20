@@ -1,0 +1,41 @@
+{
+    "questionId": "247",
+    "questionFrontendId": "247",
+    "title": "Strobogrammatic Number II",
+    "titleSlug": "strobogrammatic-number-ii",
+    "difficulty": "Medium",
+    "likes": 962,
+    "dislikes": 263,
+    "acRate": 53.55324199474032,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"163.1K\", \"totalSubmission\": \"304.6K\", \"totalAcceptedRaw\": 163113, \"totalSubmissionRaw\": 304581, \"acRate\": \"53.6%\"}",
+    "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number III\", \"titleSlug\": \"strobogrammatic-number-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Sum of k-Mirror Numbers\", \"titleSlug\": \"sum-of-k-mirror-numbers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to use recursion and notice that it should recurse with <i>n</i> - 2 instead of <i>n</i> - 1."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:52.985Z"
+}

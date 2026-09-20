@@ -1,0 +1,137 @@
+{
+    "questionId": "3981",
+    "questionFrontendId": "3660",
+    "title": "Jump Game IX",
+    "titleSlug": "jump-game-ix",
+    "difficulty": "Medium",
+    "likes": 460,
+    "dislikes": 39,
+    "acRate": 46.21206456368239,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"86.5K\", \"totalSubmission\": \"187.2K\", \"totalAcceptedRaw\": 86520, \"totalSubmissionRaw\": 187215, \"acRate\": \"46.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>From any index <code>i</code>, you can jump to another index <code>j</code> under the following rules:</p>\n\n<ul>\n\t<li>Jump to index <code>j</code> where <code>j &gt; i</code> is allowed only if <code>nums[j] &lt; nums[i]</code>.</li>\n\t<li>Jump to index <code>j</code> where <code>j &lt; i</code> is allowed only if <code>nums[j] &gt; nums[i]</code>.</li>\n</ul>\n\n<p>For each index <code>i</code>, find the <strong>maximum</strong> <strong>value</strong> in <code>nums</code> that can be reached by following <strong>any</strong> sequence of valid jumps starting at <code>i</code>.</p>\n\n<p>Return an array <code>ans</code> where <code>ans[i]</code> is the <strong>maximum</strong> <strong>value</strong> reachable starting from index <code>i</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,2,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For <code>i = 0</code>: No jump increases the value.</li>\n\t<li>For <code>i = 1</code>: Jump to <code>j = 0</code> as <code>nums[j] = 2</code> is greater than <code>nums[i]</code>.</li>\n\t<li>For <code>i = 2</code>: Since <code>nums[2] = 3</code> is the maximum value in <code>nums</code>, no jump increases the value.</li>\n</ul>\n\n<p>Thus, <code>ans = [2, 2, 3]</code>.</p>\n\n<ul>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,3,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[3,3,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For <code>i = 0</code>: Jump forward to <code>j = 2</code> as <code>nums[j] = 1</code> is less than <code>nums[i] = 2</code>, then from <code>i = 2</code> jump to <code>j = 1</code> as <code>nums[j] = 3</code> is greater than <code>nums[2]</code>.</li>\n\t<li>For <code>i = 1</code>: Since <code>nums[1] = 3</code> is the maximum value in <code>nums</code>, no jump increases the value.</li>\n\t<li>For <code>i = 2</code>: Jump to <code>j = 1</code> as <code>nums[j] = 3</code> is greater than <code>nums[2] = 1</code>.</li>\n</ul>\n\n<p>Thus, <code>ans = [3, 3, 3]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup>​​​​​​​</code></li>\n</ul>\n",
+    "hints": [
+        "Think of the array as a directed graph where edges represent valid jumps.",
+        "From index <code>i</code>, forward jumps go only to smaller values; backward jumps go only to larger values.",
+        "The maximum reachable value from <code>i</code> is the maximum value in the connected component reachable under these jump rules.",
+        "You can find connected ranges by looking at prefix maximums and suffix minimums, a cut happens where all values to the left are <= all values to the right."
+    ],
+    "exampleTestcases": "[2,1,3]\n[2,3,1]",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Interval Divide and Conquer\n\n#### Intuition\n\nLet us simulate the process of element transfer. Let the length of $\\textit{nums}$ be $n$, and first consider the global maximum, denoted as $r_{\\textit{max}1}$, located at index $i_1$.\n\nThis maximum value splits the entire interval into two parts. It is easy to see that all elements to the right of $i_1$ can jump to $r_{\\textit{max}1}$, and this is clearly the globally optimal solution for these elements.\n\nNow consider the elements to the left of $i_1$. Let the prefix maximum in the interval $[0, i_1 - 1]$ be $r_{\\textit{max}2}$, located at index $i_2$. This value further divides the interval $[0, i_1 - 1]$ into two parts. We first consider the elements on the right side of this maximum, that is, the elements in the interval $[i_2, i_1 - 1]$.\n\nLet the minimum value in the previously processed right interval $[i_1, n - 1]$ be $r_{\\textit{min}}$. Then we have the following two cases:\n\n- If $r_{\\textit{max}2} \\le r_{\\textit{min}}$, it means that none of the elements in the current interval can transfer to the right interval $[i_1, n - 1]$. Therefore, the elements in $[i_2, i_1 - 1]$ can only transfer to $r_{\\textit{max}2}$, which is the optimal solution for them.\n\n- If $r_{\\textit{max}2} > r_{\\textit{min}}$, then all elements in the current interval $[i_2, i_1 - 1]$ can first reach $r_{\\textit{max}2}$, then transfer through the element corresponding to $r_{\\textit{min}}$, and finally reach the maximum value in the right interval. Hence, the optimal solution for these elements becomes $r_{\\textit{max}1}$.\n\nApplying the same reasoning, we observe that the subproblem on the interval $[0, i_2 - 1]$ has exactly the same structure. It again involves selecting the prefix maximum, splitting the interval, and deciding whether the current right part can transfer to the previously processed right interval.\n\nThis repeating structure suggests an interval divide-and-conquer approach. We dynamically maintain the maximum and minimum values of the right interval while processing smaller prefixes.\n\nWe first preprocess the prefix maximum values. Then we apply divide and conquer as described above. What remains is to clearly define $r_{\\textit{min}}$ and $r_{\\textit{max}}$, and how to update them during transitions.\n\nLet the current interval be $[0, i]$, and let the prefix maximum be at index $i'$. Based on whether the interval $[i', i]$ can transfer to the previously processed right interval, we have the following transitions:\n\n- $r_{\\textit{max}}$ represents the final target value for the current interval. If transfer is possible, it inherits the previous $r_{\\textit{max}}$, since that value is guaranteed to be greater than or equal to the current prefix maximum. Otherwise, $r_{\\textit{max}}$ is updated to the current prefix maximum.\n\n- $r_{\\textit{min}}$ represents the minimum value among elements that can reach $r_{\\textit{max}}$. If the current prefix maximum is greater than $r_{\\textit{min}}$, then the interval $[i', i]$ can transfer to the right side. In this case, we update\n  $$\n  r_{\\textit{min}} = \\min\\left(r_{\\textit{min}}, \\min_{i' \\le k \\le i} (\\textit{nums}[k])\\right)\n  $$\n  thereby incorporating values from the current interval.\n\n- Even when transfer is not possible, we still apply the same update rule. At first, this may seem incorrect, because the previous $r_{\\textit{min}}$ corresponds to an unreachable interval. However, in this case, the previous $r_{\\textit{min}}$ must be greater than or equal to the current prefix maximum. Therefore, the new minimum will necessarily come from the current interval $[i', i]$, effectively discarding the old value. Hence, using the same update formula remains valid.\n\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/SYiFWWxK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"SYiFWWxK\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  Preprocessing the prefix maximum values takes $O(n)$. The intervals formed during the divide-and-conquer process partition the entire array without overlap, so the total time spent on interval processing is also $O(n)$.\n\n- Space complexity: $O(n)$.\n  \n  Storing the prefix maximum values requires $O(n)$ space.\n  \n---\n\n### Approach 2: Monotonic Stack\n\n#### Intuition\n\nLet us analyze the problem from another perspective. The condition in the problem can be interpreted as follows: if two elements in $\\textit{nums}$ form an **inversion pair**, then they can **reach each other**. This naturally leads to viewing the problem as maintaining **connected components** in an undirected graph.\n\nFrom this perspective, we can observe an important property. For the current element $\\textit{nums}[i]$ and any connected component to its left, if $\\textit{nums}[i]$ is smaller than the maximum value in that component, then it can merge with that component. Moreover, due to bidirectional connectivity, multiple components can merge together through $\\textit{nums}[i]$, forming a larger connected component.\n\nNow consider two adjacent connected components $A$ and $B$ from left to right. Let their maximum values be $a_{\\textit{max}}$ and $b_{\\textit{max}}$, respectively. Then we must have $a_{\\textit{max}} \\le b_{\\textit{max}}$. If the current element satisfies $\\textit{nums}[i] < a_{\\textit{max}}$, then it will also satisfy $\\textit{nums}[i] < b_{\\textit{max}}$, meaning it can merge with both components. As a result, $A$, $B$, and $\\textit{nums}[i]$ form a single larger connected component.\n\nThis implies that connected components are **continuous segments** in the array, and their maximum values follow a **monotonic order**. Connectivity depends only on adjacent components, not on distant ones.\n\nBased on this observation, we do not need to explicitly simulate paths. Instead, we can maintain these connected components using a **monotonic stack**, where each component is represented as $(\\textit{value}, \\textit{left}, \\textit{right})$.\n\nWe iterate through $\\textit{nums}$ from left to right. For each element, we repeatedly merge it with components on the stack while the merging condition holds. After merging, we push the resulting component back onto the stack.\n\nFinally, for each connected component, all its elements will have the same answer, which is the maximum value of that component.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/HK32DxQB/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HK32DxQB\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  Each element is pushed to and popped from the monotonic stack at most once, resulting in at most $2n$ operations. Therefore, stack operations take $O(n)$ time. Additionally, constructing the final answer from the connected components also takes $O(n)$ time, giving an overall time complexity of $O(n)$.\n\n- Space complexity: $O(n)$.\n  \n  The monotonic stack requires $O(n)$ space.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxValue(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int[] maxValue(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxValue(self, nums: List[int]) -> List[int]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxValue(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar maxValue = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxValue(nums: number[]): number[] {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int[] MaxValue(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxValue(int* nums, int numsSize, int* returnSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxValue(nums []int) []int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxValue(nums: IntArray): IntArray {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxValue(_ nums: [Int]) -> [Int] {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_value(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Integer[]}\ndef max_value(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[]\n     */\n    function maxValue($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  List<int> maxValue(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxValue(nums: Array[Int]): Array[Int] = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_value(nums :: [integer]) :: [integer]\n  def max_value(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_value(Nums :: [integer()]) -> [integer()].\nmax_value(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-value nums)\n  (-> (listof exact-integer?) (listof exact-integer?))\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T16:55:56.699Z"
+}

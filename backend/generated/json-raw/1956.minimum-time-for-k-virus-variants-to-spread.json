@@ -1,0 +1,55 @@
+{
+    "questionId": "2073",
+    "questionFrontendId": "1956",
+    "title": "Minimum Time For K Virus Variants to Spread",
+    "titleSlug": "minimum-time-for-k-virus-variants-to-spread",
+    "difficulty": "Hard",
+    "likes": 32,
+    "dislikes": 7,
+    "acRate": 49.650104968509446,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"2.9K\", \"totalAcceptedRaw\": 1419, \"totalSubmissionRaw\": 2858, \"acRate\": \"49.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "n is very small, how can we use that?",
+        "What shape is the region when two viruses intersect?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:13.084Z"
+}

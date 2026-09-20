@@ -1,0 +1,34 @@
+{
+    "questionId": "3064",
+    "questionFrontendId": "2888",
+    "title": "Reshape Data: Concatenate",
+    "titleSlug": "reshape-data-concatenate",
+    "difficulty": "Easy",
+    "likes": 96,
+    "dislikes": 7,
+    "acRate": 90.4116091408422,
+    "isPaidOnly": false,
+    "categoryTitle": "pandas",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"133.3K\", \"totalSubmission\": \"147.5K\", \"totalAcceptedRaw\": 133330, \"totalSubmissionRaw\": 147470, \"acRate\": \"90.4%\"}",
+    "similarQuestions": "[]",
+    "content": "<pre>\nDataFrame <code>df1</code>\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\nDataFrame <code>df2</code>\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\n</pre>\n\n<p>Write a solution to concatenate these two DataFrames <strong>vertically</strong> into one DataFrame.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:\ndf1</strong>\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\n<strong>df2\n</strong>+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+\n<strong>Output:</strong>\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+\n<strong>Explanation:\n</strong>The two DataFramess are stacked vertically, and their rows are combined.</pre>\n",
+    "hints": [
+        "Consider using a built-in function in pandas library with the appropriate axis argument."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n--- \n### Overview\nIn the task presented, the goal is to concatenate two DataFrames, `df1` and `df2`, vertically. The DataFrames have the same structure with columns `student_id`, `name`, and `age`.\n\n**Key Concepts**: \n - `pd.concat()`: A convenient function within pandas used to concatenate DataFrames either vertically (by rows) or horizontally (by columns).\n   - The `objs` parameter is a sequence or mapping of Series or DataFrame objects to be concatenated.\n   - The `axis` parameter determines the direction of concatenation:\n      - `axis=0` is set as the default value, which means it will concatenate DataFrames vertically (by rows).\n      - `axis=1` will concatenate DataFrames horizontally (by columns).\n\n### Intuition\n\nThe process of concatenating DataFrames vertically involves stacking one DataFrame on top of the other, ensuring the order of columns is consistent.\n\nInside the `concatenateTables` function, we utilize the `pd.concat()` function to concatenate the DataFrames. Since we are concatenated `df1` and `df2` we pass the list `[df1, df2]` as the first argument for `objs`; and since we are concatenating vertically, we set `axis=0`.\n\n**Visualization of the `pd.concat()` function applied to the `df1` and `df2` DataFrames:**\n\n![fig](../Figures/3308/3308-1.png)\n\n### Implementation\n\n<iframe src=\"https://leetcode.com/playground/jKLWjbze/shared\" frameBorder=\"0\" width=\"100%\" height=\"123\" name=\"jKLWjbze\"></iframe>"
+    },
+    "topicTags": [],
+    "codeSnippets": [
+        {
+            "lang": "Pandas",
+            "langSlug": "pythondata",
+            "code": "import pandas as pd\n\ndef concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:\n    "
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:45:52.762Z"
+}

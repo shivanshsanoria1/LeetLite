@@ -1,0 +1,41 @@
+{
+    "questionId": "734",
+    "questionFrontendId": "734",
+    "title": "Sentence Similarity",
+    "titleSlug": "sentence-similarity",
+    "difficulty": "Easy",
+    "likes": 70,
+    "dislikes": 74,
+    "acRate": 44.89989855765307,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"77K\", \"totalSubmission\": \"171.5K\", \"totalAcceptedRaw\": 77015, \"totalSubmissionRaw\": 171526, \"acRate\": \"44.9%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Provinces\", \"titleSlug\": \"number-of-provinces\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Accounts Merge\", \"titleSlug\": \"accounts-merge\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity II\", \"titleSlug\": \"sentence-similarity-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Two words w1 and w2 are similar if and only if w1 == w2, (w1, w2) was a pair, or (w2, w1) was a pair."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:57.808Z"
+}

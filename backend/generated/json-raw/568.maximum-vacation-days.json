@@ -1,0 +1,43 @@
+{
+    "questionId": "568",
+    "questionFrontendId": "568",
+    "title": "Maximum Vacation Days",
+    "titleSlug": "maximum-vacation-days",
+    "difficulty": "Hard",
+    "likes": 584,
+    "dislikes": 121,
+    "acRate": 46.81133348324713,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"41.6K\", \"totalSubmission\": \"88.9K\", \"totalAcceptedRaw\": 41634, \"totalSubmissionRaw\": 88940, \"acRate\": \"46.8%\"}",
+    "similarQuestions": "[{\"title\": \"Cheapest Flights Within K Stops\", \"titleSlug\": \"cheapest-flights-within-k-stops\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "First try to understand the problem carefully and then take some example and solve it on a paper.",
+        "Can you interpret the given input as a graph? Which graph traversal technique is suitable here?",
+        "Can we use some space to avoid redundant function calls?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:38.929Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3481",
+    "questionFrontendId": "3172",
+    "title": "Second Day Verification",
+    "titleSlug": "second-day-verification",
+    "difficulty": "Easy",
+    "likes": 11,
+    "dislikes": 1,
+    "acRate": 66.73167560539575,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.1K\", \"totalSubmission\": \"6.2K\", \"totalAcceptedRaw\": 4106, \"totalSubmissionRaw\": 6153, \"acRate\": \"66.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:07.783Z"
+}

@@ -1,0 +1,61 @@
+{
+    "questionId": "2287",
+    "questionFrontendId": "2152",
+    "title": "Minimum Number of Lines to Cover Points",
+    "titleSlug": "minimum-number-of-lines-to-cover-points",
+    "difficulty": "Medium",
+    "likes": 79,
+    "dislikes": 14,
+    "acRate": 44.3147815679234,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"6.7K\", \"totalAcceptedRaw\": 2962, \"totalSubmissionRaw\": 6684, \"acRate\": \"44.3%\"}",
+    "similarQuestions": "[{\"title\": \"Max Points on a Line\", \"titleSlug\": \"max-points-on-a-line\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Min Cost to Connect All Points\", \"titleSlug\": \"min-cost-to-connect-all-points\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Lines to Represent a Line Chart\", \"titleSlug\": \"minimum-lines-to-represent-a-line-chart\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "What is the highest possible answer for a set of n points?",
+        "The highest possible answer is n / 2 (rounded up). This is because you can cover at least two points with a line, and if n is odd, you need to add one extra line to cover the last point.",
+        "Suppose you have a line covering two points, how can you quickly check if a third point is also covered by that line?",
+        "Calculate the slope from the first point to the second point. If the slope from the first point to the third point is the same, then it is also covered by that line."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:06:10.012Z"
+}

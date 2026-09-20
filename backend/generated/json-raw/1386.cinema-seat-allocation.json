@@ -1,0 +1,143 @@
+{
+    "questionId": "1487",
+    "questionFrontendId": "1386",
+    "title": "Cinema Seat Allocation",
+    "titleSlug": "cinema-seat-allocation",
+    "difficulty": "Medium",
+    "likes": 1374,
+    "dislikes": 444,
+    "acRate": 56.958761212546364,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"175.4K\", \"totalSubmission\": \"307.9K\", \"totalAcceptedRaw\": 175384, \"totalSubmissionRaw\": 307914, \"acRate\": \"57.0%\"}",
+    "similarQuestions": "[{\"title\": \"Booking Concert Tickets in Groups\", \"titleSlug\": \"booking-concert-tickets-in-groups\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": "<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/14/cinema_seats_1.png\" style=\"width: 400px; height: 149px;\" /></p>\n\n<p>A cinema has <code>n</code> rows of seats, numbered from 1 to <code>n</code>. Each row has 10 seats, numbered from 1 to 10.</p>\n\n<p>You are given a 2D integer array <code data-end=\"170\" data-start=\"155\">reservedSeats</code>, where <code data-end=\"212\" data-start=\"178\">reservedSeats[i] = [row<sub>i</sub>, seat<sub>i</sub>]</code> means that seat <code data-end=\"236\" data-start=\"229\">seat<sub>i</sub></code> in row <code data-end=\"250\" data-start=\"244\">row<sub>i</sub></code> is already reserved.</p>\n\n<p>A four-person group must be assigned to four seats in the <strong>same</strong> row. The group can be seated in one of the following seat blocks:</p>\n\n<ul>\n\t<li>seats <code data-end=\"423\" data-start=\"411\">2, 3, 4, 5</code></li>\n\t<li>seats <code data-end=\"444\" data-start=\"432\">4, 5, 6, 7</code></li>\n\t<li>seats <code data-end=\"465\" data-start=\"453\">6, 7, 8, 9</code></li>\n</ul>\n\n<p>A block can be used only if <strong>none</strong> of its seats are reserved. Each seat can be assigned to <strong>at most </strong>one group.</p>\n\n<p>Return an integer denoting the <strong>maximum</strong> number of four-person groups that can be assigned.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/14/cinema_seats_3.png\" style=\"width: 400px; height: 96px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 3, reservedSeats = [[1,2],[1,3],[1,8],[2,6],[3,1],[3,10]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The figure above shows an optimal allocation of four groups. Seats marked in blue are already reserved, and each set of four contiguous seats marked in orange is assigned to one group.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, reservedSeats = [[2,1],[1,8],[2,6]]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, reservedSeats = [[4,3],[1,4],[4,6],[1,7]]\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= reservedSeats.length &lt;= min(10 * n, 10<sup>4</sup>)</code></li>\n\t<li><code>reservedSeats[i] == [row<sub>i</sub>, seat<sub>i</sub>]</code></li>\n\t<li><code>1 &lt;= row<sub>i</sub> &lt;= n</code></li>\n\t<li><code>1 &lt;= seat<sub>i</sub> &lt;= 10</code></li>\n\t<li>All <code>reservedSeats[i]</code> are distinct.</li>\n</ul>\n",
+    "hints": [
+        "Note you can allocate at most two four-person groups in one row.",
+        "Greedily check if you can allocate seats for two groups, one group or none.",
+        "Process only rows that appear in the input, for other rows you can always allocate seats for two groups."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Bitwise Operations\n\n#### Intuition\n\nFor each row, there are only three possible ways to arrange a family:\n\n* Seats 2, 3, 4, 5;\n* Seats 4, 5, 6, 7;\n* Seats 6, 7, 8, 9.\n\nTherefore, seats 1 and 10 in each row are irrelevant. Even if they are reserved, they do not affect the answer. Thus, we can ignore all reservations at seats 1 and 10.\n\nWe can also observe that if a row has no reserved seats among positions 2 to 9, it can accommodate exactly two families: one family in seats 2, 3, 4, 5, and another in seats 6, 7, 8, 9. If at least one of these seats is reserved, the row can accommodate at most one family.\n\nTherefore, we can use 8 binary bits to represent the reservation status of seats 2 to 9 in a row. If seat $i$ is reserved, then the $(i - 2)$-th bit is set to $1$; otherwise, it is set to $0$.\n\nFor example, in Example 1, the binary representation of each row is as follows:\n\n* **First row:** Seats 2, 3, and 8 are reserved, so the binary representation is $(01000011)_2$.\n* **Second row:** Seat 6 is reserved, so the binary representation is $(00010000)_2$.\n* **Third row:** Seats 1 and 10 are reserved, so the binary representation is $(00000000)_2$.\n\nWe can use a `HashMap` to store the reservation status of each row. For each key-value pair in the `HashMap`, the key represents the row number, and the value represents the corresponding bitmask.\n\nIf a row has no reserved seats among positions 2 to 9, such as the third row above, we already know that it can accommodate two families. Therefore, there is no need to store such rows in the `HashMap`. In other words, we only store a row if at least one seat between positions 2 and 9 is reserved.\n\nAfter processing all reservations, we traverse the `HashMap`. For each key-value pair $(\\textit{row}, \\textit{bitmask})$, we determine whether the row can accommodate a family. Since every row stored in the `HashMap` has at least one reserved seat, it can accommodate at most one family.\n\nThere are three possible arrangements:\n\n* **Seats 2, 3, 4, 5:** If the first four bits of the bitmask are all $0$, these seats can be allocated to a family. Equivalently, performing a bitwise OR between the bitmask and $(11110000)_2$ leaves the latter unchanged.\n\n* **Seats 4, 5, 6, 7:** If the corresponding four bits are all $0$, these seats can be allocated to a family. Equivalently, performing a bitwise OR between the bitmask and $(11000011)_2$ leaves the latter unchanged.\n\n* **Seats 6, 7, 8, 9:** If the last four bits are all $0$, these seats can be allocated to a family. Equivalently, performing a bitwise OR between the bitmask and $(00001111)_2$ leaves the latter unchanged.\n\nThus, for each row, we perform a bitwise OR operation between the $\\textit{bitmask}$ and each of $(11110000)_2$, $(11000011)_2$, and $(00001111)_2$. If any of these operations leaves the corresponding mask unchanged, the row can accommodate one family.\n\nFinally, there are $n - |S|$ rows with no reserved seats among positions 2 to 9, where $|S|$ is the number of rows stored in the `HashMap`. Each of these rows can accommodate two families, so we add $2(n - |S|)$ to the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/2bLtn5RX/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2bLtn5RX\"></iframe>\n\n#### Complexity Analysis\n\nLet $r$ be the length of the array $\\textit{reservedSeats}$.\n\n- Time complexity: $O(r)$.\n  \n  We first traverse $\\textit{reservedSeats}$ to record the reservation information in the hash map, and then traverse the hash map to compute the answer. Both operations take $O(r)$ time in total.\n\n- Space complexity: $O(r)$.\n  \n  The hash map stores the reservation information for each row that has at least one reserved seat among positions 2 to 9. In the worst case, it can contain $O(r)$ entries.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNumberOfFamilies(int n, vector<vector<int>>& reservedSeats) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxNumberOfFamilies(int n, int[][] reservedSeats) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxNumberOfFamilies(self, n: int, reservedSeats: List[List[int]]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxNumberOfFamilies(self, n, reservedSeats):\n        \"\"\"\n        :type n: int\n        :type reservedSeats: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} reservedSeats\n * @return {number}\n */\nvar maxNumberOfFamilies = function(n, reservedSeats) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxNumberOfFamilies(n: number, reservedSeats: number[][]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MaxNumberOfFamilies(int n, int[][] reservedSeats) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int maxNumberOfFamilies(int n, int** reservedSeats, int reservedSeatsSize, int* reservedSeatsColSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxNumberOfFamilies(n int, reservedSeats [][]int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxNumberOfFamilies(n: Int, reservedSeats: Array<IntArray>): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxNumberOfFamilies(_ n: Int, _ reservedSeats: [[Int]]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_number_of_families(n: i32, reserved_seats: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} n\n# @param {Integer[][]} reserved_seats\n# @return {Integer}\ndef max_number_of_families(n, reserved_seats)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $reservedSeats\n     * @return Integer\n     */\n    function maxNumberOfFamilies($n, $reservedSeats) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxNumberOfFamilies(int n, List<List<int>> reservedSeats) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxNumberOfFamilies(n: Int, reservedSeats: Array[Array[Int]]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_number_of_families(n :: integer, reserved_seats :: [[integer]]) :: integer\n  def max_number_of_families(n, reserved_seats) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_number_of_families(N :: integer(), ReservedSeats :: [[integer()]]) -> integer().\nmax_number_of_families(N, ReservedSeats) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-number-of-families n reservedSeats)\n  (-> exact-integer? (listof (listof exact-integer?)) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T17:33:05.798Z"
+}

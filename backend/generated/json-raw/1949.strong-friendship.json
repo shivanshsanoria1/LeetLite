@@ -1,0 +1,28 @@
+{
+    "questionId": "2097",
+    "questionFrontendId": "1949",
+    "title": "Strong Friendship",
+    "titleSlug": "strong-friendship",
+    "difficulty": "Medium",
+    "likes": 168,
+    "dislikes": 86,
+    "acRate": 54.716146162599564,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"17.3K\", \"totalSubmission\": \"31.6K\", \"totalAcceptedRaw\": 17310, \"totalSubmissionRaw\": 31636, \"acRate\": \"54.7%\"}",
+    "similarQuestions": "[{\"title\": \"Page Recommendations\", \"titleSlug\": \"page-recommendations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Page Recommendations II\", \"titleSlug\": \"page-recommendations-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Leetcodify Friends Recommendations\", \"titleSlug\": \"leetcodify-friends-recommendations\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:07.757Z"
+}

@@ -1,0 +1,45 @@
+{
+    "questionId": "2629",
+    "questionFrontendId": "2489",
+    "title": "Number of Substrings With Fixed Ratio",
+    "titleSlug": "number-of-substrings-with-fixed-ratio",
+    "difficulty": "Medium",
+    "likes": 55,
+    "dislikes": 3,
+    "acRate": 56.234413965087285,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.8K\", \"totalSubmission\": \"3.2K\", \"totalAcceptedRaw\": 1804, \"totalSubmissionRaw\": 3208, \"acRate\": \"56.2%\"}",
+    "similarQuestions": "[{\"title\": \"Count Binary Substrings\", \"titleSlug\": \"count-binary-substrings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Let Func(i) denote the number of 0’s in the prefix [0…i]. We want to find the number of pairs of indices L and R such that Func(R) - Func(L) : R - L - Func(R) + Func(L) = num1 : num2.",
+        "It is better to simplify the formula.",
+        "Func(R) * (num1 + num2) - R * num1 = Func(L) * (num1 + num2) - L * num1.",
+        "Iterate from left to right and use a hash map to count the number of indices having the same value for the above formula."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:25:21.720Z"
+}

@@ -1,0 +1,136 @@
+{
+    "questionId": "3962",
+    "questionFrontendId": "3699",
+    "title": "Number of ZigZag Arrays I",
+    "titleSlug": "number-of-zigzag-arrays-i",
+    "difficulty": "Hard",
+    "likes": 349,
+    "dislikes": 36,
+    "acRate": 50.04291894288654,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"88K\", \"totalSubmission\": \"175.9K\", \"totalAcceptedRaw\": 88031, \"totalSubmissionRaw\": 175912, \"acRate\": \"50.0%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given three integers <code>n</code>, <code>l</code>, and <code>r</code>.</p>\n\n<p>A <strong>ZigZag</strong> array of length <code>n</code> is defined as follows:</p>\n\n<ul>\n\t<li>Each element lies in the range <code>[l, r]</code>.</li>\n\t<li>No <strong>two</strong> adjacent elements are equal.</li>\n\t<li>No <strong>three</strong> consecutive elements form a <strong>strictly increasing</strong> or <strong>strictly decreasing</strong> sequence.</li>\n</ul>\n\n<p>Return the total number of valid <strong>ZigZag</strong> arrays.</p>\n\n<p>Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>A <strong>sequence</strong> is said to be <strong>strictly increasing</strong> if each element is strictly greater than its previous one (if exists).</p>\n\n<p>A <strong>sequence</strong> is said to be <strong>strictly decreasing</strong> if each element is strictly smaller than its previous one (if exists).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, l = 4, r = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are only 2 valid ZigZag arrays of length <code>n = 3</code> using values in the range <code>[4, 5]</code>:</p>\n\n<ul>\n\t<li><code>[4, 5, 4]</code></li>\n\t<li><code>[5, 4, 5]</code>​​​​​​​</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, l = 1, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are 10 valid ZigZag arrays of length <code>n = 3</code> using values in the range <code>[1, 3]</code>:</p>\n\n<ul>\n\t<li><code>[1, 2, 1]</code>, <code>[1, 3, 1]</code>, <code>[1, 3, 2]</code></li>\n\t<li><code>[2, 1, 2]</code>, <code>[2, 1, 3]</code>, <code>[2, 3, 1]</code>, <code>[2, 3, 2]</code></li>\n\t<li><code>[3, 1, 2]</code>, <code>[3, 1, 3]</code>, <code>[3, 2, 3]</code></li>\n</ul>\n\n<p>All arrays meet the ZigZag conditions.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= n &lt;= 2000</code></li>\n\t<li><code>1 &lt;= l &lt; r &lt;= 2000</code></li>\n</ul>\n",
+    "hints": [
+        "Use dynamic programming: let <code>dp[i][dir][x]</code> be the count of length-<code>i</code> sequences ending at value <code>x</code> where <code>dir</code> is the required next comparison (0 = down, 1 = up).",
+        "If the required move is <code>up</code> (dir=1) do <code>dp[i+1][0][y] += sum(dp[i][1][x]) for x < y</code>; if the required move is <code>down</code> (dir=0) do <code>dp[i+1][1][y] += sum(dp[i][0][x]) for x > y</code>.",
+        "Speed up with prefix/suffix sums so each layer updates in O(<code>m</code>) instead of O(<code>m</code><sup>2</sup>); take values mod <code>10<sup>9</sup>+7</code>."
+    ],
+    "exampleTestcases": "3\n4\n5\n3\n1\n3",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Dynamic Programming + Prefix Sum Optimization\n\n#### Intuition\n\nProblems that involve counting the number of valid sequences are often solved using dynamic programming.\n\nLet the zigzag array be denoted by $z$, and define $\\textit{dp}[i][\\textit{dir}][j]$ as the number of valid schemes where the length of $z$ is $i+1$, the relative order of its last two elements is represented by $\\textit{dir}$, and $z[i]=j$, where $l \\le j \\le r$.\n\nLet the last two elements of $z$ be $z[i-1]$ and $z[i]$. We define $\\textit{dir}$ as follows:\n\n- If $z[i-1] > z[i]$, the last two elements form a strictly decreasing pair, so $\\textit{dir}=0$.\n- If $z[i-1] < z[i]$, the last two elements form a strictly increasing pair, so $\\textit{dir}=1$.\n\nNow consider the state transition.\n\nSince the zigzag property depends only on the relative order of adjacent elements, the transition depends solely on the previous state. In other words, the value of $\\textit{dp}[i]$ depends only on $\\textit{dp}[i-1]$.\n\nFurthermore, according to the definition of a sawtooth array, the directions of two consecutive adjacent pairs must alternate. Therefore, a state with $\\textit{dir}=0$ can only transition from a state with $\\textit{dir}=1$, and vice versa.\n\nFor $\\textit{dp}[i][0][j]$, the last two elements must form a strictly decreasing pair. Therefore, the last value $j'$ of the previous state must satisfy $j' > j$. Similarly, for $\\textit{dp}[i][1][j]$, the last value $j'$ of the previous state must satisfy $j' < j$. Summing all valid previous states yields the number of schemes for the current state.\n\nThis gives the following transition equations. For convenience, we shift the original interval $[l,r]$ to $[0,m-1]$, where $m=r-l+1$. Some implementations may use the original interval directly, but the underlying idea remains the same.\n\n$$\n\\begin{aligned}\n\\textit{dp}[i][0][j] &= \\sum_{k=j+1}^{m-1} \\textit{dp}[i-1][1][k] \\\\\n\\textit{dp}[i][1][j] &= \\sum_{k=0}^{j-1} \\textit{dp}[i-1][0][k]\n\\end{aligned}\n$$\n\nThe two summations above can be optimized using prefix sums.\n\nLet $\\textit{sum}[i][\\textit{dir}]$ denote the prefix-sum array corresponding to states of length $i+1$ and direction $\\textit{dir}$. To simplify boundary handling, we use a prefix-sum array of length $m+1$ and define\n\n$$\n\\textit{sum}[i][\\textit{dir}][j]\n=\n\\sum_{k=0}^{j-1}\n\\textit{dp}[i][\\textit{dir}][k]\n$$\n\nIn particular,\n\n$$\n\\textit{sum}[i][\\textit{dir}][0] = 0\n$$\n\nWith prefix sums, each state transition can be computed in $O(1)$ time. The optimized transition equations become\n\n$$\n\\begin{aligned}\n\\textit{dp}[i][0][j] &= \\textit{sum}[i-1][1][m] - \\textit{sum}[i-1][1][j+1] \\\\\n\\textit{dp}[i][1][j] &= \\textit{sum}[i-1][0][j]\n\\end{aligned}\n$$\n\nFor initialization, set every element of $\\textit{dp}[0]$ to $1$, since there is exactly one valid sequence of length $1$ for each possible value.\n\nIn the implementation, we split the second dimension of $\\textit{dp}$ into two separate arrays, $\\textit{dp}_0$ and $\\textit{dp}_1$, for simpler indexing. Similarly, the second dimension of $\\textit{sum}$ is split into $\\textit{sum}_0$ and $\\textit{sum}_1$.\n\nNotice that the transitions of the $\\textit{dp}$ arrays depend only on the prefix-sum arrays from the previous iteration, while the prefix-sum arrays depend only on the current $\\textit{dp}$ arrays. As a result, the first dimension can be removed using a rolling-array technique, reducing the space complexity to $O(m)$.\n\n**Note:** The transition formulas for the two directions are highly symmetric. With additional observation, the implementation can be simplified further by exploiting this symmetry. This optimization is left as an exercise for the reader.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Lpvy5yQK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Lpvy5yQK\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ denote the size of the interval, that is, $m=r-l+1$.\n\n- Time complexity: $O(nm)$.\n  \n  The outer loop runs $n-1$ times, and each iteration performs two linear passes over the interval of size $m$.\n\n- Space complexity: $O(m)$.\n  \n  All auxiliary arrays have length $O(m)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int zigZagArrays(int n, int l, int r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int zigZagArrays(int n, int l, int r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def zigZagArrays(self, n: int, l: int, r: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def zigZagArrays(self, n, l, r):\n        \"\"\"\n        :type n: int\n        :type l: int\n        :type r: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} l\n * @param {number} r\n * @return {number}\n */\nvar zigZagArrays = function(n, l, r) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function zigZagArrays(n: number, l: number, r: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int ZigZagArrays(int n, int l, int r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int zigZagArrays(int n, int l, int r) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func zigZagArrays(n int, l int, r int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun zigZagArrays(n: Int, l: Int, r: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func zigZagArrays(_ n: Int, _ l: Int, _ r: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn zig_zag_arrays(n: i32, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} n\n# @param {Integer} l\n# @param {Integer} r\n# @return {Integer}\ndef zig_zag_arrays(n, l, r)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $l\n     * @param Integer $r\n     * @return Integer\n     */\n    function zigZagArrays($n, $l, $r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int zigZagArrays(int n, int l, int r) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def zigZagArrays(n: Int, l: Int, r: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec zig_zag_arrays(n :: integer, l :: integer, r :: integer) :: integer\n  def zig_zag_arrays(n, l, r) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec zig_zag_arrays(N :: integer(), L :: integer(), R :: integer()) -> integer().\nzig_zag_arrays(N, L, R) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (zig-zag-arrays n l r)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T17:12:04.772Z"
+}

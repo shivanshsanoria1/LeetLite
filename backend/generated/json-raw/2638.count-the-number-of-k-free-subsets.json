@@ -1,0 +1,48 @@
+{
+    "questionId": "2738",
+    "questionFrontendId": "2638",
+    "title": "Count the Number of K-Free Subsets",
+    "titleSlug": "count-the-number-of-k-free-subsets",
+    "difficulty": "Medium",
+    "likes": 99,
+    "dislikes": 19,
+    "acRate": 47.45481533222736,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"11.5K\", \"totalAcceptedRaw\": 5435, \"totalSubmissionRaw\": 11453, \"acRate\": \"47.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Split all numbers into several groups, with each group being an arithmetic sequence with a common difference of k.",
+        "How many K-free subsets are there for each group? This can be solved by dp: dp[i] = dp[i-1] + dp[i-2], meaning if we choose ith element, we cannot choose (i-1)th; otherwise we can choose (i-1)th element.",
+        "After solving the problem for every group, the final result is just the product of the sub-problems."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:26.295Z"
+}

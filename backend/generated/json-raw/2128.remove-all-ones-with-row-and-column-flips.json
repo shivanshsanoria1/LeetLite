@@ -1,0 +1,46 @@
+{
+    "questionId": "2268",
+    "questionFrontendId": "2128",
+    "title": "Remove All Ones With Row and Column Flips",
+    "titleSlug": "remove-all-ones-with-row-and-column-flips",
+    "difficulty": "Medium",
+    "likes": 482,
+    "dislikes": 189,
+    "acRate": 75.97243058726329,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"34.9K\", \"totalSubmission\": \"46K\", \"totalAcceptedRaw\": 34942, \"totalSubmissionRaw\": 45993, \"acRate\": \"76.0%\"}",
+    "similarQuestions": "[{\"title\": \"Score After Flipping Matrix\", \"titleSlug\": \"score-after-flipping-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Flips to Convert Binary Matrix to Zero Matrix\", \"titleSlug\": \"minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Operations to Remove Adjacent Ones in Matrix\", \"titleSlug\": \"minimum-operations-to-remove-adjacent-ones-in-matrix\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Remove All Ones With Row and Column Flips II\", \"titleSlug\": \"remove-all-ones-with-row-and-column-flips-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Difference Between Ones and Zeros in Row and Column\", \"titleSlug\": \"difference-between-ones-and-zeros-in-row-and-column\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Does the order, in which you do the operations, matter?",
+        "No, it does not. An element will keep its original value if the number of operations done on it is even and vice versa. This also means that doing more than 1 operation on the same row or column is unproductive.",
+        "Try working backward, start with a matrix of all zeros and try to construct grid using operations.",
+        "Start with operations on columns, after doing them what do you notice about each row?",
+        "Each row is the exact same. If we then flip some rows, that leaves only two possible arrangements for each row: the same as the original or the opposite."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:43.399Z"
+}

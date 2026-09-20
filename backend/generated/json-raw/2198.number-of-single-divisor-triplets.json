@@ -1,0 +1,39 @@
+{
+    "questionId": "1383",
+    "questionFrontendId": "2198",
+    "title": "Number of Single Divisor Triplets",
+    "titleSlug": "number-of-single-divisor-triplets",
+    "difficulty": "Medium",
+    "likes": 28,
+    "dislikes": 12,
+    "acRate": 53.141945773524725,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"3.1K\", \"totalAcceptedRaw\": 1666, \"totalSubmissionRaw\": 3135, \"acRate\": \"53.1%\"}",
+    "similarQuestions": "[{\"title\": \"Count Array Pairs Divisible by K\", \"titleSlug\": \"count-array-pairs-divisible-by-k\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "The maximum value of nums.length is very large, but the maximum value of nums[i] is not.",
+        "Count the number of times each value appears in nums. Brute force through every possible combination of values and count how many single divisor triplets can be made with that combination of values."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:06:48.300Z"
+}

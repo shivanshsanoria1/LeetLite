@@ -1,0 +1,139 @@
+{
+    "questionId": "1793",
+    "questionFrontendId": "1674",
+    "title": "Minimum Moves to Make Array Complementary",
+    "titleSlug": "minimum-moves-to-make-array-complementary",
+    "difficulty": "Medium",
+    "likes": 1095,
+    "dislikes": 133,
+    "acRate": 64.82786289210401,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"77.6K\", \"totalSubmission\": \"119.6K\", \"totalAcceptedRaw\": 77562, \"totalSubmissionRaw\": 119643, \"acRate\": \"64.8%\"}",
+    "similarQuestions": "[{\"title\": \"Zero Array Transformation II\", \"titleSlug\": \"zero-array-transformation-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Zero Array Transformation III\", \"titleSlug\": \"zero-array-transformation-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>You are given an integer array <code>nums</code> of <strong>even</strong> length <code>n</code> and an integer <code>limit</code>. In one move, you can replace any integer from <code>nums</code> with another integer between <code>1</code> and <code>limit</code>, inclusive.</p>\n\n<p>The array <code>nums</code> is <strong>complementary</strong> if for all indices <code>i</code> (<strong>0-indexed</strong>), <code>nums[i] + nums[n - 1 - i]</code> equals the same number. For example, the array <code>[1,2,3,4]</code> is complementary because for all indices <code>i</code>, <code>nums[i] + nums[n - 1 - i] = 5</code>.</p>\n\n<p>Return the <em><strong>minimum</strong> number of moves required to make </em><code>nums</code><em> <strong>complementary</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,4,3], limit = 4\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> In 1 move, you can change nums to [1,2,<u>2</u>,3] (underlined elements are changed).\nnums[0] + nums[3] = 1 + 3 = 4.\nnums[1] + nums[2] = 2 + 2 = 4.\nnums[2] + nums[1] = 2 + 2 = 4.\nnums[3] + nums[0] = 3 + 1 = 4.\nTherefore, nums[i] + nums[n-1-i] = 4 for every i, so nums is complementary.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,1], limit = 2\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> In 2 moves, you can change nums to [<u>2</u>,2,2,<u>2</u>]. You cannot change any number to 3 since 3 &gt; limit.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,2], limit = 2\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> nums is already complementary.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>2 &lt;= n&nbsp;&lt;=&nbsp;10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i]&nbsp;&lt;= limit &lt;=&nbsp;10<sup>5</sup></code></li>\n\t<li><code>n</code> is even.</li>\n</ul>\n",
+    "hints": [
+        "Given a target sum x, each pair of nums[i] and nums[n-1-i] would either need 0, 1, or 2 modifications.",
+        "Can you find the optimal target sum x value such that the sum of modifications is minimized?",
+        "Create a difference array to efficiently sum all the modifications."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Difference\n\n#### Intuition\n\nConsider any pair of numbers $(a, b)$ in $\\textit{nums}$ that satisfies the problem's requirements, where $a$ is the smaller value and $b$ is the larger value. Suppose our goal is to make the sum of every pair equal to $c$. Clearly, the range of $c$ is $[2, 2 \\times \\textit{limit}]$.\n\nDepending on the value of $c$, the minimum number of modifications required for a pair $(a, b)$ is as follows:\n\n- When $2 \\le c < a + 1$: 2 operations are required. Even if the larger number $b$ is changed to the minimum value $1$, the resulting sum $a + 1$ is still greater than $c$, so both $a$ and $b$ must be modified.\n\n- When $a + 1 \\le c < a + b$: 1 operation is required. We can reduce the larger number $b$ to $c - a$, and the modified value $c - a$ will always satisfy $1 \\le c - a \\le \\textit{limit}$.\n\n- When $c = a + b$: No modifications are required.\n\n- When $a + b < c \\le b + \\textit{limit}$: 1 operation is required. We can increase the smaller number $a$ to $c -b$, and the modified value $c - b$ will always satisfy $1 \\le c - b \\le \\textit{limit}$.\n\n- When $b + \\textit{limit} < c \\le 2 \\times \\textit{limit}$: 2 operations are required. Even after changing the smaller number $a$ to the maximum value $\\textit{limit}$, the resulting sum $b + \\textit{limit}$ is still less than $c$, so both $a$ and $b$ must be modified.\n\nFrom the above five cases, we can observe that for a fixed pair $(a, b)$, the number of required operations remains constant over several consecutive subintervals of $[2, 2 \\times \\textit{limit}]$, and the interval boundaries can be computed directly.\n\nTherefore, we can use a difference array to maintain how many operations are required for each possible target value $c$. Taking the prefix sum of the difference array gives the total number of operations required for the current target value $c$. We simply compute the minimum among all possible values of $c$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/QqXUgkXk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QqXUgkXk\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$, and let $L$ denote $\\textit{limit}$.\n\n- Time complexity: $O(n + L)$.\n  \n  Traversing $\\dfrac{n}{2}$ pairs to construct the difference array takes $O(n)$ time, and enumerating all possible target values takes $O(L)$ time.\n\n- Space complexity: $O(L)$.\n  \n  The difference array $\\textit{diff}$ requires $O(L)$ space.\n\n### Approach 2: Binary Search\n\n#### Intuition\n\nApproach 1 using the difference idea is not very straightforward. Let's start with the naive approach: iterate through all possible pairs and values of $c$ within the range $[2, 2 \\times \\textit{limit}]$; for each possible value, we iterate through all pairs, calculate the minimum number of operations, accumulate the total number of operations, and update the global optimal solution. The time complexity at this point is $O(n \\times \\textit{limit})$, where $n$ is the length of $\\textit{nums}$.\n\nConsider optimizing this method. Although the optimal value of $c$ will eventually tend toward the middle, it does not have a monotonic property locally, so we can only consider optimizing the number of statistical operations. Then, assuming that for a given pair of numbers $(a, b)$ and $c$, where $a$ is the smaller value and $b$ is the larger value, the number of operations required can be considered as follows:\n\n- For all pairs of numbers, first assume they need to be operated on once so that their sum becomes the target value $c$.\n\n- For all pairs that are already equal to $a + b$, since no additional operations are needed, the count of such pairs should be subtracted from the final tally.\n\n- For number pairs where all smaller values are greater than $c - 1$ or all larger values are less than $c - \\textit{limit}$, it takes 2 operations to reach the target value $c$, so the count of such number pairs should be added to the final tally.\n\nThat is, the number of operations required can be described by the following formula, where $\\textit{count}$ represents the number of valid number pairs:\n\n$$\n\\textit{currentOps} = \\frac{n}{2} - \\textit{count}(a + b = c) + \\textit{count}(a \\gt c - 1) + \\textit{count}(b < c - \\textit{limit})\n$$\n\nNow consider how to calculate these three quantities, $\\text{count}(a + b = c)$, $\\text{count}(a \\gt c - 1)$, and $\\text{count}(b < c - \\textit{limit})$, within an acceptable time.\n\nFor $\\textit{count}(a + b = c)$, by pre-statistically recording the occurrence counts of all pair sums in a hash table, we can directly retrieve them in $O(1)$ time complexity during subsequent enumeration of $c$.\n\nFor $\\textit{count}(a \\gt c - 1)$, since such $(a,b)$ pairs cannot satisfy $a + b = c$, we can directly extract the smaller values from all number pairs, sort them, and then use binary search to locate the position of the target $c$ in this array, thereby obtaining the number of such pairs in $O(\\log n)$ time.\n\nSimilarly, for $\\textit{count}(b < c - \\textit{limit})$, extract the larger values from all number pairs and sort them, then use binary search to locate $c - \\textit{limit}$.\n\nThe difference-array approach in Approach 1 is not very intuitive. Let us first consider the brute-force method.\n\nWe can enumerate every possible target value $c$ in the range $[2, 2 \\times \\textit{limit}]$. For each value of $c$, we iterate through all pairs, compute the minimum number of operations required for each pair, accumulate the total number of operations, and update the global minimum answer. This approach has a time complexity of $O(n \\times \\textit{limit})$, where $n$ is the length of $\\textit{nums}$.\n\nNow consider how to optimize this process. Although the optimal value of $c$ generally tends to lie near the middle of the range, the function is not locally monotonic, so binary searching on $c$ itself is not possible. Instead, we optimize the way we count operations.\n\nFor a pair $(a, b)$, where $a$ is the smaller value and $b$ is the larger value, we classify the required operations as follows:\n\n* Initially, assume that every pair requires exactly 1 operation to make its sum equal to the target value $c$.\n\n* If a pair already satisfies $a + b = c$, then no operation is needed, so such pairs should be subtracted from the total count.\n\n* If $a > c - 1$ or $b < c - \\textit{limit}$, then the pair requires 2 operations to reach the target sum $c$, so such pairs should contribute one additional operation to the total count.\n\nThus, the total number of operations can be expressed as:\n\n$$\n\\textit{currentOps} = \\frac{n}{2} - \\textit{count}(a + b = c) + \\textit{count}(a \\gt c - 1) + \\textit{count}(b < c - \\textit{limit})\n$$\n\nNow we determine how to compute these three quantities efficiently.\n\nFor $\\textit{count}(a + b = c)$, we can precompute the frequency of every pair sum using a hash table, allowing us to retrieve the count in $O(1)$ time.\n\nFor $\\textit{count}(a > c - 1)$, we extract all smaller values $a$ from the pairs and sort them. Then we use binary search to locate the first position where the value is at least $c$, allowing us to determine the number of valid pairs in $O(\\log n)$ time.\n\nSimilarly, for $\\textit{count}(b < c - \\textit{limit})$, we extract all larger values $b$, sort them, and use binary search to count how many satisfy the condition.\n\nUsing these optimizations, we can efficiently compute the number of operations required for each target value $c$. Although this approach is slower than Approach 1 by a factor of $O(\\log n)$, it is still efficient enough to pass the problem.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/5rbU5eij/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5rbU5eij\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$, and let $L$ denote $\\textit{limit}$.\n\n- Time complexity: $O(n \\log n + L \\log n)$.\n  \n  Processing all pairs and recording their statistics takes $O(n)$ time. Sorting $\\textit{minArr}$ and $\\textit{maxArr}$ takes $O(n \\log n)$ time. Then, for each target value $c$, we perform binary searches and hash table lookups in $O(\\log n)$ time, resulting in a total of $O(L \\log n)$ time for the enumeration phase.\n\n- Space complexity: $O(n)$.\n  \n  The arrays $\\textit{minArr}$, $\\textit{maxArr}$, and the hash table require $O(n)$ auxiliary space.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMoves(vector<int>& nums, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int minMoves(int[] nums, int limit) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def minMoves(self, nums: List[int], limit: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def minMoves(self, nums, limit):\n        \"\"\"\n        :type nums: List[int]\n        :type limit: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} limit\n * @return {number}\n */\nvar minMoves = function(nums, limit) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function minMoves(nums: number[], limit: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MinMoves(int[] nums, int limit) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int minMoves(int* nums, int numsSize, int limit) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func minMoves(nums []int, limit int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun minMoves(nums: IntArray, limit: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func minMoves(_ nums: [Int], _ limit: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn min_moves(nums: Vec<i32>, limit: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @param {Integer} limit\n# @return {Integer}\ndef min_moves(nums, limit)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $limit\n     * @return Integer\n     */\n    function minMoves($nums, $limit) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int minMoves(List<int> nums, int limit) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def minMoves(nums: Array[Int], limit: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec min_moves(nums :: [integer], limit :: integer) :: integer\n  def min_moves(nums, limit) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec min_moves(Nums :: [integer()], Limit :: integer()) -> integer().\nmin_moves(Nums, Limit) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (min-moves nums limit)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T17:51:49.729Z"
+}

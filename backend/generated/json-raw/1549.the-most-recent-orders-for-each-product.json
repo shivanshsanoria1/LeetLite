@@ -1,0 +1,31 @@
+{
+    "questionId": "1688",
+    "questionFrontendId": "1549",
+    "title": "The Most Recent Orders for Each Product",
+    "titleSlug": "the-most-recent-orders-for-each-product",
+    "difficulty": "Medium",
+    "likes": 141,
+    "dislikes": 12,
+    "acRate": 65.0323337296998,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"39.9K\", \"totalSubmission\": \"61.4K\", \"totalAcceptedRaw\": 39924, \"totalSubmissionRaw\": 61391, \"acRate\": \"65.0%\"}",
+    "similarQuestions": "[{\"title\": \"The Most Recent Three Orders\", \"titleSlug\": \"the-most-recent-three-orders\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Most Frequently Ordered Products for Each Customer\", \"titleSlug\": \"the-most-frequently-ordered-products-for-each-customer\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:36:57.543Z"
+}

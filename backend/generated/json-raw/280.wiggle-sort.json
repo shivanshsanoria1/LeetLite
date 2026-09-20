@@ -1,0 +1,39 @@
+{
+    "questionId": "280",
+    "questionFrontendId": "280",
+    "title": "Wiggle Sort",
+    "titleSlug": "wiggle-sort",
+    "difficulty": "Medium",
+    "likes": 1249,
+    "dislikes": 103,
+    "acRate": 68.51560697592946,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"160.4K\", \"totalSubmission\": \"234.1K\", \"totalAcceptedRaw\": 160369, \"totalSubmissionRaw\": 234062, \"acRate\": \"68.5%\"}",
+    "similarQuestions": "[{\"title\": \"Sort Colors\", \"titleSlug\": \"sort-colors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort II\", \"titleSlug\": \"wiggle-sort-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array With Elements Not Equal to Average of Neighbors\", \"titleSlug\": \"array-with-elements-not-equal-to-average-of-neighbors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:24.435Z"
+}

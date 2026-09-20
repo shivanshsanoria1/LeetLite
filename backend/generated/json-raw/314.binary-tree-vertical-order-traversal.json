@@ -1,0 +1,56 @@
+{
+    "questionId": "314",
+    "questionFrontendId": "314",
+    "title": "Binary Tree Vertical Order Traversal",
+    "titleSlug": "binary-tree-vertical-order-traversal",
+    "difficulty": "Medium",
+    "likes": 3472,
+    "dislikes": 354,
+    "acRate": 57.89359688801653,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"601.4K\", \"totalSubmission\": \"1M\", \"totalAcceptedRaw\": 601412, \"totalSubmissionRaw\": 1038823, \"acRate\": \"57.9%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Do BFS from the root. Let the root be at column 0. In the BFS, keep in the queue the node and its column.",
+        "When you traverse a node, store its value in the column index. For example, the root's value should be stored at index 0.",
+        "If the node has a left node, it column should be col - 1. Similarly, if the node has a right node, its column should be col + 1.",
+        "At the end, check the minimum and maximum col and output their values."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:53.282Z"
+}

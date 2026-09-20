@@ -1,0 +1,28 @@
+{
+    "questionId": "2064",
+    "questionFrontendId": "1919",
+    "title": "Leetcodify Similar Friends",
+    "titleSlug": "leetcodify-similar-friends",
+    "difficulty": "Hard",
+    "likes": 61,
+    "dislikes": 6,
+    "acRate": 43.464735854116384,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.1K\", \"totalSubmission\": \"18.6K\", \"totalAcceptedRaw\": 8104, \"totalSubmissionRaw\": 18645, \"acRate\": \"43.5%\"}",
+    "similarQuestions": "[{\"title\": \"Leetcodify Friends Recommendations\", \"titleSlug\": \"leetcodify-friends-recommendations\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:43.385Z"
+}

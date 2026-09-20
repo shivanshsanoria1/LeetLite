@@ -1,0 +1,48 @@
+{
+    "questionId": "2584",
+    "questionFrontendId": "2445",
+    "title": "Number of Nodes With Value One",
+    "titleSlug": "number-of-nodes-with-value-one",
+    "difficulty": "Medium",
+    "likes": 82,
+    "dislikes": 11,
+    "acRate": 65.96476149548775,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"4.7K\", \"totalAcceptedRaw\": 3070, \"totalSubmissionRaw\": 4654, \"acRate\": \"66.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "The relative order of processing queries does not matter.",
+        "If we know that for some node v, its parent was updated some number of times, then we know that node v was also updated that number of times.",
+        "Iterate on nodes from highest to lowest and count the number of times the query was performed on that node and the number of times this node was updated from its parent (direct or indirect). The parity of that number is the answer."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:24:46.598Z"
+}

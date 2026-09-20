@@ -1,0 +1,45 @@
+{
+    "questionId": "3474",
+    "questionFrontendId": "3167",
+    "title": "Better Compression of String",
+    "titleSlug": "better-compression-of-string",
+    "difficulty": "Medium",
+    "likes": 19,
+    "dislikes": 4,
+    "acRate": 75.46871195519844,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.2K\", \"totalSubmission\": \"8.2K\", \"totalAcceptedRaw\": 6199, \"totalSubmissionRaw\": 8214, \"acRate\": \"75.5%\"}",
+    "similarQuestions": "[{\"title\": \"String Compression\", \"titleSlug\": \"string-compression\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "This is an implementation problem.",
+        "Try to extract each character with its corresponding frequency.",
+        "Sum the frequencies for a single character.",
+        "Sort characters and append them to a string in alphabetical order."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:03.274Z"
+}

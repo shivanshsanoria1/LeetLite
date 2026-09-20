@@ -1,0 +1,43 @@
+{
+    "questionId": "3467",
+    "questionFrontendId": "3157",
+    "title": "Find the Level of Tree with Minimum Sum",
+    "titleSlug": "find-the-level-of-tree-with-minimum-sum",
+    "difficulty": "Medium",
+    "likes": 19,
+    "dislikes": 3,
+    "acRate": 69.48983658828219,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.5K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 3487, \"totalSubmissionRaw\": 5018, \"acRate\": \"69.5%\"}",
+    "similarQuestions": "[{\"title\": \"Kth Largest Sum in a Binary Tree\", \"titleSlug\": \"kth-largest-sum-in-a-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Run a DFS on the tree and update an array sum where sum[i] is the sum for level i.",
+        "The answer is the first minimum element of sum."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:55.998Z"
+}

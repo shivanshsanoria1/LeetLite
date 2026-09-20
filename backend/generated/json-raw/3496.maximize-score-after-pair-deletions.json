@@ -1,0 +1,38 @@
+{
+    "questionId": "3839",
+    "questionFrontendId": "3496",
+    "title": "Maximize Score After Pair Deletions",
+    "titleSlug": "maximize-score-after-pair-deletions",
+    "difficulty": "Medium",
+    "likes": 11,
+    "dislikes": 4,
+    "acRate": 52.53440751930179,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"3K\", \"totalAcceptedRaw\": 1565, \"totalSubmissionRaw\": 2979, \"acRate\": \"52.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "The number of operations is <code>floor((n - 1) / 2)</code>, so the number of remaining elements is <code>n - 2 * floor((n - 1) / 2)</code>.",
+        "There will be either 1 or 2 elements remaining.",
+        "If there is 1 element remaining, let it be the minimum element.",
+        "If there are 2 elements remaining, let them be the adjacent elements with the minimum sum."
+    ],
+    "exampleTestcases": "[2,4,1]\n[5,-1,4,2]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:42.717Z"
+}

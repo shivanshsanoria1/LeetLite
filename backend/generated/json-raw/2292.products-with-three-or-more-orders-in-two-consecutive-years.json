@@ -1,0 +1,28 @@
+{
+    "questionId": "2431",
+    "questionFrontendId": "2292",
+    "title": "Products With Three or More Orders in Two Consecutive Years",
+    "titleSlug": "products-with-three-or-more-orders-in-two-consecutive-years",
+    "difficulty": "Medium",
+    "likes": 65,
+    "dislikes": 29,
+    "acRate": 40.84714548802947,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.1K\", \"totalSubmission\": \"27.1K\", \"totalAcceptedRaw\": 11090, \"totalSubmissionRaw\": 27150, \"acRate\": \"40.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:42.596Z"
+}

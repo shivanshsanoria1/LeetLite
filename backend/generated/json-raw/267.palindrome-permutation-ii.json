@@ -1,0 +1,42 @@
+{
+    "questionId": "267",
+    "questionFrontendId": "267",
+    "title": "Palindrome Permutation II",
+    "titleSlug": "palindrome-permutation-ii",
+    "difficulty": "Medium",
+    "likes": 900,
+    "dislikes": 98,
+    "acRate": 42.394822006472495,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"76.5K\", \"totalSubmission\": \"180.5K\", \"totalAcceptedRaw\": 76504, \"totalSubmissionRaw\": 180456, \"acRate\": \"42.4%\"}",
+    "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations II\", \"titleSlug\": \"permutations-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "If a palindromic permutation exists, we just need to generate the first half of the string.",
+        "To generate all distinct permutations of a (half of) string, use a similar approach from: <a href=\"/problems/permutations-ii\">Permutations II</a> or <a href=\"/problems/next-permutation\">Next Permutation</a>."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:12.866Z"
+}

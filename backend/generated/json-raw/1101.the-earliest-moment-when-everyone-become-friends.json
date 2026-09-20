@@ -1,0 +1,44 @@
+{
+    "questionId": "1085",
+    "questionFrontendId": "1101",
+    "title": "The Earliest Moment When Everyone Become Friends",
+    "titleSlug": "the-earliest-moment-when-everyone-become-friends",
+    "difficulty": "Medium",
+    "likes": 1126,
+    "dislikes": 42,
+    "acRate": 66.11397586013695,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"139.2K\", \"totalSubmission\": \"210.6K\", \"totalAcceptedRaw\": 139240, \"totalSubmissionRaw\": 210606, \"acRate\": \"66.1%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Provinces\", \"titleSlug\": \"number-of-provinces\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Sort the log items by their timestamp.",
+        "How can we model this problem as a graph problem?",
+        "Let's use a union-find data structure. At the beginning we have a graph with N nodes but no edges.",
+        "Then we loop through the events and unite each node until the number of connected components reach to 1. Notice that each time two different connected components are united the number of connected components decreases by 1."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:55.291Z"
+}

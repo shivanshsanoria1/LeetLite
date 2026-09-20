@@ -1,0 +1,32 @@
+{
+    "questionId": "756",
+    "questionFrontendId": "755",
+    "title": "Pour Water",
+    "titleSlug": "pour-water",
+    "difficulty": "Medium",
+    "likes": 324,
+    "dislikes": 837,
+    "acRate": 49.115851803784,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"48.4K\", \"totalSubmission\": \"98.6K\", \"totalAcceptedRaw\": 48441, \"totalSubmissionRaw\": 98626, \"acRate\": \"49.1%\"}",
+    "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:12.619Z"
+}

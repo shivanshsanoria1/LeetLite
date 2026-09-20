@@ -1,0 +1,43 @@
+{
+    "questionId": "1937",
+    "questionFrontendId": "1788",
+    "title": "Maximize the Beauty of the Garden",
+    "titleSlug": "maximize-the-beauty-of-the-garden",
+    "difficulty": "Hard",
+    "likes": 83,
+    "dislikes": 6,
+    "acRate": 65.06271379703534,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"4.4K\", \"totalAcceptedRaw\": 2853, \"totalSubmissionRaw\": 4385, \"acRate\": \"65.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Consider every possible beauty and its first and last index in flowers.",
+        "Remove all flowers with negative beauties within those indices."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:00.731Z"
+}

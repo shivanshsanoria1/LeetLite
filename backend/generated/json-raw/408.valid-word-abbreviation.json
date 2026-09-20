@@ -1,0 +1,32 @@
+{
+    "questionId": "408",
+    "questionFrontendId": "408",
+    "title": "Valid Word Abbreviation",
+    "titleSlug": "valid-word-abbreviation",
+    "difficulty": "Easy",
+    "likes": 929,
+    "dislikes": 2408,
+    "acRate": 37.0510980321299,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"365K\", \"totalSubmission\": \"985.1K\", \"totalAcceptedRaw\": 365000, \"totalSubmissionRaw\": 985126, \"acRate\": \"37.1%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Unique Word Abbreviation\", \"titleSlug\": \"minimum-unique-word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Word Abbreviation\", \"titleSlug\": \"word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check if an Original String Exists Given Two Encoded Strings\", \"titleSlug\": \"check-if-an-original-string-exists-given-two-encoded-strings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:17.637Z"
+}

@@ -1,0 +1,35 @@
+{
+    "questionId": "161",
+    "questionFrontendId": "161",
+    "title": "One Edit Distance",
+    "titleSlug": "one-edit-distance",
+    "difficulty": "Medium",
+    "likes": 1450,
+    "dislikes": 195,
+    "acRate": 34.58339177092656,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"239.2K\", \"totalSubmission\": \"691.6K\", \"totalAcceptedRaw\": 239185, \"totalSubmissionRaw\": 691619, \"acRate\": \"34.6%\"}",
+    "similarQuestions": "[{\"title\": \"Edit Distance\", \"titleSlug\": \"edit-distance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:34.705Z"
+}

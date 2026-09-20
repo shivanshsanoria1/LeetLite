@@ -1,0 +1,42 @@
+{
+    "questionId": "1665",
+    "questionFrontendId": "1522",
+    "title": "Diameter of N-Ary Tree",
+    "titleSlug": "diameter-of-n-ary-tree",
+    "difficulty": "Medium",
+    "likes": 645,
+    "dislikes": 10,
+    "acRate": 75.4867447374093,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"63K\", \"totalSubmission\": \"83.5K\", \"totalAcceptedRaw\": 63042, \"totalSubmissionRaw\": 83514, \"acRate\": \"75.5%\"}",
+    "similarQuestions": "[{\"title\": \"Diameter of Binary Tree\", \"titleSlug\": \"diameter-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "For the node i, calculate the height of each of its children and keep the first and second maximum heights (max1_i , max2_i).",
+        "Check all nodes and return max( 2 + max1_i  +  max2_i )."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:36:13.973Z"
+}

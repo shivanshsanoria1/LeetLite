@@ -1,0 +1,43 @@
+{
+    "questionId": "250",
+    "questionFrontendId": "250",
+    "title": "Count Univalue Subtrees",
+    "titleSlug": "count-univalue-subtrees",
+    "difficulty": "Medium",
+    "likes": 1246,
+    "dislikes": 457,
+    "acRate": 57.58946770474822,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"172.3K\", \"totalSubmission\": \"299.3K\", \"totalAcceptedRaw\": 172348, \"totalSubmissionRaw\": 299270, \"acRate\": \"57.6%\"}",
+    "similarQuestions": "[{\"title\": \"Subtree of Another Tree\", \"titleSlug\": \"subtree-of-another-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Longest Univalue Path\", \"titleSlug\": \"longest-univalue-path\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:55.491Z"
+}

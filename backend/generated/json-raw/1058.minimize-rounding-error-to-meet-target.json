@@ -1,0 +1,48 @@
+{
+    "questionId": "1053",
+    "questionFrontendId": "1058",
+    "title": "Minimize Rounding Error to Meet Target",
+    "titleSlug": "minimize-rounding-error-to-meet-target",
+    "difficulty": "Medium",
+    "likes": 157,
+    "dislikes": 149,
+    "acRate": 45.86510263929619,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.7K\", \"totalSubmission\": \"25.6K\", \"totalAcceptedRaw\": 11730, \"totalSubmissionRaw\": 25575, \"acRate\": \"45.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "If we have integer values in the array then we just need to subtract the target those integer values, so we reduced the problem.",
+        "Similarly if we have non integer values we have two options to put them flor(value) or ceil(value) = floor(value) + 1, so the idea is to just subtract floor(value).",
+        "Now the problem is different for each position we can sum just add 0 or 1 in order to sum the target, minimizing the deltas. This can be solved with DP."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:23.511Z"
+}

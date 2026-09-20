@@ -1,0 +1,56 @@
+{
+    "questionId": "3825",
+    "questionFrontendId": "3481",
+    "title": "Apply Substitutions",
+    "titleSlug": "apply-substitutions",
+    "difficulty": "Medium",
+    "likes": 64,
+    "dislikes": 5,
+    "acRate": 77.97562840055758,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"17.3K\", \"totalSubmission\": \"22.2K\", \"totalAcceptedRaw\": 17341, \"totalSubmissionRaw\": 22239, \"acRate\": \"78.0%\"}",
+    "similarQuestions": "[{\"title\": \"Evaluate the Bracket Pairs of a String\", \"titleSlug\": \"evaluate-the-bracket-pairs-of-a-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Build a dependency graph where each key is a node, and add an edge from key <code>X</code> to key <code>Y</code> if the replacement value for <code>Y</code> contains the placeholder <code>%X%</code>. Then perform a topological sort to determine a valid order for substitution.",
+        "Process the keys in the topologically sorted order by replacing placeholders in each replacement value with its fully expanded value. Finally, substitute the placeholders in the text using these computed values."
+    ],
+    "exampleTestcases": "[[\"A\",\"abc\"],[\"B\",\"def\"]]\n\"%A%_%B%\"\n[[\"A\",\"bce\"],[\"B\",\"ace\"],[\"C\",\"abc%B%\"]]\n\"%A%_%B%_%C%\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:28.618Z"
+}

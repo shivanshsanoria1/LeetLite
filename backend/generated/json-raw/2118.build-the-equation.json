@@ -1,0 +1,28 @@
+{
+    "questionId": "2253",
+    "questionFrontendId": "2118",
+    "title": "Build the Equation",
+    "titleSlug": "build-the-equation",
+    "difficulty": "Hard",
+    "likes": 24,
+    "dislikes": 38,
+    "acRate": 57.206946454413895,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4K\", \"totalSubmission\": \"6.9K\", \"totalAcceptedRaw\": 3953, \"totalSubmissionRaw\": 6910, \"acRate\": \"57.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:35.407Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "1091",
+    "questionFrontendId": "1120",
+    "title": "Maximum Average Subtree",
+    "titleSlug": "maximum-average-subtree",
+    "difficulty": "Medium",
+    "likes": 859,
+    "dislikes": 36,
+    "acRate": 66.98505802794669,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"74.7K\", \"totalSubmission\": \"111.5K\", \"totalAcceptedRaw\": 74687, \"totalSubmissionRaw\": 111498, \"acRate\": \"67.0%\"}",
+    "similarQuestions": "[{\"title\": \"Count Nodes Equal to Sum of Descendants\", \"titleSlug\": \"count-nodes-equal-to-sum-of-descendants\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Nodes Equal to Average of Subtree\", \"titleSlug\": \"count-nodes-equal-to-average-of-subtree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Can you find the sum of values and the number of nodes for every sub-tree ?",
+        "Can you find the sum of values and the number of nodes for a sub-tree given the sum of values and the number of nodes of it's left and right sub-trees ?",
+        "Use depth first search to recursively find the solution for the children of a node then use their solutions to compute the current node's solution."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:21:33.111Z"
+}

@@ -1,0 +1,40 @@
+{
+    "questionId": "411",
+    "questionFrontendId": "411",
+    "title": "Minimum Unique Word Abbreviation",
+    "titleSlug": "minimum-unique-word-abbreviation",
+    "difficulty": "Hard",
+    "likes": 186,
+    "dislikes": 146,
+    "acRate": 40.586478830104895,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.9K\", \"totalSubmission\": \"39.2K\", \"totalAcceptedRaw\": 15903, \"totalSubmissionRaw\": 39183, \"acRate\": \"40.6%\"}",
+    "similarQuestions": "[{\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Word Abbreviation\", \"titleSlug\": \"valid-word-abbreviation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Word Abbreviation\", \"titleSlug\": \"word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:20.130Z"
+}

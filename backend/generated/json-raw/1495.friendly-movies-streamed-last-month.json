@@ -1,0 +1,31 @@
+{
+    "questionId": "1639",
+    "questionFrontendId": "1495",
+    "title": "Friendly Movies Streamed Last Month",
+    "titleSlug": "friendly-movies-streamed-last-month",
+    "difficulty": "Easy",
+    "likes": 92,
+    "dislikes": 43,
+    "acRate": 48.89272089479963,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"41.4K\", \"totalSubmission\": \"84.7K\", \"totalAcceptedRaw\": 41396, \"totalSubmissionRaw\": 84667, \"acRate\": \"48.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:35:32.548Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3650",
+    "questionFrontendId": "3328",
+    "title": "Find Cities in Each State II",
+    "titleSlug": "find-cities-in-each-state-ii",
+    "difficulty": "Medium",
+    "likes": 11,
+    "dislikes": 2,
+    "acRate": 66.62007268660889,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.4K\", \"totalSubmission\": \"3.6K\", \"totalAcceptedRaw\": 2383, \"totalSubmissionRaw\": 3577, \"acRate\": \"66.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:08.259Z"
+}

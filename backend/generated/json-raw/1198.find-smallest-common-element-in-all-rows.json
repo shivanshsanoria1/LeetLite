@@ -1,0 +1,52 @@
+{
+    "questionId": "1143",
+    "questionFrontendId": "1198",
+    "title": "Find Smallest Common Element in All Rows",
+    "titleSlug": "find-smallest-common-element-in-all-rows",
+    "difficulty": "Medium",
+    "likes": 607,
+    "dislikes": 34,
+    "acRate": 76.78212715131114,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"56.6K\", \"totalSubmission\": \"73.7K\", \"totalAcceptedRaw\": 56570, \"totalSubmissionRaw\": 73676, \"acRate\": \"76.8%\"}",
+    "similarQuestions": "[{\"title\": \"Intersection of Multiple Arrays\", \"titleSlug\": \"intersection-of-multiple-arrays\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Notice that each row has no duplicates.",
+        "Is counting the frequency of elements enough to find the answer?",
+        "Use a data structure to count the frequency of elements.",
+        "Find an element whose frequency equals the number of rows."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:35.169Z"
+}

@@ -1,0 +1,47 @@
+{
+    "questionId": "666",
+    "questionFrontendId": "666",
+    "title": "Path Sum IV",
+    "titleSlug": "path-sum-iv",
+    "difficulty": "Medium",
+    "likes": 429,
+    "dislikes": 524,
+    "acRate": 62.8882196952672,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"42K\", \"totalSubmission\": \"66.7K\", \"totalAcceptedRaw\": 41976, \"totalSubmissionRaw\": 66747, \"acRate\": \"62.9%\"}",
+    "similarQuestions": "[{\"title\": \"Path Sum\", \"titleSlug\": \"path-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Path Sum II\", \"titleSlug\": \"path-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Maximum Path Sum\", \"titleSlug\": \"binary-tree-maximum-path-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Path Sum III\", \"titleSlug\": \"path-sum-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Overview:\n\nWe are given a tree represented as a list of three-digit numbers, where each number is defined as follows:\n\n- The first digit indicates the node's depth (1-4).\n- The second digit specifies the node's position at its level (1-8).\n- The third digit represents the node's value (0-9).\n\nWe need to calculate the sum of all path values from the root to the leaves and return the total sum.\n\nFor tree traversal, we'll be using DFS or BFS. If you're unfamiliar with these concepts, you can learn more from the following [DFS](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/) and [BFS](https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/) explore cards.\n\n\n### Approach 1: Depth First Search\n\n#### Intuition\n\nIn this approach, we will use the DFS algorithm. The DFS algorithm explores as far as possible along each branch before backing up, which mirrors the path-like exploration from root to leaf. The figure below illustrates the paths:\n\n![fig](../Figures/666/slide1.png)\n\nAs we observe from the image, the depth of the nodes increases with each DFS iteration. For example, if a node is at depth 2, its children will be at depth 3, meaning the depth of each child is the current node's depth plus one.\n\nTo determine the horizontal position of the child nodes, if a node is at position `p`, its left child will be at `2*p - 1`, and its right child at `2*p`. This calculation is based on the properties of a full binary tree, where positions double as you move deeper. It's a standard formula that you can remember for future use.\n\nEach node is uniquely identified by its depth and position, which we can map to the node's value. Using a hashmap, where the key is the node's depth and position, and the value is the node's value, we can efficiently retrieve any node's value using its coordinates.\n\n#### Algorithm\n\n**Main function - `pathSum(nums)`**\n\n1. Initialize a hashmap `map` to store tree nodes.\n2. Iterate through each element in `nums`:\n    - Calculate `coordinates` by dividing the current element by 10.\n    - Calculate `value` by taking the remainder of the element when divided by 10.\n    - Store the `coordinates` as the key and `value` as the value in map.\n3. Initialize an integer variable `sum` with 0.\n4. Call the helper function `dfs(rootCoordinates, preSum, sum, map)` with:\n    - `rootCoordinates` set to nums[0] / 10.\n    - `preSum` set to 0.\n    - `sum` passed by reference.\n5. Return the value of `sum`.\n\n**Helper function - `dfs(rootCoordinates, preSum, sum, map)`**\n\n1. Calculate the `level` and `position` from `rootCoordinates`:\n    - `level` is obtained by dividing `rootCoordinates` by 10.\n    - `position` is obtained by taking the remainder of `rootCoordinates` when divided by 10.\n2. Determine the coordinates of the `left` and `right` children:\n    - `left` is calculated as `(level + 1) * 10 + position * 2 - 1`.\n    - `right` is calculated as `(level + 1) * 10 + position * 2`.\n3. Update `currSum` by adding the value of the current node to `preSum`.\n4. If map does not contain both `left` and `right` coordinates:\n    - Add `currSum` to `sum`.\n    - Return from the function.\n5. If `left` exists in `map`, call `dfs(left, currSum, sum, map)`.\n6. If `right` exists in `map`, call `dfs(right, currSum, sum, map)`.\n\n!?!../Documents/666/slideshow.json:960,540!?!\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/BvSNZ3Gy/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BvSNZ3Gy\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of nodes in the tree.\n\n- Time complexity: $O(n)$\n\n    All hashmap insertion and search operations take constant time. Apart from this, in the `dfs` function, we visit all the nodes of the tree exactly once. Therefore, the time complexity is given by $O(n)$.\n\n- Space complexity: $O(n)$\n\n    We perform exactly $n$ insertion operations in the hashmap. For the `dfs` function, the stack space can go up to $n$ in the worst case. Therefore, the total space complexity is given by $O(n)$.\n\n---\n\n### Approach 2: Breadth First Search\n\n#### Intuition\n\nIn this approach, we use the breadth-first search algorithm to explore all root-to-leaf paths in the tree. Unlike depth-first search, where we explore each path from root to leaf before moving on, BFS processes all nodes at the current level before proceeding to the next.\n\nTo track the running sum as we reach leaf nodes, we initialize a queue that stores pairs of `coordinates` and the current sum up to each node. We start by enqueuing the `root` node. While the queue is not empty, we process each node by checking if it is a leaf. If it is not a leaf, we enqueue its children with updated sums by adding the current node's value to the running sum. If the node is a leaf, we add the current sum to the total sum.\n\n#### Algorithm\n\n1. Initialize `map` as an empty hashmap, and `q` as an empty queue that stores a pair of integers.\n2. Initialize `totalSum` as 0.\n3. For each element in `nums`:\n    - Compute `coordinates` as `element / 10`.\n    - Compute `value` as `element % 10`. \n    - Store `value` in the map with key `coordinates`.\n4. Compute `rootCoordinates` as `nums[0] / 10`.\n5. Enqueue `rootCoordinates` and `map[rootCoordinates]` into `q`.\n6. While `q` is not empty:\n    - Dequeue `coordinates` and `currentSum`.\n    - Compute `level` as `coordinates / 10` and `position` as `coordinates % 10`.\n    - Compute `left` as `(level + 1) * 10 + position * 2 - 1` and `right` as `(level + 1) * 10 + position * 2`.\n    - If the current node is a leaf node:\n        - Add `currentSum` to `totalSum`.\n    - If `map` contains `left`:\n        - Enqueue `left` and `currentSum + map[left]` into `q`.\n    - If `map` contains `right`:\n        - Enqueue `right` and `currentSum + map[right]` into `q`.\n7. Return `totalSum`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/eueezib5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"eueezib5\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of nodes in the tree.\n\n- Time complexity: $O(n)$\n\n    All hashmap insertion and search operations take constant time. Apart from this, in the breadth-first search, we visit all the nodes of the tree exactly once. Therefore, the time complexity is given by $O(n)$.\n\n- Space complexity: $O(n)$\n\n    We perform exactly $n$ insertion operations in the hashmap. For the breadth-first search, the queue `q` stores all the elements exactly once. Therefore, the total space complexity is given by $O(n)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:10.988Z"
+}

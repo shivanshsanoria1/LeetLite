@@ -1,0 +1,149 @@
+{
+    "questionId": "778",
+    "questionFrontendId": "767",
+    "title": "Reorganize String",
+    "titleSlug": "reorganize-string",
+    "difficulty": "Medium",
+    "likes": 9366,
+    "dislikes": 289,
+    "acRate": 57.529107045365095,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"634.3K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 634347, \"totalSubmissionRaw\": 1102653, \"acRate\": \"57.5%\"}",
+    "similarQuestions": "[{\"title\": \"Rearrange String k Distance Apart\", \"titleSlug\": \"rearrange-string-k-distance-apart\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Happy String\", \"titleSlug\": \"longest-happy-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>Given a string <code>s</code>, rearrange the characters of <code>s</code> so that any two adjacent characters are not the same.</p>\n\n<p>Return <em>any possible rearrangement of</em> <code>s</code> <em>or return</em> <code>&quot;&quot;</code> <em>if not possible</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aab\"\n<strong>Output:</strong> \"aba\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"aaab\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 500</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Alternate placing the most common letters."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string reorganizeString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public String reorganizeString(String s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def reorganizeString(self, s: str) -> str:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def reorganizeString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar reorganizeString = function(s) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function reorganizeString(s: string): string {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public string ReorganizeString(string s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "char* reorganizeString(char* s) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func reorganizeString(s string) string {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun reorganizeString(s: String): String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func reorganizeString(_ s: String) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn reorganize_string(s: String) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} s\n# @return {String}\ndef reorganize_string(s)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function reorganizeString($s) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  String reorganizeString(String s) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def reorganizeString(s: String): String = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec reorganize_string(s :: String.t) :: String.t\n  def reorganize_string(s) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec reorganize_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nreorganize_string(S) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (reorganize-string s)\n  (-> string? string?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:20.850Z"
+}

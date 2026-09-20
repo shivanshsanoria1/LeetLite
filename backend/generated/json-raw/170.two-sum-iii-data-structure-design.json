@@ -1,0 +1,47 @@
+{
+    "questionId": "170",
+    "questionFrontendId": "170",
+    "title": "Two Sum III - Data structure design",
+    "titleSlug": "two-sum-iii-data-structure-design",
+    "difficulty": "Easy",
+    "likes": 714,
+    "dislikes": 462,
+    "acRate": 39.24656967830993,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"185.1K\", \"totalSubmission\": \"471.6K\", \"totalAcceptedRaw\": 185088, \"totalSubmissionRaw\": 471603, \"acRate\": \"39.2%\"}",
+    "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Unique Word Abbreviation\", \"titleSlug\": \"unique-word-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:42.687Z"
+}

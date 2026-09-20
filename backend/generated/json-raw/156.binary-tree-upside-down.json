@@ -1,0 +1,36 @@
+{
+    "questionId": "156",
+    "questionFrontendId": "156",
+    "title": "Binary Tree Upside Down",
+    "titleSlug": "binary-tree-upside-down",
+    "difficulty": "Medium",
+    "likes": 308,
+    "dislikes": 389,
+    "acRate": 65.60521324180812,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"120.7K\", \"totalSubmission\": \"184K\", \"totalAcceptedRaw\": 120709, \"totalSubmissionRaw\": 183993, \"acRate\": \"65.6%\"}",
+    "similarQuestions": "[{\"title\": \"Reverse Linked List\", \"titleSlug\": \"reverse-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:30.515Z"
+}

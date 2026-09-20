@@ -1,0 +1,28 @@
+{
+    "questionId": "3357",
+    "questionFrontendId": "3057",
+    "title": "Employees Project Allocation",
+    "titleSlug": "employees-project-allocation",
+    "difficulty": "Hard",
+    "likes": 5,
+    "dislikes": 4,
+    "acRate": 67.71991911021233,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.7K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2679, \"totalSubmissionRaw\": 3956, \"acRate\": \"67.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:13.024Z"
+}

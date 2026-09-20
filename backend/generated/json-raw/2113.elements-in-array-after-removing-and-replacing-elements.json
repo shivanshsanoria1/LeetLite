@@ -1,0 +1,32 @@
+{
+    "questionId": "2258",
+    "questionFrontendId": "2113",
+    "title": "Elements in Array After Removing and Replacing Elements",
+    "titleSlug": "elements-in-array-after-removing-and-replacing-elements",
+    "difficulty": "Medium",
+    "likes": 66,
+    "dislikes": 9,
+    "acRate": 69.08696830127337,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"3.7K\", \"totalAcceptedRaw\": 2550, \"totalSubmissionRaw\": 3691, \"acRate\": \"69.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Try to find a pattern in how nums changes.",
+        "Let m be the original length of nums. If time_i / m (integer division) is even, then nums is at its original size or decreasing in size. If it is odd, then it is empty, or increasing in size.",
+        "time_i % m can be used to find how many elements are in nums at minute time_i."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:31.628Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1564",
+    "questionFrontendId": "1435",
+    "title": "Create a Session Bar Chart",
+    "titleSlug": "create-a-session-bar-chart",
+    "difficulty": "Easy",
+    "likes": 158,
+    "dislikes": 266,
+    "acRate": 74.25370148059224,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"27.8K\", \"totalSubmission\": \"37.5K\", \"totalAcceptedRaw\": 27834, \"totalSubmissionRaw\": 37485, \"acRate\": \"74.3%\"}",
+    "similarQuestions": "[{\"title\": \"Count Salary Categories\", \"titleSlug\": \"count-salary-categories\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:34:18.468Z"
+}

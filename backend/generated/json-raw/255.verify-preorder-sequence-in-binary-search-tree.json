@@ -1,0 +1,55 @@
+{
+    "questionId": "255",
+    "questionFrontendId": "255",
+    "title": "Verify Preorder Sequence in Binary Search Tree",
+    "titleSlug": "verify-preorder-sequence-in-binary-search-tree",
+    "difficulty": "Medium",
+    "likes": 1271,
+    "dislikes": 90,
+    "acRate": 51.847898889681495,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"95.2K\", \"totalSubmission\": \"183.6K\", \"totalAcceptedRaw\": 95214, \"totalSubmissionRaw\": 183641, \"acRate\": \"51.8%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Preorder Traversal\", \"titleSlug\": \"binary-tree-preorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:59.744Z"
+}

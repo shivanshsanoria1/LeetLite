@@ -1,0 +1,35 @@
+{
+    "questionId": "1090",
+    "questionFrontendId": "1134",
+    "title": "Armstrong Number",
+    "titleSlug": "armstrong-number",
+    "difficulty": "Easy",
+    "likes": 217,
+    "dislikes": 20,
+    "acRate": 77.7725993511033,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"43.4K\", \"totalSubmission\": \"55.8K\", \"totalAcceptedRaw\": 43387, \"totalSubmissionRaw\": 55787, \"acRate\": \"77.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Check if the given k-digit number equals the sum of the k-th power of it's digits.",
+        "How to compute the sum of the k-th power of the digits of a number ? Can you divide the number into digits using division and modulus operations ?",
+        "You can find the least significant digit of a number by taking it modulus 10. And you can remove it by dividing the number by 10 (integer division). Once you have a digit, you can raise it to the power of k and add it to the sum."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:25.202Z"
+}

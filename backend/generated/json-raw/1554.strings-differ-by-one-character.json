@@ -1,0 +1,43 @@
+{
+    "questionId": "1697",
+    "questionFrontendId": "1554",
+    "title": "Strings Differ by One Character",
+    "titleSlug": "strings-differ-by-one-character",
+    "difficulty": "Medium",
+    "likes": 390,
+    "dislikes": 106,
+    "acRate": 39.541986881738595,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"28.1K\", \"totalSubmission\": \"71K\", \"totalAcceptedRaw\": 28093, \"totalSubmissionRaw\": 71046, \"acRate\": \"39.5%\"}",
+    "similarQuestions": "[{\"title\": \"Count Words Obtained After Adding a Letter\", \"titleSlug\": \"count-words-obtained-after-adding-a-letter\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "BruteForce, check all pairs and verify if they differ in one character. O(n^2 * m) where n is the number of words and m is the length of each string.",
+        "O(m^2 * n), Use hashset, to insert all possible combinations adding a character \"*\". For example: If dict[i] = \"abc\", insert (\"*bc\", \"a*c\" and \"ab*\")."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Rolling Hash",
+            "slug": "rolling-hash"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:37:04.099Z"
+}

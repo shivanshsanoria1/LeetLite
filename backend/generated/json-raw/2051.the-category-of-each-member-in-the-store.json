@@ -1,0 +1,28 @@
+{
+    "questionId": "2194",
+    "questionFrontendId": "2051",
+    "title": "The Category of Each Member in the Store",
+    "titleSlug": "the-category-of-each-member-in-the-store",
+    "difficulty": "Medium",
+    "likes": 64,
+    "dislikes": 8,
+    "acRate": 70.27263631815907,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.2K\", \"totalSubmission\": \"16K\", \"totalAcceptedRaw\": 11238, \"totalSubmissionRaw\": 15992, \"acRate\": \"70.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:32.749Z"
+}

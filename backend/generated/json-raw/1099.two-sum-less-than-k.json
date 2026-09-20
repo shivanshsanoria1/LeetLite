@@ -1,0 +1,46 @@
+{
+    "questionId": "1083",
+    "questionFrontendId": "1099",
+    "title": "Two Sum Less Than K",
+    "titleSlug": "two-sum-less-than-k",
+    "difficulty": "Easy",
+    "likes": 1177,
+    "dislikes": 135,
+    "acRate": 62.17642270712046,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"150.5K\", \"totalSubmission\": \"242K\", \"totalAcceptedRaw\": 150480, \"totalSubmissionRaw\": 242021, \"acRate\": \"62.2%\"}",
+    "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum II - Input Array Is Sorted\", \"titleSlug\": \"two-sum-ii-input-array-is-sorted\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"3Sum Smaller\", \"titleSlug\": \"3sum-smaller\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "What if we have the array sorted?",
+        "Loop the array and get the value A[i] then we need to find a value A[j] such that A[i] + A[j] < K  which means A[j] < K - A[i]. In order to do that we can find that value with a binary search."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:54.021Z"
+}

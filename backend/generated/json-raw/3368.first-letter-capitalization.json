@@ -1,0 +1,28 @@
+{
+    "questionId": "3703",
+    "questionFrontendId": "3368",
+    "title": "First Letter Capitalization",
+    "titleSlug": "first-letter-capitalization",
+    "difficulty": "Hard",
+    "likes": 6,
+    "dislikes": 1,
+    "acRate": 86.62383177570094,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.5K\", \"totalSubmission\": \"1.7K\", \"totalAcceptedRaw\": 1483, \"totalSubmissionRaw\": 1712, \"acRate\": \"86.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:40.832Z"
+}

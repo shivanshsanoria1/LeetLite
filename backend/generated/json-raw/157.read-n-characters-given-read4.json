@@ -1,0 +1,39 @@
+{
+    "questionId": "157",
+    "questionFrontendId": "157",
+    "title": "Read N Characters Given Read4",
+    "titleSlug": "read-n-characters-given-read4",
+    "difficulty": "Easy",
+    "likes": 606,
+    "dislikes": 3609,
+    "acRate": 42.61522788355791,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"210.4K\", \"totalSubmission\": \"493.7K\", \"totalAcceptedRaw\": 210408, \"totalSubmissionRaw\": 493739, \"acRate\": \"42.6%\"}",
+    "similarQuestions": "[{\"title\": \"Read N Characters Given read4 II - Call Multiple Times\", \"titleSlug\": \"read-n-characters-given-read4-ii-call-multiple-times\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:55:31.434Z"
+}

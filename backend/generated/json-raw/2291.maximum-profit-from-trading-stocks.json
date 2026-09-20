@@ -1,0 +1,35 @@
+{
+    "questionId": "2426",
+    "questionFrontendId": "2291",
+    "title": "Maximum Profit From Trading Stocks",
+    "titleSlug": "maximum-profit-from-trading-stocks",
+    "difficulty": "Medium",
+    "likes": 193,
+    "dislikes": 9,
+    "acRate": 48.36151664741099,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"18.4K\", \"totalSubmission\": \"38.1K\", \"totalAcceptedRaw\": 18418, \"totalSubmissionRaw\": 38084, \"acRate\": \"48.4%\"}",
+    "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock II\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock III\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock IV\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Think of the 0-1 Knapsack Problem.",
+        "For the ith stock, the weight is present[i], and the value is future[i] - present[i]."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:41.982Z"
+}

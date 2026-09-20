@@ -1,0 +1,39 @@
+{
+    "questionId": "1416",
+    "questionFrontendId": "2229",
+    "title": "Check if an Array Is Consecutive",
+    "titleSlug": "check-if-an-array-is-consecutive",
+    "difficulty": "Easy",
+    "likes": 90,
+    "dislikes": 11,
+    "acRate": 61.686746987951814,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.2K\", \"totalSubmission\": \"13.3K\", \"totalAcceptedRaw\": 8192, \"totalSubmissionRaw\": 13280, \"acRate\": \"61.7%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Longest Consecutive Sequence\", \"titleSlug\": \"binary-tree-longest-consecutive-sequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Longest Consecutive Sequence II\", \"titleSlug\": \"binary-tree-longest-consecutive-sequence-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Consecutive Characters\", \"titleSlug\": \"consecutive-characters\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try sorting nums.",
+        "If nums is consecutive and sorted in ascending order, then nums[i] + 1 = nums[i + 1] for every i in the range 0 ≤ i < nums.length - 1."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:21:49.559Z"
+}

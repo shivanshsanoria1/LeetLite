@@ -1,0 +1,39 @@
+{
+    "questionId": "305",
+    "questionFrontendId": "305",
+    "title": "Number of Islands II",
+    "titleSlug": "number-of-islands-ii",
+    "difficulty": "Hard",
+    "likes": 2008,
+    "dislikes": 79,
+    "acRate": 40.73462514929416,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"187.2K\", \"totalSubmission\": \"459.7K\", \"totalAcceptedRaw\": 187241, \"totalSubmissionRaw\": 459661, \"acRate\": \"40.7%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Process Restricted Friend Requests\", \"titleSlug\": \"process-restricted-friend-requests\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:45.713Z"
+}

@@ -1,0 +1,35 @@
+{
+    "questionId": "2369",
+    "questionFrontendId": "2219",
+    "title": "Maximum Sum Score of Array",
+    "titleSlug": "maximum-sum-score-of-array",
+    "difficulty": "Medium",
+    "likes": 73,
+    "dislikes": 19,
+    "acRate": 62.283311108831676,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.1K\", \"totalSubmission\": \"9.7K\", \"totalAcceptedRaw\": 6072, \"totalSubmissionRaw\": 9749, \"acRate\": \"62.3%\"}",
+    "similarQuestions": "[{\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Pivot Index\", \"titleSlug\": \"find-pivot-index\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find the Middle Index in Array\", \"titleSlug\": \"find-the-middle-index-in-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can we use precalculation to efficiently calculate the average difference at an index?",
+        "Create a prefix and/or suffix sum array."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:21:41.569Z"
+}

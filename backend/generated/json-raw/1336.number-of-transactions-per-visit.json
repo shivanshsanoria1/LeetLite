@@ -1,0 +1,28 @@
+{
+    "questionId": "1467",
+    "questionFrontendId": "1336",
+    "title": "Number of Transactions per Visit",
+    "titleSlug": "number-of-transactions-per-visit",
+    "difficulty": "Hard",
+    "likes": 95,
+    "dislikes": 327,
+    "acRate": 47.88711627495503,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"16.2K\", \"totalSubmission\": \"33.9K\", \"totalAcceptedRaw\": 16239, \"totalSubmissionRaw\": 33911, \"acRate\": \"47.9%\"}",
+    "similarQuestions": "[{\"title\": \"Find the Missing IDs\", \"titleSlug\": \"find-the-missing-ids\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:31:52.994Z"
+}

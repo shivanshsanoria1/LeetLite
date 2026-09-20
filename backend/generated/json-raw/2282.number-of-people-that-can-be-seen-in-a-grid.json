@@ -1,0 +1,45 @@
+{
+    "questionId": "2425",
+    "questionFrontendId": "2282",
+    "title": "Number of People That Can Be Seen in a Grid",
+    "titleSlug": "number-of-people-that-can-be-seen-in-a-grid",
+    "difficulty": "Medium",
+    "likes": 68,
+    "dislikes": 34,
+    "acRate": 46.88712670828412,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"5.9K\", \"totalAcceptedRaw\": 2779, \"totalSubmissionRaw\": 5927, \"acRate\": \"46.9%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Visible People in a Queue\", \"titleSlug\": \"number-of-visible-people-in-a-queue\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Imagine you are looking to the right. The heights of the people you see form an ascending sequence.",
+        "Iterate through the row from right to left. Use a decreasing monotonic stack to keep track of the people that you can see.",
+        "Use binary search to find the number of people in the stack that are shorter than the current person.",
+        "Repeat this process for each column."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:34.610Z"
+}

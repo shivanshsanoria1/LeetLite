@@ -1,0 +1,44 @@
+{
+    "questionId": "2702",
+    "questionFrontendId": "2557",
+    "title": "Maximum Number of Integers to Choose From a Range II",
+    "titleSlug": "maximum-number-of-integers-to-choose-from-a-range-ii",
+    "difficulty": "Medium",
+    "likes": 42,
+    "dislikes": 26,
+    "acRate": 34.83106931382793,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"8.6K\", \"totalAcceptedRaw\": 3000, \"totalSubmissionRaw\": 8613, \"acRate\": \"34.8%\"}",
+    "similarQuestions": "[{\"title\": \"First Missing Positive\", \"titleSlug\": \"first-missing-positive\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find All Numbers Disappeared in an Array\", \"titleSlug\": \"find-all-numbers-disappeared-in-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Append K Integers With Minimal Sum\", \"titleSlug\": \"append-k-integers-with-minimal-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Replace Elements in an Array\", \"titleSlug\": \"replace-elements-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Number of Integers to Choose From a Range I\", \"titleSlug\": \"maximum-number-of-integers-to-choose-from-a-range-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximize the Distance Between Points on a Square\", \"titleSlug\": \"maximize-the-distance-between-points-on-a-square\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "It is optimal always to take the smallest possible integer you can choose.",
+        "Between every consecutive banned integers, can you find how many integers you can choose?",
+        "Think of using binary search to find that."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:39:16.668Z"
+}

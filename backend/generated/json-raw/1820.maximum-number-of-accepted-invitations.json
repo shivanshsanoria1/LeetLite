@@ -1,0 +1,80 @@
+{
+    "questionId": "1969",
+    "questionFrontendId": "1820",
+    "title": "Maximum Number of Accepted Invitations",
+    "titleSlug": "maximum-number-of-accepted-invitations",
+    "difficulty": "Medium",
+    "likes": 238,
+    "dislikes": 68,
+    "acRate": 52.734554829205415,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.5K\", \"totalSubmission\": \"21.7K\", \"totalAcceptedRaw\": 11455, \"totalSubmissionRaw\": 21722, \"acRate\": \"52.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "We can see that the problem can be represented as a directed graph with an edge from each boy to the girl he invited.",
+        "We need to choose a set of edges such that no to source points in the graph (i.e., boys) have an edge with the same endpoint (i.e., the same girl).",
+        "The problem is maximum bipartite matching in the graph."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Maximum Flow",
+            "slug": "maximum-flow"
+        },
+        {
+            "name": "Maximum Matching",
+            "slug": "maximum-matching"
+        },
+        {
+            "name": "Bipartite Graph",
+            "slug": "bipartite-graph"
+        },
+        {
+            "name": "Edmonds–Karp Algorithm",
+            "slug": "edmonds-karp-algorithm"
+        },
+        {
+            "name": "MPM Algorithm",
+            "slug": "mpm-algorithm"
+        },
+        {
+            "name": "Push-Relabel Algorithm",
+            "slug": "push-relabel-algorithm"
+        },
+        {
+            "name": "Matching (Graph)",
+            "slug": "matching-graph"
+        },
+        {
+            "name": "Flow Network",
+            "slug": "flow-network"
+        },
+        {
+            "name": "Dinic's Algorithm",
+            "slug": "dinics-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:32.451Z"
+}

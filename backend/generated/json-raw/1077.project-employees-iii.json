@@ -1,0 +1,31 @@
+{
+    "questionId": "1163",
+    "questionFrontendId": "1077",
+    "title": "Project Employees III",
+    "titleSlug": "project-employees-iii",
+    "difficulty": "Medium",
+    "likes": 284,
+    "dislikes": 9,
+    "acRate": 77.22239632299176,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"73.9K\", \"totalSubmission\": \"95.7K\", \"totalAcceptedRaw\": 73925, \"totalSubmissionRaw\": 95730, \"acRate\": \"77.2%\"}",
+    "similarQuestions": "[{\"title\": \"Project Employees II\", \"titleSlug\": \"project-employees-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:37.057Z"
+}

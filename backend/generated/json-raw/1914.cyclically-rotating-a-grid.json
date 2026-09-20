@@ -1,0 +1,123 @@
+{
+    "questionId": "2043",
+    "questionFrontendId": "1914",
+    "title": "Cyclically Rotating a Grid",
+    "titleSlug": "cyclically-rotating-a-grid",
+    "difficulty": "Medium",
+    "likes": 466,
+    "dislikes": 306,
+    "acRate": 74.00038213020218,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"85.2K\", \"totalSubmission\": \"115.1K\", \"totalAcceptedRaw\": 85207, \"totalSubmissionRaw\": 115144, \"acRate\": \"74.0%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given an <code>m x n</code> integer matrix <code>grid</code>​​​, where <code>m</code> and <code>n</code> are both <strong>even</strong> integers, and an integer <code>k</code>.</p>\r\n\r\n<p>The matrix is composed of several layers, which is shown in the below image, where each color is its own layer:</p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid.png\" style=\"width: 231px; height: 258px;\" /></p>\r\n\r\n<p>A cyclic rotation of the matrix is done by cyclically rotating <strong>each layer</strong> in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the <strong>counter-clockwise</strong> direction. An example rotation is shown below:</p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/22/explanation_grid.jpg\" style=\"width: 500px; height: 268px;\" />\r\n<p>Return <em>the matrix after applying </em><code>k</code> <em>cyclic rotations to it</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/19/rod2.png\" style=\"width: 421px; height: 191px;\" />\r\n<pre>\r\n<strong>Input:</strong> grid = [[40,10],[30,20]], k = 1\r\n<strong>Output:</strong> [[10,20],[40,30]]\r\n<strong>Explanation:</strong> The figures above represent the grid at every state.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid5.png\" style=\"width: 231px; height: 262px;\" /></strong> <strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid6.png\" style=\"width: 231px; height: 262px;\" /></strong> <strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/10/ringofgrid7.png\" style=\"width: 231px; height: 262px;\" /></strong>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2\r\n<strong>Output:</strong> [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]\r\n<strong>Explanation:</strong> The figures above represent the grid at every state.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>m == grid.length</code></li>\r\n\t<li><code>n == grid[i].length</code></li>\r\n\t<li><code>2 &lt;= m, n &lt;= 50</code></li>\r\n\t<li>Both <code>m</code> and <code>n</code> are <strong>even</strong> integers.</li>\r\n\t<li><code>1 &lt;= grid[i][j] &lt;=<sup> </sup>5000</code></li>\r\n\t<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>\r\n</ul>",
+    "hints": [
+        "First, you need to consider each layer separately as an array.",
+        "Just cycle this array and then re-assign it."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumerate Each Layer\n\n#### Intuition\n\nFor a matrix $\\textit{grid}$ of size $m \\times n$, the number of layers is $\\min(m / 2, n / 2)$. We can simulate the cyclic rotation operation by enumerating each layer from the outside to the inside.\n\nFor convenience, we traverse the elements of each layer in a counterclockwise direction starting from the top-left corner. We divide this traversal into four parts, where each part processes one edge of the layer while excluding the last element to avoid duplication.\n\nWe store the row indices, column indices, and values of these elements in the corresponding arrays $r$, $c$, and $\\textit{val}$, respectively. Let $\\textit{total}$ denote the number of elements in the current layer, which is equal to the length of $\\textit{val}$. If we perform $\\textit{total}$ rotations, the layer remains unchanged. Therefore, the effective number of rotations is $\\textit{kk} = k \\bmod \\textit{total}$.\n\nAfter rotation, the value at the $i$-th position in the traversal corresponds to the value at index $(i - \\textit{kk} + \\textit{total}) \\bmod \\textit{total}$ in the $\\textit{val}$ array. Adding $\\textit{total}$ before taking the modulus ensures that the index remains non-negative.\n\nFinally, we iterate over the stored coordinates and update the corresponding positions in $\\textit{grid}$. Once all layers are processed, $\\textit{grid}$ represents the rotated matrix.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/T75MJsa8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"T75MJsa8\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ and $n$ be the number of rows and columns of $\\textit{grid}$, respectively.\n\n- Time complexity: $O(mn)$，\n  \n  We traverse all elements of $\\textit{grid}$ once during the process.\n\n- Space complexity: $O(m + n)$.\n  \n  Auxiliary arrays are used to store the coordinates and values of each layer. Note that this can be optimized to $O(1)$ using in-place rotation, but that approach is less intuitive, so it is not included here.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> rotateGrid(vector<vector<int>>& grid, int k) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\r\n    public int[][] rotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\r\n    def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:"
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\r\n    def rotateGrid(self, grid, k):\r\n        \"\"\"\r\n        :type grid: List[List[int]]\r\n        :type k: int\r\n        :rtype: List[List[int]]\r\n        \"\"\""
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number[][]} grid\r\n * @param {number} k\r\n * @return {number[][]}\r\n */\r\nvar rotateGrid = function(grid, k) {\r\n    \r\n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function rotateGrid(grid: number[][], k: number): number[][] {\r\n\r\n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\r\n    public int[][] RotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\r\n * Return an array of arrays of size *returnSize.\r\n * The sizes of the arrays are returned as *returnColumnSizes array.\r\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\r\n */\r\nint** rotateGrid(int** grid, int gridSize, int* gridColSize, int k, int* returnSize, int** returnColumnSizes){\r\n\r\n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func rotateGrid(grid [][]int, k int) [][]int {\r\n    \r\n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\r\n    fun rotateGrid(grid: Array<IntArray>, k: Int): Array<IntArray> {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\r\n    func rotateGrid(_ grid: [[Int]], _ k: Int) -> [[Int]] {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\r\n    pub fn rotate_grid(grid: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[][]} grid\r\n# @param {Integer} k\r\n# @return {Integer[][]}\r\ndef rotate_grid(grid, k)\r\n    \r\nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[][] $grid\r\n     * @param Integer $k\r\n     * @return Integer[][]\r\n     */\r\n    function rotateGrid($grid, $k) {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\r\n    def rotateGrid(grid: Array[Array[Int]], k: Int): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (rotate-grid grid k)\r\n  (-> (listof (listof exact-integer?)) exact-integer? (listof (listof exact-integer?)))\r\n\r\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:39.707Z"
+}

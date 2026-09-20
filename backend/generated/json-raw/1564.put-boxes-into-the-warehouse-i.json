@@ -1,0 +1,41 @@
+{
+    "questionId": "1703",
+    "questionFrontendId": "1564",
+    "title": "Put Boxes Into the Warehouse I",
+    "titleSlug": "put-boxes-into-the-warehouse-i",
+    "difficulty": "Medium",
+    "likes": 344,
+    "dislikes": 30,
+    "acRate": 67.87203132895402,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"21.5K\", \"totalSubmission\": \"31.7K\", \"totalAcceptedRaw\": 21491, \"totalSubmissionRaw\": 31664, \"acRate\": \"67.9%\"}",
+    "similarQuestions": "[{\"title\": \"Put Boxes Into the Warehouse II\", \"titleSlug\": \"put-boxes-into-the-warehouse-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Sort the boxes in ascending order, try to process the box with the smallest height first."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:37:14.727Z"
+}

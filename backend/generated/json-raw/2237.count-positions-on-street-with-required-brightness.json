@@ -1,0 +1,35 @@
+{
+    "questionId": "2385",
+    "questionFrontendId": "2237",
+    "title": "Count Positions on Street With Required Brightness",
+    "titleSlug": "count-positions-on-street-with-required-brightness",
+    "difficulty": "Medium",
+    "likes": 90,
+    "dislikes": 6,
+    "acRate": 62.45390546429769,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.6K\", \"totalSubmission\": \"8.9K\", \"totalAcceptedRaw\": 5589, \"totalSubmissionRaw\": 8949, \"acRate\": \"62.5%\"}",
+    "similarQuestions": "[{\"title\": \"Range Addition\", \"titleSlug\": \"range-addition\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Brightest Position on Street\", \"titleSlug\": \"brightest-position-on-street\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Increment Submatrices by One\", \"titleSlug\": \"increment-submatrices-by-one\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can we find the brightness at every position on the street?",
+        "We can use a hash table to store the change in brightness from the previous position to the current position."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:21:56.236Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1759",
+    "questionFrontendId": "1613",
+    "title": "Find the Missing IDs",
+    "titleSlug": "find-the-missing-ids",
+    "difficulty": "Medium",
+    "likes": 238,
+    "dislikes": 31,
+    "acRate": 72.84430039138942,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"23.8K\", \"totalSubmission\": \"32.7K\", \"totalAcceptedRaw\": 23823, \"totalSubmissionRaw\": 32704, \"acRate\": \"72.8%\"}",
+    "similarQuestions": "[{\"title\": \"Report Contiguous Dates\", \"titleSlug\": \"report-contiguous-dates\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find the Start and End Number of Continuous Ranges\", \"titleSlug\": \"find-the-start-and-end-number-of-continuous-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Transactions per Visit\", \"titleSlug\": \"number-of-transactions-per-visit\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:50:46.379Z"
+}

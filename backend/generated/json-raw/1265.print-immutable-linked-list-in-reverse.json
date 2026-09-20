@@ -1,0 +1,43 @@
+{
+    "questionId": "1404",
+    "questionFrontendId": "1265",
+    "title": "Print Immutable Linked List in Reverse",
+    "titleSlug": "print-immutable-linked-list-in-reverse",
+    "difficulty": "Medium",
+    "likes": 599,
+    "dislikes": 106,
+    "acRate": 94.03264429825768,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68.3K\", \"totalSubmission\": \"72.7K\", \"totalAcceptedRaw\": 68326, \"totalSubmissionRaw\": 72662, \"acRate\": \"94.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:11.916Z"
+}

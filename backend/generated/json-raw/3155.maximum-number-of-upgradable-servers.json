@@ -1,0 +1,38 @@
+{
+    "questionId": "3458",
+    "questionFrontendId": "3155",
+    "title": "Maximum Number of Upgradable Servers",
+    "titleSlug": "maximum-number-of-upgradable-servers",
+    "difficulty": "Medium",
+    "likes": 21,
+    "dislikes": 2,
+    "acRate": 43.85923476617856,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.7K\", \"totalSubmission\": \"8.5K\", \"totalAcceptedRaw\": 3714, \"totalSubmissionRaw\": 8468, \"acRate\": \"43.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use binary search to find the maximum number of servers that can be upgraded for each data center separately."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:54.668Z"
+}

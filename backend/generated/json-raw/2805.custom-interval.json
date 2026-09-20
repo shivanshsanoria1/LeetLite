@@ -1,0 +1,26 @@
+{
+    "questionId": "2908",
+    "questionFrontendId": "2805",
+    "title": "Custom Interval",
+    "titleSlug": "custom-interval",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 8,
+    "acRate": 83.56854838709677,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"829\", \"totalSubmission\": \"992\", \"totalAcceptedRaw\": 829, \"totalSubmissionRaw\": 992, \"acRate\": \"83.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:44:41.162Z"
+}

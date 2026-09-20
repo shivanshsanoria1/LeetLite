@@ -1,0 +1,43 @@
+{
+    "questionId": "285",
+    "questionFrontendId": "285",
+    "title": "Inorder Successor in BST",
+    "titleSlug": "inorder-successor-in-bst",
+    "difficulty": "Medium",
+    "likes": 2654,
+    "dislikes": 94,
+    "acRate": 51.276887145478256,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"374.8K\", \"totalSubmission\": \"730.9K\", \"totalAcceptedRaw\": 374772, \"totalSubmissionRaw\": 730879, \"acRate\": \"51.3%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Inorder Successor in BST II\", \"titleSlug\": \"inorder-successor-in-bst-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:28.567Z"
+}

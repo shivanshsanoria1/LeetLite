@@ -1,0 +1,38 @@
+{
+    "questionId": "3693",
+    "questionFrontendId": "3385",
+    "title": "Minimum Time to Break Locks II",
+    "titleSlug": "minimum-time-to-break-locks-ii",
+    "difficulty": "Hard",
+    "likes": 5,
+    "dislikes": 1,
+    "acRate": 46.04486422668241,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"390\", \"totalSubmission\": \"847\", \"totalAcceptedRaw\": 390, \"totalSubmissionRaw\": 847, \"acRate\": \"46.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use the Hungarian algorithm for minimum cost matching."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:54.968Z"
+}

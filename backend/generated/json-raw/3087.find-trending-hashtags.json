@@ -1,0 +1,28 @@
+{
+    "questionId": "3392",
+    "questionFrontendId": "3087",
+    "title": "Find Trending Hashtags",
+    "titleSlug": "find-trending-hashtags",
+    "difficulty": "Medium",
+    "likes": 8,
+    "dislikes": 6,
+    "acRate": 61.72864732325296,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"4.9K\", \"totalAcceptedRaw\": 3021, \"totalSubmissionRaw\": 4894, \"acRate\": \"61.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:40.877Z"
+}

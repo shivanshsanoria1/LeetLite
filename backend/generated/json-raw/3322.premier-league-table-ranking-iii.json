@@ -1,0 +1,28 @@
+{
+    "questionId": "3642",
+    "questionFrontendId": "3322",
+    "title": "Premier League Table Ranking III",
+    "titleSlug": "premier-league-table-ranking-iii",
+    "difficulty": "Medium",
+    "likes": 4,
+    "dislikes": 0,
+    "acRate": 70.45523984112435,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.3K\", \"totalSubmission\": \"3.3K\", \"totalAcceptedRaw\": 2306, \"totalSubmissionRaw\": 3273, \"acRate\": \"70.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:03.650Z"
+}

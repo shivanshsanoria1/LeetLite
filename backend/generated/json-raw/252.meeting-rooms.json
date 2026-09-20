@@ -1,0 +1,39 @@
+{
+    "questionId": "252",
+    "questionFrontendId": "252",
+    "title": "Meeting Rooms",
+    "titleSlug": "meeting-rooms",
+    "difficulty": "Easy",
+    "likes": 2132,
+    "dislikes": 117,
+    "acRate": 59.55482520658523,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"532.4K\", \"totalSubmission\": \"893.9K\", \"totalAcceptedRaw\": 532385, \"totalSubmissionRaw\": 893941, \"acRate\": \"59.6%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms III\", \"titleSlug\": \"meeting-rooms-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Points That Intersect With Cars\", \"titleSlug\": \"points-that-intersect-with-cars\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Quicksort",
+            "slug": "quicksort"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:57.249Z"
+}

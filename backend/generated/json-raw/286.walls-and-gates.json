@@ -1,0 +1,39 @@
+{
+    "questionId": "286",
+    "questionFrontendId": "286",
+    "title": "Walls and Gates",
+    "titleSlug": "walls-and-gates",
+    "difficulty": "Medium",
+    "likes": 3342,
+    "dislikes": 73,
+    "acRate": 64.15925106733192,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"436.6K\", \"totalSubmission\": \"680.4K\", \"totalAcceptedRaw\": 436560, \"totalSubmissionRaw\": 680432, \"acRate\": \"64.2%\"}",
+    "similarQuestions": "[{\"title\": \"Surrounded Regions\", \"titleSlug\": \"surrounded-regions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Battleships in a Board\", \"titleSlug\": \"battleships-in-a-board\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Robot Room Cleaner\", \"titleSlug\": \"robot-room-cleaner\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Rotting Oranges\", \"titleSlug\": \"rotting-oranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count the Number of Houses at a Certain Distance I\", \"titleSlug\": \"count-the-number-of-houses-at-a-certain-distance-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count the Number of Houses at a Certain Distance II\", \"titleSlug\": \"count-the-number-of-houses-at-a-certain-distance-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:29.557Z"
+}

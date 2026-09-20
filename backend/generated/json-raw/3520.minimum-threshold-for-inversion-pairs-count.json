@@ -1,0 +1,52 @@
+{
+    "questionId": "3861",
+    "questionFrontendId": "3520",
+    "title": "Minimum Threshold for Inversion Pairs Count",
+    "titleSlug": "minimum-threshold-for-inversion-pairs-count",
+    "difficulty": "Medium",
+    "likes": 3,
+    "dislikes": 1,
+    "acRate": 56.424581005586596,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"808\", \"totalSubmission\": \"1.4K\", \"totalAcceptedRaw\": 808, \"totalSubmissionRaw\": 1432, \"acRate\": \"56.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Perform a binary search to find the minimum threshold",
+        "Use a segment tree with value compression to count inversion pairs efficiently during the binary search"
+    ],
+    "exampleTestcases": "[1,2,3,4,3,2,1]\n7\n[10,9,9,9,1]\n4",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Merge Sort",
+            "slug": "merge-sort"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:05.513Z"
+}

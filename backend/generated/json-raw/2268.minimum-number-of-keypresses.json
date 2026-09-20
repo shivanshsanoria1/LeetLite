@@ -1,0 +1,47 @@
+{
+    "questionId": "2405",
+    "questionFrontendId": "2268",
+    "title": "Minimum Number of Keypresses",
+    "titleSlug": "minimum-number-of-keypresses",
+    "difficulty": "Medium",
+    "likes": 251,
+    "dislikes": 40,
+    "acRate": 71.34947965221362,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"37.5K\", \"totalSubmission\": \"52.6K\", \"totalAcceptedRaw\": 37502, \"totalSubmissionRaw\": 52561, \"acRate\": \"71.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Map the most frequent letters so that you can type them with only 1 keypress.",
+        "Use an array to keep track of the frequency of every character, then sort it in non-increasing order."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:21.911Z"
+}

@@ -1,0 +1,60 @@
+{
+    "questionId": "510",
+    "questionFrontendId": "2031",
+    "title": "Count Subarrays With More Ones Than Zeros",
+    "titleSlug": "count-subarrays-with-more-ones-than-zeros",
+    "difficulty": "Medium",
+    "likes": 187,
+    "dislikes": 18,
+    "acRate": 49.74800139033715,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.7K\", \"totalSubmission\": \"11.5K\", \"totalAcceptedRaw\": 5725, \"totalSubmissionRaw\": 11508, \"acRate\": \"49.7%\"}",
+    "similarQuestions": "[{\"title\": \"Ones and Zeroes\", \"titleSlug\": \"ones-and-zeroes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longer Contiguous Segments of Ones than Zeros\", \"titleSlug\": \"longer-contiguous-segments-of-ones-than-zeros\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"All Divisions With the Highest Score of a Binary Array\", \"titleSlug\": \"all-divisions-with-the-highest-score-of-a-binary-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Change the zeros in nums to -1 and create a prefix sum array prefixSum using the new nums.",
+        "If prefixSum[i] for any index i in the range 0 <= i < prefixSum.length is positive, that means that there are more ones than zeros in the prefix ending at index i.",
+        "If prefixSum[j] > prefixSum[i] for two indexes i and j such that 0 <= i < j < prefixSum.length, that means that there are more ones than zeros in nums in the range [i + 1 : j] (inclusive)"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Merge Sort",
+            "slug": "merge-sort"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:17.798Z"
+}

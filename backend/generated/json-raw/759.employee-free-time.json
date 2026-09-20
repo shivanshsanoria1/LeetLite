@@ -1,0 +1,42 @@
+{
+    "questionId": "761",
+    "questionFrontendId": "759",
+    "title": "Employee Free Time",
+    "titleSlug": "employee-free-time",
+    "difficulty": "Hard",
+    "likes": 1973,
+    "dislikes": 149,
+    "acRate": 73.01592938511862,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"185K\", \"totalSubmission\": \"253.4K\", \"totalAcceptedRaw\": 185045, \"totalSubmissionRaw\": 253431, \"acRate\": \"73.0%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Take all the intervals and do an \"events\" (or \"line sweep\") approach - an event of (x, OPEN) increases the number of active intervals, while (x, CLOSE) decreases it.\r\n\r\nProcessing in sorted order from left to right, if the number of active intervals is zero, then you crossed a region of common free time."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sweep Line",
+            "slug": "sweep-line"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:15.447Z"
+}

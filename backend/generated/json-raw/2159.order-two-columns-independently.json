@@ -1,0 +1,28 @@
+{
+    "questionId": "2302",
+    "questionFrontendId": "2159",
+    "title": "Order Two Columns Independently",
+    "titleSlug": "order-two-columns-independently",
+    "difficulty": "Medium",
+    "likes": 82,
+    "dislikes": 19,
+    "acRate": 61.90686382696976,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.2K\", \"totalSubmission\": \"18.1K\", \"totalAcceptedRaw\": 11220, \"totalSubmissionRaw\": 18124, \"acRate\": \"61.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:06:15.536Z"
+}

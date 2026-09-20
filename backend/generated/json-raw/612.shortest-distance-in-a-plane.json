@@ -1,0 +1,35 @@
+{
+    "questionId": "612",
+    "questionFrontendId": "612",
+    "title": "Shortest Distance in a Plane",
+    "titleSlug": "shortest-distance-in-a-plane",
+    "difficulty": "Medium",
+    "likes": 226,
+    "dislikes": 72,
+    "acRate": 60.9093585905678,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"49.6K\", \"totalSubmission\": \"81.5K\", \"totalAcceptedRaw\": 49646, \"totalSubmissionRaw\": 81508, \"acRate\": \"60.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        },
+        {
+            "name": "Nearest Pair of Points",
+            "slug": "nearest-pair-of-points"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:31.604Z"
+}

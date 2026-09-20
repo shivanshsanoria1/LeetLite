@@ -1,0 +1,36 @@
+{
+    "questionId": "3806",
+    "questionFrontendId": "3466",
+    "title": "Maximum Coin Collection ",
+    "titleSlug": "maximum-coin-collection",
+    "difficulty": "Medium",
+    "likes": 18,
+    "dislikes": 10,
+    "acRate": 53.179947624392064,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"5.3K\", \"totalAcceptedRaw\": 2843, \"totalSubmissionRaw\": 5346, \"acRate\": \"53.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Can we use dynamic programming?",
+        "Use dynamic programming with states: <code>dp[i][lane][rem]</code> = the maximum number of coins you can obtain when you are at mile <code>i</code> in the given <code>lane</code> with <code>rem</code> switches remaining."
+    ],
+    "exampleTestcases": "[1,-2,-10,3]\n[-5,10,0,1]\n[1,-1,-1,-1]\n[0,3,4,-5]\n[-5,-4,-3]\n[-1,2,3]\n[-3,-3,-3]\n[9,-2,4]\n[-10]\n[-2]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:13.419Z"
+}

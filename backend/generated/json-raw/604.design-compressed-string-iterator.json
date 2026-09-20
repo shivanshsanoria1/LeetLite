@@ -1,0 +1,43 @@
+{
+    "questionId": "604",
+    "questionFrontendId": "604",
+    "title": "Design Compressed String Iterator",
+    "titleSlug": "design-compressed-string-iterator",
+    "difficulty": "Easy",
+    "likes": 462,
+    "dislikes": 167,
+    "acRate": 40.486523870140026,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"40.4K\", \"totalSubmission\": \"99.8K\", \"totalAcceptedRaw\": 40393, \"totalSubmissionRaw\": 99769, \"acRate\": \"40.5%\"}",
+    "similarQuestions": "[{\"title\": \"LRU Cache\", \"titleSlug\": \"lru-cache\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"String Compression\", \"titleSlug\": \"string-compression\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Iterator",
+            "slug": "iterator"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:09:11.459Z"
+}

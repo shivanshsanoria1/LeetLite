@@ -1,0 +1,30 @@
+{
+    "questionId": "2745",
+    "questionFrontendId": "2633",
+    "title": "Convert Object to JSON String",
+    "titleSlug": "convert-object-to-json-string",
+    "difficulty": "Medium",
+    "likes": 209,
+    "dislikes": 12,
+    "acRate": 77.97537619699042,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.2K\", \"totalSubmission\": \"18.3K\", \"totalAcceptedRaw\": 14250, \"totalSubmissionRaw\": 18275, \"acRate\": \"78.0%\"}",
+    "similarQuestions": "[{\"title\": \"JSON Deep Equal\", \"titleSlug\": \"json-deep-equal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten Deeply Nested Array\", \"titleSlug\": \"flatten-deeply-nested-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array of Objects to Matrix\", \"titleSlug\": \"array-of-objects-to-matrix\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Differences Between Two Objects\", \"titleSlug\": \"differences-between-two-objects\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Consider the 4 possibilities. The object could be an array, an object, a string, or another type.",
+        "Think about the problem recursively. If you know how to convert any sub-data into a string, how could you use it to convert the entire data into a string?",
+        "If the data is a string, it's just the value surrounded by double quotes. If the data is another type, its just String(data). If the data is an array, it's the recursively stringified value of each item separated by commas. If the data is an object, it's a series of key-value pairs where each value is the recursively stringified value."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:22.200Z"
+}

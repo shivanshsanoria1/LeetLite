@@ -1,0 +1,43 @@
+{
+    "questionId": "484",
+    "questionFrontendId": "484",
+    "title": "Find Permutation",
+    "titleSlug": "find-permutation",
+    "difficulty": "Medium",
+    "likes": 731,
+    "dislikes": 151,
+    "acRate": 66.73762316019949,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"43.9K\", \"totalSubmission\": \"65.8K\", \"totalAcceptedRaw\": 43892, \"totalSubmissionRaw\": 65768, \"acRate\": \"66.7%\"}",
+    "similarQuestions": "[{\"title\": \"Using a Robot to Print the Lexicographically Smallest String\", \"titleSlug\": \"using-a-robot-to-print-the-lexicographically-smallest-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:23.691Z"
+}

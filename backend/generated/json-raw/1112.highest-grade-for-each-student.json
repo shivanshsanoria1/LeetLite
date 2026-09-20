@@ -1,0 +1,31 @@
+{
+    "questionId": "1214",
+    "questionFrontendId": "1112",
+    "title": "Highest Grade For Each Student",
+    "titleSlug": "highest-grade-for-each-student",
+    "difficulty": "Medium",
+    "likes": 316,
+    "dislikes": 15,
+    "acRate": 71.20639818410739,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"80.3K\", \"totalSubmission\": \"112.8K\", \"totalAcceptedRaw\": 80308, \"totalSubmissionRaw\": 112782, \"acRate\": \"71.2%\"}",
+    "similarQuestions": "[{\"title\": \"Department Highest Salary\", \"titleSlug\": \"department-highest-salary\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:21:27.946Z"
+}

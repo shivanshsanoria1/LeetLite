@@ -1,0 +1,35 @@
+{
+    "questionId": "3370",
+    "questionFrontendId": "3064",
+    "title": "Guess the Number Using Bitwise Questions I",
+    "titleSlug": "guess-the-number-using-bitwise-questions-i",
+    "difficulty": "Medium",
+    "likes": 12,
+    "dislikes": 11,
+    "acRate": 88.94472361809045,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"2.8K\", \"totalAcceptedRaw\": 2478, \"totalSubmissionRaw\": 2786, \"acRate\": \"88.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Ask <code>2<sup>i</sup></code> for <code>0 <= i < 30</code>.",
+        "If the result is greater than zero for some <code>i</code>, this bit is a set bit in <code>n</code>."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:18.756Z"
+}

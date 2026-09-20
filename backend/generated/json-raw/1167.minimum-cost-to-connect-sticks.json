@@ -1,0 +1,44 @@
+{
+    "questionId": "1126",
+    "questionFrontendId": "1167",
+    "title": "Minimum Cost to Connect Sticks",
+    "titleSlug": "minimum-cost-to-connect-sticks",
+    "difficulty": "Medium",
+    "likes": 1355,
+    "dislikes": 158,
+    "acRate": 72.07904226710086,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"152.5K\", \"totalSubmission\": \"211.6K\", \"totalAcceptedRaw\": 152507, \"totalSubmissionRaw\": 211583, \"acRate\": \"72.1%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost to Merge Stones\", \"titleSlug\": \"minimum-cost-to-merge-stones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How many times does every stick contribute to the answer?",
+        "Some of the sticks will be used more than the others. Which sticks should be used the most/least?",
+        "The sticks with long lengths cost a lot so we should use these the least.",
+        "What if we keep merging the two shortest sticks?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:04.014Z"
+}

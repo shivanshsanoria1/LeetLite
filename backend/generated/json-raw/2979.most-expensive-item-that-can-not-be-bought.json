@@ -1,0 +1,41 @@
+{
+    "questionId": "3273",
+    "questionFrontendId": "2979",
+    "title": "Most Expensive Item That Can Not Be Bought",
+    "titleSlug": "most-expensive-item-that-can-not-be-bought",
+    "difficulty": "Medium",
+    "likes": 25,
+    "dislikes": 28,
+    "acRate": 80.22311143446102,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.6K\", \"totalSubmission\": \"8.2K\", \"totalAcceptedRaw\": 6616, \"totalSubmissionRaw\": 8247, \"acRate\": \"80.2%\"}",
+    "similarQuestions": "[{\"title\": \"Coin Change\", \"titleSlug\": \"coin-change\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Cost For Tickets\", \"titleSlug\": \"minimum-cost-for-tickets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Coins to be Added\", \"titleSlug\": \"minimum-number-of-coins-to-be-added\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Write out a few cases. It can be seen that all items greater than <code>primeOne * primeTwo</code> can always be bought.",
+        "If we can buy items with cost <code>i</code>, we can also buy items with price <code>i + primeOne</code> and <code>i + primeTwo</code>.",
+        "Use dynamic programming.",
+        "There is an O(1) solution: Use the Chicken McNugget Theorem."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:06.976Z"
+}

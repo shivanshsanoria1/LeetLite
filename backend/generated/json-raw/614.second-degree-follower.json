@@ -1,0 +1,28 @@
+{
+    "questionId": "614",
+    "questionFrontendId": "614",
+    "title": "Second Degree Follower",
+    "titleSlug": "second-degree-follower",
+    "difficulty": "Medium",
+    "likes": 171,
+    "dislikes": 745,
+    "acRate": 40.9417145463414,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"64.6K\", \"totalSubmission\": \"157.9K\", \"totalAcceptedRaw\": 64631, \"totalSubmissionRaw\": 157861, \"acRate\": \"40.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:32.895Z"
+}

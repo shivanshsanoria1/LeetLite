@@ -1,0 +1,31 @@
+{
+    "questionId": "1898",
+    "questionFrontendId": "1747",
+    "title": "Leetflex Banned Accounts",
+    "titleSlug": "leetflex-banned-accounts",
+    "difficulty": "Medium",
+    "likes": 201,
+    "dislikes": 18,
+    "acRate": 61.628065793838175,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"31.6K\", \"totalSubmission\": \"51.3K\", \"totalAcceptedRaw\": 31585, \"totalSubmissionRaw\": 51251, \"acRate\": \"61.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:53:12.601Z"
+}

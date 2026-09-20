@@ -1,0 +1,48 @@
+{
+    "questionId": "308",
+    "questionFrontendId": "308",
+    "title": "Range Sum Query 2D - Mutable",
+    "titleSlug": "range-sum-query-2d-mutable",
+    "difficulty": "Medium",
+    "likes": 826,
+    "dislikes": 98,
+    "acRate": 45.93001212211833,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"86K\", \"totalSubmission\": \"187.3K\", \"totalAcceptedRaw\": 86009, \"totalSubmissionRaw\": 187261, \"acRate\": \"45.9%\"}",
+    "similarQuestions": "[{\"title\": \"Range Sum Query 2D - Immutable\", \"titleSlug\": \"range-sum-query-2d-immutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Mutable\", \"titleSlug\": \"range-sum-query-mutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Increment Submatrices by One\", \"titleSlug\": \"increment-submatrices-by-one\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sum of Matrix After Queries\", \"titleSlug\": \"sum-of-matrix-after-queries\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Sqrt Decomposition",
+            "slug": "sqrt-decomposition"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:48.095Z"
+}

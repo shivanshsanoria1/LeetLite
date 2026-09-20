@@ -1,0 +1,30 @@
+{
+    "questionId": "2769",
+    "questionFrontendId": "2675",
+    "title": "Array of Objects to Matrix",
+    "titleSlug": "array-of-objects-to-matrix",
+    "difficulty": "Hard",
+    "likes": 134,
+    "dislikes": 73,
+    "acRate": 68.08533679878708,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.3K\", \"totalSubmission\": \"9.2K\", \"totalAcceptedRaw\": 6287, \"totalSubmissionRaw\": 9234, \"acRate\": \"68.1%\"}",
+    "similarQuestions": "[{\"title\": \"JSON Deep Equal\", \"titleSlug\": \"json-deep-equal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Convert Object to JSON String\", \"titleSlug\": \"convert-object-to-json-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How could you split the problem up into sub-problems?",
+        "1.) Write a function that converts a single object into a dictionary that maps the path name to values. You can solve this recursively by keeping track of current path list.",
+        "2.) Write a function that converts a list of dictionaries into a matrix. Start by creating a list of all possible paths in any of the dictionaries. This will represent the columns."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:55.890Z"
+}

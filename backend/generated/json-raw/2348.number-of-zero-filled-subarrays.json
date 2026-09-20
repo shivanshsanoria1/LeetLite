@@ -1,0 +1,134 @@
+{
+    "questionId": "2432",
+    "questionFrontendId": "2348",
+    "title": "Number of Zero-Filled Subarrays",
+    "titleSlug": "number-of-zero-filled-subarrays",
+    "difficulty": "Medium",
+    "likes": 2806,
+    "dislikes": 96,
+    "acRate": 70.03984081352156,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"317K\", \"totalSubmission\": \"452.6K\", \"totalAcceptedRaw\": 316966, \"totalSubmissionRaw\": 452551, \"acRate\": \"70.0%\"}",
+    "similarQuestions": "[{\"title\": \"Arithmetic Slices\", \"titleSlug\": \"arithmetic-slices\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Smooth Descent Periods of a Stock\", \"titleSlug\": \"number-of-smooth-descent-periods-of-a-stock\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Length of the Longest Alphabetical Continuous Substring\", \"titleSlug\": \"length-of-the-longest-alphabetical-continuous-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Consecutive Integers from a Data Stream\", \"titleSlug\": \"find-consecutive-integers-from-a-data-stream\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>Given an integer array <code>nums</code>, return <em>the number of <strong>subarrays</strong> filled with </em><code>0</code>.</p>\n\n<p>A <strong>subarray</strong> is a contiguous non-empty sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3,0,0,2,0,0,4]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> \nThere are 4 occurrences of [0] as a subarray.\nThere are 2 occurrences of [0,0] as a subarray.\nThere is no occurrence of a subarray with a size more than 2 filled with 0. Therefore, we return 6.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,0,0,2,0,0]\n<strong>Output:</strong> 9\n<strong>Explanation:\n</strong>There are 5 occurrences of [0] as a subarray.\nThere are 3 occurrences of [0,0] as a subarray.\nThere is 1 occurrence of [0,0,0] as a subarray.\nThere is no occurrence of a subarray with a size more than 3 filled with 0. Therefore, we return 9.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,10,2019]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There is no subarray filled with 0. Therefore, we return 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "For each zero, you can calculate the number of zero-filled subarrays that end on that index, which is the number of consecutive zeros behind the current element + 1.",
+        "Maintain the number of consecutive zeros behind the current element, count the number of zero-filled subarrays that end on each index, sum it up to get the answer."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long zeroFilledSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public long zeroFilledSubarray(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def zeroFilledSubarray(self, nums: List[int]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def zeroFilledSubarray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar zeroFilledSubarray = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function zeroFilledSubarray(nums: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public long ZeroFilledSubarray(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "long long zeroFilledSubarray(int* nums, int numsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func zeroFilledSubarray(nums []int) int64 {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun zeroFilledSubarray(nums: IntArray): Long {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func zeroFilledSubarray(_ nums: [Int]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn zero_filled_subarray(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef zero_filled_subarray(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function zeroFilledSubarray($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int zeroFilledSubarray(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def zeroFilledSubarray(nums: Array[Int]): Long = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec zero_filled_subarray(nums :: [integer]) :: integer\n  def zero_filled_subarray(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec zero_filled_subarray(Nums :: [integer()]) -> integer().\nzero_filled_subarray(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (zero-filled-subarray nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:28.361Z"
+}

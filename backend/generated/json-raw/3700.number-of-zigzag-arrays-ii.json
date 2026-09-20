@@ -1,0 +1,137 @@
+{
+    "questionId": "3964",
+    "questionFrontendId": "3700",
+    "title": "Number of ZigZag Arrays II",
+    "titleSlug": "number-of-zigzag-arrays-ii",
+    "difficulty": "Hard",
+    "likes": 161,
+    "dislikes": 25,
+    "acRate": 67.20114070189965,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"73.1K\", \"totalSubmission\": \"108.7K\", \"totalAcceptedRaw\": 73051, \"totalSubmissionRaw\": 108705, \"acRate\": \"67.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given three integers <code>n</code>, <code>l</code>, and <code>r</code>.</p>\n\n<p>A <strong>ZigZag</strong> array of length <code>n</code> is defined as follows:</p>\n\n<ul>\n\t<li>Each element lies in the range <code>[l, r]</code>.</li>\n\t<li>No <strong>two</strong> adjacent elements are equal.</li>\n\t<li>No <strong>three</strong> consecutive elements form a <strong>strictly increasing</strong> or <strong>strictly decreasing</strong> sequence.</li>\n</ul>\n\n<p>Return the total number of valid <strong>ZigZag</strong> arrays.</p>\n\n<p>Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>A <strong>sequence</strong> is said to be <strong>strictly increasing</strong> if each element is strictly greater than its previous one (if exists).</p>\n\n<p>A <strong>sequence</strong> is said to be <strong>strictly decreasing</strong> if each element is strictly smaller than its previous one (if exists).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, l = 4, r = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are only 2 valid ZigZag arrays of length <code>n = 3</code> using values in the range <code>[4, 5]</code>:</p>\n\n<ul>\n\t<li><code>[4, 5, 4]</code></li>\n\t<li><code>[5, 4, 5]</code></li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, l = 1, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>​​​​​​​There are 10 valid ZigZag arrays of length <code>n = 3</code> using values in the range <code>[1, 3]</code>:</p>\n\n<ul>\n\t<li><code>[1, 2, 1]</code>, <code>[1, 3, 1]</code>, <code>[1, 3, 2]</code></li>\n\t<li><code>[2, 1, 2]</code>, <code>[2, 1, 3]</code>, <code>[2, 3, 1]</code>, <code>[2, 3, 2]</code></li>\n\t<li><code>[3, 1, 2]</code>, <code>[3, 1, 3]</code>, <code>[3, 2, 3]</code></li>\n</ul>\n\n<p>All arrays meet the ZigZag conditions.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= l &lt; r &lt;= 75</code>​​​​​​​</li>\n</ul>\n",
+    "hints": [
+        "Use matrix exponentiation",
+        "Encode states in a vector of length <code>2*m</code> where <code>m = r - l + 1</code>: first <code>m</code> entries = \"next compare = down\" for values, next <code>m</code> = \"next compare = up\".",
+        "Build a transition matrix <code>T</code> (size <code>2*m × 2*m</code>): from an <code>up,x</code> state go to <code>down,y</code> for every <code>y > x</code>, and from <code>down,x</code> go to <code>up,y</code> for every <code>y < x</code>.",
+        "Use fast matrix exponentiation to compute <code>T^(n-1)</code>, apply it to the initial vector (ones in the block for starting <code>up</code> and separately for starting <code>down</code>), sum final entries, and add both results (for <code>n=1</code> return <code>m</code>)."
+    ],
+    "exampleTestcases": "3\n4\n5\n3\n1\n3",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Dynamic Programming + Matrix Exponentiation\n\n#### Intuition\n\nThis problem is the hard version of [「3699. Number of Zigzag Arrays I」](https://leetcode.com/problems/number-of-zigzag-arrays-i/). It is recommended to first understand the dynamic programming solution to the prerequisite problem, as well as the basic idea of matrix exponentiation.\n\nCompared to the previous problem, the range of the lower and upper bounds, $l$ and $r$, is significantly smaller, while the array length can be as large as $10^9$. As a result, it is no longer feasible to perform transitions by iterating through all positions.\n\nLet us revisit the dynamic programming transition. In the previous problem, prefix sums were used to optimize individual state transitions. This reveals that each state can be expressed as a linear combination of the components of the previous state, which means the transition can be represented using a state transition matrix. Repeatedly multiplying the initial state by this transition matrix yields the final state. Once the transition is expressed in matrix form, the transition matrix must be square, and repeated transitions correspond to taking powers of that matrix. We can therefore apply fast matrix exponentiation, reducing the outer time complexity from $O(n)$ to $O(\\log n)$.\n\nNext, let us construct the state vector and transition matrix.\n\nLet $m = r - l + 1$ denote the size of the value range. As in the previous problem, we maintain two state vectors of length $m$: $\\textit{dp}_0$ and $\\textit{dp}_1$.\n- $\\textit{dp}_0$ represents states where the last two elements form a strictly decreasing pair.\n- $\\textit{dp}_1$ represents states where the last two elements form a strictly increasing pair.\n\nEach state vector has its own transition matrix. Let:\n- $A$ be the transition matrix from $\\textit{dp}_0$ to $\\textit{dp}_1$.\n- $B$ be the transition matrix from $\\textit{dp}_1$ to $\\textit{dp}_0$.\n\nThe transitions can then be written as\n\n$$\n\\begin{aligned}\n\\textit{dp}_0[i] = \\textit{dp}_1[i-1] \\cdot B \\\\\n\\textit{dp}_1[i] = \\textit{dp}_0[i-1] \\cdot A\n\\end{aligned}\n$$\n\nUsing block matrices, we can merge the two state vectors into a single state vector of length $2m$:\n$$\n[\\textit{dp}_0[i],, \\textit{dp}_1[i]]\n$$\nThis yields the unified transition equation\n\n$$\n\\begin{bmatrix} \\textit{dp}_0[i] & \\textit{dp}_1[i] \\end{bmatrix} = \\begin{bmatrix} \\textit{dp}_0[i-1] & \\textit{dp}_1[i-1] \\end{bmatrix} \\cdot \\begin{bmatrix} O & A \\\\ B & O \\end{bmatrix}\n$$\n\nAmong them, the large square matrix $U = \\begin{bmatrix} O & A \\\\ B & O \\end{bmatrix}$ is the merged state transition matrix, of size $(2 \\cdot m) \\times (2 \\cdot m)$, where $O$ is the $m \\times m$ zero matrix. The block anti-diagonal structure arises because the two state vectors transition into each other alternately: $\\textit{dp}_0$ depends only on the previous $\\textit{dp}_1$, and vice versa.\n\nThe remaining task is to construct matrices $A$ and $B$.\n\nBoth matrices are of size $m\\times m$.\n\n- **Matrix $A$ (transition from $\\textit{dp}_0$ to $\\textit{dp}_1$)**\n  Let $i$ and $j$ denote row and column indices, respectively (1-indexed). When computing $\\textit{dp}_0 \\cdot A$, the $j$-th component of the new state is obtained by taking the dot product of $\\textit{dp}_0$ with the $j$-th column of $A$.\n  To transition into $\\textit{dp}_1$, the new element must be strictly greater than the previous element. Therefore, we need to sum all previous states whose values are smaller than $j$. Consequently, in the $j$-th column of $A$, rows $1$ through $j-1$ contain $1$, while all other entries are $0$.\n  Thus, $A$ is a strictly upper triangular matrix whose entries above the main diagonal are all $1$.\n  \n- **Matrix $B$ (transition from $\\textit{dp}_1$ to $\\textit{dp}_0$)**\n  Similarly, transitioning into $\\textit{dp}_0$ requires the new element to be strictly smaller than the previous element. Therefore, in the $j$-th column of $B$, rows $j+1$ through $m$ contain $1$, while all other entries are $0$.\n  Thus, $B$ is a strictly lower triangular matrix whose entries below the main diagonal are all $1$.\n\nFor an intuitive understanding, take $m = 3$ as an example. Then matrices $A$ and $B$ are respectively:\n\n$$\nA = \\begin{bmatrix} 0 & 1 & 1 \\\\ 0 & 0 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}, \\quad B = \\begin{bmatrix} 0 & 0 & 0 \\\\ 1 & 0 & 0 \\\\ 1 & 1 & 0 \\end{bmatrix}\n$$\n\nAssemble them into a complete $6 \\times 6$ state transition matrix $U$ according to the rules of block matrices, as follows:\n\n$$\nU = \\left[\n\\begin{array}{ccc:ccc}\n0 & 0 & 0 & 0 & 1 & 1 \\\\\n0 & 0 & 0 & 0 & 0 & 1 \\\\\n0 & 0 & 0 & 0 & 0 & 0 \\\\\n\\hdashline\n0 & 0 & 0 & 0 & 0 & 0 \\\\\n1 & 0 & 0 & 0 & 0 & 0 \\\\\n1 & 1 & 0 & 0 & 0 & 0\n\\end{array}\n\\right]\n$$\n\nSuppose the length of the target zigzag array is $n$, then the final state is $\\textit{dp}[n-1]$, and the solution process is as follows:\n\n$$\n\\textit{dp}[n-1] = \\textit{dp}[0] \\cdot U^{n-1}\n$$\n\nWe initialize $\\textit{dp}[0]$ as a vector whose components are all $1$, compute $U^{n-1}$ using fast matrix exponentiation, and then sum all components of the resulting state vector to obtain the answer.\n\nThe matrix exponentiation procedure is identical to ordinary binary exponentiation, except that integer multiplication is replaced by matrix multiplication. One implementation detail is worth noting: instead of starting with an identity matrix, we can directly use $\\textit{dp}[0]$ as the accumulator during exponentiation. Since $\\textit{dp}[0]$ is a $1\\times 2m$ vector, every multiplication still produces a $1\\times 2m$ vector, reducing the cost of several intermediate matrix multiplications.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/n5cGAZVE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"n5cGAZVE\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the size of the interval, i.e., $m = r - l + 1$.\n\n- Time complexity: $O(m^3 \\log n)$.\n  \n  Constructing the transition matrix requires $O(m^2)$ time. Each matrix multiplication takes $O(m^3)$ time, and fast matrix exponentiation performs $O(\\log n)$ such multiplications. Therefore, the total time complexity is $O(m^3 \\log n)$. The final summation of the state vector requires $O(m)$ time, which does not affect the overall complexity.\n\n- Space complexity: $O(m^2)$.\n  \n  The transition matrix requires $O(m^2)$ space. The state vector requires $O(m)$ space, and the temporary matrices used during multiplication require an additional $O(m^2)$ space. Therefore, the overall space complexity is $O(m^2)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int zigZagArrays(int n, int l, int r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int zigZagArrays(int n, int l, int r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def zigZagArrays(self, n: int, l: int, r: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def zigZagArrays(self, n, l, r):\n        \"\"\"\n        :type n: int\n        :type l: int\n        :type r: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} l\n * @param {number} r\n * @return {number}\n */\nvar zigZagArrays = function(n, l, r) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function zigZagArrays(n: number, l: number, r: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int ZigZagArrays(int n, int l, int r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int zigZagArrays(int n, int l, int r) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func zigZagArrays(n int, l int, r int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun zigZagArrays(n: Int, l: Int, r: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func zigZagArrays(_ n: Int, _ l: Int, _ r: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn zig_zag_arrays(n: i32, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} n\n# @param {Integer} l\n# @param {Integer} r\n# @return {Integer}\ndef zig_zag_arrays(n, l, r)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $l\n     * @param Integer $r\n     * @return Integer\n     */\n    function zigZagArrays($n, $l, $r) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int zigZagArrays(int n, int l, int r) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def zigZagArrays(n: Int, l: Int, r: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec zig_zag_arrays(n :: integer, l :: integer, r :: integer) :: integer\n  def zig_zag_arrays(n, l, r) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec zig_zag_arrays(N :: integer(), L :: integer(), R :: integer()) -> integer().\nzig_zag_arrays(N, L, R) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (zig-zag-arrays n l r)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T17:12:05.697Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "2613",
+    "questionFrontendId": "2474",
+    "title": "Customers With Strictly Increasing Purchases",
+    "titleSlug": "customers-with-strictly-increasing-purchases",
+    "difficulty": "Hard",
+    "likes": 46,
+    "dislikes": 6,
+    "acRate": 50.43079598450715,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"12.7K\", \"totalAcceptedRaw\": 6380, \"totalSubmissionRaw\": 12651, \"acRate\": \"50.4%\"}",
+    "similarQuestions": "[{\"title\": \"Report Contiguous Dates\", \"titleSlug\": \"report-contiguous-dates\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find the Start and End Number of Continuous Ranges\", \"titleSlug\": \"find-the-start-and-end-number-of-continuous-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:25:10.558Z"
+}

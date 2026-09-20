@@ -1,0 +1,40 @@
+{
+    "questionId": "2242",
+    "questionFrontendId": "2098",
+    "title": "Subsequence of Size K With the Largest Even Sum",
+    "titleSlug": "subsequence-of-size-k-with-the-largest-even-sum",
+    "difficulty": "Medium",
+    "likes": 100,
+    "dislikes": 8,
+    "acRate": 35.49011475183188,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.1K\", \"totalSubmission\": \"14.5K\", \"totalAcceptedRaw\": 5134, \"totalSubmissionRaw\": 14466, \"acRate\": \"35.5%\"}",
+    "similarQuestions": "[{\"title\": \"Split Array Largest Sum\", \"titleSlug\": \"split-array-largest-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Partition Array for Maximum Sum\", \"titleSlug\": \"partition-array-for-maximum-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Sub-arrays With Odd Sum\", \"titleSlug\": \"number-of-sub-arrays-with-odd-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Is the sum of two even numbers even or odd? How about two odd numbers? One odd number and one even number?",
+        "If there is an even number of odd numbers, the sum will be even and vice versa.",
+        "Create an integer array to store all the even numbers in nums and another array to store all the odd numbers in nums. Sort both arrays."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:19.229Z"
+}

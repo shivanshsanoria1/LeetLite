@@ -1,0 +1,42 @@
+{
+    "questionId": "3410",
+    "questionFrontendId": "3104",
+    "title": "Find Longest Self-Contained Substring",
+    "titleSlug": "find-longest-self-contained-substring",
+    "difficulty": "Hard",
+    "likes": 19,
+    "dislikes": 6,
+    "acRate": 58.41995841995842,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"5.3K\", \"totalAcceptedRaw\": 3091, \"totalSubmissionRaw\": 5291, \"acRate\": \"58.4%\"}",
+    "similarQuestions": "[{\"title\": \"Select K Disjoint Special Substrings\", \"titleSlug\": \"select-k-disjoint-special-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Fix the start index of the substring.",
+        "For some fixed index <code>start</code>, let's try to find some index <code>end</code> such that this substring satisfies the property and also <code>end</code> is as maximum as possible.",
+        "Write some recursive function <code>shrink(start, end)</code> that gives a substring. If the substring is valid, then return <code>end</code>. Otherwise, it reduces <<code>end</code> to reach some valid <code>end</code>.",
+        "For some <code>shrink(start, end)</code>, if the substring is not valid, it means there is some character that is both inside and outside of the substring. Now try to reduce <code>end</code> such that it does not contain that character anymore.",
+        "If you implement the <code>shrink(start, end)</code> function optimally, you'll achieve <code>O(n * 26 * 26)</code> by using partial sum."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:12.468Z"
+}

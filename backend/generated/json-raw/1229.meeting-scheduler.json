@@ -1,0 +1,43 @@
+{
+    "questionId": "1165",
+    "questionFrontendId": "1229",
+    "title": "Meeting Scheduler",
+    "titleSlug": "meeting-scheduler",
+    "difficulty": "Medium",
+    "likes": 959,
+    "dislikes": 39,
+    "acRate": 55.20513650920943,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"107.4K\", \"totalSubmission\": \"194.5K\", \"totalAcceptedRaw\": 107390, \"totalSubmissionRaw\": 194529, \"acRate\": \"55.2%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Two 2D Arrays by Summing Values\", \"titleSlug\": \"merge-two-2d-arrays-by-summing-values\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Reschedule Meetings for Maximum Free Time I\", \"titleSlug\": \"reschedule-meetings-for-maximum-free-time-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Assume that in the solution, the selected slot from slotsA is bigger than the respectively selected slot from slotsB.",
+        "Use two pointers in order to try all the possible intersections, and check the length.",
+        "Do the same in step N° 1 but now assume that the selected slot from slotsB is bigger, return the minimum of the two options."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:14.545Z"
+}

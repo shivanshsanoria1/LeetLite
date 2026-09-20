@@ -1,0 +1,51 @@
+{
+    "questionId": "358",
+    "questionFrontendId": "358",
+    "title": "Rearrange String k Distance Apart",
+    "titleSlug": "rearrange-string-k-distance-apart",
+    "difficulty": "Hard",
+    "likes": 1002,
+    "dislikes": 39,
+    "acRate": 40.0098483145466,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"74.8K\", \"totalSubmission\": \"186.8K\", \"totalAcceptedRaw\": 74752, \"totalSubmissionRaw\": 186834, \"acRate\": \"40.0%\"}",
+    "similarQuestions": "[{\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reorganize String\", \"titleSlug\": \"reorganize-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Construct String With Repeat Limit\", \"titleSlug\": \"construct-string-with-repeat-limit\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:29.679Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1339",
+    "questionFrontendId": "1212",
+    "title": "Team Scores in Football Tournament",
+    "titleSlug": "team-scores-in-football-tournament",
+    "difficulty": "Medium",
+    "likes": 331,
+    "dislikes": 26,
+    "acRate": 55.749372909699005,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"53.3K\", \"totalSubmission\": \"95.7K\", \"totalAcceptedRaw\": 53341, \"totalSubmissionRaw\": 95680, \"acRate\": \"55.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:53.986Z"
+}

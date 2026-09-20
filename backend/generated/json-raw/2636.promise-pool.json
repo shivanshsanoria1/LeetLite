@@ -1,0 +1,29 @@
+{
+    "questionId": "2750",
+    "questionFrontendId": "2636",
+    "title": "Promise Pool",
+    "titleSlug": "promise-pool",
+    "difficulty": "Medium",
+    "likes": 299,
+    "dislikes": 27,
+    "acRate": 79.32995553717299,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.3K\", \"totalSubmission\": \"19.3K\", \"totalAcceptedRaw\": 15344, \"totalSubmissionRaw\": 19342, \"acRate\": \"79.3%\"}",
+    "similarQuestions": "[{\"title\": \"Sleep\", \"titleSlug\": \"sleep\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Promise Time Limit\", \"titleSlug\": \"promise-time-limit\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cache With Time Limit\", \"titleSlug\": \"cache-with-time-limit\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Throttle\", \"titleSlug\": \"throttle\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Initially execute all the functions until the queue fills up.",
+        "Every time a function resolves, add a new promise to the queue if possible."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:24.862Z"
+}

@@ -1,0 +1,47 @@
+{
+    "questionId": "1949",
+    "questionFrontendId": "1804",
+    "title": "Implement Trie II (Prefix Tree)",
+    "titleSlug": "implement-trie-ii-prefix-tree",
+    "difficulty": "Medium",
+    "likes": 357,
+    "dislikes": 19,
+    "acRate": 63.47019689536994,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"28.3K\", \"totalSubmission\": \"44.6K\", \"totalAcceptedRaw\": 28335, \"totalSubmissionRaw\": 44643, \"acRate\": \"63.5%\"}",
+    "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encrypt and Decrypt Strings\", \"titleSlug\": \"encrypt-and-decrypt-strings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to solve the first version first and reuse your code.",
+        "To implement the delete function, you should delete the trie nodes of the word if they are not shared with other words.",
+        "You should keep for each trie node a counter of how many words share this node."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:16.912Z"
+}

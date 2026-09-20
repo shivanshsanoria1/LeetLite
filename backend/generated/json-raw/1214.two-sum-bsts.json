@@ -1,0 +1,59 @@
+{
+    "questionId": "1150",
+    "questionFrontendId": "1214",
+    "title": "Two Sum BSTs",
+    "titleSlug": "two-sum-bsts",
+    "difficulty": "Medium",
+    "likes": 580,
+    "dislikes": 46,
+    "acRate": 68.19707138499085,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"62.6K\", \"totalSubmission\": \"91.8K\", \"totalAcceptedRaw\": 62594, \"totalSubmissionRaw\": 91784, \"acRate\": \"68.2%\"}",
+    "similarQuestions": "[{\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can you reduce this problem to the classical Two Sum problem?",
+        "Do an in-order traversal of each tree to convert them to sorted arrays.",
+        "Solve the classical Two Sum problem."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:56.051Z"
+}

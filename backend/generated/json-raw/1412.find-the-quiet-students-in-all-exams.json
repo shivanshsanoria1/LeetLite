@@ -1,0 +1,28 @@
+{
+    "questionId": "1546",
+    "questionFrontendId": "1412",
+    "title": "Find the Quiet Students in All Exams",
+    "titleSlug": "find-the-quiet-students-in-all-exams",
+    "difficulty": "Hard",
+    "likes": 228,
+    "dislikes": 28,
+    "acRate": 57.9746229351209,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"36.3K\", \"totalSubmission\": \"62.7K\", \"totalAcceptedRaw\": 36324, \"totalSubmissionRaw\": 62655, \"acRate\": \"58.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:33:37.851Z"
+}

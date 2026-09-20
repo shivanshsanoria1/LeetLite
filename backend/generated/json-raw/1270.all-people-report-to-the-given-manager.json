@@ -1,0 +1,28 @@
+{
+    "questionId": "1405",
+    "questionFrontendId": "1270",
+    "title": "All People Report to the Given Manager",
+    "titleSlug": "all-people-report-to-the-given-manager",
+    "difficulty": "Medium",
+    "likes": 446,
+    "dislikes": 32,
+    "acRate": 83.76840039254171,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68.3K\", \"totalSubmission\": \"81.5K\", \"totalAcceptedRaw\": 68288, \"totalSubmissionRaw\": 81520, \"acRate\": \"83.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:24.925Z"
+}

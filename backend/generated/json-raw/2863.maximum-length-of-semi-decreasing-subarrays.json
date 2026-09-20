@@ -1,0 +1,47 @@
+{
+    "questionId": "3158",
+    "questionFrontendId": "2863",
+    "title": "Maximum Length of Semi-Decreasing Subarrays",
+    "titleSlug": "maximum-length-of-semi-decreasing-subarrays",
+    "difficulty": "Medium",
+    "likes": 137,
+    "dislikes": 17,
+    "acRate": 70.04373528139568,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"20.8K\", \"totalAcceptedRaw\": 14574, \"totalSubmissionRaw\": 20807, \"acRate\": \"70.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "First, solve the problem assuming <code>nums</code> contains distinct values.",
+        "Make a new array with each element being the pair <code>(nums[i], i)</code> for every <code>i</code> and call it <code>num_ind</code>.",
+        "Sort <code>num_ind</code> in decreasing order.",
+        "Iterate over <code>num_ind</code> and store a variable that represents the minimum index (i.e. min of <code>num_ind[i].second</code>) that has been iterated until now. Call it <code>min_index</code>",
+        "Now if you are currently on pair <code>(nums[x], x)</code>, then <code>ans = max(ans, min_index - x)</code>.",
+        "Now try to remove the first assumption."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:45:29.190Z"
+}

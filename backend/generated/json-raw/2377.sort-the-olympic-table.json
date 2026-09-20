@@ -1,0 +1,28 @@
+{
+    "questionId": "2516",
+    "questionFrontendId": "2377",
+    "title": "Sort the Olympic Table",
+    "titleSlug": "sort-the-olympic-table",
+    "difficulty": "Easy",
+    "likes": 40,
+    "dislikes": 4,
+    "acRate": 79.3448744059742,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"9.3K\", \"totalSubmission\": \"11.8K\", \"totalAcceptedRaw\": 9350, \"totalSubmissionRaw\": 11784, \"acRate\": \"79.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:52.413Z"
+}

@@ -1,0 +1,42 @@
+{
+    "questionId": "277",
+    "questionFrontendId": "277",
+    "title": "Find the Celebrity",
+    "titleSlug": "find-the-celebrity",
+    "difficulty": "Medium",
+    "likes": 3017,
+    "dislikes": 322,
+    "acRate": 49.0794205296289,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"329.9K\", \"totalSubmission\": \"672.1K\", \"totalAcceptedRaw\": 329878, \"totalSubmissionRaw\": 672131, \"acRate\": \"49.1%\"}",
+    "similarQuestions": "[{\"title\": \"Find the Town Judge\", \"titleSlug\": \"find-the-town-judge\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "The best hint for this problem can be provided by the following figure:\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_find_celebrity.png\" width=\"700\"/>",
+        "Well, if you understood the gist of the above idea, you can extend it to find a candidate that can possibly be a celebrity. Why do we say a \"candidate\"? That is for you to think. This is clearly a greedy approach to find the answer. However, there is some information that would still remain to be verified without which we can't obtain an answer with certainty. To get that stake in the ground, we would need some more calls to the knows API."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:21.438Z"
+}

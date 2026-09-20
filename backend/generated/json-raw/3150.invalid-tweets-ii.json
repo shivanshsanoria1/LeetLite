@@ -1,0 +1,28 @@
+{
+    "questionId": "3457",
+    "questionFrontendId": "3150",
+    "title": "Invalid Tweets II",
+    "titleSlug": "invalid-tweets-ii",
+    "difficulty": "Easy",
+    "likes": 18,
+    "dislikes": 3,
+    "acRate": 85.08254716981132,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"5.1K\", \"totalAcceptedRaw\": 4329, \"totalSubmissionRaw\": 5088, \"acRate\": \"85.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:56:50.898Z"
+}

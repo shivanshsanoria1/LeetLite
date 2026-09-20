@@ -1,0 +1,145 @@
+{
+    "questionId": "3470",
+    "questionFrontendId": "3225",
+    "title": "Maximum Score From Grid Operations",
+    "titleSlug": "maximum-score-from-grid-operations",
+    "difficulty": "Hard",
+    "likes": 203,
+    "dislikes": 24,
+    "acRate": 63.47958057395143,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"50.6K\", \"totalSubmission\": \"79.7K\", \"totalAcceptedRaw\": 50611, \"totalSubmissionRaw\": 79728, \"acRate\": \"63.5%\"}",
+    "similarQuestions": "[{\"title\": \"Maximum Difference Score in a Grid\", \"titleSlug\": \"maximum-difference-score-in-a-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>You are given a 2D matrix <code>grid</code> of size <code>n x n</code>. Initially, all cells of the grid are colored white. In one operation, you can select any cell of indices <code>(i, j)</code>, and color black all the cells of the <code>j<sup>th</sup></code> column starting from the top row down to the <code>i<sup>th</sup></code> row.</p>\n\n<p>The grid score is the sum of all <code>grid[i][j]</code> such that cell <code>(i, j)</code> is white and it has a horizontally adjacent black cell.</p>\n\n<p>Return the <strong>maximum</strong> score that can be achieved after some number of operations.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[0,0,0,0,0],[0,0,3,0,0],[0,1,0,0,0],[5,0,0,3,0],[0,0,0,0,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">11</span></p>\n\n<p><strong>Explanation:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/05/11/one.png\" style=\"width: 300px; height: 200px;\" />\n<p>In the first operation, we color all cells in column 1 down to row 3, and in the second operation, we color all cells in column 4 down to the last row. The score of the resulting grid is <code>grid[3][0] + grid[1][2] + grid[3][3]</code> which is equal to 11.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[10,9,0,0,15],[7,1,0,8,0],[5,20,0,11,0],[0,0,0,1,2],[8,12,1,10,3]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">94</span></p>\n\n<p><strong>Explanation:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/05/11/two-1.png\" style=\"width: 300px; height: 200px;\" />\n<p>We perform operations on 1, 2, and 3 down to rows 1, 4, and 0, respectively. The score of the resulting grid is <code>grid[0][0] + grid[1][0] + grid[2][1] + grid[4][1] + grid[1][3] + grid[2][3] + grid[3][3] + grid[4][3] + grid[0][4]</code> which is equal to 94.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;=&nbsp;n == grid.length &lt;= 100</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>0 &lt;= grid[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Use dynamic programming.",
+        "Solve the problem in O(N^4) using a 3-states dp.",
+        "Let <code>dp[i][lastHeight][beforeLastHeight]</code> denote the maximum score if the grid was limited to column <code>i</code>, and the height of column <code>i - 1</code> is <code>lastHeight</code> and the height of column <code>i - 2</code> is <code>beforeLastHeight</code>.",
+        "The third state, <code>beforeLastHeight</code>, is used to determine which values of column <code>i - 1</code> will be added to the score.  We can replace this state with another state that only takes two values 0 or 1.",
+        "Let <code>dp[i][lastHeight][isBigger]</code> denote the maximum score if the grid was limited to column <code>i</code>, and where the height of column <code>i - 1</code> is <code>lastHeight</code>. Additionally, if <code>isBigger == 1</code>, the number of black cells in column <code>i</code> is assumed to be larger than the number of black cells in column <code>i - 2</code>, and vice versa. Note that if our assumption is wrong, it would lead to a suboptimal score and, therefore, it would not be considered as the final answer."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Dynamic Programming\n\n#### Intuition\n\nUnless otherwise specified, all matrix indices start from $1$. That is, given a square matrix of dimension $n$, the top-left element has index $(1, 1)$ and is located in the first row and first column, while the bottom-right element has index $(n, n)$ and is located in the $n$-th row and $n$-th column.\n\nStart with a dynamic programming approach of $O(n^4)$\n\nFrom the problem statement, we can observe that after any number of operations, each column must end up with black cells on top and white cells on the bottom. Formally, each column can be viewed as an array of length $n$, where the first $i$ elements are black and the remaining $n - i$ elements are white, for some $0 \\le i \\le n$.\n\nSince the state of each column can be described by a boundary index, and the score of each column depends only on its adjacent columns, dynamic programming is a natural approach for this problem.\n\nWe first compute prefix sums for each column as a preprocessing step. Let $S_{i,j}$ denote the sum of the first $j$ elements in the $i$-th column, where $0 \\le j \\le n$. We define the state $\\textit{dp}[i][h_\\textit{curr}][h_\\textit{prev}]$ as the maximum score obtained after processing up to the $i$-th column, where the first $h_\\textit{curr}$ elements of column $i$ are black, and the first $h_\\textit{prev}$ elements of column $i-1$ are black.\n\nThe state transition can be derived as follows:\n\n- The state $\\textit{dp}[i]$ captures the coloring of columns $i$ and $i-1$. This corresponds to fixing $h_\\textit{curr}$ in $\\textit{dp}[i-1]$. Therefore, we enumerate $h_\\textit{prev}$ from $\\textit{dp}[i-1]$, which implicitly enumerates the coloring of column $i-2$. In this way, we effectively consider three consecutive columns and can compute the resulting score.\n\n- When $h_\\textit{curr} \\le h_\\textit{prev}$, the current column has fewer black cells than the previous column. In this case, the additional score contributed by the current column must be included, corresponding to the blue region in the figure.\n\n    ![situation-1](../Figures/3225/1.png)\n\n- When $h_\\textit{curr} > h_\\textit{prev}$, the current column has more black cells than the previous column. Let the previous state's parameter be $k$. We consider three cases:\n  - Case 1: When $k < h_\\textit{prev}$, we add the score of the newly covered region introduced by $h_\\textit{curr}$.\n\n    ![situation-2_1](../Figures/3225/2.png)\n\n  - Case 2: When $h_\\textit{prev} \\le k < h_\\textit{curr}$, we add only the newly covered region and avoid double counting the already covered part.\n\n    ![situation-2_2](../Figures/3225/3.png)\n\n  - Case 3: When $k \\ge h_\\textit{curr}$, no new contribution is added, and we directly inherit the previous state.\n\n    ![situation-2_3](../Figures/3225/4.png)\n\nThe resulting transition is:\n\n$$\n\\textit{dp}[i][h_\\textit{curr}][h_\\textit{prev}] =\n\\begin{cases}\n\\max\\limits_{0 \\le k \\le n} \\{ \\textit{dp}[i-1][h_\\textit{prev}][k] \\} + S_{i, h_\\textit{prev}} - S_{i, h_\\textit{curr}}, & h_\\textit{curr} \\le h_\\textit{prev} \\\\\n\\max\\limits_{0 \\le k \\le n} \\{ \\textit{dp}[i-1][h_\\textit{prev}][k] + \\max(0, S_{i-1, h_\\textit{curr}} - S_{i-1, \\max(h_\\textit{prev}, k)}) \\}, & h_\\textit{curr} \\gt h_\\textit{prev}\n\\end{cases}\n$$\n\nAdditionally, we need to handle edge case for the first and last columns:\n\n- For the first column, since column $0$ does not exist, $h_\\textit{prev}$ must be fixed to $0$. Therefore, $k$ can only take the value $0$.\n- For the last column, the optimal configuration must be either fully black or fully white. This is because changing the last column does not affect any future columns, so only extreme configurations can maximize the score.\n\n**Optimizing the $h_\\textit{prev}$ state**\n\nThe above approach has a time complexity of $O(n^4)$, which is too slow. The bottleneck is the enumeration of $k$. We aim to eliminate this by preprocessing useful maximum values.\n\nWhen $h_\\textit{curr} \\le h_\\textit{prev}$, the transition does not depend on $k$ except through:\n\n$$\n\\max\\limits_{0 \\le k \\le n} { \\textit{dp}[i-1][h_\\textit{prev}][k] }\n$$\n\nThis allows us to compute the transition in $O(1)$ time if we precompute this maximum.\n\nFor the case $h_\\textit{curr} > h_\\textit{prev}$, we analyze based on whether $k \\le h_\\textit{curr}$:\n\n* When $k \\le h_\\textit{curr}$, we always add a fixed extra score. To avoid double counting, we maintain a prefix maximum that excludes contributions from column $i-1$:\n\n$$\n\\textit{prevMax}[h_\\textit{prev}][j] = \\max\\limits_{0 \\le k \\le j} \\left( \\textit{dp}[i-1][h_\\textit{prev}][k] - \\max(0, S_{i-1, k} - S_{i-1, h_\\textit{prev}}) \\right)\n$$\n\nNow the transition becomes independent of $k$, and we can update in $O(1)$ time.\n\n* When $k > h_\\textit{curr}$, no additional score is added. We only need the suffix maximum:\n\n$$\n\\textit{prevSuffixMax}[h_\\textit{prev}][j] = \\max\\limits_{j \\le k \\le n} { \\textit{dp}[i-1][h_\\textit{prev}][k] }\n$$\n\nThe optimized transition becomes:\n\n$$\n\\textit{dp}[i][h_\\textit{curr}][h_\\textit{prev}] =\n\\begin{cases}\n\\textit{prevSuffixMax}[h_\\textit{prev}][0] + S_{i, h_\\textit{prev}} - S_{i, h_\\textit{curr}}, & h_\\textit{curr} \\le h_\\textit{prev} \\\n\\max\\left(\n\\textit{prevSuffixMax}[h_\\textit{prev}][h_\\textit{curr}],\n\\textit{prevMax}[h_\\textit{prev}][h_\\textit{curr}] + S_{i-1, h_\\textit{curr}} - S_{i-1, h_\\textit{prev}}\n\\right), & h_\\textit{curr} > h_\\textit{prev}\n\\end{cases}\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/fN2CjRfZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"fN2CjRfZ\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the dimension of the square matrix $\\textit{grid}$.\n\n- Time complexity: $O(n^3)$.\n  \n  Computing prefix sums takes $O(n^2)$. Each DP transition, along with prefix and suffix maximum computations, takes $O(n^2)$ per column. Over all columns, this results in $O(n^3)$.\n\n- Space complexity: $O(n^3)$.\n  \n  The DP table requires $O(n^3)$ space. Additional arrays for prefix sums and auxiliary maximums require $O(n^2)$. Using a rolling array can reduce space to $O(n^2)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumScore(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public long maximumScore(int[][] grid) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maximumScore(self, grid: List[List[int]]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maximumScore(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maximumScore = function(grid) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maximumScore(grid: number[][]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public long MaximumScore(int[][] grid) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "long long maximumScore(int** grid, int gridSize, int* gridColSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maximumScore(grid [][]int) int64 {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maximumScore(grid: Array<IntArray>): Long {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maximumScore(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn maximum_score(grid: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef maximum_score(grid)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function maximumScore($grid) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maximumScore(List<List<int>> grid) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maximumScore(grid: Array[Array[Int]]): Long = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec maximum_score(grid :: [[integer]]) :: integer\n  def maximum_score(grid) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec maximum_score(Grid :: [[integer()]]) -> integer().\nmaximum_score(Grid) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (maximum-score grid)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:47.861Z"
+}

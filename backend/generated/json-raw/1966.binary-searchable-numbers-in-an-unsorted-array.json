@@ -1,0 +1,44 @@
+{
+    "questionId": "2111",
+    "questionFrontendId": "1966",
+    "title": "Binary Searchable Numbers in an Unsorted Array",
+    "titleSlug": "binary-searchable-numbers-in-an-unsorted-array",
+    "difficulty": "Medium",
+    "likes": 82,
+    "dislikes": 13,
+    "acRate": 63.543191800878475,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"6.8K\", \"totalAcceptedRaw\": 4340, \"totalSubmissionRaw\": 6830, \"acRate\": \"63.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "The target will not be found if it is removed from the sequence. When does this occur?",
+        "If a pivot is to the left of and is greater than the target, then the target will be removed. The same occurs when the pivot is to the right of and is less than the target.",
+        "Since any element can be chosen as the pivot, for any target NOT to be removed, the condition described in the previous hint must never occur."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:21.275Z"
+}

@@ -1,0 +1,39 @@
+{
+    "questionId": "359",
+    "questionFrontendId": "359",
+    "title": "Logger Rate Limiter",
+    "titleSlug": "logger-rate-limiter",
+    "difficulty": "Easy",
+    "likes": 1813,
+    "dislikes": 198,
+    "acRate": 76.8893086080586,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"403K\", \"totalSubmission\": \"524.2K\", \"totalAcceptedRaw\": 403022, \"totalSubmissionRaw\": 524159, \"acRate\": \"76.9%\"}",
+    "similarQuestions": "[{\"title\": \"Design Hit Counter\", \"titleSlug\": \"design-hit-counter\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:30.425Z"
+}

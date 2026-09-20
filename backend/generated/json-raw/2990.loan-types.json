@@ -1,0 +1,28 @@
+{
+    "questionId": "3287",
+    "questionFrontendId": "2990",
+    "title": "Loan Types",
+    "titleSlug": "loan-types",
+    "difficulty": "Easy",
+    "likes": 19,
+    "dislikes": 8,
+    "acRate": 64.32121625572556,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.6K\", \"totalSubmission\": \"10.3K\", \"totalAcceptedRaw\": 6600, \"totalSubmissionRaw\": 10261, \"acRate\": \"64.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:15.887Z"
+}

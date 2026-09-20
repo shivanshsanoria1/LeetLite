@@ -1,0 +1,35 @@
+{
+    "questionId": "578",
+    "questionFrontendId": "578",
+    "title": "Get Highest Answer Rate Question",
+    "titleSlug": "get-highest-answer-rate-question",
+    "difficulty": "Medium",
+    "likes": 137,
+    "dislikes": 921,
+    "acRate": 39.93762487759873,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"70.6K\", \"totalSubmission\": \"176.7K\", \"totalAcceptedRaw\": 70558, \"totalSubmissionRaw\": 176671, \"acRate\": \"39.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Try to find all question ids by group",
+        "Try to find each group answer number and show number.",
+        "Rank all the rates (answer/(answer+show)) and return the max one"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:48.304Z"
+}

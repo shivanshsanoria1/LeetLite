@@ -1,0 +1,44 @@
+{
+    "questionId": "3718",
+    "questionFrontendId": "3383",
+    "title": "Minimum Runes to Add to Cast Spell",
+    "titleSlug": "minimum-runes-to-add-to-cast-spell",
+    "difficulty": "Hard",
+    "likes": 9,
+    "dislikes": 2,
+    "acRate": 45.08320726172466,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"894\", \"totalSubmission\": \"2K\", \"totalAcceptedRaw\": 894, \"totalSubmissionRaw\": 1983, \"acRate\": \"45.1%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Number of Days to Disconnect Island\", \"titleSlug\": \"minimum-number-of-days-to-disconnect-island\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Edge Weight Equilibrium Queries in a Tree\", \"titleSlug\": \"minimum-edge-weight-equilibrium-queries-in-a-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:53.327Z"
+}

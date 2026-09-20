@@ -1,0 +1,39 @@
+{
+    "questionId": "1164",
+    "questionFrontendId": "1228",
+    "title": "Missing Number In Arithmetic Progression",
+    "titleSlug": "missing-number-in-arithmetic-progression",
+    "difficulty": "Easy",
+    "likes": 332,
+    "dislikes": 45,
+    "acRate": 52.214961224129354,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"32.5K\", \"totalSubmission\": \"62.3K\", \"totalAcceptedRaw\": 32520, \"totalSubmissionRaw\": 62281, \"acRate\": \"52.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Assume the sequence is increasing, what if we find the largest consecutive difference?",
+        "Is the missing element in the middle of the segment with the largest consecutive difference?",
+        "For decreasing sequences, just reverse the array and do a similar process."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:13.550Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "3488",
+    "questionFrontendId": "3182",
+    "title": "Find Top Scoring Students",
+    "titleSlug": "find-top-scoring-students",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 3,
+    "acRate": 50.0458435207824,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.3K\", \"totalSubmission\": \"6.5K\", \"totalAcceptedRaw\": 3275, \"totalSubmissionRaw\": 6544, \"acRate\": \"50.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:15.772Z"
+}

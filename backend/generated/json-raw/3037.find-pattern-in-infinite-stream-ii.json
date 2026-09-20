@@ -1,0 +1,50 @@
+{
+    "questionId": "3352",
+    "questionFrontendId": "3037",
+    "title": "Find Pattern in Infinite Stream II",
+    "titleSlug": "find-pattern-in-infinite-stream-ii",
+    "difficulty": "Hard",
+    "likes": 7,
+    "dislikes": 3,
+    "acRate": 67.82291191236878,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.5K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 1486, \"totalSubmissionRaw\": 2191, \"acRate\": \"67.8%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Integers With Popcount-Depth Equal to K I\", \"titleSlug\": \"number-of-integers-with-popcount-depth-equal-to-k-i\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use the KMP algorithm."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Rolling Hash",
+            "slug": "rolling-hash"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:57.458Z"
+}

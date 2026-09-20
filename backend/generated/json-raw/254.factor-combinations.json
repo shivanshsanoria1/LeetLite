@@ -1,0 +1,35 @@
+{
+    "questionId": "254",
+    "questionFrontendId": "254",
+    "title": "Factor Combinations",
+    "titleSlug": "factor-combinations",
+    "difficulty": "Medium",
+    "likes": 1181,
+    "dislikes": 76,
+    "acRate": 50.59313585872971,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"142.1K\", \"totalSubmission\": \"280.9K\", \"totalAcceptedRaw\": 142106, \"totalSubmissionRaw\": 280880, \"acRate\": \"50.6%\"}",
+    "similarQuestions": "[{\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Prime Factorization",
+            "slug": "prime-factorization"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:59.107Z"
+}

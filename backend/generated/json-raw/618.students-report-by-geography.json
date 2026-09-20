@@ -1,0 +1,31 @@
+{
+    "questionId": "618",
+    "questionFrontendId": "618",
+    "title": "Students Report By Geography",
+    "titleSlug": "students-report-by-geography",
+    "difficulty": "Hard",
+    "likes": 193,
+    "dislikes": 170,
+    "acRate": 63.54861243411444,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"30K\", \"totalSubmission\": \"47.2K\", \"totalAcceptedRaw\": 30021, \"totalSubmissionRaw\": 47241, \"acRate\": \"63.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:35.433Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "4029",
+    "questionFrontendId": "3667",
+    "title": "Sort Array By Absolute Value",
+    "titleSlug": "sort-array-by-absolute-value",
+    "difficulty": "Easy",
+    "likes": 9,
+    "dislikes": 1,
+    "acRate": 86.73514962036623,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.9K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 1942, \"totalSubmissionRaw\": 2239, \"acRate\": \"86.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Sort the values in <code>nums</code> by their absolute values."
+    ],
+    "exampleTestcases": "[3,-1,-4,1,5]\n[-100,100]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:09:29.425Z"
+}

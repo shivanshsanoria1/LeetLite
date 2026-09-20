@@ -1,0 +1,42 @@
+{
+    "questionId": "2029",
+    "questionFrontendId": "1874",
+    "title": "Minimize Product Sum of Two Arrays",
+    "titleSlug": "minimize-product-sum-of-two-arrays",
+    "difficulty": "Medium",
+    "likes": 257,
+    "dislikes": 28,
+    "acRate": 89.7186825429984,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"25.8K\", \"totalSubmission\": \"28.7K\", \"totalAcceptedRaw\": 25769, \"totalSubmissionRaw\": 28722, \"acRate\": \"89.7%\"}",
+    "similarQuestions": "[{\"title\": \"Choose Numbers From Two Arrays in Range\", \"titleSlug\": \"choose-numbers-from-two-arrays-in-range\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Is there a particular way we should order the arrays such that the product sum is minimized?",
+        "Would you want to multiply two numbers that are closer to one another or further?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:55:30.739Z"
+}

@@ -1,0 +1,134 @@
+{
+    "questionId": "2199",
+    "questionFrontendId": "2078",
+    "title": "Two Furthest Houses With Different Colors",
+    "titleSlug": "two-furthest-houses-with-different-colors",
+    "difficulty": "Easy",
+    "likes": 1338,
+    "dislikes": 44,
+    "acRate": 71.66525117171525,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"227.8K\", \"totalSubmission\": \"317.9K\", \"totalAcceptedRaw\": 227828, \"totalSubmissionRaw\": 317904, \"acRate\": \"71.7%\"}",
+    "similarQuestions": "[{\"title\": \"Replace Elements with Greatest Element on Right Side\", \"titleSlug\": \"replace-elements-with-greatest-element-on-right-side\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Maximum Distance Between a Pair of Values\", \"titleSlug\": \"maximum-distance-between-a-pair-of-values\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Difference Between Increasing Elements\", \"titleSlug\": \"maximum-difference-between-increasing-elements\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": "<p>There are <code>n</code> houses evenly lined up on the street, and each house is beautifully painted. You are given a <strong>0-indexed</strong> integer array <code>colors</code> of length <code>n</code>, where <code>colors[i]</code> represents the color of the <code>i<sup>th</sup></code> house.</p>\n\n<p>Return <em>the <strong>maximum</strong> distance between <strong>two</strong> houses with <strong>different</strong> colors</em>.</p>\n\n<p>The distance between the <code>i<sup>th</sup></code> and <code>j<sup>th</sup></code> houses is <code>abs(i - j)</code>, where <code>abs(x)</code> is the <strong>absolute value</strong> of <code>x</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/10/31/eg1.png\" style=\"width: 610px; height: 84px;\" />\n<pre>\n<strong>Input:</strong> colors = [<u><strong>1</strong></u>,1,1,<strong><u>6</u></strong>,1,1,1]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> In the above image, color 1 is blue, and color 6 is red.\nThe furthest two houses with different colors are house 0 and house 3.\nHouse 0 has color 1, and house 3 has color 6. The distance between them is abs(0 - 3) = 3.\nNote that houses 3 and 6 can also produce the optimal answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/10/31/eg2.png\" style=\"width: 426px; height: 84px;\" />\n<pre>\n<strong>Input:</strong> colors = [<u><strong>1</strong></u>,8,3,8,<u><strong>3</strong></u>]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> In the above image, color 1 is blue, color 8 is yellow, and color 3 is green.\nThe furthest two houses with different colors are house 0 and house 4.\nHouse 0 has color 1, and house 4 has color 3. The distance between them is abs(0 - 4) = 4.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> colors = [<u><strong>0</strong></u>,<strong><u>1</u></strong>]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The furthest two houses with different colors are house 0 and house 1.\nHouse 0 has color 0, and house 1 has color 1. The distance between them is abs(0 - 1) = 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n ==&nbsp;colors.length</code></li>\n\t<li><code>2 &lt;= n &lt;= 100</code></li>\n\t<li><code>0 &lt;= colors[i] &lt;= 100</code></li>\n\t<li>Test data are generated such that <strong>at least</strong> two houses have different colors.</li>\n</ul>\n",
+    "hints": [
+        "The constraints are small. Can you try the combination of every two houses?",
+        "Greedily, the maximum distance will come from either the pair of the leftmost house and possibly some house on the right with a different color, or the pair of the rightmost house and possibly some house on the left with a different color."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe can compute the maximum distance between two houses with different colors by enumerating all possible pairs of houses.\n\nSpecifically, we first iterate over houses with smaller indices, and for each such house, we iterate over the houses to its right. For each pair, we compare their colors. If the colors are different, we compute the distance between them and update the maximum distance accordingly. Otherwise, we skip the pair. After considering all pairs, we return the maximum distance found.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/D6ctEKjo/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"D6ctEKjo\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{colors}$.\n\n- Time complexity: $O(n^2)$.\n  \n  We enumerate all pairs of houses and update the maximum distance when their colors differ.\n\n- Space complexity: $O(1)$.\n\n---\n\n### Approach 2: Greedy\n\n#### Intuition\n\nThe brute-force approach checks every pair, but the optimal pair always has one endpoint at house 0 or house $n-1$. Suppose the best pair is $(i, j)$ with $i > 0$ and $j < n-1$ and $\\textit{colors}[i] \\ne \\textit{colors}[j]$.\n\n- If $\\textit{colors}[0] \\ne \\textit{colors}[j]$, then pair $(0, j)$ is valid and has distance $j > j - i$, which contradicts the optimality of $(i, j)$.\n- So $\\textit{colors}[0] = \\textit{colors}[j] \\ne \\textit{colors}[i]$.\n- If $\\textit{colors}[i] \\ne \\textit{colors}[n-1]$, then pair $(i, n-1)$ is valid with distance $n-1-i > j-i$, another contradiction.\n- So $\\textit{colors}[i] = \\textit{colors}[n-1]$, which means $\\textit{colors}[0] \\ne \\textit{colors}[n-1]$ and pair $(0, n-1)$ is valid with distance $n-1 > j-i$, a final contradiction.\n\nIn every case the assumption fails, so the optimal pair must touch index 0 or index $n-1$.\n\nGiven this, a single left-to-right pass suffices. For each index $i$ where $\\textit{colors}[i] \\ne \\textit{colors}[n-1]$, pair $(i, n-1)$ is valid with distance $n-1-i$. At the same time, when $\\textit{colors}[0] = \\textit{colors}[n-1]$, the condition $\\textit{colors}[i] \\ne \\textit{colors}[n-1]$ also implies $\\textit{colors}[i] \\ne \\textit{colors}[0]$, so pair $(0, i)$ is valid with distance $i$. When $\\textit{colors}[0] \\ne \\textit{colors}[n-1]$, pair $(0, n-1)$ is already captured at $i = 0$ as a candidate distance of $n-1$. Either way, taking $\\max(\\textit{ans}, i, n-1-i)$ whenever $\\textit{colors}[i] \\ne \\textit{colors}[n-1]$ is safe and correct.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Dz2xgcSV/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"Dz2xgcSV\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{colors}$.\n\n- Time complexity: $O(n)$.\n\n  We make a single pass over the array, performing constant work per element.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDistance(vector<int>& colors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxDistance(int[] colors) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxDistance(self, colors: List[int]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxDistance(self, colors):\n        \"\"\"\n        :type colors: List[int]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} colors\n * @return {number}\n */\nvar maxDistance = function(colors) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxDistance(colors: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MaxDistance(int[] colors) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int maxDistance(int* colors, int colorsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxDistance(colors []int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxDistance(colors: IntArray): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxDistance(_ colors: [Int]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_distance(colors: Vec<i32>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} colors\n# @return {Integer}\ndef max_distance(colors)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $colors\n     * @return Integer\n     */\n    function maxDistance($colors) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxDistance(List<int> colors) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxDistance(colors: Array[Int]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_distance(colors :: [integer]) :: integer\n  def max_distance(colors) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_distance(Colors :: [integer()]) -> integer().\nmax_distance(Colors) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-distance colors)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:03.474Z"
+}

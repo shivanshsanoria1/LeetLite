@@ -1,0 +1,31 @@
+{
+    "questionId": "1215",
+    "questionFrontendId": "1113",
+    "title": "Reported Posts",
+    "titleSlug": "reported-posts",
+    "difficulty": "Easy",
+    "likes": 120,
+    "dislikes": 420,
+    "acRate": 64.7897455248697,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"54.9K\", \"totalSubmission\": \"84.8K\", \"totalAcceptedRaw\": 54943, \"totalSubmissionRaw\": 84802, \"acRate\": \"64.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n# Solution\n\n---\n\n\n\n## pandas\n\n\n### Approach 1: Using groupby()\n\n\n#### Algorithm\n\n\n1. We first filter the `actions` table to include only actions that occurred on July 4, 2019.\n\n2. Next, we narrow down the data to only include 'report' actions using another filter.\n\n3. We then use the Pandas groupby function to group the filtered data by the 'extra' column, which contains the report reasons. For each group, we count the number of unique 'post_id's, representing the number of posts reported for that reason.\n\n4. Finally, we rename the columns in the result to make it more descriptive and return the result as a Pandas DataFrame.\n\n\n#### Code \n\n```python\n\nimport pandas as pd\n\ndef reported_posts(actions: pd.DataFrame) -> pd.DataFrame:\n    # Filter the 'actions' table to include only actions on the specified date (July 4, 2019).\n    actions = actions[actions['action_date'] == '2019-07-04']\n    \n    # Filter further to include only 'report' actions.\n    actions = actions[actions['action'] == 'report']\n\n    # Group the filtered data by the 'extra' column (report reasons) and count the unique 'post_id's.\n    report_counts = actions.groupby('extra')['post_id'].nunique().reset_index()\n    \n    # Rename the columns for clarity.\n    report_counts = report_counts.rename(columns={\n        'extra': 'report_reason',\n        'post_id': 'report_count'\n    })\n\n    return report_counts\n\n\n```\n\n<br>\n\n## Database\n\n\n### Approach 1: Use GROUP BY Clause\n\n\n#### Algorithm\n\n1. Initialize Query: Start an SQL query.\n\n2. Select Columns: Choose extra as report_reason and count distinct post_id as report_count.\n\n3. Filter Data: Include rows with action_date as '2019-07-04' and action as 'report'.\n\n4. Group Data: Group results by report_reason.\n\n5. Execute Query: Execute the query and retrieve the report counts by reason.\n\n\n#### Code\n\n```sql\n\nSELECT\n    extra AS report_reason,\n    COUNT(DISTINCT post_id) AS report_count\nFROM Actions\nWHERE action_date = '2019-07-04' AND \n      action = 'report'\nGROUP BY report_reason;\n```\n\n\n<br>"
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:21:28.590Z"
+}

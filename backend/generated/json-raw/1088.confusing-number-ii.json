@@ -1,0 +1,35 @@
+{
+    "questionId": "1077",
+    "questionFrontendId": "1088",
+    "title": "Confusing Number II",
+    "titleSlug": "confusing-number-ii",
+    "difficulty": "Hard",
+    "likes": 497,
+    "dislikes": 144,
+    "acRate": 47.14620425542037,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"39.6K\", \"totalSubmission\": \"84.1K\", \"totalAcceptedRaw\": 39641, \"totalSubmissionRaw\": 84081, \"acRate\": \"47.1%\"}",
+    "similarQuestions": "[{\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Which set of digits have the valid numbers?",
+        "Only 0, 1, 6, 8, 9 are the valid set of digits, do a backtracking to generate all the numbers containing this digits and check they are valid."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:45.850Z"
+}

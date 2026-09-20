@@ -1,0 +1,26 @@
+{
+    "questionId": "2912",
+    "questionFrontendId": "2823",
+    "title": "Deep Object Filter",
+    "titleSlug": "deep-object-filter",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 3,
+    "acRate": 58.1021897810219,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"796\", \"totalSubmission\": \"1.4K\", \"totalAcceptedRaw\": 796, \"totalSubmissionRaw\": 1370, \"acRate\": \"58.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:44:55.980Z"
+}

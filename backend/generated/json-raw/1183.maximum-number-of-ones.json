@@ -1,0 +1,45 @@
+{
+    "questionId": "1152",
+    "questionFrontendId": "1183",
+    "title": "Maximum Number of Ones",
+    "titleSlug": "maximum-number-of-ones",
+    "difficulty": "Hard",
+    "likes": 175,
+    "dislikes": 36,
+    "acRate": 70.08160368990598,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7.9K\", \"totalSubmission\": \"11.3K\", \"totalAcceptedRaw\": 7901, \"totalSubmissionRaw\": 11274, \"acRate\": \"70.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of a greedy mathematical solution.",
+        "Say you choose to set some cell (i, j) to 1, all cells (x, y) such that i % sideLength == x % sideLength and j % sideLength == y % sideLength can also be set to 1 without increasing the max number of ones in a sub-matrix.",
+        "In one move, choose to set all the cells with some modulus (i % sideLength, j % sideLength) to 1.",
+        "Choose the cells with max frequency."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:20.865Z"
+}

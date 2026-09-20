@@ -1,0 +1,45 @@
+{
+    "questionId": "751",
+    "questionFrontendId": "750",
+    "title": "Number Of Corner Rectangles",
+    "titleSlug": "number-of-corner-rectangles",
+    "difficulty": "Medium",
+    "likes": 633,
+    "dislikes": 92,
+    "acRate": 67.79558816139892,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"40.5K\", \"totalSubmission\": \"59.7K\", \"totalAcceptedRaw\": 40476, \"totalSubmissionRaw\": 59703, \"acRate\": \"67.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "For each pair of 1s in the new row (say at `new_row[i]` and `new_row[j]`), we could create more rectangles where that pair forms the base.  The number of new rectangles is the number of times some previous row had `row[i] = row[j] = 1`."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:09.171Z"
+}

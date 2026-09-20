@@ -1,0 +1,35 @@
+{
+    "questionId": "3780",
+    "questionFrontendId": "3437",
+    "title": "Permutations III",
+    "titleSlug": "permutations-iii",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 2,
+    "acRate": 85.77344701583435,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.5K\", \"totalSubmission\": \"4.1K\", \"totalAcceptedRaw\": 3521, \"totalSubmissionRaw\": 4105, \"acRate\": \"85.8%\"}",
+    "similarQuestions": "[{\"title\": \"Permutations IV\", \"titleSlug\": \"permutations-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use backtracking to generate permutations of the first <code>n</code> positive integers while ensuring that each added number alternates between odd and even."
+    ],
+    "exampleTestcases": "4\n2\n3",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:51:44.326Z"
+}

@@ -1,0 +1,51 @@
+{
+    "questionId": "3735",
+    "questionFrontendId": "3391",
+    "title": "Design a 3D Binary Matrix with Efficient Layer Tracking",
+    "titleSlug": "design-a-3d-binary-matrix-with-efficient-layer-tracking",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 1,
+    "acRate": 66.40502354788069,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.3K\", \"totalSubmission\": \"1.9K\", \"totalAcceptedRaw\": 1269, \"totalSubmissionRaw\": 1911, \"acRate\": \"66.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Keep track of the number of 1’s on each matrix.",
+        "Use a data structure that allows to efficiently insert, delete or get the biggest pair on a list of pairs."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:59.885Z"
+}

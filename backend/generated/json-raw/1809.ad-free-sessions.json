@@ -1,0 +1,28 @@
+{
+    "questionId": "1958",
+    "questionFrontendId": "1809",
+    "title": "Ad-Free Sessions",
+    "titleSlug": "ad-free-sessions",
+    "difficulty": "Easy",
+    "likes": 99,
+    "dislikes": 61,
+    "acRate": 59.10332873049916,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.1K\", \"totalSubmission\": \"34K\", \"totalAcceptedRaw\": 20117, \"totalSubmissionRaw\": 34037, \"acRate\": \"59.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:21.301Z"
+}

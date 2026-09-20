@@ -1,0 +1,53 @@
+{
+    "questionId": "3173",
+    "questionFrontendId": "2868",
+    "title": "The Wording Game",
+    "titleSlug": "the-wording-game",
+    "difficulty": "Hard",
+    "likes": 10,
+    "dislikes": 6,
+    "acRate": 54.05750798722045,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"846\", \"totalSubmission\": \"1.6K\", \"totalAcceptedRaw\": 846, \"totalSubmissionRaw\": 1565, \"acRate\": \"54.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "If both Alice and Bob for each letter of the alphabet have at least one word beginning with that letter, then the winner is the player who has the lexicographically greatest word.",
+        "What happens if both have words that begin with the first <code>x</code> letters of the alphabet, but only one of them has a word beginning with the <code>x + 1<sup>th</sup></code> letter?",
+        "Suppose Alice has a word beginning with the <code>x + 1<sup>th</sup></code> letter. Note that if Alice has the lexicographically greatest word beginning with one of the first <code>x</code> letters, then she is the winner. But if Bob has such a word, then the game continues.",
+        "Now, we can conclude the winner is determined by the first letter which a player doesn’t have a word beginning with, and the other player has the lexicographically greatest word among all the words beginning with the letters before that letter."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:45:33.193Z"
+}

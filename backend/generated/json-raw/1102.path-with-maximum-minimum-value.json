@@ -1,0 +1,65 @@
+{
+    "questionId": "1099",
+    "questionFrontendId": "1102",
+    "title": "Path With Maximum Minimum Value",
+    "titleSlug": "path-with-maximum-minimum-value",
+    "difficulty": "Medium",
+    "likes": 1359,
+    "dislikes": 126,
+    "acRate": 54.76503682563748,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"73.7K\", \"totalSubmission\": \"134.6K\", \"totalAcceptedRaw\": 73688, \"totalSubmissionRaw\": 134553, \"acRate\": \"54.8%\"}",
+    "similarQuestions": "[{\"title\": \"Path With Minimum Effort\", \"titleSlug\": \"path-with-minimum-effort\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "What if we sort each cell of the matrix by the value?",
+        "Don't include small values in your path if you can only include large values.",
+        "Let's keep adding a possible cell to use in the path incrementally with decreasing values.",
+        "If the start and end cells are connected then we don't need to add more cells.",
+        "Use union-find data structure to check connectivity and return as answer the value of the given cell that makes start and end cells connected."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Dijkstra's Algorithm",
+            "slug": "dijkstra"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:56.143Z"
+}

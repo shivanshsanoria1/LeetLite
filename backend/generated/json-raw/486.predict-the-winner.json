@@ -1,0 +1,151 @@
+{
+    "questionId": "486",
+    "questionFrontendId": "486",
+    "title": "Predict the Winner",
+    "titleSlug": "predict-the-winner",
+    "difficulty": "Medium",
+    "likes": 6643,
+    "dislikes": 303,
+    "acRate": 59.951052262911176,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"422.8K\", \"totalSubmission\": \"705.2K\", \"totalAcceptedRaw\": 422800, \"totalSubmissionRaw\": 705242, \"acRate\": \"60.0%\"}",
+    "similarQuestions": "[{\"title\": \"Can I Win\", \"titleSlug\": \"can-i-win\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find the Winning Player in Coin Game\", \"titleSlug\": \"find-the-winning-player-in-coin-game\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find the Number of Winning Players\", \"titleSlug\": \"find-the-number-of-winning-players\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count The Number of Winning Sequences\", \"titleSlug\": \"count-the-number-of-winning-sequences\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>Two players are playing a game with this array: Player 1 and Player 2.</p>\n\n<p>Player 1 and Player 2 take turns, with Player 1 starting first. Both players start the game with a score of 0.</p>\n\n<p>At each turn, the current player takes the number at <strong>either end</strong> of the array (i.e., <code>nums[0]</code> or <code>nums[nums.length - 1]</code>), <strong>removing</strong> it from the array and adding it to their own score. The game ends when there are no more elements in the array.</p>\n\n<p>Return <code>true</code> if Player 1&#39;s final score is <strong>greater than or equal</strong> to Player 2&#39;s final score, and <code>false</code> otherwise.</p>\n\n<p><strong>Note</strong> that a tie counts as a win for Player 1. You may assume that both players play optimally.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,5,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Player 1 must open by taking either 1 or 2, and both choices lead to the same result.</li>\n\t<li>If Player 1 takes 1, the array becomes <code>[5,2]</code>. Player 2 takes 5, leaving 2 for Player 1.</li>\n\t<li>If Player 1 takes 2, the array becomes <code>[1,5]</code>. Player 2 takes 5, leaving 1 for Player 1.</li>\n\t<li>Either way, Player 1 finishes with <code>1 + 2 = 3</code> and Player 2 finishes with <code>5</code>. Player 1 can never win, so return <code>false</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,5,233,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Player 1 first takes 1, leaving <code>[5,233,7]</code>. Player 2 must then choose between 5 and 7, and no matter which number Player 2 chooses, Player 1 can take 233 on the next turn.</li>\n\t<li>Player 1 finishes with a higher score (234) than Player 2 (12), so return <code>true</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 20</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Minimax",
+            "slug": "minimax-algorithm"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        },
+        {
+            "name": "Zero-Sum Game",
+            "slug": "zero-sum-game"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool predictTheWinner(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean predictTheWinner(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def predictTheWinner(self, nums: List[int]) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def predictTheWinner(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar predictTheWinner = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function predictTheWinner(nums: number[]): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool PredictTheWinner(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool predictTheWinner(int* nums, int numsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func predictTheWinner(nums []int) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun predictTheWinner(nums: IntArray): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func predictTheWinner(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn predict_the_winner(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef predict_the_winner(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function predictTheWinner($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool predictTheWinner(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def predictTheWinner(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec predict_the_winner(nums :: [integer]) :: boolean\n  def predict_the_winner(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec predict_the_winner(Nums :: [integer()]) -> boolean().\npredict_the_winner(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (predict-the-winner nums)\n  (-> (listof exact-integer?) boolean?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:25.831Z"
+}

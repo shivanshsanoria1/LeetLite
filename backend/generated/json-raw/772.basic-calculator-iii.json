@@ -1,0 +1,43 @@
+{
+    "questionId": "785",
+    "questionFrontendId": "772",
+    "title": "Basic Calculator III",
+    "titleSlug": "basic-calculator-iii",
+    "difficulty": "Hard",
+    "likes": 1185,
+    "dislikes": 295,
+    "acRate": 53.51313704313069,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"159K\", \"totalSubmission\": \"297.2K\", \"totalAcceptedRaw\": 159048, \"totalSubmissionRaw\": 297213, \"acRate\": \"53.5%\"}",
+    "similarQuestions": "[{\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator II\", \"titleSlug\": \"basic-calculator-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator IV\", \"titleSlug\": \"basic-calculator-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Build Binary Expression Tree From Infix Expression\", \"titleSlug\": \"build-binary-expression-tree-from-infix-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:24.441Z"
+}

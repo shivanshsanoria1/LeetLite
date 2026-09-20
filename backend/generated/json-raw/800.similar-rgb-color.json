@@ -1,0 +1,39 @@
+{
+    "questionId": "818",
+    "questionFrontendId": "800",
+    "title": "Similar RGB Color",
+    "titleSlug": "similar-rgb-color",
+    "difficulty": "Easy",
+    "likes": 115,
+    "dislikes": 697,
+    "acRate": 68.92187120712973,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"19.9K\", \"totalSubmission\": \"28.8K\", \"totalAcceptedRaw\": 19874, \"totalSubmissionRaw\": 28836, \"acRate\": \"68.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:43.756Z"
+}

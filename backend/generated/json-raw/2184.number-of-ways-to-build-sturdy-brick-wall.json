@@ -1,0 +1,44 @@
+{
+    "questionId": "2322",
+    "questionFrontendId": "2184",
+    "title": "Number of Ways to Build Sturdy Brick Wall",
+    "titleSlug": "number-of-ways-to-build-sturdy-brick-wall",
+    "difficulty": "Medium",
+    "likes": 201,
+    "dislikes": 130,
+    "acRate": 49.324129997123954,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"10.3K\", \"totalSubmission\": \"20.9K\", \"totalAcceptedRaw\": 10290, \"totalSubmissionRaw\": 20862, \"acRate\": \"49.3%\"}",
+    "similarQuestions": "[{\"title\": \"Brick Wall\", \"titleSlug\": \"brick-wall\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Bricks Falling When Hit\", \"titleSlug\": \"bricks-falling-when-hit\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Time to Kill All Monsters\", \"titleSlug\": \"minimum-time-to-kill-all-monsters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "A row of bricks can be represented uniquely by the points where two bricks are joined together.",
+        "For a given row of bricks, how many configurations of bricks could you have put below this row such that the wall is sturdy?",
+        "Use dynamic programming to store the number of possible sturdy walls with a given height and configuration of bricks on the top row."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:06:36.216Z"
+}

@@ -1,0 +1,44 @@
+{
+    "questionId": "2420",
+    "questionFrontendId": "2277",
+    "title": "Closest Node to Path in Tree",
+    "titleSlug": "closest-node-to-path-in-tree",
+    "difficulty": "Hard",
+    "likes": 143,
+    "dislikes": 3,
+    "acRate": 62.13470011689596,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.9K\", \"totalSubmission\": \"11.1K\", \"totalAcceptedRaw\": 6910, \"totalSubmissionRaw\": 11121, \"acRate\": \"62.1%\"}",
+    "similarQuestions": "[{\"title\": \"Count Number of Possible Root Nodes\", \"titleSlug\": \"count-number-of-possible-root-nodes\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Design Graph With Shortest Path Calculator\", \"titleSlug\": \"design-graph-with-shortest-path-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "For the ith query, find the distance from node_i to every other node in the tree.",
+        "We can use a BFS to find the distances.",
+        "Use DFS to find all the nodes on the path from start_i to end_i."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:30.375Z"
+}

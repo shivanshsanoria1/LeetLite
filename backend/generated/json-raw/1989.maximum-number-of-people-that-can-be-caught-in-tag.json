@@ -1,0 +1,42 @@
+{
+    "questionId": "1979",
+    "questionFrontendId": "1989",
+    "title": "Maximum Number of People That Can Be Caught in Tag",
+    "titleSlug": "maximum-number-of-people-that-can-be-caught-in-tag",
+    "difficulty": "Medium",
+    "likes": 76,
+    "dislikes": 11,
+    "acRate": 49.33107535986452,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"5.9K\", \"totalAcceptedRaw\": 2913, \"totalSubmissionRaw\": 5905, \"acRate\": \"49.3%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Number of Food Buckets to Feed the Hamsters\", \"titleSlug\": \"minimum-number-of-food-buckets-to-feed-the-hamsters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to use as much of the range of a person who is \"it\" as possible.",
+        "Find the leftmost person who is \"it\" that has not caught anyone yet, and the leftmost person who is not \"it\" that has not been caught yet.",
+        "If the person who is not \"it\" can be caught, pair them together and repeat the process.",
+        "If the person who is not \"it\" cannot be caught, and the person who is not \"it\" is on the left of the person who is \"it\", find the next leftmost person who is not \"it\".",
+        "If the person who is not \"it\" cannot be caught, and the person who is \"it\" is on the left of the person who is not \"it\", find the next leftmost person who is \"it\"."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:43.801Z"
+}

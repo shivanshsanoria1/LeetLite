@@ -1,0 +1,43 @@
+{
+    "questionId": "346",
+    "questionFrontendId": "346",
+    "title": "Moving Average from Data Stream",
+    "titleSlug": "moving-average-from-data-stream",
+    "difficulty": "Easy",
+    "likes": 1757,
+    "dislikes": 194,
+    "acRate": 80.23031973833919,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"540.1K\", \"totalSubmission\": \"673.2K\", \"totalAcceptedRaw\": 540141, \"totalSubmissionRaw\": 673238, \"acRate\": \"80.2%\"}",
+    "similarQuestions": "[{\"title\": \"K Radius Subarray Averages\", \"titleSlug\": \"k-radius-subarray-averages\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:18.572Z"
+}

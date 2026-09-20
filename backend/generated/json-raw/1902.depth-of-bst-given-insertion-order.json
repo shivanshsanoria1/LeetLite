@@ -1,0 +1,47 @@
+{
+    "questionId": "2052",
+    "questionFrontendId": "1902",
+    "title": "Depth of BST Given Insertion Order",
+    "titleSlug": "depth-of-bst-given-insertion-order",
+    "difficulty": "Medium",
+    "likes": 111,
+    "dislikes": 12,
+    "acRate": 42.50203748981255,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"7.4K\", \"totalAcceptedRaw\": 3129, \"totalSubmissionRaw\": 7362, \"acRate\": \"42.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "There are at most 2 possible places where a new node can be inserted?",
+        "How can we keep track of the depth of each node?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:29.050Z"
+}

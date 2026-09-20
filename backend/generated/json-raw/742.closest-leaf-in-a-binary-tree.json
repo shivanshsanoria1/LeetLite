@@ -1,0 +1,45 @@
+{
+    "questionId": "743",
+    "questionFrontendId": "742",
+    "title": "Closest Leaf in a Binary Tree",
+    "titleSlug": "closest-leaf-in-a-binary-tree",
+    "difficulty": "Medium",
+    "likes": 891,
+    "dislikes": 190,
+    "acRate": 47.508984744782985,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"56.7K\", \"totalSubmission\": \"119.4K\", \"totalAcceptedRaw\": 56711, \"totalSubmissionRaw\": 119369, \"acRate\": \"47.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Convert the tree to a general graph, and do a breadth-first search.  Alternatively, find the closest leaf for every node on the path from root to target."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:03.273Z"
+}

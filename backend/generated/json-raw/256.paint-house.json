@@ -1,0 +1,35 @@
+{
+    "questionId": "256",
+    "questionFrontendId": "256",
+    "title": "Paint House",
+    "titleSlug": "paint-house",
+    "difficulty": "Medium",
+    "likes": 2388,
+    "dislikes": 134,
+    "acRate": 64.54064088443499,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"249.6K\", \"totalSubmission\": \"386.8K\", \"totalAcceptedRaw\": 249629, \"totalSubmissionRaw\": 386778, \"acRate\": \"64.5%\"}",
+    "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House II\", \"titleSlug\": \"paint-house-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Paint Fence\", \"titleSlug\": \"paint-fence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Grid\", \"titleSlug\": \"minimum-path-cost-in-a-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:01.998Z"
+}

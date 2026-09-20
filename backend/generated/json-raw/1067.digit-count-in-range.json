@@ -1,0 +1,35 @@
+{
+    "questionId": "1068",
+    "questionFrontendId": "1067",
+    "title": "Digit Count in Range",
+    "titleSlug": "digit-count-in-range",
+    "difficulty": "Hard",
+    "likes": 98,
+    "dislikes": 26,
+    "acRate": 46.589706589706594,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.8K\", \"totalSubmission\": \"10.4K\", \"totalAcceptedRaw\": 4843, \"totalSubmissionRaw\": 10395, \"acRate\": \"46.6%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Digit One\", \"titleSlug\": \"number-of-digit-one\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Sum of Numbers With Units Digit K\", \"titleSlug\": \"sum-of-numbers-with-units-digit-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Define a function f(x) to get the requested sum from 1 to x. So the answer will be f(hi) - f(lo - 1)",
+        "In order to solve f(x) we need to do a DP over digits approach."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:29.760Z"
+}

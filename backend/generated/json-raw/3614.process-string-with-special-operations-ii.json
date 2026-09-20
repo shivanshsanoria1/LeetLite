@@ -1,0 +1,135 @@
+{
+    "questionId": "3939",
+    "questionFrontendId": "3614",
+    "title": "Process String with Special Operations II",
+    "titleSlug": "process-string-with-special-operations-ii",
+    "difficulty": "Hard",
+    "likes": 436,
+    "dislikes": 23,
+    "acRate": 39.699090506693835,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"95.1K\", \"totalSubmission\": \"239.5K\", \"totalAcceptedRaw\": 95069, \"totalSubmissionRaw\": 239474, \"acRate\": \"39.7%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given a string <code>s</code> consisting of lowercase English letters and the special characters: <code>&#39;*&#39;</code>, <code>&#39;#&#39;</code>, and <code>&#39;%&#39;</code>.</p>\n\n<p>You are also given an integer <code>k</code>.</p>\n\n<p>Build a new string <code>result</code> by processing <code>s</code> according to the following rules from left to right:</p>\n\n<ul>\n\t<li>If the letter is a <strong>lowercase</strong> English letter append it to <code>result</code>.</li>\n\t<li>A <code>&#39;*&#39;</code> <strong>removes</strong> the last character from <code>result</code>, if it exists.</li>\n\t<li>A <code>&#39;#&#39;</code> <strong>duplicates</strong> the current <code>result</code> and <strong>appends</strong> it to itself.</li>\n\t<li>A <code>&#39;%&#39;</code> <strong>reverses</strong> the current <code>result</code>.</li>\n</ul>\n\n<p>Return the <code>k<sup>th</sup></code> character of the final string <code>result</code>. If <code>k</code> is out of the bounds of <code>result</code>, return <code>&#39;.&#39;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;a#b%*&quot;, k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;a&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\"><code>i</code></th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>s[i]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Operation</th>\n\t\t\t<th style=\"border: 1px solid black;\">Current <code>result</code></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;a&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Append <code>&#39;a&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;a&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;#&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Duplicate <code>result</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;aa&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;b&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Append <code>&#39;b&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;aab&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;%&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Reverse <code>result</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;baa&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;*&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Remove the last character</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;ba&quot;</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The final <code>result</code> is <code>&quot;ba&quot;</code>. The character at index <code>k = 1</code> is <code>&#39;a&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;cd%#*#&quot;, k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;d&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\"><code>i</code></th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>s[i]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Operation</th>\n\t\t\t<th style=\"border: 1px solid black;\">Current <code>result</code></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;c&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Append <code>&#39;c&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;c&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;d&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Append <code>&#39;d&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;cd&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;%&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Reverse <code>result</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;dc&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;#&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Duplicate <code>result</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;dcdc&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;*&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Remove the last character</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;dcd&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;#&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Duplicate <code>result</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;dcddcd&quot;</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The final <code>result</code> is <code>&quot;dcddcd&quot;</code>. The character at index <code>k = 3</code> is <code>&#39;d&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;z*#&quot;, k = 0</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;.&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\"><code>i</code></th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>s[i]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Operation</th>\n\t\t\t<th style=\"border: 1px solid black;\">Current <code>result</code></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;z&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Append <code>&#39;z&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;z&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;*&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Remove the last character</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;&quot;</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;#&#39;</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">Duplicate the string</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>&quot;&quot;</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The final <code>result</code> is <code>&quot;&quot;</code>. Since index <code>k = 0</code> is out of bounds, the output is <code>&#39;.&#39;</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of only lowercase English letters and special characters <code>&#39;*&#39;</code>, <code>&#39;#&#39;</code>, and <code>&#39;%&#39;</code>.</li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>15</sup></code></li>\n\t<li>The length of <code>result</code> after processing <code>s</code> will not exceed <code>10<sup>15</sup></code>.</li>\n</ul>\n",
+    "hints": [
+        "Track the length of the string after each operation on <code>s</code>.",
+        "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
+    ],
+    "exampleTestcases": "\"a#b%*\"\n1\n\"cd%#*#\"\n3\n\"z*#\"\n0",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nThis problem is an enhanced version of [⌈3612. Process String with Special Operations I⌋](https://leetcode.com/problems/process-string-with-special-operations-i/description/). In this version, the length of the string $s$ can be up to $10^5$, and the length of $\\textit{result}$ can reach $10^{15}$. We are also asked to find the $k$-th character of $\\textit{result}$. Therefore, it is impossible to explicitly construct $\\textit{result}$ and then query its $k$-th character.\n\nSince directly simulating the construction of $\\textit{result}$ is infeasible, we need a different perspective. Instead of trying to determine which character ends up at position $k$ in the final string, we can work backward and determine which position in an earlier state of $\\textit{result}$ corresponds to the final position $k$.\n\nThe problem states that if $k$ is outside the valid index range of $\\textit{result}$, we should return $\\texttt{'.'}$. Since the final length of $\\textit{result}$ is not known in advance, we first simulate only its length, denoted by $\\textit{len}$. If $k + 1 > \\textit{len}$ after processing the entire string, then the requested position does not exist, and we can immediately return $\\texttt{'.'}$.\n\nOtherwise, we traverse the string $s$ from right to left and reverse each operation. During this process, we maintain the invariant $k + 1 \\le \\textit{len}$. The reverse operations are as follows:\n\n\n1. If the current character is `'*'`, then this operation previously deleted the last character of $\\textit{result}$. Reversing it restores that deleted character, so $\\textit{len}$ increases by one. The value of $k$ remains unchanged.\n\n2. If the current character is `'#'`, then this operation previously duplicated the entire string. Let the current length be $\\textit{len}$.\n   * If $k + 1 > \\Big\\lceil \\dfrac{\\textit{len}}{2} \\Big\\rceil$, then the current position lies in the duplicated half, so the corresponding position before duplication is: $$k - \\Big\\lfloor \\dfrac{\\textit{len}}{2} \\Big\\rfloor$$\n   * Otherwise, the current position lies in the original half, so $k$ remains unchanged.\n   After reversing the duplication, the copied half is removed, so: $$\\textit{len} = \\Big\\lceil \\dfrac{\\textit{len}}{2} \\Big\\rceil$$\n   \n3. If the current character is `'%'`, then the string was previously reversed. Reversing this operation maps position $k$ to: $$k = \\textit{len} - k - 1$$. The length does not change.\n\n4. If the current character is a lowercase letter, then this character was appended to the end of $\\textit{result}$.\n   * If $k + 1 = \\textit{len}$, then the queried position corresponds exactly to this appended character, so we have found the answer and can return it immediately.\n   * Otherwise, the queried position lies earlier in the string. We remove the appended character by decrementing $\\textit{len}$, while leaving $k$ unchanged.\n\nIf no character is found after processing all operations, we return $\\texttt{'.'}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/2Sjdr2aY/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2Sjdr2aY\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$.\n\n- Time complexity: $O(n)$.\n  \n  We traverse the string once to compute the final length and once more in reverse to trace the position corresponding to the queried index.\n\n- Space complexity: $O(1)$.\n  \n  We only use a few variables, including $\\textit{len}$ and $k$, regardless of the size of the input.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    char processStr(string s, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public char processStr(String s, long k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def processStr(self, s: str, k: int) -> str:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def processStr(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {character}\n */\nvar processStr = function(s, k) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function processStr(s: string, k: number): string {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public char ProcessStr(string s, long k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "char processStr(char* s, long long k) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func processStr(s string, k int64) byte {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun processStr(s: String, k: Long): Char {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func processStr(_ s: String, _ k: Int) -> Character {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn process_str(s: String, k: i64) -> char {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} s\n# @param {Integer} k\n# @return {Character}\ndef process_str(s, k)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function processStr($s, $k) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  String processStr(String s, int k) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def processStr(s: String, k: Long): Char = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec process_str(s :: String.t, k :: integer) :: char\n  def process_str(s, k) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec process_str(S :: unicode:unicode_binary(), K :: integer()) -> char().\nprocess_str(S, K) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (process-str s k)\n  (-> string? exact-integer? char?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:55.659Z"
+}

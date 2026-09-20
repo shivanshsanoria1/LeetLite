@@ -1,0 +1,31 @@
+{
+    "questionId": "1181",
+    "questionFrontendId": "534",
+    "title": "Game Play Analysis III",
+    "titleSlug": "game-play-analysis-iii",
+    "difficulty": "Medium",
+    "likes": 425,
+    "dislikes": 18,
+    "acRate": 81.30466682604717,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"98.6K\", \"totalSubmission\": \"121.3K\", \"totalAcceptedRaw\": 98625, \"totalSubmissionRaw\": 121303, \"acRate\": \"81.3%\"}",
+    "similarQuestions": "[{\"title\": \"Game Play Analysis II\", \"titleSlug\": \"game-play-analysis-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Game Play Analysis IV\", \"titleSlug\": \"game-play-analysis-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:07.732Z"
+}

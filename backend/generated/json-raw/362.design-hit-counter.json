@@ -1,0 +1,47 @@
+{
+    "questionId": "362",
+    "questionFrontendId": "362",
+    "title": "Design Hit Counter",
+    "titleSlug": "design-hit-counter",
+    "difficulty": "Medium",
+    "likes": 2154,
+    "dislikes": 258,
+    "acRate": 69.75095133126639,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"350.3K\", \"totalSubmission\": \"502.2K\", \"totalAcceptedRaw\": 350281, \"totalSubmissionRaw\": 502189, \"acRate\": \"69.8%\"}",
+    "similarQuestions": "[{\"title\": \"Logger Rate Limiter\", \"titleSlug\": \"logger-rate-limiter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:05:35.555Z"
+}

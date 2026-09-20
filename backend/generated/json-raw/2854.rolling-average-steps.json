@@ -1,0 +1,28 @@
+{
+    "questionId": "3156",
+    "questionFrontendId": "2854",
+    "title": "Rolling Average Steps",
+    "titleSlug": "rolling-average-steps",
+    "difficulty": "Medium",
+    "likes": 30,
+    "dislikes": 3,
+    "acRate": 68.99918633034989,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"8.6K\", \"totalAcceptedRaw\": 5936, \"totalSubmissionRaw\": 8603, \"acRate\": \"69.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:45:21.816Z"
+}

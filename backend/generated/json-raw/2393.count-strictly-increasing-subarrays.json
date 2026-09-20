@@ -1,0 +1,42 @@
+{
+    "questionId": "2535",
+    "questionFrontendId": "2393",
+    "title": "Count Strictly Increasing Subarrays",
+    "titleSlug": "count-strictly-increasing-subarrays",
+    "difficulty": "Medium",
+    "likes": 143,
+    "dislikes": 2,
+    "acRate": 70.89233347297863,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.5K\", \"totalSubmission\": \"11.9K\", \"totalAcceptedRaw\": 8461, \"totalSubmissionRaw\": 11935, \"acRate\": \"70.9%\"}",
+    "similarQuestions": "[{\"title\": \"Maximum Ascending Subarray Sum\", \"titleSlug\": \"maximum-ascending-subarray-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Find the number of strictly increasing subarrays that end at a specific index. Can you calculate that for each index from 0 to n - 1?",
+        "The answer will be the sum of the number of subarrays that end at each index."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:24:05.018Z"
+}

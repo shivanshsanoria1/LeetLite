@@ -1,0 +1,50 @@
+{
+    "questionId": "348",
+    "questionFrontendId": "348",
+    "title": "Design Tic-Tac-Toe",
+    "titleSlug": "design-tic-tac-toe",
+    "difficulty": "Medium",
+    "likes": 2170,
+    "dislikes": 120,
+    "acRate": 58.76324143814926,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"321K\", \"totalSubmission\": \"546.2K\", \"totalAcceptedRaw\": 320966, \"totalSubmissionRaw\": 546202, \"acRate\": \"58.8%\"}",
+    "similarQuestions": "[{\"title\": \"Valid Tic-Tac-Toe State\", \"titleSlug\": \"valid-tic-tac-toe-state\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Could you trade extra space such that <code>move()</code> operation can be done in O(1)?",
+        "You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:20.308Z"
+}

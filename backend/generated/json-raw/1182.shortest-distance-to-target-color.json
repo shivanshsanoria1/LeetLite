@@ -1,0 +1,43 @@
+{
+    "questionId": "1134",
+    "questionFrontendId": "1182",
+    "title": "Shortest Distance to Target Color",
+    "titleSlug": "shortest-distance-to-target-color",
+    "difficulty": "Medium",
+    "likes": 539,
+    "dislikes": 22,
+    "acRate": 56.55459215569025,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"41.6K\", \"totalSubmission\": \"73.6K\", \"totalAcceptedRaw\": 41614, \"totalSubmissionRaw\": 73582, \"acRate\": \"56.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Greedy solution is too slow because of the limits.",
+        "Can you solve this problem offline by doing some pre-processing?",
+        "Calculate the answers for all indexes moving to their left and to their right."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:19.912Z"
+}

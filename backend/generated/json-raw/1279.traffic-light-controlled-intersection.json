@@ -1,0 +1,28 @@
+{
+    "questionId": "1410",
+    "questionFrontendId": "1279",
+    "title": "Traffic Light Controlled Intersection",
+    "titleSlug": "traffic-light-controlled-intersection",
+    "difficulty": "Easy",
+    "likes": 79,
+    "dislikes": 371,
+    "acRate": 73.16938290881883,
+    "isPaidOnly": true,
+    "categoryTitle": "Concurrency",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"22.5K\", \"totalSubmission\": \"30.7K\", \"totalAcceptedRaw\": 22492, \"totalSubmissionRaw\": 30739, \"acRate\": \"73.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Concurrency",
+            "slug": "concurrency"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:36.188Z"
+}

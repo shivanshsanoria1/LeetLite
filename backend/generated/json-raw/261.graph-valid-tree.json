@@ -1,0 +1,46 @@
+{
+    "questionId": "261",
+    "questionFrontendId": "261",
+    "title": "Graph Valid Tree",
+    "titleSlug": "graph-valid-tree",
+    "difficulty": "Medium",
+    "likes": 3481,
+    "dislikes": 116,
+    "acRate": 50.132600507341074,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"547.8K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 547825, \"totalSubmissionRaw\": 1092752, \"acRate\": \"50.1%\"}",
+    "similarQuestions": "[{\"title\": \"Course Schedule\", \"titleSlug\": \"course-schedule\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Keys and Rooms\", \"titleSlug\": \"keys-and-rooms\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Given <code>n = 5</code> and <code>edges = [[0, 1], [1, 2], [3, 4]]</code>, what should your return? Is this case a valid tree?",
+        "According to the <a href=\"https://en.wikipedia.org/wiki/Tree_(graph_theory)\" target=\"_blank\">definition of tree on Wikipedia</a>: “a tree is an undirected graph in which any two vertices are connected by <i>exactly</i> one path. In other words, any connected graph without simple cycles is a tree.”"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:07.218Z"
+}

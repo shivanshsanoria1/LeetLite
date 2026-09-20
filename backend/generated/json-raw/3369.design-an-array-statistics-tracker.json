@@ -1,0 +1,54 @@
+{
+    "questionId": "3710",
+    "questionFrontendId": "3369",
+    "title": "Design an Array Statistics Tracker ",
+    "titleSlug": "design-an-array-statistics-tracker",
+    "difficulty": "Hard",
+    "likes": 15,
+    "dislikes": 2,
+    "acRate": 35.52422105981351,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"4.4K\", \"totalAcceptedRaw\": 1562, \"totalSubmissionRaw\": 4397, \"acRate\": \"35.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Maintain separate data structures for each statistic."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:41.857Z"
+}

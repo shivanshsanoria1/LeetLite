@@ -1,0 +1,28 @@
+{
+    "questionId": "1862",
+    "questionFrontendId": "1715",
+    "title": "Count Apples and Oranges",
+    "titleSlug": "count-apples-and-oranges",
+    "difficulty": "Medium",
+    "likes": 92,
+    "dislikes": 22,
+    "acRate": 75.75454650313354,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"19.7K\", \"totalSubmission\": \"26K\", \"totalAcceptedRaw\": 19703, \"totalSubmissionRaw\": 26009, \"acRate\": \"75.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:52:38.195Z"
+}

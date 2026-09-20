@@ -1,0 +1,28 @@
+{
+    "questionId": "2637",
+    "questionFrontendId": "2494",
+    "title": "Merge Overlapping Events in the Same Hall",
+    "titleSlug": "merge-overlapping-events-in-the-same-hall",
+    "difficulty": "Hard",
+    "likes": 56,
+    "dislikes": 8,
+    "acRate": 38.0242206772819,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.4K\", \"totalSubmission\": \"8.9K\", \"totalAcceptedRaw\": 3391, \"totalSubmissionRaw\": 8918, \"acRate\": \"38.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:25:25.201Z"
+}

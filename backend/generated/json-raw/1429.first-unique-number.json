@@ -1,0 +1,51 @@
+{
+    "questionId": "1366",
+    "questionFrontendId": "1429",
+    "title": "First Unique Number",
+    "titleSlug": "first-unique-number",
+    "difficulty": "Medium",
+    "likes": 608,
+    "dislikes": 36,
+    "acRate": 57.92218093153744,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"118.3K\", \"totalSubmission\": \"204.2K\", \"totalAcceptedRaw\": 118300, \"totalSubmissionRaw\": 204241, \"acRate\": \"57.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use doubly Linked list with hashmap of pointers to linked list nodes. add unique number to the linked list. When add is called check if the added number is unique then it have to be added to the linked list and if it is repeated remove it from the linked list if exists. When showFirstUnique is called retrieve the head of the linked list.",
+        "Use queue and check that first element of the queue is always unique.",
+        "Use set or heap to make running time of each function O(logn)."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:34:08.982Z"
+}

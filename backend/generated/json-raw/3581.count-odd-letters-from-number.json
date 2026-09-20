@@ -1,0 +1,43 @@
+{
+    "questionId": "3924",
+    "questionFrontendId": "3581",
+    "title": "Count Odd Letters from Number",
+    "titleSlug": "count-odd-letters-from-number",
+    "difficulty": "Easy",
+    "likes": 9,
+    "dislikes": 2,
+    "acRate": 85.0103734439834,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"1.9K\", \"totalAcceptedRaw\": 1639, \"totalSubmissionRaw\": 1928, \"acRate\": \"85.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Simulate as described"
+    ],
+    "exampleTestcases": "41\n20",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:16.230Z"
+}

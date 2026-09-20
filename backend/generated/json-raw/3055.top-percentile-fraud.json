@@ -1,0 +1,28 @@
+{
+    "questionId": "3339",
+    "questionFrontendId": "3055",
+    "title": "Top Percentile Fraud",
+    "titleSlug": "top-percentile-fraud",
+    "difficulty": "Medium",
+    "likes": 10,
+    "dislikes": 6,
+    "acRate": 57.45431227957679,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.6K\", \"totalSubmission\": \"6.2K\", \"totalAcceptedRaw\": 3584, \"totalSubmissionRaw\": 6238, \"acRate\": \"57.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:11.387Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1439",
+    "questionFrontendId": "1308",
+    "title": "Running Total for Different Genders",
+    "titleSlug": "running-total-for-different-genders",
+    "difficulty": "Medium",
+    "likes": 225,
+    "dislikes": 70,
+    "acRate": 86.03620507871834,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"48.1K\", \"totalSubmission\": \"56K\", \"totalAcceptedRaw\": 48145, \"totalSubmissionRaw\": 55959, \"acRate\": \"86.0%\"}",
+    "similarQuestions": "[{\"title\": \"Last Person to Fit in the Bus\", \"titleSlug\": \"last-person-to-fit-in-the-bus\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:31:13.612Z"
+}

@@ -1,0 +1,40 @@
+{
+    "questionId": "370",
+    "questionFrontendId": "370",
+    "title": "Range Addition",
+    "titleSlug": "range-addition",
+    "difficulty": "Medium",
+    "likes": 1688,
+    "dislikes": 87,
+    "acRate": 73.10340145291602,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"107.7K\", \"totalSubmission\": \"147.3K\", \"totalAcceptedRaw\": 107674, \"totalSubmissionRaw\": 147290, \"acRate\": \"73.1%\"}",
+    "similarQuestions": "[{\"title\": \"Range Addition II\", \"titleSlug\": \"range-addition-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Positions on Street With Required Brightness\", \"titleSlug\": \"count-positions-on-street-with-required-brightness\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shifting Letters II\", \"titleSlug\": \"shifting-letters-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Thinking of using advanced data structures? You are thinking it too complicated.",
+        "For each update operation, do you really need to update all elements between i and j?",
+        "Update only the first and end element is sufficient.",
+        "The optimal time complexity is O(<b><i>k</i></b> + <b><i>n</i></b>) and uses O(1) extra space."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:05:42.816Z"
+}

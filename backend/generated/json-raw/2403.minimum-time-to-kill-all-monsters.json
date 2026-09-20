@@ -1,0 +1,44 @@
+{
+    "questionId": "2537",
+    "questionFrontendId": "2403",
+    "title": "Minimum Time to Kill All Monsters",
+    "titleSlug": "minimum-time-to-kill-all-monsters",
+    "difficulty": "Hard",
+    "likes": 51,
+    "dislikes": 5,
+    "acRate": 56.40728955741972,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.9K\", \"totalSubmission\": \"3.5K\", \"totalAcceptedRaw\": 1950, \"totalSubmissionRaw\": 3457, \"acRate\": \"56.4%\"}",
+    "similarQuestions": "[{\"title\": \"Closest Room\", \"titleSlug\": \"closest-room\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Eliminate Maximum Number of Monsters\", \"titleSlug\": \"eliminate-maximum-number-of-monsters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Ways to Build Sturdy Brick Wall\", \"titleSlug\": \"number-of-ways-to-build-sturdy-brick-wall\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Each monster can only have two states. They are either alive or dead.",
+        "We can use bitmasks to represent every possible combination of alive and dead monsters.",
+        "Let dp[mask] represent the minimum number of days needed to reach the state mask."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:24:12.858Z"
+}

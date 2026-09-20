@@ -1,0 +1,44 @@
+{
+    "questionId": "1419",
+    "questionFrontendId": "2263",
+    "title": "Make Array Non-decreasing or Non-increasing",
+    "titleSlug": "make-array-non-decreasing-or-non-increasing",
+    "difficulty": "Hard",
+    "likes": 94,
+    "dislikes": 13,
+    "acRate": 64.72067778660312,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.9K\", \"totalSubmission\": \"7.6K\", \"totalAcceptedRaw\": 4889, \"totalSubmissionRaw\": 7554, \"acRate\": \"64.7%\"}",
+    "similarQuestions": "[{\"title\": \"Non-decreasing Array\", \"titleSlug\": \"non-decreasing-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Make Array Strictly Increasing\", \"titleSlug\": \"make-array-strictly-increasing\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Operations to Make the Array Increasing\", \"titleSlug\": \"minimum-operations-to-make-the-array-increasing\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "To find the minimum cost to make nums non-decreasing, use a max heap that contains all of the elements that you have seen so far.",
+        "If the largest number in the heap is greater than the current number, calculate the cost to make the two numbers equal. Then, in the heap, replace the largest number with the current number.",
+        "Now that we have found the minimum cost to make nums non-decreasing, we can set every nums[i] to -nums[i] and do the same process to find the minimum cost to make nums non-increasing."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:18.020Z"
+}

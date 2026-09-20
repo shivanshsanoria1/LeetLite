@@ -1,0 +1,31 @@
+{
+    "questionId": "3911",
+    "questionFrontendId": "3571",
+    "title": "Find the Shortest Superstring II",
+    "titleSlug": "find-the-shortest-superstring-ii",
+    "difficulty": "Easy",
+    "likes": 8,
+    "dislikes": 2,
+    "acRate": 48.96,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"918\", \"totalSubmission\": \"1.9K\", \"totalAcceptedRaw\": 918, \"totalSubmissionRaw\": 1875, \"acRate\": \"49.0%\"}",
+    "similarQuestions": "[{\"title\": \"Find the Shortest Superstring\", \"titleSlug\": \"find-the-shortest-superstring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Check for the maximum suffix of one string that matches a prefix of the other (in both directions) and merge accordingly."
+    ],
+    "exampleTestcases": "\"aba\"\n\"bab\"\n\"aa\"\n\"aaa\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:05.679Z"
+}

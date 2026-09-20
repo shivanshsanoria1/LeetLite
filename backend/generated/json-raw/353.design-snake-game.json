@@ -1,0 +1,47 @@
+{
+    "questionId": "353",
+    "questionFrontendId": "353",
+    "title": "Design Snake Game",
+    "titleSlug": "design-snake-game",
+    "difficulty": "Medium",
+    "likes": 1020,
+    "dislikes": 353,
+    "acRate": 40.09291789768599,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"107.6K\", \"totalSubmission\": \"268.4K\", \"totalAcceptedRaw\": 107613, \"totalSubmissionRaw\": 268409, \"acRate\": \"40.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:24.553Z"
+}

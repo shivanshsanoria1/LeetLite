@@ -1,0 +1,31 @@
+{
+    "questionId": "1291",
+    "questionFrontendId": "1173",
+    "title": "Immediate Food Delivery I",
+    "titleSlug": "immediate-food-delivery-i",
+    "difficulty": "Easy",
+    "likes": 305,
+    "dislikes": 13,
+    "acRate": 80.5484103302809,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"93.9K\", \"totalSubmission\": \"116.6K\", \"totalAcceptedRaw\": 93942, \"totalSubmissionRaw\": 116628, \"acRate\": \"80.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:10.670Z"
+}

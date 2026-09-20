@@ -1,0 +1,28 @@
+{
+    "questionId": "3302",
+    "questionFrontendId": "2995",
+    "title": "Viewers Turned Streamers",
+    "titleSlug": "viewers-turned-streamers",
+    "difficulty": "Hard",
+    "likes": 10,
+    "dislikes": 6,
+    "acRate": 43.09019313707106,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.6K\", \"totalSubmission\": \"10.7K\", \"totalAcceptedRaw\": 4596, \"totalSubmissionRaw\": 10666, \"acRate\": \"43.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:20.390Z"
+}

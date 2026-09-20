@@ -1,0 +1,43 @@
+{
+    "questionId": "3529",
+    "questionFrontendId": "3221",
+    "title": "Maximum Array Hopping Score II",
+    "titleSlug": "maximum-array-hopping-score-ii",
+    "difficulty": "Medium",
+    "likes": 17,
+    "dislikes": 3,
+    "acRate": 60.10612638687892,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.2K\", \"totalSubmission\": \"2.1K\", \"totalAcceptedRaw\": 1246, \"totalSubmissionRaw\": 2073, \"acRate\": \"60.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "It’s always optimal to jump to index <code>j</code> with the maximum value.",
+        "Keep an array <code>suffixMax</code> and store the maximum of each suffix of the array along with its index."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:45.338Z"
+}

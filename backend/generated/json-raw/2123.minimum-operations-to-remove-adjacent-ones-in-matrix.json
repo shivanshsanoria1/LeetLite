@@ -1,0 +1,65 @@
+{
+    "questionId": "2259",
+    "questionFrontendId": "2123",
+    "title": "Minimum Operations to Remove Adjacent Ones in Matrix",
+    "titleSlug": "minimum-operations-to-remove-adjacent-ones-in-matrix",
+    "difficulty": "Hard",
+    "likes": 55,
+    "dislikes": 13,
+    "acRate": 42.67399267399267,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"3.3K\", \"totalAcceptedRaw\": 1398, \"totalSubmissionRaw\": 3276, \"acRate\": \"42.7%\"}",
+    "similarQuestions": "[{\"title\": \"Set Matrix Zeroes\", \"titleSlug\": \"set-matrix-zeroes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"01 Matrix\", \"titleSlug\": \"01-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Flips to Convert Binary Matrix to Zero Matrix\", \"titleSlug\": \"minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Remove All Ones With Row and Column Flips\", \"titleSlug\": \"remove-all-ones-with-row-and-column-flips\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Consider each cell containing a 1 as a vertex whose neighbors are the cells 4-directionally connected to it. The grid then becomes a bipartite graph.",
+        "You want to find the smallest set of vertices such that every edge in the graph has an endpoint in this set. If you remove every vertex in this set from the graph, then all the 1’s will be disconnected. Are there any well-known algorithms for finding this set?",
+        "This set of vertices is called a minimum vertex cover. You can find the size of a minimum vertex cover by finding the size of a maximum matching (Konig’s theorem).",
+        "There are well-known algorithms such as Kuhn’s algorithm and Hopcroft-Karp-Karzanov algorithm which can find a maximum matching in a bipartite graph quickly."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Edmonds–Karp Algorithm",
+            "slug": "edmonds-karp-algorithm"
+        },
+        {
+            "name": "MPM Algorithm",
+            "slug": "mpm-algorithm"
+        },
+        {
+            "name": "Push-Relabel Algorithm",
+            "slug": "push-relabel-algorithm"
+        },
+        {
+            "name": "Flow Network",
+            "slug": "flow-network"
+        },
+        {
+            "name": "Dinic's Algorithm",
+            "slug": "dinics-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:05:39.296Z"
+}

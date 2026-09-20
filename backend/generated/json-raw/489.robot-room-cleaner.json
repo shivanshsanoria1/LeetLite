@@ -1,0 +1,35 @@
+{
+    "questionId": "865",
+    "questionFrontendId": "489",
+    "title": "Robot Room Cleaner",
+    "titleSlug": "robot-room-cleaner",
+    "difficulty": "Hard",
+    "likes": 2914,
+    "dislikes": 193,
+    "acRate": 78.03218674109247,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"215.3K\", \"totalSubmission\": \"275.9K\", \"totalAcceptedRaw\": 215282, \"totalSubmissionRaw\": 275889, \"acRate\": \"78.0%\"}",
+    "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Path in a Hidden Grid\", \"titleSlug\": \"shortest-path-in-a-hidden-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Hidden Grid\", \"titleSlug\": \"minimum-path-cost-in-a-hidden-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Spaces Cleaning Robot Cleaned\", \"titleSlug\": \"number-of-spaces-cleaning-robot-cleaned\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:28.340Z"
+}

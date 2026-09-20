@@ -1,0 +1,52 @@
+{
+    "questionId": "3890",
+    "questionFrontendId": "3555",
+    "title": "Smallest Subarray to Sort in Every Sliding Window",
+    "titleSlug": "smallest-subarray-to-sort-in-every-sliding-window",
+    "difficulty": "Medium",
+    "likes": 7,
+    "dislikes": 1,
+    "acRate": 59.097035040431265,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"877\", \"totalSubmission\": \"1.5K\", \"totalAcceptedRaw\": 877, \"totalSubmissionRaw\": 1484, \"acRate\": \"59.1%\"}",
+    "similarQuestions": "[{\"title\": \"Shortest Unsorted Continuous Subarray\", \"titleSlug\": \"shortest-unsorted-continuous-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Solve for each subarray independently.",
+        "What are the extreme positions that need to be included in the segment to make the subarray non‑decreasing?"
+    ],
+    "exampleTestcases": "[1,3,2,4,5]\n3\n[5,4,3,2,1]\n4",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:49.906Z"
+}

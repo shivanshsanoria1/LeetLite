@@ -1,0 +1,28 @@
+{
+    "questionId": "1198",
+    "questionFrontendId": "1098",
+    "title": "Unpopular Books",
+    "titleSlug": "unpopular-books",
+    "difficulty": "Medium",
+    "likes": 221,
+    "dislikes": 623,
+    "acRate": 43.403770276194656,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"49.5K\", \"totalSubmission\": \"114K\", \"totalAcceptedRaw\": 49502, \"totalSubmissionRaw\": 114050, \"acRate\": \"43.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:53.394Z"
+}

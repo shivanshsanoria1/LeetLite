@@ -1,0 +1,36 @@
+{
+    "questionId": "2593",
+    "questionFrontendId": "2450",
+    "title": "Number of Distinct Binary Strings After Applying Operations",
+    "titleSlug": "number-of-distinct-binary-strings-after-applying-operations",
+    "difficulty": "Medium",
+    "likes": 39,
+    "dislikes": 9,
+    "acRate": 63.28609388839681,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"2.3K\", \"totalAcceptedRaw\": 1429, \"totalSubmissionRaw\": 2258, \"acRate\": \"63.3%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Number of K Consecutive Bit Flips\", \"titleSlug\": \"minimum-number-of-k-consecutive-bit-flips\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Notice that any string of the same length as s will always have the same answer, so only the length of the string matters.",
+        "For each substring of size k, you can decide whether to flip or not. Every string s resulting from this process will be unique.",
+        "How do you find the number of possible combinations?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:24:50.186Z"
+}

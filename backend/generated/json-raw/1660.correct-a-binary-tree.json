@@ -1,0 +1,49 @@
+{
+    "questionId": "1796",
+    "questionFrontendId": "1660",
+    "title": "Correct a Binary Tree",
+    "titleSlug": "correct-a-binary-tree",
+    "difficulty": "Medium",
+    "likes": 277,
+    "dislikes": 47,
+    "acRate": 74.15519985022934,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"23.8K\", \"totalSubmission\": \"32K\", \"totalAcceptedRaw\": 23766, \"totalSubmissionRaw\": 32049, \"acRate\": \"74.2%\"}",
+    "similarQuestions": "[{\"title\": \"Flatten Binary Tree to Linked List\", \"titleSlug\": \"flatten-binary-tree-to-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten a Multilevel Doubly Linked List\", \"titleSlug\": \"flatten-a-multilevel-doubly-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "If you traverse the tree from right to left, the invalid node will point to a node that has already been visited."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:51:34.198Z"
+}

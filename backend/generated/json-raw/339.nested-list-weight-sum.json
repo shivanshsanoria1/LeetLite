@@ -1,0 +1,35 @@
+{
+    "questionId": "339",
+    "questionFrontendId": "339",
+    "title": "Nested List Weight Sum",
+    "titleSlug": "nested-list-weight-sum",
+    "difficulty": "Medium",
+    "likes": 1875,
+    "dislikes": 487,
+    "acRate": 85.99007656917583,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"419.2K\", \"totalSubmission\": \"487.5K\", \"totalAcceptedRaw\": 419230, \"totalSubmissionRaw\": 487533, \"acRate\": \"86.0%\"}",
+    "similarQuestions": "[{\"title\": \"Nested List Weight Sum II\", \"titleSlug\": \"nested-list-weight-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array Nesting\", \"titleSlug\": \"array-nesting\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Employee Importance\", \"titleSlug\": \"employee-importance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:13.120Z"
+}

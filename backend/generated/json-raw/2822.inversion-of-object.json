@@ -1,0 +1,23 @@
+{
+    "questionId": "2925",
+    "questionFrontendId": "2822",
+    "title": "Inversion of Object",
+    "titleSlug": "inversion-of-object",
+    "difficulty": "Easy",
+    "likes": 17,
+    "dislikes": 1,
+    "acRate": 60.21140052850132,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"2.6K\", \"totalAcceptedRaw\": 1595, \"totalSubmissionRaw\": 2649, \"acRate\": \"60.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:44:55.090Z"
+}

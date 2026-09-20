@@ -1,0 +1,39 @@
+{
+    "questionId": "545",
+    "questionFrontendId": "545",
+    "title": "Boundary of Binary Tree",
+    "titleSlug": "boundary-of-binary-tree",
+    "difficulty": "Medium",
+    "likes": 1423,
+    "dislikes": 2356,
+    "acRate": 48.184654849992185,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"178.8K\", \"totalSubmission\": \"371.1K\", \"totalAcceptedRaw\": 178818, \"totalSubmissionRaw\": 371112, \"acRate\": \"48.2%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Tree Right Side View\", \"titleSlug\": \"binary-tree-right-side-view\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:17.366Z"
+}

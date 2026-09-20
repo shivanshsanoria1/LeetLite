@@ -1,0 +1,54 @@
+{
+    "questionId": "3294",
+    "questionFrontendId": "2992",
+    "title": "Number of Self-Divisible Permutations",
+    "titleSlug": "number-of-self-divisible-permutations",
+    "difficulty": "Medium",
+    "likes": 24,
+    "dislikes": 0,
+    "acRate": 71.85163027221058,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.4K\", \"totalSubmission\": \"3.3K\", \"totalAcceptedRaw\": 2402, \"totalSubmissionRaw\": 3343, \"acRate\": \"71.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Think of Backtracking."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:17.834Z"
+}

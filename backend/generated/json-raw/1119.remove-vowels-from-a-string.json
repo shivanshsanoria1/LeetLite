@@ -1,0 +1,34 @@
+{
+    "questionId": "1089",
+    "questionFrontendId": "1119",
+    "title": "Remove Vowels from a String",
+    "titleSlug": "remove-vowels-from-a-string",
+    "difficulty": "Easy",
+    "likes": 368,
+    "dislikes": 116,
+    "acRate": 91.28956840065217,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"118.7K\", \"totalSubmission\": \"130K\", \"totalAcceptedRaw\": 118702, \"totalSubmissionRaw\": 130028, \"acRate\": \"91.3%\"}",
+    "similarQuestions": "[{\"title\": \"Reverse Vowels of a String\", \"titleSlug\": \"reverse-vowels-of-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Digit From Number to Maximize Result\", \"titleSlug\": \"remove-digit-from-number-to-maximize-result\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How to erase vowels in a string?",
+        "Loop over the string and check every character, if it is a vowel ignore it otherwise add it to the answer."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: String\n\n**Intuition**\n\nThere are some specific library methods in different languages like `replace.All()` in Java that can be directly used to achieve this, we can replace each vowel with an empty string \"\". However, in an interview, it is recommended to solve these straightforward problems without using such built-in methods. We can always mention these methods though.\n\nIn this approach, we will start with an empty answer string, iterate over each character in the string `s`, and add only those consonants to the final answer string.\n\nTo check if the character is a vowel or a consonant, we need to determine if the character is one of the lowercase vowels `[a, i, e, o, u]`. If it is not, we can add this consonant character to the answer string `ans`.\n\n**Algorithm**\n\n1. Create a method `isVowel()` that returns a boolean value `true` if the provided character is one of `[a, i, e, o, u]`, `false` otherwise.\n2. Initialize an empty string `ans`.\n3. Iterate over each character in the string `s` and for each character `c`, check if it's a vowel using `isVowel(c)`. If not, we add the character to string `ans`.\n4. Return `ans`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/8MzRtX82/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"8MzRtX82\"></iframe>\n\n**Complexity Analysis**\n\nHere, $N$ is the number of characters in the string `s`.\n\n* Time complexity: $O(N)$\n\n  We need to iterate over each character in the string `s` once and for each call the `isVowel()` which is $O(1)$. Hence, the total time complexity is equal to $O(N)$.\n\n* Space complexity: $O(1)$\n\n  The space occupied by the return value is generally not counted towards the total space complexity. Therefore, for this problem, the space complexity is only $O(1)$.\n  <br/>\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:21:32.503Z"
+}

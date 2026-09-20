@@ -1,0 +1,38 @@
+{
+    "questionId": "3343",
+    "questionFrontendId": "3032",
+    "title": "Count Numbers With Unique Digits II",
+    "titleSlug": "count-numbers-with-unique-digits-ii",
+    "difficulty": "Easy",
+    "likes": 37,
+    "dislikes": 4,
+    "acRate": 87.35081197417335,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"10.2K\", \"totalAcceptedRaw\": 8929, \"totalSubmissionRaw\": 10222, \"acRate\": \"87.4%\"}",
+    "similarQuestions": "[{\"title\": \"Count Numbers with Unique Digits\", \"titleSlug\": \"count-numbers-with-unique-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "You can traverse over all numbers and check if the current number has unique digits or not."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:52.748Z"
+}

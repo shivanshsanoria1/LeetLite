@@ -1,0 +1,39 @@
+{
+    "questionId": "548",
+    "questionFrontendId": "548",
+    "title": "Split Array with Equal Sum",
+    "titleSlug": "split-array-with-equal-sum",
+    "difficulty": "Hard",
+    "likes": 418,
+    "dislikes": 132,
+    "acRate": 50.07759958613555,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"25.2K\", \"totalSubmission\": \"50.3K\", \"totalAcceptedRaw\": 25168, \"totalSubmissionRaw\": 50258, \"acRate\": \"50.1%\"}",
+    "similarQuestions": "[{\"title\": \"Fair Distribution of Cookies\", \"titleSlug\": \"fair-distribution-of-cookies\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Ways to Split a String\", \"titleSlug\": \"number-of-ways-to-split-a-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:20.117Z"
+}

@@ -1,0 +1,30 @@
+{
+    "questionId": "2771",
+    "questionFrontendId": "2676",
+    "title": "Throttle",
+    "titleSlug": "throttle",
+    "difficulty": "Medium",
+    "likes": 171,
+    "dislikes": 30,
+    "acRate": 83.43841950399327,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"11.9K\", \"totalSubmission\": \"14.3K\", \"totalAcceptedRaw\": 11910, \"totalSubmissionRaw\": 14274, \"acRate\": \"83.4%\"}",
+    "similarQuestions": "[{\"title\": \"Debounce\", \"titleSlug\": \"debounce\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Promise Time Limit\", \"titleSlug\": \"promise-time-limit\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Promise Pool\", \"titleSlug\": \"promise-pool\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Store a variable for currArguments.",
+        "If no timeout is in progress, immediately execute the function and create a timeout. If a timeout is in progress, set the currArguments to the new arguments.",
+        "When the timeout is done: if currArguments is null, do nothing. Otherwise, execute the function with currArguments and create another timeout."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:56.708Z"
+}

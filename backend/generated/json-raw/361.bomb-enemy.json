@@ -1,0 +1,39 @@
+{
+    "questionId": "361",
+    "questionFrontendId": "361",
+    "title": "Bomb Enemy",
+    "titleSlug": "bomb-enemy",
+    "difficulty": "Medium",
+    "likes": 1003,
+    "dislikes": 118,
+    "acRate": 52.86204455095038,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"87.4K\", \"totalSubmission\": \"165.2K\", \"totalAcceptedRaw\": 87354, \"totalSubmissionRaw\": 165249, \"acRate\": \"52.9%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost Homecoming of a Robot in a Grid\", \"titleSlug\": \"minimum-cost-homecoming-of-a-robot-in-a-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Stamping the Grid\", \"titleSlug\": \"stamping-the-grid\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Unguarded Cells in the Grid\", \"titleSlug\": \"count-unguarded-cells-in-the-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Trailing Zeros in a Cornered Path\", \"titleSlug\": \"maximum-trailing-zeros-in-a-cornered-path\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:05:34.672Z"
+}

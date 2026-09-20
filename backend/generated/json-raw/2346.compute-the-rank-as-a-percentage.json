@@ -1,0 +1,28 @@
+{
+    "questionId": "2484",
+    "questionFrontendId": "2346",
+    "title": "Compute the Rank as a Percentage",
+    "titleSlug": "compute-the-rank-as-a-percentage",
+    "difficulty": "Medium",
+    "likes": 32,
+    "dislikes": 80,
+    "acRate": 33.92662391484535,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7.8K\", \"totalSubmission\": \"22.9K\", \"totalAcceptedRaw\": 7777, \"totalSubmissionRaw\": 22923, \"acRate\": \"33.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:27.038Z"
+}

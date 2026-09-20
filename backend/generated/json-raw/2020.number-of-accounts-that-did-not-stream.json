@@ -1,0 +1,28 @@
+{
+    "questionId": "2167",
+    "questionFrontendId": "2020",
+    "title": "Number of Accounts That Did Not Stream",
+    "titleSlug": "number-of-accounts-that-did-not-stream",
+    "difficulty": "Medium",
+    "likes": 29,
+    "dislikes": 231,
+    "acRate": 71.9952102978596,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.4K\", \"totalSubmission\": \"20K\", \"totalAcceptedRaw\": 14430, \"totalSubmissionRaw\": 20043, \"acRate\": \"72.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:08.684Z"
+}

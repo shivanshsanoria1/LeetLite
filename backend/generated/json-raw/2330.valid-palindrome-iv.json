@@ -1,0 +1,35 @@
+{
+    "questionId": "2468",
+    "questionFrontendId": "2330",
+    "title": "Valid Palindrome IV",
+    "titleSlug": "valid-palindrome-iv",
+    "difficulty": "Medium",
+    "likes": 112,
+    "dislikes": 35,
+    "acRate": 75.43915009992637,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"21.5K\", \"totalSubmission\": \"28.5K\", \"totalAcceptedRaw\": 21516, \"totalSubmissionRaw\": 28521, \"acRate\": \"75.4%\"}",
+    "similarQuestions": "[{\"title\": \"Valid Palindrome\", \"titleSlug\": \"valid-palindrome\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Palindrome II\", \"titleSlug\": \"valid-palindrome-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Palindrome III\", \"titleSlug\": \"valid-palindrome-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Count the number of pairs of characters that should be equal if s were a palindrome, but are not equal.",
+        "If the number of pairs is 0, then s is already palindrome. You can pick any pair of characters and change them both to a different character and s will stay a palindrome."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:14.544Z"
+}

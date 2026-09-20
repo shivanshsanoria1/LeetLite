@@ -1,0 +1,47 @@
+{
+    "questionId": "527",
+    "questionFrontendId": "527",
+    "title": "Word Abbreviation",
+    "titleSlug": "word-abbreviation",
+    "difficulty": "Hard",
+    "likes": 405,
+    "dislikes": 301,
+    "acRate": 62.72645838284492,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"34.3K\", \"totalSubmission\": \"54.7K\", \"totalAcceptedRaw\": 34312, \"totalSubmissionRaw\": 54701, \"acRate\": \"62.7%\"}",
+    "similarQuestions": "[{\"title\": \"Valid Word Abbreviation\", \"titleSlug\": \"valid-word-abbreviation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Unique Word Abbreviation\", \"titleSlug\": \"minimum-unique-word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check if a String Is an Acronym of Words\", \"titleSlug\": \"check-if-a-string-is-an-acronym-of-words\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:01.741Z"
+}

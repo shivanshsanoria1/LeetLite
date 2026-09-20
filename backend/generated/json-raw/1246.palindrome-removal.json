@@ -1,0 +1,36 @@
+{
+    "questionId": "1202",
+    "questionFrontendId": "1246",
+    "title": "Palindrome Removal",
+    "titleSlug": "palindrome-removal",
+    "difficulty": "Hard",
+    "likes": 320,
+    "dislikes": 14,
+    "acRate": 46.03102534998108,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"12.2K\", \"totalSubmission\": \"26.4K\", \"totalAcceptedRaw\": 12166, \"totalSubmissionRaw\": 26430, \"acRate\": \"46.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use dynamic programming.",
+        "Let dp[i][j] be the solution for the sub-array from index i to index j.",
+        "Notice that if we have S[i] == S[j] one transition could be just dp(i + 1, j + 1) because in the last turn we would have a palindrome and we can extend this palindrome from both sides, the other transitions are not too difficult to deduce."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:35.257Z"
+}

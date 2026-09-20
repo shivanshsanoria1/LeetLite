@@ -1,0 +1,43 @@
+{
+    "questionId": "3204",
+    "questionFrontendId": "2921",
+    "title": "Maximum Profitable Triplets With Increasing Prices II",
+    "titleSlug": "maximum-profitable-triplets-with-increasing-prices-ii",
+    "difficulty": "Hard",
+    "likes": 8,
+    "dislikes": 1,
+    "acRate": 46.41467481934408,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"835\", \"totalSubmission\": \"1.8K\", \"totalAcceptedRaw\": 835, \"totalSubmissionRaw\": 1799, \"acRate\": \"46.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Let's fix the middle chosen item for instance index <code>j</code>.",
+        "Let’s define an array <code>max_right</code>, where <code>max_right[j]</code> represents the maximum <code>profit[k]</code> for every index <code>k > j</code> such that <code>prices[k] > prices[j]</code>.",
+        "Consider using a Fenwick tree to fill the <code>max_right</code>.",
+        "Do the same for items with an index <code>i < j</code> such that <code>prices[i] < prices[j]</code> and find the maximum <code>profit[i]</code> among them. Let's call this array <code>max_left</code>.",
+        "Now the profit when an item with the index <code>j</code> is the middle one would be <code>profit[j] + max_right[j] + max_left[j]</code>.",
+        "Finally, do the above procedure for all <code>j</code>'s and find the maximum profit among them. That would be the final answer."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:46:19.157Z"
+}

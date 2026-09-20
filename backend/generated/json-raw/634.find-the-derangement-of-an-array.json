@@ -1,0 +1,39 @@
+{
+    "questionId": "634",
+    "questionFrontendId": "634",
+    "title": "Find the Derangement of An Array",
+    "titleSlug": "find-the-derangement-of-an-array",
+    "difficulty": "Medium",
+    "likes": 224,
+    "dislikes": 167,
+    "acRate": 41.59760813753209,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"12.8K\", \"totalSubmission\": \"30.8K\", \"totalAcceptedRaw\": 12800, \"totalSubmissionRaw\": 30771, \"acRate\": \"41.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:47.826Z"
+}

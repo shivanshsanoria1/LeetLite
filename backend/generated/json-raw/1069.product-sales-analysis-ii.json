@@ -1,0 +1,31 @@
+{
+    "questionId": "1154",
+    "questionFrontendId": "1069",
+    "title": "Product Sales Analysis II",
+    "titleSlug": "product-sales-analysis-ii",
+    "difficulty": "Easy",
+    "likes": 85,
+    "dislikes": 182,
+    "acRate": 82.70524723555185,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"63.4K\", \"totalSubmission\": \"76.7K\", \"totalAcceptedRaw\": 63425, \"totalSubmissionRaw\": 76688, \"acRate\": \"82.7%\"}",
+    "similarQuestions": "[{\"title\": \"Product Sales Analysis I\", \"titleSlug\": \"product-sales-analysis-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Product Sales Analysis III\", \"titleSlug\": \"product-sales-analysis-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Product Sales Analysis IV\", \"titleSlug\": \"product-sales-analysis-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Product Sales Analysis V\", \"titleSlug\": \"product-sales-analysis-v\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "​\n<!-- Don't delete this -->\n[TOC]\n​\n# Solution\n​\n---\n​\n## pandas\n\n<!-- h3 for approaches -->\n### Approach: Get Aggregated Sum by Using groupby and sum()\n\n<!-- h4 for sections -->\n#### Algorithm\n\n<!-- Describe your approach to solving the problem. -->\nTo get the total quantity sold for every product id, we need the two columns `quantity` and `product_id`, and both of them are stored in the DataFrame `sales`. Since one `product_id` might have multiple sales records, we need to calculate the aggregated sum of `quantity` for each `product_id`.\n\n```python\npd = sales.groupby(['product_id'], as_index = False)['quantity'].sum()\n```\n\nIn the code above, we pass the parameter [as_index](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) so it will return an object with group labels (`product_id`) as the index. \n\nNow there is only one step left from the final output. We want to update the column name from `quantity` to `total_quantity` as per requested. Here we use the function [rename](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html) to achieve this. \n\n```python\npd = sales.groupby(['product_id'], as_index = False)['quantity'].sum().rename(columns = {'quantity': 'total_quantity'})\n```\n\n<!-- h4 for sections -->\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/ZUGcMfEs/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"ZUGcMfEs\"></iframe>\n\n----\n​\n## Database\n\n<!-- h3 for approaches -->\n### Approach: Get Aggregated Sum by Using GROUP BY and SUM()\n\n<!-- h4 for sections -->\n#### Algorithm​\n<!-- Describe your approach to solving the problem. -->\nTo get the total quantity sold for every product id, we need the two columns `quantity` and `product_id`. Since both are stored in the table `Sales`, we only need to use this one table and calculate the aggregated sum of `quantity` for each `product_id`. To get the final output, we also need to rename the column name to `total_quantity`. \n​\n<!-- h4 for sections -->\n#### Implementation\n\n```sql\nSELECT product_id,\n       SUM(quantity) AS total_quantity\nFROM Sales\nGROUP BY product_id\n```\n​\n<!-- an empty line to separate approaches -->\n<br>"
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:31.135Z"
+}

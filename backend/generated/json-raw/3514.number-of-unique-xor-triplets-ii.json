@@ -1,0 +1,146 @@
+{
+    "questionId": "3820",
+    "questionFrontendId": "3514",
+    "title": "Number of Unique XOR Triplets II",
+    "titleSlug": "number-of-unique-xor-triplets-ii",
+    "difficulty": "Medium",
+    "likes": 218,
+    "dislikes": 25,
+    "acRate": 52.69961689140927,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"97.4K\", \"totalSubmission\": \"184.8K\", \"totalAcceptedRaw\": 97390, \"totalSubmissionRaw\": 184803, \"acRate\": \"52.7%\"}",
+    "similarQuestions": "[]",
+    "content": "<p data-end=\"261\" data-start=\"147\">You are given an integer array <code>nums</code>.</p>\n\n<p>A <strong>XOR triplet</strong> is defined as the XOR of three elements <code>nums[i] XOR nums[j] XOR nums[k]</code> where <code>i &lt;= j &lt;= k</code>.</p>\n\n<p>Return the number of <strong>unique</strong> XOR triplet values from all possible triplets <code>(i, j, k)</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p data-end=\"158\" data-start=\"101\">The possible XOR triplet values are:</p>\n\n<ul data-end=\"280\" data-start=\"159\">\n\t<li data-end=\"188\" data-start=\"159\"><code>(0, 0, 0) &rarr; 1 XOR 1 XOR 1 = 1</code></li>\n\t<li data-end=\"218\" data-start=\"189\"><code>(0, 0, 1) &rarr; 1 XOR 1 XOR 3 = 3</code></li>\n\t<li data-end=\"248\" data-start=\"219\"><code>(0, 1, 1) &rarr; 1 XOR 3 XOR 3 = 1</code></li>\n\t<li data-end=\"280\" data-start=\"249\"><code>(1, 1, 1) &rarr; 3 XOR 3 XOR 3 = 3</code></li>\n</ul>\n\n<p data-end=\"343\" data-start=\"282\">The unique XOR values are <code data-end=\"316\" data-start=\"308\">{1, 3}</code>. Thus, the output is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,7,8,9]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The possible XOR triplet values are <code data-end=\"275\" data-start=\"267\">{6, 7, 8, 9}</code>. Thus, the output is 4.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1500</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 1500</code></li>\n</ul>\n",
+    "hints": [
+        "What is the maximum possible XOR value achievable by any triplet?",
+        "Let the maximum possible XOR value be stored in <code>max_xor</code>.",
+        "For each index <code>i</code>, consider all pairs of indices <code>(j, k)</code> such that <code>i <= j <= k</code>. For each such pair, compute the triplet XOR as <code>nums[i] XOR nums[j] XOR nums[k]</code>.",
+        "You can optimize the calculation by precomputing or reusing intermediate XOR results. For example, after fixing an index <code>i</code>, compute XORs of pairs <code>(j, k)</code> in <code>O(n<sup>2</sup>)</code> time instead of checking all three indices independently.",
+        "Finally, count the number of unique XOR values obtained from all triplets."
+    ],
+    "exampleTestcases": "[1,3]\n[6,7,8,9]",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Enumeration\n\n#### Intuition\n\nObserve that the XOR operation never increases the number of bits required to represent a value. Let $m$ be the maximum element in $\\textit{nums}$, and let $U$ be the smallest power of $2$ that is greater than $m$. Then the XOR of any two or three elements must be less than $U$.\n\nWe can find $m$ with a single traversal of the array, compute $U$, and use a boolean array of size $U$ to record all possible XOR values.\n\nFirst, enumerate all possible XOR values of two elements (including the case where the same element is chosen twice). Then, XOR each of these values with every element in $\\textit{nums}$ to obtain all possible XOR values of three elements.\n\nThe algorithm proceeds as follows:\n1. Enumerate all pairs satisfying $i \\le j$, compute $\\textit{nums}[i] \\oplus \\textit{nums}[j]$, and record the result in set $S$.\n2. For each value $x$ in $S$, traverse every element $v$ in $\\textit{nums}$, compute $x \\oplus v$, and record the result in set $T$.\n3. The number of distinct values in $T$ is the answer.\n\nSince the value range is bounded, we can replace the hash sets with boolean arrays to reduce the constant factor.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/VSe9bXMV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VSe9bXMV\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array, and let $m$ be the maximum element in the array.\n\n- Time complexity: $O(n^2 + nm)$.\n  \n  The first double loop enumerates all XOR values of two elements in $O(n^2)$ time. The second phase enumerates the XOR of each two-element XOR value with every array element, resulting in $O(nm)$ time.\n\n- Space complexity: $O(m)$.\n  \n  Two boolean arrays of size $O(m)$ are used.\n\n---\n\n### Approach 2: Enumeration (Optimization)\n\n#### Intuition\n\nInstead of explicitly enumerating all pairs, we can build the set of attainable XOR values incrementally, similar to dynamic programming.\n\nDefine three sets:\n* $\\textit{one}$ stores all XOR values obtainable from a single element (that is, the element itself).\n* $\\textit{two}$ stores all XOR values obtainable from two elements (repetition is allowed).\n* $\\textit{three}$ stores all XOR values obtainable from three elements (repetition is allowed).\n\n**Stage 1:** Construct $\\textit{one}$ and $\\textit{two}$.\n\nTraverse the array $\\textit{nums}$. For each element $v$:\n* Add $v$ to $\\textit{one}$.\n* For every value $x$ currently in $\\textit{one}$, add $x \\oplus v$ to $\\textit{two}$.\n\n**Stage 2:** Construct $\\textit{three}$.\n\nAt this point, $\\textit{two}$ already contains every XOR value obtainable from two elements. Traverse $\\textit{nums}$ again, and for each element $v$ and every value $x$ in $\\textit{two}$, add $x \\oplus v$ to $\\textit{three}$.\n\nFinally, the number of distinct values in $\\textit{three}$ is the answer.\n\nAs in the previous approach, since the value range is bounded, boolean arrays can be used instead of sets.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/f2tHZbsK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"f2tHZbsK\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array, and let $m$ be the maximum element in the array.\n\n- Time complexity: $O(nm)$.\n  \n  For each array element, we traverse the entire value range once to perform the state transitions.\n\n- Space complexity: $O(m)$.\n  \n  Three boolean arrays of size $O(m)$ are used.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int uniqueXorTriplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int uniqueXorTriplets(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def uniqueXorTriplets(self, nums: List[int]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def uniqueXorTriplets(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar uniqueXorTriplets = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function uniqueXorTriplets(nums: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int UniqueXorTriplets(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int uniqueXorTriplets(int* nums, int numsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func uniqueXorTriplets(nums []int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun uniqueXorTriplets(nums: IntArray): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func uniqueXorTriplets(_ nums: [Int]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn unique_xor_triplets(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef unique_xor_triplets(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function uniqueXorTriplets($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int uniqueXorTriplets(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def uniqueXorTriplets(nums: Array[Int]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec unique_xor_triplets(nums :: [integer]) :: integer\n  def unique_xor_triplets(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec unique_xor_triplets(Nums :: [integer()]) -> integer().\nunique_xor_triplets(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (unique-xor-triplets nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:58.898Z"
+}

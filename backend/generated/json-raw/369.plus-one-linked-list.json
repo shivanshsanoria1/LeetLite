@@ -1,0 +1,35 @@
+{
+    "questionId": "369",
+    "questionFrontendId": "369",
+    "title": "Plus One Linked List",
+    "titleSlug": "plus-one-linked-list",
+    "difficulty": "Medium",
+    "likes": 968,
+    "dislikes": 48,
+    "acRate": 61.184002202794794,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"88.9K\", \"totalSubmission\": \"145.3K\", \"totalAcceptedRaw\": 88882, \"totalSubmissionRaw\": 145270, \"acRate\": \"61.2%\"}",
+    "similarQuestions": "[{\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Double a Number Represented as a Linked List\", \"titleSlug\": \"double-a-number-represented-as-a-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:05:41.947Z"
+}

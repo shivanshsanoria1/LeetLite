@@ -1,0 +1,35 @@
+{
+    "questionId": "651",
+    "questionFrontendId": "651",
+    "title": "4 Keys Keyboard",
+    "titleSlug": "4-keys-keyboard",
+    "difficulty": "Medium",
+    "likes": 747,
+    "dislikes": 94,
+    "acRate": 56.467238230833516,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"36.5K\", \"totalSubmission\": \"64.6K\", \"totalAcceptedRaw\": 36488, \"totalSubmissionRaw\": 64618, \"acRate\": \"56.5%\"}",
+    "similarQuestions": "[{\"title\": \"2 Keys Keyboard\", \"titleSlug\": \"2-keys-keyboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:59.614Z"
+}

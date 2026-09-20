@@ -1,0 +1,35 @@
+{
+    "questionId": "3935",
+    "questionFrontendId": "3595",
+    "title": "Once Twice",
+    "titleSlug": "once-twice",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 3,
+    "acRate": 75.93528816986856,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"751\", \"totalSubmission\": \"989\", \"totalAcceptedRaw\": 751, \"totalSubmissionRaw\": 989, \"acRate\": \"75.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use bitmasks"
+    ],
+    "exampleTestcases": "[2,2,3,2,5,5,5,7,7]\n[4,4,6,4,9,9,9,6,8]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:34.765Z"
+}

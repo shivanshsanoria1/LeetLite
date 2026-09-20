@@ -1,0 +1,31 @@
+{
+    "questionId": "276",
+    "questionFrontendId": "276",
+    "title": "Paint Fence",
+    "titleSlug": "paint-fence",
+    "difficulty": "Medium",
+    "likes": 1642,
+    "dislikes": 399,
+    "acRate": 48.52316317497787,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"131.6K\", \"totalSubmission\": \"271.1K\", \"totalAcceptedRaw\": 131556, \"totalSubmissionRaw\": 271119, \"acRate\": \"48.5%\"}",
+    "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House\", \"titleSlug\": \"paint-house\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House II\", \"titleSlug\": \"paint-house-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:20.687Z"
+}

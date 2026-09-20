@@ -1,0 +1,44 @@
+{
+    "questionId": "3237",
+    "questionFrontendId": "2950",
+    "title": "Number of Divisible Substrings",
+    "titleSlug": "number-of-divisible-substrings",
+    "difficulty": "Medium",
+    "likes": 31,
+    "dislikes": 6,
+    "acRate": 74.74903474903475,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"5.2K\", \"totalAcceptedRaw\": 3872, \"totalSubmissionRaw\": 5180, \"acRate\": \"74.7%\"}",
+    "similarQuestions": "[{\"title\": \"Count Substrings Divisible By Last Digit\", \"titleSlug\": \"count-substrings-divisible-by-last-digit\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Iterate over all substrings in <code>O(n * n)</code>.",
+        "For each substring, try to calculate the sum of the mapped values in <code>O(1)</code>.",
+        "To do the above, use a partial sum array."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:46:42.505Z"
+}

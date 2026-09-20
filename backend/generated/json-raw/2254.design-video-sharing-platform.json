@@ -1,0 +1,39 @@
+{
+    "questionId": "2396",
+    "questionFrontendId": "2254",
+    "title": "Design Video Sharing Platform",
+    "titleSlug": "design-video-sharing-platform",
+    "difficulty": "Hard",
+    "likes": 89,
+    "dislikes": 15,
+    "acRate": 63.76733684550049,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"9.3K\", \"totalAcceptedRaw\": 5931, \"totalSubmissionRaw\": 9301, \"acRate\": \"63.8%\"}",
+    "similarQuestions": "[{\"title\": \"Tweet Counts Per Frequency\", \"titleSlug\": \"tweet-counts-per-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design Browser History\", \"titleSlug\": \"design-browser-history\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Most Popular Video Creator\", \"titleSlug\": \"most-popular-video-creator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can we keep track of the videoId’s of removed videos?",
+        "When you remove a video, keep track of its videoId in an array called usedId. When a new video is uploaded, first check if usedId contains any elements, if it does, use the smallest value in usedId."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:10.445Z"
+}

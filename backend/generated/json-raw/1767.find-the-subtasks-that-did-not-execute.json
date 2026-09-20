@@ -1,0 +1,28 @@
+{
+    "questionId": "1914",
+    "questionFrontendId": "1767",
+    "title": "Find the Subtasks That Did Not Execute",
+    "titleSlug": "find-the-subtasks-that-did-not-execute",
+    "difficulty": "Hard",
+    "likes": 190,
+    "dislikes": 15,
+    "acRate": 78.49429307098113,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.4K\", \"totalSubmission\": \"26K\", \"totalAcceptedRaw\": 20425, \"totalSubmissionRaw\": 26021, \"acRate\": \"78.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:53:36.870Z"
+}

@@ -1,0 +1,43 @@
+{
+    "questionId": "281",
+    "questionFrontendId": "281",
+    "title": "Zigzag Iterator",
+    "titleSlug": "zigzag-iterator",
+    "difficulty": "Medium",
+    "likes": 713,
+    "dislikes": 43,
+    "acRate": 67.15348772515473,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"115.9K\", \"totalSubmission\": \"172.5K\", \"totalAcceptedRaw\": 115872, \"totalSubmissionRaw\": 172548, \"acRate\": \"67.2%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten 2D Vector\", \"titleSlug\": \"flatten-2d-vector\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Peeking Iterator\", \"titleSlug\": \"peeking-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten Nested List Iterator\", \"titleSlug\": \"flatten-nested-list-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Merge Strings Alternately\", \"titleSlug\": \"merge-strings-alternately\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Iterator",
+            "slug": "iterator"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:25.062Z"
+}

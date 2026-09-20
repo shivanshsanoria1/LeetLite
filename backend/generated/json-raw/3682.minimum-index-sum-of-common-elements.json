@@ -1,0 +1,38 @@
+{
+    "questionId": "4050",
+    "questionFrontendId": "3682",
+    "title": "Minimum Index Sum of Common Elements",
+    "titleSlug": "minimum-index-sum-of-common-elements",
+    "difficulty": "Medium",
+    "likes": 6,
+    "dislikes": 1,
+    "acRate": 77.39852398523985,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"839\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 839, \"totalSubmissionRaw\": 1084, \"acRate\": \"77.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Build a hash map <code>pos1</code> that stores, for each value in <code>nums1</code>, the smallest index where it appears.",
+        "Iterate through <code>nums2</code>. For each index <code>j</code>, if <code>nums2[j]</code> exists in <code>pos1</code>, compute <code>pos1[nums2[j]] + j</code>.",
+        "Track the minimum index sum across all such matches.",
+        "If no common element is found, return <code>-1</code>."
+    ],
+    "exampleTestcases": "[3,2,1]\n[1,3,1]\n[5,1,2]\n[2,1,3]\n[6,4]\n[7,8]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:11:27.805Z"
+}

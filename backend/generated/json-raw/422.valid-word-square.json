@@ -1,0 +1,35 @@
+{
+    "questionId": "422",
+    "questionFrontendId": "422",
+    "title": "Valid Word Square",
+    "titleSlug": "valid-word-square",
+    "difficulty": "Easy",
+    "likes": 453,
+    "dislikes": 277,
+    "acRate": 42.953506754387526,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"72.3K\", \"totalSubmission\": \"168.3K\", \"totalAcceptedRaw\": 72274, \"totalSubmissionRaw\": 168261, \"acRate\": \"43.0%\"}",
+    "similarQuestions": "[{\"title\": \"Word Squares\", \"titleSlug\": \"word-squares\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Toeplitz Matrix\", \"titleSlug\": \"toeplitz-matrix\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:29.947Z"
+}

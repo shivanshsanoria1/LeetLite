@@ -1,0 +1,35 @@
+{
+    "questionId": "265",
+    "questionFrontendId": "265",
+    "title": "Paint House II",
+    "titleSlug": "paint-house-ii",
+    "difficulty": "Hard",
+    "likes": 1353,
+    "dislikes": 40,
+    "acRate": 57.26457346573005,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"146.7K\", \"totalSubmission\": \"256.1K\", \"totalAcceptedRaw\": 146654, \"totalSubmissionRaw\": 256099, \"acRate\": \"57.3%\"}",
+    "similarQuestions": "[{\"title\": \"Product of Array Except Self\", \"titleSlug\": \"product-of-array-except-self\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sliding Window Maximum\", \"titleSlug\": \"sliding-window-maximum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Paint House\", \"titleSlug\": \"paint-house\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint Fence\", \"titleSlug\": \"paint-fence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:10.702Z"
+}

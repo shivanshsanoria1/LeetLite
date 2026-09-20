@@ -1,0 +1,35 @@
+{
+    "questionId": "656",
+    "questionFrontendId": "656",
+    "title": "Coin Path",
+    "titleSlug": "coin-path",
+    "difficulty": "Hard",
+    "likes": 263,
+    "dislikes": 116,
+    "acRate": 34.402200609097164,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"17.5K\", \"totalSubmission\": \"50.9K\", \"totalAcceptedRaw\": 17509, \"totalSubmissionRaw\": 50895, \"acRate\": \"34.4%\"}",
+    "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:03.362Z"
+}

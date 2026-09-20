@@ -1,0 +1,47 @@
+{
+    "questionId": "511",
+    "questionFrontendId": "1059",
+    "title": "All Paths from Source Lead to Destination",
+    "titleSlug": "all-paths-from-source-lead-to-destination",
+    "difficulty": "Medium",
+    "likes": 774,
+    "dislikes": 435,
+    "acRate": 37.321740291702035,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"78.3K\", \"totalSubmission\": \"209.7K\", \"totalAcceptedRaw\": 78251, \"totalSubmissionRaw\": 209666, \"acRate\": \"37.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "What if we can reach to a cycle from the source node?",
+        "Then the answer will be false, because we eventually get trapped in the cycle forever.",
+        "What if the we can't reach to a cycle from the source node? Then we need to ensure that from all visited nodes from source the unique node with indegree = 0 is the destination node."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Kosaraju's Algorithm",
+            "slug": "kosarajus-algorithm"
+        },
+        {
+            "name": "Tarjan's SCC Algorithm",
+            "slug": "tarjans-scc-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:24.135Z"
+}

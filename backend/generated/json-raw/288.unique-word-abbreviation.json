@@ -1,0 +1,43 @@
+{
+    "questionId": "288",
+    "questionFrontendId": "288",
+    "title": "Unique Word Abbreviation",
+    "titleSlug": "unique-word-abbreviation",
+    "difficulty": "Medium",
+    "likes": 222,
+    "dislikes": 1868,
+    "acRate": 28.023937190104885,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"83.3K\", \"totalSubmission\": \"297.3K\", \"totalAcceptedRaw\": 83309, \"totalSubmissionRaw\": 297278, \"acRate\": \"28.0%\"}",
+    "similarQuestions": "[{\"title\": \"Two Sum III - Data structure design\", \"titleSlug\": \"two-sum-iii-data-structure-design\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:57:31.171Z"
+}

@@ -1,0 +1,55 @@
+{
+    "questionId": "631",
+    "questionFrontendId": "631",
+    "title": "Design Excel Sum Formula",
+    "titleSlug": "design-excel-sum-formula",
+    "difficulty": "Hard",
+    "likes": 285,
+    "dislikes": 298,
+    "acRate": 39.4553819815964,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"36.9K\", \"totalSubmission\": \"93.5K\", \"totalAcceptedRaw\": 36875, \"totalSubmissionRaw\": 93460, \"acRate\": \"39.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:44.820Z"
+}

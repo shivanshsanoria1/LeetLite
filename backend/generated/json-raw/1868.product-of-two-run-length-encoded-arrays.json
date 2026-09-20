@@ -1,0 +1,35 @@
+{
+    "questionId": "2019",
+    "questionFrontendId": "1868",
+    "title": "Product of Two Run-Length Encoded Arrays",
+    "titleSlug": "product-of-two-run-length-encoded-arrays",
+    "difficulty": "Medium",
+    "likes": 416,
+    "dislikes": 84,
+    "acRate": 59.62848182307421,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"64.3K\", \"totalSubmission\": \"107.8K\", \"totalAcceptedRaw\": 64264, \"totalSubmissionRaw\": 107774, \"acRate\": \"59.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Keep track of the indices on both RLE arrays and join the parts together.",
+        "What is the maximum number of segments if we took the minimum number of elements left on both the current segments every time?"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:55:23.267Z"
+}

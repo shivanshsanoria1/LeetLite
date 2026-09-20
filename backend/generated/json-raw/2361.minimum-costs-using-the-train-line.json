@@ -1,0 +1,40 @@
+{
+    "questionId": "2500",
+    "questionFrontendId": "2361",
+    "title": "Minimum Costs Using the Train Line",
+    "titleSlug": "minimum-costs-using-the-train-line",
+    "difficulty": "Hard",
+    "likes": 197,
+    "dislikes": 33,
+    "acRate": 77.68367145952334,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.8K\", \"totalSubmission\": \"20.3K\", \"totalAcceptedRaw\": 15776, \"totalSubmissionRaw\": 20308, \"acRate\": \"77.7%\"}",
+    "similarQuestions": "[{\"title\": \"Bus Routes\", \"titleSlug\": \"bus-routes\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Distance Between Bus Stops\", \"titleSlug\": \"distance-between-bus-stops\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Notice and evaluate the different ways there are to move from one stop to the next.",
+        "From the express route at a previous stop, we can use either the express route or the regular route to the next stop without paying expressCost.",
+        "From the regular route at a previous stop, we can either use the express route after paying expressCost or use the regular route without paying expressCost.",
+        "Iterate through the stops and compare the above cases to obtain the minimum costs for each stop."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:39.119Z"
+}

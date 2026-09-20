@@ -1,0 +1,52 @@
+{
+    "questionId": "1816",
+    "questionFrontendId": "1676",
+    "title": "Lowest Common Ancestor of a Binary Tree IV",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree-iv",
+    "difficulty": "Medium",
+    "likes": 507,
+    "dislikes": 16,
+    "acRate": 79.62775916436736,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"64.6K\", \"totalSubmission\": \"81.2K\", \"totalAcceptedRaw\": 64645, \"totalSubmissionRaw\": 81184, \"acRate\": \"79.6%\"}",
+    "similarQuestions": "[{\"title\": \"Lowest Common Ancestor of a Binary Search Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of Deepest Leaves\", \"titleSlug\": \"lowest-common-ancestor-of-deepest-leaves\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree II\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree III\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree IV\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Starting from the root, traverse the left and the right subtrees, checking if one of the nodes exist there.",
+        "If one of the subtrees doesn't contain any given node, the LCA can be the node returned from the other subtree",
+        "If both subtrees contain nodes, the LCA node is the current node."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Binary Lifting",
+            "slug": "binary-lifting"
+        },
+        {
+            "name": "Lowest Common Ancestor",
+            "slug": "lowest-common-ancestor"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:51:52.527Z"
+}

@@ -1,0 +1,28 @@
+{
+    "questionId": "1425",
+    "questionFrontendId": "1294",
+    "title": "Weather Type in Each Country",
+    "titleSlug": "weather-type-in-each-country",
+    "difficulty": "Easy",
+    "likes": 147,
+    "dislikes": 30,
+    "acRate": 67.11863917287587,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"46.5K\", \"totalSubmission\": \"69.3K\", \"totalAcceptedRaw\": 46480, \"totalSubmissionRaw\": 69251, \"acRate\": \"67.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:55.745Z"
+}

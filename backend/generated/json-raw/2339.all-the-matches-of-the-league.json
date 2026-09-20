@@ -1,0 +1,28 @@
+{
+    "questionId": "2453",
+    "questionFrontendId": "2339",
+    "title": "All the Matches of the League",
+    "titleSlug": "all-the-matches-of-the-league",
+    "difficulty": "Easy",
+    "likes": 49,
+    "dislikes": 4,
+    "acRate": 88.357374153665,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"12K\", \"totalSubmission\": \"13.6K\", \"totalAcceptedRaw\": 12005, \"totalSubmissionRaw\": 13587, \"acRate\": \"88.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:21.513Z"
+}

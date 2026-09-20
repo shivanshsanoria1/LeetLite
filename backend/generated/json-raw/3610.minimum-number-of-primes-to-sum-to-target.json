@@ -1,0 +1,45 @@
+{
+    "questionId": "3949",
+    "questionFrontendId": "3610",
+    "title": "Minimum Number of Primes to Sum to Target",
+    "titleSlug": "minimum-number-of-primes-to-sum-to-target",
+    "difficulty": "Medium",
+    "likes": 16,
+    "dislikes": 1,
+    "acRate": 59.99327052489905,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.6K\", \"totalSubmission\": \"5.9K\", \"totalAcceptedRaw\": 3566, \"totalSubmissionRaw\": 5944, \"acRate\": \"60.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Can we use dynamic programming?",
+        "Generate the first <code>m</code> prime numbers.",
+        "Let <code>dp[i]</code> represent the minimum number of prime numbers that sum up to <code>i</code>. Use the generated prime numbers for the transition."
+    ],
+    "exampleTestcases": "10\n2\n15\n5\n7\n6",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:51.971Z"
+}

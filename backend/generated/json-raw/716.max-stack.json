@@ -1,0 +1,47 @@
+{
+    "questionId": "716",
+    "questionFrontendId": "716",
+    "title": "Max Stack",
+    "titleSlug": "max-stack",
+    "difficulty": "Hard",
+    "likes": 2023,
+    "dislikes": 514,
+    "acRate": 46.01834089166232,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"187.8K\", \"totalSubmission\": \"408.2K\", \"totalAcceptedRaw\": 187828, \"totalSubmissionRaw\": 408159, \"acRate\": \"46.0%\"}",
+    "similarQuestions": "[{\"title\": \"Min Stack\", \"titleSlug\": \"min-stack\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:45.016Z"
+}

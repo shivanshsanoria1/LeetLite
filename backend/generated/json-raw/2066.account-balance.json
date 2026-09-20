@@ -1,0 +1,28 @@
+{
+    "questionId": "2208",
+    "questionFrontendId": "2066",
+    "title": "Account Balance",
+    "titleSlug": "account-balance",
+    "difficulty": "Medium",
+    "likes": 75,
+    "dislikes": 2,
+    "acRate": 81.6716895258011,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"13.3K\", \"totalSubmission\": \"16.3K\", \"totalAcceptedRaw\": 13279, \"totalSubmissionRaw\": 16259, \"acRate\": \"81.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:51.390Z"
+}

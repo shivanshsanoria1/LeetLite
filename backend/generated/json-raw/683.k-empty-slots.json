@@ -1,0 +1,59 @@
+{
+    "questionId": "683",
+    "questionFrontendId": "683",
+    "title": "K Empty Slots",
+    "titleSlug": "k-empty-slots",
+    "difficulty": "Hard",
+    "likes": 831,
+    "dislikes": 707,
+    "acRate": 38.01925351962637,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"67.8K\", \"totalSubmission\": \"178.4K\", \"totalAcceptedRaw\": 67810, \"totalSubmissionRaw\": 178357, \"acRate\": \"38.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        },
+        {
+            "name": "Monotonic Queue",
+            "slug": "monotonic-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:22.534Z"
+}

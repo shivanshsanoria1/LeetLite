@@ -1,0 +1,31 @@
+{
+    "questionId": "3614",
+    "questionFrontendId": "3339",
+    "title": "Find the Number of K-Even Arrays",
+    "titleSlug": "find-the-number-of-k-even-arrays",
+    "difficulty": "Medium",
+    "likes": 7,
+    "dislikes": 3,
+    "acRate": 61.849192100538595,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"689\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 689, \"totalSubmissionRaw\": 1114, \"acRate\": \"61.8%\"}",
+    "similarQuestions": "[{\"title\": \"Sort Array By Parity II\", \"titleSlug\": \"sort-array-by-parity-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use dynamic programming.",
+        "Store whether the last element was even or odd."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:16.861Z"
+}

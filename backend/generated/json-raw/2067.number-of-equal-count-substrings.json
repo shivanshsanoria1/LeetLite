@@ -1,0 +1,45 @@
+{
+    "questionId": "2209",
+    "questionFrontendId": "2067",
+    "title": "Number of Equal Count Substrings",
+    "titleSlug": "number-of-equal-count-substrings",
+    "difficulty": "Medium",
+    "likes": 113,
+    "dislikes": 11,
+    "acRate": 45.167089678511,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"9.5K\", \"totalAcceptedRaw\": 4271, \"totalSubmissionRaw\": 9456, \"acRate\": \"45.2%\"}",
+    "similarQuestions": "[{\"title\": \"Longest Substring Without Repeating Characters\", \"titleSlug\": \"longest-substring-without-repeating-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Least K Repeating Characters\", \"titleSlug\": \"longest-substring-with-at-least-k-repeating-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Substrings With Equal Digit Frequency\", \"titleSlug\": \"unique-substrings-with-equal-digit-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "The brute force solution is to check every substring, which would TLE. How can we improve this solution?",
+        "In an equal count substring, the first character appears count times, the second character appears count times, and so on.",
+        "The length of an equal count substring is the number of unique characters multiplied by count.",
+        "The length of all equal count substrings are multiples of count."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:52.410Z"
+}

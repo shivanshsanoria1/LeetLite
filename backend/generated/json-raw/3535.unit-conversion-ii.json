@@ -1,0 +1,48 @@
+{
+    "questionId": "3752",
+    "questionFrontendId": "3535",
+    "title": "Unit Conversion II",
+    "titleSlug": "unit-conversion-ii",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 9,
+    "acRate": 64.85539000876425,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"740\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 740, \"totalSubmissionRaw\": 1141, \"acRate\": \"64.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Using a dfs, compute an array <code>fromRoot</code> such that <code>fromRoot[a]</code> is the number of units of type <code>a</code> equivalent to a single unit of type 0.",
+        "<code>answer[i] = fromRoot[unitA<sub>i</sub>]<sup>-1</sup> * fromRoot[unitB<sub>i</sub>]</code>"
+    ],
+    "exampleTestcases": "[[0,1,2],[0,2,6]]\n[[1,2],[1,0]]\n[[0,1,2],[0,2,6],[0,3,8],[2,4,2],[2,5,4],[3,6,3]]\n[[1,2],[0,4],[6,5],[4,6],[6,1]]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:25.910Z"
+}

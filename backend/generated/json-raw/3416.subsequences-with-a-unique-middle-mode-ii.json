@@ -1,0 +1,43 @@
+{
+    "questionId": "3756",
+    "questionFrontendId": "3416",
+    "title": "Subsequences with a Unique Middle Mode II",
+    "titleSlug": "subsequences-with-a-unique-middle-mode-ii",
+    "difficulty": "Hard",
+    "likes": 2,
+    "dislikes": 2,
+    "acRate": 16.234498308906424,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"288\", \"totalSubmission\": \"1.8K\", \"totalAcceptedRaw\": 288, \"totalSubmissionRaw\": 1774, \"acRate\": \"16.2%\"}",
+    "similarQuestions": "[{\"title\": \"Subsequences with a Unique Middle Mode I\", \"titleSlug\": \"subsequences-with-a-unique-middle-mode-i\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use the Inclusion-Exclusion Principle to account for the different cases of having a unique middle mode."
+    ],
+    "exampleTestcases": "[1,1,1,1,1,1]\n[1,2,2,3,3,4]\n[0,1,2,3,4,5,6,7,8]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:51:22.197Z"
+}

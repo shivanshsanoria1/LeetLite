@@ -1,0 +1,23 @@
+{
+    "questionId": "3078",
+    "questionFrontendId": "2820",
+    "title": "Election Results",
+    "titleSlug": "election-results",
+    "difficulty": "Medium",
+    "likes": 29,
+    "dislikes": 3,
+    "acRate": 66.62795761358687,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.6K\", \"totalSubmission\": \"6.9K\", \"totalAcceptedRaw\": 4590, \"totalSubmissionRaw\": 6889, \"acRate\": \"66.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:44:53.350Z"
+}

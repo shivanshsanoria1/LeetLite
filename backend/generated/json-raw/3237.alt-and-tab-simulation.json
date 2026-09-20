@@ -1,0 +1,41 @@
+{
+    "questionId": "3538",
+    "questionFrontendId": "3237",
+    "title": "Alt and Tab Simulation",
+    "titleSlug": "alt-and-tab-simulation",
+    "difficulty": "Medium",
+    "likes": 15,
+    "dislikes": 6,
+    "acRate": 54.24071082390953,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.3K\", \"totalSubmission\": \"2.5K\", \"totalAcceptedRaw\": 1343, \"totalSubmissionRaw\": 2476, \"acRate\": \"54.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Let’s answer the queries offline.",
+        "Start from the <b>last</b> query until you reach the first query.",
+        "Each time, append the value of that query to a <code>ans</code> array if it wasn’t already appended.",
+        "Then start from the <b>beginning</b> of <code>windows</code> and append to <code>ans</code> array if it wasn’t already appended."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:57.060Z"
+}

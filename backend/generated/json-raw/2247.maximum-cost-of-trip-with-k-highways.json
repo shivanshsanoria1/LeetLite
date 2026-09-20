@@ -1,0 +1,44 @@
+{
+    "questionId": "2007",
+    "questionFrontendId": "2247",
+    "title": "Maximum Cost of Trip With K Highways",
+    "titleSlug": "maximum-cost-of-trip-with-k-highways",
+    "difficulty": "Hard",
+    "likes": 64,
+    "dislikes": 0,
+    "acRate": 49.80055843637814,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 2497, \"totalSubmissionRaw\": 5014, \"acRate\": \"49.8%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost to Reach Destination in Time\", \"titleSlug\": \"minimum-cost-to-reach-destination-in-time\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Cost to Reach City With Discounts\", \"titleSlug\": \"minimum-cost-to-reach-city-with-discounts\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Are there any computations being repeated?",
+        "The same path can be visited multiple times. Could we reuse the previously calculated result?",
+        "Store the nodes seen on the current path and the last node on the current path as a dynamic programming state."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:03.900Z"
+}

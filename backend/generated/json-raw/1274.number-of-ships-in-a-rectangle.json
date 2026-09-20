@@ -1,0 +1,43 @@
+{
+    "questionId": "1233",
+    "questionFrontendId": "1274",
+    "title": "Number of Ships in a Rectangle",
+    "titleSlug": "number-of-ships-in-a-rectangle",
+    "difficulty": "Hard",
+    "likes": 542,
+    "dislikes": 70,
+    "acRate": 68.7305363740111,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"35.5K\", \"totalSubmission\": \"51.7K\", \"totalAcceptedRaw\": 35533, \"totalSubmissionRaw\": 51699, \"acRate\": \"68.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use divide and conquer technique.",
+        "Divide the query rectangle into 4 rectangles.",
+        "Use recursion to continue with the rectangles that has ships only."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:30:29.839Z"
+}

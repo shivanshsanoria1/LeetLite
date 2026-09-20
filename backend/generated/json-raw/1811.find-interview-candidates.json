@@ -1,0 +1,28 @@
+{
+    "questionId": "1964",
+    "questionFrontendId": "1811",
+    "title": "Find Interview Candidates",
+    "titleSlug": "find-interview-candidates",
+    "difficulty": "Medium",
+    "likes": 212,
+    "dislikes": 30,
+    "acRate": 60.80937812376942,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.1K\", \"totalSubmission\": \"33K\", \"totalAcceptedRaw\": 20075, \"totalSubmissionRaw\": 33013, \"acRate\": \"60.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:54:22.715Z"
+}

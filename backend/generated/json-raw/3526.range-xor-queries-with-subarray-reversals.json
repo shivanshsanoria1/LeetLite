@@ -1,0 +1,44 @@
+{
+    "questionId": "3862",
+    "questionFrontendId": "3526",
+    "title": "Range XOR Queries with Subarray Reversals",
+    "titleSlug": "range-xor-queries-with-subarray-reversals",
+    "difficulty": "Hard",
+    "likes": 3,
+    "dislikes": 2,
+    "acRate": 62.396694214876035,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"453\", \"totalSubmission\": \"726\", \"totalAcceptedRaw\": 453, \"totalSubmissionRaw\": 726, \"acRate\": \"62.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Augment each AVL tree node with fields for subtree XOR, size, and a lazy reversal flag to efficiently update and query segments.",
+        "Use split and merge operations on the AVL tree to isolate subarrays for point updates, range XOR queries, and reversals in <code>O(log n)</code> time."
+    ],
+    "exampleTestcases": "[1,2,3,4,5]\n[[2,1,3],[1,2,10],[3,0,4],[2,0,4]]\n[7,8,9]\n[[1,0,3],[2,0,2],[3,1,2]]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:53:12.829Z"
+}

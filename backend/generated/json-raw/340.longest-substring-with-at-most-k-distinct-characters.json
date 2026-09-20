@@ -1,0 +1,39 @@
+{
+    "questionId": "340",
+    "questionFrontendId": "340",
+    "title": "Longest Substring with At Most K Distinct Characters",
+    "titleSlug": "longest-substring-with-at-most-k-distinct-characters",
+    "difficulty": "Medium",
+    "likes": 2906,
+    "dislikes": 81,
+    "acRate": 50.125423590514536,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"405.4K\", \"totalSubmission\": \"808.9K\", \"totalAcceptedRaw\": 405443, \"totalSubmissionRaw\": 808857, \"acRate\": \"50.1%\"}",
+    "similarQuestions": "[{\"title\": \"Longest Substring Without Repeating Characters\", \"titleSlug\": \"longest-substring-without-repeating-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Repeating Character Replacement\", \"titleSlug\": \"longest-repeating-character-replacement\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarrays with K Different Integers\", \"titleSlug\": \"subarrays-with-k-different-integers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximize the Confusion of an Exam\", \"titleSlug\": \"maximize-the-confusion-of-an-exam\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:58:13.757Z"
+}

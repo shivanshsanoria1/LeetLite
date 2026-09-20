@@ -1,0 +1,43 @@
+{
+    "questionId": "490",
+    "questionFrontendId": "490",
+    "title": "The Maze",
+    "titleSlug": "the-maze",
+    "difficulty": "Medium",
+    "likes": 1932,
+    "dislikes": 199,
+    "acRate": 60.51849151605939,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"212.5K\", \"totalSubmission\": \"351.1K\", \"totalAcceptedRaw\": 212501, \"totalSubmissionRaw\": 351134, \"acRate\": \"60.5%\"}",
+    "similarQuestions": "[{\"title\": \"The Maze III\", \"titleSlug\": \"the-maze-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"The Maze II\", \"titleSlug\": \"the-maze-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:29.304Z"
+}

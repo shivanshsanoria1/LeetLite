@@ -1,0 +1,30 @@
+{
+    "questionId": "2772",
+    "questionFrontendId": "2690",
+    "title": "Infinite Method Object",
+    "titleSlug": "infinite-method-object",
+    "difficulty": "Easy",
+    "likes": 32,
+    "dislikes": 9,
+    "acRate": 90.7324969647916,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.2K\", \"totalSubmission\": \"2.5K\", \"totalAcceptedRaw\": 2242, \"totalSubmissionRaw\": 2471, \"acRate\": \"90.7%\"}",
+    "similarQuestions": "[{\"title\": \"Immutability Helper\", \"titleSlug\": \"immutability-helper\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Make Object Immutable\", \"titleSlug\": \"make-object-immutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Javascript has the concept of Proxy. That concept is critical to this problem.",
+        "Override all \"get\" for the object. Return a function instead.",
+        "That function should return the \"prop\", i.e. the method name."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:41:08.893Z"
+}

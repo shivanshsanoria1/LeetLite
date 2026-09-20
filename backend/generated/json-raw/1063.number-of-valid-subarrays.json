@@ -1,0 +1,42 @@
+{
+    "questionId": "1061",
+    "questionFrontendId": "1063",
+    "title": "Number of Valid Subarrays",
+    "titleSlug": "number-of-valid-subarrays",
+    "difficulty": "Hard",
+    "likes": 339,
+    "dislikes": 18,
+    "acRate": 79.93505985447148,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.4K\", \"totalSubmission\": \"25.6K\", \"totalAcceptedRaw\": 20433, \"totalSubmissionRaw\": 25562, \"acRate\": \"79.9%\"}",
+    "similarQuestions": "[{\"title\": \"Number of Smooth Descent Periods of a Stock\", \"titleSlug\": \"number-of-smooth-descent-periods-of-a-stock\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Given a data structure that answers queries of the type to find the minimum in a range of an array (Range minimum query (RMQ) sparse table) in O(1) time. How can you solve this problem?",
+        "For each starting index do a binary search with an RMQ to find the ending possible position."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:26.888Z"
+}

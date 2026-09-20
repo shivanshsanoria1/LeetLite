@@ -1,0 +1,45 @@
+{
+    "questionId": "3929",
+    "questionFrontendId": "3632",
+    "title": "Subarrays with XOR at Least K",
+    "titleSlug": "subarrays-with-xor-at-least-k",
+    "difficulty": "Hard",
+    "likes": 4,
+    "dislikes": 2,
+    "acRate": 45.91280653950954,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"337\", \"totalSubmission\": \"734\", \"totalAcceptedRaw\": 337, \"totalSubmissionRaw\": 734, \"acRate\": \"45.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use a prefix XOR array",
+        "For each ending index, count how many subarrays have <code>XOR >= k</code>",
+        "Use a Trie to query those counts efficiently"
+    ],
+    "exampleTestcases": "[3,1,2,3]\n2\n[0,0,0]\n0",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:55:20.238Z"
+}

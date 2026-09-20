@@ -1,0 +1,40 @@
+{
+    "questionId": "444",
+    "questionFrontendId": "444",
+    "title": "Sequence Reconstruction",
+    "titleSlug": "sequence-reconstruction",
+    "difficulty": "Medium",
+    "likes": 623,
+    "dislikes": 1552,
+    "acRate": 31.130284648123308,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"67.1K\", \"totalSubmission\": \"215.5K\", \"totalAcceptedRaw\": 67073, \"totalSubmissionRaw\": 215459, \"acRate\": \"31.1%\"}",
+    "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Directed Acyclic Graph",
+            "slug": "directed-acyclic-graph"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:06:49.310Z"
+}

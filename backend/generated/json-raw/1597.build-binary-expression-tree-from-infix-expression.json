@@ -1,0 +1,43 @@
+{
+    "questionId": "1736",
+    "questionFrontendId": "1597",
+    "title": "Build Binary Expression Tree From Infix Expression",
+    "titleSlug": "build-binary-expression-tree-from-infix-expression",
+    "difficulty": "Hard",
+    "likes": 273,
+    "dislikes": 49,
+    "acRate": 62.728709248170325,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.1K\", \"totalSubmission\": \"24K\", \"totalAcceptedRaw\": 15085, \"totalSubmissionRaw\": 24048, \"acRate\": \"62.7%\"}",
+    "similarQuestions": "[{\"title\": \"Basic Calculator III\", \"titleSlug\": \"basic-calculator-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check If Two Expression Trees are Equivalent\", \"titleSlug\": \"check-if-two-expression-trees-are-equivalent\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Convert infix expression to postfix expression.",
+        "Build an expression tree from the postfix expression."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:37:55.294Z"
+}

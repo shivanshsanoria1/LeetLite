@@ -1,0 +1,31 @@
+{
+    "questionId": "603",
+    "questionFrontendId": "603",
+    "title": "Consecutive Available Seats",
+    "titleSlug": "consecutive-available-seats",
+    "difficulty": "Easy",
+    "likes": 659,
+    "dislikes": 80,
+    "acRate": 64.89376208657708,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"104.7K\", \"totalSubmission\": \"161.3K\", \"totalAcceptedRaw\": 104697, \"totalSubmissionRaw\": 161336, \"acRate\": \"64.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:09:10.468Z"
+}

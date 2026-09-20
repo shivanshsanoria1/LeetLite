@@ -1,0 +1,44 @@
+{
+    "questionId": "2075",
+    "questionFrontendId": "2021",
+    "title": "Brightest Position on Street",
+    "titleSlug": "brightest-position-on-street",
+    "difficulty": "Medium",
+    "likes": 176,
+    "dislikes": 5,
+    "acRate": 60.6158833063209,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"18K\", \"totalSubmission\": \"29.6K\", \"totalAcceptedRaw\": 17952, \"totalSubmissionRaw\": 29616, \"acRate\": \"60.6%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Number of Food Buckets to Feed the Hamsters\", \"titleSlug\": \"minimum-number-of-food-buckets-to-feed-the-hamsters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Positions on Street With Required Brightness\", \"titleSlug\": \"count-positions-on-street-with-required-brightness\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Convert lights into an array of ranges representing the range where each street light can light up and sort the start and end points of the ranges.",
+        "Do we need to traverse all possible positions on the street?",
+        "No, we don't, we only need to go to the start and end points of the ranges for each streetlight."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:04:09.401Z"
+}

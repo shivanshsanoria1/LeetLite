@@ -1,0 +1,34 @@
+{
+    "questionId": "3472",
+    "questionFrontendId": "3173",
+    "title": "Bitwise OR of Adjacent Elements",
+    "titleSlug": "bitwise-or-of-adjacent-elements",
+    "difficulty": "Easy",
+    "likes": 25,
+    "dislikes": 2,
+    "acRate": 94.71911626027213,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7K\", \"totalSubmission\": \"7.4K\", \"totalAcceptedRaw\": 7031, \"totalSubmissionRaw\": 7423, \"acRate\": \"94.7%\"}",
+    "similarQuestions": "[{\"title\": \"Neighboring Bitwise XOR\", \"titleSlug\": \"neighboring-bitwise-xor\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Iterate over array and calculate each element of the resulting array using <code>|</code> operation."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:08.396Z"
+}

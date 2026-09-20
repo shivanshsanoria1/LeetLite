@@ -1,0 +1,39 @@
+{
+    "questionId": "2522",
+    "questionFrontendId": "2387",
+    "title": "Median of a Row Wise Sorted Matrix",
+    "titleSlug": "median-of-a-row-wise-sorted-matrix",
+    "difficulty": "Medium",
+    "likes": 92,
+    "dislikes": 9,
+    "acRate": 71.14131035244723,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"9.1K\", \"totalAcceptedRaw\": 6439, \"totalSubmissionRaw\": 9051, \"acRate\": \"71.1%\"}",
+    "similarQuestions": "[{\"title\": \"Median of Two Sorted Arrays\", \"titleSlug\": \"median-of-two-sorted-arrays\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can you use the fact that the rows are sorted in non-decreasing order to solve the problem efficiently?",
+        "Try to binary search the answer."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:24:00.314Z"
+}

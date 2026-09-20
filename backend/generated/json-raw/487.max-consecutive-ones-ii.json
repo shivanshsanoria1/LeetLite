@@ -1,0 +1,39 @@
+{
+    "questionId": "487",
+    "questionFrontendId": "487",
+    "title": "Max Consecutive Ones II",
+    "titleSlug": "max-consecutive-ones-ii",
+    "difficulty": "Medium",
+    "likes": 1615,
+    "dislikes": 27,
+    "acRate": 52.136082347724475,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"186.9K\", \"totalSubmission\": \"358.6K\", \"totalAcceptedRaw\": 186948, \"totalSubmissionRaw\": 358577, \"acRate\": \"52.1%\"}",
+    "similarQuestions": "[{\"title\": \"Max Consecutive Ones\", \"titleSlug\": \"max-consecutive-ones\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"All Divisions With the Highest Score of a Binary Array\", \"titleSlug\": \"all-divisions-with-the-highest-score-of-a-binary-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:07:26.594Z"
+}

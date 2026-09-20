@@ -1,0 +1,30 @@
+{
+    "questionId": "2735",
+    "questionFrontendId": "2628",
+    "title": "JSON Deep Equal",
+    "titleSlug": "json-deep-equal",
+    "difficulty": "Medium",
+    "likes": 222,
+    "dislikes": 18,
+    "acRate": 39.76119402985074,
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.3K\", \"totalSubmission\": \"38.5K\", \"totalAcceptedRaw\": 15318, \"totalSubmissionRaw\": 38525, \"acRate\": \"39.8%\"}",
+    "similarQuestions": "[{\"title\": \"Convert Object to JSON String\", \"titleSlug\": \"convert-object-to-json-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten Deeply Nested Array\", \"titleSlug\": \"flatten-deeply-nested-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array of Objects to Matrix\", \"titleSlug\": \"array-of-objects-to-matrix\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Differences Between Two Objects\", \"titleSlug\": \"differences-between-two-objects\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "You can check if a value is an array with the Array.isArray() method. You can check if a value is an object by saying typeof obj === 'object' && obj !== null. You can list the keys of an object with the Object.keys() function.",
+        "If two objects have different keys or two arrays have a different length, they cannot be equal.",
+        "You can use recursion to investigate if the values of an object or array are also deeply equal. The base case is when the values are primitives (string, number, etc), at which case the check is a trivial === check."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:40:16.466Z"
+}

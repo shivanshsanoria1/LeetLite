@@ -1,0 +1,48 @@
+{
+    "questionId": "1051",
+    "questionFrontendId": "1055",
+    "title": "Shortest Way to Form String",
+    "titleSlug": "shortest-way-to-form-string",
+    "difficulty": "Medium",
+    "likes": 1341,
+    "dislikes": 77,
+    "acRate": 61.806537648747906,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"114.9K\", \"totalSubmission\": \"186K\", \"totalAcceptedRaw\": 114941, \"totalSubmissionRaw\": 185969, \"acRate\": \"61.8%\"}",
+    "similarQuestions": "[{\"title\": \"Is Subsequence\", \"titleSlug\": \"is-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of Matching Subsequences\", \"titleSlug\": \"number-of-matching-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Which conditions have to been met in order to be impossible to form the target string?",
+        "If there exists a character in the target string which doesn't exist in the source string then it will be impossible to form the target string.",
+        "Assuming we are in the case which is possible to form the target string, how can we assure the minimum number of used subsequences of source?",
+        "For each used subsequence try to match the leftmost character of the current subsequence with the leftmost character of the target string, if they match then erase both character otherwise erase just the subsequence character whenever the current subsequence gets empty, reset it to a new copy of subsequence and increment the count, do this until the target sequence gets empty. Finally return the count."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:21.386Z"
+}

@@ -1,0 +1,49 @@
+{
+    "questionId": "3698",
+    "questionFrontendId": "3422",
+    "title": "Minimum Operations to Make Subarray Elements Equal",
+    "titleSlug": "minimum-operations-to-make-subarray-elements-equal",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 5,
+    "acRate": 46.51711924439197,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"788\", \"totalSubmission\": \"1.7K\", \"totalAcceptedRaw\": 788, \"totalSubmissionRaw\": 1694, \"acRate\": \"46.5%\"}",
+    "similarQuestions": "[{\"title\": \"Find Median from Data Stream\", \"titleSlug\": \"find-median-from-data-stream\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Equal Array Elements II\", \"titleSlug\": \"minimum-moves-to-equal-array-elements-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "It can be proven that for each subarray of size <code>k</code>, one optimal common value is the median.",
+        "Use 2 multisets to maintain the median dynamically.",
+        "Calculate the sums of the 2 multisets dynamically to accelerate the answer calculation."
+    ],
+    "exampleTestcases": "[4,-3,2,1,-4,6]\n3\n[-2,-2,3,1,4]\n2",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:51:29.573Z"
+}

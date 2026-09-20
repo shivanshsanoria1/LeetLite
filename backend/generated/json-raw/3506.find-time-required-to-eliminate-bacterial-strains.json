@@ -1,0 +1,44 @@
+{
+    "questionId": "3814",
+    "questionFrontendId": "3506",
+    "title": "Find Time Required to Eliminate Bacterial Strains",
+    "titleSlug": "find-time-required-to-eliminate-bacterial-strains",
+    "difficulty": "Hard",
+    "likes": 4,
+    "dislikes": 1,
+    "acRate": 63.072227873855546,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"620\", \"totalSubmission\": \"983\", \"totalAcceptedRaw\": 620, \"totalSubmissionRaw\": 983, \"acRate\": \"63.1%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Time to Build Blocks\", \"titleSlug\": \"minimum-time-to-build-blocks\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use binary search.",
+        "First perform all the divisions, then assign the bacteria greedily."
+    ],
+    "exampleTestcases": "[10,4,5]\n2\n[10,4]\n5",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:52:51.524Z"
+}

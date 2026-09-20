@@ -1,0 +1,44 @@
+{
+    "questionId": "2072",
+    "questionFrontendId": "1950",
+    "title": "Maximum of Minimum Values in All Subarrays",
+    "titleSlug": "maximum-of-minimum-values-in-all-subarrays",
+    "difficulty": "Medium",
+    "likes": 147,
+    "dislikes": 56,
+    "acRate": 47.7815256875973,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.7K\", \"totalSubmission\": \"7.7K\", \"totalAcceptedRaw\": 3683, \"totalSubmissionRaw\": 7708, \"acRate\": \"47.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Imagine the array is empty, and each element is coming to its index one by one, starting with the smallest element.",
+        "For each coming element nums[i], calculate L and R, the indices of the first smallest elements on the left and the right respectively.",
+        "The answer of the queries from 1 to R-L+1 will be at least this element."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        },
+        {
+            "name": "Cartesian Tree",
+            "slug": "cartesian-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:08.576Z"
+}

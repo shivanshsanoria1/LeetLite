@@ -1,0 +1,28 @@
+{
+    "questionId": "2441",
+    "questionFrontendId": "2308",
+    "title": "Arrange Table by Gender",
+    "titleSlug": "arrange-table-by-gender",
+    "difficulty": "Medium",
+    "likes": 91,
+    "dislikes": 15,
+    "acRate": 71.04385128693994,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"12.6K\", \"totalAcceptedRaw\": 8943, \"totalSubmissionRaw\": 12588, \"acRate\": \"71.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:22:55.295Z"
+}

@@ -1,0 +1,49 @@
+{
+    "questionId": "3489",
+    "questionFrontendId": "3183",
+    "title": "The Number of Ways to Make the Sum",
+    "titleSlug": "the-number-of-ways-to-make-the-sum",
+    "difficulty": "Medium",
+    "likes": 21,
+    "dislikes": 1,
+    "acRate": 50.74695472305217,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"2.2K\", \"totalSubmission\": \"4.4K\", \"totalAcceptedRaw\": 2208, \"totalSubmissionRaw\": 4351, \"acRate\": \"50.7%\"}",
+    "similarQuestions": "[{\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Climbing Stairs\", \"titleSlug\": \"climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Coin Change II\", \"titleSlug\": \"coin-change-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Consider using dynamic programming.",
+        "Define <code>dp[i][x]</code> as the number of ways to make the sum <code>x</code> using only the first <code>i</code> coins; and define <code>coin[i]</code> as the value of coin <code>i</code>.",
+        "We can calculate <code>dp[i][x]</code> as the sum of <code>dp[i - 1][x]</code> and <code>dp[i][x - coin[i]]</code>.",
+        "Remember that 4 can at most be multiplied twice, so we calculate the <code>dp</code> for our infinite coins and then manually handle the existence of 4."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Knapsack Problem",
+            "slug": "knapsack-problem"
+        },
+        {
+            "name": "Sieve Theory",
+            "slug": "sieve-theory"
+        },
+        {
+            "name": "Mixed Knapsack",
+            "slug": "mixed-knapsack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:16.387Z"
+}

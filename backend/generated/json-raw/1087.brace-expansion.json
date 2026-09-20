@@ -1,0 +1,50 @@
+{
+    "questionId": "1076",
+    "questionFrontendId": "1087",
+    "title": "Brace Expansion",
+    "titleSlug": "brace-expansion",
+    "difficulty": "Medium",
+    "likes": 668,
+    "dislikes": 57,
+    "acRate": 66.86794587897884,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68.5K\", \"totalSubmission\": \"102.5K\", \"totalAcceptedRaw\": 68547, \"totalSubmissionRaw\": 102511, \"acRate\": \"66.9%\"}",
+    "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Letter Case Permutation\", \"titleSlug\": \"letter-case-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion II\", \"titleSlug\": \"brace-expansion-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "All generated strings are of the same size. How can we generate all of these strings?",
+        "Do a backtracking on which each level of it has to choose one single (e.g. 'a') character or any character of the given parenthesized group (e.g. \"{a,b,c}\")"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:45.214Z"
+}

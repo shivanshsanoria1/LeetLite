@@ -1,0 +1,47 @@
+{
+    "questionId": "244",
+    "questionFrontendId": "244",
+    "title": "Shortest Word Distance II",
+    "titleSlug": "shortest-word-distance-ii",
+    "difficulty": "Medium",
+    "likes": 1089,
+    "dislikes": 414,
+    "acRate": 63.04678494205598,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"184.9K\", \"totalSubmission\": \"293.2K\", \"totalAcceptedRaw\": 184862, \"totalSubmissionRaw\": 293214, \"acRate\": \"63.0%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance\", \"titleSlug\": \"shortest-word-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance III\", \"titleSlug\": \"shortest-word-distance-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T19:56:50.021Z"
+}

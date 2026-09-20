@@ -1,0 +1,41 @@
+{
+    "questionId": "3216",
+    "questionFrontendId": "2927",
+    "title": "Distribute Candies Among Children III",
+    "titleSlug": "distribute-candies-among-children-iii",
+    "difficulty": "Hard",
+    "likes": 25,
+    "dislikes": 7,
+    "acRate": 57.00848395426043,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"5.4K\", \"totalAcceptedRaw\": 3091, \"totalSubmissionRaw\": 5422, \"acRate\": \"57.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Try to solve the problem using combinatorics.",
+        "If the limit didn’t exist, the problem would be distributing <code>n</code> candies between <code>3</code> children.",
+        "The answer to the above problem would be <code>C(n + 2, 2)</code>.",
+        "Now try to combine this with the Inclusion-exclusion principle.",
+        "Apart from the above solution, there are other mathematical solutions that you can think of."
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Approach: Inclusion-Exclusion Principle\n\n#### Intuition\n\nWe can use the idea of conventional counting by subtracting invalid cases from all possible cases. Using the principle of inclusion-exclusion in combinatorial mathematics, we start by counting all possible combinations, then subtract the number of cases where at least one child receives more than $\\textit{limit}$ candies. However, this subtraction causes overcounting for cases where at least two children receive more than $\\textit{limit}$ candies, so we add those cases back. Similarly, when adding those cases back, the cases where all three children receive more than $\\textit{limit}$ candies are overcounted again, so we subtract those once more.\n\nSince children are allowed to receive zero candies, we can transform the problem into inserting two dividers into $n+3$ candies to distribute them among three children. There are $n+2$ gaps between candies where the dividers can be placed, so the total number of cases is $C_{n+2}^2$, where $C$ represents the number of combinations.\n\nTo count cases where at least one child receives more than $\\textit{limit}$ candies, we first give $\\textit{limit} + 1$ candies to any one child. Then we distribute the remaining $n - (\\textit{limit} + 1)$ candies among the three children. The number of such cases is $C_3^1 \\times C_{n-(\\textit{limit}+1)+2}^2$.\n\nFor cases where at least two children receive more than $\\textit{limit}$ candies, we first give $\\textit{limit} + 1$ candies to any two children, then distribute the remaining $n - 2 \\times (\\textit{limit} + 1)$ candies among the three children. The number of such cases is $C_3^2 \\times C_{n - 2(\\textit{limit} + 1) + 2}^2$.\n\nFor cases where all three children receive more than $\\textit{limit}$ candies, we first give $\\textit{limit} + 1$ candies to each child, then distribute the remaining $n - 3 \\times (\\textit{limit} + 1)$ candies among the three children. The number of such cases is $C_{n - 3(\\textit{limit} + 1) + 2}^2$.\n\nThus, the final number of valid cases is:\n\n$$\nC_{n+2}^2 - C_3^1 \\times C_{n-(\\textit{limit}+1)+2}^2 + C_3^2 \\times C_{n - 2(\\textit{limit}+1) + 2}^2 - C_{n - 3(\\textit{limit}+1) + 2}^2\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/i7tjnUwQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"i7tjnUwQ\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(1)$.\n\n  The result can be calculated directly.\n\n- Space complexity: $O(1)$.\n\n  Only a few additional variables are needed."
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:46:24.280Z"
+}

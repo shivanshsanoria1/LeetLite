@@ -1,0 +1,37 @@
+{
+    "questionId": "762",
+    "questionFrontendId": "760",
+    "title": "Find Anagram Mappings",
+    "titleSlug": "find-anagram-mappings",
+    "difficulty": "Easy",
+    "likes": 624,
+    "dislikes": 235,
+    "acRate": 83.96172827666591,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"113.8K\", \"totalSubmission\": \"135.6K\", \"totalAcceptedRaw\": 113816, \"totalSubmissionRaw\": 135557, \"acRate\": \"84.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Create a hashmap so that D[x] = i  whenever B[i] = x.  Then, the answer is [D[x] for x in A]."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:16:16.067Z"
+}

@@ -1,0 +1,39 @@
+{
+    "questionId": "2617",
+    "questionFrontendId": "2534",
+    "title": "Time Taken to Cross the Door",
+    "titleSlug": "time-taken-to-cross-the-door",
+    "difficulty": "Hard",
+    "likes": 118,
+    "dislikes": 25,
+    "acRate": 50.51039697542533,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.7K\", \"totalSubmission\": \"29.1K\", \"totalAcceptedRaw\": 14696, \"totalSubmissionRaw\": 29095, \"acRate\": \"50.5%\"}",
+    "similarQuestions": "[{\"title\": \"The Latest Time to Catch a Bus\", \"titleSlug\": \"the-latest-time-to-catch-a-bus\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use a queue to store the people who want to enter or exit and their corresponding times.",
+        "Simulate the process described in the statement and apply the 4 rules to the people crossing the door."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:38:56.801Z"
+}

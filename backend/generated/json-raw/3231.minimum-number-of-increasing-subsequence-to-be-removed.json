@@ -1,0 +1,36 @@
+{
+    "questionId": "3545",
+    "questionFrontendId": "3231",
+    "title": "Minimum Number of Increasing Subsequence to Be Removed",
+    "titleSlug": "minimum-number-of-increasing-subsequence-to-be-removed",
+    "difficulty": "Hard",
+    "likes": 8,
+    "dislikes": 1,
+    "acRate": 47.683535281539555,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"669\", \"totalSubmission\": \"1.4K\", \"totalAcceptedRaw\": 669, \"totalSubmissionRaw\": 1403, \"acRate\": \"47.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Find the longest non-increasing subsequence.",
+        "No two elements of this sequence can be removed in one operation.",
+        "Try to prove that the answer is equal to the length of this sequence."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:57:52.496Z"
+}

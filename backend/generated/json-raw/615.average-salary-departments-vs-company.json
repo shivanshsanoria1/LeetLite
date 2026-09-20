@@ -1,0 +1,31 @@
+{
+    "questionId": "615",
+    "questionFrontendId": "615",
+    "title": "Average Salary: Departments VS Company",
+    "titleSlug": "average-salary-departments-vs-company",
+    "difficulty": "Hard",
+    "likes": 243,
+    "dislikes": 77,
+    "acRate": 56.660881022665365,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"44.7K\", \"totalSubmission\": \"78.9K\", \"totalAcceptedRaw\": 44723, \"totalSubmissionRaw\": 78931, \"acRate\": \"56.7%\"}",
+    "similarQuestions": "[{\"title\": \"Countries You Can Safely Invest In\", \"titleSlug\": \"countries-you-can-safely-invest-in\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:33.506Z"
+}

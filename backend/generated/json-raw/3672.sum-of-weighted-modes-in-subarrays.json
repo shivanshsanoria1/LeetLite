@@ -1,0 +1,49 @@
+{
+    "questionId": "4036",
+    "questionFrontendId": "3672",
+    "title": "Sum of Weighted Modes in Subarrays",
+    "titleSlug": "sum-of-weighted-modes-in-subarrays",
+    "difficulty": "Medium",
+    "likes": 7,
+    "dislikes": 1,
+    "acRate": 53.99820305480682,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"601\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 601, \"totalSubmissionRaw\": 1113, \"acRate\": \"54.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use a sliding window.",
+        "Maintain the max frequency of the current window of length <code>k</code> using a data structure.",
+        "Maintain another data structure for values that have a given frequency."
+    ],
+    "exampleTestcases": "[1,2,2,3]\n3\n[1,2,1,2]\n2\n[4,3,4,3]\n3",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:09:39.970Z"
+}

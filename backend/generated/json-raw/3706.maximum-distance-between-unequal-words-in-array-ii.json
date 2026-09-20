@@ -1,0 +1,37 @@
+{
+    "questionId": "4070",
+    "questionFrontendId": "3706",
+    "title": "Maximum Distance Between Unequal Words in Array II",
+    "titleSlug": "maximum-distance-between-unequal-words-in-array-ii",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 2,
+    "acRate": 71.5852442671984,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"718\", \"totalSubmission\": \"1K\", \"totalAcceptedRaw\": 718, \"totalSubmissionRaw\": 1003, \"acRate\": \"71.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use two pointers",
+        "Fix the first word as <code>words[i]</code> and find the rightmost unequal <code>words[j]</code>",
+        "Fix the last word as <code>words[i]</code> and find the leftmost unequal <code>words[j]</code>"
+    ],
+    "exampleTestcases": "[\"leetcode\",\"leetcode\",\"codeforces\"]\n[\"a\",\"b\",\"c\",\"a\",\"a\"]\n[\"z\",\"z\",\"z\"]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:23:29.559Z"
+}

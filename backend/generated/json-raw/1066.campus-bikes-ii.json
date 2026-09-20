@@ -1,0 +1,73 @@
+{
+    "questionId": "1067",
+    "questionFrontendId": "1066",
+    "title": "Campus Bikes II",
+    "titleSlug": "campus-bikes-ii",
+    "difficulty": "Medium",
+    "likes": 969,
+    "dislikes": 90,
+    "acRate": 55.844231047628234,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"57.9K\", \"totalSubmission\": \"103.6K\", \"totalAcceptedRaw\": 57863, \"totalSubmissionRaw\": 103615, \"acRate\": \"55.8%\"}",
+    "similarQuestions": "[{\"title\": \"Campus Bikes\", \"titleSlug\": \"campus-bikes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Model the problem with a dp(pos, mask) where pos represents the current bike to be assigned and mask the set of available workers."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        },
+        {
+            "name": "Hungarian Algorithm",
+            "slug": "hungarian-algorithm"
+        },
+        {
+            "name": "Bipartite Graph",
+            "slug": "bipartite-graph"
+        },
+        {
+            "name": "Successive Shortest Path Algorithm",
+            "slug": "successive-shortest-path-algorithm"
+        },
+        {
+            "name": "Matching (Graph)",
+            "slug": "matching-graph"
+        },
+        {
+            "name": "Minimum-Cost Flow",
+            "slug": "minimum-cost-flow"
+        },
+        {
+            "name": "Flow Network",
+            "slug": "flow-network"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:29.011Z"
+}

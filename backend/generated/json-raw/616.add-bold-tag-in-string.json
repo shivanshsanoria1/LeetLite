@@ -1,0 +1,51 @@
+{
+    "questionId": "616",
+    "questionFrontendId": "616",
+    "title": "Add Bold Tag in String",
+    "titleSlug": "add-bold-tag-in-string",
+    "difficulty": "Medium",
+    "likes": 1119,
+    "dislikes": 204,
+    "acRate": 51.51087550076595,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"106.6K\", \"totalSubmission\": \"206.9K\", \"totalAcceptedRaw\": 106593, \"totalSubmissionRaw\": 206933, \"acRate\": \"51.5%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Tag Validator\", \"titleSlug\": \"tag-validator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Aho–Corasick Algorithm",
+            "slug": "aho-corasick-algorithm"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:34.098Z"
+}

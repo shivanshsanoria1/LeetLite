@@ -1,0 +1,47 @@
+{
+    "questionId": "1074",
+    "questionFrontendId": "1086",
+    "title": "High Five",
+    "titleSlug": "high-five",
+    "difficulty": "Easy",
+    "likes": 830,
+    "dislikes": 131,
+    "acRate": 74.14653446636629,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"125.6K\", \"totalSubmission\": \"169.3K\", \"totalAcceptedRaw\": 125557, \"totalSubmissionRaw\": 169335, \"acRate\": \"74.1%\"}",
+    "similarQuestions": "[{\"title\": \"Determine the Winner of a Bowling Game\", \"titleSlug\": \"determine-the-winner-of-a-bowling-game\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can we solve the problem if we have just one student?",
+        "Given an student sort their grades and get the top 5 average.",
+        "Generalize the idea to do it for many students."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:43.967Z"
+}

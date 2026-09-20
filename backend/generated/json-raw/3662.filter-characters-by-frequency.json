@@ -1,0 +1,39 @@
+{
+    "questionId": "4017",
+    "questionFrontendId": "3662",
+    "title": "Filter Characters by Frequency",
+    "titleSlug": "filter-characters-by-frequency",
+    "difficulty": "Easy",
+    "likes": 9,
+    "dislikes": 0,
+    "acRate": 86.62674650698602,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"2K\", \"totalAcceptedRaw\": 1736, \"totalSubmissionRaw\": 2004, \"acRate\": \"86.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Count the frequency of each character using a 26-entry array or a frequency map, then iterate through the string and append each character whose frequency is less than <code>k</code> to the result."
+    ],
+    "exampleTestcases": "\"aadbbcccca\"\n3\n\"xyz\"\n2",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T17:01:50.832Z"
+}

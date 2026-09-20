@@ -1,0 +1,40 @@
+{
+    "questionId": "1178",
+    "questionFrontendId": "1216",
+    "title": "Valid Palindrome III",
+    "titleSlug": "valid-palindrome-iii",
+    "difficulty": "Hard",
+    "likes": 844,
+    "dislikes": 15,
+    "acRate": 49.17319447183036,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"109.7K\", \"totalSubmission\": \"223.1K\", \"totalAcceptedRaw\": 109729, \"totalSubmissionRaw\": 223147, \"acRate\": \"49.2%\"}",
+    "similarQuestions": "[{\"title\": \"Valid Palindrome II\", \"titleSlug\": \"valid-palindrome-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Palindrome IV\", \"titleSlug\": \"valid-palindrome-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Can you reduce this problem to a classic problem?",
+        "The problem is equivalent to finding any palindromic subsequence of length at least N-K where N is the length of the string.",
+        "Try to find the longest palindromic subsequence.",
+        "Use DP to do that."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:28:58.900Z"
+}

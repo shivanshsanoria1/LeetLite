@@ -1,0 +1,31 @@
+{
+    "questionId": "1173",
+    "questionFrontendId": "1083",
+    "title": "Sales Analysis II",
+    "titleSlug": "sales-analysis-ii",
+    "difficulty": "Easy",
+    "likes": 282,
+    "dislikes": 49,
+    "acRate": 50.17189482692478,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68K\", \"totalSubmission\": \"135.5K\", \"totalAcceptedRaw\": 68007, \"totalSubmissionRaw\": 135548, \"acRate\": \"50.2%\"}",
+    "similarQuestions": "[{\"title\": \"Sales Analysis I\", \"titleSlug\": \"sales-analysis-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sales Analysis III\", \"titleSlug\": \"sales-analysis-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:36:41.573Z"
+}

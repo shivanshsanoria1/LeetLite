@@ -1,0 +1,39 @@
+{
+    "questionId": "3499",
+    "questionFrontendId": "3329",
+    "title": "Count Substrings With K-Frequency Characters II",
+    "titleSlug": "count-substrings-with-k-frequency-characters-ii",
+    "difficulty": "Hard",
+    "likes": 9,
+    "dislikes": 1,
+    "acRate": 72.3600692440854,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.3K\", \"totalSubmission\": \"1.7K\", \"totalAcceptedRaw\": 1254, \"totalSubmissionRaw\": 1733, \"acRate\": \"72.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "If substring <code>[i, j]</code> is valid, then for all <code>k >= j, [i, k]</code> is valid too.",
+        "For each <code>i</code>, find <code>j</code> with a sliding window or binary search."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:59:08.979Z"
+}

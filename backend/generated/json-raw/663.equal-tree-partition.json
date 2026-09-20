@@ -1,0 +1,39 @@
+{
+    "questionId": "663",
+    "questionFrontendId": "663",
+    "title": "Equal Tree Partition",
+    "titleSlug": "equal-tree-partition",
+    "difficulty": "Medium",
+    "likes": 509,
+    "dislikes": 38,
+    "acRate": 42.30778003330064,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"37.1K\", \"totalSubmission\": \"87.7K\", \"totalAcceptedRaw\": 37098, \"totalSubmissionRaw\": 87686, \"acRate\": \"42.3%\"}",
+    "similarQuestions": "[{\"title\": \"Create Components With Same Value\", \"titleSlug\": \"create-components-with-same-value\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:15:08.866Z"
+}

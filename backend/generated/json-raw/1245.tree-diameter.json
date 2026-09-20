@@ -1,0 +1,55 @@
+{
+    "questionId": "1177",
+    "questionFrontendId": "1245",
+    "title": "Tree Diameter",
+    "titleSlug": "tree-diameter",
+    "difficulty": "Medium",
+    "likes": 905,
+    "dislikes": 26,
+    "acRate": 61.26847421584264,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"57.6K\", \"totalSubmission\": \"94K\", \"totalAcceptedRaw\": 57623, \"totalSubmissionRaw\": 94050, \"acRate\": \"61.3%\"}",
+    "similarQuestions": "[{\"title\": \"Count Subtrees With Max Distance Between Cities\", \"titleSlug\": \"count-subtrees-with-max-distance-between-cities\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find Minimum Diameter After Merging Two Trees\", \"titleSlug\": \"find-minimum-diameter-after-merging-two-trees\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Start at any node A and traverse the tree to find the furthest node from it, let's call it B.",
+        "Having found the furthest node B, traverse the tree from B to find the furthest node from it, lets call it C.",
+        "The distance between B and C is the tree diameter."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:29:34.143Z"
+}

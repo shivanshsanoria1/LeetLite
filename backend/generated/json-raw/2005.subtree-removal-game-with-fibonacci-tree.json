@@ -1,0 +1,52 @@
+{
+    "questionId": "2153",
+    "questionFrontendId": "2005",
+    "title": "Subtree Removal Game with Fibonacci Tree",
+    "titleSlug": "subtree-removal-game-with-fibonacci-tree",
+    "difficulty": "Hard",
+    "likes": 16,
+    "dislikes": 50,
+    "acRate": 54.966139954853276,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"974\", \"totalSubmission\": \"1.8K\", \"totalAcceptedRaw\": 974, \"totalSubmissionRaw\": 1772, \"acRate\": \"55.0%\"}",
+    "similarQuestions": "[{\"title\": \"Game of Nim\", \"titleSlug\": \"game-of-nim\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "How can game theory help us solve this problem?",
+        "Think about the Sprague–Grundy theorem and the Colon Principle",
+        "The Grundy value of a node is the nim sum of the Grundy values of its children."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        },
+        {
+            "name": "Sprague–Grundy Theorem",
+            "slug": "sprague-grundy-theorem"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:03:56.295Z"
+}

@@ -1,0 +1,38 @@
+{
+    "questionId": "3401",
+    "questionFrontendId": "3094",
+    "title": "Guess the Number Using Bitwise Questions II",
+    "titleSlug": "guess-the-number-using-bitwise-questions-ii",
+    "difficulty": "Medium",
+    "likes": 16,
+    "dislikes": 4,
+    "acRate": 83.16901408450704,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.2K\", \"totalSubmission\": \"1.4K\", \"totalAcceptedRaw\": 1181, \"totalSubmissionRaw\": 1420, \"acRate\": \"83.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Ask the number 0 and save the result in <code>base</code>.",
+        "Ask <code>2<sup>i</sup></code> for <code>0 <= i < 30</code>.",
+        "If the result is greater than <code>base</code> for some <code>i</code>, then this bit is a set bit in <code>n</code>.",
+        "What can be done to revert the effect of the <code>XOR</code>.",
+        "Doing <code>XOR</code> again with the same number reverts the effect."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:48:45.808Z"
+}

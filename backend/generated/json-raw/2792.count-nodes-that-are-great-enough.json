@@ -1,0 +1,44 @@
+{
+    "questionId": "3016",
+    "questionFrontendId": "2792",
+    "title": "Count Nodes That Are Great Enough",
+    "titleSlug": "count-nodes-that-are-great-enough",
+    "difficulty": "Hard",
+    "likes": 24,
+    "dislikes": 0,
+    "acRate": 56.73545966228893,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.5K\", \"totalSubmission\": \"2.7K\", \"totalAcceptedRaw\": 1512, \"totalSubmissionRaw\": 2665, \"acRate\": \"56.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "<div class=\"_1l1MA\">For each node, calculate a list of <code>k</code> values representing <code>k</code> smallest values in the subtree of that node.</div>",
+        "<div class=\"_1l1MA\">To check if a node is great enough, get the described list in the first hint for its children and merge them. Since the resulting list may contain more than <code>k</code> elements, pick <code>k</code> smallest values and discard the extra ones.</div>",
+        "<div class=\"_1l1MA\">Now check if the merged list has exactly <code>k</code> elements, and the current node's value is greater than the greatest element in the list, then that node is great enough.</div>"
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:42:31.732Z"
+}

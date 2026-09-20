@@ -1,0 +1,43 @@
+{
+    "questionId": "1101",
+    "questionFrontendId": "1136",
+    "title": "Parallel Courses",
+    "titleSlug": "parallel-courses",
+    "difficulty": "Medium",
+    "likes": 1233,
+    "dislikes": 28,
+    "acRate": 62.3916349809886,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"114.9K\", \"totalSubmission\": \"184.1K\", \"totalAcceptedRaw\": 114863, \"totalSubmissionRaw\": 184100, \"acRate\": \"62.4%\"}",
+    "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Parallel Courses II\", \"titleSlug\": \"parallel-courses-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Parallel Courses III\", \"titleSlug\": \"parallel-courses-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to think of it as a graph problem. It will be impossible to study all the courses if the graph had a cycle.",
+        "The graph is a directed acyclic graph (DAG). The answer is the longes path in this DAG.",
+        "You can use DP to find the longest path in the DAG."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Directed Acyclic Graph",
+            "slug": "directed-acyclic-graph"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:27:27.759Z"
+}

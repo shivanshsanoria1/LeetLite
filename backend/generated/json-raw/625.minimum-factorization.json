@@ -1,0 +1,39 @@
+{
+    "questionId": "625",
+    "questionFrontendId": "625",
+    "title": "Minimum Factorization",
+    "titleSlug": "minimum-factorization",
+    "difficulty": "Medium",
+    "likes": 133,
+    "dislikes": 112,
+    "acRate": 34.15150349073718,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"12.4K\", \"totalSubmission\": \"36.4K\", \"totalAcceptedRaw\": 12425, \"totalSubmissionRaw\": 36382, \"acRate\": \"34.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Prime Factorization",
+            "slug": "prime-factorization"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:14:40.448Z"
+}

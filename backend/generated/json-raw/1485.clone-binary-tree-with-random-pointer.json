@@ -1,0 +1,50 @@
+{
+    "questionId": "1624",
+    "questionFrontendId": "1485",
+    "title": "Clone Binary Tree With Random Pointer",
+    "titleSlug": "clone-binary-tree-with-random-pointer",
+    "difficulty": "Medium",
+    "likes": 433,
+    "dislikes": 98,
+    "acRate": 81.12908676184844,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"38.4K\", \"totalSubmission\": \"47.3K\", \"totalAcceptedRaw\": 38413, \"totalSubmissionRaw\": 47348, \"acRate\": \"81.1%\"}",
+    "similarQuestions": "[{\"title\": \"Clone Graph\", \"titleSlug\": \"clone-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Copy List with Random Pointer\", \"titleSlug\": \"copy-list-with-random-pointer\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Clone N-ary Tree\", \"titleSlug\": \"clone-n-ary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Traverse the tree, keep a hashtable with you and create a nodecopy for each node in the tree.",
+        "Start traversing the original tree again and connect the left, right and random pointers in the cloned tree the same way as the original tree with the help of the hashtable."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:35:21.692Z"
+}

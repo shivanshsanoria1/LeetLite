@@ -1,0 +1,28 @@
+{
+    "questionId": "1785",
+    "questionFrontendId": "1645",
+    "title": "Hopper Company Queries II",
+    "titleSlug": "hopper-company-queries-ii",
+    "difficulty": "Hard",
+    "likes": 64,
+    "dislikes": 18,
+    "acRate": 39.87355961081469,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"22.3K\", \"totalAcceptedRaw\": 8893, \"totalSubmissionRaw\": 22303, \"acRate\": \"39.9%\"}",
+    "similarQuestions": "[{\"title\": \"Trips and Users\", \"titleSlug\": \"trips-and-users\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Hopper Company Queries I\", \"titleSlug\": \"hopper-company-queries-i\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Hopper Company Queries III\", \"titleSlug\": \"hopper-company-queries-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Times a Driver Was a Passenger\", \"titleSlug\": \"number-of-times-a-driver-was-a-passenger\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T17:51:20.783Z"
+}

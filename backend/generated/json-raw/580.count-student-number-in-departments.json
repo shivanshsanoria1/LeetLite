@@ -1,0 +1,34 @@
+{
+    "questionId": "580",
+    "questionFrontendId": "580",
+    "title": "Count Student Number in Departments",
+    "titleSlug": "count-student-number-in-departments",
+    "difficulty": "Medium",
+    "likes": 254,
+    "dislikes": 38,
+    "acRate": 60.05265408069126,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"80.1K\", \"totalSubmission\": \"133.3K\", \"totalAcceptedRaw\": 80063, \"totalSubmissionRaw\": 133321, \"acRate\": \"60.1%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Still remember the difference between 'INNER JOIN' and 'OUTTER JOIN' in SQL?",
+        "Do you know other expressions using the 'COUNT' function besides 'COUNT(*)'?"
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-04T20:08:49.953Z"
+}

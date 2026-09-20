@@ -1,0 +1,35 @@
+{
+    "questionId": "3925",
+    "questionFrontendId": "3596",
+    "title": "Minimum Cost Path with Alternating Directions I",
+    "titleSlug": "minimum-cost-path-with-alternating-directions-i",
+    "difficulty": "Medium",
+    "likes": 10,
+    "dislikes": 8,
+    "acRate": 71.46596858638743,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"546\", \"totalSubmission\": \"764\", \"totalAcceptedRaw\": 546, \"totalSubmissionRaw\": 764, \"acRate\": \"71.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "There are only three grid sizes for which reaching <code>(m - 1, n - 1)</code> is possible under the move rules: <code>m = 1, n = 1</code>; <code>m = 1, n = 2</code>; <code>m = 2, n = 1</code>."
+    ],
+    "exampleTestcases": "1\n1\n2\n1",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Brainteaser",
+            "slug": "brainteaser"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-14T16:54:35.379Z"
+}

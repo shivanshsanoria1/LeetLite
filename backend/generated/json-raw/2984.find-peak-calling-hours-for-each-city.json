@@ -1,0 +1,28 @@
+{
+    "questionId": "3281",
+    "questionFrontendId": "2984",
+    "title": "Find Peak Calling Hours for Each City",
+    "titleSlug": "find-peak-calling-hours-for-each-city",
+    "difficulty": "Medium",
+    "likes": 13,
+    "dislikes": 5,
+    "acRate": 60.93261302246232,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"7K\", \"totalAcceptedRaw\": 4286, \"totalSubmissionRaw\": 7034, \"acRate\": \"60.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:47:10.972Z"
+}

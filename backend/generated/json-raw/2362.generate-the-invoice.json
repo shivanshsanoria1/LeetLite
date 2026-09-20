@@ -1,0 +1,28 @@
+{
+    "questionId": "2501",
+    "questionFrontendId": "2362",
+    "title": "Generate the Invoice",
+    "titleSlug": "generate-the-invoice",
+    "difficulty": "Hard",
+    "likes": 35,
+    "dislikes": 30,
+    "acRate": 76.2694165252578,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"5.8K\", \"totalSubmission\": \"7.7K\", \"totalAcceptedRaw\": 5843, \"totalSubmissionRaw\": 7661, \"acRate\": \"76.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-09T18:23:40.346Z"
+}

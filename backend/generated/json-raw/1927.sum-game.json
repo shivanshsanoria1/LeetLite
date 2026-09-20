@@ -1,0 +1,142 @@
+{
+    "questionId": "2039",
+    "questionFrontendId": "1927",
+    "title": "Sum Game",
+    "titleSlug": "sum-game",
+    "difficulty": "Medium",
+    "likes": 887,
+    "dislikes": 145,
+    "acRate": 63.206905927134315,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"111.6K\", \"totalSubmission\": \"176.5K\", \"totalAcceptedRaw\": 111586, \"totalSubmissionRaw\": 176541, \"acRate\": \"63.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>Alice and Bob take turns playing a game, with <strong>Alice</strong><strong>&nbsp;starting first</strong>.</p>\n\n<p>You are given a string <code>num</code> of <strong>even length</strong> consisting of digits and <code>&#39;?&#39;</code> characters. On each turn, a player will do the following if there is still at least one <code>&#39;?&#39;</code> in <code>num</code>:</p>\n\n<ol>\n\t<li>Choose an index <code>i</code> where <code>num[i] == &#39;?&#39;</code>.</li>\n\t<li>Replace <code>num[i]</code> with any digit between <code>&#39;0&#39;</code> and <code>&#39;9&#39;</code>.</li>\n</ol>\n\n<p>The game ends when there are no more <code>&#39;?&#39;</code> characters in <code>num</code>.</p>\n\n<p>For Bob&nbsp;to win, the sum of the digits in the first half of <code>num</code> must be <strong>equal</strong> to the sum of the digits in the second half. For Alice&nbsp;to win, the sums must <strong>not be equal</strong>.</p>\n\n<ul>\n\t<li>For example, if the game ended with <code>num = &quot;243801&quot;</code>, then Bob&nbsp;wins because <code>2+4+3 = 8+0+1</code>. If the game ended with <code>num = &quot;243803&quot;</code>, then Alice&nbsp;wins because <code>2+4+3 != 8+0+3</code>.</li>\n</ul>\n\n<p>Assuming Alice and Bob play <strong>optimally</strong>, return <code>true</code> <em>if Alice will win and </em><code>false</code> <em>if Bob will win</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;5023&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There are no moves to be made.\nThe sum of the first half is equal to the sum of the second half: 5 + 0 = 2 + 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;25??&quot;\n<strong>Output:</strong> true\n<strong>Explanation: </strong>Alice can replace one of the &#39;?&#39;s with &#39;9&#39; and it will be impossible for Bob to make the sums equal.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;?3295???&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It can be proven that Bob will always win. One possible outcome is:\n- Alice replaces the first &#39;?&#39; with &#39;9&#39;. num = &quot;93295???&quot;.\n- Bob replaces one of the &#39;?&#39; in the right half with &#39;9&#39;. num = &quot;932959??&quot;.\n- Alice replaces one of the &#39;?&#39; in the right half with &#39;2&#39;. num = &quot;9329592?&quot;.\n- Bob replaces the last &#39;?&#39; in the right half with &#39;7&#39;. num = &quot;93295927&quot;.\nBob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= num.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>num.length</code> is <strong>even</strong>.</li>\n\t<li><code>num</code> consists of only digits and <code>&#39;?&#39;</code>.</li>\n</ul>\n",
+    "hints": [
+        "Bob can always make the total sum of both sides equal in mod 9.",
+        "Why does the difference between the number of question marks on the left and right side matter?"
+    ],
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Guess + Mathematical Induction Verification\n\n#### Intuition\n\n**Hint 1**\n\nIf the number of question marks is **odd**, then Alice is definitely the winner.\n\n**Hint 1 Explanation**\n\nSince Alice goes first, the last question mark must be filled by Alice.\n\nIt is clear that, in the range $[0, 9]$, there is at most one digit $d$ that can make the sum of the digits in the first half equal to the sum of the digits in the second half. Therefore, Alice can simply replace the last question mark with any digit other than $d$.\n\nThus, we only need to consider the case where the number of question marks is **even**.\n\n**Hint 2**\n\nIf the number of question marks is $0$, then Bob wins if and only if the sum of the digits in the first half equals the sum of the digits in the second half.\n\n**Hint 3**\n\nIf the number of question marks is $2$ and they appear on different sides, that is, one question mark is in the first half and the other is in the second half, then Bob wins if and only if the sum of the known digits in the first half equals the sum of the known digits in the second half.\n\n**Hint 3 Explanation**\n\nIf the sum of the known digits in the first half is equal to that in the second half, Alice can choose either question mark and replace it with any digit $d$. Bob can then replace the other question mark with the same digit $d$. Therefore, Bob is guaranteed to win.\n\nIf the sums of the known digits in the two halves are not equal, Alice can choose the question mark in the half with the larger sum and replace it with $9$. Since no digit greater than $9$ can be chosen, Alice is guaranteed to win.\n\n**Hint 4**\n\nIf the number of question marks is $2$ and both appear on the same side, Bob wins if and only if the sum of the known digits on that side is exactly $9$ less than the sum of the known digits on the other side.\n\n**Hint 4 Explanation**\n\nBob can always ensure that the digits chosen for two consecutive question marks sum to $9$. Specifically, if Alice replaces one question mark with a digit $d$, Bob can replace the other question mark with $9-d$.\n\nTherefore, if the above condition is satisfied, Bob is guaranteed to win. Otherwise:\n\n* If the difference exceeds $9$, Alice replaces the question mark with $0$.\n\n* If the difference does not exceed $9$, Alice replaces the question mark with $9$.\n\nIn either case, Bob cannot choose a digit in $[0, 9]$ that makes the sums of the two halves equal, so Alice is guaranteed to win.\n\n**Hint 5**\n\nSuppose the sum of the known digits in the first half is $n_0$, the number of question marks in the first half is $q_0$, the sum of the known digits in the second half is $n_1$, and the number of question marks in the second half is $q_1$. If $q_0 + q_1$ is even, then Bob wins if and only if\n\n$$\nn_0 - n_1 = \\frac{9}{2}(q_1 - q_0). \\tag{1}\n$$\n\nWe can interpret this equation based on Hints 3 and 4. Without loss of generality, assume $q_0 \\leq q_1$.\n\n* For the $q_0$ question marks on the two sides, according to Hint 3, Alice and Bob can choose digits so that their contributions to the two halves cancel each other out.\n\n* For the remaining $q_1-q_0$ question marks in the second half, according to Hint 4, Alice and Bob can pair them up, with each pair contributing a total of $9$.\n\n* Therefore, for the sums of the two halves to become equal, the first half must initially have a sum that is $\\frac{9}{2}(q_1-q_0)$ larger than the second half.\n\nThis gives Equation (1).\n\n**Hint 5 Explanation**\n\nWe can prove Hint 5 rigorously using mathematical induction on the total number of question marks $q_0 + q_1$.\n\n* According to Hints 3 and 4, Hint 5 holds when $q_0 + q_1 = 2$. In this case, Bob is guaranteed to win if Equation (1) holds; otherwise, Alice is guaranteed to win.\n\n* Assume that Hint 5 holds when $q_0 + q_1 = k$. We now consider the case where $q_0 + q_1 = k + 2$. Without loss of generality, assume $q_0 \\leq q_1$.\n\n  * If Equation (1) already holds, then consider Alice's first move. If Alice chooses a question mark in the first half and replaces it with $d$, Bob replaces a question mark in the second half with the same digit $d$. If Alice instead chooses a question mark in the second half and replaces it with $d$, Bob replaces another question mark in the second half with $9-d$. In both cases, the remaining game still satisfies Equation (1).\n\n    Therefore, the game can be reduced to the case of $q_0 + q_1 = k$, where, by the induction hypothesis, Bob is guaranteed to win.\n\n  * If Equation (1) does not hold, then we can write\n\n    $$\n    n_0 - n_1 = \\frac{9}{2}(q_1-q_0) + \\delta,\n    $$\n\n    where $\\delta \\neq 0$.\n\n    * If $\\delta > 0$, Alice replaces a question mark in the second half with $0$.\n\n      If Bob chooses a question mark in the first half and replaces it with $d$, then\n\n      $$\n      (n_0+d)-n_1 = \\frac{9}{2}(q_1-q_0)+(\\delta+d)\n      \\neq\n      \\frac{9}{2}((q_1-1)-(q_0-1)).\n      $$\n\n      Therefore, Equation (1) still does not hold.\n\n      If Bob instead chooses another question mark in the second half and replaces it with $d$, then\n\n      $$\n      n_0-(n_1+d) = \\frac{9}{2}((q_1-2)-q_0)+(\\delta+9-d)\n      \\neq\n      \\frac{9}{2}((q_1-2)-q_0).\n      $$\n\n      Therefore, Equation (1) also does not hold.\n\n    * If $\\delta < 0$, Alice replaces a question mark in the second half with $9$.\n\n      If Bob chooses a question mark in the first half and replaces it with $d$, then\n\n      $$\n      (n_0+d)-(n_1+9) = \\frac{9}{2}(q_1-q_0)+(\\delta-9+d)\n      \\neq\n      \\frac{9}{2}((q_1-1)-(q_0-1)).\n      $$\n\n      Therefore, Equation (1) still does not hold.\n\n      If Bob instead chooses another question mark in the second half and replaces it with $d$, then\n\n      $$\n      n_0-(n_1+9+d) = \\frac{9}{2}((q_1-2)-q_0)+(\\delta-d)\n      \\neq\n      \\frac{9}{2}((q_1-2)-q_0).\n      $$\n\n      Therefore, Equation (1) also does not hold.\n\n    In either case, the game can be reduced to the case of $q_0 + q_1 = k$, where Equation (1) does not hold. By the induction hypothesis, Alice is guaranteed to win.\n\nTherefore, Hint 5 holds for all even values of $q_0 + q_1$.\n\nFinally, we traverse the string $\\textit{num}$ to calculate $n_0$, $q_0$, $n_1$, and $q_1$. If $q_0 + q_1$ is odd, Alice is guaranteed to win. Otherwise, the winner is determined by Equation (1).\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CrH8C9Ys/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"CrH8C9Ys\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $\\textit{num}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(n)$.\n  \n  The implementation above creates two substrings of $\\textit{num}$, so it uses $O(n)$ additional space. We can reduce the space complexity to $O(1)$ by directly traversing $\\textit{num}$ once and calculating $n_0$, $q_0$, $n_1$, and $q_1$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool sumGame(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean sumGame(String num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def sumGame(self, num: str) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def sumGame(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {boolean}\n */\nvar sumGame = function(num) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function sumGame(num: string): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool SumGame(string num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool sumGame(char* num) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func sumGame(num string) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun sumGame(num: String): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func sumGame(_ num: String) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn sum_game(num: String) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} num\n# @return {Boolean}\ndef sum_game(num)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @return Boolean\n     */\n    function sumGame($num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool sumGame(String num) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def sumGame(num: String): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec sum_game(num :: String.t) :: boolean\n  def sum_game(num) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec sum_game(Num :: unicode:unicode_binary()) -> boolean().\nsum_game(Num) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (sum-game num)\n  (-> string? boolean?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-09T18:02:49.634Z"
+}
