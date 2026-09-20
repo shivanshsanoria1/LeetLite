@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const fsPromises = require('node:fs/promises')
 
 const config = require("./config.json");
 
@@ -57,11 +58,68 @@ function getFilePath(key) {
 	}
 }
 
+// Reads JSON data from a file path.
+// Writes defaultValue if the existing file is empty.
+async function readFromJSON(filePath, defaultValue = []) {
+	try {
+		const jsonData = await fsPromises.readFile(filePath, 'utf8');
+
+		if (!jsonData.trim()) {
+			await writeToJSON(filePath, defaultValue);
+			return defaultValue;
+		}
+
+		return JSON.parse(jsonData);
+	} catch (err) {
+		if (err.code === 'ENOENT') {
+			throw new Error(
+				`JSON file does not exist: ${filePath}. ` +
+				`Use helper.getFilePath() to obtain the file path.`
+			);
+		}
+
+		throw err;
+	}
+}
+
+async function writeToJSON(filePath, data = {}, minifiedFlag = false) {
+	try {
+		if (minifiedFlag) {
+			await fsPromises.writeFile(filePath, JSON.stringify(data), 'utf8');
+		} else {
+			await fsPromises.writeFile(filePath, JSON.stringify(data, null, 4), 'utf8');
+		}
+	} catch (err) {
+		throw err;
+	}
+}
+
+async function updateConfig(mode = 'local') {
+	try {
+		if (mode === 'web') {
+			const filePath = helper.getFilePath('webConfig');
+			await helper.writeToJSON(filePath, webConfig);
+
+			return `Updated ${filePath}`
+		}
+
+		const filePath = helper.getFilePath('config')
+		await helper.writeToJSON(filePath, config);
+
+		return `Updated ${filePath}`
+	} catch (err) {
+		throw err;
+	}
+}
+
 module.exports = {
 	ROOT,
 	getDirPath,
 	getFilePath,
-	getRootRelativePath
+	getRootRelativePath,
+	readFromJSON,
+	writeToJSON,
+	updateConfig
 };
 
 

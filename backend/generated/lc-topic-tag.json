@@ -8,7 +8,7 @@
     {
         "slug": "string",
         "name": "String",
-        "freq": 830,
+        "freq": 832,
         "color": "#a371f7"
     },
     {
@@ -20,7 +20,7 @@
     {
         "slug": "math",
         "name": "Math",
-        "freq": 628,
+        "freq": 629,
         "color": "#a371f7"
     },
     {
@@ -50,7 +50,7 @@
     {
         "slug": "binary-search",
         "name": "Binary Search",
-        "freq": 320,
+        "freq": 322,
         "color": "#a371f7"
     },
     {
@@ -86,7 +86,7 @@
     {
         "slug": "two-pointers",
         "name": "Two Pointers",
-        "freq": 237,
+        "freq": 238,
         "color": "#a371f7"
     },
     {
@@ -140,7 +140,7 @@
     {
         "slug": "enumeration",
         "name": "Enumeration",
-        "freq": 131,
+        "freq": 132,
         "color": "#6610f2"
     },
     {
@@ -246,15 +246,15 @@
         "color": "#0d6efd"
     },
     {
-        "slug": "memoization",
-        "name": "Memoization",
+        "slug": "hash-function",
+        "name": "Hash Function",
         "freq": 42,
         "color": "#0d6efd"
     },
     {
-        "slug": "hash-function",
-        "name": "Hash Function",
-        "freq": 41,
+        "slug": "memoization",
+        "name": "Memoization",
+        "freq": 42,
         "color": "#0d6efd"
     },
     {
@@ -276,14 +276,14 @@
         "color": "#0d6efd"
     },
     {
-        "slug": "dp-on-trees",
-        "name": "DP on Trees",
-        "freq": 31,
+        "slug": "rolling-hash",
+        "name": "Rolling Hash",
+        "freq": 32,
         "color": "#0d6efd"
     },
     {
-        "slug": "rolling-hash",
-        "name": "Rolling Hash",
+        "slug": "dp-on-trees",
+        "name": "DP on Trees",
         "freq": 31,
         "color": "#0d6efd"
     },
@@ -474,6 +474,12 @@
         "color": "#2cbb5d"
     },
     {
+        "slug": "suffix-array",
+        "name": "Suffix Array",
+        "freq": 8,
+        "color": "#2cbb5d"
+    },
+    {
         "slug": "sweep-line",
         "name": "Sweep Line",
         "freq": 8,
@@ -518,12 +524,6 @@
     {
         "slug": "quicksort",
         "name": "Quicksort",
-        "freq": 7,
-        "color": "#ffc01e"
-    },
-    {
-        "slug": "suffix-array",
-        "name": "Suffix Array",
         "freq": 7,
         "color": "#ffc01e"
     },

@@ -72,11 +72,3 @@ module.exports = {
 	time,
 	getErrorCount
 };
-
-// function ensureLogDir() {
-// 	try {
-// 		fs.mkdirSync(LOG_DIR, { recursive: true });
-// 	} catch (err) {
-// 		throw new Error(`Failed to create log directory: ${err.message}`);
-// 	}
-// }

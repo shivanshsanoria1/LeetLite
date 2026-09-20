@@ -8,11 +8,11 @@ const timer = require('../timer.js')
 const logger = require('../logger.js');
 const queries = require('./queries.js')
 
-const API_DELAY_MS = webConfig.API_DELAY_MS ?? 250 // Default: 250ms 
 const FORCE_REFRESH_BASE_PROBLEM_LIST = webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST ?? false
-const FORCE_REFRESH_PROBLEM_LIST = webConfig.FORCE_REFRESH_PROBLEM_LIST ?? false
+const API_DELAY_MS = webConfig.API_DELAY_MS ?? 250 // Default: 250 ms 
+const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 10000 // Default: 10 s
 const FETCH_NEXT_COUNT = webConfig.FETCH_NEXT_COUNT ?? 5
-const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 10000 // Default: 10 sec 
+const PARSE_ALL_JSON = webConfig.PARSE_ALL_JSON ?? false // default is to not do full parsing
 
 // fetch a list of all problems from LC-API, moves old data to backup;
 // use the local version if last fetch was less than 7 days ago;
@@ -32,7 +32,7 @@ async function fetchBaseProblemList() {
 			Date.now() - lastUpdatedTimestamp.getTime() < 7 * 24 * 60 * 60 * 1000) {
 			logger.info('Using the local version of Base LC-problem-list')
 
-			const baseProblemsLocal = await readFromJSON(filePathJSON)
+			const baseProblemsLocal = await helper.readFromJSON(filePathJSON)
 			if (baseProblemsLocal.length > 0) {
 				return baseProblemsLocal
 			}
@@ -84,21 +84,21 @@ async function fetchBaseProblemList() {
 		// create a backup of the old json
 		await createBackupJSON(filePathJSON)
 		// create the json with fresh data
-		await writeToJSON(filePathJSON, baseProblems)
+		await helper.writeToJSON(filePathJSON, baseProblems)
 
 		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
 
 		//switch OFF the FORCE REFRESH flag
 		if (webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST) {
 			webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST = false
-			await updateConfig('web')
+			logger.info(await helper.updateConfig('web'))
 			logger.info('FORCE_REFRESH_BASE_PROBLEM_LIST flag Reset to: false')
 		} else {
-			await updateConfig('web')
+			logger.info(await helper.updateConfig('web'))
 		}
 
 		config.MAX_QUES_ID = Number(baseProblems[baseProblems.length - 1].questionFrontendId)
-		await updateConfig('local')
+		logger.info(await helper.updateConfig('local'))
 		logger.info('Updated the MAX_QUES_ID in config.json to ' + config.MAX_QUES_ID)
 
 		return baseProblems
@@ -228,14 +228,14 @@ async function parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFile
 			const filenameJSON = `${quesId}.${titleSlug}.json`
 			const filePathJSONRaw = path.join(helper.getDirPath('LCProblemsJSONRaw'), filenameJSON)
 
-			const problemRaw = await readFromJSON(filePathJSONRaw)
+			const problemRaw = await helper.readFromJSON(filePathJSONRaw)
 
 			//needs to be parsed
-			if (webConfig.PARSE_ALL_JSON || !parsedJSONFilenameMap.get(quesId)) {
+			if (PARSE_ALL_JSON || !parsedJSONFilenameMap.get(quesId)) {
 				const problem = parseRawProblem(baseProblems, problemRaw, 'full')
 
 				const filePathJSON = path.join(helper.getDirPath('LCProblemsJSONParsed'), filenameJSON)
-				await writeToJSON(filePathJSON, problem)
+				await helper.writeToJSON(filePathJSON, problem)
 			}
 
 			const problem = parseRawProblem(baseProblems, problemRaw, 'list')
@@ -245,10 +245,10 @@ async function parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFile
 		problems.sort((a, b) => Number(a.quesId) - Number(b.quesId));
 
 		const filePathJSON = helper.getFilePath('LCProblemList')
-		await writeToJSON(filePathJSON, problems)
+		await helper.writeToJSON(filePathJSON, problems)
 
 		const filePathJSONMin = helper.getFilePath('LCProblemListMin')
-		await writeToJSON(filePathJSONMin, problems, true)
+		await helper.writeToJSON(filePathJSONMin, problems, true)
 
 		return problems
 	} catch (err) {
@@ -309,10 +309,10 @@ async function fetchProblem(titleSlug) {
 		const filenameJSON = `${problem.questionFrontendId}.${problem.titleSlug}.json`
 
 		const filePathJSONRaw = path.join(helper.getDirPath('LCProblemsJSONRaw'), filenameJSON)
-		await writeToJSON(filePathJSONRaw, problem)
+		await helper.writeToJSON(filePathJSONRaw, problem)
 
 		// const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
-		// await writeToJSON(filePathJSON, parseProblemJSON(data.question, baseProblems))
+		// await helper.writeToJSON(filePathJSON, parseProblemJSON(data.question, baseProblems))
 
 		// return problem
 
@@ -427,10 +427,10 @@ async function generateTopicTagsList(problems) {
 
 		// save the readable json
 		const filePath = helper.getFilePath('LCTopicTag')
-		await writeToJSON(filePath, topicTagsList)
+		await helper.writeToJSON(filePath, topicTagsList)
 		// save the minified json
 		const filePathMin = helper.getFilePath('LCTopicTagMin')
-		await writeToJSON(filePathMin, topicTagsList, true)
+		await helper.writeToJSON(filePathMin, topicTagsList, true)
 
 		return topicTagsList
 	} catch (err) {
@@ -492,42 +492,6 @@ async function fetchStatsFromLC() {
 
 fetchStatsFromLC()
 
-// Reads JSON data from a file path.
-// Writes defaultValue if the existing file is empty.
-async function readFromJSON(filePath, defaultValue = []) {
-	try {
-		const jsonData = await fs.readFile(filePath, 'utf8');
-
-		if (!jsonData.trim()) {
-			await writeToJSON(filePath, defaultValue);
-			return defaultValue;
-		}
-
-		return JSON.parse(jsonData);
-	} catch (err) {
-		if (err.code === 'ENOENT') {
-			throw new Error(
-				`JSON file does not exist: ${filePath}. ` +
-				`Use helper.getFilePath() to obtain the file path.`
-			);
-		}
-
-		throw err;
-	}
-}
-
-async function writeToJSON(filePath, data = {}, minifiedFlag = false) {
-	try {
-		if (minifiedFlag) {
-			await fs.writeFile(filePath, JSON.stringify(data), 'utf8');
-		} else {
-			await fs.writeFile(filePath, JSON.stringify(data, null, 4), 'utf8');
-		}
-	} catch (err) {
-		throw err;
-	}
-}
-
 // Moves the source file to a timestamped backup.
 // Does nothing if the source file does not exist.
 async function createBackupJSON(sourceFilePath) {
@@ -588,25 +552,6 @@ async function createBackupDir(sourceDirPath) {
 		logger.info(`Backup created: ${helper.getRootRelativePath(backupDirFullPath)}`);
 
 		return backupDirFullPath;
-	} catch (err) {
-		throw err;
-	}
-}
-
-async function updateConfig(mode = 'local') {
-	try {
-		if (mode === 'web') {
-			const filePath = helper.getFilePath('webConfig');
-			await writeToJSON(filePath, webConfig);
-			logger.info('Updated web-config.json')
-
-			return
-		}
-
-		const filePath = helper.getFilePath('config')
-		await writeToJSON(filePath, config);
-
-		logger.info('Updated config.json')
 	} catch (err) {
 		throw err;
 	}

@@ -152050,5 +152050,123 @@
             "hasSolution": false,
             "hasVideoSolution": false
         }
+    },
+    {
+        "quesId": 3733,
+        "title": "Minimum Time to Complete All Deliveries",
+        "titleSlug": "minimum-time-to-complete-all-deliveries",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "15.7K",
+            "totalSubmission": "44.7K",
+            "totalAcceptedRaw": 15739,
+            "totalSubmissionRaw": 44716,
+            "acRate": "35.2%",
+            "acRateRaw": 35.19769210126129,
+            "likes": 190,
+            "dislikes": 15
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4048,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 3734,
+        "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+        "titleSlug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "68K",
+            "totalSubmission": "122.2K",
+            "totalAcceptedRaw": 67990,
+            "totalSubmissionRaw": 122212,
+            "acRate": "55.6%",
+            "acRateRaw": 55.63283474617877,
+            "likes": 218,
+            "dislikes": 13
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Enumeration",
+                "slug": "enumeration"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4037,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 3735,
+        "title": "Lexicographically Smallest String After Reverse II",
+        "titleSlug": "lexicographically-smallest-string-after-reverse-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "366",
+            "totalSubmission": "759",
+            "totalAcceptedRaw": 366,
+            "totalSubmissionRaw": 759,
+            "acRate": "48.2%",
+            "acRateRaw": 48.22134387351779,
+            "likes": 2,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash"
+            },
+            {
+                "name": "Suffix Array",
+                "slug": "suffix-array"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4106,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
     }
 ]

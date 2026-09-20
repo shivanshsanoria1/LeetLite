@@ -1,0 +1,53 @@
+{
+    "quesId": 3734,
+    "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+    "titleSlug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "68K",
+        "totalSubmission": "122.2K",
+        "totalAcceptedRaw": 67990,
+        "totalSubmissionRaw": 122212,
+        "acRate": "55.6%",
+        "acRateRaw": 55.63283474617877,
+        "likes": 218,
+        "dislikes": 13
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4037,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"baba\"\n\"abba\"\n\"baba\"\n\"bbaa\"\n\"abc\"\n\"abb\"\n\"aac\"\n\"abb\"",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Sequential Enumeration\n\n#### Intuition\n\nThe task requires rearranging the string $\\textit{s}$ to find the lexicographically smallest palindrome that is greater than $\\textit{target}$. Therefore, we first need to determine whether $\\textit{s}$ can be rearranged to form a palindrome.\n\nA string can be rearranged into a palindrome if and only if at most one character appears an odd number of times. Otherwise, it is impossible to form a palindrome. Therefore, we first count the frequency of each character in $\\textit{s}$. If more than one character has an odd frequency, we return an empty string.\n\nWe then attempt to construct the lexicographically smallest palindrome that is greater than $\\textit{target}$. A palindrome consists of the **left half + an optional middle character + the right half**. Therefore, we only need to construct the left half, whose length is $\\lfloor \\dfrac{n}{2} \\rfloor$, because the right half is uniquely determined by the left half. To simplify the construction, we divide the frequency of each character by $2$, which gives us the number of available copies for the left half.\n\nThe construction consists of the following steps:\n\n* **Greedy Construction of the Left Half:** According to the problem, we need to find the lexicographically smallest palindrome that is greater than $\\textit{target}$. Therefore, we construct the left half from left to right.\n\n  * At each position, we try to place the smallest currently available character, from `'a'` to `'z'`. After placing it, we **check** whether the current prefix can eventually be extended to form a palindrome greater than $\\textit{target}$.\n\n  * **Checking method:** We combine the current prefix with the remaining characters arranged in descending order to construct the lexicographically largest palindrome that can be formed under the current prefix. If this palindrome is greater than $\\textit{target}$, then the current character is feasible.\n\n  * If the condition is satisfied, we fix the current character and continue to the next position. Otherwise, we restore its count and try the next character. If none of the available characters can produce a palindrome greater than $\\textit{target}$, we return an empty string.\n\n  * **Pruning:** If the current prefix is already lexicographically greater than the corresponding prefix of $\\textit{target}$, then the remaining characters no longer need to be chosen to make the palindrome greater than $\\textit{target}$. In this case, we arrange all remaining characters in ascending order to obtain the lexicographically smallest palindrome with the current prefix.\n\n* **Final Palindrome Construction:** After constructing the left half, we concatenate the middle character, if $n$ is odd, and the reverse of the left half to obtain the final palindrome.\n\n#### Details\n\n* **Greedy Correctness:** At each position, we choose the smallest character that can still lead to a valid palindrome greater than $\\textit{target}$. Since the feasibility check guarantees that the remaining characters can be arranged to produce a valid result, choosing the smallest feasible character at each position produces the lexicographically smallest possible palindrome.\n\n* **Maximum Palindrome Check:** By arranging all remaining characters in descending order, we obtain the lexicographically largest palindrome that can be formed under the current prefix. If this palindrome is not greater than $\\textit{target}$, then no palindrome starting with the current prefix can be greater than $\\textit{target}$. Therefore, the current prefix is not feasible.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/XLxWZQcN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XLxWZQcN\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the given string $\\textit{s}$, and let $|\\Sigma| = 26$ be the size of the character set.\n\n- Time complexity: $O(n|\\Sigma| \\times (n + |\\Sigma|))$.\n  \n  We first traverse $\\textit{s}$ to count the frequency of each character and determine whether it can be rearranged into a palindrome, which takes $O(n + |\\Sigma|)$ time. We then construct the left half from left to right and try each possible character, resulting in at most $O(n|\\Sigma|)$ attempts. For each attempt, the `check()` function constructs a candidate palindrome in $O(n + |\\Sigma|)$ time. Therefore, the overall time complexity is $O(n|\\Sigma|(n + |\\Sigma|))$.\n\n- Space complexity: $O(n + |\\Sigma|)$.\n  \n  The frequency array requires $O(|\\Sigma|)$ space, while the intermediate strings used during construction require $O(n)$ space.\n\n---"
+    },
+    "content": "<p>You are given two strings <code>s</code> and <code>target</code>, each of length <code>n</code>, consisting of lowercase English letters.</p>\n\n<p>Return the <strong><span data-keyword=\"lexicographically-smaller-string\">lexicographically smallest</span> string</strong> that is <strong>both</strong> a <strong><span data-keyword=\"palindrome-string\">palindromic</span> <span data-keyword=\"permutation\">permutation</span></strong> of <code>s</code> and <strong>strictly</strong> greater than <code>target</code>. If no such permutation exists, return an empty string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;baba&quot;, target = &quot;abba&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;baab&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The palindromic permutations of <code>s</code> (in lexicographical order) are <code>&quot;abba&quot;</code> and <code>&quot;baab&quot;</code>.</li>\n\t<li>The lexicographically smallest permutation that is strictly greater than <code>target</code> is <code>&quot;baab&quot;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;baba&quot;, target = &quot;bbaa&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The palindromic permutations of <code>s</code> (in lexicographical order) are <code>&quot;abba&quot;</code> and <code>&quot;baab&quot;</code>.</li>\n\t<li>None of them is lexicographically strictly greater than <code>target</code>. Therefore, the answer is <code>&quot;&quot;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abc&quot;, target = &quot;abb&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>s</code> has no palindromic permutations. Therefore, the answer is <code>&quot;&quot;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aac&quot;, target = &quot;abb&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;aca&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The only palindromic permutation of <code>s</code> is <code>&quot;aca&quot;</code>.</li>\n\t<li><code>&quot;aca&quot;</code> is strictly greater than <code>target</code>. Therefore, the answer is <code>&quot;aca&quot;</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == s.length == target.length &lt;= 300</code></li>\n\t<li><code>s</code> and <code>target</code> consist of only lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "A palindromic permutation exists only if at most one character has an odd count (for odd-length strings) or all counts are even (for even-length strings).",
+        "Focus on constructing the first half of the palindrome. The second half is determined by mirroring.",
+        "To be lexicographically greater than target, the first half must be greater than or equal to target's first half, with careful handling of the middle character for odd-length strings.",
+        "Use a backtracking approach or greedy selection for each position in the first half, trying the smallest available character that can still produce a valid palindrome.",
+        "After building the first half, mirror it (and add the middle character if needed) to form the full palindrome and verify it is strictly greater than target."
+    ],
+    "LC_SYNC_ISO": "2026-09-20T19:31:18.901Z",
+    "PARSED_ISO": "2026-09-20T19:31:20.193Z"
+}
