@@ -1,0 +1,51 @@
+{
+    "quesId": 1057,
+    "title": "Campus Bikes",
+    "titleSlug": "campus-bikes",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "79.1K",
+        "totalSubmission": "133.9K",
+        "totalAcceptedRaw": 79121,
+        "totalSubmissionRaw": 133895,
+        "acRate": "59.1%",
+        "acRateRaw": 59.091825684304865,
+        "likes": 1004,
+        "dislikes": 199
+    },
+    "similarQuesIds": [
+        1066
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1052,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "<p>Sort the elements by distance. In case of a tie, sort them by the index of the worker. After that, if there are still ties, sort them by the index of the bike.</p>\r\n\r\n<p>Can you do this in less than O(nlogn) time, where n is the total number of pairs between workers and bikes?</p>",
+        "Loop the sorted elements and match each pair of worker and bike if the given worker and bike where not used."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:22.760Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.014Z"
+}

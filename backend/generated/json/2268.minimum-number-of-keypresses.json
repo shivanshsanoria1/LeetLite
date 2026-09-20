@@ -1,0 +1,56 @@
+{
+    "quesId": 2268,
+    "title": "Minimum Number of Keypresses",
+    "titleSlug": "minimum-number-of-keypresses",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "37.5K",
+        "totalSubmission": "52.6K",
+        "totalAcceptedRaw": 37502,
+        "totalSubmissionRaw": 52561,
+        "acRate": "71.3%",
+        "acRateRaw": 71.34947965221362,
+        "likes": 251,
+        "dislikes": 40
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2405,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Map the most frequent letters so that you can type them with only 1 keypress.",
+        "Use an array to keep track of the frequency of every character, then sort it in non-increasing order."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:22:21.911Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.316Z"
+}

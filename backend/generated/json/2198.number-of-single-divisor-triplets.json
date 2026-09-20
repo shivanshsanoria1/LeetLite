@@ -1,0 +1,50 @@
+{
+    "quesId": 2198,
+    "title": "Number of Single Divisor Triplets",
+    "titleSlug": "number-of-single-divisor-triplets",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.7K",
+        "totalSubmission": "3.1K",
+        "totalAcceptedRaw": 1666,
+        "totalSubmissionRaw": 3135,
+        "acRate": "53.1%",
+        "acRateRaw": 53.141945773524725,
+        "likes": 28,
+        "dislikes": 12
+    },
+    "similarQuesIds": [
+        2183
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1383,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "The maximum value of nums.length is very large, but the maximum value of nums[i] is not.",
+        "Count the number of times each value appears in nums. Brute force through every possible combination of values and count how many single divisor triplets can be made with that combination of values."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:48.300Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.235Z"
+}

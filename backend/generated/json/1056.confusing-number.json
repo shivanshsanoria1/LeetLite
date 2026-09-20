@@ -1,0 +1,43 @@
+{
+    "quesId": 1056,
+    "title": "Confusing Number",
+    "titleSlug": "confusing-number",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "58.5K",
+        "totalSubmission": "117.3K",
+        "totalAcceptedRaw": 58511,
+        "totalSubmissionRaw": 117332,
+        "acRate": "49.9%",
+        "acRateRaw": 49.86789622609348,
+        "likes": 333,
+        "dislikes": 186
+    },
+    "similarQuesIds": [
+        246,
+        1088
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1069,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Reverse each digit with their corresponding new digit if an invalid digit is found the return -1. After reversing the digits just compare the reversed number with the original number."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:22.012Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.012Z"
+}

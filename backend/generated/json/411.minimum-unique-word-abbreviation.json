@@ -1,0 +1,53 @@
+{
+    "quesId": 411,
+    "title": "Minimum Unique Word Abbreviation",
+    "titleSlug": "minimum-unique-word-abbreviation",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "15.9K",
+        "totalSubmission": "39.2K",
+        "totalAcceptedRaw": 15903,
+        "totalSubmissionRaw": 39183,
+        "acRate": "40.6%",
+        "acRateRaw": 40.586478830104895,
+        "likes": 186,
+        "dislikes": 146
+    },
+    "similarQuesIds": [
+        320,
+        408,
+        527
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 411,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:06:20.130Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.895Z"
+}

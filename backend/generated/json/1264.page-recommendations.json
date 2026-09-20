@@ -1,0 +1,40 @@
+{
+    "quesId": 1264,
+    "title": "Page Recommendations",
+    "titleSlug": "page-recommendations",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "55.6K",
+        "totalSubmission": "85K",
+        "totalAcceptedRaw": 55613,
+        "totalSubmissionRaw": 84968,
+        "acRate": "65.5%",
+        "acRateRaw": 65.45169946332737,
+        "likes": 266,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        1892,
+        1949
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1399,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:30:02.597Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.038Z"
+}

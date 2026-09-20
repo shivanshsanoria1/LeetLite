@@ -1,0 +1,37 @@
+{
+    "quesId": 1951,
+    "title": "All the Pairs With the Maximum Number of Common Followers",
+    "titleSlug": "all-the-pairs-with-the-maximum-number-of-common-followers",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "14.7K",
+        "totalSubmission": "21.1K",
+        "totalAcceptedRaw": 14699,
+        "totalSubmissionRaw": 21068,
+        "acRate": "69.8%",
+        "acRateRaw": 69.76931839756978,
+        "likes": 101,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2098,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:03:09.272Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.787Z"
+}

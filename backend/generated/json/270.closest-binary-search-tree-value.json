@@ -1,0 +1,59 @@
+{
+    "quesId": 270,
+    "title": "Closest Binary Search Tree Value",
+    "titleSlug": "closest-binary-search-tree-value",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "457.9K",
+        "totalSubmission": "932K",
+        "totalAcceptedRaw": 457857,
+        "totalSubmissionRaw": 932028,
+        "acRate": "49.1%",
+        "acRateRaw": 49.12481733498992,
+        "likes": 1905,
+        "dislikes": 166
+    },
+    "similarQuesIds": [
+        222,
+        272,
+        700,
+        2476
+    ],
+    "topicTags": [
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 270,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:15.435Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.370Z"
+}

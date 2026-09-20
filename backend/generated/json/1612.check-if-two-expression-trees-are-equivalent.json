@@ -1,0 +1,60 @@
+{
+    "quesId": 1612,
+    "title": "Check If Two Expression Trees are Equivalent",
+    "titleSlug": "check-if-two-expression-trees-are-equivalent",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.9K",
+        "totalSubmission": "12.4K",
+        "totalAcceptedRaw": 8867,
+        "totalSubmissionRaw": 12425,
+        "acRate": "71.4%",
+        "acRateRaw": 71.36418511066398,
+        "likes": 146,
+        "dislikes": 24
+    },
+    "similarQuesIds": [
+        1597,
+        2313,
+        2331
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1750,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Count for each variable how many times it appeared in the first tree.",
+        "Do the same for the second tree and check if the count is the same for both tree."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:50:44.744Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.198Z"
+}

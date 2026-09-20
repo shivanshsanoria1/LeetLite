@@ -1,0 +1,45 @@
+{
+    "quesId": 738,
+    "title": "Monotone Increasing Digits",
+    "titleSlug": "monotone-increasing-digits",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "73K",
+        "totalSubmission": "145.9K",
+        "totalAcceptedRaw": 72961,
+        "totalSubmissionRaw": 145852,
+        "acRate": "50.0%",
+        "acRateRaw": 50.02399692839317,
+        "likes": 1423,
+        "dislikes": 116
+    },
+    "similarQuesIds": [
+        402
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 738,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>An integer has <strong>monotone increasing digits</strong> if and only if each pair of adjacent digits <code>x</code> and <code>y</code> satisfy <code>x &lt;= y</code>.</p>\n\n<p>Given an integer <code>n</code>, return <em>the largest number that is less than or equal to </em><code>n</code><em> with <strong>monotone increasing digits</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 9\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1234\n<strong>Output:</strong> 1234\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 332\n<strong>Output:</strong> 299\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:16:00.523Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.279Z"
+}

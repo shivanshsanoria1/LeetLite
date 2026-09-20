@@ -1,0 +1,37 @@
+{
+    "quesId": 2504,
+    "title": "Concatenate the Name and the Profession",
+    "titleSlug": "concatenate-the-name-and-the-profession",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.5K",
+        "totalSubmission": "9.3K",
+        "totalAcceptedRaw": 7487,
+        "totalSubmissionRaw": 9306,
+        "acRate": "80.5%",
+        "acRateRaw": 80.4534708790028,
+        "likes": 32,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2643,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:38:33.046Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.751Z"
+}

@@ -1,0 +1,43 @@
+{
+    "quesId": 3330,
+    "title": "Find the Original Typed String I",
+    "titleSlug": "find-the-original-typed-string-i",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "200.5K",
+        "totalSubmission": "278.8K",
+        "totalAcceptedRaw": 200469,
+        "totalSubmissionRaw": 278772,
+        "acRate": "71.9%",
+        "acRateRaw": 71.91145452197495,
+        "likes": 535,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        500,
+        2810
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3617,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: One-time Traversal\n\n#### Intuition\n\nIf a character in $\\textit{word}$ appears consecutively $k$ times (where $k > 1$), and Alice makes a mistake in this part, then in the actual original string, this character could have appeared $1, 2, \\dots, k - 1$ times. That is, there are $k - 1$ possible variations.\n\nFor the case $k = 1$, Alice will not make a mistake, so there are $0$ possibilities, which is consistent with the formula $k - 1$.\n\nTherefore, we can traverse the string once: let the current traversal position be $l$, and suppose the characters in $\\textit{word}$ from positions $[l, r]$ are the same, while the character at position $r + 1$ is different (or does not exist). In this case, we increase the answer by $r - l$, and continue traversing from position $r + 1$.\n\nThis further implies that the total contribution of the interval $[l, r]$ to the answer is $r - l$. We can interpret this as position $l$ not contributing to the answer, while each of the positions $[l + 1, r]$ contributes $1$. Therefore, for any position $i$ in the string $\\textit{word}$ (where $i > 0$), if $\\textit{word}[i - 1] = \\textit{word}[i]$, we can increase the answer by $1$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/5mH4GiBv/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"5mH4GiBv\"></iframe>\n\n#### Complexity analysis\n\nLet $n$ be the length of the string $\\textit{word}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$."
+    },
+    "content": "<p>Alice is attempting to type a specific string on her computer. However, she tends to be clumsy and <strong>may</strong> press a key for too long, resulting in a character being typed <strong>multiple</strong> times.</p>\n\n<p>Although Alice tried to focus on her typing, she is aware that she may still have done this <strong>at most</strong> <em>once</em>.</p>\n\n<p>You are given a string <code>word</code>, which represents the <strong>final</strong> output displayed on Alice&#39;s screen.</p>\n\n<p>Return the total number of <em>possible</em> original strings that Alice <em>might</em> have intended to type.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;abbcccc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The possible strings are: <code>&quot;abbcccc&quot;</code>, <code>&quot;abbccc&quot;</code>, <code>&quot;abbcc&quot;</code>, <code>&quot;abbc&quot;</code>, and <code>&quot;abcccc&quot;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;abcd&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only possible string is <code>&quot;abcd&quot;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;aaaa&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length &lt;= 100</code></li>\n\t<li><code>word</code> consists only of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Any group of consecutive characters might have been the mistake."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:59:09.898Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.195Z"
+}

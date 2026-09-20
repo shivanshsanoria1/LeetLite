@@ -1,0 +1,40 @@
+{
+    "quesId": 2692,
+    "title": "Make Object Immutable",
+    "titleSlug": "make-object-immutable",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "781",
+        "totalSubmission": "1.3K",
+        "totalAcceptedRaw": 781,
+        "totalSubmissionRaw": 1295,
+        "acRate": "60.3%",
+        "acRateRaw": 60.308880308880305,
+        "likes": 17,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        2690,
+        2691
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2776,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Javascript has the concept of Proxy. That concept is critical to this problem.",
+        "Recursively use proxy so that the user of the object is only able to access a proxy object.",
+        "Override how set works. It should throw the correct error instead of actually setting a value."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:41:10.533Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.363Z"
+}

@@ -1,0 +1,52 @@
+{
+    "quesId": 723,
+    "title": "Candy Crush",
+    "titleSlug": "candy-crush",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95.5K",
+        "totalSubmission": "123K",
+        "totalAcceptedRaw": 95524,
+        "totalSubmissionRaw": 123001,
+        "acRate": "77.7%",
+        "acRateRaw": 77.66115722636401,
+        "likes": 1081,
+        "dislikes": 551
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 723,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Carefully perform the \"crush\" and \"gravity\" steps.  In the crush step, flag each candy that should be removed, then go through and crush each flagged candy.  In the gravity step, collect the candy in each column and then rewrite the column appropriately.  Do these steps repeatedly until there's no work left to do."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:49.996Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.265Z"
+}

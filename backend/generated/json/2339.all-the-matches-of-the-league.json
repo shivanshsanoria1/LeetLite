@@ -1,0 +1,37 @@
+{
+    "quesId": 2339,
+    "title": "All the Matches of the League",
+    "titleSlug": "all-the-matches-of-the-league",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "12K",
+        "totalSubmission": "13.6K",
+        "totalAcceptedRaw": 12005,
+        "totalSubmissionRaw": 13587,
+        "acRate": "88.4%",
+        "acRateRaw": 88.357374153665,
+        "likes": 49,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2453,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:23:21.513Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.431Z"
+}

@@ -1,0 +1,41 @@
+{
+    "quesId": 3622,
+    "title": "Check Divisibility by Digit Sum and Product",
+    "titleSlug": "check-divisibility-by-digit-sum-and-product",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "226.5K",
+        "totalSubmission": "303.8K",
+        "totalAcceptedRaw": 226465,
+        "totalSubmissionRaw": 303788,
+        "acRate": "74.5%",
+        "acRateRaw": 74.54789037452518,
+        "likes": 285,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "exampleTestcases": "99\n23",
+    "meta": {
+        "quesIdLCBackend": 3918,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nAccording to the problem statement, we can extract each digit of $n$ from the least significant digit to the most significant digit and calculate the digit sum $\\textit{digitSum}$ and digit product $\\textit{digitProduct}$.\n\nFinally, we can determine whether $n$ is divisible by the sum of its digit sum and digit product by checking whether\n\n$$\nn \\bmod (\\textit{digitSum} + \\textit{digitProduct}) = 0.\n$$\n\nNote that extracting the digits modifies the value of $n$. Therefore, we need to save the original value of $n$ in advance.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/39Rr6F7E/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"39Rr6F7E\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the given number.\n\n- Time complexity: $O(\\log n)$.\n  \n  The number of digits in $n$ is $O(\\log n)$, and we process each digit exactly once.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>You are given a positive integer <code>n</code>. Determine whether <code>n</code> is divisible by the <strong>sum </strong>of the following two values:</p>\n\n<ul>\n\t<li>\n\t<p>The <strong>digit sum</strong> of <code>n</code> (the sum of its digits).</p>\n\t</li>\n\t<li>\n\t<p>The <strong>digit</strong> <strong>product</strong> of <code>n</code> (the product of its digits).</p>\n\t</li>\n</ul>\n\n<p>Return <code>true</code> if <code>n</code> is divisible by this sum; otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 99</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Since 99 is divisible by the sum (9 + 9 = 18) plus product (9 * 9 = 81) of its digits (total 99), the output is true.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 23</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Since 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its digits (total 11), the output is false.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Compute the digits' sum and product, then check if <code>n % (sum + product) == 0</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:55:05.454Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.630Z"
+}

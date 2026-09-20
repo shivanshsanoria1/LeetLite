@@ -1,0 +1,57 @@
+{
+    "quesId": 3577,
+    "title": "Count the Number of Computer Unlocking Permutations",
+    "titleSlug": "count-the-number-of-computer-unlocking-permutations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95.5K",
+        "totalSubmission": "162.7K",
+        "totalAcceptedRaw": 95482,
+        "totalSubmissionRaw": 162742,
+        "acRate": "58.7%",
+        "acRateRaw": 58.6707795160438,
+        "likes": 360,
+        "dislikes": 133
+    },
+    "similarQuesIds": [
+        1006
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Brainteaser",
+            "slug": "brainteaser"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "exampleTestcases": "[1,2,3]\n[3,3,3,4,4,4]",
+    "meta": {
+        "quesIdLCBackend": 3864,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Brain Teaser\n\n#### Intuition\n\nThe password complexity of the computer with index $0$ is denoted as $T = \\textit{complexity}[0]$.\n\nIf there exists a computer with an index greater than $0$ whose password complexity is less than or equal to $T$, then we should pick the one with the smallest password complexity. Since no computer has a smaller complexity than that, it can never be unlocked, so the answer is $0$.\n\nIf no such computer exists, then every computer can be unlocked by computer $0$ at the start, and the rest can be unlocked in any order. Thus, the answer is $(n-1)!$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/HLA8wDi5/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"HLA8wDi5\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>You are given an array <code>complexity</code> of length <code>n</code>.</p>\n\n<p>There are <code>n</code> <strong>locked</strong> computers in a room with labels from 0 to <code>n - 1</code>, each with its own <strong>unique</strong> password. The password of the computer <code>i</code> has a complexity <code>complexity[i]</code>.</p>\n\n<p>The password for the computer labeled 0 is <strong>already</strong> decrypted and serves as the root. All other computers must be unlocked using it or another previously unlocked computer, following this information:</p>\n\n<ul>\n\t<li>You can decrypt the password for the computer <code>i</code> using the password for computer <code>j</code>, where <code>j</code> is <strong>any</strong> integer less than <code>i</code> with a lower complexity. (i.e. <code>j &lt; i</code> and <code>complexity[j] &lt; complexity[i]</code>)</li>\n\t<li>To decrypt the password for computer <code>i</code>, you must have already unlocked a computer <code>j</code> such that <code>j &lt; i</code> and <code>complexity[j] &lt; complexity[i]</code>.</li>\n</ul>\n\n<p>Find the number of <span data-keyword=\"permutation-array\">permutations</span> of <code>[0, 1, 2, ..., (n - 1)]</code> that represent a valid order in which the computers can be unlocked, starting from computer 0 as the only initially unlocked one.</p>\n\n<p>Since the answer may be large, return it <strong>modulo</strong> 10<sup>9</sup> + 7.</p>\n\n<p><strong>Note</strong> that the password for the computer <strong>with label</strong> 0 is decrypted, and <em>not</em> the computer with the first position in the permutation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">complexity = [1,2,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The valid permutations are:</p>\n\n<ul>\n\t<li>[0, 1, 2]\n\t<ul>\n\t\t<li>Unlock computer 0 first with root password.</li>\n\t\t<li>Unlock computer 1 with password of computer 0 since <code>complexity[0] &lt; complexity[1]</code>.</li>\n\t\t<li>Unlock computer 2 with password of computer 1 since <code>complexity[1] &lt; complexity[2]</code>.</li>\n\t</ul>\n\t</li>\n\t<li>[0, 2, 1]\n\t<ul>\n\t\t<li>Unlock computer 0 first with root password.</li>\n\t\t<li>Unlock computer 2 with password of computer 0 since <code>complexity[0] &lt; complexity[2]</code>.</li>\n\t\t<li>Unlock computer 1 with password of computer 0 since <code>complexity[0] &lt; complexity[1]</code>.</li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">complexity = [3,3,3,4,4,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no possible permutations which can unlock all computers.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= complexity.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= complexity[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Ensure that the element at index 0 has the unique minimum complexity (no other element can match its value).",
+        "Fix index 0 as the first in the unlocking order.",
+        "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:54:11.619Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.573Z"
+}

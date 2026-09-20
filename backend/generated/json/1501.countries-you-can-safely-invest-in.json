@@ -1,0 +1,39 @@
+{
+    "quesId": 1501,
+    "title": "Countries You Can Safely Invest In",
+    "titleSlug": "countries-you-can-safely-invest-in",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "50.7K",
+        "totalSubmission": "99.7K",
+        "totalAcceptedRaw": 50693,
+        "totalSubmissionRaw": 99696,
+        "acRate": "50.8%",
+        "acRateRaw": 50.847576632964206,
+        "likes": 314,
+        "dislikes": 149
+    },
+    "similarQuesIds": [
+        615
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1641,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:35:48.778Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.982Z"
+}

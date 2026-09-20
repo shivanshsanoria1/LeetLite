@@ -1,0 +1,44 @@
+{
+    "quesId": 3450,
+    "title": "Maximum Students on a Single Bench",
+    "titleSlug": "maximum-students-on-a-single-bench",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.5K",
+        "totalSubmission": "2.9K",
+        "totalAcceptedRaw": 2518,
+        "totalSubmissionRaw": 2862,
+        "acRate": "88.0%",
+        "acRateRaw": 87.98043326345213,
+        "likes": 15,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "exampleTestcases": "[[1,2],[2,2],[3,3],[1,3],[2,3]]\n[[1,1],[2,1],[3,1],[4,2],[5,2]]\n[[1,1],[1,1]]\n[]",
+    "meta": {
+        "quesIdLCBackend": 3787,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use a hash table (or dictionary) to group students by their bench ID."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:51:58.052Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.411Z"
+}

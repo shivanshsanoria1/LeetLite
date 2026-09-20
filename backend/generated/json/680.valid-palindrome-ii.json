@@ -1,0 +1,50 @@
+{
+    "quesId": 680,
+    "title": "Valid Palindrome II",
+    "titleSlug": "valid-palindrome-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.2M",
+        "totalSubmission": "2.7M",
+        "totalAcceptedRaw": 1210912,
+        "totalSubmissionRaw": 2708763,
+        "acRate": "44.7%",
+        "acRateRaw": 44.7035535329886,
+        "likes": 9149,
+        "dislikes": 523
+    },
+    "similarQuesIds": [
+        125,
+        1216,
+        2330
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 680,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given a string <code>s</code>, return <code>true</code> <em>if the </em><code>s</code><em> can be palindrome after deleting <strong>at most one</strong> character from it</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aba&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abca&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> You could delete the character &#39;c&#39;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abc&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:20.538Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.230Z"
+}

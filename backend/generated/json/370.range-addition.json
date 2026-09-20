@@ -1,0 +1,51 @@
+{
+    "quesId": 370,
+    "title": "Range Addition",
+    "titleSlug": "range-addition",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "107.7K",
+        "totalSubmission": "147.3K",
+        "totalAcceptedRaw": 107674,
+        "totalSubmissionRaw": 147290,
+        "acRate": "73.1%",
+        "acRateRaw": 73.10340145291602,
+        "likes": 1688,
+        "dislikes": 87
+    },
+    "similarQuesIds": [
+        598,
+        2237,
+        2381
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 370,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Thinking of using advanced data structures? You are thinking it too complicated.",
+        "For each update operation, do you really need to update all elements between i and j?",
+        "Update only the first and end element is sufficient.",
+        "The optimal time complexity is O(<b><i>k</i></b> + <b><i>n</i></b>) and uses O(1) extra space."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:05:42.816Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.721Z"
+}

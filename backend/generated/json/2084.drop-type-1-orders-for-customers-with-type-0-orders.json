@@ -1,0 +1,37 @@
+{
+    "quesId": 2084,
+    "title": "Drop Type 1 Orders for Customers With Type 0 Orders",
+    "titleSlug": "drop-type-1-orders-for-customers-with-type-0-orders",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "15.1K",
+        "totalSubmission": "17.4K",
+        "totalAcceptedRaw": 15064,
+        "totalSubmissionRaw": 17398,
+        "acRate": "86.6%",
+        "acRateRaw": 86.58466490401196,
+        "likes": 98,
+        "dislikes": 20
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2224,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:05:07.870Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.000Z"
+}

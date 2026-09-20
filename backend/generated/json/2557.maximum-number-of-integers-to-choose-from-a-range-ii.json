@@ -1,0 +1,60 @@
+{
+    "quesId": 2557,
+    "title": "Maximum Number of Integers to Choose From a Range II",
+    "titleSlug": "maximum-number-of-integers-to-choose-from-a-range-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3K",
+        "totalSubmission": "8.6K",
+        "totalAcceptedRaw": 3000,
+        "totalSubmissionRaw": 8613,
+        "acRate": "34.8%",
+        "acRateRaw": 34.83106931382793,
+        "likes": 42,
+        "dislikes": 26
+    },
+    "similarQuesIds": [
+        41,
+        448,
+        2195,
+        2295,
+        2554,
+        3464
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2702,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "It is optimal always to take the smallest possible integer you can choose.",
+        "Between every consecutive banned integers, can you find how many integers you can choose?",
+        "Think of using binary search to find that."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:39:16.668Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.144Z"
+}

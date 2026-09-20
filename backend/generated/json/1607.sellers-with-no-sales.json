@@ -1,0 +1,40 @@
+{
+    "quesId": 1607,
+    "title": "Sellers With No Sales",
+    "titleSlug": "sellers-with-no-sales",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "46.8K",
+        "totalSubmission": "86.2K",
+        "totalAcceptedRaw": 46835,
+        "totalSubmissionRaw": 86206,
+        "acRate": "54.3%",
+        "acRateRaw": 54.329165023316236,
+        "likes": 147,
+        "dislikes": 14
+    },
+    "similarQuesIds": [
+        1581
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1749,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:50:38.615Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.192Z"
+}

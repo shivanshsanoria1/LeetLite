@@ -1,0 +1,52 @@
+{
+    "quesId": 1430,
+    "title": "Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree",
+    "titleSlug": "check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "46.7K",
+        "totalSubmission": "98.3K",
+        "totalAcceptedRaw": 46728,
+        "totalSubmissionRaw": 98295,
+        "acRate": "47.5%",
+        "acRateRaw": 47.538531970090034,
+        "likes": 219,
+        "dislikes": 16
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1432,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Depth-first search (DFS) with the parameters: current node in the binary tree and current position in the array of integers.",
+        "When reaching at final position check if it is a leaf node."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:34:10.313Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.824Z"
+}

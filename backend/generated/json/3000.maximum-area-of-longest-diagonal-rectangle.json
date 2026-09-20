@@ -1,0 +1,40 @@
+{
+    "quesId": 3000,
+    "title": "Maximum Area of Longest Diagonal Rectangle",
+    "titleSlug": "maximum-area-of-longest-diagonal-rectangle",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "189.6K",
+        "totalSubmission": "413.2K",
+        "totalAcceptedRaw": 189554,
+        "totalSubmissionRaw": 413219,
+        "acRate": "45.9%",
+        "acRateRaw": 45.87265863220561,
+        "likes": 503,
+        "dislikes": 42
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3251,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe traverse all rectangles:\n- Using the Pythagorean theorem, we calculate the square of the diagonal of the rectangle, denoted as $\\textit{diaSq}$.\n- Using the formula for the area of a rectangle, we calculate its area, denoted as $\\textit{area}$.\n\nWe then compare the diagonal lengths:\n- If the diagonal square is equal to the current largest diagonal square, we compare the area values and update the maximum area.\n- If the diagonal square is greater than the current largest diagonal square, we update both the largest diagonal square and the maximum area.\n\nFinally, we return the maximum area value.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/QsjYSgC2/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"QsjYSgC2\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>You are given a 2D <strong>0-indexed </strong>integer array <code>dimensions</code>.</p>\n\n<p>For all indices <code>i</code>, <code>0 &lt;= i &lt; dimensions.length</code>, <code>dimensions[i][0]</code> represents the length and <code>dimensions[i][1]</code> represents the width of the rectangle<span style=\"font-size: 13.3333px;\"> <code>i</code></span>.</p>\n\n<p>Return <em>the <strong>area</strong> of the rectangle having the <strong>longest</strong> diagonal. If there are multiple rectangles with the longest diagonal, return the area of the rectangle having the <strong>maximum</strong> area.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> dimensions = [[9,3],[8,6]]\n<strong>Output:</strong> 48\n<strong>Explanation:</strong> \nFor index = 0, length = 9 and width = 3. Diagonal length = sqrt(9 * 9 + 3 * 3) = sqrt(90) &asymp;<!-- notionvc: 882cf44c-3b17-428e-9c65-9940810216f1 --> 9.487.\nFor index = 1, length = 8 and width = 6. Diagonal length = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10.\nSo, the rectangle at index 1 has a greater diagonal length therefore we return area = 8 * 6 = 48.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> dimensions = [[3,4],[4,3]]\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> Length of diagonal is the same for both which is 5, so maximum area = 12.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= dimensions.length &lt;= 100</code></li>\n\t<li><code><font face=\"monospace\">dimensions[i].length == 2</font></code></li>\n\t<li><code><font face=\"monospace\">1 &lt;= dimensions[i][0], dimensions[i][1] &lt;= 100</font></code></li>\n</ul>\n",
+    "hints": [
+        "Diagonal of rectangle is <code>sqrt(length<sup>2</sup> + width<sup>2</sup>)</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:24.257Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.755Z"
+}

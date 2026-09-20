@@ -1,0 +1,58 @@
+{
+    "quesId": 3265,
+    "title": "Count Almost Equal Pairs I",
+    "titleSlug": "count-almost-equal-pairs-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "30.2K",
+        "totalSubmission": "78.7K",
+        "totalAcceptedRaw": 30163,
+        "totalSubmissionRaw": 78663,
+        "acRate": "38.3%",
+        "acRateRaw": 38.34458385772218,
+        "likes": 164,
+        "dislikes": 26
+    },
+    "similarQuesIds": [
+        1790
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3534,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an array <code>nums</code> consisting of positive integers.</p>\n\n<p>We call two integers <code>x</code> and <code>y</code> in this problem <strong>almost equal</strong> if both integers can become equal after performing the following operation <strong>at most once</strong>:</p>\n\n<ul>\n\t<li>Choose <strong>either</strong> <code>x</code> or <code>y</code> and swap any two digits within the chosen number.</li>\n</ul>\n\n<p>Return the number of indices <code>i</code> and <code>j</code> in <code>nums</code> where <code>i &lt; j</code> such that <code>nums[i]</code> and <code>nums[j]</code> are <strong>almost equal</strong>.</p>\n\n<p><strong>Note</strong> that it is allowed for an integer to have leading zeros after performing an operation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,12,30,17,21]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The almost equal pairs of elements are:</p>\n\n<ul>\n\t<li>3 and 30. By swapping 3 and 0 in 30, you get 3.</li>\n\t<li>12 and 21. By swapping 1 and 2 in 12, you get 21.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1,1,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Every two elements in the array are almost equal.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [123,231]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We cannot swap any two digits of 123 or 231 to reach the other.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Since the constraint on the number of elements is small, you can check all pairs in the array.",
+        "For each pair, perform an operation on one of the elements and check if it becomes equal to the other."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:18.680Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.090Z"
+}

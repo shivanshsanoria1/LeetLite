@@ -1,0 +1,39 @@
+{
+    "quesId": 1308,
+    "title": "Running Total for Different Genders",
+    "titleSlug": "running-total-for-different-genders",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "48.1K",
+        "totalSubmission": "56K",
+        "totalAcceptedRaw": 48145,
+        "totalSubmissionRaw": 55959,
+        "acRate": "86.0%",
+        "acRateRaw": 86.03620507871834,
+        "likes": 225,
+        "dislikes": 70
+    },
+    "similarQuesIds": [
+        1204
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1439,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:31:13.612Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.423Z"
+}

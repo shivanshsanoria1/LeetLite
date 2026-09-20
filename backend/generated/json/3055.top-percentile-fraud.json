@@ -1,0 +1,37 @@
+{
+    "quesId": 3055,
+    "title": "Top Percentile Fraud",
+    "titleSlug": "top-percentile-fraud",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.6K",
+        "totalSubmission": "6.2K",
+        "totalAcceptedRaw": 3584,
+        "totalSubmissionRaw": 6238,
+        "acRate": "57.5%",
+        "acRateRaw": 57.45431227957679,
+        "likes": 10,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3339,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:11.387Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.840Z"
+}

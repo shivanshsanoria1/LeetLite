@@ -1,0 +1,52 @@
+{
+    "quesId": 1137,
+    "title": "N-th Tribonacci Number",
+    "titleSlug": "n-th-tribonacci-number",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.1M",
+        "totalSubmission": "1.8M",
+        "totalAcceptedRaw": 1143608,
+        "totalSubmissionRaw": 1813756,
+        "acRate": "63.1%",
+        "acRateRaw": 63.051843046748665,
+        "likes": 4882,
+        "dislikes": 214
+    },
+    "similarQuesIds": [
+        70,
+        509
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Memoization",
+            "slug": "memoization"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1236,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>The Tribonacci sequence T<sub>n</sub> is defined as follows:&nbsp;</p>\n\n<p>T<sub>0</sub> = 0, T<sub>1</sub> = 1, T<sub>2</sub> = 1, and T<sub>n+3</sub> = T<sub>n</sub> + T<sub>n+1</sub> + T<sub>n+2</sub> for n &gt;= 0.</p>\n\n<p>Given <code>n</code>, return the value of T<sub>n</sub>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>\nT_3 = 0 + 1 + 1 = 2\nT_4 = 1 + 1 + 2 = 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 25\n<strong>Output:</strong> 1389537\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 37</code></li>\n\t<li>The answer is guaranteed to fit within a 32-bit integer, ie. <code>answer &lt;= 2^31 - 1</code>.</li>\n</ul>\n",
+    "hints": [
+        "Make an array F of length 38, and set F[0] = 0, F[1] = F[2] = 1.",
+        "Now write a loop where you set F[n+3] = F[n] + F[n+1] + F[n+2], and return F[n]."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:27:28.989Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.311Z"
+}

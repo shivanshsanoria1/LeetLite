@@ -1,0 +1,45 @@
+{
+    "quesId": 991,
+    "title": "Broken Calculator",
+    "titleSlug": "broken-calculator",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "128K",
+        "totalSubmission": "226.7K",
+        "totalAcceptedRaw": 127996,
+        "totalSubmissionRaw": 226712,
+        "acRate": "56.5%",
+        "acRateRaw": 56.457724082871295,
+        "likes": 2867,
+        "dislikes": 218
+    },
+    "similarQuesIds": [
+        650,
+        2749
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1033,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Work Backwards\n\n**Intuition**\n\nInstead of multiplying by 2 or subtracting 1 from `startValue`, we could divide by 2 (when `target` is even) or add 1 to `target`.\n\nThe motivation for this is that it turns out we always greedily divide by 2:\n\n* If say `target` is even, then if we perform 2 additions and one division, we could instead perform one division and one addition for less operations [`(target + 2) / 2` vs `target / 2 + 1`].\n\n* If say `target` is odd, then if we perform 3 additions and one division, we could instead perform 1 addition, 1 division, and 1 addition for less operations [`(target + 3) / 2` vs `(target + 1) / 2 + 1`].\n\n**Algorithm**\n\nWhile `target` is larger than `startValue`, add 1 if it is odd, else divide by 2.  After, we need to do `startValue - target` additions to reach `startValue`.\n\n<iframe src=\"https://leetcode.com/playground/B7BL7uJQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"B7BL7uJQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log target)$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />"
+    },
+    "content": "<p>There is a broken calculator that has the integer <code>startValue</code> on its display initially. In one operation, you can:</p>\n\n<ul>\n\t<li>multiply the number on display by <code>2</code>, or</li>\n\t<li>subtract <code>1</code> from the number on display.</li>\n</ul>\n\n<p>Given two integers <code>startValue</code> and <code>target</code>, return <em>the minimum number of operations needed to display </em><code>target</code><em> on the calculator</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> startValue = 2, target = 3\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Use double operation and then decrement operation {2 -&gt; 4 -&gt; 3}.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> startValue = 5, target = 8\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Use decrement and then double {5 -&gt; 4 -&gt; 8}.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> startValue = 3, target = 10\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Use double, decrement and double {3 -&gt; 6 -&gt; 5 -&gt; 10}.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= startValue, target &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:36.263Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.867Z"
+}

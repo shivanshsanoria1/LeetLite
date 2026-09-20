@@ -1,0 +1,33 @@
+{
+    "quesId": 2795,
+    "title": "Parallel Execution of Promises for Individual Results Retrieval",
+    "titleSlug": "parallel-execution-of-promises-for-individual-results-retrieval",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.2K",
+        "totalSubmission": "1.3K",
+        "totalAcceptedRaw": 1156,
+        "totalSubmissionRaw": 1339,
+        "acRate": "86.3%",
+        "acRateRaw": 86.33308439133683,
+        "likes": 16,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2898,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:33.881Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.494Z"
+}

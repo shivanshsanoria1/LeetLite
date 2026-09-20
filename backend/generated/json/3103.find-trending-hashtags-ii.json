@@ -1,0 +1,37 @@
+{
+    "quesId": 3103,
+    "title": "Find Trending Hashtags II ",
+    "titleSlug": "find-trending-hashtags-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "1.8K",
+        "totalSubmission": "2.7K",
+        "totalAcceptedRaw": 1759,
+        "totalSubmissionRaw": 2663,
+        "acRate": "66.1%",
+        "acRateRaw": 66.0533233195644,
+        "likes": 11,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3409,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:56:11.847Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.927Z"
+}

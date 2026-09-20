@@ -1,0 +1,50 @@
+{
+    "quesId": 3471,
+    "title": "Find the Largest Almost Missing Integer",
+    "titleSlug": "find-the-largest-almost-missing-integer",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "165.6K",
+        "totalSubmission": "336.3K",
+        "totalAcceptedRaw": 165639,
+        "totalSubmissionRaw": 336313,
+        "acRate": "49.3%",
+        "acRateRaw": 49.25144136563261,
+        "likes": 405,
+        "dislikes": 140
+    },
+    "similarQuesIds": [
+        268
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "exampleTestcases": "[3,9,2,1,7]\n3\n[3,9,7,2,1,7]\n4\n[0,0]\n1",
+    "meta": {
+        "quesIdLCBackend": 3705,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Classification Discussion\n\n#### Intuition\n\nWe can divide the problem into three cases based on the value of $k$.\n\n**When $k = n$:**\n\nThe entire array is exactly one sliding window. Therefore, every number in the array appears in a subarray of size $k$. To find the largest nearly missing integer, we simply return the maximum value in the array.\n\n**When $k = 1$:**\n\nThe length of each sliding window is $1$. Therefore, the problem asks us to find the largest number that appears exactly once in the entire array. After counting the frequency of each number, we traverse the possible values from largest to smallest. The first number whose frequency is $1$ is the largest answer.\n\n**When $1 < k < n$:**\n\nEvery element except the first and last elements of the array is covered by at least two sliding windows. Therefore, no middle element can satisfy the requirement. The only possible candidates are the first and last elements of the array.\n\nWe only need to check whether these two elements appear exactly once in the entire array. If either element satisfies the condition, we return the larger one among them. If neither satisfies the condition, we return $-1$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/4AdgN5iE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4AdgN5iE\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>An integer <code>x</code> is <strong>almost missing</strong> from <code>nums</code> if <code>x</code> appears in <em>exactly</em> one subarray of size <code>k</code> within <code>nums</code>.</p>\n\n<p>Return the <b>largest</b> <strong>almost missing</strong> integer from <code>nums</code>. If no such integer exists, return <code>-1</code>.</p>\nA <strong>subarray</strong> is a contiguous sequence of elements within an array.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,9,2,1,7], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>1 appears in 2 subarrays of size 3: <code>[9, 2, 1]</code> and <code>[2, 1, 7]</code>.</li>\n\t<li>2 appears in 3 subarrays of size 3: <code>[3, 9, 2]</code>, <code>[9, 2, 1]</code>, <code>[2, 1, 7]</code>.</li>\n\t<li index=\"2\">3 appears in 1 subarray of size 3: <code>[3, 9, 2]</code>.</li>\n\t<li index=\"3\">7 appears in 1 subarray of size 3: <code>[2, 1, 7]</code>.</li>\n\t<li index=\"4\">9 appears in 2 subarrays of size 3: <code>[3, 9, 2]</code>, and <code>[9, 2, 1]</code>.</li>\n</ul>\n\n<p>We return 7 since it is the largest integer that appears in exactly one subarray of size <code>k</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,9,7,2,1,7], k = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>1 appears in 2 subarrays of size 4: <code>[9, 7, 2, 1]</code>, <code>[7, 2, 1, 7]</code>.</li>\n\t<li>2 appears in 3 subarrays of size 4: <code>[3, 9, 7, 2]</code>, <code>[9, 7, 2, 1]</code>, <code>[7, 2, 1, 7]</code>.</li>\n\t<li>3 appears in 1 subarray of size 4: <code>[3, 9, 7, 2]</code>.</li>\n\t<li>7 appears in 3 subarrays of size 4: <code>[3, 9, 7, 2]</code>, <code>[9, 7, 2, 1]</code>, <code>[7, 2, 1, 7]</code>.</li>\n\t<li>9 appears in 2 subarrays of size 4: <code>[3, 9, 7, 2]</code>, <code>[9, 7, 2, 1]</code>.</li>\n</ul>\n\n<p>We return 3 since it is the largest and only integer that appears in exactly one subarray of size <code>k</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [0,0], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There is no integer that appears in only one subarray of size 1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 50</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 50</code></li>\n\t<li><code>1 &lt;= k &lt;= nums.length</code></li>\n</ul>\n",
+    "hints": [
+        "Solve the problem for three different cases: <code>k = 1</code>, <code>k = n</code>, and <code>1 < k < n</code>",
+        "If <code>k = 1</code>, return the largest element that occurs exactly once in <code>nums</code>",
+        "If <code>k = n</code>, return the largest element in <code>nums</code>",
+        "If <code>1 < k < n</code>, all elements different from <code>nums[0]</code> and <code>nums[n - 1]</code> will occur in more than one subarray of size <code>k</code>. Hence, the answer is the largest of <code>nums[0]</code> and <code>nums[n - 1]</code> if they both occur exactly once in the array. If one of them occurs more than once, return the other. If both of them occur more than once, return -1."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:18.541Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.466Z"
+}

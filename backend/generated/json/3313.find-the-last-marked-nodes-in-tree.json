@@ -1,0 +1,49 @@
+{
+    "quesId": 3313,
+    "title": "Find the Last Marked Nodes in Tree",
+    "titleSlug": "find-the-last-marked-nodes-in-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "712",
+        "totalSubmission": "1.2K",
+        "totalAcceptedRaw": 712,
+        "totalSubmissionRaw": 1244,
+        "acRate": "57.2%",
+        "acRateRaw": 57.234726688102896,
+        "likes": 7,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3112,
+        3241
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3497,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "We need to calculate the height of tree when rooted at each node.",
+        "Find a diameter using two DFS.",
+        "The farthest node from each node must be one of the endpoints of the diameter.",
+        "The last marked node will be one of the end of the diameter, whichever is more distant."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:56.989Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.184Z"
+}

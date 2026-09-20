@@ -1,0 +1,52 @@
+{
+    "quesId": 954,
+    "title": "Array of Doubled Pairs",
+    "titleSlug": "array-of-doubled-pairs",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "108.1K",
+        "totalSubmission": "270.4K",
+        "totalAcceptedRaw": 108127,
+        "totalSubmissionRaw": 270374,
+        "acRate": "40.0%",
+        "acRateRaw": 39.991641208104326,
+        "likes": 1584,
+        "dislikes": 188
+    },
+    "similarQuesIds": [
+        2007
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 991,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Greedy\n\n**Intuition**\n\nIf `x` is currently the array element with the least absolute value, it must pair with `2*x`, as there does not exist any other `x/2` to pair with it.\n\n**Algorithm**\n\nLet's try to (virtually) \"write\" the final reordered array.\n\nLet's check elements in order of absolute value.  When we check an element `x` and it isn't used, it must pair with `2*x`.  We will attempt to write `x, 2x` - if we can't, then the answer is `false`.  If we write everything, the answer is `true`.\n\nTo keep track of what we have not yet written, we will store it in a `count`.\n\n<iframe src=\"https://leetcode.com/playground/KYkpdZQT/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KYkpdZQT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />"
+    },
+    "content": "<p>Given an integer array of even length <code>arr</code>, return <code>true</code><em> if it is possible to reorder </em><code>arr</code><em> such that </em><code>arr[2 * i + 1] = 2 * arr[2 * i]</code><em> for every </em><code>0 &lt;= i &lt; len(arr) / 2</code><em>, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,1,3,6]\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [2,1,2,6]\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [4,-2,2,-4]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4] or [2,4,-2,-4].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= arr.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>arr.length</code> is even.</li>\n\t<li><code>-10<sup>5</sup> &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:07.962Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.843Z"
+}

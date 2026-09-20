@@ -1,0 +1,40 @@
+{
+    "quesId": 615,
+    "title": "Average Salary: Departments VS Company",
+    "titleSlug": "average-salary-departments-vs-company",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "44.7K",
+        "totalSubmission": "78.9K",
+        "totalAcceptedRaw": 44723,
+        "totalSubmissionRaw": 78931,
+        "acRate": "56.7%",
+        "acRateRaw": 56.660881022665365,
+        "likes": 243,
+        "dislikes": 77
+    },
+    "similarQuesIds": [
+        1501
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 615,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:14:33.506Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.100Z"
+}

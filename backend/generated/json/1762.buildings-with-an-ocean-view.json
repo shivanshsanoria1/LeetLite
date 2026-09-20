@@ -1,0 +1,52 @@
+{
+    "quesId": 1762,
+    "title": "Buildings With an Ocean View",
+    "titleSlug": "buildings-with-an-ocean-view",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "345.4K",
+        "totalSubmission": "427.2K",
+        "totalAcceptedRaw": 345387,
+        "totalSubmissionRaw": 427156,
+        "acRate": "80.9%",
+        "acRateRaw": 80.85734485761643,
+        "likes": 1324,
+        "dislikes": 151
+    },
+    "similarQuesIds": [
+        1944,
+        2345
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1909,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "You can traverse the buildings from the nearest to the ocean to the furthest.",
+        "Keep with you the maximum to the right while traversing to determine if you can see the ocean or not."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:53:30.215Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.428Z"
+}

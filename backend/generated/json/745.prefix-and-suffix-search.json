@@ -1,0 +1,60 @@
+{
+    "quesId": 745,
+    "title": "Prefix and Suffix Search",
+    "titleSlug": "prefix-and-suffix-search",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "113.7K",
+        "totalSubmission": "276.3K",
+        "totalAcceptedRaw": 113678,
+        "totalSubmissionRaw": 276267,
+        "acRate": "41.1%",
+        "acRateRaw": 41.147875062892055,
+        "likes": 2362,
+        "dislikes": 501
+    },
+    "similarQuesIds": [
+        211
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 746,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Approach #1: Trie + Set Intersection [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nWe use two tries to separately find all words that match the prefix, plus all words that match the suffix. Then, we try to find the highest-weight element in the intersection of these sets.\n\nOf course, these sets could still be large, so we might TLE if we aren't careful.\n\n<iframe src=\"https://leetcode.com/playground/kYz9yLtz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kYz9yLtz\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(NK + Q(N+K))$$ where $$N$$ is the number of words, $$K$$ is the maximum length of a word, and $$Q$$ is the number of queries. If we use memoization in our solution, we could produce tighter bounds for this complexity, as the complex queries are somewhat disjoint.\n\n* Space Complexity: $$O(NK)$$, the size of the tries.\n\n---\n### Approach #2: Paired Trie [Accepted]\n\n**Intuition and Algorithm**\n\nSay we are inserting the word `apple`.  We could insert `('a', 'e'), ('p', 'l'), ('p', 'p'), ('l', 'p'), ('e', 'a')` into our trie. Then, if we had equal length queries like `prefix = \"ap\", suffix = \"le\"`, we could find the node `trie['a', 'e']['p', 'l']` in our trie.  This seems promising.\n\nWhat about queries that aren't equal?  We should just insert them like normal. For example, to capture a case like `prefix = \"app\", suffix = \"e\"`, we could create nodes `trie['a', 'e']['p', None]['p', None]`.\n\nAfter inserting these pairs into our trie, our searches are straightforward.\n\n<iframe src=\"https://leetcode.com/playground/HUwJpYcH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HUwJpYcH\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(NK^2 + QK)$$ where $$N$$ is the number of words, $$K$$ is the maximum length of a word, and $$Q$$ is the number of queries.\n\n* Space Complexity: $$O(NK^2)$$, the size of the trie.\n\n---\n### Approach #3: Trie of Suffix Wrapped Words [Accepted]\n\n**Intuition and Algorithm**\n\nConsider the word `'apple'`. For each suffix of the word, we could insert that suffix, followed by `'#'`, followed by the word, all into the trie.\n\nFor example, we will insert `'#apple', 'e#apple', 'le#apple', 'ple#apple', 'pple#apple', 'apple#apple'` into the trie.  Then for a query like `prefix = \"ap\", suffix = \"le\"`, we can find it by querying our trie for `le#ap`.\n\n<iframe src=\"https://leetcode.com/playground/EQGJp4E3/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EQGJp4E3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(NK^2 + QK)$$ where $$N$$ is the number of words, $$K$$ is the maximum length of a word, and $$Q$$ is the number of queries.\n\n* Space Complexity: $$O(NK^2)$$, the size of the trie."
+    },
+    "content": "<p>Design a special dictionary that searches the words in it by a prefix and a suffix.</p>\n\n<p>Implement the <code>WordFilter</code> class:</p>\n\n<ul>\n\t<li><code>WordFilter(string[] words)</code> Initializes the object with the <code>words</code> in the dictionary.</li>\n\t<li><code>f(string pref, string suff)</code> Returns <em>the index of the word in the dictionary,</em> which has the prefix <code>pref</code> and the suffix <code>suff</code>. If there is more than one valid index, return <strong>the largest</strong> of them. If there is no such word in the dictionary, return <code>-1</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;WordFilter&quot;, &quot;f&quot;]\n[[[&quot;apple&quot;]], [&quot;a&quot;, &quot;e&quot;]]\n<strong>Output</strong>\n[null, 0]\n<strong>Explanation</strong>\nWordFilter wordFilter = new WordFilter([&quot;apple&quot;]);\nwordFilter.f(&quot;a&quot;, &quot;e&quot;); // return 0, because the word at index 0 has prefix = &quot;a&quot; and suffix = &quot;e&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 7</code></li>\n\t<li><code>1 &lt;= pref.length, suff.length &lt;= 7</code></li>\n\t<li><code>words[i]</code>, <code>pref</code> and <code>suff</code> consist of lowercase English letters only.</li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to the function <code>f</code>.</li>\n</ul>\n",
+    "hints": [
+        "Take \"apple\" as an example, we will insert add \"apple{apple\", \"pple{apple\", \"ple{apple\", \"le{apple\", \"e{apple\", \"{apple\" into the Trie Tree.",
+        "If the query is: prefix = \"app\", suffix = \"le\", we can find it by querying our trie for\r\n\"le { app\".",
+        "We use '{' because in ASCii Table, '{' is next to 'z', so we just need to create new TrieNode[27] instead of 26. Also, compared with traditional Trie, we add the attribute weight in class TrieNode.\r\nYou can still choose any different character."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:16:05.523Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.332Z"
+}

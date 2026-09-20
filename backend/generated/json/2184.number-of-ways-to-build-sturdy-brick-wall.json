@@ -1,0 +1,57 @@
+{
+    "quesId": 2184,
+    "title": "Number of Ways to Build Sturdy Brick Wall",
+    "titleSlug": "number-of-ways-to-build-sturdy-brick-wall",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "10.3K",
+        "totalSubmission": "20.9K",
+        "totalAcceptedRaw": 10290,
+        "totalSubmissionRaw": 20862,
+        "acRate": "49.3%",
+        "acRateRaw": 49.324129997123954,
+        "likes": 201,
+        "dislikes": 130
+    },
+    "similarQuesIds": [
+        554,
+        803,
+        2403
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2322,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "A row of bricks can be represented uniquely by the points where two bricks are joined together.",
+        "For a given row of bricks, how many configurations of bricks could you have put below this row such that the wall is sturdy?",
+        "Use dynamic programming to store the number of possible sturdy walls with a given height and configuration of bricks on the top row."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:36.216Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.202Z"
+}

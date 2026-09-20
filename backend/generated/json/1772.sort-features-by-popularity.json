@@ -1,0 +1,55 @@
+{
+    "quesId": 1772,
+    "title": "Sort Features by Popularity",
+    "titleSlug": "sort-features-by-popularity",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.7K",
+        "totalSubmission": "11.6K",
+        "totalAcceptedRaw": 7666,
+        "totalSubmissionRaw": 11570,
+        "acRate": "66.3%",
+        "acRateRaw": 66.25756266205704,
+        "likes": 92,
+        "dislikes": 43
+    },
+    "similarQuesIds": [
+        347,
+        692
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1919,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use a hash map to count the frequency of each word of each string.",
+        "Use the map for sorting the features."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:53:42.706Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.463Z"
+}

@@ -1,0 +1,46 @@
+{
+    "quesId": 751,
+    "title": "IP to CIDR",
+    "titleSlug": "ip-to-cidr",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.5K",
+        "totalSubmission": "77.3K",
+        "totalAcceptedRaw": 41550,
+        "totalSubmissionRaw": 77272,
+        "acRate": "53.8%",
+        "acRateRaw": 53.7710943161818,
+        "likes": 120,
+        "dislikes": 369
+    },
+    "similarQuesIds": [
+        93,
+        468
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 752,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Convert the ip addresses to and from (long) integers.  You want to know what is the most addresses you can put in this block starting from the \"start\" ip, up to n.  It is the smallest between the lowest bit of start and the highest bit of n.  Then, repeat this process with a new start and n."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:16:09.897Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.339Z"
+}

@@ -1,0 +1,33 @@
+{
+    "quesId": 2794,
+    "title": "Create Object from Two Arrays",
+    "titleSlug": "create-object-from-two-arrays",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.9K",
+        "totalSubmission": "3K",
+        "totalAcceptedRaw": 1913,
+        "totalSubmissionRaw": 3012,
+        "acRate": "63.5%",
+        "acRateRaw": 63.51261620185923,
+        "likes": 11,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2861,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:33.165Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.493Z"
+}

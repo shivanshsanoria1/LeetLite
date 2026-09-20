@@ -1,0 +1,57 @@
+{
+    "quesId": 3023,
+    "title": "Find Pattern in Infinite Stream I",
+    "titleSlug": "find-pattern-in-infinite-stream-i",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.1K",
+        "totalSubmission": "3.7K",
+        "totalAcceptedRaw": 2137,
+        "totalSubmissionRaw": 3694,
+        "acRate": "57.9%",
+        "acRateRaw": 57.850568489442345,
+        "likes": 17,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Rolling Hash",
+            "slug": "rolling-hash"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3333,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:47:43.123Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.771Z"
+}

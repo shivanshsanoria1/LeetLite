@@ -1,0 +1,52 @@
+{
+    "quesId": 356,
+    "title": "Line Reflection",
+    "titleSlug": "line-reflection",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "47K",
+        "totalSubmission": "129K",
+        "totalAcceptedRaw": 46984,
+        "totalSubmissionRaw": 129012,
+        "acRate": "36.4%",
+        "acRateRaw": 36.41831767587511,
+        "likes": 317,
+        "dislikes": 644
+    },
+    "similarQuesIds": [
+        149,
+        447
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 356,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Find the smallest and largest x-value for all points.",
+        "If there is a line then it should be at y = (minX + maxX) / 2.",
+        "For each point, make sure that it has a reflected point in the opposite side."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:58:27.551Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.563Z"
+}

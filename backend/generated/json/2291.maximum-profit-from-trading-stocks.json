@@ -1,0 +1,49 @@
+{
+    "quesId": 2291,
+    "title": "Maximum Profit From Trading Stocks",
+    "titleSlug": "maximum-profit-from-trading-stocks",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "18.4K",
+        "totalSubmission": "38.1K",
+        "totalAcceptedRaw": 18418,
+        "totalSubmissionRaw": 38084,
+        "acRate": "48.4%",
+        "acRateRaw": 48.36151664741099,
+        "likes": 193,
+        "dislikes": 9
+    },
+    "similarQuesIds": [
+        121,
+        122,
+        123,
+        188
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2426,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Think of the 0-1 Knapsack Problem.",
+        "For the ith stock, the weight is present[i], and the value is future[i] - present[i]."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:22:41.982Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.391Z"
+}

@@ -1,0 +1,52 @@
+{
+    "quesId": 568,
+    "title": "Maximum Vacation Days",
+    "titleSlug": "maximum-vacation-days",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.6K",
+        "totalSubmission": "88.9K",
+        "totalAcceptedRaw": 41634,
+        "totalSubmissionRaw": 88940,
+        "acRate": "46.8%",
+        "acRateRaw": 46.81133348324713,
+        "likes": 584,
+        "dislikes": 121
+    },
+    "similarQuesIds": [
+        787
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 568,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "First try to understand the problem carefully and then take some example and solve it on a paper.",
+        "Can you interpret the given input as a graph? Which graph traversal technique is suitable here?",
+        "Can we use some space to avoid redundant function calls?"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:08:38.929Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.008Z"
+}

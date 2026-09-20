@@ -1,0 +1,48 @@
+{
+    "quesId": 2674,
+    "title": "Split a Circular Linked List",
+    "titleSlug": "split-a-circular-linked-list",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.7K",
+        "totalSubmission": "4.7K",
+        "totalAcceptedRaw": 3697,
+        "totalSubmissionRaw": 4734,
+        "acRate": "78.1%",
+        "acRateRaw": 78.0946345585129,
+        "likes": 47,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        725
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2835,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Do a while loop to calculate the size of the linked list.",
+        "Determine the size of the first half and create a new linked list in its size.",
+        "Do not forget that this half itself should be circular!",
+        "Use the previous hints for the second half."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:55.171Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.350Z"
+}

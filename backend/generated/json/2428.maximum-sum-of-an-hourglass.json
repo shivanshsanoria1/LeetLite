@@ -1,0 +1,50 @@
+{
+    "quesId": 2428,
+    "title": "Maximum Sum of an Hourglass",
+    "titleSlug": "maximum-sum-of-an-hourglass",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "61.2K",
+        "totalSubmission": "79.2K",
+        "totalAcceptedRaw": 61233,
+        "totalSubmissionRaw": 79161,
+        "acRate": "77.4%",
+        "acRateRaw": 77.35305635208367,
+        "likes": 506,
+        "dislikes": 73
+    },
+    "similarQuesIds": [
+        1314
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2508,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an <code>m x n</code> integer matrix <code>grid</code>.</p>\n\n<p>We define an <strong>hourglass</strong> as a part of the matrix with the following form:</p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/08/21/img.jpg\" style=\"width: 243px; height: 243px;\" />\n<p>Return <em>the <strong>maximum</strong> sum of the elements of an hourglass</em>.</p>\n\n<p><strong>Note</strong> that an hourglass cannot be rotated and must be entirely contained within the matrix.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/08/21/1.jpg\" style=\"width: 323px; height: 323px;\" />\n<pre>\n<strong>Input:</strong> grid = [[6,2,1,3],[4,2,1,5],[9,2,8,7],[4,1,2,9]]\n<strong>Output:</strong> 30\n<strong>Explanation:</strong> The cells shown above represent the hourglass with the maximum sum: 6 + 2 + 1 + 2 + 9 + 2 + 8 = 30.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/08/21/2.jpg\" style=\"width: 243px; height: 243px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> 35\n<strong>Explanation:</strong> There is only one hourglass in the matrix, with the sum: 1 + 2 + 3 + 5 + 7 + 8 + 9 = 35.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>3 &lt;= m, n &lt;= 150</code></li>\n\t<li><code>0 &lt;= grid[i][j] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Each 3x3 submatrix has exactly one hourglass.",
+        "Find the sum of each hourglass in the matrix and return the largest of these values."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:33.257Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.557Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 2298,
+    "title": "Tasks Count in the Weekend",
+    "titleSlug": "tasks-count-in-the-weekend",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "9.7K",
+        "totalSubmission": "11.8K",
+        "totalAcceptedRaw": 9654,
+        "totalSubmissionRaw": 11811,
+        "acRate": "81.7%",
+        "acRateRaw": 81.73736347472695,
+        "likes": 53,
+        "dislikes": 10
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2440,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:22:47.511Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.397Z"
+}

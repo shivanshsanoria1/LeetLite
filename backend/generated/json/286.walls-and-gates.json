@@ -1,0 +1,55 @@
+{
+    "quesId": 286,
+    "title": "Walls and Gates",
+    "titleSlug": "walls-and-gates",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "436.6K",
+        "totalSubmission": "680.4K",
+        "totalAcceptedRaw": 436560,
+        "totalSubmissionRaw": 680432,
+        "acRate": "64.2%",
+        "acRateRaw": 64.15925106733192,
+        "likes": 3342,
+        "dislikes": 73
+    },
+    "similarQuesIds": [
+        130,
+        200,
+        317,
+        419,
+        489,
+        994,
+        3015,
+        3017
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 286,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:29.557Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.596Z"
+}

@@ -1,0 +1,45 @@
+{
+    "quesId": 3647,
+    "title": "Maximum Weight in Two Bags",
+    "titleSlug": "maximum-weight-in-two-bags",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "825",
+        "totalSubmission": "1.4K",
+        "totalAcceptedRaw": 825,
+        "totalSubmissionRaw": 1419,
+        "acRate": "58.1%",
+        "acRateRaw": 58.19845179451091,
+        "likes": 6,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "exampleTestcases": "[1,4,3,2]\n5\n4\n[3,6,4,8]\n9\n7\n[5,7]\n2\n3",
+    "meta": {
+        "quesIdLCBackend": 3987,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use dynamic programming.",
+        "Let <code>dp[i][j]</code> be the maximum total weight that can be held in the two bags when their current weights (or used capacities) are <code>i</code> and <code>j</code>, respectively."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:55:38.877Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.645Z"
+}

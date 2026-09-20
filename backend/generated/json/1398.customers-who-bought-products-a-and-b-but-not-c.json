@@ -1,0 +1,38 @@
+{
+    "quesId": 1398,
+    "title": "Customers Who Bought Products A and B but Not C",
+    "titleSlug": "customers-who-bought-products-a-and-b-but-not-c",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "70.5K",
+        "totalSubmission": "98.6K",
+        "totalAcceptedRaw": 70455,
+        "totalSubmissionRaw": 98644,
+        "acRate": "71.4%",
+        "acRateRaw": 71.42350269656542,
+        "likes": 328,
+        "dislikes": 18
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1536,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:33:20.651Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.799Z"
+}

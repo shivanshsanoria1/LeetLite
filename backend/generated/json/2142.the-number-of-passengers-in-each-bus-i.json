@@ -1,0 +1,37 @@
+{
+    "quesId": 2142,
+    "title": "The Number of Passengers in Each Bus I",
+    "titleSlug": "the-number-of-passengers-in-each-bus-i",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "12.5K",
+        "totalSubmission": "25.4K",
+        "totalAcceptedRaw": 12473,
+        "totalSubmissionRaw": 25377,
+        "acRate": "49.2%",
+        "acRateRaw": 49.15080584781495,
+        "likes": 118,
+        "dislikes": 12
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2281,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:06:01.950Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.099Z"
+}

@@ -1,0 +1,47 @@
+{
+    "quesId": 1242,
+    "title": "Web Crawler Multithreaded",
+    "titleSlug": "web-crawler-multithreaded",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Concurrency",
+    "stats": {
+        "totalAccepted": "111.2K",
+        "totalSubmission": "216.4K",
+        "totalAcceptedRaw": 111198,
+        "totalSubmissionRaw": 216380,
+        "acRate": "51.4%",
+        "acRateRaw": 51.39014696367502,
+        "likes": 600,
+        "dislikes": 104
+    },
+    "similarQuesIds": [
+        1236
+    ],
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Concurrency",
+            "slug": "concurrency"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1368,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:29:29.827Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.965Z"
+}

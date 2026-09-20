@@ -1,0 +1,45 @@
+{
+    "quesId": 1692,
+    "title": "Count Ways to Distribute Candies",
+    "titleSlug": "count-ways-to-distribute-candies",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.2K",
+        "totalSubmission": "5.1K",
+        "totalAcceptedRaw": 3212,
+        "totalSubmissionRaw": 5117,
+        "acRate": "62.8%",
+        "acRateRaw": 62.77115497361735,
+        "likes": 79,
+        "dislikes": 9
+    },
+    "similarQuesIds": [
+        2928,
+        2929
+    ],
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1828,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try to define a recursive approach. For the ith candies, there will be one of the two following cases:",
+        "If the i - 1 previous candies are already distributed into k bags for the ith candy, you can have k * dp[n - 1][k] ways to distribute the ith candy. We need then to solve the state of (n - 1, k).",
+        "If the i - 1 previous candies are already distributed into k - 1 bags for the ith candy, you can have dp[n - 1][k - 1] ways to distribute the ith candy. We need then to solve the state of (n - 1, k - 1).",
+        "This approach will be too slow and will traverse some states more than once. We should use memoization to make the algorithm efficient."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:52:13.006Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.334Z"
+}

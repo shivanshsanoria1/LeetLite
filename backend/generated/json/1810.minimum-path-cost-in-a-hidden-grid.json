@@ -1,0 +1,72 @@
+{
+    "quesId": 1810,
+    "title": "Minimum Path Cost in a Hidden Grid",
+    "titleSlug": "minimum-path-cost-in-a-hidden-grid",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.8K",
+        "totalSubmission": "9.7K",
+        "totalAcceptedRaw": 5764,
+        "totalSubmissionRaw": 9747,
+        "acRate": "59.1%",
+        "acRateRaw": 59.13614445470401,
+        "likes": 96,
+        "dislikes": 33
+    },
+    "similarQuesIds": [
+        489,
+        1778
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        },
+        {
+            "name": "Shortest Path",
+            "slug": "shortest-path"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1959,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "The grid is at a maximum 100 x 100, so it is clever to assume that the robot's initial cell is grid[101][101]",
+        "Run a DFS from the robot's position to make sure that you can reach the target, otherwise you should return -1.",
+        "Now that you are sure you can reach the target and that you know the grid, run Dijkstra to find the minimum cost."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:54:22.018Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.489Z"
+}

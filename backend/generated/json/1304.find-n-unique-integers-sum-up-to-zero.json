@@ -1,0 +1,45 @@
+{
+    "quesId": 1304,
+    "title": "Find N Unique Integers Sum up to Zero",
+    "titleSlug": "find-n-unique-integers-sum-up-to-zero",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "408.7K",
+        "totalSubmission": "520.9K",
+        "totalAcceptedRaw": 408699,
+        "totalSubmissionRaw": 520911,
+        "acRate": "78.5%",
+        "acRateRaw": 78.4585496206653,
+        "likes": 2511,
+        "dislikes": 623
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1426,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Construction\n\n#### Intuition\n\nWe start by placing the smallest $\\lfloor \\tfrac{n}{2} \\rfloor$ positive integers and their negatives into the array. At this point, their sum is $0$.\n\n- When $n$ is even, the array already satisfies the requirements.\n- When $n$ is odd, we add $0$ to the array.\n\nThus, the $n$ numbers are all distinct, and their sum is $0$. This gives us an array that satisfies the requirements.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/DrszoiDR/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"DrszoiDR\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n  \n  Apart from the output array $\\textit{ans}$, the extra space used is constant.\n\n---"
+    },
+    "content": "<p>Given an integer <code>n</code>, return <strong>any</strong> array containing <code>n</code> <strong>unique</strong> integers such that they add up to <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> [-7,-1,1,3,4]\n<strong>Explanation:</strong> These arrays also are accepted [-5,-1,1,2,3] , [-3,-1,2,-2,4].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> [-1,0,1]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> [0]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "Return an array where the values are symmetric. (+x , -x).",
+        "If n is odd, append value 0 in your returned array."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:31:08.550Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.398Z"
+}

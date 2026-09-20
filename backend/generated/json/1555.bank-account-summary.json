@@ -1,0 +1,37 @@
+{
+    "quesId": 1555,
+    "title": "Bank Account Summary",
+    "titleSlug": "bank-account-summary",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "23.4K",
+        "totalSubmission": "44.6K",
+        "totalAcceptedRaw": 23363,
+        "totalSubmissionRaw": 44632,
+        "acRate": "52.3%",
+        "acRateRaw": 52.34585051084424,
+        "likes": 146,
+        "dislikes": 27
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1702,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:37:05.117Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.047Z"
+}

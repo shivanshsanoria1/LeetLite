@@ -1,0 +1,53 @@
+{
+    "quesId": 2459,
+    "title": "Sort Array by Moving Items to Empty Space",
+    "titleSlug": "sort-array-by-moving-items-to-empty-space",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.1K",
+        "totalSubmission": "6.9K",
+        "totalAcceptedRaw": 3129,
+        "totalSubmissionRaw": 6878,
+        "acRate": "45.5%",
+        "acRateRaw": 45.49287583599884,
+        "likes": 66,
+        "dislikes": 2
+    },
+    "similarQuesIds": [
+        210,
+        1591,
+        1649
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2489,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "There are two possibilities for nums to be sorted. Find the minimum number of operations needed for the first possibility, then find the minimum number of operations needed for the second possibility. The answer is the minimum out of the two.",
+        "If the empty space is not at its ending position, then you can move the item that should be where the empty space is to the empty space.",
+        "If the empty space is at its ending position, then you need to move an out-of-place item to the empty space."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:58.171Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.634Z"
+}

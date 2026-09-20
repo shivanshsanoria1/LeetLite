@@ -1,0 +1,37 @@
+{
+    "quesId": 2020,
+    "title": "Number of Accounts That Did Not Stream",
+    "titleSlug": "number-of-accounts-that-did-not-stream",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "14.4K",
+        "totalSubmission": "20K",
+        "totalAcceptedRaw": 14430,
+        "totalSubmissionRaw": 20043,
+        "acRate": "72.0%",
+        "acRateRaw": 71.9952102978596,
+        "likes": 29,
+        "dislikes": 231
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2167,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:04:08.684Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.903Z"
+}

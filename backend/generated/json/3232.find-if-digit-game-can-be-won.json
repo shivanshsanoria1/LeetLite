@@ -1,0 +1,46 @@
+{
+    "quesId": 3232,
+    "title": "Find if Digit Game Can Be Won",
+    "titleSlug": "find-if-digit-game-can-be-won",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "126.7K",
+        "totalSubmission": "155.8K",
+        "totalAcceptedRaw": 126693,
+        "totalSubmissionRaw": 155785,
+        "acRate": "81.3%",
+        "acRateRaw": 81.32554482138845,
+        "likes": 217,
+        "dislikes": 14
+    },
+    "similarQuesIds": [
+        1295,
+        2180
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3515,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an array of <strong>positive</strong> integers <code>nums</code>.</p>\n\n<p>Alice and Bob are playing a game. In the game, Alice can choose <strong>either</strong> all single-digit numbers or all double-digit numbers from <code>nums</code>, and the rest of the numbers are given to Bob. Alice wins if the sum of her numbers is <strong>strictly greater</strong> than the sum of Bob&#39;s numbers.</p>\n\n<p>Return <code>true</code> if Alice can win this game, otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4,10]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Alice cannot win by choosing either single-digit or double-digit numbers.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4,5,14]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Alice can win by choosing single-digit numbers which have a sum equal to 15.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,5,5,25]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Alice can win by choosing double-digit numbers which have a sum equal to 25.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 99</code></li>\n</ul>\n",
+    "hints": [
+        "Alice wins if the sum of all single-digit numbers and the sum of all double-digit numbers are different."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:57:53.169Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.062Z"
+}

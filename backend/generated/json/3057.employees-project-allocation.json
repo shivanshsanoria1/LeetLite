@@ -1,0 +1,37 @@
+{
+    "quesId": 3057,
+    "title": "Employees Project Allocation",
+    "titleSlug": "employees-project-allocation",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.7K",
+        "totalSubmission": "4K",
+        "totalAcceptedRaw": 2679,
+        "totalSubmissionRaw": 3956,
+        "acRate": "67.7%",
+        "acRateRaw": 67.71991911021233,
+        "likes": 5,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3357,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:13.024Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.842Z"
+}

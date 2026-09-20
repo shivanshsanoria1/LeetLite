@@ -1,0 +1,62 @@
+{
+    "quesId": 1644,
+    "title": "Lowest Common Ancestor of a Binary Tree II",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "122.7K",
+        "totalSubmission": "176K",
+        "totalAcceptedRaw": 122729,
+        "totalSubmissionRaw": 175964,
+        "acRate": "69.7%",
+        "acRateRaw": 69.7466527244209,
+        "likes": 703,
+        "dislikes": 42
+    },
+    "similarQuesIds": [
+        235,
+        236,
+        1650,
+        1676
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Binary Lifting",
+            "slug": "binary-lifting"
+        },
+        {
+            "name": "Lowest Common Ancestor",
+            "slug": "lowest-common-ancestor"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1780,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Traverse the graph visiting root, left, root, right, root to make an Euler Path",
+        "Return the node (LCA) that is at the lowest depth between p and q in the Euler Path"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:51:19.759Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.295Z"
+}

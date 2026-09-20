@@ -1,0 +1,41 @@
+{
+    "quesId": 2676,
+    "title": "Throttle",
+    "titleSlug": "throttle",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "11.9K",
+        "totalSubmission": "14.3K",
+        "totalAcceptedRaw": 11910,
+        "totalSubmissionRaw": 14274,
+        "acRate": "83.4%",
+        "acRateRaw": 83.43841950399327,
+        "likes": 171,
+        "dislikes": 30
+    },
+    "similarQuesIds": [
+        2627,
+        2637,
+        2636
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2771,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Store a variable for currArguments.",
+        "If no timeout is in progress, immediately execute the function and create a timeout. If a timeout is in progress, set the currArguments to the new arguments.",
+        "When the timeout is done: if currArguments is null, do nothing. Otherwise, execute the function with currArguments and create another timeout."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:56.708Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.352Z"
+}

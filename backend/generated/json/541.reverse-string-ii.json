@@ -1,0 +1,46 @@
+{
+    "quesId": 541,
+    "title": "Reverse String II",
+    "titleSlug": "reverse-string-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "422K",
+        "totalSubmission": "774.4K",
+        "totalAcceptedRaw": 421998,
+        "totalSubmissionRaw": 774399,
+        "acRate": "54.5%",
+        "acRateRaw": 54.49361375724917,
+        "likes": 2434,
+        "dislikes": 4539
+    },
+    "similarQuesIds": [
+        344,
+        557,
+        2810
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 541,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n---\n### Approach #1: Direct [Accepted]\n\n**Intuition and Algorithm**\n\nWe will reverse each block of `2k` characters directly.\n\nEach block starts at a multiple of `2k`: for example, `0, 2k, 4k, 6k, ...`. One thing to be careful about is we may not reverse each block if there aren't enough characters.\n\nTo reverse a block of characters from `i` to `j`, we can swap characters in positions `i++` and `j--`.\n\n<iframe src=\"https://leetcode.com/playground/ke3DMSV2/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"ke3DMSV2\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the size of `s`. We build a helper array, plus reverse about half the characters in `s`.\n\n* Space Complexity: $$O(N)$$, the size of `a`."
+    },
+    "content": "<p>Given a string <code>s</code> and an integer <code>k</code>, reverse the first <code>k</code> characters for every <code>2k</code> characters counting from the start of the string.</p>\n\n<p>If there are fewer than <code>k</code> characters left, reverse all of them. If there are less than <code>2k</code> but greater than or equal to <code>k</code> characters, then reverse the first <code>k</code> characters and leave the other as original.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"abcdefg\", k = 2\n<strong>Output:</strong> \"bacdfeg\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\", k = 2\n<strong>Output:</strong> \"bacd\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:08:13.867Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.989Z"
+}

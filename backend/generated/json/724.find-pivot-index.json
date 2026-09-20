@@ -1,0 +1,52 @@
+{
+    "quesId": 724,
+    "title": "Find Pivot Index",
+    "titleSlug": "find-pivot-index",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.8M",
+        "totalSubmission": "2.9M",
+        "totalAcceptedRaw": 1828274,
+        "totalSubmissionRaw": 2867781,
+        "acRate": "63.8%",
+        "acRateRaw": 63.75225914616392,
+        "likes": 9526,
+        "dislikes": 944
+    },
+    "similarQuesIds": [
+        560,
+        1991,
+        2270,
+        2219,
+        2574
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 724,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given an array of integers <code>nums</code>, calculate the <strong>pivot index</strong> of this array.</p>\n\n<p>The <strong>pivot index</strong> is the index where the sum of all the numbers <strong>strictly</strong> to the left of the index is equal to the sum of all the numbers <strong>strictly</strong> to the index&#39;s right.</p>\n\n<p>If the index is on the left edge of the array, then the left sum is <code>0</code> because there are no elements to the left. This also applies to the right edge of the array.</p>\n\n<p>Return <em>the <strong>leftmost pivot index</strong></em>. If no such index exists, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,7,3,6,5,6]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\nThe pivot index is 3.\nLeft sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11\nRight sum = nums[4] + nums[5] = 5 + 6 = 11\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong>\nThere is no index that satisfies the conditions in the problem statement.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,-1]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong>\nThe pivot index is 0.\nLeft sum = 0 (no elements to the left of index 0)\nRight sum = nums[1] + nums[2] = 1 + -1 = 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Note:</strong> This question is the same as&nbsp;1991:&nbsp;<a href=\"https://leetcode.com/problems/find-the-middle-index-in-array/\" target=\"_blank\">https://leetcode.com/problems/find-the-middle-index-in-array/</a></p>\n",
+    "hints": [
+        "Create an array sumLeft where sumLeft[i] is the sum of all the numbers to the left of index i.",
+        "Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.",
+        "For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:50.774Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.266Z"
+}

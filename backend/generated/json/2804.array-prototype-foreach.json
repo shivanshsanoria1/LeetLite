@@ -1,0 +1,33 @@
+{
+    "quesId": 2804,
+    "title": "Array Prototype ForEach",
+    "titleSlug": "array-prototype-foreach",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.7K",
+        "totalSubmission": "2K",
+        "totalAcceptedRaw": 1672,
+        "totalSubmissionRaw": 2020,
+        "acRate": "82.8%",
+        "acRateRaw": 82.77227722772277,
+        "likes": 9,
+        "dislikes": 10
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2907,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:44:40.521Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.529Z"
+}

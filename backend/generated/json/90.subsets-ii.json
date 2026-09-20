@@ -1,0 +1,49 @@
+{
+    "quesId": 90,
+    "title": "Subsets II",
+    "titleSlug": "subsets-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.6M",
+        "totalSubmission": "2.6M",
+        "totalAcceptedRaw": 1617866,
+        "totalSubmissionRaw": 2612776,
+        "acRate": "61.9%",
+        "acRateRaw": 61.921343429364015,
+        "likes": 11143,
+        "dislikes": 422
+    },
+    "similarQuesIds": [
+        78,
+        1982
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 90,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given an integer array <code>nums</code> that may contain duplicates, return <em>all possible</em> <span data-keyword=\"subset\"><em>subsets</em></span><em> (the power set)</em>.</p>\n\n<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,2]\n<strong>Output:</strong> [[],[1],[1,2],[1,2,2],[2],[2,2]]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [[],[0]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:39:41.749Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.667Z"
+}

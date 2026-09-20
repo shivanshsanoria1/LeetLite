@@ -1,0 +1,53 @@
+{
+    "quesId": 1950,
+    "title": "Maximum of Minimum Values in All Subarrays",
+    "titleSlug": "maximum-of-minimum-values-in-all-subarrays",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.7K",
+        "totalSubmission": "7.7K",
+        "totalAcceptedRaw": 3683,
+        "totalSubmissionRaw": 7708,
+        "acRate": "47.8%",
+        "acRateRaw": 47.7815256875973,
+        "likes": 147,
+        "dislikes": 56
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        },
+        {
+            "name": "Cartesian Tree",
+            "slug": "cartesian-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2072,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Imagine the array is empty, and each element is coming to its index one by one, starting with the smallest element.",
+        "For each coming element nums[i], calculate L and R, the indices of the first smallest elements on the left and the right respectively.",
+        "The answer of the queries from 1 to R-L+1 will be at least this element."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:03:08.576Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.786Z"
+}

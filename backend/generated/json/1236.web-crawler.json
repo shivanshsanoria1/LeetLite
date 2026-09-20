@@ -1,0 +1,54 @@
+{
+    "quesId": 1236,
+    "title": "Web Crawler",
+    "titleSlug": "web-crawler",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "58.8K",
+        "totalSubmission": "85.5K",
+        "totalAcceptedRaw": 58788,
+        "totalSubmissionRaw": 85496,
+        "acRate": "68.8%",
+        "acRateRaw": 68.76147701088927,
+        "likes": 310,
+        "dislikes": 339
+    },
+    "similarQuesIds": [
+        1242
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1271,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Use DFS/BFS to search start from the startURL. Remember to get rid of duplicate URLs."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:29:22.390Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.913Z"
+}

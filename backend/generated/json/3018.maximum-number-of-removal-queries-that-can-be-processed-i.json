@@ -1,0 +1,47 @@
+{
+    "quesId": 3018,
+    "title": "Maximum Number of Removal Queries That Can Be Processed I",
+    "titleSlug": "maximum-number-of-removal-queries-that-can-be-processed-i",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "692",
+        "totalSubmission": "1.5K",
+        "totalAcceptedRaw": 692,
+        "totalSubmissionRaw": 1545,
+        "acRate": "44.8%",
+        "acRateRaw": 44.78964401294498,
+        "likes": 7,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3323,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Think of dynamic programming.",
+        "The definition of <code>dp</code> is a little unusual. Try to think more.",
+        "Let <code>dp[l][r]</code> be the maximum number of queries we can process if we want <code>a[l], a[l + 1], ..., a[r - 1]</code> not to be removed after processing <code>dp[l][r]</code> queries.",
+        "So <code>dp[0][n] = 0</code> since we can not remove anything.",
+        "The answer would be <code>max(dp[i][i])</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:38.925Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.768Z"
+}

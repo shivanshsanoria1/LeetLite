@@ -1,0 +1,58 @@
+{
+    "quesId": 244,
+    "title": "Shortest Word Distance II",
+    "titleSlug": "shortest-word-distance-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "184.9K",
+        "totalSubmission": "293.2K",
+        "totalAcceptedRaw": 184862,
+        "totalSubmissionRaw": 293214,
+        "acRate": "63.0%",
+        "acRateRaw": 63.04678494205598,
+        "likes": 1089,
+        "dislikes": 414
+    },
+    "similarQuesIds": [
+        21,
+        243,
+        245
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 244,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:50.021Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.617Z"
+}

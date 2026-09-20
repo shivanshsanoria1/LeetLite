@@ -1,0 +1,68 @@
+{
+    "quesId": 1168,
+    "title": "Optimize Water Distribution in a Village",
+    "titleSlug": "optimize-water-distribution-in-a-village",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "61.1K",
+        "totalSubmission": "93.1K",
+        "totalAcceptedRaw": 61102,
+        "totalSubmissionRaw": 93106,
+        "acRate": "65.6%",
+        "acRateRaw": 65.62627542800679,
+        "likes": 1221,
+        "dislikes": 40
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        },
+        {
+            "name": "Prim's Algorithm",
+            "slug": "prims-algorithm"
+        },
+        {
+            "name": "Kruskal's Algorithm",
+            "slug": "kruskals-algorithm"
+        },
+        {
+            "name": "Borůvka's Algorithm",
+            "slug": "boruvkas-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1144,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "What if we model this problem as a graph problem?",
+        "A house is a node and a pipe is a weighted edge.",
+        "How to represent building wells in the graph model?",
+        "Add a virtual node, connect it to houses with edges weighted by the costs to build wells in these houses.",
+        "The problem is now reduced to a Minimum Spanning Tree problem."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:28:05.063Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.526Z"
+}

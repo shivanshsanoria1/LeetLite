@@ -1,0 +1,49 @@
+{
+    "quesId": 1231,
+    "title": "Divide Chocolate",
+    "titleSlug": "divide-chocolate",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "72.7K",
+        "totalSubmission": "119.7K",
+        "totalAcceptedRaw": 72668,
+        "totalSubmissionRaw": 119729,
+        "acRate": "60.7%",
+        "acRateRaw": 60.69373334781047,
+        "likes": 1045,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        410,
+        1011
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1192,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "After dividing the array into K+1 sub-arrays, you will pick the sub-array with the minimum sum.",
+        "Divide the sub-array into K+1 sub-arrays such that the minimum sub-array sum is as maximum as possible.",
+        "Use binary search with greedy check."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:29:17.027Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.899Z"
+}

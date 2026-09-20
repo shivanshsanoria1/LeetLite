@@ -1,0 +1,32 @@
+{
+    "quesId": 2797,
+    "title": "Partial Function with Placeholders",
+    "titleSlug": "partial-function-with-placeholders",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.8K",
+        "totalSubmission": "2.2K",
+        "totalAcceptedRaw": 1835,
+        "totalSubmissionRaw": 2195,
+        "acRate": "83.6%",
+        "acRateRaw": 83.5990888382688,
+        "likes": 11,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2900,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:35.117Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.496Z"
+}

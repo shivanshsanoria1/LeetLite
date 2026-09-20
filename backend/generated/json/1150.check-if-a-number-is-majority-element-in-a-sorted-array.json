@@ -1,0 +1,50 @@
+{
+    "quesId": 1150,
+    "title": "Check If a Number Is Majority Element in a Sorted Array",
+    "titleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "63.1K",
+        "totalSubmission": "105.3K",
+        "totalAcceptedRaw": 63099,
+        "totalSubmissionRaw": 105275,
+        "acRate": "59.9%",
+        "acRateRaw": 59.93730705295655,
+        "likes": 481,
+        "dislikes": 36
+    },
+    "similarQuesIds": [
+        169,
+        229
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1102,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "How to check if a given number target is a majority element?.",
+        "Find the frequency of target and compare it to the length of the array.",
+        "You can find the frequency of an element using Binary Search since the array is sorted.",
+        "Using Binary Search, find the first and last occurrences of A. Then just calculate the difference between the indexes of these occurrences."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:27:45.167Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.386Z"
+}

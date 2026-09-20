@@ -1,0 +1,51 @@
+{
+    "quesId": 1215,
+    "title": "Stepping Numbers",
+    "titleSlug": "stepping-numbers",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.5K",
+        "totalSubmission": "23.8K",
+        "totalAcceptedRaw": 11526,
+        "totalSubmissionRaw": 23793,
+        "acRate": "48.4%",
+        "acRateRaw": 48.44078339077078,
+        "likes": 188,
+        "dislikes": 21
+    },
+    "similarQuesIds": [
+        2801
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1151,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try to generate the numbers using recursion.",
+        "In one step in the recursion, add a valid digit to the right of the current number.",
+        "Save the number if it's in the range between low and high."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:28:57.467Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.741Z"
+}

@@ -1,0 +1,53 @@
+{
+    "quesId": 1428,
+    "title": "Leftmost Column with at Least a One",
+    "titleSlug": "leftmost-column-with-at-least-a-one",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "199.6K",
+        "totalSubmission": "361K",
+        "totalAcceptedRaw": 199557,
+        "totalSubmissionRaw": 361011,
+        "acRate": "55.3%",
+        "acRateRaw": 55.27726301968639,
+        "likes": 1259,
+        "dislikes": 153
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1374,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "1. (Binary Search) For each row do a binary search to find the leftmost one on that row and update the answer.",
+        "2. (Optimal Approach) Imagine there is a pointer p(x, y) starting from top right corner. p can only move left or down. If the value at p is 0, move down. If the value at p is 1, move left. Try to figure out the correctness and time complexity of this algorithm."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:34:06.730Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.822Z"
+}

@@ -1,0 +1,41 @@
+{
+    "quesId": 512,
+    "title": "Game Play Analysis II",
+    "titleSlug": "game-play-analysis-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "110K",
+        "totalSubmission": "200.4K",
+        "totalAcceptedRaw": 109957,
+        "totalSubmissionRaw": 200433,
+        "acRate": "54.9%",
+        "acRateRaw": 54.859728687391794,
+        "likes": 279,
+        "dislikes": 43
+    },
+    "similarQuesIds": [
+        511,
+        534
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1180,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:07:48.553Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.969Z"
+}

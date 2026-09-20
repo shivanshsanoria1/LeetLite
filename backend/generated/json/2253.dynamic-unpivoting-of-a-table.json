@@ -1,0 +1,39 @@
+{
+    "quesId": 2253,
+    "title": "Dynamic Unpivoting of a Table",
+    "titleSlug": "dynamic-unpivoting-of-a-table",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "1.6K",
+        "totalSubmission": "2.3K",
+        "totalAcceptedRaw": 1597,
+        "totalSubmissionRaw": 2294,
+        "acRate": "69.6%",
+        "acRateRaw": 69.61639058413252,
+        "likes": 20,
+        "dislikes": 13
+    },
+    "similarQuesIds": [
+        1795
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2382,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:22:09.622Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.301Z"
+}

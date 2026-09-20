@@ -1,0 +1,50 @@
+{
+    "quesId": 878,
+    "title": "Nth Magical Number",
+    "titleSlug": "nth-magical-number",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "53.6K",
+        "totalSubmission": "144.4K",
+        "totalAcceptedRaw": 53606,
+        "totalSubmissionRaw": 144381,
+        "acRate": "37.1%",
+        "acRateRaw": 37.12815398147956,
+        "likes": 1356,
+        "dislikes": 171
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Least Common Multiple",
+            "slug": "least-common-multiple"
+        },
+        {
+            "name": "Inclusion-Exclusion Principle",
+            "slug": "inclusion-exclusion-principle"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 910,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>A positive integer is <em>magical</em> if it is divisible by either <code>a</code> or <code>b</code>.</p>\n\n<p>Given the three integers <code>n</code>, <code>a</code>, and <code>b</code>, return the <code>n<sup>th</sup></code> magical number. Since the answer may be very large, <strong>return it modulo </strong><code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1, a = 2, b = 3\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, a = 2, b = 3\n<strong>Output:</strong> 6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>2 &lt;= a, b &lt;= 4 * 10<sup>4</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:34:08.657Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.566Z"
+}

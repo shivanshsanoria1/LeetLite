@@ -1,0 +1,50 @@
+{
+    "quesId": 3641,
+    "title": "Longest Semi-Repeating Subarray",
+    "titleSlug": "longest-semi-repeating-subarray",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.2K",
+        "totalSubmission": "1.9K",
+        "totalAcceptedRaw": 1226,
+        "totalSubmissionRaw": 1921,
+        "acRate": "63.8%",
+        "acRateRaw": 63.82092660072879,
+        "likes": 6,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "exampleTestcases": "[1,2,3,1,2,3,4]\n2\n[1,1,1,1,1]\n4\n[1,1,1,1,1]\n0",
+    "meta": {
+        "quesIdLCBackend": 3992,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use a sliding window with left/right pointers.",
+        "Keep a freq map and a count of elements with freq > 1.",
+        "If repeating-count <code>> k</code>, shift the left pointer until it's <code><= k</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:55:32.938Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.642Z"
+}

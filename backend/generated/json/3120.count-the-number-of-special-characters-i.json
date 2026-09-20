@@ -1,0 +1,48 @@
+{
+    "quesId": 3120,
+    "title": "Count the Number of Special Characters I",
+    "titleSlug": "count-the-number-of-special-characters-i",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "202.6K",
+        "totalSubmission": "262.8K",
+        "totalAcceptedRaw": 202644,
+        "totalSubmissionRaw": 262818,
+        "acRate": "77.1%",
+        "acRateRaw": 77.10439503993243,
+        "likes": 396,
+        "dislikes": 12
+    },
+    "similarQuesIds": [
+        520,
+        2309,
+        3121
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3408,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Hash set\n\n#### Intuition\n\nUse a hash set to store all characters in the string, then traverse all $26$ letters and check whether both the lowercase and uppercase versions of each letter exist.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CFGfoc58/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"CFGfoc58\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $\\textit{word}$, and let $|\\Sigma| = 26$.\n\n- Time complexity: $O(n + |\\Sigma|)$.\n\n- Space complexity: $O(|\\Sigma|)$.\n\n---"
+    },
+    "content": "<p>You are given a string <code>word</code>. A letter is called <strong>special</strong> if it appears <strong>both</strong> in lowercase and uppercase in <code>word</code>.</p>\n\n<p>Return the number of<em> </em><strong>special</strong> letters in<em> </em><code>word</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;aaAbcBC&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The special characters in <code>word</code> are <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;abc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>No character in <code>word</code> appears in uppercase.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word = &quot;abBCab&quot;</span></p>\n\n<p><strong>Output:</strong> 1</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only special character in <code>word</code> is <code>&#39;b&#39;</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length &lt;= 50</code></li>\n\t<li><code>word</code> consists of only lowercase and uppercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "The constraints are small. For all 52 characters, check if they are present in <code>word</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:56:25.057Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.937Z"
+}

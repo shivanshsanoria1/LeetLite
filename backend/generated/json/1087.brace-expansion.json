@@ -1,0 +1,61 @@
+{
+    "quesId": 1087,
+    "title": "Brace Expansion",
+    "titleSlug": "brace-expansion",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "68.5K",
+        "totalSubmission": "102.5K",
+        "totalAcceptedRaw": 68547,
+        "totalSubmissionRaw": 102511,
+        "acRate": "66.9%",
+        "acRateRaw": 66.86794587897884,
+        "likes": 668,
+        "dislikes": 57
+    },
+    "similarQuesIds": [
+        394,
+        784,
+        1096
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1076,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "All generated strings are of the same size. How can we generate all of these strings?",
+        "Do a backtracking on which each level of it has to choose one single (e.g. 'a') character or any character of the given parenthesized group (e.g. \"{a,b,c}\")"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:45.214Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.099Z"
+}

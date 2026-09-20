@@ -1,0 +1,39 @@
+{
+    "quesId": 2228,
+    "title": "Users With Two Purchases Within Seven Days",
+    "titleSlug": "users-with-two-purchases-within-seven-days",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "12.7K",
+        "totalSubmission": "26.8K",
+        "totalAcceptedRaw": 12650,
+        "totalSubmissionRaw": 26844,
+        "acRate": "47.1%",
+        "acRateRaw": 47.12412457159887,
+        "likes": 68,
+        "dislikes": 11
+    },
+    "similarQuesIds": [
+        1709
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2370,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:21:48.430Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.268Z"
+}

@@ -1,0 +1,49 @@
+{
+    "quesId": 305,
+    "title": "Number of Islands II",
+    "titleSlug": "number-of-islands-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "187.2K",
+        "totalSubmission": "459.7K",
+        "totalAcceptedRaw": 187241,
+        "totalSubmissionRaw": 459661,
+        "acRate": "40.7%",
+        "acRateRaw": 40.73462514929416,
+        "likes": 2008,
+        "dislikes": 79
+    },
+    "similarQuesIds": [
+        200,
+        2076
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 305,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:45.713Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.838Z"
+}

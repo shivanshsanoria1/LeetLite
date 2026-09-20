@@ -1,0 +1,43 @@
+{
+    "quesId": 276,
+    "title": "Paint Fence",
+    "titleSlug": "paint-fence",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "131.6K",
+        "totalSubmission": "271.1K",
+        "totalAcceptedRaw": 131556,
+        "totalSubmissionRaw": 271119,
+        "acRate": "48.5%",
+        "acRateRaw": 48.52316317497787,
+        "likes": 1642,
+        "dislikes": 399
+    },
+    "similarQuesIds": [
+        198,
+        213,
+        256,
+        265
+    ],
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 276,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:20.687Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.409Z"
+}

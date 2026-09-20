@@ -1,0 +1,37 @@
+{
+    "quesId": 2991,
+    "title": "Top Three Wineries ",
+    "titleSlug": "top-three-wineries",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.9K",
+        "totalSubmission": "7.3K",
+        "totalAcceptedRaw": 3941,
+        "totalSubmissionRaw": 7301,
+        "acRate": "54.0%",
+        "acRateRaw": 53.97890699904123,
+        "likes": 14,
+        "dislikes": 8
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3288,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:47:16.704Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.743Z"
+}

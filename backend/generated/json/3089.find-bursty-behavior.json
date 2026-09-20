@@ -1,0 +1,37 @@
+{
+    "quesId": 3089,
+    "title": "Find Bursty Behavior",
+    "titleSlug": "find-bursty-behavior",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.7K",
+        "totalSubmission": "7.1K",
+        "totalAcceptedRaw": 2678,
+        "totalSubmissionRaw": 7051,
+        "acRate": "38.0%",
+        "acRateRaw": 37.98042830804141,
+        "likes": 11,
+        "dislikes": 22
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3400,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:42.314Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.916Z"
+}

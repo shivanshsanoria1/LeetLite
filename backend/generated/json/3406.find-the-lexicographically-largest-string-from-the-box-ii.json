@@ -1,0 +1,44 @@
+{
+    "quesId": 3406,
+    "title": "Find the Lexicographically Largest String From the Box II",
+    "titleSlug": "find-the-lexicographically-largest-string-from-the-box-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "768",
+        "totalSubmission": "1.6K",
+        "totalAcceptedRaw": 768,
+        "totalSubmissionRaw": 1570,
+        "acRate": "48.9%",
+        "acRateRaw": 48.9171974522293,
+        "likes": 8,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "exampleTestcases": "\"dbca\"\n2\n\"gggg\"\n4",
+    "meta": {
+        "quesIdLCBackend": 3749,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use suffix array."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:48:41.757Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.331Z"
+}

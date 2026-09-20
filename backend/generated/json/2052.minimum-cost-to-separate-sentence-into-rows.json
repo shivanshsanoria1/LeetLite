@@ -1,0 +1,47 @@
+{
+    "quesId": 2052,
+    "title": "Minimum Cost to Separate Sentence Into Rows",
+    "titleSlug": "minimum-cost-to-separate-sentence-into-rows",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.6K",
+        "totalSubmission": "5.1K",
+        "totalAcceptedRaw": 2565,
+        "totalSubmissionRaw": 5118,
+        "acRate": "50.1%",
+        "acRateRaw": 50.11723329425557,
+        "likes": 45,
+        "dislikes": 14
+    },
+    "similarQuesIds": [
+        418
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2082,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Create an array storing all of the words in sentence separated.",
+        "Try dynamic programming.",
+        "Build a dp array where dp[i] represents the minimum total cost for the first i + 1 words."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:33.674Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.933Z"
+}

@@ -1,0 +1,51 @@
+{
+    "quesId": 334,
+    "title": "Increasing Triplet Subsequence",
+    "titleSlug": "increasing-triplet-subsequence",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "975K",
+        "totalSubmission": "2.5M",
+        "totalAcceptedRaw": 975017,
+        "totalSubmissionRaw": 2461104,
+        "acRate": "39.6%",
+        "acRateRaw": 39.617068029300526,
+        "likes": 8968,
+        "dislikes": 696
+    },
+    "similarQuesIds": [
+        300,
+        1995,
+        2179,
+        2552
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Longest Increasing Subsequence",
+            "slug": "longest-increasing-subsequence"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 334,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given an integer array <code>nums</code>, return <code>true</code><em> if there exists a triple of indices </em><code>(i, j, k)</code><em> such that </em><code>i &lt; j &lt; k</code><em> and </em><code>nums[i] &lt; nums[j] &lt; nums[k]</code>. If no such indices exists, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4,5]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Any triplet where i &lt; j &lt; k is valid.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,4,3,2,1]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> No triplet exists.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,5,0,4,6]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One of the valid triplet is (1, 4, 5), because nums[1] == 1 &lt; nums[4] == 4 &lt; nums[5] == 6.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>5</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you implement a solution that runs in <code>O(n)</code> time complexity and <code>O(1)</code> space complexity?",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:58:08.957Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.201Z"
+}

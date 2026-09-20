@@ -1,0 +1,39 @@
+{
+    "quesId": 2230,
+    "title": "The Users That Are Eligible for Discount",
+    "titleSlug": "the-users-that-are-eligible-for-discount",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.8K",
+        "totalSubmission": "15.4K",
+        "totalAcceptedRaw": 7830,
+        "totalSubmissionRaw": 15368,
+        "acRate": "51.0%",
+        "acRateRaw": 50.95321751577851,
+        "likes": 25,
+        "dislikes": 45
+    },
+    "similarQuesIds": [
+        2205
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2371,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:21:50.579Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.276Z"
+}

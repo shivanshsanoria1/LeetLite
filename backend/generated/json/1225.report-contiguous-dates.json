@@ -1,0 +1,41 @@
+{
+    "quesId": 1225,
+    "title": "Report Contiguous Dates",
+    "titleSlug": "report-contiguous-dates",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "34.2K",
+        "totalSubmission": "59.9K",
+        "totalAcceptedRaw": 34151,
+        "totalSubmissionRaw": 59850,
+        "acRate": "57.1%",
+        "acRateRaw": 57.060985797827904,
+        "likes": 352,
+        "dislikes": 22
+    },
+    "similarQuesIds": [
+        1285,
+        1613,
+        2474
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1357,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:29:10.273Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.871Z"
+}

@@ -1,0 +1,56 @@
+{
+    "quesId": 716,
+    "title": "Max Stack",
+    "titleSlug": "max-stack",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "187.8K",
+        "totalSubmission": "408.2K",
+        "totalAcceptedRaw": 187828,
+        "totalSubmissionRaw": 408159,
+        "acRate": "46.0%",
+        "acRateRaw": 46.01834089166232,
+        "likes": 2023,
+        "dislikes": 514
+    },
+    "similarQuesIds": [
+        155
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 716,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:45.016Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.259Z"
+}

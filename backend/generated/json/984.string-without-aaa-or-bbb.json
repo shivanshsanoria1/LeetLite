@@ -1,0 +1,42 @@
+{
+    "quesId": 984,
+    "title": "String Without AAA or BBB",
+    "titleSlug": "string-without-aaa-or-bbb",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "64.2K",
+        "totalSubmission": "140.8K",
+        "totalAcceptedRaw": 64236,
+        "totalSubmissionRaw": 140776,
+        "acRate": "45.6%",
+        "acRateRaw": 45.62993692106609,
+        "likes": 886,
+        "dislikes": 377
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1026,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Greedy\n\n**Intuition**\n\nIntuitively, we should write the most common letter first.  For example, if we have `A = 6, B = 2`, we want to write `'aabaabaa'`.  The only time we don't write the most common letter is if the last two letters we have written are also the most common letter\n\n**Algorithm**\n\nLet's maintain `A, B`: the number of `'a'` and `'b'`'s left to write.\n\nIf we have already written the most common letter twice, we'll write the other letter.  Otherwise, we'll write the most common letter.\n\n<iframe src=\"https://leetcode.com/playground/ZfukSBhF/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZfukSBhF\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(A+B)$$.\n\n* Space Complexity:  $$O(A+B)$$.\n<br />\n<br />"
+    },
+    "content": "<p>Given two integers <code>a</code> and <code>b</code>, return <strong>any</strong> string <code>s</code> such that:</p>\n\n<ul>\n\t<li><code>s</code> has length <code>a + b</code> and contains exactly <code>a</code> <code>&#39;a&#39;</code> letters, and exactly <code>b</code> <code>&#39;b&#39;</code> letters,</li>\n\t<li>The substring <code>&#39;aaa&#39;</code> does not occur in <code>s</code>, and</li>\n\t<li>The substring <code>&#39;bbb&#39;</code> does not occur in <code>s</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = 1, b = 2\n<strong>Output:</strong> &quot;abb&quot;\n<strong>Explanation:</strong> &quot;abb&quot;, &quot;bab&quot; and &quot;bba&quot; are all correct answers.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = 4, b = 1\n<strong>Output:</strong> &quot;aabaa&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= a, b &lt;= 100</code></li>\n\t<li>It is guaranteed such an <code>s</code> exists for the given <code>a</code> and <code>b</code>.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:31.147Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.863Z"
+}

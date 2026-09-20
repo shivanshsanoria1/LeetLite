@@ -1,0 +1,33 @@
+{
+    "quesId": 2758,
+    "title": "Next Day",
+    "titleSlug": "next-day",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.7K",
+        "totalSubmission": "2.1K",
+        "totalAcceptedRaw": 1700,
+        "totalSubmissionRaw": 2109,
+        "acRate": "80.6%",
+        "acRateRaw": 80.60692271218586,
+        "likes": 14,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2822,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:03.982Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.408Z"
+}

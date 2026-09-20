@@ -1,0 +1,67 @@
+{
+    "quesId": 3009,
+    "title": "Maximum Number of Intersections on the Chart",
+    "titleSlug": "maximum-number-of-intersections-on-the-chart",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.5K",
+        "totalSubmission": "9.8K",
+        "totalAcceptedRaw": 4453,
+        "totalSubmissionRaw": 9842,
+        "acRate": "45.2%",
+        "acRateRaw": 45.24486892907946,
+        "likes": 30,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Sweep Line",
+            "slug": "sweep-line"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3315,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "We move a horizontal line from the bottom of the chart to the top.",
+        "For each point we reach, the number of intersections might change, so we have to count it.",
+        "If a point we just reached is lower than its previous/next point, the number of intersections increases.",
+        "If a point we just reached is higher than its previous/next point, the number of intersections decreases.",
+        "There is also another solution using Fenwick Tree."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:32.062Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.761Z"
+}

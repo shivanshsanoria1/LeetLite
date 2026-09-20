@@ -1,0 +1,41 @@
+{
+    "quesId": 597,
+    "title": "Friend Requests I: Overall Acceptance Rate",
+    "titleSlug": "friend-requests-i-overall-acceptance-rate",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "87.9K",
+        "totalSubmission": "214.4K",
+        "totalAcceptedRaw": 87919,
+        "totalSubmissionRaw": 214352,
+        "acRate": "41.0%",
+        "acRateRaw": 41.01617899529745,
+        "likes": 321,
+        "dislikes": 779
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 597,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Still remember how to count the number of rows in a table?",
+        "What is the keyword to filter the duplicated records in a table?"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:09:05.349Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.080Z"
+}

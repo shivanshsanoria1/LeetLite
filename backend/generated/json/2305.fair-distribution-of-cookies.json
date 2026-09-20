@@ -1,0 +1,67 @@
+{
+    "quesId": 2305,
+    "title": "Fair Distribution of Cookies",
+    "titleSlug": "fair-distribution-of-cookies",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "126.3K",
+        "totalSubmission": "180.1K",
+        "totalAcceptedRaw": 126262,
+        "totalSubmissionRaw": 180142,
+        "acRate": "70.1%",
+        "acRateRaw": 70.09026212654462,
+        "likes": 2764,
+        "dislikes": 128
+    },
+    "similarQuesIds": [
+        410,
+        548,
+        698,
+        1879,
+        1994,
+        1986,
+        2035,
+        2397,
+        2591
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1418,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n\n### Approach: Backtracking\n\n#### Intuition   \n\n> If you are not familiar with recursion, please refer to our explore cards [Recursion Explore Card](https://leetcode.com/explore/featured/card/recursion-i/). We will focus on the usage in this article and not the underlying principles or implementation details.\n\nThe concept of backtracking involves attempting all possible distributions of cookies. We distribute the current cookie to each child and recursively repeat the process with the next cookie until all the cookies are distributed. Once all the cookies have been distributed, we compute the unfairness of the current distribution and update the minimum unfairness encountered.\n\n\nLet’s take a look at a scenario with 3 cookies and 3 children that serves as a great example of this.\n\nInitially, we move along the path in yellow by distributing all 3 cookies to child 0, but it is not a valid distribution as child 1 and child 2 receive no cookies.\n\n![img](../Figures/2305/3.png)\n\nAs a result, we backtrack to the next possible distribution (by distributing the last cookie to child 1) and repeat this process.\n\n![img](../Figures/2305/4.png)\n\nAfter distributing all cookies, we will determine if the current distribution is valid, and if so, we will calculate the unfairness of this distribution.\n\nTo optimize the backtracking approach, we can use an early stop technique. Consider the same example in the image below: suppose that we have already distributed the first 2 cookies to child 0. When we come to the last cookie, should we continue the recursion process by distributing it to any child?\n\nThe answer is NO, because child 1 and child 2 require at least two cookies, and at this point, we only have one cookie remaining. Consequently, no matter how we distribute this last cookie, it will inevitably lead to an invalid distribution. Therefore, we can discard this path and not proceed further with it.\n\n![img](../Figures/2305/5.png)\n\nTo implement the early stop technique, we will introduce a parameter named `zero_count` that represents **the number of children without a cookie**. During the backtracking process, if we have fewer undistributed cookies than `zero_count`, it means that some children will always end up with no cookie. At this point, we can terminate the recursion because it becomes impossible to obtain a valid distribution. The image below illustrates this concept, where the red states are not computed thanks to the early stop, significantly reducing unnecessary recursion steps.\n\n![img](../Figures/2305/6.png)\n\nTherefore, the algorithm only tracks the paths that lead to valid distributions and updates the global minimum by the maximum unfairness of each valid distribution.\n\n\n<br>\n\n#### Algorithm\n\n1) Create an array `distribute` of length `k` initialized with all zeros, which represents the unfairness of each child.\n\n2) Define the recursive function `dfs(i, zero_count)` to distribute the $i^{th}$ cookie:\n    - If the number of undistributed cookies is less than `zero_count`, which is `n - i < zero_count`, return a large integer like `float('inf')`, implying that the current distribution is invalid.\n    - If `i = n`, return the maximum value of `distribute` which is the unfairness of this distribution.\n    - Otherwise, set `answer` as `float('inf')` and continue with step 3.\n\n3) Iterate through `distribute` and for each child `j`:\n    - Increment `distribute[j]` by `cookie[i]`, if `distribute[i]` is 0 before the distribution, decrement `zero_count` by 1.\n    - Recursively call `dfs(i + 1, zero_count)` and update `answer` as the minimum unfairness encountered, `answer = min(answer, dfs(i + 1, zero_count))`.\n    - Decrement `distribute[j]` by `cookie[i]`, if `distribute[i]` is 0 after the process, increment `zero_count` by 1. (This is the backtrack step)\n\n\n    Return `answer` after the iteration is complete.\n\n\n4) Return `dfs(0, distribute)`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/NJKWuHZS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NJKWuHZS\"></iframe>\n\n\n#### Complexity Analysis\n\nLet $n$ be the length of `cookies`.\n\n* Time complexity: $O(k^n)$\n\n    - The algorithm attempts to distribute each of the $n$ cookies to each of the $k$ children, resulting in at most $O(k^n)$ distinct distributions. \n    \n* Space complexity: $O(k + n)$\n    - The array `distribute` represents the status of $k$ children, thus taking up $O(k)$ space.\n    - The space complexity of a recursive call depends on the maximum depth of the recursive call stack, which is at most $n$. As each recursive call increments `i` by 1. Therefore, at most $n$ levels of recursion will be created, and each level consumes a constant amount of space.    \n\n<br/>"
+    },
+    "content": "<p>You are given an integer array <code>cookies</code>, where <code>cookies[i]</code> denotes the number of cookies in the <code>i<sup>th</sup></code> bag. You are also given an integer <code>k</code> that denotes the number of children to distribute <strong>all</strong> the bags of cookies to. All the cookies in the same bag must go to the same child and cannot be split up.</p>\n\n<p>The <strong>unfairness</strong> of a distribution is defined as the <strong>maximum</strong> <strong>total</strong> cookies obtained by a single child in the distribution.</p>\n\n<p>Return <em>the <strong>minimum</strong> unfairness of all distributions</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> cookies = [8,15,10,20,8], k = 2\n<strong>Output:</strong> 31\n<strong>Explanation:</strong> One optimal distribution is [8,15,8] and [10,20]\n- The 1<sup>st</sup> child receives [8,15,8] which has a total of 8 + 15 + 8 = 31 cookies.\n- The 2<sup>nd</sup> child receives [10,20] which has a total of 10 + 20 = 30 cookies.\nThe unfairness of the distribution is max(31,30) = 31.\nIt can be shown that there is no distribution with an unfairness less than 31.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> cookies = [6,1,3,2,2,4,1,2], k = 3\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> One optimal distribution is [6,1], [3,2,2], and [4,1,2]\n- The 1<sup>st</sup> child receives [6,1] which has a total of 6 + 1 = 7 cookies.\n- The 2<sup>nd</sup> child receives [3,2,2] which has a total of 3 + 2 + 2 = 7 cookies.\n- The 3<sup>rd</sup> child receives [4,1,2] which has a total of 4 + 1 + 2 = 7 cookies.\nThe unfairness of the distribution is max(7,7,7) = 7.\nIt can be shown that there is no distribution with an unfairness less than 7.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= cookies.length &lt;= 8</code></li>\n\t<li><code>1 &lt;= cookies[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>2 &lt;= k &lt;= cookies.length</code></li>\n</ul>\n",
+    "hints": [
+        "We have to give each bag to one of the children. How can we enumerate all of the possibilities?",
+        "Use recursion and keep track of the current number of cookies each child has. Once all the bags have been distributed, find the child with the most cookies."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:22:52.735Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.403Z"
+}

@@ -1,0 +1,58 @@
+{
+    "quesId": 1055,
+    "title": "Shortest Way to Form String",
+    "titleSlug": "shortest-way-to-form-string",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "114.9K",
+        "totalSubmission": "186K",
+        "totalAcceptedRaw": 114941,
+        "totalSubmissionRaw": 185969,
+        "acRate": "61.8%",
+        "acRateRaw": 61.806537648747906,
+        "likes": 1341,
+        "dislikes": 77
+    },
+    "similarQuesIds": [
+        392,
+        792
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1051,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Which conditions have to been met in order to be impossible to form the target string?",
+        "If there exists a character in the target string which doesn't exist in the source string then it will be impossible to form the target string.",
+        "Assuming we are in the case which is possible to form the target string, how can we assure the minimum number of used subsequences of source?",
+        "For each used subsequence try to match the leftmost character of the current subsequence with the leftmost character of the target string, if they match then erase both character otherwise erase just the subsequence character whenever the current subsequence gets empty, reset it to a new copy of subsequence and increment the count, do this until the target sequence gets empty. Finally return the count."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:21.386Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.004Z"
+}

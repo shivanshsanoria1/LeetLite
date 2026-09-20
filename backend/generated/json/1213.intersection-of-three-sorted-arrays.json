@@ -1,0 +1,56 @@
+{
+    "quesId": 1213,
+    "title": "Intersection of Three Sorted Arrays",
+    "titleSlug": "intersection-of-three-sorted-arrays",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "103.8K",
+        "totalSubmission": "129.8K",
+        "totalAcceptedRaw": 103835,
+        "totalSubmissionRaw": 129840,
+        "acRate": "80.0%",
+        "acRateRaw": 79.9715033887862,
+        "likes": 616,
+        "dislikes": 26
+    },
+    "similarQuesIds": [
+        349,
+        2248
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1149,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Count the frequency of all elements in the three arrays.",
+        "The elements that appeared in all the arrays would have a frequency of 3."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:28:55.068Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.716Z"
+}

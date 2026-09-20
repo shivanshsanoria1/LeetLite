@@ -1,0 +1,57 @@
+{
+    "quesId": 1490,
+    "title": "Clone N-ary Tree",
+    "titleSlug": "clone-n-ary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "36.7K",
+        "totalSubmission": "44.1K",
+        "totalAcceptedRaw": 36661,
+        "totalSubmissionRaw": 44121,
+        "acRate": "83.1%",
+        "acRateRaw": 83.09195167833911,
+        "likes": 433,
+        "dislikes": 17
+    },
+    "similarQuesIds": [
+        133,
+        138,
+        1485
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1634,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Traverse the tree, keep a hashtable with you and create a clone node for each node in the tree.",
+        "Start traversing the original tree again and connect each child pointer in the cloned tree the same way as the original tree with the help of the hashtable."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:35:27.223Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.975Z"
+}

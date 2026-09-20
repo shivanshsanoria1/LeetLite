@@ -1,0 +1,47 @@
+{
+    "quesId": 989,
+    "title": "Add to Array-Form of Integer",
+    "titleSlug": "add-to-array-form-of-integer",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "355.9K",
+        "totalSubmission": "779.1K",
+        "totalAcceptedRaw": 355933,
+        "totalSubmissionRaw": 779059,
+        "acRate": "45.7%",
+        "acRateRaw": 45.68755383096787,
+        "likes": 3726,
+        "dislikes": 318
+    },
+    "similarQuesIds": [
+        2,
+        66,
+        67,
+        415
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1031,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Schoolbook Addition\n\n**Intuition**\n\nLet's add numbers in a schoolbook way, column by column.  For example, to add 123 and 912, we add 3+2, then 2+1, then 1+9.  Whenever our addition result is more than 9, we carry the 1 into the next column.  The result is 1035.\n\n**Algorithm**\n\nWe can do a variant of the above idea that is easier to implement - we put the entire addend in the first column from the right.\n\nContinuing the example of 123 + 912, we start with [1, 2, 3+912].  Then we perform the addition 3+912, leaving 915.  The 5 stays as the digit, while we 'carry' 910 into the next column which becomes 91.\n\nWe repeat this process with [1, 2+91, 5].  We have 93, where 3 stays and 90 is carried over as 9.  Again, we have [1+9, 3, 5] which transforms into [1, 0, 3, 5].\n\n<iframe src=\"https://leetcode.com/playground/jaq9jwpV/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"jaq9jwpV\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\max(N, \\log K))$$ where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(\\max(N, \\log K))$$.\n<br />\n<br />"
+    },
+    "content": "<p>The <strong>array-form</strong> of an integer <code>num</code> is an array representing its digits in left to right order.</p>\n\n<ul>\n\t<li>For example, for <code>num = 1321</code>, the array form is <code>[1,3,2,1]</code>.</li>\n</ul>\n\n<p>Given <code>num</code>, the <strong>array-form</strong> of an integer, and an integer <code>k</code>, return <em>the <strong>array-form</strong> of the integer</em> <code>num + k</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = [1,2,0,0], k = 34\n<strong>Output:</strong> [1,2,3,4]\n<strong>Explanation:</strong> 1200 + 34 = 1234\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = [2,7,4], k = 181\n<strong>Output:</strong> [4,5,5]\n<strong>Explanation:</strong> 274 + 181 = 455\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = [2,1,5], k = 806\n<strong>Output:</strong> [1,0,2,1]\n<strong>Explanation:</strong> 215 + 806 = 1021\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= num[i] &lt;= 9</code></li>\n\t<li><code>num</code> does not contain any leading zeros except for the zero itself.</li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:34.985Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.866Z"
+}

@@ -1,0 +1,32 @@
+{
+    "quesId": 2820,
+    "title": "Election Results",
+    "titleSlug": "election-results",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "4.6K",
+        "totalSubmission": "6.9K",
+        "totalAcceptedRaw": 4590,
+        "totalSubmissionRaw": 6889,
+        "acRate": "66.6%",
+        "acRateRaw": 66.62795761358687,
+        "likes": 29,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 3078,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:44:53.350Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.562Z"
+}

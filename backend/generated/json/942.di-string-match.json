@@ -1,0 +1,52 @@
+{
+    "quesId": 942,
+    "title": "DI String Match",
+    "titleSlug": "di-string-match",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "218.1K",
+        "totalSubmission": "268.2K",
+        "totalAcceptedRaw": 218102,
+        "totalSubmissionRaw": 268211,
+        "acRate": "81.3%",
+        "acRateRaw": 81.31732106438588,
+        "likes": 2638,
+        "dislikes": 1083
+    },
+    "similarQuesIds": [
+        2375
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 979,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Ad-Hoc\n\n#### Intuition\n\nIf we see `S[0] == 'I'`, we can always put `0` as the first element; similarly, if we see `S[0] == 'D'`, we can always put `N` as the first element.\n\nSay we have a match for the rest of the string `S[1], S[2], ...` using `N` distinct elements.  Notice it doesn't matter what the elements are, only that they are distinct and totally ordered.  Then, putting `0` or `N` at the first character will match, and the rest of the elements (`1, 2, ..., N` or `0, 1, ..., N-1`) can use the matching we have.\n\n#### Algorithm\n\nKeep track of the smallest and largest element we haven't placed.  If we see an `'I'`, place the small element; otherwise place the large element.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/H555URr8/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"H555URr8\"></iframe>\n\n#### Complexity Analysis\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(1)$$, we don't count the answer as part of the space complexity.\n<br />\n<br />"
+    },
+    "content": "<p>A permutation <code>perm</code> of <code>n + 1</code> integers of all the integers in the range <code>[0, n]</code> can be represented as a string <code>s</code> of length <code>n</code> where:</p>\n\n<ul>\n\t<li><code>s[i] == &#39;I&#39;</code> if <code>perm[i] &lt; perm[i + 1]</code>, and</li>\n\t<li><code>s[i] == &#39;D&#39;</code> if <code>perm[i] &gt; perm[i + 1]</code>.</li>\n</ul>\n\n<p>Given a string <code>s</code>, reconstruct the permutation <code>perm</code> and return it. If there are multiple valid permutations perm, return <strong>any of them</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"IDID\"\n<strong>Output:</strong> [0,4,1,3,2]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"III\"\n<strong>Output:</strong> [0,1,2,3]\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> s = \"DDI\"\n<strong>Output:</strong> [3,2,0,1]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;I&#39;</code> or <code>&#39;D&#39;</code>.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:34:58.206Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.829Z"
+}

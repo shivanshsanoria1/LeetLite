@@ -1,0 +1,33 @@
+{
+    "quesId": 2821,
+    "title": "Delay the Resolution of Each Promise",
+    "titleSlug": "delay-the-resolution-of-each-promise",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.1K",
+        "totalSubmission": "1.5K",
+        "totalAcceptedRaw": 1150,
+        "totalSubmissionRaw": 1538,
+        "acRate": "74.8%",
+        "acRateRaw": 74.77243172951886,
+        "likes": 18,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2909,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:44:54.171Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.563Z"
+}

@@ -1,0 +1,46 @@
+{
+    "quesId": 3460,
+    "title": "Longest Common Prefix After at Most One Removal",
+    "titleSlug": "longest-common-prefix-after-at-most-one-removal",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4K",
+        "totalSubmission": "2.1K",
+        "totalAcceptedRaw": 1428,
+        "totalSubmissionRaw": 2087,
+        "acRate": "68.4%",
+        "acRateRaw": 68.42357450886439,
+        "likes": 8,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        14
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "exampleTestcases": "\"madxa\"\n\"madam\"\n\"leetcode\"\n\"eetcode\"\n\"one\"\n\"one\"\n\"a\"\n\"b\"",
+    "meta": {
+        "quesIdLCBackend": 3796,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Maintain pointers to the beginning of both strings and remove the first position where they differ in <code>s</code> (if any)."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:08.910Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.419Z"
+}

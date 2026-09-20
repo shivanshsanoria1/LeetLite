@@ -1,0 +1,50 @@
+{
+    "quesId": 246,
+    "title": "Strobogrammatic Number",
+    "titleSlug": "strobogrammatic-number",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "213.7K",
+        "totalSubmission": "449.9K",
+        "totalAcceptedRaw": 213668,
+        "totalSubmissionRaw": 449937,
+        "acRate": "47.5%",
+        "acRateRaw": 47.48842615743982,
+        "likes": 638,
+        "dislikes": 1054
+    },
+    "similarQuesIds": [
+        247,
+        248,
+        1056
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 246,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:52.133Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.634Z"
+}

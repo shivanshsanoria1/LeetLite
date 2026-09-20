@@ -1,0 +1,50 @@
+{
+    "quesId": 2143,
+    "title": "Choose Numbers From Two Arrays in Range",
+    "titleSlug": "choose-numbers-from-two-arrays-in-range",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4K",
+        "totalSubmission": "2.8K",
+        "totalAcceptedRaw": 1432,
+        "totalSubmissionRaw": 2781,
+        "acRate": "51.5%",
+        "acRateRaw": 51.49226896799712,
+        "likes": 42,
+        "dislikes": 5
+    },
+    "similarQuesIds": [
+        349,
+        350,
+        1879,
+        1874
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2282,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "If you know the possible sums you can get for a range [l, r], how can you use this information to calculate the possible sums you can get for a range [l, r + 1]?",
+        "For the range [l, r], if it is possible to choose elements such that the sum of elements you picked from nums1 is x and the sum of elements you picked from nums2 is y, then (x + nums1[r + 1], y) and (x, y + nums2[r + 1]) are possible sums you can get in the range [l, r + 1].",
+        "How can we save the possible sums obtainable at a given index so that we can reuse this information later?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:03.017Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.100Z"
+}

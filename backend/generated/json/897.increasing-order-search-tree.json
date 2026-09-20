@@ -1,0 +1,54 @@
+{
+    "quesId": 897,
+    "title": "Increasing Order Search Tree",
+    "titleSlug": "increasing-order-search-tree",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "349.1K",
+        "totalSubmission": "441.2K",
+        "totalAcceptedRaw": 349065,
+        "totalSubmissionRaw": 441239,
+        "acRate": "79.1%",
+        "acRateRaw": 79.11005550254849,
+        "likes": 4512,
+        "dislikes": 686
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 933,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given the <code>root</code> of a binary search tree, rearrange the tree in <strong>in-order</strong> so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/17/ex1.jpg\" style=\"width: 600px; height: 350px;\" />\n<pre>\n<strong>Input:</strong> root = [5,3,6,2,4,null,8,1,null,null,null,7,9]\n<strong>Output:</strong> [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/17/ex2.jpg\" style=\"width: 300px; height: 114px;\" />\n<pre>\n<strong>Input:</strong> root = [5,1,7]\n<strong>Output:</strong> [1,null,5,null,7]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the given tree will be in the range <code>[1, 100]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:34:22.338Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.651Z"
+}

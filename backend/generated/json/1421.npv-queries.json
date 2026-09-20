@@ -1,0 +1,38 @@
+{
+    "quesId": 1421,
+    "title": "NPV Queries",
+    "titleSlug": "npv-queries",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "32.1K",
+        "totalSubmission": "38.8K",
+        "totalAcceptedRaw": 32108,
+        "totalSubmissionRaw": 38763,
+        "acRate": "82.8%",
+        "acRateRaw": 82.83156618424786,
+        "likes": 61,
+        "dislikes": 297
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1551,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:33:50.143Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.817Z"
+}

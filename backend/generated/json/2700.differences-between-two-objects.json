@@ -1,0 +1,40 @@
+{
+    "quesId": 2700,
+    "title": "Differences Between Two Objects",
+    "titleSlug": "differences-between-two-objects",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "7.9K",
+        "totalSubmission": "10.8K",
+        "totalAcceptedRaw": 7931,
+        "totalSubmissionRaw": 10751,
+        "acRate": "73.8%",
+        "acRateRaw": 73.76988187145382,
+        "likes": 146,
+        "dislikes": 31
+    },
+    "similarQuesIds": [
+        2628,
+        2633
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2774,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Find the intersection of the keys/indices on the two arrays/objects.",
+        "Analyze the data structure recursively.",
+        "For each key in the intersection, omit if there are no differences in the leaves. Otherwise return the difference."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:41:17.391Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.371Z"
+}

@@ -1,0 +1,41 @@
+{
+    "quesId": 1272,
+    "title": "Remove Interval",
+    "titleSlug": "remove-interval",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "43.3K",
+        "totalSubmission": "64.3K",
+        "totalAcceptedRaw": 43336,
+        "totalSubmissionRaw": 64288,
+        "acRate": "67.4%",
+        "acRateRaw": 67.40915878546541,
+        "likes": 482,
+        "dislikes": 36
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1200,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Solve the problem for every interval alone.",
+        "Divide the problem into cases according to the position of the two intervals."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:30:27.587Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.077Z"
+}

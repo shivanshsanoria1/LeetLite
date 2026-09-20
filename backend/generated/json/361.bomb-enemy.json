@@ -1,0 +1,51 @@
+{
+    "quesId": 361,
+    "title": "Bomb Enemy",
+    "titleSlug": "bomb-enemy",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "87.4K",
+        "totalSubmission": "165.2K",
+        "totalAcceptedRaw": 87354,
+        "totalSubmissionRaw": 165249,
+        "acRate": "52.9%",
+        "acRateRaw": 52.86204455095038,
+        "likes": 1003,
+        "dislikes": 118
+    },
+    "similarQuesIds": [
+        2087,
+        2132,
+        2257,
+        2245
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 361,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:34.672Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.623Z"
+}

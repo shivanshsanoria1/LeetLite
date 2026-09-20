@@ -1,0 +1,37 @@
+{
+    "quesId": 2372,
+    "title": "Calculate the Influence of Each Salesperson",
+    "titleSlug": "calculate-the-influence-of-each-salesperson",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "8.4K",
+        "totalSubmission": "10K",
+        "totalAcceptedRaw": 8394,
+        "totalSubmissionRaw": 10013,
+        "acRate": "83.8%",
+        "acRateRaw": 83.83101967442325,
+        "likes": 41,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2515,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:23:48.224Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.457Z"
+}

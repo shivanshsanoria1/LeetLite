@@ -1,0 +1,37 @@
+{
+    "quesId": 1303,
+    "title": "Find the Team Size",
+    "titleSlug": "find-the-team-size",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "82.9K",
+        "totalSubmission": "92.6K",
+        "totalAcceptedRaw": 82895,
+        "totalSubmissionRaw": 92574,
+        "acRate": "89.5%",
+        "acRateRaw": 89.54469349176344,
+        "likes": 345,
+        "dislikes": 16
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1438,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:31:07.323Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.395Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 1212,
+    "title": "Team Scores in Football Tournament",
+    "titleSlug": "team-scores-in-football-tournament",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "53.3K",
+        "totalSubmission": "95.7K",
+        "totalAcceptedRaw": 53341,
+        "totalSubmissionRaw": 95680,
+        "acRate": "55.7%",
+        "acRateRaw": 55.749372909699005,
+        "likes": 331,
+        "dislikes": 26
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1339,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:28:53.986Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.704Z"
+}

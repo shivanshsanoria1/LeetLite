@@ -1,0 +1,50 @@
+{
+    "quesId": 727,
+    "title": "Minimum Window Subsequence",
+    "titleSlug": "minimum-window-subsequence",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "100K",
+        "totalSubmission": "228K",
+        "totalAcceptedRaw": 100013,
+        "totalSubmissionRaw": 228010,
+        "acRate": "43.9%",
+        "acRateRaw": 43.86342704267357,
+        "likes": 1490,
+        "dislikes": 95
+    },
+    "similarQuesIds": [
+        76,
+        674
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 727,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let dp[j][e] = s be the largest index for which S[s:e+1] has T[:j] as a substring."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:52.748Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.269Z"
+}

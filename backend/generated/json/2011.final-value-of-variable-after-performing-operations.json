@@ -1,0 +1,49 @@
+{
+    "quesId": 2011,
+    "title": "Final Value of Variable After Performing Operations",
+    "titleSlug": "final-value-of-variable-after-performing-operations",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "692.1K",
+        "totalSubmission": "763.8K",
+        "totalAcceptedRaw": 692109,
+        "totalSubmissionRaw": 763830,
+        "acRate": "90.6%",
+        "acRateRaw": 90.61034523388713,
+        "likes": 2052,
+        "dislikes": 218
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2137,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nInitially, set $x = 0$. Traverse the array of strings $\\textit{operations}$. When encountering $\\text{\"++X\"}$ or $\\text{\"X++\"}$, add $1$ to $x$; otherwise, subtract $1$ from $x$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Q9VCsFYh/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"Q9VCsFYh\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string array $\\textit{operations}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n  \n  Only a few additional variables are used.\n\n---"
+    },
+    "content": "<p>There is a programming language with only <strong>four</strong> operations and <strong>one</strong> variable <code>X</code>:</p>\n\n<ul>\n\t<li><code>++X</code> and <code>X++</code> <strong>increments</strong> the value of the variable <code>X</code> by <code>1</code>.</li>\n\t<li><code>--X</code> and <code>X--</code> <strong>decrements</strong> the value of the variable <code>X</code> by <code>1</code>.</li>\n</ul>\n\n<p>Initially, the value of <code>X</code> is <code>0</code>.</p>\n\n<p>Given an array of strings <code>operations</code> containing a list of operations, return <em>the <strong>final </strong>value of </em><code>X</code> <em>after performing all the operations</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> operations = [&quot;--X&quot;,&quot;X++&quot;,&quot;X++&quot;]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong>&nbsp;The operations are performed as follows:\nInitially, X = 0.\n--X: X is decremented by 1, X =  0 - 1 = -1.\nX++: X is incremented by 1, X = -1 + 1 =  0.\nX++: X is incremented by 1, X =  0 + 1 =  1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> operations = [&quot;++X&quot;,&quot;++X&quot;,&quot;X++&quot;]\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>The operations are performed as follows:\nInitially, X = 0.\n++X: X is incremented by 1, X = 0 + 1 = 1.\n++X: X is incremented by 1, X = 1 + 1 = 2.\nX++: X is incremented by 1, X = 2 + 1 = 3.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> operations = [&quot;X++&quot;,&quot;++X&quot;,&quot;--X&quot;,&quot;X--&quot;]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong>&nbsp;The operations are performed as follows:\nInitially, X = 0.\nX++: X is incremented by 1, X = 0 + 1 = 1.\n++X: X is incremented by 1, X = 1 + 1 = 2.\n--X: X is decremented by 1, X = 2 - 1 = 1.\nX--: X is decremented by 1, X = 1 - 1 = 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= operations.length &lt;= 100</code></li>\n\t<li><code>operations[i]</code> will be either <code>&quot;++X&quot;</code>, <code>&quot;X++&quot;</code>, <code>&quot;--X&quot;</code>, or <code>&quot;X--&quot;</code>.</li>\n</ul>\n",
+    "hints": [
+        "There are only two operations to keep track of.",
+        "Use a variable to store the value after each operation."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:01.214Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.897Z"
+}

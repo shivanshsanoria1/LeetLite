@@ -1,0 +1,55 @@
+{
+    "quesId": 296,
+    "title": "Best Meeting Point",
+    "titleSlug": "best-meeting-point",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "98.5K",
+        "totalSubmission": "160.4K",
+        "totalAcceptedRaw": 98538,
+        "totalSubmissionRaw": 160369,
+        "acRate": "61.4%",
+        "acRateRaw": 61.44454352150353,
+        "likes": 1219,
+        "dislikes": 108
+    },
+    "similarQuesIds": [
+        317,
+        462
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 296,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Try to solve it in one dimension first. How can this solution apply to the two dimension case?"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:57:37.588Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.699Z"
+}

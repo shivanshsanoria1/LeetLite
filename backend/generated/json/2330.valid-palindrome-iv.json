@@ -1,0 +1,48 @@
+{
+    "quesId": 2330,
+    "title": "Valid Palindrome IV",
+    "titleSlug": "valid-palindrome-iv",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "21.5K",
+        "totalSubmission": "28.5K",
+        "totalAcceptedRaw": 21516,
+        "totalSubmissionRaw": 28521,
+        "acRate": "75.4%",
+        "acRateRaw": 75.43915009992637,
+        "likes": 112,
+        "dislikes": 35
+    },
+    "similarQuesIds": [
+        125,
+        680,
+        1216
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2468,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Count the number of pairs of characters that should be equal if s were a palindrome, but are not equal.",
+        "If the number of pairs is 0, then s is already palindrome. You can pick any pair of characters and change them both to a different character and s will stay a palindrome."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:23:14.544Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.423Z"
+}

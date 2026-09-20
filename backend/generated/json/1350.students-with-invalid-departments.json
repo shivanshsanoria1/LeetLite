@@ -1,0 +1,37 @@
+{
+    "quesId": 1350,
+    "title": "Students With Invalid Departments",
+    "titleSlug": "students-with-invalid-departments",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "67.8K",
+        "totalSubmission": "75.6K",
+        "totalAcceptedRaw": 67822,
+        "totalSubmissionRaw": 75611,
+        "acRate": "89.7%",
+        "acRateRaw": 89.69858882966764,
+        "likes": 184,
+        "dislikes": 9
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1481,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:32:12.652Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.637Z"
+}

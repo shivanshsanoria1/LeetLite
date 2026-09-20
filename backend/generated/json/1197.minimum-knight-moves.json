@@ -1,0 +1,56 @@
+{
+    "quesId": 1197,
+    "title": "Minimum Knight Moves",
+    "titleSlug": "minimum-knight-moves",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "196.8K",
+        "totalSubmission": "467.7K",
+        "totalAcceptedRaw": 196838,
+        "totalSubmissionRaw": 467717,
+        "acRate": "42.1%",
+        "acRateRaw": 42.08485045444147,
+        "likes": 1570,
+        "dislikes": 411
+    },
+    "similarQuesIds": [
+        2596
+    ],
+    "topicTags": [
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Heuristic Search",
+            "slug": "heuristic-search"
+        },
+        {
+            "name": "Bidirectional Search",
+            "slug": "bidirectional-search"
+        },
+        {
+            "name": "A* Search",
+            "slug": "a-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1142,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "You can simulate the movements since the limits are low.",
+        "Is there a search algorithm applicable to this problem?",
+        "Since we want the minimum number of moves, we can use Breadth First Search."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:28:34.289Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.610Z"
+}

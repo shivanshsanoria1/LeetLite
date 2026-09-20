@@ -1,0 +1,37 @@
+{
+    "quesId": 2026,
+    "title": "Low-Quality Problems",
+    "titleSlug": "low-quality-problems",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "16.2K",
+        "totalSubmission": "19.3K",
+        "totalAcceptedRaw": 16190,
+        "totalSubmissionRaw": 19288,
+        "acRate": "83.9%",
+        "acRateRaw": 83.93819991704687,
+        "likes": 57,
+        "dislikes": 12
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2172,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:04:12.876Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.916Z"
+}

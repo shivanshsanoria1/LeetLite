@@ -1,0 +1,50 @@
+{
+    "quesId": 280,
+    "title": "Wiggle Sort",
+    "titleSlug": "wiggle-sort",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "160.4K",
+        "totalSubmission": "234.1K",
+        "totalAcceptedRaw": 160369,
+        "totalSubmissionRaw": 234062,
+        "acRate": "68.5%",
+        "acRateRaw": 68.51560697592946,
+        "likes": 1249,
+        "dislikes": 103
+    },
+    "similarQuesIds": [
+        75,
+        324,
+        1968
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 280,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:24.435Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.501Z"
+}

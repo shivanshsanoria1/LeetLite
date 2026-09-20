@@ -1,0 +1,46 @@
+{
+    "quesId": 1682,
+    "title": "Longest Palindromic Subsequence II",
+    "titleSlug": "longest-palindromic-subsequence-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "6.6K",
+        "totalSubmission": "13.1K",
+        "totalAcceptedRaw": 6566,
+        "totalSubmissionRaw": 13109,
+        "acRate": "50.1%",
+        "acRateRaw": 50.08772598977802,
+        "likes": 161,
+        "dislikes": 30
+    },
+    "similarQuesIds": [
+        516
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1822,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "As with any good dp problem that uses palindromes, try building the palindrome from the edges",
+        "The prime point is to check that no two adjacent characters are equal, so save the past character while building the palindrome."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:52:01.946Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.325Z"
+}

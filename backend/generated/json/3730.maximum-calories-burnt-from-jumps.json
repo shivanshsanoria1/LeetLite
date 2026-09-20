@@ -1,0 +1,54 @@
+{
+    "quesId": 3730,
+    "title": "Maximum Calories Burnt from Jumps",
+    "titleSlug": "maximum-calories-burnt-from-jumps",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "922",
+        "totalSubmission": "1.3K",
+        "totalAcceptedRaw": 922,
+        "totalSubmissionRaw": 1269,
+        "acRate": "72.7%",
+        "acRateRaw": 72.65563435776203,
+        "likes": 5,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4109,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,7,9]\n[5,2,4]\n[3,3]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Sort <code>heights</code> and greedily distribute the values.",
+        "Place larger values from the back of the sorted <code>heights</code> in non-increasing order at the even indices.",
+        "Place smaller values from the front of the sorted <code>heights</code> in non-decreasing order at the odd indices."
+    ],
+    "LC_SYNC_ISO": "2026-09-20T09:05:28.369Z",
+    "PARSED_ISO": "2026-09-20T09:05:32.039Z"
+}

@@ -1,0 +1,45 @@
+{
+    "quesId": 940,
+    "title": "Distinct Subsequences II",
+    "titleSlug": "distinct-subsequences-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "54.7K",
+        "totalSubmission": "123.6K",
+        "totalAcceptedRaw": 54698,
+        "totalSubmissionRaw": 123647,
+        "acRate": "44.2%",
+        "acRateRaw": 44.23722370943088,
+        "likes": 1857,
+        "dislikes": 40
+    },
+    "similarQuesIds": [
+        1987,
+        2842
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 977,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Dynamic Programming\n\n**Intuition and Algorithm**\n\nEven though the final code for this problem is very short, it is not very intuitive to find the answer.  In the solution below, we'll focus on finding all subsequences (including empty ones), and subtract the empty subsequence at the end.\n\nLet's try for a dynamic programming solution.  In order to not repeat work, our goal is to phrase the current problem in terms of the answer to previous problems.  A typical idea will be to try to count the number of states `dp[k]` (distinct subsequences) that use letters `S[0], S[1], ..., S[k]`.\n\nNaively, for say, `S = \"abcx\"`, we have `dp[k] = dp[k-1] * 2`.  This is because for `dp[2]` which counts `(\"\", \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", \"abc\")`, `dp[3]` counts all of those, plus all of those with the `x` ending, like `(\"x\", \"ax\", \"bx\", \"cx\", \"abx\", \"acx\", \"bcx\", \"abcx\")`. Here's a visualization for this string.\n\n\n<div class='video-preview'></div>\n\n<div>&nbsp;\n</div>\n\n\nHowever, for something like `S = \"abab\"`, let's play around with it.  We have:\n\n* `dp[0] = 2`, as it counts `(\"\", \"a\")`\n* `dp[1] = 4`, as it counts `(\"\", \"a\", \"b\", \"ab\")`;\n* `dp[2] = 7` as it counts `(\"\", \"a\", \"b\", \"aa\", \"ab\", \"ba\", \"aba\")`;\n* `dp[3] = 12`, as it counts `(\"\", \"a\", \"b\", \"aa\", \"ab\", \"ba\", \"bb\", \"aab\", \"aba\", \"abb\", \"bab\", \"abab\")`.\n\nWe have that dp[3]` counts `dp[2]`, plus `(\"b\", \"aa\", \"ab\", \"ba\", \"aba\")` with `\"b\"` added to it.  Notice that `(\"\", \"a\")` are missing from this list, as they get double counted.  In general, the sequences that resulted from putting `\"b\"` the last time (ie. `\"b\", \"ab\"`) will get double counted. Here's a visualization for a string with repeated letters.\n\n\n<div class='video-preview'></div>\n\n<div>&nbsp;\n</div>\n\n\nThis insight leads to the recurrence:\n\n`dp[k] = 2 * dp[k-1] - dp[last[S[k]]]`\n\nThe number of distinct subsequences ending at `S[k]`, is twice the distinct subsequences counted by `dp[k-1]` (all of them, plus all of them with S[k] appended), minus the amount we double counted, which is `dp[last[S[k]]]`.\n\n<iframe src=\"https://leetcode.com/playground/FS9fWMMW/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"FS9fWMMW\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$.  It is possible to adapt this solution to take $$O(1)$$ space.\n<br />\n<br />"
+    },
+    "content": "<p>Given a string s, return <em>the number of <strong>distinct non-empty subsequences</strong> of</em> <code>s</code>. Since the answer may be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\nA <strong>subsequence</strong> of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., <code>&quot;ace&quot;</code> is a subsequence of <code>&quot;<u>a</u>b<u>c</u>d<u>e</u>&quot;</code> while <code>&quot;aec&quot;</code> is not.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abc&quot;\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> The 7 distinct subsequences are &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;ab&quot;, &quot;ac&quot;, &quot;bc&quot;, and &quot;abc&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aba&quot;\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The 6 distinct subsequences are &quot;a&quot;, &quot;b&quot;, &quot;ab&quot;, &quot;aa&quot;, &quot;ba&quot;, and &quot;aba&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaa&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The 3 distinct subsequences are &quot;a&quot;, &quot;aa&quot; and &quot;aaa&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 2000</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:34:56.423Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.826Z"
+}

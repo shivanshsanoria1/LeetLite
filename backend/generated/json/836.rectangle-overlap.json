@@ -1,0 +1,44 @@
+{
+    "quesId": 836,
+    "title": "Rectangle Overlap",
+    "titleSlug": "rectangle-overlap",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "190.4K",
+        "totalSubmission": "404.7K",
+        "totalAcceptedRaw": 190389,
+        "totalSubmissionRaw": 404654,
+        "acRate": "47.0%",
+        "acRateRaw": 47.04982528283422,
+        "likes": 2105,
+        "dislikes": 483
+    },
+    "similarQuesIds": [
+        223
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 866,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Approach #1: Check Position [Accepted]\n\n**Intuition**\n\nIf the rectangles do not overlap, then `rec1` must either be higher, lower, to the left, or to the right of `rec2`.\n\n**Algorithm**\n\nThe answer for whether they *don't* overlap is `LEFT OR RIGHT OR UP OR DOWN`, where `OR` is the logical OR, and `LEFT` is a boolean that represents whether `rec1` is to the left of `rec2`.  The answer for whether they do overlap is the negation of this.\n\nThe condition \"`rec1` is to the left of `rec2`\" is `rec1[2] <= rec2[0]`, that is the right-most x-coordinate of `rec1` is left of the left-most x-coordinate of `rec2`.  The other cases are similar.\n\n_Note: we should also check if either of the rectangle is actually a line._\nIf this is the case, then we cannot have any positive overlapping according to the definition.\n\n<iframe src=\"https://leetcode.com/playground/CBPGcFQb/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"CBPGcFQb\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity:  $$O(1)$$.\n\n---\n### Approach #2: Check Area [Accepted]\n\n**Intuition**\n\nIf the rectangles overlap, they have positive area.  This area must be a rectangle where both dimensions are positive, since the boundaries of the intersection are axis aligned.\n\nThus, we can reduce the problem to the one-dimensional problem of determining whether two line segments overlap.\n\n**Algorithm**\n\nSay the area of the intersection is `width * height`, where `width` is the intersection of the rectangles projected onto the x-axis, and `height` is the same for the y-axis.  We want both quantities to be positive.\n\nThe `width` is positive when `min(rec1[2], rec2[2]) > max(rec1[0], rec2[0])`, that is when the smaller of (the largest x-coordinates) is larger than the larger of (the smallest x-coordinates).  The `height` is similar.\n\n<iframe src=\"https://leetcode.com/playground/d3aBUe4T/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"d3aBUe4T\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity:  $$O(1)$$."
+    },
+    "content": "<p>An axis-aligned rectangle is represented as a list <code>[x1, y1, x2, y2]</code>, where <code>(x1, y1)</code> is the coordinate of its bottom-left corner, and <code>(x2, y2)</code> is the coordinate of its top-right corner. Its top and bottom edges are parallel to the X-axis, and its left and right edges are parallel to the Y-axis.</p>\n\n<p>Two rectangles overlap if the area of their intersection is <strong>positive</strong>. To be clear, two rectangles that only touch at the corner or edges do not overlap.</p>\n\n<p>Given two axis-aligned rectangles <code>rec1</code> and <code>rec2</code>, return <code>true</code><em> if they overlap, otherwise return </em><code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> rec1 = [0,0,2,2], rec2 = [1,1,3,3]\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> rec1 = [0,0,1,1], rec2 = [1,0,2,1]\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> rec1 = [0,0,1,1], rec2 = [2,2,3,3]\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>rec1.length == 4</code></li>\n\t<li><code>rec2.length == 4</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= rec1[i], rec2[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>rec1</code> and <code>rec2</code> represent a valid rectangle with a non-zero area.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:17:08.686Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.464Z"
+}

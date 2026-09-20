@@ -1,0 +1,63 @@
+{
+    "quesId": 251,
+    "title": "Flatten 2D Vector",
+    "titleSlug": "flatten-2d-vector",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "147.7K",
+        "totalSubmission": "292.2K",
+        "totalAcceptedRaw": 147673,
+        "totalSubmissionRaw": 292214,
+        "acRate": "50.5%",
+        "acRateRaw": 50.5359086149192,
+        "likes": 740,
+        "dislikes": 418
+    },
+    "similarQuesIds": [
+        173,
+        281,
+        284,
+        341
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Iterator",
+            "slug": "iterator"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 251,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "How many variables do you need to keep track?",
+        "Two variables is all you need. Try with <code>x</code> and <code>y</code>.",
+        "Beware of empty rows. It could be the first few rows.",
+        "To write correct code, think about the <a href=\"https://en.wikipedia.org/wiki/Invariant_(computer_science)\" target=\"_blank\">invariant</a> to maintain. What is it?",
+        "The invariant is <code>x</code> and <code>y</code> must always point to a valid point in the 2d vector. Should you maintain your invariant <i>ahead of time</i> or <i>right when you need it</i>?",
+        "Not sure? Think about how you would implement <code>hasNext()</code>. Which is more complex?",
+        "Common logic in two different places should be refactored into a common method."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:56:56.370Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.754Z"
+}

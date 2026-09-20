@@ -1,0 +1,39 @@
+{
+    "quesId": 2632,
+    "title": "Curry",
+    "titleSlug": "curry",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "19.1K",
+        "totalSubmission": "21.4K",
+        "totalAcceptedRaw": 19112,
+        "totalSubmissionRaw": 21441,
+        "acRate": "89.1%",
+        "acRateRaw": 89.13763350589991,
+        "likes": 349,
+        "dislikes": 35
+    },
+    "similarQuesIds": [
+        2623,
+        2630
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2740,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "You can access the count of parameters expected to passed into a function with \"fn.length\".",
+        "You can use recursion. If the length of params passed is equal to fn.length, you are done. Just pass those params to fn. Otherwise return a function that is includes the previous passed params plus the new params. The new function should contain a recursive call to curry()."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:21.160Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.268Z"
+}

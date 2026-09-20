@@ -1,0 +1,40 @@
+{
+    "quesId": 2205,
+    "title": "The Number of Users That Are Eligible for Discount",
+    "titleSlug": "the-number-of-users-that-are-eligible-for-discount",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "8.9K",
+        "totalSubmission": "17.5K",
+        "totalAcceptedRaw": 8859,
+        "totalSubmissionRaw": 17500,
+        "acRate": "50.6%",
+        "acRateRaw": 50.61996457345295,
+        "likes": 32,
+        "dislikes": 77
+    },
+    "similarQuesIds": [
+        177,
+        2230
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2336,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:21:28.274Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.241Z"
+}

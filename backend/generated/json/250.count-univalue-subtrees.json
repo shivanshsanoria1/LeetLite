@@ -1,0 +1,53 @@
+{
+    "quesId": 250,
+    "title": "Count Univalue Subtrees",
+    "titleSlug": "count-univalue-subtrees",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "172.3K",
+        "totalSubmission": "299.3K",
+        "totalAcceptedRaw": 172348,
+        "totalSubmissionRaw": 299270,
+        "acRate": "57.6%",
+        "acRateRaw": 57.58946770474822,
+        "likes": 1246,
+        "dislikes": 457
+    },
+    "similarQuesIds": [
+        572,
+        687
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 250,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:55.491Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.747Z"
+}

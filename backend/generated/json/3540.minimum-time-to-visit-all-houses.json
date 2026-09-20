@@ -1,0 +1,45 @@
+{
+    "quesId": 3540,
+    "title": "Minimum Time to Visit All Houses",
+    "titleSlug": "minimum-time-to-visit-all-houses",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4K",
+        "totalSubmission": "2K",
+        "totalAcceptedRaw": 1395,
+        "totalSubmissionRaw": 2010,
+        "acRate": "69.4%",
+        "acRateRaw": 69.40298507462687,
+        "likes": 9,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "exampleTestcases": "[1,4,4]\n[4,1,2]\n[1,2,0,2]\n[1,1,1,1]\n[2,2,2,2]\n[1,2,3,0]",
+    "meta": {
+        "quesIdLCBackend": 3880,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use prefix sums to compute distances for both forward and backward movements.",
+        "For each move between adjacent houses, take the minimum distance from the two prefix-sum arrays."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:53:31.265Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.552Z"
+}

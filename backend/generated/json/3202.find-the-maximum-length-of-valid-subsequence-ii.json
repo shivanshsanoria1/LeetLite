@@ -1,0 +1,49 @@
+{
+    "quesId": 3202,
+    "title": "Find the Maximum Length of Valid Subsequence II",
+    "titleSlug": "find-the-maximum-length-of-valid-subsequence-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "103K",
+        "totalSubmission": "181.2K",
+        "totalAcceptedRaw": 103044,
+        "totalSubmissionRaw": 181153,
+        "acRate": "56.9%",
+        "acRateRaw": 56.88230390885053,
+        "likes": 664,
+        "dislikes": 56
+    },
+    "similarQuesIds": [
+        300,
+        2915
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3491,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Dynamic Programming\n\n#### Intuition\n\nAccording to the definition of a valid subsequence, all elements at odd indices in the subsequence must be congruent modulo $k$, and all elements at even indices must also be congruent modulo $k$. This means that, considering the remainders modulo $k$ of the last two elements of the subsequence, there are a total of $k^2$ possible combinations. We use a two-dimensional array $\\textit{dp}$ to represent the maximum length of such subsequences, where $\\textit{dp}[i][j]$ denotes the maximum length of a valid subsequence whose last two elements have remainders $i$ and $j$ modulo $k$, respectively.\n\nWe traverse through $\\textit{nums}$ to update $\\textit{dp}$. For each number $\\textit{num}$, we try to append it to existing subsequences. Specifically, we calculate $\\textit{curr} = \\textit{num} \\bmod k$ and then iterate over all possible values of $\\textit{prev}$ modulo $k$, updating $\\textit{dp}[\\textit{prev}][\\textit{curr}]$ to $\\textit{dp}[\\textit{curr}][\\textit{prev}] + 1$. Finally, we return the maximum value found in the $\\textit{dp}$ array.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/F8L3Us9K/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"F8L3Us9K\"></iframe>\n\n#### Complexity analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n* Time Complexity: $O(n \\times k)$\n\n  For each element in $\\textit{nums}$, we iterate over all possible values of the previous remainder modulo $k$. This leads to $O(k)$ work per element, resulting in a total of $O(n \\times k)$. The initialization of the $k \\times k$ DP table takes $O(k^2)$ time, but this is negligible compared to the main loop when $n \\gg k$, so we typically report the overall time complexity as $O(n \\times k)$.\n\n- Space complexity: $O(k^2)$.\n  \n  We need a two-dimensional array for dynamic programming.\n\n---"
+    },
+    "content": "You are given an integer array <code>nums</code> and a <strong>positive</strong> integer <code>k</code>.\n<p>A <span data-keyword=\"subsequence-array\">subsequence</span> <code>sub</code> of <code>nums</code> with length <code>x</code> is called <strong>valid</strong> if it satisfies:</p>\n\n<ul>\n\t<li><code>(sub[0] + sub[1]) % k == (sub[1] + sub[2]) % k == ... == (sub[x - 2] + sub[x - 1]) % k.</code></li>\n</ul>\nReturn the length of the <strong>longest</strong> <strong>valid</strong> subsequence of <code>nums</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4,5], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The longest valid subsequence is <code>[1, 2, 3, 4, 5]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,4,2,3,1,4], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The longest valid subsequence is <code>[1, 4, 1, 4]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>3</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>3</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Fix the value of <code>(subs[0] + subs[1]) % k</code> from the <code>k</code> possible values. Let it be <code>val</code>.",
+        "Let <code>dp[i]</code> store the maximum length of a subsequence with its last element <code>x</code> such that <code>x % k == i</code>.",
+        "Answer for a subsequence ending at index <code>y</code> is <code>dp[(k + val - (y % k)) % k] + 1</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:57:31.753Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.039Z"
+}

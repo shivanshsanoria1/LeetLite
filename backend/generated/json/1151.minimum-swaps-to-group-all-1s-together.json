@@ -1,0 +1,54 @@
+{
+    "quesId": 1151,
+    "title": "Minimum Swaps to Group All 1's Together",
+    "titleSlug": "minimum-swaps-to-group-all-1s-together",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "89.8K",
+        "totalSubmission": "146.5K",
+        "totalAcceptedRaw": 89818,
+        "totalSubmissionRaw": 146523,
+        "acRate": "61.3%",
+        "acRateRaw": 61.29959119046157,
+        "likes": 1283,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        1703,
+        2134,
+        2380,
+        3086
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1107,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "How many 1's should be grouped together ? Is not a fixed number?",
+        "Yeah it's just the number of 1's the whole array has. Let's name this number as ones",
+        "Every subarray of size of ones, needs some number of swaps to reach, Can you find the number of swaps needed to group all 1's in this subarray?",
+        "It's the number of zeros in that subarray.",
+        "Do you need to count the number of zeros all over again for every position ?",
+        "Use Sliding Window technique."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:27:46.296Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.388Z"
+}

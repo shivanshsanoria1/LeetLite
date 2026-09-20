@@ -1,0 +1,65 @@
+{
+    "quesId": 1245,
+    "title": "Tree Diameter",
+    "titleSlug": "tree-diameter",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "57.6K",
+        "totalSubmission": "94K",
+        "totalAcceptedRaw": 57623,
+        "totalSubmissionRaw": 94050,
+        "acRate": "61.3%",
+        "acRateRaw": 61.26847421584264,
+        "likes": 905,
+        "dislikes": 26
+    },
+    "similarQuesIds": [
+        1617,
+        3203
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1177,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Start at any node A and traverse the tree to find the furthest node from it, let's call it B.",
+        "Having found the furthest node B, traverse the tree from B to find the furthest node from it, lets call it C.",
+        "The distance between B and C is the tree diameter."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:29:34.143Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.975Z"
+}

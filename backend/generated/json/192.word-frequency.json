@@ -1,0 +1,39 @@
+{
+    "quesId": 192,
+    "title": "Word Frequency",
+    "titleSlug": "word-frequency",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Shell",
+    "stats": {
+        "totalAccepted": "86.3K",
+        "totalSubmission": "288.4K",
+        "totalAcceptedRaw": 86293,
+        "totalSubmissionRaw": 288365,
+        "acRate": "29.9%",
+        "acRateRaw": 29.924921540408857,
+        "likes": 586,
+        "dislikes": 311
+    },
+    "similarQuesIds": [
+        347
+    ],
+    "topicTags": [
+        {
+            "name": "Shell",
+            "slug": "shell"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 192,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>Write a bash script to calculate the <span data-keyword=\"frequency-textfile\">frequency</span> of each word in a text file <code>words.txt</code>.</p>\n\n<p>For simplicity sake, you may assume:</p>\n\n<ul>\n\t<li><code>words.txt</code> contains only lowercase characters and space <code>&#39; &#39;</code> characters.</li>\n\t<li>Each word must consist of lowercase characters only.</li>\n\t<li>Words are separated by one or more whitespace characters.</li>\n</ul>\n\n<p><strong class=\"example\">Example:</strong></p>\n\n<p>Assume that <code>words.txt</code> has the following content:</p>\n\n<pre>\nthe day is sunny the the\nthe sunny is is\n</pre>\n\n<p>Your script should output the following, sorted by descending frequency:</p>\n\n<pre>\nthe 4\nis 3\nsunny 2\nday 1\n</pre>\n\n<p><b>Note:</b></p>\n\n<ul>\n\t<li>Don&#39;t worry about handling ties, it is guaranteed that each word&#39;s frequency count is unique.</li>\n\t<li>Could you write it in one-line using <a href=\"http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html\">Unix pipes</a>?</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:00.962Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.748Z"
+}

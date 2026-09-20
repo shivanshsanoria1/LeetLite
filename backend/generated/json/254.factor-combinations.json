@@ -1,0 +1,44 @@
+{
+    "quesId": 254,
+    "title": "Factor Combinations",
+    "titleSlug": "factor-combinations",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "142.1K",
+        "totalSubmission": "280.9K",
+        "totalAcceptedRaw": 142106,
+        "totalSubmissionRaw": 280880,
+        "acRate": "50.6%",
+        "acRateRaw": 50.59313585872971,
+        "likes": 1181,
+        "dislikes": 76
+    },
+    "similarQuesIds": [
+        39
+    ],
+    "topicTags": [
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Prime Factorization",
+            "slug": "prime-factorization"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 254,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:59.107Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.079Z"
+}

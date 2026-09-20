@@ -1,0 +1,38 @@
+{
+    "quesId": 603,
+    "title": "Consecutive Available Seats",
+    "titleSlug": "consecutive-available-seats",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "104.7K",
+        "totalSubmission": "161.3K",
+        "totalAcceptedRaw": 104697,
+        "totalSubmissionRaw": 161336,
+        "acRate": "64.9%",
+        "acRateRaw": 64.89376208657708,
+        "likes": 659,
+        "dislikes": 80
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 603,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:09:10.468Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.085Z"
+}

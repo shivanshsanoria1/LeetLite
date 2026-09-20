@@ -1,0 +1,48 @@
+{
+    "quesId": 573,
+    "title": "Squirrel Simulation",
+    "titleSlug": "squirrel-simulation",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "24.3K",
+        "totalSubmission": "42.4K",
+        "totalAcceptedRaw": 24309,
+        "totalSubmissionRaw": 42364,
+        "acRate": "57.4%",
+        "acRateRaw": 57.38126711358701,
+        "likes": 421,
+        "dislikes": 40
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 573,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Will Brute force solution works here? What will be its complexity?",
+        "Brute force definitely won't work here. Think of some simple solution. Take some example and make some observations.",
+        "Will order of nuts traversed by squirrel is important or only first nut traversed by squirrel is important?",
+        "Are there some paths which squirrel have to cover in any case? If yes, what are they?",
+        "Did you notice only first nut traversed by squirrel matters? Obviously squirrel will choose first nut which will result in minimum distance."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:08:43.799Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.011Z"
+}

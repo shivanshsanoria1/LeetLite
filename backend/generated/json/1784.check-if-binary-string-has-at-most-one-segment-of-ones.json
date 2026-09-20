@@ -1,0 +1,43 @@
+{
+    "quesId": 1784,
+    "title": "Check if Binary String Has at Most One Segment of Ones",
+    "titleSlug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "198.3K",
+        "totalSubmission": "401.8K",
+        "totalAcceptedRaw": 198299,
+        "totalSubmissionRaw": 401817,
+        "acRate": "49.4%",
+        "acRateRaw": 49.350575013003436,
+        "likes": 667,
+        "dislikes": 1159
+    },
+    "similarQuesIds": [
+        1869
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1910,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Find the $01$ sequence\n\n#### Intuition\n\nThe problem gives a binary string $s$ of length $n$ that does not contain leading zeros. We need to determine whether the string contains zero or exactly one segment of consecutive $1$s.\n\nLet us analyze the possible cases:\n- If the string $s$ contains no segment of consecutive $1$s, then the entire string consists only of zeros, that is, $00 \\cdots 00$.\n- If the string $s$ contains exactly one segment of consecutive $1$s, and since the string does not have leading zeros, it must be of the form $1 \\cdots 100 \\cdots 00$.\n\nIn both cases, the string does not contain the substring $01$.\n\nConversely, if a binary string contains the substring $01$, it means that after encountering a $0$, we later encounter a $1$ again. This implies that there are at least two separate segments of consecutive $1$s.\n\nTherefore, we can determine whether the string contains zero or exactly one segment of consecutive $1$s by checking whether it contains the substring $01$. If it does, the condition is not satisfied; otherwise, it is satisfied.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/4zrPZdyt/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"4zrPZdyt\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$.\n\n- Time complexity: $O(n)$.\n- Space complexity: $O(1)$.\n  \n  Only constant space is used.\n\n---"
+    },
+    "content": "<p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1001&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>The string has two segments of size 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;110&quot;\n<strong>Output:</strong> true</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s[i]</code>​​​​ is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n\t<li><code>s[0]</code> is&nbsp;<code>&#39;1&#39;</code>.</li>\n</ul>\n",
+    "hints": [
+        "It's guaranteed to have at least one segment",
+        "The string size is small so you can count all segments of ones with no that have no adjacent ones."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:53:55.721Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.471Z"
+}

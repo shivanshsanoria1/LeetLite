@@ -1,0 +1,61 @@
+{
+    "quesId": 1485,
+    "title": "Clone Binary Tree With Random Pointer",
+    "titleSlug": "clone-binary-tree-with-random-pointer",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "38.4K",
+        "totalSubmission": "47.3K",
+        "totalAcceptedRaw": 38413,
+        "totalSubmissionRaw": 47348,
+        "acRate": "81.1%",
+        "acRateRaw": 81.12908676184844,
+        "likes": 433,
+        "dislikes": 98
+    },
+    "similarQuesIds": [
+        133,
+        138,
+        1490
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1624,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Traverse the tree, keep a hashtable with you and create a nodecopy for each node in the tree.",
+        "Start traversing the original tree again and connect the left, right and random pointers in the cloned tree the same way as the original tree with the help of the hashtable."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:35:21.692Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.967Z"
+}

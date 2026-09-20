@@ -1,0 +1,37 @@
+{
+    "quesId": 1715,
+    "title": "Count Apples and Oranges",
+    "titleSlug": "count-apples-and-oranges",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "19.7K",
+        "totalSubmission": "26K",
+        "totalAcceptedRaw": 19703,
+        "totalSubmissionRaw": 26009,
+        "acRate": "75.8%",
+        "acRateRaw": 75.75454650313354,
+        "likes": 92,
+        "dislikes": 22
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1862,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:52:38.195Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.350Z"
+}

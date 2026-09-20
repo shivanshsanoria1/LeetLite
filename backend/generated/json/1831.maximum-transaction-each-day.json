@@ -1,0 +1,37 @@
+{
+    "quesId": 1831,
+    "title": "Maximum Transaction Each Day",
+    "titleSlug": "maximum-transaction-each-day",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "29.1K",
+        "totalSubmission": "35.2K",
+        "totalAcceptedRaw": 29067,
+        "totalSubmissionRaw": 35245,
+        "acRate": "82.5%",
+        "acRateRaw": 82.47127252092496,
+        "likes": 96,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1981,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:54:43.402Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.502Z"
+}

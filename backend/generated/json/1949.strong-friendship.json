@@ -1,0 +1,41 @@
+{
+    "quesId": 1949,
+    "title": "Strong Friendship",
+    "titleSlug": "strong-friendship",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "17.3K",
+        "totalSubmission": "31.6K",
+        "totalAcceptedRaw": 17310,
+        "totalSubmissionRaw": 31636,
+        "acRate": "54.7%",
+        "acRateRaw": 54.716146162599564,
+        "likes": 168,
+        "dislikes": 86
+    },
+    "similarQuesIds": [
+        1264,
+        1892,
+        1917
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2097,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:03:07.757Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.785Z"
+}

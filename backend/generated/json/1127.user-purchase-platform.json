@@ -1,0 +1,37 @@
+{
+    "quesId": 1127,
+    "title": "User Purchase Platform",
+    "titleSlug": "user-purchase-platform",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20.4K",
+        "totalSubmission": "44.1K",
+        "totalAcceptedRaw": 20415,
+        "totalSubmissionRaw": 44140,
+        "acRate": "46.3%",
+        "acRateRaw": 46.24951858816067,
+        "likes": 188,
+        "dislikes": 138
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1226,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:27:17.110Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.287Z"
+}

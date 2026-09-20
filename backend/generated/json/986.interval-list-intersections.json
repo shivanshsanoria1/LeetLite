@@ -1,0 +1,51 @@
+{
+    "quesId": 986,
+    "title": "Interval List Intersections",
+    "titleSlug": "interval-list-intersections",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "593.9K",
+        "totalSubmission": "811.6K",
+        "totalAcceptedRaw": 593916,
+        "totalSubmissionRaw": 811572,
+        "acRate": "73.2%",
+        "acRateRaw": 73.18110296373604,
+        "likes": 5984,
+        "dislikes": 131
+    },
+    "similarQuesIds": [
+        56,
+        88,
+        759,
+        2410
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Sweep Line",
+            "slug": "sweep-line"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1028,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>You are given two lists of closed intervals, <code>firstList</code> and <code>secondList</code>, where <code>firstList[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and <code>secondList[j] = [start<sub>j</sub>, end<sub>j</sub>]</code>. Each list of intervals is pairwise <strong>disjoint</strong> and in <strong>sorted order</strong>.</p>\n\n<p>Return <em>the intersection of these two interval lists</em>.</p>\n\n<p>A <strong>closed interval</strong> <code>[a, b]</code> (with <code>a &lt;= b</code>) denotes the set of real numbers <code>x</code> with <code>a &lt;= x &lt;= b</code>.</p>\n\n<p>The <strong>intersection</strong> of two closed intervals is a set of real numbers that are either empty or represented as a closed interval. For example, the intersection of <code>[1, 3]</code> and <code>[2, 4]</code> is <code>[2, 3]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/30/interval1.png\" style=\"width: 700px; height: 194px;\" />\n<pre>\n<strong>Input:</strong> firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]\n<strong>Output:</strong> [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> firstList = [[1,3],[5,9]], secondList = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= firstList.length, secondList.length &lt;= 1000</code></li>\n\t<li><code>firstList.length + secondList.length &gt;= 1</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n\t<li><code>end<sub>i</sub> &lt; start<sub>i+1</sub></code></li>\n\t<li><code>0 &lt;= start<sub>j</sub> &lt; end<sub>j</sub> &lt;= 10<sup>9</sup> </code></li>\n\t<li><code>end<sub>j</sub> &lt; start<sub>j+1</sub></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:32.751Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.864Z"
+}

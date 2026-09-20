@@ -1,0 +1,42 @@
+{
+    "quesId": 717,
+    "title": "1-bit and 2-bit Characters",
+    "titleSlug": "1-bit-and-2-bit-characters",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "279.4K",
+        "totalSubmission": "562K",
+        "totalAcceptedRaw": 279432,
+        "totalSubmissionRaw": 562002,
+        "acRate": "49.7%",
+        "acRateRaw": 49.720909956317115,
+        "likes": 1264,
+        "dislikes": 2363
+    },
+    "similarQuesIds": [
+        89
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 717,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n\n### Approach 1: Increment Pointer\n\n#### Intuition\n\nWhen reading from the `i`-th position, if `bits[i] == 0`, the next character must be at `i + 1`, because `0` is 1-bit; else if `bits[i] == 1`, the next character must be at `i + 2`, because `1` is only present in 2-bit characters `10` and `11`. We increment our read-pointer `i` to the start of the next character appropriately. At the end, if our pointer is at `bits.length - 1`, then the last character must have a size of 1 bit.\n\n<iframe src=\"https://leetcode.com/playground/ihUtaXrn/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"ihUtaXrn\"></iframe>\n\n#### Complexity Analysis\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `bits`.\n\n* Space Complexity: $$O(1)$$, the space used by `i`.\n\n---\n\n### Approach 2: Greedy\n\n#### Intuition\n\nTo find if the last character in the array is a one-bit character, we can use a parity-based approach. First, we remove the last element, which is the character we want to check. We then initialize a `parity` variable and iterate backward through the array. Each time we encounter a `1`, we toggle `parity` with `parity ^= 1`, effectively flipping its value. This toggle allows us to track whether the number of `1`s is odd or even.\n\nAt the end, if `parity` is `0`, it indicates the last character is a one-bit character; if `parity` is `1`, it’s part of a two-bit sequence.\n\n<iframe src=\"https://leetcode.com/playground/LJvGDaaa/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"LJvGDaaa\"></iframe>\n\n#### Complexity Analysis\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `bits`.\n\n* Space Complexity: $$O(1)$$, the space used by `parity` (or `i`)."
+    },
+    "content": "<p>We have two special characters:</p>\n\n<ul>\n\t<li>The first character can be represented by one bit <code>0</code>.</li>\n\t<li>The second character can be represented by two bits (<code>10</code> or <code>11</code>).</li>\n</ul>\n\n<p>Given a binary array <code>bits</code> that ends with <code>0</code>, return <code>true</code> if the last character must be a one-bit character.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> bits = [1,0,0]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The only way to decode it is two-bit character and one-bit character.\nSo the last character is one-bit character.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> bits = [1,1,1,0]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The only way to decode it is two-bit character and two-bit character.\nSo the last character is not one-bit character.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= bits.length &lt;= 1000</code></li>\n\t<li><code>bits[i]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+    "hints": [
+        "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:45.660Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.259Z"
+}

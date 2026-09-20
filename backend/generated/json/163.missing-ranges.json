@@ -1,0 +1,41 @@
+{
+    "quesId": 163,
+    "title": "Missing Ranges",
+    "titleSlug": "missing-ranges",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "313.4K",
+        "totalSubmission": "878.3K",
+        "totalAcceptedRaw": 313446,
+        "totalSubmissionRaw": 878294,
+        "acRate": "35.7%",
+        "acRateRaw": 35.68804978742881,
+        "likes": 1193,
+        "dislikes": 3027
+    },
+    "similarQuesIds": [
+        228,
+        2655
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 163,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:55:36.690Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.270Z"
+}

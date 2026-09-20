@@ -1,0 +1,52 @@
+{
+    "quesId": 635,
+    "title": "Design Log Storage System",
+    "titleSlug": "design-log-storage-system",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "45.9K",
+        "totalSubmission": "76.9K",
+        "totalAcceptedRaw": 45882,
+        "totalSubmissionRaw": 76860,
+        "acRate": "59.7%",
+        "acRateRaw": 59.69555035128805,
+        "likes": 496,
+        "dislikes": 233
+    },
+    "similarQuesIds": [
+        588
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 635,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:14:48.714Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.114Z"
+}

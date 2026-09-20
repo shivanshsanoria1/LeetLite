@@ -1,0 +1,37 @@
+{
+    "quesId": 2346,
+    "title": "Compute the Rank as a Percentage",
+    "titleSlug": "compute-the-rank-as-a-percentage",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.8K",
+        "totalSubmission": "22.9K",
+        "totalAcceptedRaw": 7777,
+        "totalSubmissionRaw": 22923,
+        "acRate": "33.9%",
+        "acRateRaw": 33.92662391484535,
+        "likes": 32,
+        "dislikes": 80
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2484,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:23:27.038Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.436Z"
+}

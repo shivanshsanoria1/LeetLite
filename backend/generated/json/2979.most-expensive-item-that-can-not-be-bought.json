@@ -1,0 +1,54 @@
+{
+    "quesId": 2979,
+    "title": "Most Expensive Item That Can Not Be Bought",
+    "titleSlug": "most-expensive-item-that-can-not-be-bought",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "6.6K",
+        "totalSubmission": "8.2K",
+        "totalAcceptedRaw": 6616,
+        "totalSubmissionRaw": 8247,
+        "acRate": "80.2%",
+        "acRateRaw": 80.22311143446102,
+        "likes": 25,
+        "dislikes": 28
+    },
+    "similarQuesIds": [
+        322,
+        983,
+        2952
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3273,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Write out a few cases. It can be seen that all items greater than <code>primeOne * primeTwo</code> can always be bought.",
+        "If we can buy items with cost <code>i</code>, we can also buy items with price <code>i + primeOne</code> and <code>i + primeTwo</code>.",
+        "Use dynamic programming.",
+        "There is an O(1) solution: Use the Chicken McNugget Theorem."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:06.976Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.726Z"
+}

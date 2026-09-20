@@ -1,0 +1,47 @@
+{
+    "quesId": 1842,
+    "title": "Next Palindrome Using Same Digits",
+    "titleSlug": "next-palindrome-using-same-digits",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.2K",
+        "totalSubmission": "13.3K",
+        "totalAcceptedRaw": 7197,
+        "totalSubmissionRaw": 13264,
+        "acRate": "54.3%",
+        "acRateRaw": 54.25965018094089,
+        "likes": 126,
+        "dislikes": 19
+    },
+    "similarQuesIds": [
+        556,
+        564
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1997,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Is it possible to swap one character in the first half of the palindrome to make the next one?",
+        "Are there different cases for when the length is odd and even?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:54:54.490Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.508Z"
+}

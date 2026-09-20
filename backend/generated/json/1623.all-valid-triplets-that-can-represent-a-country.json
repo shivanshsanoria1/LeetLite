@@ -1,0 +1,37 @@
+{
+    "quesId": 1623,
+    "title": "All Valid Triplets That Can Represent a Country",
+    "titleSlug": "all-valid-triplets-that-can-represent-a-country",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "23.7K",
+        "totalSubmission": "29.4K",
+        "totalAcceptedRaw": 23730,
+        "totalSubmissionRaw": 29380,
+        "acRate": "80.8%",
+        "acRateRaw": 80.76923076923077,
+        "likes": 76,
+        "dislikes": 144
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1763,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:50:57.332Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.253Z"
+}

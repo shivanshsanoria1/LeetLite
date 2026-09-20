@@ -1,0 +1,37 @@
+{
+    "quesId": 1821,
+    "title": "Find Customers With Positive Revenue this Year",
+    "titleSlug": "find-customers-with-positive-revenue-this-year",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "38.5K",
+        "totalSubmission": "43.9K",
+        "totalAcceptedRaw": 38494,
+        "totalSubmissionRaw": 43941,
+        "acRate": "87.6%",
+        "acRateRaw": 87.60383241164288,
+        "likes": 66,
+        "dislikes": 26
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1974,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:54:33.295Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.496Z"
+}

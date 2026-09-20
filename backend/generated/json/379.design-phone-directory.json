@@ -1,0 +1,56 @@
+{
+    "quesId": 379,
+    "title": "Design Phone Directory",
+    "titleSlug": "design-phone-directory",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "77.9K",
+        "totalSubmission": "146.3K",
+        "totalAcceptedRaw": 77884,
+        "totalSubmissionRaw": 146317,
+        "acRate": "53.2%",
+        "acRateRaw": 53.229631553408005,
+        "likes": 369,
+        "dislikes": 486
+    },
+    "similarQuesIds": [
+        1845
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 379,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:50.894Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.850Z"
+}

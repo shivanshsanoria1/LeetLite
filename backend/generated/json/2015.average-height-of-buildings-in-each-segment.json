@@ -1,0 +1,59 @@
+{
+    "quesId": 2015,
+    "title": "Average Height of Buildings in Each Segment",
+    "titleSlug": "average-height-of-buildings-in-each-segment",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.8K",
+        "totalSubmission": "4.9K",
+        "totalAcceptedRaw": 2834,
+        "totalSubmissionRaw": 4879,
+        "acRate": "58.1%",
+        "acRateRaw": 58.08567329370773,
+        "likes": 55,
+        "dislikes": 29
+    },
+    "similarQuesIds": [
+        1701,
+        1943,
+        2158,
+        2406
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2142,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try sorting the start and end points of each building.",
+        "The naive solution is to go through each position on the street and keep track of the sum of all the buildings at that position and the number of buildings at that position.",
+        "How could we optimize that solution to pass?",
+        "We don't need to go through every position, just the ones where a building starts or a building ends."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:04.692Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.899Z"
+}

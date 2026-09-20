@@ -1,0 +1,59 @@
+{
+    "quesId": 2613,
+    "title": "Beautiful Pairs",
+    "titleSlug": "beautiful-pairs",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.1K",
+        "totalSubmission": "2.4K",
+        "totalAcceptedRaw": 1125,
+        "totalSubmissionRaw": 2392,
+        "acRate": "47.0%",
+        "acRateRaw": 47.031772575250834,
+        "likes": 18,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2719,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use Range Queries Data Structures to optimize the algorithm"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:04.280Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.253Z"
+}

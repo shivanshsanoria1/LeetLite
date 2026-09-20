@@ -1,0 +1,50 @@
+{
+    "quesId": 2180,
+    "title": "Count Integers With Even Digit Sum",
+    "titleSlug": "count-integers-with-even-digit-sum",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "108.1K",
+        "totalSubmission": "152.4K",
+        "totalAcceptedRaw": 108130,
+        "totalSubmissionRaw": 152413,
+        "acRate": "70.9%",
+        "acRateRaw": 70.94232422041583,
+        "likes": 735,
+        "dislikes": 44
+    },
+    "similarQuesIds": [
+        2310,
+        1945,
+        2240,
+        2553,
+        3232
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2298,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>Given a positive integer <code>num</code>, return <em>the number of positive integers <strong>less than or equal to</strong></em> <code>num</code> <em>whose digit sums are <strong>even</strong></em>.</p>\n\n<p>The <strong>digit sum</strong> of a positive integer is the sum of all its digits.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong>\nThe only integers less than or equal to 4 whose digit sums are even are 2 and 4.    \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 30\n<strong>Output:</strong> 14\n<strong>Explanation:</strong>\nThe 14 integers less than or equal to 30 whose digit sums are even are\n2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "Iterate through all integers from 1 to num.",
+        "For any integer, extract the individual digits to compute their sum and check if it is even."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:32.737Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.198Z"
+}

@@ -1,0 +1,59 @@
+{
+    "quesId": 2307,
+    "title": "Check for Contradictions in Equations",
+    "titleSlug": "check-for-contradictions-in-equations",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.4K",
+        "totalSubmission": "12.4K",
+        "totalAcceptedRaw": 5434,
+        "totalSubmissionRaw": 12399,
+        "acRate": "43.8%",
+        "acRateRaw": 43.82611500927494,
+        "likes": 71,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        399
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2065,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try treating this as a graph problem.",
+        "Each variable is a node, and each equation is an edge.",
+        "Try performing DFS multiple times to find contradictions."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:22:54.372Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.405Z"
+}

@@ -1,0 +1,53 @@
+{
+    "quesId": 3217,
+    "title": "Delete Nodes From Linked List Present in Array",
+    "titleSlug": "delete-nodes-from-linked-list-present-in-array",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "348.5K",
+        "totalSubmission": "503.6K",
+        "totalAcceptedRaw": 348532,
+        "totalSubmissionRaw": 503592,
+        "acRate": "69.2%",
+        "acRateRaw": 69.20930823654629,
+        "likes": 1109,
+        "dislikes": 50
+    },
+    "similarQuesIds": [
+        203,
+        237,
+        2487
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3501,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: Hash Set\n\n#### Intuition\n\nThe first challenge is efficiently determining whether a linked list value exists in the `nums` array. A naive approach would involve searching through `nums` for each node, but this is inefficient for large arrays. Instead, we can use a Hash Set, which allows constant-time lookups. By adding all elements of `nums` to the set, we can check if a node should be removed by verifying if its value exists in constant time.\n\n> If you're unfamiliar with hash sets, you can refer to [this LeetCode explore card](https://leetcode.com/explore/learn/card/hash-table/183/combination-with-other-algorithms/) for an in-depth tutorial.\n\nWith the lookup mechanism in place, we handle the linked list. The head requires special attention, as removing it alters the starting point of the list. We loop through the list to remove nodes from the beginning if their values are found in the hash set, then store the updated head. After this loop, the modified `head` is stored as the new starting point of the linked list.\n\nNext, we traverse the rest of the list using a `current` node. As we iterate, we check if `current.next`'s value is in the hash set. If it is, we adjust `current.next` to skip over that node, removing it from the list.\n\nOnce the traversal is complete, we return the modified head of the list.\n\nThe algorithm is visualized below:\n\n!?!../Documents/3217/slideshow.json:1082,602!?!\n\n#### Algorithm\n\n- Initialize a set `valuesToRemove` and populate it with the values of the `nums` array.\n- While the `head` of the linked list is not null and the `head`'s value is present in `valuesToRemove`:\n  - Move `head` to `head.next`.\n- If the `head` is `null`, return `null` since all nodes have been removed.\n- Start iterating from the `head` of the modified list:\n  - For each node `current`, check if the value of the next node (`current.next`) is in the `valuesToRemove` set.\n    - If it is, skip the next node by updating `current.next` to `current.next.next`\n  - If it is not, move the `current` pointer to the next node in the list.\n- Return the updated `head` of the list.\n\n#### Implementation\n\n> Note 1: In C++, memory management is manual, unlike languages with automatic garbage collection (like Java or Python). When you remove a node from a linked list, its memory remains allocated unless you explicitly free it. In the solution provided below, the memory of each removed node is properly deallocated using `delete`. However, if you're working in a production environment or during an interview, ensure that you discuss how the list nodes were allocated (e.g., via `new`) and ensure they are deallocated appropriately to avoid memory leaks. If possible, consider using smart pointers (`std::shared_ptr` or `std::unique_ptr`) for automatic memory management, which can help simplify the code and avoid manual memory management issues.\n\n> Note 2: In C++, you should not manually delete linked list nodes inside your solution. The LeetCode runtime automatically frees all list nodes after your function returns. If you explicitly call delete on any node, the runtime will attempt to free it again, causing a heap-use-after-free or double free error under AddressSanitizer. Instead, just unlink the nodes you want to remove.\n\n<iframe src=\"https://leetcode.com/playground/8xRn3x6Q/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8xRn3x6Q\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ and $n$ be the lengths of the `nums` array and the linked list, respectively.\n\n- Time complexity: $O(m + n)$\n\n    Iterating through the `nums` array and inserting each element into the hash set takes $O(m)$ time, as each insertion into the set is $O(1)$ on average.\n\n    The algorithm traverses the entire linked list exactly once, checking if each node's value is in the hash set. This operation takes $O(n)$ time.\n\n    Thus, the overall time complexity of the algorithm is $O(m) + O(n) = O(m + n)$.  \n\n- Space complexity: $O(m)$\n\n    The hash set can store up to $m$ elements, one for each unique value in the `nums` array, leading to a space complexity of $O(m)$. All additional variables used take constant space.\n\n---"
+    },
+    "content": "<p>You are given an array of integers <code>nums</code> and the <code>head</code> of a linked list. Return the <code>head</code> of the modified linked list after <strong>removing</strong> all nodes from the linked list that have a value that exists in <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3], head = [1,2,3,4,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[4,5]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample0.png\" style=\"width: 400px; height: 66px;\" /></strong></p>\n\n<p>Remove the nodes with values 1, 2, and 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1], head = [1,2,1,2,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,2,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample1.png\" style=\"height: 62px; width: 450px;\" /></p>\n\n<p>Remove the nodes with value 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5], head = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2,3,4]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample2.png\" style=\"width: 400px; height: 83px;\" /></strong></p>\n\n<p>No node has value 5.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>All elements in <code>nums</code> are unique.</li>\n\t<li>The number of nodes in the given list is in the range <code>[1, 10<sup>5</sup>]</code>.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\n\t<li>The input is generated such that there is at least one node in the linked list that has a value not present in <code>nums</code>.</li>\n</ul>\n",
+    "hints": [
+        "Add all elements of <code>nums</code> into a Set.",
+        "Scan the list to check if the current element should be deleted by checking the Set."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:57:42.302Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.051Z"
+}

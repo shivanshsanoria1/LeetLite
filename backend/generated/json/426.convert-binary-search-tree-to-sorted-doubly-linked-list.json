@@ -1,0 +1,64 @@
+{
+    "quesId": 426,
+    "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
+    "titleSlug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "374K",
+        "totalSubmission": "569.8K",
+        "totalAcceptedRaw": 373988,
+        "totalSubmissionRaw": 569806,
+        "acRate": "65.6%",
+        "acRateRaw": 65.63426850542115,
+        "likes": 2732,
+        "dislikes": 245
+    },
+    "similarQuesIds": [
+        94
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 758,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:06:33.788Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.906Z"
+}

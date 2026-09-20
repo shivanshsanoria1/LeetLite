@@ -1,0 +1,61 @@
+{
+    "quesId": 2128,
+    "title": "Remove All Ones With Row and Column Flips",
+    "titleSlug": "remove-all-ones-with-row-and-column-flips",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "34.9K",
+        "totalSubmission": "46K",
+        "totalAcceptedRaw": 34942,
+        "totalSubmissionRaw": 45993,
+        "acRate": "76.0%",
+        "acRateRaw": 75.97243058726329,
+        "likes": 482,
+        "dislikes": 189
+    },
+    "similarQuesIds": [
+        861,
+        1284,
+        2123,
+        2174,
+        2482
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2268,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Does the order, in which you do the operations, matter?",
+        "No, it does not. An element will keep its original value if the number of operations done on it is even and vice versa. This also means that doing more than 1 operation on the same row or column is unproductive.",
+        "Try working backward, start with a matrix of all zeros and try to construct grid using operations.",
+        "Start with operations on columns, after doing them what do you notice about each row?",
+        "Each row is the exact same. If we then flip some rows, that leaves only two possible arrangements for each row: the same as the original or the opposite."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:43.399Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.085Z"
+}

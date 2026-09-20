@@ -1,0 +1,37 @@
+{
+    "quesId": 2995,
+    "title": "Viewers Turned Streamers",
+    "titleSlug": "viewers-turned-streamers",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "4.6K",
+        "totalSubmission": "10.7K",
+        "totalAcceptedRaw": 4596,
+        "totalSubmissionRaw": 10666,
+        "acRate": "43.1%",
+        "acRateRaw": 43.09019313707106,
+        "likes": 10,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3302,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:47:20.390Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.747Z"
+}

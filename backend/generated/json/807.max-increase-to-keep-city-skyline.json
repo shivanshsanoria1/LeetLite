@@ -1,0 +1,46 @@
+{
+    "quesId": 807,
+    "title": "Max Increase to Keep City Skyline",
+    "titleSlug": "max-increase-to-keep-city-skyline",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "193.8K",
+        "totalSubmission": "224.2K",
+        "totalAcceptedRaw": 193819,
+        "totalSubmissionRaw": 224227,
+        "acRate": "86.4%",
+        "acRateRaw": 86.43874288109818,
+        "likes": 2683,
+        "dislikes": 547
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 825,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n---\n### Approach #1: Row and Column Maximums [Accepted]\n\n**Intuition and Algorithm**\n\nThe skyline looking from the top is `col_maxes = [max(column_0), max(column_1), ...]`.  Similarly, the skyline from the left is `row_maxes [max(row_0), max(row_1), ...]`\n\nIn particular, each building `grid[r][c]` could become height `min(max(row_r), max(col_c))`, and this is the largest such height.  If it were larger, say `grid[r][c] > max(row_r)`, then the part of the skyline `row_maxes = [..., max(row_r), ...]` would change.\n\nThese increases are also independent (none of them change the skyline), so we can perform them independently.\n\n<iframe src=\"https://leetcode.com/playground/TY4kLmTB/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"TY4kLmTB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the number of rows (and columns) of the grid.  We iterate through every cell of the grid.\n\n* Space Complexity: $$O(N)$$, the space used by `row_maxes` and `col_maxes`."
+    },
+    "content": "<p>There is a city composed of <code>n x n</code> blocks, where each block contains a single building shaped like a vertical square prism. You are given a <strong>0-indexed</strong> <code>n x n</code> integer matrix <code>grid</code> where <code>grid[r][c]</code> represents the <strong>height</strong> of the building located in the block at row <code>r</code> and column <code>c</code>.</p>\n\n<p>A city&#39;s <strong>skyline</strong> is the&nbsp;outer contour formed by all the building when viewing the side of the city from a distance. The <strong>skyline</strong> from each cardinal direction north, east, south, and west may be different.</p>\n\n<p>We are allowed to increase the height of <strong>any number of buildings by any amount</strong> (the amount can be different per building). The height of a <code>0</code>-height building can also be increased. However, increasing the height of a building should <strong>not</strong> affect the city&#39;s <strong>skyline</strong> from any cardinal direction.</p>\n\n<p>Return <em>the <strong>maximum total sum</strong> that the height of the buildings can be increased by <strong>without</strong> changing the city&#39;s <strong>skyline</strong> from any cardinal direction</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/21/807-ex1.png\" style=\"width: 700px; height: 603px;\" />\n<pre>\n<strong>Input:</strong> grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]\n<strong>Output:</strong> 35\n<strong>Explanation:</strong> The building heights are shown in the center of the above image.\nThe skylines when viewed from each cardinal direction are drawn in red.\nThe grid after increasing the height of buildings without affecting skylines is:\ngridNew = [ [8, 4, 8, 7],\n            [7, 4, 7, 7],\n            [9, 4, 8, 7],\n            [3, 3, 3, 3] ]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[0,0,0],[0,0,0],[0,0,0]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Increasing the height of any building will result in the skyline changing.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == grid.length</code></li>\n\t<li><code>n == grid[r].length</code></li>\n\t<li><code>2 &lt;= n &lt;= 50</code></li>\n\t<li><code>0 &lt;= grid[r][c] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:16:49.147Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.387Z"
+}

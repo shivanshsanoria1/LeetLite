@@ -1,0 +1,49 @@
+{
+    "quesId": 249,
+    "title": "Group Shifted Strings",
+    "titleSlug": "group-shifted-strings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "319.2K",
+        "totalSubmission": "470.6K",
+        "totalAcceptedRaw": 319229,
+        "totalSubmissionRaw": 470557,
+        "acRate": "67.8%",
+        "acRateRaw": 67.84066542416754,
+        "likes": 1788,
+        "dislikes": 447
+    },
+    "similarQuesIds": [
+        49,
+        2744
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 249,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:54.527Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.738Z"
+}

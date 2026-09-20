@@ -1,0 +1,53 @@
+{
+    "quesId": 490,
+    "title": "The Maze",
+    "titleSlug": "the-maze",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "212.5K",
+        "totalSubmission": "351.1K",
+        "totalAcceptedRaw": 212501,
+        "totalSubmissionRaw": 351134,
+        "acRate": "60.5%",
+        "acRateRaw": 60.51849151605939,
+        "likes": 1932,
+        "dislikes": 199
+    },
+    "similarQuesIds": [
+        499,
+        505
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 490,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:07:29.304Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.952Z"
+}

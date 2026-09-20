@@ -1,0 +1,45 @@
+{
+    "quesId": 1426,
+    "title": "Counting Elements",
+    "titleSlug": "counting-elements",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "172.3K",
+        "totalSubmission": "283.3K",
+        "totalAcceptedRaw": 172293,
+        "totalSubmissionRaw": 283275,
+        "acRate": "60.8%",
+        "acRateRaw": 60.821954560216895,
+        "likes": 171,
+        "dislikes": 67
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1391,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Use hashset to store all elements.",
+        "Loop again to count all valid elements."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:34:04.276Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.821Z"
+}

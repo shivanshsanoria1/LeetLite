@@ -1,0 +1,33 @@
+{
+    "quesId": 2759,
+    "title": "Convert JSON String to Object",
+    "titleSlug": "convert-json-string-to-object",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "996",
+        "totalSubmission": "1.6K",
+        "totalAcceptedRaw": 996,
+        "totalSubmissionRaw": 1608,
+        "acRate": "61.9%",
+        "acRateRaw": 61.940298507462686,
+        "likes": 17,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2851,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:04.596Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.409Z"
+}

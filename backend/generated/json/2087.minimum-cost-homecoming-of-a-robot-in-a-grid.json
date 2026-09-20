@@ -1,0 +1,52 @@
+{
+    "quesId": 2087,
+    "title": "Minimum Cost Homecoming of a Robot in a Grid",
+    "titleSlug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "30.3K",
+        "totalSubmission": "58.3K",
+        "totalAcceptedRaw": 30260,
+        "totalSubmissionRaw": 58317,
+        "acRate": "51.9%",
+        "acRateRaw": 51.88881458236878,
+        "likes": 781,
+        "dislikes": 98
+    },
+    "similarQuesIds": [
+        62,
+        64,
+        361,
+        1277,
+        2435,
+        2510
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2192,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Greedy\n\n#### Hint 1\n\nIf, in a path, two consecutive steps consist of one horizontal move (left or right) and one vertical move (up or down), swapping these two steps does not change the total cost of the path.\n\n**Hint $1$ Explaintion**\n\nSince the rest of the path remains unchanged, the cost of those parts also remains unchanged. Therefore, we only need to consider the two swapped steps. In general, assume that during these two steps, the robot moves from $(r, c)$ to $(r + 1, c + 1)$.\n\nConsider the two possible movement orders (where $\\rightarrow$ represents consecutive movement in a direction):\n\n- $(r, c) \\rightarrow (r + 1, c) \\rightarrow (r + 1, c + 1)$: The first step moves to row $r + 1$ with cost $\\textit{rowCost}[r + 1]$, and the second step moves to column $c + 1$ with cost $\\textit{colCost}[c + 1]$. Total cost: $\\textit{rowCost}[r + 1] + \\textit{colCost}[c + 1]$.\n\n- $(r, c) \\rightarrow (r, c + 1) \\rightarrow (r + 1, c + 1)$: The first step moves to column $c + 1$ with cost $\\textit{colCost}[c + 1]$, and the second step moves to row $r + 1$ with cost $\\textit{rowCost}[r + 1]$. Total cost: $\\textit{colCost}[c + 1] + \\textit{rowCost}[r + 1]$.\n\nBoth paths result in the same total cost. Therefore, swapping such steps does not affect the total cost.\n\n#### Hint 2\n\nIf a path contains **opposite operations** (for example, both left and right moves, or both up and down moves), then its cost will never be better than the path obtained after **canceling these operations in pairs**.\n\nMoreover, any path that does not contain opposite operations has the minimum possible cost.\n\n**Hint $2$ Explaintion**\n\nFirst, consider a simple case.\n\nSuppose we want to move from $(r, c)$ to $(r + x, c)$ where $x \\ge 0$. One path is:\n$(r, c) \\rightarrow (r + x, c)$.\n\nAnother path is: $(r, c) \\rightarrow (r, c + 1) \\rightarrow (r + x, c + 1) \\rightarrow (r + x, c)$.\n\nThe second path incurs an additional cost of $\\textit{colCost}[c] + \\textit{colCost}[c + 1] \\ge 0$, so it is never better than the first path.\n\nFor a general path containing opposite operations, such segments must exist. By canceling these opposite operations, we obtain a new path whose cost is no greater than the original. Repeating this process, we can eliminate all opposite operations without increasing the total cost.\n\nTherefore, for any path that contains opposite operations, there exists another path without them that has a cost less than or equal to it. Hence, the optimal path must not contain any opposite operations.\n\n#### Intuition\n\nAny path without opposite operations consists of only unidirectional horizontal moves and unidirectional vertical moves.\n\nFrom **Hint 1**, we know that we can rearrange these moves in any order without changing the total cost. From **Hint 2**, we know that such paths already achieve the minimum cost.\n\nTherefore, it is sufficient to construct any path from the starting position to the home position that does not include opposite operations.\n\nFor simplicity, we can:\n\n1. Move vertically until we reach the target row.\n2. Then move horizontally until we reach the target column.\n\nWhile doing so, we accumulate the corresponding costs.\n\nTo determine the direction:\n\n* For rows: compare $r_1$ and $r_2$.\n  If $r_1 < r_2$, move downward; if $r_1 > r_2$, move upward.\n* For columns: compare $c_1$ and $c_2$.\n  If $c_1 < c_2$, move right; if $c_1 > c_2$, move left.\n\nThe total accumulated cost is the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/FcRQm89u/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"FcRQm89u\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the number of rows and $n$ be the number of columns.\n\n- Time complexity: $O(m + n)$.\n  \n  We sum over at most one row segment and one column segment.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>There is an <code>m x n</code> grid, where <code>(0, 0)</code> is the top-left cell and <code>(m - 1, n - 1)</code> is the bottom-right cell. You are given an integer array <code>startPos</code> where <code>startPos = [start<sub>row</sub>, start<sub>col</sub>]</code> indicates that <strong>initially</strong>, a <strong>robot</strong> is at the cell <code>(start<sub>row</sub>, start<sub>col</sub>)</code>. You are also given an integer array <code>homePos</code> where <code>homePos = [home<sub>row</sub>, home<sub>col</sub>]</code> indicates that its <strong>home</strong> is at the cell <code>(home<sub>row</sub>, home<sub>col</sub>)</code>.</p>\n\n<p>The robot needs to go to its home. It can move one cell in four directions: <strong>left</strong>, <strong>right</strong>, <strong>up</strong>, or <strong>down</strong>, and it can not move outside the boundary. Every move incurs some cost. You are further given two <strong>0-indexed</strong> integer arrays: <code>rowCosts</code> of length <code>m</code> and <code>colCosts</code> of length <code>n</code>.</p>\n\n<ul>\n\t<li>If the robot moves <strong>up</strong> or <strong>down</strong> into a cell whose <strong>row</strong> is <code>r</code>, then this move costs <code>rowCosts[r]</code>.</li>\n\t<li>If the robot moves <strong>left</strong> or <strong>right</strong> into a cell whose <strong>column</strong> is <code>c</code>, then this move costs <code>colCosts[c]</code>.</li>\n</ul>\n\n<p>Return <em>the <strong>minimum total cost</strong> for this robot to return home</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/10/11/eg-1.png\" style=\"width: 282px; height: 217px;\" />\n<pre>\n<strong>Input:</strong> startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]\n<strong>Output:</strong> 18\n<strong>Explanation:</strong> One optimal path is that:\nStarting from (1, 0)\n-&gt; It goes down to (<u><strong>2</strong></u>, 0). This move costs rowCosts[2] = 3.\n-&gt; It goes right to (2, <u><strong>1</strong></u>). This move costs colCosts[1] = 2.\n-&gt; It goes right to (2, <u><strong>2</strong></u>). This move costs colCosts[2] = 6.\n-&gt; It goes right to (2, <u><strong>3</strong></u>). This move costs colCosts[3] = 7.\nThe total cost is 3 + 2 + 6 + 7 = 18</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> The robot is already at its home. Since no moves occur, the total cost is 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == rowCosts.length</code></li>\n\t<li><code>n == colCosts.length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= rowCosts[r], colCosts[c] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>startPos.length == 2</code></li>\n\t<li><code>homePos.length == 2</code></li>\n\t<li><code>0 &lt;= start<sub>row</sub>, home<sub>row</sub> &lt; m</code></li>\n\t<li><code>0 &lt;= start<sub>col</sub>, home<sub>col</sub> &lt; n</code></li>\n</ul>\n",
+    "hints": [
+        "Irrespective of what path the robot takes, it will have to traverse all the rows between startRow and homeRow and all the columns between startCol and homeCol.",
+        "Hence, making any other move other than traversing the required rows and columns will potentially incur more cost which can be avoided."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:10.228Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.002Z"
+}

@@ -1,0 +1,48 @@
+{
+    "quesId": 2807,
+    "title": "Insert Greatest Common Divisors in Linked List",
+    "titleSlug": "insert-greatest-common-divisors-in-linked-list",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "311.8K",
+        "totalSubmission": "341.7K",
+        "totalAcceptedRaw": 311847,
+        "totalSubmissionRaw": 341686,
+        "acRate": "91.3%",
+        "acRateRaw": 91.26720497294323,
+        "likes": 1176,
+        "dislikes": 39
+    },
+    "similarQuesIds": [
+        206
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2903,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: Simulation\n\n#### Intuition\n\nTo calculate the greatest common divisor (GCD) of every pair of adjacent nodes in a linked list, we maintain two pointers, `node1` and `node2`, initially pointing to the first and second nodes, respectively.\n\nAs we iterate through the list, we need to compute the GCD of the values stored in `node1` and `node2`. The most efficient method for finding the GCD of two numbers is the renowned [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm). This algorithm is based on the principle that the GCD of two numbers also divides their difference.\n\nIn simple terms, the Euclidean algorithm works by repeatedly replacing the larger number by the remainder of the division of the larger number by the smaller number, until one of the numbers becomes zero. The non-zero number at this stage is the GCD of the original pair of numbers.\n\n> Many programming languages offer built-in implementations of this algorithm, which you can utilize in your solution. For instance, Python has a built-in `math.gcd()` function, while C++ provides the `std::gcd()` function in the `<numeric>` header. If such a function is not available in your programming language, or if you prefer to implement it manually, you can write a custom GCD method using the following pseudo-code:\n\nRecursive Way:\n```\nfunction gcd(a, b)\n  if b = 0\n    return a\n  else\n    return gcd(b, a mod b)\n```\n\n\nIterative Way:\n```\nfunction gcd(a, b)\n  while b ≠ 0\n    t := b\n    b := a mod b\n    a := t\n  return a\n```\n\nAfter computing the GCD, we create a new node with the GCD value and insert it between `node1` and `node2` as follows:\n1. Set `node1`'s next pointer to the new node.\n2. Set the new node's next pointer to `node2`.\n3. Disconnect the direct link between `node1` and `node2`.\n\nNext, we move `node1` and `node2` to the next pair of nodes and continue the process.\n\nThe below slideshow demonstrates the algorithm in action:\n\n!?!../Documents/2807/slideshow.json:1452,768!?!\n\n#### Algorithm\n\nMain method `insertGreatestCommonDivisors`:\n\n- If the list contains only one node (`head.next` is `null`), return the `head` as no insertion is needed.\n- Initialize `ListNode` variables `node1` and `node2` to `head` and `head.next` respectively, to traverse the linked list.\n- While `node2` is not `null`:\n  - Calculate the GCD's of the values in `node1` and `node2`.\n  - Create a new `ListNode` `gcdNode` with the calculated GCD value.\n  - Update `node1.next` to `gcdNode`.\n  - Update `gcdNode.next` to `node2`.\n  - Set `node1` to `node2` and `node2` to `node2.next`, respectively. This essentially moves `node1` and `node2` to the next pair of nodes in the list.\n- Return the modified `head` of the list as our answer.\n\nHelper method `calculateGCD(a, b)`:\n\n- While `b` is greater than `0`:\n  - Set a variable `temp` to `b`.\n  - Set `b` to `a%b` and `a` to `temp`, respectively.\n- Return `a`.\n\n> Note: We have used a custom method to calculate the GCD for completeness. In an interview, clarify with your interviewer if built-in GCD methods are acceptable.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/J4QeV4y6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"J4QeV4y6\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of nodes in the linked list.\n\n- Time complexity: $O(n \\cdot \\log(\\min(a,b)))$\n\n    The algorithm traverses the list, visiting each node exactly once. This takes linear time.\n\n    The GCD is calculated using the Euclidean algorithm, which has a time complexity of $O(\\log(\\min(a, b)))$, where $a$ and $b$ are numbers whose GCD is being calculated.\n\n    Thus, the overall time complexity of the algorithm is $O(n \\cdot \\log(\\min(a,b)))$.\n\n- Space complexity: $O(1)$\n\n    The iterative implementation of the GCD method has a space complexity of $O(1)$.\n\n---"
+    },
+    "content": "<p>Given the head of a linked list <code>head</code>, in which each node contains an integer value.</p>\n\n<p>Between every pair of adjacent nodes, insert a new node with a value equal to the <strong>greatest common divisor</strong> of them.</p>\n\n<p>Return <em>the linked list after insertion</em>.</p>\n\n<p>The <strong>greatest common divisor</strong> of two numbers is the largest positive integer that evenly divides both numbers.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2023/07/18/ex1_copy.png\" style=\"width: 641px; height: 181px;\" />\n<pre>\n<strong>Input:</strong> head = [18,6,10,3]\n<strong>Output:</strong> [18,6,6,2,10,1,3]\n<strong>Explanation:</strong> The 1<sup>st</sup> diagram denotes the initial linked list and the 2<sup>nd</sup> diagram denotes the linked list after inserting the new nodes (nodes in blue are the inserted nodes).\n- We insert the greatest common divisor of 18 and 6 = 6 between the 1<sup>st</sup> and the 2<sup>nd</sup> nodes.\n- We insert the greatest common divisor of 6 and 10 = 2 between the 2<sup>nd</sup> and the 3<sup>rd</sup> nodes.\n- We insert the greatest common divisor of 10 and 3 = 1 between the 3<sup>rd</sup> and the 4<sup>th</sup> nodes.\nThere are no more adjacent nodes, so we return the linked list.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2023/07/18/ex2_copy1.png\" style=\"width: 51px; height: 191px;\" />\n<pre>\n<strong>Input:</strong> head = [7]\n<strong>Output:</strong> [7]\n<strong>Explanation:</strong> The 1<sup>st</sup> diagram denotes the initial linked list and the 2<sup>nd</sup> diagram denotes the linked list after inserting the new nodes.\nThere are no pairs of adjacent nodes, so we return the initial linked list.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is in the range <code>[1, 5000]</code>.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:44:42.596Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.532Z"
+}

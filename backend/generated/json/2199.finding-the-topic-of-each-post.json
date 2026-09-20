@@ -1,0 +1,39 @@
+{
+    "quesId": 2199,
+    "title": "Finding the Topic of Each Post",
+    "titleSlug": "finding-the-topic-of-each-post",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "5.7K",
+        "totalSubmission": "11.2K",
+        "totalAcceptedRaw": 5664,
+        "totalSubmissionRaw": 11214,
+        "acRate": "50.5%",
+        "acRateRaw": 50.50829320492242,
+        "likes": 49,
+        "dislikes": 15
+    },
+    "similarQuesIds": [
+        1484
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2335,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:06:48.979Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.236Z"
+}

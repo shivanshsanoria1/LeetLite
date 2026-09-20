@@ -1,0 +1,37 @@
+{
+    "quesId": 2308,
+    "title": "Arrange Table by Gender",
+    "titleSlug": "arrange-table-by-gender",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "8.9K",
+        "totalSubmission": "12.6K",
+        "totalAcceptedRaw": 8943,
+        "totalSubmissionRaw": 12588,
+        "acRate": "71.0%",
+        "acRateRaw": 71.04385128693994,
+        "likes": 91,
+        "dislikes": 15
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2441,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:22:55.295Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.405Z"
+}

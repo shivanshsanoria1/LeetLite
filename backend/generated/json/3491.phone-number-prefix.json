@@ -1,0 +1,53 @@
+{
+    "quesId": 3491,
+    "title": "Phone Number Prefix",
+    "titleSlug": "phone-number-prefix",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.1K",
+        "totalSubmission": "3.1K",
+        "totalAcceptedRaw": 2142,
+        "totalSubmissionRaw": 3075,
+        "acRate": "69.7%",
+        "acRateRaw": 69.65853658536585,
+        "likes": 12,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "exampleTestcases": "[\"1\",\"2\",\"4\",\"3\"]\n[\"001\",\"007\",\"15\",\"00153\"]",
+    "meta": {
+        "quesIdLCBackend": 3836,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Sort the array.",
+        "For every adjacent pair, check if the left number is a prefix of the right number."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:37.387Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.482Z"
+}

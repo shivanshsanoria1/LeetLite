@@ -1,0 +1,57 @@
+{
+    "quesId": 1457,
+    "title": "Pseudo-Palindromic Paths in a Binary Tree",
+    "titleSlug": "pseudo-palindromic-paths-in-a-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "240.3K",
+        "totalSubmission": "351.2K",
+        "totalAcceptedRaw": 240271,
+        "totalSubmissionRaw": 351212,
+        "acRate": "68.4%",
+        "acRateRaw": 68.41204625113535,
+        "likes": 3358,
+        "dislikes": 131
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1568,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Overview\n\n**Two subproblems**\n\nThe problem consists of two subproblems:\n\n- Traverse the tree to build all root-to-leaf paths.\n\n- For each root-to-leaf path, check if it's a pseudo-palindromic path or not.\n\n![diff](../Figures/1457/split.png)\n*Figure 1. Two subproblems.*\n\n\n**How to traverse the tree to build all root-to-leaf paths**\n\nThere are three DFS ways to traverse the tree: preorder, postorder and inorder. Please check two minutes picture explanation if you don't remember them quite well: [here is the Python version](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/283746/all-dfs-traversals-preorder-inorder-postorder-in-python-in-1-line) and [here is the Java version](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/328601/all-dfs-traversals-preorder-postorder-inorder-in-java-in-5-lines).\n\n![diff](../Figures/1457/dfs.png)\n*Figure 2. The nodes are enumerated in the order of visits. To compare different DFS strategies, follow `1-2-3-4-5` direction.*\n\n\n> Root-to-leaf traversal is so-called _DFS preorder traversal_. To implement it, one has to follow the straightforward strategy Root->Left->Right. \n\n> There are three ways to implement preorder traversal: iterative, recursive, and Morris. Here we're going to implement the first two.\n\nIterative and recursive approaches here do the job in one pass, but they both need up to $$\\mathcal{O}(H)$$ space to keep the stack, where $$H$$ is a tree height.\n\n**How to check if the path is pseudo-palindromic or not**\n\n> It's quite evident that the path is pseudo-palindromic if it has at most one digit with an odd frequency.\n\nHow to check that?\n\nThe straightforward way is to save each root-to-leaf path into a list and then check each digit for parity.\n\n<iframe src=\"https://leetcode.com/playground/Sd5dj9ZY/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"Sd5dj9ZY\"></iframe>\n\nThis method requires keeping each root-to-leaf path, and that becomes space-consuming for the large trees. To save space, let's compute the parity on the fly using bitwise operators. \n\n> The idea is to keep the frequency of digit `1` in the first bit, `2` in the second bit, etc: `path ^= (1 << node.val)`. \n\n[Left shift operator]((https://wiki.python.org/moin/BitwiseOperators)) is used to define the bit, and [XOR operator](https://leetcode.com/problems/single-number-ii/solution/) - to compute the digit frequency.\n\n![diff](../Figures/1457/xor.png)\n*Figure 3. XOR of zero and a bit results in that bit. XOR of two equal bits (even if they are zeros) results in a zero. Hence, one could see the bit in a path only if it appears an odd number of times.*\n\n\n<iframe src=\"https://leetcode.com/playground/Lf7nxpsk/shared\" frameBorder=\"0\" width=\"100%\" height=\"106\" name=\"Lf7nxpsk\"></iframe>\n\nNow, to ensure that at most one digit has an odd frequency, one has to check that `path` is a [power of two](https://leetcode.com/problems/power-of-two/solution/), _i.e._, at most one bit is set to one. That could be done by turning off (= setting to 0) the rightmost 1-bit: `path & (path - 1) == 0`. You might want to check the article [Power of Two](https://leetcode.com/problems/power-of-two/solution/) for the detailed explanation of this bitwise trick.\n\n![diff](../Figures/1457/turn_off.png)\n*Figure 4. `x & (x - 1)` is a way to set the rightmost 1-bit to zero, _i.e._, `x & (x - 1) == 0` for the power of two. To subtract 1 means to change the rightmost 1-bit to 0 and to set all the lower bits to 1. Now AND operator: the rightmost 1-bit will be turned off because `1 & 0 = 0`, and all the lower bits as well.*\n\n\n<iframe src=\"https://leetcode.com/playground/AGbMsChr/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"AGbMsChr\"></iframe>\n\n<br />\n<br />\n\n\n---\n### Approach 1: Iterative Preorder Traversal.\n\n**Intuition**\n\nNote: The visual below shows how a stack is used for an inorder traversal. The algorithm and implementation use a preorder traversal. These are both methods for depth-first search, and the only difference is the order in which the nodes are handled.\n\n!?!../Documents/1457_LIS.json:1000,310!?!\n\nHere we implement standard iterative preorder traversal with the stack:\n\n- Initialize the counter to zero.\n\n- Push root into the stack.\n\n- While the stack is not empty:\n\n    - Pop out a node from the stack and update the current number.\n    \n    - If the node is a leaf, update the root-to-leaf path, check it for being pseudo-palindromic, and update the count.\n    \n    - Push right and left child nodes into the stack.\n    \n- Return count.  \n\n**Implementation**\n\nNote, that [Javadocs recommends using ArrayDeque, and not Stack as a stack implementation](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html).\n\n<iframe src=\"https://leetcode.com/playground/CiKngyXi/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"CiKngyXi\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node, where $$N$$ is a number of nodes. \n    \n* Space complexity: up to $$\\mathcal{O}(H)$$ to keep the stack, where $$H$$ is a tree height.  \n<br />\n<br />\n\n\n---\n### Approach 2: Recursive Preorder Traversal.\n\nIterative approach 1 could be converted into a recursive one.\n\nRecursive preorder traversal is extremely simple: follow Root->Left->Right direction, _i.e._, do all the business with the node (_i.e._, update the current path and the counter), and then do the recursive calls for the left and right child nodes.\n\nP.S. Here is the difference between _preorder_ and the other DFS recursive traversals. \n\n![diff](../Figures/1457/dfs.png)\n*Figure 5. The nodes are enumerated in the order of visits. To compare different DFS strategies, follow `1-2-3-4-5` direction.*\n\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/BExGA3yJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"BExGA3yJ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since one has to visit each node, check if at most one digit has an odd frequency.\n    \n* Space complexity: up to $$\\mathcal{O}(H)$$ to keep the recursion stack, where $$H$$ is a tree height.  \n<br />\n<br />\n\n\n---\n### Further Reading\n\nThe problem could be solved in constant space using the Morris inorder traversal algorithm, as it was done in [Sum Root-to-Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/solution/). It is unlikely that one can come up with a Morris Traversal solution during an interview, but it is worth knowing anyway.\n\n\n---"
+    },
+    "content": "<p>Given a binary tree where node values are digits from 1 to 9. A path in the binary tree is said to be <strong>pseudo-palindromic</strong> if at least one permutation of the node values in the path is a palindrome.</p>\n\n<p><em>Return the number of <strong>pseudo-palindromic</strong> paths going from the root node to leaf nodes.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/05/06/palindromic_paths_1.png\" style=\"width: 300px; height: 201px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [2,3,1,3,1,null,1]\n<strong>Output:</strong> 2 \n<strong>Explanation:</strong> The figure above represents the given binary tree. There are three paths going from the root node to leaf nodes: the red path [2,3,3], the green path [2,1,1], and the path [2,3,1]. Among these paths only red path and green path are pseudo-palindromic paths since the red path [2,3,3] can be rearranged in [3,2,3] (palindrome) and the green path [2,1,1] can be rearranged in [1,2,1] (palindrome).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/05/07/palindromic_paths_2.png\" style=\"width: 300px; height: 314px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> root = [2,1,1,1,3,null,null,null,null,null,1]\n<strong>Output:</strong> 1 \n<strong>Explanation:</strong> The figure above represents the given binary tree. There are three paths going from the root node to leaf nodes: the green path [2,1,1], the path [2,1,3,1], and the path [2,1]. Among these paths only the green path is pseudo-palindromic since [2,1,1] can be rearranged in [1,2,1] (palindrome).\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [9]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>5</sup>]</code>.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 9</code></li>\n</ul>\n",
+    "hints": [
+        "Note that the node values of a path form a palindrome if at most one digit has an odd frequency (parity).",
+        "Use a Depth First Search (DFS) keeping the frequency (parity) of the digits. Once you are in a leaf node check if at most one digit has an odd frequency (parity)."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:34:44.252Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.898Z"
+}

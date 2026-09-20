@@ -1,0 +1,58 @@
+{
+    "quesId": 1500,
+    "title": "Design a File Sharing System",
+    "titleSlug": "design-a-file-sharing-system",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.2K",
+        "totalSubmission": "17.2K",
+        "totalAcceptedRaw": 7203,
+        "totalSubmissionRaw": 17214,
+        "acRate": "41.8%",
+        "acRateRaw": 41.84384803067271,
+        "likes": 56,
+        "dislikes": 133
+    },
+    "similarQuesIds": [
+        355
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1640,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try to solve it by keeping for each file chunk, the users who have this chunk.",
+        "Try to solve it by keeping all the users in the system with their owned chunks, and when you request a chunk, check all users for it."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:35:47.701Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.982Z"
+}

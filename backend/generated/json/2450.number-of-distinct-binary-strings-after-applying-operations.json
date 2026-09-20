@@ -1,0 +1,47 @@
+{
+    "quesId": 2450,
+    "title": "Number of Distinct Binary Strings After Applying Operations",
+    "titleSlug": "number-of-distinct-binary-strings-after-applying-operations",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4K",
+        "totalSubmission": "2.3K",
+        "totalAcceptedRaw": 1429,
+        "totalSubmissionRaw": 2258,
+        "acRate": "63.3%",
+        "acRateRaw": 63.28609388839681,
+        "likes": 39,
+        "dislikes": 9
+    },
+    "similarQuesIds": [
+        995
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2593,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Notice that any string of the same length as s will always have the same answer, so only the length of the string matters.",
+        "For each substring of size k, you can decide whether to flip or not. Every string s resulting from this process will be unique.",
+        "How do you find the number of possible combinations?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:50.186Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.627Z"
+}

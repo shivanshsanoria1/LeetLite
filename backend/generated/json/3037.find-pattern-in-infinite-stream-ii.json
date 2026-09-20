@@ -1,0 +1,61 @@
+{
+    "quesId": 3037,
+    "title": "Find Pattern in Infinite Stream II",
+    "titleSlug": "find-pattern-in-infinite-stream-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.5K",
+        "totalSubmission": "2.2K",
+        "totalAcceptedRaw": 1486,
+        "totalSubmissionRaw": 2191,
+        "acRate": "67.8%",
+        "acRateRaw": 67.82291191236878,
+        "likes": 7,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        3621
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Rolling Hash",
+            "slug": "rolling-hash"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3352,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use the KMP algorithm."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:57.458Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.780Z"
+}

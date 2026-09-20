@@ -1,0 +1,54 @@
+{
+    "quesId": 22,
+    "title": "Generate Parentheses",
+    "titleSlug": "generate-parentheses",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.1M",
+        "totalSubmission": "3.9M",
+        "totalAcceptedRaw": 3083835,
+        "totalSubmissionRaw": 3896782,
+        "acRate": "79.1%",
+        "acRateRaw": 79.13798169516666,
+        "likes": 23562,
+        "dislikes": 1097
+    },
+    "similarQuesIds": [
+        17,
+        20,
+        2116
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bracket Sequences",
+            "slug": "bracket-sequences"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 22,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given <code>n</code> pairs of parentheses, write a function to <em>generate all combinations of well-formed parentheses</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> n = 3\n<strong>Output:</strong> [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> n = 1\n<strong>Output:</strong> [\"()\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 8</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:38:31.704Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.236Z"
+}

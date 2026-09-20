@@ -1,0 +1,56 @@
+{
+    "quesId": 281,
+    "title": "Zigzag Iterator",
+    "titleSlug": "zigzag-iterator",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "115.9K",
+        "totalSubmission": "172.5K",
+        "totalAcceptedRaw": 115872,
+        "totalSubmissionRaw": 172548,
+        "acRate": "67.2%",
+        "acRateRaw": 67.15348772515473,
+        "likes": 713,
+        "dislikes": 43
+    },
+    "similarQuesIds": [
+        173,
+        251,
+        284,
+        341,
+        1768
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Iterator",
+            "slug": "iterator"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 281,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:25.062Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.548Z"
+}

@@ -1,0 +1,54 @@
+{
+    "quesId": 2537,
+    "title": "Count the Number of Good Subarrays",
+    "titleSlug": "count-the-number-of-good-subarrays",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "135.4K",
+        "totalSubmission": "206K",
+        "totalAcceptedRaw": 135443,
+        "totalSubmissionRaw": 206004,
+        "acRate": "65.7%",
+        "acRateRaw": 65.7477524708258,
+        "likes": 1598,
+        "dislikes": 60
+    },
+    "similarQuesIds": [
+        1759,
+        2461
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2626,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Approach 1: Two pointers\n\n#### Intuition\n\nAccording to the definition of **good array** in the question, if $\\textit{nums}[i..j]$ is a good array, then for all $j' > j$, the number of identical values in $\\textit{nums}[i..j']$ will be at least as many, so $\\textit{nums}[i..j']$ is also a good array.\n\nThis suggests that we can use the two pointers method to solve this problem. We enumerate the left pointer $\\textit{left}$ to represent the left boundary of the subarray, with its initial value being $0$, and use the right pointer $\\textit{right}$ to represent the right boundary of the subarray, with its initial value being $-1$. For the currently enumerated $\\textit{left}$, we need to keep moving the $\\textit{right}$ pointer to the right until $\\textit{nums}[\\textit{left}..\\textit{right}]$ is a good array.\n\nDuring the process of moving to the right, we can incrementally calculate the number of identical elements: we can use a hash map $\\textit{cnt}$ to record each element in each subarray and the number of times it appears. When $\\textit{right}$ moves to the right, the number of identical elements increases by $\\textit{cnt}[\\textit{right}]$, and then $\\textit{cnt}[\\textit{right}]$ needs to be increased by $1$. After the $\\textit{right}$ shift is completed, according to the above deduction, the number of good subarrays with $\\textit{left}$ as the left boundary is $n - \\textit{right}$, where $n$ is the length of the array $\\textit{nums}$. We add this value to the final answer.\n\nAfter this, the current left boundary $\\textit{left}$ is enumerated, the number of identical elements will decrease by $\\textit{cnt}[\\textit{left}] - 1$, and then $\\textit{cnt}[\\textit{left}]$ also needs to be reduced by $1$.\n\nAfter all the left boundaries have been enumerated, the final answer can be obtained.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/9wJEyTb9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9wJEyTb9\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n\nThe pointers $\\textit{left}$ and $\\textit{right}$ will each traverse the array once.\n\n- Space complexity: $O(n)$.\n\nThe hash map $\\textit{cnt}$ requires $O(n)$ space."
+    },
+    "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the number of <strong>good</strong> subarrays of</em> <code>nums</code>.</p>\n\n<p>A subarray <code>arr</code> is <strong>good</strong> if there are <strong>at least </strong><code>k</code> pairs of indices <code>(i, j)</code> such that <code>i &lt; j</code> and <code>arr[i] == arr[j]</code>.</p>\n\n<p>A <strong>subarray</strong> is a contiguous <strong>non-empty</strong> sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1,1,1], k = 10\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The only good subarray is the array nums itself.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,1,4,3,2,2,4], k = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> There are 4 different good subarrays:\n- [3,1,4,3,2,2] that has 2 pairs.\n- [3,1,4,3,2,2,4] that has 3 pairs.\n- [1,4,3,2,2,4] that has 2 pairs.\n- [4,3,2,2,4] that has 2 pairs.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i], k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "For a fixed index l, try to find the minimum value of index r, such that the subarray is not good",
+        "When a number is added to a subarray, it increases the number of pairs by its previous appearances.",
+        "When a number is removed from the subarray, it decreases the number of pairs by its remaining appearances.",
+        "Maintain 2-pointers l and r such that we can keep in account the number of equal pairs."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:38:59.671Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.077Z"
+}

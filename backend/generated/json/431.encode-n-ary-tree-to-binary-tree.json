@@ -1,0 +1,56 @@
+{
+    "quesId": 431,
+    "title": "Encode N-ary Tree to Binary Tree",
+    "titleSlug": "encode-n-ary-tree-to-binary-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "25.4K",
+        "totalSubmission": "31.5K",
+        "totalAcceptedRaw": 25412,
+        "totalSubmissionRaw": 31484,
+        "acRate": "80.7%",
+        "acRateRaw": 80.71401346715791,
+        "likes": 538,
+        "dislikes": 30
+    },
+    "similarQuesIds": [
+        428
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 771,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:06:37.851Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.911Z"
+}

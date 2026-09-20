@@ -1,0 +1,59 @@
+{
+    "quesId": 3342,
+    "title": "Find Minimum Time to Reach Last Room II",
+    "titleSlug": "find-minimum-time-to-reach-last-room-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "98.7K",
+        "totalSubmission": "146.7K",
+        "totalAcceptedRaw": 98718,
+        "totalSubmissionRaw": 146712,
+        "acRate": "67.3%",
+        "acRateRaw": 67.28692949451988,
+        "likes": 374,
+        "dislikes": 57
+    },
+    "similarQuesIds": [
+        1928,
+        2577
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Shortest Path",
+            "slug": "shortest-path"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3628,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Approach: Shortest Path + Dijkstra\n\n#### Intuition\n\nThis problem is an extended version of [3341. Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/). The key difference is that the time required for each move alternate: the first move takes 1 second, the second move takes 2 seconds, the third move takes 1 second, and so on.\n\nSince the movement occurs on a two-dimensional grid, each move changes the coordinates $(i, j)$ by exactly 1 in one of the four directions. As a result, the parity of $(i + j)$ changes with every move. This allows us to determine the move's parity directly based on the current coordinates.\n\nLet $d[i][j]$ represent the shortest time required to reach $(i, j)$ from $(0, 0)$. Then, the time to move from $(i, j)$ to an adjacent cell $(u, v)$ is given by:\n\n$$\n\\max(d[i][j], \\textit{moveTime}[u][v]) + (i + j) \\bmod 2 + 1.\n$$\n \nAdditionally, since reaching $(n - 1, m - 1)$ is guaranteed, we can optimize the algorithm by checking within the main loop whether the current point is $(n - 1, m - 1)$. If it is, we can exit early to avoid unnecessary computations for other cells. \n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Ar24ZbDa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Ar24ZbDa\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ and $m$ be the number of rows and columns in $\\textit{moveTime}$, respectively.\n\n- Time complexity: $O(nm \\log(nm))$.\n\nThere are $nm$ points and $O(nm)$ edges. We implement Dijkstra's algorithm using a min-heap, performing at most $O(nm)$ insertions and deletions. Since each heap operation takes $O(\\log(nm))$ time, the overall time complexity is $O(nm \\log(nm))$.\n\n- Space complexity: $O(nm)$."
+    },
+    "content": "<p>There is a dungeon with <code>n x m</code> rooms arranged as a grid.</p>\n\n<p>You are given a 2D array <code>moveTime</code> of size <code>n x m</code>, where <code>moveTime[i][j]</code> represents the <strong>minimum</strong> time in seconds when you can <strong>start moving</strong> to that room. You start from the room <code>(0, 0)</code> at time <code>t = 0</code> and can move to an <strong>adjacent</strong> room. Moving between <strong>adjacent</strong> rooms takes one second for one move and two seconds for the next, <strong>alternating</strong> between the two.</p>\n\n<p>Return the <strong>minimum</strong> time to reach the room <code>(n - 1, m - 1)</code>.</p>\n\n<p>Two rooms are <strong>adjacent</strong> if they share a common wall, either <em>horizontally</em> or <em>vertically</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,4],[4,4]]</span></p>\n\n<p><strong>Output:</strong> 7</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum time required is 7 seconds.</p>\n\n<ul>\n\t<li>At time <code>t == 4</code>, move from room <code>(0, 0)</code> to room <code>(1, 0)</code> in one second.</li>\n\t<li>At time <code>t == 5</code>, move from room <code>(1, 0)</code> to room <code>(1, 1)</code> in two seconds.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,0,0,0],[0,0,0,0]]</span></p>\n\n<p><strong>Output:</strong> 6</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum time required is 6 seconds.</p>\n\n<ul>\n\t<li>At time <code>t == 0</code>, move from room <code>(0, 0)</code> to room <code>(1, 0)</code> in one second.</li>\n\t<li>At time <code>t == 1</code>, move from room <code>(1, 0)</code> to room <code>(1, 1)</code> in two seconds.</li>\n\t<li>At time <code>t == 3</code>, move from room <code>(1, 1)</code> to room <code>(1, 2)</code> in one second.</li>\n\t<li>At time <code>t == 4</code>, move from room <code>(1, 2)</code> to room <code>(1, 3)</code> in two seconds.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moveTime = [[0,1],[1,2]]</span></p>\n\n<p><strong>Output:</strong> 4</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == moveTime.length &lt;= 750</code></li>\n\t<li><code>2 &lt;= m == moveTime[i].length &lt;= 750</code></li>\n\t<li><code>0 &lt;= moveTime[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Use shortest path algorithms with a state for the last move being odd or even indexed."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:59:19.014Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.203Z"
+}

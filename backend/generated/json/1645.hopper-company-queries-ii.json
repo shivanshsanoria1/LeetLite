@@ -1,0 +1,42 @@
+{
+    "quesId": 1645,
+    "title": "Hopper Company Queries II",
+    "titleSlug": "hopper-company-queries-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "8.9K",
+        "totalSubmission": "22.3K",
+        "totalAcceptedRaw": 8893,
+        "totalSubmissionRaw": 22303,
+        "acRate": "39.9%",
+        "acRateRaw": 39.87355961081469,
+        "likes": 64,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        262,
+        1635,
+        1651,
+        2238
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1785,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:51:20.783Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.296Z"
+}

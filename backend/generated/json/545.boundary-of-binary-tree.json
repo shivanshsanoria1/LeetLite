@@ -1,0 +1,48 @@
+{
+    "quesId": 545,
+    "title": "Boundary of Binary Tree",
+    "titleSlug": "boundary-of-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "178.8K",
+        "totalSubmission": "371.1K",
+        "totalAcceptedRaw": 178818,
+        "totalSubmissionRaw": 371112,
+        "acRate": "48.2%",
+        "acRateRaw": 48.184654849992185,
+        "likes": 1423,
+        "dislikes": 2356
+    },
+    "similarQuesIds": [
+        199
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 545,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:08:17.366Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.991Z"
+}

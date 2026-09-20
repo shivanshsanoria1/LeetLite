@@ -1,0 +1,54 @@
+{
+    "quesId": 3634,
+    "title": "Minimum Removals to Balance Array",
+    "titleSlug": "minimum-removals-to-balance-array",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "149.3K",
+        "totalSubmission": "313.2K",
+        "totalAcceptedRaw": 149325,
+        "totalSubmissionRaw": 313168,
+        "acRate": "47.7%",
+        "acRateRaw": 47.68148058267928,
+        "likes": 625,
+        "dislikes": 28
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "exampleTestcases": "[2,1,5]\n2\n[1,6,2,9]\n3\n[4,6]\n2",
+    "meta": {
+        "quesIdLCBackend": 3958,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Sorting + Two Pointers\n\n#### Intuition\n\nWe first sort the array $\\textit{nums}$. After removing some elements to make the array balanced, let the minimum element in the remaining array be $\\textit{min}$ and the maximum element be $\\textit{max}$. All elements strictly smaller than $\\textit{min}$ and strictly larger than $\\textit{max}$ must be removed. Removing any element within the range $[\\textit{min}, \\textit{max}]$ is unnecessary.\n\nBased on this observation, we can use a two-pointer technique. The left pointer $\\textit{left}$ starts at the beginning of the sorted array and represents the position of the minimum element $x$ of the current candidate subarray. The right pointer $\\textit{right}$ moves to the right until it reaches the first element that is strictly greater than $k \\times x$, or until it goes out of bounds.\n\nAt this point, the left-closed and right-open interval $[\\textit{left}, \\textit{right})$ represents a balanced subarray, whose length is $\\textit{right} - \\textit{left}$.\n\nAs the left pointer moves to the right, the right pointer never moves backward. For each position of $\\textit{left}$, we can update the answer as $n - (\\textit{right} - \\textit{left})$, where $n$ is the length of the array $\\textit{nums}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/a5fLcuMz/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"a5fLcuMz\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  Sorting takes $O(n \\log n)$ time, and the two-pointer traversal takes $O(n)$ time.\n\n- Space complexity: $O(\\log n)$ or $O(n)$.\n  \n  This includes the stack space required by the sorting process, since built-in sorting implementations typically use a variant of quicksort or timsort.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>An array is considered <strong>balanced</strong> if the value of its <strong>maximum</strong> element is <strong>at most</strong> <code>k</code> times the <strong>minimum</strong> element.</p>\n\n<p>You may remove <strong>any</strong> number of elements from <code>nums</code>​​​​​​​ without making it <strong>empty</strong>.</p>\n\n<p>Return the <strong>minimum</strong> number of elements to remove so that the remaining array is balanced.</p>\n\n<p><strong>Note:</strong> An array of size 1 is considered balanced as its maximum and minimum are equal, and the condition always holds true.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,1,5], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Remove <code>nums[2] = 5</code> to get <code>nums = [2, 1]</code>.</li>\n\t<li>Now <code>max = 2</code>, <code>min = 1</code> and <code>max &lt;= min * k</code> as <code>2 &lt;= 1 * 2</code>. Thus, the answer is 1.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,6,2,9], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Remove <code>nums[0] = 1</code> and <code>nums[3] = 9</code> to get <code>nums = [6, 2]</code>.</li>\n\t<li>Now <code>max = 6</code>, <code>min = 2</code> and <code>max &lt;= min * k</code> as <code>6 &lt;= 2 * 3</code>. Thus, the answer is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,6], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Since <code>nums</code> is already balanced as <code>6 &lt;= 4 * 2</code>, no elements need to be removed.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Sort <code>nums</code> and use two pointers <code>i</code> and <code>j</code> so that the window's minimum is <code>nums[i]</code> and maximum is <code>nums[j]</code>.",
+        "Expand <code>j</code> while <code>nums[j] <= k * nums[i]</code> to maximize the balanced window; answer = <code>n - (j - i + 1)</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:55:22.287Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.638Z"
+}

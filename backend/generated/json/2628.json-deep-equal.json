@@ -1,0 +1,42 @@
+{
+    "quesId": 2628,
+    "title": "JSON Deep Equal",
+    "titleSlug": "json-deep-equal",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "15.3K",
+        "totalSubmission": "38.5K",
+        "totalAcceptedRaw": 15318,
+        "totalSubmissionRaw": 38525,
+        "acRate": "39.8%",
+        "acRateRaw": 39.76119402985074,
+        "likes": 222,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        2633,
+        2625,
+        2675,
+        2700
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2735,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "You can check if a value is an array with the Array.isArray() method. You can check if a value is an object by saying typeof obj === 'object' && obj !== null. You can list the keys of an object with the Object.keys() function.",
+        "If two objects have different keys or two arrays have a different length, they cannot be equal.",
+        "You can use recursion to investigate if the values of an object or array are also deeply equal. The base case is when the values are primitives (string, number, etc), at which case the check is a trivial === check."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:16.466Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.264Z"
+}

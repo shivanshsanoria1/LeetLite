@@ -1,0 +1,63 @@
+{
+    "quesId": 2436,
+    "title": "Minimum Split Into Subarrays With GCD Greater Than One",
+    "titleSlug": "minimum-split-into-subarrays-with-gcd-greater-than-one",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3K",
+        "totalSubmission": "4.3K",
+        "totalAcceptedRaw": 3022,
+        "totalSubmissionRaw": 4332,
+        "acRate": "69.8%",
+        "acRateRaw": 69.75992613111727,
+        "likes": 45,
+        "dislikes": 11
+    },
+    "similarQuesIds": [
+        2464
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        },
+        {
+            "name": "Euclidean Algorithm",
+            "slug": "euclidean-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2579,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "How does the GCD of an array change when you add more elements to a subarray?",
+        "The GCD will always decrease when increasing the size of the subarray,",
+        "Keep adding elements to a subarray and if adding a new element will make the GCD = 1, add a new split and a new subarray."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:40.150Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.612Z"
+}

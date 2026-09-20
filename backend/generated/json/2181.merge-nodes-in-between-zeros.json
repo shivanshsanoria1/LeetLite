@@ -1,0 +1,49 @@
+{
+    "quesId": 2181,
+    "title": "Merge Nodes in Between Zeros",
+    "titleSlug": "merge-nodes-in-between-zeros",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "359.2K",
+        "totalSubmission": "400.4K",
+        "totalAcceptedRaw": 359198,
+        "totalSubmissionRaw": 400381,
+        "acRate": "89.7%",
+        "acRateRaw": 89.71412444053708,
+        "likes": 2537,
+        "dislikes": 56
+    },
+    "similarQuesIds": [
+        817
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2299,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach 1: Two-Pointer (One-Pass)\n\n#### Intuition\n\nWe can break this problem into two tasks: finding the sum of all the nodes between two consecutive `0`s, and merging these values into a single list. One brute force idea is to iterate through the linked list, summing the node values, and adding this sum to a new linked list when we encounter a `0`. However, we can modify the linked list in the given problem.\n\nWe can use a two-pointer approach to modify the list. The first pointer, `modify`, changes the linked list and the second pointer, `nextSum`, calculates the sum for each block between two `0`s. Initially, both pointers start at the beginning of the list.\n\nHow can we manage both pointers while traversing the list? After `nextSum` calculates the sum for the current block, we store this value at the `modify` node. Since `nextSum` is at a `0` at the end of the block, it moves to the next node to start summing the next block.\n\nThe number of nodes in the modified linked list matches the number of blocks between consecutive `0`s. After processing each block, we update `modify`'s next pointer to `nextSum`, helping maintain the size of the modified list, with both pointers reaching the end simultaneously.\n\n#### Algorithm\n\n1. Initialize `modify` and `nextSum` with `head->next` that stores the first node with a non-zero value.\n2. Iterate through the list until `nextSum` is not null:\n   - Initialize `sum` with `0` to store the sum of the current block.\n   - Iterate through the block until `nextSum` encounters a `0`:\n     - Add the value of the current node to `sum`.\n     - Move `nextSum` to the next node.\n   - Modify the node value at `modify` to `sum`.\n   - Move `nextSum` to the next node that stores the next block's first non-zero value. Also, set `modify->next` to this node. \n   - Move `modify` to it's next node.\n3. Return `head->next`.\n\n!?!../Documents/2181/slideshow1.json:960,454!?!\n \n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/QBWhPomK/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"QBWhPomK\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the size of the linked list.\n\n- Time complexity: $O(n)$\n\n    All the nodes of the linked list are visited exactly once. Therefore, the total time complexity is given by $O(n)$.\n\n- Space complexity: $O(1)$\n\n    Apart from the original list, we don't use any additional space. Therefore, the total space complexity is given by $O(1)$.\n\n---\n\n### Approach 2: Recursion\n\n#### Intuition\n\nRecursion is useful for solving problems that can be broken down into smaller, repetitive sub-problems. Finding the sum of every 0-separated block is an example of such a sub-problem, making recursion an appropriate approach.\n\nWe can start at the beginning of a block with the current node's value as `0` and calculate the sum for this block by iterating through the list and adding values until encountering another `0`. At this point, the pointer will be at the start of the next block. The new list starting at this pointer resembles the original list but with one less block to compute. Therefore, we can pass this pointer to the recursive function as a new sub-problem, as explained below:\n\n![img](../Figures/2181/Slide8.png)\n\n#### Algorithm\n\n1. Store the first non-zero value, given by `head->next`, in `head`.\n2. If `head` is null, return `head`.\n3. Initialize a dummy node `temp` with `head`.\n4. Initialize `sum` with `0`.\n5. Iterate through the list until the value of `temp` is not `0`:\n   - Increment `sum` with the value of `temp`.\n   - Set `temp` as `temp->next`.\n6. Store the updated `sum` in the value of `head`.\n7. Store `head->next` as the solution of the sub-problem starting at `temp`, given by `mergeNodes(temp)`.\n8. Return `head`.\n \n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/iLGvDCMa/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"iLGvDCMa\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the size of the linked list.\n\n- Time complexity: $O(n)$\n\n    All the nodes of the linked list are visited exactly once. Therefore, the total time complexity is given by $O(n)$.\n\n- Space complexity: $O(n)$\n\n    The extra space comes from implicit stack space due to recursion. The recursion could go up to $n$ levels deep. Therefore, the total space complexity is given by $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given the <code>head</code> of a linked list, which contains a series of integers <strong>separated</strong> by <code>0</code>&#39;s. The <strong>beginning</strong> and <strong>end</strong> of the linked list will have <code>Node.val == 0</code>.</p>\n\n<p>For <strong>every </strong>two consecutive <code>0</code>&#39;s, <strong>merge</strong> all the nodes lying in between them into a single node whose value is the <strong>sum</strong> of all the merged nodes. The modified list should not contain any <code>0</code>&#39;s.</p>\n\n<p>Return <em>the</em> <code>head</code> <em>of the modified linked list</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/02/02/ex1-1.png\" style=\"width: 600px; height: 41px;\" />\n<pre>\n<strong>Input:</strong> head = [0,3,1,0,4,5,2,0]\n<strong>Output:</strong> [4,11]\n<strong>Explanation:</strong> \nThe above figure represents the given linked list. The modified list contains\n- The sum of the nodes marked in green: 3 + 1 = 4.\n- The sum of the nodes marked in red: 4 + 5 + 2 = 11.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/02/02/ex2-1.png\" style=\"width: 600px; height: 41px;\" />\n<pre>\n<strong>Input:</strong> head = [0,1,0,3,0,2,2,0]\n<strong>Output:</strong> [1,3,4]\n<strong>Explanation:</strong> \nThe above figure represents the given linked list. The modified list contains\n- The sum of the nodes marked in green: 1 = 1.\n- The sum of the nodes marked in red: 3 = 3.\n- The sum of the nodes marked in yellow: 2 + 2 = 4.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is in the range <code>[3, 2 * 10<sup>5</sup>]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 1000</code></li>\n\t<li>There are <strong>no</strong> two consecutive nodes with <code>Node.val == 0</code>.</li>\n\t<li>The <strong>beginning</strong> and <strong>end</strong> of the linked list have <code>Node.val == 0</code>.</li>\n</ul>\n",
+    "hints": [
+        "How can you use two pointers to modify the original list into the new list?",
+        "Have a pointer traverse the entire linked list, while another pointer looks at a node that is currently being modified.",
+        "Keep on summing the values of the nodes between the traversal pointer and the modifying pointer until the former comes across a ‘0’. In that case, the modifying pointer is incremented to modify the next node.",
+        "Do not forget to have the next pointer of the final node of the modified list point to null."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:33.764Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.200Z"
+}

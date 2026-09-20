@@ -1,0 +1,41 @@
+{
+    "quesId": 2236,
+    "title": "Root Equals Sum of Children",
+    "titleSlug": "root-equals-sum-of-children",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "370.1K",
+        "totalSubmission": "434.6K",
+        "totalAcceptedRaw": 370102,
+        "totalSubmissionRaw": 434599,
+        "acRate": "85.2%",
+        "acRateRaw": 85.15942282425868,
+        "likes": 1618,
+        "dislikes": 1667
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2384,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given the <code>root</code> of a <strong>binary tree</strong> that consists of exactly <code>3</code> nodes: the root, its left child, and its right child.</p>\n\n<p>Return <code>true</code> <em>if the value of the root is equal to the <strong>sum</strong> of the values of its two children, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/04/08/graph3drawio.png\" style=\"width: 281px; height: 199px;\" />\n<pre>\n<strong>Input:</strong> root = [10,4,6]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The values of the root, its left child, and its right child are 10, 4, and 6, respectively.\n10 is equal to 4 + 6, so we return true.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/04/08/graph3drawio-1.png\" style=\"width: 281px; height: 199px;\" />\n<pre>\n<strong>Input:</strong> root = [5,3,1]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The values of the root, its left child, and its right child are 5, 3, and 1, respectively.\n5 is not equal to 3 + 1, so we return false.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The tree consists only of the root, its left child, and its right child.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:21:55.494Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.284Z"
+}

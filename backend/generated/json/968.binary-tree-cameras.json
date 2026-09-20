@@ -1,0 +1,57 @@
+{
+    "quesId": 968,
+    "title": "Binary Tree Cameras",
+    "titleSlug": "binary-tree-cameras",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "199.1K",
+        "totalSubmission": "413.7K",
+        "totalAcceptedRaw": 199068,
+        "totalSubmissionRaw": 413674,
+        "acRate": "48.1%",
+        "acRateRaw": 48.121951101592074,
+        "likes": 5722,
+        "dislikes": 92
+    },
+    "similarQuesIds": [
+        979,
+        2378
+    ],
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1008,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Dynamic Programming\n\n**Intuition**\n\nLet's try to cover every node, starting from the top of the tree and working down.  Every node considered must be covered by a camera at that node or some neighbor.\n\nBecause cameras only care about local state, we can hope to leverage this fact for an efficient solution.  Specifically, when deciding to place a camera at a node, we might have placed cameras to cover some subset of this node, its left child, and its right child already.\n\n**Algorithm**\n\nLet `solve(node)` be some information about how many cameras it takes to cover the subtree at this node in various states.  There are essentially 3 states:\n\n* [State 0] Strict subtree:  All the nodes below this node are covered, but not this node.\n* [State 1] Normal subtree:  All the nodes below and including this node are covered, but there is no camera here.\n* [State 2] Placed camera:  All the nodes below and including this node are covered, and there is a camera here (which may cover nodes above this node).\n\nOnce we frame the problem in this way, the answer falls out:\n\n* To cover a strict subtree, the children of this node must be in state 1.\n* To cover a normal subtree without placing a camera here, the children of this node must be in states 1 or 2, and at least one of those children must be in state 2.\n* To cover the subtree when placing a camera here, the children can be in any state.\n\n<iframe src=\"https://leetcode.com/playground/9RMjEFK8/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"9RMjEFK8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(H)$$, where $$H$$ is the height of the given tree.\n<br />\n<br />\n\n\n---\n### Approach 2: Greedy\n\n**Intuition**\n\nInstead of trying to cover every node from the top down, let's try to cover it from the bottom up - considering placing a camera with the deepest nodes first, and working our way up the tree.\n\nIf a node has its children covered and has a parent, then it is strictly better to place the camera at this node's parent.\n\n**Algorithm**\n\nIf a node has children that are not covered by a camera, then we must place a camera here.  Additionally, if a node has no parent and it is not covered, we must place a camera here.\n\n<iframe src=\"https://leetcode.com/playground/SDtoVPrq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"SDtoVPrq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(H)$$, where $$H$$ is the height of the given tree.\n<br />\n<br />"
+    },
+    "content": "<p>You are given the <code>root</code> of a binary tree. We install cameras on the tree nodes where each camera at a node can monitor its parent, itself, and its immediate children.</p>\n\n<p>Return <em>the minimum number of cameras needed to monitor all nodes of the tree</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_01.png\" style=\"width: 138px; height: 163px;\" />\n<pre>\n<strong>Input:</strong> root = [0,0,null,0,0]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> One camera is enough to monitor all nodes if placed as shown.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_02.png\" style=\"width: 139px; height: 312px;\" />\n<pre>\n<strong>Input:</strong> root = [0,0,null,0,null,0,null,null,0]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>\n\t<li><code>Node.val == 0</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:19.615Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.852Z"
+}

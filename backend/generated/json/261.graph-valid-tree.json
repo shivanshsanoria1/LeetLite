@@ -1,0 +1,57 @@
+{
+    "quesId": 261,
+    "title": "Graph Valid Tree",
+    "titleSlug": "graph-valid-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "547.8K",
+        "totalSubmission": "1.1M",
+        "totalAcceptedRaw": 547825,
+        "totalSubmissionRaw": 1092752,
+        "acRate": "50.1%",
+        "acRateRaw": 50.132600507341074,
+        "likes": 3481,
+        "dislikes": 116
+    },
+    "similarQuesIds": [
+        207,
+        323,
+        841
+    ],
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 261,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Given <code>n = 5</code> and <code>edges = [[0, 1], [1, 2], [3, 4]]</code>, what should your return? Is this case a valid tree?",
+        "According to the <a href=\"https://en.wikipedia.org/wiki/Tree_(graph_theory)\" target=\"_blank\">definition of tree on Wikipedia</a>: “a tree is an undirected graph in which any two vertices are connected by <i>exactly</i> one path. In other words, any connected graph without simple cycles is a tree.”"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:57:07.218Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.251Z"
+}

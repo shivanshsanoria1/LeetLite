@@ -1,0 +1,43 @@
+{
+    "quesId": 1474,
+    "title": "Delete N Nodes After M Nodes of a Linked List",
+    "titleSlug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "42.9K",
+        "totalSubmission": "57.7K",
+        "totalAcceptedRaw": 42911,
+        "totalSubmissionRaw": 57700,
+        "acRate": "74.4%",
+        "acRateRaw": 74.369150779896,
+        "likes": 434,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        19,
+        1171
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1618,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Traverse the Linked List, each time you need to delete the next n nodes connect the nodes previous deleting with the next node after deleting."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:35:02.032Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.917Z"
+}

@@ -1,0 +1,48 @@
+{
+    "quesId": 2069,
+    "title": "Walking Robot Simulation II",
+    "titleSlug": "walking-robot-simulation-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "91.4K",
+        "totalSubmission": "212.1K",
+        "totalAcceptedRaw": 91406,
+        "totalSubmissionRaw": 212058,
+        "acRate": "43.1%",
+        "acRateRaw": 43.10424506502938,
+        "likes": 451,
+        "dislikes": 377
+    },
+    "similarQuesIds": [
+        874
+    ],
+    "topicTags": [
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2178,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nFrom the problem description, we can observe that the robot always moves in a loop along the outermost layer of the grid.\n\n![fig1](../Figures/2069/5911.png)\n\nTherefore, we can preprocess the robot’s movement cycle (positions and directions) and store it in an array. We use a pointer $\\textit{idx}$ to represent the robot’s current position and direction.\n\nThe preprocessing can be divided into four steps. As shown in the figure above, grids of different colors represent the robot’s direction at those positions. Accordingly, we can use four loops to enumerate the positions for each direction and store them in the preprocessing arrays.\n\nFor the three interfaces required by the problem, we can implement them as follows:\n\n* $\\texttt{void move(int num)}$: Increase $\\textit{idx}$ by $\\textit{num}$. Since the robot’s path is cyclic, we take the result modulo the length of the cycle.\n\n* $\\texttt{int[] getPos()}$: Return the position from the preprocessed array based on $\\textit{idx}$.\n\n* $\\texttt{String getDir()}$: Return the direction from the preprocessed array based on $\\textit{idx}$.\n\nNote that when the robot returns to the origin, its direction becomes `'South'`, whereas its initial direction at the origin is `'East'`. To handle this, we set the direction of the origin in the preprocessing array to `'South'` and use a boolean variable to track whether the robot has moved:\n\n* If the robot has not moved, we always return `'East'`.\n\n* If the robot has moved, we return the direction from the preprocessing array based on $\\textit{idx}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/VSgfMyYP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VSgfMyYP\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: The preprocessing takes $O(\\textit{width} + \\textit{height})$, and each query operation runs in $O(1)$ time.\n\n- Space complexity: $O(\\textit{width} + \\textit{height})$.\n  \n  This accounts for storing the preprocessed positions and directions.\n\n---"
+    },
+    "content": "<p>A <code>width x height</code> grid is on an XY-plane with the <strong>bottom-left</strong> cell at <code>(0, 0)</code> and the <strong>top-right</strong> cell at <code>(width - 1, height - 1)</code>. The grid is aligned with the four cardinal directions (<code>&quot;North&quot;</code>, <code>&quot;East&quot;</code>, <code>&quot;South&quot;</code>, and <code>&quot;West&quot;</code>). A robot is <strong>initially</strong> at cell <code>(0, 0)</code> facing direction <code>&quot;East&quot;</code>.</p>\n\n<p>The robot can be instructed to move for a specific number of <strong>steps</strong>. For each step, it does the following.</p>\n\n<ol>\n\t<li>Attempts to move <strong>forward one</strong> cell in the direction it is facing.</li>\n\t<li>If the cell the robot is <strong>moving to</strong> is <strong>out of bounds</strong>, the robot instead <strong>turns</strong> 90 degrees <strong>counterclockwise</strong> and retries the step.</li>\n</ol>\n\n<p>After the robot finishes moving the number of steps required, it stops and awaits the next instruction.</p>\n\n<p>Implement the <code>Robot</code> class:</p>\n\n<ul>\n\t<li><code>Robot(int width, int height)</code> Initializes the <code>width x height</code> grid with the robot at <code>(0, 0)</code> facing <code>&quot;East&quot;</code>.</li>\n\t<li><code>void step(int num)</code> Instructs the robot to move forward <code>num</code> steps.</li>\n\t<li><code>int[] getPos()</code> Returns the current cell the robot is at, as an array of length 2, <code>[x, y]</code>.</li>\n\t<li><code>String getDir()</code> Returns the current direction of the robot, <code>&quot;North&quot;</code>, <code>&quot;East&quot;</code>, <code>&quot;South&quot;</code>, or <code>&quot;West&quot;</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"example-1\" src=\"https://assets.leetcode.com/uploads/2021/10/09/example-1.png\" style=\"width: 498px; height: 268px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;Robot&quot;, &quot;step&quot;, &quot;step&quot;, &quot;getPos&quot;, &quot;getDir&quot;, &quot;step&quot;, &quot;step&quot;, &quot;step&quot;, &quot;getPos&quot;, &quot;getDir&quot;]\n[[6, 3], [2], [2], [], [], [2], [1], [4], [], []]\n<strong>Output</strong>\n[null, null, null, [4, 0], &quot;East&quot;, null, null, null, [1, 2], &quot;West&quot;]\n\n<strong>Explanation</strong>\nRobot robot = new Robot(6, 3); // Initialize the grid and the robot at (0, 0) facing East.\nrobot.step(2);  // It moves two steps East to (2, 0), and faces East.\nrobot.step(2);  // It moves two steps East to (4, 0), and faces East.\nrobot.getPos(); // return [4, 0]\nrobot.getDir(); // return &quot;East&quot;\nrobot.step(2);  // It moves one step East to (5, 0), and faces East.\n                // Moving the next step East would be out of bounds, so it turns and faces North.\n                // Then, it moves one step North to (5, 1), and faces North.\nrobot.step(1);  // It moves one step North to (5, 2), and faces <strong>North</strong> (not West).\nrobot.step(4);  // Moving the next step North would be out of bounds, so it turns and faces West.\n                // Then, it moves four steps West to (1, 2), and faces West.\nrobot.getPos(); // return [1, 2]\nrobot.getDir(); // return &quot;West&quot;\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= width, height &lt;= 100</code></li>\n\t<li><code>1 &lt;= num &lt;= 10<sup>5</sup></code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>step</code>, <code>getPos</code>, and <code>getDir</code>.</li>\n</ul>\n",
+    "hints": [
+        "The robot only moves along the perimeter of the grid. Can you think if modulus can help you quickly compute which cell it stops at?",
+        "After the robot moves one time, whenever the robot stops at some cell, it will always face a specific direction. i.e., The direction it faces is determined by the cell it stops at.",
+        "Can you precompute what direction it faces when it stops at each cell along the perimeter, and reuse the results?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:54.464Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.943Z"
+}

@@ -1,0 +1,56 @@
+{
+    "quesId": 2489,
+    "title": "Number of Substrings With Fixed Ratio",
+    "titleSlug": "number-of-substrings-with-fixed-ratio",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.8K",
+        "totalSubmission": "3.2K",
+        "totalAcceptedRaw": 1804,
+        "totalSubmissionRaw": 3208,
+        "acRate": "56.2%",
+        "acRateRaw": 56.234413965087285,
+        "likes": 55,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        696
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2629,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let Func(i) denote the number of 0’s in the prefix [0…i]. We want to find the number of pairs of indices L and R such that Func(R) - Func(L) : R - L - Func(R) + Func(L) = num1 : num2.",
+        "It is better to simplify the formula.",
+        "Func(R) * (num1 + num2) - R * num1 = Func(L) * (num1 + num2) - L * num1.",
+        "Iterate from left to right and use a hash map to count the number of indices having the same value for the above formula."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:25:21.720Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.738Z"
+}

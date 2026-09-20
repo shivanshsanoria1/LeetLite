@@ -1,0 +1,37 @@
+{
+    "quesId": 3118,
+    "title": "Friday Purchase III ",
+    "titleSlug": "friday-purchase-iii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.6K",
+        "totalSubmission": "4.7K",
+        "totalAcceptedRaw": 2601,
+        "totalSubmissionRaw": 4705,
+        "acRate": "55.3%",
+        "acRateRaw": 55.28161530286929,
+        "likes": 6,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3424,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:56:23.418Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.936Z"
+}

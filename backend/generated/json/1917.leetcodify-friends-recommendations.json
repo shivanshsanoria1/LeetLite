@@ -1,0 +1,40 @@
+{
+    "quesId": 1917,
+    "title": "Leetcodify Friends Recommendations",
+    "titleSlug": "leetcodify-friends-recommendations",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "9.3K",
+        "totalSubmission": "32.2K",
+        "totalAcceptedRaw": 9312,
+        "totalSubmissionRaw": 32181,
+        "acRate": "28.9%",
+        "acRateRaw": 28.936328889717533,
+        "likes": 69,
+        "dislikes": 61
+    },
+    "similarQuesIds": [
+        1919,
+        1949
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2063,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:02:41.848Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.745Z"
+}

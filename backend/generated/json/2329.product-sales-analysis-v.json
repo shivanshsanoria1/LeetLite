@@ -1,0 +1,41 @@
+{
+    "quesId": 2329,
+    "title": "Product Sales Analysis V",
+    "titleSlug": "product-sales-analysis-v",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "11.1K",
+        "totalSubmission": "15.7K",
+        "totalAcceptedRaw": 11099,
+        "totalSubmissionRaw": 15658,
+        "acRate": "70.9%",
+        "acRateRaw": 70.88389321752459,
+        "likes": 35,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        1068,
+        1069,
+        1070
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2452,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:23:13.434Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.421Z"
+}

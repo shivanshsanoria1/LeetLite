@@ -1,0 +1,38 @@
+{
+    "quesId": 3415,
+    "title": "Find Products with Three Consecutive Digits ",
+    "titleSlug": "find-products-with-three-consecutive-digits",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.4K",
+        "totalSubmission": "3K",
+        "totalAcceptedRaw": 2411,
+        "totalSubmissionRaw": 3018,
+        "acRate": "79.9%",
+        "acRateRaw": 79.88734261100066,
+        "likes": 4,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "exampleTestcases": "{\"headers\":{\"Products\":[\"product_id\",\"name\"]},\"rows\":{\"Products\":[[1,\"ABC123XYZ\"],[2,\"A12B34C\"],[3,\"Product56789\"],[4,\"NoDigitsHere\"],[5,\"789Product\"],[6,\"Item003Description\"],[7,\"Product12X34\"]]}}",
+    "meta": {
+        "quesIdLCBackend": 3757,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-14T16:51:20.966Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.365Z"
+}

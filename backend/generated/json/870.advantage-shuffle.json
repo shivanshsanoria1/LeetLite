@@ -1,0 +1,50 @@
+{
+    "quesId": 870,
+    "title": "Advantage Shuffle",
+    "titleSlug": "advantage-shuffle",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "86.1K",
+        "totalSubmission": "156.6K",
+        "totalAcceptedRaw": 86136,
+        "totalSubmissionRaw": 156644,
+        "acRate": "55.0%",
+        "acRateRaw": 54.98838129771967,
+        "likes": 1712,
+        "dislikes": 100
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 901,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Greedy\n\n**Intuition**\n\nIf the smallest card `a` in `A` beats the smallest card `b` in `B`, we should pair them.  Otherwise, `a` is useless for our score, as it can't beat any cards.\n\nWhy should we pair `a` and `b` if `a > b`?  Because every card in `A` is larger than `b`, any card we place in front of `b` will score a point.  We might as well use the weakest card to pair with `b` as it makes the rest of the cards in `A` strictly larger, and thus have more potential to score points.\n\n**Algorithm**\n\nWe can use the above intuition to create a greedy approach.  The current smallest card to beat in `B` will always be `b = sortedB[j]`.  For each card `a` in `sortedA`, we will either have `a` beat that card `b` (put `a` into `assigned[b]`), or throw `a` out (put `a` into `remaining`).\n\nAfterwards, we can use our annotations `assigned` and `remaining` to reconstruct the answer.  Please see the comments for more details.\n\n\n<iframe src=\"https://leetcode.com/playground/PGVMbL48/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"PGVMbL48\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A` and `B`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />"
+    },
+    "content": "<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code> both of the same length. The <strong>advantage</strong> of <code>nums1</code> with respect to <code>nums2</code> is the number of indices <code>i</code> for which <code>nums1[i] &gt; nums2[i]</code>.</p>\n\n<p>Return <em>any permutation of </em><code>nums1</code><em> that maximizes its <strong>advantage</strong> with respect to </em><code>nums2</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums1 = [2,7,11,15], nums2 = [1,10,4,11]\n<strong>Output:</strong> [2,11,7,15]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums1 = [12,24,8,32], nums2 = [13,25,32,11]\n<strong>Output:</strong> [24,32,8,12]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums1.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>nums2.length == nums1.length</code></li>\n\t<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:33:53.386Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.545Z"
+}

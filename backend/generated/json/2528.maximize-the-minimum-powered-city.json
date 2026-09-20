@@ -1,0 +1,63 @@
+{
+    "quesId": 2528,
+    "title": "Maximize the Minimum Powered City",
+    "titleSlug": "maximize-the-minimum-powered-city",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "69.8K",
+        "totalSubmission": "113.8K",
+        "totalAcceptedRaw": 69823,
+        "totalSubmissionRaw": 113834,
+        "acRate": "61.3%",
+        "acRateRaw": 61.33756171266933,
+        "likes": 890,
+        "dislikes": 34
+    },
+    "similarQuesIds": [
+        2071
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2618,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Binary Search + Difference Array\n\n#### Intuition\n\nAccording to the problem statement, we need to find the maximum possible value of the **minimum power supply**. It is intuitive to use **binary search** to determine the highest possible minimum power supply across all cities. The key is to verify whether a given power level $x$ can satisfy the problem’s requirement; that is, whether it is possible for every city’s power supply to be at least $x$ after adding $k$ additional power stations.\n\nSince the power station in the $i$-th city covers the range $[i - r, i + r]$, we can use a **difference array** to efficiently calculate the total power for each city. The critical part is deciding where to place the $k$ additional power stations, which can be determined using a **greedy strategy**.\n\nSuppose the target minimum power for each city is $x$. We traverse the cities from left to right:\n\n+ If the power at index $i$ is greater than or equal to $x$, we move on to the next city ($i + 1$).\n\n+ If the power at index $i$ is less than $x$, we theoretically need to add power stations within the interval $[i - r, i + r]$. Since we are traversing in order, by the time we reach city $i$, all cities before it already have sufficient power. Therefore, adding power stations to earlier cities would be redundant. To maximize efficiency, we should add power stations to cities *after* $i$. If we add a power station at position $i + r$, it will cover the range $[i, i + 2r]$, thereby benefiting as many cities after $i$ as possible. Hence, the optimal choice is to add a power station at $i + r$.\n\nThe actual calculation proceeds as follows:\n\n+ For convenience, precompute the **difference array** `diff` based on the given `stations` array.\n  Use binary search to find the maximum value. According to the problem statement, the lower bound of the binary search can start at $\\textit{lo} = \\min(\\textit{stations})$, and the upper bound can be $\\textit{hi} = \\text{sum}(\\textit{stations}) + k$, since no city’s power can exceed this limit. Then, use binary search to test the candidate value $\\textit{mid}$.\n\n+ For each binary search iteration, calculate the prefix sum of the difference array from left to right. When traversing to index $i$, if the current sum is less than `mid`, it means the city’s power is insufficient. In that case, we need to add `add = mid - sum` power stations at position `i + r` to ensure that city $i$ reaches at least `mid`. The total power `sum` increases by `add`, and the remaining number of available stations decreases by `add`. Update the difference array accordingly and continue the traversal. If all cities can reach at least `mid` power, we can try increasing `mid`. If the number of remaining power stations becomes insufficient before completing the traversal, it means `mid` is too high, and we must reduce it.\n\n+ The final answer is the maximum value of `mid` that satisfies the condition, found through binary search.\n\n+ The target value of binary search is the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/KbfCBptU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KbfCBptU\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{stations}$, $D = \\text{sum}(\\textit{stations}) + k$.\n\n- Time complexity: $O(n \\log D)$.\n  \n  Computing the difference array takes $O(n)$ time. The binary search runs in $O(\\log D)$ iterations, and each iteration takes $O(n)$ time, resulting in a total complexity of $O(n \\log D)$.\n\n- Space complexity: $O(n)$.\n  \n  The space required for calculating the difference array is $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>stations</code> of length <code>n</code>, where <code>stations[i]</code> represents the number of power stations in the <code>i<sup>th</sup></code> city.</p>\n\n<p>Each power station can provide power to every city in a fixed <strong>range</strong>. In other words, if the range is denoted by <code>r</code>, then a power station at city <code>i</code> can provide power to all cities <code>j</code> such that <code>|i - j| &lt;= r</code> and <code>0 &lt;= i, j &lt;= n - 1</code>.</p>\n\n<ul>\n\t<li>Note that <code>|x|</code> denotes <strong>absolute</strong> value. For example, <code>|7 - 5| = 2</code> and <code>|3 - 10| = 7</code>.</li>\n</ul>\n\n<p>The <strong>power</strong> of a city is the total number of power stations it is being provided power from.</p>\n\n<p>The government has sanctioned building <code>k</code> more power stations, each of which can be built in any city, and have the same range as the pre-existing ones.</p>\n\n<p>Given the two integers <code>r</code> and <code>k</code>, return <em>the <strong>maximum possible minimum power</strong> of a city, if the additional power stations are built optimally.</em></p>\n\n<p><strong>Note</strong> that you can build the <code>k</code> power stations in multiple cities.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stations = [1,2,4,5,0], r = 1, k = 2\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> \nOne of the optimal ways is to install both the power stations at city 1. \nSo stations will become [1,4,4,5,0].\n- City 0 is provided by 1 + 4 = 5 power stations.\n- City 1 is provided by 1 + 4 + 4 = 9 power stations.\n- City 2 is provided by 4 + 4 + 5 = 13 power stations.\n- City 3 is provided by 5 + 4 = 9 power stations.\n- City 4 is provided by 5 + 0 = 5 power stations.\nSo the minimum power of a city is 5.\nSince it is not possible to obtain a larger power, we return 5.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stations = [4,4,4,4], r = 0, k = 3\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> \nIt can be proved that we cannot make the minimum power of a city greater than 4.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == stations.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= stations[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= r&nbsp;&lt;= n - 1</code></li>\n\t<li><code>0 &lt;= k&nbsp;&lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Pre calculate the number of stations on each city using Line Sweep.",
+        "Use binary search to maximize the minimum."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:38:52.095Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.807Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 1990,
+    "title": "Count the Number of Experiments",
+    "titleSlug": "count-the-number-of-experiments",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "10.2K",
+        "totalSubmission": "20.9K",
+        "totalAcceptedRaw": 10250,
+        "totalSubmissionRaw": 20909,
+        "acRate": "49.0%",
+        "acRateRaw": 49.02195226935769,
+        "likes": 27,
+        "dislikes": 203
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2143,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:03:44.618Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.819Z"
+}

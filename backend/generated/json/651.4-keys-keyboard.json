@@ -1,0 +1,44 @@
+{
+    "quesId": 651,
+    "title": "4 Keys Keyboard",
+    "titleSlug": "4-keys-keyboard",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "36.5K",
+        "totalSubmission": "64.6K",
+        "totalAcceptedRaw": 36488,
+        "totalSubmissionRaw": 64618,
+        "acRate": "56.5%",
+        "acRateRaw": 56.467238230833516,
+        "likes": 747,
+        "dislikes": 94
+    },
+    "similarQuesIds": [
+        650
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 651,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:14:59.614Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.193Z"
+}

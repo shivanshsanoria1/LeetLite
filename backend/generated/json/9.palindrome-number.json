@@ -1,0 +1,47 @@
+{
+    "quesId": 9,
+    "title": "Palindrome Number",
+    "titleSlug": "palindrome-number",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.7M",
+        "totalSubmission": "14.4M",
+        "totalAcceptedRaw": 8747124,
+        "totalSubmissionRaw": 14355835,
+        "acRate": "60.9%",
+        "acRateRaw": 60.930782369314876,
+        "likes": 16264,
+        "dislikes": 2949
+    },
+    "similarQuesIds": [
+        234,
+        2217,
+        2396,
+        2843,
+        3272,
+        3260
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 9,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given an integer <code>x</code>, return <code>true</code> if <code>x</code> is a <span data-keyword=\"palindrome-integer\"><strong>palindrome</strong></span>, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 121\n<strong>Output:</strong> true\n<strong>Explanation:</strong> 121 reads as 121 from left to right and from right to left.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = -121\n<strong>Output:</strong> false\n<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 10\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-2<sup>31</sup>&nbsp;&lt;= x &lt;= 2<sup>31</sup>&nbsp;- 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you solve it without converting the integer to a string?",
+    "hints": [
+        "Beware of overflow when you reverse the integer."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:32:58.792Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.663Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 3278,
+    "title": "Find Candidates for Data Scientist Position II",
+    "titleSlug": "find-candidates-for-data-scientist-position-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.4K",
+        "totalSubmission": "5.6K",
+        "totalAcceptedRaw": 2424,
+        "totalSubmissionRaw": 5585,
+        "acRate": "43.4%",
+        "acRateRaw": 43.401969561324975,
+        "likes": 12,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3589,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:58:30.560Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.101Z"
+}

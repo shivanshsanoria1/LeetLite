@@ -1,0 +1,50 @@
+{
+    "quesId": 681,
+    "title": "Next Closest Time",
+    "titleSlug": "next-closest-time",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "119.4K",
+        "totalSubmission": "253.8K",
+        "totalAcceptedRaw": 119360,
+        "totalSubmissionRaw": 253792,
+        "acRate": "47.0%",
+        "acRateRaw": 47.03063926364897,
+        "likes": 744,
+        "dislikes": 1078
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 681,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:21.175Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.230Z"
+}

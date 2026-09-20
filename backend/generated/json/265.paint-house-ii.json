@@ -1,0 +1,47 @@
+{
+    "quesId": 265,
+    "title": "Paint House II",
+    "titleSlug": "paint-house-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "146.7K",
+        "totalSubmission": "256.1K",
+        "totalAcceptedRaw": 146654,
+        "totalSubmissionRaw": 256099,
+        "acRate": "57.3%",
+        "acRateRaw": 57.26457346573005,
+        "likes": 1353,
+        "dislikes": 40
+    },
+    "similarQuesIds": [
+        238,
+        239,
+        256,
+        276
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 265,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:10.702Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.281Z"
+}

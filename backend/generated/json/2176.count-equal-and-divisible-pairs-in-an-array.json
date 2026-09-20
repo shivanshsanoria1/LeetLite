@@ -1,0 +1,43 @@
+{
+    "quesId": 2176,
+    "title": "Count Equal and Divisible Pairs in an Array",
+    "titleSlug": "count-equal-and-divisible-pairs-in-an-array",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "243.3K",
+        "totalSubmission": "290.5K",
+        "totalAcceptedRaw": 243340,
+        "totalSubmissionRaw": 290480,
+        "acRate": "83.8%",
+        "acRateRaw": 83.77174410718773,
+        "likes": 1053,
+        "dislikes": 69
+    },
+    "similarQuesIds": [
+        2006,
+        2364
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2277,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Approach 1: Traverse number pairs\n\n#### Intuition\n\nWe use $n$ to represent the length of the array $\\textit{nums}$. To count the number of pairs that meet the requirements, we can use two nested loops to traverse all pairs (i, j) that satisfy $0 \\leq i < j < n$, and check individually whether $i \\times j \\bmod k$ is equal to $0$ and whether $\\textit{nums}[i]$ is equal to $\\textit{nums}[j]$.\n\nAt the same time, we use $\\textit{res}$ to count the number of pairs of numbers that meet the requirements. If a pair of numbers $(i, j)$ meets the requirements, we add $1$ to $\\textit{res}$. Finally, we return $\\textit{res}$ as the number of pairs of numbers that meet the requirements.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/dLafBV9u/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"dLafBV9u\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n^2)$.\n\nThis is the time complexity for traversing number pairs and counting the number of pairs that meet the requirements.\n\n- Space complexity: $O(1)$.\n\nOnly a few additional variables are needed."
+    },
+    "content": "Given a <strong>0-indexed</strong> integer array <code>nums</code> of length <code>n</code> and an integer <code>k</code>, return <em>the <strong>number of pairs</strong></em> <code>(i, j)</code> <em>where</em> <code>0 &lt;= i &lt; j &lt; n</code>, <em>such that</em> <code>nums[i] == nums[j]</code> <em>and</em> <code>(i * j)</code> <em>is divisible by</em> <code>k</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,1,2,2,2,1,3], k = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>\nThere are 4 pairs that meet all the requirements:\n- nums[0] == nums[6], and 0 * 6 == 0, which is divisible by 2.\n- nums[2] == nums[3], and 2 * 3 == 6, which is divisible by 2.\n- nums[2] == nums[4], and 2 * 4 == 8, which is divisible by 2.\n- nums[3] == nums[4], and 3 * 4 == 12, which is divisible by 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4], k = 1\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Since no value in nums is repeated, there are no pairs (i,j) that meet all the requirements.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i], k &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "For every possible pair of indices (i, j) where i < j, check if it satisfies the given conditions."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:06:29.463Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.193Z"
+}

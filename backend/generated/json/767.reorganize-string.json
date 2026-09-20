@@ -1,0 +1,64 @@
+{
+    "quesId": 767,
+    "title": "Reorganize String",
+    "titleSlug": "reorganize-string",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "634.3K",
+        "totalSubmission": "1.1M",
+        "totalAcceptedRaw": 634347,
+        "totalSubmissionRaw": 1102653,
+        "acRate": "57.5%",
+        "acRateRaw": 57.529107045365095,
+        "likes": 9366,
+        "dislikes": 289
+    },
+    "similarQuesIds": [
+        358,
+        621,
+        1405
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 778,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given a string <code>s</code>, rearrange the characters of <code>s</code> so that any two adjacent characters are not the same.</p>\n\n<p>Return <em>any possible rearrangement of</em> <code>s</code> <em>or return</em> <code>&quot;&quot;</code> <em>if not possible</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aab\"\n<strong>Output:</strong> \"aba\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"aaab\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 500</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Alternate placing the most common letters."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:16:20.850Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.352Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 2394,
+    "title": "Employees With Deductions",
+    "titleSlug": "employees-with-deductions",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.8K",
+        "totalSubmission": "18.1K",
+        "totalAcceptedRaw": 7770,
+        "totalSubmissionRaw": 18081,
+        "acRate": "43.0%",
+        "acRateRaw": 42.973286875725904,
+        "likes": 31,
+        "dislikes": 39
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2534,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:24:05.702Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.479Z"
+}

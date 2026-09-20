@@ -1,0 +1,57 @@
+{
+    "quesId": 1058,
+    "title": "Minimize Rounding Error to Meet Target",
+    "titleSlug": "minimize-rounding-error-to-meet-target",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.7K",
+        "totalSubmission": "25.6K",
+        "totalAcceptedRaw": 11730,
+        "totalSubmissionRaw": 25575,
+        "acRate": "45.9%",
+        "acRateRaw": 45.86510263929619,
+        "likes": 157,
+        "dislikes": 149
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1053,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "If we have integer values in the array then we just need to subtract the target those integer values, so we reduced the problem.",
+        "Similarly if we have non integer values we have two options to put them flor(value) or ceil(value) = floor(value) + 1, so the idea is to just subtract floor(value).",
+        "Now the problem is different for each position we can sum just add 0 or 1 in order to sum the target, minimizing the deltas. This can be solved with DP."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:23.511Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.015Z"
+}

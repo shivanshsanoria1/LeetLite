@@ -1,0 +1,37 @@
+{
+    "quesId": 3322,
+    "title": "Premier League Table Ranking III",
+    "titleSlug": "premier-league-table-ranking-iii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.3K",
+        "totalSubmission": "3.3K",
+        "totalAcceptedRaw": 2306,
+        "totalSubmissionRaw": 3273,
+        "acRate": "70.5%",
+        "acRateRaw": 70.45523984112435,
+        "likes": 4,
+        "dislikes": 0
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3642,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:59:03.650Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.190Z"
+}

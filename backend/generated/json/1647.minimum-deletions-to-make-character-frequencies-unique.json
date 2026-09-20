@@ -1,0 +1,59 @@
+{
+    "quesId": 1647,
+    "title": "Minimum Deletions to Make Character Frequencies Unique",
+    "titleSlug": "minimum-deletions-to-make-character-frequencies-unique",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "307.5K",
+        "totalSubmission": "499.5K",
+        "totalAcceptedRaw": 307466,
+        "totalSubmissionRaw": 499543,
+        "acRate": "61.5%",
+        "acRateRaw": 61.549533174254925,
+        "likes": 5093,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        2216,
+        2091,
+        2423,
+        3085
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1770,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>A string <code>s</code> is called <strong>good</strong> if there are no two different characters in <code>s</code> that have the same <strong>frequency</strong>.</p>\n\n<p>Given a string <code>s</code>, return<em> the <strong>minimum</strong> number of characters you need to delete to make </em><code>s</code><em> <strong>good</strong>.</em></p>\n\n<p>The <strong>frequency</strong> of a character in a string is the number of times it appears in the string. For example, in the string <code>&quot;aab&quot;</code>, the <strong>frequency</strong> of <code>&#39;a&#39;</code> is <code>2</code>, while the <strong>frequency</strong> of <code>&#39;b&#39;</code> is <code>1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aab&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> <code>s</code> is already good.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaabbbcc&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> You can delete two &#39;b&#39;s resulting in the good string &quot;aaabcc&quot;.\nAnother way it to delete one &#39;b&#39; and one &#39;c&#39; resulting in the good string &quot;aaabbc&quot;.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ceabaacb&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> You can delete both &#39;c&#39;s resulting in the good string &quot;eabaab&quot;.\nNote that we only care about characters that are still in the string at the end (i.e. frequency of 0 is ignored).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code>&nbsp;contains only lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "As we can only delete characters, if we have multiple characters having the same frequency, we must decrease all the frequencies of them, except one.",
+        "Sort the alphabet characters by their frequencies non-increasingly.",
+        "Iterate on the alphabet characters, keep decreasing the frequency of the current character until it reaches a value that has not appeared before."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:51:22.632Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.298Z"
+}

@@ -1,0 +1,55 @@
+{
+    "quesId": 2950,
+    "title": "Number of Divisible Substrings",
+    "titleSlug": "number-of-divisible-substrings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.9K",
+        "totalSubmission": "5.2K",
+        "totalAcceptedRaw": 3872,
+        "totalSubmissionRaw": 5180,
+        "acRate": "74.7%",
+        "acRateRaw": 74.74903474903475,
+        "likes": 31,
+        "dislikes": 6
+    },
+    "similarQuesIds": [
+        3448
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3237,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Iterate over all substrings in <code>O(n * n)</code>.",
+        "For each substring, try to calculate the sum of the mapped values in <code>O(1)</code>.",
+        "To do the above, use a partial sum array."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:46:42.505Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.693Z"
+}

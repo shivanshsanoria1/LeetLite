@@ -1,0 +1,37 @@
+{
+    "quesId": 2051,
+    "title": "The Category of Each Member in the Store",
+    "titleSlug": "the-category-of-each-member-in-the-store",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "11.2K",
+        "totalSubmission": "16K",
+        "totalAcceptedRaw": 11238,
+        "totalSubmissionRaw": 15992,
+        "acRate": "70.3%",
+        "acRateRaw": 70.27263631815907,
+        "likes": 64,
+        "dislikes": 8
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2194,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:04:32.749Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.932Z"
+}

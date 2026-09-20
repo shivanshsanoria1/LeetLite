@@ -1,0 +1,37 @@
+{
+    "quesId": 1142,
+    "title": "User Activity for the Past 30 Days II",
+    "titleSlug": "user-activity-for-the-past-30-days-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "50.2K",
+        "totalSubmission": "140.8K",
+        "totalAcceptedRaw": 50151,
+        "totalSubmissionRaw": 140800,
+        "acRate": "35.6%",
+        "acRateRaw": 35.61860795454545,
+        "likes": 109,
+        "dislikes": 380
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1246,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:27:35.442Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.325Z"
+}

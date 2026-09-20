@@ -1,0 +1,51 @@
+{
+    "quesId": 1330,
+    "title": "Reverse Subarray To Maximize Array Value",
+    "titleSlug": "reverse-subarray-to-maximize-array-value",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "9.4K",
+        "totalSubmission": "21.2K",
+        "totalAcceptedRaw": 9436,
+        "totalSubmissionRaw": 21158,
+        "acRate": "44.6%",
+        "acRateRaw": 44.597788070706116,
+        "likes": 498,
+        "dislikes": 61
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1255,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>. The <em>value</em> of this array is defined as the sum of <code>|nums[i] - nums[i + 1]|</code> for all <code>0 &lt;= i &lt; nums.length - 1</code>.</p>\n\n<p>You are allowed to select any subarray of the given array and reverse it. You can perform this operation <strong>only once</strong>.</p>\n\n<p>Find maximum possible value of the final array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,1,5,4]\n<strong>Output:</strong> 10\n<b>Explanation: </b>By reversing the subarray [3,1,5] the array becomes [2,5,1,3,4] whose value is 10.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,4,9,24,2,1,10]\n<strong>Output:</strong> 68\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>The answer is guaranteed to fit in a 32-bit integer.</li>\n</ul>\n",
+    "hints": [
+        "What's the score after reversing a sub-array [L, R] ?",
+        "It's the score without reversing it + abs(a[R] - a[L-1]) + abs(a[L] - a[R+1]) - abs(a[L] - a[L-1]) - abs(a[R] - a[R+1])",
+        "How to maximize that formula given that abs(x - y) = max(x - y, y - x) ?",
+        "This can be written as max(max(a[R] - a[L - 1], a[L - 1] - a[R]) + max(a[R + 1] - a[L], a[L] - a[R + 1]) - value(L) - value(R + 1)) over all L < R where value(i) = abs(a[i] - a[i-1])",
+        "This can be divided into 4 cases."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:31:45.960Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.521Z"
+}

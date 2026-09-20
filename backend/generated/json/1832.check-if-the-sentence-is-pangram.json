@@ -1,0 +1,45 @@
+{
+    "quesId": 1832,
+    "title": "Check if the Sentence Is Pangram",
+    "titleSlug": "check-if-the-sentence-is-pangram",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "589.7K",
+        "totalSubmission": "699.3K",
+        "totalAcceptedRaw": 589744,
+        "totalSubmissionRaw": 699292,
+        "acRate": "84.3%",
+        "acRateRaw": 84.33444112044754,
+        "likes": 3059,
+        "dislikes": 68
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1960,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>A <strong>pangram</strong> is a sentence where every letter of the English alphabet appears at least once.</p>\n\n<p>Given a string <code>sentence</code> containing only lowercase English letters, return<em> </em><code>true</code><em> if </em><code>sentence</code><em> is a <strong>pangram</strong>, or </em><code>false</code><em> otherwise.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> sentence = &quot;thequickbrownfoxjumpsoverthelazydog&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> sentence contains at least one of every letter of the English alphabet.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> sentence = &quot;leetcode&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= sentence.length &lt;= 1000</code></li>\n\t<li><code>sentence</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Iterate over the string and mark each character as found (using a boolean array, bitmask, or any other similar way).",
+        "Check if the number of found characters equals the alphabet length."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:54:44.353Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.502Z"
+}

@@ -1,0 +1,53 @@
+{
+    "quesId": 267,
+    "title": "Palindrome Permutation II",
+    "titleSlug": "palindrome-permutation-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "76.5K",
+        "totalSubmission": "180.5K",
+        "totalAcceptedRaw": 76504,
+        "totalSubmissionRaw": 180456,
+        "acRate": "42.4%",
+        "acRateRaw": 42.394822006472495,
+        "likes": 900,
+        "dislikes": 98
+    },
+    "similarQuesIds": [
+        31,
+        47,
+        266
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 267,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "If a palindromic permutation exists, we just need to generate the first half of the string.",
+        "To generate all distinct permutations of a (half of) string, use a similar approach from: <a href=\"/problems/permutations-ii\">Permutations II</a> or <a href=\"/problems/next-permutation\">Next Permutation</a>."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:57:12.866Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.347Z"
+}

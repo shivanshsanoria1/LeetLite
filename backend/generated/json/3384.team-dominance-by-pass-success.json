@@ -1,0 +1,37 @@
+{
+    "quesId": 3384,
+    "title": "Team Dominance by Pass Success",
+    "titleSlug": "team-dominance-by-pass-success",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "1.7K",
+        "totalSubmission": "2.4K",
+        "totalAcceptedRaw": 1697,
+        "totalSubmissionRaw": 2361,
+        "acRate": "71.9%",
+        "acRateRaw": 71.87632359169844,
+        "likes": 5,
+        "dislikes": 0
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3719,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:59:54.148Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.306Z"
+}

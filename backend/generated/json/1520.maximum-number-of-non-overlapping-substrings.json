@@ -1,0 +1,57 @@
+{
+    "quesId": 1520,
+    "title": "Maximum Number of Non-Overlapping Substrings",
+    "titleSlug": "maximum-number-of-non-overlapping-substrings",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "29.1K",
+        "totalSubmission": "65.9K",
+        "totalAcceptedRaw": 29062,
+        "totalSubmissionRaw": 65910,
+        "acRate": "44.1%",
+        "acRateRaw": 44.09430899242919,
+        "likes": 931,
+        "dislikes": 88
+    },
+    "similarQuesIds": [
+        2472
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1644,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Greedy\n\n#### Intuition\n\nThe problem requires that \"if a substring contains a character $c$, then every occurrence of $c$ in $s$ must be inside that substring,\" and we must minimize the final total length. Because non-overlapping valid substrings cannot share characters, there can be at most $\\Sigma$ substrings, where $\\Sigma$ is the size of the character set. Suppose we have found the shortest valid substring $s[l_a, r_a]$ containing character $a$. It may seem that $s[l_a - 1, r_a]$ or $s[l_a, r_a + 1]$ could also be valid, but because the total length must be minimized, we only need to consider the shortest substring containing each character.\n\nThe first step is therefore to preprocess the shortest substring corresponding to every character in the character set. Because the character set is small, we can process this part directly. First, traverse the string to determine the first occurrence $l_i$ and the last occurrence $r_i$ of each character $i$. Because other characters may appear inside $[l_i, r_i]$, to satisfy the second condition of the problem, traverse every character in $[l_i, r_i]$ and expand $l_i$ and $r_i$ to include their first and last occurrences until the boundaries stabilize. This guarantees that if a substring contains a character $c$, every occurrence of $c$ in $s$ is inside that substring.\n\nAfter preprocessing, regard the starting and ending positions of each substring as an interval $[l_i, r_i]$. The problem is transformed into the following: **on a one-dimensional number line $[0, n - 1]$, where $n$ is the length of $s$, select as many mutually disjoint intervals as possible while minimizing their total length**. This is a classic greedy interval scheduling problem. Sort the intervals in ascending order by their right endpoint (primary key) and ascending order by length (secondary key, i.e., larger left endpoint first). Traverse them from left to right, greedily adding an interval whenever its left endpoint is strictly greater than the end position of the previously chosen interval. To see why this is correct, consider two overlapping intervals $[l_1, r_1]$ and $[l_2, r_2]$ with $r_1 < r_2$. Selecting $[l_1, r_1]$ leaves more of the number line available for subsequent intervals. Furthermore, if two intervals share the same right endpoint, choosing the shorter one leaves more space to the left and directly minimizes the total length.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/VL9hDdHa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VL9hDdHa\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string, and let $\\Sigma$ be the size of its character set.\n\n- Time complexity: $O(n\\Sigma + \\Sigma \\log \\Sigma)$.\n\n  Preprocessing the left and right endpoints of every interval takes $O(n\\Sigma)$ time. Greedy selection takes $O(\\Sigma \\log \\Sigma + \\Sigma)$ time. Therefore, the total time complexity is $O(n\\Sigma + \\Sigma \\log \\Sigma)$.\n\n- Space complexity: $O(\\Sigma)$.\n\n  We need $O(\\Sigma)$ space to record the left and right endpoints of the interval containing each character.\n\n---"
+    },
+    "content": "<p>Given a string <code>s</code> of lowercase letters, you need to find the maximum number of <strong>non-empty</strong> substrings of <code>s</code> that meet the following conditions:</p>\n\n<ol>\n\t<li>The substrings do not overlap, that is for any two substrings <code>s[i..j]</code> and <code>s[x..y]</code>, either <code>j &lt; x</code> or <code>i &gt; y</code> is true.</li>\n\t<li>A substring that contains a certain character <code>c</code> must also contain all occurrences of <code>c</code>.</li>\n</ol>\n\n<p>Find <em>the maximum number of substrings that meet the above conditions</em>. If there are multiple solutions with the same number of substrings, <em>return the one with minimum total length. </em>It can be shown that there exists a unique solution of minimum total length.</p>\n\n<p>Notice that you can return the substrings in <strong>any</strong> order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;adefaddaccc&quot;\n<strong>Output:</strong> [&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;]\n<b>Explanation:</b>&nbsp;The following are all the possible substrings that meet the conditions:\n[\n&nbsp; &quot;adefaddaccc&quot;\n&nbsp; &quot;adefadda&quot;,\n&nbsp; &quot;ef&quot;,\n&nbsp; &quot;e&quot;,\n  &quot;f&quot;,\n&nbsp; &quot;ccc&quot;,\n]\nIf we choose the first string, we cannot choose anything else and we&#39;d get only 1. If we choose &quot;adefadda&quot;, we are left with &quot;ccc&quot; which is the only one that doesn&#39;t overlap, thus obtaining 2 substrings. Notice also, that it&#39;s not optimal to choose &quot;ef&quot; since it can be split into two. Therefore, the optimal way is to choose [&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;] which gives us 3 substrings. No other solution of the same number of substrings exist.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abbaccd&quot;\n<strong>Output:</strong> [&quot;d&quot;,&quot;bb&quot;,&quot;cc&quot;]\n<b>Explanation: </b>Notice that while the set of substrings [&quot;d&quot;,&quot;abba&quot;,&quot;cc&quot;] also has length 3, it&#39;s considered incorrect since it has larger total length.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Notice that it's impossible for any two valid substrings to overlap unless one is inside another.",
+        "We can start by finding the starting and ending index for each character.",
+        "From these indices, we can form the substrings by expanding each character's range if necessary (if another character exists in the range with smaller/larger starting/ending index).",
+        "Sort the valid substrings by length and greedily take those with the smallest length, discarding the ones that overlap those we took."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:36:11.912Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.019Z"
+}

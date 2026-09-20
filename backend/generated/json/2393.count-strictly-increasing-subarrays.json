@@ -1,0 +1,51 @@
+{
+    "quesId": 2393,
+    "title": "Count Strictly Increasing Subarrays",
+    "titleSlug": "count-strictly-increasing-subarrays",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.5K",
+        "totalSubmission": "11.9K",
+        "totalAcceptedRaw": 8461,
+        "totalSubmissionRaw": 11935,
+        "acRate": "70.9%",
+        "acRateRaw": 70.89233347297863,
+        "likes": 143,
+        "dislikes": 2
+    },
+    "similarQuesIds": [
+        1800
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2535,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Find the number of strictly increasing subarrays that end at a specific index. Can you calculate that for each index from 0 to n - 1?",
+        "The answer will be the sum of the number of subarrays that end at each index."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:05.018Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.478Z"
+}

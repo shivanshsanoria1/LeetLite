@@ -1,0 +1,45 @@
+{
+    "quesId": 3616,
+    "title": "Number of Student Replacements",
+    "titleSlug": "number-of-student-replacements",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.2K",
+        "totalSubmission": "1.4K",
+        "totalAcceptedRaw": 1213,
+        "totalSubmissionRaw": 1413,
+        "acRate": "85.8%",
+        "acRateRaw": 85.84571832979476,
+        "likes": 5,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "exampleTestcases": "[4,1,2]\n[2,2,3]",
+    "meta": {
+        "quesIdLCBackend": 3960,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Iterate through the array from left to right, keeping track of the current best (minimum) rank.",
+        "Whenever you see an element strictly lower than your current best, update the best to that element and increment the replacement count."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:54:58.526Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.627Z"
+}

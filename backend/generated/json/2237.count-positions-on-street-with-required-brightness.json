@@ -1,0 +1,48 @@
+{
+    "quesId": 2237,
+    "title": "Count Positions on Street With Required Brightness",
+    "titleSlug": "count-positions-on-street-with-required-brightness",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.6K",
+        "totalSubmission": "8.9K",
+        "totalAcceptedRaw": 5589,
+        "totalSubmissionRaw": 8949,
+        "acRate": "62.5%",
+        "acRateRaw": 62.45390546429769,
+        "likes": 90,
+        "dislikes": 6
+    },
+    "similarQuesIds": [
+        370,
+        2021,
+        2536
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2385,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "How can we find the brightness at every position on the street?",
+        "We can use a hash table to store the change in brightness from the previous position to the current position."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:21:56.236Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.285Z"
+}

@@ -1,0 +1,46 @@
+{
+    "quesId": 3300,
+    "title": "Minimum Element After Replacement With Digit Sum",
+    "titleSlug": "minimum-element-after-replacement-with-digit-sum",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "214.7K",
+        "totalSubmission": "240.5K",
+        "totalAcceptedRaw": 214717,
+        "totalSubmissionRaw": 240480,
+        "acRate": "89.3%",
+        "acRateRaw": 89.28693207807653,
+        "likes": 283,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        1945
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3606,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Mathematics\n\n#### Intuition\n\nFor an element $x$, the sum of its digits $\\textit{dig}$ can be calculated as follows:\n\n- Take the last digit of $x$, which is $x \\bmod 10$, and add it to $\\textit{dig}$.\n- Remove the units digit of $x$ by updating $x$ to $\\left\\lfloor \\frac{x}{10} \\right\\rfloor$. This causes the tens digit to become the units digit, the hundreds digit to become the tens digit, and so on.\n- Stop the process when $x$ becomes $0$.\n\nAfter computing $\\textit{dig}$ for each element, we can update the answer $\\textit{ans}$ accordingly.\n\nNote that every element in $\\textit{nums}$ is at most $10^4$, so we can initially set $\\textit{ans}$ to a value greater than $36 = 4 \\times 9$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/GeBmk3bE/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"GeBmk3bE\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$, and let $D = \\max(\\textit{nums}[i])$.\n\n- Time complexity: $O(n\\log D)$.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>You replace each element in <code>nums</code> with the <strong>sum</strong> of its digits.</p>\n\n<p>Return the <strong>minimum</strong> element in <code>nums</code> after all replacements.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [10,12,13,14]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> becomes <code>[1, 3, 4, 5]</code> after all replacements, with minimum element 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> becomes <code>[1, 2, 3, 4]</code> after all replacements, with minimum element 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [999,19,199]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> becomes <code>[27, 10, 19]</code> after all replacements, with minimum element 10.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Convert to string and calculate the sum for each element."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:47.464Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.174Z"
+}

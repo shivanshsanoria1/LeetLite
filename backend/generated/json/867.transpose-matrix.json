@@ -1,0 +1,48 @@
+{
+    "quesId": 867,
+    "title": "Transpose Matrix",
+    "titleSlug": "transpose-matrix",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "660.1K",
+        "totalSubmission": "855.4K",
+        "totalAcceptedRaw": 660102,
+        "totalSubmissionRaw": 855432,
+        "acRate": "77.2%",
+        "acRateRaw": 77.16597656861896,
+        "likes": 4259,
+        "dislikes": 464
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 898,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Copy Directly\n\n**Intuition and Algorithm**\n\nThe transpose of a matrix `A` with dimensions `R x C` is a matrix `ans` with dimensions `C x R` for which `ans[c][r] = A[r][c]`.\n\nLet's initialize a new matrix `ans` representing the answer.  Then, we'll copy each entry of the matrix as appropriate.\n\n<iframe src=\"https://leetcode.com/playground/caa5uZ7X/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"caa5uZ7X\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(R * C)$$, where $$R$$ and $$C$$ are the number of rows and columns in the given matrix `A`.\n\n* Space Complexity:  $$O(R * C)$$, the space used by the answer.\n<br />\n<br />"
+    },
+    "content": "<p>Given a 2D integer array <code>matrix</code>, return <em>the <strong>transpose</strong> of</em> <code>matrix</code>.</p>\n\n<p>The <strong>transpose</strong> of a matrix is the matrix flipped over its main diagonal, switching the matrix&#39;s row and column indices.</p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/10/hint_transpose.png\" style=\"width: 600px; height: 197px;\" /></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> [[1,4,7],[2,5,8],[3,6,9]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6]]\n<strong>Output:</strong> [[1,4],[2,5],[3,6]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 1000</code></li>\n\t<li><code>1 &lt;= m * n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "We don't need any special algorithms to do this. You just need to know what the transpose of a matrix looks like. Rows become columns and vice versa!"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:33:50.664Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.542Z"
+}

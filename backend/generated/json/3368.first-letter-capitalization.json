@@ -1,0 +1,37 @@
+{
+    "quesId": 3368,
+    "title": "First Letter Capitalization",
+    "titleSlug": "first-letter-capitalization",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "1.5K",
+        "totalSubmission": "1.7K",
+        "totalAcceptedRaw": 1483,
+        "totalSubmissionRaw": 1712,
+        "acRate": "86.6%",
+        "acRateRaw": 86.62383177570094,
+        "likes": 6,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3703,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:59:40.832Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.265Z"
+}

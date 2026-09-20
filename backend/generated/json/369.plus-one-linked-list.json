@@ -1,0 +1,45 @@
+{
+    "quesId": 369,
+    "title": "Plus One Linked List",
+    "titleSlug": "plus-one-linked-list",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "88.9K",
+        "totalSubmission": "145.3K",
+        "totalAcceptedRaw": 88882,
+        "totalSubmissionRaw": 145270,
+        "acRate": "61.2%",
+        "acRateRaw": 61.184002202794794,
+        "likes": 968,
+        "dislikes": 48
+    },
+    "similarQuesIds": [
+        66,
+        2816
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 369,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:41.947Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.712Z"
+}

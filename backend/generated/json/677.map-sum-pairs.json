@@ -1,0 +1,53 @@
+{
+    "quesId": 677,
+    "title": "Map Sum Pairs",
+    "titleSlug": "map-sum-pairs",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "146.4K",
+        "totalSubmission": "255.2K",
+        "totalAcceptedRaw": 146367,
+        "totalSubmissionRaw": 255160,
+        "acRate": "57.4%",
+        "acRateRaw": 57.362998263841256,
+        "likes": 1748,
+        "dislikes": 167
+    },
+    "similarQuesIds": [
+        2191,
+        2416
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 677,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Approach #1: Brute Force [Accepted]\n\n**Intuition and Algorithm**\n\nFor each key in the map, if that key starts with the given prefix, then add it to the answer.\n\n<iframe src=\"https://leetcode.com/playground/jNhyy639/shared\" frameBorder=\"0\" name=\"jNhyy639\" width=\"100%\" height=\"360\"></iframe>\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(1)$$. Every sum operation is $$O(N * P)$$ where $$N$$ is the number of items in the map, and $$P$$ is the length of the input prefix.\n\n* Space Complexity: The space used by `map` is linear in the size of all input `key` and `val` values combined.\n\n---\n\n### Approach #2: Prefix Hashmap [Accepted]\n\n**Intuition and Algorithm**\n\nWe can remember the answer for all possible prefixes in a HashMap `score`. When we get a new `(key, val)` pair, we update every prefix of `key` appropriately: each prefix will be changed by `delta = val - map[key]`, where `map` is the previously associated value of `key` (zero if undefined.)\n\n\n<iframe src=\"https://leetcode.com/playground/QYzALHGM/shared\" frameBorder=\"0\" name=\"QYzALHGM\" width=\"100%\" height=\"394\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(K^2)$$, where $$K$$ is the length of the key, as $$K$$ strings are made of an average length of $$K$$.  Every sum operation is $$O(1)$$.\n\n* Space Complexity: The space used by `map` and `score` is linear in the size of all input `key` and `val` values combined.\n\n---\n\n### Approach #3: Trie [Accepted]\n\n**Intuition and Algorithm**\n\nSince we are dealing with prefixes, a Trie (prefix tree) is a natural data structure to approach this problem. For every node of the trie corresponding to some prefix, we will remember the desired answer (score) and store it at this node.  As in *Approach #2*, this involves modifying each node by `delta = val - map[key]`.\n\n<iframe src=\"https://leetcode.com/playground/FbmbbgFJ/shared\" frameBorder=\"0\" name=\"FbmbbgFJ\" width=\"100%\" height=\"513\"></iframe>\n\n\n\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(K)$$, where $$K$$ is the length of the key. Every sum operation is $$O(K)$$.\n\n* Space Complexity: The space used is linear in the size of the total input."
+    },
+    "content": "<p>Design a map that allows you to do the following:</p>\n\n<ul>\n\t<li>Maps a string key to a given value.</li>\n\t<li>Returns the sum of the values that have a key with a prefix equal to a given string.</li>\n</ul>\n\n<p>Implement the <code>MapSum</code> class:</p>\n\n<ul>\n\t<li><code>MapSum()</code> Initializes the <code>MapSum</code> object.</li>\n\t<li><code>void insert(String key, int val)</code> Inserts the <code>key-val</code> pair into the map. If the <code>key</code> already existed, the original <code>key-value</code> pair will be overridden to the new one.</li>\n\t<li><code>int sum(string prefix)</code> Returns the sum of all the pairs&#39; value whose <code>key</code> starts with the <code>prefix</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MapSum&quot;, &quot;insert&quot;, &quot;sum&quot;, &quot;insert&quot;, &quot;sum&quot;]\n[[], [&quot;apple&quot;, 3], [&quot;ap&quot;], [&quot;app&quot;, 2], [&quot;ap&quot;]]\n<strong>Output</strong>\n[null, null, 3, null, 5]\n\n<strong>Explanation</strong>\nMapSum mapSum = new MapSum();\nmapSum.insert(&quot;apple&quot;, 3);  \nmapSum.sum(&quot;ap&quot;);           // return 3 (<u>ap</u>ple = 3)\nmapSum.insert(&quot;app&quot;, 2);    \nmapSum.sum(&quot;ap&quot;);           // return 5 (<u>ap</u>ple + <u>ap</u>p = 3 + 2 = 5)\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= key.length, prefix.length &lt;= 50</code></li>\n\t<li><code>key</code> and <code>prefix</code> consist of only lowercase English letters.</li>\n\t<li><code>1 &lt;= val &lt;= 1000</code></li>\n\t<li>At most <code>50</code> calls will be made to <code>insert</code> and <code>sum</code>.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:18.529Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.227Z"
+}

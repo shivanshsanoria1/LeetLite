@@ -1,0 +1,48 @@
+{
+    "quesId": 418,
+    "title": "Sentence Screen Fitting",
+    "titleSlug": "sentence-screen-fitting",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "107.6K",
+        "totalSubmission": "295.6K",
+        "totalAcceptedRaw": 107645,
+        "totalSubmissionRaw": 295568,
+        "acRate": "36.4%",
+        "acRateRaw": 36.41970714015049,
+        "likes": 1144,
+        "dislikes": 543
+    },
+    "similarQuesIds": [
+        2052,
+        2468
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 418,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:06:26.379Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.899Z"
+}

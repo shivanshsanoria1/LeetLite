@@ -1,0 +1,41 @@
+{
+    "quesId": 2238,
+    "title": "Number of Times a Driver Was a Passenger",
+    "titleSlug": "number-of-times-a-driver-was-a-passenger",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "11.7K",
+        "totalSubmission": "16.3K",
+        "totalAcceptedRaw": 11720,
+        "totalSubmissionRaw": 16347,
+        "acRate": "71.7%",
+        "acRateRaw": 71.69511225301278,
+        "likes": 73,
+        "dislikes": 6
+    },
+    "similarQuesIds": [
+        1635,
+        1645,
+        1651
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2376,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:21:56.931Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.286Z"
+}

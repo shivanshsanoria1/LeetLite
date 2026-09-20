@@ -1,0 +1,48 @@
+{
+    "quesId": 3688,
+    "title": "Bitwise OR of Even Numbers in an Array",
+    "titleSlug": "bitwise-or-of-even-numbers-in-an-array",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "78.6K",
+        "totalSubmission": "92.6K",
+        "totalAcceptedRaw": 78573,
+        "totalSubmissionRaw": 92629,
+        "acRate": "84.8%",
+        "acRateRaw": 84.82581425224816,
+        "likes": 45,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "exampleTestcases": "[1,2,3,4,5,6]\n[7,9,11]\n[1,8,16]",
+    "meta": {
+        "quesIdLCBackend": 4009,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>Return the bitwise <strong>OR</strong> of all <strong>even</strong> numbers in the array.</p>\n\n<p>If there are no even numbers in <code>nums</code>, return 0.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4,5,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The even numbers are 2, 4, and 6. Their bitwise OR equals 6.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [7,9,11]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no even numbers, so the result is 0.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,8,16]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">24</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The even numbers are 8 and 16. Their bitwise OR equals 24.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "Simulate as described"
+    ],
+    "LC_SYNC_ISO": "2026-09-14T17:11:54.843Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.711Z"
+}

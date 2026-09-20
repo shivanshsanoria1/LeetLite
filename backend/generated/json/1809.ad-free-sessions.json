@@ -1,0 +1,37 @@
+{
+    "quesId": 1809,
+    "title": "Ad-Free Sessions",
+    "titleSlug": "ad-free-sessions",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20.1K",
+        "totalSubmission": "34K",
+        "totalAcceptedRaw": 20117,
+        "totalSubmissionRaw": 34037,
+        "acRate": "59.1%",
+        "acRateRaw": 59.10332873049916,
+        "likes": 99,
+        "dislikes": 61
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1958,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:54:21.301Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.489Z"
+}

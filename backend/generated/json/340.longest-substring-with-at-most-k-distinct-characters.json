@@ -1,0 +1,53 @@
+{
+    "quesId": 340,
+    "title": "Longest Substring with At Most K Distinct Characters",
+    "titleSlug": "longest-substring-with-at-most-k-distinct-characters",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "405.4K",
+        "totalSubmission": "808.9K",
+        "totalAcceptedRaw": 405443,
+        "totalSubmissionRaw": 808857,
+        "acRate": "50.1%",
+        "acRateRaw": 50.125423590514536,
+        "likes": 2906,
+        "dislikes": 81
+    },
+    "similarQuesIds": [
+        3,
+        159,
+        424,
+        992,
+        1004,
+        2024
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 340,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:58:13.757Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.316Z"
+}

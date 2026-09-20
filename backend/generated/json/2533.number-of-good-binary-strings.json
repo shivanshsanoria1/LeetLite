@@ -1,0 +1,42 @@
+{
+    "quesId": 2533,
+    "title": "Number of Good Binary Strings",
+    "titleSlug": "number-of-good-binary-strings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.9K",
+        "totalSubmission": "14.9K",
+        "totalAcceptedRaw": 7903,
+        "totalSubmissionRaw": 14934,
+        "acRate": "52.9%",
+        "acRateRaw": 52.91951252176242,
+        "likes": 58,
+        "dislikes": 23
+    },
+    "similarQuesIds": [
+        761
+    ],
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2672,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "If we maintain DP(i, x) where i denotes the length and x denotes the last written integer (0 or 1), then it is not hard to solve in O(maxLength * max(zeroGroup, oneGroup)).",
+        "Notice that from DP(i, 0) we only have a transition to DP(j, 1) where (j - i) mod oneGroup == 0 and j > i. Similarly with DP(i,1). So we can use prefix sum to optimize our DP and solve it in O(maxLength)."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:38:55.981Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.074Z"
+}

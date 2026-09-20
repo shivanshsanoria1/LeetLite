@@ -1,0 +1,33 @@
+{
+    "quesId": 2803,
+    "title": "Factorial Generator",
+    "titleSlug": "factorial-generator",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "1.7K",
+        "totalSubmission": "2K",
+        "totalAcceptedRaw": 1712,
+        "totalSubmissionRaw": 2029,
+        "acRate": "84.4%",
+        "acRateRaw": 84.37654016757024,
+        "likes": 20,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2901,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:44:39.731Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.517Z"
+}

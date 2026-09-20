@@ -1,0 +1,50 @@
+{
+    "quesId": 1182,
+    "title": "Shortest Distance to Target Color",
+    "titleSlug": "shortest-distance-to-target-color",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.6K",
+        "totalSubmission": "73.6K",
+        "totalAcceptedRaw": 41614,
+        "totalSubmissionRaw": 73582,
+        "acRate": "56.6%",
+        "acRateRaw": 56.55459215569025,
+        "likes": 539,
+        "dislikes": 22
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1134,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Greedy solution is too slow because of the limits.",
+        "Can you solve this problem offline by doing some pre-processing?",
+        "Calculate the answers for all indexes moving to their left and to their right."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:28:19.912Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.549Z"
+}

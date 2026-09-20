@@ -1,0 +1,37 @@
+{
+    "quesId": 1867,
+    "title": "Orders With Maximum Quantity Above Average",
+    "titleSlug": "orders-with-maximum-quantity-above-average",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20K",
+        "totalSubmission": "28.3K",
+        "totalAcceptedRaw": 19998,
+        "totalSubmissionRaw": 28333,
+        "acRate": "70.6%",
+        "acRateRaw": 70.58200684713938,
+        "likes": 79,
+        "dislikes": 283
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2014,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:55:22.139Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.524Z"
+}

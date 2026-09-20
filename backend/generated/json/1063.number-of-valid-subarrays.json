@@ -1,0 +1,51 @@
+{
+    "quesId": 1063,
+    "title": "Number of Valid Subarrays",
+    "titleSlug": "number-of-valid-subarrays",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "20.4K",
+        "totalSubmission": "25.6K",
+        "totalAcceptedRaw": 20433,
+        "totalSubmissionRaw": 25562,
+        "acRate": "79.9%",
+        "acRateRaw": 79.93505985447148,
+        "likes": 339,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        2110
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1061,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Given a data structure that answers queries of the type to find the minimum in a range of an array (Range minimum query (RMQ) sparse table) in O(1) time. How can you solve this problem?",
+        "For each starting index do a binary search with an RMQ to find the ending possible position."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:26.888Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.024Z"
+}

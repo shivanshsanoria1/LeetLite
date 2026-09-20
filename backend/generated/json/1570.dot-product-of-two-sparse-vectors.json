@@ -1,0 +1,56 @@
+{
+    "quesId": 1570,
+    "title": "Dot Product of Two Sparse Vectors",
+    "titleSlug": "dot-product-of-two-sparse-vectors",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "408.8K",
+        "totalSubmission": "454.9K",
+        "totalAcceptedRaw": 408828,
+        "totalSubmissionRaw": 454913,
+        "acRate": "89.9%",
+        "acRateRaw": 89.86949152914953,
+        "likes": 1315,
+        "dislikes": 170
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Linear Algebra",
+            "slug": "linear-algebra"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1713,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Because the vector is sparse, use a data structure that stores the index and value where the element is nonzero."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:37:22.426Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.056Z"
+}

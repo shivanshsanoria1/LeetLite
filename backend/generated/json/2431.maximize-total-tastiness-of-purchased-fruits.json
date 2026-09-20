@@ -1,0 +1,45 @@
+{
+    "quesId": 2431,
+    "title": "Maximize Total Tastiness of Purchased Fruits",
+    "titleSlug": "maximize-total-tastiness-of-purchased-fruits",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.2K",
+        "totalSubmission": "6.5K",
+        "totalAcceptedRaw": 4158,
+        "totalSubmissionRaw": 6465,
+        "acRate": "64.3%",
+        "acRateRaw": 64.31554524361948,
+        "likes": 57,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2570,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "We have multiple options within the given budget. Trying all of them will take exponential time. How can we improve that?",
+        "We can use dynamic programming to speed up the algorithm.",
+        "We have three options for each fruit. To skip it, to buy it with a coupon, or to buy it without a coupon."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:35.642Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.560Z"
+}

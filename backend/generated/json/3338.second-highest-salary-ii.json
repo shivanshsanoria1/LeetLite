@@ -1,0 +1,37 @@
+{
+    "quesId": 3338,
+    "title": "Second Highest Salary II",
+    "titleSlug": "second-highest-salary-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.4K",
+        "totalSubmission": "3.9K",
+        "totalAcceptedRaw": 3391,
+        "totalSubmissionRaw": 3933,
+        "acRate": "86.2%",
+        "acRateRaw": 86.21917111619629,
+        "likes": 13,
+        "dislikes": 0
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3660,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:59:16.247Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.200Z"
+}

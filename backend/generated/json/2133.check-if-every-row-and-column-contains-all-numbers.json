@@ -1,0 +1,52 @@
+{
+    "quesId": 2133,
+    "title": "Check if Every Row and Column Contains All Numbers",
+    "titleSlug": "check-if-every-row-and-column-contains-all-numbers",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "122.8K",
+        "totalSubmission": "226K",
+        "totalAcceptedRaw": 122833,
+        "totalSubmissionRaw": 226007,
+        "acRate": "54.3%",
+        "acRateRaw": 54.349201573402595,
+        "likes": 1105,
+        "dislikes": 58
+    },
+    "similarQuesIds": [
+        36,
+        1572,
+        2661
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2254,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>An <code>n x n</code> matrix is <strong>valid</strong> if every row and every column contains <strong>all</strong> the integers from <code>1</code> to <code>n</code> (<strong>inclusive</strong>).</p>\n\n<p>Given an <code>n x n</code> integer matrix <code>matrix</code>, return <code>true</code> <em>if the matrix is <strong>valid</strong>.</em> Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/21/example1drawio.png\" style=\"width: 250px; height: 251px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[3,1,2],[2,3,1]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> In this case, n = 3, and every row and column contains the numbers 1, 2, and 3.\nHence, we return true.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/21/example2drawio.png\" style=\"width: 250px; height: 251px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,1,1],[1,2,3],[1,2,3]]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> In this case, n = 3, but the first row and the first column do not contain the numbers 2 or 3.\nHence, we return false.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == matrix.length == matrix[i].length</code></li>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>1 &lt;= matrix[i][j] &lt;= n</code></li>\n</ul>\n",
+    "hints": [
+        "Use for loops to check each row for every number from 1 to n. Similarly, do the same for each column.",
+        "For each check, you can keep a set of the unique elements in the checked row/col. By the end of the check, the size of the set should be n."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:47.384Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.092Z"
+}

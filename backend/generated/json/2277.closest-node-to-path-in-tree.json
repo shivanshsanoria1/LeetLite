@@ -1,0 +1,56 @@
+{
+    "quesId": 2277,
+    "title": "Closest Node to Path in Tree",
+    "titleSlug": "closest-node-to-path-in-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "6.9K",
+        "totalSubmission": "11.1K",
+        "totalAcceptedRaw": 6910,
+        "totalSubmissionRaw": 11121,
+        "acRate": "62.1%",
+        "acRateRaw": 62.13470011689596,
+        "likes": 143,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        2581,
+        2642
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2420,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "For the ith query, find the distance from node_i to every other node in the tree.",
+        "We can use a BFS to find the distances.",
+        "Use DFS to find all the nodes on the path from start_i to end_i."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:22:30.375Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.325Z"
+}

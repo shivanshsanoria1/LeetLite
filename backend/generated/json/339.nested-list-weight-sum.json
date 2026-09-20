@@ -1,0 +1,46 @@
+{
+    "quesId": 339,
+    "title": "Nested List Weight Sum",
+    "titleSlug": "nested-list-weight-sum",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "419.2K",
+        "totalSubmission": "487.5K",
+        "totalAcceptedRaw": 419230,
+        "totalSubmissionRaw": 487533,
+        "acRate": "86.0%",
+        "acRateRaw": 85.99007656917583,
+        "likes": 1875,
+        "dislikes": 487
+    },
+    "similarQuesIds": [
+        364,
+        565,
+        690
+    ],
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 339,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:58:13.120Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.310Z"
+}

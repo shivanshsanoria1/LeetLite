@@ -1,0 +1,37 @@
+{
+    "quesId": 3252,
+    "title": "Premier League Table Ranking II",
+    "titleSlug": "premier-league-table-ranking-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.3K",
+        "totalSubmission": "4.1K",
+        "totalAcceptedRaw": 2263,
+        "totalSubmissionRaw": 4057,
+        "acRate": "55.8%",
+        "acRateRaw": 55.78013310327828,
+        "likes": 11,
+        "dislikes": 12
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3564,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:58:09.049Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.081Z"
+}

@@ -1,0 +1,56 @@
+{
+    "quesId": 1086,
+    "title": "High Five",
+    "titleSlug": "high-five",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "125.6K",
+        "totalSubmission": "169.3K",
+        "totalAcceptedRaw": 125557,
+        "totalSubmissionRaw": 169335,
+        "acRate": "74.1%",
+        "acRateRaw": 74.14653446636629,
+        "likes": 830,
+        "dislikes": 131
+    },
+    "similarQuesIds": [
+        2660
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1074,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "How can we solve the problem if we have just one student?",
+        "Given an student sort their grades and get the top 5 average.",
+        "Generalize the idea to do it for many students."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:43.967Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.095Z"
+}

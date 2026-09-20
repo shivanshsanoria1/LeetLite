@@ -1,0 +1,50 @@
+{
+    "quesId": 366,
+    "title": "Find Leaves of Binary Tree",
+    "titleSlug": "find-leaves-of-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "291.8K",
+        "totalSubmission": "358.7K",
+        "totalAcceptedRaw": 291835,
+        "totalSubmissionRaw": 358688,
+        "acRate": "81.4%",
+        "acRateRaw": 81.3617963243822,
+        "likes": 3311,
+        "dislikes": 64
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 366,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:39.377Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.694Z"
+}

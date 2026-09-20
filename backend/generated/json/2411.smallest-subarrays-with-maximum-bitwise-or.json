@@ -1,0 +1,59 @@
+{
+    "quesId": 2411,
+    "title": "Smallest Subarrays With Maximum Bitwise OR",
+    "titleSlug": "smallest-subarrays-with-maximum-bitwise-or",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "96.5K",
+        "totalSubmission": "155.8K",
+        "totalAcceptedRaw": 96458,
+        "totalSubmissionRaw": 155776,
+        "acRate": "61.9%",
+        "acRateRaw": 61.920963434675436,
+        "likes": 1060,
+        "dislikes": 73
+    },
+    "similarQuesIds": [
+        23,
+        898,
+        2419
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2498,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nFor the elements $\\textit{nums}[i]$ in the array, their range is $[0, 10^9]$, and they can contain up to $31$ binary bits.\n\nFor the $\\textit{bit}$-th binary digit:\n\n- If it is $1$, then after performing a bitwise OR operation with any number, this binary bit remains $1$, so it has no effect.\n\n- If it is $0$, then we need to find the smallest $j$ such that $j > i$ and the $\\textit{bit}$-th binary digit of $\\textit{nums}[j]$ is $1$. This way, we can achieve the maximum value through bitwise OR operations. Note that such a $j$ may not exist.\n\nTherefore, we can traverse the array $\\textit{nums}$ in descending order of index, while using an array $\\textit{pos}$ to record the most recent position where each binary bit was set to $1$ (if no such position exists, it is initialized to $-1$). When we reach $\\textit{nums}[i]$, for its $\\textit{bit}$-th binary digit:\n\n- If it is $1$, we update $\\textit{pos}[\\textit{bit}]$ to $i$.\n\n- If it is $0$ and $\\textit{pos}[\\textit{bit}]$ is not $-1$, then to obtain the maximum bitwise OR value with $i$ as the left boundary, the right boundary must be at least $\\textit{pos}[\\textit{bit}]$.\n\nIn this way, we can sequentially determine the minimum right boundary for each $i$ as the left boundary, and thus obtain the minimum length of the subarray.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/MtQ225Fj/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"MtQ225Fj\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$, and let $C$ be the range of elements in the array $\\textit{nums}$.\n\n- Time complexity: $O(n \\times \\log C)$.\n  \n  We enumerate the binary bits of each element, and each element has $\\log C$ binary bits.\n\n- Space complexity: $O(\\log C)$\n  \n  This is the space required for the array $\\textit{pos}$."
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> array <code>nums</code> of length <code>n</code>, consisting of non-negative integers. For each index <code>i</code> from <code>0</code> to <code>n - 1</code>, you must determine the size of the <strong>minimum sized</strong> non-empty subarray of <code>nums</code> starting at <code>i</code> (<strong>inclusive</strong>) that has the <strong>maximum</strong> possible <strong>bitwise OR</strong>.</p>\n\n<ul>\n\t<li>In other words, let <code>B<sub>ij</sub></code> be the bitwise OR of the subarray <code>nums[i...j]</code>. You need to find the smallest subarray starting at <code>i</code>, such that bitwise OR of this subarray is equal to <code>max(B<sub>ik</sub>)</code> where <code>i &lt;= k &lt;= n - 1</code>.</li>\n</ul>\n\n<p>The bitwise OR of an array is the bitwise OR of all the numbers in it.</p>\n\n<p>Return <em>an integer array </em><code>answer</code><em> of size </em><code>n</code><em> where </em><code>answer[i]</code><em> is the length of the <strong>minimum</strong> sized subarray starting at </em><code>i</code><em> with <strong>maximum</strong> bitwise OR.</em></p>\n\n<p>A <strong>subarray</strong> is a contiguous non-empty sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,0,2,1,3]\n<strong>Output:</strong> [3,3,2,2,1]\n<strong>Explanation:</strong>\nThe maximum possible bitwise OR starting at any index is 3. \n- Starting at index 0, the shortest subarray that yields it is [1,0,2].\n- Starting at index 1, the shortest subarray that yields the maximum bitwise OR is [0,2,1].\n- Starting at index 2, the shortest subarray that yields the maximum bitwise OR is [2,1].\n- Starting at index 3, the shortest subarray that yields the maximum bitwise OR is [1,3].\n- Starting at index 4, the shortest subarray that yields the maximum bitwise OR is [3].\nTherefore, we return [3,3,2,2,1]. \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2]\n<strong>Output:</strong> [2,1]\n<strong>Explanation:\n</strong>Starting at index 0, the shortest subarray that yields the maximum bitwise OR is of length 2.\nStarting at index 1, the shortest subarray that yields the maximum bitwise OR is of length 1.\nTherefore, we return [2,1].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Consider trying to solve the problem for each bit position separately.",
+        "For each bit position, find the position of the next number that has a 1 in that position, if any.",
+        "Take the maximum distance to such a number, including the current number.",
+        "Iterate backwards to achieve a linear complexity."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:24:20.282Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.542Z"
+}

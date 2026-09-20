@@ -1,0 +1,50 @@
+{
+    "quesId": 487,
+    "title": "Max Consecutive Ones II",
+    "titleSlug": "max-consecutive-ones-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "186.9K",
+        "totalSubmission": "358.6K",
+        "totalAcceptedRaw": 186948,
+        "totalSubmissionRaw": 358577,
+        "acRate": "52.1%",
+        "acRateRaw": 52.136082347724475,
+        "likes": 1615,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        485,
+        1004,
+        2155
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 487,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:07:26.594Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.950Z"
+}

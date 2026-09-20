@@ -1,0 +1,37 @@
+{
+    "quesId": 1241,
+    "title": "Number of Comments per Post",
+    "titleSlug": "number-of-comments-per-post",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "41.9K",
+        "totalSubmission": "63.9K",
+        "totalAcceptedRaw": 41855,
+        "totalSubmissionRaw": 63930,
+        "acRate": "65.5%",
+        "acRateRaw": 65.47004536211482,
+        "likes": 188,
+        "dislikes": 547
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1377,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:29:28.804Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.960Z"
+}

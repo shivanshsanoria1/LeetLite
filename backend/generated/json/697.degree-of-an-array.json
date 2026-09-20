@@ -1,0 +1,46 @@
+{
+    "quesId": 697,
+    "title": "Degree of an Array",
+    "titleSlug": "degree-of-an-array",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "291.3K",
+        "totalSubmission": "496.8K",
+        "totalAcceptedRaw": 291318,
+        "totalSubmissionRaw": 496756,
+        "acRate": "58.6%",
+        "acRateRaw": 58.64408280926652,
+        "likes": 3313,
+        "dislikes": 1816
+    },
+    "similarQuesIds": [
+        53
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 697,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Approach #1: Left and Right Index [Accepted]\n\n**Intuition and Algorithm**\n\nAn array that has degree `d`, must have some element `x` occur `d` times.  If some subarray has the same degree, then some element `x` (that occurred `d` times), still occurs `d` times. The shortest such subarray would be from the first occurrence of `x` until the last occurrence.\n\nFor each element in the given array, let's know `left`, the index of its first occurrence; and `right`, the index of its last occurrence. For example, with `nums = [1,2,3,2,5]` we have `left[2] = 1` and `right[2] = 3`.\n\nThen, for each element `x` that occurs the maximum number of times, `right[x] - left[x] + 1` will be our candidate answer, and we'll take the minimum of those candidates.\n\n**Python**\n```python\nclass Solution(object):\n    def findShortestSubArray(self, nums):\n        left, right, count = {}, {}, {}\n        for i, x in enumerate(nums):\n            if x not in left:\n                left[x] = i\n            right[x] = i\n            count[x] = count.get(x, 0) + 1\n\n        ans = len(nums)\n        degree = max(count.values())\n        for x in count:\n            if count[x] == degree:\n                ans = min(ans, right[x] - left[x] + 1)\n\n        return ans\n```\n\n**Java**\n```java\nclass Solution {\n    public int findShortestSubArray(int[] nums) {\n        Map<Integer, Integer> left = new HashMap(),\n            right = new HashMap(), count = new HashMap();\n\n        for (int i = 0; i < nums.length; i++) {\n            int x = nums[i];\n            if (left.get(x) == null) {\n                left.put(x, I);\n            }\n            right.put(x, i);\n            count.put(x, count.getOrDefault(x, 0) + 1);\n        }\n\n        int ans = nums.length;\n        int degree = Collections.max(count.values());\n        for (int x: count.keySet()) {\n            if (count.get(x) == degree) {\n                ans = Math.min(ans, right.get(x) - left.get(x) + 1);\n            }\n        }\n        return ans;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `nums`. Every loop is through $$O(N)$$ items with $$O(1)$$ work inside the for-block.\n\n* Space Complexity: $$O(N)$$, the space used by `left`, `right`, and `count`."
+    },
+    "content": "<p>Given a non-empty array of non-negative integers <code>nums</code>, the <b>degree</b> of this array is defined as the maximum frequency of any one of its elements.</p>\n\n<p>Your task is to find the smallest possible length of a (contiguous) subarray of <code>nums</code>, that has the same degree as <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,3,1]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> \nThe input array has a degree of 2 because both elements 1 and 2 appear twice.\nOf the subarrays that have the same degree:\n[1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]\nThe shortest length is 2. So return 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,3,1,4,2]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> \nThe degree is 3 because the element 2 is repeated 3 times.\nSo [2,2,3,1,4,2] is the shortest subarray, therefore returning 6.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>nums.length</code> will be between 1 and 50,000.</li>\n\t<li><code>nums[i]</code> will be an integer between 0 and 49,999.</li>\n</ul>\n",
+    "hints": [
+        "Say 5 is the only element that occurs the most number of times - for example, nums = [1, 5, 2, 3, 5, 4, 5, 6].  What is the answer?"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:32.221Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.241Z"
+}

@@ -1,0 +1,47 @@
+{
+    "quesId": 3073,
+    "title": "Maximum Increasing Triplet Value",
+    "titleSlug": "maximum-increasing-triplet-value",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.5K",
+        "totalSubmission": "4.1K",
+        "totalAcceptedRaw": 1468,
+        "totalSubmissionRaw": 4070,
+        "acRate": "36.1%",
+        "acRateRaw": 36.06879606879607,
+        "likes": 22,
+        "dislikes": 8
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3378,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "For each element, define <code>right[i]</code> as the value of the greatest element with an index greater than <code>i</code>.",
+        "Start iterating from the beginning, define a set containing the elements seen so far.",
+        "When you are at index <code>i</code>, use binary search on the set to find the greatest element on the left of index <code>i</code> that is smaller than <code>nums[i]</code> and name it <code>greatest_left</code>.",
+        "Also check that <code>nums[i] < right[i]</code>.",
+        "If the above conditions hold, then <code>ans = max(ans, greatest_left - nums[i] + right[i])</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:48:25.719Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.874Z"
+}

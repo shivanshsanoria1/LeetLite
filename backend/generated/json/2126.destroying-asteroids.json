@@ -1,0 +1,53 @@
+{
+    "quesId": 2126,
+    "title": "Destroying Asteroids",
+    "titleSlug": "destroying-asteroids",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "185.9K",
+        "totalSubmission": "310.7K",
+        "totalAcceptedRaw": 185912,
+        "totalSubmissionRaw": 310678,
+        "acRate": "59.8%",
+        "acRateRaw": 59.84099394875756,
+        "likes": 815,
+        "dislikes": 216
+    },
+    "similarQuesIds": [
+        735
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2245,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Greedy\n\n#### Intuition\n\n**Hint $1$**\n\nDestroying the smaller asteroid first allows us to destroy more asteroids.\n\n**Hint $1$ Explanation**\n\nAssume the mass of the smaller asteroid is $m_1$, and the mass of the larger asteroid is $m_2$.\n\nThe necessary and sufficient condition for destroying the smaller asteroid first is:\n\n$$\n\\textit{mass} \\ge m_1.\n$$\n\nAfter destroying it, the planet's mass becomes $\\textit{mass} + m_1$. Therefore, the necessary and sufficient condition for subsequently destroying the larger asteroid is:\n\n$$\n\\textit{mass} + m_1 \\ge m_2.\n$$\n\nCombining the above conditions, the necessary and sufficient condition for being able to destroy both asteroids is:\n\n$$\n\\textit{mass} \\ge \\max(m_1, m_2 - m_1).\n$$\n\nNow consider the opposite strategy, where we attempt to destroy the larger asteroid first.\n\nThe necessary and sufficient condition for destroying the first asteroid is:\n\n$$\n\\textit{mass} \\ge m_2.\n$$\n\nAfter destroying it, the planet's mass becomes $\\textit{mass} + m_2$. The necessary and sufficient condition for destroying both asteroids is therefore:\n\n$$\n\\textit{mass} \\ge \\max(m_2, m_1 - m_2).\n$$\n\nSince $m_1 < m_2$, we have:\n\n$$\nm_1 - m_2 < 0,\n$$\n\nso the above expression simplifies to:\n\n$$\n\\textit{mass} \\ge m_2.\n$$\n\nAlso, since $m_1 < m_2$, it is clear that:\n\n$$\nm_2 > \\max(m_1, m_2 - m_1).\n$$\n\nTherefore, prioritizing the destruction of smaller asteroids requires less initial planetary mass. This means that destroying asteroids in ascending order of mass allows us to destroy the maximum number of asteroids.\n\nBased on the above observation, we sort the array $\\textit{asteroids}$ in ascending order and simulate the process from left to right while maintaining the current planetary mass $\\textit{mass}$.\n\nSpecifically, when traversing to index $i$, there are two possible cases:\n\n* If $\\textit{mass} \\ge \\textit{asteroids}[i]$, the planet can destroy the asteroid, and the planet's mass becomes $\\textit{mass} + \\textit{asteroids}[i]$ afterward.\n\n* If $\\textit{mass} < \\textit{asteroids}[i]$, the planet cannot destroy the asteroid, so we return $\\texttt{false}$.\n\nIf the traversal completes successfully, it means all asteroids can be destroyed, and we return $\\texttt{true}$.\n\n>Note: The total mass of all asteroids may exceed the range of a signed 32-bit integer. Therefore, in languages such as $\\texttt{C++}$, we should use a 64-bit integer type to maintain the planet's mass.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/nq89nSAp/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"nq89nSAp\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{asteroids}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  Sorting the array $\\textit{asteroids}$ takes $O(n \\log n)$ time, and the traversal takes $O(n)$ time.\n\n- Space complexity: $O(\\log n)$.\n  \n  This is the auxiliary stack space used by the sorting algorithm.\n\n---"
+    },
+    "content": "<p>You are given an integer <code>mass</code>, which represents the original mass of a planet. You are further given an integer array <code>asteroids</code>, where <code>asteroids[i]</code> is the mass of the <code>i<sup>th</sup></code> asteroid.</p>\n\n<p>You can arrange for the planet to collide with the asteroids in <strong>any arbitrary order</strong>. If the mass of the planet is <b>greater than or equal to</b> the mass of the asteroid, the asteroid is <strong>destroyed</strong> and the planet <strong>gains</strong> the mass of the asteroid. Otherwise, the planet is destroyed.</p>\n\n<p>Return <code>true</code><em> if <strong>all</strong> asteroids can be destroyed. Otherwise, return </em><code>false</code><em>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> mass = 10, asteroids = [3,9,19,5,21]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One way to order the asteroids is [9,19,5,3,21]:\n- The planet collides with the asteroid with a mass of 9. New planet mass: 10 + 9 = 19\n- The planet collides with the asteroid with a mass of 19. New planet mass: 19 + 19 = 38\n- The planet collides with the asteroid with a mass of 5. New planet mass: 38 + 5 = 43\n- The planet collides with the asteroid with a mass of 3. New planet mass: 43 + 3 = 46\n- The planet collides with the asteroid with a mass of 21. New planet mass: 46 + 21 = 67\nAll asteroids are destroyed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> mass = 5, asteroids = [4,9,23,4]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> \nThe planet cannot ever gain enough mass to destroy the asteroid with a mass of 23.\nAfter the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22.\nThis is less than 23, so a collision would not destroy the last asteroid.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= mass &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= asteroids.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= asteroids[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Choosing the asteroid to collide with can be done greedily.",
+        "If an asteroid will destroy the planet, then every bigger asteroid will also destroy the planet.",
+        "You only need to check the smallest asteroid at each collision. If it will destroy the planet, then every other asteroid will also destroy the planet.",
+        "Sort the asteroids in non-decreasing order by mass, then greedily try to collide with the asteroids in that order."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:41.592Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.083Z"
+}

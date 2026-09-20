@@ -1,0 +1,37 @@
+{
+    "quesId": 194,
+    "title": "Transpose File",
+    "titleSlug": "transpose-file",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Shell",
+    "stats": {
+        "totalAccepted": "49.7K",
+        "totalSubmission": "148.6K",
+        "totalAcceptedRaw": 49670,
+        "totalSubmissionRaw": 148595,
+        "acRate": "33.4%",
+        "acRateRaw": 33.42642753793869,
+        "likes": 166,
+        "dislikes": 291
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Shell",
+            "slug": "shell"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 194,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>Given a text file <code>file.txt</code>, transpose its content.</p>\n\n<p>You may assume that each row has the same number of columns, and each field is separated by the <code>&#39; &#39;</code> character.</p>\n\n<p><strong class=\"example\">Example:</strong></p>\n\n<p>If <code>file.txt</code> has the following content:</p>\n\n<pre>\nname age\nalice 21\nryan 30\n</pre>\n\n<p>Output the following:</p>\n\n<pre>\nname alice ryan\nage 21 30\n</pre>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:03.087Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.778Z"
+}

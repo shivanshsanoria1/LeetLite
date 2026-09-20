@@ -1,0 +1,38 @@
+{
+    "quesId": 2668,
+    "title": "Find Latest Salaries",
+    "titleSlug": "find-latest-salaries",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.2K",
+        "totalSubmission": "9.6K",
+        "totalAcceptedRaw": 7193,
+        "totalSubmissionRaw": 9593,
+        "acRate": "75.0%",
+        "acRateRaw": 74.9817575315334,
+        "likes": 20,
+        "dislikes": 18
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2829,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:40:50.461Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.346Z"
+}

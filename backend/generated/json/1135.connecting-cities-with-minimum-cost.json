@@ -1,0 +1,59 @@
+{
+    "quesId": 1135,
+    "title": "Connecting Cities With Minimum Cost",
+    "titleSlug": "connecting-cities-with-minimum-cost",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "93.7K",
+        "totalSubmission": "147.2K",
+        "totalAcceptedRaw": 93701,
+        "totalSubmissionRaw": 147206,
+        "acRate": "63.7%",
+        "acRateRaw": 63.6529761015176,
+        "likes": 1180,
+        "dislikes": 60
+    },
+    "similarQuesIds": [
+        2093
+    ],
+    "topicTags": [
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1100,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "What if we model the cities as a graph?",
+        "Build a graph of cities and find the minimum spanning tree.",
+        "You can use a variation of the Kruskal's algorithm for that.",
+        "Sort the edges by their cost and use a union-find data structure.",
+        "How to check all cities are connected?",
+        "At the beginning we have n connected components, each time we connect two components the number of connected components is reduced by one. At the end we should end with only a single component otherwise return -1."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:27:26.327Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.298Z"
+}

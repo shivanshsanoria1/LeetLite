@@ -1,0 +1,55 @@
+{
+    "quesId": 2592,
+    "title": "Maximize Greatness of an Array",
+    "titleSlug": "maximize-greatness-of-an-array",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "45.1K",
+        "totalSubmission": "72.5K",
+        "totalAcceptedRaw": 45087,
+        "totalSubmissionRaw": 72453,
+        "acRate": "62.2%",
+        "acRateRaw": 62.229307275061075,
+        "likes": 515,
+        "dislikes": 22
+    },
+    "similarQuesIds": [
+        259,
+        2410
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2664,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a 0-indexed integer array <code>nums</code>. You are allowed to permute <code>nums</code> into a new array <code>perm</code> of your choosing.</p>\n\n<p>We define the <strong>greatness</strong> of <code>nums</code> be the number of indices <code>0 &lt;= i &lt; nums.length</code> for which <code>perm[i] &gt; nums[i]</code>.</p>\n\n<p>Return <em>the <strong>maximum</strong> possible greatness you can achieve after permuting</em> <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3,5,2,1,3,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> One of the optimal rearrangements is perm = [2,5,1,3,3,1,1].\nAt indices = 0, 1, 3, and 4, perm[i] &gt; nums[i]. Hence, we return 4.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We can prove the optimal perm is [2,3,4,1].\nAt indices = 0, 1, and 2, perm[i] &gt; nums[i]. Hence, we return 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Can we use sorting and two pointers here?",
+        "Assign every element the next bigger unused element as many times as possible."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:39:46.249Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.225Z"
+}

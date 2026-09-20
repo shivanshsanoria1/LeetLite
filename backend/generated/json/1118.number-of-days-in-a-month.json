@@ -1,0 +1,40 @@
+{
+    "quesId": 1118,
+    "title": "Number of Days in a Month",
+    "titleSlug": "number-of-days-in-a-month",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "9.9K",
+        "totalSubmission": "16.7K",
+        "totalAcceptedRaw": 9877,
+        "totalSubmissionRaw": 16670,
+        "acRate": "59.3%",
+        "acRateRaw": 59.25014997000599,
+        "likes": 47,
+        "dislikes": 180
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1088,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Does February have 28 days or 29 days?",
+        "Think of Leap years."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:21:31.764Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.241Z"
+}

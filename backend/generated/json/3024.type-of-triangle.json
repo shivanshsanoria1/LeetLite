@@ -1,0 +1,53 @@
+{
+    "quesId": 3024,
+    "title": "Type of Triangle",
+    "titleSlug": "type-of-triangle",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "229.5K",
+        "totalSubmission": "521.8K",
+        "totalAcceptedRaw": 229490,
+        "totalSubmissionRaw": 521792,
+        "acRate": "44.0%",
+        "acRateRaw": 43.981233937595945,
+        "likes": 477,
+        "dislikes": 69
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Polygons",
+            "slug": "polygons"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3321,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n--- \n\n### Approach: Mathematics\n\n#### Intuition\n\nFirst, sort $\\textit{nums}$ in ascending order, then make the following checks in sequence:\n\n- If $\\textit{nums}[0] + \\textit{nums}[1] \\le \\textit{nums}[2]$, return `\"none\"`.\n\n- If $\\textit{nums}[0] = \\textit{nums}[2]$, return `\"equilateral\"`.\n\n- If $\\textit{nums}[0] = \\textit{nums}[1]$ or $\\textit{nums}[1] = \\textit{nums}[2]$, return `\"isosceles\"`.\n\n- If none of the above conditions are met, return `\"scalene\"`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/o35iMU5B/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"o35iMU5B\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(1)$.\n\n  Since the length of $nums$ is only 3, the time required for sorting can be ignored.\n\n- Space complexity: $O(1)$.\n  \n  No additional variables are needed."
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code> of size <code>3</code> which can form the sides of a triangle.</p>\n\n<ul>\n\t<li>A triangle is called <strong>equilateral</strong> if it has all sides of equal length.</li>\n\t<li>A triangle is called <strong>isosceles</strong> if it has exactly two sides of equal length.</li>\n\t<li>A triangle is called <strong>scalene</strong> if all its sides are of different lengths.</li>\n</ul>\n\n<p>Return <em>a string representing</em> <em>the type of triangle that can be formed </em><em>or </em><code>&quot;none&quot;</code><em> if it <strong>cannot</strong> form a triangle.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,3,3]\n<strong>Output:</strong> &quot;equilateral&quot;\n<strong>Explanation:</strong> Since all the sides are of equal length, therefore, it will form an equilateral triangle.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,4,5]\n<strong>Output:</strong> &quot;scalene&quot;\n<strong>Explanation:</strong> \nnums[0] + nums[1] = 3 + 4 = 7, which is greater than nums[2] = 5.\nnums[0] + nums[2] = 3 + 5 = 8, which is greater than nums[1] = 4.\nnums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3. \nSince the sum of the two sides is greater than the third side for all three cases, therefore, it can form a triangle.\nAs all the sides are of different lengths, it will form a scalene triangle.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>nums.length == 3</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "The condition for a valid triangle is that for any two sides, the sum of their lengths must be greater than the third side.",
+        "Simply count the number of unique edge lengths after checking it’s a valid triangle."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:47:43.943Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.772Z"
+}

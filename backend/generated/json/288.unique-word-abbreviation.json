@@ -1,0 +1,53 @@
+{
+    "quesId": 288,
+    "title": "Unique Word Abbreviation",
+    "titleSlug": "unique-word-abbreviation",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "83.3K",
+        "totalSubmission": "297.3K",
+        "totalAcceptedRaw": 83309,
+        "totalSubmissionRaw": 297278,
+        "acRate": "28.0%",
+        "acRateRaw": 28.023937190104885,
+        "likes": 222,
+        "dislikes": 1868
+    },
+    "similarQuesIds": [
+        170,
+        320
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 288,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:31.171Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.610Z"
+}

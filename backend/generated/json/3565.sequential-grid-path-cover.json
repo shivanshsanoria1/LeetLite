@@ -1,0 +1,48 @@
+{
+    "quesId": 3565,
+    "title": "Sequential Grid Path Cover",
+    "titleSlug": "sequential-grid-path-cover",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "740",
+        "totalSubmission": "1.2K",
+        "totalAcceptedRaw": 740,
+        "totalSubmissionRaw": 1238,
+        "acRate": "59.8%",
+        "acRateRaw": 59.77382875605816,
+        "likes": 5,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "exampleTestcases": "[[0,0,0],[0,1,2]]\n2\n[[1,0,4],[3,0,2]]\n4",
+    "meta": {
+        "quesIdLCBackend": 3899,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use recursive backtracking."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:54:00.149Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.566Z"
+}

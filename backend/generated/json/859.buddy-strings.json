@@ -1,0 +1,46 @@
+{
+    "quesId": 859,
+    "title": "Buddy Strings",
+    "titleSlug": "buddy-strings",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "303.2K",
+        "totalSubmission": "886K",
+        "totalAcceptedRaw": 303207,
+        "totalSubmissionRaw": 885950,
+        "acRate": "34.2%",
+        "acRateRaw": 34.223940402957275,
+        "likes": 3386,
+        "dislikes": 1848
+    },
+    "similarQuesIds": [
+        1657,
+        1790,
+        2531
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 889,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given two strings <code>s</code> and <code>goal</code>, return <code>true</code><em> if you can swap two letters in </em><code>s</code><em> so the result is equal to </em><code>goal</code><em>, otherwise, return </em><code>false</code><em>.</em></p>\n\n<p>Swapping letters is defined as taking two indices <code>i</code> and <code>j</code> (0-indexed) such that <code>i != j</code> and swapping the characters at <code>s[i]</code> and <code>s[j]</code>.</p>\n\n<ul>\n\t<li>For example, swapping at indices <code>0</code> and <code>2</code> in <code>&quot;abcd&quot;</code> results in <code>&quot;cbad&quot;</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;, goal = &quot;ba&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> You can swap s[0] = &#39;a&#39; and s[1] = &#39;b&#39; to get &quot;ba&quot;, which is equal to goal.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;, goal = &quot;ab&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The only letters you can swap are s[0] = &#39;a&#39; and s[1] = &#39;b&#39;, which results in &quot;ba&quot; != goal.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, goal = &quot;aa&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> You can swap s[0] = &#39;a&#39; and s[1] = &#39;a&#39; to get &quot;aa&quot;, which is equal to goal.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, goal.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>goal</code> consist of lowercase letters.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:17:25.339Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.534Z"
+}

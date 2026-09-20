@@ -1,0 +1,58 @@
+{
+    "quesId": 3672,
+    "title": "Sum of Weighted Modes in Subarrays",
+    "titleSlug": "sum-of-weighted-modes-in-subarrays",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "601",
+        "totalSubmission": "1.1K",
+        "totalAcceptedRaw": 601,
+        "totalSubmissionRaw": 1113,
+        "acRate": "54.0%",
+        "acRateRaw": 53.99820305480682,
+        "likes": 7,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "exampleTestcases": "[1,2,2,3]\n3\n[1,2,1,2]\n2\n[4,3,4,3]\n3",
+    "meta": {
+        "quesIdLCBackend": 4036,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use a sliding window.",
+        "Maintain the max frequency of the current window of length <code>k</code> using a data structure.",
+        "Maintain another data structure for values that have a given frequency."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T17:09:39.970Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.702Z"
+}

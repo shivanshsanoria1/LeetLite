@@ -1,0 +1,32 @@
+{
+    "quesId": 2793,
+    "title": "Status of Flight Tickets",
+    "titleSlug": "status-of-flight-tickets",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.9K",
+        "totalSubmission": "4.9K",
+        "totalAcceptedRaw": 3923,
+        "totalSubmissionRaw": 4908,
+        "acRate": "79.9%",
+        "acRateRaw": 79.93072534637326,
+        "likes": 13,
+        "dislikes": 21
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 3003,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:42:32.449Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.492Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 3198,
+    "title": "Find Cities in Each State",
+    "titleSlug": "find-cities-in-each-state",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "4.2K",
+        "totalSubmission": "5.3K",
+        "totalAcceptedRaw": 4192,
+        "totalSubmissionRaw": 5279,
+        "acRate": "79.4%",
+        "acRateRaw": 79.4089789732904,
+        "likes": 9,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3505,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:57:28.270Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.036Z"
+}

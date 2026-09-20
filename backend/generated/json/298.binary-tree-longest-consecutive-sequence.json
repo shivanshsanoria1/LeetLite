@@ -1,0 +1,54 @@
+{
+    "quesId": 298,
+    "title": "Binary Tree Longest Consecutive Sequence",
+    "titleSlug": "binary-tree-longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "167.5K",
+        "totalSubmission": "305.4K",
+        "totalAcceptedRaw": 167536,
+        "totalSubmissionRaw": 305392,
+        "acRate": "54.9%",
+        "acRateRaw": 54.85947615040292,
+        "likes": 1186,
+        "dislikes": 239
+    },
+    "similarQuesIds": [
+        128,
+        549,
+        2229
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 298,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:39.227Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.727Z"
+}

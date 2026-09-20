@@ -1,0 +1,46 @@
+{
+    "quesId": 3070,
+    "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+    "titleSlug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "125.3K",
+        "totalSubmission": "167.9K",
+        "totalAcceptedRaw": 125315,
+        "totalSubmissionRaw": 167883,
+        "acRate": "74.6%",
+        "acRateRaw": 74.64424629057142,
+        "likes": 471,
+        "dislikes": 22
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3338,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: 2D Prefix Sum\n\n#### Intuition\n\nThe problem requires counting the number of submatrices that include the top-left element of the matrix $\\textit{grid}$ and have a sum not exceeding $k$.\n\nWe start from the top-left corner and traverse the matrix in row-major order, treating each position $(i, j)$ as the bottom-right corner of a submatrix. To efficiently compute submatrix sums in a single pass, we maintain an array $\\textit{cols}[j]$ that stores the sum of elements in column $j$ up to the current row.\n\nWhile processing row $i$, we iterate over columns $j$ from left to right. For each column, we add $\\textit{grid}[i][j]$ to $\\textit{cols}[j]$, and then accumulate $\\textit{cols}[j]$ into a running sum for the current row. If the accumulated sum is $\\le k$, we increment the result by $1$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/n7LnzmRk/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"n7LnzmRk\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the number of rows in the matrix $\\textit{grid}$, and $n$ be the number of columns.\n\n- Time Complexity: $O(mn)$.\n- Space Complexity: $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> integer matrix <code>grid</code> and an integer <code>k</code>.</p>\n\n<p>Return <em>the <strong>number</strong> of <span data-keyword=\"submatrix\">submatrices</span> that contain the top-left element of the</em> <code>grid</code>, <em>and have a sum less than or equal to </em><code>k</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/01/01/example1.png\" style=\"padding: 10px; background: #fff; border-radius: .5rem;\" />\n<pre>\n<strong>Input:</strong> grid = [[7,6,3],[6,6,1]], k = 18\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> There are only 4 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 18.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2024/01/01/example21.png\" style=\"padding: 10px; background: #fff; border-radius: .5rem;\" />\n<pre>\n<strong>Input:</strong> grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> There are only 6 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 20.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length </code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= n, m &lt;= 1000 </code></li>\n\t<li><code>0 &lt;= grid[i][j] &lt;= 1000</code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:23.263Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.863Z"
+}

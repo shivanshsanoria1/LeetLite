@@ -1,0 +1,73 @@
+{
+    "quesId": 2031,
+    "title": "Count Subarrays With More Ones Than Zeros",
+    "titleSlug": "count-subarrays-with-more-ones-than-zeros",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.7K",
+        "totalSubmission": "11.5K",
+        "totalAcceptedRaw": 5725,
+        "totalSubmissionRaw": 11508,
+        "acRate": "49.7%",
+        "acRateRaw": 49.74800139033715,
+        "likes": 187,
+        "dislikes": 18
+    },
+    "similarQuesIds": [
+        474,
+        1869,
+        2155
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Merge Sort",
+            "slug": "merge-sort"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 510,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Change the zeros in nums to -1 and create a prefix sum array prefixSum using the new nums.",
+        "If prefixSum[i] for any index i in the range 0 <= i < prefixSum.length is positive, that means that there are more ones than zeros in the prefix ending at index i.",
+        "If prefixSum[j] > prefixSum[i] for two indexes i and j such that 0 <= i < j < prefixSum.length, that means that there are more ones than zeros in nums in the range [i + 1 : j] (inclusive)"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:17.798Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.920Z"
+}

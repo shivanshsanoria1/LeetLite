@@ -1,0 +1,58 @@
+{
+    "quesId": 2099,
+    "title": "Find Subsequence of Length K With the Largest Sum",
+    "titleSlug": "find-subsequence-of-length-k-with-the-largest-sum",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "186.2K",
+        "totalSubmission": "325K",
+        "totalAcceptedRaw": 186164,
+        "totalSubmissionRaw": 324970,
+        "acRate": "57.3%",
+        "acRateRaw": 57.28651875557744,
+        "likes": 1771,
+        "dislikes": 184
+    },
+    "similarQuesIds": [
+        215,
+        1005,
+        1356,
+        2163
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2204,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: Sorting\n\n#### Intuition\n\nThe subsequence of maximum length $K$ in the array $\\textit{nums}$ must consist of the largest $K$ numbers in $\\textit{nums}$. To ensure that we can still form the desired subsequence in the original order after identifying these values through sorting, we create an auxiliary array $\\textit{vals}$, where each element is a pair $(i, \\textit{nums}[i])$ containing the index $i$ and the corresponding value $\\textit{nums}[i]$.\n\nFirst, we sort the auxiliary array in descending order based on the values $\\textit{nums}[i]$. The first $K$ elements after sorting represent the largest $K$ numbers in $\\textit{nums}$, along with their original indices. Then, we sort these $K$ elements in ascending order based on their indices $i$. This ensures that their relative order in the original array is preserved.\n\nFinally, we extract the values from these sorted pairs to form the resulting array i.e., the subsequence of length $K$ with the maximum possible sum, maintaining the original order. We return this array as the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Xo6GXpbB/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Xo6GXpbB\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  This is the time complexity for sorting the auxiliary array.\n\n- Space complexity: $O(n)$.\n\n  This is the space overhead of the auxiliary array."
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>. You want to find a <strong>subsequence </strong>of <code>nums</code> of length <code>k</code> that has the <strong>largest</strong> sum.</p>\n\n<p>Return<em> </em><em><strong>any</strong> such subsequence as an integer array of length </em><code>k</code>.</p>\n\n<p>A <strong>subsequence</strong> is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,3,3], k = 2\n<strong>Output:</strong> [3,3]\n<strong>Explanation:</strong>\nThe subsequence has the largest sum of 3 + 3 = 6.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-1,-2,3,4], k = 3\n<strong>Output:</strong> [-1,3,4]\n<strong>Explanation:</strong> \nThe subsequence has the largest sum of -1 + 3 + 4 = 6.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,4,3,3], k = 2\n<strong>Output:</strong> [3,4]\n<strong>Explanation:</strong>\nThe subsequence has the largest sum of 3 + 4 = 7. \nAnother possible subsequence is [4, 3].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>-10<sup>5</sup>&nbsp;&lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= nums.length</code></li>\n</ul>\n",
+    "hints": [
+        "From a greedy perspective, what k elements should you pick?",
+        "Could you sort the array while maintaining the index?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:20.053Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.061Z"
+}

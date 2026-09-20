@@ -1,0 +1,55 @@
+{
+    "quesId": 3506,
+    "title": "Find Time Required to Eliminate Bacterial Strains",
+    "titleSlug": "find-time-required-to-eliminate-bacterial-strains",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "620",
+        "totalSubmission": "983",
+        "totalAcceptedRaw": 620,
+        "totalSubmissionRaw": 983,
+        "acRate": "63.1%",
+        "acRateRaw": 63.072227873855546,
+        "likes": 4,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        1199
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "exampleTestcases": "[10,4,5]\n2\n[10,4]\n5",
+    "meta": {
+        "quesIdLCBackend": 3814,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use binary search.",
+        "First perform all the divisions, then assign the bacteria greedily."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:51.524Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.494Z"
+}

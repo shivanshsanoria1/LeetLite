@@ -1,0 +1,64 @@
+{
+    "quesId": 255,
+    "title": "Verify Preorder Sequence in Binary Search Tree",
+    "titleSlug": "verify-preorder-sequence-in-binary-search-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95.2K",
+        "totalSubmission": "183.6K",
+        "totalAcceptedRaw": 95214,
+        "totalSubmissionRaw": 183641,
+        "acRate": "51.8%",
+        "acRateRaw": 51.847898889681495,
+        "likes": 1271,
+        "dislikes": 90
+    },
+    "similarQuesIds": [
+        144
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 255,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:59.744Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.133Z"
+}

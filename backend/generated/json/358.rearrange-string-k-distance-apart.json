@@ -1,0 +1,62 @@
+{
+    "quesId": 358,
+    "title": "Rearrange String k Distance Apart",
+    "titleSlug": "rearrange-string-k-distance-apart",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "74.8K",
+        "totalSubmission": "186.8K",
+        "totalAcceptedRaw": 74752,
+        "totalSubmissionRaw": 186834,
+        "acRate": "40.0%",
+        "acRateRaw": 40.0098483145466,
+        "likes": 1002,
+        "dislikes": 39
+    },
+    "similarQuesIds": [
+        621,
+        767,
+        2182
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 358,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:58:29.679Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.575Z"
+}

@@ -1,0 +1,54 @@
+{
+    "quesId": 3157,
+    "title": "Find the Level of Tree with Minimum Sum",
+    "titleSlug": "find-the-level-of-tree-with-minimum-sum",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.5K",
+        "totalSubmission": "5K",
+        "totalAcceptedRaw": 3487,
+        "totalSubmissionRaw": 5018,
+        "acRate": "69.5%",
+        "acRateRaw": 69.48983658828219,
+        "likes": 19,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        2583
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3467,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Run a DFS on the tree and update an array sum where sum[i] is the sum for level i.",
+        "The answer is the first minimum element of sum."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:56:55.998Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.994Z"
+}

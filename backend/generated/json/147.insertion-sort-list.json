@@ -1,0 +1,45 @@
+{
+    "quesId": 147,
+    "title": "Insertion Sort List",
+    "titleSlug": "insertion-sort-list",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "520.9K",
+        "totalSubmission": "866.5K",
+        "totalAcceptedRaw": 520869,
+        "totalSubmissionRaw": 866502,
+        "acRate": "60.1%",
+        "acRateRaw": 60.11192061922177,
+        "likes": 3467,
+        "dislikes": 888
+    },
+    "similarQuesIds": [
+        148,
+        708
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 147,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Video Solution\n---\n\n<div class='video-preview'></div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Overview\n\n\n[Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) is an intuitive sorting algorithm, although it is much less efficient than the more advanced algorithms such as quicksort or merge sort.\n\nOften that we perform the sorting algorithm on an [Array](https://leetcode.com/explore/learn/card/fun-with-arrays) structure,\nthis problem though asks us to perform the insertion sort on a **linked list** data structure, which makes the implementation a bit challenging.\n\nIn this article, we will present some tricks to manipulate the linked list, which would help us to simplify the logics of implementation.\n\n\n---\n\n### Approach 1: Insertion Sort\n\n#### Intuition\n\nLet us first review the idea of insertion sort algorithm, which can be broke down into the following steps:\n\n- First of all, we create an empty list which would be used to hold the results of sorting.\n\n- We then iterate through each element in the _input_ list. For each element, we need to find a proper position in the resulting list to insert the element, so that the order of the resulting list is maintained.\n\n- As one can see, once the iteration in the above step terminates, we will obtain the resulting list where the elements are _ordered_.\n\nNow, let us walk through a simple example, by applying the above intuition.\n\nGiven the input list `input=[4, 3, 5]`, we have initially an empty resulting list `result=[]`.\n\n- We then iterate over the input list. For the first element `4`, we need to find a proper position in the resulting list to place it.\nSince the resulting list is still empty, we then simply _append_ it to the resulting list, _i.e._ `result=[4]`.\n\n![step 1](../Figures/147/147_linked_list_step_1.png)\n\n- Now for the second element (_i.e._ `3`) in the input list, similarly we need to insert it properly into the resulting list.\nAs one can see, we need to insert it right before the element `4`.\nAs a result, the resulting list becomes `[3, 4]`.\n\n![step 2](../Figures/147/147_linked_list_step_2.png)\n\n- Finally, for the last element (_i.e._ `5`) in the input list, as it turns out, the proper position to place it is the _tail_ of the resulting list.\nWith this last iteration, we obtain a _sorted_ list as `result=[3, 4, 5]`.\n\n![step 3](../Figures/147/147_linked_list_step_3.png)\n\n\n#### Algorithm\n\nTo translate the above intuition into the implementation, we applied two **tricks**.\n\n>The first trick is that we will create a `dummy` (`pseudo_head`) node which serves as a pointer pointing to the resulting list.\n\nMore precisely, this node facilitates us to always get a _hold_ on the resulting list, especially when we need to insert a new element to the head of the resulting list.\nOne will see later in more details how it can greatly simplify the logic.\n\nIn a _singly-linked list_, each node has only one pointer that points to the next node.\nIf we would like to insert a new node (say `B`) before certain node (say `A`), we need to know the node (say `C`) that is currently before the node `A`, _i.e._ `C -> A`.\nWith the reference in the node `C`, we could now insert the new node, _i.e._ `C -> B -> A`.\n\nGiven the above insight, in order to insert a new element into a singly-linked list, we apply another trick.\n\n>The idea is that we use a _**pair of pointers**_ (namely `prev -> next`) which serve as place-holders to guard the position where in-between we would insert a new element (_i.e._ `prev -> new_node -> next`).\n\nWith the same example before, _i.e._ `input=[4, 3, 5]`, we illustrate what the above helper pointers look like at the moment of insertion, in the following graph:\n\n![pointers](../Figures/147/147_pointers.png)\n\n#### Implementation\n\nHere are some sample implementations based on the above ideas:\n\n<iframe src=\"https://leetcode.com/playground/gDxDYr3y/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"gDxDYr3y\"></iframe>\n\n\n\n#### Complexity Analysis\n\nLet $N$ be the number of elements in the input list.\n\n- Time Complexity: $\\mathcal{O}(N^2)$\n\n    - First of all, we run an iteration over the input list.\n\n    - At each iteration, we insert an element into the resulting list. In the worst case where the position to insert is the tail of the list, we have to walk through the entire resulting list.\n\n    - As a result, the total steps that we need to walk in the worst case would be $\\sum_{i=1}^{N} i = \\frac{N(N+1)}{2}$.\n\n    - To sum up, the overall time complexity of the algorithm is $\\mathcal{O}(N^2)$.\n\n\n- Space Complexity: $\\mathcal{O}(1)$\n\n    - We used some pointers within the algorithm. However, their memory consumption is constant regardless of the input.\n\n    - **Note**, we did not create new nodes to hold the values of input list, but simply _reorder_ the existing nodes.\n\n\n---"
+    },
+    "content": "<p>Given the <code>head</code> of a singly linked list, sort the list using <strong>insertion sort</strong>, and return <em>the sorted list&#39;s head</em>.</p>\n\n<p>The steps of the <strong>insertion sort</strong> algorithm:</p>\n\n<ol>\n\t<li>Insertion sort iterates, consuming one input element each repetition and growing a sorted output list.</li>\n\t<li>At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list and inserts it there.</li>\n\t<li>It repeats until no input elements remain.</li>\n</ol>\n\n<p>The following is a graphical example of the insertion sort algorithm. The partially sorted list (black) initially contains only the first element in the list. One element (red) is removed from the input data and inserted in-place into the sorted list with each iteration.</p>\n<img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif\" style=\"height:180px; width:300px\" />\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/04/sort1linked-list.jpg\" style=\"width: 422px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> head = [4,2,1,3]\n<strong>Output:</strong> [1,2,3,4]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/04/sort2linked-list.jpg\" style=\"width: 542px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> head = [-1,5,3,4,0]\n<strong>Output:</strong> [-1,0,3,4,5]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is in the range <code>[1, 5000]</code>.</li>\n\t<li><code>-5000 &lt;= Node.val &lt;= 5000</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:55:22.656Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.911Z"
+}

@@ -1,0 +1,53 @@
+{
+    "quesId": 1977,
+    "title": "Number of Ways to Separate Numbers",
+    "titleSlug": "number-of-ways-to-separate-numbers",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "9.1K",
+        "totalSubmission": "41.8K",
+        "totalAcceptedRaw": 9098,
+        "totalSubmissionRaw": 41762,
+        "acRate": "21.8%",
+        "acRateRaw": 21.785355107514007,
+        "likes": 541,
+        "dislikes": 61
+    },
+    "similarQuesIds": [
+        91,
+        639,
+        1416,
+        2478
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2091,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You wrote down many <strong>positive</strong> integers in a string called <code>num</code>. However, you realized that you forgot to add commas to seperate the different numbers. You remember that the list of integers was <strong>non-decreasing</strong> and that <strong>no</strong> integer had leading zeros.</p>\n\n<p>Return <em>the <strong>number of possible lists of integers</strong> that you could have written down to get the string </em><code>num</code>. Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;327&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> You could have written down the numbers:\n3, 27\n327\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;094&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> No numbers can have leading zeros and all numbers must be positive.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;0&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> No numbers can have leading zeros and all numbers must be positive.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 3500</code></li>\n\t<li><code>num</code> consists of digits <code>&#39;0&#39;</code> through <code>&#39;9&#39;</code>.</li>\n</ul>\n",
+    "hints": [
+        "If we know the current number has d digits, how many digits can the previous number have?",
+        "Is there a quick way of calculating the number of possibilities for the previous number if we know that it must have less than or equal to d digits? Try to do some pre-processing."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:03:33.179Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.808Z"
+}

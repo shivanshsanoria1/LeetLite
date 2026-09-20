@@ -1,0 +1,39 @@
+{
+    "quesId": 1336,
+    "title": "Number of Transactions per Visit",
+    "titleSlug": "number-of-transactions-per-visit",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "16.2K",
+        "totalSubmission": "33.9K",
+        "totalAcceptedRaw": 16239,
+        "totalSubmissionRaw": 33911,
+        "acRate": "47.9%",
+        "acRateRaw": 47.88711627495503,
+        "likes": 95,
+        "dislikes": 327
+    },
+    "similarQuesIds": [
+        1613
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1467,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:31:52.994Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.534Z"
+}

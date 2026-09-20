@@ -1,0 +1,46 @@
+{
+    "quesId": 544,
+    "title": "Output Contest Matches",
+    "titleSlug": "output-contest-matches",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "28.7K",
+        "totalSubmission": "37K",
+        "totalAcceptedRaw": 28687,
+        "totalSubmissionRaw": 36995,
+        "acRate": "77.5%",
+        "acRateRaw": 77.5429112042168,
+        "likes": 399,
+        "dislikes": 141
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 544,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:08:16.511Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.991Z"
+}

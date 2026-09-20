@@ -1,0 +1,51 @@
+{
+    "quesId": 3078,
+    "title": "Match Alphanumerical Pattern in Matrix I",
+    "titleSlug": "match-alphanumerical-pattern-in-matrix-i",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.6K",
+        "totalSubmission": "2.5K",
+        "totalAcceptedRaw": 1641,
+        "totalSubmissionRaw": 2535,
+        "acRate": "64.7%",
+        "acRateRaw": 64.73372781065089,
+        "likes": 11,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3385,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use brute force and check all the possible submatrices."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:48:32.481Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.884Z"
+}

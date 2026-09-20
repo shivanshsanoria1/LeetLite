@@ -1,0 +1,41 @@
+{
+    "quesId": 2636,
+    "title": "Promise Pool",
+    "titleSlug": "promise-pool",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "15.3K",
+        "totalSubmission": "19.3K",
+        "totalAcceptedRaw": 15344,
+        "totalSubmissionRaw": 19342,
+        "acRate": "79.3%",
+        "acRateRaw": 79.32995553717299,
+        "likes": 299,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        2621,
+        2637,
+        2622,
+        2676
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2750,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Initially execute all the functions until the queue fills up.",
+        "Every time a function resolves, add a new promise to the queue if possible."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:24.862Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.271Z"
+}

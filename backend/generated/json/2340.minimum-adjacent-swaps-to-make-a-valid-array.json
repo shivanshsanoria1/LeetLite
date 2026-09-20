@@ -1,0 +1,46 @@
+{
+    "quesId": 2340,
+    "title": "Minimum Adjacent Swaps to Make a Valid Array",
+    "titleSlug": "minimum-adjacent-swaps-to-make-a-valid-array",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41K",
+        "totalSubmission": "56.8K",
+        "totalAcceptedRaw": 41003,
+        "totalSubmissionRaw": 56763,
+        "acRate": "72.2%",
+        "acRateRaw": 72.23543505452496,
+        "likes": 198,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        1703
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2474,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Notice that in order to obtain the minimum swaps, we should focus on the smallest element that is the leftmost and the largest element that is the rightmost.",
+        "We can take those elements and greedily only do swaps that bring them closer to their respective end positions."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:23:22.224Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.432Z"
+}

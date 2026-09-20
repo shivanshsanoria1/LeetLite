@@ -1,0 +1,37 @@
+{
+    "quesId": 1384,
+    "title": "Total Sales Amount by Year",
+    "titleSlug": "total-sales-amount-by-year",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20.4K",
+        "totalSubmission": "33.4K",
+        "totalAcceptedRaw": 20400,
+        "totalSubmissionRaw": 33365,
+        "acRate": "61.1%",
+        "acRateRaw": 61.14191518057845,
+        "likes": 236,
+        "dislikes": 133
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1518,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:33:01.386Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.787Z"
+}

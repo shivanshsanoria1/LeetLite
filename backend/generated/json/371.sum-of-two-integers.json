@@ -1,0 +1,44 @@
+{
+    "quesId": 371,
+    "title": "Sum of Two Integers",
+    "titleSlug": "sum-of-two-integers",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "746K",
+        "totalSubmission": "1.3M",
+        "totalAcceptedRaw": 746002,
+        "totalSubmissionRaw": 1336504,
+        "acRate": "55.8%",
+        "acRateRaw": 55.817315246425395,
+        "likes": 4778,
+        "dislikes": 5914
+    },
+    "similarQuesIds": [
+        2
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 371,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given two integers <code>a</code> and <code>b</code>, return <em>the sum of the two integers without using the operators</em> <code>+</code> <em>and</em> <code>-</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> a = 1, b = 2\n<strong>Output:</strong> 3\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> a = 2, b = 3\n<strong>Output:</strong> 5\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-1000 &lt;= a, b &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:43.682Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.735Z"
+}

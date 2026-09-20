@@ -1,0 +1,56 @@
+{
+    "quesId": 3205,
+    "title": "Maximum Array Hopping Score I",
+    "titleSlug": "maximum-array-hopping-score-i",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.8K",
+        "totalSubmission": "3.7K",
+        "totalAcceptedRaw": 2849,
+        "totalSubmissionRaw": 3690,
+        "acRate": "77.2%",
+        "acRateRaw": 77.20867208672087,
+        "likes": 28,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3513,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Define <code>dp[i]</code> as the maximum score if we start from index <code>i</code>.",
+        "We can calculate <code>dp[i]</code> as the maximum score from hopping to all indices <code>j > i</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:57:33.810Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.042Z"
+}

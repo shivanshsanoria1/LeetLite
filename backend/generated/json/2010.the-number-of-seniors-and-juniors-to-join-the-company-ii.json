@@ -1,0 +1,40 @@
+{
+    "quesId": 2010,
+    "title": "The Number of Seniors and Juniors to Join the Company II",
+    "titleSlug": "the-number-of-seniors-and-juniors-to-join-the-company-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.6K",
+        "totalSubmission": "11.6K",
+        "totalAcceptedRaw": 7649,
+        "totalSubmissionRaw": 11566,
+        "acRate": "66.1%",
+        "acRateRaw": 66.1334947259208,
+        "likes": 42,
+        "dislikes": 10
+    },
+    "similarQuesIds": [
+        1204,
+        2004
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2158,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:04:00.389Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.897Z"
+}

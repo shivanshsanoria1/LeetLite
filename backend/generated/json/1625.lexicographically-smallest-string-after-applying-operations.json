@@ -1,0 +1,57 @@
+{
+    "quesId": 1625,
+    "title": "Lexicographically Smallest String After Applying Operations",
+    "titleSlug": "lexicographically-smallest-string-after-applying-operations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "87.6K",
+        "totalSubmission": "110.5K",
+        "totalAcceptedRaw": 87626,
+        "totalSubmissionRaw": 110543,
+        "acRate": "79.3%",
+        "acRateRaw": 79.26870086753571,
+        "likes": 695,
+        "dislikes": 321
+    },
+    "similarQuesIds": [
+        2734,
+        3216
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1747,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nThe problem involves two operations:\n\n1. Accumulate: Add the odd-numbered elements of ( s ) by ( a ). If the sum exceeds ( 9 ), wrap around to ( 0 ) and continue adding. \n2. Rotate: Rotate ( s ) to the right by ( b ) bits. \n\nThese operations can be performed an unlimited number of times, and the question asks for the **lexicographically smallest string** that can be obtained.\n\nNoting that the length of ( s ) is even, if ( b ) is even, then regardless of how many rotations are performed, we can only apply the accumulation operation to the odd-numbered elements of ( s ). However, if ( b ) is odd, both the odd- and even-numbered elements of ( s ) can be modified through accumulation, each potentially a different number of times.\n\nFrom the above observation, we see that the number of cumulative operations and the number of rotations are **independent** of each other. The number of rotations does not affect whether even positions can be accumulated. Therefore, we can first enumerate the number of rotations and then enumerate the number of cumulative operations to find the lexicographically smallest result.\n\nMore specifically, we proceed as follows:\n\n1. Enumerate the number of rotations, letting ( t ) denote the string after rotating ( s ). Since rotation eventually cycles, and there are at most ( n ) unique rotations (where ( n ) is the length of ( s )), we use an array `vis` to record whether a position has already been visited. Once a previously visited position is encountered, the enumeration stops.\n2. For each ( t ), enumerate the number of times ( j ) the odd digits of ( t ) are incremented, and then the number of times ( k ) the even digits are incremented. Since each element’s value lies in ([0, 9]), performing more than 9 additions would necessarily repeat a previous state. Specifically, if ( b ) is even, ( k )’s upper limit is ( 0 ); otherwise, it is ( 9 ).\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/T3HcTkVZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"T3HcTkVZ\"></iframe>\n\nDuring the enumeration of rotation counts, we consider positions in the order\n$0 \\times b \\bmod n,~1 \\times b \\bmod n,~2 \\times b \\bmod n, \\ldots, x \\times b \\bmod n$.\nThe final position reached can be expressed as:\n\n$$\nxb - yn = z\n$$\n\nHere, $x$ is the number of rotations, $y$ is the number of times we subtract $n$ during the modulo operation, and $z$ is the final position reached.\n\nAccording to the Euclidean algorithm, $z$ must be a multiple of $\\gcd(b, n)$. Therefore, we only need to enumerate multiples of $\\gcd(b, n)$ in the range $[0, n)$.\n\n<iframe src=\"https://leetcode.com/playground/H2UrCyKw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"H2UrCyKw\"></iframe>\n\nIn the process of enumerating cumulative counts, our goal is to minimize the string’s lexicographical order. Since the odd and even positions are independent, and the cumulative count within each group is uniform, we only need to consider $t[0]$ and $t[1]$.\n\nWe first determine the minimum number of accumulations that minimize $t[1]$ (for the odd positions). If $b$ is odd, we also determine the minimum number of accumulations that minimize $t[0]$ (for the even positions).\n\n<iframe src=\"https://leetcode.com/playground/Au7Y2465/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Au7Y2465\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $s$, and $d$ be the upper limit on the number of cumulative sums, which is $10$ in this problem.\n\n- Time complexity: $O(n^2d^2)$.\n  \n  After optimizing the rotation enumeration, the constant factor decreases, but the asymptotic complexity remains $O(n^2d^2)$ in the worst case. After optimizing accumulation enumeration, the time complexity reduces to $O(n^2d)$.\n\n- Space complexity: $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given a string <code>s</code> of <strong>even length</strong> consisting of digits from <code>0</code> to <code>9</code>, and two integers <code>a</code> and <code>b</code>.</p>\n\n<p>You can apply either of the following two operations any number of times and in any order on <code>s</code>:</p>\n\n<ul>\n\t<li>Add <code>a</code> to all odd indices of <code>s</code> <strong>(0-indexed)</strong>. Digits post <code>9</code> are cycled back to <code>0</code>. For example, if <code>s = &quot;3456&quot;</code> and <code>a = 5</code>, <code>s</code> becomes <code>&quot;3951&quot;</code>.</li>\n\t<li>Rotate <code>s</code> to the right by <code>b</code> positions. For example, if <code>s = &quot;3456&quot;</code> and <code>b = 1</code>, <code>s</code> becomes <code>&quot;6345&quot;</code>.</li>\n</ul>\n\n<p>Return <em>the <strong>lexicographically smallest</strong> string you can obtain by applying the above operations any number of times on</em> <code>s</code>.</p>\n\n<p>A string <code>a</code> is lexicographically smaller than a string <code>b</code> (of the same length) if in the first position where <code>a</code> and <code>b</code> differ, string <code>a</code> has a letter that appears earlier in the alphabet than the corresponding letter in <code>b</code>. For example, <code>&quot;0158&quot;</code> is lexicographically smaller than <code>&quot;0190&quot;</code> because the first position they differ is at the third letter, and <code>&#39;5&#39;</code> comes before <code>&#39;9&#39;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;5525&quot;, a = 9, b = 2\n<strong>Output:</strong> &quot;2050&quot;\n<strong>Explanation:</strong> We can apply the following operations:\nStart:  &quot;5525&quot;\nRotate: &quot;2555&quot;\nAdd:    &quot;2454&quot;\nAdd:    &quot;2353&quot;\nRotate: &quot;5323&quot;\nAdd:    &quot;5222&quot;\nAdd:    &quot;5121&quot;\nRotate: &quot;2151&quot;\nAdd:    &quot;2050&quot;​​​​​\nThere is no way to obtain a string that is lexicographically smaller than &quot;2050&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;74&quot;, a = 5, b = 1\n<strong>Output:</strong> &quot;24&quot;\n<strong>Explanation:</strong> We can apply the following operations:\nStart:  &quot;74&quot;\nRotate: &quot;47&quot;\n​​​​​​​Add:    &quot;42&quot;\n​​​​​​​Rotate: &quot;24&quot;​​​​​​​​​​​​\nThere is no way to obtain a string that is lexicographically smaller than &quot;24&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;0011&quot;, a = 4, b = 2\n<strong>Output:</strong> &quot;0011&quot;\n<strong>Explanation:</strong> There are no sequence of operations that will give us a lexicographically smaller string than &quot;0011&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s.length</code> is even.</li>\n\t<li><code>s</code> consists of digits from <code>0</code> to <code>9</code> only.</li>\n\t<li><code>1 &lt;= a &lt;= 9</code></li>\n\t<li><code>1 &lt;= b &lt;= s.length - 1</code></li>\n</ul>\n",
+    "hints": [
+        "Since the length of s is even, the total number of possible sequences is at most 10 * 10 * s.length.",
+        "You can generate all possible sequences and take their minimum.",
+        "Keep track of already generated sequences so they are not processed again."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:50:59.382Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.265Z"
+}

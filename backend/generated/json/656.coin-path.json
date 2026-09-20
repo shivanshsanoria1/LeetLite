@@ -1,0 +1,45 @@
+{
+    "quesId": 656,
+    "title": "Coin Path",
+    "titleSlug": "coin-path",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "17.5K",
+        "totalSubmission": "50.9K",
+        "totalAcceptedRaw": 17509,
+        "totalSubmissionRaw": 50895,
+        "acRate": "34.4%",
+        "acRateRaw": 34.402200609097164,
+        "likes": 263,
+        "dislikes": 116
+    },
+    "similarQuesIds": [
+        198,
+        213
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 656,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:03.362Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.196Z"
+}

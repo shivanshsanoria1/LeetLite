@@ -1,0 +1,56 @@
+{
+    "quesId": 3247,
+    "title": "Number of Subsequences with Odd Sum",
+    "titleSlug": "number-of-subsequences-with-odd-sum",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.2K",
+        "totalSubmission": "2.5K",
+        "totalAcceptedRaw": 1174,
+        "totalSubmissionRaw": 2462,
+        "acRate": "47.7%",
+        "acRateRaw": 47.68480909829407,
+        "likes": 13,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3537,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Define <code>dp[i][0]</code> as the answer for the subarray <code>[0, i]</code>.",
+        "Similarly define <code>dp[i][1]</code> as the answer for the subarray <code>[0, i]</code> if we wanted to count even-sum subsequences.",
+        "If <code>nums[i]</code> is odd, <code>dp[i][x] = 2<sup>i</sup></code>.",
+        "Otherwise, <code>dp[i][x] = dp[i - 1][x] * 2</code>.",
+        "<code>dp[0][1] = 1</code> if <code>nums[0]</code> is odd, and 0 otherwise.",
+        "<code>dp[0][0] = 2</code> if <code>nums[0]</code> is even, and 1 otherwise (since an empty subsequence has an even sum)."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:04.335Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.077Z"
+}

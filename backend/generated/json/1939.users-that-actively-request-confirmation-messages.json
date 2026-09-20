@@ -1,0 +1,37 @@
+{
+    "quesId": 1939,
+    "title": "Users That Actively Request Confirmation Messages",
+    "titleSlug": "users-that-actively-request-confirmation-messages",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "14.9K",
+        "totalSubmission": "26.2K",
+        "totalAcceptedRaw": 14897,
+        "totalSubmissionRaw": 26237,
+        "acRate": "56.8%",
+        "acRateRaw": 56.77859511377063,
+        "likes": 67,
+        "dislikes": 49
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2092,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:02:59.565Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.777Z"
+}

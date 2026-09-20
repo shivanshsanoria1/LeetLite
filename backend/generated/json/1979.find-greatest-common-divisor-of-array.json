@@ -1,0 +1,65 @@
+{
+    "quesId": 1979,
+    "title": "Find Greatest Common Divisor of Array",
+    "titleSlug": "find-greatest-common-divisor-of-array",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "417.2K",
+        "totalSubmission": "499.8K",
+        "totalAcceptedRaw": 417238,
+        "totalSubmissionRaw": 499839,
+        "acRate": "83.5%",
+        "acRateRaw": 83.47457627118644,
+        "likes": 1487,
+        "dislikes": 58
+    },
+    "similarQuesIds": [
+        1071,
+        1819,
+        1952,
+        2413,
+        2447,
+        3336,
+        3411
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        },
+        {
+            "name": "Euclidean Algorithm",
+            "slug": "euclidean-algorithm"
+        },
+        {
+            "name": "Greatest Common Divisor",
+            "slug": "greatest-common-divisor"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2106,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Calculate as Required\n\n#### Intuition\n\nFirst, traverse the array $\\textit{nums}$ to find its maximum and minimum values. The answer is then the greatest common divisor of these two values.\n\nTo compute the greatest common divisor, both the C++ and Python standard libraries provide built-in functions for calculating the greatest common divisor of two integers.\n\n**Euclidean Algorithm**\n\nA common method for computing the greatest common divisor $\\gcd(a, b)$ of two integers is the **Euclidean algorithm**, also known as the **division algorithm**. Its key recurrence is:\n\n$$\n\\gcd(a, b) = \\gcd(b, a \\bmod b).\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Nh2zy5o8/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"Nh2zy5o8\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$, and let $M$ be the maximum value in $\\textit{nums}$.\n\n- Time complexity: $O(n + \\log M)$.\n  \n  Finding the maximum and minimum values requires $O(n)$ time, and computing their greatest common divisor requires $O(\\log M)$ time.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>Given an integer array <code>nums</code>, return<strong> </strong><em>the <strong>greatest common divisor</strong> of the smallest number and largest number in </em><code>nums</code>.</p>\n\n<p>The <strong>greatest common divisor</strong> of two numbers is the largest positive integer that evenly divides both numbers.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,5,6,9,10]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong>\nThe smallest number in nums is 2.\nThe largest number in nums is 10.\nThe greatest common divisor of 2 and 10 is 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [7,5,6,8,3]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong>\nThe smallest number in nums is 3.\nThe largest number in nums is 8.\nThe greatest common divisor of 3 and 8 is 1.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,3]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\nThe smallest number in nums is 3.\nThe largest number in nums is 3.\nThe greatest common divisor of 3 and 3 is 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "Find the minimum and maximum in one iteration. Let them be mn and mx.",
+        "Try all the numbers in the range [1, mn] and check the largest number which divides both of them."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:03:35.409Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.810Z"
+}

@@ -1,0 +1,81 @@
+{
+    "quesId": 499,
+    "title": "The Maze III",
+    "titleSlug": "the-maze-iii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.4K",
+        "totalSubmission": "78.6K",
+        "totalAcceptedRaw": 41358,
+        "totalSubmissionRaw": 78631,
+        "acRate": "52.6%",
+        "acRateRaw": 52.597576019636016,
+        "likes": 526,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        490,
+        505
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Shortest Path",
+            "slug": "shortest-path"
+        },
+        {
+            "name": "Dijkstra's Algorithm",
+            "slug": "dijkstra"
+        },
+        {
+            "name": "Heuristic Search",
+            "slug": "heuristic-search"
+        },
+        {
+            "name": "A* Search",
+            "slug": "a-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 499,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:07:37.153Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.958Z"
+}

@@ -1,0 +1,51 @@
+{
+    "quesId": 3397,
+    "title": "Maximum Number of Distinct Elements After Operations",
+    "titleSlug": "maximum-number-of-distinct-elements-after-operations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "104.9K",
+        "totalSubmission": "201.3K",
+        "totalAcceptedRaw": 104894,
+        "totalSubmissionRaw": 201292,
+        "acRate": "52.1%",
+        "acRateRaw": 52.11036702899271,
+        "likes": 572,
+        "dislikes": 22
+    },
+    "similarQuesIds": [
+        1481
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3620,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Greedy\n\n#### Intuition\n\nSince the problem requires that each element in the array $\\textit{nums}$ be operated on at most once to maximize the number of distinct elements in $\\textit{nums}$, and since each operation can add an integer within the range $[-k, k]$ to the element, let $\\textit{minVal}$ be the smallest element and $\\textit{maxVal}$ be the largest element in the array $\\textit{nums}$. After performing the operations on the entire array, the range of possible values for all elements becomes $[\\textit{minVal} - k, \\textit{maxVal} + k]$.\n\nTo maximize the number of distinct elements, we should greedily choose the smallest available value for each element when constructing it. This approach allows the remaining elements in the array to have a wider value range, thereby potentially creating more distinct elements.\n\nFollowing this idea, we first sort the elements in $\\textit{nums}$ in ascending order, and then consider each element in turn:\n\n*  Consider $\\textit{nums}[0]$. According to the greedy principle, the element should be made as small as possible. Therefore, after the operation, $a_0 = \\textit{nums}[0] - k$.\n\n* Next, consider $\\textit{nums}[1]$. After the operation, its possible value range is $[\\textit{nums}[1] - k, \\textit{nums}[1] + k]$. Since the element after the operation must be different from $a_0$, the smallest valid value is $a_0 + 1$. According to the greedy principle, to make the element after the operation as small as possible, we have\n  $$a_1 = \\min(\\max(\\textit{nums}[1] - k, a_0 + 1), \\textit{nums}[1] + k).$$\n  If $a_1 > a_0$, then the number of distinct elements increases by 1.\n\n* Following the same logic, we process $\\textit{nums}[2], \\textit{nums}[3], \\dots, \\textit{nums}[n-1]$ in order. Each time, we compare the newly constructed element with the previous one and count the total number of distinct elements at the end.\n\nIn fact, since the range of possible values for all elements is $[\\textit{minVal} - k, \\textit{maxVal} + k]$, we could also greedily select the **largest** possible value each time (processing from largest to smallest). This alternative approach yields the same result and is therefore omitted here for brevity.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/UKVmSc6p/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"UKVmSc6p\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the given array $\\textit{nums}$.\n\n- Time complexity: $O(n \\log n)$.\n\n  Sorting takes $O(n \\log n)$ time, and traversing the array once after sorting takes $O(n)$ time, resulting in a total of $O(n \\log n)$.\n\n- Space complexity: $O(\\log n)$.\n\n  $O(\\log n)$ on average for in-place sorts (like C++’s `std::sort`, Go, Rust, or Java’s primitive `Arrays.sort`). In some languages or data types where merge-based algorithms (like **Timsort**) are used, the space complexity can increase to $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>You are allowed to perform the following <strong>operation</strong> on each element of the array <strong>at most</strong> <em>once</em>:</p>\n\n<ul>\n\t<li>Add an integer in the range <code>[-k, k]</code> to the element.</li>\n</ul>\n\n<p>Return the <strong>maximum</strong> possible number of <strong>distinct</strong> elements in <code>nums</code> after performing the <strong>operations</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,2,3,3,4], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> changes to <code>[-1, 0, 1, 2, 3, 4]</code> after performing operations on the first four elements.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,4,4,4], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>By adding -1 to <code>nums[0]</code> and 1 to <code>nums[1]</code>, <code>nums</code> changes to <code>[3, 5, 4, 4]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Can we use sorting here?",
+        "Find the minimum element which is not used for each element."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T19:00:04.804Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.314Z"
+}

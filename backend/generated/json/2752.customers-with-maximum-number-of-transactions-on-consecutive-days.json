@@ -1,0 +1,37 @@
+{
+    "quesId": 2752,
+    "title": "Customers with Maximum Number of Transactions on Consecutive Days",
+    "titleSlug": "customers-with-maximum-number-of-transactions-on-consecutive-days",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.4K",
+        "totalSubmission": "8.1K",
+        "totalAcceptedRaw": 3429,
+        "totalSubmissionRaw": 8072,
+        "acRate": "42.5%",
+        "acRateRaw": 42.48017839444995,
+        "likes": 16,
+        "dislikes": 35
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2852,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:41:59.478Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.405Z"
+}

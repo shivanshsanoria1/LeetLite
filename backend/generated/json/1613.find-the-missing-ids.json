@@ -1,0 +1,41 @@
+{
+    "quesId": 1613,
+    "title": "Find the Missing IDs",
+    "titleSlug": "find-the-missing-ids",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "23.8K",
+        "totalSubmission": "32.7K",
+        "totalAcceptedRaw": 23823,
+        "totalSubmissionRaw": 32704,
+        "acRate": "72.8%",
+        "acRateRaw": 72.84430039138942,
+        "likes": 238,
+        "dislikes": 31
+    },
+    "similarQuesIds": [
+        1225,
+        1285,
+        1336
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1759,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:50:46.379Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.199Z"
+}

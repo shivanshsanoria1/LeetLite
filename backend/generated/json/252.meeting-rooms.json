@@ -1,0 +1,51 @@
+{
+    "quesId": 252,
+    "title": "Meeting Rooms",
+    "titleSlug": "meeting-rooms",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "532.4K",
+        "totalSubmission": "893.9K",
+        "totalAcceptedRaw": 532385,
+        "totalSubmissionRaw": 893941,
+        "acRate": "59.6%",
+        "acRateRaw": 59.55482520658523,
+        "likes": 2132,
+        "dislikes": 117
+    },
+    "similarQuesIds": [
+        56,
+        253,
+        2402,
+        2848
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Quicksort",
+            "slug": "quicksort"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 252,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:56:57.249Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.787Z"
+}

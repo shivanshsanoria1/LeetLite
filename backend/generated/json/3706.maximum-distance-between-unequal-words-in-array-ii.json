@@ -1,0 +1,46 @@
+{
+    "quesId": 3706,
+    "title": "Maximum Distance Between Unequal Words in Array II",
+    "titleSlug": "maximum-distance-between-unequal-words-in-array-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "718",
+        "totalSubmission": "1K",
+        "totalAcceptedRaw": 718,
+        "totalSubmissionRaw": 1003,
+        "acRate": "71.6%",
+        "acRateRaw": 71.5852442671984,
+        "likes": 5,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "exampleTestcases": "[\"leetcode\",\"leetcode\",\"codeforces\"]\n[\"a\",\"b\",\"c\",\"a\",\"a\"]\n[\"z\",\"z\",\"z\"]",
+    "meta": {
+        "quesIdLCBackend": 4070,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use two pointers",
+        "Fix the first word as <code>words[i]</code> and find the rightmost unequal <code>words[j]</code>",
+        "Fix the last word as <code>words[i]</code> and find the leftmost unequal <code>words[j]</code>"
+    ],
+    "LC_SYNC_ISO": "2026-09-14T17:23:29.559Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.733Z"
+}

@@ -1,0 +1,52 @@
+{
+    "quesId": 384,
+    "title": "Shuffle an Array",
+    "titleSlug": "shuffle-an-array",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "404.3K",
+        "totalSubmission": "674K",
+        "totalAcceptedRaw": 404285,
+        "totalSubmissionRaw": 674011,
+        "acRate": "60.0%",
+        "acRateRaw": 59.98207749702157,
+        "likes": 1450,
+        "dislikes": 947
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Randomized",
+            "slug": "randomized"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 384,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Initial Thoughts\n\nNormally I would display more than two approaches, but shuffling is\ndeceptively easy to do _almost_ properly, and the Fisher-Yates algorithm is\nboth the canonical solution and asymptotically optimal.\n\nA few notes on randomness are necessary before beginning - both approaches\ndisplayed below assume that the languages' pseudorandom number generators\n(PRNGs) are sufficiently random. The sample code uses the simplest techniques\navailable for getting pseudorandom numbers, but for each possible permutation\nof the array to be truly equally likely, more care must be taken. For\nexample, an array of length $$n$$ has $$n!$$ distinct permutations. Therefore, in\norder to encode all permutations in an integer space, $$\\lceil lg(n!)\\rceil$$\nbits are necessary, which may not be guaranteed by the default PRNG.\n\n### Approach #1 Brute Force [Accepted]\n\n**Intuition**\n\nIf we put each number in a \"hat\" and draw them out at random, the order in\nwhich we draw them will define a random ordering.\n\n**Algorithm**\n\nThe brute force algorithm essentially puts each number in the aforementioned\n\"hat\", and draws them at random (without replacement) until there are none\nleft. Mechanically, this is performed by copying the contents of `array` into\na second auxiliary array named `aux` before overwriting each element of\n`array` with a randomly selected one from `aux`. After selecting each random\nelement, it is removed from `aux` to prevent duplicate draws. The\nimplementation of `reset` is simple, as we just store the original state of\n`nums` on construction.\n\nThe correctness of the algorithm follows from the fact that an element\n(without loss of generality) is equally likely to be selected during all\niterations of the `for` loop. To prove this, observe that the probability of a\nparticular element $$e$$ being chosen on the $$k$$th iteration (indexed from 0)\nis simply $$P(e$$ being chosen during the $$k$$th iteration$$)\\cdot P(e$$ not being\nchosen before the $$k$$th iteration$$)$$. Given that the array to be shuffled has\n$$n$$ elements, this probability is more concretely stated as the following:\n\n$$\n   \\frac{1}{n-k} \\cdot \\prod_{i=1}^{k} \\frac{n-i}{n-i+1}\n$$\n\nWhen expanded (and rearranged), it looks like this (for sufficiently large\n$$k$$):\n\n$$\n   (\\frac{n-1}{n}\n   \\cdot \\frac{n-2}{n-1}\n   \\cdot (\\ldots)\n   \\cdot \\frac{n-k+1}{n-k+2}\n   \\cdot \\frac{n-k}{n-k+1})\n   \\cdot \\frac{1}{n-k}\n$$\n\nFor the base case ($$k = 0$$), it is trivial to see that\n$$\\frac{1}{n-k} = \\frac{1}{n}$$. For $$k > 0$$, the numerator of each fraction\ncan be cancelled with the denominator of the next, leaving the $$n$$ from the\n0th draw as the only uncancelled denominator. Therefore, no matter on which\ndraw an element is drawn, it is drawn with a $$\\frac{1}{n}$$ chance, so each\narray permutation is equally likely to arise.\n\n<iframe src=\"https://leetcode.com/playground/NMKmaSiN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NMKmaSiN\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(n^2)$$\n\n    The quadratic time complexity arises from the calls to `list.remove` (or\n    `list.pop`), which run in linear time. $$n$$ linear list removals occur,\n    which results in a fairly easy quadratic analysis.\n\n* Space complexity : $$\\mathcal{O}(n)$$\n\n    Because the problem also asks us to implement `reset`, we must use linear\n    additional space to store the original array. Otherwise, it would be lost\n    upon the first call to `shuffle`.\n\n---\n\n### Approach #2 Fisher-Yates Algorithm [Accepted]\n\n**Intuition**\n\nWe can cut down the time and space complexities of `shuffle` with a bit of\ncleverness - namely, by swapping elements around within the array itself, we\ncan avoid the linear space cost of the auxiliary array and the linear time\ncost of list modification.\n\n**Algorithm**\n\nThe Fisher-Yates algorithm is remarkably similar to the brute force solution.\nOn each iteration of the algorithm, we generate a random integer between the\ncurrent index and the last index of the array. Then, we swap the elements at\nthe current index and the chosen index - this simulates drawing (and\nremoving) the element from the hat, as the next range from which we select a\nrandom index will not include the most recently processed one. One small, yet important\ndetail is that it is possible to swap an element with itself - otherwise, some\narray permutations would be more likely than others. To see this illustrated more\nclearly, consider the animation below:\n\n!?!../Documents/384_Shuffle_an_Array.json:697,161!?!\n\n<iframe src=\"https://leetcode.com/playground/nhPu5mbP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nhPu5mbP\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(n)$$\n\n    The Fisher-Yates algorithm runs in linear time, as generating a random\n    index and swapping two values can be done in constant time.\n\n* Space complexity : $$\\mathcal{O}(n)$$\n\n    Although we managed to avoid using linear space on the auxiliary array\n    from the brute force approach, we still need it for `reset`, so we're\n    stuck with linear space complexity."
+    },
+    "content": "<p>Given an integer array <code>nums</code>, design an algorithm to randomly shuffle the array. All permutations of the array should be <strong>equally likely</strong> as a result of the shuffling.</p>\n\n<p>Implement the <code>Solution</code> class:</p>\n\n<ul>\n\t<li><code>Solution(int[] nums)</code> Initializes the object with the integer array <code>nums</code>.</li>\n\t<li><code>int[] reset()</code> Resets the array to its original configuration and returns it.</li>\n\t<li><code>int[] shuffle()</code> Returns a random shuffling of the array.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;Solution&quot;, &quot;shuffle&quot;, &quot;reset&quot;, &quot;shuffle&quot;]\n[[[1, 2, 3]], [], [], []]\n<strong>Output</strong>\n[null, [3, 1, 2], [1, 2, 3], [1, 3, 2]]\n\n<strong>Explanation</strong>\nSolution solution = new Solution([1, 2, 3]);\nsolution.shuffle();    // Shuffle the array [1,2,3] and return its result.\n                       // Any permutation of [1,2,3] must be equally likely to be returned.\n                       // Example: return [3, 1, 2]\nsolution.reset();      // Resets the array back to its original configuration [1,2,3]. Return [1, 2, 3]\nsolution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example: return [1, 3, 2]\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 50</code></li>\n\t<li><code>-10<sup>6</sup> &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n\t<li>All the elements of <code>nums</code> are <strong>unique</strong>.</li>\n\t<li>At most <code>10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>reset</code> and <code>shuffle</code>.</li>\n</ul>\n",
+    "hints": [
+        "The solution expects that we always use the original array to shuffle() else some of the test cases fail. (Credits; @snehasingh31)"
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:05:55.751Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.863Z"
+}

@@ -1,0 +1,50 @@
+{
+    "quesId": 3237,
+    "title": "Alt and Tab Simulation",
+    "titleSlug": "alt-and-tab-simulation",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.3K",
+        "totalSubmission": "2.5K",
+        "totalAcceptedRaw": 1343,
+        "totalSubmissionRaw": 2476,
+        "acRate": "54.2%",
+        "acRateRaw": 54.24071082390953,
+        "likes": 15,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3538,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let’s answer the queries offline.",
+        "Start from the <b>last</b> query until you reach the first query.",
+        "Each time, append the value of that query to a <code>ans</code> array if it wasn’t already appended.",
+        "Then start from the <b>beginning</b> of <code>windows</code> and append to <code>ans</code> array if it wasn’t already appended."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:57:57.060Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.066Z"
+}

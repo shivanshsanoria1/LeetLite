@@ -1,0 +1,55 @@
+{
+    "quesId": 2006,
+    "title": "Count Number of Pairs With Absolute Difference K",
+    "titleSlug": "count-number-of-pairs-with-absolute-difference-k",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "250.4K",
+        "totalSubmission": "293K",
+        "totalAcceptedRaw": 250450,
+        "totalSubmissionRaw": 292956,
+        "acRate": "85.5%",
+        "acRateRaw": 85.4910500948922,
+        "likes": 1825,
+        "dislikes": 50
+    },
+    "similarQuesIds": [
+        1,
+        532,
+        1865,
+        2176,
+        2364,
+        2563
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2116,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the number of pairs</em> <code>(i, j)</code> <em>where</em> <code>i &lt; j</code> <em>such that</em> <code>|nums[i] - nums[j]| == k</code>.</p>\n\n<p>The value of <code>|x|</code> is defined as:</p>\n\n<ul>\n\t<li><code>x</code> if <code>x &gt;= 0</code>.</li>\n\t<li><code>-x</code> if <code>x &lt; 0</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,1], k = 1\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The pairs with an absolute difference of 1 are:\n- [<strong><u>1</u></strong>,<strong><u>2</u></strong>,2,1]\n- [<strong><u>1</u></strong>,2,<strong><u>2</u></strong>,1]\n- [1,<strong><u>2</u></strong>,2,<strong><u>1</u></strong>]\n- [1,2,<strong><u>2</u></strong>,<strong><u>1</u></strong>]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3], k = 3\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There are no pairs with an absolute difference of 3.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,2,1,5,4], k = 2\n<strong>Output:</strong> 3\n<b>Explanation:</b> The pairs with an absolute difference of 2 are:\n- [<strong><u>3</u></strong>,2,<strong><u>1</u></strong>,5,4]\n- [<strong><u>3</u></strong>,2,1,<strong><u>5</u></strong>,4]\n- [3,<strong><u>2</u></strong>,1,5,<strong><u>4</u></strong>]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 200</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n\t<li><code>1 &lt;= k &lt;= 99</code></li>\n</ul>\n",
+    "hints": [
+        "Can we check every possible pair?",
+        "Can we use a nested for loop to solve this problem?"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:03:57.320Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.893Z"
+}

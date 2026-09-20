@@ -1,0 +1,60 @@
+{
+    "quesId": 729,
+    "title": "My Calendar I",
+    "titleSlug": "my-calendar-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "473.2K",
+        "totalSubmission": "810.4K",
+        "totalAcceptedRaw": 473180,
+        "totalSubmissionRaw": 810361,
+        "acRate": "58.4%",
+        "acRateRaw": 58.39123948156567,
+        "likes": 4853,
+        "dislikes": 143
+    },
+    "similarQuesIds": [
+        731,
+        732,
+        2446
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 729,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n### Overview\n\nThe primary challenge in this problem is to find a proper data structure and an efficient algorithm to maintain all valid events, including **querying** potentially conflicting existing events and **inserting** new valid events.\n\nIn this solution article, we first start with a straightforward idea of brute force to warm up, then one step forward, we improve the naive approach to keep all existing events in sorted order and reduce the time complexity.\n\n### Approach #1: Brute Force\n\n**Intuition**\n\nWhen booking a new event `[start, end)`, check if every current event conflicts with the new event. If none of them do, we can book the event.\n\n**Algorithm**\n\nWe will maintain a list of interval *events* (not necessarily sorted). Evidently, two events `[s1, e1)` and `[s2, e2)` do *not* conflict if and only if one of them starts after the other one ends: either `e1 <= s2` OR `e2 <= s1`. By De Morgan's laws, this means the events conflict when `s1 < e2` AND `s2 < e1`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/KWP7poit/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"KWP7poit\"></iframe>\n\n\n**Complexity Analysis**\n\nLet $$N$$ be the number of events booked.\n\n* Time Complexity: $$O(N^2)$$. For each new event, we process every previous event to decide whether the new event can be booked. This leads to $$\\sum_k^N O(k) = O(N^2)$$ complexity.\n\n* Space Complexity: $$O(N)$$, the size of the `calendar`.\n\n---\n\n### Approach #2: Sorted List + Binary Search\n\n**Intuition**\n\nIf we maintained our events in *sorted* order, we could check whether an event could be booked in $$O(\\log N)$$ time (where $$N$$ is the number of events already booked) by binary searching for where the event should be placed. We would also have to insert the event in our sorted structure.\n\n**Algorithm**\n\n1. Initialize with an empty sorted list data structure `calendar`.\n2. For every new interval`[start, end)` in `book()` invokation, we check if there is a conflict on each side with neighboring intervals.\n    1. Lookup the first index `idx`, which maps to an element `[s1,e1)` in `calendar` and `s > start`, and this step can be conducted by binary search (see [this explore card](https://leetcode.com/explore/learn/card/binary-search/)) as we keep `calendar` in sorted order by starting points of intervals. (Notice that there may not be such an `idx` because `start` >= all kept intervals. In this case, we don't need to check the following step)\n    2. Check if `end > s1`. If yes, `[start, end)` and `[s1,e1)` must be overlapped, `[start, end)` is illegal, and we should return false for the invokation now.\n    3. Roll back to the index `idx-1`, which maps to an element `[s2,e2)` in `calendar` and `s1` is the largest staring points that satisfy `s1 <= start`. (Similarly, notice that there may be no element at `idx-1` because `idx` is the 0-th index. In this case, we don't need to check the following step either)\n    4. Check if `e2 > start`. If yes, `[s2,e2)` and `[start, end)` must be overlapped, `[start, end)` is illegal, and we should return false for the invokation now.\n    5. If `[start, end)` passes all checkings above, we insert this valid interval at `idx` in `calendar`.\n\n**Implementation**\n\nWe need a data structure that keeps elements sorted and supports fast insertion. \n- In Java, a [`TreeMap`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html) is the perfect candidate. \n- In C++, we can use `set` container and [`lower_bound` method](https://cplusplus.com/reference/set/set/lower_bound/).\n- In Python, we can keep a [`SortedList`](https://grantjenks.com/docs/sortedcontainers/sortedlist.html).\n\n<iframe src=\"https://leetcode.com/playground/c2gTvDNC/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"c2gTvDNC\"></iframe>\n\n\n**Complexity Analysis**\n\nLike Approach 1, let $$N$$ be the number of events booked.\n\n* Time Complexity: $$O(N \\log N)$$. For each new event, we search that the event is legal in $$O(\\log N)$$ time, then insert it in $$O(\\log N)$$ time.\n\n* Space Complexity: $$O(N)$$, the size of the data structures used.\n\n> Note: In practice, for Python, if you use `bisect.insort()` or `list.insert()` to add new events to a built-in list as `calendar`, it will result in a time complexity as $$O(N)$$ instead of $$O(\\log N)$$ for each insertion operation (see [the docs](https://docs.python.org/3/library/bisect.html#bisect.insort)). However, due to the built-in instruction optimization in `list.insert()` and the constraint of $$N \\le 1000$$ in this problem, this $$O(N^2)$$ solution may somehow show a better performance in runtime. But we won't provide this solution code here because the time complexity matters."
+    },
+    "content": "<p>You are implementing a program to use as your calendar. We can add a new event if adding the event will not cause a <strong>double booking</strong>.</p>\n\n<p>A <strong>double booking</strong> happens when two events have some non-empty intersection (i.e., some moment is common to both events.).</p>\n\n<p>The event can be represented as a pair of integers <code>startTime</code> and <code>endTime</code> that represents a booking on the half-open interval <code>[startTime, endTime)</code>, the range of real numbers <code>x</code> such that <code>startTime &lt;= x &lt; endTime</code>.</p>\n\n<p>Implement the <code>MyCalendar</code> class:</p>\n\n<ul>\n\t<li><code>MyCalendar()</code> Initializes the calendar object.</li>\n\t<li><code>boolean book(int startTime, int endTime)</code> Returns <code>true</code> if the event can be added to the calendar successfully without causing a <strong>double booking</strong>. Otherwise, return <code>false</code> and do not add the event to the calendar.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyCalendar&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;]\n[[], [10, 20], [15, 25], [20, 30]]\n<strong>Output</strong>\n[null, true, false, true]\n\n<strong>Explanation</strong>\nMyCalendar myCalendar = new MyCalendar();\nmyCalendar.book(10, 20); // return True\nmyCalendar.book(15, 25); // return False, It can not be booked because time 15 is already booked by another event.\nmyCalendar.book(20, 30); // return True, The event can be booked, as the first event takes every time less than 20, but not including 20.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= start &lt; end &lt;= 10<sup>9</sup></code></li>\n\t<li>At most <code>1000</code> calls will be made to <code>book</code>.</li>\n</ul>\n",
+    "hints": [
+        "Store the events as a sorted list of intervals.  If none of the events conflict, then the new event can be added."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:15:54.132Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.270Z"
+}

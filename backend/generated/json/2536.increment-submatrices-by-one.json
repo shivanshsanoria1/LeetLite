@@ -1,0 +1,53 @@
+{
+    "quesId": 2536,
+    "title": "Increment Submatrices by One",
+    "titleSlug": "increment-submatrices-by-one",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "111K",
+        "totalSubmission": "150.4K",
+        "totalAcceptedRaw": 111040,
+        "totalSubmissionRaw": 150421,
+        "acRate": "73.8%",
+        "acRateRaw": 73.81965403996756,
+        "likes": 897,
+        "dislikes": 81
+    },
+    "similarQuesIds": [
+        308,
+        2237
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2625,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: 2D Difference + Prefix Sum\n\n#### Intuition\n\nThe problem asks us to perform multiple “increment all elements in a rectangle” operations on an $n \\times n$ integer matrix $\\textit{mat}$, and return the matrix $\\textit{mat}$ after all operations have been applied. In the two-dimensional case, if we want to increment all elements within a rectangular submatrix, we can update a two-dimensional difference array $\\textit{diff}$ as follows:\n\n$$\n\\begin{aligned}\ndiff[row_1][col_1] &+= 1 \\\\\ndiff[row_2 + 1][col_1] &-= 1 \\\\\ndiff[row_1][col_2 + 1] &-= 1 \\\\\ndiff[row_2 + 1][col_2 + 1] &+= 1\n\\end{aligned}\n$$\n\nAfter processing all queries, the final matrix $\\textit{mat}$ can be obtained by computing the prefix sum over the two-dimensional difference array:\n\n$$\n\\textit{mat}[i][j] = \\textit{diff}[i][j] + \\textit{mat}[i - 1][j] + \\textit{mat}[i][j - 1] - \\textit{mat}[i - 1][j - 1]\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/BfaRhQnF/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BfaRhQnF\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O( |queries| + n^2)$.\n\n- Space complexity: $O(n^2)$.\n\n---"
+    },
+    "content": "<p>You are given a positive integer <code>n</code>, indicating that we initially have an <code>n x n</code>&nbsp;<strong>0-indexed</strong> integer matrix <code>mat</code> filled with zeroes.</p>\n\n<p>You are also given a 2D integer array <code>query</code>. For each <code>query[i] = [row1<sub>i</sub>, col1<sub>i</sub>, row2<sub>i</sub>, col2<sub>i</sub>]</code>, you should do the following operation:</p>\n\n<ul>\n\t<li>Add <code>1</code> to <strong>every element</strong> in the submatrix with the <strong>top left</strong> corner <code>(row1<sub>i</sub>, col1<sub>i</sub>)</code> and the <strong>bottom right</strong> corner <code>(row2<sub>i</sub>, col2<sub>i</sub>)</code>. That is, add <code>1</code> to <code>mat[x][y]</code> for all <code>row1<sub>i</sub> &lt;= x &lt;= row2<sub>i</sub></code> and <code>col1<sub>i</sub> &lt;= y &lt;= col2<sub>i</sub></code>.</li>\n</ul>\n\n<p>Return<em> the matrix</em> <code>mat</code><em> after performing every query.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/11/24/p2example11.png\" style=\"width: 531px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 3, queries = [[1,1,2,2],[0,0,1,1]]\n<strong>Output:</strong> [[1,1,0],[1,2,1],[0,1,1]]\n<strong>Explanation:</strong> The diagram above shows the initial matrix, the matrix after the first query, and the matrix after the second query.\n- In the first query, we add 1 to every element in the submatrix with the top left corner (1, 1) and bottom right corner (2, 2).\n- In the second query, we add 1 to every element in the submatrix with the top left corner (0, 0) and bottom right corner (1, 1).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/11/24/p2example22.png\" style=\"width: 261px; height: 82px;\" />\n<pre>\n<strong>Input:</strong> n = 2, queries = [[0,0,1,1]]\n<strong>Output:</strong> [[1,1],[1,1]]\n<strong>Explanation:</strong> The diagram above shows the initial matrix and the matrix after the first query.\n- In the first query we add 1 to every element in the matrix.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 500</code></li>\n\t<li><code>1 &lt;= queries.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= row1<sub>i</sub> &lt;= row2<sub>i</sub> &lt; n</code></li>\n\t<li><code>0 &lt;= col1<sub>i</sub> &lt;= col2<sub>i</sub> &lt; n</code></li>\n</ul>\n",
+    "hints": [
+        "Imagine each row as a separate array. Instead of updating the whole submatrix together, we can use prefix sum to update each row separately.",
+        "For each query, iterate over the rows i in the range [row1, row2] and add 1 to prefix sum S[i][col1], and subtract 1 from S[i][col2 + 1].",
+        "After doing this operation for all the queries, update each row separately with S[i][j] = S[i][j] + S[i][j - 1]."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:38:58.338Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.076Z"
+}

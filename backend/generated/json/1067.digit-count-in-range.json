@@ -1,0 +1,47 @@
+{
+    "quesId": 1067,
+    "title": "Digit Count in Range",
+    "titleSlug": "digit-count-in-range",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.8K",
+        "totalSubmission": "10.4K",
+        "totalAcceptedRaw": 4843,
+        "totalSubmissionRaw": 10395,
+        "acRate": "46.6%",
+        "acRateRaw": 46.589706589706594,
+        "likes": 98,
+        "dislikes": 26
+    },
+    "similarQuesIds": [
+        233,
+        2310
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1068,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Define a function f(x) to get the requested sum from 1 to x. So the answer will be f(hi) - f(lo - 1)",
+        "In order to solve f(x) we need to do a DP over digits approach."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:29.760Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.029Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 3358,
+    "title": "Books with NULL Ratings",
+    "titleSlug": "books-with-null-ratings",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "4.1K",
+        "totalSubmission": "4.9K",
+        "totalAcceptedRaw": 4057,
+        "totalSubmissionRaw": 4949,
+        "acRate": "82.0%",
+        "acRateRaw": 81.9761567993534,
+        "likes": 9,
+        "dislikes": 0
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3695,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:59:32.228Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.213Z"
+}

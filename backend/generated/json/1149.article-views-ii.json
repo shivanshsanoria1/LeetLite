@@ -1,0 +1,38 @@
+{
+    "quesId": 1149,
+    "title": "Article Views II",
+    "titleSlug": "article-views-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "45.5K",
+        "totalSubmission": "96.1K",
+        "totalAcceptedRaw": 45466,
+        "totalSubmissionRaw": 96110,
+        "acRate": "47.3%",
+        "acRateRaw": 47.30621163250442,
+        "likes": 135,
+        "dislikes": 30
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1259,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:27:43.839Z",
+    "PARSED_ISO": "2026-09-20T08:56:09.377Z"
+}

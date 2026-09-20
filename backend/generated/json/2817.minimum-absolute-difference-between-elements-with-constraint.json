@@ -1,0 +1,56 @@
+{
+    "quesId": 2817,
+    "title": "Minimum Absolute Difference Between Elements With Constraint",
+    "titleSlug": "minimum-absolute-difference-between-elements-with-constraint",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "43.8K",
+        "totalSubmission": "115K",
+        "totalAcceptedRaw": 43808,
+        "totalSubmissionRaw": 115001,
+        "acRate": "38.1%",
+        "acRateRaw": 38.09358179494091,
+        "likes": 779,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        532,
+        2200,
+        2903,
+        2905
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3000,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code> and an integer <code>x</code>.</p>\n\n<p>Find the <strong>minimum absolute difference</strong> between two elements in the array that are at least <code>x</code> indices apart.</p>\n\n<p>In other words, find two indices <code>i</code> and <code>j</code> such that <code>abs(i - j) &gt;= x</code> and <code>abs(nums[i] - nums[j])</code> is minimized.</p>\n\n<p>Return<em> an integer denoting the <strong>minimum</strong> absolute difference between two elements that are at least</em> <code>x</code> <em>indices apart</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,3,2,4], x = 2\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> We can select nums[0] = 4 and nums[3] = 4. \nThey are at least 2 indices apart, and their absolute difference is the minimum, 0. \nIt can be shown that 0 is the optimal answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,3,2,10,15], x = 1\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> We can select nums[1] = 3 and nums[2] = 2.\nThey are at least 1 index apart, and their absolute difference is the minimum, 1.\nIt can be shown that 1 is the optimal answer.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4], x = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We can select nums[0] = 1 and nums[3] = 4.\nThey are at least 3 indices apart, and their absolute difference is the minimum, 3.\nIt can be shown that 3 is the optimal answer.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= x &lt; nums.length</code></li>\n</ul>\n",
+    "hints": [
+        "<div class=\"_1l1MA\">Let's only consider the cases where <code>i < j</code>, as the problem is symmetric.</div>",
+        "<div class=\"_1l1MA\">For an index <code>j</code>, we are interested in an index <code>i</code> in the range <code>[0, j - x]</code> that minimizes <code>abs(nums[i] - nums[j])</code>.</div>",
+        "<div class=\"_1l1MA\">For every index <code>j</code>, while going from left to right, add <code>nums[j - x]</code> to a set (C++ set, Java TreeSet, and Python sorted set).</div>",
+        "<div class=\"_1l1MA\">After inserting <code>nums[j - x]</code>, we can calculate the closest value to <code>nums[j]</code> in the set using binary search and store the absolute difference. In C++, we can achieve this by using lower_bound and/or upper_bound.</div>",
+        "<div class=\"_1l1MA\">Calculate the minimum absolute difference among all indices.</div>"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:44:50.995Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.557Z"
+}

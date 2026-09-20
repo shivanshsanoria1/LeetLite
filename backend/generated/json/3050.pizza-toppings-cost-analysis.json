@@ -1,0 +1,37 @@
+{
+    "quesId": 3050,
+    "title": "Pizza Toppings Cost Analysis",
+    "titleSlug": "pizza-toppings-cost-analysis",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "4.1K",
+        "totalSubmission": "5.9K",
+        "totalAcceptedRaw": 4073,
+        "totalSubmissionRaw": 5887,
+        "acRate": "69.2%",
+        "acRateRaw": 69.18634278919653,
+        "likes": 17,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3255,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:07.288Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.838Z"
+}

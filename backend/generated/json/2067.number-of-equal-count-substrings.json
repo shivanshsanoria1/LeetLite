@@ -1,0 +1,58 @@
+{
+    "quesId": 2067,
+    "title": "Number of Equal Count Substrings",
+    "titleSlug": "number-of-equal-count-substrings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.3K",
+        "totalSubmission": "9.5K",
+        "totalAcceptedRaw": 4271,
+        "totalSubmissionRaw": 9456,
+        "acRate": "45.2%",
+        "acRateRaw": 45.167089678511,
+        "likes": 113,
+        "dislikes": 11
+    },
+    "similarQuesIds": [
+        3,
+        395,
+        2168
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2209,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "The brute force solution is to check every substring, which would TLE. How can we improve this solution?",
+        "In an equal count substring, the first character appears count times, the second character appears count times, and so on.",
+        "The length of an equal count substring is the number of unique characters multiplied by count.",
+        "The length of all equal count substrings are multiples of count."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:52.410Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.942Z"
+}

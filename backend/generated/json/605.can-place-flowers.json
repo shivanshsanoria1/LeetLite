@@ -1,0 +1,45 @@
+{
+    "quesId": 605,
+    "title": "Can Place Flowers",
+    "titleSlug": "can-place-flowers",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.5M",
+        "totalSubmission": "5M",
+        "totalAcceptedRaw": 1478261,
+        "totalSubmissionRaw": 5046807,
+        "acRate": "29.3%",
+        "acRateRaw": 29.29101771633417,
+        "likes": 7521,
+        "dislikes": 1334
+    },
+    "similarQuesIds": [
+        495,
+        735
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 605,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n\n---\n### Approach #1 Single Scan [Accepted]\n\nThe solution is very simple. We can find out the extra maximum number of flowers, $$count$$, that can be planted for the given $$flowerbed$$ arrangement. To do so, we can traverse over all the elements of the $$flowerbed$$ and find out those elements which are 0(implying an empty position). For every such element, we check if its both adjacent positions are also empty. If so, we can plant a flower at the current position without violating the no-adjacent-flowers-rule. For the first and last elements, we need not check the previous and the next adjacent positions respectively.\n\nIf the $$count$$ obtained is greater than or equal to $$n$$, the required number of flowers to be planted, we can plant $$n$$ flowers in the empty spaces, otherwise not.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/UncMMEFa/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"UncMMEFa\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$. A single scan of the $$flowerbed$$ array of size $$n$$ is done.\n\n* Space complexity: $$O(1)$$. Constant extra space is used.\n\n---\n### Approach #2 Optimized [Accepted]\n\n**Algorithm**\n\nInstead of finding the maximum value of $$count$$ that can be obtained, as done in the last approach, we can stop the process of checking the positions for planting the flowers as soon as $$count$$ becomes equal to $$n$$. Doing this leads to an optimization of the first approach. If $$count$$ never becomes equal to $$n$$, $$n$$ flowers can't be planted at the empty positions.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/RSPq2Ur6/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"RSPq2Ur6\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n)$$. A single scan of the $$flowerbed$$ array of size $$n$$ is done.\n\n* Space complexity: $$O(1)$$. Constant extra space is used."
+    },
+    "content": "<p>You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in <strong>adjacent</strong> plots.</p>\n\n<p>Given an integer array <code>flowerbed</code> containing <code>0</code>&#39;s and <code>1</code>&#39;s, where <code>0</code> means empty and <code>1</code> means not empty, and an integer <code>n</code>, return <code>true</code>&nbsp;<em>if</em> <code>n</code> <em>new flowers can be planted in the</em> <code>flowerbed</code> <em>without violating the no-adjacent-flowers rule and</em> <code>false</code> <em>otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> flowerbed = [1,0,0,0,1], n = 1\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> flowerbed = [1,0,0,0,1], n = 2\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= flowerbed.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>flowerbed[i]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li>There are no two adjacent flowers in <code>flowerbed</code>.</li>\n\t<li><code>0 &lt;= n &lt;= flowerbed.length</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:09:12.246Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.094Z"
+}

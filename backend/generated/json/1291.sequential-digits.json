@@ -1,0 +1,41 @@
+{
+    "quesId": 1291,
+    "title": "Sequential Digits",
+    "titleSlug": "sequential-digits",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "358K",
+        "totalSubmission": "521.5K",
+        "totalAcceptedRaw": 357961,
+        "totalSubmissionRaw": 521543,
+        "acRate": "68.6%",
+        "acRateRaw": 68.63505284309666,
+        "likes": 3245,
+        "dislikes": 183
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1212,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>An&nbsp;integer has <em>sequential digits</em> if and only if each digit in the number is one more than the previous digit.</p>\n\n<p>Return a <strong>sorted</strong> list of all the integers&nbsp;in the range <code>[low, high]</code>&nbsp;inclusive that have sequential digits.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> low = 100, high = 300\n<strong>Output:</strong> [123,234]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> low = 1000, high = 13000\n<strong>Output:</strong> [1234,2345,3456,4567,5678,6789,12345]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>10 &lt;= low &lt;= high &lt;= 10^9</code></li>\n</ul>\n",
+    "hints": [
+        "Generate all numbers with sequential digits and check if they are in the given range.",
+        "Fix the starting digit then do a recursion that tries to append all valid digits."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:30:51.958Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.231Z"
+}

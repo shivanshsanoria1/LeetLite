@@ -1,0 +1,61 @@
+{
+    "quesId": 616,
+    "title": "Add Bold Tag in String",
+    "titleSlug": "add-bold-tag-in-string",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "106.6K",
+        "totalSubmission": "206.9K",
+        "totalAcceptedRaw": 106593,
+        "totalSubmissionRaw": 206933,
+        "acRate": "51.5%",
+        "acRateRaw": 51.51087550076595,
+        "likes": 1119,
+        "dislikes": 204
+    },
+    "similarQuesIds": [
+        56,
+        591
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Aho–Corasick Algorithm",
+            "slug": "aho-corasick-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 616,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:14:34.098Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.101Z"
+}

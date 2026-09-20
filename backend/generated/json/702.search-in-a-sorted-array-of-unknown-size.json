@@ -1,0 +1,49 @@
+{
+    "quesId": 702,
+    "title": "Search in a Sorted Array of Unknown Size",
+    "titleSlug": "search-in-a-sorted-array-of-unknown-size",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "114.7K",
+        "totalSubmission": "156.8K",
+        "totalAcceptedRaw": 114681,
+        "totalSubmissionRaw": 156757,
+        "acRate": "73.2%",
+        "acRateRaw": 73.15845544377603,
+        "likes": 944,
+        "dislikes": 51
+    },
+    "similarQuesIds": [
+        704,
+        1533
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 786,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:35.588Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.247Z"
+}

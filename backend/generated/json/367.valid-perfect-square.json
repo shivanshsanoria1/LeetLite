@@ -1,0 +1,45 @@
+{
+    "quesId": 367,
+    "title": "Valid Perfect Square",
+    "titleSlug": "valid-perfect-square",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "991.6K",
+        "totalSubmission": "2.2M",
+        "totalAcceptedRaw": 991593,
+        "totalSubmissionRaw": 2197804,
+        "acRate": "45.1%",
+        "acRateRaw": 45.11722757879516,
+        "likes": 4742,
+        "dislikes": 339
+    },
+    "similarQuesIds": [
+        69,
+        633
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 367,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given a positive integer num, return <code>true</code> <em>if</em> <code>num</code> <em>is a perfect square or</em> <code>false</code> <em>otherwise</em>.</p>\n\n<p>A <strong>perfect square</strong> is an integer that is the square of an integer. In other words, it is the product of some integer with itself.</p>\n\n<p>You must not use any built-in library function, such as <code>sqrt</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 16\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We return true because 4 * 4 = 16 and 4 is an integer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = 14\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:40.354Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.701Z"
+}

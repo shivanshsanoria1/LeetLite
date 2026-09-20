@@ -1,0 +1,37 @@
+{
+    "quesId": 3188,
+    "title": "Find Top Scoring Students II",
+    "titleSlug": "find-top-scoring-students-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.6K",
+        "totalSubmission": "6.4K",
+        "totalAcceptedRaw": 2553,
+        "totalSubmissionRaw": 6392,
+        "acRate": "39.9%",
+        "acRateRaw": 39.940550688360446,
+        "likes": 8,
+        "dislikes": 8
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3503,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:57:20.485Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.025Z"
+}

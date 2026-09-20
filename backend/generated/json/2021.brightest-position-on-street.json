@@ -1,0 +1,56 @@
+{
+    "quesId": 2021,
+    "title": "Brightest Position on Street",
+    "titleSlug": "brightest-position-on-street",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "18K",
+        "totalSubmission": "29.6K",
+        "totalAcceptedRaw": 17952,
+        "totalSubmissionRaw": 29616,
+        "acRate": "60.6%",
+        "acRateRaw": 60.6158833063209,
+        "likes": 176,
+        "dislikes": 5
+    },
+    "similarQuesIds": [
+        2086,
+        2237
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2075,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Convert lights into an array of ranges representing the range where each street light can light up and sort the start and end points of the ranges.",
+        "Do we need to traverse all possible positions on the street?",
+        "No, we don't, we only need to go to the start and end points of the ranges for each streetlight."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:04:09.401Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.911Z"
+}

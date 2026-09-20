@@ -1,0 +1,56 @@
+{
+    "quesId": 360,
+    "title": "Sort Transformed Array",
+    "titleSlug": "sort-transformed-array",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "78.3K",
+        "totalSubmission": "134.4K",
+        "totalAcceptedRaw": 78304,
+        "totalSubmissionRaw": 134357,
+        "acRate": "58.3%",
+        "acRateRaw": 58.28055106916648,
+        "likes": 707,
+        "dislikes": 221
+    },
+    "similarQuesIds": [
+        977,
+        2594
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 360,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "x^2 + x  will form a parabola.",
+        "Parameter A in:  A * x^2 + B * x + C dictates the shape of the parabola.</br>\r\nPositive A means the parabola remains concave (high-low-high), but negative A inverts the parabola to be convex (low-high-low)."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:58:31.159Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.617Z"
+}

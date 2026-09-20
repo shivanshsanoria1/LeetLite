@@ -1,0 +1,48 @@
+{
+    "quesId": 2219,
+    "title": "Maximum Sum Score of Array",
+    "titleSlug": "maximum-sum-score-of-array",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "6.1K",
+        "totalSubmission": "9.7K",
+        "totalAcceptedRaw": 6072,
+        "totalSubmissionRaw": 9749,
+        "acRate": "62.3%",
+        "acRateRaw": 62.283311108831676,
+        "likes": 73,
+        "dislikes": 19
+    },
+    "similarQuesIds": [
+        560,
+        724,
+        1991
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2369,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "How can we use precalculation to efficiently calculate the average difference at an index?",
+        "Create a prefix and/or suffix sum array."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:21:41.569Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.261Z"
+}

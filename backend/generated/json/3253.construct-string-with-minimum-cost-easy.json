@@ -1,0 +1,35 @@
+{
+    "quesId": 3253,
+    "title": "Construct String with Minimum Cost (Easy)",
+    "titleSlug": "construct-string-with-minimum-cost-easy",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "875",
+        "totalSubmission": "1.5K",
+        "totalAcceptedRaw": 875,
+        "totalSubmissionRaw": 1489,
+        "acRate": "58.8%",
+        "acRateRaw": 58.7642713230356,
+        "likes": 11,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 3480,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let <code>dp[i]</code> denote the minimum cost to make <code>s</code> equal to the prefix of <code>target</code> of length <code>i</code>.",
+        "<code>dp[i] = min(costs[k] + dp[j])</code>, where <code>j > i</code> and <code>words[k] == target[i..j]</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:09.865Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.081Z"
+}

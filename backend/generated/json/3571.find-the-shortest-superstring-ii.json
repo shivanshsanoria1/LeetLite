@@ -1,0 +1,42 @@
+{
+    "quesId": 3571,
+    "title": "Find the Shortest Superstring II",
+    "titleSlug": "find-the-shortest-superstring-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "918",
+        "totalSubmission": "1.9K",
+        "totalAcceptedRaw": 918,
+        "totalSubmissionRaw": 1875,
+        "acRate": "49.0%",
+        "acRateRaw": 48.96,
+        "likes": 8,
+        "dislikes": 2
+    },
+    "similarQuesIds": [
+        943
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "exampleTestcases": "\"aba\"\n\"bab\"\n\"aa\"\n\"aaa\"",
+    "meta": {
+        "quesIdLCBackend": 3911,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Check for the maximum suffix of one string that matches a prefix of the other (in both directions) and merge accordingly."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:54:05.679Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.570Z"
+}

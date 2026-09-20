@@ -1,0 +1,44 @@
+{
+    "quesId": 569,
+    "title": "Median Employee Salary",
+    "titleSlug": "median-employee-salary",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "52.4K",
+        "totalSubmission": "79.7K",
+        "totalAcceptedRaw": 52440,
+        "totalSubmissionRaw": 79669,
+        "acRate": "65.8%",
+        "acRateRaw": 65.82276892180244,
+        "likes": 341,
+        "dislikes": 156
+    },
+    "similarQuesIds": [
+        571
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 569,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Still remember how to select the sum which group by one column?",
+        "Try to think about how to get the median from a sorted list.",
+        "How to get the median one item for odd number list while how to get the median two items for even number list, try to unify them."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:08:39.802Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.008Z"
+}

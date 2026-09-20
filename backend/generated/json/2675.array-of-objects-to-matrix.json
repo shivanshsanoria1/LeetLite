@@ -1,0 +1,40 @@
+{
+    "quesId": 2675,
+    "title": "Array of Objects to Matrix",
+    "titleSlug": "array-of-objects-to-matrix",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "6.3K",
+        "totalSubmission": "9.2K",
+        "totalAcceptedRaw": 6287,
+        "totalSubmissionRaw": 9234,
+        "acRate": "68.1%",
+        "acRateRaw": 68.08533679878708,
+        "likes": 134,
+        "dislikes": 73
+    },
+    "similarQuesIds": [
+        2628,
+        2633
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2769,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "How could you split the problem up into sub-problems?",
+        "1.) Write a function that converts a single object into a dictionary that maps the path name to values. You can solve this recursively by keeping track of current path list.",
+        "2.) Write a function that converts a list of dictionaries into a matrix. Start by creating a list of all possible paths in any of the dictionaries. This will represent the columns."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:55.890Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.351Z"
+}

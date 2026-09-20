@@ -1,0 +1,71 @@
+{
+    "quesId": 2507,
+    "title": "Smallest Value After Replacing With Sum of Prime Factors",
+    "titleSlug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "35.3K",
+        "totalSubmission": "70K",
+        "totalAcceptedRaw": 35283,
+        "totalSubmissionRaw": 69999,
+        "acRate": "50.4%",
+        "acRateRaw": 50.405005785796945,
+        "likes": 476,
+        "dislikes": 29
+    },
+    "similarQuesIds": [
+        202,
+        650,
+        1735,
+        2521,
+        3326
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        },
+        {
+            "name": "Prime Factorization",
+            "slug": "prime-factorization"
+        },
+        {
+            "name": "Primality Test",
+            "slug": "primality-test"
+        },
+        {
+            "name": "Sieve Theory",
+            "slug": "sieve-theory"
+        },
+        {
+            "name": "Prime Number Sieve",
+            "slug": "prime-number-sieve"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2595,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a positive integer <code>n</code>.</p>\n\n<p>Continuously replace <code>n</code> with the sum of its <strong>prime factors</strong>.</p>\n\n<ul>\n\t<li>Note that if a prime factor divides <code>n</code> multiple times, it should be included in the sum as many times as it divides <code>n</code>.</li>\n</ul>\n\n<p>Return <em>the smallest value </em><code>n</code><em> will take on.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 15\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> Initially, n = 15.\n15 = 3 * 5, so replace n with 3 + 5 = 8.\n8 = 2 * 2 * 2, so replace n with 2 + 2 + 2 = 6.\n6 = 2 * 3, so replace n with 2 + 3 = 5.\n5 is the smallest value n will take on.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Initially, n = 3.\n3 is the smallest value n will take on.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Every time you replace n, it will become smaller until it is a prime number, where it will keep the same value each time you replace it.",
+        "n decreases logarithmically, allowing you to simulate the process.",
+        "To find the prime factors, iterate through all numbers less than n from least to greatest and find the maximum number of times each number divides n."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:38:35.085Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.753Z"
+}

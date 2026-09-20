@@ -1,0 +1,38 @@
+{
+    "quesId": 574,
+    "title": "Winning Candidate",
+    "titleSlug": "winning-candidate",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "79.4K",
+        "totalSubmission": "126.3K",
+        "totalAcceptedRaw": 79376,
+        "totalSubmissionRaw": 126336,
+        "acRate": "62.8%",
+        "acRateRaw": 62.82928064842959,
+        "likes": 184,
+        "dislikes": 414
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 574,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:08:44.801Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.012Z"
+}

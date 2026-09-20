@@ -1,0 +1,51 @@
+{
+    "quesId": 3511,
+    "title": "Make a Positive Array",
+    "titleSlug": "make-a-positive-array",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "878",
+        "totalSubmission": "2.4K",
+        "totalAcceptedRaw": 878,
+        "totalSubmissionRaw": 2389,
+        "acRate": "36.8%",
+        "acRateRaw": 36.75177898702386,
+        "likes": 8,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "exampleTestcases": "[-10,15,-12]\n[-1,-2,3,-1,2,6]\n[1,2,3]",
+    "meta": {
+        "quesIdLCBackend": 3855,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Only check subarrays up to a specific size.",
+        "Find the subarrays containing between 3 and 5 elements with a non-positive total sum.",
+        "Use a greedy approach to assign certain indices the maximum value.",
+        "Start with the subarray with the smallest last index <code>i</code>. Replace the element at index <code>i</code> with the maximum value. Find the selected subarray with the next smallest last index <code>j</code> that does not contain index <code>i</code>. Replace the element at index <code>j</code> with the maximum value, and repeat this process until all non-positive subarrays are fixed."
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:56.235Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.498Z"
+}

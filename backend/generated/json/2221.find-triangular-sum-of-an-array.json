@@ -1,0 +1,61 @@
+{
+    "quesId": 2221,
+    "title": "Find Triangular Sum of an Array",
+    "titleSlug": "find-triangular-sum-of-an-array",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "247.6K",
+        "totalSubmission": "302K",
+        "totalAcceptedRaw": 247561,
+        "totalSubmissionRaw": 302006,
+        "acRate": "82.0%",
+        "acRateRaw": 81.97194104772406,
+        "likes": 1564,
+        "dislikes": 78
+    },
+    "similarQuesIds": [
+        119,
+        2243,
+        2293
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2324,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nWe need to simulate the operations as described in the problem statement.\n\nFirst, record the length of the array $\\textit{nums}$ as $n$. We perform $n-1$ iterations. In the $i^{\\text{th}}$ iteration ($0 \\leq i < n$), we compute $(\\textit{nums}[i] + \\textit{nums}[i+1]) \\bmod 10$ and store it in a new array $\\textit{new_nums}$. After completing the iteration, we overwrite $\\textit{nums}$ with $\\textit{new_nums}$.\n\nWhen $n = 1$, the operations end, and we can return $\\textit{nums}[0]$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/TEhMDyx3/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"TEhMDyx3\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(n^2)$.\n\n- Space complexity: $O(n)$.\n\n  The space required for the array $\\textit{new\\_nums}$.\n\n---\n\n### Approach 2: Combinatorics with Modular Arithmetic\n\n#### Intuition\n\nEach number in the array contributes to the final triangular sum according to \"Pascal’s triangle coefficients\".\n\nAfter performing all reductions, the resulting single number can be expressed as:\n\n[\n\\text{result} = \\sum_{i=0}^{n-1} C(n-1, i) \\times \\text{nums}[i]\n]\n\nHere, $C(n-1, i)$ is the binomial coefficient — the number of ways element `nums[i]` reaches the top of the triangle.\n\nSince the problem only requires the **last digit** of the result, we compute everything **mod 10**.\n\nHowever, directly computing $C(n-1, i)$ can cause overflow(In cpp it caused overflow) for large $n$.\n\nTo avoid that, we use **Lucas’ theorem** to compute $C(n-1, i) \\bmod 2$ and $C(n-1, i) \\bmod 5$ separately, and then combine them using the Chinese Remainder Theorem (CRT).\n\nBecause $10 = 2 \\times 5$, this combination works perfectly.\n\n##### Mathematical Foundation\n\n**Lucas’ Theorem**:\n  [\n  C(n, k) \\bmod p = \\prod C(n_j, k_j) \\bmod p\n  ]\n  where $n_j, k_j$ are digits of $n$ and $k$ in base $p$.\n\n* For modulus **2**, $C(n, k) \\bmod 2 = 1$ iff every bit of $k$ ≤ corresponding bit of $n$.\n\n* For modulus **5**, we use precomputed small Pascal coefficients mod 5.\n\n* Then combine:\n  [\n  C(n, k) \\bmod 10 = (5 \\cdot a_2 + 6 \\cdot a_5) \\bmod 10\n  ]\n  where $a_2 = C(n, k) \\bmod 2$, $a_5 = C(n, k) \\bmod 5$.\n\nThis avoids big integers and runs in $O(n)$ time safely.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/iPqXoNSE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"iPqXoNSE\"></iframe>\n\n### Complexity Analysis\n\n* Time Complexity: $O(n \\times \\log n)$\n\n    For each index, we compute binomial coefficients via digit decomposition (base 2 and base 5), taking $O(\\log n)$ per combination.\n\n* Space Complexity: $O(1)$\n\n    We only store a small 5×5 Pascal triangle for mod 5 computations.\n\n---"
+    },
+    "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, where <code>nums[i]</code> is a digit between <code>0</code> and <code>9</code> (<strong>inclusive</strong>).</p>\n\n<p>The <strong>triangular sum</strong> of <code>nums</code> is the value of the only element present in <code>nums</code> after the following process terminates:</p>\n\n<ol>\n\t<li>Let <code>nums</code> comprise of <code>n</code> elements. If <code>n == 1</code>, <strong>end</strong> the process. Otherwise, <strong>create</strong> a new <strong>0-indexed</strong> integer array <code>newNums</code> of length <code>n - 1</code>.</li>\n\t<li>For each index <code>i</code>, where <code>0 &lt;= i &lt;&nbsp;n - 1</code>, <strong>assign</strong> the value of <code>newNums[i]</code> as <code>(nums[i] + nums[i+1]) % 10</code>, where <code>%</code> denotes modulo operator.</li>\n\t<li><strong>Replace</strong> the array <code>nums</code> with <code>newNums</code>.</li>\n\t<li><strong>Repeat</strong> the entire process starting from step 1.</li>\n</ol>\n\n<p>Return <em>the triangular sum of</em> <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png\" style=\"width: 250px; height: 250px;\" />\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4,5]\n<strong>Output:</strong> 8\n<strong>Explanation:</strong>\nThe above diagram depicts the process from which we obtain the triangular sum of the array.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong>\nSince there is only one element in nums, the triangular sum is the value of that element itself.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 9</code></li>\n</ul>\n",
+    "hints": [
+        "Try simulating the entire process.",
+        "To reduce space, use a temporary array to update nums in every step instead of creating a new array at each step."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:21:43.000Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.263Z"
+}

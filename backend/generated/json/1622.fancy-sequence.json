@@ -1,0 +1,57 @@
+{
+    "quesId": 1622,
+    "title": "Fancy Sequence",
+    "titleSlug": "fancy-sequence",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "79.2K",
+        "totalSubmission": "190.2K",
+        "totalAcceptedRaw": 79225,
+        "totalSubmissionRaw": 190221,
+        "acRate": "41.6%",
+        "acRateRaw": 41.64892414612477,
+        "likes": 645,
+        "dislikes": 185
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        },
+        {
+            "name": "Fermat's Little Theorem",
+            "slug": "fermats-little-theorem"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1728,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Introduction\n\nWe can combine several `addAll` operations and `multAll` operations into a single operation, represented by the pair $(a, b)$, which transforms any integer $x$ into $ax + b$:\n\n* Initially, $(a, b) = (1, 0)$.\n* When we encounter the `addAll(inc)` operation, we increase $b$ by $\\textit{inc}$.\n* When we encounter the `multAll(m)` operation, we multiply both $a$ and $b$ by $m$.\n\nWe use the array $v$ to store the **original sequence** (that is, the values inserted by each `append(val)` operation). We also use two arrays $a$ and $b$ to store the pairs described above, where $(a_i, b_i)$ represents the **result obtained by condensing all operations before $v_i$ is added to $v$**.\n\nWhen we encounter the operation `getIndex(idx)`, we consider both $(a_\\textit{idx}, b_\\textit{idx})$ and $(a_l, b_l)$:\n\n* Before $v_\\textit{idx}$ is inserted into $v$, all previous operations can be condensed into $(a_\\textit{idx}, b_\\textit{idx})$.\n* So far, all operations can be summarized as $(a_l, b_l)$.\n\nTherefore, the operation applied to $v_\\textit{idx}$ is equivalent to transforming the pair $(a_\\textit{idx}, b_\\textit{idx})$ into $(a_l, b_l)$, which we denote as $(a_o, b_o)$. In other words,\n\n$$\n\\begin{cases}\na_\\textit{idx} \\cdot a_o = a_l \\\nb_\\textit{idx} \\cdot a_o + b_o = b_l\n\\end{cases}\n$$\n\nThe answer to the `getIndex(idx)` operation is therefore\n\n$$\na_o \\cdot v_\\textit{idx} + b_o.\n$$\n\nHow do we solve for $a_o$ and $b_o$? From the equations above, we obtain\n\n$$\n\\begin{cases}\na_o = \\dfrac{a_l}{a_\\textit{idx}} \\\nb_o = b_l - b_\\textit{idx} \\cdot \\dfrac{a_l}{a_\\textit{idx}}\n\\end{cases}\n$$\n\nAt first glance this seems straightforward, but we must note that after many `addAll` and `multAll` operations, $(a, b)$ may become very large, exceeding the range of integer types in most programming languages. One solution would be to use high-precision arithmetic, but that would make the implementation significantly more complex.\n\nFortunately, the problem only requires the result modulo $10^9 + 7$, which allows us to use the concept of a **modular multiplicative inverse**.\n\n---\n\n# Prerequisites\n\nLet the modulus be $m$ (where $m = 10^9 + 7$ in this problem). For an integer $a$, if there exists another integer $a^{-1}$ $(0 < a^{-1} < m)$ such that\n\n$$\na a^{-1} \\equiv 1 \\pmod m\n$$\n\nthen $a^{-1}$ is called the **multiplicative inverse** of $a$.\n\nIf $a$ is a multiple of $m$, then $a^{-1}$ clearly does not exist. When $a$ is not a multiple of $m$, we have\n\n$$\naa^{-1} = km + 1, \\quad k \\in \\mathbb{N}\n$$\n\nRearranging gives\n\n$$\na^{-1}a - km = 1\n$$\n\nIf $m$ is prime, then according to **Bézout's identity**, $\\gcd(a, m) = 1$, which guarantees that integers $a^{-1}$ and $k$ satisfying the equation exist.\n\nIf $(a^{-1}_0, k_0)$ is one solution, then\n\n$$\n(a^{-1}_0 + cm, k_0 + ca), \\quad c \\in \\mathbb{Z}\n$$\n\nare also solutions. Therefore, there must exist a solution $a^{-1}$ such that\n\n$$\n0 < a^{-1} < m\n$$\n\nwhich is exactly the multiplicative inverse we seek.\n\nHow can we compute $a^{-1}$? A simple method is to use **Fermat's Little Theorem**, which states that\n\n$$\na^{m-1} \\equiv 1 \\pmod m\n$$\n\nThus,\n\n$$\n\\begin{aligned}\n& a^{m-1} a^{-1} \\equiv a^{-1} \\pmod m \\\n\\Rightarrow & a^{m-2} a a^{-1} \\equiv a^{-1} \\pmod m \\\n\\Rightarrow & a^{m-2} \\equiv a^{-1} \\pmod m\n\\end{aligned}\n$$\n\nTherefore, the multiplicative inverse of $a$ is\n\n$$\na^{-1} = a^{m-2} \\bmod m\n$$\n\nWe can compute $a^{m-2}$ efficiently using **fast exponentiation**, which runs in $O(\\log m)$ time. For more details, see the editorial for [50. Pow(x, n)](https://leetcode.com/problems/powx-n/editorial/).\n\nThe multiplicative inverse allows us to convert division into multiplication in modular arithmetic. For example,\n\n$$\n\\frac{b}{a} \\equiv b \\cdot a^{-1} \\pmod m\n$$\n\nThis works because multiplication satisfies the distributive property under modulo:\n\n$$\n(a \\times b) \\bmod m =\n((a \\bmod m) \\times (b \\bmod m)) \\bmod m\n$$\n\nDivision, however, does not satisfy this property directly. Using the multiplicative inverse allows us to safely perform division under modulo arithmetic.\n\n### Approach 1: Use modular inverse for the `getIndex` operation\n\n#### Intuition\n\nFrom the equations derived earlier,\n\n$$\n\\begin{cases}\na_o = \\dfrac{a_l}{a_\\textit{idx}} \\\nb_o = b_l - b_\\textit{idx} \\cdot \\dfrac{a_l}{a_\\textit{idx}}\n\\end{cases}\n$$\n\nwe can replace division with multiplication using the multiplicative inverse:\n\n$$\n\\begin{cases}\na_o \\equiv a_l \\cdot a_\\textit{idx}^{-1} \\pmod m \\\nb_o \\equiv b_l - b_\\textit{idx} \\cdot a_l \\cdot a_\\textit{idx}^{-1} \\pmod m\n\\end{cases}\n$$\n\nThe final answer is\n\n$$\n(a_o \\cdot v_\\textit{idx} + b_o) \\bmod m\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/J62jbyYu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"J62jbyYu\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the maximum number of elements contained in the sequence $v$.\n\n- Time complexity: $O(\\log m)$\n\n  The `getIndex(idx)` operation takes $O(\\log m)$ time because it requires computing a modular inverse. All other operations take $O(1)$ time.\n\n- Space complexity: $O(n)$.\n\n### Approach 2: Use multiplicative inverse during the `append` operation\n\n#### Intuition\n\nIn the Introduction we observed that:\n\n**The operation applied to $v_\\textit{idx}$ is equivalent to transforming the pair $(a_\\textit{idx}, b_\\textit{idx})$ into $(a_l, b_l)$.**\n\nInstead of solving the system of equations, we can directly compute\n\n$$\na_l \\cdot \\frac{v_\\textit{idx} - b_\\textit{idx}}{a_\\textit{idx}} + b_l\n$$\n\nHowever, this expression cannot be evaluated safely without using a multiplicative inverse, because we cannot guarantee that $v_\\textit{idx} - b_\\textit{idx}$ is divisible by $a_\\textit{idx}$.\n\nEven with high-precision arithmetic, fractional values could appear and propagate errors. By using the multiplicative inverse, we instead compute\n\n$$\na_l \\cdot (v_\\textit{idx} - b_\\textit{idx}) \\cdot a_\\textit{idx}^{-1} + b_l\n$$\n\nwhich ensures that all operations remain within integer arithmetic under modulo.\n\nTherefore, when we encounter an `append(val)` operation and all previous operations are summarized as $(a_l', b_l')$, we transform the value before storing it:\n\n$$\n(\\textit{val} - b_l') \\cdot (a_l')^{-1}\n$$\n\nWhen we later process `getIndex(idx)`, we can simply return\n\n$$\na_l \\cdot v_\\textit{idx} + b_l\n$$\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/6RGgmpHr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6RGgmpHr\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the maximum number of elements that can be included in the sequence $v$.\n\n- Time complexity:  $O(\\log m)$\n\n  The `append(val)` operation requires computing a modular inverse and therefore takes $O(\\log m)$ time. All other operations take $O(1)$ time.\n\n- Space complexity: $O(n)$.\n\n---"
+    },
+    "content": "<p>Write an API that generates fancy sequences using the <code>append</code>, <code>addAll</code>, and <code>multAll</code> operations.</p>\n\n<p>Implement the <code>Fancy</code> class:</p>\n\n<ul>\n\t<li><code>Fancy()</code> Initializes the object with an empty sequence.</li>\n\t<li><code>void append(val)</code> Appends an integer <code>val</code> to the end of the sequence.</li>\n\t<li><code>void addAll(inc)</code> Increments all existing values in the sequence by an integer <code>inc</code>.</li>\n\t<li><code>void multAll(m)</code> Multiplies all existing values in the sequence by an integer <code>m</code>.</li>\n\t<li><code>int getIndex(idx)</code> Gets the current value at index <code>idx</code> (0-indexed) of the sequence <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>. If the index is greater or equal than the length of the sequence, return <code>-1</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;Fancy&quot;, &quot;append&quot;, &quot;addAll&quot;, &quot;append&quot;, &quot;multAll&quot;, &quot;getIndex&quot;, &quot;addAll&quot;, &quot;append&quot;, &quot;multAll&quot;, &quot;getIndex&quot;, &quot;getIndex&quot;, &quot;getIndex&quot;]\n[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]\n<strong>Output</strong>\n[null, null, null, null, null, 10, null, null, null, 26, 34, 20]\n\n<strong>Explanation</strong>\nFancy fancy = new Fancy();\nfancy.append(2);   // fancy sequence: [2]\nfancy.addAll(3);   // fancy sequence: [2+3] -&gt; [5]\nfancy.append(7);   // fancy sequence: [5, 7]\nfancy.multAll(2);  // fancy sequence: [5*2, 7*2] -&gt; [10, 14]\nfancy.getIndex(0); // return 10\nfancy.addAll(3);   // fancy sequence: [10+3, 14+3] -&gt; [13, 17]\nfancy.append(10);  // fancy sequence: [13, 17, 10]\nfancy.multAll(2);  // fancy sequence: [13*2, 17*2, 10*2] -&gt; [26, 34, 20]\nfancy.getIndex(0); // return 26\nfancy.getIndex(1); // return 34\nfancy.getIndex(2); // return 20\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= val, inc, m &lt;= 100</code></li>\n\t<li><code>0 &lt;= idx &lt;= 10<sup>5</sup></code></li>\n\t<li>At most <code>10<sup>5</sup></code> calls total will be made to <code>append</code>, <code>addAll</code>, <code>multAll</code>, and <code>getIndex</code>.</li>\n</ul>\n",
+    "hints": [
+        "Use two arrays to save the cumulative multipliers at each time point and cumulative sums adjusted by the current multiplier.",
+        "The function getIndex(idx) ask to the current value modulo 10^9+7. Use modular inverse and both arrays to calculate this value."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:50:56.211Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.252Z"
+}

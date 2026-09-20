@@ -1,0 +1,77 @@
+{
+    "quesId": 1044,
+    "title": "Longest Duplicate Substring",
+    "titleSlug": "longest-duplicate-substring",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "89K",
+        "totalSubmission": "283.2K",
+        "totalAcceptedRaw": 89032,
+        "totalSubmissionRaw": 283233,
+        "acRate": "31.4%",
+        "acRateRaw": 31.43419022500909,
+        "likes": 2375,
+        "dislikes": 397
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Rolling Hash",
+            "slug": "rolling-hash"
+        },
+        {
+            "name": "Suffix Array",
+            "slug": "suffix-array"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        },
+        {
+            "name": "Suffix Automaton",
+            "slug": "suffix-automaton"
+        },
+        {
+            "name": "Suffix Tree",
+            "slug": "suffix-tree"
+        },
+        {
+            "name": "Z Algorithm",
+            "slug": "z-algorithm"
+        },
+        {
+            "name": "Boyer–Moore String-Search Algorithm",
+            "slug": "boyer-moore-string-search-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1122,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given a string <code>s</code>, consider all <em>duplicated substrings</em>: (contiguous) substrings of s that occur 2 or more times.&nbsp;The occurrences&nbsp;may overlap.</p>\n\n<p>Return <strong>any</strong> duplicated&nbsp;substring that has the longest possible length.&nbsp;If <code>s</code> does not have a duplicated substring, the answer is <code>&quot;&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"banana\"\n<strong>Output:</strong> \"ana\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"abcd\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Binary search for the length of the answer.  (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)",
+        "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:36:13.219Z",
+    "PARSED_ISO": "2026-09-20T08:56:08.982Z"
+}

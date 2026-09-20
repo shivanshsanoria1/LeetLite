@@ -1,0 +1,49 @@
+{
+    "quesId": 3147,
+    "title": "Taking Maximum Energy From the Mystic Dungeon",
+    "titleSlug": "taking-maximum-energy-from-the-mystic-dungeon",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "144.3K",
+        "totalSubmission": "237K",
+        "totalAcceptedRaw": 144332,
+        "totalSubmissionRaw": 237045,
+        "acRate": "60.9%",
+        "acRateRaw": 60.888017043177456,
+        "likes": 597,
+        "dislikes": 40
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3383,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Reverse Traversal\n\n#### Intuition\n\nAccording to the problem statement, starting from any index $i$ in the array $\\textit{energy}$, you are immediately transported to $i + k$. In this process, the indices being traversed are $[i, i + k, i + 2k, i + 3k, \\cdots]$, continuing until you reach the end of the array.\n\nThe most direct approach is to enumerate all possible starting points, which requires $n$ enumerations. However, we can reverse our perspective and instead enumerate all end points $i$ of these paths. In this case, the reverse traversal of a path becomes $[i, i - k, i - 2k, \\cdots]$. The corresponding sequence of prefix enumerations in this reverse path is:\n\n$$\n\\begin{aligned}\n& [i] \\\\\n& [i,i-k] \\\\\n& [i,i-k,i-2k] \\\\\n& [i,i-k,i-2k,i-3k] \\\\\n& \\cdots\n\\end{aligned}\n$$\n\nBy observation, the sum of all prefixes in the reverse path represents the total possible energy absorption. We then find and return the maximum of these values.\n\nWe enumerate the end points in order from $i = n - k$ to $n - 1$, where $n$ is the length of the given array $\\textit{energy}$. During traversal, we maintain a running sum of elements, denoted as $\\textit{sum}$, and track the maximum value, which becomes our final answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/neAUY5GS/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"neAUY5GS\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the given array $\\textit{energy}$.\n\n- Time complexity: $O(n)$.\n  \n  Each element in the array is visited exactly once during the traversal, resulting in a linear time complexity.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>In a mystic dungeon, <code>n</code> magicians are standing in a line. Each magician has an attribute that gives you energy. Some magicians can give you negative energy, which means taking energy from you.</p>\n\n<p>You have been cursed in such a way that after absorbing energy from magician <code>i</code>, you will be instantly transported to magician <code>(i + k)</code>. This process will be repeated until you reach the magician where <code>(i + k)</code> does not exist.</p>\n\n<p>In other words, you will choose a starting point and then teleport with <code>k</code> jumps until you reach the end of the magicians&#39; sequence, <strong>absorbing all the energy</strong> during the journey.</p>\n\n<p>You are given an array <code>energy</code> and an integer <code>k</code>. Return the <strong>maximum</strong> possible energy you can gain.</p>\n\n<p><strong>Note</strong> that when you reach a magician, you <em>must</em> take energy from them, whether it is negative or positive energy.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\" style=\"\n    border-color: var(--border-tertiary);\n    border-left-width: 2px;\n    color: var(--text-secondary);\n    font-size: .875rem;\n    margin-bottom: 1rem;\n    margin-top: 1rem;\n    overflow: visible;\n    padding-left: 1rem;\n\">\n<p><strong>Input:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\"> energy = [5,2,-10,-5,1], k = 3</span></p>\n\n<p><strong>Output:</strong><span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\"> 3</span></p>\n\n<p><strong>Explanation:</strong> We can gain a total energy of 3 by starting from magician 1 absorbing 2 + 1 = 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\" style=\"\n    border-color: var(--border-tertiary);\n    border-left-width: 2px;\n    color: var(--text-secondary);\n    font-size: .875rem;\n    margin-bottom: 1rem;\n    margin-top: 1rem;\n    overflow: visible;\n    padding-left: 1rem;\n\">\n<p><strong>Input:</strong><span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\"> energy = [-2,-3,-1], k = 2</span></p>\n\n<p><strong>Output:</strong><span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\"> -1</span></p>\n\n<p><strong>Explanation:</strong> We can gain a total energy of -1 by starting from magician 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= energy.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-1000 &lt;= energy[i] &lt;= 1000</code></li>\n\t<li><code>1 &lt;= k &lt;= energy.length - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n​​​​​​",
+    "hints": [
+        "Let <code>dp[i]</code> denote the energy we gain starting from index <code>i</code>.",
+        "We can notice, that <code> dp[i] = dp[i + k] + energy[i]</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:56:48.520Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.984Z"
+}

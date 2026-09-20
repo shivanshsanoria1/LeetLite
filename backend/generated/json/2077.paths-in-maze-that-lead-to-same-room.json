@@ -1,0 +1,45 @@
+{
+    "quesId": 2077,
+    "title": "Paths in Maze That Lead to Same Room",
+    "titleSlug": "paths-in-maze-that-lead-to-same-room",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "6.8K",
+        "totalSubmission": "12K",
+        "totalAcceptedRaw": 6775,
+        "totalSubmissionRaw": 11982,
+        "acRate": "56.5%",
+        "acRateRaw": 56.54314805541646,
+        "likes": 144,
+        "dislikes": 13
+    },
+    "similarQuesIds": [
+        323,
+        882,
+        2204,
+        1971
+    ],
+    "topicTags": [
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2218,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "If the path starts at room i, what properties must the other two rooms in the cycle have?",
+        "The other two rooms must be connected to room i, and must be connected to each other."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:05:02.549Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.993Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 3308,
+    "title": "Find Top Performing Driver",
+    "titleSlug": "find-top-performing-driver",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.8K",
+        "totalSubmission": "5.8K",
+        "totalAcceptedRaw": 2832,
+        "totalSubmissionRaw": 5781,
+        "acRate": "49.0%",
+        "acRateRaw": 48.98806434872859,
+        "likes": 7,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3624,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:58:53.097Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.180Z"
+}

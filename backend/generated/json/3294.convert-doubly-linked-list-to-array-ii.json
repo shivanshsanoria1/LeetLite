@@ -1,0 +1,49 @@
+{
+    "quesId": 3294,
+    "title": "Convert Doubly Linked List to Array II",
+    "titleSlug": "convert-doubly-linked-list-to-array-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.9K",
+        "totalSubmission": "4.7K",
+        "totalAcceptedRaw": 3921,
+        "totalSubmissionRaw": 4709,
+        "acRate": "83.3%",
+        "acRateRaw": 83.26608621788066,
+        "likes": 10,
+        "dislikes": 5
+    },
+    "similarQuesIds": [
+        203
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3615,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use the pointer to the previous node to reach the <code>head</code> node."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:43.058Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.113Z"
+}

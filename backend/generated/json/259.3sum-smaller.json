@@ -1,0 +1,57 @@
+{
+    "quesId": 259,
+    "title": "3Sum Smaller",
+    "titleSlug": "3sum-smaller",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "177.1K",
+        "totalSubmission": "344.6K",
+        "totalAcceptedRaw": 177131,
+        "totalSubmissionRaw": 344650,
+        "acRate": "51.4%",
+        "acRateRaw": 51.394458145945165,
+        "likes": 1633,
+        "dislikes": 170
+    },
+    "similarQuesIds": [
+        15,
+        16,
+        611,
+        1099,
+        2592,
+        2971
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 259,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:04.734Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.175Z"
+}

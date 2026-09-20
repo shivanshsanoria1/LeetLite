@@ -1,0 +1,39 @@
+{
+    "quesId": 1435,
+    "title": "Create a Session Bar Chart",
+    "titleSlug": "create-a-session-bar-chart",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "27.8K",
+        "totalSubmission": "37.5K",
+        "totalAcceptedRaw": 27834,
+        "totalSubmissionRaw": 37485,
+        "acRate": "74.3%",
+        "acRateRaw": 74.25370148059224,
+        "likes": 158,
+        "dislikes": 266
+    },
+    "similarQuesIds": [
+        1907
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1564,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:34:18.468Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.828Z"
+}

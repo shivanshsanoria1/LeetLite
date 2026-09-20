@@ -1,0 +1,45 @@
+{
+    "quesId": 555,
+    "title": "Split Concatenated Strings",
+    "titleSlug": "split-concatenated-strings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.7K",
+        "totalSubmission": "17.6K",
+        "totalAcceptedRaw": 7657,
+        "totalSubmissionRaw": 17610,
+        "acRate": "43.5%",
+        "acRateRaw": 43.48097671777399,
+        "likes": 80,
+        "dislikes": 265
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 555,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:08:26.992Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.998Z"
+}

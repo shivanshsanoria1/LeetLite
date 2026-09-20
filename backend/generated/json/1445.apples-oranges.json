@@ -1,0 +1,38 @@
+{
+    "quesId": 1445,
+    "title": "Apples & Oranges",
+    "titleSlug": "apples-oranges",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "67.2K",
+        "totalSubmission": "78.2K",
+        "totalAcceptedRaw": 67215,
+        "totalSubmissionRaw": 78183,
+        "acRate": "86.0%",
+        "acRateRaw": 85.97137485131039,
+        "likes": 251,
+        "dislikes": 23
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1578,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:34:29.619Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.886Z"
+}

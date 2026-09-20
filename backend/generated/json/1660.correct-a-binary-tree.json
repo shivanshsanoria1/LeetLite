@@ -1,0 +1,59 @@
+{
+    "quesId": 1660,
+    "title": "Correct a Binary Tree",
+    "titleSlug": "correct-a-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "23.8K",
+        "totalSubmission": "32K",
+        "totalAcceptedRaw": 23766,
+        "totalSubmissionRaw": 32049,
+        "acRate": "74.2%",
+        "acRateRaw": 74.15519985022934,
+        "likes": 277,
+        "dislikes": 47
+    },
+    "similarQuesIds": [
+        114,
+        430
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1796,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "If you traverse the tree from right to left, the invalid node will point to a node that has already been visited."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:51:34.198Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.308Z"
+}

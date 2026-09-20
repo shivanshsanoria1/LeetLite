@@ -1,0 +1,70 @@
+{
+    "quesId": 694,
+    "title": "Number of Distinct Islands",
+    "titleSlug": "number-of-distinct-islands",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "212K",
+        "totalSubmission": "336.6K",
+        "totalAcceptedRaw": 211972,
+        "totalSubmissionRaw": 336598,
+        "acRate": "63.0%",
+        "acRateRaw": 62.97482456817926,
+        "likes": 2341,
+        "dislikes": 154
+    },
+    "similarQuesIds": [
+        200,
+        711,
+        1905
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 694,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:30.268Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.239Z"
+}

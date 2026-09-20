@@ -1,0 +1,62 @@
+{
+    "quesId": 229,
+    "title": "Majority Element II",
+    "titleSlug": "majority-element-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4M",
+        "totalSubmission": "2.5M",
+        "totalAcceptedRaw": 1393770,
+        "totalSubmissionRaw": 2456068,
+        "acRate": "56.7%",
+        "acRateRaw": 56.747935834259266,
+        "likes": 11212,
+        "dislikes": 511
+    },
+    "similarQuesIds": [
+        169,
+        1150,
+        2404
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Boyer–Moore Majority Vote Algorithm",
+            "slug": "boyer-moore-majority-vote-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 229,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given an integer array of size <code>n</code>, find all elements that appear more than <code>&lfloor;n / 3&rfloor;</code> times.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,2,3]\n<strong>Output:</strong> [3]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1]\n<strong>Output:</strong> [1]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2]\n<strong>Output:</strong> [1,2]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you solve the problem in linear time and in <code>O(1)</code> space?</p>\n",
+    "hints": [
+        "Think about the possible number of elements that can appear more than ⌊ n/3 ⌋ times in the array.",
+        "It can be at most two. Why?",
+        "Consider using Boyer-Moore Voting Algorithm, which is efficient for finding elements that appear more than a certain threshold."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T19:56:35.696Z",
+    "PARSED_ISO": "2026-09-20T08:56:12.388Z"
+}

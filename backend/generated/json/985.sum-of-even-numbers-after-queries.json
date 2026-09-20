@@ -1,0 +1,42 @@
+{
+    "quesId": 985,
+    "title": "Sum of Even Numbers After Queries",
+    "titleSlug": "sum-of-even-numbers-after-queries",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "159.1K",
+        "totalSubmission": "230.7K",
+        "totalAcceptedRaw": 159135,
+        "totalSubmissionRaw": 230658,
+        "acRate": "69.0%",
+        "acRateRaw": 68.99175402544027,
+        "likes": 2146,
+        "dislikes": 323
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1027,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Solution\n---\n### Approach 1: Maintain Array Sum\n\n**Intuition and Algorithm**\n\nLet's try to maintain `S`, the sum of the array throughout one query operation.\n\nWhen acting on an array element `A[index]`, the rest of the values of `A` remain the same.  Let's remove `A[index]` from `S` if it is even, then add `A[index] + val` back (if it is even.)\n\nHere are some examples:\n\n* If we have `A = [2,2,2,2,2]`, `S = 10`, and we do `A[0] += 4`: we will update `S -= 2`, then `S += 6`.  At the end, we will have `A = [6,2,2,2,2]` and `S = 14`.\n\n* If we have `A = [1,2,2,2,2]`, `S = 8`, and we do `A[0] += 3`: we will skip updating `S` (since `A[0]` is odd), then `S += 4`.  At the end, we will have `A = [4,2,2,2,2]` and `S = 12`.\n\n* If we have `A = [2,2,2,2,2]`, `S = 10` and we do `A[0] += 1`: we will update `S -= 2`, then skip updating `S` (since `A[0] + 1` is odd.)  At the end, we will have `A = [3,2,2,2,2]` and `S = 8`.\n\n* If we have `A = [1,2,2,2,2]`, `S = 8` and we do `A[0] += 2`: we will skip updating `S` (since `A[0]` is odd), then skip updating `S` again (since `A[0] + 2` is odd.)  At the end, we will have `A = [3,2,2,2,2]` and `S = 8`.\n\nThese examples help illustrate that our algorithm actually maintains the value of `S` throughout each query operation.\n\n<iframe src=\"https://leetcode.com/playground/4PDgoSBy/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"4PDgoSBy\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N+Q)$$, where $$N$$ is the length of `A` and $$Q$$ is the number of `queries`.\n\n* Space Complexity:  $$O(Q)$$, though we only allocate $$O(1)$$ additional space.\n<br />\n<br />"
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an array <code>queries</code> where <code>queries[i] = [val<sub>i</sub>, index<sub>i</sub>]</code>.</p>\n\n<p>For each query <code>i</code>, first, apply <code>nums[index<sub>i</sub>] = nums[index<sub>i</sub>] + val<sub>i</sub></code>, then print the sum of the even values of <code>nums</code>.</p>\n\n<p>Return <em>an integer array </em><code>answer</code><em> where </em><code>answer[i]</code><em> is the answer to the </em><code>i<sup>th</sup></code><em> query</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]\n<strong>Output:</strong> [8,6,2,4]\n<strong>Explanation:</strong> At the beginning, the array is [1,2,3,4].\nAfter adding 1 to nums[0], the array is [2,2,3,4], and the sum of even values is 2 + 2 + 4 = 8.\nAfter adding -3 to nums[1], the array is [2,-1,3,4], and the sum of even values is 2 + 4 = 6.\nAfter adding -4 to nums[0], the array is [-2,-1,3,4], and the sum of even values is -2 + 4 = 2.\nAfter adding 2 to nums[3], the array is [-2,-1,3,6], and the sum of even values is -2 + 6 = 4.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1], queries = [[4,0]]\n<strong>Output:</strong> [0]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= queries.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= val<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= index<sub>i</sub> &lt; nums.length</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:35:31.861Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.864Z"
+}

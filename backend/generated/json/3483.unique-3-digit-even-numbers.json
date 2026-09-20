@@ -1,0 +1,55 @@
+{
+    "quesId": 3483,
+    "title": "Unique 3-Digit Even Numbers",
+    "titleSlug": "unique-3-digit-even-numbers",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "175K",
+        "totalSubmission": "218.8K",
+        "totalAcceptedRaw": 174955,
+        "totalSubmissionRaw": 218792,
+        "acRate": "80.0%",
+        "acRateRaw": 79.9643526347059,
+        "likes": 450,
+        "dislikes": 79
+    },
+    "similarQuesIds": [
+        2094
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "exampleTestcases": "[1,2,3,4]\n[0,2,2]\n[6,6,6]\n[1,3,5]",
+    "meta": {
+        "quesIdLCBackend": 3799,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe can enumerate three distinct indices $i$, $j$, and $k$, and use their corresponding digits as the hundreds, tens, and ones digits, respectively.\n\nA valid three-digit even number must satisfy the following conditions:\n\n- Its hundreds digit cannot be $0$.\n- Its ones digit must be even.\n- Its three digits must come from distinct indices.\n\nBecause the array can contain duplicate digits, different index triples may form the same three-digit number. We can use a boolean array $\\textit{vis}$ of length $1000$ to record whether each three-digit number has already appeared. Whenever a valid, unseen number is formed, we mark it as visited and increment the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/mzT2yA4H/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"mzT2yA4H\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the $\\textit{digits}$ array.\n\n- Time complexity: $O(n^3)$.\n  \n  We use three nested loops to enumerate the three indices $i$, $j$, and $k$, which takes $O(n^3)$ time.\n\n- Space complexity: $O(1)$. \n  \n  The boolean array $\\textit{vis}$ has a fixed length of $1000$, independent of the input size.\n\n---"
+    },
+    "content": "<p>You are given an array of digits called <code>digits</code>. Your task is to determine the number of <strong>distinct</strong> three-digit even numbers that can be formed using these digits.</p>\n\n<p><strong>Note</strong>: Each <em>copy</em> of a digit can only be used <strong>once per number</strong>, and there may <strong>not</strong> be leading zeros.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">digits = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">12</span></p>\n\n<p><strong>Explanation:</strong> The 12 distinct 3-digit even numbers that can be formed are 124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432. Note that 222 cannot be formed because there is only 1 copy of the digit 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">digits = [0,2,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong> The only 3-digit even numbers that can be formed are 202 and 220. Note that the digit 2 can be used twice because it appears twice in the array.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">digits = [6,6,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong> Only 666 can be formed.</p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">digits = [1,3,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong> No even 3-digit numbers can be formed.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= digits.length &lt;= 10</code></li>\n\t<li><code>0 &lt;= digits[i] &lt;= 9</code></li>\n</ul>\n",
+    "hints": [
+        "Use brute force to try all possibilities"
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:29.914Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.475Z"
+}

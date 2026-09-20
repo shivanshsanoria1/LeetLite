@@ -1,0 +1,37 @@
+{
+    "quesId": 2987,
+    "title": "Find Expensive Cities",
+    "titleSlug": "find-expensive-cities",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "6.3K",
+        "totalSubmission": "8.2K",
+        "totalAcceptedRaw": 6306,
+        "totalSubmissionRaw": 8171,
+        "acRate": "77.2%",
+        "acRateRaw": 77.17537633092645,
+        "likes": 11,
+        "dislikes": 12
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3284,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:47:13.224Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.731Z"
+}

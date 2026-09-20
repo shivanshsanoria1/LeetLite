@@ -1,0 +1,37 @@
+{
+    "quesId": 1270,
+    "title": "All People Report to the Given Manager",
+    "titleSlug": "all-people-report-to-the-given-manager",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "68.3K",
+        "totalSubmission": "81.5K",
+        "totalAcceptedRaw": 68288,
+        "totalSubmissionRaw": 81520,
+        "acRate": "83.8%",
+        "acRateRaw": 83.76840039254171,
+        "likes": 446,
+        "dislikes": 32
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1405,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:30:24.925Z",
+    "PARSED_ISO": "2026-09-20T08:56:10.075Z"
+}

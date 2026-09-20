@@ -1,0 +1,54 @@
+{
+    "quesId": 428,
+    "title": "Serialize and Deserialize N-ary Tree",
+    "titleSlug": "serialize-and-deserialize-n-ary-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "101.8K",
+        "totalSubmission": "147.7K",
+        "totalAcceptedRaw": 101830,
+        "totalSubmissionRaw": 147675,
+        "acRate": "69.0%",
+        "acRateRaw": 68.95547655324191,
+        "likes": 1079,
+        "dislikes": 58
+    },
+    "similarQuesIds": [
+        297,
+        449,
+        431
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 765,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:06:35.510Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.908Z"
+}

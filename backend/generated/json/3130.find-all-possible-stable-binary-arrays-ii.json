@@ -1,0 +1,49 @@
+{
+    "quesId": 3130,
+    "title": "Find All Possible Stable Binary Arrays II",
+    "titleSlug": "find-all-possible-stable-binary-arrays-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "69.1K",
+        "totalSubmission": "118.1K",
+        "totalAcceptedRaw": 69070,
+        "totalSubmissionRaw": 118149,
+        "acRate": "58.5%",
+        "acRateRaw": 58.46008006838822,
+        "likes": 269,
+        "dislikes": 30
+    },
+    "similarQuesIds": [
+        525,
+        930
+    ],
+    "topicTags": [
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3407,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Memoization Search\n\n#### Intuition\n\nFrom the first two conditions of a stable array, we know that its length is $\\textit{zero} + \\textit{one}$. The third condition states that there must be no subarray of length $\\textit{limit} + 1$ that consists entirely of $0$s or entirely of $1$s.\n\nWe break the problem into smaller subproblems. Consider stable arrays that contain $\\textit{zero}$ zeros and $\\textit{one}$ ones, where the last element can be either $0$ or $1$.\n\n* **If the last element is $1$**, we start with the number of stable arrays containing $\\textit{zero}$ zeros and $\\textit{one} - 1$ ones. However, we must subtract the cases where appending a $1$ makes the array unstable. This happens when the original array ends with exactly $\\textit{limit}$ consecutive $1$s. In such cases, adding another $1$ creates $\\textit{limit} + 1$ consecutive $1$s. The number of such arrays equals the number of stable arrays containing $\\textit{zero}$ zeros and $\\textit{one} - 1 - \\textit{limit}$ ones, with the last element being $0$.\n\n* **If the last element is $0$**, the reasoning is symmetric. We start with the number of stable arrays containing $\\textit{zero} - 1$ zeros and $\\textit{one}$ ones, and subtract the cases where appending a $0$ causes the array to exceed the allowed consecutive limit.\n\nThus, the problem reduces to smaller subproblems and can be solved using dynamic programming. We define\n$\\textit{dp}(\\textit{zero}, \\textit{one}, \\textit{lastBit})$\nas the number of stable arrays containing $\\textit{zero}$ zeros and $\\textit{one}$ ones, with the last element equal to $\\textit{lastBit}$, where $\\textit{lastBit}$ is either 0 or 1.\n\nThe recurrence relations are:\n\n* $\\textit{dp}(\\textit{zero}, \\textit{one}, 0)$\n  = $\\textit{dp}(\\textit{zero} - 1, \\textit{one}, 0)$\n\n  * $\\textit{dp}(\\textit{zero} - 1, \\textit{one}, 1)$\n    − $\\textit{dp}(\\textit{zero} - 1 - \\textit{limit}, \\textit{one}, 1)$\n\n* $\\textit{dp}(\\textit{zero}, \\textit{one}, 1)$\n  = $\\textit{dp}(\\textit{zero}, \\textit{one} - 1, 0)$\n\n  * $\\textit{dp}(\\textit{zero}, \\textit{one} - 1, 1)$\n    − $\\textit{dp}(\\textit{zero}, \\textit{one} - 1 - \\textit{limit}, 0)$\n\nWe also need to handle boundary cases:\n\n* If $\\textit{zero} = 0$, then no valid array exists when $\\textit{lastBit} = 0$ or when $\\textit{one} > \\textit{limit}$. Otherwise, exactly one valid array exists.\n* If $\\textit{one} = 0$, the situation is symmetric.\n\nWe compute the result using memoized recursion, store intermediate states, and finally return\n\n$\\textit{dp}(\\textit{zero}, \\textit{one}, 0) + \\textit{dp}(\\textit{zero}, \\textit{one}, 1)$\n\nmodulo the given value.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/hZjbyovt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"hZjbyovt\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(\\textit{zero} \\times \\textit{one})$.\n  \n  The number of DP states is $O(\\textit{zero} \\times \\textit{one})$, and each state is computed in constant time.\n\n- Space complexity: $O(\\textit{zero} \\times \\textit{one})$.\n\n### Approach 2: Dynamic Programming\n\n#### Intuition\n\nApproach 1 solves the problem using memoized recursion in a top down manner. In this approach, we compute all states bottom up using an iterative dynamic programming table. The state transitions are identical to those in Approach 1.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/4cg6jwAh/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4cg6jwAh\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(\\textit{zero} \\times \\textit{one})$.\n  \n  Each state is computed exactly once, and each transition takes constant time.\n\n- Space complexity: $O(\\textit{zero} \\times \\textit{one})$.\n\n---"
+    },
+    "content": "<p>You are given 3 positive integers <code>num_zeros</code>, <code>num_ones</code>, and <code>limit</code>.</p>\n\n<p>A <span data-keyword=\"binary-array\">binary array</span> <code>arr</code> is called <strong>stable</strong> if:</p>\n\n<ul>\n\t<li>The number of occurrences of 0 in <code>arr</code> is <strong>exactly </strong><code>num_zeros</code>.</li>\n\t<li>The number of occurrences of 1 in <code>arr</code> is <strong>exactly</strong> <code>num_ones</code>.</li>\n\t<li>Each <span data-keyword=\"subarray-nonempty\">subarray</span> of <code>arr</code> with a size greater than <code>limit</code> must contain <strong>at least</strong> one occurrence of <strong>both</strong> 0 and 1.</li>\n</ul>\n\n<p>Return an integer denoting the <em>total</em> number of <strong>stable</strong> binary arrays.</p>\n\n<p>Since the answer may be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">zero = 1, one = 1, limit = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The two possible stable binary arrays are <code>[1,0]</code> and <code>[0,1]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">zero = 1, one = 2, limit = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only possible stable binary array is <code>[1,0,1]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">zero = 3, one = 3, limit = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">14</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All the possible stable binary arrays are <code>[0,0,1,0,1,1]</code>, <code>[0,0,1,1,0,1]</code>, <code>[0,1,0,0,1,1]</code>, <code>[0,1,0,1,0,1]</code>, <code>[0,1,0,1,1,0]</code>, <code>[0,1,1,0,0,1]</code>, <code>[0,1,1,0,1,0]</code>, <code>[1,0,0,1,0,1]</code>, <code>[1,0,0,1,1,0]</code>, <code>[1,0,1,0,0,1]</code>, <code>[1,0,1,0,1,0]</code>, <code>[1,0,1,1,0,0]</code>, <code>[1,1,0,0,1,0]</code>, and <code>[1,1,0,1,0,0]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= zero, one, limit &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "Let <code>dp[x][y][z = 0/1]</code> be the number of stable arrays with exactly <code>x</code> zeros, <code>y</code> ones, and the last element is <code>z</code>. (0 or 1).\r\n<code>dp[x][y][0] + dp[x][y][1]</code> is the answer for given <code>(x, y)</code>.",
+        "If we have already placed <code>x</code> 1 and <code>y</code> 0, if we place a group of <code>k</code> 0, the number of ways is <code>dp[x-k][y][1]</code>. We can place a group with size <code>i</code>, where <code>i</code> varies from 1 to <code>min(limit, zero - x)</code>.\r\nSimilarly, we can solve by placing a group of ones.",
+        "Speed up the calculation using prefix arrays to store the sum of <code>dp</code> states."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:56:33.971Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.964Z"
+}

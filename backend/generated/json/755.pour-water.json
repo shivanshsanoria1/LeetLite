@@ -1,0 +1,43 @@
+{
+    "quesId": 755,
+    "title": "Pour Water",
+    "titleSlug": "pour-water",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "48.4K",
+        "totalSubmission": "98.6K",
+        "totalAcceptedRaw": 48441,
+        "totalSubmissionRaw": 98626,
+        "acRate": "49.1%",
+        "acRateRaw": 49.115851803784,
+        "likes": 324,
+        "dislikes": 837
+    },
+    "similarQuesIds": [
+        42
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 756,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:16:12.619Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.343Z"
+}

@@ -1,0 +1,38 @@
+{
+    "quesId": 183,
+    "title": "Customers Who Never Order",
+    "titleSlug": "customers-who-never-order",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "1.4M",
+        "totalSubmission": "2M",
+        "totalAcceptedRaw": 1433230,
+        "totalSubmissionRaw": 1981001,
+        "acRate": "72.3%",
+        "acRateRaw": 72.34880512548442,
+        "likes": 3149,
+        "dislikes": 163
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 183,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Table: <code>Customers</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| name        | varchar |\n+-------------+---------+\nid is the primary key (column with unique values) for this table.\nEach row of this table indicates the ID and name of a customer.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Orders</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| id          | int  |\n| customerId  | int  |\n+-------------+------+\nid is the primary key (column with unique values) for this table.\ncustomerId is a foreign key (reference columns) of the ID from the Customers table.\nEach row of this table indicates the ID of an order and the ID of the customer who ordered it.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find all customers who never order anything.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCustomers table:\n+----+-------+\n| id | name  |\n+----+-------+\n| 1  | Joe   |\n| 2  | Henry |\n| 3  | Sam   |\n| 4  | Max   |\n+----+-------+\nOrders table:\n+----+------------+\n| id | customerId |\n+----+------------+\n| 1  | 3          |\n| 2  | 1          |\n+----+------------+\n<strong>Output:</strong> \n+-----------+\n| Customers |\n+-----------+\n| Henry     |\n| Max       |\n+-----------+\n</pre>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:55:53.591Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.501Z"
+}

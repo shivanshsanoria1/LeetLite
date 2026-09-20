@@ -1,0 +1,37 @@
+{
+    "quesId": 2994,
+    "title": "Friday Purchases II ",
+    "titleSlug": "friday-purchases-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.8K",
+        "totalSubmission": "3.9K",
+        "totalAcceptedRaw": 2842,
+        "totalSubmissionRaw": 3861,
+        "acRate": "73.6%",
+        "acRateRaw": 73.60787360787361,
+        "likes": 14,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3301,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:47:19.406Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.746Z"
+}

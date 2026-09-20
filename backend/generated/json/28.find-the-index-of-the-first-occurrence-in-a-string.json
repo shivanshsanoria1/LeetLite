@@ -1,0 +1,61 @@
+{
+    "quesId": 28,
+    "title": "Find the Index of the First Occurrence in a String",
+    "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.3M",
+        "totalSubmission": "9.2M",
+        "totalAcceptedRaw": 4336114,
+        "totalSubmissionRaw": 9173611,
+        "acRate": "47.3%",
+        "acRateRaw": 47.26725982329135,
+        "likes": 7842,
+        "dislikes": 598
+    },
+    "similarQuesIds": [
+        214,
+        459
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "String Matching",
+            "slug": "string-matching"
+        },
+        {
+            "name": "Z Algorithm",
+            "slug": "z-algorithm"
+        },
+        {
+            "name": "Knuth–Morris–Pratt Algorithm",
+            "slug": "knuth-morris-pratt-algorithm"
+        },
+        {
+            "name": "Boyer–Moore String-Search Algorithm",
+            "slug": "boyer-moore-string-search-algorithm"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 28,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Given two strings <code>needle</code> and <code>haystack</code>, return the index of the first occurrence of <code>needle</code> in <code>haystack</code>, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> haystack = &quot;sadbutsad&quot;, needle = &quot;sad&quot;\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> &quot;sad&quot; occurs at index 0 and 6.\nThe first occurrence is at index 0, so we return 0.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> haystack = &quot;leetcode&quot;, needle = &quot;leeto&quot;\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> &quot;leeto&quot; did not occur in &quot;leetcode&quot;, so we return -1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= haystack.length, needle.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>haystack</code> and <code>needle</code> consist of only lowercase English characters.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:38:37.689Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.500Z"
+}

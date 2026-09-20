@@ -1,0 +1,37 @@
+{
+    "quesId": 3140,
+    "title": "Consecutive Available Seats II",
+    "titleSlug": "consecutive-available-seats-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "3.1K",
+        "totalSubmission": "5.7K",
+        "totalAcceptedRaw": 3145,
+        "totalSubmissionRaw": 5652,
+        "acRate": "55.6%",
+        "acRateRaw": 55.64401981599434,
+        "likes": 13,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3448,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:56:43.191Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.975Z"
+}

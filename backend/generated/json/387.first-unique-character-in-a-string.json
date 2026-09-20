@@ -1,0 +1,53 @@
+{
+    "quesId": 387,
+    "title": "First Unique Character in a String",
+    "titleSlug": "first-unique-character-in-a-string",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.6M",
+        "totalSubmission": "3.9M",
+        "totalAcceptedRaw": 2557620,
+        "totalSubmissionRaw": 3860390,
+        "acRate": "66.3%",
+        "acRateRaw": 66.25295466938141,
+        "likes": 9982,
+        "dislikes": 339
+    },
+    "similarQuesIds": [
+        451,
+        2351
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 387,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "[TOC]\n\n## Video Solution\n---\n\n<div class='video-preview'></div>\n\n<div>&nbsp;\n</div>\n\n## Solution Article\n\n---\n\n### Approach 1: Linear time solution\n\nThe best possible solution here could be of a linear time because to ensure that the character is unique you have to check the whole string anyway. \n\nThe idea is to go through the string and save in a hash map the number of times each character appears in the string. That would take $$\\mathcal{O}(N)$$ time, where `N` is the number of characters in the string.\n \nThen we go through the string the second time, this time we use the hash map as a reference to check if a character is unique or not. If the character is unique, one could just return its index. The complexity of the second iteration is $$\\mathcal{O}(N)$$ as well.\n\n!?!../Documents/387_LIS.json:1000,621!?!\n\n<iframe src=\"https://leetcode.com/playground/e6zf5RKZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"e6zf5RKZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since we go through the string of length `N` two times. \n* Space complexity: $$\\mathcal{O}(1)$$ because English alphabet contains 26 letters."
+    },
+    "content": "<p>Given a string <code>s</code>, find the <strong>first</strong> non-repeating character in it and return its index. If it <strong>does not</strong> exist, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;leetcode&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The character <code>&#39;l&#39;</code> at index 0 is the first character that does not occur at any other index.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;loveleetcode&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aabb&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:05:58.243Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.865Z"
+}

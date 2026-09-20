@@ -1,0 +1,70 @@
+{
+    "quesId": 294,
+    "title": "Flip Game II",
+    "titleSlug": "flip-game-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "76.6K",
+        "totalSubmission": "146.2K",
+        "totalAcceptedRaw": 76557,
+        "totalSubmissionRaw": 146212,
+        "acRate": "52.4%",
+        "acRateRaw": 52.360271386753475,
+        "likes": 629,
+        "dislikes": 68
+    },
+    "similarQuesIds": [
+        292,
+        293,
+        375,
+        464
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Memoization",
+            "slug": "memoization"
+        },
+        {
+            "name": "Minimax",
+            "slug": "minimax-algorithm"
+        },
+        {
+            "name": "Game Theory",
+            "slug": "game-theory"
+        },
+        {
+            "name": "Sprague–Grundy Theorem",
+            "slug": "sprague-grundy-theorem"
+        },
+        {
+            "name": "Impartial Game",
+            "slug": "impartial-game"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 294,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:35.974Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.686Z"
+}

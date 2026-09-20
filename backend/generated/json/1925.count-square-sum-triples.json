@@ -1,0 +1,47 @@
+{
+    "quesId": 1925,
+    "title": "Count Square Sum Triples",
+    "titleSlug": "count-square-sum-triples",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "193K",
+        "totalSubmission": "250.1K",
+        "totalAcceptedRaw": 192991,
+        "totalSubmissionRaw": 250080,
+        "acRate": "77.2%",
+        "acRateRaw": 77.17188762086036,
+        "likes": 748,
+        "dislikes": 65
+    },
+    "similarQuesIds": [
+        2475
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2037,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe can enumerate integer triples $(a, b, c)$ and check whether $a^2 + b^2$ is a perfect square, and whether $\\sqrt{a^2 + b^2}$ is an integer not exceeding $n$.\n\nTo determine whether $a^2 + b^2$ is a perfect square, we can compute $\\left\\lfloor \\sqrt{a^2 + b^2} \\right\\rfloor^2$ and verify that it equals $a^2 + b^2$. At the same time, we must ensure that $\\left\\lfloor \\sqrt{a^2 + b^2} \\right\\rfloor \\le n$.\n\nWhile enumerating, we maintain a counter for valid triples and increment it whenever the conditions are met. In the end, we return this count.\n\nWhen computing $\\left\\lfloor \\sqrt{a^2 + b^2} \\right\\rfloor$, to avoid potential floating point inaccuracies, and using the fact that the gap between consecutive perfect squares is always greater than $1$, we can safely use $\\sqrt{a^2 + b^2 + 1}$ instead of $\\sqrt{a^2 + b^2}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/3QMWd9QG/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"3QMWd9QG\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the upper bound of the triplet elements.\n\n- Time complexity: $O(n^2)$.\n  \n  It is the time complexity of traversing $a$ and $b$.\n\n- Space complexity: $O(1)$.\n\n---"
+    },
+    "content": "<p>A <strong>square triple</strong> <code>(a,b,c)</code> is a triple where <code>a</code>, <code>b</code>, and <code>c</code> are <strong>integers</strong> and <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>.</p>\n\n<p>Given an integer <code>n</code>, return <em>the number of <strong>square triples</strong> such that </em><code>1 &lt;= a, b, c &lt;= n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> 2\n<strong>Explanation</strong>: The square triples are (3,4,5) and (4,3,5).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 4\n<strong>Explanation</strong>: The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 250</code></li>\n</ul>\n",
+    "hints": [
+        "Iterate over all possible pairs (a,b) and check that the square root of a * a + b * b is an integers less than or equal n",
+        "You can check that the square root of an integer is an integer using binary seach or a builtin function like sqrt"
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:02:48.097Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.753Z"
+}

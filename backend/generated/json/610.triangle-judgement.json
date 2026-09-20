@@ -1,0 +1,38 @@
+{
+    "quesId": 610,
+    "title": "Triangle Judgement",
+    "titleSlug": "triangle-judgement",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "538.9K",
+        "totalSubmission": "716.7K",
+        "totalAcceptedRaw": 538850,
+        "totalSubmissionRaw": 716678,
+        "acRate": "75.2%",
+        "acRateRaw": 75.1872523301892,
+        "likes": 906,
+        "dislikes": 244
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 610,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": "<p>Table: <code>Triangle</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| x           | int  |\n| y           | int  |\n| z           | int  |\n+-------------+------+\nIn SQL, (x, y, z) is the primary key column for this table.\nEach row of this table contains the lengths of three line segments.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Report for every three line segments whether they can form a triangle.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nTriangle table:\n+----+----+----+\n| x  | y  | z  |\n+----+----+----+\n| 13 | 15 | 30 |\n| 10 | 20 | 15 |\n+----+----+----+\n<strong>Output:</strong> \n+----+----+----+----------+\n| x  | y  | z  | triangle |\n+----+----+----+----------+\n| 13 | 15 | 30 | No       |\n| 10 | 20 | 15 | Yes      |\n+----+----+----+----------+\n</pre>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:09:17.148Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.098Z"
+}

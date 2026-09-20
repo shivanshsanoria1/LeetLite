@@ -1,0 +1,48 @@
+{
+    "quesId": 663,
+    "title": "Equal Tree Partition",
+    "titleSlug": "equal-tree-partition",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "37.1K",
+        "totalSubmission": "87.7K",
+        "totalAcceptedRaw": 37098,
+        "totalSubmissionRaw": 87686,
+        "acRate": "42.3%",
+        "acRateRaw": 42.30778003330064,
+        "likes": 509,
+        "dislikes": 38
+    },
+    "similarQuesIds": [
+        2440
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 663,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T20:15:08.866Z",
+    "PARSED_ISO": "2026-09-20T08:56:15.205Z"
+}

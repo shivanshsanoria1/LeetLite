@@ -1,0 +1,59 @@
+{
+    "quesId": 3477,
+    "title": "Fruits Into Baskets II",
+    "titleSlug": "fruits-into-baskets-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "209.5K",
+        "totalSubmission": "298.5K",
+        "totalAcceptedRaw": 209537,
+        "totalSubmissionRaw": 298469,
+        "acRate": "70.2%",
+        "acRateRaw": 70.20414043575423,
+        "likes": 535,
+        "dislikes": 65
+    },
+    "similarQuesIds": [
+        904
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "exampleTestcases": "[4,2,5]\n[3,5,4]\n[3,6,1]\n[6,4,7]",
+    "meta": {
+        "quesIdLCBackend": 3790,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Simulation\n\n#### Intuition\n\nSince the input size is small, we can simulate the process directly. We iterate over each fruit from left to right and try to find a basket that can hold it. A fruit can only be placed in a basket if the basket’s capacity is greater than or equal to the fruit's requirement. Once a fruit is placed in a basket, that basket is marked as used and cannot be used again.\n\nThere are two possibilities for each fruit:\n\n1. If a basket with enough capacity is found, we use that basket and mark it as unavailable by setting its capacity to `0`.\n2. If no such basket is found, we increment the counter `count` to indicate this fruit couldn't be placed.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/aYf8vso2/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"aYf8vso2\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{fruits}$.\n\n- Time complexity: $O(n^2)$.\n  \n  Every time a fruit is encountered, the basket array needs to be traversed.\n\n- Space complexity: $O(1)$.\n\n  Only a few additional variables were used.\n  \n---"
+    },
+    "content": "<p>You are given two arrays of integers, <code>fruits</code> and <code>baskets</code>, each of length <code>n</code>, where <code>fruits[i]</code> represents the <strong>quantity</strong> of the <code>i<sup>th</sup></code> type of fruit, and <code>baskets[j]</code> represents the <strong>capacity</strong> of the <code>j<sup>th</sup></code> basket.</p>\n\n<p>From left to right, place the fruits according to these rules:</p>\n\n<ul>\n\t<li>Each fruit type must be placed in the <strong>leftmost available basket</strong> with a capacity <strong>greater than or equal</strong> to the quantity of that fruit type.</li>\n\t<li>Each basket can hold <b>only one</b> type of fruit.</li>\n\t<li>If a fruit type <b>cannot be placed</b> in any basket, it remains <b>unplaced</b>.</li>\n</ul>\n\n<p>Return the number of fruit types that remain unplaced after all possible allocations are made.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">fruits = [4,2,5], baskets = [3,5,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>fruits[0] = 4</code> is placed in <code>baskets[1] = 5</code>.</li>\n\t<li><code>fruits[1] = 2</code> is placed in <code>baskets[0] = 3</code>.</li>\n\t<li><code>fruits[2] = 5</code> cannot be placed in <code>baskets[2] = 4</code>.</li>\n</ul>\n\n<p>Since one fruit type remains unplaced, we return 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">fruits = [3,6,1], baskets = [6,4,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>fruits[0] = 3</code> is placed in <code>baskets[0] = 6</code>.</li>\n\t<li><code>fruits[1] = 6</code> cannot be placed in <code>baskets[1] = 4</code> (insufficient capacity) but can be placed in the next available basket, <code>baskets[2] = 7</code>.</li>\n\t<li><code>fruits[2] = 1</code> is placed in <code>baskets[1] = 4</code>.</li>\n</ul>\n\n<p>Since all fruits are successfully placed, we return 0.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == fruits.length == baskets.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>1 &lt;= fruits[i], baskets[i] &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "Simulate the operations for each fruit as described"
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:52:24.074Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.471Z"
+}

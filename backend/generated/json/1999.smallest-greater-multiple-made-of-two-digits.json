@@ -1,0 +1,44 @@
+{
+    "quesId": 1999,
+    "title": "Smallest Greater Multiple Made of Two Digits",
+    "titleSlug": "smallest-greater-multiple-made-of-two-digits",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.7K",
+        "totalSubmission": "5.8K",
+        "totalAcceptedRaw": 2742,
+        "totalSubmissionRaw": 5774,
+        "acRate": "47.5%",
+        "acRateRaw": 47.48874263941808,
+        "likes": 32,
+        "dislikes": 11
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2141,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Could you generate all the different numbers comprised of only digit1 and digit2 with the constraints?",
+        "Going from least to greatest, check if the number you generated is greater than k and a multiple of k."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:03:51.698Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.827Z"
+}

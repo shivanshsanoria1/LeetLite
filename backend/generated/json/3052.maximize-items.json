@@ -1,0 +1,37 @@
+{
+    "quesId": 3052,
+    "title": "Maximize Items",
+    "titleSlug": "maximize-items",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.2K",
+        "totalSubmission": "3K",
+        "totalAcceptedRaw": 2217,
+        "totalSubmissionRaw": 2978,
+        "acRate": "74.4%",
+        "acRateRaw": 74.44593687038281,
+        "likes": 8,
+        "dislikes": 12
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3257,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T18:48:08.927Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.839Z"
+}

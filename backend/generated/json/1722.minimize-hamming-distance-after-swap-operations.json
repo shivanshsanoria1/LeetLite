@@ -1,0 +1,53 @@
+{
+    "quesId": 1722,
+    "title": "Minimize Hamming Distance After Swap Operations",
+    "titleSlug": "minimize-hamming-distance-after-swap-operations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95.8K",
+        "totalSubmission": "137.4K",
+        "totalAcceptedRaw": 95773,
+        "totalSubmissionRaw": 137440,
+        "acRate": "69.7%",
+        "acRateRaw": 69.68349825378347,
+        "likes": 1424,
+        "dislikes": 44
+    },
+    "similarQuesIds": [
+        1202,
+        2948
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1840,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Hash Table + Union-Find Set\n\n#### Intuition\n\nFor each pair of indices in $\\textit{allowedSwaps}$, we can swap the corresponding elements regardless of their values. Moreover, these swaps can be performed in any order and any number of times as specified by $\\textit{allowedSwaps}$.\n\nBased on this, we can preprocess the indices using a union-find data structure (optimized with path compression and union by rank) to group them into disjoint sets. Each set represents a group of indices whose elements can be freely swapped among themselves. Additionally, we use a hash table to record the frequency of each element within every set.\n\nNext, we traverse the $\\textit{target}$ array. For each index, we determine which set it belongs to. If the corresponding set contains the required element (i.e., $\\textit{target}[i]$), we decrement its count by one. Otherwise, we increment the Hamming distance by one. After processing all indices, we return the final answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CKSKjXZy/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"CKSKjXZy\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{source}$, $m$ be the length of $\\textit{allowedSwaps}$, and $\\alpha(n)$ be the inverse Ackermann function.\n\n- Time complexity: $O((n + m) \\cdot \\alpha(n))$.\n  \n  Processing $m$ swap relations requires $O(\\alpha(n))$ per union operation, totalling $O(m \\cdot \\alpha(n))$. Building the frequency map and scanning the target array each iterate over $n$ indices and call `find` once per index, contributing another $O(n \\cdot \\alpha(n))$. Combined, the total is $O((n + m) \\cdot \\alpha(n))$.\n\n- Space complexity: $O(n)$.\n\n---"
+    },
+    "content": "<p>You are given two integer arrays, <code>source</code> and <code>target</code>, both of length <code>n</code>. You are also given an array <code>allowedSwaps</code> where each <code>allowedSwaps[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that you are allowed to swap the elements at index <code>a<sub>i</sub></code> and index <code>b<sub>i</sub></code> <strong>(0-indexed)</strong> of array <code>source</code>. Note that you can swap elements at a specific pair of indices <strong>multiple</strong> times and in <strong>any</strong> order.</p>\n\n<p>The <strong>Hamming distance</strong> of two arrays of the same length, <code>source</code> and <code>target</code>, is the number of positions where the elements are different. Formally, it is the number of indices <code>i</code> for <code>0 &lt;= i &lt;= n-1</code> where <code>source[i] != target[i]</code> <strong>(0-indexed)</strong>.</p>\n\n<p>Return <em>the <strong>minimum Hamming distance</strong> of </em><code>source</code><em> and </em><code>target</code><em> after performing <strong>any</strong> amount of swap operations on array </em><code>source</code><em>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = [1,2,3,4], target = [2,1,4,5], allowedSwaps = [[0,1],[2,3]]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> source can be transformed the following way:\n- Swap indices 0 and 1: source = [<u>2</u>,<u>1</u>,3,4]\n- Swap indices 2 and 3: source = [2,1,<u>4</u>,<u>3</u>]\nThe Hamming distance of source and target is 1 as they differ in 1 position: index 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = [1,2,3,4], target = [1,3,2,4], allowedSwaps = []\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are no allowed swaps.\nThe Hamming distance of source and target is 2 as they differ in 2 positions: index 1 and index 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> source = [5,1,2,4,3], target = [1,5,4,2,3], allowedSwaps = [[0,4],[4,2],[1,3],[1,4]]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == source.length == target.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= source[i], target[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= allowedSwaps.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>allowedSwaps[i].length == 2</code></li>\n\t<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt;= n - 1</code></li>\n\t<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>\n</ul>\n",
+    "hints": [
+        "The source array can be imagined as a graph where each index is a node and each allowedSwaps[i] is an edge.",
+        "Nodes within the same component can be freely swapped with each other.",
+        "For each component, find the number of common elements. The elements that are not in common will contribute to the total Hamming distance."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T17:52:46.594Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.399Z"
+}

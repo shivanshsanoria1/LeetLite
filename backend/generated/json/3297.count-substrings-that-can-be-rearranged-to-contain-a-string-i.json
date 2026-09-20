@@ -1,0 +1,50 @@
+{
+    "quesId": 3297,
+    "title": "Count Substrings That Can Be Rearranged to Contain a String I",
+    "titleSlug": "count-substrings-that-can-be-rearranged-to-contain-a-string-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "21.1K",
+        "totalSubmission": "48.9K",
+        "totalAcceptedRaw": 21088,
+        "totalSubmissionRaw": 48930,
+        "acRate": "43.1%",
+        "acRateRaw": 43.09830369916207,
+        "likes": 126,
+        "dislikes": 27
+    },
+    "similarQuesIds": [
+        76
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3573,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given two strings <code>word1</code> and <code>word2</code>.</p>\n\n<p>A string <code>x</code> is called <strong>valid</strong> if <code>x</code> can be rearranged to have <code>word2</code> as a <span data-keyword=\"string-prefix\">prefix</span>.</p>\n\n<p>Return the total number of <strong>valid</strong> <span data-keyword=\"substring-nonempty\">substrings</span> of <code>word1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;bcca&quot;, word2 = &quot;abc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only valid substring is <code>&quot;bcca&quot;</code> which can be rearranged to <code>&quot;abcc&quot;</code> having <code>&quot;abc&quot;</code> as a prefix.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;abcabc&quot;, word2 = &quot;abc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All the substrings except substrings of size 1 and size 2 are valid.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;abcabc&quot;, word2 = &quot;aaabc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word1.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= word2.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>word1</code> and <code>word2</code> consist only of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Store the frequency of each character for all prefixes.",
+        "Use Binary Search."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:58:45.491Z",
+    "PARSED_ISO": "2026-09-20T08:56:14.115Z"
+}

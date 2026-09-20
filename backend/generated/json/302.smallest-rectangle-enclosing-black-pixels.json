@@ -1,0 +1,57 @@
+{
+    "quesId": 302,
+    "title": "Smallest Rectangle Enclosing Black Pixels",
+    "titleSlug": "smallest-rectangle-enclosing-black-pixels",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "57.9K",
+        "totalSubmission": "95K",
+        "totalAcceptedRaw": 57858,
+        "totalSubmissionRaw": 94957,
+        "acRate": "60.9%",
+        "acRateRaw": 60.93073707046347,
+        "likes": 565,
+        "dislikes": 107
+    },
+    "similarQuesIds": [
+        3197,
+        3195
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 302,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-04T19:57:42.962Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.769Z"
+}

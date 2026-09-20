@@ -1,0 +1,47 @@
+{
+    "quesId": 1018,
+    "title": "Binary Prefix Divisible By 5",
+    "titleSlug": "binary-prefix-divisible-by-5",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "189.1K",
+        "totalSubmission": "351.6K",
+        "totalAcceptedRaw": 189053,
+        "totalSubmissionRaw": 351598,
+        "acRate": "53.8%",
+        "acRateRaw": 53.76964601618894,
+        "likes": 1119,
+        "dislikes": 232
+    },
+    "similarQuesIds": [
+        2455,
+        2644
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1071,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Traversal\n\n#### Intuition\n\nLet $\\textit{num}_i$ be the binary number represented by the prefix of the array $\\textit{nums}$ from index $0$ to index $i$. Then $\\textit{num}_0 = \\textit{nums}[0]$, and when $i > 0$, $\\textit{num}i = \\textit{num}{i-1} \\times 2 + \\textit{nums}[i]$. Let $n$ be the length of $\\textit{nums}$. For each $0 \\le i < n$, we can compute $\\textit{num}_i$ sequentially. For each value, we check whether it is divisible by $5$ to obtain the answer.\n\nSince $\\textit{nums}$ may be very long, storing the full value of each $\\textit{num}_i$ can lead to overflow. Because we only need to know whether each $\\textit{num}_i$ is divisible by $5$, it is enough to keep track of the remainder during the calculation.\n\nLet $\\textit{remain}_i$ be the remainder when $\\textit{num}_i$ is divided by $5$. Then $\\textit{remain}_0 = \\textit{nums}[0]$ (since $\\textit{nums}[0]$ is always less than $5$), and when $i > 0$, $\\textit{remain}i = (\\textit{remain}{i-1} \\times 2 + \\textit{nums}[i]) \\bmod 5$. We simply check whether each $\\textit{remain}_i$ equals $0$. Because $\\textit{remain}_i$ is always less than $5$, overflow cannot occur.\n\nWhy does checking whether $\\textit{remain}_i$ equals zero give the correct result? We can prove this by induction.\n\nWhen $i = 0$, since $\\textit{num}_0 = \\textit{nums}[0] < 5$, we have $\\textit{remain}_0 = \\textit{num}_0$, so $\\textit{remain}_0 = \\textit{num}_0 \\bmod 5$ holds.\n\nWhen $i > 0$, assume that $\\textit{remain}{i-1} = \\textit{num}{i-1} \\bmod 5$ holds. Consider $\\textit{num}_i \\bmod 5$ and $\\textit{remain}_i$:\n\n$$\n\\begin{aligned}\n\\textit{num}_i\\bmod 5=&(\\textit{num}_{i-1} \\times 2+\\textit{nums}[i])\\bmod 5 \\\\\n=&(\\textit{num}_{i-1} \\times 2)\\bmod 5+\\textit{nums}[i]\\bmod 5 \\\\\n\\\\\n\\textit{remain}_i=&(\\textit{remain}_{i-1} \\times 2+\\textit{nums}[i])\\bmod 5 \\\\\n=&(\\textit{num}_{i-1}\\bmod 5 \\times 2+\\textit{nums}[i])\\bmod 5 \\\\\n=&(\\textit{num}_{i-1}\\bmod 5 \\times 2)\\bmod 5+\\textit{nums}[i]\\bmod 5 \\\\\n=&(\\textit{num}_{i-1} \\times 2)\\bmod 5+\\textit{nums}[i]\\bmod 5\n\\end{aligned}\n$$\n\nThus $\\textit{remain}_i = \\textit{num}_i \\bmod 5$.\n\nTherefore, for any $0 \\le i < n$, we have $\\textit{remain}_i = \\textit{num}_i \\bmod 5$, so computing $\\textit{remain}_i$ always yields the correct result.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/9nPbAr47/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"9nPbAr47\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  Traverse the array once and compute the prefix as we go.\n\n- Space complexity: $O(1)$.\n  \n  In addition to the return value, the extra space used is constant.\n\n---"
+    },
+    "content": "<p>You are given a binary array <code>nums</code> (<strong>0-indexed</strong>).</p>\n\n<p>We define <code>x<sub>i</sub></code> as the number whose binary representation is the subarray <code>nums[0..i]</code> (from most-significant-bit to least-significant-bit).</p>\n\n<ul>\n\t<li>For example, if <code>nums = [1,0,1]</code>, then <code>x<sub>0</sub> = 1</code>, <code>x<sub>1</sub> = 2</code>, and <code>x<sub>2</sub> = 5</code>.</li>\n</ul>\n\n<p>Return <em>an array of booleans </em><code>answer</code><em> where </em><code>answer[i]</code><em> is </em><code>true</code><em> if </em><code>x<sub>i</sub></code><em> is divisible by </em><code>5</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,1,1]\n<strong>Output:</strong> [true,false,false]\n<strong>Explanation:</strong> The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.\nOnly the first number is divisible by 5, so answer[0] is true.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1]\n<strong>Output:</strong> [false,false,false]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+    "hints": [
+        "If X is the first i digits of the array as a binary number, then 2X + A[i] is the first i+1 digits."
+    ],
+    "LC_SYNC_ISO": "2026-09-04T20:35:55.195Z",
+    "PARSED_ISO": "2026-09-20T08:56:08.729Z"
+}

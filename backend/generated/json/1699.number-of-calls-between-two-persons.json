@@ -1,0 +1,37 @@
+{
+    "quesId": 1699,
+    "title": "Number of Calls Between Two Persons",
+    "titleSlug": "number-of-calls-between-two-persons",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "54.5K",
+        "totalSubmission": "67.6K",
+        "totalAcceptedRaw": 54512,
+        "totalSubmissionRaw": 67570,
+        "acRate": "80.7%",
+        "acRateRaw": 80.67485570519462,
+        "likes": 312,
+        "dislikes": 16
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1842,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-09T17:52:21.346Z",
+    "PARSED_ISO": "2026-09-20T08:56:11.338Z"
+}

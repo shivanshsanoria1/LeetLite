@@ -1,0 +1,40 @@
+{
+    "quesId": 2691,
+    "title": "Immutability Helper",
+    "titleSlug": "immutability-helper",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "422",
+        "totalSubmission": "1.1K",
+        "totalAcceptedRaw": 422,
+        "totalSubmissionRaw": 1101,
+        "acRate": "38.3%",
+        "acRateRaw": 38.328792007266124,
+        "likes": 11,
+        "dislikes": 8
+    },
+    "similarQuesIds": [
+        2690,
+        2692
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2773,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Javascript has the concept of Proxy. That concept is critical to this problem.",
+        "You you need to keep track of which values in the JSON were overwritten with new values.",
+        "Somehow, keep a tree structure that exists parallel to the original object. This will keep track of all the edits.",
+        "When the mutator function is done. Return a clone with those mutations applied. It will be inefficient to clone the entire object so only clone the minimum number of nodes."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:41:09.710Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.362Z"
+}

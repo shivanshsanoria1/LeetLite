@@ -1,0 +1,42 @@
+{
+    "quesId": 2633,
+    "title": "Convert Object to JSON String",
+    "titleSlug": "convert-object-to-json-string",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "JavaScript",
+    "stats": {
+        "totalAccepted": "14.2K",
+        "totalSubmission": "18.3K",
+        "totalAcceptedRaw": 14250,
+        "totalSubmissionRaw": 18275,
+        "acRate": "78.0%",
+        "acRateRaw": 77.97537619699042,
+        "likes": 209,
+        "dislikes": 12
+    },
+    "similarQuesIds": [
+        2628,
+        2625,
+        2675,
+        2700
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 2745,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Consider the 4 possibilities. The object could be an array, an object, a string, or another type.",
+        "Think about the problem recursively. If you know how to convert any sub-data into a string, how could you use it to convert the entire data into a string?",
+        "If the data is a string, it's just the value surrounded by double quotes. If the data is another type, its just String(data). If the data is an array, it's the recursively stringified value of each item separated by commas. If the data is an object, it's a series of key-value pairs where each value is the recursively stringified value."
+    ],
+    "LC_SYNC_ISO": "2026-09-09T18:40:22.200Z",
+    "PARSED_ISO": "2026-09-20T08:56:13.268Z"
+}
