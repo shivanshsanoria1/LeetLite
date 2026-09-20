@@ -27,14 +27,14 @@
 		<div class="text-center mb-5 py-2">
 			<div class="d-inline-flex align-items-center justify-content-center gap-2 mb-2 flex-wrap">
 				<h1 class="fw-bold display-5 mb-0">About <span class="brand-gradient">LeetLite</span></h1>
-				<!-- Stoplights Logo: Top-to-Bottom Gradient -->
-				<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" class="bi bi-stoplights flex-shrink-0"
-					viewBox="0 0 16 16">
+				<!-- Stoplights Logo: Exact Red -> Yellow -> Green Top-to-Bottom Gradient matching navbar -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+					class="bi bi-stoplights flex-shrink-0 ms-1" viewBox="0 0 16 16">
 					<defs>
 						<linearGradient id="about-logo-grad-vertical" x1="0%" y1="0%" x2="0%" y2="100%">
-							<stop offset="0%" stop-color="#2cbb5d" />
+							<stop offset="0%" stop-color="#ef4743" />
 							<stop offset="50%" stop-color="#ffc01e" />
-							<stop offset="100%" stop-color="#ef4743" />
+							<stop offset="100%" stop-color="#2cbb5d" />
 						</linearGradient>
 					</defs>
 					<path fill="url(#about-logo-grad-vertical)"
@@ -50,7 +50,7 @@
 		</div>
 
 		<!-- Big Callout: Philosophy -->
-		<div class="card bg-body-tertiary border-secondary shadow-sm mb-5 interactive-card">
+		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4 interactive-card">
 			<div class="card-body p-4 p-md-5">
 				<h3 class="fw-bold text-light mb-3">Built For Speed, Simplicity & Zero Clutter</h3>
 				<p class="about-card-text fs-5 mb-0 leading-relaxed">
@@ -60,6 +60,77 @@
 					instantaneous client-side operations.
 					Everything runs directly inside your browser powered by pre-computed static JSON files.
 				</p>
+			</div>
+		</div>
+
+		<!-- Explaining the Site Logo Philosophy Card -->
+		<div class="card bg-body-tertiary border-secondary shadow-sm mb-5 interactive-card">
+			<div class="card-header bg-transparent border-secondary py-3 d-flex align-items-center gap-2">
+				<span class="fs-5">🚦</span>
+				<h4 class="fw-bold text-light mb-0">The Traffic Light Philosophy</h4>
+			</div>
+			<div class="card-body p-4 p-md-4">
+				<p class="about-card-text fs-6 mb-4">
+					The traffic light logo represents a structured, disciplined mental workflow designed to approach
+					every algorithmic problem systematically:
+				</p>
+				<div class="row g-3">
+					<!-- Red Stage -->
+					<div class="col-md-4">
+						<div class="p-3 rounded bg-dark border border-danger h-100 traffic-card traffic-red">
+							<h6 class="fw-bold color-red mb-2 d-flex align-items-center gap-2">
+								<span>🔴</span> Red: Stop & Understand
+							</h6>
+							<p class="about-card-text small mb-0">
+								Stop and read the problem statement thoroughly. Carefully trace through the provided
+								example test cases to understand edge cases and exact input/output expectations before
+								touching any code.
+							</p>
+						</div>
+					</div>
+
+					<!-- Yellow Stage -->
+					<div class="col-md-4">
+						<div class="p-3 rounded bg-dark border border-warning h-100 traffic-card traffic-yellow">
+							<h6 class="fw-bold color-yellow mb-2 d-flex align-items-center gap-2">
+								<span>🟡</span> Yellow: Think & Formulate
+							</h6>
+							<p class="about-card-text small mb-0">
+								Think about the approach. Start with the simplest idea even if it won't be accepted,
+								then try to optimize it further. Inspect the problem constraints to assess what
+								algorithmic complexity will be accepted.
+							</p>
+						</div>
+					</div>
+
+					<!-- Green Stage -->
+					<div class="col-md-4">
+						<div class="p-3 rounded bg-dark border border-success h-100 traffic-card traffic-green">
+							<h6 class="fw-bold color-green mb-2 d-flex align-items-center gap-2">
+								<span>🟢</span> Green: Go & Implement
+							</h6>
+							<p class="about-card-text small mb-0">
+								Go on to actually writing the code yourself directly on LeetCode to get real-world
+								platform experience. If you are not able to write the code yourself, inspect the hints
+								one by one to get insights that can guide you in the right direction.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Finally Stage: Blue Themed -->
+				<div class="mt-4 p-3 rounded bg-dark border border-primary traffic-card traffic-blue">
+					<h6 class="fw-bold text-primary mb-1 d-flex align-items-center gap-2">
+						<span>🔵</span> Finally: Honest Choice & Learning
+					</h6>
+					<p class="about-card-text small mb-0">
+						If you are still not able to solve it on your own, come back to review the solutions. Take a
+						look at either the official editorial or the LeetLite solution—whichever feels clearer and
+						easier to understand for you. If using LeetLite solutions, browse through the versions
+						sequentially to trace the evolution from least efficient to most efficient, or from intuitive
+						brute-force to advanced paradigms.
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -76,7 +147,7 @@
 						<h5 class="fw-bold color-green mb-2">Instant Search & Sort</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Type to search instantly by ID or title on keystroke without pressing Enter. Sort columns
-							dynamically by Acceptance, Like Ratios, or ID.
+							dynamically by Acceptance, Like Ratios, or ID[cite: 2].
 						</p>
 					</div>
 				</div>
@@ -88,7 +159,7 @@
 						<h5 class="fw-bold color-yellow mb-2">Multi-Factor Filtering</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Filter on the fly by difficulty, free/paid status, category domains (Algorithms, Database,
-							Shell, Concurrency, Pandas), and multi-tag selectors.
+							Shell, Concurrency, Pandas), and multi-tag selectors[cite: 2].
 						</p>
 					</div>
 				</div>
@@ -100,7 +171,7 @@
 						<h5 class="fw-bold text-primary mb-2">Split Problem Workspace</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Draggable, adjustable split-pane layout featuring MathJax LaTeX math rendering, expandable
-							hints, and high-contrast code viewing.
+							hints, and high-contrast code viewing[cite: 5].
 						</p>
 					</div>
 				</div>
@@ -111,8 +182,8 @@
 					<div class="card-body">
 						<h5 class="fw-bold text-info mb-2">Similar Problems Visualizer</h5>
 						<p class="about-card-text fs-6 mb-0">
-							Explore questions via an interactive radial graph. Click any connected peripheral node to
-							re-root the graph dynamically and uncover problem patterns.
+							Explore questions via an interactive radial graph[cite: 4]. Click any connected peripheral
+							node to re-root the graph dynamically and uncover problem patterns[cite: 4].
 						</p>
 					</div>
 				</div>
@@ -124,7 +195,7 @@
 						<h5 class="fw-bold color-yellow mb-2">Real-Time Analytics & Stats</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Dedicated chart dashboard displaying problem breakdowns and difficulty distributions
-							comparing the full problem pool to solved solutions.
+							comparing the full problem pool to solved solutions[cite: 3].
 						</p>
 					</div>
 				</div>
@@ -136,7 +207,7 @@
 						<h5 class="fw-bold text-danger mb-2">Local Persistence</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Active search keywords, sorting directions, selected filters, and pagination preferences are
-							automatically stored via <code>localStorage</code>.
+							automatically stored via <code>localStorage</code>[cite: 2].
 						</p>
 					</div>
 				</div>
@@ -179,13 +250,13 @@
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">Dislike Counts & Like Rates Restored:</strong> Unlike the
 								official LeetCode frontend which hid problem dislikes, LeetLite retains and calculates
-								both dislikes and authentic like ratios.</li>
+								both dislikes and authentic like ratios[cite: 2, 5].</li>
 							<li><strong class="text-light">Instant Client-Side Speed:</strong> Zero API roundtrips for
-								browsing, sorting, or multi-tag filtering.</li>
+								browsing, sorting, or multi-tag filtering[cite: 2].</li>
 							<li><strong class="text-light">Complete Privacy & No Accounts:</strong> No authentication
 								walls, tracking cookies, or profiling.</li>
 							<li><strong class="text-light">Visualizer & Progress Charts:</strong> Built-in graph
-								discovery and side-by-side completion analytics.</li>
+								discovery and side-by-side completion analytics[cite: 3, 4].</li>
 							<li><strong class="text-light">Verified Handcrafted Code:</strong> 100% human-authored
 								developer code tested against LeetCode test suites.</li>
 						</ul>
@@ -202,11 +273,12 @@
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">No Real-Time Metric Sync:</strong> Statistics like likes,
 								dislikes, total submissions, and acceptance rates are pulled periodically rather than
-								streamed live. Numbers may not be 100% up to the second compared to LeetCode.</li>
+								streamed live[cite: 2, 5]. Numbers may not be 100% up to the second compared to
+								LeetCode.</li>
 							<li><strong class="text-light">No Online Code Runner:</strong> This is a reference directory
-								and viewer, not a live evaluation judge.</li>
+								and viewer, not a live evaluation judge[cite: 5].</li>
 							<li><strong class="text-light">No Multi-Device Cloud Sync:</strong> Saved tags and page
-								choices remain exclusively in your local browser storage.</li>
+								choices remain exclusively in your local browser storage[cite: 2].</li>
 							<li><strong class="text-light">No Premium Problem Data:</strong> Paid subscription
 								descriptions and editorial materials are strictly omitted.</li>
 						</ul>
@@ -234,7 +306,7 @@
 						<tbody>
 							<tr>
 								<td class="text-start ps-4 fw-semibold text-light">Dislike Counts & Like Ratios</td>
-								<td class="color-green fw-bold">Available & Visible</td>
+								<td class="color-green fw-bold">Available & Visible[cite: 2, 5]</td>
 								<td class="color-red fw-bold">Hidden / Removed from UI</td>
 							</tr>
 							<tr>
@@ -244,7 +316,7 @@
 							</tr>
 							<tr>
 								<td class="text-start ps-4 fw-semibold text-light">Search & Filter Speed</td>
-								<td class="color-green fw-bold">Instant (Client-Side)</td>
+								<td class="color-green fw-bold">Instant (Client-Side)[cite: 2]</td>
 								<td class="about-muted-text">Network Request Dependent</td>
 							</tr>
 							<tr>
@@ -259,12 +331,12 @@
 							</tr>
 							<tr>
 								<td class="text-start ps-4 fw-semibold text-light">Visualizer & Progress Charts</td>
-								<td class="color-green fw-bold">Built-In Radial Graph & Analytics</td>
+								<td class="color-green fw-bold">Built-In Radial Graph & Analytics[cite: 3, 4]</td>
 								<td class="about-muted-text">Basic Progress Summaries</td>
 							</tr>
 							<tr>
 								<td class="text-start ps-4 fw-semibold text-light">In-Browser Code Execution</td>
-								<td class="color-red fw-bold">None (Viewer Only)</td>
+								<td class="color-red fw-bold">None (Viewer Only)[cite: 5]</td>
 								<td class="color-green fw-bold">Yes (Online Judge Engine)</td>
 							</tr>
 							<tr>
@@ -301,7 +373,8 @@
 						<h5 class="fw-bold text-info mb-2">🤖 AI Usage & Handcrafted Code Policy</h5>
 						<p class="about-card-text fs-6 mb-0">
 							<strong>Website Development:</strong> AI tooling was utilized as an assistant for writing,
-							structuring, and refactoring web frontend layouts (HTML, CSS, JavaScript components).
+							structuring, and refactoring web frontend layouts (HTML, CSS, JavaScript components)[cite:
+							1].
 							<br><br>
 							<strong>Problem Solutions:</strong> <span class="text-light fw-bold">No AI tools were used
 								to produce problem solutions.</span> Every code implementation across C++, JavaScript,

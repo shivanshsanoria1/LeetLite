@@ -12,7 +12,7 @@
     border-color: rgba(255, 255, 255, 0.35) !important;
 }
 
-/* Accentuated Hover States */
+/* Accentuated Hover States for General Cards */
 .interactive-card.border-success:hover {
     border-color: #2cbb5d !important;
     box-shadow: 0 8px 24px rgba(44, 187, 93, 0.2) !important;
@@ -33,14 +33,45 @@
     box-shadow: 0 8px 24px rgba(13, 202, 240, 0.2) !important;
 }
 
+/* Traffic Philosophy Cards: Transitions and Faded Outer Edge Glow */
+.traffic-card {
+    transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1),
+                box-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1),
+                border-color 0.25s ease-in-out;
+}
+
+.traffic-card:hover {
+    transform: translateY(-3px);
+}
+
+.traffic-red:hover {
+    border-color: #ef4743 !important;
+    box-shadow: 0 0 20px rgba(239, 71, 67, 0.28) !important;
+}
+
+.traffic-yellow:hover {
+    border-color: #ffc01e !important;
+    box-shadow: 0 0 20px rgba(255, 192, 30, 0.28) !important;
+}
+
+.traffic-green:hover {
+    border-color: #2cbb5d !important;
+    box-shadow: 0 0 20px rgba(44, 187, 93, 0.28) !important;
+}
+
+.traffic-blue:hover {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.28) !important;
+}
+
 /* Readability & Text Contrast Overrides */
 .about-card-text {
-    color: #d1d7de !important; /* Noticeably brighter than standard muted grey */
+    color: #d1d7de !important;
     line-height: 1.65;
 }
 
 .about-muted-text {
-    color: #a0a6ad !important; /* Clean readable grey for secondary lines */
+    color: #a0a6ad !important;
 }
 
 /* Handcrafted Solution Badge */
