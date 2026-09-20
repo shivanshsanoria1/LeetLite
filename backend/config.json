@@ -1,0 +1,18 @@
+{
+    "dirPaths": {
+        "web": "web",
+        "logs": "generated/logs",
+        "webBackup": "generated/backup",
+        "LCProblemsJSONParsed": "generated/json",
+        "LCProblemsJSONRaw": "generated/json-raw"
+    },
+    "filePaths": {
+        "LCBaseProblemList": "generated/lc-base-problem-list.json",
+        "LCProblemList": "generated/lc-problem-list.json",
+        "LCProblemListMin": "generated/json-min/lc-problem-list-min.json",
+        "LCTopicTag": "generated/lc-topic-tag.json",
+        "LCTopicTagMin": "generated/json-min/lc-topic-tag-min.json",
+        "config": "config.json",
+        "webConfig": "web/web-config.json"
+    }
+}

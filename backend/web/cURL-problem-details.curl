@@ -1,0 +1,11 @@
+curl --request POST \
+  --url https://leetcode.com/graphql \
+  --header 'Content-Type: application/json' \
+  --header 'Origin: https://leetcode.com' \
+  --header 'Referer: https://leetcode.com/problems/' \
+  --data '{
+  "query": "query getQuestionPublicData($titleSlug: String!) { question(titleSlug: $titleSlug) { questionId questionFrontendId title titleSlug difficulty likes dislikes acRate isPaidOnly categoryTitle companyTagStats hasSolution hasVideoSolution stats similarQuestions content hints solution { canSeeDetail content } topicTags { name slug } codeSnippets { lang langSlug code } } }",
+  "variables": {
+    "titleSlug": "two-sum"
+  }
+}'
