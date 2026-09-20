@@ -1,6 +1,7 @@
 const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
 const PATH_LC_PROBLEM_LIST = '/util/web/generated/json-min/lc-problem-list-min.json';
 const PATH_LC_TOPIC_TAGS = '/util/web/generated/json-min/lc-topic-tag-min.json';
+const PATH_LC_SOLVED_PROBLEM_LIST = '/util/web/generated/json-min/lc-solved-problems-list-min.json';
 
 // --- 1. State Management ---
 let allProblems = [];
@@ -30,6 +31,7 @@ const diffFilter = document.getElementById('diffFilter');
 const paidFilter = document.getElementById('paidFilter');
 const categoryFilter = document.getElementById('categoryFilter');
 const pageSizeSelect = document.getElementById('pageSizeSelect');
+const solutionFilter = document.getElementById('solutionFilter');
 const resetBtn = document.getElementById('resetBtn');
 
 // DOM Elements: Stats
@@ -50,20 +52,37 @@ const pageInfo = document.getElementById('page-info');
 // --- 2. Data Fetching & Storage ---
 async function loadProblems() {
 	try {
-		// Fetch both JSON files concurrently
-		const [probRes, tagsRes] = await Promise.all([
+		// Fetch all three JSON files concurrently
+		const [probRes, tagsRes, solvedRes] = await Promise.all([
 			fetch(GITHUB_LCS_URL + PATH_LC_PROBLEM_LIST),
-			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS)
+			fetch(GITHUB_LCS_URL + PATH_LC_TOPIC_TAGS),
+			fetch(GITHUB_LCS_URL + PATH_LC_SOLVED_PROBLEM_LIST)
 		]);
 
-		if (!probRes.ok || !tagsRes.ok) throw new Error(`HTTP error! status: ${probRes.status}`);
+		if (!probRes.ok || !tagsRes.ok || !solvedRes.ok) throw new Error(`HTTP error! status: ${probRes.status}`);
 
 		allProblems = await probRes.json();
 		masterTagsList = await tagsRes.json();
+		const solvedList = await solvedRes.json();
 
-		// Store tags in a Map to record their exact backend order and color for the table
+		// Create a fast Set for solved problems (isAccepted: true)
+		const solvedMap = new Set();
+		solvedList.forEach(p => {
+			if (p.isAccepted) solvedMap.add(p.quesId);
+		});
+
 		masterTagsList.forEach((tag, index) => {
 			topicTagMap.set(tag.slug, { ...tag, order: index });
+		});
+
+		// Append solution availability flags to the master problem list
+		// Append solution availability flags to the master problem list
+		allProblems.forEach(p => {
+			// Robust check: handles booleans, strings, and flattened JSON structures
+			const officialAvailable = p.meta?.hasSolution || p.hasSolution || p.solution?.canSeeDetail;
+			p.hasLeetcodeSolution = (officialAvailable === true || String(officialAvailable).toLowerCase() === 'true');
+
+			p.hasLeetLiteSolution = solvedMap.has(p.quesId);
 		});
 
 		currentProblems = [...allProblems];
@@ -75,7 +94,7 @@ async function loadProblems() {
 
 	} catch (error) {
 		console.error("Failed to load problem list:", error);
-		tableBody.innerHTML = `<tr><td colspan="7" class="text-center text-danger py-4">Error loading problem data. Please check your data directory.</td></tr>`;
+		tableBody.innerHTML = `<tr><td colspan="8" class="text-center text-danger py-4">Error loading problem data. Please check your data directory.</td></tr>`;
 	}
 }
 
@@ -85,6 +104,7 @@ function saveSettings() {
 		diff: diffFilter.value,
 		paid: paidFilter.value,
 		category: categoryFilter.value,
+		solution: solutionFilter.value,
 		tags: selectedTags,
 		tagLogic: tagLogic, // Save the state
 		sort: currentSort,
@@ -104,6 +124,7 @@ function loadSettings() {
 			diffFilter.value = settings.diff || 'All';
 			paidFilter.value = settings.paid || 'All';
 			categoryFilter.value = settings.category || 'All';
+			solutionFilter.value = settings.solution || 'All';
 
 			if (settings.sort) currentSort = settings.sort;
 			if (settings.page) currentPage = settings.page;
@@ -280,8 +301,9 @@ function renderTable() {
 	tableBody.innerHTML = '';
 
 	if (currentProblems.length === 0) {
-		tableBody.innerHTML = '<tr><td colspan="7" class="text-center text-muted py-4">No problems found.</td></tr>';
+		tableBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No problems found.</td></tr>';
 		updatePaginationUI(0);
+		updateStats(); // <-- Added this to fix the counter bug!
 		return;
 	}
 
@@ -291,6 +313,8 @@ function renderTable() {
 	const startIndex = (currentPage - 1) * pageSize;
 	const endIndex = startIndex + pageSize;
 	const paginatedProblems = currentProblems.slice(startIndex, endIndex);
+
+	console.log(paginatedProblems[0])
 
 	paginatedProblems.forEach(p => {
 		const totalVotes = (p.stats.likes || 0) + (p.stats.dislikes || 0);
@@ -333,6 +357,22 @@ function renderTable() {
 
 		const category = p.categoryTitle || '';
 
+		// Generate Solution Availability HTML string based on flags
+		let solHtml = '<span class="text-secondary fw-semibold">N/A</span>';
+
+		// Pill formatting exactly matching topic tags: colored background, white text, and border[cite: 4]
+		const badgeLeetLite = `<span class="badge" style="background-color: #2cbb5d !important; border: 1px solid #495057; font-weight: 500; color: #fff;">LeetLite</span>`;
+		const badgeLeetcode = `<span class="badge" style="background-color: #ffc01e !important; border: 1px solid #495057; font-weight: 500; color: #fff;">Leetcode</span>`;
+
+		if (p.hasLeetcodeSolution && p.hasLeetLiteSolution) {
+			// LeetLite (custom) comes strictly before Leetcode (official) when both are present[cite: 4]
+			solHtml = `${badgeLeetLite} <span class="ms-1">${badgeLeetcode}</span>`;
+		} else if (p.hasLeetLiteSolution) {
+			solHtml = badgeLeetLite;
+		} else if (p.hasLeetcodeSolution) {
+			solHtml = badgeLeetcode;
+		}
+
 		const tr = document.createElement('tr');
 		tr.innerHTML = `
             <td class="text-secondary fw-bold">${p.quesId}</td>
@@ -344,13 +384,15 @@ function renderTable() {
             <td class="${getDifficultyColor(p.difficulty)}">${p.difficulty}</td>
             <td class="${likeRateClass}">${likeRateDisplay}</td>
             <td class="${getRateColor(acRate)}">${acRate.toFixed(2)}%</td>
+            <td class="${getCategoryColor(category)}">${category}</td>
+            <td>${solHtml}</td>
             <td>
                 <div class="tags-wrapper" title="${tagsTitle}">
                     ${tagsHTML}
                 </div>
             </td>
-            <td class="${getCategoryColor(category)}">${category}</td>
         `;
+
 		tableBody.appendChild(tr);
 	});
 
@@ -365,15 +407,30 @@ function applyFilters() {
 	const diff = diffFilter.value;
 	const paid = paidFilter.value;
 	const cat = categoryFilter.value;
+	const sol = solutionFilter.value; // Get the solution value
 
 	currentProblems = allProblems.filter(p => {
 		const matchesSearch = p.quesId.toString() === searchTerm || p.title.toLowerCase().includes(searchTerm);
 		if (searchTerm && !matchesSearch) return false;
 
-		if (diff !== "All" && p.difficulty !== diff) return false;
+		// Compound Difficulty Filter Logic
+		if (diff !== "All") {
+			if (diff === "Easy and Medium" && p.difficulty === "Hard") return false;
+			else if (diff === "Medium and Hard" && p.difficulty === "Easy") return false;
+			else if (diff !== "Easy and Medium" && diff !== "Medium and Hard" && p.difficulty !== diff) return false;
+		}
 		if (paid === "Free" && p.isPaidOnly) return false;
 		if (paid === "Paid" && !p.isPaidOnly) return false;
 		if (cat !== "All" && p.categoryTitle !== cat) return false;
+
+		// Solution Availability Logic
+		if (sol !== "All") {
+			if (sol === "LeetLite" && !p.hasLeetLiteSolution) return false;
+			if (sol === "Leetcode" && !p.hasLeetcodeSolution) return false;
+			if (sol === "LeetLite Only" && (!p.hasLeetLiteSolution || p.hasLeetcodeSolution)) return false;
+			if (sol === "Leetcode Only" && (!p.hasLeetcodeSolution || p.hasLeetLiteSolution)) return false;
+			if (sol === "LeetLite and Leetcode" && !(p.hasLeetLiteSolution && p.hasLeetcodeSolution)) return false;
+		}
 
 		// TAG FILTERING LOGIC: OR / AND condition
 		if (selectedTags.length > 0) {
@@ -422,6 +479,15 @@ function applySort() {
 		} else if (currentSort.column === 'category') {
 			valA = (a.categoryTitle || '').toLowerCase();
 			valB = (b.categoryTitle || '').toLowerCase();
+		} else if (currentSort.column === 'solution') {
+			const getSolWeight = (prob) => {
+				if (prob.hasLeetcodeSolution && prob.hasLeetLiteSolution) return 3;
+				if (prob.hasLeetLiteSolution) return 2;
+				if (prob.hasLeetcodeSolution) return 1;
+				return 0;
+			};
+			valA = getSolWeight(a);
+			valB = getSolWeight(b);
 		}
 
 		if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
@@ -479,6 +545,7 @@ resetBtn.addEventListener('click', () => {
 	diffFilter.value = 'All';
 	paidFilter.value = 'All';
 	categoryFilter.value = 'All';
+	solutionFilter.value = 'All'; // Reset solution filter
 	pageSizeSelect.value = '50';
 
 	// Reset Tag Selection & Search

@@ -1,6 +1,24 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary mb-1 shadow-sm">
 	<div class="container-fluid d-flex justify-content-between align-items-center">
-		<a class="navbar-brand fw-bold" href="index.html">LeetLite</a>
+
+		<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+			<span class="brand-gradient">LeetLite</span>
+			<!-- Stoplights SVG with embedded top-to-bottom gradient (Red at top, Green at bottom) -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-stoplights ms-2"
+				viewBox="0 0 16 16">
+				<defs>
+					<linearGradient id="brand-grad-svg" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#ef4743" />
+						<stop offset="50%" stop-color="#ffc01e" />
+						<stop offset="100%" stop-color="#2cbb5d" />
+					</linearGradient>
+				</defs>
+				<path fill="url(#brand-grad-svg)"
+					d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m0 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m1.5 2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+				<path fill="url(#brand-grad-svg)"
+					d="M4 2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1c-1.2-.4-1.833-1.5-2-2h2V8c-1.2-.4-1.833-1.5-2-2h2V4c-1.2-.4-1.833-1.5-2-2zm2-1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+			</svg>
+		</a>
 
 		<button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarNav">

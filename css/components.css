@@ -1,0 +1,34 @@
+/* css/logo.css */
+.stoplight-logo {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    padding-bottom: 2px; /* Aligns the icon perfectly with the text baseline */
+}
+
+/* 
+  Blended Gradient Colors 
+  Mapped to LeetLite's difficulty colors 
+*/
+.stop-green {
+    stop-color: #2cbb5d; /* Easy[cite: 1] */
+}
+
+.stop-yellow {
+    stop-color: #ffc01e; /* Medium[cite: 1] */
+}
+
+.stop-red {
+    stop-color: #ef4743; /* Hard[cite: 1] */
+}
+
+/* css/components.css */
+.brand-gradient {
+    /* Left to right gradient */
+    background: linear-gradient(to right, #2cbb5d, #ffc01e, #ef4743); /* */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Mostly white, letting just a hint of the background gradient show through */
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.76); 
+    color: transparent;
+}
