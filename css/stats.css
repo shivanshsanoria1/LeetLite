@@ -30,3 +30,30 @@
 canvas { 
     cursor: pointer; 
 }
+
+/* Heatmap Grid */
+.heatmap-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Safely scale text without triggering container query layout bugs */
+    font-size: clamp(8px, 1.2vw, 12px); 
+    
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+/* Subtle Pop-out effect on hover */
+.heatmap-cell:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    filter: brightness(1.2);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}

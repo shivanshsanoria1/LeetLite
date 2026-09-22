@@ -35,12 +35,51 @@
 					id="btn-tags">
 					Topic Tags Distribution
 				</button>
+				<!-- NEW: Heatmap Button -->
+				<button class="list-group-item list-group-item-action bg-dark text-light border-secondary"
+					id="btn-heatmap">
+					Problem Heatmap
+				</button>
 			</div>
 		</div>
 
 		<!-- Chart Display -->
 		<div class="p-4 flex-grow-1 overflow-auto bg-body d-flex flex-column">
-			<h4 id="chart-main-title" class="fw-bold text-light mb-5 text-center">Loading...</h4>
+
+			<!-- Heatmap Controls & Legend Row (Hidden by default) -->
+			<div id="heatmap-header" class="d-none d-flex flex-wrap align-items-center gap-4 mb-4 px-2 pt-2">
+				<!-- Dropdown Controls -->
+				<div class="d-flex align-items-center gap-2 border-end border-secondary pe-4">
+					<span class="text-secondary fw-semibold small">Color By:</span>
+					<select id="heatmap-color-select"
+						class="form-select form-select-sm bg-dark text-light border-secondary shadow-sm"
+						style="width: auto;">
+						<option value="difficulty">Difficulty</option>
+						<option value="category">Category</option>
+					</select>
+				</div>
+
+				<!-- Dynamic Legend -->
+				<div id="heatmap-legend"
+					class="d-flex flex-wrap align-items-center gap-3 text-secondary small fw-semibold">
+					<!-- Legend items injected by JS -->
+				</div>
+			</div>
+
+			<!-- Doughnut Charts View -->
+
+			<!-- Dynamic Legend (Hidden by default) -->
+			<div id="heatmap-legend"
+				class="d-none d-flex flex-wrap justify-content-center gap-4 text-secondary small fw-semibold mb-4">
+				<!-- Legend items injected by JS -->
+			</div>
+
+			<!-- ... Doughnut and Bar chart wrappers remain unchanged ... -->
+
+			<!-- Heatmap View (Hidden by default) -->
+			<div id="heatmap-wrapper" class="w-100 flex-grow-1 d-none overflow-auto" style="height: 65vh;">
+				<div id="heatmap-container" class="d-grid gap-1 pb-4"></div>
+			</div>
 
 			<!-- Doughnut Charts View -->
 			<div id="doughnut-wrapper" class="row w-100 flex-grow-1 align-items-start">
@@ -85,7 +124,6 @@
 					<canvas id="tagsBarChart"></canvas>
 				</div>
 			</div>
-
 		</div>
 	</div>
 

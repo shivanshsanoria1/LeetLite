@@ -1,9 +1,3 @@
-// const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-// const PATH_LC_SOLVED_PROBLEM_LIST = '/util/web/generated/json-min/lc-solved-problems-list-min.json';
-
-// const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
-// const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
-
 import {
 	GITHUB_LCS_URL,
 	PATH_LC_SOLVED_PROBLEM_LIST,
@@ -11,9 +5,12 @@ import {
 	PATH_LC_TOPIC_TAGS,
 } from './config.js';
 
+const HEATMAP_COLUMNS = 25; // Adjust this number to change grid density
+
 let officialChartInstance = null;
 let solvedChartInstance = null;
 let tagsBarChartInstance = null;
+let currentHeatmapMode = 'difficulty';
 
 // Removed "tags" from statsData since we fetch them directly now
 const statsData = {
@@ -22,6 +19,7 @@ const statsData = {
 };
 
 let masterTagsList = []; // Stores the raw pre-sorted, pre-colored array from backend
+let globalMasterProblems = []; // NEW: Store raw list for heatmap
 
 const colorPalettes = {
 	difficulty: {
@@ -60,19 +58,22 @@ async function loadStats() {
 		const diffMap = {};
 		const catMap = {};
 
+		globalMasterProblems = masterProblems.sort((a, b) => a.quesId - b.quesId);
+
 		masterProblems.forEach(p => {
 			// Processing for Doughnuts
 			if (statsData.official.difficulty[p.difficulty] !== undefined) {
 				statsData.official.difficulty[p.difficulty]++;
 			}
-			const cat = p.categoryTitle || 'Unknown';
+
+			// FIX: Point to the new meta object location
+			const cat = p.meta?.categoryTitle || p.categoryTitle || 'Unknown';
+
 			statsData.official.category[cat] = (statsData.official.category[cat] || 0) + 1;
 			statsData.official.total++;
 
 			diffMap[p.quesId] = p.difficulty;
 			catMap[p.quesId] = cat;
-
-			// Note: Topic tags aggregation removed! Backend handles it now.
 		});
 
 		solvedProblems.forEach(p => {
@@ -119,21 +120,29 @@ function processChartData(dataObj, totalCount, type) {
 	return { labels, realData, visualData, bgColors, totalCount };
 }
 
-// --- View Router ---
 function renderDashboard(type) {
 	const doughnutWrapper = document.getElementById('doughnut-wrapper');
 	const barWrapper = document.getElementById('bar-wrapper');
-	const title = document.getElementById('chart-main-title');
+	const heatmapWrapper = document.getElementById('heatmap-wrapper');
+	const heatmapHeader = document.getElementById('heatmap-header');
+
+	// Hide everything first
+	doughnutWrapper.classList.add('d-none');
+	barWrapper.classList.add('d-none');
+	heatmapWrapper.classList.add('d-none');
+	if (heatmapHeader) heatmapHeader.classList.add('d-none');
 
 	if (type === 'tags') {
-		doughnutWrapper.classList.add('d-none');
 		barWrapper.classList.remove('d-none');
-		title.textContent = 'Topic Tags Distribution';
 		renderBarChart();
+	} else if (type === 'heatmap') {
+		heatmapWrapper.classList.remove('d-none');
+		if (heatmapHeader) heatmapHeader.classList.remove('d-none'); // Show combined header
+
+		renderHeatmapLegend(currentHeatmapMode);
+		renderHeatmap(currentHeatmapMode);
 	} else {
-		barWrapper.classList.add('d-none');
 		doughnutWrapper.classList.remove('d-none');
-		title.textContent = type === 'difficulty' ? 'Difficulty Distribution' : 'Problem Type Distribution';
 
 		const off = processChartData(statsData.official[type], statsData.official.total, type);
 		const sol = processChartData(statsData.solved[type], statsData.solved.total, type);
@@ -144,6 +153,70 @@ function renderDashboard(type) {
 		generateHTMLLegend('officialLegend', off);
 		generateHTMLLegend('solvedLegend', sol);
 	}
+}
+
+function renderHeatmapLegend(mode) {
+	const legendContainer = document.getElementById('heatmap-legend');
+	const dataObj = statsData.official[mode];
+	const palette = colorPalettes[mode];
+	let html = '';
+
+	// 1. Extract active data and sort by count (desc) -> slug (asc)
+	const sortedEntries = Object.entries(dataObj)
+		.filter(([_, count]) => count > 0) // Only show items that actually exist
+		.sort((a, b) => {
+			const countDiff = b[1] - a[1];
+			if (countDiff !== 0) return countDiff;
+
+			// Generate slugs for the tie-breaker (e.g., "Hash Table" -> "hash-table")
+			const slugA = a[0].toLowerCase().replace(/\s+/g, '-');
+			const slugB = b[0].toLowerCase().replace(/\s+/g, '-');
+			return slugA.localeCompare(slugB);
+		});
+
+	// 2. Render the sorted legend
+	sortedEntries.forEach(([key, count]) => {
+		// Safely pull the color, checking both exact case and lowercase fallback
+		const color = palette[key] || palette[key.toLowerCase()] || '#6c757d';
+
+		html += `
+            <div class="d-flex align-items-center gap-2">
+                <span class="rounded-1 shadow-sm" style="width: 14px; height: 14px; background-color: ${color};"></span> 
+                ${key} (${count.toLocaleString('en-US')})
+            </div>
+        `;
+	});
+
+	legendContainer.innerHTML = html;
+}
+
+function renderHeatmap(mode) {
+	const container = document.getElementById('heatmap-container');
+	container.style.gridTemplateColumns = `repeat(${HEATMAP_COLUMNS}, minmax(28px, 1fr))`;
+
+	let htmlBuffer = '';
+
+	globalMasterProblems.forEach(p => {
+		let bgColor;
+
+		if (mode === 'difficulty') {
+			bgColor = colorPalettes.difficulty[p.difficulty] || '#6c757d';
+		} else {
+			// FIX: Point to the new meta object location
+			const cat = p.meta?.categoryTitle || p.categoryTitle || 'Unknown';
+			bgColor = colorPalettes.category[cat] || '#6c757d';
+		}
+
+		htmlBuffer += `
+            <div class="heatmap-cell" 
+                 style="background-color: ${bgColor};" 
+                 title="${p.quesId}. ${p.title}">
+                ${p.quesId}
+            </div>
+        `;
+	});
+
+	container.innerHTML = htmlBuffer;
 }
 
 // --- Chart Renderers ---
@@ -300,6 +373,19 @@ document.getElementById('btn-tags').addEventListener('click', () => {
 	sessionStorage.setItem('stats_active_tab', 'tags');
 	setActiveSidebarTab('tags');
 	renderDashboard('tags');
+});
+
+document.getElementById('btn-heatmap').addEventListener('click', () => {
+	sessionStorage.setItem('stats_active_tab', 'heatmap');
+	setActiveSidebarTab('heatmap');
+	renderDashboard('heatmap');
+});
+
+// Add this to your Event Listeners section at the bottom
+document.getElementById('heatmap-color-select').addEventListener('change', (e) => {
+	currentHeatmapMode = e.target.value;
+	renderHeatmapLegend(currentHeatmapMode);
+	renderHeatmap(currentHeatmapMode);
 });
 
 // Initialize
