@@ -1,0 +1,55 @@
+{
+    "quesId": 3938,
+    "title": "Maximum Path Intersection Sum in a Grid",
+    "titleSlug": "maximum-path-intersection-sum-in-a-grid",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7K",
+        "totalSubmission": "27.2K",
+        "totalAcceptedRaw": 6978,
+        "totalSubmissionRaw": 27159,
+        "acRate": "25.7%",
+        "acRateRaw": 25.69314039544902,
+        "likes": 81,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3901,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[[1,2,0,-3],[1,-2,1,0],[-4,2,-1,3],[3,-3,3,-2],[-1,-5,0,1]]\n[[4,-2,-3],[-1,-3,-1],[-4,2,-1]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p data-end=\"139\" data-start=\"64\">You are given an <code>m x n</code> integer matrix <code>grid</code>.</p>\n\n<p>Two players move across the grid:</p>\n\n<ul>\n\t<li>Player 1 starts at the top-left cell <code>(0, 0)</code> and can move only right or down. Their destination is the bottom-right cell <code>(m - 1, n - 1)</code>.</li>\n\t<li>Player 2 starts at the bottom-left cell <code>(m - 1, 0)</code> and can move only right or up. Their destination is the top-right cell <code>(0, n - 1)</code>.</li>\n</ul>\n\n<p>Each player must choose a valid path from their respective starting cell to their destination.</p>\n\n<p>A cell is called <strong>shared</strong> if it belongs to <strong>both</strong> chosen paths.</p>\n\n<p>Return an integer denoting the <strong>maximum</strong> possible sum of values of all <strong>shared</strong> cells.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2026/05/19/image.png\" style=\"width: 200px; height: 251px;\" />​​​​​​​​​​​​​​​​​​​​​\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[1,2,0,-3],[1,-2,1,0],[-4,2,-1,3],[3,-3,3,-2],[-1,-5,0,1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\nThe diagram shows one optimal choice of paths.\n\n<ul>\n\t<li>Player 1 follows the red/purple path from the top-left cell to the bottom-right cell:\n\t<ul>\n\t\t<li><code>(0, 0) &rarr; (1, 0) &rarr; (2, 0) &rarr; (2, 1) &rarr; (2, 2) &rarr; (2, 3) &rarr; (3, 3) &rarr; (4, 3)</code></li>\n\t</ul>\n\t</li>\n\t<li>Player 2 follows the blue/purple path from the bottom-left cell to the top-right cell:\n\t<ul>\n\t\t<li><code>(4, 0) &rarr; (4, 1) &rarr; (3, 1) &rarr; (2, 1) &rarr; (2, 2) &rarr; (2, 3) &rarr; (1, 3) &rarr; (0, 3)</code></li>\n\t</ul>\n\t</li>\n\t<li>The shared cells are <code>(2, 1)</code>, <code>(2, 2)</code>, and <code>(2, 3)</code>.</li>\n\t<li>The sum is <code>2 + (-1) + 3 = 4</code>, which is the maximum possible sum.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2026/05/19/chatgpt-image-may-19-2026-01_39_39-pm.png\" style=\"width: 200px; height: 200px;\" />\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[4,-2,-3],[-1,-3,-1],[-4,2,-1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal pair of paths is shown in the diagram.</p>\n\n<ul>\n\t<li>Player 1 follows the red/purple path:\n\t<ul>\n\t\t<li><code>(0, 0) &rarr; (1, 0) &rarr; (1, 1) &rarr; (1, 2) &rarr; (2, 2)</code></li>\n\t</ul>\n\t</li>\n\t<li>Player 2 follows the blue/purple path:\n\t<ul>\n\t\t<li><code>(2, 0) &rarr; (1, 0) &rarr; (0, 0) &rarr; (0, 1) &rarr; (0, 2)</code></li>\n\t</ul>\n\t</li>\n\t<li>The shared cells are <code>(0, 0)</code> and <code>(1, 0)</code>.</li>\n\t<li>The sum is <code>4 + (-1) = 3</code>, which is the maximum possible.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>2 &lt;= m, n &lt;= 1000</code></li>\n\t<li><code>4 &lt;= m * n &lt;= 5 * 10<sup>5</sup></code></li>\n\t<li><code>-100 &lt;= grid[i][j] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "Notice that the shared cells must be contiguous and lie on the same row or column.",
+        "Additionally, if we have exactly one shared cell, then it must not lie on the first/last row, or the first/last column.",
+        "Reduce this problem to a 1D max subarray sum (of length at least 2) , and check for all <code>m</code> rows and <code>n</code> columns, making sure that we handle the case with exactly one shared cell separately.",
+        "A slighly modified kadane's algorithm is required to enforce subarray sums to have length at least 2."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:05:50.512Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.915Z"
+}

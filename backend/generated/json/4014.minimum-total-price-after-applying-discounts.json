@@ -1,0 +1,53 @@
+{
+    "quesId": 4014,
+    "title": "Minimum Total Price After Applying Discounts",
+    "titleSlug": "minimum-total-price-after-applying-discounts",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "59.7K",
+        "totalSubmission": "82.8K",
+        "totalAcceptedRaw": 59689,
+        "totalSubmissionRaw": 82772,
+        "acRate": "72.1%",
+        "acRateRaw": 72.11255013772774,
+        "likes": 45,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4363,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[10,30,21]\n[50,60]\n[100,70]\n[10,40,50]\n[7,3,9]\n[100,100]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given two integer arrays <code>prices</code> and <code>discounts</code>.</p>\n\n<p>The value <code>prices[i]</code> represents the price of the <code>i<sup>th</sup></code> item, and <code>discounts[j]</code> represents a discount percentage.</p>\n\n<p>You may apply discounts subject to the following rules:</p>\n\n<ul>\n\t<li>Each discount can be applied to <strong>at most</strong> one item.</li>\n\t<li>Each item can receive <strong>at most</strong> one discount.</li>\n\t<li>An item may also receive no discount.</li>\n</ul>\n\n<p>If a discount of <code>d</code> percent is applied to an item with price <code>p</code>, its final price becomes <code>(p * (100 - d)) / 100</code>. The final price is <strong>not</strong> rounded.</p>\n\n<p>Return the <strong>minimum</strong> possible sum of final prices after assigning discounts optimally. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [10,30,21], discounts = [50,60]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">32.50000</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>discounts[1] = 60</code> to <code>prices[1] = 30</code>, thus <code>30 * (100 - 60) / 100 = 12</code>.</li>\n\t<li>Apply <code>discounts[0] = 50</code> to <code>prices[2] = 21</code>, thus <code>21 * (100 - 50) / 100 = 10.5</code>.</li>\n\t<li><code>prices[0] = 10</code> receives no discount, so it stays 10.</li>\n</ul>\n\n<p>The total is <code>12 + 10.5 + 10 = 32.50000</code>, which is the minimum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [100,70], discounts = [10,40,50]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">92.00000</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Apply <code>discounts[2] = 50</code> to <code>prices[0] = 100</code>, thus <code>100 * (100 - 50) / 100 = 50</code>.</li>\n\t<li>Apply <code>discounts[1] = 40</code> to <code>prices[1] = 70</code>, thus <code>70 * (100 - 40) / 100 = 42</code>.</li>\n</ul>\n\n<p>The total is <code>50 + 42 = 92.00000</code>, which is the minimum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [7,3,9], discounts = [100,100]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3.00000</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>discounts[0] = 100</code> to <code>prices[2] = 9</code>, thus <code>9 * (100 - 100) / 100 = 0</code>.</li>\n\t<li>Apply <code>discounts[1] = 100</code> to <code>prices[0] = 7</code>, thus <code>7 * (100 - 100) / 100 = 0</code>.</li>\n\t<li><code>prices[1] = 3</code> receives no discount, so it stays 3.</li>\n</ul>\n\n<p>The total is <code>0 + 0 + 3 = 3.00000</code>, which is the minimum possible.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= prices.length, discounts.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= prices[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= discounts[j] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "For an item with price <code>p</code> and a discount <code>d</code>, the amount saved is <code>p * d / 100</code>.",
+        "To minimize the total final price, maximize the total amount saved. Consider sorting both arrays and pairing larger prices with larger discounts."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:11.596Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.999Z"
+}

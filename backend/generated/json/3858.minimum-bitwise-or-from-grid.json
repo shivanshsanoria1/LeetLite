@@ -1,0 +1,54 @@
+{
+    "quesId": 3858,
+    "title": "Minimum Bitwise OR From Grid",
+    "titleSlug": "minimum-bitwise-or-from-grid",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "15K",
+        "totalSubmission": "55.1K",
+        "totalAcceptedRaw": 15007,
+        "totalSubmissionRaw": 55076,
+        "acRate": "27.2%",
+        "acRateRaw": 27.2491239537375,
+        "likes": 142,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4161,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[[1,5],[2,4]]\n[[3,5],[6,4]]\n[[7,9,8]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a 2D integer array <code>grid</code> of size <code>m x n</code>.</p>\n\n<p>You must select <strong>exactly one</strong> integer from each row of the grid.</p>\n\n<p>Return an integer denoting the <strong>minimum possible bitwise OR</strong> of the selected integers from each row.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[1,5],[2,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Choose 1 from the first row and 2 from the second row.</li>\n\t<li>The bitwise OR of <code>1 | 2 = 3</code>​​​​​​​, which is the minimum possible.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[3,5],[6,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Choose 5 from the first row and 4 from the second row.</li>\n\t<li>The bitwise OR of <code>5 | 4 = 5</code>​​​​​​​, which is the minimum possible.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[7,9,8]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Choosing 7 gives the minimum bitwise OR.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m == grid.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= n == grid[i].length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>m * n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= grid[i][j] &lt;= 10<sup>5</sup>​​​​​​​</code></li>\n</ul>\n",
+    "hints": [
+        "Solve greedily, bit by bit from the most significant to the least significant",
+        "For a bit, check whether it is possible to exclude it from the OR by choosing, in every row, at least one number with that bit unset",
+        "Accumulate all bits that cannot be excluded; the final value is the minimum possible bitwise OR"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:59:21.252Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.804Z"
+}

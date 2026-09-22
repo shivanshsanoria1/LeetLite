@@ -1,0 +1,47 @@
+{
+    "quesId": 4040,
+    "title": "Minimum Operations to Form Subset Sum I",
+    "titleSlug": "minimum-operations-to-form-subset-sum-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "13.9K",
+        "totalSubmission": "26.4K",
+        "totalAcceptedRaw": 13886,
+        "totalSubmissionRaw": 26351,
+        "acRate": "52.7%",
+        "acRateRaw": 52.698087431693985,
+        "likes": 81,
+        "dislikes": 5
+    },
+    "similarQuesIds": [
+        4041
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4379,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[5,6,10]\n4\n[10,2]\n13\n[6,3]\n8",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>sum</code>.</p>\n\n<p>In one <strong>operation</strong>, choose an element with current value <code>x</code> and replace it with either <code>2 * x</code> or <code>floor(x / 2)</code>.</p>\n\n<p>For each element, all <strong>multiplication</strong> operations performed on it must occur <strong>before</strong> any <strong>division</strong> operations performed on it.</p>\n\n<p>Return the <strong>minimum</strong> number of operations needed so that some <span data-keyword=\"subset\">subset</span> of the resulting array has a sum <strong>exactly</strong> equal to <code>sum</code>. If it is impossible, return -1.</p>\n\n<p>The <code>floor()</code> function returns the integer part of the division.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,6,10], sum = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Divide <code>nums[0] = 5</code> twice: <code>5 &rarr; 2 &rarr; 1</code>, costing 2 operations.</li>\n\t<li>Divide <code>nums[1] = 6</code> once: <code>6 &rarr; 3</code>, costing 1 operation.</li>\n\t<li>After these operations, <code>nums = [1, 3, 10]</code>. The subset <code>{1, 3}</code> sums to 4 using 3 operations in total.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [10,2], sum = 13</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Divide <code>nums[0] = 10</code> once: <code>10 &rarr; 5</code>, costing 1 operation.</li>\n\t<li>Multiply <code>nums[1] = 2</code> twice: <code>2 &rarr; 4 &rarr; 8</code>, costing 2 operations.</li>\n\t<li>After these operations, <code>nums = [5, 8]</code>. The subset <code>{5, 8}</code> sums to 13 using 3 operations in total.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,3], sum = 8</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>No sequence of operations lets a subset of <code>nums</code> sum to 8, so the answer is -1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 500</code></li>\n\t<li><code>1 &lt;= sum &lt;= 5000</code></li>\n</ul>\n",
+    "hints": [
+        "Consider what values a single element <code>x</code> can end with. Because every multiplication must precede every division, any multiplication immediately canceled by a later division does not help. The relevant positive values are obtained by repeatedly doubling <code>x</code> or repeatedly applying <code>floor(x / 2)</code>.",
+        "For every element, compute the minimum number of operations needed to obtain each useful value at most <code>sum</code>. Then use a knapsack-style DP where each element may either be excluded from the subset or contribute one of its reachable values."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:08:59.135Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.982Z"
+}

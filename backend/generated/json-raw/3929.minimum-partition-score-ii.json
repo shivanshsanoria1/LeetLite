@@ -1,0 +1,53 @@
+{
+    "questionId": "4191",
+    "questionFrontendId": "3929",
+    "title": "Minimum Partition Score II",
+    "titleSlug": "minimum-partition-score-ii",
+    "difficulty": "Hard",
+    "likes": 1,
+    "dislikes": 0,
+    "acRate": 44.41176470588235,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"151\", \"totalSubmission\": \"340\", \"totalAcceptedRaw\": 151, \"totalSubmissionRaw\": 340, \"acRate\": \"44.4%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Partition Score\", \"titleSlug\": \"minimum-partition-score\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use prefix sums to rewrite the value of any subarray in O(1).",
+        "Consider DP transitions of the form: <code>dp[i] = min(dp[j] + cost(j + 1, i))</code>.\r\nExpand the cost formula algebraically. The transition can be rewritten as a minimum over linear functions.",
+        "Instead of DP on the number of partitions, add a penalty for creating a subarray and binary search that penalty."
+    ],
+    "exampleTestcases": "[5,1,2,1]\n2\n[1,2,3,4]\n1\n[1,1,1]\n3",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        },
+        {
+            "name": "Monotonic Queue",
+            "slug": "monotonic-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:00:36.644Z"
+}

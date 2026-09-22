@@ -1,0 +1,47 @@
+{
+    "quesId": 3741,
+    "title": "Minimum Distance Between Three Equal Elements II",
+    "titleSlug": "minimum-distance-between-three-equal-elements-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "134K",
+        "totalSubmission": "180.5K",
+        "totalAcceptedRaw": 134004,
+        "totalSubmissionRaw": 180474,
+        "acRate": "74.3%",
+        "acRateRaw": 74.25142401205702,
+        "likes": 308,
+        "dislikes": 9
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4119,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,1,1,3]\n[1,1,2,3,2,1,2]\n[1]",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Traversal + Hash Table\n\n#### Intuition\n\nBy analyzing the problem, we observe that the distance of a valid triplet is equivalent to the perimeter of a generalized triangle. Regardless of the order of the three selected indices, this distance simplifies to twice the length of the segment formed by the two endpoints. In other words, if the leftmost index is $i$ and the rightmost index is $k$, then the required distance is $2 \\times (k - i)$.\n\nFrom this observation, it follows that the minimum distance must come from valid triplets formed by three consecutive occurrences of the same value. Based on this insight, we can efficiently track adjacent occurrences using a structure similar to linked lists. Specifically, we maintain predecessor or successor relationships to quickly locate neighboring indices and compute distances.\n\nHere, we explain the approach using a successor array. The predecessor-based approach is symmetric and can be derived similarly.\n\nWe define a successor array $\\textit{next}$, where $\\textit{next}[i]$ stores the next occurrence index of $\\textit{nums}[i]$ in the array. To construct this array, we traverse $\\textit{nums}$ in reverse while using a hash table to record the most recent occurrence of each value.\n\nNext, we traverse the array from left to right. Using the $\\textit{next}$ array, we can find the next two consecutive occurrences of the same value in $O(1)$ time. This allows us to form a valid triplet, compute its distance, and update the minimum answer.\n\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/JcYrzTd2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JcYrzTd2\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  We traverse the array once in reverse to build the $\\textit{next}$ array and once forward to compute the answer. Each hash table operation takes $O(1)$ time on average.\n\n- Space complexity: $O(n)$.\n  \n  The $\\textit{next}$ array and the hash table together require $O(n)$ space.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>A tuple <code>(i, j, k)</code> of 3 <strong>distinct</strong> indices is <strong>good</strong> if <code>nums[i] == nums[j] == nums[k]</code>.</p>\n\n<p>The <strong>distance</strong> of a <strong>good</strong> tuple is <code>abs(i - j) + abs(j - k) + abs(k - i)</code>, where <code>abs(x)</code> denotes the <strong>absolute value</strong> of <code>x</code>.</p>\n\n<p>Return an integer denoting the <strong>minimum</strong> possible <strong>distance</strong> of a <strong>good</strong> tuple. If no <strong>good</strong> tuples exist, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum distance is achieved by the good tuple <code>(0, 2, 3)</code>.</p>\n\n<p><code>(0, 2, 3)</code> is a good tuple because <code>nums[0] == nums[2] == nums[3] == 1</code>. Its distance is <code>abs(0 - 2) + abs(2 - 3) + abs(3 - 0) = 2 + 1 + 3 = 6</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,2,3,2,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">8</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum distance is achieved by the good tuple <code>(2, 4, 6)</code>.</p>\n\n<p><code>(2, 4, 6)</code> is a good tuple because <code>nums[2] == nums[4] == nums[6] == 2</code>. Its distance is <code>abs(2 - 4) + abs(4 - 6) + abs(6 - 2) = 2 + 2 + 4 = 8</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no good tuples. Therefore, the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= n</code></li>\n</ul>\n",
+    "hints": [
+        "The distance formula <code>abs(i - j) + abs(j - k) + abs(k - i)</code> simplifies to <code>2 * (max(i, j, k) - min(i, j, k))</code>.",
+        "Group the indices for each unique number. For a number to form a good tuple, it must appear at least 3 times.",
+        "For each number that appears at least 3 times, we want to find three of its indices <code>p < q < r</code> that minimize <code>r - p</code>. This is achieved by considering every three consecutive indices in the sorted list of indices."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:44:59.906Z",
+    "PARSED_ISO": "2026-09-22T18:46:49.981Z"
+}

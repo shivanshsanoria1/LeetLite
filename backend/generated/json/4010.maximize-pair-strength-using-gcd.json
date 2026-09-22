@@ -1,0 +1,53 @@
+{
+    "quesId": 4010,
+    "title": "Maximize Pair Strength Using GCD",
+    "titleSlug": "maximize-pair-strength-using-gcd",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "54.1K",
+        "totalSubmission": "111.8K",
+        "totalAcceptedRaw": 54099,
+        "totalSubmissionRaw": 111802,
+        "acRate": "48.4%",
+        "acRateRaw": 48.38822203538398,
+        "likes": 39,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4371,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2,3,5]\n[4,6,8]\n[3,3]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>Choose exactly one pair of distinct indices <code>i</code> and <code>j</code>. The strength of the pair is defined as <code>(nums[i] * nums[j]) / <span data-keyword=\"gcd-function\">gcd(nums[i], nums[j])</span><sup>2</sup></code>.</p>\n\n<p>Return the maximum strength over all possible pairs.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,3,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">15</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choosing <code>i = 1</code> and <code>j = 2</code> gives strength <code>(3 * 5) / gcd(3, 5)<sup>2</sup> = 15 / 1 = 15</code>, which is the maximum over all pairs.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,6,8]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">12</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choosing <code>i = 1</code> and <code>j = 2</code> gives strength <code>(6 * 8) / gcd(6, 8)<sup>2</sup> = 48 / 4 = 12</code>, which is the maximum over all pairs.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choosing <code>i = 0</code> and <code>j = 1</code> gives strength <code>(3 * 3) / gcd(3, 3)<sup>2</sup> = 9 / 9 = 1</code>, the maximum over all pairs.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 2000</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>Try every pair of distinct indices and compute its strength directly.</p>",
+        "<p>Use 64-bit integers when multiplying the two values.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:07.710Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.996Z"
+}

@@ -1,0 +1,51 @@
+{
+    "quesId": 3981,
+    "title": "Count Distinct Ways to Form Target from Two Strings",
+    "titleSlug": "count-distinct-ways-to-form-target-from-two-strings",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.2K",
+        "totalSubmission": "17.5K",
+        "totalAcceptedRaw": 8157,
+        "totalSubmissionRaw": 17549,
+        "acRate": "46.5%",
+        "acRateRaw": 46.48128098467149,
+        "likes": 50,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4082,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"abc\"\n\"bac\"\n\"abc\"\n\"cd\"\n\"cd\"\n\"ccd\"\n\"xy\"\n\"xy\"\n\"xyxy\"\n\"ab\"\n\"cde\"\n\"ace\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given three strings <code>word1</code>, <code>word2</code>, and <code>target</code>.</p>\n\n<p>Your task is to count the number of ways to form <code>target</code> by choosing characters from <code>word1</code> and <code>word2</code> under the following conditions:</p>\n\n<ul>\n\t<li>For each character of <code>target</code>, choose one matching character from either <code>word1</code> or <code>word2</code>.</li>\n\t<li>The chosen indices from <code>word1</code> must be <strong>strictly</strong> increasing.</li>\n\t<li>The chosen indices from <code>word2</code> must be <strong>strictly</strong> increasing.</li>\n\t<li><strong>At least</strong> one character must be chosen from <strong>both</strong> <code>word1</code> and <code>word2</code>.</li>\n</ul>\n\n<p>Two ways are considered different if, for <strong>at least</strong> one position in <code>target</code>, the chosen character comes from a different string or a different index.</p>\n\n<p>Return the number of ways. Since the answer may be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;abc&quot;, word2 = &quot;bac&quot;, target = &quot;abc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">5</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are 5 ways to form <code>target</code>:</p>\n\n<ul>\n\t<li><code>word1[0] = &#39;a&#39;</code>, <code>word1[1] = &#39;b&#39;</code>, <code>word2[2] = &#39;c&#39;</code></li>\n\t<li><code>word1[0] = &#39;a&#39;</code>, <code>word2[0] = &#39;b&#39;</code>, <code>word1[2] = &#39;c&#39;</code></li>\n\t<li><code>word1[0] = &#39;a&#39;</code>, <code>word2[0] = &#39;b&#39;</code>, <code>word2[2] = &#39;c&#39;</code></li>\n\t<li><code>word2[1] = &#39;a&#39;</code>, <code>word1[1] = &#39;b&#39;</code>, <code>word1[2] = &#39;c&#39;</code></li>\n\t<li><code>word2[1] = &#39;a&#39;</code>, <code>word1[1] = &#39;b&#39;</code>, <code>word2[2] = &#39;c&#39;</code></li>\n</ul>\n\n<p>All ways preserve the increasing index order inside each string and choose at least one character from each string.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;cd&quot;, word2 = &quot;cd&quot;, target = &quot;ccd&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are 4 ways to form <code>target</code>:</p>\n\n<ul>\n\t<li><code>word1[0] = &#39;c&#39;</code>, <code>word2[0] = &#39;c&#39;</code>, <code>word1[1] = &#39;d&#39;</code></li>\n\t<li><code>word1[0] = &#39;c&#39;</code>, <code>word2[0] = &#39;c&#39;</code>, <code>word2[1] = &#39;d&#39;</code></li>\n\t<li><code>word2[0] = &#39;c&#39;</code>, <code>word1[0] = &#39;c&#39;</code>, <code>word1[1] = &#39;d&#39;</code></li>\n\t<li><code>word2[0] = &#39;c&#39;</code>, <code>word1[0] = &#39;c&#39;</code>, <code>word2[1] = &#39;d&#39;</code></li>\n</ul>\n\n<p>The first two <code>&#39;c&#39;</code> characters in <code>target</code> must come one from each string. The final <code>&#39;d&#39;</code> can be chosen from either string.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;xy&quot;, word2 = &quot;xy&quot;, target = &quot;xyxy&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are 2 ways to form <code>target</code>:</p>\n\n<ul>\n\t<li><code>word1[0] = &#39;x&#39;</code>, <code>word1[1] = &#39;y&#39;</code>, <code>word2[0] = &#39;x&#39;</code>, <code>word2[1] = &#39;y&#39;</code></li>\n\t<li><code>word2[0] = &#39;x&#39;</code>, <code>word2[1] = &#39;y&#39;</code>, <code>word1[0] = &#39;x&#39;</code>, <code>word1[1] = &#39;y&#39;</code></li>\n</ul>\n\n<p>Each <code>&quot;xy&quot;</code> part in <code>target</code> comes entirely from one string.</p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">word1 = &quot;ab&quot;, word2 = &quot;cde&quot;, target = &quot;ace&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only way is to choose <code>word1[0] = &#39;a&#39;</code>, <code>word2[0] = &#39;c&#39;</code>, and <code>word2[2] = &#39;e&#39;</code>. Thus, the answer is 1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word1.length, word2.length, target.length &lt;= 100</code></li>\n\t<li><code>word1</code>, <code>word2</code>, and <code>target</code> consist of lowercase English letters only.</li>\n</ul>\n",
+    "hints": [
+        "<p>Use dynamic programming over the current position in <code>target</code> and the next available indices in <code>word1</code> and <code>word2</code>.</p>",
+        "<p>For each character of <code>target</code>, try choosing a matching character from <code>word1</code> or from <code>word2</code>, then move only the corresponding string's index forward.</p>",
+        "<p>Track whether at least one character has been chosen from each string. This can be represented using a bitmask.</p>",
+        "<p>The final answer is the number of ways where all characters of <code>target</code> have been formed and both strings have been used.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:35.632Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.974Z"
+}

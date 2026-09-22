@@ -1,0 +1,39 @@
+{
+    "quesId": 4058,
+    "title": "Maximum Pulse Value After One Subarray Rotation",
+    "titleSlug": "maximum-pulse-value-after-one-subarray-rotation",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "9.2K",
+        "totalSubmission": "24.2K",
+        "totalAcceptedRaw": 9235,
+        "totalSubmissionRaw": 24162,
+        "acRate": "38.2%",
+        "acRateRaw": 38.22167080231596,
+        "likes": 47,
+        "dislikes": 6
+    },
+    "similarQuesIds": [
+        2036
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4196,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,5,2]\n[6,4,3]\n[9,7]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code>.</p>\n\n<p>Define the <strong>pulse value</strong> of an integer array <code>arr</code> as the <strong>alternating sum</strong> starting at index 0: <code>pulse(arr) = arr[0] - arr[1] + arr[2] - arr[3] + ...</code>.</p>\n\n<p>You may perform <strong>at most</strong> one operation on <code>nums</code>:</p>\n\n<ul>\n\t<li>Choose two indices <code>l</code> and <code>r</code> such that <code>0 &lt;= l &lt; r &lt; n</code>.</li>\n\t<li><strong>Left-rotate</strong> the <span data-keyword=\"subarray-nonempty\">subarray</span> <code>nums[l..r]</code> by <strong>exactly</strong> one position. For example, <code>[a, b, c, d]</code> becomes <code>[b, c, d, a]</code>.</li>\n</ul>\n\n<p>Return the <strong>maximum pulse value</strong> that can be obtained after performing <strong>at most</strong> one such operation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,5,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The original pulse value is <code>1 - 5 + 2 = -2</code>.</li>\n\t<li>Rotate the subarray <code>nums[0..1]</code> from <code>[1, 5]</code> to <code>[5, 1]</code>.</li>\n\t<li>The resulting array is <code>[5, 1, 2]</code> and its pulse value is <code>5 - 1 + 2 = 6</code>, which is the maximum possible.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,4,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The original pulse value is <code>6 - 4 + 3 = 5</code>.</li>\n\t<li>Rotate the subarray <code>nums[1..2]</code> from <code>[4, 3]</code> to <code>[3, 4]</code>.</li>\n\t<li>The resulting array is <code>[6, 3, 4]</code> and its pulse value is <code>6 - 3 + 4 = 7</code>, which is the maximum possible.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [9,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The original pulse value is <code>9 - 7 = 2</code>, which is already maximum. Thus, no rotation is required.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>After rotating <code>nums[l..r]</code>, every element originally at an index from <code>l + 1</code> through <code>r</code> changes its contribution's sign. The element <code>nums[l]</code> moves to index <code>r</code>.</p>",
+        "<p>Let <code>P[t]</code> be the alternating sum of the first <code>t</code> elements, with <code>P[0] = 0</code>. The change in pulse value is <code>2 * (P[l + 1] - P[r + 1])</code> when <code>l</code> and <code>r</code> have the same parity, and <code>2 * (P[l] - P[r + 1])</code> otherwise.</p>",
+        "<p>Scan <code>r</code> from left to right. Among indices <code>l &lt; r</code>, maintain the maximum values of <code>P[l]</code> and <code>P[l + 1]</code> separately for each parity of <code>l</code>. Use these maxima to find the best gain in constant time per index, allowing a gain of zero for skipping the operation.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:17.378Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.998Z"
+}

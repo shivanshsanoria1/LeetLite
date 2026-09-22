@@ -1,0 +1,64 @@
+{
+    "quesId": 3990,
+    "title": "Create Grid With Exactly K Paths II",
+    "titleSlug": "create-grid-with-exactly-k-paths-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "200",
+        "totalSubmission": "271",
+        "totalAcceptedRaw": 200,
+        "totalSubmissionRaw": 271,
+        "acRate": "73.8%",
+        "acRateRaw": 73.80073800738008,
+        "likes": 5,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3988
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Combinatorics",
+            "slug": "combinatorics"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4347,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "2\n3",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "<p>A fully open <code>2 x 2</code> block has exactly two ways to move from its top-left cell to its bottom-right cell.</p>",
+        "<p>If several such blocks are connected in sequence, each block doubles the number of ways to reach the next block.</p>",
+        "<p>Use these blocks to create cells that are reachable in <code>1, 2, 4, 8, ...</code> ways.</p>",
+        "<p>Decompose <code>k</code> into powers of two. For every power of two used in this decomposition, connect the corresponding cell to a common final corridor.</p>",
+        "<p>Make the final corridor have exactly one path to the bottom-right cell, so the total number of valid paths is the sum of the selected powers of two.</p>",
+        "<p>Since <code>k &lt;= 1000</code>, at most 10 powers of two are needed. The construction therefore uses at most 20 rows and 13 columns, which fits inside the <code>25 x 25</code> limit.</p>",
+        "<p>The diagram below illustrates this construction:</p>\r\n\r\n<p><img src=\"https://assets.leetcode.com/uploads/2026/07/12/chatgpt-image-jul-12-2026-02_02_38-pm.png\" style=\"height: 500px; width: 500px;\" /></p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:45.497Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.980Z"
+}

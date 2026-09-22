@@ -1,0 +1,135 @@
+{
+    "questionId": "4128",
+    "questionFrontendId": "3753",
+    "title": "Total Waviness of Numbers in Range II",
+    "titleSlug": "total-waviness-of-numbers-in-range-ii",
+    "difficulty": "Hard",
+    "likes": 252,
+    "dislikes": 24,
+    "acRate": 56.17968341182626,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"68.7K\", \"totalSubmission\": \"122.3K\", \"totalAcceptedRaw\": 68710, \"totalSubmissionRaw\": 122304, \"acRate\": \"56.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given two integers <code>num1</code> and <code>num2</code> representing an <strong>inclusive</strong> range <code>[num1, num2]</code>.</p>\n\n<p>The <strong>waviness</strong> of a number is defined as the total count of its <strong>peaks</strong> and <strong>valleys</strong>:</p>\n\n<ul>\n\t<li>A digit is a <strong>peak</strong> if it is <strong>strictly greater</strong> than both of its immediate neighbors.</li>\n\t<li>A digit is a <strong>valley</strong> if it is <strong>strictly less</strong> than both of its immediate neighbors.</li>\n\t<li>The first and last digits of a number <strong>cannot</strong> be peaks or valleys.</li>\n\t<li>Any number with fewer than 3 digits has a waviness of 0.</li>\n</ul>\nReturn the total sum of waviness for all numbers in the range <code>[num1, num2]</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 120, num2 = 130</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>In the range <code>[120, 130]</code>:</p>\n\n<ul>\n\t<li><code>120</code>: middle digit 2 is a peak, waviness = 1.</li>\n\t<li><code>121</code>: middle digit 2 is a peak, waviness = 1.</li>\n\t<li><code>130</code>: middle digit 3 is a peak, waviness = 1.</li>\n\t<li>All other numbers in the range have a waviness of 0.</li>\n</ul>\n\n<p>Thus, total waviness is <code>1 + 1 + 1 = 3</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 198, num2 = 202</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>In the range <code>[198, 202]</code>:</p>\n\n<ul>\n\t<li><code>198</code>: middle digit 9 is a peak, waviness = 1.</li>\n\t<li><code>201</code>: middle digit 0 is a valley, waviness = 1.</li>\n\t<li><code>202</code>: middle digit 0 is a valley, waviness = 1.</li>\n\t<li>All other numbers in the range have a waviness of 0.</li>\n</ul>\n\n<p>Thus, total waviness is <code>1 + 1 + 1 = 3</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 4848, num2 = 4848</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Number <code>4848</code>: the second digit 8 is a peak, and the third digit 4 is a valley, giving a waviness of 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num1 &lt;= num2 &lt;= 10<sup>15</sup></code>​​​​​​​</li>\n</ul>\n",
+    "hints": [
+        "Use digit dynamic programming",
+        "Build a digit-DP state <code>(position, tight, lastDigit, secondLastDigit)</code>"
+    ],
+    "exampleTestcases": "120\n130\n198\n202\n4848\n4848",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Digit Dynamic Programming\n\n#### Intuition\n\nThis problem involves digit counting, making it a good candidate for digit DP. We first compute the total waviness of all numbers in the range $[0, x]$, and then use the prefix-sum idea to obtain the answer. Let $\\textit{solve}(x)$ denote the total waviness of all numbers in the range $[0, x]$. Then:\n\n$$\n\\textit{ans} = \\textit{solve}(\\textit{num}_2) - \\textit{solve}(\\textit{num}_1 - 1)\n$$\n\nTo implement $\\textit{solve}(x)$, we use digit DP with memoized DFS (top-down DP). The core idea is to process the digits from left to right, keep track of the previous two significant digits, and use $\\textit{isLimit}$ and $\\textit{isLeading}$ to handle the upper bound and leading zeros.\n\nDuring the DFS, we maintain the following state information:\n- $\\textit{pos}$: The index of the digit currently being processed, ranging from $0$ to $n - 1$.\n- $\\textit{prev}$: The digit at position $\\textit{pos} - 2$. If it does not exist, its value is $-1$.\n- $\\textit{curr}$: The digit at position $\\textit{pos} - 1$. If it does not exist (i.e., we are still in the leading-zero stage), its value is $-1$.\n- $\\textit{isLimit}$: Indicates whether the digits chosen so far exactly match the prefix of the upper bound. If it is $\\text{true}$, the current digit cannot exceed $\\textit{num}_{\\textit{pos}}$; otherwise, any digit from $0$ to $9$ can be chosen.\n- $\\textit{isLeading}$: Indicates whether we are still skipping leading zeros. Initially, it is set to $\\text{true}$.\n\nThe DFS returns two values:\n- $\\textit{cnt}$: The number of valid numbers that can be formed from the current state.\n- $\\textit{sum}$: The total waviness of all valid numbers that can be formed from the current state.\n\nWe use two three-dimensional arrays for memoization:\n- $\\textit{memo\\_cnt}[\\textit{pos}][\\textit{prev}][\\textit{curr}]$ stores the number of valid numbers reachable from the current state.\n- $\\textit{memo\\_sum}[\\textit{pos}][\\textit{prev}][\\textit{curr}]$ stores the total waviness of all valid numbers reachable from the current state.\n- Both arrays are initialized to $-1$ to indicate that a state has not yet been computed. The arrays are indexed by digit values in $[0, 9]$, so states where $\\textit{prev}$ or $\\textit{curr}$ is $-1$ (meaning no digit has been placed yet) cannot be indexed and are simply recomputed on every call rather than cached.\n\nFor each position, we enumerate the digit placed at position $\\textit{pos}$:\n- Determine the range of digits that can be chosen. If $\\textit{isLimit}$ is true, the current digit can range from $0$ to $\\textit{num}_{\\textit{pos}}$; otherwise, it can range from $0$ to $9$. Let the upper bound be $\\textit{up}$.\n- Enumerate every possible digit $\\textit{digit}$ in $[0, \\textit{up}]$.\n- Update the leading-zero flag: $\\textit{newLeading}$.\n  - $\\textit{newPrev} = \\textit{curr}$\n  - $\\textit{newCurr} = \\textit{digit}$, unless we are still in the leading-zero stage.\n- Recursively call $\\text{dfs}(\\textit{pos}+1, \\textit{newPrev}, \\textit{newCurr}, \\textit{isLimit} \\land (\\textit{digit} = \\textit{up}), \\textit{newLeading})$ to obtain $(\\textit{subCnt}, \\textit{subSum})$.\n\n- Compute the waviness contribution of the current digit. This is the key insight: when $\\textit{curr}$ is confirmed as a peak or valley, every number in the subtree rooted at this DFS call gains exactly one extra waviness point. So instead of tracking each number individually, we add $\\textit{subCnt}$ (the count of those numbers) directly to $\\textit{sum}$.\n  - A contribution is possible only when three valid non-leading digits exist (i.e., $\\textit{prev} \\ge 0$ and $\\textit{curr} \\ge 0$).\n  - If $\\textit{prev} < \\textit{curr} \\land \\textit{curr} > \\textit{digit}$ or $\\textit{prev} > \\textit{curr} \\land \\textit{curr} < \\textit{digit},$ then $\\textit{curr}$ forms a peak or valley, and we add $\\textit{subCnt}$ to $\\textit{sum}$.\n- Accumulate the results of all substates.\nThe recursion terminates when:\n- $\\textit{pos} = n$, meaning all digits have been processed. In this case, we return $(1, 0)$ because exactly one valid number has been formed and no additional waviness is generated.\n\nThe DFS starts from:\n\n$$\\text{dfs}(0,-1,-1,\\text{true},\\text{true})$$\n\nAs a small optimization, if $\\textit{num} < 100$, no number contains three digits, so the answer is immediately $0$.\n\nFinally, $\\textit{solve}(\\textit{num})$ returns the $\\textit{sum}$ component of the DFS result, which represents the total waviness of all numbers in $[0,\\textit{num}]$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/ivrEb5Sj/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ivrEb5Sj\"></iframe>\n\n#### Complexity Analysis\n\nLet $D$ denote the base, which is $10$ in this problem.\n\n- Time complexity: $O(D^3 \\log \\textit{num}_2)$.\n  \n  The memoized DFS contains $O(D^2 \\log \\textit{num}_2)$ states, and each state enumerates $O(D)$ possible digits. Therefore, the total time complexity is $O(D^3 \\log \\textit{num}_2)$.\n\n- Space complexity: $O(D^2 \\log \\textit{num}_2)$.\n  \n  The memoization table contains $O(D^2 \\log \\textit{num}_2)$ states, and the recursion depth is $O(\\log \\textit{num}_2)$.\n\n---\n\n### Approach 2: Bottom-Up Dynamic Programming\n\n#### Intuition\n\nThe same idea can also be implemented using bottom-up dynamic programming. The state definition and transition logic are identical to those used in Approach 1. Instead of using recursive DFS with memoization, we iteratively build the DP states from left to right while maintaining the same information about the previous two digits, the tight constraint, and the leading-zero state.\n\nTherefore, the underlying principle remains the same, and only the implementation style differs.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/7MSnV5Ed/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7MSnV5Ed\"></iframe>\n\n#### Complexity Analysis\n\nLet $D$ denote the base, which is $10$ in this problem.\n\n- Time complexity: $O(D^3 \\log \\textit{num}_2)$.\n  \n  There are $O(D^2 \\log \\textit{num}_2)$ states, and each state considers $O(D)$ possible transitions.\n\n- Space complexity: $O(D^2)$.\n  \n  At any step, the number of active DP states is bounded by $O(D^2)$, so the total space complexity is $O(D^2)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long totalWaviness(long long num1, long long num2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public long totalWaviness(long num1, long num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def totalWaviness(self, num1: int, num2: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def totalWaviness(self, num1, num2):\n        \"\"\"\n        :type num1: int\n        :type num2: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num1\n * @param {number} num2\n * @return {number}\n */\nvar totalWaviness = function(num1, num2) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function totalWaviness(num1: number, num2: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public long TotalWaviness(long num1, long num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "long long totalWaviness(long long num1, long long num2) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func totalWaviness(num1 int64, num2 int64) int64 {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun totalWaviness(num1: Long, num2: Long): Long {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func totalWaviness(_ num1: Int, _ num2: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn total_waviness(num1: i64, num2: i64) -> i64 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} num1\n# @param {Integer} num2\n# @return {Integer}\ndef total_waviness(num1, num2)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $num1\n     * @param Integer $num2\n     * @return Integer\n     */\n    function totalWaviness($num1, $num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int totalWaviness(int num1, int num2) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def totalWaviness(num1: Long, num2: Long): Long = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec total_waviness(num1 :: integer, num2 :: integer) :: integer\n  def total_waviness(num1, num2) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec total_waviness(Num1 :: integer(), Num2 :: integer()) -> integer().\ntotal_waviness(Num1, Num2) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (total-waviness num1 num2)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:10.004Z"
+}

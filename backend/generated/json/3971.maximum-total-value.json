@@ -1,0 +1,56 @@
+{
+    "quesId": 3971,
+    "title": "Maximum Total Value",
+    "titleSlug": "maximum-total-value",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.5K",
+        "totalSubmission": "25.3K",
+        "totalAcceptedRaw": 7527,
+        "totalSubmissionRaw": 25317,
+        "acRate": "29.7%",
+        "acRateRaw": 29.731010783268157,
+        "likes": 61,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4274,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[6,5,4]\n[2,1,1]\n4\n[7,2,2]\n[3,2,1]\n2\n[4,3]\n[5,4]\n5",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given two integer arrays <code>value</code> and <code>decay</code>, and an integer <code>m</code>.</p>\n\n<ul>\n\t<li><code>value[i]</code> represents the initial value at index <code>i</code>.</li>\n\t<li><code>decay[i]</code> represents how much the value decreases after each selection of index <code>i</code>.</li>\n</ul>\n\n<p>You may select any index <strong>multiple</strong> times. The total number of selections across all indices must not exceed <code>m</code>.</p>\n\n<p>If you select index <code>i</code> for the <code>t<sup>th</sup></code> time, where <code>t</code> is 1-indexed, the value gained is <code>value[i] - decay[i] * (t - 1)</code>.</p>\n\n<p>Return the <strong>maximum</strong> total value you can obtain. Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">value = [6,5,4], decay = [2,1,1], m = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">19</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal sequence of selections is as follows:</p>\n\n<ul>\n\t<li>By selecting index 0, the value gained is 6.</li>\n\t<li>By selecting index 1, the value gained is 5.</li>\n\t<li>By selecting index 2, the value gained is 4.</li>\n\t<li>By selecting index 0 again, the value gained is <code>6 - 2 = 4</code>.</li>\n</ul>\n\n<p>The total value is <code>6 + 5 + 4 + 4 = 19</code>. No other sequence of at most 4 selections gives a higher total value.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">value = [7,2,2], decay = [3,2,1], m = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">11</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal sequence of selections is as follows:</p>\n\n<ul>\n\t<li>By selecting index 0, the value gained is 7.</li>\n\t<li>By selecting index 0 again, the value gained is <code>7 - 3 = 4</code>.</li>\n</ul>\n\n<p>The total value is <code>7 + 4 = 11</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">value = [4,3], decay = [5,4], m = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal sequence of selections is as follows:</p>\n\n<ul>\n\t<li>By selecting index 0, the value gained is 4.</li>\n\t<li>By selecting index 1, the value gained is 3.</li>\n</ul>\n\n<p>The total value is <code>4 + 3 = 7</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= value.length == decay.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= value[i], decay[i] &lt;= 10<sup>9</sup>​​​​​​​</code></li>\n\t<li><code>1 &lt;= m &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "For each index, the gained values form a decreasing arithmetic sequence: <code>value[i]</code>, <code>value[i] - decay[i]</code>, <code>value[i] - 2 * decay[i]</code>, and so on.",
+        "Since you may use fewer than <code>m</code> selections, never take a non-positive gain.",
+        "Binary search the minimum gain threshold that should be included among the selected values.",
+        "For a fixed threshold <code>g</code>, compute how many terms in each arithmetic sequence are at least <code>g</code>, and also compute their sum using the arithmetic progression formula.",
+        "If more than <code>m</code> terms are counted at the final threshold, subtract the extra copies of that threshold value."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:25.220Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.966Z"
+}

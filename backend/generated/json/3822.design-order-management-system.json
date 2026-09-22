@@ -1,0 +1,46 @@
+{
+    "quesId": 3822,
+    "title": "Design Order Management System",
+    "titleSlug": "design-order-management-system",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.2K",
+        "totalSubmission": "2.7K",
+        "totalAcceptedRaw": 2154,
+        "totalSubmissionRaw": 2719,
+        "acRate": "79.2%",
+        "acRateRaw": 79.22030158146377,
+        "likes": 8,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4201,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[\"OrderManagementSystem\",\"addOrder\",\"addOrder\",\"addOrder\",\"getOrdersAtPrice\",\"modifyOrder\",\"modifyOrder\",\"getOrdersAtPrice\",\"cancelOrder\",\"cancelOrder\",\"getOrdersAtPrice\"]\n[[],[1,\"buy\",1],[2,\"buy\",1],[3,\"sell\",2],[\"buy\",1],[1,3],[2,1],[\"buy\",1],[3],[2],[\"buy\",1]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Keep track of orders by their <code>orderId</code> so you can quickly modify or cancel them.",
+        "Group active orders by <code>(orderType, price)</code> to efficiently answer queries.",
+        "When an order is modified or canceled, make sure all related data structures stay in sync."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:46:30.831Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.378Z"
+}

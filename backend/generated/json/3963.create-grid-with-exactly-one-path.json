@@ -1,0 +1,39 @@
+{
+    "quesId": 3963,
+    "title": "Create Grid With Exactly One Path",
+    "titleSlug": "create-grid-with-exactly-one-path",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.1K",
+        "totalSubmission": "54.2K",
+        "totalAcceptedRaw": 41063,
+        "totalSubmissionRaw": 54207,
+        "acRate": "75.8%",
+        "acRateRaw": 75.75220912428284,
+        "likes": 30,
+        "dislikes": 4
+    },
+    "similarQuesIds": [
+        3988
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4342,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "2\n3\n3\n3\n1\n4",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given two integers <code>m</code> and <code>n</code>, representing the number of rows and columns of a grid.</p>\n\n<p>Construct <strong>any</strong> <code>m x n</code> grid consisting only of the characters <code>&#39;.&#39;</code> and <code>&#39;#&#39;</code>, where:</p>\n\n<ul>\n\t<li><code>&#39;.&#39;</code> represents a free cell.</li>\n\t<li><code>&#39;#&#39;</code> represents an obstacle cell.</li>\n</ul>\n\n<p>A <strong>valid path</strong> is a sequence of free cells that:</p>\n\n<ul>\n\t<li>Starts at the top-left cell <code>(0, 0)</code>.</li>\n\t<li>Ends at the bottom-right cell <code>(m - 1, n - 1)</code>.</li>\n\t<li>Moves only:\n\t<ul>\n\t\t<li>Right, from <code>(i, j)</code> to <code>(i, j + 1)</code>, or</li>\n\t\t<li>Down, from <code>(i, j)</code> to <code>(i + 1, j)</code>.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Return any grid such that there is <strong>exactly one valid path</strong> from the top-left cell to the bottom-right cell.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">m = 2, n = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;..#&quot;,&quot;#..&quot;]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2026/05/26/screenshot-2026-05-26-at-61005pm.png\" style=\"width: 200px; height: 95px;\" /></p>\n\n<p>The only valid path is: <code>(0,0) &rarr; (0,1) &rarr; (1,1) &rarr; (1,2)</code></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">m = 3, n = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;..#&quot;,&quot;#..&quot;,&quot;##.&quot;]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2026/05/26/screenshot-2026-05-26-at-61129pm.png\" style=\"width: 220px; height: 150px;\" /></p>\n\n<p>The only valid path is: <code>(0,0) &rarr; (0,1) &rarr; (1,1) &rarr; (1,2) &rarr; (2,2)</code></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">m = 1, n = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;....&quot;]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The only valid path is: <code>(0,0) &rarr; (0,1) &rarr; (0,2) &rarr; (0,3)</code></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m, n &lt;= 25</code></li>\n</ul>\n",
+    "hints": [
+        "It is enough to leave one simple route made of free cells and block every other cell.",
+        "There are many routes to choose from. What is the simplest one you can think of?",
+        "One possible route: Go right while possible, then go down till you reach the destination."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:15.800Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.959Z"
+}

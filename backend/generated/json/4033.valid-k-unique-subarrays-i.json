@@ -1,0 +1,63 @@
+{
+    "quesId": 4033,
+    "title": "Valid K-Unique Subarrays I",
+    "titleSlug": "valid-k-unique-subarrays-i",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.2K",
+        "totalSubmission": "23.5K",
+        "totalAcceptedRaw": 8173,
+        "totalSubmissionRaw": 23476,
+        "acRate": "34.8%",
+        "acRateRaw": 34.81427841199523,
+        "likes": 45,
+        "dislikes": 11
+    },
+    "similarQuesIds": [
+        4042
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3988,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,2,1]\r\n2\r\n[[0,1],[0,3],[1,2]]\r\n[3,3,3]\r\n1\r\n[[1,2],[0,2]]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>You are also given a 2D integer array <code>queries</code>, where <code>queries[i] = [l<sub>i</sub>, r<sub>i</sub>]</code> represents the <span data-keyword=\"subarray-nonempty\"><strong>subarray</strong></span> <code>nums[l<sub>i</sub>..r<sub>i</sub>]</code>.</p>\n\n<p>For each query, the <strong>subarray</strong> <code>nums[l<sub>i</sub>..r<sub>i</sub>]</code> is considered <strong>valid</strong> if:</p>\n\n<ul>\n\t<li>It contains <strong>exactly</strong> <code>k</code> <strong>distinct</strong> numbers, and</li>\n\t<li>The <span data-keyword=\"frequency-array\"><strong>frequency</strong></span> of every number in the <strong>subarray</strong> is <strong>even</strong>.</li>\n</ul>\n\n<p>Return a boolean array <code>ans</code>, where <code>ans[i]</code> is <code>true</code> if <code>nums[l<sub>i</sub>..r<sub>i</sub>]</code> is <strong>valid</strong>, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,2,1], k = 2, queries = [[0,1],[0,3],[1,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[false,true,false]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\"><code>i</code></th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>[l<sub>i</sub>, r<sub>i</sub>]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Subarray</th>\n\t\t\t<th style=\"border: 1px solid black;\">Unique numbers</th>\n\t\t\t<th style=\"border: 1px solid black;\">Frequency</th>\n\t\t\t<th style=\"border: 1px solid black;\">Validity check</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">[0, 1]</td>\n\t\t\t<td style=\"border: 1px solid black;\">[1, 2]</td>\n\t\t\t<td style=\"border: 1px solid black;\">{1, 2} &rarr; 2</td>\n\t\t\t<td style=\"border: 1px solid black;\">{1: 1, 2: 1}</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>false</code>: Element counts are not even.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">[0, 3]</td>\n\t\t\t<td style=\"border: 1px solid black;\">[1, 2, 2, 1]</td>\n\t\t\t<td style=\"border: 1px solid black;\">{1, 2} &rarr; 2</td>\n\t\t\t<td style=\"border: 1px solid black;\">{1: 2, 2: 2}</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>true</code>: Exactly <code>k = 2</code> distinct elements, all appear&nbsp;an even number of times.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">[1, 2]</td>\n\t\t\t<td style=\"border: 1px solid black;\">[2, 2]</td>\n\t\t\t<td style=\"border: 1px solid black;\">{2} &rarr; 1</td>\n\t\t\t<td style=\"border: 1px solid black;\">{2: 2}</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>false</code>: Number of distinct elements is less than <code>k = 2</code>.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, <code>ans = [false, true, false]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,3,3], k = 1, queries = [[1,2],[0,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[true,false]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\"><code>i</code></th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>[l<sub>i</sub>, r<sub>i</sub>]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Subarray</th>\n\t\t\t<th style=\"border: 1px solid black;\">Unique numbers</th>\n\t\t\t<th style=\"border: 1px solid black;\">Frequency</th>\n\t\t\t<th style=\"border: 1px solid black;\">Validity check</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">[1, 2]</td>\n\t\t\t<td style=\"border: 1px solid black;\">[3, 3]</td>\n\t\t\t<td style=\"border: 1px solid black;\">{3} &rarr; 1</td>\n\t\t\t<td style=\"border: 1px solid black;\">{3: 2}</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>true</code>: Exactly <code>k = 1</code> distinct element, appears an&nbsp;even number of times.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">[0, 2]</td>\n\t\t\t<td style=\"border: 1px solid black;\">[3, 3, 3]</td>\n\t\t\t<td style=\"border: 1px solid black;\">{3} &rarr; 1</td>\n\t\t\t<td style=\"border: 1px solid black;\">{3: 3}</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>false</code>: 3 does not appear an even number of times.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, <code>ans = [true, false]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= n</code></li>\n\t<li><code>1 &lt;= queries.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>queries[i] == [l<sub>i</sub>, r<sub>i</sub>]</code></li>\n\t<li><code>0 &lt;= l<sub>i</sub> &lt; r<sub>i</sub> &lt;= n - 1</code></li>\n</ul>\n",
+    "hints": [
+        "Process the queries offline using Mo’s algorithm so that the current subarray can be adjusted one element at a time.",
+        "Maintain both the number of distinct values and the number of values having an odd frequency. A query is valid exactly when these quantities are <code>k</code> and 0, respectively."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:32.803Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.013Z"
+}

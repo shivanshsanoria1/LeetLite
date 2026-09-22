@@ -3,6 +3,7 @@ const fs = require("fs");
 const fsPromises = require('node:fs/promises')
 
 const config = require("./config.json");
+const webConfig = require("./web/web-config.json");
 
 const ROOT = __dirname; // ./backend
 const PROJECT_ROOT = path.resolve(__dirname, "..");
@@ -97,14 +98,14 @@ async function writeToJSON(filePath, data = {}, minifiedFlag = false) {
 async function updateConfig(mode = 'local') {
 	try {
 		if (mode === 'web') {
-			const filePath = helper.getFilePath('webConfig');
-			await helper.writeToJSON(filePath, webConfig);
+			const filePath = getFilePath('webConfig');
+			await writeToJSON(filePath, webConfig);
 
 			return `Updated ${filePath}`
 		}
 
-		const filePath = helper.getFilePath('config')
-		await helper.writeToJSON(filePath, config);
+		const filePath = getFilePath('config')
+		await writeToJSON(filePath, config);
 
 		return `Updated ${filePath}`
 	} catch (err) {

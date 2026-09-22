@@ -1,0 +1,136 @@
+{
+    "questionId": "4382",
+    "questionFrontendId": "4045",
+    "title": "Count Robot Groups",
+    "titleSlug": "count-robot-groups",
+    "difficulty": "Medium",
+    "likes": 62,
+    "dislikes": 7,
+    "acRate": 31.56949923810717,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"15.1K\", \"totalSubmission\": \"47.9K\", \"totalAcceptedRaw\": 15124, \"totalSubmissionRaw\": 47907, \"acRate\": \"31.6%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given a <span data-keyword=\"strictly-increasing-array\">strictly increasing</span> integer array <code>position</code>, where <code>position[i]</code> is the initial position of the <code>i<sup>th</sup></code> robot at time <code>t = 0</code>.</p>\n\n<p>You are also given an integer array <code>speed</code>, where <code>speed[i]</code> is the constant speed of the <code>i<sup>th</sup></code> robot in units per second, and an integer <code>distance</code>.</p>\n\n<p>Time is <strong>continuous</strong> and measured in seconds. A robot or group with speed <code>v</code> moves <code>v * t</code> units to the right over any interval of <code>t</code> seconds.</p>\n\n<p>Whenever the distance between two robots or groups becomes at most <code>distance</code>, they merge into a single group.</p>\n\n<p>If multiple robots or groups satisfy the merging condition at the same time, all merges happen <strong>simultaneously</strong>. In particular, every connected collection of robots or groups whose consecutive positions differ by at most <code>distance</code> merges into one group.</p>\n\n<p>After a merge, the resulting group takes the current position and speed of the <strong>rightmost robot</strong> in that group. Once merged, robots never separate.</p>\n\n<p>Return the number of groups remaining after all possible merges have occurred.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">position = [1,5,6,20], speed = [4,3,2,3], distance = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/08/09/c4drawio.png\" style=\"width: 500px; height: 397px;\" /></strong></p>\n\n<ul>\n\t<li>Initially, the groups are {R<sub>1</sub>}, {R<sub>2</sub>}, {R<sub>3</sub>}, and {R<sub>​​​​​​​4</sub>}.</li>\n\t<li>At <code>t = 0</code>, the robots R<sub>2</sub> and R<sub>3</sub> at positions 5 and 6, respectively, merge because they are 1 unit apart. The resulting group moves with the position and speed of the rightmost robot R<sub>3</sub>. The groups are now {R<sub>1</sub>}, {R<sub>2</sub>, R<sub>3</sub>}, and {R<sub>​4</sub>}.</li>\n\t<li>Later at <code>t = 2</code>, the robot R<sub>1</sub> catches up to the group {R<sub>2</sub>, R<sub>3</sub>} and merges with it. The groups are now {R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>} and {R<sub>​4</sub>}.</li>\n</ul>\n\n<p>Thus, the answer is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">position = [1,5,9], speed = [3,2,2], distance = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/08/09/c5.png\" style=\"width: 500px; height: 310px;\" /></strong></p>\n\n<ul>\n\t<li>Initially, the groups are {R<sub>1</sub>}, {R<sub>2</sub>}, and {R<sub>3</sub>}.</li>\n\t<li>At <code>t = 2</code>, the robot R<sub>1</sub> catches up to the robot R<sub>2</sub> and merges with it. The resulting group moves with the position and speed of the rightmost robot R<sub>2</sub>. The groups are now {R<sub>1</sub>, R<sub>2</sub>} and {R<sub>3</sub>}.</li>\n</ul>\n\n<p>Thus, the answer is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">position = [9], speed = [8], distance = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Initially, there is only one group. Therefore, the answer is 1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= position.length == speed.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= position[i], speed[i], distance &lt;= 10<sup>9</sup></code></li>\n\t<li><code>position</code> is strictly increasing.</li>\n</ul>\n",
+    "hints": [
+        "First process all merges at time <code>t = 0</code>. Each maximal block of robots whose consecutive gaps are at most <code>distance</code> becomes one group represented by its rightmost robot.",
+        "Scan these groups from right to left, maintaining the speed of the nearest final group to the right. A faster group eventually catches it; a group with equal or lower speed remains separate and becomes the new nearest final group."
+    ],
+    "exampleTestcases": "[1,5,6,20]\r\n[4,3,2,3]\r\n1\r\n[1,5,9]\r\n[3,2,2]\r\n2\r\n[9]\r\n[8]\r\n5\r",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGroups(vector<int>& position, vector<int>& speed, int distance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int countGroups(int[] position, int[] speed, int distance) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def countGroups(self, position: list[int], speed: list[int], distance: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def countGroups(self, position, speed, distance):\n        \"\"\"\n        :type position: List[int]\n        :type speed: List[int]\n        :type distance: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} position\n * @param {number[]} speed\n * @param {number} distance\n * @return {number}\n */\nvar countGroups = function(position, speed, distance) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function countGroups(position: number[], speed: number[], distance: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int CountGroups(int[] position, int[] speed, int distance) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int countGroups(int* position, int positionSize, int* speed, int speedSize, int distance) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func countGroups(position []int, speed []int, distance int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun countGroups(position: IntArray, speed: IntArray, distance: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func countGroups(_ position: [Int], _ speed: [Int], _ distance: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn count_groups(position: Vec<i32>, speed: Vec<i32>, distance: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} position\n# @param {Integer[]} speed\n# @param {Integer} distance\n# @return {Integer}\ndef count_groups(position, speed, distance)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $position\n     * @param Integer[] $speed\n     * @param Integer $distance\n     * @return Integer\n     */\n    function countGroups($position, $speed, $distance) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int countGroups(List<int> position, List<int> speed, int distance) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def countGroups(position: Array[Int], speed: Array[Int], distance: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec count_groups(position :: [integer], speed :: [integer], distance :: integer) :: integer\n  def count_groups(position, speed, distance) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec count_groups(Position :: [integer()], Speed :: [integer()], Distance :: integer()) -> integer().\ncount_groups(Position, Speed, Distance) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (count-groups position speed distance)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:09:04.455Z"
+}

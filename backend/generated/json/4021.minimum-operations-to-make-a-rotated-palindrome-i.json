@@ -1,0 +1,52 @@
+{
+    "quesId": 4021,
+    "title": "Minimum Operations to Make a Rotated Palindrome I",
+    "titleSlug": "minimum-operations-to-make-a-rotated-palindrome-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "29.2K",
+        "totalSubmission": "45.7K",
+        "totalAcceptedRaw": 29167,
+        "totalSubmissionRaw": 45726,
+        "acRate": "63.8%",
+        "acRateRaw": 63.786467217775446,
+        "likes": 52,
+        "dislikes": 4
+    },
+    "similarQuesIds": [
+        4028
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4350,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"abc\"\r\n\"yb\"\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a string <code>s</code> consisting of lowercase English letters.</p>\n\n<p>You can perform the following operations any number of times (including zero) and in any order:</p>\n\n<ul>\n\t<li><strong>Increment</strong>: Choose any index <code>i</code> and replace <code>s[i]</code> with the next lowercase English letter. The letter after <code>&#39;z&#39;</code> is <code>&#39;a&#39;</code>.</li>\n\t<li><strong>Left rotate</strong>: Move the first character of the string to the end.</li>\n</ul>\n\n<p>Return the <strong>minimum</strong> number of operations required to make <code>s</code> a <span data-keyword=\"palindrome-string\">palindrome</span>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abc&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\nOne optimal solution:\n\n<ul>\n\t<li>Left rotate the string: <code>&quot;abc&quot; -&gt; &quot;bca&quot;</code>.</li>\n\t<li>Increment <code>&#39;a&#39;</code> to <code>&#39;b&#39;</code>: <code>&quot;bca&quot; -&gt; &quot;bcb&quot;</code>.</li>\n\t<li><code>&quot;bcb&quot;</code> is a palindrome. Thus, the answer is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;yb&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Increment the first character three times: <code>&quot;yb&quot; -&gt; &quot;zb&quot; -&gt; &quot;ab&quot; -&gt; &quot;bb&quot;</code>.</li>\n\t<li><code>&quot;bb&quot;</code> is a palindrome. Thus, the answer is 3.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= s.length &lt;= 2000</code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "<p>It is enough to consider performing <code>r</code> left rotations, where <code>0 &lt;= r &lt; s.length</code>. The increment operations can then be considered independently for each mirrored pair.</p>",
+        "<p>For two letters <code>a</code> and <code>b</code>, the minimum number of increments needed to make them equal is <code>min(abs(a - b), 26 - abs(a - b))</code>.</p>",
+        "<p>Try every rotation. For each one, sum this cost over all mirrored pairs and add the number of rotations. This gives an <code>O(n^2)</code> solution.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:19.098Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.004Z"
+}

@@ -1,0 +1,55 @@
+{
+    "quesId": 3952,
+    "title": "Maximum Total Value of Covered Indices",
+    "titleSlug": "maximum-total-value-of-covered-indices",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "19K",
+        "totalSubmission": "66.8K",
+        "totalAcceptedRaw": 18991,
+        "totalSubmissionRaw": 66821,
+        "acRate": "28.4%",
+        "acRateRaw": 28.422848420454034,
+        "likes": 73,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4142,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[9,2,6,1]\n\"0101\"\n[5,1,4]\n\"001\"\n[9,3,5]\n\"011\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code> and a binary string <code>s</code> of length <code>n</code>, where <code>s[i] == &#39;1&#39;</code> means index <code>i</code> initially contains a <strong>token</strong> and <code>s[i] == &#39;0&#39;</code> means it does not.</p>\n\n<p>You may perform the following operation any number of times:</p>\n\n<ul>\n\t<li>Choose a token currently located at index <code>i</code>, where <code>i &gt; 0</code>, such that this token has <strong>not</strong> been moved before.</li>\n\t<li>Move this token from index <code>i</code> to index <code>i - 1</code>.</li>\n</ul>\n\n<p>An index is considered <strong>covered</strong> if it contains a token after all moves.</p>\n\n<p>Return an integer denoting the <strong>maximum total value</strong> of <code>nums</code> at the covered indices after optimally performing the operations.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [9,2,6,1], s = &quot;0101&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">15</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Initially, indices 1 and 3 contain tokens.</li>\n\t<li>Move the token from index 3 to index 2.</li>\n\t<li>Move the token from index 1 to index 0.</li>\n\t<li>The covered indices are <code>[0, 2]</code>, so the total value is <code>nums[0] + nums[2] = 9 + 6 = 15</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,1,4], s = &quot;001&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Initially, only index 2 contains a token.</li>\n\t<li>It is optimal to leave the token at index 2.</li>\n\t<li>The covered index is <code>[2]</code>, so the total value is <code>nums[2] = 4</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [9,3,5], s = &quot;011&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">14</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Initially, indices 1 and 2 contain tokens.</li>\n\t<li>Move the token from index 1 to index 0.</li>\n\t<li>The covered indices are <code>[0, 2]</code>, so the total value is <code>nums[0] + nums[2] = 9 + 5 = 14</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length == s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>​​​​​​​<code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code></li>\n</ul>\n",
+    "hints": [
+        "1a (Greedy). Consider each maximal block of consecutive tokens independently, together with the index immediately before the block if it exists.",
+        "1b (Greedy). From this range, every index except one can be covered, so subtract the minimum <code>nums</code> value in the range.",
+        "2a (DP). A token at index <code>i</code> can only end at <code>i</code> or <code>i - 1</code>.",
+        "2b (DP). Process indices from left to right and keep whether the previous index is already covered; try both choices for the current token when possible."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:05.525Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.930Z"
+}

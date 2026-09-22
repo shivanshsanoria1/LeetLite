@@ -1,0 +1,33 @@
+{
+    "questionId": "4113",
+    "questionFrontendId": "3744",
+    "title": "Find Kth Character in Expanded String",
+    "titleSlug": "find-kth-character-in-expanded-string",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 3,
+    "acRate": 56.244302643573384,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"617\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 617, \"totalSubmissionRaw\": 1097, \"acRate\": \"56.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use the index of a character in the word to calculate how many times it is repeated in <code>t</code>.",
+        "Reduce <code>k</code> by that repetition count as you iterate through the characters.",
+        "Handle spaces as single characters (cost 1) and reset the index counter for each new word."
+    ],
+    "exampleTestcases": "\"hello world\"\n0\n\"hello world\"\n15",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:02.781Z"
+}

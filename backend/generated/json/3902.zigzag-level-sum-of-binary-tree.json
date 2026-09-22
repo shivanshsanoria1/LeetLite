@@ -1,0 +1,50 @@
+{
+    "quesId": 3902,
+    "title": "Zigzag Level Sum of Binary Tree",
+    "titleSlug": "zigzag-level-sum-of-binary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "577",
+        "totalSubmission": "834",
+        "totalAcceptedRaw": 577,
+        "totalSubmissionRaw": 834,
+        "acRate": "69.2%",
+        "acRateRaw": 69.18465227817747,
+        "likes": 5,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4296,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[5,2,8,1,null,9,6]\n[1,2,3,4,5,null,7]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use level-order traversal (<code>BFS</code>) to process the tree level by level",
+        "Maintain a list (or queue) of nodes for the current level",
+        "Alternate traversal direction using a flag (odd level vs even level)"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:00:08.687Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.839Z"
+}

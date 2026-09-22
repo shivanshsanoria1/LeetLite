@@ -2,55 +2,55 @@
     {
         "slug": "array",
         "name": "Array",
-        "freq": 2049,
+        "freq": 2260,
         "color": "#a371f7"
     },
     {
         "slug": "string",
         "name": "String",
-        "freq": 832,
+        "freq": 895,
         "color": "#a371f7"
     },
     {
         "slug": "hash-table",
         "name": "Hash Table",
-        "freq": 770,
+        "freq": 836,
         "color": "#a371f7"
     },
     {
         "slug": "math",
         "name": "Math",
-        "freq": 629,
+        "freq": 708,
         "color": "#a371f7"
     },
     {
         "slug": "dynamic-programming",
         "name": "Dynamic Programming",
-        "freq": 624,
+        "freq": 680,
         "color": "#a371f7"
     },
     {
         "slug": "sorting",
         "name": "Sorting",
-        "freq": 498,
+        "freq": 536,
         "color": "#a371f7"
     },
     {
         "slug": "greedy",
         "name": "Greedy",
-        "freq": 440,
-        "color": "#a371f7"
-    },
-    {
-        "slug": "depth-first-search",
-        "name": "Depth-First Search",
-        "freq": 334,
+        "freq": 482,
         "color": "#a371f7"
     },
     {
         "slug": "binary-search",
         "name": "Binary Search",
-        "freq": 322,
+        "freq": 352,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "depth-first-search",
+        "name": "Depth-First Search",
+        "freq": 349,
         "color": "#a371f7"
     },
     {
@@ -60,111 +60,117 @@
         "color": "#a371f7"
     },
     {
-        "slug": "matrix",
-        "name": "Matrix",
-        "freq": 268,
-        "color": "#a371f7"
-    },
-    {
         "slug": "bit-manipulation",
         "name": "Bit Manipulation",
-        "freq": 266,
+        "freq": 295,
         "color": "#a371f7"
     },
     {
-        "slug": "tree",
-        "name": "Tree",
-        "freq": 253,
-        "color": "#a371f7"
-    },
-    {
-        "slug": "breadth-first-search",
-        "name": "Breadth-First Search",
-        "freq": 251,
-        "color": "#a371f7"
-    },
-    {
-        "slug": "two-pointers",
-        "name": "Two Pointers",
-        "freq": 238,
+        "slug": "matrix",
+        "name": "Matrix",
+        "freq": 285,
         "color": "#a371f7"
     },
     {
         "slug": "prefix-sum",
         "name": "Prefix Sum",
-        "freq": 236,
+        "freq": 274,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "tree",
+        "name": "Tree",
+        "freq": 270,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "two-pointers",
+        "name": "Two Pointers",
+        "freq": 262,
+        "color": "#a371f7"
+    },
+    {
+        "slug": "breadth-first-search",
+        "name": "Breadth-First Search",
+        "freq": 260,
         "color": "#a371f7"
     },
     {
         "slug": "heap-priority-queue",
         "name": "Heap (Priority Queue)",
-        "freq": 208,
+        "freq": 221,
         "color": "#a371f7"
     },
     {
         "slug": "simulation",
         "name": "Simulation",
-        "freq": 197,
+        "freq": 217,
         "color": "#a371f7"
     },
     {
         "slug": "counting",
         "name": "Counting",
-        "freq": 188,
+        "freq": 213,
         "color": "#a371f7"
-    },
-    {
-        "slug": "binary-tree",
-        "name": "Binary Tree",
-        "freq": 177,
-        "color": "#6610f2"
     },
     {
         "slug": "graph",
         "name": "Graph Theory",
-        "freq": 177,
-        "color": "#6610f2"
+        "freq": 190,
+        "color": "#a371f7"
     },
     {
         "slug": "stack",
         "name": "Stack",
-        "freq": 174,
+        "freq": 182,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "binary-tree",
+        "name": "Binary Tree",
+        "freq": 181,
         "color": "#6610f2"
     },
     {
         "slug": "sliding-window",
         "name": "Sliding Window",
-        "freq": 160,
+        "freq": 172,
         "color": "#6610f2"
     },
     {
         "slug": "enumeration",
         "name": "Enumeration",
-        "freq": 132,
+        "freq": 162,
         "color": "#6610f2"
     },
     {
         "slug": "design",
         "name": "Design",
-        "freq": 130,
+        "freq": 134,
         "color": "#6610f2"
     },
     {
         "slug": "backtracking",
         "name": "Backtracking",
-        "freq": 112,
-        "color": "#6610f2"
-    },
-    {
-        "slug": "union-find",
-        "name": "Union-Find",
-        "freq": 95,
+        "freq": 114,
         "color": "#6610f2"
     },
     {
         "slug": "number-theory",
         "name": "Number Theory",
-        "freq": 89,
+        "freq": 105,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "union-find",
+        "name": "Union-Find",
+        "freq": 98,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "segment-tree",
+        "name": "Segment Tree",
+        "freq": 87,
         "color": "#6610f2"
     },
     {
@@ -176,97 +182,91 @@
     {
         "slug": "ordered-set",
         "name": "Ordered Set",
-        "freq": 77,
+        "freq": 80,
         "color": "#6610f2"
     },
     {
         "slug": "monotonic-stack",
         "name": "Monotonic Stack",
-        "freq": 71,
-        "color": "#6610f2"
-    },
-    {
-        "slug": "segment-tree",
-        "name": "Segment Tree",
-        "freq": 70,
-        "color": "#6610f2"
-    },
-    {
-        "slug": "trie",
-        "name": "Trie",
-        "freq": 59,
+        "freq": 76,
         "color": "#6610f2"
     },
     {
         "slug": "divide-and-conquer",
         "name": "Divide and Conquer",
-        "freq": 58,
+        "freq": 71,
         "color": "#6610f2"
     },
     {
         "slug": "combinatorics",
         "name": "Combinatorics",
-        "freq": 57,
+        "freq": 65,
         "color": "#6610f2"
     },
     {
-        "slug": "bitmask",
-        "name": "Bitmask",
-        "freq": 55,
+        "slug": "trie",
+        "name": "Trie",
+        "freq": 61,
         "color": "#6610f2"
     },
     {
         "slug": "queue",
         "name": "Queue",
-        "freq": 50,
+        "freq": 58,
         "color": "#6610f2"
     },
     {
-        "slug": "recursion",
-        "name": "Recursion",
-        "freq": 50,
-        "color": "#6610f2"
-    },
-    {
-        "slug": "geometry",
-        "name": "Geometry",
-        "freq": 45,
+        "slug": "bitmask",
+        "name": "Bitmask",
+        "freq": 56,
         "color": "#6610f2"
     },
     {
         "slug": "binary-indexed-tree",
         "name": "Binary Indexed Tree",
+        "freq": 53,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "recursion",
+        "name": "Recursion",
+        "freq": 51,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "hash-function",
+        "name": "Hash Function",
+        "freq": 47,
+        "color": "#6610f2"
+    },
+    {
+        "slug": "geometry",
+        "name": "Geometry",
+        "freq": 46,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "memoization",
+        "name": "Memoization",
         "freq": 44,
         "color": "#0d6efd"
     },
     {
         "slug": "binary-search-tree",
         "name": "Binary Search Tree",
-        "freq": 42,
-        "color": "#0d6efd"
-    },
-    {
-        "slug": "hash-function",
-        "name": "Hash Function",
-        "freq": 42,
-        "color": "#0d6efd"
-    },
-    {
-        "slug": "memoization",
-        "name": "Memoization",
-        "freq": 42,
-        "color": "#0d6efd"
-    },
-    {
-        "slug": "topological-sort",
-        "name": "Topological Sort",
-        "freq": 39,
+        "freq": 43,
         "color": "#0d6efd"
     },
     {
         "slug": "shortest-path",
         "name": "Shortest Path",
-        "freq": 38,
+        "freq": 43,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "topological-sort",
+        "name": "Topological Sort",
+        "freq": 40,
         "color": "#0d6efd"
     },
     {
@@ -278,7 +278,7 @@
     {
         "slug": "rolling-hash",
         "name": "Rolling Hash",
-        "freq": 32,
+        "freq": 33,
         "color": "#0d6efd"
     },
     {
@@ -290,7 +290,13 @@
     {
         "slug": "game-theory",
         "name": "Game Theory",
-        "freq": 29,
+        "freq": 30,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "monotonic-queue",
+        "name": "Monotonic Queue",
+        "freq": 26,
         "color": "#0d6efd"
     },
     {
@@ -306,27 +312,21 @@
         "color": "#0d6efd"
     },
     {
+        "slug": "data-stream",
+        "name": "Data Stream",
+        "freq": 24,
+        "color": "#0d6efd"
+    },
+    {
         "slug": "euclidean-algorithm",
         "name": "Euclidean Algorithm",
         "freq": 24,
         "color": "#0d6efd"
     },
     {
-        "slug": "data-stream",
-        "name": "Data Stream",
-        "freq": 23,
-        "color": "#0d6efd"
-    },
-    {
         "slug": "brainteaser",
         "name": "Brainteaser",
-        "freq": 20,
-        "color": "#0d6efd"
-    },
-    {
-        "slug": "monotonic-queue",
-        "name": "Monotonic Queue",
-        "freq": 20,
+        "freq": 21,
         "color": "#0d6efd"
     },
     {
@@ -338,6 +338,12 @@
     {
         "slug": "knapsack-problem",
         "name": "Knapsack Problem",
+        "freq": 17,
+        "color": "#0d6efd"
+    },
+    {
+        "slug": "merge-sort",
+        "name": "Merge Sort",
         "freq": 17,
         "color": "#0d6efd"
     },
@@ -369,12 +375,6 @@
         "slug": "prime-factorization",
         "name": "Prime Factorization",
         "freq": 14,
-        "color": "#2cbb5d"
-    },
-    {
-        "slug": "merge-sort",
-        "name": "Merge Sort",
-        "freq": 13,
         "color": "#2cbb5d"
     },
     {
@@ -462,6 +462,12 @@
         "color": "#2cbb5d"
     },
     {
+        "slug": "suffix-array",
+        "name": "Suffix Array",
+        "freq": 9,
+        "color": "#2cbb5d"
+    },
+    {
         "slug": "0-1-knapsack",
         "name": "0-1 Knapsack",
         "freq": 8,
@@ -474,8 +480,8 @@
         "color": "#2cbb5d"
     },
     {
-        "slug": "suffix-array",
-        "name": "Suffix Array",
+        "slug": "quickselect",
+        "name": "Quickselect",
         "freq": 8,
         "color": "#2cbb5d"
     },
@@ -512,12 +518,6 @@
     {
         "slug": "probability-and-statistics",
         "name": "Probability and Statistics",
-        "freq": 7,
-        "color": "#ffc01e"
-    },
-    {
-        "slug": "quickselect",
-        "name": "Quickselect",
         "freq": 7,
         "color": "#ffc01e"
     },
@@ -666,6 +666,12 @@
         "color": "#fd7e14"
     },
     {
+        "slug": "minimum-cost-flow",
+        "name": "Minimum-Cost Flow",
+        "freq": 4,
+        "color": "#fd7e14"
+    },
+    {
         "slug": "nim-game",
         "name": "Nim Game",
         "freq": 4,
@@ -758,12 +764,6 @@
     {
         "slug": "manacher",
         "name": "Manacher",
-        "freq": 3,
-        "color": "#fd7e14"
-    },
-    {
-        "slug": "minimum-cost-flow",
-        "name": "Minimum-Cost Flow",
         "freq": 3,
         "color": "#fd7e14"
     },
@@ -950,6 +950,12 @@
     {
         "slug": "eulers-totient-function",
         "name": "Euler's Totient Function",
+        "freq": 1,
+        "color": "#ef4743"
+    },
+    {
+        "slug": "heap",
+        "name": "Heap",
         "freq": 1,
         "color": "#ef4743"
     },

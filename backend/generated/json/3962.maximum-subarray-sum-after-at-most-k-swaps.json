@@ -1,0 +1,67 @@
+{
+    "quesId": 3962,
+    "title": "Maximum Subarray Sum After at Most K Swaps",
+    "titleSlug": "maximum-subarray-sum-after-at-most-k-swaps",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.6K",
+        "totalSubmission": "25.2K",
+        "totalAcceptedRaw": 3612,
+        "totalSubmissionRaw": 25223,
+        "acRate": "14.3%",
+        "acRateRaw": 14.320263251793996,
+        "likes": 49,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4246,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,-1,0,2]\n1\n[4,3,2,4]\n2\n[-1,-2]\n0",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>You are allowed to perform <strong>at most</strong> <code>k</code> swap operations on the array.</p>\n\n<p>In one swap operation, you may choose any two indices <code>i</code> and <code>j</code> and swap <code>nums[i]</code> and <code>nums[j]</code>.</p>\n\n<p>Return an integer denoting the <strong>maximum possible <span data-keyword=\"subarray-nonempty\">subarray</span> sum</strong> after performing the swaps.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,-1,0,2], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>We can swap on indices 1 and 3, resulting in the array <code>[1, 2, 0, -1]</code>.</li>\n\t<li>The subarray <code>[1, 2]</code> has a sum of 3, which is the maximum possible subarray sum after at most <code>k = 1</code>​​​​​​​ swap.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,3,2,4], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">13</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The maximum possible subarray sum after at most <code>k = 2</code> swaps is the sum of the entire array, which is 13.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [-1,-2], k = 0</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>k = 0</code> swaps are allowed.</li>\n\t<li>The possible subarrays are <code>[-1]</code>, <code>[-2]</code>, and <code>[-1, -2]</code>, with sums -1, -2, and -3 respectively.</li>\n\t<li>Among these sums, the maximum is -1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1500</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= nums.length</code></li>\n</ul>\n",
+    "hints": [
+        "Fix a subarray. An optimal swap exchanges one of its smallest elements with one of the largest elements outside it, provided this increases the sum.",
+        "If the elements inside are ordered increasingly and those outside decreasingly, the gain from using <code>t</code> swaps is the sum of the <code>t</code> largest outside elements minus the sum of the <code>t</code> smallest inside elements.",
+        "Enumerate the left endpoint and extend the right endpoint while maintaining the inside and outside elements in order-statistics data structures that support counts, sums, and the sum of the smallest or largest <code>t</code> elements.",
+        "The marginal gains are non-increasing as <code>t</code> grows, so find the largest profitable <code>t <= k</code> and add its gain to the original subarray sum."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:15.059Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.958Z"
+}

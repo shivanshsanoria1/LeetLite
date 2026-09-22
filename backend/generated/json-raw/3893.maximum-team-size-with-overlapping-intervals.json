@@ -1,0 +1,27 @@
+{
+    "questionId": "4288",
+    "questionFrontendId": "3893",
+    "title": "Maximum Team Size with Overlapping Intervals",
+    "titleSlug": "maximum-team-size-with-overlapping-intervals",
+    "difficulty": "Medium",
+    "likes": 8,
+    "dislikes": 1,
+    "acRate": 42.340425531914896,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"995\", \"totalSubmission\": \"2.4K\", \"totalAcceptedRaw\": 995, \"totalSubmissionRaw\": 2350, \"acRate\": \"42.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use binary search",
+        "For the <code>i<sup>th</sup></code> employee, count the number of employees with start times <= <code>endTime[i]</code> minus the number of employees with end times < <code>startTime[i]</code>"
+    ],
+    "exampleTestcases": "[1,2,3]\n[4,5,6]\n[2,5,8]\n[3,7,9]\n[3,4,6]\n[8,5,7]",
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:59.572Z"
+}

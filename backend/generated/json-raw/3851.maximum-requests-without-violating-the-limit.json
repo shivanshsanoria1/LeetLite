@@ -1,0 +1,49 @@
+{
+    "questionId": "4250",
+    "questionFrontendId": "3851",
+    "title": "Maximum Requests Without Violating the Limit",
+    "titleSlug": "maximum-requests-without-violating-the-limit",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 2,
+    "acRate": 63.97727272727273,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"563\", \"totalSubmission\": \"880\", \"totalAcceptedRaw\": 563, \"totalSubmissionRaw\": 880, \"acRate\": \"64.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use a sliding-window approach.",
+        "For each user, maintain a sorted list (array) of their request times.",
+        "For each user, slide a window over their times; if the count inside any inclusive interval of length <code>window</code> exceeds <code>k</code>, remove the most recent request(s) in that interval until the count <= <code>k</code>."
+    ],
+    "exampleTestcases": "[[1,1],[2,1],[1,7],[2,8]]\n1\n4\n[[1,2],[1,5],[1,2],[1,6]]\n2\n5\n[[1,1],[2,5],[1,2],[3,9]]\n1\n1",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:14.116Z"
+}

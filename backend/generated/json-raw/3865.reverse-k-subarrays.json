@@ -1,0 +1,35 @@
+{
+    "questionId": "4261",
+    "questionFrontendId": "3865",
+    "title": "Reverse K Subarrays",
+    "titleSlug": "reverse-k-subarrays",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 2,
+    "acRate": 88.38983050847457,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1K\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 1043, \"totalSubmissionRaw\": 1180, \"acRate\": \"88.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Reverse each subarray of size <code>n / k</code>."
+    ],
+    "exampleTestcases": "[1,2,4,3,5,6]\n3\n[5,4,4,2]\n1",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:28.446Z"
+}

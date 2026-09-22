@@ -1,0 +1,38 @@
+{
+    "questionId": "4302",
+    "questionFrontendId": "3944",
+    "title": "Minimum Operations to Make Array Modulo Alternating II",
+    "titleSlug": "minimum-operations-to-make-array-modulo-alternating-ii",
+    "difficulty": "Hard",
+    "likes": 5,
+    "dislikes": 1,
+    "acRate": 64.60980036297642,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"356\", \"totalSubmission\": \"551\", \"totalAcceptedRaw\": 356, \"totalSubmissionRaw\": 551, \"acRate\": \"64.6%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Operations to Make Array Modulo Alternating I\", \"titleSlug\": \"minimum-operations-to-make-array-modulo-alternating-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "For a number with remainder <code>r = nums[i] % k</code>, the minimum cost to change it to remainder <code>t</code> is:\r\n\r\n<code>min(abs(r - t), k - abs(r - t))</code>",
+        "Separate the indices by parity. Compute\r\n\r\n<code>evenCost[x]</code> = total cost to make all even indices have remainder <code>x</code>, \r\n<code>oddCost[y]</code> = total cost to make all odd indices have remainder <code>y</code>",
+        "Then the answer is:\r\n\r\n<code>min(evenCost[x] + oddCost[y])</code> over all <code>x != y</code>.",
+        "To avoid <code>O(k<sup>2</sup>)</code>, keep the smallest and second smallest values in <code>oddCost</code>. For each <code>x</code>, use the best odd remainder unless it equals <code>x</code>, otherwise use the second best."
+    ],
+    "exampleTestcases": "[1,4,2,8]\n3\n[1,1,1]\n3\n[6,7,8]\n2",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:05:56.677Z"
+}

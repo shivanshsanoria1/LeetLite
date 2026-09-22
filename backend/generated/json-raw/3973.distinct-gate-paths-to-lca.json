@@ -1,0 +1,53 @@
+{
+    "questionId": "3984",
+    "questionFrontendId": "3973",
+    "title": "Distinct Gate Paths to LCA",
+    "titleSlug": "distinct-gate-paths-to-lca",
+    "difficulty": "Hard",
+    "likes": 5,
+    "dislikes": 1,
+    "acRate": 58.333333333333336,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"231\", \"totalSubmission\": \"396\", \"totalAcceptedRaw\": 231, \"totalSubmissionRaw\": 396, \"acRate\": \"58.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "For one node, the transition between card colors can be represented by a <code>2 x 2</code> matrix: red and blue gates keep the same color, while white gates switch the color.",
+        "Use binary lifting for ancestors, and store the product of transition matrices for each upward jump.",
+        "For a query, find the LCA, compute the number of ways for Alice and Bob to move from their nodes to it, sum over both possible ending card colors, multiply the two values modulo <code>10<sup>9</sup> + 7</code>, then XOR it into the answer."
+    ],
+    "exampleTestcases": "3\n[-1,0,0]\n[[1,0,1],[0,1,1],[1,1,0]]\n[[1,0,2,0],[1,1,2,0],[1,0,2,1]]\n3\n[-1,0,1]\n[[0,1,2],[1,0,1],[0,0,3]]\n[[2,0,1,0],[2,1,0,0],[1,1,2,1]]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:06:27.169Z"
+}

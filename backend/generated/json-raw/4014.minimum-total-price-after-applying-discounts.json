@@ -1,0 +1,140 @@
+{
+    "questionId": "4363",
+    "questionFrontendId": "4014",
+    "title": "Minimum Total Price After Applying Discounts",
+    "titleSlug": "minimum-total-price-after-applying-discounts",
+    "difficulty": "Medium",
+    "likes": 45,
+    "dislikes": 5,
+    "acRate": 72.11255013772774,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"59.7K\", \"totalSubmission\": \"82.8K\", \"totalAcceptedRaw\": 59689, \"totalSubmissionRaw\": 82772, \"acRate\": \"72.1%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given two integer arrays <code>prices</code> and <code>discounts</code>.</p>\n\n<p>The value <code>prices[i]</code> represents the price of the <code>i<sup>th</sup></code> item, and <code>discounts[j]</code> represents a discount percentage.</p>\n\n<p>You may apply discounts subject to the following rules:</p>\n\n<ul>\n\t<li>Each discount can be applied to <strong>at most</strong> one item.</li>\n\t<li>Each item can receive <strong>at most</strong> one discount.</li>\n\t<li>An item may also receive no discount.</li>\n</ul>\n\n<p>If a discount of <code>d</code> percent is applied to an item with price <code>p</code>, its final price becomes <code>(p * (100 - d)) / 100</code>. The final price is <strong>not</strong> rounded.</p>\n\n<p>Return the <strong>minimum</strong> possible sum of final prices after assigning discounts optimally. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [10,30,21], discounts = [50,60]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">32.50000</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>discounts[1] = 60</code> to <code>prices[1] = 30</code>, thus <code>30 * (100 - 60) / 100 = 12</code>.</li>\n\t<li>Apply <code>discounts[0] = 50</code> to <code>prices[2] = 21</code>, thus <code>21 * (100 - 50) / 100 = 10.5</code>.</li>\n\t<li><code>prices[0] = 10</code> receives no discount, so it stays 10.</li>\n</ul>\n\n<p>The total is <code>12 + 10.5 + 10 = 32.50000</code>, which is the minimum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [100,70], discounts = [10,40,50]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">92.00000</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Apply <code>discounts[2] = 50</code> to <code>prices[0] = 100</code>, thus <code>100 * (100 - 50) / 100 = 50</code>.</li>\n\t<li>Apply <code>discounts[1] = 40</code> to <code>prices[1] = 70</code>, thus <code>70 * (100 - 40) / 100 = 42</code>.</li>\n</ul>\n\n<p>The total is <code>50 + 42 = 92.00000</code>, which is the minimum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">prices = [7,3,9], discounts = [100,100]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3.00000</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>discounts[0] = 100</code> to <code>prices[2] = 9</code>, thus <code>9 * (100 - 100) / 100 = 0</code>.</li>\n\t<li>Apply <code>discounts[1] = 100</code> to <code>prices[0] = 7</code>, thus <code>7 * (100 - 100) / 100 = 0</code>.</li>\n\t<li><code>prices[1] = 3</code> receives no discount, so it stays 3.</li>\n</ul>\n\n<p>The total is <code>0 + 0 + 3 = 3.00000</code>, which is the minimum possible.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= prices.length, discounts.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= prices[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= discounts[j] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "For an item with price <code>p</code> and a discount <code>d</code>, the amount saved is <code>p * d / 100</code>.",
+        "To minimize the total final price, maximize the total amount saved. Consider sorting both arrays and pairing larger prices with larger discounts."
+    ],
+    "exampleTestcases": "[10,30,21]\n[50,60]\n[100,70]\n[10,40,50]\n[7,3,9]\n[100,100]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double minPrice(vector<int>& prices, vector<int>& discounts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public double minPrice(int[] prices, int[] discounts) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def minPrice(self, prices: list[int], discounts: list[int]) -> float:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def minPrice(self, prices, discounts):\n        \"\"\"\n        :type prices: List[int]\n        :type discounts: List[int]\n        :rtype: float\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} prices\n * @param {number[]} discounts\n * @return {number}\n */\nvar minPrice = function(prices, discounts) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function minPrice(prices: number[], discounts: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public double MinPrice(int[] prices, int[] discounts) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "double minPrice(int* prices, int pricesSize, int* discounts, int discountsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func minPrice(prices []int, discounts []int) float64 {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun minPrice(prices: IntArray, discounts: IntArray): Double {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func minPrice(_ prices: [Int], _ discounts: [Int]) -> Double {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn min_price(prices: Vec<i32>, discounts: Vec<i32>) -> f64 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} prices\n# @param {Integer[]} discounts\n# @return {Float}\ndef min_price(prices, discounts)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $prices\n     * @param Integer[] $discounts\n     * @return Float\n     */\n    function minPrice($prices, $discounts) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  double minPrice(List<int> prices, List<int> discounts) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def minPrice(prices: Array[Int], discounts: Array[Int]): Double = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec min_price(prices :: [integer], discounts :: [integer]) :: float\n  def min_price(prices, discounts) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec min_price(Prices :: [integer()], Discounts :: [integer()]) -> float().\nmin_price(Prices, Discounts) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (min-price prices discounts)\n  (-> (listof exact-integer?) (listof exact-integer?) flonum?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:07:11.596Z"
+}

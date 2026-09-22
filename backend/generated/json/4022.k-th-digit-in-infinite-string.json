@@ -1,0 +1,49 @@
+{
+    "quesId": 4022,
+    "title": "K-th Digit in Infinite String",
+    "titleSlug": "k-th-digit-in-infinite-string",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.5K",
+        "totalSubmission": "32.4K",
+        "totalAcceptedRaw": 11494,
+        "totalSubmissionRaw": 32384,
+        "acRate": "35.5%",
+        "acRateRaw": 35.49681961341321,
+        "likes": 52,
+        "dislikes": 10
+    },
+    "similarQuesIds": [
+        400
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4331,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "4\r\n15\r\n11\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>k</code>.</p>\n\n<p>An <strong>infinite</strong> string is formed by <strong>concatenating</strong> the <strong>decimal</strong> representations of the <strong>positive</strong> integers, without separators.</p>\n\n<p>For every nonnegative integer <code>b</code>, block <code>b</code> contains the <strong>positive</strong> integers from <code>10 * b</code> through <code>10 * b + 9</code>. The integers in each block are appended as follows:</p>\n\n<ul>\n\t<li>If <code>b</code> is even, append the integers in <strong>increasing</strong> order.</li>\n\t<li>If <code>b</code> is odd, append the integers in <strong>decreasing</strong> order.</li>\n</ul>\n\n<p>Therefore, the string starts with the integers 1 through 9, followed by 19 through 10, then 20 through 29, then 39 through 30, and so on.</p>\n\n<p>Return the <code>k<sup>th</sup></code> digit (1-indexed) of this string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">k = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string begins as <code>&quot;123<u>4</u>56789..&quot;</code>. The 4<sup>th</sup> digit is <code>&#39;4&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">k = 15</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string begins as <code>&quot;12345678919181<u>7</u>..&quot;</code>. The 15<sup>th</sup> digit is <code>&#39;7&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">k = 11</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">9</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string begins as <code>&quot;1234567891<u>9</u>..&quot;</code>. The 11<sup>th</sup> digit is <code>&#39;9&#39;</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= 10<sup>15</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>The order inside a block does not affect its total number of digits. After finishing block <code>b</code>, the string has used exactly the same number of digits as writing all integers from 1 through <code>10 * b + 9</code> in the usual order.</p>",
+        "<p>Write a function that computes the total number of decimal digits needed to write all integers from 1 through <code>x</code>. Compute it by grouping numbers according to their digit length.</p>",
+        "<p>Binary search for the first block <code>b</code> whose cumulative number of digits is at least <code>k</code>. Then subtract the number of digits before that block to obtain the 1-indexed position inside the block.</p>",
+        "<p>For <code>b &gt; 0</code>, all 10 integers in the block have the same number of digits. Use the position inside the block to determine which integer and which digit it refers to. If <code>b</code> is odd, remember that the integers appear in decreasing order.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:19.889Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.005Z"
+}

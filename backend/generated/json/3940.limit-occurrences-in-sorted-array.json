@@ -1,0 +1,45 @@
+{
+    "quesId": 3940,
+    "title": "Limit Occurrences in Sorted Array",
+    "titleSlug": "limit-occurrences-in-sorted-array",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "52.1K",
+        "totalSubmission": "71.9K",
+        "totalAcceptedRaw": 52139,
+        "totalSubmissionRaw": 71913,
+        "acRate": "72.5%",
+        "acRateRaw": 72.50288543100692,
+        "likes": 43,
+        "dislikes": 0
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4312,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,1,1,2,2,3]\n2\n[1,2,3]\n1",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a <strong>sorted</strong> integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>Return an array such that each <strong>distinct</strong> element appears <strong>at most</strong> <code>k</code> times, while preserving the relative order of the elements in <code>nums</code>.</p>\n\n<p>Note: If a distinct element appears <strong>at least</strong> <code>k</code> times, then it must appear <strong>exactly</strong> <code>k</code> times in the resulting array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1,2,2,3], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,1,2,2,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Each element can appear at most 2 times.</p>\n\n<ul>\n\t<li>The element 1 appears 3 times, so only 2 occurrences are kept.</li>\n\t<li>The element 2 appears 2 times, so both occurrences are kept.</li>\n\t<li>The element 3 appears 1 time, so it is kept.</li>\n</ul>\n\n<p>Thus, the resulting array is <code>[1, 1, 2, 2, 3]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All elements are distinct and already appear at most once, so the array remains unchanged.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n\t<li><code>nums</code> is sorted in non-decreasing order.</li>\n\t<li><code>1 &lt;= k &lt;= nums.length</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow-up:</strong></p>\n\n<ul>\n\t<li>Can you solve this in-place using O(1) extra space?</li>\n\t<li>Note that the space used for returning or resizing the result does not count toward the space complexity mentioned above, as some languages do not support in-place resizing.</li>\n</ul>\n",
+    "hints": [
+        "Go through the array, maintaining a counter of the number of occurrences of the largest integer so far.",
+        "If the counter is currently more than <code>k</code>, ignore the current element."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:05:52.284Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.917Z"
+}

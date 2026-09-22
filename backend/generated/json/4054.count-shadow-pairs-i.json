@@ -1,0 +1,51 @@
+{
+    "quesId": 4054,
+    "title": "Count Shadow Pairs I",
+    "titleSlug": "count-shadow-pairs-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "13.3K",
+        "totalSubmission": "32.2K",
+        "totalAcceptedRaw": 13306,
+        "totalSubmissionRaw": 32170,
+        "acRate": "41.4%",
+        "acRateRaw": 41.36516225289071,
+        "likes": 46,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Monotonic Stack",
+            "slug": "monotonic-stack"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4328,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[3,1,4,1,5]\n[6,7,6,6,7]\n[1,2,3,4]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code>.</p>\n\n<p>A pair of indices <code>(i, j)</code> is called a <strong>shadow pair</strong> if all of the following conditions are satisfied:</p>\n\n<ul>\n\t<li><code>0 &lt;= i &lt; j &lt; n</code></li>\n\t<li><code>nums[i] &lt; nums[j]</code></li>\n\t<li>There <strong>does not exist</strong> an index <code>k</code> such that <code>i &lt; k &lt; j</code> and <code>nums[k] &lt; nums[i] &lt; nums[j]</code>.</li>\n</ul>\n\n<p>Return the total number of <strong>shadow pairs</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,1,4,1,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border-collapse: collapse; text-align: center; width: 70%;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"padding: 8px;\"><code>(i, j)</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[j]</code></th>\n\t\t\t<th style=\"padding: 8px;\">Shadow Pair</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>(1, 2)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>4</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>1 &lt; k &lt; 2</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(1, 4)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>5</td>\n\t\t\t<td><code>nums[2] = 4</code> and <code>nums[3] = 1</code> are not smaller than 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(3, 4)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>5</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>3 &lt; k &lt; 4</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, the answer is 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,7,6,6,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border-collapse: collapse; text-align: center; width: 70%;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"padding: 8px;\"><code>(i, j)</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[j]</code></th>\n\t\t\t<th style=\"padding: 8px;\">Shadow Pair</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>(0, 1)</td>\n\t\t\t<td>6</td>\n\t\t\t<td>7</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>0 &lt; k &lt; 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(0, 4)</td>\n\t\t\t<td>6</td>\n\t\t\t<td>7</td>\n\t\t\t<td><code>nums[1] = 7</code>, <code>nums[2] = 6</code>, and <code>nums[3] = 6</code> are not smaller than 6</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(2, 4)</td>\n\t\t\t<td>6</td>\n\t\t\t<td>7</td>\n\t\t\t<td><code>nums[3] = 6</code> is not smaller than 6</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(3, 4)</td>\n\t\t\t<td>6</td>\n\t\t\t<td>7</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>3 &lt; k &lt; 4</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, the answer is 4.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table style=\"border-collapse: collapse; text-align: center; width: 70%;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"padding: 8px;\"><code>(i, j)</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"padding: 8px;\"><code>nums[j]</code></th>\n\t\t\t<th style=\"padding: 8px;\">Shadow Pair</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>(0, 1)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>2</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>0 &lt; k &lt; 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(0, 2)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>3</td>\n\t\t\t<td><code>nums[1] = 2</code> is not smaller than 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(0, 3)</td>\n\t\t\t<td>1</td>\n\t\t\t<td>4</td>\n\t\t\t<td><code>nums[1] = 2</code> and <code>nums[2] = 3</code> are not smaller than 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(1, 2)</td>\n\t\t\t<td>2</td>\n\t\t\t<td>3</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>1 &lt; k &lt; 2</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(1, 3)</td>\n\t\t\t<td>2</td>\n\t\t\t<td>4</td>\n\t\t\t<td><code>nums[2] = 3</code> is not smaller than 2</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>(2, 3)</td>\n\t\t\t<td>3</td>\n\t\t\t<td>4</td>\n\t\t\t<td>No index <code>k</code> exists such that <code>2 &lt; k &lt; 3</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, the answer is 6.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p><strong>1a (Monotonic Stack).</strong> Process elements from left to right. When the current value is <code>x</code>, any earlier candidate with a value greater than <code>x</code> can never form a shadow pair with a later element. Remove these candidates using a non-decreasing stack.</p>",
+        "<p><strong>1b (Monotonic Stack).</strong> Among the remaining candidates, every value strictly smaller than <code>x</code> forms a shadow pair with the current index. Group equal values and maintain the total number of candidates so that each contribution can be calculated without scanning the stack.</p>",
+        "<p><strong>2a (Monotonic Stack + Fenwick Tree).</strong> For each index <code>i</code>, find the first index <code>r[i]</code> to its right with a strictly smaller value, or use <code>n</code> if none exists. Count indices <code>j</code> satisfying <code>i &lt; j &lt; r[i]</code> and <code>nums[j] &gt; nums[i]</code>.</p>",
+        "<p><strong>2b (Monotonic Stack + Fenwick Tree).</strong> Process elements in decreasing order of value, storing their indices in a Fenwick tree. Query the required index interval before inserting the current group of equal values.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:13.351Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.993Z"
+}

@@ -1,0 +1,37 @@
+{
+    "questionId": "4207",
+    "questionFrontendId": "3817",
+    "title": "Good Indices in a Digit String",
+    "titleSlug": "good-indices-in-a-digit-string",
+    "difficulty": "Medium",
+    "likes": 3,
+    "dislikes": 1,
+    "acRate": 85.79654510556622,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"894\", \"totalSubmission\": \"1K\", \"totalAcceptedRaw\": 894, \"totalSubmissionRaw\": 1042, \"acRate\": \"85.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "For an index <code>i</code>, any valid substring must end exactly at position <code>i</code>.",
+        "The substring you are looking for is determined by the decimal digits of <code>i</code>.",
+        "For each index <code>i</code>, compare the string form of <code>i</code> with the substring that ends at <code>i</code> and has the same length."
+    ],
+    "exampleTestcases": "\"0234567890112\"\n\"01234\"\n\"12345\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:46:24.280Z"
+}

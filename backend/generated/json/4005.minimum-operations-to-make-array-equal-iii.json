@@ -1,0 +1,60 @@
+{
+    "quesId": 4005,
+    "title": "Minimum Operations to Make Array Equal III",
+    "titleSlug": "minimum-operations-to-make-array-equal-iii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "220",
+        "totalSubmission": "840",
+        "totalAcceptedRaw": 220,
+        "totalSubmissionRaw": 840,
+        "acRate": "26.2%",
+        "acRateRaw": 26.190476190476193,
+        "likes": 0,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Number Theory",
+            "slug": "number-theory"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4193,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[6,12,8]\n[5,15,20]\n[7,7,7]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "<p>For a fixed target <code>x &gt; 1</code>, an element needs zero operations if it equals <code>x</code>, one operation if it divides <code>x</code> or is divisible by <code>x</code>, and two operations otherwise.</p>",
+        "<p>A common multiple of all elements can be reached using at most <code>nums.length</code> operations. Any target not present in <code>nums</code> costs at least one operation per element, so only distinct values already present in <code>nums</code> need to be considered. Handle the case where all elements are <code>1</code> separately.</p>",
+        "<p>Count the frequency of every distinct value. Precompute all primes up to <code>sqrt(10<sup>9</sup>)</code>, then factor each distinct value and generate all of its divisors.</p>",
+        "<p>For every distinct value <code>v</code>, add its frequency to <code>multipleCount[d]</code> for each divisor <code>d</code> of <code>v</code>. Thus, <code>multipleCount[x]</code> gives the number of elements divisible by a candidate target <code>x</code>. The number of elements dividing <code>x</code> can be found by summing the frequencies of the divisors of <code>x</code>.</p>",
+        "<p>If <code>equal</code> elements equal <code>x</code>, <code>divisible</code> other elements are divisible by <code>x</code>, and <code>divisors</code> other elements divide <code>x</code>, then the cost is <code>2 * nums.length - 2 * equal - divisible - divisors</code>. Minimize this over all distinct targets greater than <code>1</code>.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:03.332Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.992Z"
+}

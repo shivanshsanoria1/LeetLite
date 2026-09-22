@@ -1,0 +1,45 @@
+{
+    "quesId": 3978,
+    "title": "Unique Middle Element",
+    "titleSlug": "unique-middle-element",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "51.9K",
+        "totalSubmission": "71.7K",
+        "totalAcceptedRaw": 51949,
+        "totalSubmissionRaw": 71702,
+        "acRate": "72.5%",
+        "acRateRaw": 72.45164079606154,
+        "likes": 30,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4354,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,3]\n[1,2,2]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of odd length <code>n</code>.</p>\n\n<p>Return <code>true</code> if the middle element of <code>nums</code> appears <strong>exactly</strong> once in the array. Otherwise return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The middle element of <code>nums</code> is 2, which appears exactly once.</p>\n\n<p>Thus, the answer is <code>true</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The middle element of <code>nums</code> is 2, which appears twice.</p>\n\n<p>Thus, the answer is <code>false</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 100</code></li>\n\t<li><code>n</code> is odd.</li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "The middle index is <code>nums.length / 2</code>.",
+        "Count how many times <code>nums[nums.length / 2]</code> appears in <code>nums</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:32.359Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.971Z"
+}

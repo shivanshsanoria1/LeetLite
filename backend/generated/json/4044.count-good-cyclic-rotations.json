@@ -1,0 +1,49 @@
+{
+    "quesId": 4044,
+    "title": "Count Good Cyclic Rotations",
+    "titleSlug": "count-good-cyclic-rotations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "37.3K",
+        "totalSubmission": "76.1K",
+        "totalAcceptedRaw": 37273,
+        "totalSubmissionRaw": 76070,
+        "acRate": "49.0%",
+        "acRateRaw": 48.997699638514625,
+        "likes": 38,
+        "dislikes": 6
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4412,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,3,4,5,6]\n[1,2,1,2]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of even length <code>n</code>.</p>\n\n<p>A <strong>cyclic rotation</strong> of <code>nums</code> is obtained by choosing a <span data-keyword=\"array-prefix\">prefix</span> of <code>nums</code> whose length is between 0 and <code>n - 1</code> (inclusive), and moving it to the end of the array while preserving the order of all elements.</p>\n\n<p>A cyclic rotation is <strong>good</strong> if the sum of its first <code>n / 2</code> elements is <strong>strictly greater</strong> than the sum of its last <code>n / 2</code> elements.</p>\n\n<p>Return the number of cyclic rotations of <code>nums</code> that are good.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4,5,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The cyclic rotations of <code>nums</code> are:</p>\n\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Cyclic rotation</th>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Sum of first <code>n / 2</code> elements</th>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Sum of last <code>n / 2</code> elements</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[1, 2, 3, 4, 5, 6]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 + 3 = 6</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>4 + 5 + 6 = 15</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[2, 3, 4, 5, 6, 1]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 3 + 4 = 9</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>5 + 6 + 1 = 12</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[3, 4, 5, 6, 1, 2]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>3 + 4 + 5 = 12</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>6 + 1 + 2 = 9</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[4, 5, 6, 1, 2, 3]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>4 + 5 + 6 = 15</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 + 3 = 6</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[5, 6, 1, 2, 3, 4]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>5 + 6 + 1 = 12</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 3 + 4 = 9</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[6, 1, 2, 3, 4, 5]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>6 + 1 + 2 = 9</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>3 + 4 + 5 = 12</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The first half has a greater sum than the second half for 3 rotations. Thus, the answer is 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The cyclic rotations of <code>nums</code> are:</p>\n\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Cyclic rotation</th>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Sum of first <code>n / 2</code> elements</th>\n\t\t\t<th style=\"text-align: center; padding: 6px 12px;\">Sum of last <code>n / 2</code> elements</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[1, 2, 1, 2]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 = 3</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 = 3</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[2, 1, 2, 1]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 1 = 3</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 1 = 3</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[1, 2, 1, 2]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 = 3</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>1 + 2 = 3</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>[2, 1, 2, 1]</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 1 = 3</code></td>\n\t\t\t<td style=\"text-align: center; padding: 6px 12px;\"><code>2 + 1 = 3</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>No cyclic rotation is good because the two sums are equal for every rotation. Thus, the answer is 0.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>n</code> is even.</li>\n</ul>\n",
+    "hints": [
+        "Let <code>total</code> be the sum of all elements and <code>first</code> be the sum of the first half of a rotation. The rotation is good exactly when <code>first &gt; total - first</code>.",
+        "Maintain <code>first</code> using a circular sliding window of length <code>n / 2</code>. Moving to the next rotation removes one element from the window and adds one element."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:02.792Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.985Z"
+}

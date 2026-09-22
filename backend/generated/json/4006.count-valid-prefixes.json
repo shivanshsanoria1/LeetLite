@@ -1,0 +1,45 @@
+{
+    "quesId": 4006,
+    "title": "Count Valid Prefixes",
+    "titleSlug": "count-valid-prefixes",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "45.5K",
+        "totalSubmission": "58.1K",
+        "totalAcceptedRaw": 45529,
+        "totalSubmissionRaw": 58085,
+        "acRate": "78.4%",
+        "acRateRaw": 78.3837757807389,
+        "likes": 42,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4365,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"00101\"\n\"101\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a <span data-keyword=\"binary-string\">binary string</span> <code>s</code>.</p>\n\n<p>A <span data-keyword=\"string-prefix\">prefix</span> of <code>s</code> is considered <strong>valid</strong> if its characters can be rearranged to form an <strong>alternating</strong> string.</p>\n\n<p>Return the number of valid prefixes of <code>s</code>.</p>\n\n<p>A string is considered <strong>alternating</strong> if no two adjacent characters are equal.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;00101&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The valid prefixes are:</p>\n\n<ul>\n\t<li><code>&quot;0&quot;</code>: It is already an alternating string.</li>\n\t<li><code>&quot;001&quot;</code>: It can be rearranged into <code>&quot;010&quot;</code>, which is an alternating string.</li>\n\t<li><code>&quot;00101&quot;</code>: It can be rearranged into <code>&quot;01010&quot;</code>, which is an alternating string.</li>\n</ul>\n\n<p>Thus, the answer is 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;101&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All prefixes of <code>s = &quot;101&quot;</code> are already alternating strings. Thus, the answer is 3.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists only of <code>&#39;0&#39;</code> and <code>&#39;1&#39;</code>.</li>\n</ul>\n",
+    "hints": [
+        "<p>A binary string can be rearranged into an alternating string if the numbers of <code>'0'</code> and <code>'1'</code> differ by at most one.</p>",
+        "<p>Scan <code>s</code> from left to right, maintain the counts of both characters in the current prefix, and count the prefixes satisfying this condition.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:04.036Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.993Z"
+}

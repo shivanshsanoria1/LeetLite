@@ -1,0 +1,46 @@
+{
+    "quesId": 3892,
+    "title": "Minimum Operations to Achieve At Least K Peaks",
+    "titleSlug": "minimum-operations-to-achieve-at-least-k-peaks",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.7K",
+        "totalSubmission": "25.1K",
+        "totalAcceptedRaw": 7737,
+        "totalSubmissionRaw": 25063,
+        "acRate": "30.9%",
+        "acRateRaw": 30.87020707816303,
+        "likes": 47,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4263,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2,1,2]\n1\n[4,5,3,6]\n2\n[3,7,3]\n2",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a ​​​​​​​circular integer array​​​​​​​ <code>nums</code> of length <code>n</code>.</p>\n\n<p>An index <code>i</code> is a <strong>peak</strong> if its value is <strong>strictly greater</strong> than its neighbors:</p>\n\n<ul>\n\t<li>The <strong>previous</strong> neighbor of <code>i</code> is <code>nums[i - 1]</code> if <code>i &gt; 0</code>, otherwise <code>nums[n - 1]</code>.</li>\n\t<li>The <strong>next</strong> neighbor of <code>i</code> is <code>nums[i + 1]</code> if <code>i &lt; n - 1</code>, otherwise <code>nums[0]</code>.</li>\n</ul>\n\n<p>You are allowed to perform the following operation <strong>any</strong> number of times:</p>\n\n<ul>\n\t<li>Choose any index <code>i</code> and <strong>increase</strong> <code>nums[i]</code> by 1.</li>\n</ul>\n\n<p>Return an integer denoting the <strong>minimum</strong> number of operations required to make the array contain <strong>at least</strong> <code>k</code> peaks. If it is impossible, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,1,2], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>To achieve at least <code>k = 1</code> peak, we can increase <code>nums[2] = 2</code> to 3.</li>\n\t<li>After this operation, <code>nums[2] = 3</code> is strictly greater than its neighbors <code>nums[0] = 2</code> and <code>nums[1] = 1</code>.</li>\n\t<li>Therefore, the minimum number of operations required is 1.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,5,3,6], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The array already contains at least <code>k = 2</code> peaks with zero operations.</li>\n\t<li>Index 1: <code>nums[1] = 5</code> is strictly greater than its neighbors <code>nums[0] = 4</code> and <code>nums[2] = 3</code>.</li>\n\t<li>Index 3: <code>nums[3] = 6</code> is strictly greater than its neighbors <code>nums[2] = 3</code> and <code>nums[0] = 4</code>.</li>\n\t<li>Therefore, the minimum number of operations required is 0.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,7,3], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>It is impossible to have at least <code>k = 2</code> peaks in this array. Therefore, the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == nums.length &lt;= 5000</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= n</code>​​​​​​​</li>\n</ul>\n",
+    "hints": [
+        "Use dynamic programming.",
+        "There are a few cases to handle: when the first element is a peak, when the last element is a peak, and when neither the first nor the last element is a peak.",
+        "After fixing the case, solve with dynamic programming states <code>dp[i][j]</code>, where <code>dp[i][j]</code> is the minimum number of operations needed to make <code>j</code> peaks from the first <code>i</code> values in <code>nums</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:59:57.942Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.831Z"
+}

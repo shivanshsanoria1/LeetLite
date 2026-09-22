@@ -1,0 +1,57 @@
+{
+    "quesId": 4004,
+    "title": "Minimum Moves to Balance Circular Array II",
+    "titleSlug": "minimum-moves-to-balance-circular-array-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "159",
+        "totalSubmission": "259",
+        "totalAcceptedRaw": 159,
+        "totalSubmissionRaw": 259,
+        "acRate": "61.4%",
+        "acRateRaw": 61.38996138996139,
+        "likes": 1,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3776
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Minimum-Cost Flow",
+            "slug": "minimum-cost-flow"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4016,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[-1,2,-1]\n[4,-1,-2]\n[-3,-3,5]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "<p>If the sum of all balances is negative, it is impossible to make every balance non-negative.</p>",
+        "<p>View every positive balance as a supply and every negative balance as a demand. Moving one unit across one edge of the circular array costs one move.</p>",
+        "<p>Build a minimum-cost flow network: connect a source to surplus positions, deficit positions to a sink, and every pair of neighboring positions in both directions with cost 1.</p>",
+        "<p>Send enough flow to cover all deficits. The minimum flow cost is the required minimum number of moves.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:02.291Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.992Z"
+}

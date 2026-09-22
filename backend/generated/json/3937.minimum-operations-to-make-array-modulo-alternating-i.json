@@ -1,0 +1,47 @@
+{
+    "quesId": 3937,
+    "title": "Minimum Operations to Make Array Modulo Alternating I",
+    "titleSlug": "minimum-operations-to-make-array-modulo-alternating-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "21.3K",
+        "totalSubmission": "46.3K",
+        "totalAcceptedRaw": 21329,
+        "totalSubmissionRaw": 46301,
+        "acRate": "46.1%",
+        "acRateRaw": 46.06595969849464,
+        "likes": 52,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        3944
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4300,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,4,2,8]\n3\n[1,1,1]\n3",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>In one operation, you can <strong>increase</strong> or <strong>decrease</strong> any element of <code>nums</code> by 1.</p>\n\n<p>An array is called <strong>modulo alternating</strong> if there exist two <strong>distinct</strong> integers <code>x</code> and <code>y</code> (<code>0 &lt;= x, y &lt; k</code>) such that:</p>\n\n<ul>\n\t<li>For every <strong>even</strong> index <code>i</code>, <code>nums[i] % k == x</code></li>\n\t<li>For every <strong>odd</strong> index <code>i</code>, <code>nums[i] % k == y</code></li>\n</ul>\n\n<p>Return the <strong>minimum</strong> number of operations required to make <code>nums</code> <strong>modulo alternating</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,4,2,8], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Let&#39;s choose <code>x = 1</code> for even indices and <code>y = 2</code> for odd indices.</li>\n\t<li>Perform the following operations:\n\t<ul>\n\t\t<li>Increment <code>nums[1] = 4</code> by 1, giving <code>nums = [1, 5, 2, 8]</code>.</li>\n\t\t<li>Decrement <code>nums[2] = 2</code> by 1, giving <code>nums = [1, 5, 1, 8]</code>.</li>\n\t</ul>\n\t</li>\n\t<li>Now, for even indices, <code>nums[i] % k = 1</code>, and for odd indices, <code>nums[i] % k = 2</code>.</li>\n\t<li>Thus, the total number of operations required is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Incrementing <code>nums[1]</code> by 1 gives <code>nums = [1, 2, 1]</code>, which satisfies the condition with <code>x = 1</code> and <code>y = 2</code>.</li>\n\t<li>Thus, the total number of operations required is 1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>2 &lt;= k &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "Bruteforce for all combinations of <code>x</code> and <code>y</code>, making sure they are distinct.",
+        "For each element, we either increase it until the condition is satisfied, or decrease. \r\nCheck both options and pick the one that uses a smaller number of operations."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:05:49.227Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.912Z"
+}

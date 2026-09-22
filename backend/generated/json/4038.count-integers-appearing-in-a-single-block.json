@@ -1,0 +1,48 @@
+{
+    "quesId": 4038,
+    "title": "Count Integers Appearing in a Single Block",
+    "titleSlug": "count-integers-appearing-in-a-single-block",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "46.2K",
+        "totalSubmission": "103.9K",
+        "totalAcceptedRaw": 46211,
+        "totalSubmissionRaw": 103916,
+        "acRate": "44.5%",
+        "acRateRaw": 44.47117466488323,
+        "likes": 45,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4410,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,2,1]\n[3,3,1,2,2,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>An integer <code>x</code> is <strong>special</strong> if all occurrences of <code>x</code> in <code>nums</code> appear in a single <strong>contiguous</strong> block.</p>\n\n<p>Return the number of <strong>distinct</strong> special integers in <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>1 appears at indices 0 and 3, forming two separate blocks, so it is not special.</li>\n\t<li>2 appears in a single contiguous block at indices <code>[1, 2]</code>, so it is special.</li>\n</ul>\n\n<p>Therefore, there is one special integer.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,3,1,2,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>3 appears in a single contiguous block at indices <code>[0, 1]</code>, so it is special.</li>\n\t<li>1 appears at indices 2 and 5, forming two separate blocks, so it is not special.</li>\n\t<li>2 appears in a single contiguous block at indices <code>[3, 4]</code>, so it is special.</li>\n</ul>\n\n<p>Therefore, there are two special integers.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [
+        "For each distinct value <code>x</code>, let <code>l</code> and <code>r</code> be its first and last positions. All occurrences of <code>x</code> form one contiguous block exactly when <code>r - l + 1</code> equals the frequency of <code>x</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:08:57.700Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.979Z"
+}

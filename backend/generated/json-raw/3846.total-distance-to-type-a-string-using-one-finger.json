@@ -1,0 +1,38 @@
+{
+    "questionId": "4170",
+    "questionFrontendId": "3846",
+    "title": "Total Distance to Type a String Using One Finger",
+    "titleSlug": "total-distance-to-type-a-string-using-one-finger",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 2,
+    "acRate": 90.14336917562724,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1K\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 1006, \"totalSubmissionRaw\": 1116, \"acRate\": \"90.1%\"}",
+    "similarQuestions": "[{\"title\": \"Single-Row Keyboard\", \"titleSlug\": \"single-row-keyboard\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Map each character to its <code>(row, col)</code> position on the keyboard grid.",
+        "Start from the position of <code>'a'</code> and process the string from left to right.",
+        "For each move, add the Manhattan distance <code>abs(r1 - r2) + abs(c1 - c2)</code> between consecutive keys.",
+        "Accumulate the total distance and return the sum."
+    ],
+    "exampleTestcases": "\"hello\"\n\"a\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:08.998Z"
+}

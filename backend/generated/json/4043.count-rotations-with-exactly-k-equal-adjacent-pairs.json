@@ -1,0 +1,50 @@
+{
+    "quesId": 4043,
+    "title": "Count Rotations With Exactly K Equal Adjacent Pairs",
+    "titleSlug": "count-rotations-with-exactly-k-equal-adjacent-pairs",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "44.9K",
+        "totalSubmission": "62.2K",
+        "totalAcceptedRaw": 44852,
+        "totalSubmissionRaw": 62211,
+        "acRate": "72.1%",
+        "acRateRaw": 72.09676123121433,
+        "likes": 31,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4411,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"aab\"\n1\n\"abca\"\n0",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a string <code>s</code> of length <code>n</code> and an integer <code>k</code>.</p>\n\n<p>A <strong>cyclic rotation</strong> of <code>s</code> is obtained by choosing a <span data-keyword=\"string-prefix\">prefix</span> of <code>s</code> whose length is between 0 and <code>n - 1</code> (inclusive), and moving it to the end of the string while preserving the order of all characters.</p>\n\n<p>For <strong>every</strong> cyclic rotation of <code>s</code>, let its <strong>score</strong> be the number of indices <code>i</code> such that <code>0 &lt;= i &lt; n - 1</code> and the characters at positions <code>i</code> and <code>i + 1</code> are equal.</p>\n\n<p>Return the number of cyclic rotations of <code>s</code> whose score equals <code>k</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aab&quot;, k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The cyclic rotations of <code>s</code> are:</p>\n\n<ul>\n\t<li><code>&quot;aab&quot;</code>: The characters at positions 0 and 1 are equal, so <code>score = 1</code>.</li>\n\t<li><code>&quot;aba&quot;</code>: No two adjacent characters are equal, so <code>score = 0</code>.</li>\n\t<li><code>&quot;baa&quot;</code>: The characters at positions 1 and 2 are equal, so <code>score = 1</code>.</li>\n</ul>\n\n<p>Since <code>score</code> equals <code>k</code> for 2 cyclic rotations of <code>s</code>, the answer is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abca&quot;, k = 0</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The cyclic rotations of <code>s</code> are:</p>\n\n<ul>\n\t<li><code>&quot;abca&quot;</code>: No two adjacent characters are equal, so <code>score = 0</code>.</li>\n\t<li><code>&quot;bcaa&quot;</code>: The characters at positions 2 and 3 are equal, so <code>score = 1</code>.</li>\n\t<li><code>&quot;caab&quot;</code>: The characters at positions 1 and 2 are equal, so <code>score = 1</code>.</li>\n\t<li><code>&quot;aabc&quot;</code>: The characters at positions 0 and 1 are equal, so <code>score = 1</code>.</li>\n</ul>\n\n<p>Since <code>score</code> equals <code>k</code> for only 1 cyclic rotation of <code>s</code>, the answer is 1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n == s.length &lt;= 100</code></li>\n\t<li><code>s</code> only consists of lowercase English letters.</li>\n\t<li><code>0 &lt;= k &lt;= n - 1</code></li>\n</ul>\n",
+    "hints": [
+        "<strong>1a (Simulation).</strong> Construct the rotation for each possible prefix length and count its equal adjacent pairs.",
+        "<strong>2a (Counting).</strong> Let <code>total</code> be the number of equal adjacent pairs when the string is treated as circular, including the pair formed by its last and first characters.",
+        "<strong>2b (Counting).</strong> Each rotation excludes exactly one circular adjacent pair. Its score is <code>total - 1</code> if the excluded pair has equal characters, and <code>total</code> otherwise."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:01.986Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.985Z"
+}

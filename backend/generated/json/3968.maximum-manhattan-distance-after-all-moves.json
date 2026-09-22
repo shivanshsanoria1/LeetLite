@@ -1,0 +1,52 @@
+{
+    "quesId": 3968,
+    "title": "Maximum Manhattan Distance After All Moves",
+    "titleSlug": "maximum-manhattan-distance-after-all-moves",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "47.6K",
+        "totalSubmission": "75.3K",
+        "totalAcceptedRaw": 47599,
+        "totalSubmissionRaw": 75261,
+        "acRate": "63.2%",
+        "acRateRaw": 63.2452398984866,
+        "likes": 48,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        3443
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4340,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"L_D_\"\n\"U_R\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a string <code>moves</code> consisting of the characters <code>&#39;U&#39;</code>, <code>&#39;D&#39;</code>, <code>&#39;L&#39;</code>, <code>&#39;R&#39;</code>, and <code>&#39;_&#39;</code>.</p>\n\n<p>Starting from the origin <code>(0, 0)</code>, each character represents one move on a 2D plane:</p>\n\n<ul>\n\t<li><code>&#39;U&#39;</code>: Move up by 1 unit.</li>\n\t<li><code>&#39;D&#39;</code>: Move down by 1 unit.</li>\n\t<li><code>&#39;L&#39;</code>: Move left by 1 unit.</li>\n\t<li><code>&#39;R&#39;</code>: Move right by 1 unit.</li>\n\t<li><code>&#39;_&#39;</code>: Can be independently replaced with any one of <code>&#39;U&#39;</code>, <code>&#39;D&#39;</code>, <code>&#39;L&#39;</code>, or <code>&#39;R&#39;</code>.</li>\n</ul>\n\n<p>Return the maximum <span data-keyword=\"manhattan-distance\"><strong>Manhattan distance</strong></span> from the origin that can be achieved after all moves have been performed.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moves = &quot;L_D_&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal choice is:</p>\n\n<ul>\n\t<li><code>&#39;L&#39;</code>: <code>(0, 0) -&gt; (-1, 0)</code></li>\n\t<li><code>&#39;_&#39;</code> treated as <code>&#39;D&#39;</code>: <code>(-1, 0) -&gt; (-1, -1)</code></li>\n\t<li><code>&#39;D&#39;</code>: <code>(-1, -1) -&gt; (-1, -2)</code></li>\n\t<li><code>&#39;_&#39;</code> treated as <code>&#39;L&#39;</code>: <code>(-1, -2) -&gt; (-2, -2)</code></li>\n</ul>\n\n<p>The final Manhattan distance from the origin is <code>|0 - (-2)| + |0 - (-2)| = 4</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">moves = &quot;U_R&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal choice is:</p>\n\n<ul>\n\t<li><code>&#39;U&#39;</code>: <code>(0, 0) -&gt; (0, 1)</code></li>\n\t<li><code>&#39;_&#39;</code> treated as <code>&#39;U&#39;</code>: <code>(0, 1) -&gt; (0, 2)</code></li>\n\t<li><code>&#39;R&#39;</code>: <code>(0, 2) -&gt; (1, 2)</code></li>\n</ul>\n\n<p>The final Manhattan distance from the origin is <code>|0 - 1| + |0 - 2| = 3</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= moves.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>moves</code> consists of only <code>&#39;U&#39;</code>, <code>&#39;D&#39;</code>, <code>&#39;L&#39;</code>, <code>&#39;R&#39;</code>, and <code>&#39;_&#39;</code>.</li>\n</ul>\n",
+    "hints": [
+        "Count the net horizontal movement, net vertical movement, and the number of underscores.",
+        "Without underscores, the final distance is <code>abs(x) + abs(y)</code>.",
+        "Each underscore can always be chosen to increase the final Manhattan distance by 1, so add the number of underscores to the fixed-move distance."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:21.527Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.963Z"
+}

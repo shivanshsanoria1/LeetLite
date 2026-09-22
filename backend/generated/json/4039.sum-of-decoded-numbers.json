@@ -1,0 +1,49 @@
+{
+    "quesId": 4039,
+    "title": "Sum of Decoded Numbers",
+    "titleSlug": "sum-of-decoded-numbers",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "31.7K",
+        "totalSubmission": "70.9K",
+        "totalAcceptedRaw": 31729,
+        "totalSubmissionRaw": 70927,
+        "acRate": "44.7%",
+        "acRateRaw": 44.733614357615146,
+        "likes": 34,
+        "dislikes": 5
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4401,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[231]\n[2522,2101]\n[2301]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>Each <code>nums[i]</code> is an <strong>encoded</strong> integer representing two positive integers <code>x<sub>i</sub></code> and <code>y<sub>i</sub></code>. To decode <code>nums[i]</code>, define:</p>\n\n<ul>\n\t<li><code>width<sub>i</sub> = nums[i] % 10</code>.</li>\n\t<li><code>d<sub>i</sub> = floor(nums[i] / 10)</code>.</li>\n\t<li><code>x<sub>i</sub></code> as the integer formed by the first <code>width<sub>i</sub></code> digits of the decimal representation of <code>d<sub>i</sub></code>.</li>\n\t<li><code>y<sub>i</sub></code> as the integer formed by all remaining digits of the decimal representation of <code>d<sub>i</sub></code>.</li>\n</ul>\n\n<p>It is guaranteed that the decimal representation of <code>d<sub>i</sub></code> contains more than <code>width<sub>i</sub></code> digits. Therefore, both <code>x<sub>i</sub></code> and <code>y<sub>i</sub></code> contain at least one digit.</p>\n\n<p>The <strong>decoded value</strong> of <code>nums[i]</code> is <code>x<sub>i</sub><sup>y<sub>i</sub></sup></code>.</p>\n\n<p>Return the sum of the decoded values of all elements in <code>nums</code>, modulo <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>The <code>floor()</code> function returns the integer part of the division.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [231]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">8</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For 231, we have <code>width = 1</code>, <code>d = 23</code>, <code>x = 2</code>, and <code>y = 3</code>.</li>\n\t<li>The decoded value of 231 is <code>2<sup>3</sup> = 8</code>.</li>\n\t<li>Since there is only one element in <code>nums</code>, the sum of the decoded values is 8.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2522,2101]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1649</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For 2522, we have <code>width = 2</code>, <code>d = 252</code>, <code>x = 25</code>, and <code>y = 2</code>.</li>\n\t<li>The decoded value of 2522 is <code>25<sup>2</sup> = 625</code>.</li>\n\t<li>For 2101, we have <code>width = 1</code>, <code>d = 210</code>, <code>x = 2</code>, and <code>y = 10</code>.</li>\n\t<li>The decoded value of 2101 is <code>2<sup>10</sup> = 1024</code>.</li>\n\t<li>The sum of the decoded values is <code>625 + 1024 = 1649</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2301]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">73741817</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>For 2301, we have <code>width = 1</code>, <code>d = 230</code>, <code>x = 2</code>, and <code>y = 30</code>.</li>\n\t<li>The decoded value is <code>2<sup>30</sup> = 1073741824</code>.</li>\n\t<li>Therefore, the answer is <code>1073741824 modulo (10<sup>9</sup> + 7) = 73741817</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>100 &lt; nums[i] &lt; 10<sup>15</sup></code></li>\n\t<li><code>1 &lt;= width<sub>i</sub> &lt;= 9</code></li>\n\t<li><code>1 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt; 10<sup>9</sup></code></li>\n\t<li>The digit sequences used to form <code>x<sub>i</sub></code> and <code>y<sub>i</sub></code> do not have leading zeros.</li>\n\t<li>It is guaranteed that every element in <code>nums</code> is a valid encoded integer.</li>\n</ul>\n",
+    "hints": [
+        "After removing the final digit <code>width<sub>i</sub></code>, determine the power of 10 that separates the first <code>width<sub>i</sub></code> decimal digits of <code>d<sub>i</sub></code> from the remaining digits.",
+        "Once <code>x<sub>i</sub></code> and <code>y<sub>i</sub></code> are decoded, use binary exponentiation to compute <code>x<sub>i</sub><sup>y<sub>i</sub></sup></code> modulo <code>10<sup>9</sup> + 7</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:08:58.421Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.980Z"
+}

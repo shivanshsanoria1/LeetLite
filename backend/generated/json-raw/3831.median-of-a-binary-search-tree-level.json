@@ -1,0 +1,48 @@
+{
+    "questionId": "4210",
+    "questionFrontendId": "3831",
+    "title": "Median of a Binary Search Tree Level",
+    "titleSlug": "median-of-a-binary-search-tree-level",
+    "difficulty": "Medium",
+    "likes": 5,
+    "dislikes": 1,
+    "acRate": 86.25817965496728,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"1.7K\", \"totalAcceptedRaw\": 1450, \"totalSubmissionRaw\": 1681, \"acRate\": \"86.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use DFS or BFS to gather the node values at <code>level</code>.",
+        "Sort the values at that level; if the list is empty, return -1, otherwise return the upper median."
+    ],
+    "exampleTestcases": "[4,null,5,null,7]\n2\n[6,3,8]\n1\n[2,1]\n2",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:46:41.363Z"
+}

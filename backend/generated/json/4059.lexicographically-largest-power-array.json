@@ -1,0 +1,37 @@
+{
+    "quesId": 4059,
+    "title": "Lexicographically Largest Power Array",
+    "titleSlug": "lexicographically-largest-power-array",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "3.2K",
+        "totalSubmission": "14K",
+        "totalAcceptedRaw": 3205,
+        "totalSubmissionRaw": 13999,
+        "acRate": "22.9%",
+        "acRateRaw": 22.900000000000002,
+        "likes": 12,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4028,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[7,5]\r\n[3,1,7]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code>. You may rearrange its elements to form any <span data-keyword=\"permutation-array\">permutation</span> <code>perm</code>.</p>\n\n<p>Define an array <code>power</code> of length 15. For each <code>0 &lt;= i &lt; 15</code>, <code>power[i]</code> is the largest integer <code>j</code>, where <code>0 &lt;= j &lt;= n</code>, such that the first <code>j</code> elements of <code>perm</code> all have the <code>(14 - i)<sup>th</sup></code> bit <span data-keyword=\"set-bit\">set</span>.</p>\n\n<p>Bit positions are indexed from right to left, starting with the <code>0<sup>th</sup></code> bit.</p>\n\n<p>Return the <span data-keyword=\"lexicographically-larger-array\">lexicographically largest</span> possible <code>power</code> array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [7,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[0,0,0,0,0,0,0,0,0,0,0,0,2,1,2]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choose <code>perm = [7, 5]</code>.</p>\n\n<ul>\n\t<li>Both elements have bit 2 set, so <code>power[12] = 2</code>.</li>\n\t<li>The first element has bit 1 set, but the second does not, so <code>power[13] = 1</code>.</li>\n\t<li>Both elements have bit 0 set, so <code>power[14] = 2</code>.</li>\n</ul>\n\n<p>All higher bits are unset in the first element, so the remaining entries are 0.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,1,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[0,0,0,0,0,0,0,0,0,0,0,0,1,2,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choose <code>perm = [7, 3, 1]</code>.</p>\n\n<ul>\n\t<li>The first element has bit 2 set, but the second does not, so <code>power[12] = 1</code>.</li>\n\t<li>The first two elements have bit 1 set, but the third does not, so <code>power[13] = 2</code>.</li>\n\t<li>All three elements have bit 0 set, so <code>power[14] = 3</code>.</li>\n</ul>\n\n<p>All higher bits are unset in the first element, so the remaining entries are 0.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt; 2<sup>15</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>Process bits from 14 down to 0, maximizing each entry without changing previously maximized entries. Maintain ordered groups of elements that can still be rearranged freely within each group. Initially, all elements belong to one group.</p>",
+        "<p>For the current bit, scan the groups from the beginning. Pass over groups whose elements all have this bit set. At the first group containing an element without this bit set, split it into elements with the bit set followed by elements without it. Stop there and leave all later groups unchanged.</p>",
+        "<p>The current entry of <code>power</code> equals the total size of the fully passed groups plus the number of elements with the bit set in the split group. Preserve the resulting group order for subsequent bits. This takes <code>O(15n)</code> time.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:18.005Z",
+    "PARSED_ISO": "2026-09-22T19:09:24.000Z"
+}

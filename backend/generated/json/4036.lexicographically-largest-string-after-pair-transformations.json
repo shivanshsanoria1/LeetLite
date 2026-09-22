@@ -1,0 +1,52 @@
+{
+    "quesId": 4036,
+    "title": "Lexicographically Largest String After Pair Transformations",
+    "titleSlug": "lexicographically-largest-string-after-pair-transformations",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "16.8K",
+        "totalSubmission": "39.6K",
+        "totalAcceptedRaw": 16845,
+        "totalSubmissionRaw": 39618,
+        "acRate": "42.5%",
+        "acRateRaw": 42.52000302884979,
+        "likes": 36,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4366,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2,5,7]\n[3,9,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>For each integer <code>x</code> in <code>nums</code>, start with a string consisting of exactly <code>x</code> lowercase <code>&#39;a&#39;</code> characters.</p>\n\n<p>You may perform the following operation any number of times (including zero):</p>\n\n<ul>\n\t<li>Choose two <strong>adjacent equal</strong> letters and replace them with the next letter in the alphabet.</li>\n</ul>\n\n<p>For example, <code>&quot;aa&quot;</code> can be replaced with <code>&quot;b&quot;</code>, and <code>&quot;bb&quot;</code> can be replaced with <code>&quot;c&quot;</code>. The pair <code>&quot;zz&quot;</code> cannot be replaced.</p>\n\n<p>For each <code>x</code>, determine the <strong>lexicographically largest</strong> string that can be obtained.</p>\n\n<p>Return an array of strings where the <code>i<sup>th</sup></code> string is the answer for <code>nums[i]</code>.</p>\n\n<p>A string <code>a</code> is <strong>lexicographically larger</strong> than a string <code>b</code> if, at the first position where they differ, <code>a</code> contains a letter that appears later in the alphabet than the corresponding letter in <code>b</code>. If the first <code>min(a.length, b.length)</code> characters are equal, the longer string is lexicographically larger.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,5,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;b&quot;,&quot;ca&quot;,&quot;cba&quot;]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>nums[0] = 2</code>: <code>&quot;aa&quot;</code> &rarr; <code>&quot;b&quot;</code>.</li>\n\t<li><code>nums[1] = 5</code>: <code>&quot;aaaaa&quot;</code> &rarr; <code>&quot;baaa&quot;</code> &rarr; <code>&quot;bba&quot;</code> &rarr; <code>&quot;ca&quot;</code>.</li>\n\t<li><code>nums[2] = 7</code>: <code>&quot;aaaaaaa&quot;</code> &rarr; <code>&quot;baaaaa&quot;</code> &rarr; <code>&quot;bbaaa&quot;</code> &rarr; <code>&quot;bbba&quot;</code> &rarr; <code>&quot;cba&quot;</code>.</li>\n\t<li>Therefore, <code>ans = [&quot;b&quot;, &quot;ca&quot;, &quot;cba&quot;]</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,9,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;ba&quot;,&quot;da&quot;,&quot;a&quot;]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><code>nums[0] = 3</code>: <code>&quot;aaa&quot;</code> &rarr; <code>&quot;ba&quot;</code>.</li>\n\t<li><code>nums[1] = 9</code>: <code>&quot;aaaaaaaaa&quot;</code> &rarr; <code>&quot;baaaaaaa&quot;</code> &rarr; <code>&quot;bbaaaaa&quot;</code> &rarr; <code>&quot;bbbaaa&quot;</code> &rarr; <code>&quot;bbbba&quot;</code> &rarr; <code>&quot;cbba&quot;</code> &rarr; <code>&quot;cca&quot;</code> &rarr; <code>&quot;da&quot;</code>.</li>\n\t<li><code>nums[2] = 1</code>: No transformation can be applied, so the result is <code>&quot;a&quot;</code>.</li>\n\t<li>Therefore, <code>ans = [&quot;ba&quot;, &quot;da&quot;, &quot;a&quot;]</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+    "hints": [
+        "A letter that is <code>k</code> positions after <code>'a'</code> represents a block of <code>2<sup>k</sup></code> original <code>'a'</code> characters. To maximize the string lexicographically, greedily place the largest possible letter first. Remember that multiple <code>'z'</code> characters may be needed because <code>\"zz\"</code> cannot be merged further."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:08:55.378Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.966Z"
+}

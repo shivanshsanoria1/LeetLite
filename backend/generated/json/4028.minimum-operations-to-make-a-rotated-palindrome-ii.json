@@ -1,0 +1,49 @@
+{
+    "quesId": 4028,
+    "title": "Minimum Operations to Make a Rotated Palindrome II",
+    "titleSlug": "minimum-operations-to-make-a-rotated-palindrome-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "161",
+        "totalSubmission": "236",
+        "totalAcceptedRaw": 161,
+        "totalSubmissionRaw": 236,
+        "acRate": "68.2%",
+        "acRateRaw": 68.22033898305084,
+        "likes": 1,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        4021
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4359,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"abc\"\n\"yb\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "<p>As in Part 1, for a rotation by <code>r</code> positions the answer candidate is <code>r</code> plus the sum of the cyclic letter distances over all mirrored pairs. The challenge is computing this sum for every rotation efficiently.</p>",
+        "<p>The cyclic distance between two lowercase letters can be represented using 13 binary features. For each <code>k</code> from 0 to 12, mark a letter if it belongs to the 13 consecutive cyclic letters starting at <code>k</code>. The cyclic distance between two letters equals the number of these features on which they differ.</p>",
+        "<p>For one such feature, create a binary array <code>a</code> over the positions of <code>s</code>. If <code>cnt</code> is the number of ones, then for a reflection represented by <code>c</code>, the number of mirrored pairs with different feature values is <code>cnt - conv[c]</code>, where <code>conv[c] = sum(a[i] * a[(c - i) mod n])</code>.</p>",
+        "<p>Compute these circular self-convolutions for all 13 features using FFT or NTT. For a left rotation by <code>r</code>, use <code>c = (2 * r - 1) mod n</code>, sum the 13 contributions, and minimize this palindrome cost plus <code>r</code>.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:24.201Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.009Z"
+}

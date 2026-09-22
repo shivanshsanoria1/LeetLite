@@ -1,0 +1,40 @@
+{
+    "quesId": 3950,
+    "title": "Exactly One Consecutive Set Bits Pair",
+    "titleSlug": "exactly-one-consecutive-set-bits-pair",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "40.7K",
+        "totalSubmission": "80.8K",
+        "totalAcceptedRaw": 40707,
+        "totalSubmissionRaw": 80814,
+        "acRate": "50.4%",
+        "acRateRaw": 50.36872973842461,
+        "likes": 32,
+        "dislikes": 10
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4307,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "6\n5",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>n</code>.</p>\n\n<p>Return <code>true</code> if its binary representation contains <strong>exactly one adjacent&nbsp;pair</strong> of&nbsp;<span data-keyword=\"set-bit\">set bits</span>, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 6</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Binary representation of 6 is <code>110</code>.</li>\n\t<li>There is exactly&nbsp;one adjacent pair of set bits (<code>&quot;11&quot;</code>). Thus, the answer is <code>true</code>​​​​​​​.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Binary representation of 5 is <code>101</code>.</li>\n\t<li>There is no&nbsp;adjacent pair of set bits. Thus, the answer is <code>false</code>​​​​​​​.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Pure simulation problem."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:02.692Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.929Z"
+}

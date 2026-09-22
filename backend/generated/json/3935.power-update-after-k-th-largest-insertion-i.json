@@ -1,0 +1,64 @@
+{
+    "quesId": 3935,
+    "title": "Power Update After K-th Largest Insertion I",
+    "titleSlug": "power-update-after-k-th-largest-insertion-i",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "329",
+        "totalSubmission": "487",
+        "totalAcceptedRaw": 329,
+        "totalSubmissionRaw": 487,
+        "acRate": "67.6%",
+        "acRateRaw": 67.5564681724846,
+        "likes": 4,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3930
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3970,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2]\n4\n[[3,1],[1,2]]\n[7,5]\n6\n[[4,3],[7,2]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Keep the largest <code>k</code> elements separately. The answer is the smallest among them.",
+        "After inserting a value, rebalance the two sets/heaps so the “top <code>k</code>” side has exactly <code>k</code> elements. Since <code>abs(k<sub>i</sub> - k<sub>i-1</sub>) < 10</code>, only a few elements move each query.",
+        "Update <code>p</code> with fast modular exponentiation."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:00:44.013Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.864Z"
+}

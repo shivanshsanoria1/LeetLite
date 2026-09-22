@@ -1,0 +1,50 @@
+{
+    "quesId": 3992,
+    "title": "Rearrange String to Avoid Character Pair",
+    "titleSlug": "rearrange-string-to-avoid-character-pair",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "42.6K",
+        "totalSubmission": "54.5K",
+        "totalAcceptedRaw": 42618,
+        "totalSubmissionRaw": 54471,
+        "acRate": "78.2%",
+        "acRateRaw": 78.23979732334637,
+        "likes": 31,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4355,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"aabc\"\n\"a\"\n\"c\"\n\"dcab\"\n\"d\"\n\"b\"\n\"axe\"\n\"o\"\n\"x\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a string <code>s</code> and two distinct lowercase English letters <code>x</code> and <code>y</code>.</p>\n\n<p>Rearrange the characters of <code>s</code> to construct a new string <code>t</code> such that:</p>\n\n<ul>\n\t<li><code>t</code> is a <span data-keyword=\"permutation-string\">permutation</span> of <code>s</code>.</li>\n\t<li>Every occurrence of <code>y</code> appears before every occurrence of <code>x</code> in <code>t</code>.</li>\n</ul>\n\n<p>Return any valid string <code>t</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aabc&quot;, x = &quot;a&quot;, y = &quot;c&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;cbaa&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;cbaa&quot;</code> is a permutation of <code>&quot;aabc&quot;</code>, and every occurrence of <code>&#39;c&#39;</code> appears before every occurrence of <code>&#39;a&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;dcab&quot;, x = &quot;d&quot;, y = &quot;b&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;cabd&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;cabd&quot;</code> is a permutation of <code>&quot;dcab&quot;</code>, and every occurrence of <code>&#39;b&#39;</code> appears before every occurrence of <code>&#39;d&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;axe&quot;, x = &quot;o&quot;, y = &quot;x&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;axe&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;axe&quot;</code> is already valid. Since <code>&#39;o&#39;</code> does not occur in the string, the required condition is automatically satisfied.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n\t<li><code>x</code> and <code>y</code> are lowercase English letters.</li>\n\t<li><code>x != y</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Only the relative order between occurrences of <code>x</code> and <code>y</code> matters.</p>",
+        "<p>One approach is to place all occurrences of <code>y</code> before all other characters, and place all occurrences of <code>x</code> after them.</p>",
+        "<p>Another approach is to sort the characters of <code>s</code>. If <code>x &lt; y</code>, sort in descending order; otherwise, sort in ascending order.</p>\r\n\r\n<p>After sorting this way, every occurrence of <code>y</code> will appear before every occurrence of <code>x</code>.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:47.374Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.982Z"
+}

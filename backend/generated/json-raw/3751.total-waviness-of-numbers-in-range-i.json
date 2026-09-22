@@ -1,0 +1,138 @@
+{
+    "questionId": "4057",
+    "questionFrontendId": "3751",
+    "title": "Total Waviness of Numbers in Range I",
+    "titleSlug": "total-waviness-of-numbers-in-range-i",
+    "difficulty": "Medium",
+    "likes": 293,
+    "dislikes": 18,
+    "acRate": 86.92132056569045,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"149.2K\", \"totalSubmission\": \"171.7K\", \"totalAcceptedRaw\": 149228, \"totalSubmissionRaw\": 171680, \"acRate\": \"86.9%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given two integers <code>num1</code> and <code>num2</code> representing an <strong>inclusive</strong> range <code>[num1, num2]</code>.</p>\n\n<p>The <strong>waviness</strong> of a number is defined as the total count of its <strong>peaks</strong> and <strong>valleys</strong>:</p>\n\n<ul>\n\t<li>A digit is a <strong>peak</strong> if it is <strong>strictly greater</strong> than both of its immediate neighbors.</li>\n\t<li>A digit is a <strong>valley</strong> if it is <strong>strictly less</strong> than both of its immediate neighbors.</li>\n\t<li>The first and last digits of a number <strong>cannot</strong> be peaks or valleys.</li>\n\t<li>Any number with fewer than 3 digits has a waviness of 0.</li>\n</ul>\nReturn the total sum of waviness for all numbers in the range <code>[num1, num2]</code>.\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 120, num2 = 130</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\nIn the range <code>[120, 130]</code>:\n\n<ul>\n\t<li><code>120</code>: middle digit 2 is a peak, waviness = 1.</li>\n\t<li><code>121</code>: middle digit 2 is a peak, waviness = 1.</li>\n\t<li><code>130</code>: middle digit 3 is a peak, waviness = 1.</li>\n\t<li>All other numbers in the range have a waviness of 0.</li>\n</ul>\n\n<p>Thus, total waviness is <code>1 + 1 + 1 = 3</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 198, num2 = 202</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\nIn the range <code>[198, 202]</code>:\n\n<ul>\n\t<li><code>198</code>: middle digit 9 is a peak, waviness = 1.</li>\n\t<li><code>201</code>: middle digit 0 is a valley, waviness = 1.</li>\n\t<li><code>202</code>: middle digit 0 is a valley, waviness = 1.</li>\n\t<li>All other numbers in the range have a waviness of 0.</li>\n</ul>\n\n<p>Thus, total waviness is <code>1 + 1 + 1 = 3</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">num1 = 4848, num2 = 4848</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Number <code>4848</code>: the second digit 8 is a peak, and the third digit 4 is a valley, giving a waviness of 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num1 &lt;= num2 &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Use bruteforce"
+    ],
+    "exampleTestcases": "120\n130\n198\n202\n4848\n4848",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach 1: Enumeration\n\n#### Intuition\n\nSince the constraints satisfy $1 \\le \\textit{num}_1 \\le \\textit{num}_2 \\le 10^5$, we can directly enumerate every number in the range $[\\textit{num}_1, \\textit{num}_2]$ and compute its fluctuation value. The answer is the sum of the fluctuation values of all numbers in this range.\n\nTo calculate the fluctuation value of a number $x$, we first convert it into its string representation. We then traverse the string and count the number of peaks and valleys, which gives us the fluctuation value of the number.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/c4spejzQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"c4spejzQ\"></iframe>\n\n#### Complexity Analysis\n\nLet $\\textit{num}_2$ be the larger given number.\n\n- Time complexity: $O(\\textit{num}_2 \\cdot \\log \\textit{num}_2)$.\n  \n  We need to traverse all numbers in the interval $[\\textit{num}_1, \\textit{num}_2]$. In the worst case, the interval contains $O(\\textit{num}_2)$ numbers. Calculating the fluctuation value of each number requires traversing its digits, which takes $O(\\log \\textit{num}_2)$ time. Therefore, the overall time complexity is $O(\\textit{num}_2 \\cdot \\log \\textit{num}_2)$.\n\n- Space complexity: $O(\\log \\textit{num}_2)$.\n  \n  The string representation of a number contains $O(\\log \\textit{num}_2)$ digits.\n\n---\n\n### Approach 2: Digit Dynamic Programming\n\n#### Intuition\n\nThis is a digit-counting problem, making it a natural fit for digit DP.\n\nInstead of directly computing the answer over the interval $[\\textit{num}_1, \\textit{num}_2]$, we first calculate the total fluctuation value of all numbers in the range $[0, x]$. Let $\\textit{solve}(x)$ denote this value. Using the prefix-sum idea, the answer can then be computed as\n\n$$\n\\textit{ans} = \\textit{solve}(\\textit{num}_2) - \\textit{solve}(\\textit{num}_1 - 1)\n$$\n\nTo implement $\\textit{solve}(x)$, we use a memoized digit DP (top-down DFS). The digits are processed from left to right while tracking the previous two valid digits. We also use the standard digit-DP flags $\\textit{isLimit}$ and $\\textit{isLeading}$ to handle upper-bound constraints and leading zeros.\n\nDuring the DFS, we maintain the following state information:\n\n- $\\textit{pos}$: the index of the digit currently being processed, ranging from $0$ to $n - 1$.\n- $\\textit{prev}$: the digit at position $\\textit{pos} - 2$. If it does not exist, its value is $-1$.\n- $\\textit{curr}$: the digit at position $\\textit{pos} - 1$. If it does not exist, its value is $-1$.\n- $\\textit{isLimit}$: whether the current prefix is equal to the prefix of the upper bound.\n- $\\textit{isLeading}$: whether we are still in the leading-zero phase.\n\nEach DFS call returns two values:\n\n- $\\textit{cnt}$: the number of valid numbers that can be formed from the current state.\n- $\\textit{sum}$: the total fluctuation value contributed by those numbers.\n\nFor memoization, we use two three-dimensional arrays:\n\n- $\\textit{memoCnt}[\\textit{pos}][\\textit{prev}][\\textit{curr}]$, which stores the number of valid numbers.\n- $\\textit{memoSum}[\\textit{pos}][\\textit{prev}][\\textit{curr}]$, which stores the total fluctuation value.\n\nBoth arrays are initialized to $-1$ to indicate that a state has not yet been computed.\n\nFor simplicity, states where $\\textit{prev} = -1$ or $\\textit{curr} = -1$ are not memoized.\n\nFor each position, we enumerate all possible digits:\n\n1. Determine the upper bound of the current digit.\n  - If $\\textit{isLimit}$ is true, the digit range is $[0, \\textit{num}_{\\textit{pos}}]$.\n  - Otherwise, the digit range is $[0, 9]$.\n\n2. Enumerate each candidate digit $\\textit{digit}$.\n3. Update the leading-zero state:\n\n$$\n\\textit{isLeading}\n\\land\n(\\textit{digit} = 0).\n$$\n\n4. Update the previous two digits:\n  - $\\textit{newPrev} = \\textit{curr}$\n  - $\\textit{newCurr} = \\textit{digit}$ if we are no longer in the leading-zero phase; otherwise $-1$.\n5. Recursively compute\n\n$$\n\\text{dfs}(\\textit{pos} + 1, \\textit{newPrev}, \\textit{newCurr}, \\dots).\n$$\n\n6. Calculate the fluctuation contribution of the current digit.\n\nA fluctuation can only be formed when three valid digits already exist. In that case, we check whether $(\\textit{prev}, \\textit{curr}, \\textit{digit})$ forms a peak or a valley:\n\n$$\n\\textit{prev} < \\textit{curr} > \\textit{digit}\n$$\n\nor\n\n$$\n\\textit{prev} > \\textit{curr} < \\textit{digit}.\n$$\n\nIf either condition holds, every number represented by the current subtree gains one additional fluctuation point, so we add $\\textit{subCnt}$ to the current sum.\n\nFinally, we accumulate the contributions from all child states and return $(\\textit{cnt}, \\textit{sum})$.\n\n\n**Recursive Boundary:**\n\nWhen $$\\textit{pos} = n$$, all digits have been processed, so we return $$(1, 0)$$, indicating one valid number and no additional fluctuation contribution.\n\n**Recursive Entry:**\n\nThe DFS starts from\n\n$$\n\\text{dfs}(0, -1, -1, \\text{true}, \\text{true}).\n$$\n\n**Pruning**\n\nIf $$\\textit{num} < 100$$, no three-digit sequence exists, so a peak or valley can never occur. Therefore, we can directly return $0$.\n\nThe value returned by $\\textit{solve}(\\textit{num})$ is the $\\textit{sum}$ component of the DFS result, which represents the total fluctuation value of all numbers in the range $[0, \\textit{num}]$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/nJLisE4v/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nJLisE4v\"></iframe>\n\n#### Complexity Analysis\n\nLet $D$ denote the base, which is $10$ in this problem, and let $\\textit{num}_2$ be the larger given number.\n\n- Time complexity: $O(D^3 \\log \\textit{num}_2)$.\n  \n  The digit DP contains $O(D^2 \\log \\textit{num}_2)$ states. For each state, we enumerate up to $D$ digits. Therefore, the total time complexity is $O(D^3 \\log \\textit{num}_2)$.\n\n- Space complexity: $O(D^2 \\log \\textit{num}_2)$.\n  \n  The memoization table contains $O(D^2 \\log \\textit{num}_2)$ states, and the recursion depth is $O(\\log \\textit{num}_2)$.\n\n---"
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int totalWaviness(int num1, int num2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int totalWaviness(int num1, int num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def totalWaviness(self, num1: int, num2: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def totalWaviness(self, num1, num2):\n        \"\"\"\n        :type num1: int\n        :type num2: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num1\n * @param {number} num2\n * @return {number}\n */\nvar totalWaviness = function(num1, num2) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function totalWaviness(num1: number, num2: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int TotalWaviness(int num1, int num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int totalWaviness(int num1, int num2) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func totalWaviness(num1 int, num2 int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun totalWaviness(num1: Int, num2: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func totalWaviness(_ num1: Int, _ num2: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn total_waviness(num1: i32, num2: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} num1\n# @param {Integer} num2\n# @return {Integer}\ndef total_waviness(num1, num2)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $num1\n     * @param Integer $num2\n     * @return Integer\n     */\n    function totalWaviness($num1, $num2) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int totalWaviness(int num1, int num2) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def totalWaviness(num1: Int, num2: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec total_waviness(num1 :: integer, num2 :: integer) :: integer\n  def total_waviness(num1, num2) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec total_waviness(Num1 :: integer(), Num2 :: integer()) -> integer().\ntotal_waviness(Num1, Num2) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (total-waviness num1 num2)\n  (-> exact-integer? exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:08.207Z"
+}

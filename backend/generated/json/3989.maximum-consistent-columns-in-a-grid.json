@@ -1,0 +1,52 @@
+{
+    "quesId": 3989,
+    "title": "Maximum Consistent Columns in a Grid",
+    "titleSlug": "maximum-consistent-columns-in-a-grid",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.6K",
+        "totalSubmission": "16.9K",
+        "totalAcceptedRaw": 11561,
+        "totalSubmissionRaw": 16889,
+        "acRate": "68.5%",
+        "acRateRaw": 68.45283912605838,
+        "likes": 44,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4225,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[[-2,0,3]]\n2\n[[1,-1,1],[2,2,2]]\n1\n[[-5,5]]\n9",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a 2D integer array <code>grid</code> of size <code>m x n</code>, and an integer <code>limit</code>.</p>\n\n<p>You may remove zero or more columns from the grid, but at least one column must remain. The <strong>relative</strong> order of the remaining columns must be preserved.</p>\n\n<p>A grid is called <strong>consistent</strong> if for every row <code>i</code>, and for every pair of adjacent remaining columns <code>a</code> and <code>b</code> with <code>a &lt; b</code>, the following holds: <code>|grid[i][b] - grid[i][a]| &lt;= limit</code>.</p>\n\n<p>Return the <strong>maximum</strong> number of columns that can remain such that the resulting grid is <strong>consistent</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[-2,0,3]], limit = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Remove column 2 and keep columns 0 and 1, which gives <code>|grid[0][1] &minus; grid[0][0]| = |0 &minus; (&minus;2)| = 2 &lt;= limit</code>.</li>\n\t<li>Thus, the maximum number of columns that can remain is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[1,-1,1],[2,2,2]], limit = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Remove column 1 and keep columns 0 and 2, which gives\n\t<ul>\n\t\t<li><code>|grid[0][2] &minus; grid[0][0]| = |1 &minus; 1| = 0 &lt;= limit</code> and</li>\n\t\t<li><code>|grid[1][2] &minus; grid[1][0]| = |2 &minus; 2| = 0 &lt;= limit</code>.</li>\n\t</ul>\n\t</li>\n\t<li>Thus, the maximum number of columns that can remain is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">grid = [[-5,5]], limit = 9</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Remove either column 0 or column 1, since <code>|grid[0][1] &minus; grid[0][0]| = |5 &minus; (&minus;5)| = 10 &gt; limit</code>.</li>\n\t<li>Thus, the maximum number of columns that can remain is 1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m == grid.length &lt;= 250</code></li>\n\t<li><code>1 &lt;= n == grid[i].length &lt;= 250</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= grid[i][j] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= limit &lt;= 10<sup>5</sup>​​​​​​​​​​​​​​​​</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Think of each column as one item in a subsequence. Two columns <code>a</code> and <code>b</code> with <code>a &lt; b</code> can be adjacent in the remaining grid only if <code>|grid[i][b] - grid[i][a]| &lt;= limit</code> for every row <code>i</code>.</p>",
+        "<p>Precompute whether every pair of columns <code>(a, b)</code> is compatible.</p>",
+        "<p>Let <code>dp[j]</code> be the maximum number of columns in a valid remaining grid whose last column is <code>j</code>.</p>",
+        "<p>For each <code>j</code>, try all previous columns <code>i &lt; j</code>. If columns <code>i</code> and <code>j</code> are compatible, update <code>dp[j] = max(dp[j], dp[i] + 1)</code>.</p>",
+        "<p>The answer is the maximum value of <code>dp[j]</code>.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:44.548Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.979Z"
+}

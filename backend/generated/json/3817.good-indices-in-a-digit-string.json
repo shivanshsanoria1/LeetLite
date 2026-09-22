@@ -1,0 +1,46 @@
+{
+    "quesId": 3817,
+    "title": "Good Indices in a Digit String",
+    "titleSlug": "good-indices-in-a-digit-string",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "894",
+        "totalSubmission": "1K",
+        "totalAcceptedRaw": 894,
+        "totalSubmissionRaw": 1042,
+        "acRate": "85.8%",
+        "acRateRaw": 85.79654510556622,
+        "likes": 3,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4207,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"0234567890112\"\n\"01234\"\n\"12345\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "For an index <code>i</code>, any valid substring must end exactly at position <code>i</code>.",
+        "The substring you are looking for is determined by the decimal digits of <code>i</code>.",
+        "For each index <code>i</code>, compare the string form of <code>i</code> with the substring that ends at <code>i</code> and has the same length."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:46:24.280Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.356Z"
+}

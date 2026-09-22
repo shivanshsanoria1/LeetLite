@@ -1,0 +1,48 @@
+{
+    "quesId": 3860,
+    "title": "Unique Email Groups",
+    "titleSlug": "unique-email-groups",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "814",
+        "totalSubmission": "959",
+        "totalAcceptedRaw": 814,
+        "totalSubmissionRaw": 959,
+        "acRate": "84.9%",
+        "acRateRaw": 84.8800834202294,
+        "likes": 6,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4241,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[\"test.email+alex@leetcode.com\", \"test.e.mail+bob.cathy@leetcode.com\", \"testemail+david@lee.tcode.com\"]\n[\"A@B.com\", \"a@b.com\", \"ab+xy@b.com\", \"a.b@b.com\"]\n[\"a.b+c.d+e@DoMain.com\", \"ab+xyz@domain.com\", \"ab@domain.com\"]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Simulate the normalization process as described, and use an unordered set (or set) to keep track of unique normalized email addresses."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:59:23.540Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.807Z"
+}

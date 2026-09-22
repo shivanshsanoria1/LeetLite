@@ -1,0 +1,44 @@
+{
+    "quesId": 3758,
+    "title": "Convert Number Words to Digits",
+    "titleSlug": "convert-number-words-to-digits",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "699",
+        "totalSubmission": "1K",
+        "totalAcceptedRaw": 699,
+        "totalSubmissionRaw": 1033,
+        "acRate": "67.7%",
+        "acRateRaw": 67.66698935140369,
+        "likes": 4,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4148,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"onefourthree\"\n\"ninexsix\"\n\"zeero\"\n\"tw\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Parse the string from left to right as described, matching against the valid number words"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:45:14.937Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.053Z"
+}

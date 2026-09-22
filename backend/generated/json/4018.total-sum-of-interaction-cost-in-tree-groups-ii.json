@@ -1,0 +1,58 @@
+{
+    "quesId": 4018,
+    "title": "Total Sum of Interaction Cost in Tree Groups II",
+    "titleSlug": "total-sum-of-interaction-cost-in-tree-groups-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "205",
+        "totalSubmission": "298",
+        "totalAcceptedRaw": 205,
+        "totalSubmissionRaw": 298,
+        "acRate": "68.8%",
+        "acRateRaw": 68.79194630872483,
+        "likes": 1,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3786
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4163,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "3\n[[0,1],[1,2]]\n[1,1,1]\n3\n[[0,1],[1,2]]\n[3,2,3]\n4\n[[0,1],[0,2],[0,3]]\n[1,1,4,4]\n2\n[[0,1]]\n[1,2]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "1a. (Virtual Tree) For each edge, removing it partitions the tree into two components. If one component contains <code>x</code> nodes of some group and the entire tree contains <code>k</code> nodes of that group, the edge contributes <code>x * (k - x)</code> to the answer.",
+        "1b. (Virtual Tree) Preprocess depths, DFS entry times, and lowest common ancestors. For each group, sort its nodes by DFS entry time and construct their virtual tree by adding the LCAs of adjacent nodes.",
+        "1c. (Virtual Tree) For a virtual-tree edge from <code>p</code> to <code>v</code>, use <code>depth[v] - depth[p]</code> as its length. If the virtual subtree contains <code>x</code> nodes from the group, its contribution is <code>x * (k - x) * (depth[v] - depth[p])</code>.",
+        "2a. (Small-to-Large Merging) For every subtree, maintain for each group both its node count and the sum of distances from those nodes to the subtree root.",
+        "2b. (Small-to-Large Merging) When merging two maps at a node, two entries <code>(cnt1, sum1)</code> and <code>(cnt2, sum2)</code> for the same group contribute <code>cnt1 * sum2 + cnt2 * sum1</code>. Always merge the smaller map into the larger one."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:16.614Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.001Z"
+}

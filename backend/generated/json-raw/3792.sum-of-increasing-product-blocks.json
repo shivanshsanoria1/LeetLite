@@ -1,0 +1,35 @@
+{
+    "questionId": "4172",
+    "questionFrontendId": "3792",
+    "title": "Sum of Increasing Product Blocks",
+    "titleSlug": "sum-of-increasing-product-blocks",
+    "difficulty": "Medium",
+    "likes": 4,
+    "dislikes": 1,
+    "acRate": 68.16143497757847,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"608\", \"totalSubmission\": \"892\", \"totalAcceptedRaw\": 608, \"totalSubmissionRaw\": 892, \"acRate\": \"68.2%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Compute the product for each block in order, and accumulate the total of these products as the blocks are computed."
+    ],
+    "exampleTestcases": "3\n7",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:54.190Z"
+}

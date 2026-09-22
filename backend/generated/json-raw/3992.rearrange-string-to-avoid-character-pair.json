@@ -1,0 +1,137 @@
+{
+    "questionId": "4355",
+    "questionFrontendId": "3992",
+    "title": "Rearrange String to Avoid Character Pair",
+    "titleSlug": "rearrange-string-to-avoid-character-pair",
+    "difficulty": "Easy",
+    "likes": 31,
+    "dislikes": 1,
+    "acRate": 78.23979732334637,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"42.6K\", \"totalSubmission\": \"54.5K\", \"totalAcceptedRaw\": 42618, \"totalSubmissionRaw\": 54471, \"acRate\": \"78.2%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given a string <code>s</code> and two distinct lowercase English letters <code>x</code> and <code>y</code>.</p>\n\n<p>Rearrange the characters of <code>s</code> to construct a new string <code>t</code> such that:</p>\n\n<ul>\n\t<li><code>t</code> is a <span data-keyword=\"permutation-string\">permutation</span> of <code>s</code>.</li>\n\t<li>Every occurrence of <code>y</code> appears before every occurrence of <code>x</code> in <code>t</code>.</li>\n</ul>\n\n<p>Return any valid string <code>t</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;aabc&quot;, x = &quot;a&quot;, y = &quot;c&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;cbaa&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;cbaa&quot;</code> is a permutation of <code>&quot;aabc&quot;</code>, and every occurrence of <code>&#39;c&#39;</code> appears before every occurrence of <code>&#39;a&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;dcab&quot;, x = &quot;d&quot;, y = &quot;b&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;cabd&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;cabd&quot;</code> is a permutation of <code>&quot;dcab&quot;</code>, and every occurrence of <code>&#39;b&#39;</code> appears before every occurrence of <code>&#39;d&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;axe&quot;, x = &quot;o&quot;, y = &quot;x&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;axe&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The string <code>&quot;axe&quot;</code> is already valid. Since <code>&#39;o&#39;</code> does not occur in the string, the required condition is automatically satisfied.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n\t<li><code>x</code> and <code>y</code> are lowercase English letters.</li>\n\t<li><code>x != y</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Only the relative order between occurrences of <code>x</code> and <code>y</code> matters.</p>",
+        "<p>One approach is to place all occurrences of <code>y</code> before all other characters, and place all occurrences of <code>x</code> after them.</p>",
+        "<p>Another approach is to sort the characters of <code>s</code>. If <code>x &lt; y</code>, sort in descending order; otherwise, sort in ascending order.</p>\r\n\r\n<p>After sorting this way, every occurrence of <code>y</code> will appear before every occurrence of <code>x</code>.</p>"
+    ],
+    "exampleTestcases": "\"aabc\"\n\"a\"\n\"c\"\n\"dcab\"\n\"d\"\n\"b\"\n\"axe\"\n\"o\"\n\"x\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string rearrangeString(string s, char x, char y) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public String rearrangeString(String s, char x, char y) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def rearrangeString(self, s: str, x: str, y: str) -> str:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def rearrangeString(self, s, x, y):\n        \"\"\"\n        :type s: str\n        :type x: str\n        :type y: str\n        :rtype: str\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {character} x\n * @param {character} y\n * @return {string}\n */\nvar rearrangeString = function(s, x, y) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function rearrangeString(s: string, x: string, y: string): string {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public string RearrangeString(string s, char x, char y) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "char* rearrangeString(char* s, char x, char y) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func rearrangeString(s string, x byte, y byte) string {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun rearrangeString(s: String, x: Char, y: Char): String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func rearrangeString(_ s: String, _ x: Character, _ y: Character) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn rearrange_string(s: String, x: char, y: char) -> String {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} s\n# @param {Character} x\n# @param {Character} y\n# @return {String}\ndef rearrange_string(s, x, y)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $x\n     * @param String $y\n     * @return String\n     */\n    function rearrangeString($s, $x, $y) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  String rearrangeString(String s, String x, String y) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def rearrangeString(s: String, x: Char, y: Char): String = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec rearrange_string(s :: String.t, x :: char, y :: char) :: String.t\n  def rearrange_string(s, x, y) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec rearrange_string(S :: unicode:unicode_binary(), X :: char(), Y :: char()) -> unicode:unicode_binary().\nrearrange_string(S, X, Y) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (rearrange-string s x y)\n  (-> string? char? char? string?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:06:47.374Z"
+}

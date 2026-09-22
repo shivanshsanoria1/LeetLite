@@ -1,0 +1,46 @@
+{
+    "quesId": 3964,
+    "title": "Minimum Lights to Illuminate a Road",
+    "titleSlug": "minimum-lights-to-illuminate-a-road",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "27.3K",
+        "totalSubmission": "72.6K",
+        "totalAcceptedRaw": 27279,
+        "totalSubmissionRaw": 72574,
+        "acRate": "37.6%",
+        "acRateRaw": 37.58784137569929,
+        "likes": 75,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4330,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[0,0,0,0]\n[0,0,0,2,0]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>lights</code> of length <code>n</code>, representing positions 0 through <code>n - 1</code> on a road.</p>\n\n<p>For each position <code>i</code>:</p>\n\n<ul>\n\t<li>If <code>lights[i] = v</code>, where <code>v &gt; 0</code>, there is a working bulb at position <code>i</code> that <strong>illuminates</strong> every position from <code>max(0, i - v)</code> to <code>min(n - 1, i + v)</code>, inclusive.</li>\n\t<li>If <code>lights[i] = 0</code>, there is no working bulb at position <code>i</code>.</li>\n</ul>\n\n<p>A position is <strong>visible</strong> if it is illuminated by <strong>at least</strong> one working bulb.</p>\n\n<p>You may install <strong>additional</strong> bulbs at <strong>any</strong> positions. Each additional bulb installed at position <code>j</code> <strong>illuminates</strong> positions from <code>max(0, j - 1)</code> to <code>min(n - 1, j + 1)</code>, inclusive.</p>\n\n<p>Return the minimum number of additional bulbs required to make <strong>every</strong> position on the road visible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">lights = [0,0,0,0]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal placement is:</p>\n\n<ul>\n\t<li>Install an additional bulb at position 1, illuminating positions <code>[0, 1, 2]</code>.</li>\n\t<li>Install an additional bulb at position 3, illuminating positions <code>[2, 3]</code>.</li>\n</ul>\n\n<p>Therefore, the minimum number of additional bulbs required is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">lights = [0,0,0,2,0]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Since <code>lights[3] = 2</code>, the working bulb at position 3 illuminates positions <code>[1, 2, 3, 4]</code>.</li>\n\t<li>Installing an additional bulb at position 1 illuminates positions <code>[0, 1, 2]</code>, making every position visible.</li>\n\t<li>Therefore, the minimum number of additional bulbs required is 1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == lights.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= lights[i] &lt;= n</code></li>\n</ul>\n",
+    "hints": [
+        "First mark all positions already visible from the existing working bulbs.",
+        "Then scan the road from left to right. Whenever you find the first invisible position <code>i</code>, install a new bulb as far right as possible while still covering <code>i</code>.",
+        "Since each additional bulb covers distance 1, the best position is usually <code>i + 1</code>, unless it goes out of bounds. After placing it, skip all positions it covers."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:17.223Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.960Z"
+}

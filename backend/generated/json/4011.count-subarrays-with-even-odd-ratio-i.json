@@ -1,0 +1,63 @@
+{
+    "quesId": 4011,
+    "title": "Count Subarrays With Even Odd Ratio I",
+    "titleSlug": "count-subarrays-with-even-odd-ratio-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "41.4K",
+        "totalSubmission": "67.9K",
+        "totalAcceptedRaw": 41394,
+        "totalSubmissionRaw": 67924,
+        "acRate": "60.9%",
+        "acRateRaw": 60.94164065720511,
+        "likes": 43,
+        "dislikes": 5
+    },
+    "similarQuesIds": [
+        4013
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Merge Sort",
+            "slug": "merge-sort"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4323,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,1,2]\n3\n2\n[2,2,1]\n2\n1\n[2,2,2]\n1\n1",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and two integers <code>a</code> and <code>b</code>.</p>\n\n<p>For a <span data-keyword=\"subarray-nonempty\">subarray</span>, let:</p>\n\n<ul>\n\t<li><code>x</code> be the number of even elements.</li>\n\t<li><code>y</code> be the number of odd elements.</li>\n</ul>\n\n<p>The ratio of even to odd elements in a subarray is defined as <code>x / y</code>, where ratios are compared by their exact rational values.</p>\n\n<p>A subarray is considered <strong>valid</strong> if:</p>\n\n<ul>\n\t<li><code>y &gt; 0</code>, and</li>\n\t<li><code>x / y &lt;= a / b</code>.</li>\n</ul>\n\n<p>Return the number of valid subarrays in <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2], a = 3, b = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The following are the valid subarrays:</p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Subarray</th>\n\t\t\t<th style=\"border: 1px solid black;\">Values</th>\n\t\t\t<th style=\"border: 1px solid black;\">Even Count</th>\n\t\t\t<th style=\"border: 1px solid black;\">Odd Count</th>\n\t\t\t<th style=\"border: 1px solid black;\">Ratio</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[0..0]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>0 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[0..1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1, 2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[0..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1, 2, 1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 / 2</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[0..3]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1, 2, 1, 2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>2 / 2</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[1..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[2, 1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[2..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>0 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[2..3]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1, 2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 / 1</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, the number of valid subarrays is 7.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,2,1], a = 2, b = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The following are the valid subarrays:</p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Subarray</th>\n\t\t\t<th style=\"border: 1px solid black;\">Values</th>\n\t\t\t<th style=\"border: 1px solid black;\">Even Count</th>\n\t\t\t<th style=\"border: 1px solid black;\">Odd Count</th>\n\t\t\t<th style=\"border: 1px solid black;\">Ratio</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[0..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[2, 2, 1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>2 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[1..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[2, 1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 / 1</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\"><code>nums[2..2]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>[1]</code></td>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>0 / 1</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, the number of valid subarrays is 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,2,2], a = 1, b = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Every subarray contains 0 odd numbers, so no subarray is valid.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li><code>1 &lt;= a, b &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Fix the left endpoint and extend the right endpoint while maintaining the numbers of even and odd elements.</p>",
+        "<p>A subarray with <code>y &gt; 0</code> is valid exactly when <code>b * x &lt;= a * y</code>. Use this comparison instead of floating-point division.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:08.421Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.997Z"
+}

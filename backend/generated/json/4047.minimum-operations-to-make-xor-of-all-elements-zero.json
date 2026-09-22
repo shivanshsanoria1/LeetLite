@@ -1,0 +1,55 @@
+{
+    "quesId": 4047,
+    "title": "Minimum Operations to Make XOR of All Elements Zero",
+    "titleSlug": "minimum-operations-to-make-xor-of-all-elements-zero",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "178",
+        "totalSubmission": "306",
+        "totalAcceptedRaw": 178,
+        "totalSubmissionRaw": 306,
+        "acRate": "58.2%",
+        "acRateRaw": 58.16993464052288,
+        "likes": 0,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4368,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[8,1,4,8,2]\n[1,2,3]\n[1,2,4]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let <code>x</code> be the XOR of all elements. Handle the cases where <code>x == 0</code> or all elements are equal first.",
+        "Replacing <code>a</code> with <code>a ^ b</code> changes the total XOR by <code>b</code>. Consider the smallest subset of original elements whose XOR equals <code>x</code>.",
+        "If this subset has size <code>d</code>, the answer is <code>d</code> when <code>d &lt; nums.length</code>, and -1 otherwise.",
+        "Find <code>d</code> using BFS from XOR value 0. Each transition XORs the current value with a distinct value from <code>nums</code>. All reachable XOR values are less than 2048."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:06.143Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.987Z"
+}

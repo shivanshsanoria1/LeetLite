@@ -1,0 +1,54 @@
+{
+    "quesId": 3961,
+    "title": "Maximize Sum of Device Ratings",
+    "titleSlug": "maximize-sum-of-device-ratings",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "16.5K",
+        "totalSubmission": "41.5K",
+        "totalAcceptedRaw": 16513,
+        "totalSubmissionRaw": 41509,
+        "acRate": "39.8%",
+        "acRateRaw": 39.7817340817654,
+        "likes": 68,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4004,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[[1,3],[2,2]]\n[[1,2,3],[4,5,6]]\n[[5,5,5],[1,1,1]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a 2D integer array <code>units</code> of size <code>m &times; n</code> where <code>units[i][j]</code> represents the capacity of the <code>j<sup>th</sup></code> unit in the <code>i<sup>th</sup></code> device. Each device contains <strong>exactly</strong> <code>n</code> units.</p>\n\n<p>The <strong>rating</strong> of a device is the <strong>minimum</strong> capacity among all its units.</p>\n\n<p>You may perform the following operation any number of times (including zero):</p>\n\n<ul>\n\t<li>Choose a device <code>i</code> that has <strong>not been</strong> used as a source before.</li>\n\t<li>Remove <strong>exactly</strong> one unit from device <code>i</code> and add it to <strong>any</strong> different device.</li>\n\t<li>Then mark device <code>i</code> as used, so it cannot be chosen again as a source.</li>\n</ul>\n\n<p>Return the <strong>maximum</strong> possible sum of the ratings of all devices after any number of such operations.</p>\n\n<p><strong>Note:</strong></p>\n\n<ul>\n\t<li>Devices can receive units from multiple devices, regardless of whether they have been selected.</li>\n\t<li>The rating of an empty device is 0.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">units = [[1,3],[2,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>​​​​​​​​​​​​​​Select device <code>i = 0</code> and transfer <code>units[0][0] = 1</code> to device <code>i = 1</code>.</li>\n\t<li>After the transfer, the ratings are:\n\t<ul>\n\t\t<li>Device <code>0 = [3]</code>: <code>rating[0] = 3</code></li>\n\t\t<li>Device <code>1 = [2, 2, <u>1</u>]</code>: <code>rating[1] = 1</code></li>\n\t</ul>\n\t</li>\n\t<li>Thus, the sum of ratings is <code>3 + 1 = 4</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">units = [[1,2,3],[4,5,6]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Select device <code>i = 1</code> and transfer <code>units[1][0] = 4</code> to device <code>i = 0</code>.</li>\n\t<li>After the transfer, the ratings are:\n\t<ul>\n\t\t<li>Device <code>0 = [1, 2, 3, <u>4</u>]</code>: <code>rating[0] = 1</code></li>\n\t\t<li>Device <code>1 = [5, 6]</code>: <code>rating[1] = 5</code></li>\n\t</ul>\n\t</li>\n\t<li>Thus, the sum of ratings is <code>1 + 5 = 6</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">units = [[5,5,5],[1,1,1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>No transfers increase the sum of ratings. Thus, the sum of ratings is <code>5 + 1 = 6</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m == units.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= n == units[i].length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>m * n &lt;= 2 * 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= units[i][j] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "For each device, only its smallest and second-smallest capacities can affect the answer.",
+        "To improve a device’s rating, remove its smallest unit. Send all removed units to one device, which acts as the destination for the smallest capacities.",
+        "The destination device’s final rating is the smallest capacity among all devices. To maximize the remaining contribution, choose as the destination the device with the smallest second-smallest capacity."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:14.354Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.957Z"
+}

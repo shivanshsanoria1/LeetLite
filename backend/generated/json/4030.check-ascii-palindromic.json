@@ -1,0 +1,48 @@
+{
+    "quesId": 4030,
+    "title": "Check ASCII Palindromic",
+    "titleSlug": "check-ascii-palindromic",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "52.4K",
+        "totalSubmission": "87.1K",
+        "totalAcceptedRaw": 52364,
+        "totalSubmissionRaw": 87075,
+        "acRate": "60.1%",
+        "acRateRaw": 60.13666379557853,
+        "likes": 40,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4381,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"ff\"\n\"leet\"",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a string <code>s</code> consisting of lowercase English letters.</p>\n\n<p>Construct a <span data-keyword=\"binary-string\"><strong>binary string</strong></span> by replacing each character in <code>s</code> with the 8-bit binary representation of its ASCII value, <strong>including leading zeros</strong>, while preserving the original order of the characters.</p>\n\n<p>Return <code>true</code> if the resulting binary string is a <span data-keyword=\"palindrome-string\"><strong>palindrome</strong></span>. Otherwise, return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;ff&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The ASCII value of <code>f</code> is 102, whose 8-bit binary representation is <code>01100110</code>.</li>\n\t<li>Thus, the binary string is <code>0110011001100110</code>.</li>\n\t<li>Since this binary string is a <strong>palindrome</strong>, the output is <code>true</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;leet&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The ASCII values of <code>l</code>, <code>e</code>, <code>e</code>, and <code>t</code> are 108, 101, 101, and 116, respectively.</li>\n\t<li>Their 8-bit binary representations are <code>01101100</code>, <code>01100101</code>, <code>01100101</code>, and <code>01110100</code>.</li>\n\t<li>Thus, the binary string is <code>01101100011001010110010101110100</code>.</li>\n\t<li>Since this binary string is not a <strong>palindrome</strong>, the output is <code>false</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+    "hints": [
+        "Convert each character to its 8-bit binary representation, concatenate the representations, and check whether the resulting string equals its reverse."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:30.114Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.012Z"
+}

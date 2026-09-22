@@ -1,0 +1,52 @@
+{
+    "quesId": 4023,
+    "title": "Elevator Requests II",
+    "titleSlug": "elevator-requests-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.5K",
+        "totalSubmission": "20.3K",
+        "totalAcceptedRaw": 5535,
+        "totalSubmissionRaw": 20337,
+        "acRate": "27.2%",
+        "acRateRaw": 27.216403599350937,
+        "likes": 37,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4385,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "6\r\n4\r\n[1,5]\r\n8\r\n3\r\n[3,7,1]\r\n10\r\n5\r\n[0,2,9]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>n</code> denoting the number of floors in a building, where the floors are numbered from 0 to <code>n - 1</code>.</p>\n\n<p>You are also given an integer <code>start</code>, representing the floor where the elevator begins, and an integer array <code>requests</code>, where <code>requests[i]</code> is a floor that the elevator is requested to reach. All floors in <code>requests</code> are <strong>distinct</strong>.</p>\n\n<p>At time 0, the elevator is on floor <code>start</code>, and all requests are made <strong>simultaneously</strong>.</p>\n\n<p>During each second before all requests are fulfilled, the elevator moves <strong>exactly</strong> one floor, either <strong>up</strong> or <strong>down</strong>. A request is fulfilled <strong>instantly</strong> when the elevator reaches its requested floor. If <code>start</code> appears in <code>requests</code>, that request is fulfilled at time 0.</p>\n\n<p>For each second that a request remains unfulfilled, you receive 1 penalty. Equivalently, a request fulfilled at time <code>t</code> contributes <code>t</code> to the total penalty.</p>\n\n<p>Return the <strong>minimum</strong> total penalty required to fulfill all requests.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 6, start = 4, requests = [1,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Move from floor 4 (<code>start</code>) to floor 5 in 1 second. Penalty for floor 5 is 1.</li>\n\t<li>Move from floor 5 to floor 1 in 4 seconds. Penalty for floor 1 is 5.</li>\n</ul>\n\n<p>Thus, the total penalty is <code>1 + 5 = 6</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 8, start = 3, requests = [3,7,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">10</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Floor 3 (<code>start</code>) is fulfilled instantly. Penalty for floor 3 is 0.</li>\n\t<li>Move from floor 3 to floor 1 in 2 seconds. Penalty for floor 1 is 2.</li>\n\t<li>Move from floor 1 to floor 7 in 6 seconds. Penalty for floor 7 is 8.</li>\n</ul>\n\n<p>Thus, the total penalty is <code>0 + 2 + 8 = 10</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 10, start = 5, requests = [0,2,9]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">22</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Move from floor 5 (<code>start</code>) to floor 2 in 3 seconds. Penalty for floor 2 is 3.</li>\n\t<li>Move from floor 2 to floor 0 in 2 seconds. Penalty for floor 0 is 5.</li>\n\t<li>Move from floor 0 to floor 9 in 9 seconds. Penalty for floor 9 is 14.</li>\n</ul>\n\n<p>Thus, the total penalty is <code>3 + 5 + 14 = 22</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= requests.length &lt;= 1500</code></li>\n\t<li><code>0 &lt;= start, requests[i] &lt;= n - 1</code></li>\n\t<li>All values in <code>requests</code> are <strong>distinct</strong>.</li>\n</ul>\n",
+    "hints": [
+        "<p>Sort the requested floors. If <code>start</code> is itself requested, its request contributes 0 and can be considered already fulfilled.</p>",
+        "<p>Once the elevator has visited a leftmost and rightmost floor, every requested floor between them has also been fulfilled. Therefore, use interval DP and keep track of whether the elevator is currently at the left or right endpoint of the visited interval.</p>",
+        "<p>When the elevator moves a distance <code>d</code> while <code>k</code> requests are still unfulfilled, the total penalty increases by <code>k * d</code>.</p>",
+        "<p>Insert <code>start</code> into the sorted positions and begin with an interval containing only <code>start</code>. From a state <code>[l, r]</code>, expand to the next requested floor on either the left or the right, updating the cost according to the current endpoint and the number of requests still unfulfilled.</p>",
+        "<p>There are <code>O(m^2)</code> intervals, where <code>m = requests.length</code>, and two possible endpoint states for each interval. Use 64-bit integers for the penalty.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:20.565Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.005Z"
+}

@@ -1,0 +1,50 @@
+{
+    "quesId": 3807,
+    "title": "Minimum Cost to Repair Edges to Traverse a Graph",
+    "titleSlug": "minimum-cost-to-repair-edges-to-traverse-a-graph",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "671",
+        "totalSubmission": "1.2K",
+        "totalAcceptedRaw": 671,
+        "totalSubmissionRaw": 1222,
+        "acRate": "54.9%",
+        "acRateRaw": 54.909983633387895,
+        "likes": 7,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4197,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "3\n[[0,1,10],[1,2,10],[0,2,100]]\n1\n6\n[[0,2,5],[2,3,6],[3,4,7],[4,5,5],[0,1,10],[1,5,12],[0,3,9],[1,2,8],[2,4,11]]\n2\n3\n[[0,1,1]]\n1",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use binary search.",
+        "For a fixed value of <code>money</code>, check whether there exists a path from node <code>0</code> to node <code>n - 1</code> that uses at most <code>k</code> edges.",
+        "Use binary search to find the smallest value of <code>money</code> that makes this possible."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:46:09.122Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.328Z"
+}

@@ -1,0 +1,37 @@
+{
+    "quesId": 3778,
+    "title": "Minimum Distance Excluding One Maximum Weighted Edge",
+    "titleSlug": "minimum-distance-excluding-one-maximum-weighted-edge",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "374",
+        "totalSubmission": "792",
+        "totalAcceptedRaw": 374,
+        "totalSubmissionRaw": 792,
+        "acRate": "47.2%",
+        "acRateRaw": 47.22222222222222,
+        "likes": 3,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4127,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "5\n[[0,1,2],[1,2,7],[2,3,7],[3,4,4]]\n3\n[[0,1,1],[1,2,1],[0,2,50000]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Use Dijkstra",
+        "The problem is the same as finding the minimum path from 0 to <code>n - 1</code> with one edge excluded",
+        "Use states <code>(dist, node, excluded)</code> as your Dijkstra elements"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:45:37.761Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.242Z"
+}

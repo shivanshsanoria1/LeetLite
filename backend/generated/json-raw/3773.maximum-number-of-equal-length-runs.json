@@ -1,0 +1,40 @@
+{
+    "questionId": "4155",
+    "questionFrontendId": "3773",
+    "title": "Maximum Number of Equal Length Runs",
+    "titleSlug": "maximum-number-of-equal-length-runs",
+    "difficulty": "Medium",
+    "likes": 3,
+    "dislikes": 3,
+    "acRate": 82.89007092198581,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"935\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 935, \"totalSubmissionRaw\": 1128, \"acRate\": \"82.9%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Split the string when adjacent characters are not equal, and use those to make the runs",
+        "Use a hashmap to group runs of the same length"
+    ],
+    "exampleTestcases": "\"hello\"\n\"aaabaaa\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:32.677Z"
+}

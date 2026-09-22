@@ -1,0 +1,44 @@
+{
+    "questionId": "4276",
+    "questionFrontendId": "3888",
+    "title": "Minimum Operations to Make All Grid Elements Equal",
+    "titleSlug": "minimum-operations-to-make-all-grid-elements-equal",
+    "difficulty": "Hard",
+    "likes": 1,
+    "dislikes": 1,
+    "acRate": 61.43344709897611,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"360\", \"totalSubmission\": \"586\", \"totalAcceptedRaw\": 360, \"totalSubmissionRaw\": 586, \"acRate\": \"61.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Determine a target value that can be reached using the operations.",
+        "Use a 2D difference array to track how many chosen <code>k x k</code> operations currently affect each cell."
+    ],
+    "exampleTestcases": "[[3,3,5],[3,3,5]]\n2\n[[1,2],[2,3]]\n1",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:53.437Z"
+}

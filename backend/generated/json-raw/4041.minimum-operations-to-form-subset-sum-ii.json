@@ -1,0 +1,132 @@
+{
+    "questionId": "4380",
+    "questionFrontendId": "4041",
+    "title": "Minimum Operations to Form Subset Sum II",
+    "titleSlug": "minimum-operations-to-form-subset-sum-ii",
+    "difficulty": "Hard",
+    "likes": 29,
+    "dislikes": 1,
+    "acRate": 49.526774595267746,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8K\", \"totalSubmission\": \"16.1K\", \"totalAcceptedRaw\": 7954, \"totalSubmissionRaw\": 16060, \"acRate\": \"49.5%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Operations to Form Subset Sum I\", \"titleSlug\": \"minimum-operations-to-form-subset-sum-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>sum</code>.</p>\n\n<p>In one <strong>operation</strong>, choose an element with current value <code>x</code> and replace it with either <code>2 * x</code> or <code>floor(x / 2)</code>.</p>\n\n<p>For each element, <strong>multiplication</strong> and <strong>division</strong> operations may be performed in any order.</p>\n\n<p>Return the <strong>minimum</strong> number of operations needed so that some <span data-keyword=\"subset\">subset</span> of the resulting array has a sum <strong>exactly</strong> equal to <code>sum</code>. If it is impossible, return -1.</p>\n\n<p>The <code>floor()</code> function returns the integer part of the division.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [10,2], sum = 13</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Divide <code>nums[0] = 10</code> once: <code>10 &rarr; 5</code>, costing 1 operation.</li>\n\t<li>Multiply <code>nums[1] = 2</code> twice: <code>2 &rarr; 4 &rarr; 8</code>, costing 2 operations.</li>\n\t<li>After these operations, <code>nums = [5, 8]</code>. The subset <code>{5, 8}</code> sums to 13 using 3 operations in total.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,3], sum = 8</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Turn <code>nums[1] = 3</code> into 2 using 2 operations:\n\n\t<ul>\n\t\t<li>Divide <code>nums[1]</code> to get 1.</li>\n\t\t<li>Multiply <code>nums[1] = 1</code> to get 2.</li>\n\t</ul>\n\t</li>\n\t<li>After these operations, <code>nums = [6, 2]</code>. The subset <code>{6, 2}</code> sums to 8 using 2 operations in total.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,2], sum = 7</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>No sequence of operations lets a subset of <code>nums</code> sum to 7, so the answer is -1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 500</code></li>\n\t<li><code>1 &lt;= sum &lt;= 5000</code></li>\n</ul>\n",
+    "hints": [
+        "In a shortest sequence of operations on one element, a multiplication followed later by a division can be canceled when they become adjacent. This lets you characterize an optimal sequence as some number of divisions followed by some number of multiplications.",
+        "Enumerate the values of the form obtained by repeatedly dividing <code>x</code>, then repeatedly doubling the result, keeping only values at most <code>sum</code> and the minimum cost for each. Combine these per-element choices with knapsack DP."
+    ],
+    "exampleTestcases": "[10,2]\n13\n[6,3]\n8\n[2,2]\n7",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int sum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int minOperations(int[] nums, int sum) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def minOperations(self, nums: list[int], sum: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def minOperations(self, nums, sum):\n        \"\"\"\n        :type nums: List[int]\n        :type sum: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} sum\n * @return {number}\n */\nvar minOperations = function(nums, sum) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function minOperations(nums: number[], sum: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MinOperations(int[] nums, int sum) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int minOperations(int* nums, int numsSize, int sum) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func minOperations(nums []int, sum int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun minOperations(nums: IntArray, sum: Int): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func minOperations(_ nums: [Int], _ sum: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>, sum: i32) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @param {Integer} sum\n# @return {Integer}\ndef min_operations(nums, sum)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $sum\n     * @return Integer\n     */\n    function minOperations($nums, $sum) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int minOperations(List<int> nums, int sum) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def minOperations(nums: Array[Int], sum: Int): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec min_operations(nums :: [integer], sum :: integer) :: integer\n  def min_operations(nums, sum) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec min_operations(Nums :: [integer()], Sum :: integer()) -> integer().\nmin_operations(Nums, Sum) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (min-operations nums sum)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:08:59.946Z"
+}

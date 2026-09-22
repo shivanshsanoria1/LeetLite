@@ -1,0 +1,141 @@
+{
+    "questionId": "4120",
+    "questionFrontendId": "4016",
+    "title": "Maximum Area of Two Non-Overlapping Square Submatrices",
+    "titleSlug": "maximum-area-of-two-non-overlapping-square-submatrices",
+    "difficulty": "Medium",
+    "likes": 89,
+    "dislikes": 5,
+    "acRate": 40.89115804130889,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.1K\", \"totalSubmission\": \"34.5K\", \"totalAcceptedRaw\": 14096, \"totalSubmissionRaw\": 34472, \"acRate\": \"40.9%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given a 2D integer matrix <code>mat</code> of size <code>m &times; n</code>, where:</p>\n\n<ul>\n\t<li><code>mat[r][c] == 1</code> means the cell at row <code>r</code> and column <code>c</code> is usable.</li>\n\t<li><code>mat[r][c] == 0</code> means it is not usable.</li>\n</ul>\n\n<p>Your task is to find <strong>two <span data-keyword=\"submatrix\">submatrices</span></strong> that satisfy the following conditions:</p>\n\n<ul>\n\t<li>Both submatrices must be squares of the same side length <code>k</code>.</li>\n\t<li>The two submatrices must not share any cell.</li>\n\t<li>Each submatrix can only cover cells where <code>mat[r][c] == 1</code>.</li>\n</ul>\n\n<p>Return the <strong>maximum possible area</strong> of each of the two squares. If it is not possible to choose two such squares, return 0.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2026/06/13/image.png\" style=\"width: 291px; height: 140px;\" /></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">mat = [[1,1,1,0],[1,1,1,1],[0,0,1,1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The largest equal non-overlapping squares have side length <code>k = 2</code> with area 4.</p>\n\n<ul>\n\t<li>First square starts at top-left <code>(0, 0)</code> and covers cells <code>(0, 0)</code>, <code>(0, 1)</code>, <code>(1, 0)</code>, and <code>(1, 1)</code>.</li>\n\t<li>Second square starts at top-left <code>(1, 2)</code> and covers cells <code>(1, 2)</code>, <code>(1, 3)</code>, <code>(2, 2)</code>, and <code>(2, 3)</code>.</li>\n</ul>\n\n<p>Thus, the answer is 4.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2026/06/13/screenshot-2026-06-13-at-83728pm.png\" style=\"width: 155px; height: 130px;\" /></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">mat = [[0,1],[1,0]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The largest equal non-overlapping squares have side length <code>k = 1</code> with area 1.</p>\n\n<ul>\n\t<li>First square starts at top-left <code>(0, 1)</code> and covers cell <code>(0, 1)</code>.</li>\n\t<li>Second square starts at top-left <code>(1, 0)</code> and covers cell <code>(1, 0)</code>.</li>\n</ul>\n\n<p>Thus, the answer is 1.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2026/06/13/screenshot-2026-06-13-at-83751pm.png\" style=\"width: 152px; height: 125px;\" /></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">mat = [[0,0],[0,1]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There is only one usable cell, so it is impossible to choose two non-overlapping squares. Thus, the answer is 0.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>mat.length == m</code></li>\n\t<li><code>mat[i].length == n</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 500</code></li>\n\t<li><code>mat[i][j]</code> is either 0 or 1.</li>\n</ul>\n",
+    "hints": [
+        "Binary search for the maximum side length <code>k</code>. If two valid squares of side length <code>k</code> exist, two valid squares of every smaller side length also exist.",
+        "Build a 2D prefix sum so that you can determine in constant time whether every cell in a given square is usable.",
+        "For a fixed <code>k</code>, record the minimum and maximum row and column among the top-left corners of all valid squares. Two of them can be disjoint if the difference between the maximum and minimum row is at least <code>k</code>, or the corresponding column difference is at least <code>k</code>."
+    ],
+    "exampleTestcases": "[[1,1,1,0],[1,1,1,1],[0,0,1,1]]\n[[0,1],[1,0]]\n[[0,0],[0,1]]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxArea(vector<vector<int>>& mat) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxArea(int[][] mat) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxArea(self, mat: List[List[int]]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxArea(self, mat):\n        \"\"\"\n        :type mat: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar maxArea = function(mat) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxArea(mat: number[][]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MaxArea(int[][] mat) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int maxArea(int** mat, int matSize, int* matColSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxArea(mat [][]int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxArea(mat: Array<IntArray>): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxArea(_ mat: [[Int]]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_area(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[][]} mat\n# @return {Integer}\ndef max_area(mat)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @return Integer\n     */\n    function maxArea($mat) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxArea(List<List<int>> mat) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxArea(mat: Array[Array[Int]]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_area(mat :: [[integer]]) :: integer\n  def max_area(mat) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_area(Mat :: [[integer()]]) -> integer().\nmax_area(Mat) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-area mat)\n  (-> (listof (listof exact-integer?)) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:07:13.341Z"
+}

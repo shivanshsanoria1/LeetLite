@@ -1,0 +1,48 @@
+{
+    "quesId": 4053,
+    "title": "Minimum Operations to Make Every Element Palindromic",
+    "titleSlug": "minimum-operations-to-make-every-element-palindromic",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.3K",
+        "totalSubmission": "47.9K",
+        "totalAcceptedRaw": 7322,
+        "totalSubmissionRaw": 47903,
+        "acRate": "15.3%",
+        "acRateRaw": 15.285866366084289,
+        "likes": 61,
+        "dislikes": 12
+    },
+    "similarQuesIds": [
+        2967
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4344,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[10,12,14,16]\r\n[9,10,11,10]\r\n[125]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>In one <strong>operation</strong>, you may choose an index <code>i</code> and either increment or decrement <code>nums[i]</code> by 2.</p>\n\n<p>Return the <strong>minimum</strong> number of operations required to make every element in <code>nums</code> a <strong>positive</strong> <span data-keyword=\"palindrome-integer\">palindrome</span>. Different elements may be changed into different palindromic integers.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [10,12,14,16]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">9</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal sequence of operations is:</p>\n\n<ul>\n\t<li>Decrement <code>nums[0]</code> by 2 once to change it from 10 to 8.</li>\n\t<li>Decrement <code>nums[1]</code> by 2 twice to change it from 12 to 8.</li>\n\t<li>Decrement <code>nums[2]</code> by 2 three times to change it from 14 to 8.</li>\n\t<li>Increment <code>nums[3]</code> by 2 three times to change it from 16 to 22.</li>\n</ul>\n\n<p>After <code>1 + 2 + 3 + 3 = 9</code> operations, <code>nums = [8, 8, 8, 22]</code>, and every element is a positive palindromic integer.</p>\n\n<p>It can be shown that fewer than 9 operations cannot achieve this.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [9,10,11,10]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Decrement <code>nums[1]</code> and <code>nums[3]</code> by 2 once each.</p>\n\n<p>After 2 operations, <code>nums = [9, 8, 11, 8]</code>, and every element is a positive palindromic integer.</p>\n\n<p>At least one operation is needed for each of these two elements, so the minimum number of operations is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [125]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Decrement <code>nums[0]</code> by 2 twice to change it from 125 to 121, which is a positive palindromic integer.</p>\n\n<p>A single operation would change it to 123 or 127, neither of which is palindromic. Thus, the minimum number of operations is 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>Each operation preserves parity. Handle each element independently by finding its nearest positive palindrome of the same parity.</p>",
+        "<p>Precompute all positive palindromes up to 2,000,000,002 by mirroring their first halves, and separate them into sorted lists by parity. Perform this precomputation <strong>only once</strong>, using global or static initialization, and reuse the lists across all test cases.</p>",
+        "<p>Binary search the appropriate list for the closest candidates on either side of each element. Changing <code>x</code> into <code>p</code> costs <code>|x - p| / 2</code> operations.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:11.615Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.992Z"
+}

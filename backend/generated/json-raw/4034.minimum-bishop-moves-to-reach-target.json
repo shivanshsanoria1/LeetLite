@@ -1,0 +1,132 @@
+{
+    "questionId": "4390",
+    "questionFrontendId": "4034",
+    "title": "Minimum Bishop Moves to Reach Target",
+    "titleSlug": "minimum-bishop-moves-to-reach-target",
+    "difficulty": "Medium",
+    "likes": 46,
+    "dislikes": 2,
+    "acRate": 65.65871012164334,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"34.3K\", \"totalSubmission\": \"52.3K\", \"totalAcceptedRaw\": 34328, \"totalSubmissionRaw\": 52282, \"acRate\": \"65.7%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>There is an <code>8 x 8</code> empty chessboard with <strong>1-indexed</strong> rows and columns.</p>\n\n<p>You are given an array <code>source = [sr, sc]</code> representing the starting position of a <strong>bishop</strong>, and an array <code>target = [tr, tc]</code> representing the target position.</p>\n\n<p>In one move, the bishop travels one or more squares along a single <strong>diagonal</strong> direction, staying within the board.</p>\n\n<p>Return the <strong>minimum</strong> number of moves for the bishop to land <strong>exactly</strong> on <code>target</code>. If it can never reach <code>target</code>, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [8,1], target = [1,8]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong>​​​​​​​<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/08/31/111.png\" style=\"width: 300px; height: 303px;\" />​​​​​​​</strong></p>\n\n<p>A single diagonal move takes the bishop straight from <code>(8, 1)</code> to <code>(1, 8)</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [4,2], target = [1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/08/31/22-ezgifcom-invert-colors.png\" style=\"width: 300px; height: 305px;\" /></p>\n\n<p>The bishop moves from <code>(4, 2)</code> to <code>(3, 1)</code>, then from <code>(3, 1)</code> to <code>(1, 3)</code>, reaching the target in 2 moves.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [1,1], target = [3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>No matter how many diagonal moves it makes, the bishop starting at <code>(1, 1)</code> can never land on <code>(3, 4)</code>. Thus, the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong>​​​​​​​</p>\n\n<ul>\n\t<li><code>source.length == target.length == 2</code></li>\n\t<li><code>1 &lt;= sr, sc, tr, tc &lt;= 8</code></li>\n\t<li><code>source != target</code></li>\n</ul>\n",
+    "hints": [
+        "First consider the cases where no move is needed or where the target is unreachable. A bishop always remains on squares of the same color.",
+        "Two squares are on the same diagonal if either <code>r - c</code> or <code>r + c</code> is equal for both squares. If the target is reachable but not on the same diagonal, determine how many moves are sufficient."
+    ],
+    "exampleTestcases": "[8,1]\n[1,8]\n[4,2]\n[1,3]\n[1,1]\n[3,4]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minBishopMoves(vector<int>& source, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int minBishopMoves(int[] source, int[] target) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def minBishopMoves(self, source: list[int], target: list[int]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def minBishopMoves(self, source, target):\n        \"\"\"\n        :type source: List[int]\n        :type target: List[int]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} source\n * @param {number[]} target\n * @return {number}\n */\nvar minBishopMoves = function(source, target) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function minBishopMoves(source: number[], target: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MinBishopMoves(int[] source, int[] target) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int minBishopMoves(int* source, int sourceSize, int* target, int targetSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func minBishopMoves(source []int, target []int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun minBishopMoves(source: IntArray, target: IntArray): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func minBishopMoves(_ source: [Int], _ target: [Int]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn min_bishop_moves(source: Vec<i32>, target: Vec<i32>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} source\n# @param {Integer[]} target\n# @return {Integer}\ndef min_bishop_moves(source, target)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $source\n     * @param Integer[] $target\n     * @return Integer\n     */\n    function minBishopMoves($source, $target) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int minBishopMoves(List<int> source, List<int> target) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def minBishopMoves(source: Array[Int], target: Array[Int]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec min_bishop_moves(source :: [integer], target :: [integer]) :: integer\n  def min_bishop_moves(source, target) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec min_bishop_moves(Source :: [integer()], Target :: [integer()]) -> integer().\nmin_bishop_moves(Source, Target) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (min-bishop-moves source target)\n  (-> (listof exact-integer?) (listof exact-integer?) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:07:33.493Z"
+}

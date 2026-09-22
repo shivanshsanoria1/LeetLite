@@ -1,0 +1,55 @@
+{
+    "quesId": 4007,
+    "title": "Widest Possible Fence",
+    "titleSlug": "widest-possible-fence",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "14.8K",
+        "totalSubmission": "85.7K",
+        "totalAcceptedRaw": 14771,
+        "totalSubmissionRaw": 85698,
+        "acRate": "17.2%",
+        "acRateRaw": 17.236872812135356,
+        "likes": 99,
+        "dislikes": 18
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4362,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,3,2,5,7,5,4,2,1]\n[2,3,7]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>planks</code>, where <code>planks[i]</code> represents the height of the <code>i<sup>th</sup></code> wooden plank. Each plank has a width of 1 unit.</p>\n\n<p>You want to build a fence consisting of planks that all have the <strong>same</strong> height.</p>\n\n<p>You may either use a plank as is, or combine <strong>exactly</strong> two distinct original planks into a single plank whose height <strong>equals</strong> the sum of their heights. Each original plank can be used <strong>at most</strong> once, and not all original planks need to be used.</p>\n\n<p>Return the <strong>maximum possible width</strong> of the fence that can be built.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">planks = [1,3,2,5,7,5,4,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>We can have four planks of height 5.</p>\n\n<ul>\n\t<li><code>planks[3] = 5</code></li>\n\t<li><code>planks[5] = 5</code></li>\n\t<li><code>planks[0] + planks[6] = 1 + 4 = 5</code></li>\n\t<li><code>planks[1] + planks[2] = 3 + 2 = 5</code></li>\n</ul>\n\n<p>Hence, the maximum width is 4.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">planks = [2,3,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>It is impossible to form two planks of the same height, even after combining two distinct original planks.</li>\n\t<li>Since not all original planks need to be used, we can choose any one plank as the fence.</li>\n\t<li>Therefore, the maximum possible width is 1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= planks.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= planks[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>Fix the common fence height <code>h</code>. Every original plank of height <code>h</code> can be used by itself.</p>",
+        "<p>Any remaining plank of height <code>x &lt; h</code> can only be used by pairing it with a plank of height <code>h - x</code>.</p>",
+        "<p>Using the frequency of each height, count these disjoint pairs with <code>min(freq[x], freq[h - x])</code>; when <code>x == h - x</code>, use <code>freq[x] / 2</code>.</p>",
+        "<p>It is enough to try heights that occur as an original plank height or as the sum of two original plank heights. Take the maximum number of single planks and pairs over all such heights.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:04.728Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.994Z"
+}

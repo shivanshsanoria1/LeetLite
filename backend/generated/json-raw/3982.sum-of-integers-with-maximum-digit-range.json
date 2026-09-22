@@ -1,0 +1,132 @@
+{
+    "questionId": "4356",
+    "questionFrontendId": "3982",
+    "title": "Sum of Integers with Maximum Digit Range",
+    "titleSlug": "sum-of-integers-with-maximum-digit-range",
+    "difficulty": "Easy",
+    "likes": 38,
+    "dislikes": 0,
+    "acRate": 73.13141781783966,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"53.6K\", \"totalSubmission\": \"73.3K\", \"totalAcceptedRaw\": 53628, \"totalSubmissionRaw\": 73331, \"acRate\": \"73.1%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>The <strong>digit range</strong> of an integer is defined as the difference between its <strong>largest</strong> digit and <strong>smallest</strong> digit.</p>\n\n<p>For example, the digit range of 5724 is <code>7 - 2 = 5</code>.</p>\n\n<p>Return the sum of all integers in <code>nums</code> whose <strong>digit range</strong> is equal to the <strong>maximum digit range</strong> among all integers in the array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5724,111,350]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6074</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"text-align:center;\"><code>i</code></th>\n\t\t\t<th style=\"text-align:center;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"text-align:center;\">Largest</th>\n\t\t\t<th style=\"text-align:center;\">Smallest</th>\n\t\t\t<th style=\"text-align:center;\">Digit Range</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t\t<td style=\"text-align:center;\">5724</td>\n\t\t\t<td style=\"text-align:center;\">7</td>\n\t\t\t<td style=\"text-align:center;\">2</td>\n\t\t\t<td style=\"text-align:center;\">5</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">111</td>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">2</td>\n\t\t\t<td style=\"text-align:center;\">350</td>\n\t\t\t<td style=\"text-align:center;\">5</td>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t\t<td style=\"text-align:center;\">5</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The maximum digit range is 5. The integers with this digit range are 5724 and 350, so the answer is <code>5724 + 350 = 6074</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [90,900]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">990</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"text-align:center;\"><code>i</code></th>\n\t\t\t<th style=\"text-align:center;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"text-align:center;\">Largest</th>\n\t\t\t<th style=\"text-align:center;\">Smallest</th>\n\t\t\t<th style=\"text-align:center;\">Digit Range</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t\t<td style=\"text-align:center;\">90</td>\n\t\t\t<td style=\"text-align:center;\">9</td>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t\t<td style=\"text-align:center;\">9</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">900</td>\n\t\t\t<td style=\"text-align:center;\">9</td>\n\t\t\t<td style=\"text-align:center;\">0</td>\n\t\t\t<td style=\"text-align:center;\">9</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The maximum digit range is 9. Both integers have this digit range, so the answer is <code>90 + 900 = 990</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>10 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>Compute the digit range of each number by scanning its decimal digits.</p>",
+        "<p>First find the maximum digit range, then sum all numbers whose digit range equals it.</p>"
+    ],
+    "exampleTestcases": "[5724,111,350]\n[90,900]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDigitRange(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxDigitRange(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxDigitRange(self, nums: list[int]) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxDigitRange(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxDigitRange = function(nums) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxDigitRange(nums: number[]): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public int MaxDigitRange(int[] nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "int maxDigitRange(int* nums, int numsSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxDigitRange(nums []int) int {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxDigitRange(nums: IntArray): Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxDigitRange(_ nums: [Int]) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_digit_range(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_digit_range(nums)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxDigitRange($nums) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxDigitRange(List<int> nums) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxDigitRange(nums: Array[Int]): Int = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_digit_range(nums :: [integer]) :: integer\n  def max_digit_range(nums) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_digit_range(Nums :: [integer()]) -> integer().\nmax_digit_range(Nums) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-digit-range nums)\n  (-> (listof exact-integer?) exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:06:36.333Z"
+}

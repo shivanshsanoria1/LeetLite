@@ -1,0 +1,47 @@
+{
+    "quesId": 4019,
+    "title": "Merge Close Characters II",
+    "titleSlug": "merge-close-characters-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "281",
+        "totalSubmission": "363",
+        "totalAcceptedRaw": 281,
+        "totalSubmissionRaw": 363,
+        "acRate": "77.4%",
+        "acRateRaw": 77.47252747252747,
+        "likes": 2,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3853
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4014,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"abca\"\n3\n\"aabca\"\n2\n\"yybyzybz\"\n2",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Process the characters from left to right while maintaining the resulting string for the prefix processed so far. When adding a new character, any newly possible merge must use that character as the right character.",
+        "For each letter, store the index of its last occurrence in the resulting string. If its distance from the current end is at most <code>k</code>, discard the current character; otherwise, append it and update its last occurrence."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:17.441Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.002Z"
+}

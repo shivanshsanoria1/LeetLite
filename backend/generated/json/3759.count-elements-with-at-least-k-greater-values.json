@@ -1,0 +1,57 @@
+{
+    "quesId": 3759,
+    "title": "Count Elements With at Least K Greater Values",
+    "titleSlug": "count-elements-with-at-least-k-greater-values",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "34.8K",
+        "totalSubmission": "109.4K",
+        "totalAcceptedRaw": 34815,
+        "totalSubmissionRaw": 109389,
+        "acRate": "31.8%",
+        "acRateRaw": 31.826783314592877,
+        "likes": 79,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Quickselect",
+            "slug": "quickselect"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4141,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[3,1,2]\n1\n[5,5,5]\n2",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> of length <code>n</code> and an integer <code>k</code>.</p>\n\n<p>An element in <code>nums</code> is said to be <strong>qualified</strong> if there exist <strong>at least</strong> <code>k</code> elements in the array that are <strong>strictly greater</strong> than it.</p>\n\n<p>Return an integer denoting the total number of qualified elements in <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,1,2], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The elements 1 and 2 each have at least <code>k = 1</code> element greater than themselves.<br />\n​​​​​​​No element is greater than 3. Therefore, the answer is 2.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,5,5], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Since all elements are equal to 5, no element is greater than the other. Therefore, the answer is 0.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= k &lt; n</code></li>\n</ul>\n",
+    "hints": [
+        "Sort <code>nums</code>, build distinct <code>values</code> and <code>count</code>.",
+        "For each <code>val</code>: find <code>upper_bound</code>, compute <code>greater = n - upper_bound_idx</code>; if <code>greater >= k</code> add <code>count[val]</code> to <code>ans</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:45:16.493Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.056Z"
+}

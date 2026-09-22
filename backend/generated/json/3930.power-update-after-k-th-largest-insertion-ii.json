@@ -1,0 +1,60 @@
+{
+    "quesId": 3930,
+    "title": "Power Update After K-th Largest Insertion II",
+    "titleSlug": "power-update-after-k-th-largest-insertion-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "503",
+        "totalSubmission": "622",
+        "totalAcceptedRaw": 503,
+        "totalSubmissionRaw": 622,
+        "acRate": "80.9%",
+        "acRateRaw": 80.86816720257235,
+        "likes": 2,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3935
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3978,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2]\n4\n[[3,1],[1,2]]\n[7,5]\n6\n[[4,3],[7,2]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Convert <code>k<sup>th</sup></code> largest into rank <code>size - k + 1</code> in increasing order.",
+        "Use coordinate compression + Fenwick tree to find that ranked value efficiently.",
+        "Update <code>p</code> with fast modular exponentiation."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:00:38.483Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.861Z"
+}

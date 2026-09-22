@@ -1,0 +1,30 @@
+{
+    "questionId": "4413",
+    "questionFrontendId": "4029",
+    "title": "Elevator Requests IV",
+    "titleSlug": "elevator-requests-iv",
+    "difficulty": "Hard",
+    "likes": 1,
+    "dislikes": 1,
+    "acRate": 63.12292358803987,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"190\", \"totalSubmission\": \"301\", \"totalAcceptedRaw\": 190, \"totalSubmissionRaw\": 301, \"acRate\": \"63.1%\"}",
+    "similarQuestions": "[{\"title\": \"Elevator Requests III\", \"titleSlug\": \"elevator-requests-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "<p>For each floor, only its latest request time matters. If the elevator visits that floor at or after the latest arrival time, then every request for that floor is fulfilled. Compress the input into <code>m</code> distinct floors with one arrival time per floor.</p>",
+        "<p>Binary search the minimum finishing time <code>T</code>. For a fixed <code>T</code>, reverse time: a request with original arrival time <code>r</code> becomes a requirement to visit its floor by time <code>T - r</code> in the reversed process.</p>",
+        "<p>Sort the distinct requested floors. In reversed time, start at the floor of the request fulfilled last in the original process. As you move on a line, the set of requested floors already visited always forms a contiguous interval in the sorted order.</p>",
+        "<p>Use interval DP. Let <code>dp[l][r][0/1]</code> be the minimum reversed time needed to visit all requested floors from <code>l</code> through <code>r</code>, ending at the left or right endpoint. Initialize <code>dp[i][i] = 0</code> for every possible starting floor.</p>",
+        "<p>When expanding the interval to a new floor, add the travel distance and require the resulting time to be at most that floor's deadline <code>T - arrival</code>. After all requested floors are visited, check whether the elevator can reach <code>start</code> within time <code>T</code>. This gives an <code>O(m^2)</code> feasibility check and <code>O(m^2 log V)</code> overall.</p>"
+    ],
+    "exampleTestcases": "9\r\n0\r\n[[0,8],[6,5]]\r\n8\r\n5\r\n[[1,7],[7,3]]\r\n7\r\n3\r\n[[0,5],[0,1],[6,3]]\r",
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:07:29.504Z"
+}

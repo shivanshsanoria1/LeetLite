@@ -1,0 +1,138 @@
+{
+    "questionId": "4348",
+    "questionFrontendId": "3974",
+    "title": "Maximum Total Sum of K Selected Elements",
+    "titleSlug": "maximum-total-sum-of-k-selected-elements",
+    "difficulty": "Medium",
+    "likes": 52,
+    "dislikes": 5,
+    "acRate": 49.071393402264896,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"49.8K\", \"totalSubmission\": \"101.5K\", \"totalAcceptedRaw\": 49832, \"totalSubmissionRaw\": 101550, \"acRate\": \"49.1%\"}",
+    "similarQuestions": "[]",
+    "content": "<p>You are given an integer array <code>nums</code> and two integers <code>k</code> and <code>mul</code>.</p>\n\n<p>Select <strong>exactly</strong> <code>k</code> elements from <code>nums</code>. Process these elements one by one in any order you choose.</p>\n\n<p>For each selected element, <strong>independently</strong> choose one of the following:</p>\n\n<ul>\n\t<li><strong>Add</strong> the element&#39;s value to the total sum, or</li>\n\t<li><strong>Multiply</strong> the element by the <strong>current</strong> value of <code>mul</code> and <strong>add</strong> the result to the total sum.</li>\n</ul>\n\n<p>After processing each selected element, <code>mul</code> <strong>decreases</strong> by 1, regardless of which option was chosen. The current value of <code>mul</code> may become 0 or negative.</p>\n\n<p>Return an integer denoting the <strong>maximum</strong> possible total sum.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [6,1,2,9], k = 3, mul = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">26</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal way:</p>\n\n<ul>\n\t<li>One optimal selection is <code>nums[3] = 9</code>, <code>nums[0] = 6</code>, and <code>nums[2] = 2</code>.</li>\n\t<li>Process <code>nums[3] = 9</code> first: choose multiplication, so it contributes <code>9 * 2 = 18</code>. Now, <code>mul</code> becomes 1.</li>\n\t<li>Process <code>nums[0] = 6</code> next: choose multiplication, so it contributes <code>6 * 1 = 6</code>. Now, <code>mul</code> becomes 0.</li>\n\t<li>Process <code>nums[2] = 2</code> last: choose addition, so it contributes 2.</li>\n\t<li>The total sum is <code>18 + 6 + 2 = 26</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,7,5,2], k = 2, mul = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">43</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal way:</p>\n\n<ul>\n\t<li>One optimal selection is <code>nums[1] = 7</code> and <code>nums[2] = 5</code>.</li>\n\t<li>Process <code>nums[1] = 7</code> first: choose multiplication, so it contributes <code>7 * 4 = 28</code>. Now, <code>mul</code> becomes 3.</li>\n\t<li>Process <code>nums[2] = 5</code> next: choose multiplication, so it contributes <code>5 * 3 = 15</code>.</li>\n\t<li>The total sum is <code>28 + 15 = 43</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,4], k = 1, mul = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal way:</p>\n\n<ul>\n\t<li>One optimal selection is <code>nums[0] = 4</code>.</li>\n\t<li>Process <code>nums[0] = 4</code>: choose multiplication, so it contributes <code>4 * 1 = 4</code>.</li>\n\t<li>The total sum is 4.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= nums.length</code></li>\n\t<li><code>1 &lt;= mul &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Suppose the selected elements are fixed. Which elements should be multiplied, and in what order should they be processed?",
+        "Since every <code>nums[i]</code> is positive, multiplying by a current value greater than 1 is always at least as good as adding normally.",
+        "Only the first <code>min(k, mul - 1)</code> processed elements should be multiplied. All remaining selected elements should be added normally.",
+        "Choose the largest <code>k</code> elements of <code>nums</code>, and pair the largest selected elements with the largest multipliers."
+    ],
+    "exampleTestcases": "[6,1,2,9]\n3\n2\n[3,7,5,2]\n2\n4\n[4,4]\n1\n1",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSum(vector<int>& nums, int k, int mul) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public long maxSum(int[] nums, int k, int mul) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def maxSum(self, nums: list[int], k: int, mul: int) -> int:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def maxSum(self, nums, k, mul):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :type mul: int\n        :rtype: int\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} mul\n * @return {number}\n */\nvar maxSum = function(nums, k, mul) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function maxSum(nums: number[], k: number, mul: number): number {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public long MaxSum(int[] nums, int k, int mul) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "long long maxSum(int* nums, int numsSize, int k, int mul) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func maxSum(nums []int, k int, mul int) int64 {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun maxSum(nums: IntArray, k: Int, mul: Int): Long {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func maxSum(_ nums: [Int], _ k: Int, _ mul: Int) -> Int {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn max_sum(nums: Vec<i32>, k: i32, mul: i32) -> i64 {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @param {Integer} mul\n# @return {Integer}\ndef max_sum(nums, k, mul)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @param Integer $mul\n     * @return Integer\n     */\n    function maxSum($nums, $k, $mul) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  int maxSum(List<int> nums, int k, int mul) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def maxSum(nums: Array[Int], k: Int, mul: Int): Long = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec max_sum(nums :: [integer], k :: integer, mul :: integer) :: integer\n  def max_sum(nums, k, mul) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec max_sum(Nums :: [integer()], K :: integer(), Mul :: integer()) -> integer().\nmax_sum(Nums, K, Mul) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (max-sum nums k mul)\n  (-> (listof exact-integer?) exact-integer? exact-integer? exact-integer?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-09-22T19:06:28.536Z"
+}

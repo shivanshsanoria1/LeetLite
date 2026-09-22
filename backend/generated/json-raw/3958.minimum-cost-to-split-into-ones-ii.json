@@ -1,0 +1,33 @@
+{
+    "questionId": "4026",
+    "questionFrontendId": "3958",
+    "title": "Minimum Cost to Split into Ones II",
+    "titleSlug": "minimum-cost-to-split-into-ones-ii",
+    "difficulty": "Medium",
+    "likes": 3,
+    "dislikes": 1,
+    "acRate": 68.80341880341881,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"322\", \"totalSubmission\": \"468\", \"totalAcceptedRaw\": 322, \"totalSubmissionRaw\": 468, \"acRate\": \"68.8%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Cost to Split into Ones\", \"titleSlug\": \"minimum-cost-to-split-into-ones\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Let <code>f(x)</code> be the minimum total cost to split <code>x</code> into ones.",
+        "If you split <code>x</code> into <code>a</code> and <code>b</code>, then <code>f(x) = a * b + f(a) + f(b)</code>.",
+        "Look for an invariant: the total cost may depend only on the final set of pieces, not on the order of splits."
+    ],
+    "exampleTestcases": "3\n4",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:06:11.420Z"
+}

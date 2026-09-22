@@ -1,0 +1,47 @@
+{
+    "quesId": 3951,
+    "title": "Minimum Energy to Maintain Brightness",
+    "titleSlug": "minimum-energy-to-maintain-brightness",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "26.4K",
+        "totalSubmission": "49.4K",
+        "totalAcceptedRaw": 26364,
+        "totalSubmissionRaw": 49355,
+        "acRate": "53.4%",
+        "acRateRaw": 53.41708033633877,
+        "likes": 49,
+        "dislikes": 32
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4306,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "5\n5\n[[6,12]]\n2\n1\n[[0,0],[2,2]]\n4\n2\n[[1,3],[2,4]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>n</code>, representing <code>n</code> light bulbs arranged in a line and indexed from 0 to <code>n - 1</code>.</p>\n\n<p>You are also given an integer <code>brightness</code> and a 2D integer array <code>intervals</code>, where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> represents an <strong>inclusive</strong> time interval during which the lighting requirement <strong>must</strong> be satisfied.</p>\n\n<p>At each time unit, every bulb can independently be either on or off. A bulb that is on <strong>illuminates</strong> its own position and its <strong>adjacent</strong> positions, if they exist.</p>\n\n<p>The <strong>total illumination</strong> at a time unit is the number of <strong>illuminated</strong> positions. Each position is counted <strong>at most once</strong>.</p>\n\n<p>For every integer time unit covered by <strong>at least</strong> one interval in <code>intervals</code>, the <strong>total illumination</strong> must be <strong>at least</strong> <code>brightness</code>. At time units not covered by any interval, all bulbs may remain off. Each bulb that is on consumes 1 unit of energy for that time unit.</p>\n\n<p>Return an integer denoting the <strong>minimum</strong> total energy required.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 5, brightness = 5, intervals = [[6,12]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">14</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Turn on the light bulbs at positions 1 and 4.</li>\n\t<li>Current state of line: <code>0 1 0 0 1</code>.</li>\n\t<li>All 5 positions are illuminated, so the required brightness is reached.</li>\n\t<li>The active interval has length <code>12 - 6 + 1 = 7</code>, so the total energy is <code>2 * 7 = 14</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2, brightness = 1, intervals = [[0,0],[2,2]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Turn on one light bulb during each active interval.</li>\n\t<li>Each interval has length 1, so the total active time is <code>1 + 1 = 2</code>.</li>\n\t<li>The total energy is <code>1 * 2 = 2</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4, brightness = 2, intervals = [[1,3],[2,4]]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Turn on one light bulb. It can illuminate at least 2 positions.</li>\n\t<li>The active intervals overlap, so the total active time is the length of <code>[1,4]</code>, which is 4.</li>\n\t<li>The total energy is <code>1 * 4 = 4</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>6</sup></code></li>\n\t<li><code>1 &lt;= brightness &lt;= n</code></li>\n\t<li><code>1 &lt;= intervals.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>intervals[i] == [start<sub>i</sub>, end<sub>i</sub>]</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "The actual bulb configuration does not depend on the time unit, only on the required brightness.",
+        "First compute the minimum number of bulbs needed to illuminate at least brightness positions on a line of length <code>n</code>.",
+        "One bulb can illuminate at most 3 positions, except near the boundaries. So the answer is essentially <code>ceil(brightness / 3)</code>.",
+        "Merge all overlapping intervals to compute the total number of active time units."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:04.336Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.929Z"
+}

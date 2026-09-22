@@ -1,0 +1,57 @@
+{
+    "quesId": 3967,
+    "title": "Finish Time of Tasks II",
+    "titleSlug": "finish-time-of-tasks-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "219",
+        "totalSubmission": "882",
+        "totalAcceptedRaw": 219,
+        "totalSubmissionRaw": 882,
+        "acRate": "24.8%",
+        "acRateRaw": 24.829931972789115,
+        "likes": 4,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3965
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4093,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "3\n[[0,1],[1,2]]\n[9,1,5]\n3\n[[0,1],[0,2]]\n[4,7,6]\n4\n[[0,1],[0,2],[2,3]]\n[5,8,2,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Rooting the tree at different nodes only changes which neighbors are treated as children.",
+        "For every directed edge <code>u -> v</code>, compute the finish time of the component on the <code>v</code> side when <code>u</code> is considered its parent.",
+        "Use rerooting DP: after computing values from children to parent, propagate values from parent to children.",
+        "For each node, you only need the minimum and maximum finish times among all neighboring components to compute its finish time as the root."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:20.511Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.962Z"
+}

@@ -1,0 +1,55 @@
+{
+    "quesId": 3948,
+    "title": "Lexicographically Maximum MEX Array",
+    "titleSlug": "lexicographically-maximum-mex-array",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "8.3K",
+        "totalSubmission": "15.5K",
+        "totalAcceptedRaw": 8306,
+        "totalSubmissionRaw": 15482,
+        "acRate": "53.6%",
+        "acRateRaw": 53.64939930241571,
+        "likes": 54,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4174,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[0,1,0]\n[1,0,2]\n[3,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>You want to construct an array <code>result</code> by repeatedly performing the following operation until <code>nums</code> becomes empty:</p>\n\n<ul>\n\t<li>Choose an integer <code>k</code> such that <code>1 &lt;= k &lt;= len(nums)</code>.</li>\n\t<li>Compute the <strong>MEX</strong> of the first <code>k</code> elements of <code>nums</code>.</li>\n\t<li>Append this <strong>MEX</strong> to <code>result</code>.</li>\n\t<li>Remove the first <code>k</code> elements from <code>nums</code>.</li>\n</ul>\n\n<p>Return the <strong>lexicographically maximum</strong> array <code>result</code> that can be obtained after performing the operations.</p>\n\n<p>The <strong>MEX</strong> of an array is the <strong>smallest non-negative</strong> integer not present in the array.</p>\n\n<p>An array <code>a</code> is <strong>lexicographically greater</strong> than an array <code>b</code> if in the first position where <code>a</code> and <code>b</code> differ, array <code>a</code> has an element that is greater than the corresponding element in <code>b</code>. If the first <code>min(a.length, b.length)</code> elements do not differ, then the longer array is the <strong>lexicographically greater</strong> one.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [0,1,0]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[2,1]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Take the first <code>k = 2</code> elements <code>[0, 1]</code> which has MEX = 2. Current <code>result = [2]</code>.</li>\n\t<li>Remaining array <code>[0]</code> has MEX = 1. Thus, the final <code>result = [2, 1]</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,0,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Take the first <code>k = 3</code> elements <code>[1, 0, 2]</code> which has MEX = 3.</li>\n\t<li><code><span class=\"example-io\">nums</span></code> is now empty. Thus, the final <code>result = [3]</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[0,0]</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Take <code>k = 1</code>, first element <code>[3]</code> has MEX = 0. Current <code>result = [0]</code>.</li>\n\t<li>Remaining array <code>[1]</code> has MEX = 0. Thus, the final <code>result = [0, 0]</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "At any step, the best next value is the MEX of the entire remaining suffix. You cannot make the first result element larger than that.",
+        "If the current suffix MEX is <code>x</code>, you should take the shortest prefix that contains all values <code>0, 1, ..., x - 1</code>. This appends <code>x</code> while leaving as many elements as possible for later.",
+        "If the current suffix MEX is 0, then no remaining element is 0, so taking one element at a time is optimal and appends many 0s.",
+        "Maintain remaining frequencies to know the current suffix MEX, and use a sliding process to find the shortest prefix containing all numbers below it."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:00.749Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.926Z"
+}

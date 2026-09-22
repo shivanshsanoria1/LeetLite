@@ -1,0 +1,46 @@
+{
+    "quesId": 3876,
+    "title": "Construct Uniform Parity Array II",
+    "titleSlug": "construct-uniform-parity-array-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "173.1K",
+        "totalSubmission": "260.9K",
+        "totalAcceptedRaw": 173059,
+        "totalSubmissionRaw": 260922,
+        "acRate": "66.3%",
+        "acRateRaw": 66.32570153990021,
+        "likes": 397,
+        "dislikes": 34
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4258,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,4,7]\n[2,3]\n[4,6]",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Classification Discussion\n\n#### Intuition\n\nThis problem is similar to \"[3875. Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/)\", but with an additional constraint: when using the second operation, it must satisfy $\\textit{nums}_1[i] - \\textit{nums}_1[j] \\ge 1$, meaning the minuend must be strictly greater than the subtrahend.\n\nSince only subtracting an odd number changes the parity (even minus odd gets odd, odd minus odd gets even), we only need to focus on the minimum odd number in the array.\n\nLet the length of $\\textit{nums}_1$ be $n$, and the minimum value in the array be $\\textit{mn}$. Since the minimum value cannot be changed by subtracting a smaller number, the parity of $\\textit{mn}$ determines the target parity of $\\textit{nums}_2$.\n\nWe classify $\\textit{nums}_1$ into discussions:\n\n1. $\\textit{nums}_1$ is all even: In this case, we can directly set each $\\textit{nums}_2[i] = \\textit{nums}_1[i]$ (using the first operation), and the resulting $\\textit{nums}_2$ will all be even, satisfying the condition.\n\n2. $\\textit{nums}_1$ is all odd: Similarly, we can directly set each $\\textit{nums}_2[i] = \\textit{nums}_1[i]$, and the resulting $\\textit{nums}_2$ will all be odd, satisfying the condition.\n\n3. $\\textit{nums}_1$ contains both odd and even numbers:\n\n   - If $\\textit{mn}$ is odd: We can construct the array to be all odd. For odd positions, use the first operation directly; for even positions, let the even number subtract $\\textit{mn}$ (a smaller odd number), since even minus odd gets odd, and $\\textit{mn}$ is the minimum value, any even number subtracting $\\textit{mn}$ will result in a number $\\ge 1$, satisfying the problem's requirements.\n\n   - If $\\textit{mn}$ is even: It is impossible to construct a valid $\\textit{nums}_2$. Because:\n\n     - If the goal is to be all even: The odd number must subtract an odd number to become even. But the smallest odd number cannot find a smaller odd number to subtract, so the parity cannot be changed.\n\n     - If the goal is to be all odd: The even number $\\textit{mn}$ must subtract an odd number to become odd. But $\\textit{mn}$ is the minimum value, and there is no smaller number to subtract.\n\n     Both cases are infeasible, so return $\\texttt{false}$.\n\nIn summary, we only need to traverse the array once, find the minimum value $\\textit{mn}$, and record whether there is an odd number:\n\n- If $\\textit{mn}$ is odd, return $\\texttt{true}$ directly.\n\n- If $\\textit{mn}$ is even, return $\\texttt{true}$ only if there are no odd numbers in the array, otherwise return $\\texttt{false}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/E5tqSKj4/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"E5tqSKj4\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}_1$.\n\n- Time complexity: $O(n)$.\n  \n  We only need to traverse the array once to find the minimum value and to determine if there is an odd number.\n\n- Space complexity: $O(1)$.\n  \n  Use only constant extra space.\n\n---"
+    },
+    "content": "<p>You are given an array <code>nums1</code> of <code>n</code> <strong>distinct</strong> integers.</p>\n\n<p>You want to construct another array <code>nums2</code> of length <code>n</code> such that the elements in <code>nums2</code> are either <strong>all odd or all even</strong>.</p>\n\n<p>For each index <code>i</code>, you must choose <strong>exactly one</strong> of the following (in any order):</p>\n\n<ul>\n\t<li><code>nums2[i] = nums1[i]</code>​​​​​​​</li>\n\t<li><code>nums2[i] = nums1[i] - nums1[j]</code>, for an index <code>j != i</code>, such that <code>nums1[i] - nums1[j] &gt;= 1</code></li>\n</ul>\n\n<p>Return <code>true</code> if it is possible to construct such an array, otherwise return <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums1 = [1,4,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​​​​​​​​</p>\n\n<ul>\n\t<li>Set <code>nums2[0] = nums1[0] = 1</code>.</li>\n\t<li>Set <code>nums2[1] = nums1[1] - nums1[0] = 4 - 1 = 3</code>.</li>\n\t<li>Set <code>nums2[2] = nums1[2] = 7</code>.</li>\n\t<li><code>nums2 = [1, 3, 7]</code>, and all elements are odd. Thus, the answer is <code>true</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums1 = [2,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>It is not possible to construct <code>nums2</code> such that all elements have the same parity. Thus, the answer is <code>false</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums1 = [4,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Set <code>nums2[0] = nums1[0] = 4</code>.</li>\n\t<li>Set <code>nums2[1] = nums1[1] = 6</code>.</li>\n\t<li><code>nums2 = [4, 6]</code>, and all elements are even. Thus, the answer is <code>true</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums1.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums1[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>nums1</code> consists of distinct integers.</li>\n</ul>\n",
+    "hints": [
+        "Try fixing the parity to either all even or all odd.",
+        "Use the smallest odd/even element if a subtraction is needed to match the chosen parity."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:59:40.436Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.819Z"
+}

@@ -1,0 +1,45 @@
+{
+    "quesId": 3740,
+    "title": "Minimum Distance Between Three Equal Elements I",
+    "titleSlug": "minimum-distance-between-three-equal-elements-i",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "151.1K",
+        "totalSubmission": "206.8K",
+        "totalAcceptedRaw": 151051,
+        "totalSubmissionRaw": 206783,
+        "acRate": "73.0%",
+        "acRateRaw": 73.04807455158307,
+        "likes": 314,
+        "dislikes": 24
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4115,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,1,1,3]\n[1,1,2,3,2,1,2]\n[1]",
+    "solution": {
+        "canSeeDetail": true,
+        "content": "### Approach: Brute Force\n\n#### Intuition\n\nThis problem is a simplified version of [3741. Minimum Distance Between Three Equal Elements II](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/). Since the constraints are smaller, a brute force approach is feasible.\n\nFirst, consider the formula for the sum of absolute differences. It can be observed that this value is equivalent to the sum of the three sides of a generalized triangle. Regardless of the order of the three selected indices, the total distance always simplifies to twice the length of the segment formed by the two endpoints. In other words, if the leftmost index is $i$ and the rightmost index is $k$, then the required distance is $2 \\times (k - i)$.\n\nTherefore, we use three nested loops to enumerate all possible ordered triplets. If the elements at the selected indices in $\\textit{nums}$ are equal, we compute the distance as described above and update the global minimum.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/ArJqSwms/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ArJqSwms\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n^3)$.\n  \n  The solution uses three nested loops, each taking $O(n)$ time.\n\n- Space complexity: $O(1)$.\n  \n  Only a constant amount of extra space is used.\n\n---"
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>A tuple <code>(i, j, k)</code> of 3 <strong>distinct</strong> indices is <strong>good</strong> if <code>nums[i] == nums[j] == nums[k]</code>.</p>\n\n<p>The <strong>distance</strong> of a <strong>good</strong> tuple is <code>abs(i - j) + abs(j - k) + abs(k - i)</code>, where <code>abs(x)</code> denotes the <strong>absolute value</strong> of <code>x</code>.</p>\n\n<p>Return an integer denoting the <strong>minimum</strong> possible <strong>distance</strong> of a <strong>good</strong> tuple. If no <strong>good</strong> tuples exist, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum distance is achieved by the good tuple <code>(0, 2, 3)</code>.</p>\n\n<p><code>(0, 2, 3)</code> is a good tuple because <code>nums[0] == nums[2] == nums[3] == 1</code>. Its distance is <code>abs(0 - 2) + abs(2 - 3) + abs(3 - 0) = 2 + 1 + 3 = 6</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,2,3,2,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">8</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The minimum distance is achieved by the good tuple <code>(2, 4, 6)</code>.</p>\n\n<p><code>(2, 4, 6)</code> is a good tuple because <code>nums[2] == nums[4] == nums[6] == 2</code>. Its distance is <code>abs(2 - 4) + abs(4 - 6) + abs(6 - 2) = 2 + 2 + 4 = 8</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>There are no good tuples. Therefore, the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= n</code></li>\n</ul>\n",
+    "hints": [
+        "Use bruteforce"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:44:58.270Z",
+    "PARSED_ISO": "2026-09-22T18:46:49.980Z"
+}

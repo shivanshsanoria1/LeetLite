@@ -1,0 +1,51 @@
+{
+    "quesId": 3787,
+    "title": "Find Diameter Endpoints of a Tree",
+    "titleSlug": "find-diameter-endpoints-of-a-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "853",
+        "totalSubmission": "1.3K",
+        "totalAcceptedRaw": 853,
+        "totalSubmissionRaw": 1298,
+        "acRate": "65.7%",
+        "acRateRaw": 65.71648690292758,
+        "likes": 7,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4165,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "3\n[[0,1],[1,2]]\n7\n[[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]]\n2\n[[0,1]]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Start a breadth first search (BFS) from any node <code>start</code>; let the farthest node found be <code>A</code>.",
+        "Run BFS from <code>A</code>; a farthest node <code>B</code> is at the other end, and the path <code>A</code>-<code>B</code> is a diameter.",
+        "If several nodes tie as farthest from <code>start</code>, collect them into <code>cand_start</code>, each is a possible diameter endpoint.",
+        "Running BFS from any node in <code>cand_start</code> yields the opposite-end set <code>cand_other</code>, the other diameter endpoints."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:45:49.369Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.276Z"
+}

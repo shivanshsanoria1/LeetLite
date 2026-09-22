@@ -1,0 +1,47 @@
+{
+    "questionId": "4140",
+    "questionFrontendId": "3749",
+    "title": "Evaluate Valid Expressions",
+    "titleSlug": "evaluate-valid-expressions",
+    "difficulty": "Hard",
+    "likes": 4,
+    "dislikes": 1,
+    "acRate": 69.45454545454545,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"573\", \"totalSubmission\": \"825\", \"totalAcceptedRaw\": 573, \"totalSubmissionRaw\": 825, \"acRate\": \"69.5%\"}",
+    "similarQuestions": "[{\"title\": \"Basic Calculator II\", \"titleSlug\": \"basic-calculator-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use a stack or recursion to evaluate the expression"
+    ],
+    "exampleTestcases": "\"add(2,3)\"\n\"-42\"\n\"div(mul(4,sub(9,5)),add(1,1))\"",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:06.869Z"
+}

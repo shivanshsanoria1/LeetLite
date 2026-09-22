@@ -1,0 +1,57 @@
+{
+    "quesId": 3949,
+    "title": "Subtree Inversion Sum II",
+    "titleSlug": "subtree-inversion-sum-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "279",
+        "totalSubmission": "405",
+        "totalAcceptedRaw": 279,
+        "totalSubmissionRaw": 405,
+        "acRate": "68.9%",
+        "acRateRaw": 68.88888888888889,
+        "likes": 2,
+        "dislikes": 1
+    },
+    "similarQuesIds": [
+        3544
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3874,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[[0,1],[0,2],[0,3],[1,4],[1,5]]\n[1,0,-10,3,4,5]\n2\n[[0,1],[1,2]]\n[5,-10,-10]\n1\n[[0,1],[0,2]]\n[1,-5,-6]\n2\n[[0,1],[0,2]]\n[1,-5,-6]\n3",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Root the tree at 0. Do not track only inverted ancestors; the constraint is between any two inverted nodes, including nodes in different child subtrees.",
+        "Use DP by distance. Let <code>mx[u][d]</code> and <code>mn[u][d]</code> be the maximum/minimum possible subtree sum of <code>u</code>, assuming every inverted node inside this subtree is at distance at least <code>d</code> from <code>u</code>. Cap distances at <code>k</code>.",
+        "When merging child subtrees, if one inverted node is in one child at distance <code>a</code> from that child, and another is in a different child at distance <code>b</code>, their distance through <code>u</code> is <code>a + b + 2</code>, so it must be at least <code>k</code>.",
+        "Store both max and min because inverting <code>u</code> negates the whole subtree. So the best value after inverting <code>u</code> comes from negating the minimum compatible child sum, and the worst comes from negating the maximum compatible child sum."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:01.945Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.927Z"
+}

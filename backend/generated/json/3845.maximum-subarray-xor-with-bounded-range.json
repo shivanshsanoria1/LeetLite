@@ -1,0 +1,66 @@
+{
+    "quesId": 3845,
+    "title": "Maximum Subarray XOR with Bounded Range",
+    "titleSlug": "maximum-subarray-xor-with-bounded-range",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "5.8K",
+        "totalSubmission": "18.3K",
+        "totalAcceptedRaw": 5832,
+        "totalSubmissionRaw": 18319,
+        "acRate": "31.8%",
+        "acRateRaw": 31.839519650655024,
+        "likes": 71,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        },
+        {
+            "name": "Monotonic Queue",
+            "slug": "monotonic-queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4204,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[5,4,5,6]\n2\n[5,4,5,6]\n1",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a non-negative integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>You must select a <strong><span data-keyword=\"subarray-nonempty\">subarray</span></strong> of <code>nums</code> such that the <strong>difference</strong> between its <strong>maximum</strong> and <strong>minimum</strong> elements is at most <code>k</code>. The <strong>value</strong> of this subarray is the bitwise XOR of all elements in the subarray.</p>\n\n<p>Return an integer denoting the <strong>maximum</strong> possible <strong>value</strong> of the selected subarray.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,4,5,6], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Select the subarray <code>[5, <u><strong>4, 5, 6</strong></u>]</code>.</li>\n\t<li>The difference between its maximum and minimum elements is <code>6 - 4 = 2 &lt;= k</code>.</li>\n\t<li>The value is <code>4 XOR 5 XOR 6 = 7</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,4,5,6], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Select the subarray <code>[5, 4, 5, <u><strong>6</strong></u>]</code>.</li>\n\t<li>The difference between its maximum and minimum elements is <code>6 - 6 = 0 &lt;= k</code>.</li>\n\t<li>The value is 6.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 4 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt; 2<sup>15</sup></code></li>\n\t<li><code>0 &lt;= k &lt; 2<sup>15</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Maintain an active window such that the difference between its maximum and minimum is at most <code>k</code>",
+        "For all valid subarray-start indices <code>i</code>, insert their prefix xors <code>pref[i]</code> into a trie (use <code>pref[0] = 0</code>, <code>pref[i + 1] = pref[i] ^ nums[i]</code>); keep counts per node to support deletions as <code>L</code> moves",
+        "For each right index <code>r</code>, query the trie with <code>pref[r + 1]</code> to get the maximum <code>pref[r + 1] ^ pref[l]</code> for <code>l in [L, r]</code>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:59:08.190Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.792Z"
+}

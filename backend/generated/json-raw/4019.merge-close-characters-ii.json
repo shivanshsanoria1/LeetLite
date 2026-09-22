@@ -1,0 +1,36 @@
+{
+    "questionId": "4014",
+    "questionFrontendId": "4019",
+    "title": "Merge Close Characters II",
+    "titleSlug": "merge-close-characters-ii",
+    "difficulty": "Medium",
+    "likes": 2,
+    "dislikes": 1,
+    "acRate": 77.47252747252747,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"281\", \"totalSubmission\": \"363\", \"totalAcceptedRaw\": 281, \"totalSubmissionRaw\": 363, \"acRate\": \"77.4%\"}",
+    "similarQuestions": "[{\"title\": \"Merge Close Characters\", \"titleSlug\": \"merge-close-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Process the characters from left to right while maintaining the resulting string for the prefix processed so far. When adding a new character, any newly possible merge must use that character as the right character.",
+        "For each letter, store the index of its last occurrence in the resulting string. If its distance from the current end is at most <code>k</code>, discard the current character; otherwise, append it and update its last occurrence."
+    ],
+    "exampleTestcases": "\"abca\"\n3\n\"aabca\"\n2\n\"yybyzybz\"\n2",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:07:17.441Z"
+}

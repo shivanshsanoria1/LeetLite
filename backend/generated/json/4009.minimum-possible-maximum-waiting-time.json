@@ -1,0 +1,51 @@
+{
+    "quesId": 4009,
+    "title": "Minimum Possible Maximum Waiting Time",
+    "titleSlug": "minimum-possible-maximum-waiting-time",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "2.8K",
+        "totalSubmission": "9.3K",
+        "totalAcceptedRaw": 2763,
+        "totalSubmissionRaw": 9281,
+        "acRate": "29.8%",
+        "acRateRaw": 29.770498868656393,
+        "likes": 22,
+        "dislikes": 16
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Memoization",
+            "slug": "memoization"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4244,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[6,8,4,6,5]\r\n[16,13]\r\n[10,15]\r\n[12,17]\r\n[10,5]\r\n[8,8]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>demand</code>, where <code>demand[i]</code> is the amount of fuel required by the <code>i<sup>th</sup></code> car.</p>\n\n<p>You are also given an integer array <code>fuel</code> of length 2. There are <strong>exactly</strong> two fuel dispensers, numbered 0 and 1, where <code>fuel[j]</code> is the initial amount of fuel available in dispenser <code>j</code>.</p>\n\n<p>Cars are allowed to start refueling in <strong>increasing</strong> index order. Car 0 becomes allowed at time 0, and for each <code>i &gt; 0</code>, car <code>i</code> becomes allowed <strong>exactly</strong> when car <code>i - 1</code> starts refueling.</p>\n\n<p>The refueling process follows these rules:</p>\n\n<ul>\n\t<li>Each dispenser can serve <strong>at most</strong> one car at a time.</li>\n\t<li>When a car becomes allowed, you must choose a dispenser with <strong>at least</strong> <code>demand[i]</code> fuel remaining. If both dispensers have enough fuel remaining, you may choose <strong>either</strong> of them, regardless of when they become free.</li>\n\t<li>The car waits until the chosen dispenser becomes free and starts refueling <strong>immediately</strong>. It cannot switch dispensers or intentionally wait after the chosen dispenser becomes free.</li>\n\t<li>When a car starts refueling, the remaining fuel in the chosen dispenser decreases by <code>demand[i]</code>, and the dispenser remains occupied for <code>demand[i]</code> seconds.</li>\n\t<li>Once started, refueling cannot be interrupted.</li>\n\t<li>If neither dispenser has at least <code>demand[i]</code> fuel remaining when car <code>i</code> becomes allowed, the process terminates and no further cars can be served.</li>\n</ul>\n\n<p>The <strong>waiting time</strong> of a car is the time between when it becomes allowed to start refueling and when it actually starts.</p>\n\n<p>Return the <strong>minimum</strong> possible value of the <strong>maximum</strong> waiting time among all served cars over all assignments that <strong>maximize</strong> the number of served cars. If no car can be served, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">demand = [6,8,4,6,5], fuel = [16,13]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The following assignment serves all five cars:</p>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse; text-align:center;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th>Car</th>\n\t\t\t<th>Becomes allowed at</th>\n\t\t\t<th>Starts refueling at</th>\n\t\t\t<th>Dispenser used</th>\n\t\t\t<th>Remaining fuel before start<br />\n\t\t\t(dispenser 0, dispenser 1)</th>\n\t\t\t<th>Waiting time</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>0</td>\n\t\t\t<td>0</td>\n\t\t\t<td>0</td>\n\t\t\t<td>0</td>\n\t\t\t<td>(16, 13)</td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1</td>\n\t\t\t<td>0</td>\n\t\t\t<td>0</td>\n\t\t\t<td>1</td>\n\t\t\t<td>(10, 13)</td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2</td>\n\t\t\t<td>0</td>\n\t\t\t<td>6</td>\n\t\t\t<td>0</td>\n\t\t\t<td>(10, 5)</td>\n\t\t\t<td>6</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3</td>\n\t\t\t<td>6</td>\n\t\t\t<td>10</td>\n\t\t\t<td>0</td>\n\t\t\t<td>(6, 5)</td>\n\t\t\t<td>4</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>4</td>\n\t\t\t<td>10</td>\n\t\t\t<td>10</td>\n\t\t\t<td>1</td>\n\t\t\t<td>(0, 5)</td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Thus, all five cars are served, and the maximum waiting time is 6.</p>\n\n<p>To serve all five cars, dispenser 0 must serve the cars with demands 6, 4, and 6, while dispenser 1 must serve the cars with demands 8 and 5. Therefore, car 2 must wait until time 6 for dispenser 0 to become free, so no assignment serving all five cars can have a maximum waiting time less than 6.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">demand = [10,15], fuel = [12,17]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>At time 0, Car 0 becomes allowed and starts refuelling using dispenser 0.</li>\n\t<li>Car 1 becomes allowed at time 0 (when Car 0 starts) and immediately starts refuelling using dispenser 1.</li>\n\t<li>Both cars start without waiting, so the maximum waiting time is 0.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">demand = [10,5], fuel = [8,8]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>At time 0, Car 0 becomes allowed. However, neither dispenser has enough fuel to serve it, so the process terminates immediately.</li>\n\t<li>No car is served, so the answer is -1.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= demand.length &lt;= 50</code></li>\n\t<li><code>1 &lt;= demand[i] &lt;= 20</code></li>\n\t<li><code>fuel.length == 2</code></li>\n\t<li><code>1 &lt;= fuel[i] &lt;= 50</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Use dynamic programming over the cars in order. For each dispenser, store its remaining fuel and the time until it becomes free, measured from when the current car becomes allowed.</p>",
+        "<p>If the current car is assigned to a dispenser whose remaining busy time is <code>wait</code>, its waiting time is <code>wait</code>. Decrease that dispenser's fuel and set its new busy time to <code>demand[i]</code>.</p>",
+        "<p>Because the next car becomes allowed when the current car starts, subtract <code>wait</code> from the other dispenser's busy time, stopping at <code>0</code>.</p>",
+        "<p>For every state, first maximize the number of cars that can be served. Among assignments serving that maximum number, minimize the maximum waiting time encountered.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:06.991Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.995Z"
+}

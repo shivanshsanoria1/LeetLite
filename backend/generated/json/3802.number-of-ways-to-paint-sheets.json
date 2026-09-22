@@ -1,0 +1,38 @@
+{
+    "quesId": 3802,
+    "title": "Number of Ways to Paint Sheets",
+    "titleSlug": "number-of-ways-to-paint-sheets",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "492",
+        "totalSubmission": "729",
+        "totalAcceptedRaw": 492,
+        "totalSubmissionRaw": 729,
+        "acRate": "67.5%",
+        "acRateRaw": 67.48971193415639,
+        "likes": 4,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4132,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "4\n[3,1,2]\n3\n[1,2]\n3\n[2,2]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Sort <code>limit</code> and use binary search (<code>lower_bound</code>) to compute <code>num_ge(t)</code>, the number of colors with <code>limit >= t</code>.",
+        "For a split <code>x</code>, count ordered pairs <code>(i, j)</code> with <code>i != j</code> as <code>num_ge(x) * num_ge(n - x) - num_ge(max(x, n - x))</code>.",
+        "Note that <code>num_ge(x)</code> and <code>num_ge(n - x)</code> change only when <code>x</code> crosses <code>1</code>, <code>n - 1</code>, <code>L + 1</code>, or <code>n - L</code> for some <code>L</code> in <code>limit</code>.",
+        "Collect all such critical <code>x</code> values, sort and deduplicate them, and treat the answer as constant between consecutive values."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T18:46:04.319Z",
+    "PARSED_ISO": "2026-09-22T18:46:50.312Z"
+}

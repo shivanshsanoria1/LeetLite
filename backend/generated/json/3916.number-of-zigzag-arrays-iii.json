@@ -1,0 +1,51 @@
+{
+    "quesId": 3916,
+    "title": "Number of ZigZag Arrays III",
+    "titleSlug": "number-of-zigzag-arrays-iii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "278",
+        "totalSubmission": "441",
+        "totalAcceptedRaw": 278,
+        "totalSubmissionRaw": 441,
+        "acRate": "63.0%",
+        "acRateRaw": 63.038548752834465,
+        "likes": 2,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4046,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "3\n4\n5\n3\n1\n3",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Let <code>m = r - l + 1</code>. The actual values do not matter, only how many distinct choices you have.",
+        "The answer as a function of <code>m</code> is a polynomial of degree at most <code>n</code>. So instead of working up to large <code>m</code>, compute values for small <code>m</code>.",
+        "Use Dynamic Programming: <code>dp[i][j][dir]</code> = number of arrays of length <code>i</code> ending at value <code>j</code> with last move direction <code>dir</code> (<code>up</code>/<code>down</code>). Use prefix sums to transition in <code>O(n^2)</code> total for all <code>m <= n+1</code>.",
+        "After computing answers for <code>m = 1, 2, ..., n+1</code>, use Lagrange interpolation to evaluate the polynomial at the actual <code>m</code> in <code>O(n)</code> or <code>O(n^2)</code> time."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:00:24.559Z",
+    "PARSED_ISO": "2026-09-22T19:00:45.849Z"
+}

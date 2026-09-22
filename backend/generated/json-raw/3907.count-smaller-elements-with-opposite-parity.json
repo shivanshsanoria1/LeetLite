@@ -1,0 +1,27 @@
+{
+    "questionId": "4298",
+    "questionFrontendId": "3907",
+    "title": "Count Smaller Elements With Opposite Parity",
+    "titleSlug": "count-smaller-elements-with-opposite-parity",
+    "difficulty": "Medium",
+    "likes": 3,
+    "dislikes": 2,
+    "acRate": 72.45841035120148,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"392\", \"totalSubmission\": \"541\", \"totalAcceptedRaw\": 392, \"totalSubmissionRaw\": 541, \"acRate\": \"72.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Use a data structure to keep track of elements of different parities.",
+        "For the current index, query the data structure for elements to the right with different parity and a smaller value."
+    ],
+    "exampleTestcases": "[5,2,4,1,3]\n[4,4,1]\n[7]",
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T19:00:14.475Z"
+}

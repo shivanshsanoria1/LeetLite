@@ -1,0 +1,48 @@
+{
+    "quesId": 3993,
+    "title": "Maximum Value of an Alternating Sequence",
+    "titleSlug": "maximum-value-of-an-alternating-sequence",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "30.8K",
+        "totalSubmission": "98K",
+        "totalAcceptedRaw": 30836,
+        "totalSubmissionRaw": 97981,
+        "acRate": "31.5%",
+        "acRateRaw": 31.470501188933227,
+        "likes": 37,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4364,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "4\n3\n5\n2\n4\n3",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given three integers <code>n</code>, <code>s</code>, and <code>m</code>.</p>\n\n<p>A sequence <code>seq</code> of integers of length <code>n</code> is considered <strong>valid</strong> if:</p>\n\n<ul>\n\t<li><code>seq[0] = s</code>.</li>\n\t<li>The sequence is <strong>alternating</strong>, meaning that either:\n\t<ul>\n\t\t<li><code>seq[0] &gt; seq[1] &lt; seq[2] &gt; ...</code>, or</li>\n\t\t<li><code>seq[0] &lt; seq[1] &gt; seq[2] &lt; ...</code>.</li>\n\t</ul>\n\t</li>\n\t<li>For every adjacent pair, <code>|seq[i] - seq[i - 1]| &lt;= m</code>.</li>\n</ul>\n\n<p>A sequence of length 1 is considered alternating.</p>\n\n<p>Return the <strong>maximum</strong> possible element that can appear in any valid sequence.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 4, s = 3, m = 5</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">12</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>One valid sequence is <code>[3, 8, 7, 12]</code>.</li>\n\t<li>The maximum element in the sequence is 12.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2, s = 4, m = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>One valid sequence is <code>[4, 7]</code>.</li>\n\t<li>The maximum element in the sequence is 7.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, s &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= m &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>To make values grow as much as possible, use the maximum allowed increase <code>m</code> when moving to a high point.</p>",
+        "<p>Between two high points, there must be a lower element. To lose as little value as possible, make that lower element smaller by only <code>1</code>.</p>",
+        "<p>Therefore, after the first high point, every two additional positions can increase the maximum reachable high value by <code>m - 1</code>.</p>",
+        "<p>Consider both possible alternating patterns: starting with a decrease and starting with an increase.</p>",
+        "<p>Handle <code>n == 1</code> separately.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:48.161Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.982Z"
+}

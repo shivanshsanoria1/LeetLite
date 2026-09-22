@@ -1,0 +1,45 @@
+{
+    "questionId": "4166",
+    "questionFrontendId": "3763",
+    "title": "Maximum Total Sum with Threshold Constraints",
+    "titleSlug": "maximum-total-sum-with-threshold-constraints",
+    "difficulty": "Medium",
+    "likes": 9,
+    "dislikes": 1,
+    "acRate": 82.5381679389313,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"865\", \"totalSubmission\": \"1K\", \"totalAcceptedRaw\": 865, \"totalSubmissionRaw\": 1048, \"acRate\": \"82.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Simulate the process as described.",
+        "At each step, use a max-heap and add every index that becomes available.",
+        "Continue until you reach a step where there are no unused available indices."
+    ],
+    "exampleTestcases": "[1,10,4,2,1,6]\n[5,1,5,5,2,2]\n[4,1,5,2,3]\n[3,3,2,3,3]\n[2,6,10,13]\n[2,1,1,1]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:45:21.003Z"
+}

@@ -1,0 +1,52 @@
+{
+    "quesId": 3995,
+    "title": "Minimum Cost to Convert String III",
+    "titleSlug": "minimum-cost-to-convert-string-iii",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.1K",
+        "totalSubmission": "12.8K",
+        "totalAcceptedRaw": 7074,
+        "totalSubmissionRaw": 12805,
+        "acRate": "55.2%",
+        "acRateRaw": 55.24404529480672,
+        "likes": 29,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4088,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "\"hello\"\n\"world\"\n[[\"he\",\"wo\"],[\"llo\",\"rld\"]]\n[3,4]\n\"cat\"\n\"dog\"\n[[\"c*t\",\"dog\"]]\n[2]\n\"test\"\n\"next\"\n[[\"*e*t\",\"next\"]]\n[4]\n\"ab\"\n\"bc\"\n[[\"a*\",\"bd\"]]\n[9]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given two strings, <code>source</code> and <code>target</code>.</p>\n\n<p>You are also given a 2D string array <code>rules</code>, where <code>rules[i] = [pattern<sub>i</sub>, replacement<sub>i</sub>]</code>, and an integer array <code>costs</code>, where <code>costs[i]</code> is the base cost of applying <code>rules[i]</code>. Both arrays have the same length. Additionally, <code>pattern<sub>i</sub></code> and <code>replacement<sub>i</sub></code> have the same length.</p>\n\n<p>You may apply <strong>any</strong> rule <strong>any</strong> number of times. Each rule application works as follows:</p>\n\n<ul>\n\t<li>Choose an index <code>l</code> such that the range of positions from <code>l</code> to <code>l + pattern<sub>i</sub>.length - 1</code> exists in the current string and <strong>none</strong> of these positions has been used in a previous rule application.</li>\n\t<li>For each index <code>j</code>, the character <code>pattern<sub>i</sub>[j]</code> must either be <strong>equal</strong> to the current character at position <code>l + j</code>, or be <code>&#39;*&#39;</code>.</li>\n\t<li>Replace the characters in this range with <code>replacement<sub>i</sub></code>. The replacement is used <strong>exactly</strong> as given and does not contain wildcards.</li>\n\t<li>The cost of this rule application is <code>costs[i]</code> <strong>plus</strong> the number of <code>&#39;*&#39;</code> characters in <code>pattern<sub>i</sub></code>.</li>\n\t<li>Once a character position has been used in a rule application, it <strong>cannot</strong> be used in any <strong>later</strong> rule application.</li>\n</ul>\n\n<p>Since every <code>pattern<sub>i</sub></code> and <code>replacement<sub>i</sub></code> have the same length, character positions are preserved after every rule application.</p>\n\n<p>Return the <strong>minimum</strong> total cost required to transform <code>source</code> into <code>target</code>. If it is impossible, return -1.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = &quot;hello&quot;, target = &quot;world&quot;, rules = [[&quot;he&quot;,&quot;wo&quot;],[&quot;llo&quot;,&quot;rld&quot;]], costs = [3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>rules[0]</code> to replace <code>&quot;he&quot;</code> with <code>&quot;wo&quot;</code> at cost 3, so the string becomes <code>&quot;wollo&quot;</code>.</li>\n\t<li>Apply <code>rules[1]</code> to replace <code>&quot;llo&quot;</code> with <code>&quot;rld&quot;</code> at cost 4, so the string becomes <code>&quot;world&quot;</code>.</li>\n\t<li>The total cost is <code>3 + 4 = 7</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = &quot;cat&quot;, target = &quot;dog&quot;, rules = [[&quot;c*t&quot;,&quot;dog&quot;]], costs = [2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>rules[0]</code> to replace <code>&quot;cat&quot;</code> with <code>&quot;dog&quot;</code>. The wildcard <code>&#39;*&#39;</code> matches <code>&#39;a&#39;</code>, adding 1 to the base cost 2.</li>\n\t<li>The total cost is <code>2 + 1 = 3</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = &quot;test&quot;, target = &quot;next&quot;, rules = [[&quot;*e*t&quot;,&quot;next&quot;]], costs = [4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Apply <code>rules[0]</code> to replace <code>&quot;test&quot;</code> with <code>&quot;next&quot;</code>. The first wildcard matches <code>&#39;t&#39;</code> and the second wildcard matches <code>&#39;s&#39;</code>, adding 2 to the base cost 4.</li>\n\t<li>The total cost is <code>4 + 2 = 6</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = &quot;ab&quot;, target = &quot;bc&quot;, rules = [[&quot;a*&quot;,&quot;bd&quot;]], costs = [9]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>No sequence of rule applications can transform <code>source</code> into <code>target</code>, so the answer is -1.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= source.length == target.length &lt;= 5000</code></li>\n\t<li><code>source</code> and <code>target</code> consist of lowercase English letters.</li>\n\t<li><code>1 &lt;= rules.length == costs.length &lt;= 200</code></li>\n\t<li><code>rules[i] = [pattern<sub>i</sub>, replacement<sub>i</sub>]</code></li>\n\t<li><code>1 &lt;= pattern<sub>i</sub>.length == replacement<sub>i</sub>.length &lt;= 20</code></li>\n\t<li><code>pattern<sub>i</sub></code> contains at least one lowercase English letter and at most 5 <code>&#39;*&#39;</code> characters.</li>\n\t<li><code>replacement<sub>i</sub></code> contains only lowercase English letters.</li>\n\t<li><code>1 &lt;= costs[i] &lt;= 1000</code></li>\n</ul>\n",
+    "hints": [
+        "<p>Because used ranges cannot overlap and all replacements preserve length, each position is either left unchanged or belongs to exactly one applied rule.</p>",
+        "<p>Use dynamic programming over prefixes. Let <code>dp[i]</code> be the minimum cost to transform the first <code>i</code> characters of <code>source</code> into the first <code>i</code> characters of <code>target</code>.</p>",
+        "<p>If <code>source[i] == target[i]</code>, you may leave position <code>i</code> unchanged and update <code>dp[i + 1]</code>.</p>",
+        "<p>For each rule starting at position <code>i</code>, check whether its pattern matches <code>source[i..i + len - 1]</code> using <code>'*'</code> as a wildcard, and whether its replacement equals <code>target[i..i + len - 1]</code>.</p>",
+        "<p>If both checks pass, update <code>dp[i + len]</code> using the rule cost plus the number of <code>'*'</code> characters in its pattern.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:06:50.348Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.984Z"
+}

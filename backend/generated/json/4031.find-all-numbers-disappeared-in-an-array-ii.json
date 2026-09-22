@@ -1,0 +1,50 @@
+{
+    "quesId": 4031,
+    "title": "Find All Numbers Disappeared in an Array II",
+    "titleSlug": "find-all-numbers-disappeared-in-an-array-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "40.1K",
+        "totalSubmission": "75.7K",
+        "totalAcceptedRaw": 40135,
+        "totalSubmissionRaw": 75674,
+        "acRate": "53.0%",
+        "acRateRaw": 53.036710098580755,
+        "likes": 59,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        448
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4383,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[3,9,7]\r\n1\r\n12\r\n[1,1]\r\n5\r\n7\r\n[2,3,5]\r\n2\r\n3\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and two integers <code>lower</code> and <code>upper</code>.</p>\n\n<p>A <strong>missing integer</strong> is an integer in the inclusive range <code>[lower, upper]</code> that does not appear in <code>nums</code>.</p>\n\n<p>Return a 2D integer array where each element is of the form <code>[start, end]</code>, representing a <strong>contiguous</strong> range of missing integers. Return the ranges in <strong>increasing</strong> order. If there are no missing integers, return an empty array.</p>\n\n<p><strong>Note:</strong> Consecutive missing integers should be grouped into a single range.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,9,7], lower = 1, upper = 12</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[1,2],[4,6],[8,8],[10,12]]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The missing integers are <code>[1, 2, 4, 5, 6, 8, 10, 11, 12]</code>.</li>\n\t<li>Grouping the missing integers into the minimum number of contiguous ranges, we get <code>[1, 2]</code>, <code>[4, 6]</code>, <code>[8, 8]</code>, and <code>[10, 12]</code>.</li>\n\t<li>Therefore, the answer is <code>[[1, 2], [4, 6], [8, 8], [10, 12]]</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1], lower = 5, upper = 7</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[5,7]]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The missing integers are <code>[5, 6, 7]</code>.</li>\n\t<li>Grouping the missing integers into the minimum number of contiguous ranges, we get <code>[5, 7]</code>.</li>\n\t<li>Therefore, the answer is <code>[[5, 7]]</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,3,5], lower = 2, upper = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>There are no missing integers.</li>\n\t<li>Therefore, the answer is <code>[]</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= lower &lt;= upper &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "Mark which integers in <code>[lower, upper]</code> appear in <code>nums</code>, then scan the range and group each maximal consecutive sequence of unmarked integers."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:30.711Z",
+    "PARSED_ISO": "2026-09-22T19:07:37.012Z"
+}

@@ -1,0 +1,46 @@
+{
+    "questionId": "4218",
+    "questionFrontendId": "3879",
+    "title": "Maximum Distinct Path Sum in a Binary Tree",
+    "titleSlug": "maximum-distinct-path-sum-in-a-binary-tree",
+    "difficulty": "Medium",
+    "likes": 4,
+    "dislikes": 3,
+    "acRate": 51.50501672240802,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"462\", \"totalSubmission\": \"897\", \"totalAcceptedRaw\": 462, \"totalSubmissionRaw\": 897, \"acRate\": \"51.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Try all possible starting nodes",
+        "For a given node, the possible outgoing edges are the left child, right child, and parent",
+        "During depth first search (DFS), only visit a node if its value has not already been seen",
+        "Take the maximum over all possible starting nodes"
+    ],
+    "exampleTestcases": "[2,2,1]\n[1,-2,5,null,null,3,5]\n[4,6,6,null,null,null,9]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-09-22T18:59:43.195Z"
+}

@@ -1,0 +1,49 @@
+{
+    "quesId": 4015,
+    "title": "Weighted Sum of a Tree",
+    "titleSlug": "weighted-sum-of-a-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "33.1K",
+        "totalSubmission": "78.5K",
+        "totalAcceptedRaw": 33066,
+        "totalSubmissionRaw": 78465,
+        "acRate": "42.1%",
+        "acRateRaw": 42.14108201108775,
+        "likes": 60,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4352,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[-1,0,0,0,2,2]\n[5,2,3,1,4,6]\n[-1,0,1,2]\n[1,2,3,4]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>parent</code> of length <code>n</code> representing a rooted tree with nodes labeled from 0 to <code>n - 1</code>.</p>\n\n<p>The tree is <strong>rooted</strong> at node 0, so <code>parent[0] = -1</code>. For each node <code>i</code> where <code>1 &lt;= i &lt;= n - 1</code>, <code>parent[i]</code> denotes the parent of node <code>i</code>.</p>\n\n<p>You are also given an integer array <code>nums</code> of length <code>n</code>, where <code>nums[i]</code> denotes the value of node <code>i</code>.</p>\n\n<p>The weight of a node <code>i</code> at depth <code>d</code> is <code>nums[i] * (h - d + 1)</code>, where <code>h</code> is the height of the tree.</p>\n\n<p>Return the <strong>sum</strong> of the weights of all nodes in the tree.</p>\n\n<p>The <strong>depth</strong> of a node is the number of nodes on the path from the root to that node, inclusive, with the root having depth 1.</p>\n\n<p>The <strong>height</strong> of the tree is the maximum depth among all nodes in the tree.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/06/09/t1.png\" style=\"width: 200px; height: 190px;\" />​​​​​​​</p>\n\n<p><strong>Input:</strong> <span class=\"example-io\">parent = [-1,0,0,0,2,2], nums = [5,2,3,1,4,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">37</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The height of the tree is 3.</p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Node</th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Depth (<code>d</code>)</th>\n\t\t\t<th style=\"border: 1px solid black;\">Weight</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>5 * (3 - 1 + 1) = 15</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>2 * (3 - 2 + 1) = 4</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>3 * (3 - 2 + 1) = 6</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 * (3 - 2 + 1) = 2</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>4 * (3 - 3 + 1) = 4</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">5</td>\n\t\t\t<td style=\"border: 1px solid black;\">6</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>6 * (3 - 3 + 1) = 6</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The sum of all node weights is <code>15 + 4 + 6 + 2 + 4 + 6 = 37</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/06/09/t2.png\" style=\"width: 250px; height: 56px;\" />​​​​​​​​​​​​​​</p>\n\n<p><strong>Input:</strong> <span class=\"example-io\">parent = [-1,0,1,2], nums = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">20</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The height of the tree is 4.</p>\n\n<table style=\"border: 1px solid black;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th style=\"border: 1px solid black;\">Node</th>\n\t\t\t<th style=\"border: 1px solid black;\"><code>nums[i]</code></th>\n\t\t\t<th style=\"border: 1px solid black;\">Depth (<code>d</code>)</th>\n\t\t\t<th style=\"border: 1px solid black;\">Weight</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">0</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>1 * (4 - 1 + 1) = 4</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>2 * (4 - 2 + 1) = 6</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>3 * (4 - 3 + 1) = 6</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\n\t\t\t<td style=\"border: 1px solid black;\"><code>4 * (4 - 4 + 1) = 4</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The sum of all node weights is <code>4 + 6 + 6 + 4 = 20</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>n == parent.length == nums.length</code></li>\n\t<li><code>parent[0] == -1</code></li>\n\t<li><code>0 &lt;= parent[i] &lt;= n - 1</code> for all <code>i</code> in <code>[1, n - 1]</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>\n\t<li>The input is generated such that the array <code>parent</code> represents a valid tree rooted at node 0.</li>\n</ul>\n",
+    "hints": [
+        "Build the tree and traverse it from the root to determine the depth of every node and the height <code>h</code>.",
+        "Once <code>h</code> is known, calculate and sum <code>nums[i] * (h - depth[i] + 1)</code> for every node <code>i</code>."
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:07:12.349Z",
+    "PARSED_ISO": "2026-09-22T19:07:36.999Z"
+}

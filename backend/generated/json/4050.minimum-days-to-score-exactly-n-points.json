@@ -1,0 +1,48 @@
+{
+    "quesId": 4050,
+    "title": "Minimum Days to Score Exactly N Points",
+    "titleSlug": "minimum-days-to-score-exactly-n-points",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "17K",
+        "totalSubmission": "40.3K",
+        "totalAcceptedRaw": 16964,
+        "totalSubmissionRaw": 40292,
+        "acRate": "42.1%",
+        "acRateRaw": 42.108397855866585,
+        "likes": 36,
+        "dislikes": 3
+    },
+    "similarQuesIds": [
+        322
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4406,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "2\n9\n12",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>n</code> representing a target score.</p>\n\n<p>Your score starts at 0, and each day you either <strong>earn</strong> points or <strong>skip</strong>.</p>\n\n<p>Points are earned during a streak. On the first day of a streak you earn 1 point, on the second day 2 points, on the third day 3 points, and so on. <strong>Skipping</strong> a day earns <strong>nothing</strong> and <strong>resets</strong> the streak, so the next time you earn points, you start from 1 again.</p>\n\n<p>Return the <strong>minimum</strong> number of days, including any skipped days, needed to reach a score of <strong>exactly</strong> <code>n</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Day 1: earn 1 point. Score is 1.</li>\n\t<li>Day 2: skip, which resets the streak. Earning here would add 2 points and take the score past <code>n = 2</code>.</li>\n\t<li>Day 3: the streak has reset, so earning gives 1 point. Score is exactly <code>n = 2</code> in 3 days.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 9</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Days 1 to 3: earn 1, 2, and 3 points. Score is <code>1 + 2 + 3 = 6</code>.</li>\n\t<li>Day 4: skip, which resets the streak.</li>\n\t<li>Days 5 and 6: earn 1 and 2 points. Score is exactly <code>6 + 1 + 2 = 9</code> in 6 days.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 12</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong>​​​​​​​</p>\n\n<ul>\n\t<li>Days 1 to 3: earn 1, 2, and 3 points. Score is <code>1 + 2 + 3 = 6</code>.</li>\n\t<li>Day 4: skip, which resets the streak.</li>\n\t<li>Days 5 to 7: earn 1, 2, and 3 points. Score is exactly <code>6 + 1 + 2 + 3 = 12</code> in 7 days.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<p>A streak of length <code>L</code> earns <code>L * (L + 1) / 2</code> points. An optimal schedule has exactly one skipped day between consecutive streaks.</p>",
+        "<p>Temporarily charge each streak <code>L + 1</code> days, including a skipped day after it. Use dynamic programming over the total score, treating each streak length as a reusable option with this cost.</p>",
+        "<p>Subtract one from the result because no skipped day is needed after the final streak. Only <code>O(sqrt(n))</code> streak lengths need to be considered.</p>"
+    ],
+    "LC_SYNC_ISO": "2026-09-22T19:09:08.524Z",
+    "PARSED_ISO": "2026-09-22T19:09:23.990Z"
+}
