@@ -316,8 +316,6 @@ function renderTable() {
 	const endIndex = startIndex + pageSize;
 	const paginatedProblems = currentProblems.slice(startIndex, endIndex);
 
-	console.log(paginatedProblems[0])
-
 	paginatedProblems.forEach(p => {
 		const totalVotes = (p.stats.likes || 0) + (p.stats.dislikes || 0);
 		const likeRate = calculateLikeRate(p.stats.likes || 0, p.stats.dislikes || 0);

@@ -194,38 +194,42 @@ function populateUI(data, allProblems) {
 	document.getElementById('loading-spinner').style.display = 'none';
 	document.getElementById('problem-content-wrapper').style.display = 'block';
 
-	// Header & Meta 
+	// Check if we actually have a cached solution available despite it being paid
+	const hasLocalSolution = currentProblemSolvedStats && currentProblemSolvedStats.counter && Object.keys(currentProblemSolvedStats.counter).length > 0;
+
+	// --- Header & Meta ---
 	document.getElementById('prob-id').textContent = data.quesId;
 
-	// Replace the star with a Bootstrap lock SVG for premium problems
+	// 1. Base Title
+	let baseTitle = data.title;
+
+	// 2. Lock Icon (If Paid) with Dynamic Tooltip
+	let lockTooltip = "Premium Problem";
+	if (data.isPaidOnly && hasLocalSolution) {
+		lockTooltip = "Premium Problem (Solution available because it was previously free)";
+	}
+
 	const premiumLock = data.isPaidOnly ? `
-        <span class="text-warning ms-2 align-middle" title="Premium Problem">
+        <span class="text-warning ms-1 align-middle" title="${lockTooltip}" style="cursor: help;">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
               <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
             </svg>
         </span>` : '';
 
-	// Construct the official LeetCode URL using the titleSlug
-	const lcProblemUrl = LC_PROBLEM_BASE_URL + `/${data.titleSlug}/description/`;
-
-	// Format the sync time using the updated LC_SYNC_ISO key
-	let titleHtml = data.title;
+	// 3. Info Icon (Sync Timestamp)
+	let syncHtml = '';
 	if (data.LC_SYNC_ISO) {
 		const d = new Date(data.LC_SYNC_ISO);
-
 		const day = String(d.getUTCDate()).padStart(2, '0');
 		const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 		const month = monthNames[d.getUTCMonth()];
 		const year = d.getUTCFullYear();
-
 		const hours = String(d.getUTCHours()).padStart(2, '0');
 		const minutes = String(d.getUTCMinutes()).padStart(2, '0');
 		const seconds = String(d.getUTCSeconds()).padStart(2, '0');
-
 		const syncDate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds} (UTC)`;
 
-		// Append a clean info-circle SVG to the title
-		titleHtml = `${data.title} 
+		syncHtml = ` 
             <span title="Last synced with LeetCode: ${syncDate}" style="cursor: pointer;" class="text-secondary align-middle ms-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
@@ -234,7 +238,8 @@ function populateUI(data, allProblems) {
             </span>`;
 	}
 
-	// Create the external link SVG
+	// 4. External Link to LeetCode
+	const lcProblemUrl = LC_PROBLEM_BASE_URL + `/${data.titleSlug}/description/`;
 	const extLink = `
         <a href="${lcProblemUrl}" target="_blank" class="text-secondary ms-2 hover-primary align-middle" title="Open in LeetCode">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -243,8 +248,8 @@ function populateUI(data, allProblems) {
             </svg>
         </a>`;
 
-	// Append the formatted title, lock (if paid), and the external link
-	document.getElementById('prob-title').innerHTML = `${titleHtml} ${premiumLock} ${extLink}`;
+	// Append strictly in order
+	document.getElementById('prob-title').innerHTML = `${baseTitle}${premiumLock}${syncHtml}${extLink}`;
 
 	// --- Row 1: Difficulty, Likes, Dislikes, Like Rate ---
 	const diffEl = document.getElementById('prob-difficulty');
@@ -258,10 +263,9 @@ function populateUI(data, allProblems) {
 
 	const totalVotes = likes + dislikes;
 	const likeRate = totalVotes === 0 ? 0 : (likes / totalVotes) * 100;
-	const likeRateDisplay = totalVotes === 0 ? "NA" : `${likeRate.toFixed(2)}%`;
 	const likeRateElement = document.getElementById('prob-like-rate');
 	if (likeRateElement) {
-		likeRateElement.textContent = likeRateDisplay;
+		likeRateElement.textContent = totalVotes === 0 ? "NA" : `${likeRate.toFixed(2)}%`;
 		likeRateElement.className = `fw-bold ${totalVotes === 0 ? 'text-secondary' : getRateColor(likeRate)}`;
 	}
 
@@ -269,7 +273,6 @@ function populateUI(data, allProblems) {
 	const categoryEl = document.getElementById('prob-category');
 	const categoryTitle = data.categoryTitle || 'Unknown';
 	categoryEl.textContent = categoryTitle;
-	// Apply dynamic text color based on category, removing the old ms-2 offset
 	categoryEl.className = `badge bg-dark border border-secondary ${getCategoryColor(categoryTitle)}`;
 
 	document.getElementById('prob-accepted').textContent = data.stats?.totalAccepted || '0';
@@ -282,11 +285,13 @@ function populateUI(data, allProblems) {
 		acRateElement.className = `fw-bold ${getRateColor(acRateRaw)}`;
 	}
 
-	// Main Description Content
+	// --- Main Description Content ---
 	const probContentEl = document.getElementById('prob-content');
-	if (data.isPaidOnly) {
+
+	// We can now reuse the hasLocalSolution variable declared at the top
+	if (data.isPaidOnly && !hasLocalSolution) {
 		probContentEl.innerHTML = `
-            <p class="text-secondary fw-semibold mt-3 d-flex align-items-center">
+            <p class="text-warning fw-semibold mt-3 d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-exclamation-triangle-fill me-2" viewBox="0 0 16 16">
                     <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
@@ -518,6 +523,53 @@ function generateCodeUrl(lang, version) {
 	return `${GITHUB_LCS_URL}/${encodeURIComponent(dirName)}/${encodeURIComponent(fileName)}`;
 }
 
+// --- Complexity Extraction Helper ---
+function extractComplexity(codeText, type) {
+	// 1. Match prefixes (e.g., T.C, Time Complexity) up to the first 'O(' on that line
+	const prefixRegex = type === 'T'
+		? /(?:T\.?C\.?|Time\s+Complexity)[^\n]*?(O\s*\()/i
+		: /(?:S\.?C\.?|Space\s+Complexity)[^\n]*?(O\s*\()/i;
+
+	const match = codeText.match(prefixRegex);
+	if (!match) return 'N/A';
+
+	// 2. Find the exact starting index of 'O'
+	const startIndex = match.index + match[0].length - match[1].length;
+	let parenCount = 0;
+	let started = false;
+	let endIndex = -1;
+
+	// 3. Iterate character by character to perfectly balance parentheses
+	for (let i = startIndex; i < codeText.length; i++) {
+		if (codeText[i] === '(') {
+			parenCount++;
+			started = true;
+		} else if (codeText[i] === ')') {
+			parenCount--;
+		}
+
+		// Once we have started and parens drop back to 0, we found the exact boundary
+		if (started && parenCount === 0) {
+			endIndex = i;
+			break;
+		}
+	}
+
+	if (endIndex !== -1) {
+		let rawString = codeText.substring(startIndex, endIndex + 1);
+
+		// 4. Format MathJax cleanly
+		let formatted = rawString
+			.replace(/sqrt\s*\(([^)]+)\)/gi, '\\sqrt{$1}') // sqrt(n) -> \sqrt{n}
+			.replace(/\*/g, '\\cdot ')                     // * -> \cdot
+			.replace(/\^([a-zA-Z0-9]+)/g, '^{$1}');        // n^2 -> n^{2}
+
+		return `$${formatted}$`;
+	}
+
+	return 'N/A';
+}
+
 // --- 5. Code Fetching Logic ---
 async function fetchAndDisplayCode() {
 	const lang = document.getElementById('lang-select').value;
@@ -536,7 +588,6 @@ async function fetchAndDisplayCode() {
 	// 1. Initialize Complexity Block Visibility & Default State
 	if (complexityBlock) {
 		if (isAlgorithm) {
-			// Show for all algorithm problems with a default N/A state
 			complexityBlock.innerHTML = `
                 <span class="text-secondary">T.C: <span class="text-success fw-bold">N/A</span></span>
                 <div class="vr text-secondary mx-1"></div>
@@ -548,14 +599,15 @@ async function fetchAndDisplayCode() {
 			complexityBlock.classList.remove('d-none');
 			complexityBlock.classList.add('d-flex');
 		} else {
-			// Strictly hide for Database, Shell, Concurrency, etc.
 			complexityBlock.classList.remove('d-flex');
 			complexityBlock.classList.add('d-none');
 		}
 	}
 
-	// 2. Check for paid problem
-	if (currentProblemMasterData && currentProblemMasterData.isPaidOnly) {
+	const hasLocalSolution = currentProblemSolvedStats && currentProblemSolvedStats.counter && Object.keys(currentProblemSolvedStats.counter).length > 0;
+
+	// 2. Check for paid problem (Bypass if local solution exists)
+	if (currentProblemMasterData && currentProblemMasterData.isPaidOnly && !hasLocalSolution) {
 		currentRawCode = '';
 		if (themeSelect) themeSelect.disabled = true;
 		container.innerHTML = `<div class="d-flex flex-column h-100 align-items-center justify-content-center text-warning text-center p-4">
@@ -592,16 +644,11 @@ async function fetchAndDisplayCode() {
 		currentRawCode = codeText;
 		if (themeSelect) themeSelect.disabled = false; // Enable theme selector on success
 
-		// --- 3. Complexity Extraction Regex ---
+		// --- 3. Complexity Extraction ---
 		if (complexityBlock && isAlgorithm) {
-			// Safely handles nested parentheses like O(n*log(n)) or O(V+E)
-			const regexPattern = /=\s*(O\((?:[^()]+|\([^()]+\))*\))/i;
 
-			const tcMatch = codeText.match(new RegExp(`T\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
-			const scMatch = codeText.match(new RegExp(`S\\.?C\\.?\\s*${regexPattern.source}`, 'i'));
-
-			const tcText = tcMatch ? `$${tcMatch[1]}$` : 'N/A';
-			const scText = scMatch ? `$${scMatch[1]}$` : 'N/A';
+			const tcText = extractComplexity(codeText, 'T');
+			const scText = extractComplexity(codeText, 'S');
 
 			complexityBlock.innerHTML = `
                 <span class="text-secondary">T.C: <span class="text-success fw-bold">${tcText}</span></span>
