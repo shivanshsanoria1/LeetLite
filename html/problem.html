@@ -193,37 +193,69 @@
 					<span class="text-secondary">S.C: <span id="sc-val" class="text-success fw-bold">-</span></span>
 				</div>
 
-				<!-- Theme Selector -->
-				<div class="d-flex align-items-center gap-1">
-					<label for="theme-select" class="text-secondary fw-bold mb-0 small">Theme</label>
-					<select id="theme-select"
-						class="form-select form-select-sm bg-dark text-light border-secondary w-auto">
-						<option value="a11y-dark">A11y Dark</option>
-						<option value="github-dark">GitHub Dark</option>
-						<option value="monokai">Monokai</option>
-						<option value="nord">Nord</option>
-						<option value="obsidian">Obsidian</option>
-					</select>
-				</div>
+				<!-- Action Buttons Group (Right Aligned) -->
+				<div class="d-flex align-items-center gap-2 ms-auto">
+					<!-- Editor Settings Gear Button -->
+					<button type="button"
+						class="btn btn-sm btn-outline-secondary d-flex align-items-center justify-content-center"
+						data-bs-toggle="modal" data-bs-target="#editorSettingsModal" title="Editor Settings"
+						style="width: 32px; height: 32px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+							class="bi bi-gear-fill" viewBox="0 0 16 16">
+							<path
+								d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+						</svg>
+					</button>
 
-				<!-- Reset Button -->
-				<button id="reset-editor-btn"
-					class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1 ms-auto"
-					title="Reset default language and version">
-					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-						viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
-						<path
-							d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
-					</svg>
-					Reset
-				</button>
+					<!-- Reset Editor Button -->
+					<button id="reset-editor-btn"
+						class="btn btn-sm btn-outline-danger d-flex align-items-center justify-content-center"
+						title="Reset to Default" style="width: 32px; height: 32px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+							class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+							<path fill-rule="evenodd"
+								d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+							<path
+								d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+						</svg>
+					</button>
+				</div>
 			</div>
 
 			<!-- Code Editor Content -->
 			<div id="code-editor-container" class="flex-grow-1 overflow-auto w-100">
 				<div class="d-flex h-100 align-items-center justify-content-center text-secondary">
 					<h5>Select a language and version to view code</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Editor Settings Modal -->
+	<div class="modal fade" id="editorSettingsModal" tabindex="-1" aria-labelledby="editorSettingsModalLabel"
+		aria-hidden="true">
+		<!-- Removed modal-sm for a standard, wider modal footprint -->
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content bg-dark border-secondary">
+				<div class="modal-header border-secondary">
+					<h6 class="modal-title fw-bold text-light" id="editorSettingsModalLabel">Editor Settings</h6>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<!-- Added pb-5 to ensure the dropdown menu doesn't crowd the bottom edge -->
+				<div class="modal-body text-secondary pb-5">
+					<!-- Theme Selector -->
+					<div class="mb-2">
+						<label for="theme-select" class="form-label text-light fw-semibold small mb-1">Theme</label>
+						<select id="theme-select"
+							class="form-select form-select-sm bg-dark text-light border-secondary shadow-sm">
+							<option value="a11y-dark">A11y Dark</option>
+							<option value="github-dark">GitHub Dark</option>
+							<option value="monokai">Monokai</option>
+							<option value="nord">Nord</option>
+							<option value="obsidian">Obsidian</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
