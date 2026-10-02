@@ -5,7 +5,7 @@
         "titleSlug": "two-sum",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 57.95943656357827,
+        "acRate": 57.959431302014686,
         "topicTags": [
             {
                 "name": "Array",
@@ -23,7 +23,7 @@
         "titleSlug": "add-two-numbers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.4486363228173,
+        "acRate": 49.44863288723661,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -45,7 +45,7 @@
         "titleSlug": "longest-substring-without-repeating-characters",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 39.92146233967509,
+        "acRate": 39.921455369136005,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -67,7 +67,7 @@
         "titleSlug": "median-of-two-sorted-arrays",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 47.73110678424404,
+        "acRate": 47.7311009486546,
         "topicTags": [
             {
                 "name": "Array",
@@ -89,7 +89,7 @@
         "titleSlug": "longest-palindromic-substring",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 38.77046180386542,
+        "acRate": 38.770460875833834,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -129,7 +129,7 @@
         "titleSlug": "reverse-integer",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 32.60406861974379,
+        "acRate": 32.60406835605688,
         "topicTags": [
             {
                 "name": "Math",
@@ -143,7 +143,7 @@
         "titleSlug": "string-to-integer-atoi",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 21.839317106658296,
+        "acRate": 21.839304263926994,
         "topicTags": [
             {
                 "name": "String",
@@ -157,7 +157,7 @@
         "titleSlug": "palindrome-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 60.99968940102446,
+        "acRate": 60.99968857716556,
         "topicTags": [
             {
                 "name": "Math",
@@ -171,7 +171,7 @@
         "titleSlug": "regular-expression-matching",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 31.884743707681114,
+        "acRate": 31.884750442741073,
         "topicTags": [
             {
                 "name": "String",
@@ -193,7 +193,7 @@
         "titleSlug": "container-with-most-water",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.943923122917596,
+        "acRate": 60.943929359461954,
         "topicTags": [
             {
                 "name": "Array",
@@ -215,7 +215,7 @@
         "titleSlug": "integer-to-roman",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 71.76635247512543,
+        "acRate": 71.76633506721957,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -237,7 +237,7 @@
         "titleSlug": "roman-to-integer",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 67.24882313060307,
+        "acRate": 67.24881266502007,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -259,7 +259,7 @@
         "titleSlug": "longest-common-prefix",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 48.457721982639754,
+        "acRate": 48.45772523568632,
         "topicTags": [
             {
                 "name": "Array",
@@ -281,7 +281,7 @@
         "titleSlug": "3sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 39.97980078207728,
+        "acRate": 39.97979956176972,
         "topicTags": [
             {
                 "name": "Array",
@@ -303,7 +303,7 @@
         "titleSlug": "3sum-closest",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 47.54504951014137,
+        "acRate": 47.545061104017776,
         "topicTags": [
             {
                 "name": "Array",
@@ -325,7 +325,7 @@
         "titleSlug": "letter-combinations-of-a-phone-number",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 66.94158464880257,
+        "acRate": 66.94159165298554,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -347,7 +347,7 @@
         "titleSlug": "4sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 41.81508837875506,
+        "acRate": 41.81505941346996,
         "topicTags": [
             {
                 "name": "Array",
@@ -369,7 +369,7 @@
         "titleSlug": "remove-nth-node-from-end-of-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.777557928080924,
+        "acRate": 52.77754764260847,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -387,7 +387,7 @@
         "titleSlug": "valid-parentheses",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 45.245205164387315,
+        "acRate": 45.245206461486376,
         "topicTags": [
             {
                 "name": "String",
@@ -409,7 +409,7 @@
         "titleSlug": "merge-two-sorted-lists",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.9545129631449,
+        "acRate": 68.9545002148129,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -427,7 +427,7 @@
         "titleSlug": "generate-parentheses",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 79.49311851203635,
+        "acRate": 79.49280356326122,
         "topicTags": [
             {
                 "name": "String",
@@ -483,7 +483,7 @@
         "titleSlug": "swap-nodes-in-pairs",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 70.34899955045506,
+        "acRate": 70.34900329847575,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -501,7 +501,7 @@
         "titleSlug": "reverse-nodes-in-k-group",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 67.37762515737002,
+        "acRate": 67.37762600097933,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -519,7 +519,7 @@
         "titleSlug": "remove-duplicates-from-sorted-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 63.88211920510168,
+        "acRate": 63.88212949399703,
         "topicTags": [
             {
                 "name": "Array",
@@ -537,7 +537,7 @@
         "titleSlug": "remove-element",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 62.62658074199773,
+        "acRate": 62.62656432039022,
         "topicTags": [
             {
                 "name": "Array",
@@ -555,7 +555,7 @@
         "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 47.40947685033902,
+        "acRate": 47.409492189096625,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -589,7 +589,7 @@
         "titleSlug": "divide-two-integers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 20.38948824484196,
+        "acRate": 20.389462850613775,
         "topicTags": [
             {
                 "name": "Math",
@@ -629,7 +629,7 @@
         "titleSlug": "next-permutation",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.29367812004657,
+        "acRate": 46.29368535873858,
         "topicTags": [
             {
                 "name": "Array",
@@ -647,7 +647,7 @@
         "titleSlug": "longest-valid-parentheses",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 39.89813248422704,
+        "acRate": 39.89811252455445,
         "topicTags": [
             {
                 "name": "String",
@@ -673,7 +673,7 @@
         "titleSlug": "search-in-rotated-sorted-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 45.72144861017022,
+        "acRate": 45.72144362639214,
         "topicTags": [
             {
                 "name": "Array",
@@ -691,7 +691,7 @@
         "titleSlug": "find-first-and-last-position-of-element-in-sorted-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.738629070232804,
+        "acRate": 49.73860153395769,
         "topicTags": [
             {
                 "name": "Array",
@@ -709,7 +709,7 @@
         "titleSlug": "search-insert-position",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 52.370904713468256,
+        "acRate": 52.37089035320545,
         "topicTags": [
             {
                 "name": "Array",
@@ -727,7 +727,7 @@
         "titleSlug": "valid-sudoku",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.18168473183245,
+        "acRate": 65.18169214442602,
         "topicTags": [
             {
                 "name": "Array",
@@ -783,7 +783,7 @@
         "titleSlug": "count-and-say",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.96631203950823,
+        "acRate": 63.966296815494374,
         "topicTags": [
             {
                 "name": "String",
@@ -797,7 +797,7 @@
         "titleSlug": "combination-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.21634466361155,
+        "acRate": 77.21635696131037,
         "topicTags": [
             {
                 "name": "Array",
@@ -815,7 +815,7 @@
         "titleSlug": "combination-sum-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.25443693844797,
+        "acRate": 60.25445016856259,
         "topicTags": [
             {
                 "name": "Array",
@@ -833,7 +833,7 @@
         "titleSlug": "first-missing-positive",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 43.86868934115999,
+        "acRate": 43.86867642806252,
         "topicTags": [
             {
                 "name": "Array",
@@ -851,7 +851,7 @@
         "titleSlug": "trapping-rain-water",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 68.3251984134944,
+        "acRate": 68.32521672393645,
         "topicTags": [
             {
                 "name": "Array",
@@ -881,7 +881,7 @@
         "titleSlug": "multiply-strings",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 44.803434487066,
+        "acRate": 44.80345055071134,
         "topicTags": [
             {
                 "name": "Math",
@@ -903,7 +903,7 @@
         "titleSlug": "wildcard-matching",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 32.95759518403308,
+        "acRate": 32.95759479594092,
         "topicTags": [
             {
                 "name": "String",
@@ -951,7 +951,7 @@
         "titleSlug": "permutations",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 82.39231245052449,
+        "acRate": 82.39235341940585,
         "topicTags": [
             {
                 "name": "Array",
@@ -991,7 +991,7 @@
         "titleSlug": "rotate-image",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 80.77355933585014,
+        "acRate": 80.77354954047999,
         "topicTags": [
             {
                 "name": "Array",
@@ -1013,7 +1013,7 @@
         "titleSlug": "group-anagrams",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 73.36927583936153,
+        "acRate": 73.36927118530338,
         "topicTags": [
             {
                 "name": "Array",
@@ -1039,7 +1039,7 @@
         "titleSlug": "powx-n",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 39.387549922834516,
+        "acRate": 39.387583959939974,
         "topicTags": [
             {
                 "name": "Math",
@@ -1057,7 +1057,7 @@
         "titleSlug": "n-queens",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 76.57897223964464,
+        "acRate": 76.57895966272568,
         "topicTags": [
             {
                 "name": "Array",
@@ -1079,7 +1079,7 @@
         "titleSlug": "n-queens-ii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 79.41002573325322,
+        "acRate": 79.41000093925885,
         "topicTags": [
             {
                 "name": "Backtracking",
@@ -1097,7 +1097,7 @@
         "titleSlug": "maximum-subarray",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.93032649397513,
+        "acRate": 53.93031967134285,
         "topicTags": [
             {
                 "name": "Array",
@@ -1119,7 +1119,7 @@
         "titleSlug": "spiral-matrix",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 58.01526565515288,
+        "acRate": 58.015278494254574,
         "topicTags": [
             {
                 "name": "Array",
@@ -1141,7 +1141,7 @@
         "titleSlug": "jump-game",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 41.603350833019235,
+        "acRate": 41.60334382089823,
         "topicTags": [
             {
                 "name": "Array",
@@ -1163,7 +1163,7 @@
         "titleSlug": "merge-intervals",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.92381966792485,
+        "acRate": 52.923802599150505,
         "topicTags": [
             {
                 "name": "Array",
@@ -1185,7 +1185,7 @@
         "titleSlug": "insert-interval",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.11054986974166,
+        "acRate": 46.11054802458626,
         "topicTags": [
             {
                 "name": "Array",
@@ -1199,7 +1199,7 @@
         "titleSlug": "length-of-last-word",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 59.815834923162456,
+        "acRate": 59.81584454025044,
         "topicTags": [
             {
                 "name": "String",
@@ -1315,7 +1315,7 @@
         "titleSlug": "minimum-path-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 68.9718797956236,
+        "acRate": 68.97185859536901,
         "topicTags": [
             {
                 "name": "Array",
@@ -1337,7 +1337,7 @@
         "titleSlug": "valid-number",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 23.720052243813594,
+        "acRate": 23.72006239475165,
         "topicTags": [
             {
                 "name": "String",
@@ -1351,7 +1351,7 @@
         "titleSlug": "plus-one",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 50.69627770043246,
+        "acRate": 50.69626529572735,
         "topicTags": [
             {
                 "name": "Array",
@@ -1369,7 +1369,7 @@
         "titleSlug": "add-binary",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 58.729454659922744,
+        "acRate": 58.72942561790584,
         "topicTags": [
             {
                 "name": "Math",
@@ -1417,7 +1417,7 @@
         "titleSlug": "sqrtx",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 42.32882454542523,
+        "acRate": 42.3288208117623,
         "topicTags": [
             {
                 "name": "Math",
@@ -1439,7 +1439,7 @@
         "titleSlug": "climbing-stairs",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.370720971364136,
+        "acRate": 54.37072799920814,
         "topicTags": [
             {
                 "name": "Math",
@@ -1461,7 +1461,7 @@
         "titleSlug": "simplify-path",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 51.574132134436155,
+        "acRate": 51.574133274890556,
         "topicTags": [
             {
                 "name": "String",
@@ -1479,7 +1479,7 @@
         "titleSlug": "edit-distance",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 61.377382037653916,
+        "acRate": 61.37739073531655,
         "topicTags": [
             {
                 "name": "String",
@@ -1497,7 +1497,7 @@
         "titleSlug": "set-matrix-zeroes",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.693343801844236,
+        "acRate": 63.693325438397544,
         "topicTags": [
             {
                 "name": "Array",
@@ -1541,7 +1541,7 @@
         "titleSlug": "sort-colors",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 70.26649568895854,
+        "acRate": 70.26648748709071,
         "topicTags": [
             {
                 "name": "Array",
@@ -1571,7 +1571,7 @@
         "titleSlug": "minimum-window-substring",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 48.590881116798634,
+        "acRate": 48.590849572675445,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -1629,7 +1629,7 @@
         "titleSlug": "word-search",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 48.224851538275935,
+        "acRate": 48.22484221549948,
         "topicTags": [
             {
                 "name": "Array",
@@ -1659,7 +1659,7 @@
         "titleSlug": "remove-duplicates-from-sorted-array-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.35928031015922,
+        "acRate": 65.3592467618843,
         "topicTags": [
             {
                 "name": "Array",
@@ -1677,7 +1677,7 @@
         "titleSlug": "search-in-rotated-sorted-array-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 40.65072756350356,
+        "acRate": 40.65073400406287,
         "topicTags": [
             {
                 "name": "Array",
@@ -1695,7 +1695,7 @@
         "titleSlug": "remove-duplicates-from-sorted-list-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.6392189727234,
+        "acRate": 52.63922131447547,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -1713,7 +1713,7 @@
         "titleSlug": "remove-duplicates-from-sorted-list",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 57.623044251497255,
+        "acRate": 57.62304764375574,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -1727,7 +1727,7 @@
         "titleSlug": "largest-rectangle-in-histogram",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 50.967238134769154,
+        "acRate": 50.96722384239928,
         "topicTags": [
             {
                 "name": "Array",
@@ -1783,7 +1783,7 @@
         "titleSlug": "partition-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 62.22539465972552,
+        "acRate": 62.2253707771114,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -1801,7 +1801,7 @@
         "titleSlug": "scramble-string",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 45.78109070512097,
+        "acRate": 45.78115155688002,
         "topicTags": [
             {
                 "name": "String",
@@ -1819,7 +1819,7 @@
         "titleSlug": "merge-sorted-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.81604493082308,
+        "acRate": 55.81604010608504,
         "topicTags": [
             {
                 "name": "Array",
@@ -1885,7 +1885,7 @@
         "titleSlug": "decode-ways",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 38.69820050238476,
+        "acRate": 38.69818702680221,
         "topicTags": [
             {
                 "name": "String",
@@ -1903,7 +1903,7 @@
         "titleSlug": "reverse-linked-list-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.5231030660219,
+        "acRate": 52.52305268693157,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -1917,7 +1917,7 @@
         "titleSlug": "restore-ip-addresses",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.225310634143526,
+        "acRate": 57.22527425801513,
         "topicTags": [
             {
                 "name": "String",
@@ -1935,7 +1935,7 @@
         "titleSlug": "binary-tree-inorder-traversal",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 80.69598412673442,
+        "acRate": 80.69600040175278,
         "topicTags": [
             {
                 "name": "Stack",
@@ -1961,7 +1961,7 @@
         "titleSlug": "unique-binary-search-trees-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.45955751086524,
+        "acRate": 63.4596226198281,
         "topicTags": [
             {
                 "name": "Dynamic Programming",
@@ -2039,7 +2039,7 @@
         "titleSlug": "validate-binary-search-tree",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 36.42325808744207,
+        "acRate": 36.42325626704172,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2091,7 +2091,7 @@
         "titleSlug": "same-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.07874790293334,
+        "acRate": 68.07875528573685,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2117,7 +2117,7 @@
         "titleSlug": "symmetric-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 62.102033343497965,
+        "acRate": 62.102018077215284,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2143,7 +2143,7 @@
         "titleSlug": "binary-tree-level-order-traversal",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 73.5676806842707,
+        "acRate": 73.5676701833019,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2187,7 +2187,7 @@
         "titleSlug": "maximum-depth-of-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 78.67655795595226,
+        "acRate": 78.67654818607602,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2243,7 +2243,7 @@
         "titleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.70540441829237,
+        "acRate": 69.70538396624472,
         "topicTags": [
             {
                 "name": "Array",
@@ -2273,7 +2273,7 @@
         "titleSlug": "binary-tree-level-order-traversal-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.18499819689866,
+        "acRate": 69.1849741438189,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2355,7 +2355,7 @@
         "titleSlug": "balanced-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 59.29647798146027,
+        "acRate": 59.29646900949227,
         "topicTags": [
             {
                 "name": "Tree",
@@ -2429,7 +2429,7 @@
         "titleSlug": "path-sum-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.03193916883737,
+        "acRate": 63.03195224014733,
         "topicTags": [
             {
                 "name": "Backtracking",
@@ -2455,7 +2455,7 @@
         "titleSlug": "flatten-binary-tree-to-linked-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 71.59122479214946,
+        "acRate": 71.5912112545044,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -2485,7 +2485,7 @@
         "titleSlug": "distinct-subsequences",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 54.34358950342653,
+        "acRate": 54.34362343690875,
         "topicTags": [
             {
                 "name": "String",
@@ -2563,7 +2563,7 @@
         "titleSlug": "pascals-triangle",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 79.43347155842874,
+        "acRate": 79.4334821473004,
         "topicTags": [
             {
                 "name": "Array",
@@ -2599,7 +2599,7 @@
         "titleSlug": "triangle",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.94982823715369,
+        "acRate": 59.94977688112295,
         "topicTags": [
             {
                 "name": "Array",
@@ -2617,7 +2617,7 @@
         "titleSlug": "best-time-to-buy-and-sell-stock",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 57.462056639234184,
+        "acRate": 57.462058611290935,
         "topicTags": [
             {
                 "name": "Array",
@@ -2675,7 +2675,7 @@
         "titleSlug": "binary-tree-maximum-path-sum",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 42.83643130091369,
+        "acRate": 42.836419424119484,
         "topicTags": [
             {
                 "name": "Dynamic Programming",
@@ -2705,7 +2705,7 @@
         "titleSlug": "valid-palindrome",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.41848013252978,
+        "acRate": 54.41850467540932,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -2753,7 +2753,7 @@
         "titleSlug": "word-ladder",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 46.677627218656596,
+        "acRate": 46.67761296858844,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -2779,7 +2779,7 @@
         "titleSlug": "longest-consecutive-sequence",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 47.262330742867945,
+        "acRate": 47.26234074165116,
         "topicTags": [
             {
                 "name": "Array",
@@ -2937,7 +2937,7 @@
         "titleSlug": "candy",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 49.33087392364912,
+        "acRate": 49.3308520866994,
         "topicTags": [
             {
                 "name": "Array",
@@ -2955,7 +2955,7 @@
         "titleSlug": "single-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 78.37692818320716,
+        "acRate": 78.37692477376217,
         "topicTags": [
             {
                 "name": "Array",
@@ -3009,7 +3009,7 @@
         "titleSlug": "word-break",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.961072671228635,
+        "acRate": 49.96105280501192,
         "topicTags": [
             {
                 "name": "Array",
@@ -3085,7 +3085,7 @@
         "titleSlug": "linked-list-cycle",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.16664259866684,
+        "acRate": 55.16665042634962,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -3111,7 +3111,7 @@
         "titleSlug": "linked-list-cycle-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.32145586671847,
+        "acRate": 59.32143913120982,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -3137,7 +3137,7 @@
         "titleSlug": "reorder-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 66.37962588996399,
+        "acRate": 66.37961235184542,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -3163,7 +3163,7 @@
         "titleSlug": "binary-tree-preorder-traversal",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 76.77440682909183,
+        "acRate": 76.774400129234,
         "topicTags": [
             {
                 "name": "Stack",
@@ -3259,7 +3259,7 @@
         "titleSlug": "sort-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.49109756137635,
+        "acRate": 65.49111210525302,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -3289,7 +3289,7 @@
         "titleSlug": "max-points-on-a-line",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 31.54438952221807,
+        "acRate": 31.54435083737763,
         "topicTags": [
             {
                 "name": "Array",
@@ -3323,7 +3323,7 @@
         "titleSlug": "evaluate-reverse-polish-notation",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 58.85672930697703,
+        "acRate": 58.85670958033161,
         "topicTags": [
             {
                 "name": "Array",
@@ -3345,7 +3345,7 @@
         "titleSlug": "reverse-words-in-a-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 58.00730602977522,
+        "acRate": 58.00728382041987,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -3363,7 +3363,7 @@
         "titleSlug": "maximum-product-subarray",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.147070891944516,
+        "acRate": 37.147077070467326,
         "topicTags": [
             {
                 "name": "Array",
@@ -3381,7 +3381,7 @@
         "titleSlug": "find-minimum-in-rotated-sorted-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 55.39161261767083,
+        "acRate": 55.39160537477612,
         "topicTags": [
             {
                 "name": "Array",
@@ -3399,7 +3399,7 @@
         "titleSlug": "find-minimum-in-rotated-sorted-array-ii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 47.071805545277776,
+        "acRate": 47.07183481685909,
         "topicTags": [
             {
                 "name": "Array",
@@ -3417,7 +3417,7 @@
         "titleSlug": "min-stack",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 58.727747482985905,
+        "acRate": 58.72775905549857,
         "topicTags": [
             {
                 "name": "Stack",
@@ -3523,7 +3523,7 @@
         "titleSlug": "intersection-of-two-linked-lists",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 64.79672105557837,
+        "acRate": 64.79675357837927,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -3563,7 +3563,7 @@
         "titleSlug": "find-peak-element",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 47.23531976017094,
+        "acRate": 47.235336638011276,
         "topicTags": [
             {
                 "name": "Array",
@@ -3595,7 +3595,7 @@
         "titleSlug": "maximum-gap",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.24423294351913,
+        "acRate": 53.24410144197912,
         "topicTags": [
             {
                 "name": "Array",
@@ -3643,7 +3643,7 @@
         "titleSlug": "fraction-to-recurring-decimal",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 31.492386476970406,
+        "acRate": 31.49232968111636,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -3665,7 +3665,7 @@
         "titleSlug": "two-sum-ii-input-array-is-sorted",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.95894322966723,
+        "acRate": 65.95893732542795,
         "topicTags": [
             {
                 "name": "Array",
@@ -3705,7 +3705,7 @@
         "titleSlug": "majority-element",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.52729752146519,
+        "acRate": 66.5272973835775,
         "topicTags": [
             {
                 "name": "Array",
@@ -3769,7 +3769,7 @@
         "titleSlug": "excel-sheet-column-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.52112821484191,
+        "acRate": 68.5211057988786,
         "topicTags": [
             {
                 "name": "Math",
@@ -3801,7 +3801,7 @@
         "titleSlug": "binary-search-tree-iterator",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.06100653869593,
+        "acRate": 77.06099127707576,
         "topicTags": [
             {
                 "name": "Stack",
@@ -3835,7 +3835,7 @@
         "titleSlug": "dungeon-game",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 42.40570568585284,
+        "acRate": 42.40563102768848,
         "topicTags": [
             {
                 "name": "Array",
@@ -3857,7 +3857,7 @@
         "titleSlug": "combine-two-tables",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 80.06037523642011,
+        "acRate": 80.06032132751724,
         "topicTags": [
             {
                 "name": "Database",
@@ -3871,7 +3871,7 @@
         "titleSlug": "second-highest-salary",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 48.58132595401256,
+        "acRate": 48.581311593079654,
         "topicTags": [
             {
                 "name": "Database",
@@ -3885,7 +3885,7 @@
         "titleSlug": "nth-highest-salary",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 40.34922549688671,
+        "acRate": 40.34919396446001,
         "topicTags": [
             {
                 "name": "Database",
@@ -3899,7 +3899,7 @@
         "titleSlug": "rank-scores",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 68.97595255858975,
+        "acRate": 68.97589835163875,
         "topicTags": [
             {
                 "name": "Database",
@@ -3967,7 +3967,7 @@
         "titleSlug": "duplicate-emails",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.49531946306294,
+        "acRate": 74.49527614818555,
         "topicTags": [
             {
                 "name": "Database",
@@ -3981,7 +3981,7 @@
         "titleSlug": "customers-who-never-order",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 72.51825452232039,
+        "acRate": 72.51822728928065,
         "topicTags": [
             {
                 "name": "Database",
@@ -3995,7 +3995,7 @@
         "titleSlug": "department-highest-salary",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.702697421071896,
+        "acRate": 59.702666171394625,
         "topicTags": [
             {
                 "name": "Database",
@@ -4101,7 +4101,7 @@
         "titleSlug": "rotate-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 45.620733789521736,
+        "acRate": 45.62071656894415,
         "topicTags": [
             {
                 "name": "Array",
@@ -4141,7 +4141,7 @@
         "titleSlug": "number-of-1-bits",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 77.64992017535798,
+        "acRate": 77.64991253963048,
         "topicTags": [
             {
                 "name": "Divide and Conquer",
@@ -4229,7 +4229,7 @@
         "titleSlug": "rising-temperature",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 52.30654768792861,
+        "acRate": 52.30656525259707,
         "topicTags": [
             {
                 "name": "Database",
@@ -4243,7 +4243,7 @@
         "titleSlug": "house-robber",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.6404572765131,
+        "acRate": 53.64045928570581,
         "topicTags": [
             {
                 "name": "Array",
@@ -4261,7 +4261,7 @@
         "titleSlug": "binary-tree-right-side-view",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 71.32305050450324,
+        "acRate": 71.32307150527456,
         "topicTags": [
             {
                 "name": "Tree",
@@ -4287,7 +4287,7 @@
         "titleSlug": "number-of-islands",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.22417895109764,
+        "acRate": 65.22418776770674,
         "topicTags": [
             {
                 "name": "Array",
@@ -4331,7 +4331,7 @@
         "titleSlug": "happy-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 60.35567370576218,
+        "acRate": 60.35565433621215,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -4357,7 +4357,7 @@
         "titleSlug": "remove-linked-list-elements",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.592896397076764,
+        "acRate": 55.59291433904914,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -4375,7 +4375,7 @@
         "titleSlug": "count-primes",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 35.866397551104335,
+        "acRate": 35.86642577028314,
         "topicTags": [
             {
                 "name": "Array",
@@ -4413,7 +4413,7 @@
         "titleSlug": "isomorphic-strings",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 49.18651955634902,
+        "acRate": 49.186508954848335,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -4431,7 +4431,7 @@
         "titleSlug": "reverse-linked-list",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 81.11309201821115,
+        "acRate": 81.11308070904568,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -4449,7 +4449,7 @@
         "titleSlug": "course-schedule",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.31459903132569,
+        "acRate": 52.31459988617297,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -4479,7 +4479,7 @@
         "titleSlug": "implement-trie-prefix-tree",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 70.11104359584411,
+        "acRate": 70.11103080594577,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -4505,7 +4505,7 @@
         "titleSlug": "minimum-size-subarray-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.04606133982214,
+        "acRate": 53.04607598774332,
         "topicTags": [
             {
                 "name": "Array",
@@ -4531,7 +4531,7 @@
         "titleSlug": "course-schedule-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 56.34548100246428,
+        "acRate": 56.34549801643739,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -4557,7 +4557,7 @@
         "titleSlug": "design-add-and-search-words-data-structure",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.0982719457023,
+        "acRate": 49.09824525526778,
         "topicTags": [
             {
                 "name": "String",
@@ -4583,7 +4583,7 @@
         "titleSlug": "word-search-ii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 38.961991041582884,
+        "acRate": 38.96196619588282,
         "topicTags": [
             {
                 "name": "Array",
@@ -4613,7 +4613,7 @@
         "titleSlug": "house-robber-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 45.61870598237233,
+        "acRate": 45.618718043113674,
         "topicTags": [
             {
                 "name": "Array",
@@ -4631,7 +4631,7 @@
         "titleSlug": "shortest-palindrome",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 43.220257090334044,
+        "acRate": 43.22019253943784,
         "topicTags": [
             {
                 "name": "String",
@@ -4669,7 +4669,7 @@
         "titleSlug": "kth-largest-element-in-an-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.36993069986889,
+        "acRate": 69.36992523611549,
         "topicTags": [
             {
                 "name": "Array",
@@ -4717,7 +4717,7 @@
         "titleSlug": "contains-duplicate",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 64.7550502002554,
+        "acRate": 64.75504643601113,
         "topicTags": [
             {
                 "name": "Array",
@@ -4781,7 +4781,7 @@
         "titleSlug": "contains-duplicate-ii",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 52.00324759739496,
+        "acRate": 52.003275022809134,
         "topicTags": [
             {
                 "name": "Array",
@@ -4833,7 +4833,7 @@
         "titleSlug": "maximal-square",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 50.96940098674241,
+        "acRate": 50.96937545338983,
         "topicTags": [
             {
                 "name": "Array",
@@ -4855,7 +4855,7 @@
         "titleSlug": "count-complete-tree-nodes",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 72.31501329383516,
+        "acRate": 72.31498145645861,
         "topicTags": [
             {
                 "name": "Binary Search",
@@ -4925,7 +4925,7 @@
         "titleSlug": "implement-stack-using-queues",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 70.51488588412175,
+        "acRate": 70.51486971107485,
         "topicTags": [
             {
                 "name": "Stack",
@@ -4947,7 +4947,7 @@
         "titleSlug": "invert-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 80.50191501111841,
+        "acRate": 80.50190047946737,
         "topicTags": [
             {
                 "name": "Tree",
@@ -5009,7 +5009,7 @@
         "titleSlug": "majority-element-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 56.85308314560967,
+        "acRate": 56.85308864145968,
         "topicTags": [
             {
                 "name": "Array",
@@ -5039,7 +5039,7 @@
         "titleSlug": "kth-smallest-element-in-a-bst",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.37802052836679,
+        "acRate": 77.37800616022884,
         "topicTags": [
             {
                 "name": "Tree",
@@ -5065,7 +5065,7 @@
         "titleSlug": "power-of-two",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 50.57875543197385,
+        "acRate": 50.57873487547555,
         "topicTags": [
             {
                 "name": "Math",
@@ -5087,7 +5087,7 @@
         "titleSlug": "implement-queue-using-stacks",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 70.31557552692156,
+        "acRate": 70.31556283048897,
         "topicTags": [
             {
                 "name": "Stack",
@@ -5109,7 +5109,7 @@
         "titleSlug": "number-of-digit-one",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 40.00319657720349,
+        "acRate": 40.00329494152709,
         "topicTags": [
             {
                 "name": "Math",
@@ -5131,7 +5131,7 @@
         "titleSlug": "palindrome-linked-list",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 58.877022305569845,
+        "acRate": 58.87702563302907,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -5235,7 +5235,7 @@
         "titleSlug": "product-of-array-except-self",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.32881920704328,
+        "acRate": 69.32882569825156,
         "topicTags": [
             {
                 "name": "Array",
@@ -5287,7 +5287,7 @@
         "titleSlug": "search-a-2d-matrix-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 58.18810886157082,
+        "acRate": 58.18806644557553,
         "topicTags": [
             {
                 "name": "Array",
@@ -5313,7 +5313,7 @@
         "titleSlug": "different-ways-to-add-parentheses",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 73.71312929902422,
+        "acRate": 73.71308040422528,
         "topicTags": [
             {
                 "name": "Math",
@@ -5347,7 +5347,7 @@
         "titleSlug": "valid-anagram",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.71629191396067,
+        "acRate": 68.71630949663711,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -5705,7 +5705,7 @@
         "titleSlug": "binary-tree-paths",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 69.45072555334153,
+        "acRate": 69.45070601769696,
         "topicTags": [
             {
                 "name": "String",
@@ -5735,7 +5735,7 @@
         "titleSlug": "add-digits",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 69.32735568039651,
+        "acRate": 69.32734001119789,
         "topicTags": [
             {
                 "name": "Math",
@@ -5827,7 +5827,7 @@
         "titleSlug": "trips-and-users",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 39.31158913861866,
+        "acRate": 39.31163492819678,
         "topicTags": [
             {
                 "name": "Database",
@@ -5943,7 +5943,7 @@
         "titleSlug": "missing-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 72.76850304777068,
+        "acRate": 72.7684890349839,
         "topicTags": [
             {
                 "name": "Array",
@@ -6127,7 +6127,7 @@
         "titleSlug": "h-index",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 41.94209717471348,
+        "acRate": 41.94206374637375,
         "topicTags": [
             {
                 "name": "Array",
@@ -6149,7 +6149,7 @@
         "titleSlug": "h-index-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 40.1443120113557,
+        "acRate": 40.14442507386013,
         "topicTags": [
             {
                 "name": "Array",
@@ -6299,7 +6299,7 @@
         "titleSlug": "expression-add-operators",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 43.881552037224715,
+        "acRate": 43.88166636271266,
         "topicTags": [
             {
                 "name": "Math",
@@ -6321,7 +6321,7 @@
         "titleSlug": "move-zeroes",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 64.44141638629915,
+        "acRate": 64.44141086602959,
         "topicTags": [
             {
                 "name": "Array",
@@ -6409,7 +6409,7 @@
         "titleSlug": "find-the-duplicate-number",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 64.9597544448938,
+        "acRate": 64.95972974255892,
         "topicTags": [
             {
                 "name": "Array",
@@ -6491,7 +6491,7 @@
         "titleSlug": "word-pattern",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 44.73737281898568,
+        "acRate": 44.73738955784224,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -6621,7 +6621,7 @@
         "titleSlug": "find-median-from-data-stream",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 55.06064789200994,
+        "acRate": 55.060516737474515,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -6677,7 +6677,7 @@
         "titleSlug": "serialize-and-deserialize-binary-tree",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 61.2113707363815,
+        "acRate": 61.21140009236785,
         "topicTags": [
             {
                 "name": "String",
@@ -6759,7 +6759,7 @@
         "titleSlug": "longest-increasing-subsequence",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.03793128850135,
+        "acRate": 60.03793556276975,
         "topicTags": [
             {
                 "name": "Array",
@@ -6837,7 +6837,7 @@
         "titleSlug": "range-sum-query-immutable",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 73.61478526919896,
+        "acRate": 73.6147665562409,
         "topicTags": [
             {
                 "name": "Array",
@@ -6993,7 +6993,7 @@
         "titleSlug": "best-time-to-buy-and-sell-stock-with-cooldown",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 62.82231857154616,
+        "acRate": 62.822290494186305,
         "topicTags": [
             {
                 "name": "Array",
@@ -7179,7 +7179,7 @@
         "titleSlug": "remove-duplicate-letters",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 54.57446093537395,
+        "acRate": 54.57436083888347,
         "topicTags": [
             {
                 "name": "String",
@@ -7319,7 +7319,7 @@
         "titleSlug": "coin-change",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.223289495808274,
+        "acRate": 49.223273341131225,
         "topicTags": [
             {
                 "name": "Array",
@@ -7671,7 +7671,7 @@
         "titleSlug": "increasing-triplet-subsequence",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 39.67002846413973,
+        "acRate": 39.6700201498745,
         "topicTags": [
             {
                 "name": "Array",
@@ -7907,7 +7907,7 @@
         "titleSlug": "reverse-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 81.39831534556984,
+        "acRate": 81.398311724589,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -7943,7 +7943,7 @@
         "titleSlug": "moving-average-from-data-stream",
         "difficulty": "Easy",
         "isPaidOnly": true,
-        "acRate": 80.23747972237243,
+        "acRate": 80.23759859200834,
         "topicTags": [
             {
                 "name": "Array",
@@ -7969,7 +7969,7 @@
         "titleSlug": "top-k-frequent-elements",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 67.47099014882257,
+        "acRate": 67.47100805673901,
         "topicTags": [
             {
                 "name": "Array",
@@ -8041,7 +8041,7 @@
         "titleSlug": "intersection-of-two-arrays",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 78.42783287106798,
+        "acRate": 78.42781642906795,
         "topicTags": [
             {
                 "name": "Array",
@@ -8071,7 +8071,7 @@
         "titleSlug": "intersection-of-two-arrays-ii",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 60.40640028498486,
+        "acRate": 60.40646005903546,
         "topicTags": [
             {
                 "name": "Array",
@@ -8477,7 +8477,7 @@
         "titleSlug": "water-and-jug-problem",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.50114633361642,
+        "acRate": 46.50128111485977,
         "topicTags": [
             {
                 "name": "Math",
@@ -8541,7 +8541,7 @@
         "titleSlug": "valid-perfect-square",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 45.12380207455034,
+        "acRate": 45.12381793840834,
         "topicTags": [
             {
                 "name": "Math",
@@ -8621,7 +8621,7 @@
         "titleSlug": "sum-of-two-integers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 55.76797737389519,
+        "acRate": 55.767985908230386,
         "topicTags": [
             {
                 "name": "Math",
@@ -8683,7 +8683,7 @@
         "titleSlug": "guess-number-higher-or-lower",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 58.4183132969189,
+        "acRate": 58.418353158786005,
         "topicTags": [
             {
                 "name": "Binary Search",
@@ -8827,7 +8827,7 @@
         "titleSlug": "insert-delete-getrandom-o1",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 55.545186159475456,
+        "acRate": 55.54522916017503,
         "topicTags": [
             {
                 "name": "Array",
@@ -8887,7 +8887,7 @@
         "titleSlug": "linked-list-random-node",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.27148244900783,
+        "acRate": 65.27133224630316,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -8913,7 +8913,7 @@
         "titleSlug": "ransom-note",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.50499156532467,
+        "acRate": 66.50501249622721,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -9001,7 +9001,7 @@
         "titleSlug": "first-unique-character-in-a-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.43704022108744,
+        "acRate": 66.43701448932397,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -9123,7 +9123,7 @@
         "titleSlug": "is-subsequence",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 49.46974307421226,
+        "acRate": 49.46974268138964,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -9145,7 +9145,7 @@
         "titleSlug": "utf-8-validation",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.75856272595748,
+        "acRate": 46.7583919314274,
         "topicTags": [
             {
                 "name": "Array",
@@ -9163,7 +9163,7 @@
         "titleSlug": "decode-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.290369208017914,
+        "acRate": 63.29035118427171,
         "topicTags": [
             {
                 "name": "String",
@@ -9259,7 +9259,7 @@
         "titleSlug": "random-pick-index",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.20585344094104,
+        "acRate": 65.20578158590908,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -9285,7 +9285,7 @@
         "titleSlug": "evaluate-division",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 64.63356929412349,
+        "acRate": 64.63350866124453,
         "topicTags": [
             {
                 "name": "Array",
@@ -9367,7 +9367,7 @@
         "titleSlug": "remove-k-digits",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.77029773326128,
+        "acRate": 37.77031529828449,
         "topicTags": [
             {
                 "name": "String",
@@ -9529,7 +9529,7 @@
         "titleSlug": "longest-palindrome",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 56.28218220503774,
+        "acRate": 56.28221044845475,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -9607,7 +9607,7 @@
         "titleSlug": "fizz-buzz",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 75.95062340552926,
+        "acRate": 75.95060429520612,
         "topicTags": [
             {
                 "name": "Math",
@@ -9651,7 +9651,7 @@
         "titleSlug": "third-maximum-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 40.49523992774952,
+        "acRate": 40.49525747694393,
         "topicTags": [
             {
                 "name": "Array",
@@ -9691,7 +9691,7 @@
         "titleSlug": "partition-equal-subset-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 50.0439600363306,
+        "acRate": 50.04394493849071,
         "topicTags": [
             {
                 "name": "Array",
@@ -9787,7 +9787,7 @@
         "titleSlug": "strong-password-checker",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 16.54613677143496,
+        "acRate": 16.545954318375184,
         "topicTags": [
             {
                 "name": "String",
@@ -9853,7 +9853,7 @@
         "titleSlug": "reconstruct-original-digits-from-english",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.422893926672266,
+        "acRate": 53.42316577953734,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -9875,7 +9875,7 @@
         "titleSlug": "longest-repeating-character-replacement",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.76510056695989,
+        "acRate": 60.76512107251663,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -10135,7 +10135,7 @@
         "titleSlug": "number-of-segments-in-a-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 37.85547223854198,
+        "acRate": 37.855395049000734,
         "topicTags": [
             {
                 "name": "String",
@@ -10149,7 +10149,7 @@
         "titleSlug": "non-overlapping-intervals",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.8111070643221,
+        "acRate": 57.811144365946774,
         "topicTags": [
             {
                 "name": "Array",
@@ -10219,7 +10219,7 @@
         "titleSlug": "find-all-anagrams-in-a-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 54.61436355142444,
+        "acRate": 54.61434465426193,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -10295,7 +10295,7 @@
         "titleSlug": "find-all-duplicates-in-an-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.20103108601589,
+        "acRate": 77.20113877137115,
         "topicTags": [
             {
                 "name": "Array",
@@ -10423,7 +10423,7 @@
         "titleSlug": "find-all-numbers-disappeared-in-an-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 64.69090364772512,
+        "acRate": 64.6908439263536,
         "topicTags": [
             {
                 "name": "Array",
@@ -10479,7 +10479,7 @@
         "titleSlug": "delete-node-in-a-bst",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 55.48895457310713,
+        "acRate": 55.488986814857164,
         "topicTags": [
             {
                 "name": "Tree",
@@ -10535,7 +10535,7 @@
         "titleSlug": "minimum-number-of-arrows-to-burst-balloons",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 61.968676646579326,
+        "acRate": 61.96869418902647,
         "topicTags": [
             {
                 "name": "Array",
@@ -10593,7 +10593,7 @@
         "titleSlug": "assign-cookies",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.5680993877606,
+        "acRate": 55.56810504071363,
         "topicTags": [
             {
                 "name": "Array",
@@ -10623,7 +10623,7 @@
         "titleSlug": "132-pattern",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 35.15975730589977,
+        "acRate": 35.15982898838516,
         "topicTags": [
             {
                 "name": "Array",
@@ -10701,7 +10701,7 @@
         "titleSlug": "repeated-substring-pattern",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 48.866585862922854,
+        "acRate": 48.86662228917773,
         "topicTags": [
             {
                 "name": "String",
@@ -11203,7 +11203,7 @@
         "titleSlug": "sliding-window-median",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 39.16459362495522,
+        "acRate": 39.1644913007791,
         "topicTags": [
             {
                 "name": "Array",
@@ -11309,7 +11309,7 @@
         "titleSlug": "max-consecutive-ones",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.23993393575263,
+        "acRate": 66.23992535226307,
         "topicTags": [
             {
                 "name": "Array",
@@ -11323,7 +11323,7 @@
         "titleSlug": "predict-the-winner",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.004561831828916,
+        "acRate": 60.00464631673801,
         "topicTags": [
             {
                 "name": "Array",
@@ -11497,7 +11497,7 @@
         "titleSlug": "reverse-pairs",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 35.301337460527805,
+        "acRate": 35.30128292127387,
         "topicTags": [
             {
                 "name": "Array",
@@ -11539,7 +11539,7 @@
         "titleSlug": "target-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.96094910308532,
+        "acRate": 52.96092820503252,
         "topicTags": [
             {
                 "name": "Array",
@@ -11587,7 +11587,7 @@
         "titleSlug": "next-greater-element-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 76.90808579060271,
+        "acRate": 76.90805325854758,
         "topicTags": [
             {
                 "name": "Array",
@@ -11613,7 +11613,7 @@
         "titleSlug": "random-point-in-non-overlapping-rectangles",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 40.80748942505207,
+        "acRate": 40.80706576197429,
         "topicTags": [
             {
                 "name": "Array",
@@ -11651,7 +11651,7 @@
         "titleSlug": "diagonal-traverse",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 67.48624028212656,
+        "acRate": 67.48620246465563,
         "topicTags": [
             {
                 "name": "Array",
@@ -11801,7 +11801,7 @@
         "titleSlug": "next-greater-element-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.24914016649738,
+        "acRate": 69.24911749985442,
         "topicTags": [
             {
                 "name": "Array",
@@ -11913,7 +11913,7 @@
         "titleSlug": "perfect-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 50.41232907894766,
+        "acRate": 50.41238588816505,
         "topicTags": [
             {
                 "name": "Math",
@@ -11957,7 +11957,7 @@
         "titleSlug": "fibonacci-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.69037038606145,
+        "acRate": 74.69038128220885,
         "topicTags": [
             {
                 "name": "Math",
@@ -12147,7 +12147,7 @@
         "titleSlug": "coin-change-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.126188071554076,
+        "acRate": 59.126166322124405,
         "topicTags": [
             {
                 "name": "Array",
@@ -12257,7 +12257,7 @@
         "titleSlug": "continuous-subarray-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 31.707190893013987,
+        "acRate": 31.70720295430909,
         "topicTags": [
             {
                 "name": "Array",
@@ -12451,7 +12451,7 @@
         "titleSlug": "minimum-absolute-difference-in-bst",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 59.77700381392971,
+        "acRate": 59.77705818681268,
         "topicTags": [
             {
                 "name": "Tree",
@@ -12503,7 +12503,7 @@
         "titleSlug": "k-diff-pairs-in-an-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.40649534123535,
+        "acRate": 46.406439832168296,
         "topicTags": [
             {
                 "name": "Array",
@@ -12699,7 +12699,7 @@
         "titleSlug": "single-element-in-a-sorted-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.43885991637957,
+        "acRate": 59.438885827677844,
         "topicTags": [
             {
                 "name": "Array",
@@ -12761,7 +12761,7 @@
         "titleSlug": "diameter-of-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.32537537204223,
+        "acRate": 66.32538333693961,
         "topicTags": [
             {
                 "name": "Tree",
@@ -12853,7 +12853,7 @@
         "titleSlug": "number-of-provinces",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 71.13781490955265,
+        "acRate": 71.13780283839041,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -12927,7 +12927,7 @@
         "titleSlug": "game-play-analysis-iv",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 42.62092034428007,
+        "acRate": 42.620874493176565,
         "topicTags": [
             {
                 "name": "Database",
@@ -13111,7 +13111,7 @@
         "titleSlug": "subarray-sum-equals-k",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 48.26561116377376,
+        "acRate": 48.265635664304995,
         "topicTags": [
             {
                 "name": "Array",
@@ -13243,7 +13243,7 @@
         "titleSlug": "reshape-the-matrix",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 65.59683988006077,
+        "acRate": 65.59688093971958,
         "topicTags": [
             {
                 "name": "Array",
@@ -13265,7 +13265,7 @@
         "titleSlug": "permutation-in-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.83253807210396,
+        "acRate": 49.832553056940384,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -13327,7 +13327,7 @@
         "titleSlug": "managers-with-at-least-5-direct-reports",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.678211518335914,
+        "acRate": 49.67830063547998,
         "topicTags": [
             {
                 "name": "Database",
@@ -13449,7 +13449,7 @@
         "titleSlug": "employee-bonus",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 78.22079776288913,
+        "acRate": 78.22078407063401,
         "topicTags": [
             {
                 "name": "Database",
@@ -13591,7 +13591,7 @@
         "titleSlug": "find-customer-referee",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 73.63500106173731,
+        "acRate": 73.63498471562318,
         "topicTags": [
             {
                 "name": "Database",
@@ -13833,7 +13833,7 @@
         "titleSlug": "big-countries",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.92149027361411,
+        "acRate": 68.92147364828467,
         "topicTags": [
             {
                 "name": "Database",
@@ -13847,7 +13847,7 @@
         "titleSlug": "classes-with-at-least-5-students",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 65.10076395949963,
+        "acRate": 65.10069597975756,
         "topicTags": [
             {
                 "name": "Database",
@@ -13943,7 +13943,7 @@
         "titleSlug": "friend-requests-ii-who-has-the-most-friends",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.82911869079106,
+        "acRate": 63.829060105926374,
         "topicTags": [
             {
                 "name": "Database",
@@ -13997,7 +13997,7 @@
         "titleSlug": "can-place-flowers",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 29.314972440631635,
+        "acRate": 29.314944736223246,
         "topicTags": [
             {
                 "name": "Array",
@@ -14273,7 +14273,7 @@
         "titleSlug": "biggest-single-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 72.3316527160925,
+        "acRate": 72.33162183279383,
         "topicTags": [
             {
                 "name": "Database",
@@ -14491,7 +14491,7 @@
         "titleSlug": "course-schedule-iii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 42.269509873070476,
+        "acRate": 42.26934893030984,
         "topicTags": [
             {
                 "name": "Array",
@@ -14589,7 +14589,7 @@
         "titleSlug": "sum-of-square-numbers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.05423725367055,
+        "acRate": 37.054266233491994,
         "topicTags": [
             {
                 "name": "Math",
@@ -14703,7 +14703,7 @@
         "titleSlug": "shopping-offers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.84570683111954,
+        "acRate": 52.84542721434543,
         "topicTags": [
             {
                 "name": "Array",
@@ -14789,7 +14789,7 @@
         "titleSlug": "design-circular-deque",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.0979330954741,
+        "acRate": 65.09783043508953,
         "topicTags": [
             {
                 "name": "Array",
@@ -14853,7 +14853,7 @@
         "titleSlug": "maximum-average-subarray-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 49.30827283830307,
+        "acRate": 49.30827236140197,
         "topicTags": [
             {
                 "name": "Array",
@@ -14893,7 +14893,7 @@
         "titleSlug": "set-mismatch",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 43.243528187151824,
+        "acRate": 43.243521237586336,
         "topicTags": [
             {
                 "name": "Array",
@@ -14919,7 +14919,7 @@
         "titleSlug": "maximum-length-of-pair-chain",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 62.22958559738618,
+        "acRate": 62.22951571842993,
         "topicTags": [
             {
                 "name": "Array",
@@ -15081,7 +15081,7 @@
         "titleSlug": "two-sum-iv-input-is-a-bst",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 63.753760216254044,
+        "acRate": 63.75370409935811,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -15675,7 +15675,7 @@
         "titleSlug": "valid-parenthesis-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 40.571540313703046,
+        "acRate": 40.57150318532619,
         "topicTags": [
             {
                 "name": "String",
@@ -15727,7 +15727,7 @@
         "titleSlug": "valid-palindrome-ii",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 44.83034349380537,
+        "acRate": 44.83033971526002,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -15775,7 +15775,7 @@
         "titleSlug": "baseball-game",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 81.20937861020825,
+        "acRate": 81.209333619058,
         "topicTags": [
             {
                 "name": "Array",
@@ -16279,7 +16279,7 @@
         "titleSlug": "search-in-a-binary-search-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 83.2064231096567,
+        "acRate": 83.20645959920904,
         "topicTags": [
             {
                 "name": "Tree",
@@ -16345,7 +16345,7 @@
         "titleSlug": "kth-largest-element-in-a-stream",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 61.637745565450274,
+        "acRate": 61.637794281747425,
         "topicTags": [
             {
                 "name": "Tree",
@@ -16379,7 +16379,7 @@
         "titleSlug": "binary-search",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 61.40454038213786,
+        "acRate": 61.4045349108695,
         "topicTags": [
             {
                 "name": "Array",
@@ -16397,7 +16397,7 @@
         "titleSlug": "design-hashset",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.40492235439076,
+        "acRate": 68.40499869976662,
         "topicTags": [
             {
                 "name": "Array",
@@ -16457,7 +16457,7 @@
         "titleSlug": "design-linked-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 30.93271099826727,
+        "acRate": 30.932729136321953,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -16887,7 +16887,7 @@
         "titleSlug": "find-pivot-index",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 63.989808070076734,
+        "acRate": 63.9897709629996,
         "topicTags": [
             {
                 "name": "Array",
@@ -17029,7 +17029,7 @@
         "titleSlug": "my-calendar-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.53268849261945,
+        "acRate": 63.532866513675344,
         "topicTags": [
             {
                 "name": "Array",
@@ -17241,7 +17241,7 @@
         "titleSlug": "daily-temperatures",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.2351895001668,
+        "acRate": 69.23521404364533,
         "topicTags": [
             {
                 "name": "Array",
@@ -17415,7 +17415,7 @@
         "titleSlug": "min-cost-climbing-stairs",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.78617643555636,
+        "acRate": 68.78616506604871,
         "topicTags": [
             {
                 "name": "Array",
@@ -17909,7 +17909,7 @@
         "titleSlug": "reorganize-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.62657597787309,
+        "acRate": 57.62658965758462,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -18461,7 +18461,7 @@
         "titleSlug": "cheapest-flights-within-k-stops",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 42.64267163519126,
+        "acRate": 42.64264766299948,
         "topicTags": [
             {
                 "name": "Dynamic Programming",
@@ -18659,7 +18659,7 @@
         "titleSlug": "rotate-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.50557943501589,
+        "acRate": 66.50551482644082,
         "topicTags": [
             {
                 "name": "String",
@@ -18779,7 +18779,7 @@
         "titleSlug": "find-eventual-safe-states",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 71.62861713772489,
+        "acRate": 71.62858528567772,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -19017,7 +19017,7 @@
         "titleSlug": "subdomain-visit-count",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.23857519184514,
+        "acRate": 77.23851001749519,
         "topicTags": [
             {
                 "name": "Array",
@@ -19591,7 +19591,7 @@
         "titleSlug": "rectangle-overlap",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 53.44315504210642,
+        "acRate": 53.44307431963825,
         "topicTags": [
             {
                 "name": "Math",
@@ -19657,7 +19657,7 @@
         "titleSlug": "similar-string-groups",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 56.647577361253035,
+        "acRate": 56.647793346678114,
         "topicTags": [
             {
                 "name": "Array",
@@ -20083,7 +20083,7 @@
         "titleSlug": "score-of-parentheses",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.468913912728674,
+        "acRate": 63.46908667272757,
         "topicTags": [
             {
                 "name": "String",
@@ -20179,7 +20179,7 @@
         "titleSlug": "lemonade-change",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 59.508814337942525,
+        "acRate": 59.50874268493597,
         "topicTags": [
             {
                 "name": "Array",
@@ -20381,7 +20381,7 @@
         "titleSlug": "transpose-matrix",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 77.34373205829532,
+        "acRate": 77.34370604277308,
         "topicTags": [
             {
                 "name": "Array",
@@ -20943,7 +20943,7 @@
         "titleSlug": "find-and-replace-pattern",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 77.16780601506376,
+        "acRate": 77.16772658326492,
         "topicTags": [
             {
                 "name": "Array",
@@ -21213,7 +21213,7 @@
         "titleSlug": "online-stock-span",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.87063772478166,
+        "acRate": 69.8705766145471,
         "topicTags": [
             {
                 "name": "Stack",
@@ -21291,7 +21291,7 @@
         "titleSlug": "fruit-into-baskets",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.63660044263509,
+        "acRate": 52.63655257587205,
         "topicTags": [
             {
                 "name": "Array",
@@ -21313,7 +21313,7 @@
         "titleSlug": "sort-array-by-parity",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 76.70591956143588,
+        "acRate": 76.70590318971286,
         "topicTags": [
             {
                 "name": "Array",
@@ -21755,7 +21755,7 @@
         "titleSlug": "sort-array-by-parity-ii",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 71.36549996203782,
+        "acRate": 71.36544561051859,
         "topicTags": [
             {
                 "name": "Array",
@@ -21951,7 +21951,7 @@
         "titleSlug": "binary-subarrays-with-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.95470976856276,
+        "acRate": 69.95467509069022,
         "topicTags": [
             {
                 "name": "Array",
@@ -22021,7 +22021,7 @@
         "titleSlug": "number-of-recent-calls",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 79.11729062308346,
+        "acRate": 79.11726272076449,
         "topicTags": [
             {
                 "name": "Design",
@@ -22131,7 +22131,7 @@
         "titleSlug": "range-sum-of-bst",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 87.64463424278371,
+        "acRate": 87.64462642601909,
         "topicTags": [
             {
                 "name": "Tree",
@@ -22965,7 +22965,7 @@
         "titleSlug": "flip-binary-tree-to-match-preorder-traversal",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.24015611977314,
+        "acRate": 52.24068709661026,
         "topicTags": [
             {
                 "name": "Tree",
@@ -23137,7 +23137,7 @@
         "titleSlug": "squares-of-a-sorted-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.19270970093595,
+        "acRate": 74.1927030246085,
         "topicTags": [
             {
                 "name": "Array",
@@ -23207,7 +23207,7 @@
         "titleSlug": "unique-paths-iii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 83.00074516781484,
+        "acRate": 83.00069346440216,
         "topicTags": [
             {
                 "name": "Array",
@@ -23321,7 +23321,7 @@
         "titleSlug": "sum-of-even-numbers-after-queries",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.07108110320699,
+        "acRate": 69.07094783830132,
         "topicTags": [
             {
                 "name": "Array",
@@ -23513,7 +23513,7 @@
         "titleSlug": "cousins-in-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 59.8734610179089,
+        "acRate": 59.87339534822825,
         "topicTags": [
             {
                 "name": "Tree",
@@ -23539,7 +23539,7 @@
         "titleSlug": "rotting-oranges",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.51372364190931,
+        "acRate": 59.51371071391508,
         "topicTags": [
             {
                 "name": "Array",
@@ -23561,7 +23561,7 @@
         "titleSlug": "minimum-number-of-k-consecutive-bit-flips",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 62.46043602663763,
+        "acRate": 62.46069962060628,
         "topicTags": [
             {
                 "name": "Array",
@@ -23633,7 +23633,7 @@
         "titleSlug": "find-the-town-judge",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 51.138484605808074,
+        "acRate": 51.13845297286099,
         "topicTags": [
             {
                 "name": "Array",
@@ -23735,7 +23735,7 @@
         "titleSlug": "find-common-characters",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.8695414719918,
+        "acRate": 74.86945778357965,
         "topicTags": [
             {
                 "name": "Array",
@@ -23801,7 +23801,7 @@
         "titleSlug": "maximize-sum-of-array-after-k-negations",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.42423594023038,
+        "acRate": 54.42407340705897,
         "topicTags": [
             {
                 "name": "Array",
@@ -23911,7 +23911,7 @@
         "titleSlug": "pairs-of-songs-with-total-durations-divisible-by-60",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.5616640094252,
+        "acRate": 53.56158967323882,
         "topicTags": [
             {
                 "name": "Array",
@@ -23987,7 +23987,7 @@
         "titleSlug": "best-sightseeing-pair",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 62.72661409191975,
+        "acRate": 62.72651062601319,
         "topicTags": [
             {
                 "name": "Array",
@@ -24005,7 +24005,7 @@
         "titleSlug": "smallest-integer-divisible-by-k",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 54.13132095082908,
+        "acRate": 54.13146747147749,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -24141,7 +24141,7 @@
         "titleSlug": "remove-outermost-parentheses",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 87.5078823548434,
+        "acRate": 87.50786792738293,
         "topicTags": [
             {
                 "name": "String",
@@ -24769,7 +24769,7 @@
         "titleSlug": "customers-who-bought-all-products",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 64.62643190788117,
+        "acRate": 64.62653949248747,
         "topicTags": [
             {
                 "name": "Database",
@@ -24783,7 +24783,7 @@
         "titleSlug": "last-stone-weight",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.81613588664797,
+        "acRate": 66.81611422423923,
         "topicTags": [
             {
                 "name": "Array",
@@ -24801,7 +24801,7 @@
         "titleSlug": "remove-all-adjacent-duplicates-in-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.17284473303543,
+        "acRate": 74.17282492397253,
         "topicTags": [
             {
                 "name": "String",
@@ -24853,7 +24853,7 @@
         "titleSlug": "last-stone-weight-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 61.02742738934529,
+        "acRate": 61.02727294343302,
         "topicTags": [
             {
                 "name": "Array",
@@ -24893,7 +24893,7 @@
         "titleSlug": "height-checker",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 82.0912065424842,
+        "acRate": 82.09118489599072,
         "topicTags": [
             {
                 "name": "Array",
@@ -25327,7 +25327,7 @@
         "titleSlug": "product-sales-analysis-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.29876806950082,
+        "acRate": 86.29876026419441,
         "topicTags": [
             {
                 "name": "Database",
@@ -25355,7 +25355,7 @@
         "titleSlug": "product-sales-analysis-iii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.70668180753078,
+        "acRate": 46.70667587136732,
         "topicTags": [
             {
                 "name": "Database",
@@ -25369,7 +25369,7 @@
         "titleSlug": "greatest-common-divisor-of-strings",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.492769747106706,
+        "acRate": 54.49274563800559,
         "topicTags": [
             {
                 "name": "Math",
@@ -25461,7 +25461,7 @@
         "titleSlug": "project-employees-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 67.44508628713473,
+        "acRate": 67.44505825667378,
         "topicTags": [
             {
                 "name": "Database",
@@ -25619,7 +25619,7 @@
         "titleSlug": "sales-analysis-iii",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 48.49890391416547,
+        "acRate": 48.4989944747461,
         "topicTags": [
             {
                 "name": "Database",
@@ -25773,7 +25773,7 @@
         "titleSlug": "shortest-path-in-binary-matrix",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 52.228894591865824,
+        "acRate": 52.228867510586795,
         "topicTags": [
             {
                 "name": "Array",
@@ -25869,7 +25869,7 @@
         "titleSlug": "find-in-mountain-array",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 42.07137112682468,
+        "acRate": 42.071151373066726,
         "topicTags": [
             {
                 "name": "Array",
@@ -25895,7 +25895,7 @@
         "titleSlug": "brace-expansion-ii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 79.45525629887055,
+        "acRate": 79.45507780258734,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -26225,7 +26225,7 @@
         "titleSlug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 83.01696865113604,
+        "acRate": 83.01650345819353,
         "topicTags": [
             {
                 "name": "String",
@@ -26505,7 +26505,7 @@
         "titleSlug": "smallest-sufficient-team",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 55.85415549597855,
+        "acRate": 55.85455481361797,
         "topicTags": [
             {
                 "name": "Array",
@@ -26749,7 +26749,7 @@
         "titleSlug": "n-th-tribonacci-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 63.03001390200399,
+        "acRate": 63.029993699284844,
         "topicTags": [
             {
                 "name": "Math",
@@ -26877,7 +26877,7 @@
         "titleSlug": "longest-common-subsequence",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 59.61354350105933,
+        "acRate": 59.6135492408875,
         "topicTags": [
             {
                 "name": "String",
@@ -26939,7 +26939,7 @@
         "titleSlug": "snapshot-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 36.818011397720454,
+        "acRate": 36.81805741108954,
         "topicTags": [
             {
                 "name": "Array",
@@ -27003,7 +27003,7 @@
         "titleSlug": "article-views-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 76.92750686471317,
+        "acRate": 76.92749717304335,
         "topicTags": [
             {
                 "name": "Database",
@@ -27453,7 +27453,7 @@
         "titleSlug": "invalid-transactions",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 32.613733316467005,
+        "acRate": 32.61382109444809,
         "topicTags": [
             {
                 "name": "Array",
@@ -27567,7 +27567,7 @@
         "titleSlug": "immediate-food-delivery-ii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.16284971928135,
+        "acRate": 57.16280273666708,
         "topicTags": [
             {
                 "name": "Database",
@@ -28373,7 +28373,7 @@
         "titleSlug": "queries-quality-and-percentage",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.15881014244722,
+        "acRate": 55.158727977352065,
         "topicTags": [
             {
                 "name": "Database",
@@ -29159,7 +29159,7 @@
         "titleSlug": "count-number-of-nice-subarrays",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 75.79227379097252,
+        "acRate": 75.79224138277264,
         "topicTags": [
             {
                 "name": "Array",
@@ -29245,7 +29245,7 @@
         "titleSlug": "average-selling-price",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 37.96889936971737,
+        "acRate": 37.96892591758613,
         "topicTags": [
             {
                 "name": "Database",
@@ -29639,7 +29639,7 @@
         "titleSlug": "minimum-time-visiting-all-points",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 84.86195756150093,
+        "acRate": 84.86192720344931,
         "topicTags": [
             {
                 "name": "Array",
@@ -29935,7 +29935,7 @@
         "titleSlug": "students-and-examinations",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 62.11715962976194,
+        "acRate": 62.117132399663035,
         "topicTags": [
             {
                 "name": "Database",
@@ -29985,7 +29985,7 @@
         "titleSlug": "find-the-smallest-divisor-given-a-threshold",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 66.84879863275359,
+        "acRate": 66.8488409792927,
         "topicTags": [
             {
                 "name": "Array",
@@ -30221,7 +30221,7 @@
         "titleSlug": "find-numbers-with-even-number-of-digits",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 80.03458165613881,
+        "acRate": 80.034622355472,
         "topicTags": [
             {
                 "name": "Array",
@@ -30407,7 +30407,7 @@
         "titleSlug": "find-n-unique-integers-sum-up-to-zero",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 78.4642575689179,
+        "acRate": 78.46421637544353,
         "topicTags": [
             {
                 "name": "Array",
@@ -31189,7 +31189,7 @@
         "titleSlug": "movie-rating",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 44.63421190714361,
+        "acRate": 44.63414035228296,
         "topicTags": [
             {
                 "name": "Database",
@@ -31221,7 +31221,7 @@
         "titleSlug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 74.48544028116179,
+        "acRate": 74.48536078491243,
         "topicTags": [
             {
                 "name": "Array",
@@ -31445,7 +31445,7 @@
         "titleSlug": "count-negative-numbers-in-a-sorted-matrix",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 79.77623485692038,
+        "acRate": 79.77621190176751,
         "topicTags": [
             {
                 "name": "Array",
@@ -31467,7 +31467,7 @@
         "titleSlug": "product-of-the-last-k-numbers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.06359694839585,
+        "acRate": 63.06351043047677,
         "topicTags": [
             {
                 "name": "Array",
@@ -32039,7 +32039,7 @@
         "titleSlug": "time-needed-to-inform-all-employees",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.618134290895775,
+        "acRate": 60.61804523859594,
         "topicTags": [
             {
                 "name": "Tree",
@@ -32087,7 +32087,7 @@
         "titleSlug": "replace-employee-id-with-the-unique-identifier",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 83.88906861192173,
+        "acRate": 83.88905961034536,
         "topicTags": [
             {
                 "name": "Database",
@@ -32201,7 +32201,7 @@
         "titleSlug": "maximum-performance-of-a-team",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 48.18505043823384,
+        "acRate": 48.184621999520424,
         "topicTags": [
             {
                 "name": "Array",
@@ -32341,7 +32341,7 @@
         "titleSlug": "create-target-array-in-the-given-order",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.65152004669051,
+        "acRate": 86.65148526718134,
         "topicTags": [
             {
                 "name": "Array",
@@ -32449,7 +32449,7 @@
         "titleSlug": "capital-gainloss",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 84.58456184665428,
+        "acRate": 84.58449181340748,
         "topicTags": [
             {
                 "name": "Database",
@@ -32617,7 +32617,7 @@
         "titleSlug": "circle-and-rectangle-overlapping",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 67.3910340883662,
+        "acRate": 67.3908313908314,
         "topicTags": [
             {
                 "name": "Math",
@@ -32635,7 +32635,7 @@
         "titleSlug": "reducing-dishes",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 76.86463378979558,
+        "acRate": 76.86454238359575,
         "topicTags": [
             {
                 "name": "Array",
@@ -33257,7 +33257,7 @@
         "titleSlug": "kids-with-the-greatest-number-of-candies",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 87.98757260335748,
+        "acRate": 87.9875595814313,
         "topicTags": [
             {
                 "name": "Array",
@@ -33643,7 +33643,7 @@
         "titleSlug": "count-good-nodes-in-binary-tree",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 74.00366377144051,
+        "acRate": 74.00364351522859,
         "topicTags": [
             {
                 "name": "Tree",
@@ -33785,7 +33785,7 @@
         "titleSlug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.83193961909187,
+        "acRate": 68.8318523619953,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -33807,7 +33807,7 @@
         "titleSlug": "maximum-number-of-vowels-in-a-substring-of-given-length",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 63.0416518423795,
+        "acRate": 63.04175130657727,
         "topicTags": [
             {
                 "name": "String",
@@ -34135,7 +34135,7 @@
         "titleSlug": "shuffle-the-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 88.65508147659254,
+        "acRate": 88.65512839205005,
         "topicTags": [
             {
                 "name": "Array",
@@ -34237,7 +34237,7 @@
         "titleSlug": "final-prices-with-a-special-discount-in-a-shop",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 84.3777283404019,
+        "acRate": 84.377671271909,
         "topicTags": [
             {
                 "name": "Array",
@@ -34281,7 +34281,7 @@
         "titleSlug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.650615247734365,
+        "acRate": 49.65043818312257,
         "topicTags": [
             {
                 "name": "Array",
@@ -34351,7 +34351,7 @@
         "titleSlug": "running-sum-of-1d-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 87.10322848514426,
+        "acRate": 87.10322417725426,
         "topicTags": [
             {
                 "name": "Array",
@@ -34399,7 +34399,7 @@
         "titleSlug": "minimum-number-of-days-to-make-m-bouquets",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.25325597535538,
+        "acRate": 57.253175137482124,
         "topicTags": [
             {
                 "name": "Array",
@@ -34417,7 +34417,7 @@
         "titleSlug": "kth-ancestor-of-a-tree-node",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 39.76418654506016,
+        "acRate": 39.76342244632607,
         "topicTags": [
             {
                 "name": "Binary Search",
@@ -35245,7 +35245,7 @@
         "titleSlug": "find-users-with-valid-e-mails",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 35.21793354526108,
+        "acRate": 35.21800830659465,
         "topicTags": [
             {
                 "name": "Database",
@@ -35489,7 +35489,7 @@
         "titleSlug": "patients-with-a-condition",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 39.396022488042384,
+        "acRate": 39.396036695871715,
         "topicTags": [
             {
                 "name": "Database",
@@ -35729,7 +35729,7 @@
         "titleSlug": "kth-missing-positive-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 63.98110932060164,
+        "acRate": 63.98112860173889,
         "topicTags": [
             {
                 "name": "Array",
@@ -35827,7 +35827,7 @@
         "titleSlug": "make-the-string-great",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.77163856082109,
+        "acRate": 68.77154018208739,
         "topicTags": [
             {
                 "name": "String",
@@ -37431,7 +37431,7 @@
         "titleSlug": "maximum-nesting-depth-of-the-parentheses",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.10481851189155,
+        "acRate": 86.10480237796665,
         "topicTags": [
             {
                 "name": "String",
@@ -38327,7 +38327,7 @@
         "titleSlug": "defuse-the-bomb",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 79.5251093115314,
+        "acRate": 79.52504309410848,
         "topicTags": [
             {
                 "name": "Array",
@@ -38565,7 +38565,7 @@
         "titleSlug": "average-time-of-process-per-machine",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 67.03853696670873,
+        "acRate": 67.03851223759304,
         "topicTags": [
             {
                 "name": "Database",
@@ -38713,7 +38713,7 @@
         "titleSlug": "merge-in-between-linked-lists",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 83.20455550390585,
+        "acRate": 83.20450789817548,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -38941,7 +38941,7 @@
         "titleSlug": "max-number-of-k-sum-pairs",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 57.44022996194291,
+        "acRate": 57.440192503522745,
         "topicTags": [
             {
                 "name": "Array",
@@ -39037,7 +39037,7 @@
         "titleSlug": "invalid-tweets",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 85.29090994554302,
+        "acRate": 85.29088663992842,
         "topicTags": [
             {
                 "name": "Database",
@@ -39201,7 +39201,7 @@
         "titleSlug": "partitioning-into-minimum-number-of-deci-binary-numbers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 90.48617619493908,
+        "acRate": 90.48615390382827,
         "topicTags": [
             {
                 "name": "String",
@@ -40137,7 +40137,7 @@
         "titleSlug": "the-number-of-employees-which-report-to-each-employee",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.000534825916624,
+        "acRate": 54.00047813988795,
         "topicTags": [
             {
                 "name": "Database",
@@ -40603,7 +40603,7 @@
         "titleSlug": "check-if-array-is-sorted-and-rotated",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 57.76416655610779,
+        "acRate": 57.7641747639015,
         "topicTags": [
             {
                 "name": "Array",
@@ -40745,7 +40745,7 @@
         "titleSlug": "recyclable-and-low-fat-products",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 88.6558155493219,
+        "acRate": 88.65580794729058,
         "topicTags": [
             {
                 "name": "Database",
@@ -41449,7 +41449,7 @@
         "titleSlug": "primary-department-for-each-employee",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 75.61845163466262,
+        "acRate": 75.61840694338792,
         "topicTags": [
             {
                 "name": "Database",
@@ -41485,7 +41485,7 @@
         "titleSlug": "find-center-of-star-graph",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.60896607624345,
+        "acRate": 86.60894146362982,
         "topicTags": [
             {
                 "name": "Graph Theory",
@@ -41695,7 +41695,7 @@
         "titleSlug": "maximum-ascending-subarray-sum",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.27235852259528,
+        "acRate": 66.2722724255884,
         "topicTags": [
             {
                 "name": "Array",
@@ -41841,7 +41841,7 @@
         "titleSlug": "evaluate-the-bracket-pairs-of-a-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 80.94036429528262,
+        "acRate": 80.94025835426996,
         "topicTags": [
             {
                 "name": "Array",
@@ -42499,7 +42499,7 @@
         "titleSlug": "single-threaded-cpu",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 48.25304401290319,
+        "acRate": 48.25317948286027,
         "topicTags": [
             {
                 "name": "Array",
@@ -42727,7 +42727,7 @@
         "titleSlug": "maximum-element-after-decreasing-and-rearranging",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.15591419083759,
+        "acRate": 69.15582048197163,
         "topicTags": [
             {
                 "name": "Array",
@@ -42973,7 +42973,7 @@
         "titleSlug": "largest-color-value-in-a-directed-graph",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 57.15265501331358,
+        "acRate": 57.15249786358485,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -43297,7 +43297,7 @@
         "titleSlug": "jump-game-vii",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 35.69275450574417,
+        "acRate": 35.69283810433911,
         "topicTags": [
             {
                 "name": "String",
@@ -44009,7 +44009,7 @@
         "titleSlug": "largest-odd-number-in-string",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 68.18997466446115,
+        "acRate": 68.18994136177618,
         "topicTags": [
             {
                 "name": "Math",
@@ -44097,7 +44097,7 @@
         "titleSlug": "count-salary-categories",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 65.56951794978752,
+        "acRate": 65.56938971612452,
         "topicTags": [
             {
                 "name": "Database",
@@ -44157,7 +44157,7 @@
         "titleSlug": "remove-one-element-to-make-the-array-strictly-increasing",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 30.865327732592153,
+        "acRate": 30.865099247136275,
         "topicTags": [
             {
                 "name": "Array",
@@ -44171,7 +44171,7 @@
         "titleSlug": "remove-all-occurrences-of-a-substring",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 78.71797589762521,
+        "acRate": 78.71822473376307,
         "topicTags": [
             {
                 "name": "String",
@@ -44241,7 +44241,7 @@
         "titleSlug": "maximum-product-difference-between-two-pairs",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 83.0807218891994,
+        "acRate": 83.08067677292908,
         "topicTags": [
             {
                 "name": "Array",
@@ -44735,7 +44735,7 @@
         "titleSlug": "confirmation-rate",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 62.884983137833906,
+        "acRate": 62.885040239502906,
         "topicTags": [
             {
                 "name": "Database",
@@ -45605,7 +45605,7 @@
         "titleSlug": "find-if-path-exists-in-graph",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 55.90127448808477,
+        "acRate": 55.901283145981694,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -45707,7 +45707,7 @@
         "titleSlug": "number-of-ways-to-arrive-at-destination",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.77797398090602,
+        "acRate": 37.777959764452376,
         "topicTags": [
             {
                 "name": "Dynamic Programming",
@@ -45759,7 +45759,7 @@
         "titleSlug": "employees-whose-manager-left-the-company",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 48.962094700591294,
+        "acRate": 48.96209229198334,
         "topicTags": [
             {
                 "name": "Database",
@@ -46467,7 +46467,7 @@
         "titleSlug": "count-number-of-pairs-with-absolute-difference-k",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 85.51556627549415,
+        "acRate": 85.51551727637462,
         "topicTags": [
             {
                 "name": "Array",
@@ -47555,7 +47555,7 @@
         "titleSlug": "parallel-courses-iii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 66.8133812030941,
+        "acRate": 66.81373087772737,
         "topicTags": [
             {
                 "name": "Array",
@@ -48053,7 +48053,7 @@
         "titleSlug": "time-needed-to-buy-tickets",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 73.3896999752972,
+        "acRate": 73.38985232268966,
         "topicTags": [
             {
                 "name": "Array",
@@ -48139,7 +48139,7 @@
         "titleSlug": "two-furthest-houses-with-different-colors",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 71.64278428738463,
+        "acRate": 71.64269610510767,
         "topicTags": [
             {
                 "name": "Array",
@@ -49019,7 +49019,7 @@
         "titleSlug": "check-if-a-parentheses-string-can-be-valid",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 45.297654331442125,
+        "acRate": 45.29778219375672,
         "topicTags": [
             {
                 "name": "String",
@@ -49077,7 +49077,7 @@
         "titleSlug": "a-number-after-a-double-reversal",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 82.8329283416391,
+        "acRate": 82.83284978171534,
         "topicTags": [
             {
                 "name": "Math",
@@ -51087,7 +51087,7 @@
         "titleSlug": "minimum-operations-to-halve-array-sum",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 50.54931597914698,
+        "acRate": 50.549758141406365,
         "topicTags": [
             {
                 "name": "Array",
@@ -51335,7 +51335,7 @@
         "titleSlug": "minimum-bit-flips-to-convert-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 88.00193168772743,
+        "acRate": 88.00190627482128,
         "topicTags": [
             {
                 "name": "Bit Manipulation",
@@ -52007,7 +52007,7 @@
         "titleSlug": "count-number-of-rectangles-containing-each-point",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.98240834436055,
+        "acRate": 37.98299965750226,
         "topicTags": [
             {
                 "name": "Array",
@@ -53187,7 +53187,7 @@
         "titleSlug": "successful-pairs-of-spells-and-potions",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.90152090040841,
+        "acRate": 49.90158217550667,
         "topicTags": [
             {
                 "name": "Array",
@@ -53877,7 +53877,7 @@
         "titleSlug": "evaluate-boolean-binary-tree",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 82.41732633764326,
+        "acRate": 82.41726425653465,
         "topicTags": [
             {
                 "name": "Tree",
@@ -53925,7 +53925,7 @@
         "titleSlug": "minimum-sum-of-squared-difference",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 27.082154501118204,
+        "acRate": 27.082519366790166,
         "topicTags": [
             {
                 "name": "Array",
@@ -54507,7 +54507,7 @@
         "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 89.37278804561541,
+        "acRate": 89.37277221602412,
         "topicTags": [
             {
                 "name": "Database",
@@ -54581,7 +54581,7 @@
         "titleSlug": "find-closest-node-to-given-two-nodes",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 53.126800269657416,
+        "acRate": 53.12665663619733,
         "topicTags": [
             {
                 "name": "Depth-First Search",
@@ -54665,7 +54665,7 @@
         "titleSlug": "merge-similar-items",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 77.76852321286304,
+        "acRate": 77.7692272871305,
         "topicTags": [
             {
                 "name": "Array",
@@ -54691,7 +54691,7 @@
         "titleSlug": "count-number-of-bad-pairs",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 54.104285415098296,
+        "acRate": 54.10443853884536,
         "topicTags": [
             {
                 "name": "Array",
@@ -55249,7 +55249,7 @@
         "titleSlug": "longest-subsequence-with-limited-sum",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 73.84846956006889,
+        "acRate": 73.84836051902998,
         "topicTags": [
             {
                 "name": "Array",
@@ -55563,7 +55563,7 @@
         "titleSlug": "meeting-rooms-iii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 51.34561643858254,
+        "acRate": 51.34553603299885,
         "topicTags": [
             {
                 "name": "Array",
@@ -55619,7 +55619,7 @@
         "titleSlug": "most-frequent-even-element",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 54.31217138821314,
+        "acRate": 54.31236512154667,
         "topicTags": [
             {
                 "name": "Array",
@@ -55911,7 +55911,7 @@
         "titleSlug": "sum-of-prefix-scores-of-strings",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 60.888974011432616,
+        "acRate": 60.88878193952668,
         "topicTags": [
             {
                 "name": "Array",
@@ -57013,7 +57013,7 @@
         "titleSlug": "maximum-sum-of-distinct-subarrays-with-length-k",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 43.545336889487004,
+        "acRate": 43.5452603018484,
         "topicTags": [
             {
                 "name": "Array",
@@ -57559,7 +57559,7 @@
         "titleSlug": "append-characters-to-string-to-make-subsequence",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 73.14583508762081,
+        "acRate": 73.14575133638138,
         "topicTags": [
             {
                 "name": "Two Pointers",
@@ -58297,7 +58297,7 @@
         "titleSlug": "shortest-distance-to-target-string-in-a-circular-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 65.03690162131832,
+        "acRate": 65.0367434115262,
         "topicTags": [
             {
                 "name": "Array",
@@ -59213,7 +59213,7 @@
         "titleSlug": "separate-the-digits-in-an-array",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 85.74470618726403,
+        "acRate": 85.74465625995987,
         "topicTags": [
             {
                 "name": "Array",
@@ -59231,7 +59231,7 @@
         "titleSlug": "maximum-number-of-integers-to-choose-from-a-range-i",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 68.04064123181938,
+        "acRate": 68.04078310481636,
         "topicTags": [
             {
                 "name": "Array",
@@ -60903,7 +60903,7 @@
         "titleSlug": "array-reduce-transformation",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 85.4488395693611,
+        "acRate": 85.4493108526234,
         "topicTags": []
     },
     {
@@ -61002,7 +61002,7 @@
         "titleSlug": "promise-time-limit",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 83.34265980238544,
+        "acRate": 83.34239347669677,
         "topicTags": []
     },
     {
@@ -61280,7 +61280,7 @@
         "titleSlug": "sum-multiples",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.15389145734562,
+        "acRate": 86.15384049088787,
         "topicTags": [
             {
                 "name": "Math",
@@ -62470,7 +62470,7 @@
         "titleSlug": "timeout-cancellation",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 89.5430912501234,
+        "acRate": 89.54300522397268,
         "topicTags": []
     },
     {
@@ -62533,7 +62533,7 @@
         "titleSlug": "count-of-integers",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 39.25200566304861,
+        "acRate": 39.250981780182364,
         "topicTags": [
             {
                 "name": "Math",
@@ -62738,7 +62738,7 @@
         "titleSlug": "neither-minimum-nor-maximum",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 76.72193024858328,
+        "acRate": 76.72232478491831,
         "topicTags": [
             {
                 "name": "Array",
@@ -63467,7 +63467,7 @@
         "titleSlug": "find-the-maximum-achievable-number",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 91.75061361753782,
+        "acRate": 91.75058212772454,
         "topicTags": [
             {
                 "name": "Math",
@@ -64099,7 +64099,7 @@
         "titleSlug": "insert-greatest-common-divisors-in-linked-list",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 91.26867687945406,
+        "acRate": 91.26865151303862,
         "topicTags": [
             {
                 "name": "Linked List",
@@ -64161,7 +64161,7 @@
         "titleSlug": "faulty-keyboard",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 80.71546026725805,
+        "acRate": 80.71533876841269,
         "topicTags": [
             {
                 "name": "String",
@@ -64519,7 +64519,7 @@
         "titleSlug": "number-of-beautiful-integers-in-the-range",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 23.4569020212091,
+        "acRate": 23.457256371134644,
         "topicTags": [
             {
                 "name": "Math",
@@ -64709,7 +64709,7 @@
         "titleSlug": "maximize-value-of-function-in-a-ball-passing-game",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 30.999203320893958,
+        "acRate": 30.996309963099634,
         "topicTags": [
             {
                 "name": "Array",
@@ -65783,7 +65783,7 @@
         "titleSlug": "reshape-data-pivot",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 82.89922548718174,
+        "acRate": 82.90043923865301,
         "topicTags": []
     },
     {
@@ -66662,7 +66662,7 @@
         "titleSlug": "maximum-strong-pair-xor-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 75.86590591633325,
+        "acRate": 75.86562022799104,
         "topicTags": [
             {
                 "name": "Array",
@@ -67322,7 +67322,7 @@
         "titleSlug": "length-of-longest-subarray-with-at-most-k-frequency",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.50671493886078,
+        "acRate": 60.50664429542206,
         "topicTags": [
             {
                 "name": "Array",
@@ -68308,7 +68308,7 @@
         "titleSlug": "maximize-the-number-of-partitions-after-operations",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 53.20109242489579,
+        "acRate": 53.20160223853422,
         "topicTags": [
             {
                 "name": "String",
@@ -68360,7 +68360,7 @@
         "titleSlug": "count-elements-with-maximum-frequency",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 79.70595796471711,
+        "acRate": 79.70592148078369,
         "topicTags": [
             {
                 "name": "Array",
@@ -71286,7 +71286,7 @@
         "titleSlug": "find-the-median-of-the-uniqueness-array",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 30.20150976355356,
+        "acRate": 30.202451882584146,
         "topicTags": [
             {
                 "name": "Array",
@@ -72142,7 +72142,7 @@
         "titleSlug": "clear-digits",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 82.75796587450083,
+        "acRate": 82.75791772436462,
         "topicTags": [
             {
                 "name": "String",
@@ -72514,7 +72514,7 @@
         "titleSlug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 90.65180905557254,
+        "acRate": 90.65265745544392,
         "topicTags": [
             {
                 "name": "Array",
@@ -72932,7 +72932,7 @@
         "titleSlug": "generate-binary-strings-without-adjacent-zeros",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 88.73871005884868,
+        "acRate": 88.73860762947736,
         "topicTags": [
             {
                 "name": "String",
@@ -73052,7 +73052,7 @@
         "titleSlug": "delete-nodes-from-linked-list-present-in-array",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 69.18245079144418,
+        "acRate": 69.18258740361166,
         "topicTags": [
             {
                 "name": "Array",
@@ -74089,7 +74089,7 @@
         "titleSlug": "final-array-state-after-k-multiplication-operations-i",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 86.66583434688404,
+        "acRate": 86.66618338226588,
         "topicTags": [
             {
                 "name": "Array",
@@ -74745,7 +74745,7 @@
         "titleSlug": "minimum-number-of-valid-strings-to-form-target-ii",
         "difficulty": "Hard",
         "isPaidOnly": false,
-        "acRate": 20.905143167322567,
+        "acRate": 20.90245971162002,
         "topicTags": [
             {
                 "name": "Array",
@@ -75751,7 +75751,7 @@
         "titleSlug": "total-characters-in-string-after-transformations-i",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 45.497897612178505,
+        "acRate": 45.49807216435518,
         "topicTags": [
             {
                 "name": "Hash Table",
@@ -78807,7 +78807,7 @@
         "titleSlug": "transform-array-by-parity",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 89.42590289385501,
+        "acRate": 89.42581912668737,
         "topicTags": [
             {
                 "name": "Array",
@@ -79749,7 +79749,7 @@
         "titleSlug": "implement-router",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 38.85951822639096,
+        "acRate": 38.859683904003,
         "topicTags": [
             {
                 "name": "Array",
@@ -79865,7 +79865,7 @@
         "titleSlug": "minimum-operations-to-make-array-sum-divisible-by-k",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 91.93180873180873,
+        "acRate": 91.9317751840964,
         "topicTags": [
             {
                 "name": "Array",
@@ -80489,7 +80489,7 @@
         "titleSlug": "maximum-product-of-two-digits",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 75.27034345565305,
+        "acRate": 75.27025592014442,
         "topicTags": [
             {
                 "name": "Math",
@@ -82540,7 +82540,7 @@
         "titleSlug": "check-divisibility-by-digit-sum-and-product",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 74.51845762916426,
+        "acRate": 74.51837450989348,
         "topicTags": [
             {
                 "name": "Math",
@@ -83357,7 +83357,7 @@
         "titleSlug": "gcd-of-odd-and-even-sums",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 89.58130505931685,
+        "acRate": 89.5812742283905,
         "topicTags": [
             {
                 "name": "Math",
@@ -83397,7 +83397,7 @@
         "titleSlug": "jump-game-ix",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 46.243735148265955,
+        "acRate": 46.243979888859485,
         "topicTags": [
             {
                 "name": "Array",
@@ -84615,7 +84615,7 @@
         "titleSlug": "find-churn-risk-customers",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 47.34145059565522,
+        "acRate": 47.33914414611712,
         "topicTags": []
     },
     {
@@ -84642,7 +84642,7 @@
         "titleSlug": "smallest-missing-multiple-of-k",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 71.45827765356209,
+        "acRate": 71.45818462711814,
         "topicTags": [
             {
                 "name": "Array",
@@ -84952,7 +84952,7 @@
         "titleSlug": "find-missing-elements",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 88.21427330146322,
+        "acRate": 88.21423606283886,
         "topicTags": [
             {
                 "name": "Array",
@@ -87035,7 +87035,7 @@
         "titleSlug": "count-monobit-integers",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 66.06317594930678,
+        "acRate": 66.0627717229468,
         "topicTags": [
             {
                 "name": "Bit Manipulation",
@@ -89306,7 +89306,7 @@
         "titleSlug": "count-k-th-roots-in-a-range",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 24.554087470552947,
+        "acRate": 24.553535501335187,
         "topicTags": [
             {
                 "name": "Math",
@@ -89714,7 +89714,7 @@
         "titleSlug": "exactly-one-consecutive-set-bits-pair",
         "difficulty": "Easy",
         "isPaidOnly": false,
-        "acRate": 50.38079511004856,
+        "acRate": 50.38141598373282,
         "topicTags": [
             {
                 "name": "Bit Manipulation",
@@ -91259,7 +91259,7 @@
         "titleSlug": "weighted-sum-of-a-tree",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 42.18230290719817,
+        "acRate": 42.181568891315116,
         "topicTags": [
             {
                 "name": "Array",
@@ -91413,7 +91413,7 @@
         "titleSlug": "k-th-digit-in-infinite-string",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 35.55603421749031,
+        "acRate": 35.557128350309256,
         "topicTags": [
             {
                 "name": "Math",
@@ -92060,7 +92060,7 @@
         "titleSlug": "minimum-days-to-score-exactly-n-points",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 42.068701192928664,
+        "acRate": 42.0697089471793,
         "topicTags": [
             {
                 "name": "Math",
@@ -92130,7 +92130,7 @@
         "titleSlug": "minimum-operations-to-make-every-element-palindromic",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 15.61982134917748,
+        "acRate": 15.618116044542349,
         "topicTags": [
             {
                 "name": "Array",
@@ -92340,7 +92340,7 @@
         "titleSlug": "transform-array-using-pair-operations",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 60.674787217776874,
+        "acRate": 60.67742182124015,
         "topicTags": [
             {
                 "name": "Array",
@@ -92444,7 +92444,7 @@
         "titleSlug": "maximum-equal-adjacent-pairs-after-at-most-one-replacement",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 49.5067624871669,
+        "acRate": 49.50674046960093,
         "topicTags": [
             {
                 "name": "Array",
@@ -92466,7 +92466,7 @@
         "titleSlug": "longest-subarray-with-restricted-pair-sums",
         "difficulty": "Medium",
         "isPaidOnly": false,
-        "acRate": 37.67237236127029,
+        "acRate": 37.675158058194995,
         "topicTags": [
             {
                 "name": "Array",

@@ -1,0 +1,46 @@
+{
+    "quesId": 4063,
+    "title": "Longest Subarray Divisible by K with At Most One Negation I",
+    "titleSlug": "longest-subarray-divisible-by-k-with-at-most-one-negation-i",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "13K",
+        "totalSubmission": "37.8K",
+        "totalAcceptedRaw": 12984,
+        "totalSubmissionRaw": 37759,
+        "acRate": "34.4%",
+        "acRateRaw": 34.37822668184586,
+        "likes": 44,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4374,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[4,1,2]\r\n3\r\n[5,3,4]\r\n7\r\n[2,2,5]\r\n6\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>A subarray is <strong>valid</strong> if its sum is divisible by <code>k</code>, or can become divisible by <code>k</code> by <strong>negating one element within that subarray</strong>.</p>\n\n<p>Negating an element means replacing its value <code>x</code> with <code>-x</code>.</p>\n\n<p>Return the <strong>length of the longest valid subarray</strong>. If no valid subarray exists, return 0.</p>\n\n<p>A <strong>subarray</strong> is a contiguous, non-empty sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,1,2], k = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The sum of the entire array is 7, and <code>7 % 3 = 1</code>, so it is not divisible by <code>k = 3</code>.</li>\n\t<li>Negating <code>nums[2] = 2</code> changes the sum to <code>4 + 1 &minus; 2 = 3</code>, which is divisible by <code>k</code>.</li>\n\t<li>Therefore, the entire array is a valid subarray, giving a length of 3.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,3,4], k = 7</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The sum of the entire array is 12, and negating any one of its elements does not make its sum divisible by 7.</li>\n\t<li>However, the subarray <code>[3, 4]</code> has a sum of 7, which is divisible by <code>k = 7</code> without any negation.</li>\n\t<li>Therefore, the longest valid subarray has a length of 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,2,5], k = 6</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The sum of the entire array is 9, and negating any one of its elements does not make its sum divisible by 6.</li>\n\t<li>The subarray <code>[2, 2]</code> has a sum of 4. Negating either element changes it to <code>[-2, 2]</code> or <code>[2, -2]</code>, both of which have a sum of 0.</li>\n\t<li>Therefore, the longest valid subarray has a length of 2.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-10-02T10:27:47.062Z",
+    "PARSED_ISO": "2026-10-02T10:35:59.899Z"
+}

@@ -1,0 +1,46 @@
+{
+    "quesId": 4066,
+    "title": "Maximum Equal Adjacent Pairs After at Most One Replacement",
+    "titleSlug": "maximum-equal-adjacent-pairs-after-at-most-one-replacement",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "22.1K",
+        "totalSubmission": "44.5K",
+        "totalAcceptedRaw": 22053,
+        "totalSubmissionRaw": 44541,
+        "acRate": "49.5%",
+        "acRateRaw": 49.51290684624018,
+        "likes": 63,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4420,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[1,2,3,2]\n[1,2,1,2,1]\n[1,1,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given a <strong>1-indexed</strong> integer array <code>nums</code>.</p>\n\n<p>You can choose two <strong>distinct</strong> values <code>x</code> and <code>y</code> and perform the following operation <strong>at most</strong> once:</p>\n\n<ul>\n\t<li>Replace every occurrence of <code>x</code> in <code>nums</code> with <code>y</code>.</li>\n</ul>\n\n<p>Return the <strong>maximum</strong> possible number of pairs of adjacent elements that are equal after performing the operation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>One optimal solution is to choose <code>x = 3</code> and <code>y = 2</code>.</li>\n\t<li>The resulting array is <code>[1, 2, 2, 2]</code>.</li>\n\t<li>There are 2 pairs of adjacent elements that are equal: <code>(nums[2], nums[3])</code> and <code>(nums[3], nums[4])</code>.</li>\n\t<li>Therefore, the answer is 2.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>One optimal solution is to choose <code>x = 1</code> and <code>y = 2</code>.</li>\n\t<li>The resulting array is <code>[2, 2, 2, 2, 2]</code>.</li>\n\t<li>There are 4 pairs of adjacent elements that are equal: <code>(nums[1], nums[2])</code>, <code>(nums[2], nums[3])</code>, <code>(nums[3], nums[4])</code>, and <code>(nums[4], nums[5])</code>.</li>\n\t<li>Therefore, the answer is 4.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>One optimal solution is to perform no operation.</li>\n\t<li>Thus, the resulting array is <code>[1, 1, 1]</code>.</li>\n\t<li>There are 2 pairs of adjacent elements that are equal: <code>(nums[1], nums[2])</code> and <code>(nums[2], nums[3])</code>.</li>\n\t<li>Therefore, the answer is 2.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-10-02T10:27:49.827Z",
+    "PARSED_ISO": "2026-10-02T10:35:59.904Z"
+}

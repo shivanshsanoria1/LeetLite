@@ -164621,5 +164621,399 @@
             "hasSolution": false,
             "hasVideoSolution": false
         }
+    },
+    {
+        "quesId": 4060,
+        "title": "Count Evenly Good Integers",
+        "titleSlug": "count-evenly-good-integers",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "141",
+            "totalSubmission": "176",
+            "totalAcceptedRaw": 141,
+            "totalSubmissionRaw": 176,
+            "acRate": "80.1%",
+            "acRateRaw": 80.11363636363636,
+            "likes": 0,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            2180,
+            2719,
+            2827
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4333,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4061,
+        "title": "Minimum Queen Moves to Reach Target",
+        "titleSlug": "minimum-queen-moves-to-reach-target",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "30.9K",
+            "totalSubmission": "54.3K",
+            "totalAcceptedRaw": 30889,
+            "totalSubmissionRaw": 54280,
+            "acRate": "56.9%",
+            "acRateRaw": 56.907573552440084,
+            "likes": 28,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4421,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4062,
+        "title": "Transform Array Using Pair Operations",
+        "titleSlug": "transform-array-using-pair-operations",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "23.7K",
+            "totalSubmission": "39.1K",
+            "totalAcceptedRaw": 23743,
+            "totalSubmissionRaw": 39119,
+            "acRate": "60.7%",
+            "acRateRaw": 60.69374504741699,
+            "likes": 34,
+            "dislikes": 6
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Brainteaser",
+                "slug": "brainteaser"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4398,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4063,
+        "title": "Longest Subarray Divisible by K with At Most One Negation I",
+        "titleSlug": "longest-subarray-divisible-by-k-with-at-most-one-negation-i",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "13K",
+            "totalSubmission": "37.8K",
+            "totalAcceptedRaw": 12984,
+            "totalSubmissionRaw": 37759,
+            "acRate": "34.4%",
+            "acRateRaw": 34.37822668184586,
+            "likes": 44,
+            "dislikes": 4
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4374,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4064,
+        "title": "Longest Subarray Divisible by K with At Most One Negation II",
+        "titleSlug": "longest-subarray-divisible-by-k-with-at-most-one-negation-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "3.2K",
+            "totalSubmission": "13.2K",
+            "totalAcceptedRaw": 3154,
+            "totalSubmissionRaw": 13169,
+            "acRate": "24.0%",
+            "acRateRaw": 23.95232310962648,
+            "likes": 19,
+            "dislikes": 3
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4422,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4065,
+        "title": "Rearrange Array by Removing Distinct Values",
+        "titleSlug": "rearrange-array-by-removing-distinct-values",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "39.6K",
+            "totalSubmission": "53.1K",
+            "totalAcceptedRaw": 39575,
+            "totalSubmissionRaw": 53052,
+            "acRate": "74.6%",
+            "acRateRaw": 74.59719212286818,
+            "likes": 25,
+            "dislikes": 2
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting"
+            },
+            {
+                "name": "Ordered Set",
+                "slug": "ordered-set"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4429,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4066,
+        "title": "Maximum Equal Adjacent Pairs After at Most One Replacement",
+        "titleSlug": "maximum-equal-adjacent-pairs-after-at-most-one-replacement",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "22.1K",
+            "totalSubmission": "44.5K",
+            "totalAcceptedRaw": 22053,
+            "totalSubmissionRaw": 44541,
+            "acRate": "49.5%",
+            "acRateRaw": 49.51290684624018,
+            "likes": 63,
+            "dislikes": 4
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4420,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4067,
+        "title": "Longest Subarray With Restricted Pair Sums",
+        "titleSlug": "longest-subarray-with-restricted-pair-sums",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "10.1K",
+            "totalSubmission": "26.8K",
+            "totalAcceptedRaw": 10097,
+            "totalSubmissionRaw": 26836,
+            "acRate": "37.6%",
+            "acRateRaw": 37.6326469821648,
+            "likes": 44,
+            "dislikes": 7
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 3985,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4068,
+        "title": "Maximize Meeting Earnings with Idle Gaps",
+        "titleSlug": "maximize-meeting-earnings-with-idle-gaps",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.8K",
+            "totalSubmission": "12.4K",
+            "totalAcceptedRaw": 4838,
+            "totalSubmissionRaw": 12399,
+            "acRate": "39.0%",
+            "acRateRaw": 39.02281706038862,
+            "likes": 30,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4314,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4069,
+        "title": "Best Time to Buy and Sell Stock with Cooldown II",
+        "titleSlug": "best-time-to-buy-and-sell-stock-with-cooldown-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "107",
+            "totalSubmission": "161",
+            "totalAcceptedRaw": 107,
+            "totalSubmissionRaw": 161,
+            "acRate": "66.5%",
+            "acRateRaw": 66.45962732919256,
+            "likes": 1,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            309
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 4117,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
     }
 ]

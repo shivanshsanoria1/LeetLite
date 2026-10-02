@@ -1,0 +1,46 @@
+{
+    "quesId": 4067,
+    "title": "Longest Subarray With Restricted Pair Sums",
+    "titleSlug": "longest-subarray-with-restricted-pair-sums",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "10.1K",
+        "totalSubmission": "26.8K",
+        "totalAcceptedRaw": 10097,
+        "totalSubmissionRaw": 26836,
+        "acRate": "37.6%",
+        "acRateRaw": 37.6326469821648,
+        "likes": 44,
+        "dislikes": 7
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3985,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[2,3,5,3,2,1]\r\n[3,4,5,6]\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>A <strong>subarray</strong> <code>nums[l..r]</code> is valid if there are no three <strong>distinct</strong> indices <code>i</code>, <code>j</code>, and <code>k</code> such that <code>l &lt;= i, j, k &lt;= r</code> and:</p>\n\n<ul>\n\t<li><code>nums[i] + nums[j] == nums[k]</code></li>\n</ul>\n\n<p>Return the <strong>maximum</strong> length of a valid subarray of <code>nums</code>.</p>\n\n<p>A <strong>subarray</strong> is a contiguous <strong>non-empty</strong> sequence of elements within an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,3,5,3,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Consider the subarray <code>[3, 5, 3]</code>. The pairs of elements at distinct indices have the following sums:</p>\n\n<ul>\n\t<li><code>3 + 5 = 8</code></li>\n\t<li><code>3 + 3 = 6</code>, using the two different occurrences of 3</li>\n\t<li><code>5 + 3 = 8</code></li>\n</ul>\n\n<p>None of these sums is an element at the remaining index, so the subarray is valid.</p>\n\n<p>Every subarray of length 4 contains 2, 3, and 5 at distinct indices, where <code>2 + 3 = 5</code>. Therefore, no longer valid subarray exists, and the answer is 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,4,5,6]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The sums obtained from every pair of elements at distinct indices are 7, 8, 9, 9, 10, and 11. None of these values appears at the remaining index, so the entire array is valid.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 500</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-10-02T10:27:50.648Z",
+    "PARSED_ISO": "2026-10-02T10:35:59.905Z"
+}

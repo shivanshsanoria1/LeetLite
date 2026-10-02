@@ -1,0 +1,62 @@
+{
+    "quesId": 4065,
+    "title": "Rearrange Array by Removing Distinct Values",
+    "titleSlug": "rearrange-array-by-removing-distinct-values",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "39.6K",
+        "totalSubmission": "53.1K",
+        "totalAcceptedRaw": 39575,
+        "totalSubmissionRaw": 53052,
+        "acRate": "74.6%",
+        "acRateRaw": 74.59719212286818,
+        "likes": 25,
+        "dislikes": 2
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        },
+        {
+            "name": "Counting",
+            "slug": "counting"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4429,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[3,1,3,2,1,3]\n[7,7,4,4,4]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>You start with an <strong>empty</strong> array <code>ans</code>. Repeat the following operation until <code>nums</code> is <strong>empty</strong>:</p>\n\n<ul>\n\t<li>Identify <strong>all</strong> <strong>distinct</strong> values currently present in <code>nums</code>.</li>\n\t<li>Remove <strong>one</strong> occurrence of every <strong>distinct</strong> value currently in <code>nums</code>, and append those values to <code>ans</code> in <strong>ascending</strong> order.</li>\n</ul>\n\n<p>Return the array <code>ans</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [3,1,3,2,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2,3,1,3,3]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\">Operation</th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\">Appended to <code>ans</code></th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\"><code>nums</code> after</th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\"><code>ans</code> after</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">1, 2, 3</td>\n\t\t\t<td style=\"text-align:center;\"><code>[3, 1, 3]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[1, 2, 3]</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">2</td>\n\t\t\t<td style=\"text-align:center;\">1, 3</td>\n\t\t\t<td style=\"text-align:center;\"><code>[3]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[1, 2, 3, 1, 3]</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">3</td>\n\t\t\t<td style=\"text-align:center;\">3</td>\n\t\t\t<td style=\"text-align:center;\"><code>[]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[1, 2, 3, 1, 3, 3]</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><code>nums</code> is now empty, so the answer is <code>[1, 2, 3, 1, 3, 3]</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [7,7,4,4,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[4,7,4,7,4]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table border=\"1\" bordercolor=\"#ccc\" cellpadding=\"5\" cellspacing=\"0\" style=\"border-collapse:collapse;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\">Operation</th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\">Appended to <code>ans</code></th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\"><code>nums</code> after</th>\n\t\t\t<th scope=\"col\" style=\"text-align:center;\"><code>ans</code> after</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">1</td>\n\t\t\t<td style=\"text-align:center;\">4, 7</td>\n\t\t\t<td style=\"text-align:center;\"><code>[7, 4, 4]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[4, 7]</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">2</td>\n\t\t\t<td style=\"text-align:center;\">4, 7</td>\n\t\t\t<td style=\"text-align:center;\"><code>[4]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[4, 7, 4, 7]</code></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"text-align:center;\">3</td>\n\t\t\t<td style=\"text-align:center;\">4</td>\n\t\t\t<td style=\"text-align:center;\"><code>[]</code></td>\n\t\t\t<td style=\"text-align:center;\"><code>[4, 7, 4, 7, 4]</code></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><code>nums</code> is now empty, so the answer is <code>[4, 7, 4, 7, 4]</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 100</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-10-02T10:27:48.936Z",
+    "PARSED_ISO": "2026-10-02T10:35:59.903Z"
+}

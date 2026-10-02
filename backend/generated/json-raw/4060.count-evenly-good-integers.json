@@ -1,0 +1,38 @@
+{
+    "questionId": "4333",
+    "questionFrontendId": "4060",
+    "title": "Count Evenly Good Integers",
+    "titleSlug": "count-evenly-good-integers",
+    "difficulty": "Hard",
+    "likes": 0,
+    "dislikes": 1,
+    "acRate": 80.11363636363636,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"141\", \"totalSubmission\": \"176\", \"totalAcceptedRaw\": 141, \"totalSubmissionRaw\": 176, \"acRate\": \"80.1%\"}",
+    "similarQuestions": "[{\"title\": \"Count Integers With Even Digit Sum\", \"titleSlug\": \"count-integers-with-even-digit-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count of Integers\", \"titleSlug\": \"count-of-integers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Beautiful Integers in the Range\", \"titleSlug\": \"number-of-beautiful-integers-in-the-range\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "<p><strong>1a (Pairing).</strong> Consider pairs <code>(2k, 2k + 1)</code> for positive integers <code>k</code>. Their decimal representations differ only in the last digit, so exactly one integer in each pair is evenly good.</p>",
+        "<p><strong>1b (Pairing).</strong> Count all complete pairs contained in <code>[l, r]</code>. Check any unpaired endpoint separately by counting its even digits. This takes <code>O(log r)</code> time.</p>",
+        "<p><strong>2a (Digit DP).</strong> Let <code>F(x)</code> count evenly good positive integers at most <code>x</code>. The answer is <code>F(r) - F(l - 1)</code>.</p>",
+        "<p><strong>2b (Digit DP).</strong> Track the digit position, whether the current prefix matches the bound, whether the number has started, and the parity of the number of even digits. Ignore leading zeros, but count zeros after the number has started. Accept completed positive numbers with even parity.</p>"
+    ],
+    "exampleTestcases": "18\n22\n98\n101\n1\n10",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-10-02T10:27:43.530Z"
+}

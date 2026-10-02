@@ -1,0 +1,37 @@
+{
+    "questionId": "4117",
+    "questionFrontendId": "4069",
+    "title": "Best Time to Buy and Sell Stock with Cooldown II",
+    "titleSlug": "best-time-to-buy-and-sell-stock-with-cooldown-ii",
+    "difficulty": "Medium",
+    "likes": 1,
+    "dislikes": 1,
+    "acRate": 66.45962732919256,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"107\", \"totalSubmission\": \"161\", \"totalAcceptedRaw\": 107, \"totalSubmissionRaw\": 161, \"acRate\": \"66.5%\"}",
+    "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock with Cooldown\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-with-cooldown\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Let <code>dp[t]</code> be the maximum profit from completed transactions during the first <code>t</code> days, with no share held at the end. Set <code>dp[0] = 0</code>.",
+        "If the last transaction buys on day <code>i</code> and sells on day <code>j</code>, any previous transaction must finish by day <code>i - cooldown - 1</code>. Its contribution is therefore <code>dp[max(0, i - cooldown)]</code>.",
+        "For each selling day <code>j</code>, try every buying day <code>i &lt; j</code> and add <code>prices[j] - prices[i] - costs[j - i]</code> to the best compatible earlier profit. Also consider making no sale that day. This gives an <code>O(n<sup>2</sup>)</code> dynamic program"
+    ],
+    "exampleTestcases": "[1,5,3]\n1\n[2,0,1]\n[1,2,5]\n0\n[0,2,1]\n[4,1,7]\n2\n[3,0,1]\n[3,1,4]\n0\n[2,1,0]",
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "codeSnippets": null,
+    "LAST_UPDATED_ISO": "2026-10-02T10:27:53.229Z"
+}

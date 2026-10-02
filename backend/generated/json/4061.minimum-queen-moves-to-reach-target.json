@@ -1,0 +1,42 @@
+{
+    "quesId": 4061,
+    "title": "Minimum Queen Moves to Reach Target",
+    "titleSlug": "minimum-queen-moves-to-reach-target",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "30.9K",
+        "totalSubmission": "54.3K",
+        "totalAcceptedRaw": 30889,
+        "totalSubmissionRaw": 54280,
+        "acRate": "56.9%",
+        "acRateRaw": 56.907573552440084,
+        "likes": 28,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 4421,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[8,1]\n[1,8]\n[4,2]\n[1,3]\n[1,1]\n[1,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>There is an <code>8 x 8</code> empty chessboard with <strong>1-indexed</strong> rows and columns.</p>\n\n<p>You are given an array <code>source = [sr, sc]</code> representing the starting position of a <strong>queen</strong>, and an array <code>target = [tr, tc]</code> representing the target position.</p>\n\n<p>In one move, the queen travels one or more squares along a single <strong>row</strong>, <strong>column</strong>, or <strong>diagonal</strong>, staying within the board.</p>\n\n<p>Return the <strong>minimum</strong> number of moves for the queen to land <strong>exactly</strong> on <code>target</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [8,1], target = [1,8]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong>​​​​​​​<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/08/31/111.png\" style=\"width: 300px; height: 303px;\" />​​​​​​​</strong></p>\n\n<p>A single diagonal move takes the queen straight from <code>(8, 1)</code> to <code>(1, 8)</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [4,2], target = [1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2026/09/14/1e602ed4-c525-4be4-a6a9-6804cb7d2a55.png\" style=\"width: 300px; height: 305px;\" />​​​​​​​</p>\n\n<p>The queen moves from <code>(4, 2)</code> to <code>(4, 3)</code>, then from <code>(4, 3)</code> to <code>(1, 3)</code>, reaching the target in 2 moves.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">source = [1,1], target = [1,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">0</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The queen is already at the target position, so no moves are needed.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong>​​​​​​​</p>\n\n<ul>\n\t<li><code>source == [sr, sc]</code></li>\n\t<li><code>target == [tr, tc]</code></li>\n\t<li><code>1 &lt;= sr, sc, tr, tc &lt;= 8</code></li>\n</ul>\n",
+    "hints": [],
+    "LC_SYNC_ISO": "2026-10-02T10:27:44.634Z",
+    "PARSED_ISO": "2026-10-02T10:35:59.895Z"
+}

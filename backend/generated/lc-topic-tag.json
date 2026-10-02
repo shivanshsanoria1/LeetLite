@@ -2,7 +2,7 @@
     {
         "slug": "array",
         "name": "Array",
-        "freq": 2260,
+        "freq": 2269,
         "color": "#a371f7"
     },
     {
@@ -14,25 +14,25 @@
     {
         "slug": "hash-table",
         "name": "Hash Table",
-        "freq": 836,
+        "freq": 841,
         "color": "#a371f7"
     },
     {
         "slug": "math",
         "name": "Math",
-        "freq": 708,
+        "freq": 710,
         "color": "#a371f7"
     },
     {
         "slug": "dynamic-programming",
         "name": "Dynamic Programming",
-        "freq": 680,
+        "freq": 683,
         "color": "#a371f7"
     },
     {
         "slug": "sorting",
         "name": "Sorting",
-        "freq": 536,
+        "freq": 538,
         "color": "#a371f7"
     },
     {
@@ -44,7 +44,7 @@
     {
         "slug": "binary-search",
         "name": "Binary Search",
-        "freq": 352,
+        "freq": 354,
         "color": "#a371f7"
     },
     {
@@ -74,7 +74,7 @@
     {
         "slug": "prefix-sum",
         "name": "Prefix Sum",
-        "freq": 274,
+        "freq": 276,
         "color": "#a371f7"
     },
     {
@@ -98,19 +98,19 @@
     {
         "slug": "heap-priority-queue",
         "name": "Heap (Priority Queue)",
-        "freq": 221,
+        "freq": 222,
         "color": "#a371f7"
     },
     {
         "slug": "simulation",
         "name": "Simulation",
-        "freq": 217,
+        "freq": 218,
         "color": "#a371f7"
     },
     {
         "slug": "counting",
         "name": "Counting",
-        "freq": 213,
+        "freq": 215,
         "color": "#a371f7"
     },
     {
@@ -134,7 +134,7 @@
     {
         "slug": "sliding-window",
         "name": "Sliding Window",
-        "freq": 172,
+        "freq": 173,
         "color": "#6610f2"
     },
     {
@@ -182,7 +182,7 @@
     {
         "slug": "ordered-set",
         "name": "Ordered Set",
-        "freq": 80,
+        "freq": 81,
         "color": "#6610f2"
     },
     {
@@ -326,7 +326,7 @@
     {
         "slug": "brainteaser",
         "name": "Brainteaser",
-        "freq": 21,
+        "freq": 22,
         "color": "#0d6efd"
     },
     {

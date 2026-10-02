@@ -12,8 +12,7 @@
         "LCProblemListMin": "generated/json-min/lc-problem-list-min.json",
         "LCTopicTag": "generated/lc-topic-tag.json",
         "LCTopicTagMin": "generated/json-min/lc-topic-tag-min.json",
-        "config": "config.json",
-        "webConfig": "web/web-config.json"
+        "stats": "generated/stats.json"
     },
-    "MAX_QUES_ID": 4059
+    "PARSE_ALL_JSON": false
 }
