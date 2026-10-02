@@ -1,16 +1,12 @@
-// const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-
-// const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
-// const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
-
 import {
 	GITHUB_LCS_URL,
 	PATH_LC_PROBLEM_LIST,
 	PATH_LC_TOPIC_TAGS,
+	COLOR_PALETTE,
+	VISUALIZER_HISTORY_SIZE
 } from './config.js';
 
 // Configuration
-const HISTORY_SIZE = 6;
 const STORAGE_KEY_HISTORY = 'leetcode_lite_vis_history';
 const STORAGE_KEY_CURRENT_ROOT = 'leetcode_lite_vis_current_root'; // New constant
 
@@ -122,8 +118,8 @@ function updateHistory(oldId, newId) {
 	searchHistory = searchHistory.filter(id => id !== newId);
 
 	// Maintain the maximum configured size
-	if (searchHistory.length > HISTORY_SIZE) {
-		searchHistory = searchHistory.slice(0, HISTORY_SIZE);
+	if (searchHistory.length > VISUALIZER_HISTORY_SIZE) {
+		searchHistory = searchHistory.slice(0, VISUALIZER_HISTORY_SIZE);
 	}
 
 	saveHistory();
@@ -467,10 +463,10 @@ function populateSidePanel(data) {
 			return orderA - orderB;
 		});
 
-		// Build HTML using the custom color[cite: 1]
+		// Build HTML using the custom color
 		tagsContainer.innerHTML = tags.map(t => {
-			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#6c757d';
-			return `<span class="badge" style="background-color: ${tagColor} !important; color: #fff; font-weight: 500;">${t.name}</span>`;
+			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : COLOR_PALETTE.gray;
+			return `<span class="badge" style="background-color: ${tagColor} !important; color: ${COLOR_PALETTE.white}; font-weight: 500;">${t.name}</span>`;
 		}).join('');
 	} else {
 		tagsContainer.innerHTML = '<span class="text-muted">None</span>';

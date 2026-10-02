@@ -1,22 +1,20 @@
 async function loadComponents() {
-	// Determine relative depth to support both local Live Server and GitHub Pages
 	const isInHtmlDir = window.location.pathname.includes('/html/');
-	const basePath = isInHtmlDir ? '../' : './';
+
+	// Dynamically point to the new nested directory structure
+	const componentsPath = isInHtmlDir ? './components/' : './html/components/';
 
 	// 1. Load Navbar
 	const navPlaceholder = document.getElementById('navbar-placeholder');
 	if (navPlaceholder) {
 		try {
-			// Update fetch path to be dynamically relative
-			const response = await fetch(`${basePath}components/navbar.html`);
+			// Update fetch path to use the new componentsPath
+			const response = await fetch(`${componentsPath}navbar.html`);
 			if (!response.ok) throw new Error('Failed to fetch navbar');
 
-			// ... inside your navPlaceholder try block ...
 			navPlaceholder.innerHTML = await response.text();
 
 			// --- Dynamically adjust relative navbar paths ---
-			const isInHtmlDir = window.location.pathname.includes('/html/');
-
 			navPlaceholder.querySelectorAll('a').forEach(link => {
 				const href = link.getAttribute('href');
 				if (!href || href.startsWith('http')) return;
@@ -51,8 +49,8 @@ async function loadComponents() {
 	const footerPlaceholder = document.getElementById('footer-placeholder');
 	if (footerPlaceholder) {
 		try {
-			// Update fetch path to be dynamically relative
-			const response = await fetch(`${basePath}components/footer.html`);
+			// Update fetch path to use the new componentsPath
+			const response = await fetch(`${componentsPath}footer.html`);
 			if (!response.ok) throw new Error('Failed to fetch footer');
 			footerPlaceholder.innerHTML = await response.text();
 		} catch (error) {

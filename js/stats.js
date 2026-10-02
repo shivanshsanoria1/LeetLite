@@ -3,9 +3,9 @@ import {
 	PATH_LC_SOLVED_PROBLEM_LIST,
 	PATH_LC_PROBLEM_LIST,
 	PATH_LC_TOPIC_TAGS,
+	COLOR_PALETTE,
+	HEATMAP_COLUMNS
 } from './config.js';
-
-const HEATMAP_COLUMNS = 25; // Adjust this number to change grid density
 
 let officialChartInstance = null;
 let solvedChartInstance = null;
@@ -23,18 +23,18 @@ let globalMasterProblems = []; // NEW: Store raw list for heatmap
 
 const colorPalettes = {
 	difficulty: {
-		'Easy': '#2cbb5d',
-		'Medium': '#ffc01e',
-		'Hard': '#ef4743'
+		'Easy': COLOR_PALETTE.green,
+		'Medium': COLOR_PALETTE.yellow,
+		'Hard': COLOR_PALETTE.red
 	},
 	category: {
-		'Algorithms': '#2cbb5d',
-		'Database': '#0d6efd',
-		'JavaScript': '#ffc01e',
-		'Shell': '#6c757d',
-		'Concurrency': '#d63384',
-		'Pandas': '#a371f7',
-		'pandas': '#a371f7'
+		'Algorithms': COLOR_PALETTE.green,
+		'Database': COLOR_PALETTE.blue,
+		'JavaScript': COLOR_PALETTE.yellow,
+		'Shell': COLOR_PALETTE.gray,
+		'Concurrency': COLOR_PALETTE.pink,
+		'Pandas': COLOR_PALETTE.purple,
+		'pandas': COLOR_PALETTE.purple
 	}
 };
 
@@ -115,7 +115,7 @@ function processChartData(dataObj, totalCount, type) {
 	const minVisualFloor = totalCount * 0.015;
 	const visualData = realData.map(val => Math.max(val, minVisualFloor));
 
-	const bgColors = labels.map(label => colorPalettes[type][label] || '#6c757d');
+	const bgColors = labels.map(label => colorPalettes[type][label] || COLOR_PALETTE.gray);
 
 	return { labels, realData, visualData, bgColors, totalCount };
 }
@@ -177,7 +177,7 @@ function renderHeatmapLegend(mode) {
 	// 2. Render the sorted legend
 	sortedEntries.forEach(([key, count]) => {
 		// Safely pull the color, checking both exact case and lowercase fallback
-		const color = palette[key] || palette[key.toLowerCase()] || '#6c757d';
+		const color = palette[key] || palette[key.toLowerCase()] || COLOR_PALETTE.gray;
 
 		html += `
             <div class="d-flex align-items-center gap-2">
@@ -200,11 +200,11 @@ function renderHeatmap(mode) {
 		let bgColor;
 
 		if (mode === 'difficulty') {
-			bgColor = colorPalettes.difficulty[p.difficulty] || '#6c757d';
+			bgColor = colorPalettes.difficulty[p.difficulty] || COLOR_PALETTE.gray;
 		} else {
 			// FIX: Point to the new meta object location
 			const cat = p.meta?.categoryTitle || p.categoryTitle || 'Unknown';
-			bgColor = colorPalettes.category[cat] || '#6c757d';
+			bgColor = colorPalettes.category[cat] || COLOR_PALETTE.gray;
 		}
 
 		htmlBuffer += `
@@ -252,7 +252,7 @@ function renderDoughnutChart(canvasId, chartInstance, dataPack) {
 				totalCount: dataPack.totalCount,
 				backgroundColor: dataPack.bgColors,
 				borderWidth: 2,
-				borderColor: '#0d1117',
+				borderColor: COLOR_PALETTE.black,
 				hoverOffset: 6
 			}]
 		},
@@ -308,7 +308,7 @@ function renderBarChart() {
 				backgroundColor: bgColors,
 				borderRadius: 4,
 				borderWidth: 1,
-				borderColor: '#0d1117',
+				borderColor: COLOR_PALETTE.black,
 				minBarLength: 6 // Guarantees a minimum width in pixels for hoverability
 			}]
 		},
@@ -328,13 +328,13 @@ function renderBarChart() {
 			},
 			scales: {
 				x: {
-					ticks: { color: '#c9d1d9' },
-					grid: { color: '#30363d' },
+					ticks: { color: COLOR_PALETTE.lightGray },
+					grid: { color: COLOR_PALETTE.slate },
 					beginAtZero: true,
 					position: 'top'
 				},
 				y: {
-					ticks: { color: '#c9d1d9', autoSkip: false },
+					ticks: { color: COLOR_PALETTE.lightGray, autoSkip: false },
 					grid: { display: false }
 				}
 			}

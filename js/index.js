@@ -3,6 +3,8 @@ import {
 	PATH_LC_SOLVED_PROBLEM_LIST,
 	PATH_LC_PROBLEM_LIST,
 	PATH_LC_TOPIC_TAGS,
+	COLOR_PALETTE,
+	DEFAULT_PAGE_SIZE
 } from './config.js';
 
 // --- 1. State Management ---
@@ -12,7 +14,7 @@ let currentSort = { column: 'id', direction: 'asc' };
 const STORAGE_KEY = 'leetcode_lite_settings';
 
 // Pagination & Tag variables
-let pageSize = 50;
+let pageSize = DEFAULT_PAGE_SIZE;
 let currentPage = 1;
 let selectedTags = []; // Stores slugs
 let tagLogic = 'OR';
@@ -348,8 +350,8 @@ function renderTable() {
 
 			// Build HTML using standard badge classes but overriding the background color dynamically
 			tagsHTML = tags.map(t => {
-				const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#343a40';
-				return `<span class="badge" style="background-color: ${tagColor} !important; border: 1px solid #495057; margin-right: 5px; font-weight: 400; color: #fff;">${t.name}</span>`;
+				const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : COLOR_PALETTE.charcoal;
+				return `<span class="badge" style="background-color: ${tagColor} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; margin-right: 5px; font-weight: 400; color: ${COLOR_PALETTE.white};">${t.name}</span>`;
 			}).join('');
 
 			tagsTitle = tags.map(t => t.name).join(', ');
@@ -361,8 +363,8 @@ function renderTable() {
 		let solHtml = '<span class="text-secondary fw-semibold">N/A</span>';
 
 		// Pill formatting exactly matching topic tags: colored background, white text, and border[cite: 4]
-		const badgeLeetLite = `<span class="badge" style="background-color: #2cbb5d !important; border: 1px solid #495057; font-weight: 500; color: #fff;">LeetLite</span>`;
-		const badgeLeetcode = `<span class="badge" style="background-color: #ffc01e !important; border: 1px solid #495057; font-weight: 500; color: #fff;">Leetcode</span>`;
+		const badgeLeetLite = `<span class="badge" style="background-color: ${COLOR_PALETTE.green} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">LeetLite</span>`;
+		const badgeLeetcode = `<span class="badge" style="background-color: ${COLOR_PALETTE.yellow} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">Leetcode</span>`;
 
 		if (p.hasLeetcodeSolution && p.hasLeetLiteSolution) {
 			// LeetLite (custom) comes strictly before Leetcode (official) when both are present[cite: 4]
@@ -563,7 +565,7 @@ resetBtn.addEventListener('click', () => {
 
 	currentSort = { column: 'id', direction: 'asc' };
 	currentPage = 1;
-	pageSize = 50;
+	pageSize = DEFAULT_PAGE_SIZE;
 
 	applyFilters();
 	saveSettings();

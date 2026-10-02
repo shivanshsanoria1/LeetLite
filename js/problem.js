@@ -1,14 +1,3 @@
-// --- 1. Constants & State ---
-// const GITHUB_LCS_URL = 'https://raw.githubusercontent.com/shivanshsanoria1/LeetcodeSolutions/main';
-// const PATH_SOLVED_LIST = '/stats/lc-solved-problems-list.json';
-
-// const PATH_LC_PROBLEM_LIST = '/backend/generated/json-min/lc-problem-list-min.json';
-// const PATH_LC_TOPIC_TAGS = '/backend/generated/json-min/lc-topic-tag-min.json';
-// const PATH_JSON_DIR = '/backend/generated/json';
-
-// const LC_ASSETS_BASE_URL = 'https://assets.leetcode.com/static_assets/media/original_images';
-// const LC_PROBLEM_BASE_URL = 'https://leetcode.com/problems';
-
 import {
 	GITHUB_LCS_URL,
 	PATH_LC_SOLVED_PROBLEM_LIST,
@@ -16,11 +5,12 @@ import {
 	PATH_LC_TOPIC_TAGS,
 	PATH_JSON_DIR,
 	LC_ASSETS_BASE_URL,
-	LC_PROBLEM_BASE_URL
+	LC_PROBLEM_BASE_URL,
+	COLOR_PALETTE,
+	DEFAULT_CODE_THEME
 } from './config.js';
 
 const THEME_STORAGE_KEY = 'leetcode_lite_hljs_theme';
-const DEFAULT_THEME = 'monokai';
 
 // Initialize Highlight.js Copy Plugin Safely
 if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
@@ -315,8 +305,8 @@ function populateUI(data, allProblems) {
 
 		// Build HTML using the custom color
 		tagsContainer.innerHTML = tags.map(t => {
-			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : '#6c757d'; // Fallback to Bootstrap secondary
-			return `<span class="badge" style="background-color: ${tagColor} !important; color: #fff; font-weight: 500; font-size: 0.85em;">${t.name}</span>`;
+			const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : COLOR_PALETTE.gray; // Fallback to Bootstrap secondary
+			return `<span class="badge" style="background-color: ${tagColor} !important; color: ${COLOR_PALETTE.white}; font-weight: 500; font-size: 0.85em;">${t.name}</span>`;
 		}).join('');
 	} else {
 		tagsContainer.innerHTML = '<span class="text-muted">None</span>';
@@ -714,7 +704,7 @@ if (resetEditorBtn) {
 		}
 
 		// Reset Theme to default
-		applyTheme(DEFAULT_THEME);
+		applyTheme(DEFAULT_CODE_THEME);
 	});
 }
 
@@ -770,7 +760,7 @@ function applyTheme(themeName) {
 }
 
 function initTheme() {
-	const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || DEFAULT_THEME;
+	const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || DEFAULT_CODE_THEME;
 	applyTheme(savedTheme);
 }
 
