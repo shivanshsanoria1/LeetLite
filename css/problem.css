@@ -149,3 +149,54 @@
 .hljs-copy-button {
     z-index: 10;
 }
+
+/* --- Peek Mode Blur & Transition Rules --- */
+#code-editor-container.peek-active table.hljs-ln td.hljs-ln-code {
+    filter: blur(5.5px);
+    opacity: 0.22;
+    user-select: none;
+    pointer-events: none;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+#code-editor-container.peek-active table.hljs-ln tr.peek-unblurred td.hljs-ln-code {
+    filter: none !important;
+    opacity: 1 !important;
+    user-select: text !important;
+    pointer-events: auto !important;
+}
+
+/* Floating Controls Bar */
+.peek-floating-controls {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1050;
+    backdrop-filter: blur(10px);
+    background-color: rgba(22, 27, 34, 0.88);
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+}
+
+.peek-floating-controls .btn {
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.28rem 0.65rem;
+}
+
+/* --- Peek Mode Blur Rules --- */
+#code-editor-container.peek-active table.hljs-ln td.hljs-ln-code {
+    filter: blur(5px);
+    opacity: 0.3;
+    user-select: none;
+    pointer-events: none;
+    transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+#code-editor-container.peek-active table.hljs-ln tr.peek-revealed td.hljs-ln-code {
+    filter: none !important;
+    opacity: 1 !important;
+    user-select: text !important;
+    pointer-events: auto !important;
+}

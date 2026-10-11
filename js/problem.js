@@ -22,6 +22,11 @@ let currentProblemMasterData = null; // Stores global problem metadata for URL g
 let currentRawCode = '';
 const topicTagMap = new Map(); // New map to store tag colors and order
 
+// --- Peek Mode State ---
+let isPeekModeActive = false;
+let peekExecutionSteps = []; // Array of Arrays: Each index holds the line numbers for that step
+let peekCurrentStep = 0;
+
 // Initialize Highlight.js Copy Plugin Safely
 if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 	hljs.addPlugin(new CopyButtonPlugin());
@@ -668,11 +673,30 @@ async function fetchAndDisplayCode() {
 			if (window.hljs.lineNumbersBlock) {
 				hljs.lineNumbersBlock(codeBlock);
 			}
+
+			// Actively poll for the Highlight.js table to finish constructing
+			// to guarantee the DOM is ready before we attempt to unblur the entry line.
+			const checkTable = setInterval(() => {
+				if (container.querySelector('table.hljs-ln')) {
+					clearInterval(checkTable);
+					setupPeekMode();
+				}
+			}, 25);
+
+			// Safety cleanup in case of a plugin failure
+			setTimeout(() => clearInterval(checkTable), 1500);
 		}
 
 	} catch (error) {
 		currentRawCode = '';
 		if (themeSelect) themeSelect.disabled = true; // Disable theme on failure
+
+		// Hide peek controls if code fails
+		const controls = document.getElementById('peek-floating-controls');
+		if (controls) controls.classList.replace('d-flex', 'd-none');
+
+		// Hide peek controls if fetch fails
+		document.getElementById('peek-controls')?.classList.replace('d-flex', 'd-none');
 
 		const errorMsg = error.message === fallbackMsg ? error.message : fallbackMsg;
 
@@ -705,6 +729,14 @@ if (resetEditorBtn) {
 
 		// Reset Theme to default
 		applyTheme(DEFAULT_CODE_THEME);
+
+		// Disable Peek Mode
+		isPeekModeActive = false;
+		const peekToggle = document.getElementById('peek-mode-toggle');
+		if (peekToggle) peekToggle.checked = false;
+
+		// This will cleanly hide the floating controls and remove blur classes
+		setupPeekMode();
 	});
 }
 
@@ -746,15 +778,20 @@ async function loadSolutionCode(solutionUrl) {
 }
 
 // --- Theme Selector Logic ---
-const themeSelect = document.getElementById('theme-select');
+const themeSelectBtn = document.getElementById('theme-select');
+const themeDropdownText = document.getElementById('theme-dropdown-text');
 const themeLink = document.getElementById('hljs-theme-link');
 
 function applyTheme(themeName) {
 	if (themeLink) {
 		themeLink.href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/${themeName}.min.css`;
 	}
-	if (themeSelect) {
-		themeSelect.value = themeName;
+	// Dynamically update the custom dropdown text to match the selection
+	if (themeDropdownText) {
+		const activeOption = document.querySelector(`.theme-option[data-value="${themeName}"]`);
+		if (activeOption) {
+			themeDropdownText.textContent = activeOption.textContent;
+		}
 	}
 	localStorage.setItem(THEME_STORAGE_KEY, themeName);
 }
@@ -764,11 +801,238 @@ function initTheme() {
 	applyTheme(savedTheme);
 }
 
-if (themeSelect) {
-	themeSelect.addEventListener('change', (e) => {
-		applyTheme(e.target.value);
+// Single Event Listener using Event Delegation (Replaces the .forEach loop)
+if (themeSelectBtn && themeSelectBtn.nextElementSibling) {
+	const dropdownMenu = themeSelectBtn.nextElementSibling; // Targets the <ul>
+
+	dropdownMenu.addEventListener('click', (e) => {
+		// Ensure the click actually happened on a theme option button
+		const selectedItem = e.target.closest('.theme-option');
+		if (selectedItem) {
+			applyTheme(selectedItem.getAttribute('data-value'));
+		}
 	});
 }
+
+// --- Helper: Verify Context ---
+function isJavaScriptProblem() {
+	const langSelect = document.getElementById('lang-select');
+	const selectedLang = langSelect ? langSelect.value.toLowerCase() : '';
+	if (selectedLang === 'js' || selectedLang === 'javascript') return true;
+
+	if (currentProblemSolvedStats && currentProblemSolvedStats.type === 'javascript/typescript') return true;
+	if (currentProblemMasterData && currentProblemMasterData.categoryTitle?.toLowerCase().includes('javascript')) return true;
+
+	return false;
+}
+
+// --- Execution Flow Parser (Groups final remaining lines into one step) ---
+function parseJsExecutionFlow(rawCode) {
+	const lines = rawCode.split('\n');
+	const totalLines = lines.length;
+	const executionOrder = [];
+	const visited = new Set();
+
+	let mainFnStart = -1;
+	let mainFnEnd = -1;
+	let braceDepth = 0;
+
+	// 1. Locate primary function entry point
+	for (let i = 0; i < totalLines; i++) {
+		if (lines[i].match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
+			mainFnStart = i + 1;
+			break;
+		}
+	}
+
+	if (mainFnStart !== -1) {
+		// Find closing brace of main function
+		let hasOpened = false;
+		for (let i = mainFnStart - 1; i < totalLines; i++) {
+			const opens = (lines[i].match(/\{/g) || []).length;
+			const closes = (lines[i].match(/\}/g) || []).length;
+
+			braceDepth += opens - closes;
+			if (opens > 0) hasOpened = true;
+
+			// Stop exactly when the function's scope fully closes
+			if (hasOpened && braceDepth === 0) {
+				mainFnEnd = i + 1;
+				break;
+			}
+		}
+
+		// Step 0: Function signature
+		executionOrder.push([mainFnStart]);
+		visited.add(mainFnStart);
+
+		// Step 1 to N: Line by line within main function
+		for (let i = mainFnStart + 1; i <= (mainFnEnd === -1 ? totalLines : mainFnEnd); i++) {
+			if (lines[i - 1].trim() !== '') {
+				executionOrder.push([i]);
+				visited.add(i);
+			}
+		}
+	}
+
+	// Final Step: Group all unvisited lines (helpers, trailing closures) into a single block
+	const remainingLines = [];
+	for (let i = 1; i <= totalLines; i++) {
+		if (!visited.has(i) && lines[i - 1].trim() !== '') {
+			remainingLines.push(i);
+		}
+	}
+
+	if (remainingLines.length > 0) {
+		executionOrder.push(remainingLines);
+	}
+
+	return executionOrder.length > 0 ? executionOrder : [Array.from({ length: totalLines }, (_, i) => i + 1)];
+}
+
+// --- DOM Highlight Helper ---
+function getCodeRow(container, lineNum) {
+	const lineEl = container.querySelector(`td.hljs-ln-code > [data-line-number="${lineNum}"]`);
+	if (lineEl) return lineEl.closest('tr');
+	const rows = container.querySelectorAll('table.hljs-ln tr');
+	return rows[lineNum - 1] || null;
+}
+
+// --- Controller Logic ---
+function setupPeekMode() {
+	const isJs = isJavaScriptProblem();
+	const modalOption = document.getElementById('peek-mode-wrapper');
+	const toggle = document.getElementById('peek-mode-toggle');
+	const controls = document.getElementById('peek-controls');
+	const container = document.getElementById('code-editor-container');
+
+	if (!modalOption) return;
+
+	if (!isJs) {
+		modalOption.style.display = 'none';
+		if (toggle) toggle.checked = false;
+		if (controls) controls.classList.replace('d-flex', 'd-none');
+		if (container) container.classList.remove('peek-active');
+		isPeekModeActive = false;
+		return;
+	}
+
+	modalOption.style.display = 'block';
+
+	if (!isPeekModeActive || !currentRawCode) {
+		if (controls) controls.classList.replace('d-flex', 'd-none');
+		if (container) container.classList.remove('peek-active');
+		return;
+	}
+
+	peekExecutionSteps = parseJsExecutionFlow(currentRawCode);
+	peekCurrentStep = 0;
+
+	container.classList.add('peek-active');
+	controls.classList.replace('d-none', 'd-flex');
+
+	applyPeekStepState();
+}
+
+function applyPeekStepState() {
+	const container = document.getElementById('code-editor-container');
+	if (!container) return;
+
+	const rows = container.querySelectorAll('table.hljs-ln tr');
+	rows.forEach(r => r.classList.remove('peek-revealed'));
+
+	let lastRevealedLine = null;
+
+	// Unblur all steps up to the current index
+	for (let i = 0; i <= peekCurrentStep; i++) {
+		const linesToReveal = peekExecutionSteps[i];
+		linesToReveal.forEach(lineNum => {
+			const row = getCodeRow(container, lineNum);
+			if (row) {
+				row.classList.add('peek-revealed');
+				lastRevealedLine = row;
+			}
+		});
+	}
+
+	// Auto-scroll to the last revealed chunk
+	if (lastRevealedLine) {
+		lastRevealedLine.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	}
+
+	// Button states
+	document.getElementById('peek-backward').disabled = peekCurrentStep <= 0;
+	document.getElementById('peek-forward').disabled = peekCurrentStep >= peekExecutionSteps.length - 1;
+}
+
+function revealNextStep() {
+	if (peekCurrentStep < peekExecutionSteps.length - 1) {
+		peekCurrentStep++;
+		applyPeekStepState();
+	}
+}
+
+function blurCurrentStep() {
+	if (peekCurrentStep > 0) {
+		peekCurrentStep--;
+		applyPeekStepState();
+	}
+}
+
+function resetPeekMode() {
+	peekCurrentStep = 0; // Return to starting function line
+	applyPeekStepState();
+}
+
+// --- Peek Mode Event Listeners ---
+document.getElementById('peek-mode-toggle')?.addEventListener('change', (e) => {
+	isPeekModeActive = e.target.checked;
+	setupPeekMode();
+});
+
+document.getElementById('peek-forward')?.addEventListener('click', () => {
+	if (peekCurrentStep < peekExecutionSteps.length - 1) {
+		peekCurrentStep++;
+		applyPeekStepState();
+	}
+});
+
+document.getElementById('peek-backward')?.addEventListener('click', () => {
+	if (peekCurrentStep > 0) {
+		peekCurrentStep--;
+		applyPeekStepState();
+	}
+});
+
+document.getElementById('peek-reset')?.addEventListener('click', () => {
+	peekCurrentStep = 0;
+	applyPeekStepState();
+});
+
+// Trigger the Confirmation Modal
+document.getElementById('peek-reveal-all')?.addEventListener('click', () => {
+	// Only show confirmation if there are actually steps left to reveal
+	if (peekCurrentStep < peekExecutionSteps.length - 1) {
+		const revealModal = new bootstrap.Modal(document.getElementById('revealConfirmModal'));
+		revealModal.show();
+	} else {
+		// If already fully revealed, just re-apply state
+		applyPeekStepState();
+	}
+});
+
+// Execute the reveal when the user clicks 'Reveal All' inside the modal
+document.getElementById('confirm-reveal-btn')?.addEventListener('click', () => {
+	peekCurrentStep = peekExecutionSteps.length - 1;
+	applyPeekStepState();
+
+	// Hide the modal cleanly
+	const modalEl = document.getElementById('revealConfirmModal');
+	const modalInstance = bootstrap.Modal.getInstance(modalEl);
+	if (modalInstance) {
+		modalInstance.hide();
+	}
+});
 
 // Initialize
 initTheme();
