@@ -23,11 +23,11 @@
 	<!-- Main Content Container with Balanced Width -->
 	<main class="container my-4 flex-grow-1" style="max-width: 1050px;">
 
-		<!-- Hero Header Section with Site Stoplights Logo -->
-		<div class="text-center mb-5 py-2">
-			<div class="d-inline-flex align-items-center justify-content-center gap-2 mb-2 flex-wrap">
-				<h1 class="fw-bold display-5 mb-0">About <span class="brand-gradient">LeetLite</span></h1>
-				<!-- Stoplights Logo: Top-to-Bottom Gradient matching navbar -->
+		<!-- Hero Header Section -->
+		<div class="text-center mb-5 py-3">
+			<div class="d-inline-flex align-items-center justify-content-center gap-2 mb-3 flex-wrap">
+				<h1 class="fw-bold display-5 mb-0">Welcome to <span class="brand-gradient">LeetLite</span></h1>
+				<!-- Stoplights Logo -->
 				<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
 					class="bi bi-stoplights flex-shrink-0 ms-1" viewBox="0 0 16 16">
 					<defs>
@@ -43,22 +43,36 @@
 						d="M4 2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1c-1.2-.4-1.833-1.5-2-2h2V8c-1.2-.4-1.833-1.5-2-2h2V4c-1.2-.4-1.833-1.5-2-2zm2-1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
 				</svg>
 			</div>
-			<p class="about-muted-text lead fs-5 mx-auto" style="max-width: 780px;">
-				A fast, quiet, distraction-free space to browse problems, trace patterns, and study clean reference
-				code.
-			</p>
+
+			<div class="mx-auto" style="max-width: 820px;">
+				<p class="lead fs-5 text-light mb-4 leading-relaxed">
+					I built this as a fast, quiet, distraction-free space to browse problems, trace patterns, and study
+					clean reference code.
+				</p>
+				<p class="about-card-text fs-6 mb-4">
+					LeetLite is not just a simple solution viewer for LeetCode—it is a comprehensive solution analyzer.
+					It comes packed with a line-by-line viewing experience, a clean complexity analysis tool, a stats
+					visualizer[cite: 7], and a similar problem path tracer[cite: 3]. I believe a site shouldn't have
+					unnecessary features, only exactly what you need to learn. There is absolutely no data privacy risk
+					here since no data is collected[cite: 4]. This makes everything incredibly fast and straight to the
+					point.
+				</p>
+				<h5 class="fw-bold brand-gradient fst-italic mt-2">
+					"Trying and failing is better than not trying at all."
+				</h5>
+			</div>
 		</div>
 
-		<!-- Personal Story / Philosophy -->
+		<!-- The Story Behind LeetLite -->
 		<div class="card bg-body-tertiary border-secondary shadow-sm mb-4 interactive-card">
 			<div class="card-body p-4 p-md-5">
-				<h3 class="fw-bold text-light mb-3">Why this exists</h3>
+				<h3 class="fw-bold text-light mb-3">The story behind this project</h3>
 				<p class="about-card-text fs-5 mb-0 leading-relaxed">
 					Most modern problem-solving platforms have grown heavy over the years, weighed down by tracking
-					scripts, slow page transitions, and constant prompts to sign in. LeetLite was created out of a
-					desire for something straightforward: a fast, client-side problem directory that opens immediately,
-					filters without reloading, and respects your focus. Everything runs locally in your browser using
-					pre-built static data files.
+					scripts, slow page transitions, and constant prompts to sign in. I created LeetLite out of a desire
+					for something much more welcoming and straightforward: a fast, client-side directory that opens
+					immediately, filters without reloading, and genuinely respects your focus. Everything runs locally
+					right in your browser using pre-built static data files.
 				</p>
 			</div>
 		</div>
@@ -66,12 +80,11 @@
 		<!-- The Traffic Light Philosophy Card -->
 		<div class="card bg-body-tertiary border-secondary shadow-sm mb-5 interactive-card">
 			<div class="card-header bg-transparent border-secondary py-3 d-flex align-items-center gap-2">
-				<span class="fs-5">🚦</span>
 				<h4 class="fw-bold text-light mb-0">The Traffic Light Workflow</h4>
 			</div>
 			<div class="card-body p-4 p-md-4">
 				<p class="about-card-text fs-6 mb-4">
-					The site logo represents a simple, deliberate habit when tackling problems:
+					The site logo represents a simple, deliberate habit to adopt when tackling algorithmic problems:
 				</p>
 				<div class="row g-3">
 					<!-- Red Stage -->
@@ -94,7 +107,7 @@
 								<span>🟡</span> Yellow: Plan the Approach
 							</h6>
 							<p class="about-card-text small mb-0">
-								Work through an approach. Start with a straightforward brute-force idea, check the
+								Work through your approach. Start with a straightforward brute-force idea, check the
 								constraints to see what runtime is required, and find ways to optimize.
 							</p>
 						</div>
@@ -120,7 +133,7 @@
 						<span>🔵</span> Finally: Review & Learn
 					</h6>
 					<p class="about-card-text small mb-0">
-						If the solution still does not click, look through the write-ups. Pick whichever explanation
+						If the solution still doesn't click, look through the write-ups. Pick whichever explanation
 						makes the most sense to you, whether that is the official discussion or the LeetLite
 						walkthrough. When reviewing LeetLite code, stepping through versions sequentially helps you see
 						how an initial brute-force idea matures into an optimal implementation.
@@ -150,8 +163,8 @@
 					<div class="card-body">
 						<h5 class="fw-bold color-yellow mb-2">Flexible Filtering</h5>
 						<p class="about-card-text fs-6 mb-0">
-							Narrow the problem list by difficulty, category (Algorithms, Database, Shell, Concurrency,
-							Pandas), topic tags, or whether a solution is available.
+							Narrow the problem list by difficulty, category, topic tags, or whether a solution is
+							available right from the dropdowns.
 						</p>
 					</div>
 				</div>
@@ -163,7 +176,7 @@
 						<h5 class="fw-bold text-primary mb-2">Split Workspace</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Read statements with clear math rendering on the left, and view multi-version code solutions
-							with syntax highlighting on the right.
+							with syntax highlighting on the right[cite: 6].
 						</p>
 					</div>
 				</div>
@@ -175,7 +188,7 @@
 						<h5 class="fw-bold text-info mb-2">Visualizer</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Explore related questions through a visual network graph. Clicking any connected problem
-							re-centers the graph around that problem to help identify common patterns.
+							re-centers the graph around that problem to help identify common patterns[cite: 3].
 						</p>
 					</div>
 				</div>
@@ -187,7 +200,7 @@
 						<h5 class="fw-bold color-yellow mb-2">Stats Dashboard</h5>
 						<p class="about-card-text fs-6 mb-0">
 							A simple overview comparing solved problem distributions against the complete question pool
-							across all difficulty levels.
+							across all difficulty levels and tags[cite: 7].
 						</p>
 					</div>
 				</div>
@@ -198,9 +211,36 @@
 					<div class="card-body">
 						<h5 class="fw-bold text-danger mb-2">Saved Preferences</h5>
 						<p class="about-card-text fs-6 mb-0">
-							Search terms, active filters, page size, and sorting choices stay saved in your browser
-							storage so your workspace is ready when you return.
+							Search terms, active filters, page size, and sorting choices stay saved securely in your
+							browser storage so your workspace is ready when you return[cite: 4].
 						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Peek Mode Banner -->
+		<div class="card bg-body-tertiary border-info interactive-card shadow-sm mb-5">
+			<div class="card-body p-4 p-md-5">
+				<div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+					<span class="badge bg-info text-dark fs-6 px-3 py-2 fw-bold">New Feature</span>
+					<h3 class="fw-bold text-light mb-0">Experimental Peek Mode</h3>
+				</div>
+				<p class="text-light fs-5 mb-3">
+					Getting stuck happens to the best of us, but seeing the entire solution right away can ruin the
+					learning experience and take away your ability to think through the problem on your own.
+				</p>
+				<p class="about-card-text fs-6 mb-3">
+					That's exactly why I built Peek Mode[cite: 5]. Think of it as a highly advanced written text hint.
+					It lets you progressively reveal the code line by line using an execution array trace, giving you
+					just enough of a nudge in the right direction so you can catch the idea and comfortably solve the
+					rest yourself[cite: 5].
+				</p>
+				<div class="p-3 rounded bg-dark border border-secondary d-flex align-items-start gap-2 mt-4">
+					<div class="about-card-text small mb-0">
+						<strong class="text-light">Just a heads up:</strong> This is a brand new experimental feature
+						relying on custom heuristic execution tracing[cite: 5]. It might not work perfectly as intended
+						on every single problem just yet, but it's a great starting point!
 					</div>
 				</div>
 			</div>
@@ -216,7 +256,7 @@
 				<p class="text-light fs-5 mb-2">
 					Every code solution hosted on this site across <strong class="color-yellow">C++</strong>, <strong
 						class="color-yellow">JavaScript</strong>, and <strong class="color-yellow">MySQL</strong> was
-					written, tested, and submitted by me personally.
+					written, tested, and submitted by me personally[cite: 6].
 				</p>
 				<p class="about-card-text fs-6 mb-0">
 					None of the solutions are generated by AI or mass-scraped from web scrapers. Where helpful, multiple
@@ -225,7 +265,7 @@
 			</div>
 		</div>
 
-		<!-- Pros and Cons -->
+		<!-- Honest Pros and Cons -->
 		<h3 class="fw-bold text-light mb-3">Honest Pros & Cons</h3>
 
 		<div class="row g-4 mb-5">
@@ -237,14 +277,14 @@
 					<div class="card-body p-4">
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">👍 / 👎 Visible Dislike Counts:</strong> Shows problem
-								dislikes and calculated like ratios, metrics that were removed from the official
-								frontend.</li>
+								dislikes and calculated like ratios[cite: 3], metrics that were removed from the
+								official frontend.</li>
 							<li><strong class="text-light">Instant Browsing:</strong> Filtering, sorting, and tag
 								selections happen directly on your device without server latency.</li>
 							<li><strong class="text-light">No Account Required:</strong> No login screens, cookie
-								tracking, or setup steps.</li>
+								tracking, or setup steps. Complete freedom[cite: 4].</li>
 							<li><strong class="text-light">Connected Problem Graph:</strong> The visualizer helps
-								uncover links between related problem concepts.</li>
+								uncover links between related problem concepts[cite: 3].</li>
 							<li><strong class="text-light">Tested Reference Code:</strong> Human-written solutions
 								verified against official test cases.</li>
 						</ul>
@@ -260,13 +300,13 @@
 					<div class="card-body p-4">
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">No Live Metric Sync:</strong> Metrics like votes, total
-								submissions, and acceptance rates are pulled during periodic project updates, so numbers
-								may vary slightly from real-time figures.</li>
+								submissions, and acceptance rates are pulled during periodic project updates[cite: 6],
+								so numbers may vary slightly from real-time figures.</li>
 							<li><strong class="text-light">No Built-in Code Execution:</strong> This site is designed as
 								a fast reference tool and problem index; code must be run and submitted on LeetCode.
 							</li>
 							<li><strong class="text-light">Local Storage Only:</strong> Saved filters and preferences
-								remain on your current browser and will not sync across different devices.</li>
+								remain on your current browser and will not sync across different devices[cite: 4].</li>
 							<li><strong class="text-light">No Premium Problem Data:</strong> Paid subscription
 								statements and locked editorial content are intentionally excluded.</li>
 						</ul>
@@ -280,21 +320,6 @@
 			<div
 				class="card-header bg-transparent border-secondary py-3 px-4 d-flex flex-wrap justify-content-between align-items-center gap-2">
 				<div class="d-flex align-items-center gap-2">
-					<!-- Stoplights Logo with Top-to-Bottom Gradient -->
-					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-						class="bi bi-stoplights flex-shrink-0" viewBox="0 0 16 16">
-						<defs>
-							<linearGradient id="comp-header-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-								<stop offset="0%" stop-color="#ef4743" />
-								<stop offset="50%" stop-color="#ffc01e" />
-								<stop offset="100%" stop-color="#2cbb5d" />
-							</linearGradient>
-						</defs>
-						<path fill="url(#comp-header-grad)"
-							d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m0 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m1.5 2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-						<path fill="url(#comp-header-grad)"
-							d="M4 2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1c-1.2-.4-1.833-1.5-2-2h2V8c-1.2-.4-1.833-1.5-2-2h2V4c-1.2-.4-1.833-1.5-2-2zm2-1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-					</svg>
 					<h5 class="mb-0 fw-bold">
 						<span class="brand-gradient">LeetLite</span>
 						<span class="text-secondary mx-1 fs-6 text-uppercase fw-semibold">vs</span>
@@ -305,7 +330,6 @@
 					Side-by-Side Breakdown
 				</span>
 			</div>
-
 			<div class="card-body p-0">
 				<div class="table-responsive">
 					<table class="table table-dark table-striped table-hover mb-0 fs-6 align-middle text-center">
@@ -319,7 +343,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text-start ps-4 fw-semibold text-light">Dislike Counts & Like Ratios</td>
+								<td class="text-start ps-4 fw-semibold text-light">👍 / 👎 Dislike Counts & Like Ratios
+								</td>
 								<td class="color-green fw-bold">Visible</td>
 								<td class="color-red fw-bold">Hidden</td>
 							</tr>
@@ -344,6 +369,11 @@
 								<td class="color-yellow fw-bold">Official Editorials & Forum Posts</td>
 							</tr>
 							<tr>
+								<td class="text-start ps-4 fw-semibold text-light">Visual Problem Graph</td>
+								<td class="color-green fw-bold">Available (Visualizer)</td>
+								<td class="color-red fw-bold">Not Available</td>
+							</tr>
+							<tr>
 								<td class="text-start ps-4 fw-semibold text-light">In-Browser Code Execution</td>
 								<td class="color-red fw-bold">No (Viewer Only)</td>
 								<td class="color-green fw-bold">Yes (Online Judge Engine)</td>
@@ -366,95 +396,88 @@
 			</div>
 			<div class="card-body p-4 p-md-5">
 				<p class="about-card-text fs-6 mb-5 leading-relaxed">
-					LeetLite is an entirely static, serverless web app. It relies on a multi-stage ingestion workflow
-					where data is collected, cleaned, and cached beforehand:
+					I designed LeetLite to be an entirely static, serverless web app so it stays incredibly fast.
+					Instead of querying a database on every click, it relies on a multi-stage workflow where data is
+					collected, parsed, and cached beforehand:
 				</p>
 
 				<!-- High-Level Architecture Flowchart Grid -->
 				<div class="row g-4 align-items-stretch text-center mb-4">
 
-					<!-- Column 1: Sources (LeetCode & LeetcodeSolutions) -->
+					<!-- Column 1: Sources -->
 					<div class="col-lg-3 col-md-6 d-flex flex-column gap-3">
-						<!-- Source 1: LeetCode -->
 						<div
-							class="p-3 rounded bg-dark border border-warning h-100 d-flex flex-column justify-content-between traffic-card traffic-yellow">
+							class="p-3 rounded bg-dark border border-warning h-100 d-flex flex-column justify-content-between">
 							<div>
 								<span class="badge bg-warning text-dark mb-2">Source 1</span>
 								<h6 class="fw-bold color-yellow mb-1">LeetCode API</h6>
 								<p class="about-card-text small mb-0">
-									Public GraphQL endpoints offering raw question descriptions, stats, test cases, and
-									tags.
+									Public endpoints providing raw problem descriptions, stats, test cases, and tags.
 								</p>
 							</div>
-							<div class="mt-2 text-secondary small">Public Endpoints</div>
 						</div>
 
-						<!-- Source 2: LeetcodeSolutions Repo -->
 						<div
-							class="p-3 rounded bg-dark border border-success h-100 d-flex flex-column justify-content-between traffic-card traffic-green">
+							class="p-3 rounded bg-dark border border-success h-100 d-flex flex-column justify-content-between">
 							<div>
 								<span class="badge bg-success mb-2">Source 2</span>
-								<h6 class="fw-bold color-green mb-1">LeetcodeSolutions</h6>
+								<h6 class="fw-bold color-green mb-1">LeetcodeSolutions Repo</h6>
 								<p class="about-card-text small mb-0">
-									GitHub repository hosting hand-written solutions across C++, JavaScript, and MySQL.
+									The GitHub repository where I host all my hand-written solutions[cite: 3].
 								</p>
 							</div>
-							<div class="mt-2 text-secondary small">GitHub Repository</div>
 						</div>
 					</div>
 
 					<!-- Animated Dotted Connector (Desktop) -->
 					<div class="col-lg-1 d-none d-lg-flex flex-column justify-content-center align-items-center">
 						<svg width="40" height="30" class="connector-line">
-							<line x1="0" y1="15" x2="35" y2="15" stroke="#ffc01e" stroke-width="2"
+							<line x1="0" y1="15" x2="35" y2="15" stroke="#6c757d" stroke-width="2"
 								stroke-dasharray="4,4" class="animated-dots" />
-							<polygon points="32,10 40,15 32,20" fill="#ffc01e" />
+							<polygon points="32,10 40,15 32,20" fill="#6c757d" />
 						</svg>
 					</div>
 
 					<!-- Column 2: Node.js Pipeline -->
 					<div class="col-lg-3 col-md-6">
 						<div
-							class="p-4 rounded bg-dark border border-primary h-100 d-flex flex-column justify-content-between traffic-card traffic-blue">
+							class="p-4 rounded bg-dark border border-primary h-100 d-flex flex-column justify-content-between">
 							<div>
 								<span class="badge bg-primary mb-2">Stage 2</span>
-								<h6 class="fw-bold text-primary mb-2">Node.js Engine</h6>
+								<h6 class="fw-bold text-primary mb-2">Node.js Parser</h6>
 								<p class="about-card-text small mb-0">
-									Automated Node scripts download the raw data, strip unnecessary payloads, and parse
-									the content into lightweight JSON structures.
+									An automated script pulls the raw data, strips out unnecessary payload bloat, and
+									parses the content into lightweight, easy-to-read formats.
 								</p>
 							</div>
-							<div class="mt-3 text-secondary small">Automated Build Worker</div>
 						</div>
 					</div>
 
 					<!-- Animated Dotted Connector (Desktop) -->
 					<div class="col-lg-1 d-none d-lg-flex flex-column justify-content-center align-items-center">
 						<svg width="40" height="30" class="connector-line">
-							<line x1="0" y1="15" x2="35" y2="15" stroke="#0d6efd" stroke-width="2"
+							<line x1="0" y1="15" x2="35" y2="15" stroke="#6c757d" stroke-width="2"
 								stroke-dasharray="4,4" class="animated-dots" />
-							<polygon points="32,10 40,15 32,20" fill="#0d6efd" />
+							<polygon points="32,10 40,15 32,20" fill="#6c757d" />
 						</svg>
 					</div>
 
 					<!-- Column 3: Static Data Layer -->
 					<div class="col-lg-4 col-md-12">
 						<div
-							class="p-4 rounded bg-dark border border-secondary h-100 d-flex flex-column justify-content-between interactive-card">
+							class="p-4 rounded bg-dark border border-secondary h-100 d-flex flex-column justify-content-between">
 							<div>
 								<span class="badge bg-secondary mb-2">Stage 3</span>
-								<h6 class="fw-bold text-light mb-2">Static Cache & Datasets</h6>
+								<h6 class="fw-bold text-light mb-2">Static JSON Files</h6>
 								<p class="about-card-text small mb-2">
-									The generated static output consumed by the browser:
+									The script saves the clean data into highly optimized JSON files[cite: 3]:
 								</p>
 								<ul class="text-start about-card-text small ps-3 mb-0">
-									<li>Master problem catalog (minified)</li>
-									<li>Classified topic tag indices</li>
-									<li>Standalone problem detail files</li>
-									<li>Multi-version code solutions</li>
+									<li>A master problem list</li>
+									<li>Topic tags list</li>
+									<li>Individual problem detail files</li>
 								</ul>
 							</div>
-							<div class="mt-3 text-secondary small">Static Storage & CDN</div>
 						</div>
 					</div>
 				</div>
@@ -469,22 +492,23 @@
 				</div>
 
 				<!-- Column 4: Client-Side LeetLite Web App -->
-				<div class="p-4 rounded bg-dark border border-success interactive-card mb-4 text-center">
+				<div class="p-4 rounded bg-dark border border-success mb-4 text-center">
 					<span class="badge bg-success mb-2">Stage 4: Client Delivery</span>
 					<h5 class="fw-bold color-green mb-2">LeetLite Frontend</h5>
 					<p class="about-card-text fs-6 mb-0 mx-auto" style="max-width: 800px;">
-						Your browser fetches these static files directly. Filtering, sorting, similar question graphs,
-						and code views operate in browser memory with zero server lag.
+						Your browser fetches these static files directly. Because everything is loaded upfront, actions
+						like filtering, sorting, and graph navigation run locally in your memory with zero server
+						lag[cite: 6].
 					</p>
 				</div>
 
 				<!-- Periodic Sync Note -->
-				<div class="p-3 rounded bg-dark border border-secondary d-flex align-items-start gap-2">
+				<div class="p-3 rounded bg-dark border border-secondary d-flex align-items-start gap-2 mt-4">
 					<span class="text-warning fs-5 lh-1">⚠️</span>
 					<div class="about-card-text small mb-0">
-						<strong class="text-light">Periodic Sync Notice:</strong> Because data is extracted and compiled
-						periodically during build snapshots, metrics like total submissions, like-to-dislike counts, and
-						acceptance rates are not real-time and may differ slightly from live LeetCode numbers.
+						<strong class="text-light">Periodic Sync Notice:</strong> Because this data is extracted and
+						synced periodically[cite: 6], numbers like total submissions, like-to-dislike counts, and
+						acceptance rates may not reflect real-time live data from LeetCode.
 					</div>
 				</div>
 
@@ -514,7 +538,7 @@
 						<p class="about-card-text fs-6 mb-0">
 							AI tools were used during development to help scaffold frontend markup, organize CSS
 							styling, and draft helper utilities. However, all problem solutions on this site are
-							written, tested, and reviewed by hand.
+							written, tested, and reviewed by hand by me.
 						</p>
 					</div>
 				</div>

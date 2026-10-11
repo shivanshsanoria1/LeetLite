@@ -166,25 +166,6 @@
     pointer-events: auto !important;
 }
 
-/* Floating Controls Bar */
-.peek-floating-controls {
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    z-index: 1050;
-    backdrop-filter: blur(10px);
-    background-color: rgba(22, 27, 34, 0.88);
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
-}
-
-.peek-floating-controls .btn {
-    font-size: 0.82rem;
-    font-weight: 500;
-    padding: 0.28rem 0.65rem;
-}
-
 /* --- Peek Mode Blur Rules --- */
 #code-editor-container.peek-active table.hljs-ln td.hljs-ln-code {
     filter: blur(5px);
@@ -199,4 +180,36 @@
     opacity: 1 !important;
     user-select: text !important;
     pointer-events: auto !important;
+}
+
+/* --- Floating Controls Bar --- */
+.peek-floating-controls {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1050;
+    backdrop-filter: blur(10px);
+    
+    /* Reduced base opacity from 0.88 to 0.70 to make it less bulky */
+    background-color: rgba(22, 27, 34, 0.70); 
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+}
+
+.peek-floating-controls .btn {
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.28rem 0.65rem;
+}
+
+/* --- Floating Controls Opacity Hover --- */
+#peek-controls {
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* Reduced fade opacity from 0.15 to 0.08 to make it almost invisible on hover */
+#peek-controls:has(.opacity-hover-trigger:hover) {
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out;
 }

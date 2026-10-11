@@ -12,6 +12,8 @@ import {
 
 const THEME_STORAGE_KEY = 'leetcode_lite_hljs_theme';
 
+const PEEK_MODE_STORAGE_KEY = 'leetcode_lite_peek_mode';
+
 // Initialize Highlight.js Copy Plugin Safely
 if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 	hljs.addPlugin(new CopyButtonPlugin());
@@ -19,11 +21,12 @@ if (window.hljs && typeof CopyButtonPlugin !== 'undefined') {
 
 let currentProblemSolvedStats = null;
 let currentProblemMasterData = null; // Stores global problem metadata for URL generation
+let currentProblemDetailData = null; // NEW: Stores detailed JSON data containing codeSnippets
 let currentRawCode = '';
 const topicTagMap = new Map(); // New map to store tag colors and order
 
 // --- Peek Mode State ---
-let isPeekModeActive = false;
+let isPeekModeActive = sessionStorage.getItem(PEEK_MODE_STORAGE_KEY) === 'true';
 let peekExecutionSteps = []; // Array of Arrays: Each index holds the line numbers for that step
 let peekCurrentStep = 0;
 
@@ -114,6 +117,8 @@ async function loadProblem() {
 
 		if (!detailResponse.ok) throw new Error(`Failed to load details for problem ${quesId}.`);
 		const data = await detailResponse.json();
+
+		currentProblemDetailData = data;
 
 		// Step 3: Fetch solved stats
 		try {
@@ -253,8 +258,8 @@ function populateUI(data, allProblems) {
 
 	const likes = data.stats?.likes || 0;
 	const dislikes = data.stats?.dislikes || 0;
-	document.getElementById('prob-likes').textContent = likes;
-	document.getElementById('prob-dislikes').textContent = dislikes;
+	document.getElementById('prob-likes').textContent = Number(likes).toLocaleString('en-US');
+	document.getElementById('prob-dislikes').textContent = Number(dislikes).toLocaleString('en-US');
 
 	const totalVotes = likes + dislikes;
 	const likeRate = totalVotes === 0 ? 0 : (likes / totalVotes) * 100;
@@ -732,10 +737,10 @@ if (resetEditorBtn) {
 
 		// Disable Peek Mode
 		isPeekModeActive = false;
+		sessionStorage.setItem(PEEK_MODE_STORAGE_KEY, 'false');
 		const peekToggle = document.getElementById('peek-mode-toggle');
 		if (peekToggle) peekToggle.checked = false;
 
-		// This will cleanly hide the floating controls and remove blur classes
 		setupPeekMode();
 	});
 }
@@ -844,61 +849,147 @@ function parseExecutionFlow(rawCode, lang) {
 	}
 
 	let mainFnStart = -1;
-	let mainFnEnd = -1;
-	let braceDepth = 0;
+	let cleanSnippetSig = "";
 
-	// 2. Locate primary function entry point for C++ and JS
+	const cleanForMatch = (str) => str.replace(/\s+/g, '');
+
+	// Helper to find scope end (returns line array index)
+	const findBounds = (startIdx) => {
+		let depth = 0;
+		let hasOpened = false;
+		for (let i = startIdx; i < totalLines; i++) {
+			const opens = (lines[i].match(/\{/g) || []).length;
+			const closes = (lines[i].match(/\}/g) || []).length;
+			depth += opens - closes;
+			if (opens > 0) hasOpened = true;
+			if (hasOpened && depth === 0) return i;
+		}
+		return totalLines - 1;
+	};
+
+	// 2. Extract exact function signature from LeetCode snippets
+	if (currentProblemDetailData && currentProblemDetailData.codeSnippets) {
+		let langSlugMap = { 'js': 'javascript', 'javascript': 'javascript', 'cpp': 'cpp' };
+		let targetSlug = langSlugMap[ext] || ext;
+		let snippet = currentProblemDetailData.codeSnippets.find(s => s.langSlug === targetSlug);
+
+		if (snippet) {
+			const snippetLines = snippet.code.split('\n');
+			for (let i = 0; i < snippetLines.length; i++) {
+				const line = snippetLines[i];
+				if (ext === 'js' || ext === 'javascript') {
+					if (line.match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
+						cleanSnippetSig = cleanForMatch(line.trim().replace(/\{$/, ''));
+						break;
+					}
+				} else if (ext === 'cpp') {
+					if (line.includes('class Solution') || line.trim() === 'public:' || line.trim() === 'private:' || line.trim() === 'protected:') continue;
+					if (line.match(/^\s*(?:virtual\s+)?(?:static\s+)?[\w<>,:&\*]+\s+\w+\s*\([^)]*\)\s*(?:const)?\s*\{?/)) {
+						cleanSnippetSig = cleanForMatch(line.trim().replace(/\{$/, ''));
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	// 3. Map ALL potential functions (Helpers + Main) for call-graph jumping
+	const helpers = new Map();
+	for (let i = 0; i < totalLines; i++) {
+		const line = lines[i];
+		let fnName = null;
+
+		if (ext === 'js' || ext === 'javascript') {
+			const match = line.match(/(?:(?:var|let|const)\s+([a-zA-Z0-9_$]+)\s*=\s*(?:async\s*)?function\vert{}function\s+([a-zA-Z0-9_$]+)\s*\()/i);
+			if (match) fnName = match[1] || match[2];
+		} else if (ext === 'cpp') {
+			if (line.includes('class Solution') || line.trim() === 'public:' || line.trim() === 'private:' || line.trim() === 'protected:') continue;
+			// Matches return types and grabs the method name before the parenthesis
+			const match = line.match(/^\s*(?:virtual\s+)?(?:static\s+)?(?:[\w<>,:&\*]+\s+)+(\w+)\s*\([^)]*\)\s*(?:const)?\s*\{?/);
+			if (match) fnName = match[1];
+		}
+
+		if (fnName) {
+			const endIdx = findBounds(i);
+			helpers.set(fnName, { start: i + 1, end: endIdx + 1 });
+		}
+	}
+
+	// 4. Locate primary function entry point in actual code
 	for (let i = 0; i < totalLines; i++) {
 		const line = lines[i];
 
-		if (ext === 'js' || ext === 'javascript') {
-			if (line.match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
-				mainFnStart = i + 1;
-				break;
-			}
-		} else if (ext === 'cpp') {
-			// Ignore the wrapper class and access modifiers to find the actual method
-			if (line.includes('class Solution') || line.trim() === 'public:' || line.trim() === 'private:') continue;
+		if (cleanSnippetSig && cleanForMatch(line).includes(cleanSnippetSig)) {
+			mainFnStart = i + 1;
+			break;
+		}
 
-			// Matches standard C++ method signatures: ReturnType methodName(...)
-			if (line.match(/^\s*(?:virtual\s+)?(?:static\s+)?[\w<>,:&\*]+\s+\w+\s*\([^)]*\)\s*(?:const)?\s*\{?/)) {
-				mainFnStart = i + 1;
-				break;
+		// Fallback Match
+		if (!cleanSnippetSig) {
+			if (ext === 'js' || ext === 'javascript') {
+				if (line.match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
+					mainFnStart = i + 1;
+					break;
+				}
+			} else if (ext === 'cpp') {
+				if (line.includes('class Solution') || line.trim() === 'public:' || line.trim() === 'private:' || line.trim() === 'protected:') continue;
+				if (line.match(/^\s*(?:virtual\s+)?(?:static\s+)?(?:[\w<>,:&\*]+\s+)+(\w+)\s*\([^)]*\)\s*(?:const)?\s*\{?/)) {
+					mainFnStart = i + 1;
+					break;
+				}
 			}
 		}
 	}
 
+	// 5. Trace Execution Call Graph (Simulates jumping to helpers)
+	const trace = (startLine, endLine, isMain = false) => {
+		// Prevent infinite loops in recursive functions
+		if (visited.has(startLine)) return;
+
+		const initialStep = [startLine];
+		visited.add(startLine);
+
+		// If this is the main entry point, reveal the class wrapper and access modifiers in step 0
+		if (isMain) {
+			for (let i = 0; i < totalLines; i++) {
+				const trimmed = lines[i].trim();
+				if (trimmed.startsWith('class Solution') || trimmed === 'public:' || trimmed === 'private:' || trimmed === 'protected:') {
+					if (!visited.has(i + 1)) {
+						initialStep.push(i + 1);
+						visited.add(i + 1);
+					}
+				}
+			}
+		}
+
+		executionOrder.push(initialStep);
+
+		for (let l = startLine + 1; l <= endLine; l++) {
+			if (lines[l - 1].trim() === '') continue; // Skip blank lines
+
+			executionOrder.push([l]);
+			visited.add(l);
+
+			// Check if the current line calls any of our mapped helper functions
+			for (const [hName, hBounds] of helpers.entries()) {
+				const callRegex = new RegExp(`\\b${hName}\\s*\\(`);
+				if (callRegex.test(lines[l - 1])) {
+					// If called, simulate jumping into the helper
+					if (!visited.has(hBounds.start)) {
+						trace(hBounds.start, hBounds.end, false);
+					}
+				}
+			}
+		}
+	};
+
+	// Start trace from the Main LeetCode function
 	if (mainFnStart !== -1) {
-		// Find closing brace of main function
-		let hasOpened = false;
-		for (let i = mainFnStart - 1; i < totalLines; i++) {
-			const opens = (lines[i].match(/\{/g) || []).length;
-			const closes = (lines[i].match(/\}/g) || []).length;
-
-			braceDepth += opens - closes;
-			if (opens > 0) hasOpened = true;
-
-			// Stop exactly when the function's scope fully closes
-			if (hasOpened && braceDepth === 0) {
-				mainFnEnd = i + 1;
-				break;
-			}
-		}
-
-		// Step 0: Function signature
-		executionOrder.push([mainFnStart]);
-		visited.add(mainFnStart);
-
-		// Step 1 to N: Line by line within main function
-		for (let i = mainFnStart + 1; i <= (mainFnEnd === -1 ? totalLines : mainFnEnd); i++) {
-			if (lines[i - 1].trim() !== '') {
-				executionOrder.push([i]);
-				visited.add(i);
-			}
-		}
+		const mainFnEnd = findBounds(mainFnStart - 1) + 1;
+		trace(mainFnStart, mainFnEnd, true);
 	}
 
-	// Final Step: Group all unvisited lines (helpers, includes, class wrappers) into a single block
+	// 6. Group all unvisited lines (remaining includes, trailing closures) into a final block
 	const remainingLines = [];
 	for (let i = 1; i <= totalLines; i++) {
 		if (!visited.has(i) && lines[i - 1].trim() !== '') {
@@ -907,11 +998,9 @@ function parseExecutionFlow(rawCode, lang) {
 	}
 
 	if (remainingLines.length > 0) {
-		// If no main function was found, just reveal the remaining lines sequentially
 		if (mainFnStart === -1) {
 			remainingLines.forEach(lineNum => executionOrder.push([lineNum]));
 		} else {
-			// Otherwise, group them as the final step (e.g. trailing helpers, C++ class closing braces)
 			executionOrder.push(remainingLines);
 		}
 	}
@@ -925,12 +1014,33 @@ function setupPeekMode() {
 	const toggle = document.getElementById('peek-mode-toggle');
 	const controls = document.getElementById('peek-controls');
 	const container = document.getElementById('code-editor-container');
+	const settingsBtn = document.querySelector('[data-bs-target="#editorSettingsModal"]');
 
 	const langSelect = document.getElementById('lang-select');
 	const currentLang = langSelect ? langSelect.value : '';
 
-	// Ensure the toggle wrapper is always visible now that all languages are supported
 	if (modalOption) modalOption.style.display = 'block';
+
+	// Sync the UI toggle with the current session state
+	if (toggle) toggle.checked = isPeekModeActive;
+
+	// Handle Experimental Eyeglasses SVG next to settings gear
+	if (settingsBtn) {
+		let peekIcon = document.getElementById('experimental-peek-icon');
+		if (isPeekModeActive) {
+			if (!peekIcon) {
+				// Swap to eyeglasses SVG, and wrap in a span to guarantee the native title tooltip works
+				const peekSvg = `<span id="experimental-peek-icon" class="me-2 d-flex align-items-center" title="Peek Mode is ON&#10;Shortcuts:&#10;→ Next step&#10;← Back&#10;↓ Reset&#10;↑ Reveal all" style="cursor: help;">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eyeglasses text-warning" viewBox="0 0 16 16">
+					  <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+					</svg>
+				</span>`;
+				settingsBtn.insertAdjacentHTML('beforebegin', peekSvg);
+			}
+		} else {
+			if (peekIcon) peekIcon.remove();
+		}
+	}
 
 	if (!isPeekModeActive || !currentRawCode) {
 		if (controls) controls.classList.replace('d-flex', 'd-none');
@@ -938,7 +1048,6 @@ function setupPeekMode() {
 		return;
 	}
 
-	// Pass the current language dynamically to the parser
 	peekExecutionSteps = parseExecutionFlow(currentRawCode, currentLang);
 	peekCurrentStep = 0;
 
@@ -982,9 +1091,12 @@ function applyPeekStepState() {
 		lastRevealedLine.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}
 
-	// Button states
+	// Disable logic: Block boundaries
+	const isAtEnd = peekCurrentStep >= peekExecutionSteps.length - 1;
+
 	document.getElementById('peek-backward').disabled = peekCurrentStep <= 0;
-	document.getElementById('peek-forward').disabled = peekCurrentStep >= peekExecutionSteps.length - 1;
+	document.getElementById('peek-forward').disabled = isAtEnd;
+	document.getElementById('peek-reveal-all').disabled = isAtEnd;
 }
 
 function revealNextStep() {
@@ -1009,6 +1121,7 @@ function resetPeekMode() {
 // --- Peek Mode Event Listeners ---
 document.getElementById('peek-mode-toggle')?.addEventListener('change', (e) => {
 	isPeekModeActive = e.target.checked;
+	sessionStorage.setItem(PEEK_MODE_STORAGE_KEY, isPeekModeActive);
 	setupPeekMode();
 });
 
@@ -1053,6 +1166,46 @@ document.getElementById('confirm-reveal-btn')?.addEventListener('click', () => {
 	const modalInstance = bootstrap.Modal.getInstance(modalEl);
 	if (modalInstance) {
 		modalInstance.hide();
+	}
+});
+
+// --- Global Keyboard Shortcuts ---
+document.addEventListener('keydown', (e) => {
+	// 1. Esc to close settings modal
+	if (e.key === 'Escape') {
+		const settingsModalEl = document.getElementById('editorSettingsModal');
+		if (settingsModalEl) {
+			const modalInstance = bootstrap.Modal.getInstance(settingsModalEl);
+			if (modalInstance) {
+				modalInstance.hide();
+			}
+		}
+	}
+
+	// 2. Peek Mode Arrow Navigation
+	if (isPeekModeActive) {
+		// Prevent triggering if user is typing in an input field (e.g., search)
+		const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+		if (activeTag === 'input' || activeTag === 'textarea') return;
+
+		// FIX: Prevent actions if a modal is already active to stop backdrop stacking
+		if (document.querySelector('.modal-backdrop') || document.body.classList.contains('modal-open')) {
+			return;
+		}
+
+		if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
+			e.preventDefault(); // Prevents the code container from scrolling when using shortcuts
+
+			if (e.key === 'ArrowLeft') {
+				document.getElementById('peek-backward')?.click();
+			} else if (e.key === 'ArrowRight') {
+				document.getElementById('peek-forward')?.click();
+			} else if (e.key === 'ArrowDown') {
+				document.getElementById('peek-reset')?.click();
+			} else if (e.key === 'ArrowUp') {
+				document.getElementById('peek-reveal-all')?.click();
+			}
+		}
 	}
 });
 

@@ -92,3 +92,34 @@
     vertical-align: middle;
     padding: 0.85rem 0.75rem;
 }
+
+/* Animated Dotted Connectors */
+.connector-line {
+    overflow: visible;
+}
+
+.animated-dots {
+    animation: dashMoveHorizontal 1.5s linear infinite;
+}
+
+.animated-dots-vertical {
+    animation: dashMoveVertical 1.5s linear infinite;
+}
+
+@keyframes dashMoveHorizontal {
+    from {
+        stroke-dashoffset: 8;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dashMoveVertical {
+    from {
+        stroke-dashoffset: 8;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
