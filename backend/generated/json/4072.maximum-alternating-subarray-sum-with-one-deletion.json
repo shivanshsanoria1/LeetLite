@@ -1,0 +1,52 @@
+{
+    "quesId": 4072,
+    "title": "Maximum Alternating Subarray Sum With One Deletion",
+    "titleSlug": "maximum-alternating-subarray-sum-with-one-deletion",
+    "difficulty": "Medium",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "10.1K",
+        "totalSubmission": "34.4K",
+        "totalAcceptedRaw": 10144,
+        "totalSubmissionRaw": 34414,
+        "acRate": "29.5%",
+        "acRateRaw": 29.47738430700404,
+        "likes": 55,
+        "dislikes": 7
+    },
+    "similarQuesIds": [
+        4058
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4393,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[5,-5,1]\n[10,-5,-100]\n[4,7]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer array <code>nums</code>.</p>\n\n<p>You may delete <strong>at most one</strong> element from <code>nums</code>, then choose a <strong><span data-keyword=\"subarray-nonempty\">subarray</span></strong> of the resulting array.</p>\n\n<p>Return the <strong>maximum</strong> possible <strong>alternating sum</strong> of the chosen subarray.</p>\n\n<p>The <strong>alternating sum</strong> of an array is the sum of its elements at even indices minus the sum of its elements at odd indices. The chosen subarray is <strong>reindexed starting from 0</strong> before calculating its alternating sum.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [5,-5,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">11</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choose not to delete an element and select the entire array. Its alternating sum is <code>5 - (-5) + 1 = 11</code>, which is the maximum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [10,-5,-100]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">110</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Delete <code>nums[1] = -5</code> to obtain <code>[10,-100]</code>, then select the entire resulting array. Its alternating sum is <code>10 - (-100) = 110</code>, which is the maximum possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,7]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Choose not to delete an element and select the subarray <code>[7]</code>. Its alternating sum is 7, which is the maximum possible.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<strong>1a (Dynamic Programming)</strong>: Track the maximum alternating sum of a non-empty candidate using two properties: the parity of its retained length and whether a deletion has been used.",
+        "<strong>1b (Dynamic Programming)</strong>: Keeping the current element toggles the parity and adds or subtracts its value accordingly. Deleting it preserves the parity and uses the deletion. You can also start a new candidate with the current element.",
+        "<strong>2a (Prefix and Suffix Dynamic Programming)</strong>: If the deleted element lies inside the chosen subarray, the remaining elements form a left segment followed by a right segment. The right segment begins with a minus sign when the left segment has odd length, and a plus sign otherwise.",
+        "<strong>2b (Prefix and Suffix Dynamic Programming)</strong>: Precompute the best alternating sums of segments ending at each index for each length parity, and of segments starting at each index for each starting sign. Combine these across each possible deletion, and also consider the best subarray without deletion."
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxAlternatingSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxAlternatingSum = function(nums) {\n    \n};"
+        }
+    ],
+    "LC_SYNC_ISO": "2026-10-11T14:17:08.942Z",
+    "PARSED_ISO": "2026-10-11T14:18:10.631Z"
+}

@@ -165015,5 +165015,111 @@
             "hasSolution": false,
             "hasVideoSolution": false
         }
+    },
+    {
+        "quesId": 4070,
+        "title": "Minimum Rotations to Dial a Number I",
+        "titleSlug": "minimum-rotations-to-dial-a-number-i",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "43.5K",
+            "totalSubmission": "57K",
+            "totalAcceptedRaw": 43488,
+            "totalSubmissionRaw": 56971,
+            "acRate": "76.3%",
+            "acRateRaw": 76.3348193913013,
+            "likes": 36,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            4071
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4404,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4071,
+        "title": "Minimum Rotations to Dial a Number II",
+        "titleSlug": "minimum-rotations-to-dial-a-number-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "21.8K",
+            "totalSubmission": "40.5K",
+            "totalAcceptedRaw": 21788,
+            "totalSubmissionRaw": 40513,
+            "acRate": "53.8%",
+            "acRateRaw": 53.78026806210352,
+            "likes": 40,
+            "dislikes": 4
+        },
+        "similarQuesIds": [
+            4070
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4405,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4072,
+        "title": "Maximum Alternating Subarray Sum With One Deletion",
+        "titleSlug": "maximum-alternating-subarray-sum-with-one-deletion",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "10.1K",
+            "totalSubmission": "34.4K",
+            "totalAcceptedRaw": 10144,
+            "totalSubmissionRaw": 34414,
+            "acRate": "29.5%",
+            "acRateRaw": 29.47738430700404,
+            "likes": 55,
+            "dislikes": 7
+        },
+        "similarQuesIds": [
+            4058
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4393,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4073,
+        "title": "Count Good Strings",
+        "titleSlug": "count-good-strings",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "5.8K",
+            "totalSubmission": "12.3K",
+            "totalAcceptedRaw": 5759,
+            "totalSubmissionRaw": 12298,
+            "acRate": "46.8%",
+            "acRateRaw": 46.82875264270613,
+            "likes": 24,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4327,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
     }
 ]
