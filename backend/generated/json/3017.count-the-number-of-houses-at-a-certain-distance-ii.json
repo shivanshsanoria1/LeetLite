@@ -43,6 +43,18 @@
         "Try to change the distances calculated by path <code>i ->j</code> to the other path.",
         "Can we use prefix sums to compute the answer?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> countOfPairs(int n, int x, int y) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} x\n * @param {number} y\n * @return {number[]}\n */\nvar countOfPairs = function(n, x, y) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:38.208Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.767Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.342Z"
 }

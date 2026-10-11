@@ -46,6 +46,18 @@
         "Always allow non-adjacent take: <code>nums[i] + dp[i - 2]</code>",
         "Answer is <code>dp[n - 1]</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long rob(vector<int>& nums, vector<int>& colors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} colors\n * @return {number}\n */\nvar rob = function(nums, colors) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:03.077Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.788Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.105Z"
 }

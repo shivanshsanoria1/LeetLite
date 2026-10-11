@@ -58,6 +58,18 @@
         "Use two stacks: one for back history, and one for forward history. You can simulate the functions by popping an element from one stack and pushing it into the other.",
         "Can you improve program runtime by using a different data structure?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class BrowserHistory {\npublic:\n    BrowserHistory(string homepage) {\n        \n    }\n    \n    void visit(string url) {\n        \n    }\n    \n    string back(int steps) {\n        \n    }\n    \n    string forward(int steps) {\n        \n    }\n};\n\n/**\n * Your BrowserHistory object will be instantiated and called as such:\n * BrowserHistory* obj = new BrowserHistory(homepage);\n * obj->visit(url);\n * string param_2 = obj->back(steps);\n * string param_3 = obj->forward(steps);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} homepage\n */\nvar BrowserHistory = function(homepage) {\n    \n};\n\n/** \n * @param {string} url\n * @return {void}\n */\nBrowserHistory.prototype.visit = function(url) {\n    \n};\n\n/** \n * @param {number} steps\n * @return {string}\n */\nBrowserHistory.prototype.back = function(steps) {\n    \n};\n\n/** \n * @param {number} steps\n * @return {string}\n */\nBrowserHistory.prototype.forward = function(steps) {\n    \n};\n\n/** \n * Your BrowserHistory object will be instantiated and called as such:\n * var obj = new BrowserHistory(homepage)\n * obj.visit(url)\n * var param_2 = obj.back(steps)\n * var param_3 = obj.forward(steps)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:59.776Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.914Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.881Z"
 }

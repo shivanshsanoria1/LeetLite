@@ -47,6 +47,18 @@
     "hints": [
         "Do an iterative depth first search, parsing dashes from the string to inform you how to link the nodes together."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* recoverFromPreorder(string traversal) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {string} traversal\n * @return {TreeNode}\n */\nvar recoverFromPreorder = function(traversal) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:01.864Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.821Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.315Z"
 }

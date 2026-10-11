@@ -53,6 +53,18 @@
         "We need to find a topological order on the dependency graph.",
         "Build two graphs, one for the groups and another for the items."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> sortItems(int n, int m, vector<int>& group, vector<vector<int>>& beforeItems) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number[]} group\n * @param {number[][]} beforeItems\n * @return {number[]}\n */\nvar sortItems = function(n, m, group, beforeItems) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:40.592Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.637Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.590Z"
 }

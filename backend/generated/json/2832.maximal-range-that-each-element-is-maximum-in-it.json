@@ -48,6 +48,7 @@
         "If there is an element left in the stack, <code>top.index + 1</code> would be the answer. Otherwise, <code>0</code> is the answer.",
         "After that, we push <code>(nums[index], index)</code> to the stack and go for the next element."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:45:03.678Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.579Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.751Z"
 }

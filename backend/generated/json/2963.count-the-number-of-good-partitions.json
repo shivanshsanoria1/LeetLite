@@ -50,6 +50,18 @@
         "Partition the array into segments making each one as short as possible. This can be achieved by two-pointers or using a Set.",
         "If we have <code>m</code> segments, we can arbitrarily group the neighboring segments. How many ways are there to group these <code>m</code> segments?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfGoodPartitions(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar numberOfGoodPartitions = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:53.785Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.713Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.104Z"
 }

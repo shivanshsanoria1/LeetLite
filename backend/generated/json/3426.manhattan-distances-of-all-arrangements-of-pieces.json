@@ -26,12 +26,12 @@
             "slug": "combinatorics"
         }
     ],
-    "exampleTestcases": "2\n2\n2\n1\n4\n3",
     "meta": {
         "quesIdLCBackend": 3739,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n2\n2\n1\n4\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Fix two pieces in two specific locations and find the number of boards where this can happen.",
         "A particular pair of positions will be counted exactly <code>C(m * n - 2, k - 2)</code> times. Calculate the total distance for all pairs of positions and multiply it with <code>C(m * n - 2, k - 2)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int distanceSum(int m, int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar distanceSum = function(m, n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:33.567Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.389Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.390Z"
 }

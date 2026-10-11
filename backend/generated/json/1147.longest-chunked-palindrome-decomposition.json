@@ -57,6 +57,18 @@
         "Using a rolling hash, we can quickly check whether two strings are equal.",
         "Use that as the basis of a dp."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestDecomposition(string text) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} text\n * @return {number}\n */\nvar longestDecomposition = function(text) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:41.277Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.340Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.540Z"
 }

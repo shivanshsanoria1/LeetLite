@@ -32,6 +32,7 @@
     },
     "content": "<p>Given a text file <code>file.txt</code>, transpose its content.</p>\n\n<p>You may assume that each row has the same number of columns, and each field is separated by the <code>&#39; &#39;</code> character.</p>\n\n<p><strong class=\"example\">Example:</strong></p>\n\n<p>If <code>file.txt</code> has the following content:</p>\n\n<pre>\nname age\nalice 21\nryan 30\n</pre>\n\n<p>Output the following:</p>\n\n<pre>\nname alice ryan\nage 21 30\n</pre>\n",
     "hints": [],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T19:56:03.087Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.778Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.013Z"
 }

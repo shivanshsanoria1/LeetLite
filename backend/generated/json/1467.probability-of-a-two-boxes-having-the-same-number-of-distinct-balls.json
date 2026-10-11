@@ -57,6 +57,18 @@
         "The probability of a draw is the sigma of probabilities of different ways to achieve draw.",
         "Can you use Dynamic programming to solve this problem in a better complexity ?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double getProbability(vector<int>& balls) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} balls\n * @return {number}\n */\nvar getProbability = function(balls) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:54.961Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.908Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.870Z"
 }

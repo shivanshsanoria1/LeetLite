@@ -42,6 +42,18 @@
         "Think on Dynamic Programming.",
         "DP(pos, last) which means we are at the position pos having as last the last character seen."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int dieSimulator(int n, vector<int>& rollMax) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} rollMax\n * @return {number}\n */\nvar dieSimulator = function(n, rollMax) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:07.915Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.857Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.611Z"
 }

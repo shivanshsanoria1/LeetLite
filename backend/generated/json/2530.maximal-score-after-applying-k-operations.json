@@ -47,6 +47,18 @@
         "It is always optimal to select the greatest element in the array.",
         "Use a heap to query for the maximum in O(log n) time."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxKelements(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxKelements = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:53.524Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.072Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.325Z"
 }

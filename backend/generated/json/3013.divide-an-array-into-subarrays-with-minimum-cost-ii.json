@@ -53,6 +53,18 @@
         "Update the two heaps when iteration over <code>i</code>. Ordered/Tree sets are also a good choice since we have to delete elements.",
         "If the max heap’s size is less than <code>k - 2</code>, use the min heap’s value to fill it. If the maximum value in the max heap is larger than the smallest value in the min heap, swap them in the two heaps."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumCost(vector<int>& nums, int k, int dist) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} dist\n * @return {number}\n */\nvar minimumCost = function(nums, k, dist) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:34.933Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.765Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.336Z"
 }

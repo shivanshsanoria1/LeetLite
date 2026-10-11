@@ -26,12 +26,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "2\n3\n2\n17\n1\n10",
     "meta": {
         "quesIdLCBackend": 4084,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n3\n2\n17\n1\n10",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Use a greedy approach.",
         "Fill the leftmost digits with 9s first (as much as possible)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maxSumOfSquares(int num, int sum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @param {number} sum\n * @return {string}\n */\nvar maxSumOfSquares = function(num, sum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T17:40:16.968Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.836Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.904Z"
 }

@@ -40,6 +40,18 @@
         "Simulate the process while keeping track of visited points.",
         "Use a set to store previously visited points."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPathCrossing(string path) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} path\n * @return {boolean}\n */\nvar isPathCrossing = function(path) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:43.328Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.978Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.920Z"
 }

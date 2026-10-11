@@ -50,6 +50,18 @@
         "How do you determine if a transaction will fail?",
         "Simply apply the operations if the transaction is valid."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Bank {\npublic:\n    Bank(vector<long long>& balance) {\n        \n    }\n    \n    bool transfer(int account1, int account2, long long money) {\n        \n    }\n    \n    bool deposit(int account, long long money) {\n        \n    }\n    \n    bool withdraw(int account, long long money) {\n        \n    }\n};\n\n/**\n * Your Bank object will be instantiated and called as such:\n * Bank* obj = new Bank(balance);\n * bool param_1 = obj->transfer(account1,account2,money);\n * bool param_2 = obj->deposit(account,money);\n * bool param_3 = obj->withdraw(account,money);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} balance\n */\nvar Bank = function(balance) {\n    \n};\n\n/** \n * @param {number} account1 \n * @param {number} account2 \n * @param {number} money\n * @return {boolean}\n */\nBank.prototype.transfer = function(account1, account2, money) {\n    \n};\n\n/** \n * @param {number} account \n * @param {number} money\n * @return {boolean}\n */\nBank.prototype.deposit = function(account, money) {\n    \n};\n\n/** \n * @param {number} account \n * @param {number} money\n * @return {boolean}\n */\nBank.prototype.withdraw = function(account, money) {\n    \n};\n\n/** \n * Your Bank object will be instantiated and called as such:\n * var obj = new Bank(balance)\n * var param_1 = obj.transfer(account1,account2,money)\n * var param_2 = obj.deposit(account,money)\n * var param_3 = obj.withdraw(account,money)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:26.604Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.928Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.287Z"
 }

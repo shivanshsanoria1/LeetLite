@@ -44,6 +44,18 @@
         "Set each water cell to be 0. The height of each cell is limited by its closest water cell.",
         "Perform a multi-source BFS with all the water cells as sources."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} isWater\n * @return {number[][]}\n */\nvar highestPeak = function(isWater) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:33.799Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.430Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.744Z"
 }

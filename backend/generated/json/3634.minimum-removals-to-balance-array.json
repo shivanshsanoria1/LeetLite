@@ -34,12 +34,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[2,1,5]\n2\n[1,6,2,9]\n3\n[4,6]\n2",
     "meta": {
         "quesIdLCBackend": 3958,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,1,5]\n2\n[1,6,2,9]\n3\n[4,6]\n2",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Sorting + Two Pointers\n\n#### Intuition\n\nWe first sort the array $\\textit{nums}$. After removing some elements to make the array balanced, let the minimum element in the remaining array be $\\textit{min}$ and the maximum element be $\\textit{max}$. All elements strictly smaller than $\\textit{min}$ and strictly larger than $\\textit{max}$ must be removed. Removing any element within the range $[\\textit{min}, \\textit{max}]$ is unnecessary.\n\nBased on this observation, we can use a two-pointer technique. The left pointer $\\textit{left}$ starts at the beginning of the sorted array and represents the position of the minimum element $x$ of the current candidate subarray. The right pointer $\\textit{right}$ moves to the right until it reaches the first element that is strictly greater than $k \\times x$, or until it goes out of bounds.\n\nAt this point, the left-closed and right-open interval $[\\textit{left}, \\textit{right})$ represents a balanced subarray, whose length is $\\textit{right} - \\textit{left}$.\n\nAs the left pointer moves to the right, the right pointer never moves backward. For each position of $\\textit{left}$, we can update the answer as $n - (\\textit{right} - \\textit{left})$, where $n$ is the length of the array $\\textit{nums}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/a5fLcuMz/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"a5fLcuMz\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  Sorting takes $O(n \\log n)$ time, and the two-pointer traversal takes $O(n)$ time.\n\n- Space complexity: $O(\\log n)$ or $O(n)$.\n  \n  This includes the stack space required by the sorting process, since built-in sorting implementations typically use a variant of quicksort or timsort.\n\n---"
@@ -49,6 +49,18 @@
         "Sort <code>nums</code> and use two pointers <code>i</code> and <code>j</code> so that the window's minimum is <code>nums[i]</code> and maximum is <code>nums[j]</code>.",
         "Expand <code>j</code> while <code>nums[j] <= k * nums[i]</code> to maximize the balanced window; answer = <code>n - (j - i + 1)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minRemoval(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minRemoval = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:22.287Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.638Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.687Z"
 }

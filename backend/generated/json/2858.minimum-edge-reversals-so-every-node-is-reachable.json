@@ -52,6 +52,18 @@
         "Let <code>answer[x]</code> be the minimum number of edge reversals so it is possible to reach any other node starting from node <code>x</code>.",
         "Using another DFS starting from node <code>0</code> and traversing the edges bidirectionally, we can compute <code>answer</code>.<br />\r\n<code>answer[0] = dp[0]</code><br />\r\n<code>answer[y] = answer[x] +</code> (<code>1</code> if the edge between <code>x</code> and <code>y</code> is going from <code>x</code> to <code>y</code>; <code>-1</code> otherwise), where <code>x</code> is the parent of <code>y</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minEdgeReversals(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number[]}\n */\nvar minEdgeReversals = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:25.195Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.595Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.802Z"
 }

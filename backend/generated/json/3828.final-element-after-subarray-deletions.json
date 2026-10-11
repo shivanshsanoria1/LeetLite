@@ -49,6 +49,18 @@
         "Any middle element can always be removed by Bob, so only the endpoints can be protected.",
         "Alice chooses the better endpoint: the answer is <code>max(nums[0], nums[len(nums) - 1])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int finalElement(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar finalElement = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:37.402Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.383Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.095Z"
 }

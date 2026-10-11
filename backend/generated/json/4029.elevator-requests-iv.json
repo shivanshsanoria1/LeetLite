@@ -36,6 +36,7 @@
         "<p>Use interval DP. Let <code>dp[l][r][0/1]</code> be the minimum reversed time needed to visit all requested floors from <code>l</code> through <code>r</code>, ending at the left or right endpoint. Initialize <code>dp[i][i] = 0</code> for every possible starting floor.</p>",
         "<p>When expanding the interval to a new floor, add the travel distance and require the resulting time to be at most that floor's deadline <code>T - arrival</code>. After all requested floors are visited, check whether the elevator can reach <code>start</code> within time <code>T</code>. This gives an <code>O(m^2)</code> feasibility check and <code>O(m^2 log V)</code> overall.</p>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:07:29.504Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.010Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.323Z"
 }

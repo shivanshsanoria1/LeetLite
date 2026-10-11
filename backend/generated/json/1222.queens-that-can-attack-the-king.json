@@ -45,6 +45,18 @@
         "Check 8 directions around the King.",
         "Find the nearest queen in each direction."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> queensAttacktheKing(vector<vector<int>>& queens, vector<int>& king) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queens\n * @param {number[]} king\n * @return {number[][]}\n */\nvar queensAttacktheKing = function(queens, king) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:06.890Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.846Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.610Z"
 }

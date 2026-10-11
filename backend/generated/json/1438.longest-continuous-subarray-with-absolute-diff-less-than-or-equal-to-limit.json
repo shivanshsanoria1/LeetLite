@@ -59,6 +59,18 @@
         "Use a sliding window approach keeping the maximum and minimum value using a data structure like a multiset from STL in C++.",
         "More specifically, use the two pointer technique, moving the right pointer as far as possible to the right until the subarray is not valid (maxValue - minValue > limit), then moving the left pointer until the subarray is valid again (maxValue - minValue <= limit). Keep repeating this process."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} limit\n * @return {number}\n */\nvar longestSubarray = function(nums, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:21.477Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.830Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.837Z"
 }

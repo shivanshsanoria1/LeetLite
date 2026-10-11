@@ -42,6 +42,18 @@
     "hints": [
         "Count number of 1s in each consecutive-1 group. For a group with n consecutive 1s, the total contribution of it to the final answer is (n + 1) * n // 2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numSub(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar numSub = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:03.778Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.990Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.943Z"
 }

@@ -55,6 +55,18 @@
         "<code>dp[mask] = min(dp[s] + dp[mask ^ s] + cost(s, mask ^ s))</code>, where <code>s</code> and <code>mask ^ s</code> are nonempty disjoint submasks whose union is <code>mask</code>",
         "Use the precomputed medians to compute costs efficiently"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minMergeCost(vector<vector<int>>& lists) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} lists\n * @return {number}\n */\nvar minMergeCost = function(lists) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:03.209Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.310Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.044Z"
 }

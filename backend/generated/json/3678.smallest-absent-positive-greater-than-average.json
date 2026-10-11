@@ -26,12 +26,12 @@
             "slug": "hash-table"
         }
     ],
-    "exampleTestcases": "[3,5]\n[-1,1,2]\n[4,-1]",
     "meta": {
         "quesIdLCBackend": 4011,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,5]\n[-1,1,2]\n[4,-1]",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Compute the average, set <code>x = floor(avg) + 1</code> (the smallest integer greater than the average).",
         "Increment <code>x</code> until it's not in the array and return it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int smallestAbsent(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar smallestAbsent = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:24.532Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.705Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.779Z"
 }

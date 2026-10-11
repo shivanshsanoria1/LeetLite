@@ -40,6 +40,18 @@
         "If there is a 0 in the array the answer is 0",
         "To avoid overflow make all the negative numbers -1 and all positive numbers 1 and calculate the prod"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int arraySign(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar arraySign = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:34.317Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.496Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.845Z"
 }

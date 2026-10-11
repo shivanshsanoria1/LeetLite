@@ -44,6 +44,18 @@
         "Use binary search to find the last number for each query (and there might be one “incomplete” number for the query).",
         "Use a similar way to find the product (we only need to save the sum of exponents of power of <code>2</code>)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findProductsOfElements(vector<vector<long long>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar findProductsOfElements = function(queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:46.779Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.982Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.982Z"
 }

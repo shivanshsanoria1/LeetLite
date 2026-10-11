@@ -36,12 +36,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[1,2,3,4,3,6,1]\n[3,4,3,4,3,4,3,4]",
     "meta": {
         "quesIdLCBackend": 3699,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4,3,6,1]\n[3,4,3,4,3,4,3,4]",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Count pairs where <code>nums[p] / nums[q]</code> equals <code>nums[s] / nums[r]</code>, using GCD to handle ratios efficiently.",
         "Try iterating over <code>(p, q)</code> pairs and efficiently count valid <code>(r, s)</code> pairs with the same ratio."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numberOfSubsequences(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar numberOfSubsequences = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:48:40.193Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.329Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.373Z"
 }

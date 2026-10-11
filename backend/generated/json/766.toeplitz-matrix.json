@@ -41,6 +41,18 @@
     "hints": [
         "Check whether each value is equal to the value of it's top-left neighbor."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isToeplitzMatrix(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {boolean}\n */\nvar isToeplitzMatrix = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:20.203Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.351Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.052Z"
 }

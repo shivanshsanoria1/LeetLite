@@ -34,12 +34,12 @@
             "slug": "segment-tree"
         }
     ],
-    "exampleTestcases": "[2,4]\n[[1,0,1,1],[2,1,1],[1,0,1,0]]\n[3,5,6]\n[[1,0,2,2],[2,1,4],[1,1,2,1],[1,0,1,0]]\n[1,2]\n[[1,0,1,1],[2,0,3],[1,0,0,1],[1,0,0,2]]",
     "meta": {
         "quesIdLCBackend": 3941,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,4]\n[[1,0,1,1],[2,1,1],[1,0,1,0]]\n[3,5,6]\n[[1,0,2,2],[2,1,4],[1,1,2,1],[1,0,1,0]]\n[1,2]\n[[1,0,1,1],[2,0,3],[1,0,0,1],[1,0,0,2]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -49,6 +49,18 @@
         "Maintain six Fenwick trees <code>fenw[0]</code> through <code>fenw[5]</code>, where <code>fenw[d]</code> stores a 1 at index <code>i</code> iff <code>depth[i] == d</code>.",
         "For an update <code>[2, idx, val]</code>, remove index idx from its old <code>fenw[old_depth]</code> and insert into <code>fenw[new_depth]</code>; for a query <code>[1, l, r, k]</code>, return <code>fenw[k].query(r) - fenw[k].query(l-1)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> popcountDepth(vector<long long>& nums, vector<vector<long long>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar popcountDepth = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:08.773Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.632Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.656Z"
 }

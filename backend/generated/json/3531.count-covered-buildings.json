@@ -30,12 +30,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "3\n[[1,2],[2,2],[3,2],[2,1],[2,3]]\n3\n[[1,1],[1,2],[2,1],[2,2]]\n5\n[[1,3],[3,2],[3,3],[3,5],[5,3]]",
     "meta": {
         "quesIdLCBackend": 3819,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "3\n[[1,2],[2,2],[3,2],[2,1],[2,3]]\n3\n[[1,1],[1,2],[2,1],[2,2]]\n5\n[[1,3],[3,2],[3,3],[3,5],[5,3]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nAccording to the problem statement, we are given a two-dimensional array `buildings` and need to count how many buildings are **covered**. A building is considered **covered** if there is at least one other coordinate in each of the four directions: left, right, up, and down. If we treat the scattered coordinates as forming an area, we are essentially counting how many of them are not located on the **edges** of that area.\n\nAll coordinates lie within an `n × n` grid, and each coordinate `(x, y)` satisfies\n`1 ≤ x ≤ n` and `1 ≤ y ≤ n`. This allows us to determine which coordinates lie on the **edges** by examining whether `x` or `y` is equal to `1` or `n` within their respective rows and columns.\n\n+ If a coordinate is the leftmost in its row, there is no coordinate to its left because all coordinates are unique; similarly, if it is the rightmost, there is no coordinate to its right.\n\n+ If a coordinate is the topmost in its column, there is no coordinate above it; if it is the bottommost, there is no coordinate below it.\n\n+ If a coordinate is neither the leftmost nor rightmost in its row, and also neither the topmost nor bottommost in its column, then it has neighbors in all four directions and is therefore covered.\n\nBased on this observation, the computation proceeds as follows:\n\n+ Traverse all building coordinates and record, for each row, the minimum and maximum `x` values, and for each column, the minimum and maximum `y` values.\n\n+ For a coordinate `(x, y)`, if `x` lies strictly between the row's minimum and maximum, and `y` lies strictly between the column's minimum and maximum, then the coordinate is covered and we increment the answer.\n\nThe final result is the value of `ans`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/E26VZtsL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"E26VZtsL\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the length of `buildings` and $n$ be the given grid size.\n\n- Time complexity: $O(m)$.\n  \n  Only two passes over the array are required.\n\n- Space complexity: $O(n)$.\n  \n  We store the minimum and maximum values for each of the `n` rows and `n` columns.\n  \n---"
@@ -45,6 +45,18 @@
         "Group buildings with the same x or y value together, and sort each group.",
         "In each sorted list, the buildings that are not at the first or last positions are covered in that direction."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCoveredBuildings(int n, vector<vector<int>>& buildings) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} buildings\n * @return {number}\n */\nvar countCoveredBuildings = function(n, buildings) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:19.590Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.547Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.546Z"
 }

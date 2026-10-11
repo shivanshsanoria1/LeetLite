@@ -41,6 +41,7 @@
         "Let dp[n] be the number of ways that n people can handshake.",
         "Then fix a person as a pivot and turn for every other person who will have a handshake, the answer is the sum of the products of the new two subproblems."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:29:52.357Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.024Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.648Z"
 }

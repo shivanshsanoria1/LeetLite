@@ -44,6 +44,18 @@
         "First process all merges at time <code>t = 0</code>. Each maximal block of robots whose consecutive gaps are at most <code>distance</code> becomes one group represented by its rightmost robot.",
         "Scan these groups from right to left, maintaining the speed of the nearest final group to the right. A faster group eventually catches it; a group with equal or lower speed remains separate and becomes the new nearest final group."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGroups(vector<int>& position, vector<int>& speed, int distance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} position\n * @param {number[]} speed\n * @param {number} distance\n * @return {number}\n */\nvar countGroups = function(position, speed, distance) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:04.455Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.986Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.346Z"
 }

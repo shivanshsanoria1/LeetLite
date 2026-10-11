@@ -41,6 +41,18 @@
         "What is the property of a number if it is divisible by both 2 and 3 at the same time?",
         "It is equivalent to finding all the numbers that are divisible by 6."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int averageValue(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar averageValue = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:55.303Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.631Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.208Z"
 }

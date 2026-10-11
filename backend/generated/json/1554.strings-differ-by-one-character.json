@@ -49,6 +49,7 @@
         "BruteForce, check all pairs and verify if they differ in one character. O(n^2 * m) where n is the number of words and m is the length of each string.",
         "O(m^2 * n), Use hashset, to insert all possible combinations adding a character \"*\". For example: If dict[i] = \"abc\", insert (\"*bc\", \"a*c\" and \"ab*\")."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:37:04.099Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.046Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.055Z"
 }

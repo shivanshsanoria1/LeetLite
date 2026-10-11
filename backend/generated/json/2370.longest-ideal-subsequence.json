@@ -46,6 +46,18 @@
         "How can you calculate the longest ideal subsequence that ends at a specific index i?",
         "Can you calculate it for all positions i? How can you use previously calculated answers to calculate the answer for the next position?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestIdealString(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar longestIdealString = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:46.145Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.456Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.111Z"
 }

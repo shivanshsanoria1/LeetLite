@@ -48,6 +48,18 @@
         "To move all balls to some box, you can move them one by one.",
         "For each box i, iterate on each ball in a box j, and add abs(i-j) to answers[i]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minOperations(string boxes) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} boxes\n * @return {number[]}\n */\nvar minOperations = function(boxes) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:39.432Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.449Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.753Z"
 }

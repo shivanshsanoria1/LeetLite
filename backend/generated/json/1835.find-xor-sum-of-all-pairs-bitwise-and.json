@@ -44,6 +44,18 @@
         "It is equal to a&(b^c). Then, (arr1[i]&arr2[0])^(arr1[i]&arr2[1]).. = arr1[i]&(arr2[0]^arr2[1]^arr[2]...).",
         "Let arr2XorSum = (arr2[0]^arr2[1]^arr2[2]...), arr1XorSum = (arr1[0]^arr1[1]^arr1[2]...) so the final answer is (arr2XorSum&arr1[0]) ^ (arr2XorSum&arr1[1]) ^ (arr2XorSum&arr1[2]) ^ ... = arr2XorSum & arr1XorSum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getXORSum(vector<int>& arr1, vector<int>& arr2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr1\n * @param {number[]} arr2\n * @return {number}\n */\nvar getXORSum = function(arr1, arr2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:47.774Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.503Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.873Z"
 }

@@ -42,6 +42,18 @@
         "Merge the overlapping meetings and sort the new meetings timings.",
         "Return the sum of difference between the end time of a meeting and the start time of the next meeting for all adjacent pairs."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countDays(int days, vector<vector<int>>& meetings) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} days\n * @param {number[][]} meetings\n * @return {number}\n */\nvar countDays = function(days, meetings) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:04.916Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.010Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.163Z"
 }

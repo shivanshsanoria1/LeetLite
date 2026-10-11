@@ -54,6 +54,18 @@
         "We can use dynamic programming to solve this problem. What can we use as states?",
         "Let dp[i][j][value] represent the number of paths where the sum of the elements on the path has a remainder of value when divided by k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfPaths(vector<vector<int>>& grid, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number}\n */\nvar numberOfPaths = function(grid, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:39.328Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.563Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.185Z"
 }

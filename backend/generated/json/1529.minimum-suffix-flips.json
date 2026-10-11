@@ -40,6 +40,18 @@
     "hints": [
         "Consider a strategy where the choice of bulb with number i is increasing. In such a strategy, you no longer need to worry about bulbs that have been set to the left."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minFlips(string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} target\n * @return {number}\n */\nvar minFlips = function(target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:21.801Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.029Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.972Z"
 }

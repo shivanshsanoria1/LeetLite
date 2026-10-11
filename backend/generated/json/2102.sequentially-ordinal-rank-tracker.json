@@ -54,6 +54,18 @@
         "Every time when add is being called, we add it to the left heap. If the size of the left heap exceeds k + 1, we move the head element to the right heap.",
         "When the get method is invoked again (the k + 1 time it is invoked), we can return the head element of the left heap. But before returning it, if the right heap is not empty, we maintain the left heap to have the best k + 2 items by moving the best location from the right heap to the left heap."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class SORTracker {\npublic:\n    SORTracker() {\n        \n    }\n    \n    void add(string name, int score) {\n        \n    }\n    \n    string get() {\n        \n    }\n};\n\n/**\n * Your SORTracker object will be instantiated and called as such:\n * SORTracker* obj = new SORTracker();\n * obj->add(name,score);\n * string param_2 = obj->get();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar SORTracker = function() {\n    \n};\n\n/** \n * @param {string} name \n * @param {number} score\n * @return {void}\n */\nSORTracker.prototype.add = function(name, score) {\n    \n};\n\n/**\n * @return {string}\n */\nSORTracker.prototype.get = function() {\n    \n};\n\n/** \n * Your SORTracker object will be instantiated and called as such:\n * var obj = new SORTracker()\n * obj.add(name,score)\n * var param_2 = obj.get()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:22.097Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.065Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.584Z"
 }

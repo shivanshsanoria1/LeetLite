@@ -38,6 +38,18 @@
     "hints": [
         "Use conditional statements to find the right category of the box."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string categorizeBox(int length, int width, int height, int mass) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} length\n * @param {number} width\n * @param {number} height\n * @param {number} mass\n * @return {string}\n */\nvar categorizeBox = function(length, width, height, mass) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:49.736Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.792Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.317Z"
 }

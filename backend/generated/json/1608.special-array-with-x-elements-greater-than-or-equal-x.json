@@ -44,6 +44,18 @@
         "Count the number of elements greater than or equal to x for each x in the range [0, nums.length].",
         "If for any x, the condition satisfies, return that x. Otherwise, there is no answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int specialArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar specialArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:40.235Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.193Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.165Z"
 }

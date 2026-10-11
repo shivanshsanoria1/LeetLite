@@ -43,6 +43,18 @@
     "hints": [
         "Check primality for all prefixes and all suffixes of <code>num</code> and return true only if every one is prime."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool completePrime(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {boolean}\n */\nvar completePrime = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:22.356Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.116Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.986Z"
 }

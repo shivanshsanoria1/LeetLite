@@ -47,6 +47,18 @@
         "Update <code>dp[i][j][c]</code> from <code>(i-1,j)</code> and <code>(i,j-1)</code> using <code>cost = (grid[i][j] == 0 ? 0 : 1)</code> and <code>score = grid[i][j]</code>.",
         "Answer = <code>max(dp[m-1][n-1][c])</code> for <code>c=0..k</code>, or <code>-1</code> if none."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxPathScore(vector<vector<int>>& grid, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number}\n */\nvar maxPathScore = function(grid, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:00.948Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.982Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.951Z"
 }

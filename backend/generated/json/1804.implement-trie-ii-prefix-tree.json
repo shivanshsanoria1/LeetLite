@@ -52,6 +52,7 @@
         "To implement the delete function, you should delete the trie nodes of the word if they are not shared with other words.",
         "You should keep for each trie node a counter of how many words share this node."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:54:16.912Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.486Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.798Z"
 }

@@ -36,12 +36,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[[1,3,2],[4,5,2],[1,5,5],[6,9,3],[6,7,1],[8,9,1]]\n[[5,8,1],[6,7,7],[4,7,3],[9,10,6],[7,8,2],[11,14,3],[3,5,5]]",
     "meta": {
         "quesIdLCBackend": 3562,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,3,2],[4,5,2],[1,5,5],[6,9,3],[6,7,1],[8,9,1]]\n[[5,8,1],[6,7,7],[4,7,3],[9,10,6],[7,8,2],[11,14,3],[3,5,5]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Dynamic Programming + Binary Search\n\n#### Intuition\n\nThis problem is closely related to [1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/description/). The key differences are that the maximum number of intervals is fixed at $4$ (equivalent to $k = 4$ in Problem 1751), and among all valid selections that achieve the maximum score, we must return the one with the lexicographically smallest list of indices.\n\nThe score for selecting interval $i$ is $\\textit{weight}_i$. We need to select at most $4$ **non-overlapping** intervals such that their total score is **maximized** and their index list is **lexicographically smallest**. Because intervals cannot overlap and we can choose at most $4$ of them, this problem is a variation of **weighted interval scheduling** (or 0/1 knapsack with non-overlapping constraints), which can be solved using dynamic programming.\n\nFirst, pair each interval with its original index $i$, then sort all intervals in $\\textit{intervals}$ by their right endpoints in ascending order. Define $\\textit{dp}[i][j]$ as the maximum total score obtained by selecting **at most** $j$ non-overlapping intervals among the first $i$ intervals, where $i \\in [0, n]$ and $j \\in [0, 4]$. Concurrently, let $\\textit{indices}[i][j]$ store the corresponding sorted list of original indices, allowing us to resolve ties via lexicographical comparison when two choices produce equal scores. We obtain the following transitions:\n\n- If interval $i$ is not selected, the maximum score obtained by selecting $j$ **non-overlapping** intervals among the first $i$ intervals equals the maximum score obtained by selecting $j$ **non-overlapping** intervals among the first $i-1$ intervals. Thus,\n\n  $$\n  \\textit{dp}[i][j] = \\textit{dp}[i-1][j]\n  $$\n\n- If interval $i$ is selected, any preceding intervals must end strictly before $l_i$ to avoid overlapping. Because the intervals are sorted by their right endpoints in ascending order, all candidate intervals ending strictly before $l_i$ form a prefix of the sorted array. Let $p$ be the count of such intervals. From these, we can select at most $j - 1$ non-overlapping intervals. Thus:\r\n\n  $$\n  \\textit{dp}[i][j] = \\textit{dp}[p][j-1] + \\textit{weight}_i\n  $$\n\n- Combining the two cases, we obtain\n\n  $$\n  \\textit{dp}[i][j] = \\max(\\textit{dp}[i-1][j],\\ \\textit{dp}[p][j-1] + \\textit{weight}_i)\n  $$\n\nSince all intervals are sorted by their right endpoints, given the left endpoint $l_i$, binary search can find the number of intervals $p$ whose right endpoints are smaller than $l_i$. We enumerate $(i, j)$ in increasing order. While computing the state $\\textit{dp}[i][j]$, we also record the currently selected interval indices in $\\textit{indices}[i][j]$. Specifically:\n\n- Maintain a sorted index list for each state.\n- When the scores of both choices are equal, compare the two index lists lexicographically and select the smaller one.\n\nAfter the enumeration is complete, the maximum score is $\\textit{dp}[n][4]$, and the optimal index array is $\\textit{indices}[n][4]$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/C9eixKh2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"C9eixKh2\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{intervals}$, and let $k = 4$.\n\n- Time complexity: $O(n \\log n + nk^2)$.\n\n  Sorting the intervals takes $O(n \\log n)$ time. For each interval, finding the non-overlapping prefix via binary search takes $O(\\log n)$ time, totaling $O(n \\log n)$ across all intervals. There are $O(nk)$ dynamic programming states, and maintaining each index list takes $O(k)$ time. Therefore, the total time complexity is $O(n \\log n + nk^2)$.\n\n- Space complexity: $O(nk^2)$.\n\n  An array of length $O(n)$ is required to store the sorted intervals. There are $O(nk)$ dynamic programming states, and storing the index list for each state requires $O(k)$ space. Therefore, the total space complexity is $O(nk^2)$.\n\n---"
@@ -54,6 +54,18 @@
         "<code>dp[r][i] = max(dp[r][i - 1], intervals[i][2] + dp[r][j])</code> where <code>j</code> is the largest index such that <code>intervals[j][1] < intervals[i][0]</code>.",
         "Since <code>intervals</code> is sorted by right boundary, we can find index <code>j</code> using binary search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maximumWeight(vector<vector<int>>& intervals) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} intervals\n * @return {number[]}\n */\nvar maximumWeight = function(intervals) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:20.354Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.353Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.380Z"
 }

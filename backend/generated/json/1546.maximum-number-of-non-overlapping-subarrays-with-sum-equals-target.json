@@ -47,6 +47,18 @@
         "Keep track of prefix sums to quickly look up what subarray that sums \"target\" can be formed at each step of scanning the input array.",
         "It can be proved that greedily forming valid subarrays as soon as one is found is optimal."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNonOverlapping(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar maxNonOverlapping = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:54.470Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.040Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.040Z"
 }

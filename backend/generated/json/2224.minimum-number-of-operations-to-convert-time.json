@@ -43,6 +43,18 @@
         "Convert the times to minutes.",
         "Use the operation with the biggest value possible at each step."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int convertTime(string current, string correct) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} current\n * @param {string} correct\n * @return {number}\n */\nvar convertTime = function(current, correct) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:45.347Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.265Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.854Z"
 }

@@ -45,6 +45,18 @@
     "hints": [
         "Do a breadth first search to find the shortest path."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int shortestPathBinaryMatrix(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar shortestPathBinaryMatrix = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:48.334Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.104Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.390Z"
 }

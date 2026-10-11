@@ -51,6 +51,18 @@
         "Use binary search to find smallest maximum element.",
         "Add numbers divisible by x in nums2 and vice versa."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} divisor1\n * @param {number} divisor2\n * @param {number} uniqueCnt1\n * @param {number} uniqueCnt2\n * @return {number}\n */\nvar minimizeSet = function(divisor1, divisor2, uniqueCnt1, uniqueCnt2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:40.416Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.769Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.301Z"
 }

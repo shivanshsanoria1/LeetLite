@@ -38,6 +38,18 @@
     "hints": [
         "Do the filtering and sort as said. Note that the id may not be the index in the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> filterRestaurants(vector<vector<int>>& restaurants, int veganFriendly, int maxPrice, int maxDistance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} restaurants\n * @param {number} veganFriendly\n * @param {number} maxPrice\n * @param {number} maxDistance\n * @return {number[]}\n */\nvar filterRestaurants = function(restaurants, veganFriendly, maxPrice, maxDistance) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:49.508Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.527Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.722Z"
 }

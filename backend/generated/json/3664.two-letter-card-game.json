@@ -38,12 +38,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"\n[\"aa\",\"ab\",\"ba\"]\n\"a\"\n[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"b\"",
     "meta": {
         "quesIdLCBackend": 3877,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"\n[\"aa\",\"ab\",\"ba\"]\n\"a\"\n[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"b\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -53,6 +53,18 @@
         "Let <code>solve(cnt, have)</code> be the maximum pairs you can form from one‐sided counts <code>cnt</code> plus <code>have</code> two‐sided cards by sorting <code>cnt</code>, computing the total, and applying the same logic as in the solution.",
         "Return the maximum over <code>i = 0..both</code> of <code>solve(cnt1, i) + solve(cnt2, both - i)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int score(vector<string>& cards, char x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} cards\n * @param {character} x\n * @return {number}\n */\nvar score = function(cards, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:01:53.085Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.697Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.742Z"
 }

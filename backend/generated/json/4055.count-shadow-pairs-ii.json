@@ -66,6 +66,18 @@
         "<p>A pair crossing the split is valid exactly when <code>c[j] &lt;= nums[i] &lt; nums[j] &lt;= b[i]</code>.</p>",
         "<p>Process right endpoints in increasing order of <code>nums[j]</code>. Use a Fenwick tree over compressed values to maintain left endpoints satisfying <code>nums[i] &lt; nums[j] &lt;= b[i]</code>, then count those with <code>nums[i] &gt;= c[j]</code>. This gives an overall <code>O(n log<sup>2</sup> n)</code> solution.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int shadowPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar shadowPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:14.055Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.994Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.358Z"
 }

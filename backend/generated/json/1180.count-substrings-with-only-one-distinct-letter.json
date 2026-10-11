@@ -41,6 +41,7 @@
         "Now that you have sub-strings with only one distinct character, Try to come up with a formula that counts the number of its sub-strings.",
         "Alternatively, Observe that the constraints are small so you can use brute force."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:28:17.534Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.547Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.571Z"
 }

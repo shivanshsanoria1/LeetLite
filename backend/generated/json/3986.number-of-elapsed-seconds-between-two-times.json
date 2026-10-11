@@ -40,6 +40,18 @@
         "<p>Convert each time into the total number of seconds since <code>00:00:00</code>.</p>",
         "<p>The answer is the difference between the two converted values.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int secondsBetweenTimes(string startTime, string endTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} startTime\n * @param {string} endTime\n * @return {number}\n */\nvar secondsBetweenTimes = function(startTime, endTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:40.708Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.977Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.247Z"
 }

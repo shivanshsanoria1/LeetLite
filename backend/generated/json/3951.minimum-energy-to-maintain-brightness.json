@@ -42,6 +42,18 @@
         "One bulb can illuminate at most 3 positions, except near the boundaries. So the answer is essentially <code>ceil(brightness / 3)</code>.",
         "Merge all overlapping intervals to compute the total number of active time units."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minEnergy(int n, int brightness, vector<vector<int>>& intervals) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} brightness\n * @param {number[][]} intervals\n * @return {number}\n */\nvar minEnergy = function(n, brightness, intervals) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:04.336Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.929Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.221Z"
 }

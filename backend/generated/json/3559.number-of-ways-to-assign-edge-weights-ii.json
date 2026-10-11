@@ -42,12 +42,12 @@
             "slug": "depth-first-search"
         }
     ],
-    "exampleTestcases": "[[1,2]]\n[[1,1],[1,2]]\n[[1,2],[1,3],[3,4],[3,5]]\n[[1,4],[3,4],[2,5]]",
     "meta": {
         "quesIdLCBackend": 3842,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,2]]\n[[1,1],[1,2]]\n[[1,2],[1,3],[3,4],[3,5]]\n[[1,4],[3,4],[2,5]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Lowest Common Ancestor $\\text{LCA}$ + Mathematics\n\n#### Intuition\n\nThis problem is an advanced version of \"[3558. Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/description/)\" and imposes stricter time complexity requirements. Therefore, we need a more efficient way to compute the distance between two nodes in the tree.\n\nThe distance between two nodes in a tree can be computed by first finding their lowest common ancestor (LCA) and then applying the inclusion-exclusion principle. Let $d[x]$ denote the distance from node $x$ to the root, and let $\\textit{lca}$ be the lowest common ancestor of nodes $x$ and $y$. Then the distance between $x$ and $y$ is: $d[x] + d[y] - 2 \\times d[\\textit{lca}]$.\n\nTo efficiently compute the LCA of two nodes, we can use the binary lifting technique. We precompute the $2^k$-th ancestor of every node, where $f[x][k]$ represents the ancestor reached by moving $2^k$ steps upward from node $x$. The table can be filled using the recurrence: $f[x][k] = f[f[x][k - 1]][k - 1]$\n\nTo answer an LCA query, we first lift the deeper node until both nodes are at the same depth. Then, we simultaneously lift both nodes using binary jumps until their ancestors diverge. The parent of the resulting nodes is their lowest common ancestor.\n\nOnce we know the distance between two nodes, denoted by $\\textit{dis}$, we can apply the result from 3558. Number of Ways to Assign Edge Weights I. The number of ways to choose an odd number of edges along a path of length $\\textit{dis}$ is: $2^{\\textit{dis} - 1}$.\n\nSince the maximum possible value of $\\textit{dis}$ is bounded by the number of nodes, we can precompute all powers of two from $2^0$ to $2^n$ and answer each query with a simple lookup.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/585FNjkW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"585FNjkW\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of nodes in the tree, and let $m$ be the number of queries.\n\n- Time complexity: $O(n \\log n + m \\log n)$.\n  \n  Building the binary lifting table requires $O(n \\log n)$ time. Each LCA query takes $O(\\log n)$ time, resulting in a total query cost of $O(m \\log n)$.\n\n- Space complexity: $O(n \\log n)$.\n  \n  The binary lifting table stores $O(\\log n)$ ancestors for each node, requiring $O(n \\log n)$ space.\n\n---"
@@ -57,6 +57,18 @@
         "Dynamic programming with states <code>chainLength</code> and <code>sumParity</code>.",
         "Use Lowest Common Ancestor to find the distance between any two nodes quickly in <code>O(logn)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> assignEdgeWeights(vector<vector<int>>& edges, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar assignEdgeWeights = function(edges, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:54.208Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.562Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.564Z"
 }

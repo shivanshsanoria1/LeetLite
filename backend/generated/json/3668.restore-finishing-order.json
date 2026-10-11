@@ -26,12 +26,12 @@
             "slug": "hash-table"
         }
     ],
-    "exampleTestcases": "[3,1,2,5,4]\n[1,3,4]\n[1,4,5,3,2]\n[2,5]",
     "meta": {
         "quesIdLCBackend": 4008,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,1,2,5,4]\n[1,3,4]\n[1,4,5,3,2]\n[2,5]",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Use a hash set for quick friend lookups from <code>friends</code>.",
         "Iterate over <code>order</code>, checking the set to collect your friends in finishing order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> recoverOrder(vector<int>& order, vector<int>& friends) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} order\n * @param {number[]} friends\n * @return {number[]}\n */\nvar recoverOrder = function(order, friends) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:09:30.247Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.700Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.748Z"
 }

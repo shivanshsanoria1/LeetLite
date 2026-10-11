@@ -34,12 +34,12 @@
             "slug": "heap-priority-queue"
         }
     ],
-    "exampleTestcases": "[1,3,2]\n2\n[4,2,5,1]\n3",
     "meta": {
         "quesIdLCBackend": 4007,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,3,2]\n2\n[4,2,5,1]\n3",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Sparse Table + Max Heap\n\n#### Intuition\n\nThis problem is an advanced version of \"[3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/)\", with the additional requirement that we must select $k$ different subarrays.\n\nFor a fixed left endpoint $l$, as the right endpoint $r$ increases, the maximum value in the subarray $\\textit{nums}[l..r]$ can only increase (or remain unchanged), while the minimum value can only decrease (or remain unchanged). Therefore, the subarray value $\\max(\\textit{nums}[l..r]) - \\min(\\textit{nums}[l..r])$ is monotonically non-decreasing.\n\nFor each left endpoint $l$, this gives us a monotonically increasing sequence of length $n-l$, where the $i$-th element represents the value of $\\textit{nums}[l..l+i]$, namely $\\max(\\textit{nums}[l..l+i]) - \\min(\\textit{nums}[l..l+i])$.\n\nThe problem can therefore be reformulated as follows:\n> Given $n$ monotonically increasing sequences, find the sum of the largest $k$ elements across all sequences.\n\nFor example, if $\\textit{nums} = [3,1,4,1]$, then the sequence corresponding to $l = 1$ is $[0,3,3]$ (representing the values of subarrays $[1]$, $[1,4]$, and $[1,4,1]$). Similarly, the sequence corresponding to $l = 2$ is $[0,3]$, and so on.\n\nSince the last element of each sequence is its maximum value, we can efficiently extract the global maximum using a max heap. Whenever we remove the current maximum element from a sequence, the next candidate from that sequence is simply the previous element.\n\nThus, we can solve this subproblem using a max heap:\n\n1. Initially, insert the last element of every sequence (corresponding to $r = n - 1$), together with its coordinates $(l, r)$, into the max heap.\n2. Repeat $k$ times:\n  - Remove the top element $(v, l, r)$ from the heap.\n  - Add $v$ to the answer.\n  - If $r > l$, insert the previous element from the same sequence, namely $(l, r - 1)$.\n\nTo evaluate the value of any subarray $[l, r]$ efficiently, we need to query its maximum and minimum values. We can preprocess a sparse table (ST table) to support these queries in $O(1)$ time.\n\nThe sparse table stores:\n- $stMax[i][j]$: the maximum value in the interval starting at index $i$ with length $2^j$.\n- $stMin[i][j]$: the minimum value in the interval starting at index $i$ with length $2^j$.\n\nTo query an interval $[l, r]$, let $j = \\lfloor\\log_2(r-l+1)\\rfloor$\n\nThe interval can then be covered by two overlapping intervals of length $2^j$, allowing us to compute the maximum and minimum values in $O(1)$ time. Building the sparse table requires $O(n \\log n)$ preprocessing time.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/MA7yHkkD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MA7yHkkD\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$, and let $k$ be the number of selected non-empty subarrays.\n\n- Time complexity: $O(n \\log n + k \\log n)$.\n  \n  Building the sparse table requires $O(n \\log n)$ time. Initializing the heap requires $O(n \\log n)$ time. Each heap insertion and removal operation takes $O(\\log n)$ time, and we perform at most $k$ such iterations.\n\n- Space complexity: $O(n \\log n)$.\n  \n  The sparse table requires $O(n \\log n)$ space, while the heap requires $O(n)$ space.\n\n---\n\n### Approach 2: Segment Tree + Max Heap\n\n#### Intuition\n\nApproach 1 uses a sparse table to support $O(1)$ range maximum and minimum queries, but it requires $O(n \\log n)$ preprocessing space. Alternatively, we can replace the sparse table with a segment tree, reducing the space complexity to $O(n)$.\n\nA segment tree is a binary tree structure in which each node stores the maximum and minimum values of its corresponding interval. It supports range maximum and minimum queries in $O(\\log n)$ time.\n\nThe overall algorithm remains the same as in Approach 1:\n\n1. Build a segment tree that stores the maximum and minimum values for every interval.\n2. For each left endpoint $l$, insert the value of the subarray $\\textit{nums}[l..n-1]$ into a max heap.\n3. Repeat $k$ times:\n  - Remove the top element from the heap.\n  - Add its value to the answer.\n  - If $r > l$, insert the value of $\\textit{nums}[l..r-1]$ into the heap.\n\nThe only difference from Approach 1 is that interval maximum and minimum queries are now performed using the segment tree instead of the sparse table.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Gub5SZhK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Gub5SZhK\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$, and let $k$ be the number of selected non-empty subarrays.\n\n- Time complexity: $O((n + k) \\log n)$.\n  \n  Building the segment tree requires $O(n)$ time. Each interval query requires $O(\\log n)$ time. We perform a total of $O(n + k)$ interval queries, and all heap operations together require $O((n + k)\\log n)$ time.\n\n- Space complexity: $O(n)$.\n  \n  Both the segment tree and the heap require $O(n)$ space.\n\n---"
@@ -50,6 +50,18 @@
         "Build RMQs (sparse tables) for range max/min so each <code>v(l,r)</code> is queryable in <code>O(1)</code>.",
         "Use a max-heap with <code>v(l,n-1)</code> for all <code>l</code>; pop the largest <code>k</code> times, and after popping an entry from <code>(l,r)</code> push <code>(l,r-1)</code> if <code>r>l</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxTotalValue(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxTotalValue = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:57.072Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.713Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.807Z"
 }

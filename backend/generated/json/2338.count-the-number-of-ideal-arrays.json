@@ -60,6 +60,18 @@
         "Consider an alternative problem: where an ideal array must also be strictly increasing. Can you use DP to solve it?",
         "Will combinatorics help to get an answer from the alternative problem to the actual problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int idealArrays(int n, int maxValue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} maxValue\n * @return {number}\n */\nvar idealArrays = function(n, maxValue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:20.901Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.430Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.067Z"
 }

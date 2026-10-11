@@ -46,6 +46,18 @@
         "Since both arrays are sorted in a non-increasing way, this means that for each value in the first array, we can find the farthest value larger than or equal to it using binary search.",
         "There is another solution using a two pointers approach. Since the first array is non-increasing, the farthest <code>j</code> such that <code>nums2[j] ≥ nums1[i]</code> is at least as far as the farthest <code>j</code> such that <code>nums2[j] ≥ nums1[i-1]</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDistance(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar maxDistance = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:07.332Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.517Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.898Z"
 }

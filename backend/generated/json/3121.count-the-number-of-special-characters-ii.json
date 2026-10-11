@@ -43,6 +43,18 @@
     "hints": [
         "For each character <code>c</code>, store the first occurrence of its uppercase and the last occurrence of its lowercase."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfSpecialChars(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar numberOfSpecialChars = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:25.983Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.938Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.890Z"
 }

@@ -44,6 +44,18 @@
         "Use dynamic programming to solve this problem with each state defined by the city index and fuel left.",
         "Since the array contains distinct integers fuel will always be spent in each move and so there can be no cycles."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countRoutes(vector<int>& locations, int start, int finish, int fuel) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} locations\n * @param {number} start\n * @param {number} finish\n * @param {number} fuel\n * @return {number}\n */\nvar countRoutes = function(locations, start, finish, fuel) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:28.098Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.060Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.089Z"
 }

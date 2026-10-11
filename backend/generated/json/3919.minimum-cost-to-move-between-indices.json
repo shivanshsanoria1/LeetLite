@@ -45,6 +45,18 @@
         "Precompute prefix sums of these costs in both directions.",
         "For each query, compare the cost of walking along closest edges vs making a direct jump."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minCost(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar minCost = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:26.908Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.851Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.182Z"
 }

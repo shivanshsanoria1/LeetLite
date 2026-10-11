@@ -56,6 +56,18 @@
         "Find the parent of each node.",
         "A valid tree must have nodes with only one parent and exactly one node with no parent."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} leftChild\n * @param {number[]} rightChild\n * @return {boolean}\n */\nvar validateBinaryTreeNodes = function(n, leftChild, rightChild) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:27.505Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.731Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.771Z"
 }

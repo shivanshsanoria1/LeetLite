@@ -53,6 +53,18 @@
         "How can we use this to determine the number of subarrays with score less than k in a given range?",
         "How can we use “Two Pointers” to generalize the solution, and thus count all possible subarrays?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countSubarrays(vector<int>& nums, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countSubarrays = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:50.584Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.401Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.017Z"
 }

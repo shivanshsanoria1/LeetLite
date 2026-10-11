@@ -42,6 +42,18 @@
         "If <code>x % 3 != 0</code> we can always increment or decrement <code>x</code> such that we only need 1 operation.",
         "Add <code>min(nums[i] % 3, 3 - (nums[i] % 3))</code> to the count of operations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:22.330Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.027Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.274Z"
 }

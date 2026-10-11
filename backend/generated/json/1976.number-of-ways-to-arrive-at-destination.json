@@ -56,6 +56,18 @@
         "First use any shortest path algorithm to get edges where dist[u] + weight = dist[v], here dist[x] is the shortest distance between node 0 and x",
         "Using those edges only the graph turns into a dag now we just need to know the number of ways to get from node 0 to node n - 1 on a dag using dp"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPaths(int n, vector<vector<int>>& roads) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} roads\n * @return {number}\n */\nvar countPaths = function(n, roads) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:32.336Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.807Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.097Z"
 }

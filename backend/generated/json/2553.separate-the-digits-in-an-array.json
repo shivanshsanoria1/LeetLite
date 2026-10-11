@@ -43,6 +43,18 @@
         "Convert each number into a list and append that list to the answer.",
         "You can convert the integer into a string to do that easily."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> separateDigits(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar separateDigits = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:13.389Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.140Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.343Z"
 }

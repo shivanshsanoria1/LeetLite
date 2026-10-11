@@ -48,6 +48,18 @@
     "hints": [
         "Use Dijkstra’s algorithm, but only visit nodes if you can reach them before disappearance."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minimumTime(int n, vector<vector<int>>& edges, vector<int>& disappear) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} disappear\n * @return {number[]}\n */\nvar minimumTime = function(n, edges, disappear) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:19.018Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.933Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.844Z"
 }

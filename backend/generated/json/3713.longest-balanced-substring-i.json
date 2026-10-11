@@ -34,12 +34,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "\"abbac\"\n\"zzabccy\"\n\"aba\"",
     "meta": {
         "quesIdLCBackend": 4055,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abbac\"\n\"zzabccy\"\n\"aba\"",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe can enumerate all possible substrings and determine the longest one that is balanced.\n\nSpecifically:\n\n- We enumerate the left endpoint $i$ of the substring and then enumerate the right endpoint $j$, where $i \\le j < n$.\n- While extending the right endpoint, we maintain a frequency table $\\textit{cnt}$ to count the occurrences of each character in the current substring.\n- For each substring $[i, j]$, we iterate through $\\textit{cnt}$ and check whether all characters that appear in the substring have the same frequency. If this condition is satisfied, we update the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/cqG6owci/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"cqG6owci\"></iframe>\n\n#### Complexity Analysis\n\nLet $C$ be the size of the character set, which is $26$ in this case, and let $n$ be the length of the string $s$.\n\n- Time complexity: $O(Cn^2)$.\n  \n  Enumerating all substrings takes $O(n^2)$ time, and checking whether a substring is balanced takes $O(C)$ time.\n\n- Space complexity: $O(C)$.\n\n---"
@@ -48,6 +48,18 @@
     "hints": [
         "Use bruteforce over all substrings"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestBalanced(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestBalanced = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:50:17.033Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.737Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.885Z"
 }

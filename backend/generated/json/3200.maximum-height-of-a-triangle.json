@@ -39,6 +39,18 @@
         "Count the max height using both possibilities. That is, red ball as top and blue ball as top.",
         "For counting the max height, use a simple for loop and remove the number of balls required at this level."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxHeightOfTriangle(int red, int blue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} red\n * @param {number} blue\n * @return {number}\n */\nvar maxHeightOfTriangle = function(red, blue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:29.914Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.038Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.326Z"
 }

@@ -55,6 +55,18 @@
         "You can use prefix sums so the sum of any <code>nums[l..r]</code> can be computed in constant time. Alternatively, you can enumerate the starting index <code>i</code>, then extend the ending index <code>j</code> while maintaining the running sum of <code>nums[i..j]</code>.",
         "For each subarray sum, check whether its last digit is <code>x</code>, then repeatedly divide by 10 to get its first digit."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countValidSubarrays(vector<int>& nums, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} x\n * @return {number}\n */\nvar countValidSubarrays = function(nums, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:22.253Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.964Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.237Z"
 }

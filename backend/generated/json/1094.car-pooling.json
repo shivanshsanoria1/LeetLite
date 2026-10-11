@@ -53,6 +53,18 @@
     "hints": [
         "Sort the pickup and dropoff events by location, then process them in order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool carPooling(vector<vector<int>>& trips, int capacity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} trips\n * @param {number} capacity\n * @return {boolean}\n */\nvar carPooling = function(trips, capacity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:50.459Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.118Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.393Z"
 }

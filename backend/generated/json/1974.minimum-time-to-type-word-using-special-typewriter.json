@@ -41,6 +41,18 @@
         "There are only two possible directions you can go when you move to the next letter.",
         "When moving to the next letter, you will always go in the direction that takes the least amount of time."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minTimeToType(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar minTimeToType = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:30.490Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.805Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.091Z"
 }

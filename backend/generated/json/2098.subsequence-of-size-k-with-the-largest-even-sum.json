@@ -48,6 +48,7 @@
         "If there is an even number of odd numbers, the sum will be even and vice versa.",
         "Create an integer array to store all the even numbers in nums and another array to store all the odd numbers in nums. Sort both arrays."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:05:19.229Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.060Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.563Z"
 }

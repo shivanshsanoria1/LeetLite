@@ -33,6 +33,13 @@
         "You can compare an object's __proto__ with classFunction.prototype.",
         "Traverse the entire prototype chain until you find a match."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {*} obj\n * @param {*} classFunction\n * @return {boolean}\n */\nvar checkIfInstanceOf = function(obj, classFunction) {\n    \n};\n\n/**\n * checkIfInstanceOf(new Date(), Date); // true\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:08.375Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.256Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.410Z"
 }

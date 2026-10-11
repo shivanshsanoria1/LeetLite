@@ -62,6 +62,18 @@
         "Find the path strings from root → s, and root → t. Can you use these two strings to prepare the final answer?",
         "Remove the longest common prefix of the two path strings to get the path LCA → s, and LCA → t. Each step in the path of LCA → s should be reversed as 'U'."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    string getDirections(TreeNode* root, int startValue, int destValue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} startValue\n * @param {number} destValue\n * @return {string}\n */\nvar getDirections = function(root, startValue, destValue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:17.801Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.058Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.559Z"
 }

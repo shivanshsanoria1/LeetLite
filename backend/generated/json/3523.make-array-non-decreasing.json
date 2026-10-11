@@ -34,12 +34,12 @@
             "slug": "monotonic-stack"
         }
     ],
-    "exampleTestcases": "[4,2,5,3,5]\n[1,2,3]",
     "meta": {
         "quesIdLCBackend": 3738,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[4,2,5,3,5]\n[1,2,3]",
     "solution": {
         "canSeeDetail": false
     },
@@ -48,6 +48,18 @@
         "Iterate backwards.",
         "Can you remove the largest element in the array? Is that ever helpful?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumPossibleSize(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maximumPossibleSize = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:09.142Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.543Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.542Z"
 }

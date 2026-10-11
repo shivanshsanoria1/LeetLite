@@ -46,6 +46,18 @@
         "Try solving the problem for one interval.",
         "Using the solution with one interval, how can you combine that with a second interval?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximizeWin(vector<int>& prizePositions, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} prizePositions\n * @param {number} k\n * @return {number}\n */\nvar maximizeWin = function(prizePositions, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:15.235Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.142Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.346Z"
 }

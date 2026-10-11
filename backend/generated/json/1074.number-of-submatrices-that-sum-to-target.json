@@ -49,6 +49,18 @@
     "hints": [
         "Using a 2D prefix sum, we can query the sum of any submatrix in O(1) time.\r\nNow for each (r1, r2), we can find the largest sum of a submatrix that uses every row in [r1, r2] in linear time using a sliding window."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @param {number} target\n * @return {number}\n */\nvar numSubmatrixSumTarget = function(matrix, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:35.098Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.079Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.377Z"
 }

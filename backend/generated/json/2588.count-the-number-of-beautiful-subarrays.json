@@ -51,6 +51,18 @@
         "Compute the prefix xor for every index, then the xor of subarray [left, right] is equal to zero if prefix_xor[left] ^ perfix_xor[right] == 0",
         "Iterate from left to right and maintain a hash table to count the number of indices equal to the current prefix xor."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long beautifulSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar beautifulSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:42.919Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.173Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.387Z"
 }

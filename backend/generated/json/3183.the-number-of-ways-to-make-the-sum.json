@@ -57,6 +57,7 @@
         "We can calculate <code>dp[i][x]</code> as the sum of <code>dp[i - 1][x]</code> and <code>dp[i][x - coin[i]]</code>.",
         "Remember that 4 can at most be multiplied twice, so we calculate the <code>dp</code> for our infinite coins and then manually handle the existence of 4."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:57:16.387Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.022Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.240Z"
 }

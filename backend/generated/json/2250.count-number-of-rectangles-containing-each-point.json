@@ -54,6 +54,18 @@
         "For a given point and height, can we efficiently count how many rectangles with that height contain our point?",
         "Sort the rectangles at each height and use binary search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countRectangles(vector<vector<int>>& rectangles, vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} rectangles\n * @param {number[][]} points\n * @return {number[]}\n */\nvar countRectangles = function(rectangles, points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:06.346Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.299Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.942Z"
 }

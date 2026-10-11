@@ -39,6 +39,18 @@
         "Which triplets do you actually care about?",
         "What property of max can you use to solve the problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool mergeTriplets(vector<vector<int>>& triplets, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} triplets\n * @param {number[]} target\n * @return {boolean}\n */\nvar mergeTriplets = function(triplets, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:59.311Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.704Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.939Z"
 }

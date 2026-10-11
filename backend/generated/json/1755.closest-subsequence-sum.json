@@ -66,6 +66,18 @@
         "Consider all subsets of one part and make a list of all possible subset sums and sort this list.",
         "Consider all subsets of the other part, and for each one, let its sum = x, do binary search to get the nearest possible value to goal - x in the first part."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minAbsDifference(vector<int>& nums, int goal) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} goal\n * @return {number}\n */\nvar minAbsDifference = function(nums, goal) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:22.003Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.423Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.712Z"
 }

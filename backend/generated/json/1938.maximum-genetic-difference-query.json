@@ -53,6 +53,18 @@
         "How can we use a trie to store all the XOR values in the path from a node to the root?",
         "How can we dynamically add the XOR values with a DFS search?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxGeneticDifference(vector<int>& parents, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} parents\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar maxGeneticDifference = function(parents, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:58.950Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.776Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.010Z"
 }

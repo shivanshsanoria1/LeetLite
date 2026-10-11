@@ -34,6 +34,18 @@
         "<p>Let <code>P[t]</code> be the alternating sum of the first <code>t</code> elements, with <code>P[0] = 0</code>. The change in pulse value is <code>2 * (P[l + 1] - P[r + 1])</code> when <code>l</code> and <code>r</code> have the same parity, and <code>2 * (P[l] - P[r + 1])</code> otherwise.</p>",
         "<p>Scan <code>r</code> from left to right. Among indices <code>l &lt; r</code>, maintain the maximum values of <code>P[l]</code> and <code>P[l + 1]</code> separately for each parity of <code>l</code>. Use these maxima to find the best gain in constant time per index, allowing a gain of zero for skipping the operation.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxValue(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxValue = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:17.378Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.998Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.361Z"
 }

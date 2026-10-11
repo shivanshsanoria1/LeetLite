@@ -62,6 +62,18 @@
         "Dynamic programming + bitmask.",
         "dp(peopleMask, idHat) number of ways to wear different hats given a bitmask (people visited) and used hats from 1 to idHat-1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberWays(vector<vector<int>>& hats) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} hats\n * @return {number}\n */\nvar numberWays = function(hats) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:17.510Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.827Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.835Z"
 }

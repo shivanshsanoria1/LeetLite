@@ -35,6 +35,18 @@
     "hints": [
         "Use two pointers to create the new array of 2n elements. The first starting at the beginning and the other starting at (n+1)th position. Alternate between them and create the new array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> shuffle(vector<int>& nums, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} n\n * @return {number[]}\n */\nvar shuffle = function(nums, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:57.831Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.912Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.878Z"
 }

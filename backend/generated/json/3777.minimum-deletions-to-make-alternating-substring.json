@@ -42,6 +42,18 @@
         "For a type-2 query <code>[2, l, r]</code> the answer is <code>sum(eq[l+1..r])</code> (count of equal adjacent pairs in the substring).",
         "For a flip <code>[1, j]</code>, recompute and update <code>eq[j]</code> and <code>eq[j + 1]</code>; each flip changes at most two <code>eq</code> values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minDeletions(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar minDeletions = function(s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:36.225Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.230Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.008Z"
 }

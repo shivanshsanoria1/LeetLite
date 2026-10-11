@@ -50,6 +50,18 @@
         "For some subset of ones, it is always better to move the ones to the median position.",
         "We only need to be concerned with the indices where <code>nums[i] == 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumMoves(vector<int>& nums, int k, int maxChanges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} maxChanges\n * @return {number}\n */\nvar minimumMoves = function(nums, k, maxChanges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:40.159Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.900Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.726Z"
 }

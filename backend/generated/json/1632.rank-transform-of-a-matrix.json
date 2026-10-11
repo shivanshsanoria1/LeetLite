@@ -60,6 +60,18 @@
         "The rank of a cell is the maximum rank in its row and column plus one.",
         "Handle the equal cells by treating them as components using a union-find data structure."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> matrixRankTransform(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number[][]}\n */\nvar matrixRankTransform = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:07.164Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.274Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.210Z"
 }

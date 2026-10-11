@@ -59,6 +59,18 @@
         "After using Manacher's for each center use a line sweep from the center to the left and from the center to the right to find for each index the farthest center to it with distance ≤ palin[center]",
         "After that, find the maximum palindrome size for each prefix in the string and for each suffix and the answer would be max(prefix[i] * suffix[i + 1])"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxProduct(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxProduct = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:16.059Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.794Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.069Z"
 }

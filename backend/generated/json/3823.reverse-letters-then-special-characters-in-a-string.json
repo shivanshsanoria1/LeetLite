@@ -46,6 +46,18 @@
         "Use two pointers from ends, skipping non-letters.",
         "Use two pointers from ends, skipping letters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string reverseByType(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar reverseByType = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:31.554Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.379Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.087Z"
 }

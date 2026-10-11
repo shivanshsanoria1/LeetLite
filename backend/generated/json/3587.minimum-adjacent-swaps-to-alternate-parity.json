@@ -26,12 +26,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "[2,4,6,5,7]\n[2,4,5,7]\n[1,2,3]\n[4,5,6,8]",
     "meta": {
         "quesIdLCBackend": 3904,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,4,6,5,7]\n[2,4,5,7]\n[1,2,3]\n[4,5,6,8]",
     "solution": {
         "canSeeDetail": false
     },
@@ -44,6 +44,18 @@
         "The minimum adjacent‐swap cost to align those elements is the sum of absolute differences between each element’s current index and its target index.",
         "Return the smallest cost over valid patterns."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSwaps(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minSwaps = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:25.137Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.579Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.588Z"
 }

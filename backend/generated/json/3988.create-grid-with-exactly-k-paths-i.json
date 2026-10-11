@@ -55,6 +55,18 @@
         "<p>For <code>k = 4</code>, use either a fully open <code>2 x 4</code> block, a fully open <code>4 x 2</code> block, or a <code>3 x 3</code> block with the top-right and bottom-left cells blocked.</p>",
         "<p>After building the small block, connect its bottom-right cell to <code>(m - 1, n - 1)</code> using a single corridor, and fill all other cells with obstacles. If the required block cannot fit in either orientation, return an empty array.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> createGrid(int m, int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number} k\n * @return {string[]}\n */\nvar createGrid = function(m, n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:43.138Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.978Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.249Z"
 }

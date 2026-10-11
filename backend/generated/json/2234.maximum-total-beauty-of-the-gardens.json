@@ -63,6 +63,18 @@
         "After sorting flowers, we can thus try every possible k and what is left is to find the highest minimum flowers we can obtain by planting the remaining flowers in the other gardens.",
         "To find the highest minimum in the other gardens, we can use binary search to find the most optimal way of planting."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} flowers\n * @param {number} newFlowers\n * @param {number} target\n * @param {number} full\n * @param {number} partial\n * @return {number}\n */\nvar maximumBeauty = function(flowers, newFlowers, target, full, partial) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:53.517Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.280Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.894Z"
 }

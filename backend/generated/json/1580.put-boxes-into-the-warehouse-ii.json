@@ -46,6 +46,7 @@
         "Try to put at least one box in the house pushing it from either side.",
         "Once you put one box to the house, you can solve the problem with the same logic used to solve version I. You have a warehouse open from the left only and a warehouse open from the right only."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:37:34.304Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.111Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.098Z"
 }

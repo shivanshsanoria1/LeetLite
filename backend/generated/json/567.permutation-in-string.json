@@ -55,6 +55,18 @@
         "Both strings must have same character frequencies, if  one is permutation of another. Which data structure should be used to store frequencies?",
         "What about hash table?  An array of size 26?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkInclusion(string s1, string s2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s1\n * @param {string} s2\n * @return {boolean}\n */\nvar checkInclusion = function(s1, s2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:08:37.946Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.007Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.697Z"
 }

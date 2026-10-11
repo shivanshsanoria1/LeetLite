@@ -41,6 +41,18 @@
         "<div class=\"_1l1MA\">To check if the current number can be added, keep track of already added numbers in a set.</div>",
         "<div class=\"_1l1MA\">If the number <code>i</code> is added to the array, then <code>i + k</code> can not be added.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumSum(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar minimumSum = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:01.335Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.577Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.742Z"
 }

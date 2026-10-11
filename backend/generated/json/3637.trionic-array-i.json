@@ -22,12 +22,12 @@
             "slug": "array"
         }
     ],
-    "exampleTestcases": "[1,3,5,4,2,6]\n[2,1,3]",
     "meta": {
         "quesIdLCBackend": 3952,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,3,5,4,2,6]\n[2,1,3]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Evaluating the Validity of the Boundaries\n\n#### Intuition\n\nWe can determine whether an array is a three-part array by checking if there exist indices $p$, $q$, and $\\textit{flag}$ such that $0 < p < q < \\textit{flag} = n - 1$.\n\nAlternatively, we can identify each segment by examining its monotonicity and length. For the array to be valid, each segment must be strictly monotonic, and every segment must contain at least two elements.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/DooS8n6X/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"DooS8n6X\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n### Approach 2: Counting the Number of Turning Points\n\n#### Intuition\n\nWe can also determine whether an array is a three-part array by counting how many **increasing or decreasing** segments it contains.\n\nMore specifically, the array must follow the pattern **increase -> decrease -> increase**. Therefore, the first segment must be strictly increasing, and there must be exactly two turning points in the array.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/o7vbuCk9/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"o7vbuCk9\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -36,6 +36,18 @@
     "hints": [
         "Use brute force"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isTrionic(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar isTrionic = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:26.998Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.640Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.693Z"
 }

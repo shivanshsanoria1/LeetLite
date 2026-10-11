@@ -42,6 +42,18 @@
         "First assume you will be taking the array a and choose some subarray from b",
         "Suppose the DP is DP(pos, state). pos is the current position you are in. state is one of {0,1,2}, where 0 means taking the array a, 1 means we are taking the subarray b, and 2 means we are again taking the array a. We need to handle the transitions carefully."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumsSplicedArray(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar maximumsSplicedArray = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:04.712Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.034Z"
 }

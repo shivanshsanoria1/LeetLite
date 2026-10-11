@@ -47,6 +47,18 @@
         "The constraints are very small. Can we try every triplet?",
         "Yes, we can. Use three loops to iterate through all the possible triplets, ensuring the condition i < j < k holds."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int unequalTriplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar unequalTriplets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:11.275Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.719Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.237Z"
 }

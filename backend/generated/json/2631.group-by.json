@@ -38,6 +38,13 @@
         "Iterate of each element in the array. You can access the array with the \"this\" keyword.",
         "The key is fn(arr[i]). If the key already exists on the object, set the value to be an empty array. Then push the value onto the array at the key."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Function} fn\n * @return {Object}\n */\nArray.prototype.groupBy = function(fn) {\n    \n};\n\n/**\n * [1,2,3].groupBy(String) // {\"1\":[1],\"2\":[2],\"3\":[3]}\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:19.331Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.267Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.427Z"
 }

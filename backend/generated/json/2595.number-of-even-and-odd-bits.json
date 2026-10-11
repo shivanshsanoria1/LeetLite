@@ -37,6 +37,18 @@
         "Maintain two integer variables, even and odd, to count the number of even and odd indices in the binary representation of integer n.",
         "Divide n by 2 while n is positive, and if n modulo 2 is 1, add 1 to its corresponding variable."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> evenOddBit(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar evenOddBit = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:49.845Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.227Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.395Z"
 }

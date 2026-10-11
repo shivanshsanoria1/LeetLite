@@ -58,6 +58,18 @@
         "Pre calculate the number of stations on each city using Line Sweep.",
         "Use binary search to maximize the minimum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxPower(vector<int>& stations, int r, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} stations\n * @param {number} r\n * @param {number} k\n * @return {number}\n */\nvar maxPower = function(stations, r, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:52.095Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.807Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.320Z"
 }

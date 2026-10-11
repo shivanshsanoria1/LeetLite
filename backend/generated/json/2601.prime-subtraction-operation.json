@@ -52,6 +52,18 @@
         "Think about if we have many primes to subtract from nums[i]. Which prime is more optimal?",
         "The most optimal prime to subtract from nums[i] is the one that makes nums[i] the smallest as possible and greater than nums[i-1]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool primeSubOperation(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar primeSubOperation = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:54.964Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.245Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.400Z"
 }

@@ -52,6 +52,18 @@
         "Similarly, the bottom right corner of each group will have the largest x-coordinate and y-coordinate of any farmland in the group.",
         "Use DFS to traverse through different groups of farmlands and keep track of the smallest and largest x-coordinate and y-coordinates you have seen in each group."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> findFarmland(vector<vector<int>>& land) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} land\n * @return {number[][]}\n */\nvar findFarmland = function(land) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:46.265Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.821Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.133Z"
 }

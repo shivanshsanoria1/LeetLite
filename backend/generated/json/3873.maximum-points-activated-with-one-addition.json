@@ -46,6 +46,18 @@
         "Each <code>x</code> maps to one component and each <code>y</code> maps to one component. Adding <code>(x0, y0)</code> connects at most two distinct components; activated = <code>size(A) + size(B) + 1</code> (if same component then <code>size(A) + 1</code>).",
         "Maximize by choosing the two components with largest <code>size</code>; if only one component, answer = <code>n + 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxActivated(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar maxActivated = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:36.838Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.817Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.141Z"
 }

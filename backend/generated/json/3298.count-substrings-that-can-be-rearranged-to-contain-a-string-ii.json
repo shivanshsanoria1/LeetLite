@@ -45,6 +45,18 @@
         "Use sliding window along with two-pointer here.",
         "Use constant space to store the frequency of characters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long validSubstringCount(string word1, string word2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {number}\n */\nvar validSubstringCount = function(word1, word2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:46.237Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.170Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.995Z"
 }

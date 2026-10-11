@@ -43,6 +43,18 @@
     "hints": [
         "For each distinct value <code>x</code>, let <code>l</code> and <code>r</code> be its first and last positions. All occurrences of <code>x</code> form one contiguous block exactly when <code>r - l + 1</code> equals the frequency of <code>x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSpecialIntegers(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countSpecialIntegers = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:08:57.700Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.979Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.336Z"
 }

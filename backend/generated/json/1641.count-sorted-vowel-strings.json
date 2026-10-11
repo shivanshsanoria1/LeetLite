@@ -45,6 +45,18 @@
         "Think backtracking. Build a recursive function count(n, last_character) that counts the number of valid strings of length n and whose first characters are not less than last_character.",
         "In this recursive function, iterate on the possible characters for the first character, which will be all the vowels not less than last_character, and for each possible value c, increase the answer by count(n-1, c)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countVowelStrings(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countVowelStrings = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:16.585Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.292Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.244Z"
 }

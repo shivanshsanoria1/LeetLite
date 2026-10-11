@@ -46,6 +46,18 @@
         "Take each node as the root of the tree, run DFS, and save for each node <code>i</code>, the number of nodes in the subtree rooted at <code>i</code> whose distance to the root is divisible by <code>signalSpeed</code>.",
         "If the root has <code>m</code> children named <code>c<sub>1</sub>, c<sub>2</sub>, …, c<sub>m</sub></code> that respectively have <code>num[c<sub>1</sub>], num[c<sub>2</sub>], …, num[c<sub>m</sub>]</code> nodes in their subtrees whose distance is divisible by signalSpeed. Then, there are <code>((S - num[c<sub>i</sub>]) * num[c<sub>i</sub>]) / 2</code>that are connectable through the root that we have fixed, where <code>S</code> is the sum of <code>num[c<sub>i</sub>]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countPairsOfConnectableServers(vector<vector<int>>& edges, int signalSpeed) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number} signalSpeed\n * @return {number[]}\n */\nvar countPairsOfConnectableServers = function(edges, signalSpeed) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:20.911Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.859Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.577Z"
 }

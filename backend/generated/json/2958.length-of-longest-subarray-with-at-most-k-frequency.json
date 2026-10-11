@@ -46,6 +46,18 @@
         "For each index <code>i</code>, find the rightmost index <code>j >= i</code> such that the frequency of each element in the subarray <code>[i, j]</code> is at most <code>k</code>.",
         "We can use 2 pointers / sliding window to achieve it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSubarrayLength(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSubarrayLength = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:49.672Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.698Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.083Z"
 }

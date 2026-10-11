@@ -49,6 +49,18 @@
         "Since the first move is free, if all the numbers have the same parity, the answer would be zero.",
         "Find the minimum cost to make all the numbers have the same parity."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCostToMoveChips(vector<int>& position) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} position\n * @return {number}\n */\nvar minCostToMoveChips = function(position) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:00.030Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.779Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.605Z"
 }

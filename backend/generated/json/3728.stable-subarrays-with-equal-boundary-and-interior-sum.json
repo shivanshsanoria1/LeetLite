@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[9,3,3,3,9]\n[1,2,3,4,5]\n[-4,4,0,0,-8,-4]",
     "meta": {
         "quesIdLCBackend": 4083,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[9,3,3,3,9]\n[1,2,3,4,5]\n[-4,4,0,0,-8,-4]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "For each index <code>r</code>, you want to count the number of previous indices <code>l</code> such that <code>p[l] == p[r - 1] - a[r]</code> and <code>a[l] == a[r]</code>",
         "You can do this efficiently by maintaining a map from <code>(a[i], p[i])</code> to a frequency count as you iterate"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countStableSubarrays(vector<int>& capacity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} capacity\n * @return {number}\n */\nvar countStableSubarrays = function(capacity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T18:26:44.955Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.846Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.914Z"
 }

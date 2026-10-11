@@ -52,6 +52,7 @@
         "If we know that for some node v, its parent was updated some number of times, then we know that node v was also updated that number of times.",
         "Iterate on nodes from highest to lowest and count the number of times the query was performed on that node and the number of times this node was updated from its parent (direct or indirect). The parity of that number is the answer."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:24:46.598Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.623Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.197Z"
 }

@@ -42,6 +42,18 @@
         "Calculate the bitwise <code>XOR</code> of all elements of the original array and compare it to <code>k</code> in their binary representation.",
         "For each different bit between the bitwise <code>XOR</code> of elements of the original array and <code>k</code> we have to flip <strong>exactly</strong> one bit of an element in <code>nums</code> to make that bit equal."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minOperations = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:22.030Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.749Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.231Z"
 }

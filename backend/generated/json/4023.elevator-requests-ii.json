@@ -47,6 +47,18 @@
         "<p>Insert <code>start</code> into the sorted positions and begin with an interval containing only <code>start</code>. From a state <code>[l, r]</code>, expand to the next requested floor on either the left or the right, updating the cost according to the current endpoint and the number of requests still unfulfilled.</p>",
         "<p>There are <code>O(m^2)</code> intervals, where <code>m = requests.length</code>, and two possible endpoint states for each interval. Use 64-bit integers for the penalty.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long elevatorRequests(int n, int start, vector<int>& requests) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} start\n * @param {number[]} requests\n * @return {number}\n */\nvar elevatorRequests = function(n, start, requests) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:20.565Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.005Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.312Z"
 }

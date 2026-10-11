@@ -50,6 +50,18 @@
         "A value is good if it can be formed by at least two distinct pairs",
         "Collect all such values and return them in sorted order"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findGoodIntegers(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar findGoodIntegers = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:55.787Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.830Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.160Z"
 }

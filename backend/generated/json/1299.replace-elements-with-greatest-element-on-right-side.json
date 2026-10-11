@@ -38,6 +38,18 @@
         "Loop through the array starting from the end.",
         "Keep the maximum value seen so far."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> replaceElements(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar replaceElements = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:01.382Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.328Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.691Z"
 }

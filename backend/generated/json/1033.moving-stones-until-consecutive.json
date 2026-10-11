@@ -38,6 +38,18 @@
     "hints": [
         "For the minimum:  We can always do it in at most 2 moves, by moving one stone next to another, then the third stone next to the other two.  When can we do it in 1 move?  0 moves?\r\n\r\nFor the maximum:  Every move, the maximum position minus the minimum position must decrease by at least 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numMovesStones(int a, int b, int c) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number[]}\n */\nvar numMovesStones = function(a, b, c) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:05.348Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.946Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.323Z"
 }

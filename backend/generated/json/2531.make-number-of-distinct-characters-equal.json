@@ -50,6 +50,18 @@
         "There are 26*26 possible pairs of letters to swap. Can we try them all?",
         "Iterate over all possible pairs of letters and check if swapping them will yield two strings that have the same number of distinct characters. Use the frequency array for the check."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isItPossible(string word1, string word2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {boolean}\n */\nvar isItPossible = function(word1, word2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:54.343Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.072Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.325Z"
 }

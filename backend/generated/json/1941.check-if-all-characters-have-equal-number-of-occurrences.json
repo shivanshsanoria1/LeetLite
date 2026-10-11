@@ -46,6 +46,18 @@
         "Build a dictionary containing the frequency of each character appearing in s",
         "Check if all values in the dictionary are the same."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool areOccurrencesEqual(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar areOccurrencesEqual = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:01.201Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.779Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.017Z"
 }

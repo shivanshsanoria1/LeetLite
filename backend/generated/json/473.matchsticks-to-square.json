@@ -57,6 +57,18 @@
         "We don't really need to keep track of which matchsticks belong to a particular side during recursion. We just need to keep track of the <b>length</b> of each of the 4 sides.",
         "When all matchsticks have been used we simply need to see the length of all 4 sides. If they're equal, we have a square on our hands!"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool makesquare(vector<int>& matchsticks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} matchsticks\n * @return {boolean}\n */\nvar makesquare = function(matchsticks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:07:14.408Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.941Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.492Z"
 }

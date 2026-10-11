@@ -40,6 +40,7 @@
         "No two elements of this sequence can be removed in one operation.",
         "Try to prove that the answer is equal to the length of this sequence."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:57:52.496Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.062Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.580Z"
 }

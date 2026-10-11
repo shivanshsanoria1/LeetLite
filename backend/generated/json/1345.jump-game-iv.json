@@ -48,6 +48,18 @@
         "Build a graph of n nodes where nodes are the indices of the array and edges for node i are nodes i+1, i-1, j where arr[i] == arr[j].",
         "Start bfs from node 0 and keep distance. The answer is the distance when you reach node n-1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minJumps(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar minJumps = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:05.786Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.574Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.733Z"
 }

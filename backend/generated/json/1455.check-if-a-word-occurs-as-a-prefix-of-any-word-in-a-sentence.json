@@ -48,6 +48,18 @@
         "Check for each word if searchWord occurs at index 0, if so return the index of this word (1-indexed)",
         "If searchWord doesn't exist as a prefix of any word return the default value (-1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int isPrefixOfWord(string sentence, string searchWord) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} sentence\n * @param {string} searchWord\n * @return {number}\n */\nvar isPrefixOfWord = function(sentence, searchWord) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:41.960Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.896Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.853Z"
 }

@@ -47,6 +47,18 @@
         "Let dp[i] be the maximum length of a subsequence of the given difference whose last element is i.",
         "dp[i] = 1 + dp[i-k]"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubsequence(vector<int>& arr, int difference) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} difference\n * @return {number}\n */\nvar longestSubsequence = function(arr, difference) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:01.359Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.792Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.605Z"
 }

@@ -44,6 +44,18 @@
         "Which type of traversal lets you find the distance from a point?",
         "Try using a Breadth First Search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} maze\n * @param {number[]} entrance\n * @return {number}\n */\nvar nearestExit = function(maze, entrance) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:48.914Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.754Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.978Z"
 }

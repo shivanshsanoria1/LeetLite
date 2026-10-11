@@ -44,6 +44,18 @@
         "Let <code>dp[i]</code> denote the energy we gain starting from index <code>i</code>.",
         "We can notice, that <code> dp[i] = dp[i + k] + energy[i]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumEnergy(vector<int>& energy, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} energy\n * @param {number} k\n * @return {number}\n */\nvar maximumEnergy = function(energy, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:48.520Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.984Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.983Z"
 }

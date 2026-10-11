@@ -44,6 +44,7 @@
         "Then the answer is:\r\n\r\n<code>min(evenCost[x] + oddCost[y])</code> over all <code>x != y</code>.",
         "To avoid <code>O(k<sup>2</sup>)</code>, keep the smallest and second smallest values in <code>oddCost</code>. For each <code>x</code>, use the best odd remainder unless it equals <code>x</code>, otherwise use the second best."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:05:56.677Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.922Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.211Z"
 }

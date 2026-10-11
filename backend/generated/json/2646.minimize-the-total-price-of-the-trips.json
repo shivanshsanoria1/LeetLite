@@ -52,6 +52,18 @@
         "To find freq[i] we will use dfs or bfs for each trip and update every node on the path start and end.",
         "Finally, to find the final price[i] we will use dynamic programming on the tree. Let dp(v, 0/1) denote the minimum total price with the node v’s price being halved or not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTotalPrice(int n, vector<vector<int>>& edges, vector<int>& price, vector<vector<int>>& trips) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} price\n * @param {number[][]} trips\n * @return {number}\n */\nvar minimumTotalPrice = function(n, edges, price, trips) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:31.826Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.279Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.447Z"
 }

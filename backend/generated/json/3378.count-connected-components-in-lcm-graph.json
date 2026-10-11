@@ -63,6 +63,18 @@
         "Use DSU",
         "Connect a number to all its multiples less than threshold"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countComponents(vector<int>& nums, int threshold) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} threshold\n * @return {number}\n */\nvar countComponents = function(nums, threshold) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:49.026Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.293Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.334Z"
 }

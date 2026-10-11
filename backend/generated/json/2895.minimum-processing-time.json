@@ -43,6 +43,18 @@
         "It’s optimal to make the processor with earlier process time run 4 longer tasks.****",
         "The largest <code>processTime[i] + tasks[j]</code> (when matched) is the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minProcessingTime(vector<int>& processorTime, vector<int>& tasks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} processorTime\n * @param {number[]} tasks\n * @return {number}\n */\nvar minProcessingTime = function(processorTime, tasks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:58.474Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.620Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.865Z"
 }

@@ -54,6 +54,18 @@
         "Iterate on days <code>1</code> to <code>m * n</code>.",
         "On each day, buy the product that minimizes <code>values[i][values[i].length - 1]</code>, and pop it from <code>values[i]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSpending(vector<vector<int>>& values) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} values\n * @return {number}\n */\nvar maxSpending = function(values) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:27.069Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.681Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.938Z"
 }

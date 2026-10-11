@@ -47,6 +47,18 @@
         "We only need to consider each song length modulo 60.",
         "We can count the number of songs having same (length % 60), and store that in an array of size 60."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numPairsDivisibleBy60(vector<int>& time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} time\n * @return {number}\n */\nvar numPairsDivisibleBy60 = function(time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:49.066Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.675Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.290Z"
 }

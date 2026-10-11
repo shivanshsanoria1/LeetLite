@@ -49,6 +49,18 @@
         "What is the optimal cost to get to each of the cells in the second row? What about the third row?",
         "Use dynamic programming to compute the optimal cost to get to each cell."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minPathCost(vector<vector<int>>& grid, vector<vector<int>>& moveCost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number[][]} moveCost\n * @return {number}\n */\nvar minPathCost = function(grid, moveCost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:52.017Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.402Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.019Z"
 }

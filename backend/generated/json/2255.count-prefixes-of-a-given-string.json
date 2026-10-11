@@ -42,6 +42,18 @@
     "hints": [
         "For each string in words, check if it is a prefix of s. If true, increment the answer by 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPrefixes(vector<string>& words, string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {string} s\n * @return {number}\n */\nvar countPrefixes = function(words, s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:11.160Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.302Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.954Z"
 }

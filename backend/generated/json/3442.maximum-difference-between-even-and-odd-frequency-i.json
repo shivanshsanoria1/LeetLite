@@ -30,12 +30,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "\"aaaaabbc\"\n\"abcabcab\"",
     "meta": {
         "quesIdLCBackend": 3753,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"aaaaabbc\"\n\"abcabcab\"",
     "solution": {
         "canSeeDetail": true,
         "content": "[TOC]\n\n## Solution\n\n---\n\n### Approach: Count The Frequency Of Each Character\n\n#### Intuition\n\nWe use a hash map to count the number of occurrences of each character in the string $s$. In each key-value pair of the hash map, the key represents a character, and the value represents the number of times that character appears.\n\nAfter the statistics are completed, we traverse the values in the hash map to find the largest odd number $\\textit{maxOdd}$ and the smallest even number $\\textit{minEven}$. The final answer is $\\textit{maxOdd} - \\textit{minEven}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Zz3eC6Sz/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"Zz3eC6Sz\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$, and $|\\Sigma|$ the size of its character set. Since $s$ contains only lowercase letters, $|\\Sigma| = 26$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(|\\Sigma|)$."
@@ -44,6 +44,18 @@
     "hints": [
         "Use a frequency map to identify the maximum odd and minimum even frequencies. Then, calculate their difference."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDifference(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxDifference = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:50.062Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.403Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.402Z"
 }

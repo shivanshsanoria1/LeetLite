@@ -46,6 +46,18 @@
     "hints": [
         "Loop over 1 ≤ x,y ≤ 1000 and check if f(x,y) == z."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/*\n * // This is the custom function interface.\n * // You should not implement it, or speculate about its implementation\n * class CustomFunction {\n * public:\n *     // Returns f(x, y) for any given positive integers x and y.\n *     // Note that f(x, y) is increasing with respect to both x and y.\n *     // i.e. f(x, y) < f(x + 1, y), f(x, y) < f(x, y + 1)\n *     int f(int x, int y);\n * };\n */\n\nclass Solution {\npublic:\n    vector<vector<int>> findSolution(CustomFunction& customfunction, int z) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * // This is the CustomFunction's API interface.\n * // You should not implement it, or speculate about its implementation\n * function CustomFunction() {\n *     @param {integer, integer} x, y\n *     @return {integer}\n *     this.f = function(x, y) {\n *         ...\n *     };\n * };\n */\n\n/**\n * @param {CustomFunction} customfunction\n * @param {integer} z\n * @return {integer[][]}\n */\nvar findSolution = function(customfunction, z) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:23.591Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.916Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.622Z"
 }

@@ -32,12 +32,12 @@
             "slug": "string-matching"
         }
     ],
-    "exampleTestcases": "\"TFTF\"\n\"ab\"\n\"TFTF\"\n\"abc\"\n\"FT\"\n\"aa\"",
     "meta": {
         "quesIdLCBackend": 3770,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"TFTF\"\n\"ab\"\n\"TFTF\"\n\"abc\"\n\"FT\"\n\"aa\"",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Greedy\n\n#### Intuition\n\nWe first process the `'T'` constraints, followed by the `'F'` constraints.\n\nWe traverse all `'T'` positions in $\\textit{str}_1$ and fill $\\textit{str}_2$ into the target string $\\textit{word}$. If a conflict occurs during this process, meaning a different character has already been assigned to the same position, then no valid solution exists, and we return an empty string. We also maintain a $\\textit{fixed}$ array to record which positions are fixed by `'T'` constraints.\n\nNext, for all positions that are not fixed, we assign the character `'a'` by default to ensure the lexicographically smallest result.\n\nWe then process the `'F'` constraints. For each position $i$ where $\\textit{str}_1[i] = 'F'$, we check whether the substring $\\textit{word}[i \\dots i + m - 1]$ is exactly equal to $\\textit{str}_2$. If it is not equal, no action is needed. However, if it is equal, we must modify at least one non-fixed character within this window to break the match.\n\nTo maintain the smallest lexicographical order, we choose to modify the **rightmost non-fixed character** in the window, changing it to `'b'`.\n\nA natural concern is whether modifying the rightmost non-fixed character could invalidate a previously satisfied `'F'` constraint. We now show that this cannot happen.\n\nSuppose $\\textit{str}_1$ contains two `'F'` positions at indices $i_1$ and $i_2$. When processing $i_2$, we modify a character in its window, which could potentially make the substring at $i_1$ equal to $\\textit{str}_2$, violating the `'F'` constraint.\n\nConsider $\\textit{str}_2 = A + 'a' + B + 'b' + C$.\nAt index $i_1$, the substring is $A + 'a' + B + 'a' + C$, and at index $i_2$, it is $A + 'a' + B + 'b' + C$. We modify the `'a'` in the $i_2$ window to `'b'`, which may affect the substring at $i_1$.\n\nFrom this structure, we can derive the following:\n\n![3474](../Figures/3474/3474.png)\n\nAs shown in the figure, we can obtain the following information:\n\n1. Since the rightmost non-fixed character in the $i_2$ window is the first `'a'`, there are no non-fixed characters to its right within the window. Also, the prefix $B + 'b' + C$ must match a prefix of $\\textit{str}_2$ due to `'T'` constraints.\n2. The string $A$ must be a suffix of $A + 'a' + B$.\n\nWe now consider three cases based on the relative lengths of $A$ and $B$:\n\n1. **Length of $A$ equals length of $B$**\n   Since $B + 'b' + C$ is a prefix of $\\textit{str}_2 = A + 'a' + B + 'b' + C$, this implies `'b' = 'a'`, which is impossible.\n\n2. **Length of $A$ is greater than length of $B$**\n   Since both $A$ and $B + 'b' + C$ are prefixes of $\\textit{str}_2$, let $A = B + 'b' + D$.\n   Because $A$ is also a suffix of $A + 'a' + B$, we obtain:\n   $$\n   B + 'b' + D = D + 'a' + B\n   $$\n   Removing common parts leads to `'b' = 'a'`, which is impossible.\n\n3. **Length of $A$ is less than length of $B$**\n   Since $A$ is a suffix of $A + 'a' + B$, let $B = D + A$.\n   Since $B + 'b' + C$ is a prefix of $\\textit{str}_2$, we obtain:\n   $$\n   (D + A) + 'b' = A + 'a' + D\n   $$\n   Again, this leads to `'b' = 'a'`, which is impossible.\n\nIn all cases, we reach a contradiction. Therefore, modifying the rightmost non-fixed character will never violate any previously satisfied `'F'` constraint, while also minimizing the lexicographical impact.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/9vLLonWU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9vLLonWU\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{str}_1$, and $m$ be the length of $\\textit{str}_2$.\n\n- Time complexity: $O(nm)$.\n\n- Space complexity: $O(n + m)$.\n\n---"
@@ -51,6 +51,18 @@
         "Each unknown character can be selected from <code>['a', 'b']</code>.",
         "Can you think of a greedy approach?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string generateString(string str1, string str2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {string}\n */\nvar generateString = function(str1, str2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:21.000Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.469Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.494Z"
 }

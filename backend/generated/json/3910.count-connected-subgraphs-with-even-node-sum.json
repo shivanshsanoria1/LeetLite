@@ -63,6 +63,18 @@
         "Count the subset only if it is connected and the sum is even",
         "Since <code>n <= 13</code>, a brute-force bitmask solution is feasible"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int evenSumSubgraphs(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} edges\n * @return {number}\n */\nvar evenSumSubgraphs = function(nums, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:17.410Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.845Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.177Z"
 }

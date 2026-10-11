@@ -43,6 +43,18 @@
     "hints": [
         "We don't need any special algorithms to do this. You just need to know what the transpose of a matrix looks like. Rows become columns and vice versa!"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> transpose(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number[][]}\n */\nvar transpose = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:33:50.664Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.542Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.256Z"
 }

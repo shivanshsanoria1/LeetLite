@@ -43,6 +43,7 @@
         "If the chosen substrings are of size larger than 1, then you can remove all but the first character from both substrings, and you'll get equal substrings of size 1, with the same a but less j. Hence, it's always optimal to choose substrings of size 1.",
         "If you choose a specific letter, then it's optimal to choose its first occurrence in firstString, and its last occurrence in secondString, to minimize j-a."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:54:06.853Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.479Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.784Z"
 }

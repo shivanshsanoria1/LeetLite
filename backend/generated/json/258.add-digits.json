@@ -54,6 +54,18 @@
         "How do they occur, periodically or randomly?",
         "You may find this <a href=\"https://en.wikipedia.org/wiki/Digital_root\" target=\"_blank\">Wikipedia article</a> useful."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int addDigits(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar addDigits = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:03.230Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.168Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.375Z"
 }

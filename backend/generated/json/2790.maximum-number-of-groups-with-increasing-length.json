@@ -54,6 +54,18 @@
         "Sort the array in increasing order and run a binary search on the number of groups, x.",
         "To determine if a value x is feasible, greedily distribute the numbers such that each group receives 1, 2, 3, ..., x numbers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxIncreasingGroups(vector<int>& usageLimits) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} usageLimits\n * @return {number}\n */\nvar maxIncreasingGroups = function(usageLimits) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:30.197Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.489Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.596Z"
 }

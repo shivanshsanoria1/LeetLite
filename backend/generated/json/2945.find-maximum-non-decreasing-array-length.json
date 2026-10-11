@@ -64,6 +64,18 @@
         "We have <code>dp[0] = 0</code>. <code>dp[i + 1] >= dp[i]</code> (since if we have the solution for the first <code>i</code> elements, we can always merge the last one of the first <code>i + 1</code> elements which is <code>nums[i]</code> into the solution of the first <code>i</code> elements.",
         "For <code>i > 0</code>, we want to <code>dp[i] = max(dp[j] + 1)</code> where <code>sum(nums[i - 1] + nums[i - 2] +… + nums[j]) >= v[j]</code> and <code>v[j]</code> is the last element of the solution ending with <code>nums[j - 1]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findMaximumLength(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findMaximumLength = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:38.101Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.689Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.980Z"
 }

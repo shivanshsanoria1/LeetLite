@@ -45,6 +45,18 @@
         "Maintain a prefix sum for the frequencies of characters.",
         "You can iterate over all substring then iterate over the alphabet and find which character appears most and which appears least using the prefix sum array"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int beautySum(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar beautySum = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:52.379Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.469Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.769Z"
 }

@@ -43,6 +43,18 @@
         "Use DP with 4 states (pos: Int, posEvil: Int, equalToS1: Bool, equalToS2: Bool) which compute the number of valid strings of size \"pos\" where the maximum common suffix with string \"evil\" has size \"posEvil\". When \"equalToS1\" is \"true\", the current valid string is equal to \"S1\" otherwise it is greater. In a similar way when equalToS2 is \"true\" the current valid string is equal to \"S2\" otherwise it is smaller.",
         "To update the maximum common suffix with string \"evil\" use KMP preprocessing."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findGoodStrings(int n, string s1, string s2, string evil) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {string} s1\n * @param {string} s2\n * @param {string} evil\n * @return {number}\n */\nvar findGoodStrings = function(n, s1, s2, evil) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:19.479Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.798Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.810Z"
 }

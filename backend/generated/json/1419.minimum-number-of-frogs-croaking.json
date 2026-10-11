@@ -41,6 +41,18 @@
         "keep the frequency of all characters from \"croak\" using a hashmap.",
         "For each character in the given string, greedily match it to a possible \"croak\"."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minNumberOfFrogs(string croakOfFrogs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} croakOfFrogs\n * @return {number}\n */\nvar minNumberOfFrogs = function(croakOfFrogs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:46.767Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.814Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.826Z"
 }

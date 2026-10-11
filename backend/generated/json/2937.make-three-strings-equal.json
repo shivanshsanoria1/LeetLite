@@ -36,6 +36,18 @@
     "hints": [
         "Calculate the length of the longest common prefix of the <code>3</code> strings."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findMinimumOperations(string s1, string s2, string s3) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s1\n * @param {string} s2\n * @param {string} s3\n * @return {number}\n */\nvar findMinimumOperations = function(s1, s2, s3) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:30.941Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.684Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.959Z"
 }

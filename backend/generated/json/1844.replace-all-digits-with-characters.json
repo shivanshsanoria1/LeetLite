@@ -37,6 +37,18 @@
         "We just need to replace every even positioned character with the character s[i] positions ahead of the character preceding it",
         "Get the position of the preceeding character in alphabet then advance it s[i] positions and get the character at that position"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string replaceDigits(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar replaceDigits = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:56.616Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.509Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.885Z"
 }

@@ -42,6 +42,18 @@
         "In a shortest sequence of operations on one element, a multiplication followed later by a division can be canceled when they become adjacent. This lets you characterize an optimal sequence as some number of divisions followed by some number of multiplications.",
         "Enumerate the values of the form obtained by repeatedly dividing <code>x</code>, then repeatedly doubling the result, keeping only values at most <code>sum</code> and the minimum cost for each. Combine these per-element choices with knapsack DP."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int sum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} sum\n * @return {number}\n */\nvar minOperations = function(nums, sum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:08:59.946Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.983Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.343Z"
 }

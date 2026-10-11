@@ -53,6 +53,18 @@
         "If we take <code>value[i]</code> into the score, then each subtree rooted at its children should satisfy the constraints.",
         "<code>dp[x] = max(value[x] + sigma(dp[y]), sigma(sum[y]))</code>, where <code>y</code> is a direct child of <code>x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumScoreAfterOperations(vector<vector<int>>& edges, vector<int>& values) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number[]} values\n * @return {number}\n */\nvar maximumScoreAfterOperations = function(edges, values) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:22.641Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.676Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.930Z"
 }

@@ -47,6 +47,18 @@
         "Irrespective of what path the robot takes, it will have to traverse all the rows between startRow and homeRow and all the columns between startCol and homeCol.",
         "Hence, making any other move other than traversing the required rows and columns will potentially incur more cost which can be avoided."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<int>& startPos, vector<int>& homePos, vector<int>& rowCosts, vector<int>& colCosts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} startPos\n * @param {number[]} homePos\n * @param {number[]} rowCosts\n * @param {number[]} colCosts\n * @return {number}\n */\nvar minCost = function(startPos, homePos, rowCosts, colCosts) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:10.228Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.002Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.528Z"
 }

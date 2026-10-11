@@ -53,6 +53,18 @@
     },
     "content": "<p>Given an array of integers preorder, which represents the <strong>preorder traversal</strong> of a BST (i.e., <strong>binary search tree</strong>), construct the tree and return <em>its root</em>.</p>\n\n<p>It is <strong>guaranteed</strong> that there is always possible to find a binary search tree with the given requirements for the given test cases.</p>\n\n<p>A <strong>binary search tree</strong> is a binary tree where for every node, any descendant of <code>Node.left</code> has a value <strong>strictly less than</strong> <code>Node.val</code>, and any descendant of <code>Node.right</code> has a value <strong>strictly greater than</strong> <code>Node.val</code>.</p>\n\n<p>A <strong>preorder traversal</strong> of a binary tree displays the value of the node first, then traverses <code>Node.left</code>, then traverses <code>Node.right</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/06/1266.png\" style=\"height: 386px; width: 590px;\" />\n<pre>\n<strong>Input:</strong> preorder = [8,5,1,7,10,12]\n<strong>Output:</strong> [8,5,10,1,7,null,12]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> preorder = [1,3]\n<strong>Output:</strong> [1,null,3]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= preorder.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= preorder[i] &lt;= 1000</code></li>\n\t<li>All the values of <code>preorder</code> are <strong>unique</strong>.</li>\n</ul>\n",
     "hints": [],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* bstFromPreorder(vector<int>& preorder) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {number[]} preorder\n * @return {TreeNode}\n */\nvar bstFromPreorder = function(preorder) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:47.815Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.636Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.014Z"
 }

@@ -55,6 +55,18 @@
     "hints": [
         "For every word in the input list, we can check whether all prefixes of that word are in the input list by using a Set."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string longestWord(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar longestWord = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:47.891Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.263Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.994Z"
 }

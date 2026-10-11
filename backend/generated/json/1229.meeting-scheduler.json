@@ -48,6 +48,7 @@
         "Use two pointers in order to try all the possible intersections, and check the length.",
         "Do the same in step N° 1 but now assume that the selected slot from slotsB is bigger, return the minimum of the two options."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:29:14.545Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.890Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.615Z"
 }

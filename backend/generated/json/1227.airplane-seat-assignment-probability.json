@@ -48,6 +48,18 @@
         "Try to calculate f(3), f(4), and f(5) using the base cases. What is the value of them?\r\nf(i) for i >= 2 will also be 1/2.",
         "Try to proof why f(i) = 1/2 for i >= 2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double nthPersonGetsNthSeat(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar nthPersonGetsNthSeat = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:12.364Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.881Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.614Z"
 }

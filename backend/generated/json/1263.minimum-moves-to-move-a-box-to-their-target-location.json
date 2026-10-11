@@ -47,6 +47,18 @@
         "We represent the search state as (player_row, player_col, box_row, box_col).",
         "You need to count only the number of pushes. Then inside of your BFS check if the box could be pushed (in any direction) given the current position of the player."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minPushBox(vector<vector<char>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nvar minPushBox = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:58.811Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.034Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.653Z"
 }

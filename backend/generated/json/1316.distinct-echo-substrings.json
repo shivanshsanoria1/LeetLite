@@ -62,6 +62,18 @@
         "We can do that in linear time, a faster way is to use hashing.",
         "Try all substrings and use hashing to check them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int distinctEchoSubstrings(string text) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} text\n * @return {number}\n */\nvar distinctEchoSubstrings = function(text) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:22.493Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.476Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.712Z"
 }

@@ -46,6 +46,18 @@
         "Note that it is always more optimal to take one type of substring before another",
         "You can use a stack to handle erasures"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumGain(string s, int x, int y) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} x\n * @param {number} y\n * @return {number}\n */\nvar maximumGain = function(s, x, y) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:40.861Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.351Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.641Z"
 }

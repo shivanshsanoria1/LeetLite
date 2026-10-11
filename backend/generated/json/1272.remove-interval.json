@@ -36,6 +36,7 @@
         "Solve the problem for every interval alone.",
         "Divide the problem into cases according to the position of the two intervals."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:30:27.587Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.077Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.663Z"
 }

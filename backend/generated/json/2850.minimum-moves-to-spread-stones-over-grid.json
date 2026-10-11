@@ -59,6 +59,18 @@
         "Let <code>a</code> be the number of cells containing more than one stone, and <code>b</code> be the number of cells containing no stones. <code></code>. <code>b^a ≤ 6561</code>. Use this fact to come up with a bruteforce.",
         "For all empty cells, bruteforce over all possible cells from which a stone can come. Note that a stone will always come from a cell containing at least 2 stones."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumMoves(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minimumMoves = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:18.333Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.590Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.790Z"
 }

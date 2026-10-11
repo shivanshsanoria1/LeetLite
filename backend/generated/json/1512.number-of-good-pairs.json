@@ -50,6 +50,18 @@
     "hints": [
         "Count how many times each number appears. If a number appears n times, then n * (n – 1) // 2 good pairs can be made with this number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numIdenticalPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar numIdenticalPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:02.548Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.989Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.942Z"
 }

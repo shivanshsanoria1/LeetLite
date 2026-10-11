@@ -50,6 +50,18 @@
         "Maintain the ids that were inserted in the stream.",
         "Per each insert, make a loop where you check if the id that has the turn has been inserted, and if so increment the id that has the turn and continue the loop, else break."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class OrderedStream {\npublic:\n    OrderedStream(int n) {\n        \n    }\n    \n    vector<string> insert(int idKey, string value) {\n        \n    }\n};\n\n/**\n * Your OrderedStream object will be instantiated and called as such:\n * OrderedStream* obj = new OrderedStream(n);\n * vector<string> param_1 = obj->insert(idKey,value);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n */\nvar OrderedStream = function(n) {\n    \n};\n\n/** \n * @param {number} idKey \n * @param {string} value\n * @return {string[]}\n */\nOrderedStream.prototype.insert = function(idKey, value) {\n    \n};\n\n/** \n * Your OrderedStream object will be instantiated and called as such:\n * var obj = new OrderedStream(n)\n * var param_1 = obj.insert(idKey,value)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:30.322Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.305Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.419Z"
 }

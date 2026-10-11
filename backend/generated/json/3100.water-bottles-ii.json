@@ -41,6 +41,18 @@
     "hints": [
         "Simulate the process step by step. At each step, drink <code>numExchange</code> bottles of water then exchange them for a full bottle. Keep repeating this step until you cannot exchange  bottles anymore."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxBottlesDrunk(int numBottles, int numExchange) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} numBottles\n * @param {number} numExchange\n * @return {number}\n */\nvar maxBottlesDrunk = function(numBottles, numExchange) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:50.296Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.926Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.815Z"
 }

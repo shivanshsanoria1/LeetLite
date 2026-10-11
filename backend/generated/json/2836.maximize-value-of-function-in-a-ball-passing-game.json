@@ -49,6 +49,18 @@
         "<div class=\"_1l1MA\">Starting from each player id <code>x</code>, we can now go through the powers of <code>2</code> in the binary representation of <code>k</code> and make jumps corresponding to each power, using the pre-computed values, to compute <code>f(x)</code>.</div>",
         "<div class=\"_1l1MA\">The answer is the maximum <code>f(x)</code> from each player id.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long getMaxFunctionValue(vector<int>& receiver, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} receiver\n * @param {number} k\n * @return {number}\n */\nvar getMaxFunctionValue = function(receiver, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:06.774Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.581Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.765Z"
 }

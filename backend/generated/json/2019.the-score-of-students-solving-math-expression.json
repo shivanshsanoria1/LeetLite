@@ -63,6 +63,18 @@
         "Divide the equation into blocks separated by the operators, and use memoization on the results of blocks for optimization.",
         "Use set and the max limit of the answer for further optimization."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int scoreOfStudents(string s, vector<int>& answers) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[]} answers\n * @return {number}\n */\nvar scoreOfStudents = function(s, answers) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:07.968Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.902Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.203Z"
 }

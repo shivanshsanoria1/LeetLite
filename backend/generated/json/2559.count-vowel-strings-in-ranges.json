@@ -48,6 +48,18 @@
         "Check if the first and last characters of the string are present in the vowels set.",
         "Subtract prefix sum for range [l-1, r] to find the number of strings starting and ending with vowels."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar vowelStrings = function(words, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:18.304Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.146Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.349Z"
 }

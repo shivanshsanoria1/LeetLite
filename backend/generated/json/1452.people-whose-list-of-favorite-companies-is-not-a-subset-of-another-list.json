@@ -43,6 +43,18 @@
         "Use hashing to convert company names in numbers and then for each list check if this is a subset of any other list.",
         "In order to check if a list is a subset of another list, use two pointers technique to get a linear solution for this task. The total complexity will be O(n^2 * m) where n is the number of lists and m is the maximum number of elements in a list."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> peopleIndexes(vector<vector<string>>& favoriteCompanies) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[][]} favoriteCompanies\n * @return {number[]}\n */\nvar peopleIndexes = function(favoriteCompanies) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:38.169Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.893Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.851Z"
 }

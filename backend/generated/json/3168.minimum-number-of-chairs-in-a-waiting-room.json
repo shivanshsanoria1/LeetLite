@@ -41,6 +41,18 @@
         "Iterate from left to right over the string and keep track of the number of people in the waiting room using a variable that you will increment on every occurrence of ‘E’ and decrement on every occurrence of ‘L’.",
         "The answer is the maximum number of people in the waiting room at any instance."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumChairs(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumChairs = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:04.093Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.008Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.147Z"
 }

@@ -57,6 +57,18 @@
         "How to check if a substring can be changed to a palindrome given its characters frequency ?",
         "Count the number of odd frequencies, there can be at most one odd frequency in a palindrome."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> canMakePaliQueries(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar canMakePaliQueries = function(s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:14.438Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.542Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.568Z"
 }

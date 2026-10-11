@@ -47,6 +47,18 @@
         "Given a fixed size box, is there a way to quickly query which packages (i.e., count and sizes) should end up in that box size?",
         "Do we have to order the boxes a certain way to allow us to answer the query quickly?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minWastedSpace(vector<int>& packages, vector<vector<int>>& boxes) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} packages\n * @param {number[][]} boxes\n * @return {number}\n */\nvar minWastedSpace = function(packages, boxes) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:48.046Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.607Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.929Z"
 }

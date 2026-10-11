@@ -54,6 +54,18 @@
         "Then, starting with a given t minutes of staying in the initial position, we can check if there is a safe path to the safehouse using the obtained information about the fire.",
         "We can use binary search to efficiently find the maximum t that allows us to reach the safehouse."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumMinutes(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maximumMinutes = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:14.334Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.305Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.966Z"
 }

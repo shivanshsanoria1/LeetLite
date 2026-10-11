@@ -40,6 +40,18 @@
         "It is fast enough to check all possible subarrays",
         "The end of each ascending subarray will be the start of the next"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxAscendingSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxAscendingSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:13.022Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.483Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.789Z"
 }

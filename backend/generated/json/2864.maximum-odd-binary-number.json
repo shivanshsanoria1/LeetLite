@@ -43,6 +43,18 @@
     "hints": [
         "The binary representation of an odd number contains <code>'1'</code> in the least significant place."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maximumOddBinaryNumber(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar maximumOddBinaryNumber = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:30.010Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.599Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.816Z"
 }

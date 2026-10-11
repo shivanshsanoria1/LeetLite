@@ -44,6 +44,18 @@
         "Use a set to keep track of which substrings have been used already",
         "Try each possible substring at every position and backtrack if a complete split is not possible"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxUniqueSplit(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxUniqueSplit = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:50.482Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.169Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.124Z"
 }

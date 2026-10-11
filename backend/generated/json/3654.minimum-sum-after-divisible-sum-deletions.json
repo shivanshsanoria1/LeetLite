@@ -34,12 +34,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[1,1,1]\n2\n[3,1,4,1,5]\n3",
     "meta": {
         "quesIdLCBackend": 3966,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,1,1]\n2\n[3,1,4,1,5]\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Keep a map from each remainder to the best (smallest) value of <code>dp[j] - prefixSum[j]</code> you've seen for that remainder to update <code>dp[i]</code> in O(1).",
         "Maintain a running prefix sum so you never recompute subarray sums from scratch."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minArraySum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minArraySum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:49.356Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.651Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.729Z"
 }

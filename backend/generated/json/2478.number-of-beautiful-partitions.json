@@ -46,6 +46,18 @@
         "Try using a greedy approach where you take as many digits as possible from the left of the string for each partition.",
         "You can also use a dynamic programming approach, let an array dp where dp[i] is the solution of the problem for the prefix of the string ending at index i, the answer of the problem will be dp[n-1]. What are the transitions of this dp?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int beautifulPartitions(string s, int k, int minLength) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @param {number} minLength\n * @return {number}\n */\nvar beautifulPartitions = function(s, k, minLength) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:13.527Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.721Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.241Z"
 }

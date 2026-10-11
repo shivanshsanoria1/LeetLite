@@ -43,6 +43,18 @@
         "One solution is to try all possible splits using backtrack",
         "Look out for trailing zeros in string"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool splitString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar splitString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:01.641Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.512Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.890Z"
 }

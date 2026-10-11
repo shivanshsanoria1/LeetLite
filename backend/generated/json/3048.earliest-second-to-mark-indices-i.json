@@ -41,6 +41,18 @@
         "When marking an index, which is the last occurrence at the second <code>i</code>, we check whether we have a sufficient number of decrement operations to mark all the previous indices whose last occurrences have already been marked, and the current index, i.e., <code>i - sum_of_marked_indices_values - cnt_of_marked_indices >= nums[changeIndices[i]]</code>.",
         "The answer is the earliest second when all indices can be marked after running the binary search or <code>-1</code> if there is no such second."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int earliestSecondToMarkIndices(vector<int>& nums, vector<int>& changeIndices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} changeIndices\n * @return {number}\n */\nvar earliestSecondToMarkIndices = function(nums, changeIndices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:05.488Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.836Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.489Z"
 }

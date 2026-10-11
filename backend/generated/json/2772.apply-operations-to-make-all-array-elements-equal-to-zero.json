@@ -42,6 +42,18 @@
         "In case it is possible, then how can you do the operations? which subarrays do you choose and in what order?",
         "The order of the chosen subarrays should be from the left to the right of the array"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkArray(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar checkArray = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:14.836Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.418Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.580Z"
 }

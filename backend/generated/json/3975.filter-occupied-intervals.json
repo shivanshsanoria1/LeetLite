@@ -42,6 +42,18 @@
         "After merging, remove <code>[freeStart, freeEnd]</code> from each merged interval independently.",
         "An interval may disappear completely, shrink on one side, remain unchanged, or split into two intervals."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> filterOccupiedIntervals(vector<vector<int>>& occupiedIntervals, int freeStart, int freeEnd) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} occupiedIntervals\n * @param {number} freeStart\n * @param {number} freeEnd\n * @return {number[][]}\n */\nvar filterOccupiedIntervals = function(occupiedIntervals, freeStart, freeEnd) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:29.886Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.969Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.242Z"
 }

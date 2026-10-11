@@ -41,6 +41,18 @@
         "Use digit dynamic programming",
         "Build a digit-DP state <code>(position, tight, lastDigit, secondLastDigit)</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long totalWaviness(long long num1, long long num2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num1\n * @param {number} num2\n * @return {number}\n */\nvar totalWaviness = function(num1, num2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:10.004Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.026Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.971Z"
 }

@@ -47,6 +47,18 @@
         "Sort the box types with the number of units per box non-increasingly.",
         "Iterate on the box types and take from each type as many as you can."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} boxTypes\n * @param {number} truckSize\n * @return {number}\n */\nvar maximumUnits = function(boxTypes, truckSize) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:33.195Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.347Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.627Z"
 }

@@ -38,6 +38,18 @@
     "hints": [
         "Build an array of size 2 * n and assign nums[i] to ans[i] and ans[i + n]"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getConcatenation(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar getConcatenation = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:51.169Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.757Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.986Z"
 }

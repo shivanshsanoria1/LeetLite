@@ -30,12 +30,12 @@
             "slug": "heap-priority-queue"
         }
     ],
-    "exampleTestcases": "[4,2,1,5,3]\n[10,20,30,40,50]\n2\n[2,2,2,2]\n[3,1,2,3]\n1",
     "meta": {
         "quesIdLCBackend": 3759,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[4,2,1,5,3]\n[10,20,30,40,50]\n2\n[2,2,2,2]\n[3,1,2,3]\n1",
     "solution": {
         "canSeeDetail": false
     },
@@ -44,6 +44,18 @@
         "Sort <code>nums1</code> and its corresponding <code>nums2</code> values together based on <code>nums1</code>.",
         "Use a max heap to track the top <code>k</code> values of <code>nums2</code> as you process each element in the sorted order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> findMaxSum(vector<int>& nums1, vector<int>& nums2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k\n * @return {number[]}\n */\nvar findMaxSum = function(nums1, nums2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:25.711Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.472Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.498Z"
 }

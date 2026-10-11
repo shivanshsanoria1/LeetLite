@@ -47,6 +47,18 @@
         "N is small, we can generate all possible move combinations.",
         "For each possible move combination, determine which ones are valid."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCombinations(vector<string>& pieces, vector<vector<int>>& positions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} pieces\n * @param {number[][]} positions\n * @return {number}\n */\nvar countCombinations = function(pieces, positions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:40.535Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.935Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.365Z"
 }

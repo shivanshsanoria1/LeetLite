@@ -46,6 +46,7 @@
         "Find the number of strictly increasing subarrays that end at a specific index. Can you calculate that for each index from 0 to n - 1?",
         "The answer will be the sum of the number of subarrays that end at each index."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:24:05.018Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.478Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.131Z"
 }

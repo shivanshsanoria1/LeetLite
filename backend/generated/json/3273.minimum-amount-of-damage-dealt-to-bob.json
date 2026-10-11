@@ -46,6 +46,18 @@
         "Can we use sorting here along with a custom comparator?",
         "For any two enemies <code>i</code> and <code>j</code> with damages <code>damage[i]</code> and <code>damage[j]</code>, and time to take each of them down <code>t<sub>i</sub></code> and <code>t<sub>j</sub></code>, when is it better to choose enemy <code>i</code> over enemy <code>j</code> first?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minDamage(int power, vector<int>& damage, vector<int>& health) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} power\n * @param {number[]} damage\n * @param {number[]} health\n * @return {number}\n */\nvar minDamage = function(power, damage, health) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:27.077Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.097Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.858Z"
 }

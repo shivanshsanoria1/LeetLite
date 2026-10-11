@@ -49,6 +49,18 @@
     "hints": [
         "The answer is the product of the two largest values in <code>nums</code> and <code>10<sup>5</sup></code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxProduct(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxProduct = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-20T18:53:58.458Z",
-    "PARSED_ISO": "2026-09-20T18:54:00.467Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.931Z"
 }

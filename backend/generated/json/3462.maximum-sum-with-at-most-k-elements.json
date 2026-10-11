@@ -38,12 +38,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[[1,2],[3,4]]\n[1,2]\n2\n[[5,3,7],[8,2,6]]\n[2,2]\n3",
     "meta": {
         "quesIdLCBackend": 3764,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,2],[3,4]]\n[1,2]\n2\n[[5,3,7],[8,2,6]]\n[2,2]\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -52,6 +52,18 @@
         "Sort each row in descending order and extract the top <code>limits[i]</code> elements.",
         "Use a max-heap to efficiently pick the largest <code>k</code> elements across all rows."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSum(vector<vector<int>>& grid, vector<int>& limits, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number[]} limits\n * @param {number} k\n * @return {number}\n */\nvar maxSum = function(grid, limits, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:10.321Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.420Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.466Z"
 }

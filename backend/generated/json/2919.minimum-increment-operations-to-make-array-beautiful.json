@@ -43,6 +43,18 @@
         "<code>dp[i] = max(0, k - nums[i]) + min(dp[i - 1], dp[i - 2], dp[i - 3])</code> for <code>i</code> in the range <code>[3, n - 1]</code>.",
         "The answer to the problem is <code>min(dp[n - 1], dp[n - 2], dp[n - 3])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minIncrementOperations(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minIncrementOperations = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:17.725Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.635Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.910Z"
 }

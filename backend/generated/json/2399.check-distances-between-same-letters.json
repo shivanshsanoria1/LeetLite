@@ -46,6 +46,18 @@
         "Create an integer array of size 26 to keep track of the first occurrence of each letter.",
         "The number of letters between indices i and j is j - i - 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkDistances(string s, vector<int>& distance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[]} distance\n * @return {boolean}\n */\nvar checkDistances = function(s, distance) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:09.635Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.482Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.135Z"
 }

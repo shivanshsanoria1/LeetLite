@@ -39,6 +39,18 @@
         "Suppose that <code>k ≥ n</code>, there is exactly one player who can win <code>k</code> games in a row. Who is it?",
         "In case <code>k < n</code>, you can simulate the competition process described."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findWinningPlayer(vector<int>& skills, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} skills\n * @param {number} k\n * @return {number}\n */\nvar findWinningPlayer = function(skills, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:10.244Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.017Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.207Z"
 }

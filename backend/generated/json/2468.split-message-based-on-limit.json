@@ -44,6 +44,18 @@
         "Try all possible lengths of the total number of parts, and see if the string can be split such that the total number of parts has that length.",
         "Binary search can be used for each part length to find the precise number of parts needed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> splitMessage(string message, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} message\n * @param {number} limit\n * @return {string[]}\n */\nvar splitMessage = function(message, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:05.236Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.701Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.228Z"
 }

@@ -50,6 +50,18 @@
         "Track, for each prime factor, how many active indices contain it. If any prime covers all active elements, the answer is false.",
         "Check that there is an index whose prime factors do not cover all active elements (so a subsequence of length < <code>n</code> can have GCD = <code>p</code>)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGoodSubseq(vector<int>& nums, int p, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} p\n * @param {number[][]} queries\n * @return {number}\n */\nvar countGoodSubseq = function(nums, p, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:07.230Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.838Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.172Z"
 }

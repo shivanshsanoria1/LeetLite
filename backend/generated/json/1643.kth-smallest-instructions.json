@@ -47,6 +47,18 @@
         "There are nCr(row + column, row) possible instructions to reach (row, column).",
         "Try building the instructions one step at a time. How many instructions start with \"H\", and how does this compare with k?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string kthSmallestPath(vector<int>& destination, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} destination\n * @param {number} k\n * @return {string}\n */\nvar kthSmallestPath = function(destination, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:18.414Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.294Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.279Z"
 }

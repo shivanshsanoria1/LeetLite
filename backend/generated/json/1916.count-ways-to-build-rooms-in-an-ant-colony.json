@@ -75,6 +75,18 @@
         "Let dp[i] be the number of ways to solve the problem for the subtree of node i.",
         "Imagine you are trying to fill an array with the order of traversal, dp[i] equals the multiplications of the number of ways to distribute the subtrees of the children of i on the array using combinatorics, multiplied bu their dp values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    int waysToBuildRooms(vector<int>& prevRoom) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number[]} prevRoom\r\n * @return {number}\r\n */\r\nvar waysToBuildRooms = function(prevRoom) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:41.134Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.733Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.960Z"
 }

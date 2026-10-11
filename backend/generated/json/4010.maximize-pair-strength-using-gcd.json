@@ -48,6 +48,18 @@
         "<p>Try every pair of distinct indices and compute its strength directly.</p>",
         "<p>Use 64-bit integers when multiplying the two values.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxPairStrength(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxPairStrength = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:07.710Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.996Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.286Z"
 }

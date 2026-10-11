@@ -48,6 +48,18 @@
         "It is always optimal to buy the least expensive ice cream bar first.",
         "Sort the prices so that the cheapest ice cream bar comes first."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxIceCream(vector<int>& costs, int coins) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} costs\n * @param {number} coins\n * @return {number}\n */\nvar maxIceCream = function(costs, coins) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:45.992Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.502Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.871Z"
 }

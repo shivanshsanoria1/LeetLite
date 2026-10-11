@@ -58,6 +58,18 @@
         "To handle many queries efficiently, pre-process the array. Group elements by their remainder mod <code>k</code>. For each group, we need a data structure to find the median and sum of absolute differences for any given range.",
         "A Persistent Segment Tree can answer range median and range sum queries in logarithmic time, making it suitable for this problem."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> minOperations(vector<int>& nums, int k, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar minOperations = function(nums, k, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:19.581Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.094Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.981Z"
 }

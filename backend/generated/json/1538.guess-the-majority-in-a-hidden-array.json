@@ -47,6 +47,7 @@
     "hints": [
         "If you find that 2 indexes in the array (id1, id2) have the same value (nums [id1] == nums [id2]), you could infer the values of (x, y) based on the results of query (id1, id2, x, y)."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:36:44.025Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.035Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.997Z"
 }

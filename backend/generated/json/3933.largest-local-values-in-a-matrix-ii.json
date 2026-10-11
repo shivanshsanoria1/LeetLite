@@ -46,6 +46,18 @@
         "For a cell with value <code>x</code>, query its clamped square using the prefix sum for threshold <code>x</code>. If the count of values <code>> x</code> is zero, it is a local maximum.",
         "Remember to subtract the ignored corner cells <code>(i ± x, j ± x)</code> from the queried count if they are inside the matrix and greater than <code>x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countLocalMaximums(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number}\n */\nvar countLocalMaximums = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:41.057Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.863Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.196Z"
 }

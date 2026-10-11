@@ -41,6 +41,18 @@
         "Simulate the process.",
         "Return to refill the container once you meet a plant that needs more water than you have."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int wateringPlants(vector<int>& plants, int capacity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} plants\n * @param {number} capacity\n * @return {number}\n */\nvar wateringPlants = function(plants, capacity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:04.085Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.995Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.481Z"
 }

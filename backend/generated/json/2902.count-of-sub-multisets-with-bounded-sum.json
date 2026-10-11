@@ -60,6 +60,18 @@
         "The answer to the problem is <code>dp[l] + dp[l+1] + … + dp[r]</code>.",
         "Use coin change dp to transition between states."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSubMultisets(vector<int>& nums, int l, int r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} l\n * @param {number} r\n * @return {number}\n */\nvar countSubMultisets = function(nums, l, r) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:04.207Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.625Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.875Z"
 }

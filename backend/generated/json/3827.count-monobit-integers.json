@@ -39,6 +39,18 @@
     "hints": [
         "Go through all the integers in the range <code>[0, n]</code> and count the monobit integers"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countMonobit(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countMonobit = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:36.516Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.382Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.093Z"
 }

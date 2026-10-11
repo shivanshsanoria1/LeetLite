@@ -42,6 +42,18 @@
         "<p>With adjacent swaps, the minimum number of swaps needed is the number of inversions in this group array.</p>",
         "<p>Since there are only three possible group values, scan from left to right and count how many previous values are greater than the current value.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minAdjacentSwaps(vector<int>& nums, int a, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar minAdjacentSwaps = function(nums, a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:49.498Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.983Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.258Z"
 }

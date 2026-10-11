@@ -60,6 +60,18 @@
         "<div class=\"_1l1MA\">For the remaining <code>n - k</code> items sorted in non-increasing order of profits, try replacing an item in the candidate set using the current item.</div>",
         "<div class=\"_1l1MA\">The replacing item should add a new category to the candidate set and should remove the item with the minimum profit that occurs more than once in the candidate set.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long findMaximumElegance(vector<vector<int>>& items, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} items\n * @param {number} k\n * @return {number}\n */\nvar findMaximumElegance = function(items, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:44:48.087Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.553Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.624Z"
 }

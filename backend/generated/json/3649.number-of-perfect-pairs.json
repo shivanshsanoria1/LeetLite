@@ -34,12 +34,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[0,1,2,3]\n[-3,2,-1,4]\n[1,10,100,1000]",
     "meta": {
         "quesIdLCBackend": 3963,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[0,1,2,3]\n[-3,2,-1,4]\n[1,10,100,1000]",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Maintain two pointers <code>i</code> and <code>j</code> (starting at 0 and 1): for each <code>i</code>, advance <code>j</code> while <code>abs(nums[j]) <= 2*abs(nums[i])</code>.",
         "For each <code>i</code>, add <code>j - i - 1</code> to your answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long perfectPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar perfectPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:41.336Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.646Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.722Z"
 }

@@ -49,6 +49,18 @@
         "Use a monotonic decreasing stack to compute for each index <code>i</code> the range <code>[L[i], R[i]]</code> where <code>nums[i]</code> is the maximum of the subarray (break ties so only one index owns equal values).",
         "Precompute for each bit the previous and next positions where that bit is set. For index <code>i</code>, shrink <code>[L[i], R[i]]</code> by excluding positions that contain a bit not set in <code>nums[i]</code>. The contribution of <code>i</code> is <code>(i - effective_left + 1) * (effective_right - i + 1)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countGoodSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countGoodSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:42.578Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.820Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.147Z"
 }

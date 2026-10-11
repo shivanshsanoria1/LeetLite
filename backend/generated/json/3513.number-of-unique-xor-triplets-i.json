@@ -30,12 +30,12 @@
             "slug": "bit-manipulation"
         }
     ],
-    "exampleTestcases": "[1,2]\n[3,1,2]",
     "meta": {
         "quesIdLCBackend": 3824,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2]\n[3,1,2]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Find the Pattern\n\n#### Intuition\n\nAlthough the problem requires the indices of the triplets to satisfy $i \\le j \\le k$, the XOR operation is commutative, that is, $a \\oplus b = b \\oplus a$. Therefore, we only need to consider repeatedly selecting three numbers from $\\textit{nums}$ and computing their XOR value.\n\nSince $\\textit{nums}$ is a permutation of $[1, n]$, it contains every integer from $1$ to $n$ exactly once.\n\nWhen $n = 1$, we can only select three copies of $1$, whose XOR value is $1$. Therefore, the answer is $1$.\n\nWhen $n = 2$, we can only choose numbers from ${1, 2}$. The possible XOR values are\n* $1 \\oplus 1 \\oplus 1 = 1$,\n* $1 \\oplus 1 \\oplus 2 = 2$,\n* $1 \\oplus 2 \\oplus 2 = 1$,\n* $2 \\oplus 2 \\oplus 2 = 2$.\n\nThus, the distinct XOR values are ${1, 2}$, so the answer is $2$.\n\nWhen $n \\ge 3$, the situation is completely different. Let the highest power of two not exceeding $n$ be $2^k$, that is, $2^k \\le n < 2^{k+1}$. We claim that every integer in the range $[0, 2^{k+1} - 1]$ can be constructed. Specifically:\n* For $0$, we have $1 \\oplus 2 \\oplus 3 = 0$. Since $n \\ge 3$, all three numbers are in the array.\n* For any $x \\in [1, n]$, we have $1 \\oplus 1 \\oplus x = x$. Since both $1$ and $x$ are in the array, every such value can be constructed.\n* For any $x \\in [n + 1, 2^{k+1} - 1]$, let $y = x \\oplus 2^k$. Since $x > n \\ge 2^k$, the $k$-th bit of $x$ must be $1$. Therefore,\n  $$\n  y = x - 2^k < 2^k \\le n,\n  $$\n  so $y$ is also in the array. Next, choose two numbers $a$ and $b$ such that $a \\oplus b = y$. Then\n  $$\n  a \\oplus b \\oplus 2^k = y \\oplus 2^k = x.\n  $$\n  We can choose $a$ and $b$ as follows:\n\n  * If $y \\ne 1$, let $a = 1$ and $b = 1 \\oplus y$. Since\n    $$\n    1 \\oplus y \\le y + 1 \\le n,\n    $$\n    both numbers are in the array.\n\n  * If $y = 1$, let $a = 2$ and $b = 3$, since $2 \\oplus 3 = 1$.\n\nTherefore, every integer in the range $[0, 2^{k+1} - 1]$ can be constructed when $n \\ge 3$. Hence, the number of distinct XOR values is\n\n$$\n2^{k+1},\n$$\n\nwhich is exactly the smallest power of two greater than $n$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/bnB6mx5e/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"bnB6mx5e\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(\\log n)$.\n  \n  The loop executes $O(\\log n)$ iterations.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -46,6 +46,18 @@
         "Can we generate all numbers within that range?",
         "For <code>n >= 3</code> we can obtain all numbers in <code>[0, 2^(msb(n) + 1) - 1]</code>, where <code>msb(n)</code> is the index of the most significant bit in <code>n</code>’s binary representation (i.e., the highest power of 2 less than or equal to <code>n</code>). Handle the case when <code>n <= 2</code> separately."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int uniqueXorTriplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar uniqueXorTriplets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:57.978Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.499Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.536Z"
 }

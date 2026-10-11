@@ -45,6 +45,18 @@
         "The only way to change <code>nums[0]</code> to 1 is by performing an operation with index <code>i = 0</code>.",
         "Iterate from left to right and perform an operation at each index i where nums[i] is 0, and keep track of how many operations are currently performed on the suffix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:23.792Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.032Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.283Z"
 }

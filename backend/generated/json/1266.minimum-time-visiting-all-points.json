@@ -45,6 +45,18 @@
         "Advance in diagonal as possible then after that go in straight line.",
         "Repeat the process until visiting all the points."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minTimeToVisitAllPoints(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minTimeToVisitAllPoints = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:13.863Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.043Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.655Z"
 }

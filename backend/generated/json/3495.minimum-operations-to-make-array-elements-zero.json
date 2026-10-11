@@ -30,12 +30,12 @@
             "slug": "bit-manipulation"
         }
     ],
-    "exampleTestcases": "[[1,2],[2,4]]\n[[2,6]]",
     "meta": {
         "quesIdLCBackend": 3744,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,2],[2,4]]\n[[2,6]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Find Patterns + Bitwise Operation Statistics\n\n#### Intuition\n\nThe problem gives a set of intervals, each represented as $[l, r]$, and we need to reduce all numbers within these intervals to $0$. In each operation, we can choose two numbers, divide them by $4$, and take the floor of each result. We are asked to find the sum of the minimum number of operations required across all intervals.\n\nDividing a number by $4$ is equivalent to shifting it right by two bits in binary. For example, $11,(1011_2)$ divided by $4$ becomes $2,(10_2)$. Let’s look at some examples to see how many operations are needed to reduce numbers to $0$:\n- Numbers $1, 2, 3$ require only $1$ operation, and their binary lengths are $1$ and $2$.\n- Numbers $4, 5, \\dots, 15$ require $2$ operations, and their binary lengths are $3$ and $4$.\n- Numbers $16, 17, \\dots, 63$ require $3$ operations, and their binary lengths are $5$ and $6$.\n\nFrom this pattern, we see that for a binary number of length $x$, we need only $\\lceil \\tfrac{x}{2} \\rceil$ operations. Using this, we can calculate the total number of operations for all numbers within a given range. By iterating over all binary lengths, we can compute the total number of operations in $[1, r]$ and in $[1, l-1]$. The difference gives the number of operations in $[l, r]$. Note, however, that here an operation refers to dividing a single number by $4$, which differs slightly from the original definition.\n\nOnce we know the total number of times individual numbers are operated on, we can also determine how many pair operations are needed. This is simply the total number of operations divided by $2$, rounded up. Rounding up is necessary because if the total is odd, the final operation must pair a non-zero number with a $0$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/TmboeqeQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"TmboeqeQ\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of queries, and let $R$ be the maximum value of $r$ across all intervals.\n\n- Time complexity: $O(n \\log R)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -45,6 +45,18 @@
         "For a number <code>x</code>, the number of <code>\"/4\"</code> operations to change it to 0 is <code>floor(log4(x)) + 1</code>.",
         "Always pair the 2 numbers with the maximum <code>\"/4\"</code> operations needed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minOperations(vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queries\n * @return {number}\n */\nvar minOperations = function(queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:41.897Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.485Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.515Z"
 }

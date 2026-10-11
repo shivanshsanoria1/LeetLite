@@ -45,6 +45,7 @@
         "From the regular route at a previous stop, we can either use the express route after paying expressCost or use the regular route without paying expressCost.",
         "Iterate through the stops and compare the above cases to obtain the minimum costs for each stop."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:23:39.119Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.449Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.101Z"
 }

@@ -53,6 +53,18 @@
         "Start with an empty set, add to the set the integer with the maximum frequency.",
         "Keep Adding the integer with the max frequency until you remove at least half of the integers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSetSize(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar minSetSize = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:55.449Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.539Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.725Z"
 }

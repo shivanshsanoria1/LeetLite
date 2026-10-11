@@ -32,6 +32,18 @@
         "<p>For the current bit, scan the groups from the beginning. Pass over groups whose elements all have this bit set. At the first group containing an element without this bit set, split it into elements with the bit set followed by elements without it. Stop there and leave all later groups unchanged.</p>",
         "<p>The current entry of <code>power</code> equals the total size of the fully passed groups plus the number of elements with the bit set in the split group. Preserve the resulting group order for subsequent bits. This takes <code>O(15n)</code> time.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> largestPower(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar largestPower = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:18.005Z",
-    "PARSED_ISO": "2026-09-22T19:09:24.000Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.361Z"
 }

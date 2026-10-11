@@ -47,6 +47,18 @@
     "hints": [
         "Keep the character whose total deletion cost is maximum"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCost(string s, vector<int>& cost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[]} cost\n * @return {number}\n */\nvar minCost = function(s, cost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:44.757Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.273Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.023Z"
 }

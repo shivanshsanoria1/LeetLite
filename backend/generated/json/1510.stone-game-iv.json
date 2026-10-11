@@ -66,6 +66,18 @@
     "hints": [
         "Use dynamic programming to keep track of winning and losing states. Given some number of stones, Alice can win if she can force Bob onto a losing state."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool winnerSquareGame(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar winnerSquareGame = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:59.782Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.988Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.939Z"
 }

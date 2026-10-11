@@ -58,6 +58,18 @@
         "Use Floyd-Warshall's algorithm to compute any-point to any-point distances. (Or can also do Dijkstra from every node due to the weights are non-negative).",
         "For each city calculate the number of reachable cities within the threshold, then search for the optimal city."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} distanceThreshold\n * @return {number}\n */\nvar findTheCity = function(n, edges, distanceThreshold) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:50.643Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.529Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.723Z"
 }

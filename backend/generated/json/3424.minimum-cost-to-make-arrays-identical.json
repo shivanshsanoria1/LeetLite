@@ -30,12 +30,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[-7,9,5]\n[7,-2,-5]\n2\n[2,1]\n[2,1]\n0",
     "meta": {
         "quesIdLCBackend": 3712,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[-7,9,5]\n[7,-2,-5]\n2\n[2,1]\n[2,1]\n0",
     "solution": {
         "canSeeDetail": false
     },
@@ -45,6 +45,18 @@
         "Calculate <code>sum(abs(arr[i] - brr[i]))</code> if you do not use Operation 1.",
         "Calculate <code>sum(abs(arr[i] - brr[i]))</code> after sorting both arrays if you use Operation 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCost(vector<int>& arr, vector<int>& brr, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number[]} brr\n * @param {number} k\n * @return {number}\n */\nvar minCost = function(arr, brr, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:32.238Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.387Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.388Z"
 }

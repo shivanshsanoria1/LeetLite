@@ -38,6 +38,18 @@
     "hints": [
         "Use dynamic programming.  The states are how many dice are remaining, and what sum total you have rolled so far."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numRollsToTarget(int n, int k, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @param {number} target\n * @return {number}\n */\nvar numRollsToTarget = function(n, k, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:50.598Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.402Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.549Z"
 }

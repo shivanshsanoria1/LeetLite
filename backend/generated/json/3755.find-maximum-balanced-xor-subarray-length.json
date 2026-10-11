@@ -48,6 +48,18 @@
         "In one pass maintain prefix <code>pxor</code> and prefix <code>diff</code> = (#evens − #odds) and record in a hash‑map the earliest index where each state (<code>pxor,diff</code>) occurs.",
         "At each index, if the current state (<code>pxor,diff</code>) is already in the map, update the max length as the current index minus the recorded index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxBalancedSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxBalancedSubarray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:12.147Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.035Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.975Z"
 }

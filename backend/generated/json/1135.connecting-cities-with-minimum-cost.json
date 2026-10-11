@@ -54,6 +54,7 @@
         "How to check all cities are connected?",
         "At the beginning we have n connected components, each time we connect two components the number of connected components is reduced by one. At the end we should end with only a single component otherwise return -1."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:27:26.327Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.298Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.500Z"
 }

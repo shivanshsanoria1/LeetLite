@@ -42,6 +42,18 @@
         "Use dynamic programming.",
         "dp[i][j][k]: smallest movements when you have one finger on i-th char and the other one on j-th char already having written k first characters from word."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDistance(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar minimumDistance = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:31.661Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.495Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.714Z"
 }

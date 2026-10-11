@@ -46,6 +46,18 @@
         "If the array has n elements, the answer will be n - count(min(nums)) - count(max(nums))",
         "This formula will not work in case the array has all the elements equal, why?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countElements(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countElements = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:06.938Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.103Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.708Z"
 }

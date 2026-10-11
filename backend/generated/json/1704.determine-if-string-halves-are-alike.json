@@ -39,6 +39,18 @@
     "hints": [
         "Create a function that checks if a character is a vowel, either uppercase or lowercase."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool halvesAreAlike(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar halvesAreAlike = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:26.830Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.343Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.619Z"
 }

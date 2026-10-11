@@ -41,6 +41,18 @@
     "hints": [
         "Expected runtime complexity is in <i>O</i>(log <i>n</i>) and the input is sorted."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int hIndex(vector<int>& citations) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} citations\n * @return {number}\n */\nvar hIndex = function(citations) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:19.693Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.403Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.556Z"
 }

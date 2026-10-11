@@ -44,6 +44,18 @@
         "Use DFS from node <code>k</code>.",
         "Mark all the nodes visited from node <code>k</code>, and then check if they can be visited from the other nodes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> remainingMethods(int n, int k, vector<vector<int>>& invocations) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @param {number[][]} invocations\n * @return {number[]}\n */\nvar remainingMethods = function(n, k, invocations) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:54.635Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.182Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.038Z"
 }

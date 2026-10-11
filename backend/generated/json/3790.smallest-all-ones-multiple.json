@@ -41,6 +41,18 @@
         "Build the number digit-by-digit using only modulo <code>k</code>. Start with remainder <code>rem = 1 % k</code>. Repeatedly update <code>rem = (rem * 10 + 1) % k</code> while counting how many <code>1</code>s have been appended.",
         "Continue until <code>rem == 0</code> or a remainder repeats (which indicates a cycle and that no such <code>n</code> exists)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minAllOneMultiple(int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @return {number}\n */\nvar minAllOneMultiple = function(k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:52.557Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.279Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.030Z"
 }

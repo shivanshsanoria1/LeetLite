@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[1,5,2,4]\n[5,1,4,2]\n[1,1,1]\n[1,1,1]\n[1,2,3,4]\n[1,2]",
     "meta": {
         "quesIdLCBackend": 3794,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,5,2,4]\n[5,1,4,2]\n[1,1,1]\n[1,1,1]\n[1,2,3,4]\n[1,2]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Dynamic Programming\n\n#### Intuition\n\nThe requirement is that each potion must be brewed by every wizard, and each wizard can brew only one potion at a time. Once the brewing of a potion begins, it cannot be paused midway and must be completed continuously by all wizards.\n\nFirst, the brewing of the first potion begins at time $0$, so the time each wizard takes to brew it is fixed and easy to calculate. However, the starting time for subsequent potions is not immediately clear.\n\nWe may allow the brewing process of the $j$-th potion to be non-continuous (while the first $j - 1$ potions still require continuity) and let the time for the $i$-th wizard to finish brewing the $j$-th potion be $\\textit{times}[i][j]$. Then we have:\n\n$$\n\\textit{times}[i][j] = max(\\textit{times}[i-1][j], \\textit{times}[i][j-1]) + \\textit{skill}[i] \\times \\textit{mana}[j]\n$$\n\nAfter one round of recursion, we obtain the completion time of the $j$-th potion, $\\textit{times}[n - 1][j]$. At this point, we traverse backwards to update the completion times of the $j$-th potion for the previous wizards, eliminating the gaps introduced by the earlier allowance of discontinuous brewing.\n\nDuring implementation, $\\textit{times}$ can be optimized to a one-dimensional array.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/BAVPMFGj/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"BAVPMFGj\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{skill}$ and $m$ be the length of $\\textit{mana}$.\n\n- Time complexity: $O(nm)$.\n  \n  The dynamic programming approach requires $O(nm)$ time.\n\n- Space complexity: $O(n)$.\n  \n  We use a one-dimensional array to store intermediate results.\n\n---"
@@ -46,6 +46,18 @@
         "Let <code>x</code> be the current mana value. Starting from <code>now = f[0]</code>, update <code>now = max(now + skill[i - 1] * x, f[i])</code> for <code>i in [1..n]</code>. Then, the final <code>f[n - 1] = now + skill[n - 1] * x</code> for this potion.",
         "Update all other <code>f</code> values by <code>f[i] = f[i + 1] - skill[i + 1] * x</code> for <code>i in [0..n - 2]</code> (in reverse order)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minTime(vector<int>& skill, vector<int>& mana) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} skill\n * @param {number[]} mana\n * @return {number}\n */\nvar minTime = function(skill, mana) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:40.101Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.484Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.514Z"
 }

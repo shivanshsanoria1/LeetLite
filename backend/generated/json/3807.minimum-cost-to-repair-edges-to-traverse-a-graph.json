@@ -45,6 +45,7 @@
         "For a fixed value of <code>money</code>, check whether there exists a path from node <code>0</code> to node <code>n - 1</code> that uses at most <code>k</code> edges.",
         "Use binary search to find the smallest value of <code>money</code> that makes this possible."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T18:46:09.122Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.328Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.047Z"
 }

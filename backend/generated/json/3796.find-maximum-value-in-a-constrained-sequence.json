@@ -44,6 +44,18 @@
         "The maximum possible value at each index is the minimum of all bounds propagated from the left and from the right.",
         "Once all upper bounds are fixed, the answer is simply the maximum value among them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findMaxVal(int n, vector<vector<int>>& restrictions, vector<int>& diff) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} restrictions\n * @param {number[]} diff\n * @return {number}\n */\nvar findMaxVal = function(n, restrictions, diff) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:58.250Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.297Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.038Z"
 }

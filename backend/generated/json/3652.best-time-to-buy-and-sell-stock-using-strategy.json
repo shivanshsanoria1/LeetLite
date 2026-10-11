@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[4,2,8]\n[-1,0,1]\n2\n[5,4,3]\n[1,1,0]\n2",
     "meta": {
         "quesIdLCBackend": 3980,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[4,2,8]\n[-1,0,1]\n2\n[5,4,3]\n[1,1,0]\n2",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Prefix Sum\n\n#### Intuition\n\nLet $n$ be the length of the array $\\textit{prices}$. Assuming that the $k$ consecutive elements we choose lie within the interval $[i - k + 1, i]$ (where $i \\ge k - 1$), the profit consists of three parts:\n\n1. The sum of all $\\textit{strategy}[j] \\times \\textit{prices}[j]$ in the interval $[0, i - k]$\n\n2. The sum of all $\\textit{prices}[j]$ in the interval $[i - \\frac{k}{2} + 1, i]$\n\n3. The sum of all $\\textit{strategy}[j] \\times \\textit{prices}[j]$ in the interval $[i + 1, n - 1]$\n\nWe use the array $\\textit{profitSum}$ to keep track of the prefix sums of $\\textit{strategy}[j] \\times \\textit{prices}[j]$, and the array $\\textit{priceSum}$ to keep track of the prefix sums of $\\textit{prices}[j]$. We iterate through $i$ in order and use the prefix sum arrays to calculate the three parts of the profit, returning the maximum profit obtained.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CKsgjApZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"CKsgjApZ\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{prices}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(n)$.\n\n---"
@@ -45,6 +45,18 @@
         "Use prefix sums to precompute the base profit and to get fast range queries (sums of <code>prices</code> and counts of each <code>strategy</code> value over any interval).",
         "Try every segment of length <code>k</code>: compute the profit delta caused by replacing that segment (using the prefix queries) and take the maximum of <code>base + delta</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxProfit(vector<int>& prices, vector<int>& strategy, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} prices\n * @param {number[]} strategy\n * @param {number} k\n * @return {number}\n */\nvar maxProfit = function(prices, strategy, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:46.457Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.650Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.727Z"
 }

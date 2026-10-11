@@ -56,6 +56,18 @@
         "We can consider the grid a graph with edges between adjacent cells.",
         "If you can find two non-intersecting paths from (0, 0) to (m - 1, n - 1) then the answer is false. Otherwise, it is always true."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPossibleToCutPath(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {boolean}\n */\nvar isPossibleToCutPath = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:15.947Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.143Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.347Z"
 }

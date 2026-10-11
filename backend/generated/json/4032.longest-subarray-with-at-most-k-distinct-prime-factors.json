@@ -52,6 +52,18 @@
         "Precompute the distinct prime factors of every value, for example using a smallest-prime-factor sieve.",
         "Use a sliding window and maintain how many elements in the current window contain each prime factor. Shrink the window whenever the number of prime factors with a positive frequency exceeds <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar longestSubarray = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:31.311Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.013Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.327Z"
 }

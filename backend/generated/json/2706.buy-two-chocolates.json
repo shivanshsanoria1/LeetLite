@@ -43,6 +43,18 @@
     "hints": [
         "Sort the array and check if the money is more than or equal to the sum of the two cheapest elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int buyChoco(vector<int>& prices, int money) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} prices\n * @param {number} money\n * @return {number}\n */\nvar buyChoco = function(prices, money) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:21.902Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.374Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.505Z"
 }

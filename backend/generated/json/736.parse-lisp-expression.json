@@ -50,6 +50,18 @@
     "hints": [
         "* If the expression starts with a digit or '-', it's an integer: return it.\r\n\r\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\r\n\r\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\r\n\r\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\r\n\r\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int evaluate(string expression) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} expression\n * @return {number}\n */\nvar evaluate = function(expression) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:59.274Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.277Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.024Z"
 }

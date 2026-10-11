@@ -37,6 +37,18 @@
     "hints": [
         "Brute force and check if it is possible for a sorted array to start from each position."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool check(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar check = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:18.544Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.421Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.704Z"
 }

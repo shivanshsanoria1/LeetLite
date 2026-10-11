@@ -60,6 +60,7 @@
         "If the node has a left node, it column should be col - 1. Similarly, if the node has a right node, its column should be col + 1.",
         "At the end, check the minimum and maximum col and output their values."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T19:57:53.282Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.970Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.963Z"
 }

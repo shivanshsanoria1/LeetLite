@@ -46,6 +46,18 @@
         "- For every unordered pair of characters <code>(a, b)</code>, the cost of turning <code>a</code> into <code>b</code> is equal to the minimum between: \r\n<ul>\r\n<li>If <code>i < j</code>, <code>nextCost[i] + nextCost[i + 1] + … + nextCost[j - 1]</code>, and <code>nextCost[i] + nextCost[i + 1] + … + nextCost[25] + nextCost[0] + … + nextCost[j - 1]</code> otherwise.</li>\r\n    \r\n    <li>If <code>i < j</code>, <code>prevCost[i] + prevCost[i - 1] + … + prevCost[0] + prevCost[25] + … + prevCost[j + 1]</code>, and <code>prevCost[i] + prevCost[i - 1] + … + prevCost[j + 1]</code> otherwise.</li>\r\n    </ul>\r\n    Where <code>i</code> and <code>j</code> are the indices of <code>a</code> and <code>b</code> in the alphabet.",
         "The shift distance is the sum of costs of turning <code>s[i]</code> into <code>t[i]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long shiftDistance(string s, string t, vector<int>& nextCost, vector<int>& previousCost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number[]} nextCost\n * @param {number[]} previousCost\n * @return {number}\n */\nvar shiftDistance = function(s, t, nextCost, previousCost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:34.483Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.215Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.305Z"
 }

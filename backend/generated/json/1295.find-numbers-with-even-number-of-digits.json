@@ -44,6 +44,18 @@
         "How to compute the number of digits of a number ?",
         "Divide the number by 10 again and again to get the number of digits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findNumbers(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findNumbers = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:56.762Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.266Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.687Z"
 }

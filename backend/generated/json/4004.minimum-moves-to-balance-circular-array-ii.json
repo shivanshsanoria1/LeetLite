@@ -52,6 +52,7 @@
         "<p>Build a minimum-cost flow network: connect a source to surplus positions, deficit positions to a sink, and every pair of neighboring positions in both directions with cost 1.</p>",
         "<p>Send enough flow to cover all deficits. The minimum flow cost is the required minimum number of moves.</p>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:07:02.291Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.992Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.277Z"
 }

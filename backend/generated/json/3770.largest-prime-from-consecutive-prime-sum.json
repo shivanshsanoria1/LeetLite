@@ -45,6 +45,18 @@
         "Compute consecutive sums starting from 2 until the sum exceeds <code>n</code>.",
         "Find the largest sum that is also a prime."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestPrime(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar largestPrime = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:27.519Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.161Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.995Z"
 }

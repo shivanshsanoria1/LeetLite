@@ -54,6 +54,18 @@
         "From state <code>(u, p)</code>, you may traverse outgoing edges only if <code>p &gt;= cost[u]</code>, and the next state has remaining power <code>p - cost[u]</code>.",
         "After computing shortest times, among all states at <code>target</code> with minimum time, choose the one with the maximum remaining power."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> minTimeMaxPower(int n, vector<vector<int>>& edges, int power, vector<int>& cost, int source, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} power\n * @param {number[]} cost\n * @param {number} source\n * @param {number} target\n * @return {number[]}\n */\nvar minTimeMaxPower = function(n, edges, power, cost, source, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:31.702Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.971Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.243Z"
 }

@@ -35,6 +35,18 @@
     "hints": [
         "Diagonal of rectangle is <code>sqrt(length<sup>2</sup> + width<sup>2</sup>)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} dimensions\n * @return {number}\n */\nvar areaOfMaxDiagonal = function(dimensions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:24.257Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.755Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.278Z"
 }

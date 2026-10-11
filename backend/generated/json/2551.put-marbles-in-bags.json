@@ -49,6 +49,18 @@
         "Each subarray only contributes two numbers to the sum. Use this property to choose the subarrays optimally.",
         "Try to use a priority queue."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long putMarbles(vector<int>& weights, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} weights\n * @param {number} k\n * @return {number}\n */\nvar putMarbles = function(weights, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:11.752Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.138Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.341Z"
 }

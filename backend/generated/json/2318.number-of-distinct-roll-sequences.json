@@ -43,6 +43,18 @@
         "Consider a state that remembers the last 1 or 2 rolls.",
         "Do you need to consider the last 3 rolls?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int distinctSequences(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar distinctSequences = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:02.665Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.414Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.032Z"
 }

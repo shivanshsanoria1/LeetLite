@@ -44,6 +44,18 @@
         "For transactions that have cashback greater or equal to cost, sort them by cost in descending order.",
         "For transactions that have cashback less than cost, sort them by cashback in ascending order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumMoney(vector<vector<int>>& transactions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} transactions\n * @return {number}\n */\nvar minimumMoney = function(transactions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:21.026Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.543Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.164Z"
 }

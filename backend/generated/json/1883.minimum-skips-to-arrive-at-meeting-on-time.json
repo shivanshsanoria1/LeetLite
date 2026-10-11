@@ -42,6 +42,18 @@
         "Is there something you can keep track of from one road to another?",
         "How would knowing the start time for each state help us solve the problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSkips(vector<int>& dist, int speed, int hoursBefore) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} dist\n * @param {number} speed\n * @param {number} hoursBefore\n * @return {number}\n */\nvar minSkips = function(dist, speed, hoursBefore) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:40.758Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.590Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.921Z"
 }

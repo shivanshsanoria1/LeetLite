@@ -50,6 +50,18 @@
         "On <code>addBid</code> or <code>updateBid</code>, remove the old entry (if any) and insert the new one.",
         "On <code>removeBid</code>, delete the corresponding entry; return the top element for <code>getHighestBidder</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class AuctionSystem {\npublic:\n    AuctionSystem() {\n        \n    }\n    \n    void addBid(int userId, int itemId, int bidAmount) {\n        \n    }\n    \n    void updateBid(int userId, int itemId, int newAmount) {\n        \n    }\n    \n    void removeBid(int userId, int itemId) {\n        \n    }\n    \n    int getHighestBidder(int itemId) {\n        \n    }\n};\n\n/**\n * Your AuctionSystem object will be instantiated and called as such:\n * AuctionSystem* obj = new AuctionSystem();\n * obj->addBid(userId,itemId,bidAmount);\n * obj->updateBid(userId,itemId,newAmount);\n * obj->removeBid(userId,itemId);\n * int param_4 = obj->getHighestBidder(itemId);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar AuctionSystem = function() {\n    \n};\n\n/** \n * @param {number} userId \n * @param {number} itemId \n * @param {number} bidAmount\n * @return {void}\n */\nAuctionSystem.prototype.addBid = function(userId, itemId, bidAmount) {\n    \n};\n\n/** \n * @param {number} userId \n * @param {number} itemId \n * @param {number} newAmount\n * @return {void}\n */\nAuctionSystem.prototype.updateBid = function(userId, itemId, newAmount) {\n    \n};\n\n/** \n * @param {number} userId \n * @param {number} itemId\n * @return {void}\n */\nAuctionSystem.prototype.removeBid = function(userId, itemId) {\n    \n};\n\n/** \n * @param {number} itemId\n * @return {number}\n */\nAuctionSystem.prototype.getHighestBidder = function(itemId) {\n    \n};\n\n/** \n * Your AuctionSystem object will be instantiated and called as such:\n * var obj = new AuctionSystem()\n * obj.addBid(userId,itemId,bidAmount)\n * obj.updateBid(userId,itemId,newAmount)\n * obj.removeBid(userId,itemId)\n * var param_4 = obj.getHighestBidder(itemId)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:21.823Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.349Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.073Z"
 }

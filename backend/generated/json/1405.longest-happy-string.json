@@ -46,6 +46,18 @@
         "Use a greedy approach.",
         "Use the letter with the maximum current limit that can be added without breaking the condition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string longestDiverseString(int a, int b, int c) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {string}\n */\nvar longestDiverseString = function(a, b, c) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:29.355Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.805Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.817Z"
 }

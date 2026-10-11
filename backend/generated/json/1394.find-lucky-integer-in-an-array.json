@@ -44,6 +44,18 @@
         "Count the frequency of each integer in the array.",
         "Get all lucky numbers and return the largest of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findLucky(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar findLucky = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:16.050Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.796Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.808Z"
 }

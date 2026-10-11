@@ -50,6 +50,18 @@
         "For the bitwise AND to be greater than zero, at least one bit should be 1 for every number in the combination.",
         "The candidates are 24 bits long, so for every bit position, we can calculate the size of the largest combination such that the bitwise AND will have a 1 at that bit position."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestCombination(vector<int>& candidates) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} candidates\n * @return {number}\n */\nvar largestCombination = function(candidates) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:28.876Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.322Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.991Z"
 }

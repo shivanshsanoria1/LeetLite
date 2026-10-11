@@ -42,6 +42,18 @@
         "Consider that any valid arithmetic progression will be in sorted order.",
         "Sort the array, then check if the differences of all consecutive elements are equal."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canMakeArithmeticProgression(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {boolean}\n */\nvar canMakeArithmeticProgression = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:49.599Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.983Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.928Z"
 }

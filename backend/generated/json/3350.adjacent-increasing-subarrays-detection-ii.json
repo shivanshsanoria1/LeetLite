@@ -40,6 +40,18 @@
         "Find the boundaries between strictly increasing subarrays.",
         "Can we use binary search?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxIncreasingSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxIncreasingSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:26.081Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.209Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.260Z"
 }

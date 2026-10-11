@@ -47,6 +47,18 @@
         "We want to make the smaller digits the most significant digits in the number.",
         "For each index i, check the smallest digit in a window of size k and append it to the answer. Update the indices of all digits in this range accordingly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string minInteger(string num, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @param {number} k\n * @return {string}\n */\nvar minInteger = function(num, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:53.180Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.984Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.932Z"
 }

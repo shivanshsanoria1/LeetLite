@@ -55,6 +55,7 @@
         "Count for each variable how many times it appeared in the first tree.",
         "Do the same for the second tree and check if the count is the same for both tree."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:50:44.744Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.198Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.173Z"
 }

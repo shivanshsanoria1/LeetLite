@@ -63,6 +63,7 @@
         "Let’s describe the solution for counting the number of elements smaller than nums[i] in the range [0, i - 1], and counting in the range [i + 1, nums.length - 1] can be done similarly by simply reversing the array.",
         "Iterate from left to right and maintain the Fenwick Tree. Save the value of the query(nums[i]) and update nums[i] + 1 by 1."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:38:45.128Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.786Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.310Z"
 }

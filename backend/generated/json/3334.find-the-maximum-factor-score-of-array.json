@@ -50,6 +50,18 @@
         "Use brute force approach with two loops.",
         "Optimize using prefix and suffix arrays."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxScore(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxScore = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:12.664Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.197Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.146Z"
 }

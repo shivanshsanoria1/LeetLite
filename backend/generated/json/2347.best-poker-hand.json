@@ -44,6 +44,18 @@
     "hints": [
         "Sequentially check the conditions 1 through 4, and return the outcome corresponding to the first met condition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string bestHand(vector<int>& ranks, vector<char>& suits) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} ranks\n * @param {character[]} suits\n * @return {string}\n */\nvar bestHand = function(ranks, suits) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:27.754Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.436Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.084Z"
 }

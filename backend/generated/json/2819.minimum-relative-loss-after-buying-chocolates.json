@@ -50,6 +50,7 @@
         "<div class=\"_1l1MA\">Knowing how many chocolates Bob should pick from the first part is sufficient. Of course, Bob should select a prefix from this part and a suffix from the second part.</div>",
         "<div class=\"_1l1MA\">To find the number of chocolates from the first part, do a binary search on the first part.</div>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:44:52.529Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.560Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.722Z"
 }

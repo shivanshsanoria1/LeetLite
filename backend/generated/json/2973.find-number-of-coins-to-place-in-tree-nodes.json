@@ -60,6 +60,18 @@
         "If there are more than three values in total, we can sort them. Let’s call the resultant array <code>A</code>, the maximum product of three is <code>max(A[0] * A[1] * A[n - 1], A[n - 1] * A[n - 2] * A[n - 3])</code>. Don’t forget to set the result to <code>0</code> if the value is negative.",
         "If there are less than three values for a subtree, set its result to <code>1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> placedCoins(vector<vector<int>>& edges, vector<int>& cost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number[]} cost\n * @return {number[]}\n */\nvar placedCoins = function(edges, cost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:02.162Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.722Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.136Z"
 }

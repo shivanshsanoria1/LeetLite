@@ -45,6 +45,18 @@
         "<p>Maintain the amount of work already completed in the current pass through <code>tasks</code>. If adding the current shift length reaches or exceeds the total task time, all tasks are completed, so append <code>0</code> and reset the completed work to <code>0</code>.</p>",
         "<p>Otherwise, use binary search on the prefix sums to count how many tasks have been fully completed. If this count is <code>c</code>, then <code>tasks.length - c</code> tasks are unfinished.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countTasks(vector<int>& tasks, vector<int>& shifts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} tasks\n * @param {number[]} shifts\n * @return {number[]}\n */\nvar countTasks = function(tasks, shifts) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:09.854Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.997Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.288Z"
 }

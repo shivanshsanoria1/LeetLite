@@ -46,6 +46,18 @@
         "Because each class's pass ratio is weighted equally, it's always optimal to put the student in the class that makes the biggest change among all the other classes.",
         "Keep a max heap of the current class sizes and order them by the change in pass ratio. For each extra student, take the top of the heap, update the class size, and put it back in the heap."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} classes\n * @param {number} extraStudents\n * @return {number}\n */\nvar maxAverageRatio = function(classes, extraStudents) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:04.929Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.477Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.782Z"
 }

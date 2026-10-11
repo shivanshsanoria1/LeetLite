@@ -39,6 +39,18 @@
         "Find the minimum number of training hours needed for the energy and experience separately, and sum the results.",
         "Try to increase the energy and experience until you find how much is enough to win the competition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minNumberOfHours(int initialEnergy, int initialExperience, vector<int>& energy, vector<int>& experience) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} initialEnergy\n * @param {number} initialExperience\n * @param {number[]} energy\n * @param {number[]} experience\n * @return {number}\n */\nvar minNumberOfHours = function(initialEnergy, initialExperience, energy, experience) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:57.140Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.468Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.120Z"
 }

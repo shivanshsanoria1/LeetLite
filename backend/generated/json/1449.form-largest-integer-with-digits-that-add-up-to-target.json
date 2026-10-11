@@ -47,6 +47,18 @@
         "Use dynamic programming to find the maximum digits to paint given a total cost.",
         "Build the largest number possible using this DP table."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string largestNumber(vector<int>& cost, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} cost\n * @param {number} target\n * @return {string}\n */\nvar largestNumber = function(cost, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:34.587Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.890Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.848Z"
 }

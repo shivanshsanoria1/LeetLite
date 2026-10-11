@@ -45,6 +45,18 @@
         "You should try all scenarios but this will be costly.",
         "Memoizing the pre-visited states while trying all the possible scenarios will reduce the complexity, and hence dp is a perfect choice here."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumScore(vector<int>& nums, vector<int>& multipliers) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} multipliers\n * @return {number}\n */\nvar maximumScore = function(nums, multipliers) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:40.227Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.461Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.755Z"
 }

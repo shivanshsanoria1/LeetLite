@@ -61,6 +61,18 @@
         "We can check if we have enough pairs for index <code>i</code>; if we do, we increase the number of palindromes we can make and decrease the number of pairs we have. Otherwise, we end the loop at this index.",
         "The answer is the number of palindromes we were able to make in the end."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxPalindromesAfterOperations(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar maxPalindromesAfterOperations = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:55.614Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.779Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.422Z"
 }

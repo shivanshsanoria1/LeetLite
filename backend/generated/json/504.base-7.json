@@ -36,6 +36,18 @@
     },
     "content": "<p>Given an integer <code>num</code>, return <em>a string of its <strong>base 7</strong> representation</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> num = 100\n<strong>Output:</strong> \"202\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> num = -7\n<strong>Output:</strong> \"-10\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-10<sup>7</sup> &lt;= num &lt;= 10<sup>7</sup></code></li>\n</ul>\n",
     "hints": [],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string convertToBase7(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar convertToBase7 = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:07:41.308Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.962Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.548Z"
 }

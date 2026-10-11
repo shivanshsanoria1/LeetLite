@@ -46,6 +46,18 @@
         "<p>For each subsequence, compute a canonical representative of its cyclic rotations, such as its lexicographically smallest cyclic rotation. This can be found efficiently using Booth's algorithm, Duval's algorithm, or even a suffix-array-based approach on the doubled string etc.</p>",
         "<p>Use the pair of canonical representatives as the signature of the word. The answer is the number of distinct signatures.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumGroups(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar minimumGroups = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:56.134Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.987Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.261Z"
 }

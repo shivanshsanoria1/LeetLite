@@ -42,6 +42,18 @@
         "Iterate over all the elements of the array. For each index i, check if it is special using the modulo operator.",
         "if n%i == 0, index i is special and you should add nums[i] to the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOfSquares(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumOfSquares = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:20.569Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.422Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.585Z"
 }

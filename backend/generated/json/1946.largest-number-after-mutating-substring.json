@@ -44,6 +44,18 @@
         "If changing the first digit and the last digit both make the number bigger, but you can only change one of them; which one should you change?",
         "Changing numbers closer to the front is always better"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maximumNumber(string num, vector<int>& change) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @param {number[]} change\n * @return {string}\n */\nvar maximumNumber = function(num, change) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:05.503Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.783Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.035Z"
 }

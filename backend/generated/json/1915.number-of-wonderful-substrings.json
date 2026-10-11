@@ -48,6 +48,18 @@
         "For each prefix of the string, check which characters are of even frequency and which are not and represent it by a bitmask.",
         "Find the other prefixes whose masks differs from the current prefix mask by at most one bit."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    long long wonderfulSubstrings(string word) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {string} word\r\n * @return {number}\r\n */\r\nvar wonderfulSubstrings = function(word) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:40.424Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.732Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.959Z"
 }

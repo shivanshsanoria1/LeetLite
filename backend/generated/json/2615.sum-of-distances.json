@@ -49,6 +49,18 @@
         "For each number x, collect all the indices where x occurs, and calculate the prefix sum of the array.",
         "For each occurrence of x, the indices to the right will be regular subtraction while the indices to the left will be reversed subtraction."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> distance(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar distance = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:06.023Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.254Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.409Z"
 }

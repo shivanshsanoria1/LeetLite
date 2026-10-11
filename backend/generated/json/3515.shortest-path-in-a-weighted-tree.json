@@ -38,12 +38,12 @@
             "slug": "segment-tree"
         }
     ],
-    "exampleTestcases": "2\n[[1,2,7]]\n[[2,2],[1,1,2,4],[2,2]]\n3\n[[1,2,2],[1,3,4]]\n[[2,1],[2,3],[1,1,3,7],[2,2],[2,3]]\n4\n[[1,2,2],[2,3,1],[3,4,5]]\n[[2,4],[2,3],[1,2,3,3],[2,2],[2,3]]",
     "meta": {
         "quesIdLCBackend": 3829,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n[[1,2,7]]\n[[2,2],[1,1,2,4],[2,2]]\n3\n[[1,2,2],[1,3,4]]\n[[2,1],[2,3],[1,1,3,7],[2,2],[2,3]]\n4\n[[1,2,2],[2,3,1],[3,4,5]]\n[[2,4],[2,3],[1,2,3,3],[2,2],[2,3]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -53,6 +53,18 @@
         "Build a segment tree over this Euler tour to support efficient range updates and point queries.",
         "For an update query [1, <code>u</code>, <code>v</code>, <code>w'</code>], adjust the distance for all descendants by applying a delta update to the corresponding range in the flattened array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> treeQueries(int n, vector<vector<int>>& edges, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar treeQueries = function(n, edges, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:00.536Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.538Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.537Z"
 }

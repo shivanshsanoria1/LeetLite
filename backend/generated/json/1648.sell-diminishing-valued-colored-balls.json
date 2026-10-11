@@ -58,6 +58,18 @@
         "There is some value k where all balls of value > k are sold, and some, (maybe 0) of balls of value k are sold.",
         "Use binary search to find this value k, and use maths to find the total sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxProfit(vector<int>& inventory, int orders) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} inventory\n * @param {number} orders\n * @return {number}\n */\nvar maxProfit = function(inventory, orders) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:23.446Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.298Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.357Z"
 }

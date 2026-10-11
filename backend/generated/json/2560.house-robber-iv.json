@@ -53,6 +53,18 @@
         "Use a check function to determine if it is possible to select k non-consecutive elements that are less than or equal to the current \"guess\" value.",
         "Adjust the search range based on the outcome of the check function, until the range converges and the minimum value is found."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCapability(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minCapability = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:19.635Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.147Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.351Z"
 }

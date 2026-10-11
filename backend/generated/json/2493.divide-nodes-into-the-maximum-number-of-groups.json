@@ -53,6 +53,18 @@
         "Notice that we can solve the problem for each connected component independently, and the final answer will be just the sum of the maximum number of groups in each component.",
         "Finally, to solve the problem for each connected component, we can notice that if for some node v we fix its position to be in the leftmost group, then we can also evaluate the position of every other node. That position is the depth of the node in a bfs tree after rooting at node v."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int magnificentSets(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nvar magnificentSets = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:24.544Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.742Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.264Z"
 }

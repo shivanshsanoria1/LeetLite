@@ -46,6 +46,7 @@
         "If several nodes tie as farthest from <code>start</code>, collect them into <code>cand_start</code>, each is a possible diameter endpoint.",
         "Running BFS from any node in <code>cand_start</code> yields the opposite-end set <code>cand_other</code>, the other diameter endpoints."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T18:45:49.369Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.276Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.026Z"
 }

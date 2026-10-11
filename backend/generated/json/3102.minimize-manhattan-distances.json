@@ -52,6 +52,18 @@
         "If you replace points as <code>[x<sub>i</sub> - y<sub>i</sub>, x<sub>i</sub> + y<sub>i</sub>]</code> then the Manhattan distance is <code>max(max(x<sub>i</sub>) - min(x<sub>i</sub>), max(y<sub>i</sub>) - min(y<sub>i</sub>))</code> over all <code>i</code>.",
         "After those observations, the problem just becomes a simulation. Create multiset of points <code>[x<sub>i</sub> - y<sub>i</sub>, x<sub>i</sub> + y<sub>i</sub>]</code>, you can iterate on a point you might remove and get the maximum Manhattan distance over all other points."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDistance(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minimumDistance = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:10.769Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.927Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.820Z"
 }

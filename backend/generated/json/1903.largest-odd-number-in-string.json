@@ -46,6 +46,18 @@
         "In what order should you iterate through the digits?",
         "If an odd number exists, where must the number start from?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string largestOddNumber(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {string}\n */\nvar largestOddNumber = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:30.296Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.710Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.947Z"
 }

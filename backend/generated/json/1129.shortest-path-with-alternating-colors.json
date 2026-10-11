@@ -39,6 +39,18 @@
     "hints": [
         "Do a breadth-first search, where the \"nodes\" are actually (Node, color of last edge taken)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& redEdges, vector<vector<int>>& blueEdges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} redEdges\n * @param {number[][]} blueEdges\n * @return {number[]}\n */\nvar shortestAlternatingPaths = function(n, redEdges, blueEdges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:19.367Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.289Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.469Z"
 }

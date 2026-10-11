@@ -48,6 +48,18 @@
     "hints": [
         "Iterate over all indices <code>i</code> then, using a second loop, check if the subarray starting at index <code>i</code> matches the pattern."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countMatchingSubarrays(vector<int>& nums, vector<int>& pattern) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} pattern\n * @return {number}\n */\nvar countMatchingSubarrays = function(nums, pattern) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:54.796Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.778Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.417Z"
 }

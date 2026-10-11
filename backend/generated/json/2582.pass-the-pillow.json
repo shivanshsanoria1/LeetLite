@@ -42,6 +42,18 @@
         "Maintain two integer variables, direction and i, where direction denotes the current direction in which the pillow should pass, and i denotes an index of the person holding the pillow.",
         "While time is positive, update the current index with the current direction. If the index reaches the end of the line, multiply direction by - 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int passThePillow(int n, int time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} time\n * @return {number}\n */\nvar passThePillow = function(n, time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:38.605Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.170Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.378Z"
 }

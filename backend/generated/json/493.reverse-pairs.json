@@ -67,6 +67,18 @@
         "Divide the array into two parts and sort them.",
         "For each integer in the first part, count the number of integers that satisfy the condition from the second part. Use the pointer to help you in the counting process."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int reversePairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar reversePairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:07:31.839Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.954Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.530Z"
 }

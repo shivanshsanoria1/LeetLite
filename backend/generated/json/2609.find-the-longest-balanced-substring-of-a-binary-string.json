@@ -35,6 +35,18 @@
         "Consider iterating over each subarray and checking if it’s balanced or not.",
         "Among all balanced subarrays, the answer is the longest one of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findTheLongestBalancedSubstring(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar findTheLongestBalancedSubstring = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:01.310Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.251Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.406Z"
 }

@@ -51,6 +51,18 @@
     "hints": [
         "Sort the matrix row indexes by the number of soldiers and then row indexes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @param {number} k\n * @return {number[]}\n */\nvar kWeakestRows = function(mat, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:54.220Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.536Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.724Z"
 }

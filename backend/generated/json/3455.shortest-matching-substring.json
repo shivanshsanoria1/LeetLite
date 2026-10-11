@@ -34,12 +34,12 @@
             "slug": "string-matching"
         }
     ],
-    "exampleTestcases": "\"abaacbaecebce\"\n\"ba*c*ce\"\n\"baccbaadbc\"\n\"cc*baa*adb\"\n\"a\"\n\"**\"\n\"madlogic\"\n\"*adlogi*\"",
     "meta": {
         "quesIdLCBackend": 3692,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abaacbaecebce\"\n\"ba*c*ce\"\n\"baccbaadbc\"\n\"cc*baa*adb\"\n\"a\"\n\"**\"\n\"madlogic\"\n\"*adlogi*\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -48,6 +48,18 @@
         "The pattern string <code>p</code> can be divided into three segments.",
         "Use the KMP algorithm to locate all occurrences of each segment in <code>s</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int shortestMatchingSubstring(string s, string p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} p\n * @return {number}\n */\nvar shortestMatchingSubstring = function(s, p) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:04.294Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.415Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.428Z"
 }

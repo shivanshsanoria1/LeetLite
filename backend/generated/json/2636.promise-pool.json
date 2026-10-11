@@ -36,6 +36,7 @@
         "Initially execute all the functions until the queue fills up.",
         "Every time a function resolves, add a new promise to the queue if possible."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:40:24.862Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.271Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.432Z"
 }

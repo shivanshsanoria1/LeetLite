@@ -48,6 +48,18 @@
         "Represent the counts (odd or even) of vowels with a bitmask.",
         "Precompute the prefix xor for the bitmask of vowels and then get the longest valid substring."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findTheLongestSubstring(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar findTheLongestSubstring = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:43.532Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.749Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.783Z"
 }

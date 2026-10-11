@@ -53,6 +53,18 @@
         "Sort the buses and passengers arrays.",
         "Use 2 pointers to traverse buses and passengers with a simulation of passengers getting on a particular bus."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int latestTimeCatchTheBus(vector<int>& buses, vector<int>& passengers, int capacity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} buses\n * @param {number[]} passengers\n * @param {number} capacity\n * @return {number}\n */\nvar latestTimeCatchTheBus = function(buses, passengers, capacity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:16.187Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.425Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.050Z"
 }

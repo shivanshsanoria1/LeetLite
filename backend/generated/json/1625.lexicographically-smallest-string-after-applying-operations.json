@@ -52,6 +52,18 @@
         "You can generate all possible sequences and take their minimum.",
         "Keep track of already generated sequences so they are not processed again."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string findLexSmallestString(string s, int a, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} a\n * @param {number} b\n * @return {string}\n */\nvar findLexSmallestString = function(s, a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:59.382Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.265Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.193Z"
 }

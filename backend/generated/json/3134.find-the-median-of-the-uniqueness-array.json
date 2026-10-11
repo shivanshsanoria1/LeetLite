@@ -51,6 +51,18 @@
         "For a given <code>x</code>, you need to check if <code>x</code> is the median, to the left of the median, or to the right of the median. You can do that by counting the number of sub-arrays <code>nums[i…j]</code> such that <code>distinct(num[i…j]) <= x</code>.",
         "Use the sliding window to solve the counting problem in the hint above."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int medianOfUniquenessArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar medianOfUniquenessArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:38.207Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.966Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.943Z"
 }

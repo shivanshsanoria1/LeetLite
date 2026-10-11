@@ -51,6 +51,18 @@
         "Make a new array A of +1/-1s corresponding to if hours[i] is > 8 or not. The goal is to find the longest subarray with positive sum.",
         "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestWPI(vector<int>& hours) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} hours\n * @return {number}\n */\nvar longestWPI = function(hours) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:13.940Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.278Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.453Z"
 }

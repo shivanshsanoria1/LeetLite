@@ -43,6 +43,18 @@
         "If that time is before the current arrival time, the chef starts immediately. Else, the current customer waits till the chef finishes, and then the chef starts.",
         "Update the running time by the time when the chef starts preparing + preparation time."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double averageWaitingTime(vector<vector<int>>& customers) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} customers\n * @return {number}\n */\nvar averageWaitingTime = function(customers) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:23.940Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.341Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.616Z"
 }

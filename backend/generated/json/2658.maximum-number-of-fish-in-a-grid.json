@@ -55,6 +55,18 @@
         "Run DFS from each non-zero cell.",
         "Each time you pick a cell to start from, add up the number of fish contained in the cells you visit."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findMaxFish(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar findMaxFish = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:41.862Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.337Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.461Z"
 }

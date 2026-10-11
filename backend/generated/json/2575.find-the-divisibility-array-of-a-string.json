@@ -46,6 +46,18 @@
         "We can check if the numeric value of the prefix of the given string is divisible by m by computing the remainder of the numeric value of the prefix when divided by m.",
         "The remainder of the numeric value of a prefix ending at index i can be computed from the remainder of the prefix ending at index i-1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> divisibilityArray(string word, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @param {number} m\n * @return {number[]}\n */\nvar divisibilityArray = function(word, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:32.907Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.163Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.363Z"
 }

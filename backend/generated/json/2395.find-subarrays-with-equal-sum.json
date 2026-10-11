@@ -43,6 +43,18 @@
         "Use a counter to keep track of the subarray sums.",
         "Use a hashset to check if any two sums are equal."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool findSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar findSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:06.771Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.479Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.132Z"
 }

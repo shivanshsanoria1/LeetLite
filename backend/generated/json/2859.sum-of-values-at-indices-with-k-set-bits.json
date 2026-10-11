@@ -41,6 +41,18 @@
     "hints": [
         "Iterate through the indices <code>i</code> in the range <code>[0, n - 1]</code>, for each index <code>i</code> count the number of bits in its binary representation. If it is <code>k</code>, add <code>nums[i]</code> to the result."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumIndicesWithKSetBits(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar sumIndicesWithKSetBits = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:26.122Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.595Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.806Z"
 }

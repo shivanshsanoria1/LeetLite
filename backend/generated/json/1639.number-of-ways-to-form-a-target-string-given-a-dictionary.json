@@ -44,6 +44,18 @@
         "For each index i, store the frequency of each character in the ith row.",
         "Use dynamic programing to calculate the number of ways to get the target string using the frequency array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numWays(vector<string>& words, string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {string} target\n * @return {number}\n */\nvar numWays = function(words, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:14.357Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.289Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.226Z"
 }

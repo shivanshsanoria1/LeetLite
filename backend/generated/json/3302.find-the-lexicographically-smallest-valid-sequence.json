@@ -51,6 +51,18 @@
         "If <code>dp[i + 1] < m</code> and <code>word1[i] == word2[m - dp[i + 1] - 1]</code>,<code>dp[i] =  dp[i + 1] + 1</code>. Otherwise, <code>dp[i] =  dp[i + 1]</code>.",
         "For each index <code>i</code>, greedily select characters using the <code>dp</code> array to know whether a solution exists."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> validSequence(string word1, string word2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {number[]}\n */\nvar validSequence = function(word1, word2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:48.796Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.175Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.012Z"
 }

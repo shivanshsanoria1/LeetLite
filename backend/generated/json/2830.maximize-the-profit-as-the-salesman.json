@@ -52,6 +52,18 @@
         "<div class=\"_1l1MA\">Sort the array offers by <code>start<sub>i</sub></code>.</div>",
         "<div class=\"_1l1MA\">Let <code>dp[i]</code> = { the maximum amount of gold if the sold houses are in the range <code>[0 … i]</code> }.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximizeTheProfit(int n, vector<vector<int>>& offers) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} offers\n * @return {number}\n */\nvar maximizeTheProfit = function(n, offers) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:02.155Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.578Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.747Z"
 }

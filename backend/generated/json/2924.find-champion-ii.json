@@ -35,6 +35,18 @@
     "hints": [
         "The champion(s) should have in-degree <code>0</code> in the DAG."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findChampion(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nvar findChampion = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:21.968Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.638Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.925Z"
 }

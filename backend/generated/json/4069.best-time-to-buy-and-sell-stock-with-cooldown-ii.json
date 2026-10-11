@@ -43,6 +43,7 @@
         "If the last transaction buys on day <code>i</code> and sells on day <code>j</code>, any previous transaction must finish by day <code>i - cooldown - 1</code>. Its contribution is therefore <code>dp[max(0, i - cooldown)]</code>.",
         "For each selling day <code>j</code>, try every buying day <code>i &lt; j</code> and add <code>prices[j] - prices[i] - costs[j - i]</code> to the best compatible earlier profit. Also consider making no sale that day. This gives an <code>O(n<sup>2</sup>)</code> dynamic program"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-10-02T10:27:53.229Z",
-    "PARSED_ISO": "2026-10-02T10:35:59.968Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.376Z"
 }

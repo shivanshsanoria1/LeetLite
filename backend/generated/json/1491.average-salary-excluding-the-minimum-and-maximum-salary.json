@@ -39,6 +39,18 @@
     "hints": [
         "Get the total sum and subtract the minimum and maximum value in the array.  Finally divide the result by n - 2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double average(vector<int>& salary) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} salary\n * @return {number}\n */\nvar average = function(salary) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:28.038Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.975Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.918Z"
 }

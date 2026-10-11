@@ -26,12 +26,12 @@
             "slug": "bit-manipulation"
         }
     ],
-    "exampleTestcases": "9\n0",
     "meta": {
         "quesIdLCBackend": 4023,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "9\n0",
     "solution": {
         "canSeeDetail": false
     },
@@ -42,6 +42,18 @@
         "You can pre-count all palindromes of <code>length < len(n)</code> directly using powers of 2.",
         "For palindromes of <code>length = len(n)</code>, extract the prefix of <code>n</code>, mirror it, and check if it exceeds <code>n</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countBinaryPalindromes(long long n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countBinaryPalindromes = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:23.715Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.705Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.778Z"
 }

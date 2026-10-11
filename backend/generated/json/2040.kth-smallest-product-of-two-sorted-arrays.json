@@ -44,6 +44,18 @@
         "Can we split this problem into four cases depending on the sign of the numbers?",
         "Can we binary search the value?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long kthSmallestProduct(vector<int>& nums1, vector<int>& nums2, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k\n * @return {number}\n */\nvar kthSmallestProduct = function(nums1, nums2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:24.559Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.926Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.271Z"
 }

@@ -59,6 +59,18 @@
         "Loop over the numbers from 1 to n and if the number is not banned, use it.",
         "Keep adding numbers while they are not banned, and their sum is less than or equal to k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxCount(vector<int>& banned, int n, int maxSum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} banned\n * @param {number} n\n * @param {number} maxSum\n * @return {number}\n */\nvar maxCount = function(banned, n, maxSum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:14.210Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.141Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.345Z"
 }

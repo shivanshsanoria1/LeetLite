@@ -43,6 +43,18 @@
         "How can BFS be used?",
         "For each vertex u, calculate the length of the shortest cycle that contains vertex u using BFS"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findShortestCycle(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nvar findShortestCycle = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:00.492Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.250Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.405Z"
 }

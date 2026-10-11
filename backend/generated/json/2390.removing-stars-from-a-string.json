@@ -47,6 +47,18 @@
         "What data structure could we use to efficiently perform these removals?",
         "Use a stack to store the characters. Pop one character off the stack at each star. Otherwise, we push the character onto the stack."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string removeStars(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar removeStars = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:02.875Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.475Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.127Z"
 }

@@ -66,6 +66,18 @@
         "Going through the values in sorted order, we can store the maximum path we have seen so far for a row/column.",
         "When we are at a cell, we check its row and column to find out the best previous smaller value that we’ve got so far, and we use it to increment the current value of the row and column."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxIncreasingCells(vector<vector<int>>& mat) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar maxIncreasingCells = function(mat) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:27.061Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.380Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.524Z"
 }

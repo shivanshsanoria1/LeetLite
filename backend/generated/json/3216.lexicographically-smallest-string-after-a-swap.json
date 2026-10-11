@@ -40,6 +40,18 @@
     "hints": [
         "Try all possible swaps satisfying the constraints and find the one that results in the lexicographically smallest string."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string getSmallestString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar getSmallestString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:41.657Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.050Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.418Z"
 }

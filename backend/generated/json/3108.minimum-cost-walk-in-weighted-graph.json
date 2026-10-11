@@ -48,6 +48,18 @@
         "The intended solution uses Disjoint Set Union.",
         "Notice that, if <code>u</code> and <code>v</code> are not connected then the answer is <code>-1</code>, otherwise we can use all the edges from the connected component where both belong to."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minimumCost(int n, vector<vector<int>>& edges, vector<vector<int>>& query) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[][]} query\n * @return {number[]}\n */\nvar minimumCost = function(n, edges, query) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:15.740Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.930Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.835Z"
 }

@@ -40,6 +40,18 @@
         "<p>For each drone, compute its Manhattan distance to <code>target</code> and check whether it is at most the drone's range.</p>",
         "<p>Among all reachable drones, keep the one with the smallest distance. If two distances are equal, keep the smaller index.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int nearestDrone(vector<vector<int>>& drones, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} drones\n * @param {number[]} target\n * @return {number}\n */\nvar nearestDrone = function(drones, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:21.305Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.006Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.313Z"
 }

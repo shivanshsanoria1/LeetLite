@@ -50,6 +50,18 @@
         "When moving from node <code>u</code> to node <code>v</code>, the next count becomes <code>count + 1</code> if <code>labels[u] == labels[v]</code>, otherwise it becomes 1. Ignore transitions where the next count exceeds <code>k</code>.",
         "The answer is the minimum distance among all states ending at node <code>n - 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int shortestPath(int n, vector<vector<int>>& edges, string labels, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {string} labels\n * @param {number} k\n * @return {number}\n */\nvar shortestPath = function(n, edges, labels, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:23.523Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.965Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.238Z"
 }

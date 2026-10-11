@@ -49,6 +49,18 @@
         "Try to use two-pointers. Set one pointer to the left and one to the right of the array. Always move the pointer that points to the lower line.",
         "How can you calculate the amount of water at each step?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxArea(vector<int>& height) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} height\n * @return {number}\n */\nvar maxArea = function(height) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:38:18.362Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.137Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.397Z"
 }

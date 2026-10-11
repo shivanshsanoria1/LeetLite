@@ -48,6 +48,18 @@
         "What is the time when the last message sent from a server gets back to the server?",
         "For each data server, by the time the server receives the first returned messages, how many messages has the server sent?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int networkBecomesIdle(vector<vector<int>>& edges, vector<int>& patience) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number[]} patience\n * @return {number}\n */\nvar networkBecomesIdle = function(edges, patience) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:23.731Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.925Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.268Z"
 }

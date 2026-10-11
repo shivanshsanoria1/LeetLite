@@ -52,6 +52,18 @@
     "hints": [
         "Consider the items in order from largest to smallest value, and greedily take the items if they fall under the use_limit.  We can keep track of how many items of each label are used by using a hash table."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestValsFromLabels(vector<int>& values, vector<int>& labels, int numWanted, int useLimit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} values\n * @param {number[]} labels\n * @param {number} numWanted\n * @param {number} useLimit\n * @return {number}\n */\nvar largestValsFromLabels = function(values, labels, numWanted, useLimit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:47.331Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.103Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.389Z"
 }

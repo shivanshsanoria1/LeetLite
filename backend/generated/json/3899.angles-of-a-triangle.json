@@ -45,6 +45,18 @@
         "If valid, use the law of cosines to compute each angle in radians, then convert to degrees.",
         "Sort the three angles before returning; if the triangle is invalid, return an empty array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<double> internalAngles(vector<int>& sides) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} sides\n * @return {number[]}\n */\nvar internalAngles = function(sides) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:05.524Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.836Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.164Z"
 }

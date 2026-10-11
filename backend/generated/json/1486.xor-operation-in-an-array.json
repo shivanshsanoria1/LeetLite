@@ -38,6 +38,18 @@
     "hints": [
         "Simulate the process, create an array nums and return the Bitwise XOR of all elements of it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int xorOperation(int n, int start) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} start\n * @return {number}\n */\nvar xorOperation = function(n, start) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:22.815Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.968Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.913Z"
 }

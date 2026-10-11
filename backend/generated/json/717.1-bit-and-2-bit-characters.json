@@ -37,6 +37,18 @@
     "hints": [
         "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isOneBitCharacter(vector<int>& bits) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} bits\n * @return {boolean}\n */\nvar isOneBitCharacter = function(bits) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:45.660Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.259Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.989Z"
 }

@@ -55,6 +55,18 @@
         "<p>Enumerate all divisors greater than one from the elements of <code>nums</code>, and run Kadane's algorithm for each candidate <code>k</code>.</p>",
         "<p>When comparing candidates, maximize the score difference first, then choose the smaller <code>k</code> in case of a tie.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int divisibleGame(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar divisibleGame = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:38.002Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.976Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.247Z"
 }

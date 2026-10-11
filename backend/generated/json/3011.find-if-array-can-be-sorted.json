@@ -46,6 +46,18 @@
         "Split the array into segments. Each segment contains consecutive elements with the same number of set bits.",
         "From left to right, the previous segment’s largest element should be smaller than the current segment’s smallest element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canSortArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar canSortArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:33.601Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.763Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.330Z"
 }

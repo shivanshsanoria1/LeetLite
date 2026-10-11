@@ -59,6 +59,18 @@
         "Find the characters that could be included in the potential answer. A character occurring more than or equal to k times can be used in the answer up to (count of the character / k) times.",
         "Try all possible candidates in reverse lexicographic order, and check the string for the subsequence condition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string longestSubsequenceRepeatedK(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar longestSubsequenceRepeatedK = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:03.671Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.899Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.195Z"
 }

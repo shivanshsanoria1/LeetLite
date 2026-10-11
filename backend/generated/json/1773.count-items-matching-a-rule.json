@@ -38,6 +38,18 @@
     "hints": [
         "Iterate on each item, and check if each one matches the rule according to the statement."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countMatches(vector<vector<string>>& items, string ruleKey, string ruleValue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[][]} items\n * @param {string} ruleKey\n * @param {string} ruleValue\n * @return {number}\n */\nvar countMatches = function(items, ruleKey, ruleValue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:44.041Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.464Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.758Z"
 }

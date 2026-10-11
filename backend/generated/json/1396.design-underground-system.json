@@ -45,6 +45,18 @@
     "hints": [
         "Use two hash tables. The first to save the check-in time for a customer and the second to update the total time between two stations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class UndergroundSystem {\npublic:\n    UndergroundSystem() {\n        \n    }\n    \n    void checkIn(int id, string stationName, int t) {\n        \n    }\n    \n    void checkOut(int id, string stationName, int t) {\n        \n    }\n    \n    double getAverageTime(string startStation, string endStation) {\n        \n    }\n};\n\n/**\n * Your UndergroundSystem object will be instantiated and called as such:\n * UndergroundSystem* obj = new UndergroundSystem();\n * obj->checkIn(id,stationName,t);\n * obj->checkOut(id,stationName,t);\n * double param_3 = obj->getAverageTime(startStation,endStation);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar UndergroundSystem = function() {\n    \n};\n\n/** \n * @param {number} id \n * @param {string} stationName \n * @param {number} t\n * @return {void}\n */\nUndergroundSystem.prototype.checkIn = function(id, stationName, t) {\n    \n};\n\n/** \n * @param {number} id \n * @param {string} stationName \n * @param {number} t\n * @return {void}\n */\nUndergroundSystem.prototype.checkOut = function(id, stationName, t) {\n    \n};\n\n/** \n * @param {string} startStation \n * @param {string} endStation\n * @return {number}\n */\nUndergroundSystem.prototype.getAverageTime = function(startStation, endStation) {\n    \n};\n\n/** \n * Your UndergroundSystem object will be instantiated and called as such:\n * var obj = new UndergroundSystem()\n * obj.checkIn(id,stationName,t)\n * obj.checkOut(id,stationName,t)\n * var param_3 = obj.getAverageTime(startStation,endStation)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:18.402Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.798Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.810Z"
 }

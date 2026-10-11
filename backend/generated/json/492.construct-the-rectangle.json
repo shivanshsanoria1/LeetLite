@@ -34,6 +34,18 @@
     "hints": [
         "The W is always less than or equal to the square root of the area, so we start searching at sqrt(area) till we find the result."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> constructRectangle(int area) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} area\n * @return {number[]}\n */\nvar constructRectangle = function(area) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:07:31.045Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.953Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.530Z"
 }

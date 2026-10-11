@@ -41,6 +41,18 @@
         "Let's ignore the non-empty subsequence constraint. We can concatenate the two strings and find the largest palindromic subsequence with dynamic programming.",
         "Iterate through every pair of characters word1[i] and word2[j], and see if some palindrome begins with word1[i] and ends with word2[j]. This ensures that the subsequences are non-empty."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestPalindrome(string word1, string word2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {number}\n */\nvar longestPalindrome = function(word1, word2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:41.482Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.462Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.755Z"
 }

@@ -54,6 +54,18 @@
         "Start constructing the string in descending order of characters.",
         "When repeatLimit is reached, pick the next largest character."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string repeatLimitedString(string s, int repeatLimit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} repeatLimit\n * @return {string}\n */\nvar repeatLimitedString = function(s, repeatLimit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:34.581Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.201Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.762Z"
 }

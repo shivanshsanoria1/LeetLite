@@ -26,12 +26,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "[2,4,1]\n[5,-1,4,2]",
     "meta": {
         "quesIdLCBackend": 3839,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,4,1]\n[5,-1,4,2]",
     "solution": {
         "canSeeDetail": false
     },
@@ -42,6 +42,7 @@
         "If there is 1 element remaining, let it be the minimum element.",
         "If there are 2 elements remaining, let them be the adjacent elements with the minimum sum."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:52:42.717Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.485Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.515Z"
 }

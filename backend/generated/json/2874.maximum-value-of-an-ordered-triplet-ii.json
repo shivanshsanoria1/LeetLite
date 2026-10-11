@@ -45,6 +45,18 @@
         "For each index <code>j</code>, find two indices <code>i</code> and <code>k</code> such that <code>i < j < k</code> and <code>(nums[i] - nums[j]) * nums[k]</code> is the maximum, using the prefix and suffix maximum arrays.",
         "For index <code>j</code>, the maximum triplet value is <code>(prefix_max[j - 1] - nums[j]) * suffix_max[j + 1]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumTripletValue(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maximumTripletValue = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:38.305Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.607Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.832Z"
 }

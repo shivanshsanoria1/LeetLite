@@ -52,6 +52,18 @@
         "Use a stack to keep the values of the array sorted as you iterate the array from the end to the start.",
         "Keep popping from the stack the elements in sorted order until a value larger than arr[i] is found, these are the ones that person i can see."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> canSeePersonsCount(vector<int>& heights) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} heights\n * @return {number[]}\n */\nvar canSeePersonsCount = function(heights) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:03.663Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.782Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.027Z"
 }

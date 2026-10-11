@@ -54,6 +54,18 @@
         "Consider how reversing each edge of the graph can help us.",
         "How can performing BFS/DFS on the reversed graph help us find the ancestors of every node?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number[][]}\n */\nvar getAncestors = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:42.770Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.223Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.792Z"
 }

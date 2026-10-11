@@ -39,6 +39,18 @@
         "The answer is true if <code>t</code> is greater or equal than the Chebyshev distance from <code>(sx, sy)</code> to <code>(fx, fy)</code>. However, there is one more edge case to be considered.",
         "The answer is false If <code>sx == fx</code> and <code>sy == fy</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isReachableAtTime(int sx, int sy, int fx, int fy, int t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} sx\n * @param {number} sy\n * @param {number} fx\n * @param {number} fy\n * @param {number} t\n * @return {boolean}\n */\nvar isReachableAtTime = function(sx, sy, fx, fy, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:17.515Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.589Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.785Z"
 }

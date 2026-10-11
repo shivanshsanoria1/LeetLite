@@ -48,6 +48,18 @@
         "It can be shown that in an optimal solution, the two paths from src1 and src2 will coincide at one node, and the remaining part to dest will be the same for both paths. Now consider how to find the node where the paths will coincide.",
         "How can algorithms for finding the shortest path between two nodes help us?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumWeight(int n, vector<vector<int>>& edges, int src1, int src2, int dest) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} src1\n * @param {number} src2\n * @param {number} dest\n * @return {number}\n */\nvar minimumWeight = function(n, edges, src1, src2, dest) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:26.732Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.240Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.813Z"
 }

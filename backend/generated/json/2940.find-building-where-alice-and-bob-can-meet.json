@@ -65,6 +65,18 @@
         "Otherwise, we need to find the smallest index <code>t</code> such that <code>y < t</code> and <code>heights[x] < heights[t]</code>. Note that <code>heights[y] <= heights[x]</code>, so <code>heights[x] < heights[t]</code> is a sufficient condition.",
         "To find index <code>t</code> for each query, sort the queries in descending order of <code>y</code>. Iterate over the queries while maintaining a monotonic stack which we can binary search over to find index <code>t</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} heights\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar leftmostBuildingQueries = function(heights, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:33.494Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.686Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.967Z"
 }

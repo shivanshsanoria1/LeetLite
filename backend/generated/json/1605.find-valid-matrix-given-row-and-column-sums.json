@@ -49,6 +49,18 @@
     "hints": [
         "Find the smallest rowSum or colSum, and let it be x. Place that number in the grid, and subtract x from rowSum and colSum. Continue until all the sums are satisfied."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} rowSum\n * @param {number[]} colSum\n * @return {number[][]}\n */\nvar restoreMatrix = function(rowSum, colSum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:36.840Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.190Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.159Z"
 }

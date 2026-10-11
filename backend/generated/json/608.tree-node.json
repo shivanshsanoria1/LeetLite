@@ -35,6 +35,7 @@
     "hints": [
         "You can judge the node type by querying whether the node's id shows up in p_id column and whether the node's p_id is null."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:09:15.140Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.096Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.773Z"
 }

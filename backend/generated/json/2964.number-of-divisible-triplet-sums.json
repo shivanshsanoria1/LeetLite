@@ -41,6 +41,7 @@
         "Now when you are at index <code>R</code>, consider <code>nums[L] + nums[R]</code> and calculate what the remainder of the third element should be.",
         "Then use the map to find the number of valid third elements between <code>L</code> and <code>R</code>."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:46:54.384Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.714Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.107Z"
 }

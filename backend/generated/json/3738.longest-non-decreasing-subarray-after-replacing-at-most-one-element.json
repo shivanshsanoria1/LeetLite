@@ -43,6 +43,18 @@
         "Let the initial maximum be <code>max(max(pref), max(suff))</code>",
         "For each index <code>i</code>, try to combine the prefix ending at <code>i - 1</code> and the suffix starting at <code>i + 1</code> if possible; also consider the maximum without combining them"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSubarray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:44:56.220Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.965Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.940Z"
 }

@@ -48,6 +48,18 @@
         "First, sort players by age and break ties by their score. You can now consider the players from left to right.",
         "If you choose to include a player, you must only choose players with at least that score later on."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int bestTeamScore(vector<int>& scores, vector<int>& ages) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} scores\n * @param {number[]} ages\n * @return {number}\n */\nvar bestTeamScore = function(scores, ages) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:00.510Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.266Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.194Z"
 }

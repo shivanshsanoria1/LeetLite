@@ -49,6 +49,18 @@
         "Recursion will generate all the valid parentheses strings but we want the ones with the least number of parentheses deleted.",
         "We can count the number of invalid brackets to be deleted and only generate the valid strings in the recusrion."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> removeInvalidParentheses(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar removeInvalidParentheses = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:42.089Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.762Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.322Z"
 }

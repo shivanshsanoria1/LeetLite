@@ -50,6 +50,18 @@
         "Simulate the given in the statement",
         "Calculate those who will eat instead of those who will not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countStudents(vector<int>& students, vector<int>& sandwiches) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} students\n * @param {number[]} sandwiches\n * @return {number}\n */\nvar countStudents = function(students, sandwiches) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:23.144Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.340Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.613Z"
 }

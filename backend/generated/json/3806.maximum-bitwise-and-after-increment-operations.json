@@ -50,6 +50,18 @@
         "To test a candidate, for each <code>num</code> compute the minimal increments needed so that <code>(num | candidate) == candidate</code>; take the smallest <code>m</code> costs and check if their sum <= <code>k</code>.",
         "If feasible, keep the bit in <code>res</code> and continue with accumulated bits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumAND(vector<int>& nums, int k, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} m\n * @return {number}\n */\nvar maximumAND = function(nums, k, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:07.416Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.324Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.047Z"
 }

@@ -30,12 +30,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "\"aadbbcccca\"\n3\n\"xyz\"\n2",
     "meta": {
         "quesIdLCBackend": 4017,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"aadbbcccca\"\n3\n\"xyz\"\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -43,6 +43,7 @@
     "hints": [
         "Count the frequency of each character using a 26-entry array or a frequency map, then iterate through the string and append each character whose frequency is less than <code>k</code> to the result."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T17:01:50.832Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.696Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.740Z"
 }

@@ -45,6 +45,18 @@
     "hints": [
         "Simulate as described"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string mergeCharacters(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar mergeCharacters = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:15.745Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.799Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.114Z"
 }

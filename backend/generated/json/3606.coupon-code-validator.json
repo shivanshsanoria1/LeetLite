@@ -34,12 +34,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]\n[\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"]\n[\"grocery\",\"electronics\",\"invalid\"]\n[false,true,true]",
     "meta": {
         "quesIdLCBackend": 3934,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]\n[\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"]\n[\"grocery\",\"electronics\",\"invalid\"]\n[false,true,true]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Category + Sorting\n\n#### Intuition\n\nWe can determine whether a coupon is valid through a judgment function $\\textit{check}$, which checks whether its $\\textit{code}$ meets the standard and whether $\\textit{isActive}$ is $\\textit{true}$.\n\nThen we classify the coupons by business categories, sort the coupons in each category in lexicographical order of $\\textit{code}$, and finally concatenate all the categories’ coupons and return them.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/QToi49D8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QToi49D8\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{code}$ and $L$ be the average length of $\\textit{code}[i]$. If $L$ is small, it simplifies to $O(n \\log n)$.\n\n- Time complexity: $O(n L \\log n)$.\n  \n  The main cost comes from sorting.\n\n- Space complexity: $O(n L)$.\n\n---"
@@ -51,6 +51,18 @@
         "Define a priority map, e.g. <code>{\"electronics\":0, \"grocery\":1, \"pharmacy\":2, \"restaurant\":3}</code>",
         "Sort the list of pairs by <code>(priority[businessLine], code)</code> and return the <code>code</code> values in order"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> validateCoupons(vector<string>& code, vector<string>& businessLine, vector<bool>& isActive) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} code\n * @param {string[]} businessLine\n * @param {boolean[]} isActive\n * @return {string[]}\n */\nvar validateCoupons = function(code, businessLine, isActive) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:47.466Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.621Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.621Z"
 }

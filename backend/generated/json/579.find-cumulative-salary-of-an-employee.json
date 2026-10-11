@@ -37,6 +37,7 @@
         "Use the technique of self-join if you have only one table but to write a complex query.",
         "Still remember how to use the function `sum` and `max`?"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:08:49.176Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.060Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.710Z"
 }

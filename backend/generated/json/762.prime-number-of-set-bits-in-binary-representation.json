@@ -44,6 +44,18 @@
     "hints": [
         "Write a helper function to count the number of set bits in a number, then check whether the number of set bits is 2, 3, 5, 7, 11, 13, 17 or 19."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPrimeSetBits(int left, int right) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} left\n * @param {number} right\n * @return {number}\n */\nvar countPrimeSetBits = function(left, right) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:17.485Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.348Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.047Z"
 }

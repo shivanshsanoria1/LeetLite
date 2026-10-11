@@ -38,6 +38,18 @@
         "Extract each word from the sentence and check if it represents a price.",
         "For each price, apply the given discount to it and update it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string discountPrices(string sentence, int discount) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} sentence\n * @param {number} discount\n * @return {string}\n */\nvar discountPrices = function(sentence, discount) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:39.524Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.386Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.005Z"
 }

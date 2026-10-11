@@ -53,6 +53,7 @@
         "If we split the first i elements of the array, the last subarray in this splitting will end with a[i - 1] and start with some a[j], where gcd(a[j], a[i - 1]) ≠ 1. Then, we need to validly split the first j elements of the array, or [a[0]…a[j - 1]].",
         "Iterate over all possible j < i such that gcd(a[j], a[i - 1]) ≠ 1 and let dp[i] = min(dp[i], dp[j] + 1)."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:25:01.999Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.693Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.225Z"
 }

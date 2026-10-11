@@ -46,6 +46,18 @@
         "Only the first <code>min(k, mul - 1)</code> processed elements should be multiplied. All remaining selected elements should be added normally.",
         "Choose the largest <code>k</code> elements of <code>nums</code>, and pair the largest selected elements with the largest multipliers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSum(vector<int>& nums, int k, int mul) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} mul\n * @return {number}\n */\nvar maxSum = function(nums, k, mul) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:28.536Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.968Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.241Z"
 }

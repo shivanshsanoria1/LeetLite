@@ -42,6 +42,18 @@
         "There is a simple O(n) solution to this problem.",
         "You may check the breaking results of <i>n</i> ranging from 7 to 10 to discover the regularities."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int integerBreak(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar integerBreak = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:58:16.179Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.392Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.393Z"
 }

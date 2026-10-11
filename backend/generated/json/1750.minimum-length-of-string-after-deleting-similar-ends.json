@@ -40,6 +40,18 @@
         "If both ends have distinct characters, no more operations can be made. Otherwise, the only operation is to remove all of the same characters from both ends. We will do this as many times as we can.",
         "Note that if the length is equal 1 the answer is 1"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumLength(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumLength = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:16.160Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.419Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.696Z"
 }

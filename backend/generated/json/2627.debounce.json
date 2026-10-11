@@ -35,6 +35,13 @@
         "You execute code with a delay with \"ref = setTimeout(fn, delay)\". You can abort the execution of that code with \"clearTimeout(ref)\"",
         "Whenever you call the function, you should abort any existing scheduled code. Then, you should schedule code to be executed after some delay."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Function} fn\n * @param {number} t milliseconds\n * @return {Function}\n */\nvar debounce = function(fn, t) {\n    \n    return function(...args) {\n        \n    }\n};\n\n/**\n * const log = debounce(console.log, 100);\n * log('Hello'); // cancelled\n * log('Hello'); // cancelled\n * log('Hello'); // Logged at t=100ms\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:15.435Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.264Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.419Z"
 }

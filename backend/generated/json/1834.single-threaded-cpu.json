@@ -47,6 +47,18 @@
         "To simulate the problem we first need to note that if at any point in time there are no enqueued tasks we need to wait to the smallest enqueue time of a non-processed element",
         "We need a data structure like a min-heap to support choosing the task with the smallest processing time from all the enqueued tasks"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getOrder(vector<vector<int>>& tasks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} tasks\n * @return {number[]}\n */\nvar getOrder = function(tasks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:46.911Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.503Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.872Z"
 }

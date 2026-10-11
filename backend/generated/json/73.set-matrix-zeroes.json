@@ -51,6 +51,18 @@
         "We could have used 2 sets to keep a record of rows/columns which need to be set to zero. But for an O(1) space solution, you can use one of the rows and and one of the columns to keep track of this information.",
         "We can use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    void setZeroes(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {void} Do not return anything, modify matrix in-place instead.\n */\nvar setZeroes = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:39:23.079Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.271Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.015Z"
 }

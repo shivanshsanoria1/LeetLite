@@ -40,6 +40,18 @@
         "Use the fact that string contains only 2 characters.",
         "Are subsequences composed of only one type of letter always palindrome strings ?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int removePalindromeSub(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar removePalindromeSub = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:48.280Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.526Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.721Z"
 }

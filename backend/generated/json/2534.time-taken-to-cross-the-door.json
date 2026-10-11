@@ -45,6 +45,7 @@
         "Use a queue to store the people who want to enter or exit and their corresponding times.",
         "Simulate the process described in the statement and apply the 4 rules to the people crossing the door."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:38:56.801Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.074Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.327Z"
 }

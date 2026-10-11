@@ -48,6 +48,18 @@
         "Sort the seeds by their growTime in descending order. Can you prove why this strategy is the other part of the optimal solution? Note the bloom time of a seed is the sum of plantTime of all seeds preceding this seed plus the growTime of this seed.",
         "There is no way to improve this strategy. The seed to bloom last dominates the final answer. Exchanging the planting of this seed with another seed with either a larger or smaller growTime will result in a potentially worse answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int earliestFullBloom(vector<int>& plantTime, vector<int>& growTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} plantTime\n * @param {number[]} growTime\n * @return {number}\n */\nvar earliestFullBloom = function(plantTime, growTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:50.358Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.094Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.689Z"
 }

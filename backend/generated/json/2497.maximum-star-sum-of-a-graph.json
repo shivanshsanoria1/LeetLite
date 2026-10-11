@@ -54,6 +54,18 @@
         "A star graph doesn’t necessarily include all of its neighbors.",
         "For each node, sort its neighbors in descending order and take k max valued neighbors."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxStarSum(vector<int>& vals, vector<vector<int>>& edges, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} vals\n * @param {number[][]} edges\n * @param {number} k\n * @return {number}\n */\nvar maxStarSum = function(vals, edges, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:27.658Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.745Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.269Z"
 }

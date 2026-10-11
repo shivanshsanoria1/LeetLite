@@ -34,12 +34,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "[\"jump\",\"add\",\"add\",\"jump\",\"add\",\"jump\"]\n[2,1,3,1,-2,-3]\n[\"jump\",\"add\",\"add\"]\n[3,1,1]\n[\"jump\"]\n[0]",
     "meta": {
         "quesIdLCBackend": 3732,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"jump\",\"add\",\"add\",\"jump\",\"add\",\"jump\"]\n[2,1,3,1,-2,-3]\n[\"jump\",\"add\",\"add\"]\n[3,1,1]\n[\"jump\"]\n[0]",
     "solution": {
         "canSeeDetail": false
     },
@@ -48,6 +48,18 @@
         "Simulate the process step by step, following the rules for each instruction.",
         "Use a data structure to track which instructions have already been executed to detect revisits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long calculateScore(vector<string>& instructions, vector<int>& values) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} instructions\n * @param {number[]} values\n * @return {number}\n */\nvar calculateScore = function(instructions, values) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:08.322Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.542Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.541Z"
 }

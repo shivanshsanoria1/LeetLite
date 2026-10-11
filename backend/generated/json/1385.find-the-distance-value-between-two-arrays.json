@@ -46,6 +46,18 @@
     "hints": [
         "Sort 'arr2' and use binary search to get the closest element for each 'arr1[i]', it gives a time complexity of O(nlogn)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findTheDistanceValue(vector<int>& arr1, vector<int>& arr2, int d) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr1\n * @param {number[]} arr2\n * @param {number} d\n * @return {number}\n */\nvar findTheDistanceValue = function(arr1, arr2, d) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:02.509Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.788Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.798Z"
 }

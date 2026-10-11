@@ -55,6 +55,7 @@
         "<p>The first time BFS reaches the sorted permutation, the current distance is the minimum number of operations.</p>",
         "<p>If BFS finishes without reaching the sorted permutation, sorting is impossible.</p>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:06:46.476Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.981Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.256Z"
 }

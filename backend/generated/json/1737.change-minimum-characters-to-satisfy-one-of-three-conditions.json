@@ -47,6 +47,18 @@
         "Iterate on each letter in the alphabet, and check the smallest number of operations needed to make it one of the following: the largest letter in a and smaller than the smallest one in b, vice versa, or let a and b consist only of this letter.",
         "For the first 2 conditions, take care that you can only change characters to lowercase letters, so you can't make 'z' the smallest letter in one of the strings or 'a' the largest letter in one of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCharacters(string a, string b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} a\n * @param {string} b\n * @return {number}\n */\nvar minCharacters = function(a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:01.764Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.411Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.668Z"
 }

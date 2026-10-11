@@ -45,6 +45,18 @@
         "Iterate through the coordinates and update the block counts accordingly. For each coordinate, determine which block(s) it belongs to and increment the count of black cells for those block(s).",
         "After processing all the coordinates, count the number of blocks with different numbers of black cells. You can use another data structure to keep track of the counts of blocks with 0 black cells, 1 black cell, and so on."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> countBlackBlocks(int m, int n, vector<vector<int>>& coordinates) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} coordinates\n * @return {number[]}\n */\nvar countBlackBlocks = function(m, n, coordinates) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:11.970Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.414Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.574Z"
 }

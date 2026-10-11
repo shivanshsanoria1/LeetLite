@@ -47,6 +47,7 @@
         "Edge type two: If the edge (v, u, w) belongs to the initial graph, we put an edge with the weight of 0 between nodes (v, c) and (u, c + 1), also between (u, c) and (v, c + 1) for any c between 0 and k - 1 (inclusive) in the new graph.",
         "For the matter of time complexity, note that you **don’t need** to literally construct the described graph."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:41:28.525Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.380Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.524Z"
 }

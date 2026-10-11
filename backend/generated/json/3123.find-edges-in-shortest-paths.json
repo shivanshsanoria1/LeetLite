@@ -51,6 +51,18 @@
         "Find all the shortest paths starting from nodes 0 and <code>n - 1</code> to all other nodes.",
         "How to use the above calculated shortest paths to check if an edge is part of at least one shortest path from 0 to <code>n - 1</code>?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> findAnswer(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {boolean[]}\n */\nvar findAnswer = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:28.236Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.945Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.909Z"
 }

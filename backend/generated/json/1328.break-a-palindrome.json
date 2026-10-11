@@ -42,6 +42,18 @@
         "What if the string has only 'a'?",
         "Change the last character to 'b'."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string breakPalindrome(string palindrome) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} palindrome\n * @return {string}\n */\nvar breakPalindrome = function(palindrome) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:43.698Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.506Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.718Z"
 }

@@ -36,6 +36,18 @@
         "Generate all numbers with sequential digits and check if they are in the given range.",
         "Fix the starting digit then do a recursion that tries to append all valid digits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> sequentialDigits(int low, int high) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number[]}\n */\nvar sequentialDigits = function(low, high) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:51.958Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.231Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.680Z"
 }

@@ -64,6 +64,18 @@
         "For every cycle, find the most frequent letter that can be placed in this cycle. After placing, decrease the frequency of that letter by one.",
         "Use Priority Queue."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int leastInterval(vector<char>& tasks, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[]} tasks\n * @param {number} n\n * @return {number}\n */\nvar leastInterval = function(tasks, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:14:37.583Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.105Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.794Z"
 }

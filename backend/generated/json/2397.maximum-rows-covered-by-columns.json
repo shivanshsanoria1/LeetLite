@@ -58,6 +58,18 @@
         "Iterate through all possible sets of exactly <code>cols</code> columns.",
         "For each valid set, check how many rows are covered, and return the maximum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumRows(vector<vector<int>>& matrix, int numSelect) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @param {number} numSelect\n * @return {number}\n */\nvar maximumRows = function(matrix, numSelect) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:08.108Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.481Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.134Z"
 }

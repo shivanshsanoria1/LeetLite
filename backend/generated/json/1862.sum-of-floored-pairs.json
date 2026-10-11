@@ -55,6 +55,18 @@
         "Find the frequency (number of occurrences) of all elements in the array.",
         "For each element, iterate through its multiples and multiply frequencies to find the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOfFlooredPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumOfFlooredPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:16.076Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.521Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.902Z"
 }

@@ -48,6 +48,18 @@
         "Sort the queries array and logs array based on time in increasing order.",
         "For every window of size x, use sliding window and two-pointer approach to find the answer to the queries."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countServers(int n, vector<vector<int>>& logs, int x, vector<int>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} logs\n * @param {number} x\n * @param {number[]} queries\n * @return {number[]}\n */\nvar countServers = function(n, logs, x, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:55.382Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.401Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.553Z"
 }

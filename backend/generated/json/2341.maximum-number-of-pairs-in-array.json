@@ -47,6 +47,18 @@
         "What do we need to know to find how many pairs we can make? We need to know the frequency of each integer.",
         "When will there be a leftover number? When the frequency of an integer is an odd number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numberOfPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar numberOfPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:23.150Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.433Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.076Z"
 }

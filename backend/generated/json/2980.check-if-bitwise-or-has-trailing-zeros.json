@@ -43,6 +43,18 @@
         "We can brute force the solution: enumerate all the pairs.",
         "As the least significant bit must stay unset, the question is whether the array has at least two even elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool hasTrailingZeros(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar hasTrailingZeros = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:07.693Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.727Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.182Z"
 }

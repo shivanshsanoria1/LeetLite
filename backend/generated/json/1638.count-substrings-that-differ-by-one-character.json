@@ -49,6 +49,18 @@
         "Take every substring of s, change a character, and see how many substrings of t match that substring.",
         "Use a Trie to store all substrings of t as a dictionary."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSubstrings(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar countSubstrings = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:13.206Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.288Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.223Z"
 }

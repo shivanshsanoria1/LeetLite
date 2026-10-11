@@ -50,6 +50,18 @@
         "Can we check every possible pair?",
         "Can we use a nested for loop to solve this problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countKDifference(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countKDifference = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:57.320Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.893Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.170Z"
 }

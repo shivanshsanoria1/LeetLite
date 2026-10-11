@@ -50,6 +50,7 @@
         "For each substring, try to calculate the sum of the mapped values in <code>O(1)</code>.",
         "To do the above, use a partial sum array."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:46:42.505Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.693Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.034Z"
 }

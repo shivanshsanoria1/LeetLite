@@ -51,6 +51,18 @@
         "If the subtree doesn't contain 1, then the missing value will always be 1.",
         "What data structure allows us to dynamically update the values that are currently not present?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> smallestMissingValueSubtree(vector<int>& parents, vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} parents\n * @param {number[]} nums\n * @return {number[]}\n */\nvar smallestMissingValueSubtree = function(parents, nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:54.759Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.891Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.156Z"
 }

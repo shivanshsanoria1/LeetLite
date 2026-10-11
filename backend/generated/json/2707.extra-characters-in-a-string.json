@@ -54,6 +54,18 @@
         "Can we use Dynamic Programming here?",
         "Define DP[i] as the min extra character if breaking up s[0:i] optimally."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minExtraChar(string s, vector<string>& dictionary) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string[]} dictionary\n * @return {number}\n */\nvar minExtraChar = function(s, dictionary) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:22.536Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.375Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.507Z"
 }

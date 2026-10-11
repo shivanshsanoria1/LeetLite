@@ -52,6 +52,18 @@
     "hints": [
         "For each integer in range [1,1000], check if it’s divisible by both A and B."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int commonFactors(int a, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar commonFactors = function(a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:32.572Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.556Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.178Z"
 }

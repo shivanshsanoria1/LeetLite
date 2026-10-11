@@ -35,6 +35,18 @@
         "Handle the conversions of day, month and year separately.",
         "Notice that days always have a two-word ending, so if you erase the last two characters of this days you'll get the number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string reformatDate(string date) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} date\n * @return {string}\n */\nvar reformatDate = function(date) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:55.893Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.985Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.933Z"
 }

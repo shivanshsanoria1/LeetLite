@@ -47,6 +47,18 @@
         "Can you think of a data structure that will allow you to store the position of each number?",
         "Use that data structure to instantly replace a number with its new value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> arrayChange(vector<int>& nums, vector<vector<int>>& operations) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} operations\n * @return {number[]}\n */\nvar arrayChange = function(nums, operations) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:45.259Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.395Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.011Z"
 }

@@ -46,6 +46,18 @@
         "It is optimal to never make an operation to the last element of the array.",
         "You can iterate from the second last element to the first. If the current value is greater than the previous bound, we want to break it into pieces so that the smaller one is as large as possible but not larger than the previous one."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumReplacement(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumReplacement = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:42.997Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.453Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.107Z"
 }

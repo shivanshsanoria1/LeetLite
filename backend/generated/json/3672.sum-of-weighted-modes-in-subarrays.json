@@ -38,12 +38,12 @@
             "slug": "ordered-set"
         }
     ],
-    "exampleTestcases": "[1,2,2,3]\n3\n[1,2,1,2]\n2\n[4,3,4,3]\n3",
     "meta": {
         "quesIdLCBackend": 4036,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,2,3]\n3\n[1,2,1,2]\n2\n[4,3,4,3]\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -53,6 +53,7 @@
         "Maintain the max frequency of the current window of length <code>k</code> using a data structure.",
         "Maintain another data structure for values that have a given frequency."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T17:09:39.970Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.702Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.757Z"
 }

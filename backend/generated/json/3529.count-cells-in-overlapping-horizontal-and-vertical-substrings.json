@@ -42,12 +42,12 @@
             "slug": "hash-function"
         }
     ],
-    "exampleTestcases": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"abaca\"\n[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"aba\"\n[[\"a\"]]\n\"a\"",
     "meta": {
         "quesIdLCBackend": 3821,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"abaca\"\n[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"aba\"\n[[\"a\"]]\n\"a\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -56,6 +56,18 @@
         "Use a string hashing or pattern matching algorithm to efficiently find all horizontal and vertical occurrences of the pattern in the grid.",
         "Track the positions of each match and count only the cells that appear in both horizontal and vertical matches."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCells(vector<vector<char>>& grid, string pattern) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} grid\n * @param {string} pattern\n * @return {number}\n */\nvar countCells = function(grid, pattern) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:17.131Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.545Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.545Z"
 }

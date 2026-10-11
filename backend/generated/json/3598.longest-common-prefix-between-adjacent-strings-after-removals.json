@@ -26,12 +26,12 @@
             "slug": "string"
         }
     ],
-    "exampleTestcases": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n[\"dog\",\"racer\",\"car\"]",
     "meta": {
         "quesIdLCBackend": 3800,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n[\"dog\",\"racer\",\"car\"]",
     "solution": {
         "canSeeDetail": false
     },
@@ -41,6 +41,18 @@
         "After deleting <code>words[i]</code>, compute the longest common prefix for <code>words[i - 1]</code> and <code>words[i + 1]</code> (if they exist).",
         "Use the result of the prefix computation up to <code>i - 1</code> and the suffix computation from <code>i + 1</code> onwards."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> longestCommonPrefix(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number[]}\n */\nvar longestCommonPrefix = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:38.453Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.616Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.606Z"
 }

@@ -46,6 +46,18 @@
         "Let DP[i][j] denote the minimum number of white tiles still visible from indices i to floor.length-1 after covering with at most j carpets.",
         "The transition will be whether to put down the carpet at position i (if possible), or not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumWhiteTiles(string floor, int numCarpets, int carpetLen) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} floor\n * @param {number} numCarpets\n * @param {number} carpetLen\n * @return {number}\n */\nvar minimumWhiteTiles = function(floor, numCarpets, carpetLen) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:31.840Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.244Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.821Z"
 }

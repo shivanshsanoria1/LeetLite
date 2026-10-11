@@ -38,12 +38,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[2,8]\n[4,1]\n[6]\n[3]\n[5]\n[3]\n[1]\n[10]",
     "meta": {
         "quesIdLCBackend": 3967,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,8]\n[4,1]\n[6]\n[3]\n[5]\n[3]\n[1]\n[10]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Classification Discussion\n\n#### Intuition\n\nWe can either complete a land project first and then a water project, or complete a water project first and then a land project. To find the earliest possible completion time, we evaluate both orders and take the minimum result.\n\nLet's first consider the order **\"land first, then water\"**.\n\nFor all land projects, we calculate their completion times, that is, **earliest start time + duration**, and find the earliest completion time among them.\n\nWhen choosing the second project (a water project), there are two possible situations:\n\n* If the water project is already available when the land project finishes, we can start it immediately. The completion time is:\n\n$$\n\\textit{finish1} + \\textit{duration2}\n$$\n\n* If the water project is not yet available, we must wait until its earliest start time. The completion time is:\n\n$$\n\\textit{start2} + \\textit{duration2}\n$$\n\nCombining these two cases, the completion time for a fixed second project is:\n\n$$\n\\max(\\textit{finish1}, \\textit{start2}) + \\textit{duration2}\n$$\n\nwhere $\\textit{finish1}$ is the completion time of the first project, and $\\textit{start2}$ is the earliest start time of the second project.\n\nNotice that this expression is non-decreasing with respect to $\\textit{finish1}$. Therefore, to minimize the final completion time, we only need to consider the earliest possible completion time among all projects in the first category.\n\nAfter finding the earliest completion time for the land projects, we traverse all water projects and compute the earliest achievable final completion time.\n\nFinally, we repeat the same process for the order **\"water first, then land\"**. The answer is the smaller result obtained from the two possible orders.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/FBsRrzBk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"FBsRrzBk\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ and $m$ be the lengths of the land-project and water-project arrays, respectively.\n\n- Time complexity: $O(n + m)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -55,6 +55,18 @@
         "Binary‑search the second list (sorted by <code>start</code>) to split rides into those with <code>start <= finish1</code> and those with <code>start > finish1</code>. Use the prefix minimum duration on the early group to get an earliest finish of <code>finish1 + minDuration</code> and the suffix minimum finish time on the late group.",
         "For each pairing take the smaller finish time and track the overall minimum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration, vector<int>& waterStartTime, vector<int>& waterDuration) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} landStartTime\n * @param {number[]} landDuration\n * @param {number[]} waterStartTime\n * @param {number[]} waterDuration\n * @return {number}\n */\nvar earliestFinishTime = function(landStartTime, landDuration, waterStartTime, waterDuration) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:25.157Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.638Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.688Z"
 }

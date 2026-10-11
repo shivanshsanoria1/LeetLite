@@ -43,6 +43,18 @@
         "Each prefix of a balanced parentheses has a number of open parentheses greater or equal than closed parentheses, similar idea with each suffix.",
         "Check the array from left to right, remove characters that do not meet the property mentioned above, same idea in backward way."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string minRemoveToMakeValid(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar minRemoveToMakeValid = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:39.556Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.985Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.639Z"
 }

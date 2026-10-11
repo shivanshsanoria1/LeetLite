@@ -39,6 +39,7 @@
     "hints": [
         "Reverse each subarray of size <code>n / k</code>."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T18:59:28.446Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.811Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.129Z"
 }

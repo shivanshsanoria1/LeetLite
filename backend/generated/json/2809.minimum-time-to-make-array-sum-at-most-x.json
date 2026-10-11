@@ -45,6 +45,18 @@
         "<div class=\"_1l1MA\">Let’s sort all the values by <code>nums2</code> (in non-decreasing order). Let <code>dp[i][j]</code> represent the maximum total value that can be reduced if we do <code>j</code> operations on the first <code>i</code> elements. Then we have <code>dp[i][0] = 0</code> (for all <code>i = 0, 1, ..., n</code>) and <code>dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] + nums2[i - 1] * j + nums1[i - 1])</code> (for <code>1 <= i <= n</code> and <code>1 <= j <= i</code>).</div>",
         "<div class=\"_1l1MA\">The answer is the minimum value of <code>t</code>, such that <code>0 <= t <= n</code> and <code>sum(nums1) + sum(nums2) * t - dp[n][t] <= x</code>, or <code>-1</code> if it doesn’t exist.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTime(vector<int>& nums1, vector<int>& nums2, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} x\n * @return {number}\n */\nvar minimumTime = function(nums1, nums2, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:44:45.159Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.546Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.619Z"
 }

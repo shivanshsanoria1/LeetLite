@@ -51,6 +51,18 @@
         "Note that for a node, it's not optimal to consider two nodes with the same value.",
         "Note that the values are small enough for you to iterate over them instead of iterating over the parent nodes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getCoprimes(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} edges\n * @return {number[]}\n */\nvar getCoprimes = function(nums, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:35.747Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.431Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.749Z"
 }

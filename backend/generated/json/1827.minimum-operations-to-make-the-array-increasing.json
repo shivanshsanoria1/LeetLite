@@ -46,6 +46,18 @@
         "Think greedily. You don't have to increase nums[i+1] beyond nums[i]+1.",
         "Iterate on i and set nums[i] = max(nums[i-1]+1, nums[i]) ."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:38.925Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.499Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.860Z"
 }

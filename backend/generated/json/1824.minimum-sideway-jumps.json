@@ -45,6 +45,18 @@
         "At a given point, there are only 3 possible states for where the frog can be.",
         "Check all the ways to move from one point to the next and update the minimum side jumps for each lane."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSideJumps(vector<int>& obstacles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} obstacles\n * @return {number}\n */\nvar minSideJumps = function(obstacles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:36.266Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.497Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.853Z"
 }

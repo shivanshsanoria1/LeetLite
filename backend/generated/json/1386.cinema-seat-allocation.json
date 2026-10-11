@@ -51,6 +51,18 @@
         "Greedily check if you can allocate seats for two groups, one group or none.",
         "Process only rows that appear in the input, for other rows you can always allocate seats for two groups."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNumberOfFamilies(int n, vector<vector<int>>& reservedSeats) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} reservedSeats\n * @return {number}\n */\nvar maxNumberOfFamilies = function(n, reservedSeats) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:05.798Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.789Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.799Z"
 }

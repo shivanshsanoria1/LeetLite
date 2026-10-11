@@ -22,12 +22,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "6\n5\n5\n4\n4\n6",
     "meta": {
         "quesIdLCBackend": 3879,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "6\n5\n5\n4\n4\n6",
     "solution": {
         "canSeeDetail": false
     },
@@ -38,6 +38,18 @@
         "Otherwise, pick the log with greater length and cut it into logs with lengths <code>len1</code> and <code>len2</code> such that <code>len1 + len2</code> equals the original length.",
         "To minimize the cost <code>len1 * len2</code>, choose <code>len1</code> and <code>len2</code> as far apart as possible (e.g. <code>1</code> and <code>length−1</code>)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCuttingCost(int n, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number} k\n * @return {number}\n */\nvar minCuttingCost = function(n, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:54.885Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.563Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.565Z"
 }

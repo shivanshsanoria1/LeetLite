@@ -51,6 +51,18 @@
         "Try all the possibilities of closing branches.",
         "On the vertices that are not closed, use Floyd-Warshall algorithm to find the shortest paths."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfSets(int n, int maxDistance, vector<vector<int>>& roads) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} maxDistance\n * @param {number[][]} roads\n * @return {number}\n */\nvar numberOfSets = function(n, maxDistance, roads) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:50.491Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.698Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.086Z"
 }

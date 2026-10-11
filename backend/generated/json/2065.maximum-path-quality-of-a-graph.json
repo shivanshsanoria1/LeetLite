@@ -46,6 +46,18 @@
         "How many nodes can you visit within maxTime seconds?",
         "Can you try every valid path?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximalPathQuality(vector<int>& values, vector<vector<int>>& edges, int maxTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} values\n * @param {number[][]} edges\n * @param {number} maxTime\n * @return {number}\n */\nvar maximalPathQuality = function(values, edges, maxTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:50.673Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.941Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.417Z"
 }

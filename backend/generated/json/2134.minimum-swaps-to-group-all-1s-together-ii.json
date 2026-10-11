@@ -46,6 +46,18 @@
         "To eliminate the circular property of the array, we can append the original array to itself. Then, we check each subarray of length total.",
         "How do we avoid recounting the number of 0’s in the subarray each time? The Sliding Window technique can help."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSwaps(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minSwaps = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:48.307Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.093Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.686Z"
 }

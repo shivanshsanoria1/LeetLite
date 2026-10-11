@@ -63,6 +63,18 @@
         "Can we use a trie to build the folder structure?",
         "Can we utilize hashing to hash the folder structures?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<string>> deleteDuplicateFolder(vector<vector<string>>& paths) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[][]} paths\n * @return {string[][]}\n */\nvar deleteDuplicateFolder = function(paths) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:06.988Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.785Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.038Z"
 }

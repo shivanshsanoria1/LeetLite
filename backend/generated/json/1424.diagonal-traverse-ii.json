@@ -44,6 +44,18 @@
         "Notice that numbers with equal sums of row and column indexes belong to the same diagonal.",
         "Store them in tuples (sum, row, val), sort them, and then regroup the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findDiagonalOrder(vector<vector<int>>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} nums\n * @return {number[]}\n */\nvar findDiagonalOrder = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:58.438Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.819Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.829Z"
 }

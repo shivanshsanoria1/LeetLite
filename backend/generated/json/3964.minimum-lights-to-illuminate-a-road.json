@@ -41,6 +41,18 @@
         "Then scan the road from left to right. Whenever you find the first invisible position <code>i</code>, install a new bulb as far right as possible while still covering <code>i</code>.",
         "Since each additional bulb covers distance 1, the best position is usually <code>i + 1</code>, unless it goes out of bounds. After placing it, skip all positions it covers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minLights(vector<int>& lights) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} lights\n * @return {number}\n */\nvar minLights = function(lights) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:17.223Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.960Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.230Z"
 }

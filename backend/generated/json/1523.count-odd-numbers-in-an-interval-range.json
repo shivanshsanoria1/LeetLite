@@ -38,6 +38,18 @@
         "If the range (high - low + 1) is even, the number of even and odd numbers in this range will be the same.",
         "If the range (high - low + 1) is odd, the solution will depend on the parity of high and low."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countOdds(int low, int high) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number}\n */\nvar countOdds = function(low, high) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:15.236Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.022Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.964Z"
 }

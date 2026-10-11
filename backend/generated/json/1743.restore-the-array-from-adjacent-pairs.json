@@ -44,6 +44,18 @@
         "Find the first element of nums - it will only appear once in adjacentPairs.",
         "The adjacent pairs are like edges of a graph. Perform a depth-first search from the first element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> restoreArray(vector<vector<int>>& adjacentPairs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} adjacentPairs\n * @return {number[]}\n */\nvar restoreArray = function(adjacentPairs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:07.073Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.415Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.682Z"
 }

@@ -53,6 +53,18 @@
         "Only two elements change, the element at i + 1 is added into the subarray, and the element at i - k + 1 gets removed from the subarray.",
         "Iterate through each subarray of size k and keep track of the sum of the subarray and the frequency of each element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumSubarraySum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumSubarraySum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:59.808Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.689Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.218Z"
 }

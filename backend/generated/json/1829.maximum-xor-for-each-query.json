@@ -46,6 +46,18 @@
         "Note that the maximum possible XOR result is always 2^(maximumBit) - 1",
         "So the answer for a prefix is the XOR of that prefix XORed with 2^(maximumBit)-1"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getMaximumXor(vector<int>& nums, int maximumBit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} maximumBit\n * @return {number[]}\n */\nvar getMaximumXor = function(nums, maximumBit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:41.488Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.500Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.863Z"
 }

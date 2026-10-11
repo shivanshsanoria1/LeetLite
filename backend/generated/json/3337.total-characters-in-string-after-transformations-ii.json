@@ -52,6 +52,18 @@
         "Model the problem as a matrix multiplication problem.",
         "Use exponentiation to quickly multiply matrices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int lengthAfterTransformations(string s, int t, vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} t\n * @param {number[]} nums\n * @return {number}\n */\nvar lengthAfterTransformations = function(s, t, nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:15.430Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.199Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.163Z"
 }

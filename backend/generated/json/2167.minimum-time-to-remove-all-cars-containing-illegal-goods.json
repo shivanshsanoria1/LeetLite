@@ -42,6 +42,18 @@
         "Next, build an array onlyFirst where onlyFirst[i] stores the minimum time to remove all the cars containing illegal goods from the ‘prefix’ of the sequence ending on the ith car using only type 1 operations.",
         "Finally, we can compare the best way to split the operations amongst these two types by finding the minimum time across all onlyFirst[i] + withoutFirst[i + 1]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTime(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumTime = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:21.889Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.172Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.731Z"
 }

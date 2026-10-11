@@ -49,6 +49,18 @@
         "Can you find a different way to describe the second condition?",
         "The sum of the number of set bits in (num1 OR num2) and (num1 AND num2) is equal to the sum of the number of set bits in num1 and num2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countExcellentPairs(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countExcellentPairs = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:32.729Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.443Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.094Z"
 }

@@ -52,6 +52,18 @@
     "hints": [
         "Based on whether A[i-1] < A[i] < A[i+1], A[i-1] < A[i] > A[i+1], or A[i-1] > A[i] > A[i+1], we are either at the left side, peak, or right side of the mountain.  We can binary search to find the peak.\r\nAfter finding the peak, we can binary search two more times to find whether the value occurs on either side of the peak."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * // This is the MountainArray's API interface.\n * // You should not implement it, or speculate about its implementation\n * class MountainArray {\n *   public:\n *     int get(int index);\n *     int length();\n * };\n */\n\nclass Solution {\npublic:\n    int findInMountainArray(int target, MountainArray &mountainArr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * // This is the MountainArray's API interface.\n * // You should not implement it, or speculate about its implementation\n * function MountainArray() {\n *     @param {number} index\n *     @return {number}\n *     this.get = function(index) {\n *         ...\n *     };\n *\n *     @return {number}\n *     this.length = function() {\n *         ...\n *     };\n * };\n */\n\n/**\n * @param {number} target\n * @param {MountainArray} mountainArr\n * @return {number}\n */\nvar findInMountainArray = function(target, mountainArr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:51.343Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.119Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.394Z"
 }

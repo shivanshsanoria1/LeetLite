@@ -26,12 +26,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "\"a#b%*\"\n\"z*#\"",
     "meta": {
         "quesIdLCBackend": 3931,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"a#b%*\"\n\"z*#\"",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nAccording to the problem statement, we can directly simulate the process.\n\nWhile traversing the string:\n\n- If the current character is '*' and the result is not empty, remove the last character from the result.\n- If the current character is '#', append a copy of the current result to its end.\n- If the current character is '%', reverse the current result.\n- If the current character is a lowercase English letter, append it directly to the end of the result.\n\nAfter processing all characters, the resulting string is the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/aDnBjwBw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aDnBjwBw\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the original string $s$.\n\n- Time complexity: $O(2^n)$.\n  \n  During the simulation process, appending a character and deleting the last character both take $O(1)$ time. However, the '#' operation requires copying the entire current result, and the '%' operation requires traversing the entire result to reverse it. Therefore, the time spent on these operations is proportional to the current length of the result.\n  \n  In the worst case, the length of the result can grow to $2^n$, so the overall time complexity is $O(2^n)$.\n\n- Space complexity: $O(2^n)$.\n  \n  The result string itself may grow to length $2^n$ in the worst case. Additionally, the reverse operation creates a temporary string of the same size. Therefore, the overall space complexity is $O(2^n)$.\n\n---"
@@ -40,6 +40,18 @@
     "hints": [
         "Simulate as described"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string processStr(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar processStr = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:53.816Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.625Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.626Z"
 }

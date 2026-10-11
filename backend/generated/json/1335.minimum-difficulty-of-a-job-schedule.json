@@ -40,6 +40,18 @@
         "Use DP. Try to cut the array into d non-empty sub-arrays. Try all possible cuts for the array.",
         "Use dp[i][j] where DP states are i the index of the last cut and j the number of remaining cuts. Complexity is O(n * n * d)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDifficulty(vector<int>& jobDifficulty, int d) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} jobDifficulty\n * @param {number} d\n * @return {number}\n */\nvar minDifficulty = function(jobDifficulty, d) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:51.672Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.532Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.723Z"
 }

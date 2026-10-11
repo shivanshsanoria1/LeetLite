@@ -45,6 +45,18 @@
         "Since <code>x</code> must be positive, start checking from <code>max(1, n - k)</code>.",
         "Iterate through all values in this range and add <code>x</code> to the answer when <code>(n & x) == 0</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOfGoodIntegers(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar sumOfGoodIntegers = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:08.022Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.931Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.224Z"
 }

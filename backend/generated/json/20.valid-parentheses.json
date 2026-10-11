@@ -52,6 +52,18 @@
         "When you encounter an opening bracket, push it to the top of the stack.",
         "When you encounter a closing bracket, check if the top of the stack was the opening for it. If yes, pop it from the stack. Otherwise, return false."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isValid(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar isValid = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:38:29.850Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.873Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.150Z"
 }

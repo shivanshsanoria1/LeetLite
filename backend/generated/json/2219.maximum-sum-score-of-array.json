@@ -43,6 +43,7 @@
         "How can we use precalculation to efficiently calculate the average difference at an index?",
         "Create a prefix and/or suffix sum array."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:21:41.569Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.261Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.844Z"
 }

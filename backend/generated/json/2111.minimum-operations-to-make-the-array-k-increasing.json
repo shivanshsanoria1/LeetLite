@@ -48,6 +48,18 @@
         "Now our problem boils down to performing the minimum operations on each sequence such that it becomes non-decreasing. Our answer will be the sum of operations on each sequence.",
         "Which indices of a sequence should we not change in order to count the minimum operations? Can finding the longest non-decreasing subsequence of the sequence help?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kIncreasing(vector<int>& arr, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} k\n * @return {number}\n */\nvar kIncreasing = function(arr, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:29.778Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.073Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.616Z"
 }

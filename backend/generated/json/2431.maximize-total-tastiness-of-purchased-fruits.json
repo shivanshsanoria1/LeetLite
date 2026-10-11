@@ -40,6 +40,7 @@
         "We can use dynamic programming to speed up the algorithm.",
         "We have three options for each fruit. To skip it, to buy it with a coupon, or to buy it without a coupon."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:24:35.642Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.560Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.182Z"
 }

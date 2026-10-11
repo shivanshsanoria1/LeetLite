@@ -44,6 +44,18 @@
         "If you are provided with a d digit number, how can you generate a palindrome with 2*d or 2*d - 1 digit?",
         "Try brute-forcing and checking if the palindrome you generated is a \"k-Mirror\" number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long kMirror(int k, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @param {number} n\n * @return {number}\n */\nvar kMirror = function(k, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:05.412Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.998Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.487Z"
 }

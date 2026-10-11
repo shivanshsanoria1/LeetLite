@@ -45,6 +45,18 @@
         "The maximum square length we can get is <code>min(hy - hx + 2, vy - vx + 2)</code>.",
         "Square the maximum square length to get the area."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximizeSquareHoleArea(int n, int m, vector<int>& hBars, vector<int>& vBars) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number[]} hBars\n * @param {number[]} vBars\n * @return {number}\n */\nvar maximizeSquareHoleArea = function(n, m, hBars, vBars) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:36.567Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.688Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.973Z"
 }

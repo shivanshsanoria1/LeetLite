@@ -34,6 +34,13 @@
         "Start by returning a function that takes in a number and returns a number.",
         "Call each of the functions in the correct order. Each time passing the output of the previous function into the next function."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Function[]} functions\n * @return {Function}\n */\nvar compose = function(functions) {\n    \n    return function(x) {\n        \n    }\n};\n\n/**\n * const fn = compose([x => x + 1, x => 2 * x])\n * fn(4) // 9\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:17.187Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.265Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.421Z"
 }

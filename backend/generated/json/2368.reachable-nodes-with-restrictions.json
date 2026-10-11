@@ -64,6 +64,18 @@
         "Traverse the graph from node 0 while avoiding the nodes in restricted and do not revisit nodes that have been visited.",
         "Keep count of how many nodes are visited in total."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int reachableNodes(int n, vector<vector<int>>& edges, vector<int>& restricted) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} restricted\n * @return {number}\n */\nvar reachableNodes = function(n, edges, restricted) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:44.443Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.454Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.109Z"
 }

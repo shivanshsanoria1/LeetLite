@@ -26,12 +26,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "2\n3\n11",
     "meta": {
         "quesIdLCBackend": 4049,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n3\n11",
     "solution": {
         "canSeeDetail": false
     },
@@ -42,6 +42,18 @@
         "Transition by choosing digits for <code>a</code> and <code>b</code> that add up (with carry) to the current digit of <code>n</code>.",
         "Subtract the cases where either number ends up being zero-containing when <code>n</code> itself is no-zero."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countNoZeroPairs(long long n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countNoZeroPairs = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:22:27.516Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.732Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.865Z"
 }

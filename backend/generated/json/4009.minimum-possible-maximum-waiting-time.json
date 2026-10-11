@@ -46,6 +46,18 @@
         "<p>Because the next car becomes allowed when the current car starts, subtract <code>wait</code> from the other dispenser's busy time, stopping at <code>0</code>.</p>",
         "<p>For every state, first maximize the number of cars that can be served. Among assignments serving that maximum number, minimize the maximum waiting time encountered.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMaxWaitingTime(vector<int>& demand, vector<int>& fuel) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} demand\n * @param {number[]} fuel\n * @return {number}\n */\nvar minMaxWaitingTime = function(demand, fuel) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:06.991Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.995Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.280Z"
 }

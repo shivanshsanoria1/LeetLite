@@ -47,6 +47,18 @@
         "For each length, we can use sliding window to count the frequency of each letter in the window.",
         "We still need to check for all characters in the window that <code>abs(word[i] - word[i - 1]) <= 2</code>. We do this by maintaining the values of <code>abs(word[i] - word[i - 1])</code> in the sliding window dynamically in an ordered multiset or priority queue, so that we know the maximum value at each iteration."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCompleteSubstrings(string word, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @param {number} k\n * @return {number}\n */\nvar countCompleteSubstrings = function(word, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:45.781Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.695Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.056Z"
 }

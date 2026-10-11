@@ -41,6 +41,7 @@
         "The substring you are looking for is determined by the decimal digits of <code>i</code>.",
         "For each index <code>i</code>, compare the string form of <code>i</code> with the substring that ends at <code>i</code> and has the same length."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T18:46:24.280Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.356Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.076Z"
 }

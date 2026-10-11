@@ -61,6 +61,18 @@
         "Otherwise return 2.",
         "We can disconnect the grid within at most 2 days."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDays(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minDays = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:19.968Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.055Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.075Z"
 }

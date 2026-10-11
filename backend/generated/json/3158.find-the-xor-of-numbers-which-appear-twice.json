@@ -46,6 +46,18 @@
     "hints": [
         "The constraints are small. Brute force checking each value in the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int duplicateNumbersXOR(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar duplicateNumbersXOR = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:56.616Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.995Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.053Z"
 }

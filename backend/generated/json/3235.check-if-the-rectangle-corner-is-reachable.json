@@ -60,6 +60,18 @@
         "Add an edge between these vertices if they intersect or touch.",
         "Answer will be <code>false</code> when any of two sides left-right, left-bottom, right-top or top-bottom are reachable using the edges."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canReachCorner(int xCorner, int yCorner, vector<vector<int>>& circles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} xCorner\n * @param {number} yCorner\n * @param {number[][]} circles\n * @return {boolean}\n */\nvar canReachCorner = function(xCorner, yCorner, circles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:55.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.065Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.607Z"
 }

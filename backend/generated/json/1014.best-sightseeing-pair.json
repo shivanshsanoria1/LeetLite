@@ -39,6 +39,18 @@
     "hints": [
         "Can you tell the best sightseeing spot in one pass (ie. as you iterate over the input?)  What should we store or keep track of as we iterate to do this?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScoreSightseeingPair(vector<int>& values) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} values\n * @return {number}\n */\nvar maxScoreSightseeingPair = function(values) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:52.190Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.707Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.297Z"
 }

@@ -48,6 +48,7 @@
         "When calculating an adjacent group of k consecutive candies, can you use some of your previous calculations?",
         "Use a sliding window where the window is the group of k consecutive candies you are sharing. Use a hash map to store the number of candies of each type you can keep."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:05:26.806Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.069Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.603Z"
 }

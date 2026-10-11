@@ -56,6 +56,18 @@
         "The purely recursive implementation of minimax would be worthless for even a small n. You MUST use dynamic programming.",
         "As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getMoneyAmount(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar getMoneyAmount = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:05:47.631Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.848Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.964Z"
 }

@@ -50,6 +50,18 @@
     "hints": [
         "Use two HashMap to store the counts of distinct letters in the left and right substring divided by the current index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numSplits(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar numSplits = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:17.191Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.025Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.968Z"
 }

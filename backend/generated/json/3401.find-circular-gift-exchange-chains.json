@@ -22,17 +22,18 @@
             "slug": "database"
         }
     ],
-    "exampleTestcases": "{\"headers\":{\"SecretSanta\":[\"giver_id\",\"receiver_id\",\"gift_value\"]},\"rows\":{\"SecretSanta\":[[1,2,20],[2,3,30],[3,1,40],[4,5,25],[5,4,35]]}}",
     "meta": {
         "quesIdLCBackend": 3746,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "{\"headers\":{\"SecretSanta\":[\"giver_id\",\"receiver_id\",\"gift_value\"]},\"rows\":{\"SecretSanta\":[[1,2,20],[2,3,30],[3,1,40],[4,5,25],[5,4,35]]}}",
     "solution": {
         "canSeeDetail": false
     },
     "content": null,
     "hints": [],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:48:37.757Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.325Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.368Z"
 }

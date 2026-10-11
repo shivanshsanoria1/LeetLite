@@ -63,6 +63,7 @@
         "Add a virtual node, connect it to houses with edges weighted by the costs to build wells in these houses.",
         "The problem is now reduced to a Minimum Spanning Tree problem."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:28:05.063Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.526Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.558Z"
 }

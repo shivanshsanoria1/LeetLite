@@ -46,6 +46,18 @@
         "For each node <code>u</code> in the first tree, find the number of nodes at a distance of at most <code>k</code> from node <code>u</code>.",
         "For each node <code>v</code> in the second tree, find the number of nodes at a distance of at most <code>k - 1</code> from node <code>v</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges1\n * @param {number[][]} edges2\n * @param {number} k\n * @return {number[]}\n */\nvar maxTargetNodes = function(edges1, edges2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:44.011Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.284Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.327Z"
 }

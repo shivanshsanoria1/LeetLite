@@ -42,12 +42,12 @@
             "slug": "bitmask"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n[4]\n[8,4]\n[10,5]\n[7,9,10]\n[7]",
     "meta": {
         "quesIdLCBackend": 3697,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n[4]\n[8,4]\n[10,5]\n[7,9,10]\n[7]",
     "solution": {
         "canSeeDetail": false
     },
@@ -55,6 +55,18 @@
     "hints": [
         "Use bitmask dynamic programming."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumIncrements(vector<int>& nums, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} target\n * @return {number}\n */\nvar minimumIncrements = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:51.906Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.405Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.407Z"
 }

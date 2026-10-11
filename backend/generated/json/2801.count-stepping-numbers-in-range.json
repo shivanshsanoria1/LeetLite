@@ -43,6 +43,18 @@
         "First, calculate the number of stepping numbers shorter than x in length, which can be done using dynamic programming. (dp[i][j] is the number of i-digit stepping numbers ending with digit j).",
         "Finally, calculate the number of stepping numbers that have the same length as x similarly. However, this time we need to maintain whether the prefix (in string) is smaller than or equal to x in the DP state."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSteppingNumbers(string low, string high) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} low\n * @param {string} high\n * @return {number}\n */\nvar countSteppingNumbers = function(low, high) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:44:38.281Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.514Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.614Z"
 }

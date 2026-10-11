@@ -51,6 +51,18 @@
         "if x = nums[i] (mod value), then we can make nums[i] equal to x  after some number of operations",
         "How does finding the frequency of (nums[i] mod value) help?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findSmallestInteger(vector<int>& nums, int value) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} value\n * @return {number}\n */\nvar findSmallestInteger = function(nums, value) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:52.973Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.230Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.397Z"
 }

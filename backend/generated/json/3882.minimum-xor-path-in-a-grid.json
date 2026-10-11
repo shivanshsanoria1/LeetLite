@@ -49,6 +49,18 @@
         "<code>dp[i][j][x]</code> indicates whether it is possible to reach cell <code>(i, j)</code> with XOR equal to <code>x</code>.",
         "Transition from the top left cell by updating <code>x ^ grid[i][j]</code>, and track all reachable XOR values to find the minimum at the end cell."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minCost = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:46.057Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.824Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.151Z"
 }

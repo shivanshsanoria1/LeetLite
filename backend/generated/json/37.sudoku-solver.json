@@ -59,6 +59,18 @@
         "For each cell, place a valid number and try solving for the remaining empty cells.",
         "If stuck, undo (backtrack) and try another valid number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    void solveSudoku(vector<vector<char>>& board) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} board\n * @return {void} Do not return anything, modify board in-place instead.\n */\nvar solveSudoku = function(board) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:38:45.474Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.720Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.840Z"
 }

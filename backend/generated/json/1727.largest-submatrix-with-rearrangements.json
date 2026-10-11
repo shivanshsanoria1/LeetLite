@@ -50,6 +50,18 @@
         "For each column, find the number of consecutive ones ending at each position.",
         "For each row, sort the cumulative ones in non-increasing order and \"fit\" the largest submatrix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestSubmatrix(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number}\n */\nvar largestSubmatrix = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:52.227Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.404Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.652Z"
 }

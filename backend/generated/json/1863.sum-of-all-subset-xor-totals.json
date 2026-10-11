@@ -56,6 +56,18 @@
         "Is there a way to iterate through all the subsets of the array?",
         "Can we use recursion to efficiently iterate through all the subsets?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int subsetXORSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar subsetXORSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:17.225Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.521Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.903Z"
 }

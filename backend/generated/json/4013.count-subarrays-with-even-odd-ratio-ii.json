@@ -60,6 +60,18 @@
         "<p>Let <code>pref[i]</code> be the prefix sum of the transformed array. A subarray <code>[l, r]</code> is valid when <code>pref[r + 1] &lt;= pref[l]</code>.</p>",
         "<p>Scan the prefix sums from left to right and count how many previous prefix sums are greater than or equal to the current one using coordinate compression and a Fenwick tree.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countRatioSubarrays(vector<int>& nums, int a, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar countRatioSubarrays = function(nums, a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:10.878Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.998Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.291Z"
 }

@@ -43,6 +43,18 @@
         "Let <code>dp[a][b][c = 0/1][d]</code> be the number of stable arrays with exactly <code>a</code> 0s, <code>b</code> 1s and consecutive <code>d</code> value of <code>c</code>’s at the end.",
         "Try each case by appending a 0/1 at last to get the inductions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfStableArrays(int zero, int one, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} zero\n * @param {number} one\n * @param {number} limit\n * @return {number}\n */\nvar numberOfStableArrays = function(zero, one, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:33.254Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.962Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.923Z"
 }

@@ -46,6 +46,18 @@
         "To calculate LCM, you can use a built-in function or the formula lcm(a, b) = a * b / gcd(a, b).",
         "As you calculate the LCM of more numbers, it can only become greater. Once it becomes greater than k, you know that any larger subarrays containing all the current elements will not work."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int subarrayLCM(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar subarrayLCM = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:06.874Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.703Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.230Z"
 }

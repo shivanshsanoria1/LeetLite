@@ -42,6 +42,18 @@
     "hints": [
         "consider iterating over all strings from left to right and use an if condition to check if the first character and last character are vowels."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int vowelStrings(vector<string>& words, int left, int right) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {number} left\n * @param {number} right\n * @return {number}\n */\nvar vowelStrings = function(words, left, right) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:41.567Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.172Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.385Z"
 }

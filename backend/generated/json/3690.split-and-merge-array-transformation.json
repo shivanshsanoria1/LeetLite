@@ -30,12 +30,12 @@
             "slug": "breadth-first-search"
         }
     ],
-    "exampleTestcases": "[3,1,2]\n[1,2,3]\n[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
     "meta": {
         "quesIdLCBackend": 3928,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,1,2]\n[1,2,3]\n[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
         "For each dequeued state, generate all possible \"split-and-merge\" successors by choosing every valid subarray <code>[L..R]</code>, removing it, and inserting it at every possible position.",
         "Stop as soon as you dequeue <code>nums2</code>, and return its associated operation count."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSplitMerge(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar minSplitMerge = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:56.340Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.712Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.804Z"
 }

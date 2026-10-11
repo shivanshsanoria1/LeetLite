@@ -35,6 +35,13 @@
         "Write a recursive function that keeps track of the current depth.",
         "if the current depth >= the maximum depth, always just push the value to the returned array. Otherwise recursively call flat on the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Array} arr\n * @param {number} depth\n * @return {Array}\n */\nvar flat = function (arr, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:13.803Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.262Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.417Z"
 }

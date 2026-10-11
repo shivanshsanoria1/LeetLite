@@ -59,6 +59,18 @@
     "hints": [
         "Alternate placing the most common letters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string reorganizeString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar reorganizeString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:20.850Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.352Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.053Z"
 }

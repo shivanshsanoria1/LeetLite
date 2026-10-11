@@ -55,6 +55,18 @@
         "For <code>x = n</code> down to <code>1</code>: if <code>2x <= D</code> then flip <code>x</code> and set <code>D -= 2x</code>.",
         "Build the array using the chosen signs and sort it in ascending order to obtain the lexicographically smallest result."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> lexSmallestNegatedPerm(int n, long long target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} target\n * @return {number[]}\n */\nvar lexSmallestNegatedPerm = function(n, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:09.341Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.025Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.969Z"
 }

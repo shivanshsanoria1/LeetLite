@@ -40,6 +40,18 @@
         "Use <code>dp[index][op1][op2]</code> where each state tracks progress at <code>index</code> with <code>op1</code> and <code>op2</code> operations left.",
         "At each state, try applying only operation 1, only operation 2, both in sequence, or skip both to find optimal results."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minArraySum(vector<int>& nums, int k, int op1, int op2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} op1\n * @param {number} op2\n * @return {number}\n */\nvar minArraySum = function(nums, k, op1, op2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:39.194Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.262Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.313Z"
 }

@@ -54,6 +54,18 @@
     "hints": [
         "Use shortest path algorithms with a state for the last move being odd or even indexed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minTimeToReach(vector<vector<int>>& moveTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} moveTime\n * @return {number}\n */\nvar minTimeToReach = function(moveTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:19.014Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.203Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.187Z"
 }

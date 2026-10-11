@@ -48,6 +48,18 @@
     "hints": [
         "Partition the array by common integers, and choose the path with larger sum with a DP technique."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSum(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar maxSum = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:42.589Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.035Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.995Z"
 }

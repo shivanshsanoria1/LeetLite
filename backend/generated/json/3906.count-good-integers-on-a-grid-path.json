@@ -37,6 +37,18 @@
         "Use digit dynamic programming with states <code>pos</code> (0..15), <code>tight</code> (0/1), <code>cnt</code> (how many path digits placed 0..7), and <code>prev</code> (previous path digit 0..9); when <code>pos</code> is a path index, require the chosen digit >= <code>prev</code> and advance <code>cnt</code>.",
         "Compute <code>f(N)</code> = count of good numbers <= <code>N</code> and return <code>f(r) - f(l-1)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countGoodIntegersOnPath(long long l, long long r, string directions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} l\n * @param {number} r\n * @param {string} directions\n * @return {number}\n */\nvar countGoodIntegersOnPath = function(l, r, directions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:13.175Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.842Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.175Z"
 }

@@ -48,6 +48,18 @@
         "You only need to check the smallest asteroid at each collision. If it will destroy the planet, then every other asteroid will also destroy the planet.",
         "Sort the asteroids in non-decreasing order by mass, then greedily try to collide with the asteroids in that order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool asteroidsDestroyed(int mass, vector<int>& asteroids) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} mass\n * @param {number[]} asteroids\n * @return {boolean}\n */\nvar asteroidsDestroyed = function(mass, asteroids) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:41.592Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.083Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.669Z"
 }

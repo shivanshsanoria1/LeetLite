@@ -53,6 +53,18 @@
     "hints": [
         "The first chunk can be found as the smallest k for which A[:k+1] == [0, 1, 2, ...k]; then we repeat this process."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxChunksToSorted(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar maxChunksToSorted = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:22.321Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.353Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.055Z"
 }

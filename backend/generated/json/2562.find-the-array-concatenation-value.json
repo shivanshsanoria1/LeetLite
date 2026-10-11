@@ -44,6 +44,18 @@
         "iterate until the array becomes empty. In each iteration, concatenate the first element to the last element and add their concatenation value to the answer.",
         "Don’t forget to handle cases when one element is left in the end, not two elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long findTheArrayConcVal(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findTheArrayConcVal = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:21.686Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.148Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.352Z"
 }

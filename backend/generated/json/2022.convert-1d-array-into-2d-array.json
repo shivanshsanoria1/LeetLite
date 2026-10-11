@@ -47,6 +47,18 @@
         "It is possible if and only if m * n == original.length",
         "If it is possible to convert original to a 2D array, keep an index i such that original[i] is the next element to add to the 2D array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> construct2DArray(vector<int>& original, int m, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} original\n * @param {number} m\n * @param {number} n\n * @return {number[][]}\n */\nvar construct2DArray = function(original, m, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:10.121Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.913Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.212Z"
 }

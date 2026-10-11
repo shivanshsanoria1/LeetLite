@@ -48,6 +48,18 @@
         "Can we process the queries in a smart order to avoid repeatedly checking the same items?",
         "How can we use the answer to a query for other queries?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} items\n * @param {number[]} queries\n * @return {number[]}\n */\nvar maximumBeauty = function(items, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:56.155Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.945Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.433Z"
 }

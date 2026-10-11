@@ -51,6 +51,18 @@
         "When we use a subarray, the room for the next subarrays will be the suffix after the used subarray.",
         "If we can match a group with multiple subarrays, we should choose the first one, as this will just leave the largest room for the next subarrays."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canChoose(vector<vector<int>>& groups, vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} groups\n * @param {number[]} nums\n * @return {boolean}\n */\nvar canChoose = function(groups, nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:32.878Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.430Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.743Z"
 }

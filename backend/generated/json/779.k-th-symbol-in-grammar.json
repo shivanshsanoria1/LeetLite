@@ -43,6 +43,18 @@
     "hints": [
         "Try to represent the current (N, K) in terms of some (N-1, prevK).  What is prevK ?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kthGrammar(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar kthGrammar = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:29.325Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.361Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.062Z"
 }

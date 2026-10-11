@@ -54,6 +54,18 @@
         "Use a map to count the frequencies of the numbers in the array.",
         "An optimal strategy is to remove the numbers with the smallest count first."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    int findLeastNumOfUniqueInts(vector<int>& arr, int k) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number[]} arr\r\n * @param {number} k\r\n * @return {number}\r\n */\r\nvar findLeastNumOfUniqueInts = function(arr, k) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:17.440Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.960Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.905Z"
 }

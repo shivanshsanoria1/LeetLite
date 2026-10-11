@@ -58,6 +58,18 @@
         "<p>Fix the left endpoint and extend the right endpoint while maintaining the numbers of even and odd elements.</p>",
         "<p>A subarray with <code>y &gt; 0</code> is valid exactly when <code>b * x &lt;= a * y</code>. Use this comparison instead of floating-point division.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countRatioSubarrays(vector<int>& nums, int a, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} a\n * @param {number} b\n * @return {number}\n */\nvar countRatioSubarrays = function(nums, a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:08.421Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.997Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.287Z"
 }

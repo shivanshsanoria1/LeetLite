@@ -50,6 +50,7 @@
         "The first time you reach a food, return the number of steps as the answer.",
         "In case the queue is empty and you still did not manage to reach a food, return -1."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:52:55.604Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.406Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.657Z"
 }

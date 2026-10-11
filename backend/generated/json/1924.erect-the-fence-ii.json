@@ -49,6 +49,7 @@
         "First, we need to note that this is a classic problem given n points you need to find the minimum enclosing circle to bind them",
         "Second, we need to apply a well known algorithm called welzls algorithm to help us find the minimum enclosing circle"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:02:47.282Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.752Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.972Z"
 }

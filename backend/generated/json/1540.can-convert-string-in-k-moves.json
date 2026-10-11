@@ -42,6 +42,18 @@
         "Observe that shifting a letter x times has the same effect of shifting the letter x + 26 times.",
         "You need to check whether k is large enough to cover all shifts with the same remainder after modulo 26."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canConvertString(string s, string t, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} k\n * @return {boolean}\n */\nvar canConvertString = function(s, t, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:46.992Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.037Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.007Z"
 }

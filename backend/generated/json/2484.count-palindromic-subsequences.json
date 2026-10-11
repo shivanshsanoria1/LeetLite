@@ -43,6 +43,18 @@
         "There are 100 possibilities for the first two characters of the palindrome.",
         "Iterate over all characters, letting the current character be the center of the palindrome."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPalindromes(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countPalindromes = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:17.932Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.734Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.249Z"
 }

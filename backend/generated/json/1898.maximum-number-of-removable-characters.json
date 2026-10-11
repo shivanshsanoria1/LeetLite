@@ -49,6 +49,18 @@
         "First, we need to think about solving an easier problem, If we remove a set of indices from the string does P exist in S as a subsequence",
         "We can binary search the K and check by solving the above problem."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumRemovals(string s, string p, vector<int>& removable) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} p\n * @param {number[]} removable\n * @return {number}\n */\nvar maximumRemovals = function(s, p, removable) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:58.490Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.703Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.938Z"
 }

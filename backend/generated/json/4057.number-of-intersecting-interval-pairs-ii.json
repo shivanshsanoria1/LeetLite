@@ -35,6 +35,18 @@
         "<p><strong>2a (Sweep Line).</strong> Create a start event and an end event for each interval. Process events in increasing coordinate order, handling all start events before end events at the same coordinate.</p>",
         "<p><strong>2b (Sweep Line).</strong> Maintain the number of active intervals. At each start event, add that number to the answer before activating the new interval. At each end event, deactivate the interval.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countIntersectingIntervals(vector<vector<int>>& intervals) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} intervals\n * @return {number}\n */\nvar countIntersectingIntervals = function(intervals) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:16.220Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.996Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.360Z"
 }

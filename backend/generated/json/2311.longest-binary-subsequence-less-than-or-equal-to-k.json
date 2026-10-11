@@ -50,6 +50,18 @@
         "Choosing a subsequence from the string is equivalent to deleting all the other digits.",
         "If you were to remove a digit, which one should you remove to reduce the value of the string?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubsequence(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar longestSubsequence = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:57.547Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.409Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.026Z"
 }

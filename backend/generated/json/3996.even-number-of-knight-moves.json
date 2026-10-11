@@ -44,6 +44,18 @@
         "<p><strong>2b (BFS).</strong> Run BFS while tracking both the current cell and the parity of the number of moves used.</p>",
         "<p><strong>2c (BFS).</strong> Return <code>true</code> if <code>target</code> is reachable with even parity.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canReach(vector<int>& start, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} start\n * @param {number[]} target\n * @return {boolean}\n */\nvar canReach = function(start, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:51.221Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.984Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.260Z"
 }

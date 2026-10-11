@@ -53,6 +53,18 @@
         "For any particular difficulty level, what can be the optimal strategy to complete the tasks using minimum rounds?",
         "When can we not complete all tasks of a difficulty level?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumRounds(vector<int>& tasks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} tasks\n * @return {number}\n */\nvar minimumRounds = function(tasks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:01.704Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.293Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.929Z"
 }

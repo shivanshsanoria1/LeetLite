@@ -47,6 +47,18 @@
         "Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.",
         "For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int pivotIndex(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar pivotIndex = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:50.774Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.266Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.002Z"
 }

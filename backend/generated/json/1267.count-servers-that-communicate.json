@@ -56,6 +56,18 @@
         "Store number of computer in each row and column.",
         "Count all servers that are not isolated."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countServers(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar countServers = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:16.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.046Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.656Z"
 }

@@ -42,6 +42,18 @@
     "hints": [
         "Count only the letters (possibly converted to lowercase) of each word.  If a word is shorter and the count of each letter is at least the count of that letter in the licensePlate, it is the best answer we've seen yet."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string shortestCompletingWord(string licensePlate, vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} licensePlate\n * @param {string[]} words\n * @return {string}\n */\nvar shortestCompletingWord = function(licensePlate, words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:07.407Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.335Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.035Z"
 }

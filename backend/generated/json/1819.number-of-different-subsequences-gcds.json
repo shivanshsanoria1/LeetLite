@@ -59,6 +59,18 @@
         "Adding a number to a subsequence cannot increase its gcd. So, if there is a valid subsequence for x , then the subsequence that contains all multiples of x is a valid one too.",
         "Iterate on all possiblex from 1 to 10^5, and check if there is a valid subsequence for x."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countDifferentSubsequenceGCDs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countDifferentSubsequenceGCDs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:31.760Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.494Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.837Z"
 }

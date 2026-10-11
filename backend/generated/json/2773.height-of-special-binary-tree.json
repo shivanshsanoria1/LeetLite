@@ -49,6 +49,7 @@
         "If the previous condition does not hold, and v.left.right == v, then v is a leaf node.",
         "Now that we can check if some node is a leaf, we can make the function “heightOfTree” a recursive function that returns the tree's height in which its input is the root of that subtree."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:42:15.654Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.418Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.581Z"
 }

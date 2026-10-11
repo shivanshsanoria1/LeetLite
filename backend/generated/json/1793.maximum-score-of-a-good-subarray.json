@@ -58,6 +58,18 @@
         "Try thinking about the prefix before index k and the suffix after index k as two separate arrays.",
         "Using two pointers or binary search, we can find the maximum prefix of each array where the numbers are less than or equal to a certain value"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumScore(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumScore = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:05.931Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.478Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.783Z"
 }

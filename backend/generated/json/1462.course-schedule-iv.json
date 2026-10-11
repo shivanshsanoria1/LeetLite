@@ -49,6 +49,18 @@
         "Start a bfs from each course i and assign for each course j you visit isReachable[i][j] = True.",
         "Answer the queries from the isReachable array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>>& prerequisites, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} numCourses\n * @param {number[][]} prerequisites\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar checkIfPrerequisite = function(numCourses, prerequisites, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:49.131Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.904Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.859Z"
 }

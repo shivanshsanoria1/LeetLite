@@ -46,6 +46,18 @@
         "If <code>s</code> has 0 as the last character, we can only append 1, whereas if the last character is 1, we can append both 0 and 1.",
         "We can use recursion and backtracking to generate all such strings."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> validStrings(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar validStrings = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:38.210Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.047Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.392Z"
 }

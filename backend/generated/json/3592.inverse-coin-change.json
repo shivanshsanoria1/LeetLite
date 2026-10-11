@@ -29,12 +29,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "[0,1,0,2,0,3,0,4,0,5]\n[1,2,2,3,4]\n[1,2,3,4,15]",
     "meta": {
         "quesIdLCBackend": 3903,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[0,1,0,2,0,3,0,4,0,5]\n[1,2,2,3,4]\n[1,2,3,4,15]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "Repeat: pick the next smallest <code>c</code> with <code>numWays[c] == 1</code>, remove it, and so on.",
         "At the end, if <code>numWays</code> is all zeros, your <code>ans</code> is valid; otherwise, return an empty array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findCoins(vector<int>& numWays) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} numWays\n * @return {number[]}\n */\nvar findCoins = function(numWays) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:31.284Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.612Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.596Z"
 }

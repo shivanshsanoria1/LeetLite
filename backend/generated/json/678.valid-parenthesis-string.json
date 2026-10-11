@@ -57,6 +57,18 @@
         "Keep track of the count of open parentheses encountered so far. If you encounter a close parenthesis, it should balance with an open parenthesis. Utilize a stack to handle this effectively.",
         "How about using 2 stacks instead of 1? Think about it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkValidString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:19.277Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.228Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.894Z"
 }

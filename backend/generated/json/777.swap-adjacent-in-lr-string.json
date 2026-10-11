@@ -40,6 +40,18 @@
     "hints": [
         "Think of the L and R's as people on a horizontal line, where X is a space.  The people can't cross each other, and also you can't go from XRX to RXX."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canTransform(string start, string result) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} start\n * @param {string} result\n * @return {boolean}\n */\nvar canTransform = function(start, result) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:27.566Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.359Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.061Z"
 }

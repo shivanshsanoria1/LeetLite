@@ -52,6 +52,7 @@
         "Given <code>n = 5</code> and <code>edges = [[0, 1], [1, 2], [3, 4]]</code>, what should your return? Is this case a valid tree?",
         "According to the <a href=\"https://en.wikipedia.org/wiki/Tree_(graph_theory)\" target=\"_blank\">definition of tree on Wikipedia</a>: “a tree is an undirected graph in which any two vertices are connected by <i>exactly</i> one path. In other words, any connected graph without simple cycles is a tree.”"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T19:57:07.218Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.251Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.406Z"
 }

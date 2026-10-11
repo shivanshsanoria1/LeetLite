@@ -40,6 +40,7 @@
         "If the path starts at room i, what properties must the other two rooms in the cycle have?",
         "The other two rooms must be connected to room i, and must be connected to each other."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:05:02.549Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.993Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.466Z"
 }

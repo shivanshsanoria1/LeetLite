@@ -30,12 +30,12 @@
             "slug": "trie"
         }
     ],
-    "exampleTestcases": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n2\n[\"dog\",\"racer\",\"car\"]\n2",
     "meta": {
         "quesIdLCBackend": 3784,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n2\n[\"dog\",\"racer\",\"car\"]\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
         "During evaluation, find the innermost node with at least <code>k</code> paths ending there.",
         "Use a multiset or similar structure to handle updates efficiently."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> longestCommonPrefix(vector<string>& words, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {number} k\n * @return {number[]}\n */\nvar longestCommonPrefix = function(words, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:32.062Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.476Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.506Z"
 }

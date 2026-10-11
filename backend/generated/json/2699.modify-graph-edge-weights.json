@@ -47,6 +47,18 @@
         "Suppose we can find a modifiable edge (u, v) such that the length of the shortest path from source to u (dis1) plus the length of the shortest path from v to destination (dis2) is less than target (dis1 + dis2 < target), then we can change its weight to “target - dis1 - dis2”.",
         "For all the other edges that still have the weight “-1”, change the weights into sufficient large number (target, target + 1 or 200000000 etc.)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> modifiedGraphEdges(int n, vector<vector<int>>& edges, int source, int destination, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} source\n * @param {number} destination\n * @param {number} target\n * @return {number[][]}\n */\nvar modifiedGraphEdges = function(n, edges, source, destination, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:16.677Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.368Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.489Z"
 }

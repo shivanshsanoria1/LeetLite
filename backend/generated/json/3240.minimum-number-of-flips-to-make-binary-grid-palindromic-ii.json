@@ -43,6 +43,18 @@
         "For each <code>(x, y)</code>, find <code>(m - 1 - x, y)</code>, <code>(m - 1 - x, n - 1 - y)</code>, and <code>(x, n - 1 - y)</code>; they should be the same.",
         "Note that we need to specially handle the middle row (column) if the number of rows (columns) is odd."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minFlips(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minFlips = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:59.013Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.071Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.632Z"
 }

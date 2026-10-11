@@ -38,6 +38,18 @@
         "Track the reachable tower with the highest <code>qi</code>; break ties using lexicographical order on <code>[xi, yi]</code>.",
         "If no tower is reachable, return <code>[-1, -1]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> bestTower(vector<vector<int>>& towers, vector<int>& center, int radius) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} towers\n * @param {number[]} center\n * @param {number} radius\n * @return {number[]}\n */\nvar bestTower = function(towers, center, radius) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:14.720Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.336Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.049Z"
 }

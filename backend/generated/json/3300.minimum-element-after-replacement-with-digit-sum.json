@@ -41,6 +41,18 @@
     "hints": [
         "Convert to string and calculate the sum for each element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minElement(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minElement = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:47.464Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.174Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.007Z"
 }

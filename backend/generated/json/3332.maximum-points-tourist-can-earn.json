@@ -43,6 +43,18 @@
         "Use DP.",
         "<code>dp[i][j]</code> is the maximum score that you can achieve in your last <code>i</code> actions by starting from city <code>j</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(int n, int k, vector<vector<int>>& stayScore, vector<vector<int>>& travelScore) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @param {number[][]} stayScore\n * @param {number[][]} travelScore\n * @return {number}\n */\nvar maxScore = function(n, k, stayScore, travelScore) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:11.330Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.196Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.135Z"
 }

@@ -39,6 +39,7 @@
         "Ask <code>2<sup>i</sup></code> for <code>0 <= i < 30</code>.",
         "If the result is greater than zero for some <code>i</code>, this bit is a set bit in <code>n</code>."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:48:18.756Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.845Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.552Z"
 }

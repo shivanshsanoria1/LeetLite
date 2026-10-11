@@ -44,6 +44,18 @@
         "Process string <code>s</code> from left to right, if <code>s[i]</code> is a digit, mark the nearest unmarked non-digit index to its left.",
         "Delete all digits and all marked characters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string clearDigits(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar clearDigits = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:09.422Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.017Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.202Z"
 }

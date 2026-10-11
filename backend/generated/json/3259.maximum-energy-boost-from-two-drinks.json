@@ -43,6 +43,18 @@
         "Similarly, fill <code>dpB</code>.",
         "The answer is <code>max(dpA[n - 1], dpB[n - 1])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxEnergyBoost(vector<int>& energyDrinkA, vector<int>& energyDrinkB) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} energyDrinkA\n * @param {number[]} energyDrinkB\n * @return {number}\n */\nvar maxEnergyBoost = function(energyDrinkA, energyDrinkB) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:13.963Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.086Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.745Z"
 }

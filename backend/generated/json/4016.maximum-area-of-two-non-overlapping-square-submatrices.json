@@ -49,6 +49,18 @@
         "Build a 2D prefix sum so that you can determine in constant time whether every cell in a given square is usable.",
         "For a fixed <code>k</code>, record the minimum and maximum row and column among the top-left corners of all valid squares. Two of them can be disjoint if the difference between the maximum and minimum row is at least <code>k</code>, or the corresponding column difference is at least <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxArea(vector<vector<int>>& mat) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar maxArea = function(mat) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:13.341Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.000Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.297Z"
 }

@@ -49,6 +49,18 @@
     "hints": [
         "Try 'mapping' the strings to check if they are unique or not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string kthDistinct(vector<string>& arr, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} arr\n * @param {number} k\n * @return {string}\n */\nvar kthDistinct = function(arr, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:34.598Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.933Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.352Z"
 }

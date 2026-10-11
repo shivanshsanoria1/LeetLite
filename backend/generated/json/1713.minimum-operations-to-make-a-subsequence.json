@@ -54,6 +54,18 @@
         "Since one of the arrays has distinct elements, we can consider that these elements describe an arrangement of numbers, and we can replace each element in the other array with the index it appeared at in the first array.",
         "Then the problem is converted to finding Longest Increasing Subsequence in the second array, which can be done in O(n log n)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& target, vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} target\n * @param {number[]} arr\n * @return {number}\n */\nvar minOperations = function(target, arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:36.152Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.349Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.636Z"
 }

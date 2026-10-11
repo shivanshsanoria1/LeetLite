@@ -30,12 +30,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[[0,1,0],[0,0,1],[1,0,0]]\n[[0,0],[0,0]]\n[[0,1,1],[1,1,0]]",
     "meta": {
         "quesIdLCBackend": 3938,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[0,1,0],[0,0,1],[1,0,0]]\n[[0,0],[0,0]]\n[[0,1,1],[1,1,0]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -45,6 +45,18 @@
         "Let <code>dp[i][j]</code> = number of ways to reach (i,j); set <code>dp[0][0] = 1</code>, then scan cells in row‑major order and for each <code>dp[i][j] > 0</code> add <code>dp[i][j]</code> into <code>dp[x][y]</code> for both precomputed moves.",
         "Always take additions modulo <code>10<sup>9</sup>+7</code>, and skip any jump target that falls outside the grid."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int uniquePaths(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar uniquePaths = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:01:54.940Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.698Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.743Z"
 }

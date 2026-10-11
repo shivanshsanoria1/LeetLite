@@ -46,6 +46,18 @@
         "Keep track of the number of balls of each color for each user using hashing.",
         "Find the maximum color that occurred for each player."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int winningPlayerCount(int n, vector<vector<int>>& pick) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} pick\n * @return {number}\n */\nvar winningPlayerCount = function(n, pick) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:57.674Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.067Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.620Z"
 }

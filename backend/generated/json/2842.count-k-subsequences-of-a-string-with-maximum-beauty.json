@@ -64,6 +64,18 @@
         "Starting from the maximum value <code>x</code> in <code>cnt</code>. Let <code>i = min(k, cnt[x])</code> we add to our result <code> <sup>cnt[x]</sup>C<sub>i</sub> * x<sup>i</sup></code> representing the number of ways to select <code>i</code> characters from all characters with frequency <code>x</code>, multiplied by the number of ways to choose each individual character. Subtract <code>i</code> from <code>k</code> and continue downwards to the next maximum value.",
         "Powers, combinations, and additions should be done modulo <code>10<sup>9</sup> + 7</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countKSubsequencesWithMaxBeauty(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar countKSubsequencesWithMaxBeauty = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:11.882Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.585Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.774Z"
 }

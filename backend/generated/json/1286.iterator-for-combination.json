@@ -48,6 +48,18 @@
         "Generate all combinations as a preprocessing.",
         "Use bit masking to generate all the combinations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class CombinationIterator {\npublic:\n    CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    string next() {\n        \n    }\n    \n    bool hasNext() {\n        \n    }\n};\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator* obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj->next();\n * bool param_2 = obj->hasNext();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} characters\n * @param {number} combinationLength\n */\nvar CombinationIterator = function(characters, combinationLength) {\n    \n};\n\n/**\n * @return {string}\n */\nCombinationIterator.prototype.next = function() {\n    \n};\n\n/**\n * @return {boolean}\n */\nCombinationIterator.prototype.hasNext = function() {\n    \n};\n\n/** \n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:45.916Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.180Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.675Z"
 }

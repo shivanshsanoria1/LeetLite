@@ -48,6 +48,18 @@
         "Use KMP algorithm or Z algorithm to find the number of indices from where <code>s</code> is equal to <code>t</code>.",
         "Use Dynamic Programming to count the number of ways."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfWays(string s, string t, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} k\n * @return {number}\n */\nvar numberOfWays = function(s, t, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:19.166Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.591Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.792Z"
 }

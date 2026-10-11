@@ -26,12 +26,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "\"abc\"\n\"zaza\"",
     "meta": {
         "quesIdLCBackend": 3811,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abc\"\n\"zaza\"",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nAccording to the definition, the reverse degree is computed as follows:\n\n- For each character $c$, multiply its position in the reversed alphabet by its 1-indexed position in the string.\n- Add all of these products.\n\nTraverse the string once. The reversed-alphabet position of a lowercase letter $c$ is $26 - (c - \\text{'a'})$. Multiplying this value by the character's 1-indexed position in the string and adding it to the running total produces the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/WM3f48Vs/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"WM3f48Vs\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string.\n\n- Time complexity: $O(n)$.\n\n  We traverse the string once.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -40,6 +40,18 @@
     "hints": [
         "Simulate the operations as described."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int reverseDegree(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar reverseDegree = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:44.356Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.487Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.517Z"
 }

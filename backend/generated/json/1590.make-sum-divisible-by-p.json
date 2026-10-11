@@ -48,6 +48,18 @@
         "Suppose you know the remainder for the sum of the entire array. How does removing a subarray affect that remainder? What remainder does the subarray need to have in order to make the rest of the array sum up to be divisible by k?",
         "Use a map to keep track of the rightmost index for every prefix sum % p."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSubarray(vector<int>& nums, int p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} p\n * @return {number}\n */\nvar minSubarray = function(nums, p) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:45.052Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.166Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.121Z"
 }

@@ -53,6 +53,18 @@
         "Thus, for each spell, we need to find the potion with the least strength that will form a successful pair.",
         "We can efficiently do this by sorting the potions based on strength and using binary search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} spells\n * @param {number[]} potions\n * @param {number} success\n * @return {number[]}\n */\nvar successfulPairs = function(spells, potions, success) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:49.149Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.399Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.015Z"
 }

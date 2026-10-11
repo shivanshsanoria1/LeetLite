@@ -43,6 +43,18 @@
         "<p>Precompute all positive palindromes up to 2,000,000,002 by mirroring their first halves, and separate them into sorted lists by parity. Perform this precomputation <strong>only once</strong>, using global or static initialization, and reuse the lists across all test cases.</p>",
         "<p>Binary search the appropriate list for the closest candidates on either side of each element. Changing <code>x</code> into <code>p</code> costs <code>|x - p| / 2</code> operations.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:11.615Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.992Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.356Z"
 }

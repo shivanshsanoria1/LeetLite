@@ -45,6 +45,18 @@
         "Note that both lowLimit and highLimit are of small constraints so you can iterate on all number between them",
         "You can simulate the boxes by counting for each box the number of balls with digit sum equal to that box number"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countBalls(int lowLimit, int highLimit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} lowLimit\n * @param {number} highLimit\n * @return {number}\n */\nvar countBalls = function(lowLimit, highLimit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:05.847Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.415Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.681Z"
 }

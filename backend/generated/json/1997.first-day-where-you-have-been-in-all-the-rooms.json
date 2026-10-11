@@ -40,6 +40,18 @@
         "After visiting room i an odd number of times, you are required to visit room nextVisit[i] where nextVisit[i] <= i. It takes a fixed amount of days for you to come back from room nextVisit[i] to room i. Then, you have visited room i even number of times.nextVisit[i]",
         "Can you use Dynamic Programming to avoid recomputing the number of days it takes to visit room i from room nextVisit[i]?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int firstDayBeenInAllRooms(vector<int>& nextVisit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nextVisit\n * @return {number}\n */\nvar firstDayBeenInAllRooms = function(nextVisit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:50.153Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.825Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.142Z"
 }

@@ -54,6 +54,18 @@
         "For each number in the array, keep track of the smallest and largest numbers in the array that can form a fair pair with this number.",
         "As you move to larger number, both boundaries move down."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countFairPairs(vector<int>& nums, int lower, int upper) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} lower\n * @param {number} upper\n * @return {number}\n */\nvar countFairPairs = function(nums, lower, upper) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:22.511Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.149Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.353Z"
 }

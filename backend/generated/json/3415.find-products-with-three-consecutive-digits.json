@@ -22,17 +22,18 @@
             "slug": "database"
         }
     ],
-    "exampleTestcases": "{\"headers\":{\"Products\":[\"product_id\",\"name\"]},\"rows\":{\"Products\":[[1,\"ABC123XYZ\"],[2,\"A12B34C\"],[3,\"Product56789\"],[4,\"NoDigitsHere\"],[5,\"789Product\"],[6,\"Item003Description\"],[7,\"Product12X34\"]]}}",
     "meta": {
         "quesIdLCBackend": 3757,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "{\"headers\":{\"Products\":[\"product_id\",\"name\"]},\"rows\":{\"Products\":[[1,\"ABC123XYZ\"],[2,\"A12B34C\"],[3,\"Product56789\"],[4,\"NoDigitsHere\"],[5,\"789Product\"],[6,\"Item003Description\"],[7,\"Product12X34\"]]}}",
     "solution": {
         "canSeeDetail": false
     },
     "content": null,
     "hints": [],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:51:20.966Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.365Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.382Z"
 }

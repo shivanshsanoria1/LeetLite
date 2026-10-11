@@ -43,6 +43,18 @@
         "How can we use precalculation to efficiently calculate the average difference at an index?",
         "Create a prefix and/or suffix sum array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumAverageDifference(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumAverageDifference = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:12.084Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.303Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.962Z"
 }

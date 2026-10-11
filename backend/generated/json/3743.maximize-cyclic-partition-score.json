@@ -42,6 +42,18 @@
         "Use a DP state <code>(picks, balance)</code> where <code>picks</code> is the total number of + and - chosen so far (<= <code>2 * k</code>), and <code>balance</code> represents the difference between the counts of + and - currently; at each <code>i</code>, you conceptually take +, take -, or skip.",
         "Handle cyclicity by limiting <code>balance</code> to the range <code>[0, 2]</code>. You can show that such a balance is always achievable."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumScore(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumScore = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:01.593Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.988Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.953Z"
 }

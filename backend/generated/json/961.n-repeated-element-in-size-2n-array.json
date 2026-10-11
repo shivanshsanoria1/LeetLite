@@ -41,6 +41,18 @@
     },
     "content": "<p>You are given an integer array <code>nums</code> with the following properties:</p>\n\n<ul>\n\t<li><code>nums.length == 2 * n</code>.</li>\n\t<li><code>nums</code> contains <code>n + 1</code> <strong>unique</strong> values, <code>n</code> of which occur <strong>exactly once</strong> in the array.</li>\n\t<li>Exactly one element of <code>nums</code> is repeated <code>n</code> times.</li>\n</ul>\n\n<p>Return <em>the element that is repeated </em><code>n</code><em> times</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,3,3]\n<strong>Output:</strong> 3\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [2,1,2,5,3,2]\n<strong>Output:</strong> 2\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> nums = [5,1,5,2,5,3,5,4]\n<strong>Output:</strong> 5\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 5000</code></li>\n\t<li><code>nums.length == 2 * n</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>nums</code> contains <code>n + 1</code> <strong>unique</strong> elements and one of them is repeated exactly <code>n</code> times.</li>\n</ul>\n",
     "hints": [],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int repeatedNTimes(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar repeatedNTimes = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:13.060Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.848Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.474Z"
 }

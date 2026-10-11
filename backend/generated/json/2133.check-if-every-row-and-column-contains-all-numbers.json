@@ -47,6 +47,18 @@
         "Use for loops to check each row for every number from 1 to n. Similarly, do the same for each column.",
         "For each check, you can keep a set of the unique elements in the checked row/col. By the end of the check, the size of the set should be n."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkValid(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {boolean}\n */\nvar checkValid = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:47.384Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.092Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.685Z"
 }

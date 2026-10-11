@@ -41,6 +41,18 @@
     "hints": [
         "Alice wins if the sum of all single-digit numbers and the sum of all double-digit numbers are different."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canAliceWin(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar canAliceWin = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:53.169Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.062Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.592Z"
 }

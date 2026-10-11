@@ -47,6 +47,18 @@
         "The ants change their way when they meet is equivalent to continue moving without changing their direction.",
         "Answer is the max distance for one ant to reach the end of the plank in the facing direction."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getLastMoment(int n, vector<int>& left, vector<int>& right) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} left\n * @param {number[]} right\n * @return {number}\n */\nvar getLastMoment = function(n, left, right) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:50.771Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.983Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.929Z"
 }

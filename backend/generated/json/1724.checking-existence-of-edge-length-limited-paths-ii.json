@@ -64,6 +64,7 @@
         "Root the tree in an arbitrary node and calculate the maximum weight of the edge from each node to the chosen root.",
         "To answer a query, find the lca between the two nodes, and find the maximum weight from each of the query nodes to their lca and compare it to the given limit."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:52:48.850Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.401Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.649Z"
 }

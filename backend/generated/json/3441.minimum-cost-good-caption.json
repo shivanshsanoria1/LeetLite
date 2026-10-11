@@ -26,12 +26,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "\"cdcd\"\n\"aca\"\n\"bc\"",
     "meta": {
         "quesIdLCBackend": 3701,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"cdcd\"\n\"aca\"\n\"bc\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Construct a DP table and try all possible characters at every index.",
         "Choose characters greedily to get the lexicographically smallest caption."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string minCostGoodCaption(string caption) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} caption\n * @return {string}\n */\nvar minCostGoodCaption = function(caption) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:49.340Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.402Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.401Z"
 }

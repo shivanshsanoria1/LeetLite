@@ -53,6 +53,7 @@
         "Assuming we are in the case which is possible to form the target string, how can we assure the minimum number of used subsequences of source?",
         "For each used subsequence try to match the leftmost character of the current subsequence with the leftmost character of the target string, if they match then erase both character otherwise erase just the subsequence character whenever the current subsequence gets empty, reset it to a new copy of subsequence and increment the count, do this until the target sequence gets empty. Finally return the count."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:36:21.386Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.004Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.353Z"
 }

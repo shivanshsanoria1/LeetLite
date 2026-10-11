@@ -45,6 +45,18 @@
         "Check if all other points lie on the line defined by the first 2 points.",
         "Use cross product to check collinearity."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkStraightLine(vector<vector<int>>& coordinates) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} coordinates\n * @return {boolean}\n */\nvar checkStraightLine = function(coordinates) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:17.989Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.900Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.619Z"
 }

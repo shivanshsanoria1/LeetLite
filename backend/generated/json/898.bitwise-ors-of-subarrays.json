@@ -47,6 +47,18 @@
     "hints": [
         "Consider the the subarrays that end at index <code>i</code>. The number of unique bitwise OR for these subarrays is limited."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int subarrayBitwiseORs(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar subarrayBitwiseORs = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:34:23.192Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.652Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.342Z"
 }

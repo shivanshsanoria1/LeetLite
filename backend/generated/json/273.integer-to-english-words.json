@@ -47,6 +47,18 @@
         "Group the number by thousands (3 digits). You can write a helper function that takes a number less than 1000 and convert just that chunk to words.",
         "There are many edge cases. What are some good test cases? Does your code work with input such as 0? Or 1000010? (middle chunk is zero and should not be printed out)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string numberToWords(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar numberToWords = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:17.970Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.390Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.539Z"
 }

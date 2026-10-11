@@ -49,6 +49,18 @@
     "hints": [
         "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} image\n * @param {number} sr\n * @param {number} sc\n * @param {number} color\n * @return {number[][]}\n */\nvar floodFill = function(image, sr, sc, color) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:57.170Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.275Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.020Z"
 }

@@ -35,6 +35,18 @@
         "Find the pivot point around which the array is rotated.",
         "Will the answer exist if there is more than one point where <code>nums[i] < nums[i-1]</code>?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumRightShifts(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumRightShifts = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:22.572Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.593Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.799Z"
 }

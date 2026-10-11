@@ -42,6 +42,18 @@
         "Group the indices for each unique number. For a number to form a good tuple, it must appear at least 3 times.",
         "For each number that appears at least 3 times, we want to find three of its indices <code>p < q < r</code> that minimize <code>r - p</code>. This is achieved by considering every three consecutive indices in the sorted list of indices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDistance(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumDistance = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:44:59.906Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.981Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.948Z"
 }

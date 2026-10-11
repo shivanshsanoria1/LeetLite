@@ -53,6 +53,18 @@
         "The number of subsets with the above as power will correspond to 2^(j-i-1).",
         "Try collecting the terms for nums[0], nums[1], …, nums[j-1] when computing the power of heroes ending at index j to get the power in a single pass."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOfPower(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumOfPower = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:00.703Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.355Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.477Z"
 }

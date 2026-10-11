@@ -46,6 +46,18 @@
         "n is too large to actually generate the array, so you can use the formula 1 + 2 + ... + n = n * (n+1) / 2 to quickly find the sum of nums[0...index] and nums[index...n-1].",
         "Binary search for the target. If it is possible, then move the lower bound up. Otherwise, move the upper bound down."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxValue(int n, int index, int maxSum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} index\n * @param {number} maxSum\n * @return {number}\n */\nvar maxValue = function(n, index, maxSum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:14.771Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.485Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.793Z"
 }

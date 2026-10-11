@@ -41,6 +41,18 @@
         "Keep a variable sign that initially equals 1 and a variable answer that initially equals 0.",
         "Each time you loop over a digit i, add sign * i to answer, then multiply sign by -1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int alternateDigitSum(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar alternateDigitSum = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:05.709Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.129Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.334Z"
 }

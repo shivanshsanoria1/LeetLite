@@ -62,6 +62,18 @@
     "hints": [
         "Use a 2D prefix sum to precalculate the xor-sum of the upper left submatrix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kthLargestValue(vector<vector<int>>& matrix, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @param {number} k\n * @return {number}\n */\nvar kthLargestValue = function(matrix, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:02.522Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.412Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.669Z"
 }

@@ -47,6 +47,18 @@
         "By studying the pattern of the operations, we can find out that the problem is equivalent to: Given an integer array with size 3N, select N integers with maximum sum and any selected integers are not next to each other in the array.",
         "The first one in the array is considered next to the last one in the array. Use Dynamic Programming to solve it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSizeSlices(vector<int>& slices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} slices\n * @return {number}\n */\nvar maxSizeSlices = function(slices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:07.869Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.790Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.802Z"
 }

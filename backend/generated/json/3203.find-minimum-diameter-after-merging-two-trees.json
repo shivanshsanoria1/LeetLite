@@ -56,6 +56,18 @@
         "If we pick <code>a</code> and <code>b</code> optimally, they will be in the diameters of Tree 1 and Tree 2, respectively. Exactly which nodes of the diameter should we pick?",
         "<code>a</code> is the center of the diameter of tree 1, and <code>b</code> is the center of the diameter of tree 2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges1\n * @param {number[][]} edges2\n * @return {number}\n */\nvar minimumDiameterAfterMerge = function(edges1, edges2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:32.473Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.040Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.354Z"
 }

@@ -45,6 +45,18 @@
         "However, there are two special cases left to consider: the floors before special[0] and after special[n-1].",
         "To consider these cases, we have answer = max(answer, special[0] – bottom, top – special[n-1])."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxConsecutive(int bottom, int top, vector<int>& special) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} bottom\n * @param {number} top\n * @param {number[]} special\n * @return {number}\n */\nvar maxConsecutive = function(bottom, top, special) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:27.857Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.322Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.990Z"
 }

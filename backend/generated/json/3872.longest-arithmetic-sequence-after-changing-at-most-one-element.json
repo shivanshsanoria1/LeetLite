@@ -42,6 +42,18 @@
         "For each index <code>i</code> as the replaced element, check if neighbors allow a common difference <code>d = (nums[i+1] - nums[i-1]) / 2</code> and combine <code>L[i-1]</code> and <code>R[i+1]</code>.",
         "Also consider extending only left or only right, and take the maximum over all positions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestArithmetic(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestArithmetic = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:36.033Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.816Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.140Z"
 }

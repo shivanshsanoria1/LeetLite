@@ -32,6 +32,18 @@
     },
     "content": "<p>Given a valid (IPv4) IP <code>address</code>, return a defanged version of that IP address.</p>\r\n\r\n<p>A <em>defanged&nbsp;IP address</em>&nbsp;replaces every period <code>&quot;.&quot;</code> with <code>&quot;[.]&quot;</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<pre><strong>Input:</strong> address = \"1.1.1.1\"\r\n<strong>Output:</strong> \"1[.]1[.]1[.]1\"\r\n</pre><p><strong class=\"example\">Example 2:</strong></p>\r\n<pre><strong>Input:</strong> address = \"255.100.50.0\"\r\n<strong>Output:</strong> \"255[.]100[.]50[.]0\"\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The given <code>address</code> is a valid IPv4 address.</li>\r\n</ul>",
     "hints": [],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string defangIPaddr(string address) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} address\n * @return {string}\n */\nvar defangIPaddr = function(address) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:37:00.501Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.151Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.416Z"
 }

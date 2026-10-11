@@ -45,6 +45,18 @@
         "A monotonic deque is useful for maintaining the maximum or minimum in <code>O(1)</code> time per operation.",
         "When the current window's cost exceeds <code>k</code>, move the left boundary forward until the window becomes valid again. Count all subarrays ending at the current right boundary."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countSubarrays(vector<int>& nums, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countSubarrays = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:46.176Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.409Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.102Z"
 }

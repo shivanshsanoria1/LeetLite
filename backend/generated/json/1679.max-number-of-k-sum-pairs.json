@@ -53,6 +53,18 @@
         "For each possible value x, it can be paired up with k - x.",
         "The number of such pairs equals to  min(count(x), count(k-x)), unless that x = k / 2, where the number of such pairs will be floor(count(x) / 2)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxOperations(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxOperations = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:57.114Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.322Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.528Z"
 }

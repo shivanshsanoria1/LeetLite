@@ -48,6 +48,18 @@
         "Use sliding window.",
         "Use the reduction: <code>answer = at_most(k) - at_most(k-1)</code>. <code>at_most(K)</code> = number of subarrays with <code><= K</code> distinct values where every present value appears <code>>= m</code> times."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countSubarrays(vector<int>& nums, int k, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} m\n * @return {number}\n */\nvar countSubarrays = function(nums, k, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:22.123Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.805Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.119Z"
 }

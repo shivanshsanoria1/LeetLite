@@ -63,6 +63,18 @@
         "If we know which bombs will be affected when any bomb is detonated, how can we find the total number of bombs that will be detonated if we start from a fixed bomb?",
         "Run a Depth First Search (DFS) from every node, and all the nodes it reaches are the bombs that will be detonated."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumDetonation(vector<vector<int>>& bombs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} bombs\n * @return {number}\n */\nvar maximumDetonation = function(bombs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:21.380Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.065Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.579Z"
 }

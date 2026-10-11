@@ -45,6 +45,18 @@
         "Use dynamic programming to get the power of each integer of the intervals.",
         "Sort all the integers of the interval by the power value and return the k-th in the sorted list."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getKth(int lo, int hi, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} lo\n * @param {number} hi\n * @param {number} k\n * @return {number}\n */\nvar getKth = function(lo, hi, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:06.722Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.790Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.801Z"
 }

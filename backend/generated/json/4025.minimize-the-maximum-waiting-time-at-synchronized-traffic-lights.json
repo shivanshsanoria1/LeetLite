@@ -41,6 +41,18 @@
         "<p>Let <code>maxGreen</code> be the maximum value in <code>lights</code>. A car with <code>r = arrivalTime[j] % period</code> can have waiting time 0 if and only if <code>r &lt; maxGreen</code>.</p>",
         "<p>Otherwise, every traffic light is red when the car arrives, and its waiting time is <code>period - r</code>. Take the maximum waiting time over all cars.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minPenalty(int period, vector<int>& lights, vector<int>& arrivalTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} period\n * @param {number[]} lights\n * @param {number[]} arrivalTime\n * @return {number}\n */\nvar minPenalty = function(period, lights, arrivalTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:21.958Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.007Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.314Z"
 }

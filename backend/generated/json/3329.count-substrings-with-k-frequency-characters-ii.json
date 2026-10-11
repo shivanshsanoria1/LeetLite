@@ -43,6 +43,7 @@
         "If substring <code>[i, j]</code> is valid, then for all <code>k >= j, [i, k]</code> is valid too.",
         "For each <code>i</code>, find <code>j</code> with a sliding window or binary search."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:59:08.979Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.194Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.122Z"
 }

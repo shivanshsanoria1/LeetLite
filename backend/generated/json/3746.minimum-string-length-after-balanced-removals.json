@@ -45,6 +45,18 @@
         "Let the count of a's be <code>count_a</code> and the count of b's be <code>count_b</code>. Can we derive the final length from these?",
         "The answer is <code>abs(count_a - count_b)</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minLengthAfterRemovals(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minLengthAfterRemovals = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:04.418Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.001Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.957Z"
 }

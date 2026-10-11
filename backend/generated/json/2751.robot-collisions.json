@@ -51,6 +51,18 @@
         "To optimize the solution, use a stack to keep track of the surviving robots as we iterate through the positions.",
         "Instead of simulating each collision, check the current robot against the top of the stack (if it exists) to determine if a collision occurs."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> survivedRobotsHealths(vector<int>& positions, vector<int>& healths, string directions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} positions\n * @param {number[]} healths\n * @param {string} directions\n * @return {number[]}\n */\nvar survivedRobotsHealths = function(positions, healths, directions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:58.460Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.404Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.557Z"
 }

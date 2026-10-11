@@ -46,6 +46,18 @@
         "Note what actually matters is how many 0s and 1s are in odd and even positions",
         "For every cyclic shift we need to count how many 0s and 1s are at each parity and convert the minimum between them for each parity"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minFlips(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minFlips = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:47.230Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.606Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.929Z"
 }

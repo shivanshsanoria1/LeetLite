@@ -39,6 +39,18 @@
         "From the given string, find the corresponding rows and columns.",
         "Iterate through the columns in ascending order and for each column, iterate through the rows in ascending order to obtain the required cells in sorted order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> cellsInRange(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar cellsInRange = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:44.821Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.225Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.798Z"
 }

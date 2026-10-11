@@ -52,6 +52,18 @@
         "For every index i, find the largest index j < i such that words[j] will be present in the final answer.",
         "Check if words[i] and words[j] are anagrams. If they are, then it can be confirmed that words[i] will not be present in the final answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> removeAnagrams(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {string[]}\n */\nvar removeAnagrams = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:26.828Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.321Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.989Z"
 }

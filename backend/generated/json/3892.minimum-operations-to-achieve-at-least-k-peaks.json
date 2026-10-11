@@ -41,6 +41,18 @@
         "There are a few cases to handle: when the first element is a peak, when the last element is a peak, and when neither the first nor the last element is a peak.",
         "After fixing the case, solve with dynamic programming states <code>dp[i][j]</code>, where <code>dp[i][j]</code> is the minimum number of operations needed to make <code>j</code> peaks from the first <code>i</code> values in <code>nums</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minOperations = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:57.942Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.831Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.161Z"
 }

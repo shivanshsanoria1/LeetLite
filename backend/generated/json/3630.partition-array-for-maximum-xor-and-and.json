@@ -38,12 +38,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[2,3]\n[1,3,2]\n[2,3,6,7]",
     "meta": {
         "quesIdLCBackend": 3882,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,3]\n[1,3,2]\n[2,3,6,7]",
     "solution": {
         "canSeeDetail": false
     },
@@ -56,6 +56,18 @@
         "To do this efficiently, build a linear XOR basis over the values <code>nums[j] & ~s</code> for each index <code>j</code> not in <code>B</code>.",
         "Finally, greedily extract the maximum <code>x</code> from that basis."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximizeXorAndXor(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maximizeXorAndXor = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:15.732Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.635Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.673Z"
 }

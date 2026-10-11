@@ -45,6 +45,18 @@
         "Scan left to right with a hash map: for each <code>nums[i]</code>, if the map contains key <code>nums[i]</code> then set <code>ans = min(ans, i - map[nums[i]])</code>.",
         "Store/update the current index under key <code>reverse(nums[i])</code>, so future matches use the most recent index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMirrorPairDistance(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minMirrorPairDistance = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:18.752Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.083Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.980Z"
 }

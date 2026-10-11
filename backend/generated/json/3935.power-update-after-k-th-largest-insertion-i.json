@@ -59,6 +59,7 @@
         "After inserting a value, rebalance the two sets/heaps so the “top <code>k</code>” side has exactly <code>k</code> elements. Since <code>abs(k<sub>i</sub> - k<sub>i-1</sub>) < 10</code>, only a few elements move each query.",
         "Update <code>p</code> with fast modular exponentiation."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:00:44.013Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.864Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.197Z"
 }

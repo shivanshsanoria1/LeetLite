@@ -56,6 +56,18 @@
         "Instead of brute force looping, we can save the largest y-coordinate that is no larger than <code>points[i][1]</code> when looping on <code>j</code>, say the value is <code>m</code>. And if <code>m < points[j][1]</code>, the upper-left and lower-right corner pair is valid.",
         "The actual values don’t matter, we can compress all x-coordinates and y-coordinates to the range <code>[1, n]</code>. Can we use prefix sum now?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfPairs(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar numberOfPairs = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:48.655Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.774Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.384Z"
 }

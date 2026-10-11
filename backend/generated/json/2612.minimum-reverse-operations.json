@@ -52,6 +52,18 @@
         "Find the beginning and end indices of the subarray of size k that can be reversed to bring 1 to a particular position.",
         "Can we visit every index or do we need to consider the parity of k?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minReverseOperations(int n, int p, vector<int>& banned, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} p\n * @param {number[]} banned\n * @param {number} k\n * @return {number[]}\n */\nvar minReverseOperations = function(n, p, banned, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:03.565Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.253Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.407Z"
 }

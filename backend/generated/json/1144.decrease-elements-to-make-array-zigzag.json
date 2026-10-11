@@ -38,6 +38,18 @@
     "hints": [
         "Do each case (even indexed is greater, odd indexed is greater) separately. In say the even case, you should decrease each even-indexed element until it is lower than its immediate neighbors."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int movesToMakeZigzag(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar movesToMakeZigzag = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:37.802Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.332Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.532Z"
 }

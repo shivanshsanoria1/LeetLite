@@ -43,6 +43,18 @@
         "Find the minimum absolute difference between two elements in the array.",
         "The minimum absolute difference must be a difference between two consecutive elements in the sorted array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> minimumAbsDifference(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number[][]}\n */\nvar minimumAbsDifference = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:37.196Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.625Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.588Z"
 }

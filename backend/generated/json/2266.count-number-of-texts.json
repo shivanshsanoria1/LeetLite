@@ -50,6 +50,18 @@
         "For a substring consisting of the same digit, how can we count the number of texts it could have originally represented?",
         "How can dynamic programming help us calculate the required answer?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countTexts(string pressedKeys) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} pressedKeys\n * @return {number}\n */\nvar countTexts = function(pressedKeys) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:20.479Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.315Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.981Z"
 }

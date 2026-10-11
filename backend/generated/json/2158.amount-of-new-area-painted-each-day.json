@@ -49,6 +49,7 @@
         "Using this array, how can you quickly calculate the amount of new area that you paint on a given day?",
         "Calculate the sum of the new array in the interval that you paint."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:06:14.821Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.112Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.720Z"
 }

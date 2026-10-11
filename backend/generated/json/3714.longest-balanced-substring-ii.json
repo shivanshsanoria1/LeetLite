@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "\"abbac\"\n\"aabcc\"\n\"aba\"",
     "meta": {
         "quesIdLCBackend": 4056,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abbac\"\n\"aabcc\"\n\"aba\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "Case 2: two distinct characters: reduce to that pair (ignore the third character) and use prefix differences of their counts; equal counts between two indices mean the substring between them is balanced for those two chars.",
         "Case 3: all three characters: use prefix counts and hash the pair <code>(count_b - count_a, count_c - count_a)</code> for each prefix; if the same pair appears at two indices the substring between them has equal counts for a, b, and c. Store earliest index per pair to get maximal length."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestBalanced(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestBalanced = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T18:16:22.831Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.738Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.890Z"
 }

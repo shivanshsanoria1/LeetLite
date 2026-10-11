@@ -44,6 +44,18 @@
         "<div class=\"_1l1MA\">Characters in two positions can be swapped if and only if the two positions have the same parity.</div>",
         "<div class=\"_1l1MA\">To be able to make the two strings equal, the characters at even and odd positions in the strings should be the same.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkStrings(string s1, string s2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s1\n * @param {string} s2\n * @return {boolean}\n */\nvar checkStrings = function(s1, s2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:10.145Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.584Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.770Z"
 }

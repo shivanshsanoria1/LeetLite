@@ -47,6 +47,18 @@
         "A number can be the average of its neighbors if one neighbor is smaller than the number and the other is greater than the number.",
         "We can put numbers smaller than the median on odd indices and the rest on even indices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> rearrangeArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar rearrangeArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:22.651Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.800Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.084Z"
 }

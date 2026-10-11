@@ -32,12 +32,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[[1,7,3],[9,8,2],[4,5,6]]\n[[0,1],[1,2]]\n[[1]]",
     "meta": {
         "quesIdLCBackend": 3748,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,7,3],[9,8,2],[4,5,6]]\n[[0,1],[1,2]]\n[[1]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nThis problem requires us to sort the diagonal elements of the lower-left triangle (including the diagonal) of the matrix in non-increasing order, and to sort the diagonal elements of the upper-right triangle in non-decreasing order.\n\nWe can directly perform a simulation: extract the elements along the diagonals, sort them, and then place the sorted elements back into the matrix. Therefore, we only need to know how to traverse the elements along the diagonals. Let the element at the $i$-th row and $j$-th column be denoted as $\\textit{grid}[i][j]$.\n\nFirst, consider the triangle in the lower-left corner. Starting from the upper-left corner and moving toward the lower-right corner, as the row index $i$ increases, the column index $j$ also increases. Since the diagonal runs from the upper-left to the lower-right, each time $j$ starts from $0$, we can traverse column by column, with the row index $i$ changing along with $j$. Therefore, each diagonal in the lower-left triangle can be represented as $\\textit{grid}[i+j][j]$.\n\nNext, consider the triangle in the upper-right corner. Again, starting from the upper-left corner and moving toward the lower-right corner, as the column index $j$ increases, the row index $i$ also increases. Since all the elements on the diagonals of the upper-right triangle start from the $0$-th row, we can traverse row by row, with the column index $j$ changing along with $i$. Therefore, the elements on each diagonal of the upper-right triangle are $\\textit{grid}[i][j+i]$.\n\nAt the same time, for each diagonal, the last element satisfies $i + j = n - 1$, which ensures that we traverse all elements on the diagonals without repetition, omission, or boundary violations.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Lk3nTWcf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Lk3nTWcf\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of rows and columns of $\\textit{grid}$.\n\n- Time complexity: $O(n^2 \\log n)$.\n\n  There are $2n-1 = O(n)$ diagonals in an $n \\times n$ matrix. Sorting a diagonal of length $k$ costs $O(k \\log k)$. Summing over all diagonals gives\n\n  $$\n  \\sum_{\\text{diagonals}} O(k \\log k) \\;\\le\\; O\\!\\left(\\Big(\\sum k\\Big)\\log n\\right)\n  \\;=\\; O(n^2 \\log n),\n  $$\n\n  since $\\sum k = n^2$ and each $k \\le n$.\n  Equivalently, $O(n)$ diagonals × $O(n \\log n)$ per diagonal in the worst case yields $O(n^2 \\log n)$. Traversal to extract and write back elements is $O(n^2)$ and does not change the bound.\n\n- Space complexity: $O(n)$.\n\n  We use a temporary array to store the elements of a diagonal before sorting them.\n\n---"
@@ -47,6 +47,18 @@
         "Use a data structure to store all values in each diagonal.",
         "Sort and replace them in the matrix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number[][]}\n */\nvar sortMatrix = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:53.751Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.407Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.410Z"
 }

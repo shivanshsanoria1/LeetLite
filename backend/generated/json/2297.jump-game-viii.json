@@ -65,6 +65,7 @@
         "We can do this by using a monotonic stack and iterating through the array backwards.",
         "Create another integer array of length n called dp where dp[i] is the minimum cost of getting to index i."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:22:46.782Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.396Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.012Z"
 }

@@ -43,6 +43,18 @@
         "<div class=\"_1l1MA\">Iterate over all numbers from <code>low</code> to <code>high</code></div>",
         "<div class=\"_1l1MA\">Convert each number to a string and compare the sum of the first half with that of the second.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSymmetricIntegers(int low, int high) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number}\n */\nvar countSymmetricIntegers = function(low, high) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:12.599Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.586Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.777Z"
 }

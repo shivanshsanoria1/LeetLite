@@ -48,6 +48,18 @@
         "N is very small, how can we use that?",
         "Can we check every possible quadruplet?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countQuadruplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countQuadruplets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:48.308Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.824Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.138Z"
 }

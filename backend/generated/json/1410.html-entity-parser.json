@@ -39,6 +39,18 @@
         "Search the string for all the occurrences of the character '&'.",
         "For every '&' check if it matches an HTML entity by checking the ';' character and if entity found replace it in the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string entityParser(string text) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} text\n * @return {string}\n */\nvar entityParser = function(text) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:35.295Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.809Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.821Z"
 }

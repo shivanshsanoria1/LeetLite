@@ -39,6 +39,18 @@
     "hints": [
         "Where can the 0 be placed in an ideal permutation?  What about the 1?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isIdealPermutation(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar isIdealPermutation = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:26.318Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.358Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.060Z"
 }

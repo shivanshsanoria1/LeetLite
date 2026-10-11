@@ -45,6 +45,18 @@
         "Build a prefix array of total stable subarrays ending at each index.",
         "For query <code>[l, r]</code>, compute the prefix sum in the range and adjust for the left segment crossing <code>l</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> countStableSubarrays(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar countStableSubarrays = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:05.954Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.003Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.961Z"
 }

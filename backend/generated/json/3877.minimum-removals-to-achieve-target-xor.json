@@ -43,6 +43,18 @@
     "hints": [
         "Use meet in the middle or dynamic programming"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minRemovals(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar minRemovals = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:41.049Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.820Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.146Z"
 }

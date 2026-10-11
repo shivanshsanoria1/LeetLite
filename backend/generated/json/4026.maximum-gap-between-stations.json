@@ -46,6 +46,18 @@
         "<p>Compute the latest possible station index for every worker by greedily matching <code>skill</code> from right to left.</p>",
         "<p>For each <code>1 &lt;= i &lt; n</code>, workers before <code>i</code> can use their earliest possible positions and workers from <code>i</code> onward can use their latest possible positions. The largest possible gap between workers <code>i - 1</code> and <code>i</code> is <code>latest[i] - earliest[i - 1]</code>.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumGap(string skill, string station) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} skill\n * @param {string} station\n * @return {number}\n */\nvar maximumGap = function(skill, station) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:22.659Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.007Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.314Z"
 }

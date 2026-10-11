@@ -53,6 +53,18 @@
         "Keep track of the last integer which is not equal to <code>value</code>.",
         "Use a queue-type data structure to store the last <code>k</code> integers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class DataStream {\npublic:\n    DataStream(int value, int k) {\n        \n    }\n    \n    bool consec(int num) {\n        \n    }\n};\n\n/**\n * Your DataStream object will be instantiated and called as such:\n * DataStream* obj = new DataStream(value, k);\n * bool param_1 = obj->consec(num);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} value\n * @param {number} k\n */\nvar DataStream = function(value, k) {\n    \n};\n\n/** \n * @param {number} num\n * @return {boolean}\n */\nDataStream.prototype.consec = function(num) {\n    \n};\n\n/** \n * Your DataStream object will be instantiated and called as such:\n * var obj = new DataStream(value, k)\n * var param_1 = obj.consec(num)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:50.369Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.797Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.317Z"
 }

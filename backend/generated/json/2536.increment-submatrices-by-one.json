@@ -48,6 +48,18 @@
         "For each query, iterate over the rows i in the range [row1, row2] and add 1 to prefix sum S[i][col1], and subtract 1 from S[i][col2 + 1].",
         "After doing this operation for all the queries, update each row separately with S[i][j] = S[i][j] + S[i][j - 1]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} queries\n * @return {number[][]}\n */\nvar rangeAddQueries = function(n, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:58.338Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.076Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.328Z"
 }

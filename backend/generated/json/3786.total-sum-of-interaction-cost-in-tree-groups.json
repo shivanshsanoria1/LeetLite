@@ -47,6 +47,18 @@
         "For each edge, contribution = <code>subtree_count * (total_count - subtree_count)</code>.",
         "Sum these over all edges and groups."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long interactionCosts(int n, vector<vector<int>>& edges, vector<int>& group) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} group\n * @return {number}\n */\nvar interactionCosts = function(n, edges, group) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:47.761Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.275Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.025Z"
 }

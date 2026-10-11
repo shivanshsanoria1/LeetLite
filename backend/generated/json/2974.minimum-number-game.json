@@ -46,6 +46,18 @@
     "hints": [
         "Sort the array in increasing order and then swap the adjacent elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numberGame(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar numberGame = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:02.933Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.723Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.140Z"
 }

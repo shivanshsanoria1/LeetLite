@@ -48,12 +48,12 @@
             "slug": "topological-sort"
         }
     ],
-    "exampleTestcases": "[[\"A\",\"abc\"],[\"B\",\"def\"]]\n\"%A%_%B%\"\n[[\"A\",\"bce\"],[\"B\",\"ace\"],[\"C\",\"abc%B%\"]]\n\"%A%_%B%_%C%\"",
     "meta": {
         "quesIdLCBackend": 3825,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[\"A\",\"abc\"],[\"B\",\"def\"]]\n\"%A%_%B%\"\n[[\"A\",\"bce\"],[\"B\",\"ace\"],[\"C\",\"abc%B%\"]]\n\"%A%_%B%_%C%\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -62,6 +62,7 @@
         "Build a dependency graph where each key is a node, and add an edge from key <code>X</code> to key <code>Y</code> if the replacement value for <code>Y</code> contains the placeholder <code>%X%</code>. Then perform a topological sort to determine a valid order for substitution.",
         "Process the keys in the topologically sorted order by replacing placeholders in each replacement value with its fully expanded value. Finally, substitute the placeholders in the text using these computed values."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:52:28.618Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.474Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.504Z"
 }

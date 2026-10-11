@@ -54,6 +54,18 @@
         "After processing a child subtree, determine whether the current node still needs to be flipped to match the target. If a flip is needed, record the corresponding edge.",
         "Collect all flipped edges; if the transformation is impossible, return <code>[-1]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minimumFlips(int n, vector<vector<int>>& edges, string start, string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {string} start\n * @param {string} target\n * @return {number[]}\n */\nvar minimumFlips = function(n, edges, start, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:17.823Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.344Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.068Z"
 }

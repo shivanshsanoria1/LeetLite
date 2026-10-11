@@ -47,6 +47,18 @@
     "hints": [
         "Use rerooting dynamic programming"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxSubgraphScore(int n, vector<vector<int>>& edges, vector<int>& good) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} good\n * @return {number[]}\n */\nvar maxSubgraphScore = function(n, edges, good) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:31.033Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.196Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.001Z"
 }

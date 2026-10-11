@@ -37,6 +37,7 @@
         "If two objects have different keys or two arrays have a different length, they cannot be equal.",
         "You can use recursion to investigate if the values of an object or array are also deeply equal. The base case is when the values are primitives (string, number, etc), at which case the check is a trivial === check."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:40:16.466Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.264Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.420Z"
 }

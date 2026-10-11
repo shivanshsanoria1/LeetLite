@@ -45,6 +45,18 @@
     "hints": [
         "The minimum difference possible is obtained by removing three elements between the three smallest and three largest values in the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDifference(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minDifference = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:58.247Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.986Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.936Z"
 }

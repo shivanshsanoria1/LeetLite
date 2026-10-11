@@ -34,12 +34,12 @@
             "slug": "geometry"
         }
     ],
-    "exampleTestcases": "[[1,0],[2,0],[3,0],[2,2],[3,2]]\n[[0,0],[1,0],[0,1],[2,1]]",
     "meta": {
         "quesIdLCBackend": 3886,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,0],[2,0],[3,0],[2,2],[3,2]]\n[[0,0],[1,0],[0,1],[2,1]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Hash Table + Geometry Mathematics\n\n#### Intuition\n\nThe problem asks us to find the number of horizontal trapezoids. To do this, we can count how many points lie at each height, that is, at each distinct y value. Suppose there are $p_y$ points at height $y$. Then the number of horizontal edges that can be formed at this height is $\\frac{p_y (p_y - 1)}{2}$.\n\nA horizontal trapezoid can be formed by choosing one such edge from one height and another from a different height. We count all possible combinations of these edges.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/DYvWoQde/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DYvWoQde\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{points}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(n)$."
@@ -50,6 +50,18 @@
         "Group the points by their y‑coordinate.",
         "Choose two distinct groups (two horizontal lines), and from each group select two points to form a trapezoid."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countTrapezoids(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar countTrapezoids = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:07.130Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.631Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.652Z"
 }

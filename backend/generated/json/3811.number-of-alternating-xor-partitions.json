@@ -50,6 +50,18 @@
         "For each position, try ending a block whose XOR equals the expected target, and transition to the next state (alternating between <code>target1</code> and <code>target2</code>).",
         "Use a hash map or array indexed by prefix XOR values to efficiently count valid previous split points."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int alternatingXOR(vector<int>& nums, int target1, int target2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target1\n * @param {number} target2\n * @return {number}\n */\nvar alternatingXOR = function(nums, target1, target2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:17.099Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.343Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.063Z"
 }

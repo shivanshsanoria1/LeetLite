@@ -50,6 +50,7 @@
         "Add all the words to a trie.",
         "Check the longest path where all the nodes are words."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:55:11.590Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.518Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.899Z"
 }

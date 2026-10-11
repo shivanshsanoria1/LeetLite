@@ -30,6 +30,7 @@
         "Let <code>dp[i]</code> denote the minimum cost to make <code>s</code> equal to the prefix of <code>target</code> of length <code>i</code>.",
         "<code>dp[i] = min(costs[k] + dp[j])</code>, where <code>j > i</code> and <code>words[k] == target[i..j]</code>."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:58:09.865Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.081Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.726Z"
 }

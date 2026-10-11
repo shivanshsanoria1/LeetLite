@@ -45,6 +45,18 @@
         "For a given element x, how can you quickly check if x - 1 and x + 1 are present in the array without reiterating through the entire array?",
         "Use a set or a hash map."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findLonely(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar findLonely = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:08.582Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.105Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.713Z"
 }

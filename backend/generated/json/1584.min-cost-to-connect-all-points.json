@@ -62,6 +62,18 @@
         "Connect each pair of points with a weighted edge, the weight being the manhattan distance between those points.",
         "The problem is now the cost of minimum spanning tree in graph with above edges."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCostConnectPoints(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minCostConnectPoints = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:38.501Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.122Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.108Z"
 }

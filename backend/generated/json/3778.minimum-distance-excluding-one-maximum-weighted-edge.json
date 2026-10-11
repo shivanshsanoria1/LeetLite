@@ -32,6 +32,7 @@
         "The problem is the same as finding the minimum path from 0 to <code>n - 1</code> with one edge excluded",
         "Use states <code>(dist, node, excluded)</code> as your Dijkstra elements"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T18:45:37.761Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.242Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.011Z"
 }

@@ -54,6 +54,18 @@
         "Consider a new graph where each node is one of the old nodes at a specific time. For example, node 0 at time 5.",
         "You need to find the shortest path in the new graph."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& passingFees) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} maxTime\n * @param {number[][]} edges\n * @param {number[]} passingFees\n * @return {number}\n */\nvar minCost = function(maxTime, edges, passingFees) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:50.353Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.756Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.983Z"
 }

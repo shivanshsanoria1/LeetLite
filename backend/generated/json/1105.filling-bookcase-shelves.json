@@ -39,6 +39,18 @@
     "hints": [
         "Use dynamic programming:  dp(i) will be the answer to the problem for books[i:]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minHeightShelves(vector<vector<int>>& books, int shelfWidth) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} books\n * @param {number} shelfWidth\n * @return {number}\n */\nvar minHeightShelves = function(books, shelfWidth) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:58.227Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.148Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.410Z"
 }

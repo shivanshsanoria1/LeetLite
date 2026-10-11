@@ -45,6 +45,18 @@
         "Count the number of times each target value follows the key in the array.",
         "Choose the target with the maximum count and return it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mostFrequent(vector<int>& nums, int key) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} key\n * @return {number}\n */\nvar mostFrequent = function(nums, key) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:41.028Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.212Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.789Z"
 }

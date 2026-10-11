@@ -38,6 +38,7 @@
         "This is a very good example to show the performance of SQL code. Try to work out other solutions and you may be surprised by running time difference.",
         "If your solution uses 'IN' function and runs more than 5 seconds, try to optimize it by using 'JOIN' instead."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:08:40.684Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.010Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.703Z"
 }

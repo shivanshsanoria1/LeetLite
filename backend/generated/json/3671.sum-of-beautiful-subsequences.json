@@ -34,12 +34,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n[4,6]",
     "meta": {
         "quesIdLCBackend": 3989,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n[4,6]",
     "solution": {
         "canSeeDetail": false
     },
@@ -51,6 +51,18 @@
         "To get the number with GCD exactly <code>g</code>, process <code>g</code> from <code>max(nums)</code> down to <code>1</code> and subtract counts already assigned to multiples: <code>F[g] = cnt_g - sum{k=2g,3g,...}*F[k]</code> (do arithmetic mod <code>MOD</code>); descending order ensures multiples are known.",
         "The final answer is the sum of contributions <code>g * F[g]</code> for all <code>g</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int totalBeauty(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar totalBeauty = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:09:38.848Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.702Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.755Z"
 }

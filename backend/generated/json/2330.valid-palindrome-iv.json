@@ -43,6 +43,7 @@
         "Count the number of pairs of characters that should be equal if s were a palindrome, but are not equal.",
         "If the number of pairs is 0, then s is already palindrome. You can pick any pair of characters and change them both to a different character and s will stay a palindrome."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:23:14.544Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.423Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.047Z"
 }

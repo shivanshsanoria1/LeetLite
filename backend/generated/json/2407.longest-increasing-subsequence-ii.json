@@ -68,6 +68,18 @@
         "Try using dp[i - 1] and the fact that the second last element in the subsequence has to fall within a range to calculate dp[i][val].",
         "We can use a segment tree to find the maximum value in dp[i - 1] within a certain range."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int lengthOfLIS(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar lengthOfLIS = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:16.251Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.536Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.151Z"
 }

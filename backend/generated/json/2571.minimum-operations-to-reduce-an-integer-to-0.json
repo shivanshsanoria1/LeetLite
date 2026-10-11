@@ -46,6 +46,18 @@
         "If there are multiple adjacent ones, how can we optimally add and subtract in 2 operations such that all ones get unset?",
         "Bonus: Try to solve the problem with higher constraints: n ≤ 10^18."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar minOperations = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:29.568Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.159Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.360Z"
 }

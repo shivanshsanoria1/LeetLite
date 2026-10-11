@@ -44,6 +44,18 @@
         "If we have already placed <code>x</code> 1 and <code>y</code> 0, if we place a group of <code>k</code> 0, the number of ways is <code>dp[x-k][y][1]</code>. We can place a group with size <code>i</code>, where <code>i</code> varies from 1 to <code>min(limit, zero - x)</code>.\r\nSimilarly, we can solve by placing a group of ones.",
         "Speed up the calculation using prefix arrays to store the sum of <code>dp</code> states."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfStableArrays(int zero, int one, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} zero\n * @param {number} one\n * @param {number} limit\n * @return {number}\n */\nvar numberOfStableArrays = function(zero, one, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:33.971Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.964Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.930Z"
 }

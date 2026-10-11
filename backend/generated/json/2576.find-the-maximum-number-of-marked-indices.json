@@ -55,6 +55,18 @@
         "It’s optimal to match the ith smallest number with the k-i + 1 largest number.",
         "Now we need to binary search on the answer and find the greatest possible valid k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNumOfMarkedIndices(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxNumOfMarkedIndices = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:33.868Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.163Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.364Z"
 }

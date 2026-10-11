@@ -48,6 +48,18 @@
         "Use a heap or priority queue to store segment sums and their corresponding boundaries.",
         "Make sure to remove invalid segments from the heap."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> maximumSegmentSum(vector<int>& nums, vector<int>& removeQueries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} removeQueries\n * @return {number[]}\n */\nvar maximumSegmentSum = function(nums, removeQueries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:56.322Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.467Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.120Z"
 }

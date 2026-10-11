@@ -34,12 +34,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n2\n[2,3,3,2]\n3\n[1,1,2,3,1]\n2",
     "meta": {
         "quesIdLCBackend": 3913,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n2\n[2,3,3,2]\n3\n[1,1,2,3,1]\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Define <code>dp[i][j]</code> = minimum possible “max‑XOR” when splitting the first <code>i</code> elements into <code>j</code> parts.",
         "For each <code>dp[i][j]</code>, try all splits <code>t < i</code> and take the minimum over <code>max(dp[t][j-1], pre[i] ^ pre[t])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minXor(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minXor = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:39.274Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.616Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.607Z"
 }

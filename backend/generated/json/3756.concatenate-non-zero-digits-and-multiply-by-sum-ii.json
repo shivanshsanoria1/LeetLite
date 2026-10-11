@@ -47,6 +47,18 @@
         "Map each query <code>[l, r]</code> to the compressed list using precomputed mapping arrays (first nonzero at or after <code>i</code>",
         "If the mapped range is empty return <code>0</code>; otherwise get <code>x</code> from <code>P</code>, get <code>sum</code> from the digit-prefix, and return <code>(x * sum) % mod</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> sumAndMultiply(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar sumAndMultiply = function(s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:13.014Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.048Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.976Z"
 }

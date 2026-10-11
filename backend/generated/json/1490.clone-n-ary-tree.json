@@ -52,6 +52,7 @@
         "Traverse the tree, keep a hashtable with you and create a clone node for each node in the tree.",
         "Start traversing the original tree again and connect each child pointer in the cloned tree the same way as the original tree with the help of the hashtable."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:35:27.223Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.975Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.917Z"
 }

@@ -42,6 +42,18 @@
     "hints": [
         "It can be proven that if you can split more than one element as a subarray, then you can split exactly one element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canSplitArray(vector<int>& nums, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} m\n * @return {boolean}\n */\nvar canSplitArray = function(nums, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:44:46.694Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.550Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.622Z"
 }

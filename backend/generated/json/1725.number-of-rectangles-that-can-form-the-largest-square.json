@@ -36,6 +36,18 @@
         "Calculate maxSize by iterating over the given rectangles and maximizing the answer with their values denoted in the first hint.",
         "Then iterate again on the rectangles and calculate the number whose values = maxSize."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGoodRectangles(vector<vector<int>>& rectangles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} rectangles\n * @return {number}\n */\nvar countGoodRectangles = function(rectangles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:49.870Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.402Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.650Z"
 }

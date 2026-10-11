@@ -66,6 +66,18 @@
         "Model the grid as a graph where cells are nodes and edges are between adjacent cells. Edges to cells with obstacles have a cost of 1 and all other edges have a cost of 0.",
         "Could you use 0-1 Breadth-First Search or Dijkstra’s algorithm?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumObstacles(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minimumObstacles = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:41.060Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.390Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.007Z"
 }

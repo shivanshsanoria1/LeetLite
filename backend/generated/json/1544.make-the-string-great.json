@@ -40,6 +40,18 @@
         "The order you choose 2 characters to remove doesn't matter.",
         "Keep applying the mentioned step to s till the length of the string is not changed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string makeGood(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar makeGood = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:51.497Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.039Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.039Z"
 }

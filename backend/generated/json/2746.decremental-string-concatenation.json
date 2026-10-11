@@ -46,6 +46,18 @@
         "Notice that the first and last characters of a string are sufficient to determine the length of its concatenation with any other string.",
         "Define dp[i][first][last] as the shortest concatenation length of the first i words starting with a character first and ending with a character last. Convert characters to their ASCII codes if your programming language cannot implicitly convert them to array indices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimizeConcatenatedLength(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar minimizeConcatenatedLength = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:54.771Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.401Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.553Z"
 }

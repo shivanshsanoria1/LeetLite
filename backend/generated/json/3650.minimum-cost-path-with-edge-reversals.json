@@ -32,12 +32,12 @@
             "slug": "shortest-path"
         }
     ],
-    "exampleTestcases": "4\n[[0,1,3],[3,1,1],[2,3,4],[0,2,2]]\n4\n[[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
     "meta": {
         "quesIdLCBackend": 3887,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "4\n[[0,1,3],[3,1,1],[2,3,4],[0,2,2]]\n4\n[[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Dijkstra\n\n#### Intuition\n\n$\\textit{Dijkstra}$ is a commonly used algorithm for solving shortest path problems. In this problem, we need to find the shortest path from node $0$ to node $n - 1$, with the special condition that each node has a one-time opportunity to reverse its adjacent edges. However, this special condition can be modeled directly in the graph construction, allowing us to apply the standard $\\textit{Dijkstra}$ algorithm without modifying its core logic.\n\nEach node effectively has a “can be used at most once” switch, and the effect of reversing edges applies only to a single move. To incorporate this behavior, for every original edge $[x, y, w]$, we add an additional directed edge $[y, x, 2w]$ to the graph. This transformation encodes the reversal operation directly into the graph structure, so we no longer need to handle it explicitly during the algorithm.\n\nAfter constructing the graph in this way, we can directly run the $\\textit{Dijkstra}$ algorithm to find the shortest path from $0$ to $n - 1$.\n\nIt is worth noting that $\\textit{Dijkstra}$ can be efficiently implemented using a min-heap. At each step, the node with the smallest tentative distance among all unvisited nodes is extracted from the heap, and the distances of its adjacent nodes are relaxed accordingly. Although a node may be inserted into the heap multiple times, only the first time it is removed from the heap does it need to be processed. This guarantees an overall time complexity of $O(m \\log m)$, where $n$ is the number of nodes and $m$ is the number of edges.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Q7Npr7MD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Q7Npr7MD\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the number of vertices and $m$ be the number of edges.\n\n- Time complexity: $O(n + m\\log m)$.\n- Space complexity: $O(n + m)$.\n\n---"
@@ -47,6 +47,18 @@
         "Do we only need to reverse at most one edge for each node? If so, can we add reversed edges for each node and use the one that helps in the shortest path?",
         "Add reverse edges: <code>{u, v, w}</code> -> <code>{v, u, 2 * w}</code>, and use Dijkstra."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nvar minCost = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:42.979Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.649Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.724Z"
 }

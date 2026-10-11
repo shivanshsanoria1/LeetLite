@@ -41,6 +41,18 @@
         "Any other node with incoming edges can be reached from some other node.",
         "We only have to count the number of nodes with zero incoming edges."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number[]}\n */\nvar findSmallestSetOfVertices = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:06.878Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.048Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.057Z"
 }

@@ -26,12 +26,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "1020030\n1",
     "meta": {
         "quesIdLCBackend": 4051,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "1020030\n1",
     "solution": {
         "canSeeDetail": false
     },
@@ -39,6 +39,18 @@
     "hints": [
         "Convert to a string and filter out the <code>'0'</code> characters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long removeZeros(long long n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar removeZeros = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T18:17:34.803Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.845Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.910Z"
 }

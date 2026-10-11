@@ -50,6 +50,18 @@
         "Think of BFS to solve the problem.",
         "When you reach a position with a value = 0 then return true."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canReach(vector<int>& arr, int start) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} start\n * @return {boolean}\n */\nvar canReach = function(arr, start) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:11.111Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.408Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.700Z"
 }

@@ -57,6 +57,18 @@
     "hints": [
         "If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canWinNim(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar canWinNim = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:34.245Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.636Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.911Z"
 }

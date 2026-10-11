@@ -41,6 +41,18 @@
         "Try to split the string so that each integer is in a different string.",
         "Try to remove each integer's leading zeroes and compare the strings to find how many of them are unique."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numDifferentIntegers(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar numDifferentIntegers = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:17.905Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.486Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.800Z"
 }

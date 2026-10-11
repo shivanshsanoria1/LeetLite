@@ -40,6 +40,18 @@
         "Convert the number in an array of its digits.",
         "Brute force on every digit to get the maximum number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximum69Number (int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar maximum69Number  = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:37.015Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.499Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.716Z"
 }

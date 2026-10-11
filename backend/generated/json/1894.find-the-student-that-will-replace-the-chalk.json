@@ -50,6 +50,18 @@
         "Subtract the sum of chalk from k until k is less than the sum of chalk.",
         "Now iterate over the array. If chalk[i] is less than k, this is the answer. Otherwise, subtract chalk[i] from k and continue."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int chalkReplacer(vector<int>& chalk, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} chalk\n * @param {number} k\n * @return {number}\n */\nvar chalkReplacer = function(chalk, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:53.577Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.698Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.936Z"
 }

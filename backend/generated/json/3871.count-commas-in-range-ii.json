@@ -36,6 +36,18 @@
     "hints": [
         "Count the numbers in each comma group (1-3 digits, 4-6 digits, 7-9 digits, ...) and multiply by how many commas each number in that group has."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countCommas(long long n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countCommas = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:34.206Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.815Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.140Z"
 }

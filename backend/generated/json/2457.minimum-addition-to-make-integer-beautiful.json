@@ -41,6 +41,18 @@
         "Think about each digit independently.",
         "Turn the rightmost non-zero digit to zero until the digit sum is greater than target."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long makeIntegerBeautiful(long long n, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} target\n * @return {number}\n */\nvar makeIntegerBeautiful = function(n, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:56.941Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.632Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.211Z"
 }

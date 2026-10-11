@@ -42,6 +42,18 @@
         "<p><strong>1a (Brute Force).</strong> Count each value's occurrences, then enumerate all triples of indices <code>i &lt; j &lt; k</code>. Count a triple if <code>nums[i] == nums[j] == nums[k]</code>, <code>j - i == k - j</code>, and the value appears exactly three times in the array.</p>",
         "<p><strong>2a (Grouping Indices).</strong> Group occurrence indices by value. Count the groups containing exactly three indices whose two consecutive gaps are equal.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSpecialIntegers(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countSpecialIntegers = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:06.807Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.988Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.347Z"
 }

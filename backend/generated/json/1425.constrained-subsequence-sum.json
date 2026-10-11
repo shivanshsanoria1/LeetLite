@@ -60,6 +60,18 @@
         "dp[i] = nums[i] + max(0, dp[i-k], dp[i-k+1], ..., dp[i-1])",
         "Use a heap with the sliding window technique to optimize the dp."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int constrainedSubsetSum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar constrainedSubsetSum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:02.429Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.820Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.830Z"
 }

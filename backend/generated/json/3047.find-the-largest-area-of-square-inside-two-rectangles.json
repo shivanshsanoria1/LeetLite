@@ -47,6 +47,18 @@
         "Two rectangles will not overlap when the bottom left x coordinate of one rectangle is greater than the top right x coordinate of the other rectangle. The same is true for the y coordinate.",
         "The intersection area (if any) is also a rectangle. Find its corners."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long largestSquareArea(vector<vector<int>>& bottomLeft, vector<vector<int>>& topRight) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} bottomLeft\n * @param {number[][]} topRight\n * @return {number}\n */\nvar largestSquareArea = function(bottomLeft, topRight) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:04.831Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.836Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.480Z"
 }

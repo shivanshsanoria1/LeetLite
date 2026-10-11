@@ -52,6 +52,18 @@
         "Sort the events by the start time and in case of tie by the end time in ascending order.",
         "Loop over the sorted events. Attend as much as you can and keep the last day occupied. When you try to attend new event keep in mind the first day you can attend a new event in."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxEvents(vector<vector<int>>& events) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} events\n * @return {number}\n */\nvar maxEvents = function(events) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:16.005Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.696Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.752Z"
 }

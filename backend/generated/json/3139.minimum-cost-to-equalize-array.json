@@ -46,6 +46,18 @@
         "Since the maximum value is known, calculate the required increases to equalize all values, instead of naively simulating the operations.",
         "There are not a lot of candidates for the maximum; we can try all of them and choose which uses the minimum number of operations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCostToEqualizeArray(vector<int>& nums, int cost1, int cost2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} cost1\n * @param {number} cost2\n * @return {number}\n */\nvar minCostToEqualizeArray = function(nums, cost1, cost2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:42.475Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.970Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.962Z"
 }

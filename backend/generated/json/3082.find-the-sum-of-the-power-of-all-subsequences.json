@@ -50,6 +50,18 @@
         "Let <code>dp[i][j]</code> represent the number of subsequences in the subarray <code>nums[0..i]</code> which have a sum of <code>j</code>.",
         "We can find the <code>dp[i][k]</code> for all <code>0 <= i <= n-1</code> and multiply them with <code>2<sup>n - j</sup></code> to get final answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOfPower(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar sumOfPower = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:36.061Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.896Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.708Z"
 }

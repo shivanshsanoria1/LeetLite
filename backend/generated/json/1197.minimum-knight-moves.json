@@ -51,6 +51,7 @@
         "Is there a search algorithm applicable to this problem?",
         "Since we want the minimum number of moves, we can use Breadth First Search."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:28:34.289Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.610Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.585Z"
 }

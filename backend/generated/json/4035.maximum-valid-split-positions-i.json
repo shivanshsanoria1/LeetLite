@@ -50,6 +50,18 @@
         "For a fixed remaining array <code>arr</code>, prefix and suffix GCD arrays let you determine its score in linear time.",
         "Consider separately removing no element and removing each possible element. Since <code>nums.length <= 1000</code>, recomputing the score for every choice is fast enough."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxValidSplits(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxValidSplits = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:34.147Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.015Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.330Z"
 }

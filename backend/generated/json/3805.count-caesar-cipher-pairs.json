@@ -53,6 +53,18 @@
         "Compute a hashable key for each normalized string representing its relative character differences.",
         "Use a map to count how many strings share the same normalized key."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countPairs(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar countPairs = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:06.801Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.320Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.046Z"
 }

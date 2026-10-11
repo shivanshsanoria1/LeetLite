@@ -42,6 +42,18 @@
         "Simply simulate the algorithm.",
         "Note that the size of the array decreases exponentially, so the process will terminate after just O(log n) steps."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMaxGame(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minMaxGame = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:43.416Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.393Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.009Z"
 }

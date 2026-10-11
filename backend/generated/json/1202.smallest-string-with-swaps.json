@@ -67,6 +67,18 @@
         "Consider the pairs as connected nodes in the graph, what can you do with a connected component of indices ?",
         "We can sort each connected component alone to get the lexicographically minimum string."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string smallestStringWithSwaps(string s, vector<vector<int>>& pairs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} pairs\n * @return {string}\n */\nvar smallestStringWithSwaps = function(s, pairs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:39.150Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.634Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.589Z"
 }

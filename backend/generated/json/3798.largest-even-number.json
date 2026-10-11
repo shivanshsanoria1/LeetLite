@@ -36,6 +36,18 @@
         "A number ending with <code>'1'</code> is odd.",
         "Find the last <code>'2'</code> in <code>s</code>. If none, return <code>\"\"</code>. Otherwise return the prefix up to and including that <code>'2'</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string largestEven(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar largestEven = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:00.587Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.303Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.040Z"
 }

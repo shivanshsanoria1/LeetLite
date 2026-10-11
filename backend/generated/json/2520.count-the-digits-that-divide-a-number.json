@@ -39,6 +39,18 @@
         "Divide the number by 10, then round it down so that the second least significant digit becomes the least significant digit of the number",
         "Use your language’s mod operator to see if a number is a divisor of another."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countDigits(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar countDigits = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:45.781Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.788Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.313Z"
 }

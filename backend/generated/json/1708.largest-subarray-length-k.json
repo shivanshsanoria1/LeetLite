@@ -39,6 +39,7 @@
         "Search for the largest integer in the range [0, n - k]",
         "This integer is the first element in the subarray. You should take it with the k - 1 elements after it."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:52:30.825Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.345Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.622Z"
 }

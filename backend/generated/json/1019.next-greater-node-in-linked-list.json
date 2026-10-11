@@ -47,6 +47,18 @@
     "hints": [
         "We can use a stack that stores nodes in monotone decreasing order of value.  When we see a node_j with a larger value, every node_i in the stack has next_larger(node_i) = node_j ."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    vector<int> nextLargerNodes(ListNode* head) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * @param {ListNode} head\n * @return {number[]}\n */\nvar nextLargerNodes = function(head) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:55.941Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.739Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.304Z"
 }

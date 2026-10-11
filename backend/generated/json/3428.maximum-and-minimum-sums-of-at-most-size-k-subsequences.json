@@ -38,12 +38,12 @@
             "slug": "combinatorics"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n2\n[5,0,6]\n1\n[1,1,1]\n2",
     "meta": {
         "quesIdLCBackend": 3714,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n2\n[5,0,6]\n1\n[1,1,1]\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -51,6 +51,18 @@
     "hints": [
         "Sort the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMaxSums(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minMaxSums = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:35.395Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.391Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.391Z"
 }

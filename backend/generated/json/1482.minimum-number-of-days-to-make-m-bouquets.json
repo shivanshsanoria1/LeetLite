@@ -43,6 +43,18 @@
         "If we can make m or more bouquets at day x, then we can still make m or more bouquets at any day y > x.",
         "We can check easily if we can make enough bouquets at day x if we can get group adjacent flowers at day x."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDays(vector<int>& bloomDay, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} bloomDay\n * @param {number} m\n * @param {number} k\n * @return {number}\n */\nvar minDays = function(bloomDay, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:18.426Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.962Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.907Z"
 }

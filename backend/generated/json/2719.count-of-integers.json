@@ -46,6 +46,18 @@
         "The answer is f(num2, min_sum, max_sum) - f(num1-1, min_sum, max_sum).",
         "You can calculate f(n, l, r) using digit dp."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int count(string num1, string num2, int min_sum, int max_sum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num1\n * @param {string} num2\n * @param {number} min_sum\n * @param {number} max_sum\n * @return {number}\n */\nvar count = function(num1, num2, min_sum, max_sum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:32.444Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.383Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.528Z"
 }

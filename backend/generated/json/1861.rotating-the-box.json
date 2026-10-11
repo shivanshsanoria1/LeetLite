@@ -44,6 +44,18 @@
         "Rotate the box using the relation rotatedBox[i][j] = box[m - 1 - j][i].",
         "Start iterating from the bottom of the box and for each empty cell check if there is any stone above it with no obstacles between them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<char>> rotateTheBox(vector<vector<char>>& boxGrid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} boxGrid\n * @return {character[][]}\n */\nvar rotateTheBox = function(boxGrid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:15.074Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.520Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.901Z"
 }

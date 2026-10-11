@@ -45,6 +45,18 @@
         "A good string must contain at least one <code>l</code>, one <code>t</code>, and two <code>e</code>.",
         "Divide the problem into subproblems and use Dynamic Programming."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int stringCount(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar stringCount = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:26.451Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.681Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.936Z"
 }

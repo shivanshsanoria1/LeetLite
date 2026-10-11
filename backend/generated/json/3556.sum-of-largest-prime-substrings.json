@@ -38,12 +38,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "\"12234\"\n\"111\"",
     "meta": {
         "quesIdLCBackend": 3815,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"12234\"\n\"111\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -53,6 +53,18 @@
         "Check each candidate for primality in <code>O(sqrt(n))</code> time.",
         "Store unique primes, then sum the three largest (or all if fewer than three)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long sumOfLargestPrimes(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar sumOfLargestPrimes = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:50.562Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.560Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.562Z"
 }

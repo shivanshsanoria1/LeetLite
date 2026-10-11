@@ -43,6 +43,18 @@
         "Available hours: <code>c1 = T - floor(T / r1)</code>, <code>c2 = T - floor(T / r2)</code>; shared hours = <code>T - floor(T / r1) - floor(T / r2) + floor(T / lcm(r1,r2))</code>.",
         "Assign each drone its exclusive/available hours first; remaining deliveries must fit into the <code>shared</code> hours."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumTime(vector<int>& d, vector<int>& r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} d\n * @param {number[]} r\n * @return {number}\n */\nvar minimumTime = function(d, r) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-20T19:28:31.867Z",
-    "PARSED_ISO": "2026-09-20T19:28:34.241Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.934Z"
 }

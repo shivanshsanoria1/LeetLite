@@ -44,6 +44,18 @@
     "hints": [
         "Based on the label of the current node, find what the label must be for the parent of that node."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> pathInZigZagTree(int label) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} label\n * @return {number[]}\n */\nvar pathInZigZagTree = function(label) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:57.563Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.147Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.408Z"
 }

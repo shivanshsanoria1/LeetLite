@@ -44,6 +44,18 @@
         "Maintain the graph and use an efficient shortest path algorithm after each update.",
         "We use BFS/Dijkstra for each query."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> shortestDistanceAfterQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar shortestDistanceAfterQueries = function(n, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:01.611Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.074Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.643Z"
 }

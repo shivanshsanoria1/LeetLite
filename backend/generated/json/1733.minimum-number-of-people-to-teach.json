@@ -44,6 +44,18 @@
         "You can just use brute force and find out for each language the number of users you need to teach",
         "Note that a user can appear in multiple friendships but you need to teach that user only once"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTeachings(int n, vector<vector<int>>& languages, vector<vector<int>>& friendships) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} languages\n * @param {number[][]} friendships\n * @return {number}\n */\nvar minimumTeachings = function(n, languages, friendships) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:58.267Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.409Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.663Z"
 }

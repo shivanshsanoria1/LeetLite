@@ -52,6 +52,18 @@
         "Can you model this problem as a graph problem?  Create n * m + 1 nodes where n * m nodes represents each cell of the map and one extra node to represent the exterior of the map.",
         "In the map add edges between neighbors on land cells. And add edges between the exterior and land nodes which are in the boundary.\r\nReturn as answer the number of nodes that are not reachable from the exterior node."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numEnclaves(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar numEnclaves = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:56.586Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.749Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.305Z"
 }

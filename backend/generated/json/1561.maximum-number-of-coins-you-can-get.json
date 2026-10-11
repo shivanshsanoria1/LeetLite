@@ -52,6 +52,18 @@
         "Which pile of coins will you never be able to pick up?",
         "Bob is forced to take the last pile of coins, no matter what it is. Which pile should you give to him?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxCoins(vector<int>& piles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} piles\n * @return {number}\n */\nvar maxCoins = function(piles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:11.231Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.051Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.067Z"
 }

@@ -35,6 +35,18 @@
     "hints": [
         "Naive bruteforce works"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countOppositeParity(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar countOppositeParity = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:25.273Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.850Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.181Z"
 }

@@ -56,6 +56,18 @@
         "Calculate Alice’s distance to each node via DFS.",
         "We can calculate Alice’s score along a path ending at some node easily using Hints 1 and 2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mostProfitablePath(vector<vector<int>>& edges, int bob, vector<int>& amount) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number} bob\n * @param {number[]} amount\n * @return {number}\n */\nvar mostProfitablePath = function(edges, bob, amount) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:04.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.697Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.228Z"
 }

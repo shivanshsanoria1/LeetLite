@@ -36,6 +36,18 @@
     "hints": [
         "Implement formulas that are given in the statement."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<double> convertTemperature(double celsius) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} celsius\n * @return {number[]}\n */\nvar convertTemperature = function(celsius) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:06.163Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.702Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.229Z"
 }

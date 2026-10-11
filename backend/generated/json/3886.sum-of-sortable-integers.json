@@ -50,6 +50,18 @@
         "A block can be rotated to match its sorted counterpart if the sorted segment <code>s[i..i+k-1]</code> appears as a cyclic rotation of <code>nums[i..i+k-1]</code>.",
         "You can test this by checking whether the sorted segment exists inside two concatenated copies of the block. If all blocks satisfy this, then <code>k</code> is sortable."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sortableIntegers(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sortableIntegers = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:50.274Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.827Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.154Z"
 }

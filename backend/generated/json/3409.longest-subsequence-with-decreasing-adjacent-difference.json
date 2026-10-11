@@ -29,12 +29,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "[16,6,3]\n[6,5,3,4,2,1]\n[10,20,10,19,10,20]",
     "meta": {
         "quesIdLCBackend": 3716,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[16,6,3]\n[6,5,3,4,2,1]\n[10,20,10,19,10,20]",
     "solution": {
         "canSeeDetail": false
     },
@@ -43,6 +43,18 @@
         "Use dynamic programming.",
         "Store the maximum answer for each index and every possible difference."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubsequence(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSubsequence = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:48:45.130Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.334Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.376Z"
 }

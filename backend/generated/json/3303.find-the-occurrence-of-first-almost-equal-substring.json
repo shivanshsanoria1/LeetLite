@@ -47,6 +47,18 @@
         "Let <code>dp2[i]</code> represent the maximum length of a substring of <code>s</code> ending at index <code>i</code> that is also a suffix of <code>pattern</code>.",
         "Consider a window of size <code>pattern.length</code>. If <code>dp1[i] + i == i + pattern.length - 1 - dp2[i + pattern.length - 1]</code>, what does this signify?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minStartingIndex(string s, string pattern) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} pattern\n * @return {number}\n */\nvar minStartingIndex = function(s, pattern) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:49.512Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.176Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.015Z"
 }

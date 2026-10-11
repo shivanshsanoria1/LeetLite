@@ -47,6 +47,18 @@
         "The minimum number of groups needed for some <code>x</code> is the total minimized number of groups needed for each distinct number.",
         "The answer is the minimum number of groups needed for each <code>x</code> in the range <code>[1, minimum_frequency]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minGroupsForValidAssignment(vector<int>& balls) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} balls\n * @return {number}\n */\nvar minGroupsForValidAssignment = function(balls) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:10.761Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.630Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.894Z"
 }

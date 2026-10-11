@@ -43,6 +43,18 @@
         "Check if <code>abs(nums[i] - nums[j<sub>1</sub>]) >= valueDifference</code> or <code>abs(nums[i] - nums[j<sub>2</sub>]) >= valueDifference</code>.",
         "<code>j<sub>1</sub></code> and <code>j<sub>2</sub></code> can be updated dynamically, or they can be pre-computed since they are just prefix minimum and maximum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findIndices(vector<int>& nums, int indexDifference, int valueDifference) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} indexDifference\n * @param {number} valueDifference\n * @return {number[]}\n */\nvar findIndices = function(nums, indexDifference, valueDifference) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:06.664Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.627Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.879Z"
 }

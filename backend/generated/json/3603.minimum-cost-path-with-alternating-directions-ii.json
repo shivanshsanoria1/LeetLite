@@ -30,12 +30,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "1\n2\n[[1,2]]\n2\n2\n[[3,5],[2,4]]\n2\n3\n[[6,1,4],[3,2,5]]",
     "meta": {
         "quesIdLCBackend": 3927,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "1\n2\n[[1,2]]\n2\n2\n[[3,5],[2,4]]\n2\n3\n[[6,1,4],[3,2,5]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "Transition: <code>dp[i][j]</code> <- min(<code>dp[i‑1][j]</code>, <code>dp[i][j‑1]</code>) + <code>waitCost[i][j]</code> + (<code>i+1</code>)*(<code>j+1</code>)",
         "The answer is <code>dp[m‑1][n‑1]</code> - <code>waitCost[m‑1][n‑1]</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCost(int m, int n, vector<vector<int>>& waitCost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} waitCost\n * @return {number}\n */\nvar minCost = function(m, n, waitCost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:43.574Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.619Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.619Z"
 }

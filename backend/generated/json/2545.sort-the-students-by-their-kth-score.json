@@ -48,6 +48,18 @@
         "Find the row with the highest score in the kth exam and swap it with the first row.",
         "After fixing the first row, perform the same operation for the rest of the rows, and the matrix's rows will get sorted one by one."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> sortTheStudents(vector<vector<int>>& score, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} score\n * @param {number} k\n * @return {number[][]}\n */\nvar sortTheStudents = function(score, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:06.426Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.130Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.335Z"
 }

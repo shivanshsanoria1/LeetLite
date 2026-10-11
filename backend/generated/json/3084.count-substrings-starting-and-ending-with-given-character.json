@@ -44,6 +44,18 @@
         "We can select <code>2</code> numbers <code>i</code> and <code>j</code> such that <code>i <= j</code> are the start and end indices of substring. Note that <code>i</code> and <code>j</code> can be the same.",
         "The answer is <code>m * (m + 1) / 2</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countSubstrings(string s, char c) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {character} c\n * @return {number}\n */\nvar countSubstrings = function(s, c) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:37.805Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.898Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.714Z"
 }

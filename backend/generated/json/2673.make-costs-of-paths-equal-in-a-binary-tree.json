@@ -51,6 +51,18 @@
         "The path from the root to a leaf that has the maximum cost should not be modified.",
         "The optimal way is to increase all other paths to make their costs equal to the path with maximum cost."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minIncrements(int n, vector<int>& cost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} cost\n * @return {number}\n */\nvar minIncrements = function(n, cost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:54.458Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.350Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.472Z"
 }

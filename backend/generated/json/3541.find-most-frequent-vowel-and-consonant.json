@@ -30,12 +30,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "\"successes\"\n\"aeiaeia\"",
     "meta": {
         "quesIdLCBackend": 3872,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"successes\"\n\"aeiaeia\"",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Traversal\n\n#### Intuition\n\nFirst, we use a hash table to record the number of occurrences of each character in the string. Then, we traverse all lowercase letters, separating them into vowels and consonants to find the maximum frequency in each group. Finally, summing these two values gives the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/mKZUMxkr/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"mKZUMxkr\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$, and $C$ be the number of lowercase English letters, which is $26$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(C)$.\n\n---"
@@ -45,6 +45,18 @@
         "Use a hashmap",
         "Simulate as described"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxFreqSum(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxFreqSum = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:32.306Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.552Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.553Z"
 }

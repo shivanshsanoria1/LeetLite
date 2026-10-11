@@ -44,6 +44,18 @@
         "If you only had to find the maximum product of 2 numbers in an array, which 2 numbers should you choose?",
         "We only need to worry about 4 numbers in the array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    int maxProductDifference(vector<int>& nums) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number[]} nums\r\n * @return {number}\r\n */\r\nvar maxProductDifference = function(nums) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:38.676Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.731Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.957Z"
 }

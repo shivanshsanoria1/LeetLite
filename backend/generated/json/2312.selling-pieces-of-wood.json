@@ -47,6 +47,18 @@
         "If possible, we could sell the m x n piece. We could also cut the piece vertically creating two pieces of size m x n1 and m x n2 where n1 + n2 = n, or horizontally creating two pieces of size m1 x n and m2 x n where m1 + m2 = m.",
         "Notice that cutting a piece breaks the problem down into smaller subproblems, and selling the piece when available is also a case that terminates the process. Thus, we can use DP to efficiently solve this."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long sellingWood(int m, int n, vector<vector<int>>& prices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} prices\n * @return {number}\n */\nvar sellingWood = function(m, n, prices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:58.366Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.410Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.027Z"
 }

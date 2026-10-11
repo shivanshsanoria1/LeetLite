@@ -45,6 +45,18 @@
         "We can move all the occurrences of this element to the end of the array. Use two pointers!\r\n<br><img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png\" width=\"500\"/>",
         "Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int removeElement(vector<int>& nums, int val) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} val\n * @return {number}\n */\nvar removeElement = function(nums, val) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:38:36.812Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.369Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.490Z"
 }

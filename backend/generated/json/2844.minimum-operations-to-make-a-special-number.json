@@ -51,6 +51,18 @@
         "A number is divisible by <code>25</code> if its last two digits are <code>75</code>, <code>50</code>, <code>25</code>, or <code>00</code>.",
         "Iterate over all possible pairs of indices <code>i &lt; j</code> such that <code>num[i] * 10 + num[j]</code> is in <code>[00,25,50,75]</code>. Then, set the answer to <code> min(answer, n - i - 2) </code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumOperations(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {number}\n */\nvar minimumOperations = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:13.318Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.586Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.780Z"
 }

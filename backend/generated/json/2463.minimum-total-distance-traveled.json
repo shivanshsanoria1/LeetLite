@@ -48,6 +48,18 @@
         "After sorting, notice that each factory should repair some subsegment of robots.",
         "Find the minimum total distance to repair first i robots with first j factories."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} robot\n * @param {number[][]} factory\n * @return {number}\n */\nvar minimumTotalDistance = function(robot, factory) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:01.400Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.692Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.223Z"
 }

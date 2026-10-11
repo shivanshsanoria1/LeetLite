@@ -49,6 +49,7 @@
     "hints": [
         "Take all the intervals and do an \"events\" (or \"line sweep\") approach - an event of (x, OPEN) increases the number of active intervals, while (x, CLOSE) decreases it.\r\n\r\nProcessing in sorted order from left to right, if the number of active intervals is zero, then you crossed a region of common free time."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:16:15.447Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.345Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.044Z"
 }

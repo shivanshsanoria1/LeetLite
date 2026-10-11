@@ -41,6 +41,18 @@
         "Try fixing the parity to either all even or all odd.",
         "Use the smallest odd/even element if a subtraction is needed to match the chosen parity."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool uniformArray(vector<int>& nums1) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @return {boolean}\n */\nvar uniformArray = function(nums1) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:40.436Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.819Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.146Z"
 }

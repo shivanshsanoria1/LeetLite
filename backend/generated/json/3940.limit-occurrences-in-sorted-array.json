@@ -40,6 +40,18 @@
         "Go through the array, maintaining a counter of the number of occurrences of the largest integer so far.",
         "If the counter is currently more than <code>k</code>, ignore the current element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> limitOccurrences(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar limitOccurrences = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:05:52.284Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.917Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.207Z"
 }

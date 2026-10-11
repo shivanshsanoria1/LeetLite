@@ -47,6 +47,18 @@
     "hints": [
         "A letter that is <code>k</code> positions after <code>'a'</code> represents a block of <code>2<sup>k</sup></code> original <code>'a'</code> characters. To maximize the string lexicographically, greedily place the largest possible letter first. Remember that multiple <code>'z'</code> characters may be needed because <code>\"zz\"</code> cannot be merged further."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> largestString(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {string[]}\n */\nvar largestString = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:08:55.378Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.966Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.331Z"
 }

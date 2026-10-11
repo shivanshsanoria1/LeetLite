@@ -52,6 +52,18 @@
         "Compute all sums and save it in array.",
         "Then just go from LEFT to RIGHT index and calculate answer modulo 1e9 + 7."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int rangeSum(vector<int>& nums, int n, int left, int right) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} n\n * @param {number} left\n * @param {number} right\n * @return {number}\n */\nvar rangeSum = function(nums, n, left, right) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:57.021Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.986Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.935Z"
 }

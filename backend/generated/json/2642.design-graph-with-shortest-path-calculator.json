@@ -51,6 +51,18 @@
         "After adding each edge, update your graph with the new edge, and you can calculate the shortest path in your graph each time the shortestPath method is called.",
         "Use dijkstra’s algorithm to calculate the shortest paths."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Graph {\npublic:\n    Graph(int n, vector<vector<int>>& edges) {\n        \n    }\n    \n    void addEdge(vector<int> edge) {\n        \n    }\n    \n    int shortestPath(int node1, int node2) {\n        \n    }\n};\n\n/**\n * Your Graph object will be instantiated and called as such:\n * Graph* obj = new Graph(n, edges);\n * obj->addEdge(edge);\n * int param_2 = obj->shortestPath(node1,node2);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n */\nvar Graph = function(n, edges) {\n    \n};\n\n/** \n * @param {number[]} edge\n * @return {void}\n */\nGraph.prototype.addEdge = function(edge) {\n    \n};\n\n/** \n * @param {number} node1 \n * @param {number} node2\n * @return {number}\n */\nGraph.prototype.shortestPath = function(node1, node2) {\n    \n};\n\n/** \n * Your Graph object will be instantiated and called as such:\n * var obj = new Graph(n, edges)\n * obj.addEdge(edge)\n * var param_2 = obj.shortestPath(node1,node2)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:29.060Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.276Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.442Z"
 }

@@ -65,6 +65,18 @@
         "The queries must be answered efficiently to avoid time limit exceeded verdict.",
         "Use sparse table (dynamic programming application) to travel the tree upwards in a fast way."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class TreeAncestor {\npublic:\n    TreeAncestor(int n, vector<int>& parent) {\n        \n    }\n    \n    int getKthAncestor(int node, int k) {\n        \n    }\n};\n\n/**\n * Your TreeAncestor object will be instantiated and called as such:\n * TreeAncestor* obj = new TreeAncestor(n, parent);\n * int param_1 = obj->getKthAncestor(node,k);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} parent\n */\nvar TreeAncestor = function(n, parent) {\n    \n};\n\n/** \n * @param {number} node \n * @param {number} k\n * @return {number}\n */\nTreeAncestor.prototype.getKthAncestor = function(node, k) {\n    \n};\n\n/** \n * Your TreeAncestor object will be instantiated and called as such:\n * var obj = new TreeAncestor(n, parent)\n * var param_1 = obj.getKthAncestor(node,k)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:19.284Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.964Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.910Z"
 }

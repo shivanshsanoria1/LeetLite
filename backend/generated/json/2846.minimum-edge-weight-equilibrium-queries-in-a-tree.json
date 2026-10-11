@@ -56,6 +56,18 @@
         "The frequency of edge weight <code>w</code> on the path from <code>a</code> to <code>b</code> is equal to <code>freq[a][w] + freq[b][w] - freq[lca(a,b)][w] * 2</code>, where <code>lca(a,b)</code> is the lowest common ancestor of <code>a</code> and <code>b</code> in the tree.",
         "<code>lca(a,b)</code> can be calculated using binary lifting algorithm or Tarjan algorithm."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minOperationsQueries(int n, vector<vector<int>>& edges, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar minOperationsQueries = function(n, edges, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:14.852Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.588Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.782Z"
 }

@@ -52,6 +52,18 @@
         "Use two arrays to save the cumulative multipliers at each time point and cumulative sums adjusted by the current multiplier.",
         "The function getIndex(idx) ask to the current value modulo 10^9+7. Use modular inverse and both arrays to calculate this value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Fancy {\npublic:\n    Fancy() {\n        \n    }\n    \n    void append(int val) {\n        \n    }\n    \n    void addAll(int inc) {\n        \n    }\n    \n    void multAll(int m) {\n        \n    }\n    \n    int getIndex(int idx) {\n        \n    }\n};\n\n/**\n * Your Fancy object will be instantiated and called as such:\n * Fancy* obj = new Fancy();\n * obj->append(val);\n * obj->addAll(inc);\n * obj->multAll(m);\n * int param_4 = obj->getIndex(idx);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar Fancy = function() {\n    \n};\n\n/** \n * @param {number} val\n * @return {void}\n */\nFancy.prototype.append = function(val) {\n    \n};\n\n/** \n * @param {number} inc\n * @return {void}\n */\nFancy.prototype.addAll = function(inc) {\n    \n};\n\n/** \n * @param {number} m\n * @return {void}\n */\nFancy.prototype.multAll = function(m) {\n    \n};\n\n/** \n * @param {number} idx\n * @return {number}\n */\nFancy.prototype.getIndex = function(idx) {\n    \n};\n\n/** \n * Your Fancy object will be instantiated and called as such:\n * var obj = new Fancy()\n * obj.append(val)\n * obj.addAll(inc)\n * obj.multAll(m)\n * var param_4 = obj.getIndex(idx)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:56.211Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.252Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.188Z"
 }

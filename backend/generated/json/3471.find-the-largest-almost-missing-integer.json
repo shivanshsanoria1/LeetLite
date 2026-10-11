@@ -28,12 +28,12 @@
             "slug": "hash-table"
         }
     ],
-    "exampleTestcases": "[3,9,2,1,7]\n3\n[3,9,7,2,1,7]\n4\n[0,0]\n1",
     "meta": {
         "quesIdLCBackend": 3705,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,9,2,1,7]\n3\n[3,9,7,2,1,7]\n4\n[0,0]\n1",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Classification Discussion\n\n#### Intuition\n\nWe can divide the problem into three cases based on the value of $k$.\n\n**When $k = n$:**\n\nThe entire array is exactly one sliding window. Therefore, every number in the array appears in a subarray of size $k$. To find the largest nearly missing integer, we simply return the maximum value in the array.\n\n**When $k = 1$:**\n\nThe length of each sliding window is $1$. Therefore, the problem asks us to find the largest number that appears exactly once in the entire array. After counting the frequency of each number, we traverse the possible values from largest to smallest. The first number whose frequency is $1$ is the largest answer.\n\n**When $1 < k < n$:**\n\nEvery element except the first and last elements of the array is covered by at least two sliding windows. Therefore, no middle element can satisfy the requirement. The only possible candidates are the first and last elements of the array.\n\nWe only need to check whether these two elements appear exactly once in the entire array. If either element satisfies the condition, we return the larger one among them. If neither satisfies the condition, we return $-1$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/4AdgN5iE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4AdgN5iE\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -45,6 +45,18 @@
         "If <code>k = n</code>, return the largest element in <code>nums</code>",
         "If <code>1 < k < n</code>, all elements different from <code>nums[0]</code> and <code>nums[n - 1]</code> will occur in more than one subarray of size <code>k</code>. Hence, the answer is the largest of <code>nums[0]</code> and <code>nums[n - 1]</code> if they both occur exactly once in the array. If one of them occurs more than once, return the other. If both of them occur more than once, return -1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestInteger(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar largestInteger = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:18.541Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.466Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.486Z"
 }

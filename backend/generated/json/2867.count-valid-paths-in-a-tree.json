@@ -69,6 +69,18 @@
         "If <code>i</code> is prime, <code>dp[i][0] = 0</code>, and <code>dp[i][1] = sum(dp[child][0]) + 1</code> for each <code>child</code> of <code>i</code> in the rooted tree.",
         "For each node <code>i</code>, and using the computed <code>dp</code> matrix, count the number of unordered pairs <code>(a,b)</code> such that <code>lca(a,b) = i</code>, and there exists exactly one prime number on the path from <code>a</code> to <code>b</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countPaths(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nvar countPaths = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:32.363Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.601Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.819Z"
 }

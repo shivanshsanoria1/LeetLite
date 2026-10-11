@@ -56,6 +56,18 @@
         "We can use math constructions to construct the two palindromic numbers in <code>O(log(m) / 2)</code> time or we can do it using brute-force by starting from m and checking smaller and larger values in <code>O(sqrt(10<sup>log(m)</sup>))</code>.",
         "It is also possible to just generate all palindromic numbers using recursion in <code>O(sqrt(10<sup>9</sup>log(10<sup>9</sup>))</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumCost(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumCost = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:56.844Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.715Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.115Z"
 }

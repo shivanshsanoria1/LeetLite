@@ -45,6 +45,18 @@
         "Suppose We can put m boxes on the floor, within all the ways to put the boxes, what’s the maximum number of boxes we can put in?",
         "The first box should always start in the corner"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumBoxes(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar minimumBoxes = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:03.286Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.412Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.673Z"
 }

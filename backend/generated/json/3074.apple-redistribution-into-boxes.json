@@ -44,6 +44,18 @@
         "Sort array <code>capacity</code> in non-decreasing order.",
         "Greedily select boxes with the largest capacities to redistribute apples optimally."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumBoxes(vector<int>& apple, vector<int>& capacity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} apple\n * @param {number[]} capacity\n * @return {number}\n */\nvar minimumBoxes = function(apple, capacity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:26.439Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.875Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.626Z"
 }

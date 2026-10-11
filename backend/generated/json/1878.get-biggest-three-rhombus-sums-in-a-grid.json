@@ -58,6 +58,18 @@
         "You need to maintain only the biggest 3 distinct sums",
         "The limits are small enough for you to iterate over all rhombus sizes then iterate over all possible borders to get the sums"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getBiggestThree(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number[]}\n */\nvar getBiggestThree = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:35.560Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.584Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.917Z"
 }

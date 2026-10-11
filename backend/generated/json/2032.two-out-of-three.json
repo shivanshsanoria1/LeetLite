@@ -43,6 +43,18 @@
         "What data structure can we use to help us quickly find whether an element belongs in an array?",
         "Can we count the frequencies of the elements in each array?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number[]} nums3\n * @return {number[]}\n */\nvar twoOutOfThree = function(nums1, nums2, nums3) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:18.414Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.920Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.234Z"
 }

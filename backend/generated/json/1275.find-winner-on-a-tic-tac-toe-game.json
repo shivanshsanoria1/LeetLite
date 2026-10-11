@@ -50,6 +50,18 @@
         "It's straightforward to check if A or B won or not, check for each row/column/diag if all the three are the same.",
         "Then if no one wins, the game is a draw iff the board is full, i.e. moves.length = 9 otherwise is pending."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string tictactoe(vector<vector<int>>& moves) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} moves\n * @return {string}\n */\nvar tictactoe = function(moves) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:31.066Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.087Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.665Z"
 }

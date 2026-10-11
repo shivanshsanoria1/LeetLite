@@ -52,6 +52,18 @@
         "Do a bitmask DP.",
         "For each person, for each set of skills, we can update our understanding of a minimum set of people needed to perform this set of skills."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> smallestSufficientTeam(vector<string>& req_skills, vector<vector<string>>& people) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} req_skills\n * @param {string[][]} people\n * @return {number[]}\n */\nvar smallestSufficientTeam = function(req_skills, people) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:15.061Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.281Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.456Z"
 }

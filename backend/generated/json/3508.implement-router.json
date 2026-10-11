@@ -42,12 +42,12 @@
             "slug": "ordered-set"
         }
     ],
-    "exampleTestcases": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]\n[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
     "meta": {
         "quesIdLCBackend": 3827,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]\n[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nThis question requires us to implement a router based on the task description. The router needs to support the following operations:\n\n- $\\textit{addPacket}$: Add a packet. If the packet already exists in the router’s memory, return $\\text{false}$; otherwise, return $\\text{true}$. If the router’s memory is full, the oldest packet (smallest timestamp) must be removed before adding the new packet.  \n- $\\textit{forwardPacket}$: Forward the next packet in first-in-first-out order and return its $\\textit{source}$, $\\textit{destination}$, and $\\textit{timestamp}$ as an array.  \n- $\\textit{getCount}$: Return the number of packets with a given destination address and timestamps between $\\textit{startTime}$ and $\\textit{endTime}$ (inclusive).\n\nWe first define the members of the $\\textit{Router}$ class:\n\n1. $\\textit{memLimit}$: an int, representing the size of the router’s memory.  \n2. $\\textit{length}$: an int, representing the current number of packets in memory.  \n3. $\\textit{isExist}$: an ordered set of triples (each consisting of ints) that tracks whether a packet exists in memory.  \n4. $\\textit{sameDestQue}$: an unordered hash table where the key is the packet’s $\\textit{destination}$, and the value is a deque of timestamps for packets with that destination.  \n5. $\\textit{que}$: a deque of triples representing all packets in memory.  \n\nNext, we implement the three operations:\n\n- $\\textit{addPacket}$: First, check whether the packet already exists. If it does, return $\\text{false}$. If the memory is full, the oldest packet must be removed by calling $\\textit{forwardPacket}$. Then, insert the new packet into $\\textit{que}$, add its timestamp to $\\textit{sameDestQue}$, register it in $\\textit{isExist}$, and return $\\text{true}$.  \n- $\\textit{forwardPacket}$: Check if $\\textit{que}$ is empty. If it is, return an empty array. Otherwise, remove the first packet from $\\textit{que}$, erase it from $\\textit{isExist}$, remove its timestamp from $\\textit{sameDestQue}$, and return its $\\textit{source}$, $\\textit{destination}$, and $\\textit{timestamp}$.  \n- $\\textit{getCount}$: In the deque corresponding to $\\textit{destination}$ in $\\textit{sameDestQue}$, use binary search to count the elements between $\\textit{startTime}$ and $\\textit{endTime}$.\n\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/oByG2rz5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"oByG2rz5\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the router memory size.\n\n- Time complexity:  \n    The constructor of $\\textit{Router}$ runs in $O(1)$ since it only performs assignments.  \n    The $\\textit{addPacket}$ operation runs in $O(\\log n)$ because of the lookup and insertion in the set.  \n    The $\\textit{forwardPacket}$ operation also runs in $O(\\log n)$ due to deletion from the set.  \n    The $\\textit{getCount}$ operation runs in $O(\\log n)$ because it uses binary search on the deque of timestamps.  \n\n- Space complexity: $O(n)$\n    The $\\textit{Router}$ class requires $O(n)$ space for storing packets and related data structures. Each method itself uses only constant extra space, so their additional space complexity is $O(1)$.  \n\n---"
@@ -57,6 +57,18 @@
         "A deque can simulate the adding and forwarding of packets efficiently.",
         "Use binary search for counting packets within a timestamp range."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Router {\npublic:\n    Router(int memoryLimit) {\n        \n    }\n    \n    bool addPacket(int source, int destination, int timestamp) {\n        \n    }\n    \n    vector<int> forwardPacket() {\n        \n    }\n    \n    int getCount(int destination, int startTime, int endTime) {\n        \n    }\n};\n\n/**\n * Your Router object will be instantiated and called as such:\n * Router* obj = new Router(memoryLimit);\n * bool param_1 = obj->addPacket(source,destination,timestamp);\n * vector<int> param_2 = obj->forwardPacket();\n * int param_3 = obj->getCount(destination,startTime,endTime);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} memoryLimit\n */\nvar Router = function(memoryLimit) {\n    \n};\n\n/** \n * @param {number} source \n * @param {number} destination \n * @param {number} timestamp\n * @return {boolean}\n */\nRouter.prototype.addPacket = function(source, destination, timestamp) {\n    \n};\n\n/**\n * @return {number[]}\n */\nRouter.prototype.forwardPacket = function() {\n    \n};\n\n/** \n * @param {number} destination \n * @param {number} startTime \n * @param {number} endTime\n * @return {number}\n */\nRouter.prototype.getCount = function(destination, startTime, endTime) {\n    \n};\n\n/** \n * Your Router object will be instantiated and called as such:\n * var obj = new Router(memoryLimit)\n * var param_1 = obj.addPacket(source,destination,timestamp)\n * var param_2 = obj.forwardPacket()\n * var param_3 = obj.getCount(destination,startTime,endTime)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:53.167Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.495Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.530Z"
 }

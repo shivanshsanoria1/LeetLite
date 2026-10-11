@@ -49,6 +49,7 @@
         "In one move, choose to set all the cells with some modulus (i % sideLength, j % sideLength) to 1.",
         "Choose the cells with max frequency."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:28:20.865Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.549Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.573Z"
 }

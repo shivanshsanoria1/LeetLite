@@ -61,6 +61,18 @@
     "hints": [
         "We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canPartitionKSubsets(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar canPartitionKSubsets = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:32.870Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.242Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.944Z"
 }

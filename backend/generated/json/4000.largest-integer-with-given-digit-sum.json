@@ -43,6 +43,18 @@
         "<p><strong>2b (Greedy).</strong> To maximize the integer, assign as much of the remaining digit sum as possible to each digit from left to right.</p>",
         "<p><strong>2c (Greedy).</strong> Handle <code>s == 0</code> separately: the answer is <code>0</code>.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestInteger(int n, int s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} s\n * @return {number}\n */\nvar largestInteger = function(n, s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:57.162Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.989Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.264Z"
 }

@@ -41,6 +41,18 @@
         "What are the possible cases for the answer ?",
         "The answer is the maximum between, the answer for k=1, the sum of the whole array multiplied by k, or the maximum suffix sum plus the maximum prefix sum plus (k-2) multiplied by the whole array sum for k > 1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kConcatenationMaxSum(vector<int>& arr, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} k\n * @return {number}\n */\nvar kConcatenationMaxSum = function(arr, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:28.796Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.602Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.581Z"
 }

@@ -45,6 +45,18 @@
         "<strong>2a (Counting).</strong> Let <code>total</code> be the number of equal adjacent pairs when the string is treated as circular, including the pair formed by its last and first characters.",
         "<strong>2b (Counting).</strong> Each rotation excludes exactly one circular adjacent pair. Its score is <code>total - 1</code> if the excluded pair has equal characters, and <code>total</code> otherwise."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countRotations(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar countRotations = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:01.986Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.985Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.345Z"
 }

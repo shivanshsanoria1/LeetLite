@@ -52,6 +52,18 @@
         "Sort the elements by starting time, then define the dp[i] as the maximum profit taking elements from the suffix starting at i.",
         "Use binarySearch (lower_bound/upper_bound on C++) to get the next index for the DP transition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} startTime\n * @param {number[]} endTime\n * @param {number[]} profit\n * @return {number}\n */\nvar jobScheduling = function(startTime, endTime, profit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:21.032Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.908Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.621Z"
 }

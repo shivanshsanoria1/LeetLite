@@ -69,6 +69,7 @@
         "Suppose you have a line covering two points, how can you quickly check if a third point is also covered by that line?",
         "Calculate the slope from the first point to the second point. If the slope from the first point to the third point is the same, then it is also covered by that line."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:06:10.012Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.107Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.714Z"
 }

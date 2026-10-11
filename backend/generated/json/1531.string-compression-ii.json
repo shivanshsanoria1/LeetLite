@@ -43,6 +43,18 @@
         "The state of the DP can be the current index and the remaining characters to delete.",
         "Having a prefix sum for each character can help you determine for a certain character c in some specific range, how many characters you need to delete to merge all occurrences of c in that range."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getLengthOfOptimalCompression(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar getLengthOfOptimalCompression = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:28.875Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.031Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.977Z"
 }

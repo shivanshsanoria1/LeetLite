@@ -42,6 +42,18 @@
         "Map the original numbers to new numbers by the mapping rule and sort the new numbers.",
         "To maintain the same relative order for equal mapped values, use the index in the original input array as a tiebreaker."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> sortJumbled(vector<int>& mapping, vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} mapping\n * @param {number[]} nums\n * @return {number[]}\n */\nvar sortJumbled = function(mapping, nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:41.850Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.213Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.791Z"
 }

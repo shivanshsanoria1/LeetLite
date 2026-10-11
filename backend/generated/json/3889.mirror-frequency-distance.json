@@ -43,6 +43,18 @@
     "hints": [
         "Simulate as described using two pointers"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mirrorFrequency(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar mirrorFrequency = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:55.079Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.829Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.158Z"
 }

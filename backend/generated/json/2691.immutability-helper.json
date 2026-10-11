@@ -35,6 +35,7 @@
         "Somehow, keep a tree structure that exists parallel to the original object. This will keep track of all the edits.",
         "When the mutator function is done. Return a clone with those mutations applied. It will be inefficient to clone the entire object so only clone the minimum number of nodes."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:41:09.710Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.362Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.484Z"
 }

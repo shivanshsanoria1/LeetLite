@@ -34,6 +34,13 @@
         "Inside the Array.prototype.last function body, you have access to the \"this\" keyword. \"this\" is equal to the contents of the array in this case.",
         "You can access elements in the array via this[0], this[1], etc. You can also access properties and method like this.length, this.forEach, etc."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @return {null|boolean|number|string|Array|Object}\n */\nArray.prototype.last = function() {\n    \n};\n\n/**\n * const arr = [1, 2, 3];\n * arr.last(); // 3\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:09.298Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.256Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.411Z"
 }

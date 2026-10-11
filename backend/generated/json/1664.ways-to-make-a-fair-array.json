@@ -39,6 +39,18 @@
         "The parity of the indices after the removed element changes.",
         "Calculate prefix sums for even and odd indices separately to calculate for each index in O(1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int waysToMakeFair(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar waysToMakeFair = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:38.496Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.311Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.438Z"
 }

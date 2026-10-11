@@ -49,6 +49,18 @@
         "The delta when switching task <code>i</code> from way 1 to way 2 is <code>reward2[i] - reward1[i]</code>.",
         "Sort deltas descending and apply the largest <code>n - k</code>; after each switch update the maximum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxPoints(vector<int>& technique1, vector<int>& technique2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} technique1\n * @param {number[]} technique2\n * @param {number} k\n * @return {number}\n */\nvar maxPoints = function(technique1, technique2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:24.535Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.140Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.987Z"
 }

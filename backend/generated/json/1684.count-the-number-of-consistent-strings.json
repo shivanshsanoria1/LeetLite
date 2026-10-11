@@ -54,6 +54,18 @@
         "A string is incorrect if it contains a character that is not allowed",
         "Constraints are small enough for brute force"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countConsistentStrings(string allowed, vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} allowed\n * @param {string[]} words\n * @return {number}\n */\nvar countConsistentStrings = function(allowed, words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:03.840Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.326Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.561Z"
 }

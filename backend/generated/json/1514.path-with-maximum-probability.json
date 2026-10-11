@@ -55,6 +55,18 @@
         "Take log probabilities to sum up numbers instead of multiplying them.",
         "Use Dijkstra's algorithm to find the minimum path between the two nodes after negating all costs."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start_node, int end_node) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} succProb\n * @param {number} start_node\n * @param {number} end_node\n * @return {number}\n */\nvar maxProbability = function(n, edges, succProb, start_node, end_node) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:05.007Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.990Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.946Z"
 }

@@ -57,6 +57,18 @@
         "It can be at most two. Why?",
         "Consider using Boyer-Moore Voting Algorithm, which is efficient for finding elements that appear more than a certain threshold."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> majorityElement(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar majorityElement = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:56:35.696Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.388Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.007Z"
 }

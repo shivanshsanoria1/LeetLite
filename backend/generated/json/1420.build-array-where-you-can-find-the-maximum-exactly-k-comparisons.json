@@ -40,6 +40,18 @@
         "Use dynamic programming approach. Build dp table where dp[a][b][c] is the number of ways you can start building the array starting from index a where the search_cost = c and the maximum used integer was b.",
         "Recursively, solve the small sub-problems first. Optimize your answer by stopping the search if you exceeded k changes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numOfArrays(int n, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number} k\n * @return {number}\n */\nvar numOfArrays = function(n, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:48.910Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.816Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.827Z"
 }

@@ -48,6 +48,18 @@
         "Use dynamic programming.",
         "Let <code>dp[i] = (max_i, min_i)</code>, where <code>max_i</code> is the maximum number of special indices you can make using the first <code>i</code> elements, and <code>min_i</code> is the minimum number of operations needed to achieve that."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minIncrease(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minIncrease = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:57.114Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.831Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.160Z"
 }

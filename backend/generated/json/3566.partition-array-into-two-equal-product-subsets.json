@@ -34,12 +34,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[3,1,6,8,4]\n24\n[2,5,3,7]\n15",
     "meta": {
         "quesIdLCBackend": 3843,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,1,6,8,4]\n24\n[2,5,3,7]\n15",
     "solution": {
         "canSeeDetail": false
     },
@@ -48,6 +48,18 @@
         "Try iterating over all subsets",
         "Use bitmasks"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkEqualPartitions(vector<int>& nums, long long target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {boolean}\n */\nvar checkEqualPartitions = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:01.173Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.566Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.568Z"
 }

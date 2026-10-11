@@ -39,6 +39,18 @@
         "Find a formula for the number of apples inside a square with a side length L.",
         "Iterate over the possible lengths of the square until enough apples are collected."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumPerimeter(long long neededApples) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} neededApples\n * @return {number}\n */\nvar minimumPerimeter = function(neededApples) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:11.461Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.789Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.054Z"
 }

@@ -56,6 +56,18 @@
         "For each query of type 2, we just need to check if <code>max(d[0], d[1], d[2], …d[x - sz]) > sz</code>.",
         "Use segment tree to maintain <code>d[x]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> getResults(vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar getResults = function(queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:58.973Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.998Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.093Z"
 }

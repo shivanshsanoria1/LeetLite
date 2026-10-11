@@ -47,6 +47,18 @@
     "hints": [
         "Maintain a sorted set of disjoint intervals.  addRange and removeRange can be performed with time complexity linear to the size of this set; queryRange can be performed with time complexity logarithmic to the size of this set."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class RangeModule {\npublic:\n    RangeModule() {\n        \n    }\n    \n    void addRange(int left, int right) {\n        \n    }\n    \n    bool queryRange(int left, int right) {\n        \n    }\n    \n    void removeRange(int left, int right) {\n        \n    }\n};\n\n/**\n * Your RangeModule object will be instantiated and called as such:\n * RangeModule* obj = new RangeModule();\n * obj->addRange(left,right);\n * bool param_2 = obj->queryRange(left,right);\n * obj->removeRange(left,right);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar RangeModule = function() {\n    \n};\n\n/** \n * @param {number} left \n * @param {number} right\n * @return {void}\n */\nRangeModule.prototype.addRange = function(left, right) {\n    \n};\n\n/** \n * @param {number} left \n * @param {number} right\n * @return {boolean}\n */\nRangeModule.prototype.queryRange = function(left, right) {\n    \n};\n\n/** \n * @param {number} left \n * @param {number} right\n * @return {void}\n */\nRangeModule.prototype.removeRange = function(left, right) {\n    \n};\n\n/** \n * Your RangeModule object will be instantiated and called as such:\n * var obj = new RangeModule()\n * obj.addRange(left,right)\n * var param_2 = obj.queryRange(left,right)\n * obj.removeRange(left,right)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:44.375Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.257Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.987Z"
 }

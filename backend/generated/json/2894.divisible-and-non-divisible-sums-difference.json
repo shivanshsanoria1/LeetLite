@@ -35,6 +35,18 @@
     "hints": [
         "With arithmetic progression we know that the sum of integers in the range <code>[1, n]</code> is <code>n * (n + 1) / 2 </code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int differenceOfSums(int n, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @return {number}\n */\nvar differenceOfSums = function(n, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:57.653Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.619Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.863Z"
 }

@@ -47,6 +47,18 @@
         "Do we have to consider only left half or right half of the string or both?",
         "Try to find the closest palindrome of these numbers- 12932, 99800, 12120. Did you observe something?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string nearestPalindromic(string n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} n\n * @return {string}\n */\nvar nearestPalindromic = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:08:35.389Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.005Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.689Z"
 }

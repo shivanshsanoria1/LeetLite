@@ -32,6 +32,7 @@
         "Without built-in methods, you need to figure out a way to call the function (this) from context object. That will associate \"this\" appropriately.",
         "You can create a new Symbol(). Attach the symbol to the context object and set the method to be \"this\". Then call the method on the symbol."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:42:01.014Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.406Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.560Z"
 }

@@ -44,6 +44,18 @@
         "If the name is not present in the map, you can use it without adding any suffixes.",
         "If the name is present in the map, append the smallest proper suffix, and add the new name to the map."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> getFolderNames(vector<string>& names) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} names\n * @return {string[]}\n */\nvar getFolderNames = function(names) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:23.943Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.969Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.914Z"
 }

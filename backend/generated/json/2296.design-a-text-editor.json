@@ -57,6 +57,18 @@
         "Can you think of a data structure that supports efficient removals/additions to the front/back?",
         "Try to solve the problem with two deques by maintaining the prefix and the suffix separately."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class TextEditor {\npublic:\n    TextEditor() {\n        \n    }\n    \n    void addText(string text) {\n        \n    }\n    \n    int deleteText(int k) {\n        \n    }\n    \n    string cursorLeft(int k) {\n        \n    }\n    \n    string cursorRight(int k) {\n        \n    }\n};\n\n/**\n * Your TextEditor object will be instantiated and called as such:\n * TextEditor* obj = new TextEditor();\n * obj->addText(text);\n * int param_2 = obj->deleteText(k);\n * string param_3 = obj->cursorLeft(k);\n * string param_4 = obj->cursorRight(k);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar TextEditor = function() {\n    \n};\n\n/** \n * @param {string} text\n * @return {void}\n */\nTextEditor.prototype.addText = function(text) {\n    \n};\n\n/** \n * @param {number} k\n * @return {number}\n */\nTextEditor.prototype.deleteText = function(k) {\n    \n};\n\n/** \n * @param {number} k\n * @return {string}\n */\nTextEditor.prototype.cursorLeft = function(k) {\n    \n};\n\n/** \n * @param {number} k\n * @return {string}\n */\nTextEditor.prototype.cursorRight = function(k) {\n    \n};\n\n/** \n * Your TextEditor object will be instantiated and called as such:\n * var obj = new TextEditor()\n * obj.addText(text)\n * var param_2 = obj.deleteText(k)\n * var param_3 = obj.cursorLeft(k)\n * var param_4 = obj.cursorRight(k)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:46.080Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.395Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.012Z"
 }

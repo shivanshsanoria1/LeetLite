@@ -64,6 +64,18 @@
         "Use topological sort.",
         "let dp[u][c] := the maximum count of vertices with color c of any path starting from vertex u. (by JerryJin2905)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestPathValue(string colors, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} colors\n * @param {number[][]} edges\n * @return {number}\n */\nvar largestPathValue = function(colors, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:10.551Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.518Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.899Z"
 }

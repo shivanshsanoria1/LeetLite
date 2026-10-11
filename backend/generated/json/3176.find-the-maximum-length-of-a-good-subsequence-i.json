@@ -47,6 +47,18 @@
         "Let <code>dp[i][j]</code> be the length of the longest subsequence till index <code>j</code> with at most <code>i</code> positions such that <code>seq[i] != seq[i + 1]</code>.",
         "For each value <code>x</code> from left to right, update <code>dp[i][x] = max(dp[i][x] + 1, dp[i - 1][y] + 1)</code>, where <code>y != x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumLength(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumLength = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:11.062Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.018Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.214Z"
 }

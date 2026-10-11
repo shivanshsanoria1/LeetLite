@@ -47,6 +47,18 @@
         "What will be the value of array sum if we remove the outlier from it?",
         "Use hashmap to find occurrence of an element quickly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getLargestOutlier(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar getLargestOutlier = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:43.088Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.283Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.326Z"
 }

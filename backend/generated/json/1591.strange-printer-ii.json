@@ -54,6 +54,18 @@
     "hints": [
         "Try thinking in reverse. Given the grid, how can you tell if a colour was painted last?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPrintable(vector<vector<int>>& targetGrid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} targetGrid\n * @return {boolean}\n */\nvar isPrintable = function(targetGrid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:48.333Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.167Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.122Z"
 }

@@ -45,6 +45,18 @@
         "Use a Fenwick tree (BIT) to maintain counts of the numbers.",
         "When adding an element at the back, query how many elements are larger than it; when deleting an element from the front, query how many elements are smaller and update the tree accordingly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minInversionCount(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minInversionCount = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:26.118Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.145Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.988Z"
 }

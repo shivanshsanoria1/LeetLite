@@ -51,6 +51,18 @@
         "For each string from words calculate the leading count and store it in an array, then sort the integer array.",
         "For each string from queries calculate the leading count \"p\" and in base of the sorted array calculated on the step 1 do a binary search to count the number of items greater than \"p\"."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numSmallerByFrequency(vector<string>& queries, vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} queries\n * @param {string[]} words\n * @return {number[]}\n */\nvar numSmallerByFrequency = function(queries, words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:07.397Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.530Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.560Z"
 }

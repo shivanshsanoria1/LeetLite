@@ -41,6 +41,18 @@
     "hints": [
         "Find the minimum and maximum coordinates of a cell with a value of 1 in both directions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumArea(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minimumArea = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:26.017Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.034Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.298Z"
 }

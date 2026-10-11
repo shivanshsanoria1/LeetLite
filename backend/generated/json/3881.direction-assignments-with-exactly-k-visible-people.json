@@ -43,6 +43,18 @@
         "Each chosen left person must pick <code>L</code>, each chosen right person must pick <code>R</code>, and every other person can pick either direction.",
         "Sum over all valid <code>i</code>, multiplying the two binomial choices and the free choices for the remaining people."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countVisiblePeople(int n, int pos, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} pos\n * @param {number} k\n * @return {number}\n */\nvar countVisiblePeople = function(n, pos, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:45.251Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.823Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.150Z"
 }

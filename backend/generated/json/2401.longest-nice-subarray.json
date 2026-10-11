@@ -55,6 +55,18 @@
         "What is the maximum possible length of a nice subarray?",
         "If two numbers have bitwise AND equal to zero, they do not have any common set bit. A number <code>x <= 10<sup>9</sup></code> only has 30 bits, hence the length of the longest nice subarray cannot exceed 30."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestNiceSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestNiceSubarray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:11.273Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.485Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.139Z"
 }

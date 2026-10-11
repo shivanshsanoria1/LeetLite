@@ -36,6 +36,18 @@
     "hints": [
         "Count the total number of spaces and words. Then use the integer division to determine the numbers of spaces to add between each word and at the end."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string reorderSpaces(string text) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} text\n * @return {string}\n */\nvar reorderSpaces = function(text) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:49.357Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.168Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.123Z"
 }

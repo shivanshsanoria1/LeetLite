@@ -43,6 +43,18 @@
         "For each square, know how many ones are up, left, down, and right of this square. You can find it in O(N^2) using dynamic programming.",
         "Now for each square ( O(N^3) ), we can evaluate whether that square is 1-bordered in O(1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largest1BorderedSquare(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar largest1BorderedSquare = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:31.858Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.316Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.516Z"
 }

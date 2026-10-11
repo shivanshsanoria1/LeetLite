@@ -50,6 +50,18 @@
         "Keep track of the engineers by their efficiency in decreasing order.",
         "Starting from one engineer, to build a team, it suffices to bring K-1 more engineers who have higher efficiencies as well as high speeds."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxPerformance(int n, vector<int>& speed, vector<int>& efficiency, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} speed\n * @param {number[]} efficiency\n * @param {number} k\n * @return {number}\n */\nvar maxPerformance = function(n, speed, efficiency, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:00.378Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.786Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.796Z"
 }

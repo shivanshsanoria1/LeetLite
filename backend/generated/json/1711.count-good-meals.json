@@ -43,6 +43,18 @@
         "Note that the number of powers of 2 is at most 21 so this turns the problem to a classic find the number of pairs that sum to a certain value but for 21 values",
         "You need to use something fasters than the NlogN approach since there is already the log of iterating over the powers so one idea is two pointers"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPairs(vector<int>& deliciousness) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} deliciousness\n * @return {number}\n */\nvar countPairs = function(deliciousness) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:34.101Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.348Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.631Z"
 }

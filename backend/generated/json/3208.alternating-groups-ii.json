@@ -40,6 +40,18 @@
         "Try to find a tile that has the same color as its next tile (if it exists).",
         "Then try to find maximal alternating groups by starting a single for loop from that tile."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfAlternatingGroups(vector<int>& colors, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} colors\n * @param {number} k\n * @return {number}\n */\nvar numberOfAlternatingGroups = function(colors, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:35.957Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.043Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.370Z"
 }

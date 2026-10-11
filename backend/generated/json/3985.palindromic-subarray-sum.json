@@ -53,6 +53,18 @@
         "<p><strong>2c (Binary Search + Hashing).</strong> After finding the largest radius for a center, use prefix sums to get the sum of that palindromic subarray in constant time.</p>",
         "<p><strong>2d (Binary Search + Hashing).</strong> Take the maximum sum over all centers.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long getSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar getSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:39.953Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.976Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.247Z"
 }

@@ -48,6 +48,18 @@
         "You can try all combinations and keep mask of characters you have.",
         "You can use DP."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxLength(vector<string>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} arr\n * @return {number}\n */\nvar maxLength = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:26.347Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.921Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.624Z"
 }

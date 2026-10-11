@@ -48,6 +48,18 @@
         "The condition for a valid triangle is that for any two sides, the sum of their lengths must be greater than the third side.",
         "Simply count the number of unique edge lengths after checking it’s a valid triangle."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string triangleType(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {string}\n */\nvar triangleType = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:43.943Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.772Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.367Z"
 }

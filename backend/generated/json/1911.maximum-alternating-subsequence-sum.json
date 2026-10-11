@@ -43,6 +43,18 @@
         "Is only tracking a single sum enough to solve the problem?",
         "How does tracking an odd sum and an even sum reduce the number of states?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    long long maxAlternatingSum(vector<int>& nums) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number[]} nums\r\n * @return {number}\r\n */\r\nvar maxAlternatingSum = function(nums) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:37.043Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.729Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.954Z"
 }

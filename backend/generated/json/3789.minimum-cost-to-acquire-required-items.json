@@ -41,6 +41,18 @@
         "For the remaining type 1 requirement <code>rem1</code>, use cost <code>min(costBoth, cost1)</code> for the rest.",
         "Do the same for type 2, using cost <code>min(costBoth, cost2)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumCost(int cost1, int cost2, int costBoth, int need1, int need2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} cost1\n * @param {number} cost2\n * @param {number} costBoth\n * @param {number} need1\n * @param {number} need2\n * @return {number}\n */\nvar minimumCost = function(cost1, cost2, costBoth, need1, need2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:51.772Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.277Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.028Z"
 }

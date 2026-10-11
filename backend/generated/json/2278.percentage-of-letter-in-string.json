@@ -37,6 +37,18 @@
         "Can we count the number of occurrences of letter in s?",
         "Recall that the percentage is calculated as (occurrences / total) * 100."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int percentageLetter(string s, char letter) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {character} letter\n * @return {number}\n */\nvar percentageLetter = function(s, letter) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:31.127Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.326Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.994Z"
 }

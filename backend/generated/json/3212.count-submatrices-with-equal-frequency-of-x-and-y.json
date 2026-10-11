@@ -48,6 +48,18 @@
         "You need to find how many submatrices <code>grid[0..x][0..y]</code> have a sum of 0 and at least one <code>’X’</code>.",
         "Use prefix sum to calculate submatrices sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfSubmatrices(vector<vector<char>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nvar numberOfSubmatrices = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:38.866Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.048Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.396Z"
 }

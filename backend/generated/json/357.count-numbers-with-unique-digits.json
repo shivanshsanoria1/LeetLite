@@ -49,6 +49,18 @@
         "Let f(k) = count of numbers with unique digits with length equals k.",
         "f(1) = 10, ..., f(k) = 9 * 9 * 8 * ... (9 - k + 2) [The first factor is 9 because a number cannot start with 0]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countNumbersWithUniqueDigits(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countNumbersWithUniqueDigits = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:58:28.553Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.569Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.574Z"
 }

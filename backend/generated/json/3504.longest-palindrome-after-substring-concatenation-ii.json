@@ -32,12 +32,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "\"a\"\n\"a\"\n\"abc\"\n\"def\"\n\"b\"\n\"aaaa\"\n\"abcde\"\n\"ecdba\"",
     "meta": {
         "quesIdLCBackend": 3808,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"a\"\n\"a\"\n\"abc\"\n\"def\"\n\"b\"\n\"aaaa\"\n\"abcde\"\n\"ecdba\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -49,6 +49,18 @@
         "If <code>s[i] != t[j]</code>, then <code>dp[i][j] = max(p[i], q[j])</code>.",
         "Otherwise, <code>dp[i][j] = max(p[i], q[j], 2 + dp[i + 1][j - 1])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestPalindrome(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar longestPalindrome = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:49.065Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.493Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.527Z"
 }

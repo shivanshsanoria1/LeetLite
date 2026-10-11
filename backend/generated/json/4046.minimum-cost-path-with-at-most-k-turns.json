@@ -55,6 +55,18 @@
         "<strong>2a (Dijkstra).</strong> Treat each combination of cell, last move direction, and number of turns used as a shortest-path state. A move costs the value of the destination cell.",
         "<strong>2b (Dijkstra).</strong> Changing direction adds one turn, while the first move adds none. Start with cost <code>grid[0][0]</code>, discard states using more than <code>k</code> turns, and run Dijkstra's algorithm."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<vector<int>>& grid, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number}\n */\nvar minCost = function(grid, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:05.297Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.986Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.346Z"
 }

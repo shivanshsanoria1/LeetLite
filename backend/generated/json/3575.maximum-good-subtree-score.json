@@ -42,12 +42,12 @@
             "slug": "bitmask"
         }
     ],
-    "exampleTestcases": "[2,3]\n[-1,0]\n[1,5,2]\n[-1,0,0]\n[34,1,2]\n[-1,0,1]\n[3,22,5]\n[-1,0,1]",
     "meta": {
         "quesIdLCBackend": 3875,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,3]\n[-1,0]\n[1,5,2]\n[-1,0,0]\n[34,1,2]\n[-1,0,1]\n[3,22,5]\n[-1,0,1]",
     "solution": {
         "canSeeDetail": false
     },
@@ -56,6 +56,18 @@
         "Use tree dynamic programming.",
         "Use bits (integer) to represent which digits are used."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int goodSubtreeSum(vector<int>& vals, vector<int>& par) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} vals\n * @param {number[]} par\n * @return {number}\n */\nvar goodSubtreeSum = function(vals, par) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:09.161Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.572Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.578Z"
 }

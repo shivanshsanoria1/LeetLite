@@ -50,6 +50,7 @@
         "Do you notice a pattern after sorting the peaks by their x-coordinates?",
         "After sorting, process the peaks sequentially and use a monotonic stack to store currently visible mountains."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:23:25.979Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.435Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.082Z"
 }

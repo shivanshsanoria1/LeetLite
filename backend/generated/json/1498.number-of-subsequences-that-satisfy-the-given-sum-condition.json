@@ -53,6 +53,18 @@
         "Use two pointers approach: Given an index i (choose it as the minimum in a subsequence) find the maximum j where j ≥ i and nums[i] +nums[j] ≤ target.",
         "Count the number of subsequences."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numSubseq(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar numSubseq = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:45.603Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.980Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.922Z"
 }

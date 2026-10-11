@@ -47,6 +47,18 @@
     "hints": [
         "Try to build the string with a backtracking DFS by considering what you can put in every position."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numTilePossibilities(string tiles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} tiles\n * @return {number}\n */\nvar numTilePossibilities = function(tiles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:38.423Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.084Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.380Z"
 }

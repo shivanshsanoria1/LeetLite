@@ -51,6 +51,18 @@
         "If we replace all occurrences of the first character by +1 and those of the second character by -1, can we efficiently calculate the largest possible variance of a string with only two distinct characters?",
         "Now, try finding the optimal answer by taking all possible pairs of characters into consideration."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int largestVariance(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar largestVariance = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:25.907Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.320Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.988Z"
 }

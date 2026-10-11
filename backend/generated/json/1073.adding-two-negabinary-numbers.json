@@ -38,6 +38,18 @@
     "hints": [
         "We can try to determine the last digit of the answer, then divide everything by 2 and repeat."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> addNegabinary(vector<int>& arr1, vector<int>& arr2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr1\n * @param {number[]} arr2\n * @return {number[]}\n */\nvar addNegabinary = function(arr1, arr2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:34.500Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.078Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.376Z"
 }

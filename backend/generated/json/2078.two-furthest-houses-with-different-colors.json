@@ -44,6 +44,18 @@
         "The constraints are small. Can you try the combination of every two houses?",
         "Greedily, the maximum distance will come from either the pair of the leftmost house and possibly some house on the right with a different color, or the pair of the rightmost house and possibly some house on the left with a different color."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDistance(vector<int>& colors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} colors\n * @return {number}\n */\nvar maxDistance = function(colors) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:03.474Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.994Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.477Z"
 }

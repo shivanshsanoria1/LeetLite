@@ -52,6 +52,18 @@
         "If you were given an integer array where each element is the number of security devices on each row, can you solve it?",
         "Convert the input to such an array, skip any row with no security device, then find the sum of the product between adjacent elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfBeams(vector<string>& bank) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} bank\n * @return {number}\n */\nvar numberOfBeams = function(bank) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:40.939Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.083Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.668Z"
 }

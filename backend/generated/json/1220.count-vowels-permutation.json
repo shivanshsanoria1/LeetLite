@@ -39,6 +39,18 @@
         "Let dp[i][j] be the number of strings of length i that ends with the j-th vowel.",
         "Deduce the recurrence from the given relations between vowels."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countVowelPermutation(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countVowelPermutation = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:04.637Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.827Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.608Z"
 }

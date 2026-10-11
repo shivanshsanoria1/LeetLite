@@ -56,6 +56,18 @@
         "Actually, if it's equal, then there is not exactly 1 way, because they can be swapped.",
         "Recursively, given a set of nodes, get the node with the most pairs, then this must be a root and have no parents in the current set of nodes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int checkWays(vector<vector<int>>& pairs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} pairs\n * @return {number}\n */\nvar checkWays = function(pairs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:42.982Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.353Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.644Z"
 }

@@ -38,6 +38,18 @@
         "Calculate the number of good strings with length less or equal to some constant x.",
         "Apply dynamic programming using the group size of consecutive zeros and ones."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} low\n * @param {number} high\n * @param {number} zero\n * @param {number} one\n * @return {number}\n */\nvar countGoodStrings = function(low, high, zero, one) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:03.700Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.696Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.227Z"
 }

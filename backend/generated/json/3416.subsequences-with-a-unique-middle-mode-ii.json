@@ -36,12 +36,12 @@
             "slug": "combinatorics"
         }
     ],
-    "exampleTestcases": "[1,1,1,1,1,1]\n[1,2,2,3,3,4]\n[0,1,2,3,4,5,6,7,8]",
     "meta": {
         "quesIdLCBackend": 3756,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,1,1,1,1,1]\n[1,2,2,3,3,4]\n[0,1,2,3,4,5,6,7,8]",
     "solution": {
         "canSeeDetail": false
     },
@@ -49,6 +49,7 @@
     "hints": [
         "Use the Inclusion-Exclusion Principle to account for the different cases of having a unique middle mode."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:51:22.197Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.366Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.383Z"
 }

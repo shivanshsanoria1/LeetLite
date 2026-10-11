@@ -44,6 +44,18 @@
         "If a student with <code>nums[i] = x</code> is not selected, all the students with <code>nums[j] >= x</code> must not be selected.",
         "Sort values in <code>nums</code> and try all possible values for <code>x</code> from <code>0</code> to <code>n</code> separately."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countWays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countWays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:26.944Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.597Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.809Z"
 }

@@ -52,6 +52,18 @@
         "Think how GCD of (x, y) is affected if we apply the first two operations.",
         "How can we check if we can reach (1, 1) using the GCD value calculate above?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isReachable(int targetX, int targetY) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} targetX\n * @param {number} targetY\n * @return {boolean}\n */\nvar isReachable = function(targetX, targetY) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:04.993Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.128Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.333Z"
 }

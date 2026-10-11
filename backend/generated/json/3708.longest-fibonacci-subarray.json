@@ -22,12 +22,12 @@
             "slug": "array"
         }
     ],
-    "exampleTestcases": "[1,1,1,1,2,3,5,1]\n[5,2,7,9,16]\n[1000000000,1000000000,1000000000]",
     "meta": {
         "quesIdLCBackend": 4003,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,1,1,1,2,3,5,1]\n[5,2,7,9,16]\n[1000000000,1000000000,1000000000]",
     "solution": {
         "canSeeDetail": false
     },
@@ -37,6 +37,18 @@
         "If <code>a[i] == a[i - 1] + a[i - 2]</code>, extend; otherwise reset length to 2.",
         "Track the maximum length during one pass."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSubarray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:23:32.019Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.734Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.874Z"
 }

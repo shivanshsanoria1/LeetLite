@@ -49,6 +49,18 @@
         "Think of the final answer as a sum of weights with + or - sign symbols infront of each weight.  Actually, all sums with 1 of each sign symbol are possible.",
         "Use dynamic programming: for every possible sum with N stones, those sums +x or -x is possible with N+1 stones, where x is the value of the newest stone.  (This overcounts sums that are all positive or all negative, but those don't matter.)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int lastStoneWeightII(vector<int>& stones) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} stones\n * @return {number}\n */\nvar lastStoneWeightII = function(stones) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:16.910Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.992Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.345Z"
 }

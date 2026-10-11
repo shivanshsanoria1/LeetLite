@@ -60,6 +60,18 @@
         "Note that the value of each <code>node <= 10<sup>4</sup></code>, so when <code>t >= 14</code> <code>dp[x][t]</code> is always <code>0</code>.",
         "General equation will be: <code>dp[x][t] = max((coins[x] >> t) - k + sigma(dp[y][t]), (coins[x] >> (t + 1)) + sigma(dp[y][t + 1]))</code> where nodes denoted by <code>y</code> in the sigma, are the direct children of node <code>x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumPoints(vector<vector<int>>& edges, vector<int>& coins, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @param {number[]} coins\n * @param {number} k\n * @return {number}\n */\nvar maximumPoints = function(edges, coins, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:18.442Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.636Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.912Z"
 }

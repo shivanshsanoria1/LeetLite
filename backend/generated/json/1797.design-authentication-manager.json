@@ -49,6 +49,18 @@
         "When renewing a token, check if it's on the map and has not expired yet. If so, update its expiry time.",
         "To count unexpired tokens, iterate on the map and check for each token if it's not expired yet."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class AuthenticationManager {\npublic:\n    AuthenticationManager(int timeToLive) {\n        \n    }\n    \n    void generate(string tokenId, int currentTime) {\n        \n    }\n    \n    void renew(string tokenId, int currentTime) {\n        \n    }\n    \n    int countUnexpiredTokens(int currentTime) {\n        \n    }\n};\n\n/**\n * Your AuthenticationManager object will be instantiated and called as such:\n * AuthenticationManager* obj = new AuthenticationManager(timeToLive);\n * obj->generate(tokenId,currentTime);\n * obj->renew(tokenId,currentTime);\n * int param_3 = obj->countUnexpiredTokens(currentTime);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} timeToLive\n */\nvar AuthenticationManager = function(timeToLive) {\n    \n};\n\n/** \n * @param {string} tokenId \n * @param {number} currentTime\n * @return {void}\n */\nAuthenticationManager.prototype.generate = function(tokenId, currentTime) {\n    \n};\n\n/** \n * @param {string} tokenId \n * @param {number} currentTime\n * @return {void}\n */\nAuthenticationManager.prototype.renew = function(tokenId, currentTime) {\n    \n};\n\n/** \n * @param {number} currentTime\n * @return {number}\n */\nAuthenticationManager.prototype.countUnexpiredTokens = function(currentTime) {\n    \n};\n\n/** \n * Your AuthenticationManager object will be instantiated and called as such:\n * var obj = new AuthenticationManager(timeToLive)\n * obj.generate(tokenId,currentTime)\n * obj.renew(tokenId,currentTime)\n * var param_3 = obj.countUnexpiredTokens(currentTime)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:10.152Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.480Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.786Z"
 }

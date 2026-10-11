@@ -55,6 +55,18 @@
         "Reduce the sum of squared difference greedily. One operation of k should use the index that has the current maximum difference.",
         "Binary search the maximum difference for the final result."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minSumSquareDiff(vector<int>& nums1, vector<int>& nums2, int k1, int k2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k1\n * @param {number} k2\n * @return {number}\n */\nvar minSumSquareDiff = function(nums1, nums2, k1, k2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:16.902Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.425Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.052Z"
 }

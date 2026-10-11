@@ -47,6 +47,18 @@
         "Binary search the answer.",
         "In each step of the binary search you should calculate the number of the set bits in the <code>i<sup>th</sup></code> position. Then calculate the sum of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long findMaximumNumber(long long k, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @param {number} x\n * @return {number}\n */\nvar findMaximumNumber = function(k, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:30.630Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.760Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.313Z"
 }

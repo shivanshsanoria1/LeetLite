@@ -54,6 +54,18 @@
     "hints": [
         "We want to always choose the most common or second most common element to write next.  What data structure allows us to query this effectively?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> rearrangeBarcodes(vector<int>& barcodes) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} barcodes\n * @return {number[]}\n */\nvar rearrangeBarcodes = function(barcodes) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:20.642Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.004Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.352Z"
 }

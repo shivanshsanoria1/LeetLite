@@ -50,6 +50,18 @@
         "Test your design with call order of <code>peek()</code> before <code>next()</code> vs <code>next()</code> before <code>peek()</code>.",
         "For a clean implementation, check out <a href=\"https://github.com/google/guava/blob/703ef758b8621cfbab16814f01ddcc5324bdea33/guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/Iterators.java#L1125\" target=\"_blank\">Google's guava library source code</a>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/*\n * Below is the interface for Iterator, which is already defined for you.\n * **DO NOT** modify the interface for Iterator.\n *\n *  class Iterator {\n *\t\tstruct Data;\n * \t\tData* data;\n *  public:\n *\t\tIterator(const vector<int>& nums);\n * \t\tIterator(const Iterator& iter);\n *\n * \t\t// Returns the next element in the iteration.\n *\t\tint next();\n *\n *\t\t// Returns true if the iteration has more elements.\n *\t\tbool hasNext() const;\n *\t};\n */\n\nclass PeekingIterator : public Iterator {\npublic:\n\tPeekingIterator(const vector<int>& nums) : Iterator(nums) {\n\t    // Initialize any member here.\n\t    // **DO NOT** save a copy of nums and manipulate it directly.\n\t    // You should only use the Iterator interface methods.\n\t    \n\t}\n\t\n    // Returns the next element in the iteration without advancing the iterator.\n\tint peek() {\n        \n\t}\n\t\n\t// hasNext() and next() should behave the same as in the Iterator interface.\n\t// Override them if needed.\n\tint next() {\n\t    \n\t}\n\t\n\tbool hasNext() const {\n\t    \n\t}\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * // This is the Iterator's API interface.\n * // You should not implement it, or speculate about its implementation.\n * function Iterator() {\n *    @ return {number}\n *    this.next = function() { // return the next number of the iterator\n *       ...\n *    }; \n *\n *    @return {boolean}\n *    this.hasNext = function() { // return true if it still has numbers\n *       ...\n *    };\n * };\n */\n\n/**\n * @param {Iterator} iterator\n */\nvar PeekingIterator = function(iterator) {\n    \n};\n\n/**\n * @return {number}\n */\nPeekingIterator.prototype.peek = function() {\n    \n};\n\n/**\n * @return {number}\n */\nPeekingIterator.prototype.next = function() {\n    \n};\n\n/**\n * @return {boolean}\n */\nPeekingIterator.prototype.hasNext = function() {\n    \n};\n\n/** \n * Your PeekingIterator object will be instantiated and called as such:\n * var obj = new PeekingIterator(arr)\n * var param_1 = obj.peek()\n * var param_2 = obj.next()\n * var param_3 = obj.hasNext()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:27.697Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.584Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.768Z"
 }

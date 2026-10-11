@@ -34,6 +34,18 @@
     "hints": [
         "You need to check at most 2 characters to determine which character comes next."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string interpret(string command) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} command\n * @return {string}\n */\nvar interpret = function(command) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:55.260Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.321Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.523Z"
 }

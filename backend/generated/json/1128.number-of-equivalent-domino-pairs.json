@@ -44,6 +44,18 @@
         "For each domino j, find the number of dominoes you've already seen (dominoes i with i < j) that are equivalent.",
         "You can keep track of what you've seen using a hashmap."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numEquivDominoPairs(vector<vector<int>>& dominoes) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} dominoes\n * @return {number}\n */\nvar numEquivDominoPairs = function(dominoes) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:18.235Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.287Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.466Z"
 }

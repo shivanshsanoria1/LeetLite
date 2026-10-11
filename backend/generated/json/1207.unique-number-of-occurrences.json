@@ -40,6 +40,18 @@
         "Find the number of occurrences of each element in the array using a hash map.",
         "Iterate through the hash map and check if there is a repeated value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool uniqueOccurrences(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {boolean}\n */\nvar uniqueOccurrences = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:45.385Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.653Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.593Z"
 }

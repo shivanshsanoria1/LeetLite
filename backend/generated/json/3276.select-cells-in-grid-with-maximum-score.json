@@ -51,6 +51,18 @@
         "Sort all the cells in the grid by their values and keep track of their original positions.",
         "Try dynamic programming with the following states: the current cell that we might select and a bitmask representing all the rows from which we have already selected a cell so far."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maxScore = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:29.228Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.099Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.871Z"
 }

@@ -47,6 +47,7 @@
     "hints": [
         "Two words w1 and w2 are similar if and only if w1 == w2, (w1, w2) was a pair, or (w2, w1) was a pair."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:15:57.808Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.276Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.021Z"
 }

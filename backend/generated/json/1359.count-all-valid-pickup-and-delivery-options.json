@@ -43,6 +43,18 @@
     "hints": [
         "Use the permutation and combination theory to add one (P, D) pair each time until n pairs."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countOrders(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countOrders = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:24.816Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.722Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.763Z"
 }

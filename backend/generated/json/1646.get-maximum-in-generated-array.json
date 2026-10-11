@@ -41,6 +41,18 @@
         "Try generating the array.",
         "Make sure not to fall in the base case of 0."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getMaximumGenerated(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar getMaximumGenerated = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:21.702Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.297Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.304Z"
 }

@@ -47,6 +47,18 @@
         "Find the dominant element of nums by using a hashmap to maintain element frequency, we denote the dominant element as x and its frequency as f.",
         "For each index in [0, n - 2], calculate f1, x’s frequency in the subarray [0, i] when looping the index. And f2, x’s frequency in the subarray [i + 1, n - 1] which is equal to f - f1. Then we can check whether x is dominant in both subarrays."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumIndex(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumIndex = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:22.620Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.425Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.588Z"
 }

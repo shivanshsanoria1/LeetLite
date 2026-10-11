@@ -47,6 +47,18 @@
         "What data structure do you need to use for this problem?",
         "Try using a Hash map, each table name will be the key, and the value will be an array of all rows."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class SQL {\npublic:\n    SQL(vector<string>& names, vector<int>& columns) {\n        \n    }\n    \n    bool ins(string name, vector<string> row) {\n        \n    }\n    \n    void rmv(string name, int rowId) {\n        \n    }\n    \n    string sel(string name, int rowId, int columnId) {\n        \n    }\n    \n    vector<string> exp(string name) {\n        \n    }\n};\n\n/**\n * Your SQL object will be instantiated and called as such:\n * SQL* obj = new SQL(names, columns);\n * bool param_1 = obj->ins(name,row);\n * obj->rmv(name,rowId);\n * string param_3 = obj->sel(name,rowId,columnId);\n * vector<string> param_4 = obj->exp(name);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} names\n * @param {number[]} columns\n */\nvar SQL = function(names, columns) {\n    \n};\n\n/** \n * @param {string} name \n * @param {string[]} row\n * @return {boolean}\n */\nSQL.prototype.ins = function(name, row) {\n    \n};\n\n/** \n * @param {string} name \n * @param {number} rowId\n * @return {void}\n */\nSQL.prototype.rmv = function(name, rowId) {\n    \n};\n\n/** \n * @param {string} name \n * @param {number} rowId \n * @param {number} columnId\n * @return {string}\n */\nSQL.prototype.sel = function(name, rowId, columnId) {\n    \n};\n\n/** \n * @param {string} name\n * @return {string[]}\n */\nSQL.prototype.exp = function(name) {\n    \n};\n\n/** \n * Your SQL object will be instantiated and called as such:\n * var obj = new SQL(names, columns)\n * var param_1 = obj.ins(name,row)\n * obj.rmv(name,rowId)\n * var param_3 = obj.sel(name,rowId,columnId)\n * var param_4 = obj.exp(name)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:16.907Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.537Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.153Z"
 }

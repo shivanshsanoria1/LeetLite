@@ -51,6 +51,18 @@
         "We can count the occurrences of each digit and build the palindrome starting from the ends. Starting from the larger digits, if there are still at least 2 occurrences of a digit, we can place these digits on each side.",
         "Make sure to consider the special case for the center digit (if any) and zeroes. There should not be leading zeroes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string largestPalindromic(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {string}\n */\nvar largestPalindromic = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:57.961Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.469Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.121Z"
 }

@@ -49,6 +49,18 @@
         "How can you ensure that the intervals present in the set are non-overlapping? Try merging the overlapping intervals whenever a new interval is added.",
         "How can you update the count of integers present in at least one interval when a new interval is added to the set?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class CountIntervals {\npublic:\n    CountIntervals() {\n        \n    }\n    \n    void add(int left, int right) {\n        \n    }\n    \n    int count() {\n        \n    }\n};\n\n/**\n * Your CountIntervals object will be instantiated and called as such:\n * CountIntervals* obj = new CountIntervals();\n * obj->add(left,right);\n * int param_2 = obj->count();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar CountIntervals = function() {\n    \n};\n\n/** \n * @param {number} left \n * @param {number} right\n * @return {void}\n */\nCountIntervals.prototype.add = function(left, right) {\n    \n};\n\n/**\n * @return {number}\n */\nCountIntervals.prototype.count = function() {\n    \n};\n\n/** \n * Your CountIntervals object will be instantiated and called as such:\n * var obj = new CountIntervals()\n * obj.add(left,right)\n * var param_2 = obj.count()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:29.592Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.324Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.992Z"
 }

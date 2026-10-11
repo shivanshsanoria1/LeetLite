@@ -51,6 +51,18 @@
         "You can iteratively find k sets and remove them from array until it becomes empty.",
         "Failure to do so would mean that array is unsplittable."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPossibleDivide(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar isPossibleDivide = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:57.795Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.285Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.689Z"
 }

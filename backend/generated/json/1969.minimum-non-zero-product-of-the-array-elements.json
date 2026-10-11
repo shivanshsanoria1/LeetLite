@@ -43,6 +43,18 @@
         "Try to minimize each element by swapping bits with any of the elements after it.",
         "If you swap out all the 1s in some element, this will lead to a product of zero."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minNonZeroProduct(int p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} p\n * @return {number}\n */\nvar minNonZeroProduct = function(p) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:23.526Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.800Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.085Z"
 }

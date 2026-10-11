@@ -32,12 +32,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n2\n10\n[0,2,3]\n-5\n12\n[2,2,3,3]\n0\n9",
     "meta": {
         "quesIdLCBackend": 3777,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n2\n10\n[0,2,3]\n-5\n12\n[2,2,3,3]\n0\n9",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
         "Save all possible products with a particular sum.",
         "Handle the case where a subsequence has a product of <code>0</code> and an alternating sum of <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxProduct(vector<int>& nums, int k, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} limit\n * @return {number}\n */\nvar maxProduct = function(nums, k, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:53.779Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.496Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.531Z"
 }

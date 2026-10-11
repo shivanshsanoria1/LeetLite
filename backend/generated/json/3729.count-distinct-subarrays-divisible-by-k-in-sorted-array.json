@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n3\n[2,2,2,2,2,2]\n6",
     "meta": {
         "quesIdLCBackend": 4063,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n3\n[2,2,2,2,2,2]\n6",
     "solution": {
         "canSeeDetail": false
     },
@@ -45,6 +45,18 @@
         "Any subarray with >= 2 distinct values has a unique strict-increase boundary <code>(i, j)</code>, so the value sequence is identified by that boundary and how many elements you take from each edge.",
         "Count single-value sequences per run by testing <code>(L*val) % k == 0</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numGoodSubarrays(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar numGoodSubarrays = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-20T08:56:08.093Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.846Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.916Z"
 }

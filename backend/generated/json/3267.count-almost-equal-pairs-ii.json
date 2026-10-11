@@ -53,6 +53,18 @@
         "For each element, find all possible integers we can get by applying the operations.",
         "Store the frequencies of all the integers in a hashmap."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:21.750Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.092Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.800Z"
 }

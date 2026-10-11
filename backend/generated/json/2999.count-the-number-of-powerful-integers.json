@@ -48,6 +48,18 @@
         "Let <code>dp[i][j]</code> be the number of integers that have <code>i</code> digits (with allowed leading 0s) and <code>j</code> refers to the comparison between the current number and the prefix of <code>x</code>, <code>j == 0</code> if the i-digit number formed currently is identical to the leftmost <code>i</code> digits of <code>x</code>, else if <code>j ==1</code> it means the i-digit number is smaller than the leftmost <code>i</code> digits of <code>x</code>.",
         "The answer is <code>count[finish] - count[start - 1]</code>, where <code>count[i]</code> refers to the number of powerful integers in the range <code>[1..i]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numberOfPowerfulInt(long long start, long long finish, int limit, string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} start\n * @param {number} finish\n * @param {number} limit\n * @param {string} s\n * @return {number}\n */\nvar numberOfPowerfulInt = function(start, finish, limit, s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:23.488Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.751Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.239Z"
 }

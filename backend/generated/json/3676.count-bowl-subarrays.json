@@ -30,12 +30,12 @@
             "slug": "monotonic-stack"
         }
     ],
-    "exampleTestcases": "[2,5,3,1,4]\n[5,1,2,3,4]\n[1000000000,999999999,999999998]",
     "meta": {
         "quesIdLCBackend": 4000,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,5,3,1,4]\n[5,1,2,3,4]\n[1000000000,999999999,999999998]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "Think in terms of \"valid endpoints\" rather than enumerating all subarrays.",
         "There's symmetry: you can check both (left endpoint is smaller) and (right endpoint is smaller) cases separately."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long bowlSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar bowlSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:22.889Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.704Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.775Z"
 }

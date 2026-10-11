@@ -52,6 +52,18 @@
         "Notice that if the graph is connected, you can always use any edge of the graph in your path.",
         "How to solve the general problem in a similar way? Remove all the nodes that are not connected to 1 and n, then apply the previous solution in the new graph."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minScore(int n, vector<vector<int>>& roads) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} roads\n * @return {number}\n */\nvar minScore = function(n, roads) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:23.770Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.741Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.260Z"
 }

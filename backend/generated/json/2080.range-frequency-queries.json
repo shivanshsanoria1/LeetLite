@@ -53,6 +53,18 @@
         "Use a hash table that stored for each value, the indices where that value appeared.",
         "Use binary search over the indices of a value to find its range frequency."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class RangeFreqQuery {\npublic:\n    RangeFreqQuery(vector<int>& arr) {\n        \n    }\n    \n    int query(int left, int right, int value) {\n        \n    }\n};\n\n/**\n * Your RangeFreqQuery object will be instantiated and called as such:\n * RangeFreqQuery* obj = new RangeFreqQuery(arr);\n * int param_1 = obj->query(left,right,value);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n */\nvar RangeFreqQuery = function(arr) {\n    \n};\n\n/** \n * @param {number} left \n * @param {number} right \n * @param {number} value\n * @return {number}\n */\nRangeFreqQuery.prototype.query = function(left, right, value) {\n    \n};\n\n/** \n * Your RangeFreqQuery object will be instantiated and called as such:\n * var obj = new RangeFreqQuery(arr)\n * var param_1 = obj.query(left,right,value)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:04.728Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.997Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.486Z"
 }

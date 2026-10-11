@@ -26,12 +26,12 @@
             "slug": "hash-table"
         }
     ],
-    "exampleTestcases": "[8,2,3,4,6]\n2\n[1,4,7,10,15]\n5",
     "meta": {
         "quesIdLCBackend": 4080,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[8,2,3,4,6]\n2\n[1,4,7,10,15]\n5",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Enumeration + Hash Table\n\n#### Intuition\n\nWe need to find the smallest positive integer that is a multiple of $k$ and does not appear in the array $\\textit{nums}$.\n\nFirst, we put all elements of $\\textit{nums}$ into a hash set $\\textit{seen}$ to support $O(1)$ average-time lookups. Then, starting from $k$, we enumerate its positive multiples $k, 2k, 3k, \\ldots$ until we find the first multiple that does not appear in $\\textit{seen}$. This value is the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/f5yzUAwe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"f5yzUAwe\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  Constructing the hash set takes $O(n)$ time. We may need to enumerate at most $n + 1$ multiples of $k$, and each lookup takes $O(1)$ average time.\n\n- Space complexity: $O(n)$.\n  \n  The hash set stores at most $n$ distinct elements.\n\n---"
@@ -41,6 +41,18 @@
         "Add the values in <code>nums</code> to a hash set",
         "Iterate through the positive multiples of <code>k</code> and return the first one not in the hash set"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int missingMultiple(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar missingMultiple = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T17:27:52.086Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.792Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.897Z"
 }

@@ -34,12 +34,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "\"LMCT\"\n\"LCCT\"\n\"L\"",
     "meta": {
         "quesIdLCBackend": 3948,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"LMCT\"\n\"LCCT\"\n\"L\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -49,6 +49,18 @@
         "Compute <code>base</code> as the sum over all i of <code>preLC[i] * sufT[i]</code>.",
         "For each insert position i, compute gains <code>sufCT[i]</code> for ‘L’, <code>preL[i] * sufT[i]</code> for ‘C’, and <code>preLC[i]</code> for ‘T’, and take the maximum of <code>base</code> and <code>base + gain</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numOfSubsequences(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar numOfSubsequences = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:13.891Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.634Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.666Z"
 }

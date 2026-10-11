@@ -53,6 +53,18 @@
         "Count how many times each character occurs in string <code>chars</code>.",
         "To form a string using characters from <code>chars</code>, the frequency of each character in <code>chars</code> must be greater than or equal the frequency of that character in the string to be formed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCharacters(vector<string>& words, string chars) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {string} chars\n * @return {number}\n */\nvar countCharacters = function(words, chars) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:56.033Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.451Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.552Z"
 }

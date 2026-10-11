@@ -50,6 +50,18 @@
         "On that filtered sequence compute the longest increasing subsequence (LIS).",
         "Return the maximum LIS over all bits; if no candidates return <code>0</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSubsequence(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSubsequence = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:34.927Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.380Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.089Z"
 }

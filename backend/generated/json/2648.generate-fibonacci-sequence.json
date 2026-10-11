@@ -36,6 +36,13 @@
         "Create an infinite \"while(true)\" loop.",
         "In that loop, continuously yield the next value which is the sum of the previous two."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @return {Generator<number>}\n */\nvar fibGenerator = function*() {\n    \n};\n\n/**\n * const gen = fibGenerator();\n * gen.next().value; // 0\n * gen.next().value; // 1\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:33.464Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.280Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.449Z"
 }

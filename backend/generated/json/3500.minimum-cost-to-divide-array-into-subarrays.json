@@ -36,12 +36,12 @@
             "slug": "li-chao-tree"
         }
     ],
-    "exampleTestcases": "[3,1,4]\n[4,6,6]\n1\n[4,8,5,1,14,2,2,12,1]\n[7,2,8,4,2,2,1,1,2]\n7",
     "meta": {
         "quesIdLCBackend": 3765,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,1,4]\n[4,6,6]\n1\n[4,8,5,1,14,2,2,12,1]\n[7,2,8,4,2,2,1,1,2]\n7",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "<code>dp[i]</code> is the minimum cost to split the array suffix starting at <code>i</code>.",
         "Observe that no matter how many subarrays we have, if we have the first subarray on the left, the total cost of the previous subarrays increases by <code>k * total_cost_of_the_subarray</code>. This is because when we increase <code>i</code> to <code>(i + 1)</code>, the cost increase is just the suffix sum of the cost array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumCost(vector<int>& nums, vector<int>& cost, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} cost\n * @param {number} k\n * @return {number}\n */\nvar minimumCost = function(nums, cost, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:45.788Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.490Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.523Z"
 }

@@ -49,6 +49,7 @@
         "Run a DFS on the tree and update an array sum where sum[i] is the sum for level i.",
         "The answer is the first minimum element of sum."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:56:55.998Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.994Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.049Z"
 }

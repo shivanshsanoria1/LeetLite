@@ -43,6 +43,18 @@
         "Using the length of the string and k, can you count the number of groups the string can be divided into?",
         "Try completing each group using characters from the string. If there aren’t enough characters for the last group, use the fill character to complete the group."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> divideString(string s, int k, char fill) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @param {character} fill\n * @return {string[]}\n */\nvar divideString = function(s, k, fill) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:55.680Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.095Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.692Z"
 }

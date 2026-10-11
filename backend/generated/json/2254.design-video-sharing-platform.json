@@ -47,6 +47,7 @@
         "How can we keep track of the videoId’s of removed videos?",
         "When you remove a video, keep track of its videoId in an array called usedId. When a new video is uploaded, first check if usedId contains any elements, if it does, use the smallest value in usedId."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:22:10.445Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.302Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.952Z"
 }

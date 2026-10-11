@@ -45,6 +45,18 @@
     "hints": [
         "You can brute force – try every (i,j) pair, and if the length is odd, go through and add the sum to the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumOddLengthSubarrays(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar sumOddLengthSubarrays = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:42.918Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.135Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.117Z"
 }

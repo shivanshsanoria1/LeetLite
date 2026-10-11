@@ -43,6 +43,18 @@
         "There are at most <code>k + 1</code> possible values of the integer <code>X</code>.",
         "How do we calculate the minimum number of changes efficiently if we fix the value of <code>X</code> before applying any changes?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minChanges(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minChanges = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:47.232Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.056Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.492Z"
 }

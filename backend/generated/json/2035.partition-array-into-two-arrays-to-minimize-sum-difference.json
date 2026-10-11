@@ -79,6 +79,18 @@
         "For both halves, pre-calculate a 2D array where the kth index will store all possible sum values if only k elements from this half are added.",
         "For each sum of k elements in the first half, find the best sum of n-k elements in the second half such that the two sums add up to a value closest to the target sum from hint 1. These two subsets will form one array of the partition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDifference(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumDifference = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:20.666Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.922Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.242Z"
 }

@@ -46,6 +46,18 @@
         "Spread colors level by level to adjacent cells in <code>4</code> directions",
         "If multiple colors reach the same cell at the same time, assign the maximum color value"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> colorGrid(int n, int m, vector<vector<int>>& sources) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number[][]} sources\n * @return {number[][]}\n */\nvar colorGrid = function(n, m, sources) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:12.378Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.841Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.175Z"
 }

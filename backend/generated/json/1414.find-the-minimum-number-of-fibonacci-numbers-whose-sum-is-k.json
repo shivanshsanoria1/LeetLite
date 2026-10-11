@@ -39,6 +39,18 @@
         "Generate all Fibonacci numbers up to the limit (they are few).",
         "Use greedy solution, taking at every time the greatest Fibonacci number which is smaller than or equal to the current number. Subtract this Fibonacci number from the current number and repeat again the process."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findMinFibonacciNumbers(int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @return {number}\n */\nvar findMinFibonacciNumbers = function(k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:40.710Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.811Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.823Z"
 }

@@ -51,6 +51,18 @@
         "To check the existence of such numbers and narrow your scope for further bits based on your choice, you can use trie.",
         "You can sort the array and the queries, and maintain the trie such that in each query the trie consists exactly of the valid elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maximizeXor(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar maximizeXor = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:29.799Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.345Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.621Z"
 }

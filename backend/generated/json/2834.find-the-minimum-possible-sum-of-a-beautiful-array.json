@@ -38,6 +38,18 @@
     "hints": [
         "<div class=\"_1l1MA\">Greedily try to add the smallest possible number in the array <code>nums</code>, such that <code>nums</code> contains distinct positive integers, and there are no two indices <code>i</code> and <code>j</code> with <code>nums[i] + nums[j] == target</code>.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumPossibleSum(int n, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} target\n * @return {number}\n */\nvar minimumPossibleSum = function(n, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:05.219Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.580Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.761Z"
 }

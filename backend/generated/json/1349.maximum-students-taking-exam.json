@@ -91,6 +91,18 @@
         "Students in row i only can see exams in row i+1.",
         "Use Dynamic programming to compute the result given a (current row, bitmask people seated in previous row)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxStudents(vector<vector<char>>& seats) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[][]} seats\n * @return {number}\n */\nvar maxStudents = function(seats) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:11.802Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.588Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.742Z"
 }

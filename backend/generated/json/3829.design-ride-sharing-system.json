@@ -49,6 +49,18 @@
         "Track waiting riders with a structure that supports efficient removal on cancel (for example, a list plus a map).",
         "Before matching, skip or remove canceled riders to ensure the earliest valid rider is paired with the earliest driver."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class RideSharingSystem {\npublic:\n    RideSharingSystem() {\n        \n    }\n    \n    void addRider(int riderId) {\n        \n    }\n    \n    void addDriver(int driverId) {\n        \n    }\n    \n    vector<int> matchDriverWithRider() {\n        \n    }\n    \n    void cancelRider(int riderId) {\n        \n    }\n};\n\n/**\n * Your RideSharingSystem object will be instantiated and called as such:\n * RideSharingSystem* obj = new RideSharingSystem();\n * obj->addRider(riderId);\n * obj->addDriver(driverId);\n * vector<int> param_3 = obj->matchDriverWithRider();\n * obj->cancelRider(riderId);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar RideSharingSystem = function() {\n    \n};\n\n/** \n * @param {number} riderId\n * @return {void}\n */\nRideSharingSystem.prototype.addRider = function(riderId) {\n    \n};\n\n/** \n * @param {number} driverId\n * @return {void}\n */\nRideSharingSystem.prototype.addDriver = function(driverId) {\n    \n};\n\n/**\n * @return {number[]}\n */\nRideSharingSystem.prototype.matchDriverWithRider = function() {\n    \n};\n\n/** \n * @param {number} riderId\n * @return {void}\n */\nRideSharingSystem.prototype.cancelRider = function(riderId) {\n    \n};\n\n/** \n * Your RideSharingSystem object will be instantiated and called as such:\n * var obj = new RideSharingSystem()\n * obj.addRider(riderId)\n * obj.addDriver(driverId)\n * var param_3 = obj.matchDriverWithRider()\n * obj.cancelRider(riderId)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:38.416Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.384Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.096Z"
 }

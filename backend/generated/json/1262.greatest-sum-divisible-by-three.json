@@ -47,6 +47,18 @@
     "hints": [
         "Represent the state as DP[pos][mod]: maximum possible sum starting in the position \"pos\" in the array where the current sum modulo 3 is equal to mod."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSumDivThree(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSumDivThree = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:57.682Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.032Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.652Z"
 }

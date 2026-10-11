@@ -56,6 +56,18 @@
         "How to determine the number of nodes in the rest of the tree? Can you subtract the size of the subtree rooted at the node from the total number of nodes of the tree?",
         "Use these values to compute the score of the node. Track the maximum score, and how many nodes achieve such score."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countHighestScoreNodes(vector<int>& parents) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} parents\n * @return {number}\n */\nvar countHighestScoreNodes = function(parents) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:31.225Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.931Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.345Z"
 }

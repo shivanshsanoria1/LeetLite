@@ -42,6 +42,18 @@
         "The minimum number of moves can be either <code>1</code> or <code>2</code>.",
         "The answer will be <code>1</code> if the queen is on the path of the rook or bishop and none of them is in between."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @param {number} d\n * @param {number} e\n * @param {number} f\n * @return {number}\n */\nvar minMovesToCaptureTheQueen = function(a, b, c, d, e, f) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:24.899Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.756Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.283Z"
 }

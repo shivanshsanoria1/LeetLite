@@ -45,6 +45,18 @@
     "hints": [
         "To solve the problem without the extra space, we need to think about how many times each number occurs in relation to the index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getSneakyNumbers(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar getSneakyNumbers = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:39.577Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.109Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.921Z"
 }

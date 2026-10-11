@@ -46,6 +46,18 @@
         "Is it possible to find the max height if given the height range of a particular building?",
         "You can find the height range of a restricted building by doing 2 passes from the left and right."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxBuilding(int n, vector<vector<int>>& restrictions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} restrictions\n * @return {number}\n */\nvar maxBuilding = function(n, restrictions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:52.749Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.507Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.882Z"
 }

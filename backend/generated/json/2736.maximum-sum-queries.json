@@ -64,6 +64,18 @@
         "To find the insertion position use binary search (built-in in many languages).",
         "When querying for max (x + y) over y >= y', use binary search to find the first pair (y, x + y) with y >= y'. It will have the maximum value of x + y because the map has monotone descending values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maximumSumQueries(vector<int>& nums1, vector<int>& nums2, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar maximumSumQueries = function(nums1, nums2, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:47.496Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.395Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.545Z"
 }

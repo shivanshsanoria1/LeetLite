@@ -40,6 +40,18 @@
         "Can we use some space to store the number of paths and update them after every move?",
         "One obvious thing: the ball will go out of the boundary only by crossing it. Also, there is only one possible way the ball can go out of the boundary from the boundary cell except for corner cells. From the corner cell, the ball can go out in two different ways.\r\n\r\nCan you use this thing to solve the problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number} maxMove\n * @param {number} startRow\n * @param {number} startColumn\n * @return {number}\n */\nvar findPaths = function(m, n, maxMove, startRow, startColumn) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:08:46.682Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.013Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.708Z"
 }

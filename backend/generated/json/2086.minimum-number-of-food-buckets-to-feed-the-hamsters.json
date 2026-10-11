@@ -48,6 +48,18 @@
         "Assuming all previous hamsters are fed. If there is a hamster at index i and you are able to place a bucket at index i - 1 or i + 1, where should you put it?",
         "It is always better to place a bucket at index i + 1 because it can feed the next hamster as well."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumBuckets(string hamsters) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} hamsters\n * @return {number}\n */\nvar minimumBuckets = function(hamsters) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:09.303Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.001Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.526Z"
 }

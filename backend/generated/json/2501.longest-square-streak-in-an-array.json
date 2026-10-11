@@ -52,6 +52,18 @@
         "With the constraints, the length of the longest square streak possible is 5.",
         "Store the elements of nums in a set to quickly check if it exists."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestSquareStreak(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestSquareStreak = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:30.508Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.749Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.288Z"
 }

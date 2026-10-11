@@ -61,6 +61,18 @@
         "Use brute force",
         "Count all subarrays where <code>2 * count(target) > length</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countMajoritySubarrays(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar countMajoritySubarrays = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:44:54.555Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.956Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.939Z"
 }

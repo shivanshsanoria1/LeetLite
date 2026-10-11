@@ -50,6 +50,18 @@
         "Can we use the accumulative sum to keep track of all the odd-sum sub-arrays ?",
         "if the current accu sum is odd, we care only about previous even accu sums and vice versa."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numOfSubarrays(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar numOfSubarrays = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:16.270Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.023Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.967Z"
 }

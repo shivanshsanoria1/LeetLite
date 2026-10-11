@@ -54,6 +54,18 @@
     "hints": [
         "The range of possible answers includes all even numbers between 100 and 999 inclusive. Could you check each possible answer to see if it could be formed from the digits in the array?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findEvenNumbers(vector<int>& digits) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} digits\n * @return {number[]}\n */\nvar findEvenNumbers = function(digits) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:16.165Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.055Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.554Z"
 }

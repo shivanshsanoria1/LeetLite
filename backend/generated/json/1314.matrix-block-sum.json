@@ -48,6 +48,18 @@
         "Use the concept of cumulative sum array.",
         "Create a cumulative sum matrix where dp[i][j] is the sum of all cells in the rectangle from (0,0) to (i,j), use inclusion-exclusion idea."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @param {number} k\n * @return {number[][]}\n */\nvar matrixBlockSum = function(mat, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:20.271Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.465Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.710Z"
 }

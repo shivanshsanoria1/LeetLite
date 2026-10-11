@@ -46,6 +46,18 @@
     "hints": [
         "Binary search on the answer.  We need a function possible(capacity) which returns true if and only if we can do the task in D days."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int shipWithinDays(vector<int>& weights, int days) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} weights\n * @param {number} days\n * @return {number}\n */\nvar shipWithinDays = function(weights, days) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:50.079Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.689Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.292Z"
 }

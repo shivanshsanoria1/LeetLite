@@ -36,6 +36,18 @@
     "hints": [
         "Find the distance between the two stops if the bus moved in clockwise or counterclockwise directions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int distanceBetweenBusStops(vector<int>& distance, int start, int destination) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} distance\n * @param {number} start\n * @param {number} destination\n * @return {number}\n */\nvar distanceBetweenBusStops = function(distance, start, destination) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:21.863Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.550Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.574Z"
 }

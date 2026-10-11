@@ -42,6 +42,18 @@
     "hints": [
         "Use brute force to update a rectangle and, response to the queries in O(1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class SubrectangleQueries {\npublic:\n    SubrectangleQueries(vector<vector<int>>& rectangle) {\n        \n    }\n    \n    void updateSubrectangle(int row1, int col1, int row2, int col2, int newValue) {\n        \n    }\n    \n    int getValue(int row, int col) {\n        \n    }\n};\n\n/**\n * Your SubrectangleQueries object will be instantiated and called as such:\n * SubrectangleQueries* obj = new SubrectangleQueries(rectangle);\n * obj->updateSubrectangle(row1,col1,row2,col2,newValue);\n * int param_2 = obj->getValue(row,col);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} rectangle\n */\nvar SubrectangleQueries = function(rectangle) {\n    \n};\n\n/** \n * @param {number} row1 \n * @param {number} col1 \n * @param {number} row2 \n * @param {number} col2 \n * @param {number} newValue\n * @return {void}\n */\nSubrectangleQueries.prototype.updateSubrectangle = function(row1, col1, row2, col2, newValue) {\n    \n};\n\n/** \n * @param {number} row \n * @param {number} col\n * @return {number}\n */\nSubrectangleQueries.prototype.getValue = function(row, col) {\n    \n};\n\n/** \n * Your SubrectangleQueries object will be instantiated and called as such:\n * var obj = new SubrectangleQueries(rectangle)\n * obj.updateSubrectangle(row1,col1,row2,col2,newValue)\n * var param_2 = obj.getValue(row,col)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:04.896Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.938Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.897Z"
 }

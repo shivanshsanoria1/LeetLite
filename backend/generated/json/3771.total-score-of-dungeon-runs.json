@@ -46,6 +46,18 @@
         "We need to subtract subarrays <code>[i, j]</code> that do not satisfy <code>hp - (pref[j] - pref[i-1]) >= requirement[j]</code>. The inequality is equivalent to <code>pref[i-1] >= requirement[j] - hp + pref[j]</code>.",
         "For each <code>j</code>, count the previous <code>i</code>s with <code>pref[i-1] < requirement[j] - hp + pref[j]</code> using binary search or an ordered data structure."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long totalScore(int hp, vector<int>& damage, vector<int>& requirement) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} hp\n * @param {number[]} damage\n * @param {number[]} requirement\n * @return {number}\n */\nvar totalScore = function(hp, damage, requirement) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:29.189Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.174Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.996Z"
 }

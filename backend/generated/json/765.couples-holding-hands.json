@@ -55,6 +55,18 @@
     "hints": [
         "Say there are N two-seat couches.  For each couple, draw an edge from the couch of one partner to the couch of the other partner."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSwapsCouples(vector<int>& row) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} row\n * @return {number}\n */\nvar minSwapsCouples = function(row) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:19.566Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.350Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.051Z"
 }

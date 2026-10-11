@@ -44,6 +44,18 @@
         "If a leaf node is divisible by <code>k</code>, it will be in its own components so we separate it from its parent node.",
         "In each step, we either cut a leaf node down or merge a leaf node. The number of nodes on the tree reduces by one. Repeat this process until only one node is left."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxKDivisibleComponents(int n, vector<vector<int>>& edges, vector<int>& values, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} values\n * @param {number} k\n * @return {number}\n */\nvar maxKDivisibleComponents = function(n, edges, values, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:36.563Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.605Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.830Z"
 }

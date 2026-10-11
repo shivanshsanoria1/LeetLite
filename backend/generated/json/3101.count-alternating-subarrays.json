@@ -40,6 +40,18 @@
         "Let <code>dp[i]</code> be the number of alternating subarrays ending at index <code>i</code>.",
         "The final answer is the sum of <code>dp[i]</code> over all  indices <code>i</code> from <code>0</code> to <code>n - 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countAlternatingSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countAlternatingSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:09.998Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.926Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.817Z"
 }

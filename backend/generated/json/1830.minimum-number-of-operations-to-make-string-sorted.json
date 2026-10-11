@@ -55,6 +55,18 @@
         "Note that the operations given describe getting the previous permutation of s",
         "To solve this problem you need to solve every suffix separately"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int makeStringSorted(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar makeStringSorted = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:42.449Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.501Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.867Z"
 }

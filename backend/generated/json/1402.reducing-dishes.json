@@ -48,6 +48,18 @@
         "Use dynamic programming to find the optimal solution by saving the previous best like-time coefficient and its corresponding element sum.",
         "If adding the current element to the previous best like-time coefficient and its corresponding element sum would increase the best like-time coefficient, then go ahead and add it. Otherwise, keep the previous best like-time coefficient."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSatisfaction(vector<int>& satisfaction) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} satisfaction\n * @return {number}\n */\nvar maxSatisfaction = function(satisfaction) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:25.572Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.803Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.815Z"
 }

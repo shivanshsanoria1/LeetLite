@@ -73,6 +73,18 @@
     "hints": [
         "Try working backward: consider all trivial states you know to be winning or losing, and work backward to determine which other states can be labeled as winning or losing."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canMouseWin(vector<string>& grid, int catJump, int mouseJump) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} grid\n * @param {number} catJump\n * @param {number} mouseJump\n * @return {boolean}\n */\nvar canMouseWin = function(grid, catJump, mouseJump) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:53.556Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.405Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.653Z"
 }

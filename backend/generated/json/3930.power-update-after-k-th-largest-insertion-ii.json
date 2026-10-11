@@ -55,6 +55,7 @@
         "Use coordinate compression + Fenwick tree to find that ranked value efficiently.",
         "Update <code>p</code> with fast modular exponentiation."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:00:38.483Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.861Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.195Z"
 }

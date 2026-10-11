@@ -36,12 +36,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[1,2,3,4]\n[0,2,2]\n[6,6,6]\n[1,3,5]",
     "meta": {
         "quesIdLCBackend": 3799,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4]\n[0,2,2]\n[6,6,6]\n[1,3,5]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Enumeration\n\n#### Intuition\n\nWe can enumerate three distinct indices $i$, $j$, and $k$, and use their corresponding digits as the hundreds, tens, and ones digits, respectively.\n\nA valid three-digit even number must satisfy the following conditions:\n\n- Its hundreds digit cannot be $0$.\n- Its ones digit must be even.\n- Its three digits must come from distinct indices.\n\nBecause the array can contain duplicate digits, different index triples may form the same three-digit number. We can use a boolean array $\\textit{vis}$ of length $1000$ to record whether each three-digit number has already appeared. Whenever a valid, unseen number is formed, we mark it as visited and increment the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/mzT2yA4H/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"mzT2yA4H\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the $\\textit{digits}$ array.\n\n- Time complexity: $O(n^3)$.\n  \n  We use three nested loops to enumerate the three indices $i$, $j$, and $k$, which takes $O(n^3)$ time.\n\n- Space complexity: $O(1)$. \n  \n  The boolean array $\\textit{vis}$ has a fixed length of $1000$, independent of the input size.\n\n---"
@@ -50,6 +50,18 @@
     "hints": [
         "Use brute force to try all possibilities"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int totalNumbers(vector<int>& digits) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} digits\n * @return {number}\n */\nvar totalNumbers = function(digits) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:29.914Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.475Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.505Z"
 }

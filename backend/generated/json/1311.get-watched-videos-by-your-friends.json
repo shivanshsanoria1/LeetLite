@@ -51,6 +51,18 @@
         "Do BFS to find the kth level friends.",
         "Then collect movies saw by kth level friends and sort them accordingly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> watchedVideosByFriends(vector<vector<string>>& watchedVideos, vector<vector<int>>& friends, int id, int level) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[][]} watchedVideos\n * @param {number[][]} friends\n * @param {number} id\n * @param {number} level\n * @return {string[]}\n */\nvar watchedVideosByFriends = function(watchedVideos, friends, id, level) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:17.045Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.439Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.707Z"
 }

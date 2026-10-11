@@ -46,6 +46,18 @@
         "Store the number of banknotes of each denomination.",
         "Can you use math to quickly evaluate a withdrawal request?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class ATM {\npublic:\n    ATM() {\n        \n    }\n    \n    void deposit(vector<int> banknotesCount) {\n        \n    }\n    \n    vector<int> withdraw(int amount) {\n        \n    }\n};\n\n/**\n * Your ATM object will be instantiated and called as such:\n * ATM* obj = new ATM();\n * obj->deposit(banknotesCount);\n * vector<int> param_2 = obj->withdraw(amount);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar ATM = function() {\n    \n};\n\n/** \n * @param {number[]} banknotesCount\n * @return {void}\n */\nATM.prototype.deposit = function(banknotesCount) {\n    \n};\n\n/** \n * @param {number} amount\n * @return {number[]}\n */\nATM.prototype.withdraw = function(amount) {\n    \n};\n\n/** \n * Your ATM object will be instantiated and called as such:\n * var obj = new ATM()\n * obj.deposit(banknotesCount)\n * var param_2 = obj.withdraw(amount)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:59.387Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.290Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.915Z"
 }

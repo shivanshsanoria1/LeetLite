@@ -33,6 +33,13 @@
         "You can return an object with methods.",
         "Initialize a variable for currentCount. Inside these methods, add the appropriate logic which mutates currentCount."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {integer} init\n * @return { increment: Function, decrement: Function, reset: Function }\n */\nvar createCounter = function(init) {\n    \n};\n\n/**\n * const counter = createCounter(5)\n * counter.increment(); // 6\n * counter.reset(); // 5\n * counter.decrement(); // 4\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:48.107Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.344Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.466Z"
 }

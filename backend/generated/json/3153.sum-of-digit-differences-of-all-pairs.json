@@ -50,6 +50,18 @@
         "For each position, count the number of occurences of each digit from 0 to 9 that appear on that position.",
         "Let <code>c</code> be the number of occurences of a digit on a position, that will contribute with <code>c * (n - c)</code> to the final answer, where <code>n</code> is the number of integers in <code>nums</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long sumDigitDifferences(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar sumDigitDifferences = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:53.234Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.992Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.036Z"
 }

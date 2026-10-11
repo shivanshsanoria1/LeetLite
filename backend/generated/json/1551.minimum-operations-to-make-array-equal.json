@@ -39,6 +39,18 @@
         "Build the array arr using the given formula, define target = sum(arr) / n",
         "What is the number of operations needed to convert arr so that all elements equal target ?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar minOperations = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:00.822Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.044Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.053Z"
 }

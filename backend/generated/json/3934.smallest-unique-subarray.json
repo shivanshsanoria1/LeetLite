@@ -58,6 +58,18 @@
         "The answer can be binary searched because if there is a unique subarray of length <code>len</code>, then there is also a unique subarray of some length <code>> len</code>.",
         "For each checked length, store frequencies of hashes in a hashmap. If any hash has frequency 1, that length works."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int smallestUniqueSubarray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar smallestUniqueSubarray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:42.582Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.864Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.196Z"
 }

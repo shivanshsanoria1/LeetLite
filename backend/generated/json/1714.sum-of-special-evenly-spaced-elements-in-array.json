@@ -44,6 +44,7 @@
         "If y is small, like less than B, you can preprocess the answers for all such ys in O(n * B), then answer each such query in O(1).",
         "As you might have already guessed, the optimal value for B is ~sqrt(n)."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:52:37.171Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.349Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.637Z"
 }

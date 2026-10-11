@@ -30,12 +30,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "\"(())\"\n1\n\"(()(\"\n1\n\"((()))()()()\"\n3",
     "meta": {
         "quesIdLCBackend": 4019,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"(())\"\n1\n\"(()(\"\n1\n\"((()))()()()\"\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -45,6 +45,18 @@
         "Try run-length encoding; operations only happen at boundaries of '(' and ')' runs",
         "When adjacent runs are '(' then ')', you can cancel in blocks of k"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string removeSubstring(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar removeSubstring = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:22:26.653Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.731Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.863Z"
 }

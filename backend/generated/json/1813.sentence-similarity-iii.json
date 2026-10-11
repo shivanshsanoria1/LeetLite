@@ -44,6 +44,18 @@
         "One way to look at it is to find one sentence as a concatenation of a prefix and suffix from the other sentence.",
         "Get the longest common prefix between them and the longest common suffix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool areSentencesSimilar(string sentence1, string sentence2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} sentence1\n * @param {string} sentence2\n * @return {boolean}\n */\nvar areSentencesSimilar = function(sentence1, sentence2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:24.929Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.491Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.814Z"
 }

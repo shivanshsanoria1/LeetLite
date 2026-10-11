@@ -46,6 +46,18 @@
         "Try removing each index <code>r</code>: if <code>nums[r - 1] < nums[r + 1]</code>, the two sides can connect with pattern <code>< ></code>, giving length <code>left[r - 1][0] + right[r + 1][1]</code>; if <code>nums[r - 1] > nums[r + 1]</code>, connect with pattern <code>> <</code>, giving <code>left[r - 1][1] + right[r + 1][0]</code>.",
         "Also consider not removing any element by taking the maximum value over all <code>left[i][d]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestAlternating(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestAlternating = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:39.911Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.391Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.097Z"
 }

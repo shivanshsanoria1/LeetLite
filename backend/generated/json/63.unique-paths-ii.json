@@ -49,6 +49,18 @@
         "Use dynamic programming since, from each cell, you can move to the right or down.",
         "assume dp[i][j] is the number of unique paths to reach (i, j). dp[i][j] = dp[i][j -1] + dp[i - 1][j]. Be careful when you encounter an obstacle. set its value in dp to 0."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} obstacleGrid\n * @return {number}\n */\nvar uniquePathsWithObstacles = function(obstacleGrid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:39:12.702Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.110Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.806Z"
 }

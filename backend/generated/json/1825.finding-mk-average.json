@@ -59,6 +59,18 @@
         "At each query, try to save and update the sum of the elements needed to calculate MKAverage.",
         "You can use BSTs for fast insertion and deletion of the elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class MKAverage {\npublic:\n    MKAverage(int m, int k) {\n        \n    }\n    \n    void addElement(int num) {\n        \n    }\n    \n    int calculateMKAverage() {\n        \n    }\n};\n\n/**\n * Your MKAverage object will be instantiated and called as such:\n * MKAverage* obj = new MKAverage(m, k);\n * obj->addElement(num);\n * int param_2 = obj->calculateMKAverage();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} k\n */\nvar MKAverage = function(m, k) {\n    \n};\n\n/** \n * @param {number} num\n * @return {void}\n */\nMKAverage.prototype.addElement = function(num) {\n    \n};\n\n/**\n * @return {number}\n */\nMKAverage.prototype.calculateMKAverage = function() {\n    \n};\n\n/** \n * Your MKAverage object will be instantiated and called as such:\n * var obj = new MKAverage(m, k)\n * obj.addElement(num)\n * var param_2 = obj.calculateMKAverage()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:37.186Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.498Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.855Z"
 }

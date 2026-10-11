@@ -46,6 +46,18 @@
         "Iterate through the elements in order. As soon as the current element is a palindrome, return it.",
         "To check if an element is a palindrome, can you reverse the string?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string firstPalindrome(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar firstPalindrome = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:27.627Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.070Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.606Z"
 }

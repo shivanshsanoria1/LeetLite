@@ -34,6 +34,13 @@
         "You can pass a value value to a generator function X by calling generator.next(X). Then in the generator function, you can access this value by calling let X = yield \"val to pass into generator.next()\";",
         "You can throw an error back to a generator function by calling generator.throw(err). If this error isn't caught in the generator function, that will throw an error."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Generator} generator\n * @return {[Function, Promise]}\n */\nvar cancellable = function(generator) {\n    \n};\n\n/**\n * function* tasks() {\n *   const val = yield new Promise(resolve => resolve(2 + 2));\n *   yield new Promise(resolve => setTimeout(resolve, 100));\n *   return val + 1;\n * }\n * const [cancel, promise] = cancellable(tasks());\n * setTimeout(cancel, 50);\n * promise.catch(console.log); // logs \"Cancelled\" at t=50ms\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:34.999Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.282Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.457Z"
 }

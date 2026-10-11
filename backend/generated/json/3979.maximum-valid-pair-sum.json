@@ -41,6 +41,18 @@
         "Iterate <code>j</code> from <code>k</code> to <code>nums.length - 1</code>, and maintain the maximum value among <code>nums[0], nums[1], ..., nums[j - k]</code>.",
         "Use this maintained maximum as the best possible first element for the pair ending at <code>j</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxValidPairSum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxValidPairSum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:33.912Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.972Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.244Z"
 }

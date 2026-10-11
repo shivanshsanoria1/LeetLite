@@ -51,6 +51,18 @@
         "If the and value of sub-array arr[i...j] is ≥ the and value of the sub-array arr[i...j+1].",
         "For each index i using binary search or ternary search find the index j where |target - AND(arr[i...j])| is minimum, minimize this value with the global answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int closestToTarget(vector<int>& arr, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} target\n * @return {number}\n */\nvar closestToTarget = function(arr, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:12.889Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.020Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.956Z"
 }

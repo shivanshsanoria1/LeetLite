@@ -51,6 +51,18 @@
         "Compute finish times using a postorder DFS, so all children of a task are processed before the task itself.",
         "For each non-leaf task, keep only the minimum and maximum finish times among its children."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long finishTime(int n, vector<vector<int>>& edges, vector<int>& baseTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number[]} baseTime\n * @return {number}\n */\nvar finishTime = function(n, edges, baseTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:18.050Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.961Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.230Z"
 }

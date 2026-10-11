@@ -39,6 +39,18 @@
     "hints": [
         "The constraints are small, allowing you to iterate over all potential values for <code>ans[i]</code> directly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minBitwiseArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar minBitwiseArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:57.667Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.184Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.046Z"
 }

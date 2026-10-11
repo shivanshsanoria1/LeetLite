@@ -57,6 +57,18 @@
         "Use a sentinel value such as -1 to show that it is impossible.",
         "How can we quickly determine if two substrings of s are equal? We can use hashing."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int deleteString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar deleteString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:34.621Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.559Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.181Z"
 }

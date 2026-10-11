@@ -53,6 +53,18 @@
         "Let's note that for the XOR of all segments with size K to be equal to zeros, nums[i] has to be equal to nums[i+k]",
         "Basically, we need to make the first K elements have XOR = 0 and then modify them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minChanges(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minChanges = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:59.092Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.473Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.773Z"
 }

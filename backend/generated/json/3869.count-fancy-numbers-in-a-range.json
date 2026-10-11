@@ -42,6 +42,18 @@
         "Implement digit DP <code>cnt(bound)</code> that counts numbers <= <code>bound</code> whose digit sum is in <code>good_sums</code>.",
         "Answer = <code>cnt(r) - cnt(l - 1) + count(goods in [l, r]) - count(g in goods where l <= g <= r and sum(g) in good_sums)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countFancy(long long l, long long r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} l\n * @param {number} r\n * @return {number}\n */\nvar countFancy = function(l, r) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:32.854Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.813Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.137Z"
 }

@@ -55,6 +55,18 @@
     "hints": [
         "All the queries are given in advance. Is there a way you can reorder the queries to avoid repeated computations?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>>& edgeList, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edgeList\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar distanceLimitedPathsExist = function(n, edgeList, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:19.356Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.337Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.604Z"
 }

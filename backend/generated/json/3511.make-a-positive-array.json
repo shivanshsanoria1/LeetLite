@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[-10,15,-12]\n[-1,-2,3,-1,2,6]\n[1,2,3]",
     "meta": {
         "quesIdLCBackend": 3855,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[-10,15,-12]\n[-1,-2,3,-1,2,6]\n[1,2,3]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,7 @@
         "Use a greedy approach to assign certain indices the maximum value.",
         "Start with the subarray with the smallest last index <code>i</code>. Replace the element at index <code>i</code> with the maximum value. Find the selected subarray with the next smallest last index <code>j</code> that does not contain index <code>i</code>. Replace the element at index <code>j</code> with the maximum value, and repeat this process until all non-positive subarrays are fixed."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:52:56.235Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.498Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.533Z"
 }

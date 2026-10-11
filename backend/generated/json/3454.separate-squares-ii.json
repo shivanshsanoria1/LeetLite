@@ -36,12 +36,12 @@
             "slug": "sweep-line"
         }
     ],
-    "exampleTestcases": "[[0,0,1],[2,2,1]]\n[[0,0,2],[1,1,1]]",
     "meta": {
         "quesIdLCBackend": 3775,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[0,0,1],[2,2,1]]\n[[0,0,2],[1,1,1]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Scanning Line + Segment Tree\n\n#### Intuition\n\nSince the overlapping area of squares is counted only once, we can refer to the third approach from the editorial of the problem \"[850. Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/editorial/)\", which uses a segment tree together with a scan line algorithm.\n\n![3454_1](../Figures/3454/1.png)\n\nConsider the figure above. To compute the covered area at a given moment, we only need to know the total horizontal coverage, such as $w_1 + w_2$. The covered area for that vertical slice is then $h \\times (w_1 + w_2)$. Using a scan line algorithm, we can compute the total area covered by all squares.\n\nThe plane is divided into multiple horizontal strips. The height of each strip is the vertical distance swept by the scan line, while the horizontal coverage varies dynamically. For each square, we mark its bottom edge with $+1$ and its top edge with $-1$. Whenever the scan line encounters a horizontal edge, we update the coverage count for the corresponding interval. The width of each strip is defined as the total length of x-intervals whose coverage count is greater than zero.\n\n![Scanning line](https://oi-wiki.org/geometry/images/scanning.svg)\n\nTo implement this, we first collect and sort all distinct x-coordinates of the squares and discretize them. A segment tree is then used to maintain the dynamic horizontal coverage. As the scan line moves upward, each event updates a continuous x-interval, which is an interval update. Therefore, a segment tree with lazy propagation is required.\n\nEach node of the segment tree maintains:\n\n- the coverage count of the interval\n- the total covered length of the interval when the coverage count is greater than zero\n\nUsing this structure, we can compute the total covered area, denoted as $\\textit{totalArea}$.\n\nNext, we need to find the smallest value of $y$ such that the covered area below $y$ is equal to the covered area above $y$. Let the covered area below a scan line at $y = y'$ be $\\textit{area}$. Then the area above the scan line is $\\textit{totalArea} - \\textit{area}$.\n\nThe problem requires:\n\n$$\n\\textit{area} = \\textit{totalArea}− \\textit{area}\n$$\n\nwhich simplifies to:\n\n$$\n\\textit{area} = \\dfrac{\\textit{totalArea}}{2}\n$$\n\nSuppose the scan line moves from $y = y'$ to the next event at $y = y''$. Let the total horizontal coverage in this interval be $\\textit{width}$. The covered area below $y = y''$ is:\n\n$$\n\\textit{area} + \\textit{width} \\cdot (y^{''} - y^{'})\n$$\n\nIf the following conditions hold:\n\n$$\n\\textit{area} < \\dfrac{\\textit{totalArea}}{2} \\\\\n\\textit{area} + \\textit{width} \\cdot (y^{''} - y{'}) \\ge \\dfrac{\\textit{totalArea}}{2}\n$$\n\nthen the target value of $y$ lies within the interval $[y', y'']$.\n\nSince the horizontal coverage remains constant within this interval, moving the scan line upward by $\\Delta$ increases the covered area by $\\Delta \\cdot \\textit{width}$. To reach exactly half of the total area, the scan line must move up by:\n\n$$\n\\Delta = \\frac{\\frac{\\textit{totalArea}}{2} - \\textit{area}}{\\textit{width}}\n$$\n\nThus, the target value of $y$ is:\n\n$$\ny = y' + \\frac{\\frac{\\textit{totalArea}}{2} - \\textit{area}}{\\textit{width}} = y' + \\frac{\\textit{totalArea} - 2 \\cdot \\textit{area}}{2 \\cdot \\textit{width}}\n$$\n\nIn practice, we can avoid performing a second scan by recording the covered area and horizontal coverage for each height interval during the first scan, and then locating the correct interval using traversal or binary search.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/6idffNK6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6idffNK6\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{squares}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  The time complexity of sorting is $O(n \\log n)$, and each update and query operation on the segment tree has a time complexity of $O(\\log n)$. Since there are a total of $n$ queries and updates, the overall time complexity is $O(n \\log n)$.\n\n- Space complexity: $O(n)$.\n  \n  The space required for a segment tree is $O(n)$.\n\n---"
@@ -51,6 +51,18 @@
         "Use a line sweep and a segment tree.",
         "The line must lie in one of the squares."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double separateSquares(vector<vector<int>>& squares) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} squares\n * @return {number}\n */\nvar separateSquares = function(squares) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:02.975Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.415Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.426Z"
 }

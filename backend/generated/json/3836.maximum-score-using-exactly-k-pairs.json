@@ -41,6 +41,18 @@
         "Let dynamic programming states <code>dp(i, j, k)</code>, denote the maximum <code>k-th</code> pair sum you can get from the first <code>nums1[0..i]</code> and <code>nums2[0..j]</code>",
         "Transition: <code>dp(i, j, t) = max(dp(i - 1, j, t), dp(i, j - 1, t), dp(i - 1, j - 1, t - 1) + nums1[i] * nums2[j])</code>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxScore(vector<int>& nums1, vector<int>& nums2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k\n * @return {number}\n */\nvar maxScore = function(nums1, nums2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:58:59.137Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.784Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.102Z"
 }

@@ -57,6 +57,18 @@
         "Precompute how many numbers in <code>nums</code> are divisible by each value, then use inclusion-exclusion over the prime factors of <code>x</code> to count elements sharing a common factor with <code>x</code>.",
         "Try all possible selected values: existing values in <code>nums</code>, and values up to <code>maxVal</code> that can be created by changing the selected element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(vector<int>& nums, int maxVal) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} maxVal\n * @return {number}\n */\nvar maxScore = function(nums, maxVal) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:06.507Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.931Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.223Z"
 }

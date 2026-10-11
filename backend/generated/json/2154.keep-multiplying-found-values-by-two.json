@@ -53,6 +53,18 @@
         "Otherwise, multiply original by 2 and repeat the process.",
         "Use set data structure to check the existence faster."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findFinalValue(vector<int>& nums, int original) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} original\n * @return {number}\n */\nvar findFinalValue = function(nums, original) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:11.854Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.109Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.716Z"
 }

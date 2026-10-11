@@ -42,6 +42,18 @@
         "For <code>0 < i < n - 1</code>, <code>-n < j < n</code>, and <code>k</code> in <code>{’F’, ‘W’, ‘E’}</code>, let <code>dp[i][j][k]</code>  be the number of sequences consisting of the first <code>i</code> moves such that the difference between bob’s points and alice’s point is equal to <code>j</code> and the <code>i<sup>th</sup></code> move that Bob played is <code>k</code>.",
         "The answer is the sum of <code>dp[n - 1][j][k]</code>over all <code>j > 0</code> and over all <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countWinningSequences(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countWinningSequences = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:02.317Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.189Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.078Z"
 }

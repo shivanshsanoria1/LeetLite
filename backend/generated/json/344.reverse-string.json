@@ -42,6 +42,18 @@
     "hints": [
         "The entire logic for reversing a string is based on using the opposite directional two-pointer approach!"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    void reverseString(vector<char>& s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[]} s\n * @return {void} Do not return anything, modify s in-place instead.\n */\nvar reverseString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:58:17.185Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.399Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.400Z"
 }

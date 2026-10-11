@@ -53,6 +53,18 @@
         "Is there a way to order the intervals and queries such that it takes less time to query?",
         "Is there a way to add and remove intervals by going from the smallest query to the largest query to find the minimum size?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minInterval(vector<vector<int>>& intervals, vector<int>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} intervals\n * @param {number[]} queries\n * @return {number[]}\n */\nvar minInterval = function(intervals, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:03.606Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.513Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.894Z"
 }

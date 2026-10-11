@@ -42,6 +42,18 @@
         "If you have to add a new rung, add it as high up as possible.",
         "Try using division to decrease the number of computations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int addRungs(vector<int>& rungs, int dist) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} rungs\n * @param {number} dist\n * @return {number}\n */\nvar addRungs = function(rungs, dist) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:57.317Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.772Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.004Z"
 }

@@ -49,6 +49,18 @@
         "We can select <code>nums[i]</code> as a separate subarray or select at least <code>nums[i]</code> and <code>nums[i + 1]</code> as the first subarray.\r\n<code>dp[i][j][0] = max(dp[i + 1][j][0], dp[i][j][1])</code>.",
         "The answer is <code>dp[0][k][0]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumStrength(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumStrength = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:30.840Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.883Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.652Z"
 }

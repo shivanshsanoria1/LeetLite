@@ -51,6 +51,18 @@
         "Try sorting the skill array.",
         "It is always optimal to pair the weakest available player with the strongest available player."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long dividePlayers(vector<int>& skill) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} skill\n * @return {number}\n */\nvar dividePlayers = function(skill) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:23.155Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.740Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.257Z"
 }

@@ -46,6 +46,18 @@
         "Then, iterate over all the integers in the range <code>[min, max]</code> and check if they are in the array.",
         "If not, add them to the array, and return the sorted array at the end."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findMissingElements(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar findMissingElements = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-20T18:53:17.195Z",
-    "PARSED_ISO": "2026-09-20T18:53:18.792Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.926Z"
 }

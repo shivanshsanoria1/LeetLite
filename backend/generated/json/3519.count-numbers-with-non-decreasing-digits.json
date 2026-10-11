@@ -33,12 +33,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "\"23\"\n\"28\"\n8\n\"2\"\n\"7\"\n2",
     "meta": {
         "quesIdLCBackend": 3810,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"23\"\n\"28\"\n8\n\"2\"\n\"7\"\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
     "hints": [
         "Use digit dynamic programming."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countNumbers(string l, string r, int b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} l\n * @param {string} r\n * @param {number} b\n * @return {number}\n */\nvar countNumbers = function(l, r, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:04.020Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.540Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.539Z"
 }

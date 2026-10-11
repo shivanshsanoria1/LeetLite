@@ -44,6 +44,18 @@
         "Start in any city and use the path to move to the next city.",
         "Eventually, you will reach a city with no path outgoing, this is the destination city."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string destCity(vector<vector<string>>& paths) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[][]} paths\n * @return {string}\n */\nvar destCity = function(paths) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:19.535Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.828Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.836Z"
 }

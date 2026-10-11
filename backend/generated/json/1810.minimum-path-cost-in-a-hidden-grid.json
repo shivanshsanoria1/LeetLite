@@ -67,6 +67,7 @@
         "Run a DFS from the robot's position to make sure that you can reach the target, otherwise you should return -1.",
         "Now that you are sure you can reach the target and that you know the grid, run Dijkstra to find the minimum cost."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:54:22.018Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.489Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.808Z"
 }

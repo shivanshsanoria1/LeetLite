@@ -47,6 +47,18 @@
         "Use Backtracking and pruning to solve this problem.",
         "If you set the values of some digits (from right to left), the other digits will be constrained."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isSolvable(vector<string>& words, string result) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {string} result\n * @return {boolean}\n */\nvar isSolvable = function(words, result) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:12.541Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.419Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.701Z"
 }

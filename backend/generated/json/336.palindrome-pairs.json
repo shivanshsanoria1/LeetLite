@@ -58,6 +58,18 @@
         "If we hash every string in the array, how can we check if two pairs form a palindrome after the concatenation?",
         "We can check every string in words and consider it as words[j] (i.e., the suffix of the target palindrome). We can check if there is a hash of string that can be the prefix to make it a palindrome."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> palindromePairs(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number[][]}\n */\nvar palindromePairs = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:58:10.586Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.214Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.299Z"
 }

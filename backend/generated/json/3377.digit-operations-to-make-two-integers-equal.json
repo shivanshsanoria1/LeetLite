@@ -51,6 +51,18 @@
         "Consider a directed, weighted graph where an edge exists from a node <code>x</code> to a node <code>y</code> if and only if <code>x</code> can be transformed into <code>y</code> through a single operation.",
         "Apply a shortest path algorithm on this graph to find the shortest path from <code>n</code> to <code>m</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(int n, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @return {number}\n */\nvar minOperations = function(n, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:48.309Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.292Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.333Z"
 }

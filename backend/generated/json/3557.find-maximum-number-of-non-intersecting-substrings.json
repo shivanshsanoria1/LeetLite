@@ -34,12 +34,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "\"abcdeafdef\"\n\"bcdaaaab\"",
     "meta": {
         "quesIdLCBackend": 3857,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abcdeafdef\"\n\"bcdaaaab\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "At each position <code>i</code>, let <code>j</code> be the first index of <code>word[i]</code>; if <code>i - j >= 3</code>, we can form substring <code>[j, i]</code>",
         "For each index, also store the maximum for <b>any</b> substring ending before that index in the dp."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSubstrings(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar maxSubstrings = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:51.444Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.561Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.563Z"
 }

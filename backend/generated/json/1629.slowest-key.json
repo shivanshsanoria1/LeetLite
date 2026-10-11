@@ -41,6 +41,18 @@
         "Iterate on the presses, maintaining the answer so far.",
         "The current press will change the answer if and only if its amount of time taken is longer than that of the previous answer, or they are equal but the key is larger than that of the previous answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    char slowestKey(vector<int>& releaseTimes, string keysPressed) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} releaseTimes\n * @param {string} keysPressed\n * @return {character}\n */\nvar slowestKey = function(releaseTimes, keysPressed) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:03.993Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.269Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.202Z"
 }

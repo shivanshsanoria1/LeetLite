@@ -51,6 +51,18 @@
         "After iterating over all elements, let <code>x</code> be the bitwise-and of all elements of <code>nums</code>. If <code>x == 0</code>, then we have found the minimum number of operations. Otherwise, It can be proven that we need exactly one more operation so that <code>x == 0</code>.",
         "The condition in the second hint is satisfied if and only if the minimum number of operations is less than or equal to <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOrAfterOperations(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minOrAfterOperations = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:42.302Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.771Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.361Z"
 }

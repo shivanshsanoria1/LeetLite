@@ -47,6 +47,18 @@
         "Try \"sorting\" the array first.",
         "Now find all indices in the array whose values are equal to target."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> targetIndices(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nvar targetIndices = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:12.067Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.003Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.535Z"
 }

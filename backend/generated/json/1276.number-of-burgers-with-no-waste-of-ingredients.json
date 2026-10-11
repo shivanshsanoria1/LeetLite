@@ -38,6 +38,18 @@
         "1. 4X + 2Y = tomato",
         "2. X + Y = cheese"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numOfBurgers(int tomatoSlices, int cheeseSlices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} tomatoSlices\n * @param {number} cheeseSlices\n * @return {number[]}\n */\nvar numOfBurgers = function(tomatoSlices, cheeseSlices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:32.705Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.093Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.666Z"
 }

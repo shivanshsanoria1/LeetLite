@@ -53,6 +53,18 @@
         "From a greedy perspective, what k elements should you pick?",
         "Could you sort the array while maintaining the index?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxSubsequence(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar maxSubsequence = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:20.053Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.061Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.567Z"
 }

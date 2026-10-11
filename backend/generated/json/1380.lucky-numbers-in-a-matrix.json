@@ -40,6 +40,18 @@
         "Find out and save the minimum of each row and maximum of each column in two lists.",
         "Then scan through the whole matrix to identify the elements that satisfy the criteria."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> luckyNumbers(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number[]}\n */\nvar luckyNumbers = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:56.927Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.783Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.792Z"
 }

@@ -34,12 +34,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[4,3,2,4]\n5\n[1,2,3,4,5]\n3",
     "meta": {
         "quesIdLCBackend": 3873,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[4,3,2,4]\n5\n[1,2,3,4,5]\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Observe that capping all values above <code>x</code> to <code>x</code> in a sorted array is equivalent to taking the first <code>t</code> elements (those originally > <code>x</code>) and treating each as <code>x</code>. Precompute which multiples of <code>x</code> up to <code>t * x</code> are selectable.",
         "For each cap value <code>x</code> from 1 to <code>n</code>, let <code>t</code> be the number of elements in nums originally greater than <code>x</code>. Then iterate over all sums <code>s</code> with <code>dp[t][s] == true</code> and all counts <code>m</code> from 0 to <code>t</code>; if there exists an <code>m</code> such that <code>s + m * x == k</code>, set <code>answer[x-1]</code> to true. Otherwise, it remains false."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> subsequenceSumAfterCapping(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean[]}\n */\nvar subsequenceSumAfterCapping = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:52.791Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.709Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.796Z"
 }

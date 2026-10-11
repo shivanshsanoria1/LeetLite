@@ -53,6 +53,18 @@
         "Use prefix sums to get the sum of all fruits for each possible range.",
         "Use a similar strategy for all the paths that go right, then turn and go left."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxTotalFruits(vector<vector<int>>& fruits, int startPos, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} fruits\n * @param {number} startPos\n * @param {number} k\n * @return {number}\n */\nvar maxTotalFruits = function(fruits, startPos, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:25.793Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.069Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.598Z"
 }

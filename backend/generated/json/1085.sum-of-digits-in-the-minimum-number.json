@@ -43,6 +43,7 @@
         "How to find the sum of digits?",
         "Divide the number consecutively and get their remainder modulus 10. Sum those remainders and return the answer as the problem asks."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:36:43.207Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.094Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.385Z"
 }

@@ -26,12 +26,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "[1,-1,1,-1,1]\n3\n[-1,-1,-1,1,1,1]\n5",
     "meta": {
         "quesIdLCBackend": 3876,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,-1,1,-1,1]\n3\n[-1,-1,-1,1,1,1]\n5",
     "solution": {
         "canSeeDetail": false
     },
@@ -40,6 +40,18 @@
         "Try converting all elements to 1 and separately to -1. For each case, calculate the minimum number of operations needed.",
         "Use a greedy approach: scan the array from left to right and apply an operation only when needed to fix mismatches."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canMakeEqual(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar canMakeEqual = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:10.390Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.573Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.578Z"
 }

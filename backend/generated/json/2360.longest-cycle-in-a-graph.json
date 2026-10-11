@@ -60,6 +60,18 @@
         "How many cycles can each node at most be part of?",
         "Each node can be part of at most one cycle. Start from each node and find the cycle that it is part of if there is any. Save the already visited nodes to not repeat visiting the same cycle multiple times."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestCycle(vector<int>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} edges\n * @return {number}\n */\nvar longestCycle = function(edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:37.891Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.448Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.100Z"
 }

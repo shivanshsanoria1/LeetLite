@@ -41,6 +41,18 @@
     "hints": [
         "Try to find whether each of 26 next letters are in the given string array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    char nextGreatestLetter(vector<char>& letters, char target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {character[]} letters\n * @param {character} target\n * @return {character}\n */\nvar nextGreatestLetter = function(letters, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:04.777Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.284Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.029Z"
 }

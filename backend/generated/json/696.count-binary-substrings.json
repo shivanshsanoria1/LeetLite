@@ -43,6 +43,18 @@
     "hints": [
         "How many valid binary substrings exist in \"000111\", and how many in \"11100\"?  What about \"00011100\"?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countBinarySubstrings(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countBinarySubstrings = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:31.574Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.240Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.941Z"
 }

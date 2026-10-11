@@ -28,12 +28,12 @@
             "slug": "backtracking"
         }
     ],
-    "exampleTestcases": "4\n2\n3",
     "meta": {
         "quesIdLCBackend": 3780,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "4\n2\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -41,6 +41,7 @@
     "hints": [
         "Use backtracking to generate permutations of the first <code>n</code> positive integers while ensuring that each added number alternates between odd and even."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:51:44.326Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.395Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.398Z"
 }

@@ -59,6 +59,18 @@
         "<p>The letter selection can be achieved by a min-heap (or even by brute-forcing the <code>26</code> possibilities).</p>",
         "<p>So, we know the extra letters we need to replace finally. However, we must put those letters in order from left to right so that the resulting string is the lexicographically smallest one.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string minimizeStringValue(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar minimizeStringValue = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:35.362Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.895Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.701Z"
 }

@@ -48,6 +48,18 @@
         "Bob can always make the total sum of both sides equal in mod 9.",
         "Why does the difference between the number of question marks on the left and right side matter?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool sumGame(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {boolean}\n */\nvar sumGame = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:49.634Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.755Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.980Z"
 }

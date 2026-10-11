@@ -55,6 +55,18 @@
         "The key is to find the longest non-decreasing subarray starting with the first element or ending with the last element, respectively.",
         "After removing some subarray, the result is the concatenation of a sorted prefix and a sorted suffix, where the last element of the prefix is smaller than the first element of the suffix."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findLengthOfShortestSubarray(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar findLengthOfShortestSubarray = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:27.138Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.059Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.088Z"
 }

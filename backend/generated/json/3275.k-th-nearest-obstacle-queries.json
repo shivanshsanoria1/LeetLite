@@ -42,6 +42,18 @@
         "Maintain a max heap of size <code>k</code>, thus heap will contain minimum element at the top in that queue.",
         "Remove top element and insert new element from input array if current max is larger than this."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> resultsArray(vector<vector<int>>& queries, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} queries\n * @param {number} k\n * @return {number[]}\n */\nvar resultsArray = function(queries, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:28.510Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.099Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.867Z"
 }

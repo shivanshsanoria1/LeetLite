@@ -47,6 +47,18 @@
         "Sort the positive values in <code>nums</code> by their distance from the index with the negative value.",
         "Greedily use as many values as needed from the sorted <code>nums</code> to offset the current negative value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minMoves(vector<int>& balance) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} balance\n * @return {number}\n */\nvar minMoves = function(balance) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:35.541Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.224Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.006Z"
 }

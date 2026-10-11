@@ -49,6 +49,18 @@
         "For a bit, check whether it is possible to exclude it from the OR by choosing, in every row, at least one number with that bit unset",
         "Accumulate all bits that cannot be excluded; the final value is the minimum possible bitwise OR"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumOR(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minimumOR = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:21.252Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.804Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.119Z"
 }

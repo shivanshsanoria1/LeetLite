@@ -47,6 +47,7 @@
         "Now the profit when an item with the index <code>j</code> is the middle one would be <code>profit[j] + max_right + max_left</code>.",
         "Finally, do the above procedure for all <code>j</code>'s and find the maximum profit among them. That would be the final answer."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:46:08.507Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.628Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.881Z"
 }

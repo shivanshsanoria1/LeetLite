@@ -42,6 +42,18 @@
         "Trying out all possible solutions from biggest to smallest would fit in the time limit.",
         "To check if the solution is okay, you need to find out if it's valid and matches every character"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maximumTime(string time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} time\n * @return {string}\n */\nvar maximumTime = function(time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:00.979Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.411Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.667Z"
 }

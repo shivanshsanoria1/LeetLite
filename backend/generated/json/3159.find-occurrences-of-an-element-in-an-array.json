@@ -38,6 +38,18 @@
     "hints": [
         "Compress the array <code>nums</code> and save all the occurrences of each element in the separate arrays."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> occurrencesOfElement(vector<int>& nums, vector<int>& queries, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} queries\n * @param {number} x\n * @return {number[]}\n */\nvar occurrencesOfElement = function(nums, queries, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:57.320Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.996Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.056Z"
 }

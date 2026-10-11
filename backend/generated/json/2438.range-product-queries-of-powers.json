@@ -44,6 +44,18 @@
         "The <code>powers</code> array can be created using the binary representation of <code>n</code>.",
         "Once <code>powers</code> is formed, the products can be taken using brute force."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> productQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar productQueries = function(n, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:41.457Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.615Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.188Z"
 }

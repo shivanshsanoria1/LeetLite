@@ -44,6 +44,18 @@
         "A cycle of operations begins.",
         "Simulate until <code>min(nums) * multiplier > max(nums)</code>, then greedily distribute remaining multiplications."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} multiplier\n * @return {number[]}\n */\nvar getFinalState = function(nums, k, multiplier) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:21.134Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.091Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.794Z"
 }

@@ -47,6 +47,7 @@
         "<div class=\"_1l1MA\">Imagine the number from the previous hint is <code>x</code>. Now look at the binary representation of <code>x</code> and add some leading zero to make its length equal to <code>c</code>.</div>",
         "<div class=\"_1l1MA\">Replace <code>0</code> and <code>1</code> with <code>4</code> and <code>7</code> in the number you've obtained from the previous hint.</div>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:44:39.026Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.516Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.615Z"
 }

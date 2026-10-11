@@ -40,6 +40,18 @@
         "Try to remap the first non-nine digit to 9 to obtain the maximum number.",
         "Try to remap the first non-zero digit to 0 to obtain the minimum number."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMaxDifference(int num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar minMaxDifference = function(num) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:24.857Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.155Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.357Z"
 }

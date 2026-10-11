@@ -40,6 +40,18 @@
         "Brute force using bitmasks and simulate the rounds.",
         "Calculate each state one time and save its solution."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> earliestAndLatest(int n, int firstPlayer, int secondPlayer) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} firstPlayer\n * @param {number} secondPlayer\n * @return {number[]}\n */\nvar earliestAndLatest = function(n, firstPlayer, secondPlayer) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:56:01.463Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.707Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.944Z"
 }

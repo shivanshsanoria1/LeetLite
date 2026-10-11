@@ -34,6 +34,18 @@
         "There are many routes to choose from. What is the simplest one you can think of?",
         "One possible route: Go right while possible, then go down till you reach the destination."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> createGrid(int m, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @return {string[]}\n */\nvar createGrid = function(m, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:15.800Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.959Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.229Z"
 }

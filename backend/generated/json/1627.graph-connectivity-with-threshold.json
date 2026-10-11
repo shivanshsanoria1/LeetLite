@@ -50,6 +50,18 @@
         "Connect city i with all its multiples 2*i, 3*i, ...",
         "Answer the queries using union-find data structure."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> areConnected(int n, int threshold, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} threshold\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar areConnected = function(n, threshold, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:01.840Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.267Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.195Z"
 }

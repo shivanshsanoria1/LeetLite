@@ -44,6 +44,18 @@
         "When the radius is fixed, you can find either 0 or 1 or 2 circles that pass two given points at the same time.",
         "Loop for each pair of points and find the center of the circle, after that count the number of points inside the circle."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numPoints(vector<vector<int>>& darts, int r) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} darts\n * @param {number} r\n * @return {number}\n */\nvar numPoints = function(darts, r) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:39.112Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.894Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.852Z"
 }

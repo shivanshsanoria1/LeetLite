@@ -72,6 +72,18 @@
         "When one takes the stone, they not only get the points, but they take them away from the other player too.",
         "Greedily choose the stone with the maximum aliceValues[i] + bobValues[i]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int stoneGameVI(vector<int>& aliceValues, vector<int>& bobValues) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} aliceValues\n * @param {number[]} bobValues\n * @return {number}\n */\nvar stoneGameVI = function(aliceValues, bobValues) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:05.942Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.328Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.575Z"
 }

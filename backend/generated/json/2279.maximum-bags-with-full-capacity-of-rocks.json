@@ -47,6 +47,18 @@
         "Which bag should you fill completely first?",
         "Can you think of a greedy solution?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} capacity\n * @param {number[]} rocks\n * @param {number} additionalRocks\n * @return {number}\n */\nvar maximumBags = function(capacity, rocks, additionalRocks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:31.891Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.327Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.995Z"
 }

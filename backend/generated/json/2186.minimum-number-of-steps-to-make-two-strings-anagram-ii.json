@@ -46,6 +46,18 @@
         "For each letter, we can count its frequency in s and t.",
         "For each letter, its contribution to the answer is the absolute difference between its frequency in s and t."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSteps(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar minSteps = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:37.959Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.208Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.778Z"
 }

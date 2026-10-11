@@ -49,6 +49,18 @@
     "hints": [
         "Count the number of times a player loses while iterating through the matches."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> findWinners(vector<vector<int>>& matches) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matches\n * @return {number[][]}\n */\nvar findWinners = function(matches) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:45.970Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.265Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.858Z"
 }

@@ -52,6 +52,18 @@
         "From these indices, we can form the substrings by expanding each character's range if necessary (if another character exists in the range with smaller/larger starting/ending index).",
         "Sort the valid substrings by length and greedily take those with the smallest length, discarding the ones that overlap those we took."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> maxNumOfSubstrings(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar maxNumOfSubstrings = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:11.912Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.019Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.955Z"
 }

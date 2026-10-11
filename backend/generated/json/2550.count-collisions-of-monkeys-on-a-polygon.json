@@ -40,6 +40,18 @@
     "hints": [
         "Try counting the number of ways in which the monkeys will not collide."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int monkeyMove(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar monkeyMove = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:10.932Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.134Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.340Z"
 }

@@ -67,6 +67,18 @@
         "Build a graph where grid[i][j] is connected to all the four side-adjacent cells with weighted edge. the weight is 0 if the sign is pointing to the adjacent cell or 1 otherwise.",
         "Do BFS from (0, 0) visit all edges with weight = 0 first. the answer is the distance to (m -1, n - 1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minCost = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:36.207Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.742Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.780Z"
 }

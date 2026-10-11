@@ -49,6 +49,18 @@
         "Divide the array into two parts- one comprising of only positive integers and the other of negative integers.",
         "Merge the two parts to get the resultant array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> rearrangeArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar rearrangeArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:07.758Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.104Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.709Z"
 }

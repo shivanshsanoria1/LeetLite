@@ -35,6 +35,18 @@
         "To determine the nearest multiple of 10, we can brute force the rounded amount since there are at most 100 options. In case of multiple nearest multiples, choose the largest.",
         "Another solution is observing that the rounded amount is floor((purchaseAmount + 5) / 10) * 10. Using this formula, we can calculate the account balance without having to brute force the rounded amount."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int accountBalanceAfterPurchase(int purchaseAmount) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} purchaseAmount\n * @return {number}\n */\nvar accountBalanceAfterPurchase = function(purchaseAmount) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:44:41.849Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.531Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.617Z"
 }

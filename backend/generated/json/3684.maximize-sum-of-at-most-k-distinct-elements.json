@@ -34,12 +34,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[84,93,100,77,90]\n3\n[84,93,100,77,93]\n3\n[1,1,1,2,2,2]\n6",
     "meta": {
         "quesIdLCBackend": 3997,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[84,93,100,77,90]\n3\n[84,93,100,77,93]\n3\n[1,1,1,2,2,2]\n6",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
     "hints": [
         "Use a set to dedupe then sort descending and pick top <code>k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> maxKDistinct(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar maxKDistinct = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:51.588Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.709Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.795Z"
 }

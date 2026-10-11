@@ -44,6 +44,18 @@
         "Try to split the array into some non-intersected continuous special subarrays.",
         "For each query check that the first and the last elements of that query are in the same subarray or not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> isArraySpecial(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar isArraySpecial = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:52.415Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.991Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.001Z"
 }

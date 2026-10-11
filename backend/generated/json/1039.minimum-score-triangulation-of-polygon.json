@@ -47,6 +47,18 @@
     "hints": [
         "Without loss of generality, there is a triangle that uses adjacent vertices A[0] and A[N-1] (where N = A.length).  Depending on your choice K of it, this breaks down the triangulation into two subproblems A[1:K] and A[K+1:N-1]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minScoreTriangulation(vector<int>& values) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} values\n * @return {number}\n */\nvar minScoreTriangulation = function(values) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:09.387Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.972Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.331Z"
 }

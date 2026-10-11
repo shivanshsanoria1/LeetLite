@@ -42,6 +42,18 @@
         "<p>For each index <code>i</code> in <code>s</code>, compute the earliest position in <code>t</code> after matching <code>s[0..i-1]</code>, and the latest position in <code>t</code> before matching <code>s[i+1..s.length - 1]</code>.</p>",
         "<p>Try each index <code>i</code> of <code>s</code> as the character to replace. The characters before <code>i</code> and after <code>i</code> must still be matchable in order inside <code>t</code>, with at least one unused position between them for the replaced character.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canMakeSubsequence(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nvar canMakeSubsequence = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:37.302Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.975Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.246Z"
 }

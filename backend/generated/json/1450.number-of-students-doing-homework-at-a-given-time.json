@@ -35,6 +35,18 @@
         "Imagine that startTime[i] and endTime[i] form an interval (i.e. [startTime[i], endTime[i]]).",
         "The answer is how many times the queryTime laid in those mentioned intervals."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int busyStudent(vector<int>& startTime, vector<int>& endTime, int queryTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} startTime\n * @param {number[]} endTime\n * @param {number} queryTime\n * @return {number}\n */\nvar busyStudent = function(startTime, endTime, queryTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:35.765Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.892Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.850Z"
 }

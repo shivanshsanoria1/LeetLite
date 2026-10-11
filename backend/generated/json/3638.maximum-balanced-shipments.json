@@ -38,12 +38,12 @@
             "slug": "monotonic-stack"
         }
     ],
-    "exampleTestcases": "[2,5,1,4,3]\n[4,4]",
     "meta": {
         "quesIdLCBackend": 3954,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,5,1,4,3]\n[4,4]",
     "solution": {
         "canSeeDetail": false
     },
@@ -52,6 +52,18 @@
         "Use a monotonic stack to find for each end index <code>i</code> the nearest previous index <code>j</code> with <code>weight[j] > weight[i]</code> (set <code>j = -1</code> if none).",
         "Then set <code>dp[i] = best[j] + 1</code> (using <code>best[-1] = 0</code>), and update <code>best[i] = max(best[i-1], dp[i])</code>; the result is <code>best[n-1]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxBalancedShipments(vector<int>& weight) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} weight\n * @return {number}\n */\nvar maxBalancedShipments = function(weight) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:28.023Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.640Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.696Z"
 }

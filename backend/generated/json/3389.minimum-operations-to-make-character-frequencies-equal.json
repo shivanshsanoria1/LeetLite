@@ -58,6 +58,18 @@
         "Observation 2: It is never optimal to increase an element of <code>occ</code> then decrease it, or vice versa.",
         "Use dynamic programming where <code>dp[i]</code> is the minimum number of operations required to make <code>occ[0..i]</code> good. You will need to use the above observations to come up with the transitions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int makeStringGood(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar makeStringGood = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:58.520Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.309Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.348Z"
 }

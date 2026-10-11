@@ -51,6 +51,18 @@
         "Could you try every word?",
         "Could you use a hash map to achieve a good complexity?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countWords(vector<string>& words1, vector<string>& words2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words1\n * @param {string[]} words2\n * @return {number}\n */\nvar countWords = function(words1, words2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:08.587Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.000Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.516Z"
 }

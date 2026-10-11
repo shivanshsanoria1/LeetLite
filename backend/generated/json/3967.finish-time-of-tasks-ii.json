@@ -52,6 +52,7 @@
         "Use rerooting DP: after computing values from children to parent, propagate values from parent to children.",
         "For each node, you only need the minimum and maximum finish times among all neighboring components to compute its finish time as the root."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:06:20.511Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.962Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.233Z"
 }

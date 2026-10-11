@@ -48,6 +48,18 @@
         "It can be seen that greedily swapping values of indices where <code>nums1[i] == nums2[i]</code> is the most optimal choice. How many values cannot be swapped this way?",
         "Find which indices we will swap these remaining values with, and if there are enough such indices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumTotalCost(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar minimumTotalCost = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:29.399Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.746Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.281Z"
 }

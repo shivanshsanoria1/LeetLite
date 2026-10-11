@@ -50,6 +50,18 @@
         "To check if number x is a power of 5 or not, we will divide x by 5 while x > 1 and x mod 5 == 0. After iteration if x == 1, then it was a power of 5.",
         "Since the constraint of s.length is small, we can use recursion to find all the partitions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumBeautifulSubstrings(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumBeautifulSubstrings = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:11.151Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.414Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.572Z"
 }

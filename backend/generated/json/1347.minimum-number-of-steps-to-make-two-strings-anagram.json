@@ -48,6 +48,18 @@
         "Count the frequency of characters of each string.",
         "Loop over all characters if the frequency of a character in t is less than the frequency of the same character in s then add the difference between the frequencies to the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSteps(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar minSteps = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:09.684Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.583Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.739Z"
 }

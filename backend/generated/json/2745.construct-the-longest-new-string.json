@@ -48,6 +48,18 @@
         "Using “AB” doesn’t increase the number of “AA”s or “BB”s we can use.\r\nIf we put an “AB” after “BB”, then we still need to append “AA” as before, so it doesn’t change the state.",
         "We only need to consider strings “AA” and “BB”; we can either use the pattern “AABBAABB…” or the pattern “BBAABBAA…”, depending on which one of x and y is larger."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestString(int x, int y, int z) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} x\n * @param {number} y\n * @param {number} z\n * @return {number}\n */\nvar longestString = function(x, y, z) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:54.050Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.400Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.552Z"
 }

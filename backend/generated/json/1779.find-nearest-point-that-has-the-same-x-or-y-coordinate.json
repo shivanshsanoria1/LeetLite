@@ -36,6 +36,18 @@
     "hints": [
         "Iterate through each point, and keep track of the current point with the smallest Manhattan distance from your current location."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int nearestValidPoint(int x, int y, vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} x\n * @param {number} y\n * @param {number[][]} points\n * @return {number}\n */\nvar nearestValidPoint = function(x, y, points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:49.990Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.468Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.766Z"
 }

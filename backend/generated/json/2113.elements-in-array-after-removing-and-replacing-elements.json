@@ -36,6 +36,7 @@
         "Let m be the original length of nums. If time_i / m (integer division) is even, then nums is at its original size or decreasing in size. If it is odd, then it is empty, or increasing in size.",
         "time_i % m can be used to find how many elements are in nums at minute time_i."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:05:31.628Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.074Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.619Z"
 }

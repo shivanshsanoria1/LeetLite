@@ -43,6 +43,18 @@
         "Group each connected component of the graph and assign each node of this component to the node with the lowest lexicographically character.",
         "Finally convert the string with the precalculated information."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string smallestEquivalentString(string s1, string s2, string baseStr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s1\n * @param {string} s2\n * @param {string} baseStr\n * @return {string}\n */\nvar smallestEquivalentString = function(s1, s2, baseStr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:25.394Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.021Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.359Z"
 }

@@ -30,12 +30,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[[0,1,-1],[1,-2,3],[2,-3,4]]\n[[10,10,10],[10,10,10]]",
     "meta": {
         "quesIdLCBackend": 3677,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[0,1,-1],[1,-2,3],[2,-3,4]]\n[[10,10,10],[10,10,10]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Memoization Search\n\n#### Intuition\n\nThe problem states that the robot can neutralize robbers in at most $2$ cells, which is equivalent to allowing at most $2$ modifications along the path. Compared to the Minimum Path Sum problem, this introduces an additional constraint on the number of allowed modifications. We can solve this using **dynamic programming**.\n\nSince the robot can only move right or down, and the number of allowed neutralizations is at most $2$, we define $\\text{dfs}(i, j, k)$ as the maximum number of coins that can be collected when moving from $(i, j)$ to $(m - 1, n - 1)$ with $k$ remaining neutralizations, where $m$ and $n$ are the number of rows and columns.\n\nAt position $(i, j)$, we consider two cases:\n\n* **Do not neutralize**:\n  We collect $\\textit{coins}[i][j]$ and continue moving right or down:\n  $$\n  \\text{dfs}(i, j, k) = \\max(\\text{dfs}(i + 1, j, k), \\text{dfs}(i, j + 1, k)) + \\textit{coins}[i][j]\n  $$\n\n* **Neutralize**:\n  If $k > 0$ and $\\textit{coins}[i][j]$ is negative, we can neutralize this cell, resulting in $0$ coins, and continue:\n  $$\n  \\text{dfs}(i, j, k) = \\max(\\text{dfs}(i + 1, j, k - 1), \\text{dfs}(i, j + 1, k - 1))\n  $$\n\nWe take the maximum of these two cases.\n\nNow consider the base cases:\n\n* If $i \\ge m$ or $j \\ge n$, the state is invalid, so we return $-\\infty$.\n* If $(i, j)$ is the destination $(m - 1, n - 1)$:\n\n  * If $k > 0$, we may neutralize, so return $\\max(0, \\textit{coins}[i][j])$.\n  * Otherwise, return $\\textit{coins}[i][j]$.\n\nWe start from $(0, 0, 2)$, that is, $\\text{dfs}(0, 0, 2)$, which gives the final answer.\n\n**Note:** Since $\\textit{coins}[i][j]$ can be negative, the result can also be negative. Therefore, the memoization array should not be initialized with $-1$; instead, we use $-\\infty$ (or a sufficiently small value).\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/XkoinCgt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XkoinCgt\"></iframe>\n\n#### Complexity Analysis\n\nLet $m, n$ be the number of rows and columns of $\\textit{coins}$.\n\n- Time complexity: $O(mn)$.\n  \n  Since each state is computed only once, the time complexity of dynamic programming is equal to the number of states multiplied by the time to compute each individual state. The number of states in this problem is $O(3mn)$, and the time to compute each individual state is $O(1)$, so the total time complexity is $O(mn)$.\n\n- Space complexity: $O(mn)$.\n  \n  There are a total of $3mn$ states to save, so the overall space complexity is $O(mn)$.\n\n### Approach 2: Dynamic Programming\n\n#### Intuition\n\nWe can convert the above approach into bottom-up dynamic programming. Let $\\textit{dp}[i][j][k]$ represent the maximum number of coins that can be collected when moving from $(0, 0)$ to $(i, j)$ using at most $k$ neutralizations.\n\nAt cell $(i, j)$:\n\n* If we do not neutralize, we add $\\textit{coins}[i][j]$.\n* If we neutralize, we gain $0$ coins from this cell.\n\nNow consider the transitions:\n\n* **Base case $(0, 0)$**:\n\n  * If $k = 0$: $\\textit{dp}[0][0][k] = \\textit{coins}[0][0]$\n  * If $k > 0$: $\\textit{dp}[0][0][k] = \\max(\\textit{coins}[0][0], 0)$\n\n* **First row $(i = 0, j > 0)$**:\n  $$\n  \\textit{dp}[0][j][k] =\n  \\max(\\textit{dp}[0][j-1][k] + \\textit{coins}[0][j],\n  \\textit{dp}[0][j-1][k-1])\n  $$\n\n* **First column $(i > 0, j = 0)$**:\n  $$\n  \\textit{dp}[i][0][k] =\n  \\max(\\textit{dp}[i-1][0][k] + \\textit{coins}[i][0],\n  \\textit{dp}[i-1][0][k-1])\n  $$\n\n* **General case $(i > 0, j > 0)$**:\n  $$\n  \\textit{dp}[i][j][k] =\n  \\max(\n  \\textit{dp}[i-1][j][k] + \\textit{coins}[i][j],\n  \\textit{dp}[i][j-1][k] + \\textit{coins}[i][j],\n  \\textit{dp}[i-1][j][k-1],\n  \\textit{dp}[i][j-1][k-1]\n  )\n  $$\n\nThe final answer is $\\textit{dp}[m - 1][n - 1][2]$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/eE8thSQP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"eE8thSQP\"></iframe>\n\nWe can further optimize space. Since each row depends only on the previous row, we can use a rolling array and reduce space complexity to $O(n)$. For correctness, we iterate $k$ in descending order when updating states.\n\n<iframe src=\"https://leetcode.com/playground/8fQ6NzWN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8fQ6NzWN\"></iframe>\n\n#### Complexity Analysis\n\nLet $m,n$ be the number of rows and columns of $\\textit{coins}$.\n\n- Time complexity: $O(mn)$.\n  \n  Since each state is computed only once, the time complexity of dynamic programming is equal to the number of states multiplied by the time to compute each individual state. In this problem, the number of states is $O(3mn)$, and the time to compute each individual state is $O(1)$, so the total time complexity is $O(mn)$.\n\n- Space complexity: $O(n)$.\n  \n  Dynamic programming has a total of $O(3mn)$ states, but after optimization, only $O(3n)$ space is needed to store the states, resulting in a space complexity of $O(n)$.\n\n---"
@@ -45,6 +45,18 @@
         "Use Dynamic Programming.",
         "Let <code>dp[i][j][k]</code> denote the maximum amount of money a robot can earn by starting at cell <code>(i,j)</code> and having neutralized <code>k</code> robbers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumAmount(vector<vector<int>>& coins) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} coins\n * @return {number}\n */\nvar maximumAmount = function(coins) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:23.843Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.368Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.384Z"
 }

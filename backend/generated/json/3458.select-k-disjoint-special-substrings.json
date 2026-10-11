@@ -40,12 +40,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "\"abcdbaefab\"\n2\n\"cdefdc\"\n3\n\"abeabe\"\n0",
     "meta": {
         "quesIdLCBackend": 3771,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abcdbaefab\"\n2\n\"cdefdc\"\n3\n\"abeabe\"\n0",
     "solution": {
         "canSeeDetail": false
     },
@@ -55,6 +55,18 @@
         "Starting from each character, build the smallest special substring interval containing it.",
         "Use dynamic programming on the obtained intervals to check if it's possible to pick at least <code>k</code> disjoint intervals."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool maxSubstringLength(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {boolean}\n */\nvar maxSubstringLength = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:07.173Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.437Z"
 }

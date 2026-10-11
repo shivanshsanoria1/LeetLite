@@ -51,6 +51,18 @@
         "For a fixed threshold <code>g</code>, compute how many terms in each arithmetic sequence are at least <code>g</code>, and also compute their sum using the arithmetic progression formula.",
         "If more than <code>m</code> terms are counted at the final threshold, subtract the extra copies of that threshold value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxTotalValue(vector<int>& value, vector<int>& decay, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} value\n * @param {number[]} decay\n * @param {number} m\n * @return {number}\n */\nvar maxTotalValue = function(value, decay, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:25.220Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.966Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.239Z"
 }

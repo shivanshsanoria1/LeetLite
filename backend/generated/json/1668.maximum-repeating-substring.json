@@ -46,6 +46,18 @@
         "The constraints are low enough for a brute force approach.",
         "Try every k value from 0 upwards until word is no longer k-repeating."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxRepeating(string sequence, string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} sequence\n * @param {string} word\n * @return {number}\n */\nvar maxRepeating = function(sequence, word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:42.902Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.313Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.454Z"
 }

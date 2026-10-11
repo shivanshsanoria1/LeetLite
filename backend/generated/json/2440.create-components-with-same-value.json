@@ -53,6 +53,18 @@
     "hints": [
         "Consider all divisors of the sum of values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int componentValue(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} edges\n * @return {number}\n */\nvar componentValue = function(nums, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:43.019Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.618Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.191Z"
 }

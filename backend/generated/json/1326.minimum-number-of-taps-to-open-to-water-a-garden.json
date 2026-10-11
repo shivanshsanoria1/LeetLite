@@ -45,6 +45,18 @@
         "We need to cover the interval [0, n]. we can start with the first interval and out of all intervals that intersect with it we choose the one that covers the farthest point to the right.",
         "What if there is a gap between intervals that is not covered ? we should stop and return -1 as there is some interval that cannot be covered."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minTaps(int n, vector<int>& ranges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} ranges\n * @return {number}\n */\nvar minTaps = function(n, ranges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:41.318Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.503Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.717Z"
 }

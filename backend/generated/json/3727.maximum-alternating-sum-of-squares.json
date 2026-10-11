@@ -30,12 +30,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n[1,-1,2,-2,3,-3]",
     "meta": {
         "quesIdLCBackend": 4078,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n[1,-1,2,-2,3,-3]",
     "solution": {
         "canSeeDetail": false
     },
@@ -44,6 +44,18 @@
         "The score uses squares of values. The original signs of <code>nums</code> don't affect the squared terms.",
         "In the alternating sum, even indices contribute positively and odd indices negatively."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxAlternatingSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxAlternatingSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T18:24:58.237Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.846Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.911Z"
 }

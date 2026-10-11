@@ -45,6 +45,18 @@
     "hints": [
         "Mark which integers in <code>[lower, upper]</code> appear in <code>nums</code>, then scan the range and group each maximal consecutive sequence of unmarked integers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> findDisappearedNumbers(vector<int>& nums, int lower, int upper) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} lower\n * @param {number} upper\n * @return {number[][]}\n */\nvar findDisappearedNumbers = function(nums, lower, upper) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:30.711Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.012Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.326Z"
 }

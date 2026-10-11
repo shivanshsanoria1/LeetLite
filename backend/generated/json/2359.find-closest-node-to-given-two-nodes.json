@@ -40,6 +40,18 @@
         "How can you find the shortest distance from one node to all nodes in the graph?",
         "Use BFS to find the shortest distance from both node1 and node2 to all nodes in the graph. Then iterate over all nodes, and find the node with the minimum max distance."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int closestMeetingNode(vector<int>& edges, int node1, int node2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} edges\n * @param {number} node1\n * @param {number} node2\n * @return {number}\n */\nvar closestMeetingNode = function(edges, node1, node2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:37.071Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.446Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.098Z"
 }

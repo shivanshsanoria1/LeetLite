@@ -53,6 +53,18 @@
     "hints": [
         "One way is with a Polynomial class.  For example,\r\n\r\n* `Poly:add(this, that)` returns the result of `this + that`.\r\n* `Poly:sub(this, that)` returns the result of `this - that`.\r\n* `Poly:mul(this, that)` returns the result of `this * that`.\r\n* `Poly:evaluate(this, evalmap)` returns the polynomial after replacing all free variables with constants as specified by `evalmap`.\r\n* `Poly:toList(this)` returns the polynomial in the correct output format.\r\n\r\n* `Solution::combine(left, right, symbol)` returns the result of applying the binary operator represented by `symbol` to `left` and `right`.\r\n* `Solution::make(expr)` makes a new `Poly` represented by either the constant or free variable specified by `expr`.\r\n* `Solution::parse(expr)` parses an expression into a new `Poly`."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> basicCalculatorIV(string expression, vector<string>& evalvars, vector<int>& evalints) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} expression\n * @param {string[]} evalvars\n * @param {number[]} evalints\n * @return {string[]}\n */\nvar basicCalculatorIV = function(expression, evalvars, evalints) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:23.091Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.354Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.057Z"
 }

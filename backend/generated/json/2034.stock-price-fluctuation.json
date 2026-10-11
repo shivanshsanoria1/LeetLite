@@ -54,6 +54,18 @@
         "How would you solve the problem for offline queries (all queries given at once)?",
         "Think about which data structure can help insert and delete the most optimal way."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class StockPrice {\npublic:\n    StockPrice() {\n        \n    }\n    \n    void update(int timestamp, int price) {\n        \n    }\n    \n    int current() {\n        \n    }\n    \n    int maximum() {\n        \n    }\n    \n    int minimum() {\n        \n    }\n};\n\n/**\n * Your StockPrice object will be instantiated and called as such:\n * StockPrice* obj = new StockPrice();\n * obj->update(timestamp,price);\n * int param_2 = obj->current();\n * int param_3 = obj->maximum();\n * int param_4 = obj->minimum();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "\nvar StockPrice = function() {\n    \n};\n\n/** \n * @param {number} timestamp \n * @param {number} price\n * @return {void}\n */\nStockPrice.prototype.update = function(timestamp, price) {\n    \n};\n\n/**\n * @return {number}\n */\nStockPrice.prototype.current = function() {\n    \n};\n\n/**\n * @return {number}\n */\nStockPrice.prototype.maximum = function() {\n    \n};\n\n/**\n * @return {number}\n */\nStockPrice.prototype.minimum = function() {\n    \n};\n\n/** \n * Your StockPrice object will be instantiated and called as such:\n * var obj = new StockPrice()\n * obj.update(timestamp,price)\n * var param_2 = obj.current()\n * var param_3 = obj.maximum()\n * var param_4 = obj.minimum()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:19.950Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.922Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.238Z"
 }

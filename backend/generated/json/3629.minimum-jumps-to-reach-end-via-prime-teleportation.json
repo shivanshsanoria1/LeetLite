@@ -38,12 +38,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "[1,2,4,6]\n[2,3,4,7,9]\n[4,6,5,8]",
     "meta": {
         "quesIdLCBackend": 3933,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,4,6]\n[2,3,4,7,9]\n[4,6,5,8]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Reversed Breadth-First Search\n\n#### Intuition\n\nWe use breadth-first search to find the shortest path from the end of the array, $n - 1$, back to the starting index $0$.\n\nPreprocessing: Use the Sieve of Eratosthenes to compute the list of prime factors for all numbers in the range, stored in $\\textit{factors}$.\n\nMapping: Traverse the array, and whenever a number is prime, store its index in $\\textit{edges}$. These act as \"transit stations\" that enable long-distance jumps.\n\nDuring the breadth-first search, for the current index $i$ in the queue $q$, we consider three types of movements:\n- Adjacent movement: move to $i - 1$ or $i + 1$.\n- Jump movement: for each prime factor $p$ of $\\textit{nums}[i]$, jump to all indices $j$ stored in $\\textit{edges}[p]$.\n\nWe return the depth of the BFS once index $0$ is reached.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/D5x6yHnh/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"D5x6yHnh\"></iframe>\n\n#### Complexity Analysis\n\nLet $\\textit{MX}$ be the maximum value in the array, and let $n$ be the length of the array.\n\n- Time complexity: $O(\\textit{MX}\\log \\textit{MX}) + O(n \\log \\textit{MX})$.\n\n    - The preprocessing step takes $O(\\textit{MX}\\log \\textit{MX})$.\n    - The BFS traversal takes $O(n \\log \\textit{MX})$, since each index and each prime factor group is processed at most once.\n\n- Space complexity: $O(\\textit{MX}\\log \\log \\textit{MX})$.\n  \n  This is primarily used to store the prime factor table.\n\n### Approach 2: Forward Breadth-First Search\n\n#### Intuition\n\nThis approach tackles the problem using breadth-first search, but moving in the forward direction rather than backward.\n\nUnlike Approach 1, which searches backward from index `n - 1` down to `0`, this approach starts at index `0` and progressively works its way toward `n - 1`. The direction flip changes how we think about the problem, previously our solution revolved around \"what led us here?\", and now we are asking \"where can we go from here?\"\n\nWhen building the edges map, we group indices by their shared prime factors. This is the key insight that unlocks long-distance jumps. Two indices that share a prime factor can reach each other in a single step, even if they're far apart in the array. However, we only trigger these jumps when the current value is prime, which keeps the search from exploding into unnecessary branches.\n\nThe queue starts with just `[0]`, and we mark `seen[0]` as true to make sure we don't revisit the starting point. From there, BFS fans out level by level, exploring reachable indices in order of increasing distance. The moment we land on index `n - 1`, we stop and return the answer immediately rather than waiting for the full search to finish.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/ZW5U7wxQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZW5U7wxQ\"></iframe>\n\n#### Complexity Analysis\n\nLet $\\textit{MX}$ be the maximum value in the array, and let $n$ be the length of the array.\n\n- Time complexity: $O(\\textit{MX}\\log \\textit{MX}) + O(n \\log \\textit{MX})$\n\n    - The preprocessing step takes $O(\\textit{MX}\\log \\textit{MX})$.\n    - The BFS traversal takes $O(n \\log \\textit{MX})$, since each index and each prime factor group is processed at most once.\n\n- Space complexity: $O(\\textit{MX}\\log \\log \\textit{MX})$\n  \n  This is primarily used to store the prime factor table.\n\n---"
@@ -54,6 +54,18 @@
         "Precompute prime factors of each <code>nums[i]</code> via a sieve, and build a bucket <code>bucket[p]</code> mapping each prime <code>p</code> to all indices <code>j</code> with <code>nums[j] % p == 0</code>.",
         "During the BFS, when at index <code>i</code>, enqueue its adjacent steps (<code>i+1</code> and <code>i-1</code>) and all indices in <code>bucket[p]</code> for each prime <code>p</code> dividing <code>nums[i]</code>, then clear <code>bucket[p]</code> so each prime's bucket is visited only once."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minJumps(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minJumps = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:14.914Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.634Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.670Z"
 }

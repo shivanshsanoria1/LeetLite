@@ -46,6 +46,18 @@
         "Think of the line as a graph",
         "to handle the no double back jumps condition you can handle it by holding the state of your previous jump"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumJumps(vector<int>& forbidden, int a, int b, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} forbidden\n * @param {number} a\n * @param {number} b\n * @param {number} x\n * @return {number}\n */\nvar minimumJumps = function(forbidden, a, b, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:28.570Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.304Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.411Z"
 }

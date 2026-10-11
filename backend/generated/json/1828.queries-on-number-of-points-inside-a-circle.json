@@ -47,6 +47,18 @@
         "For a point to be inside a circle, the euclidean distance between it and the circle's center needs to be less than or equal to the radius.",
         "Brute force for each circle and iterate overall points and find those inside it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countPoints(vector<vector<int>>& points, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar countPoints = function(points, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:40.052Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.500Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.862Z"
 }

@@ -40,6 +40,18 @@
         "Think greedily.",
         "If you build the string from the end to the beginning, it will always be optimal to put the highest possible character at the current index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string getSmallestString(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {string}\n */\nvar getSmallestString = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:37.401Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.311Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.436Z"
 }

@@ -44,6 +44,18 @@
         "<div class=\"_1l1MA\">We are supposed to have k = x + y so we can get <code>x<sub>2</sub> = x XOR x<sub>1</sub></code> and <code>y<sub>2</sub> = (k - x) XOR y<sub>1</sub></code>.</div>",
         "<div class=\"_1l1MA\">We can iterate over all possible values of <code>x</code> and count the number of points <code>(x<sub>1</sub>, x<sub>2</sub>)</code> and <code>(x<sub>2</sub>, y<sub>2</sub>)</code>.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPairs(vector<vector<int>>& coordinates, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} coordinates\n * @param {number} k\n * @return {number}\n */\nvar countPairs = function(coordinates, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:24.378Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.594Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.801Z"
 }

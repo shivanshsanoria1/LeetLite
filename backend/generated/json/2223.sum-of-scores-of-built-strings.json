@@ -65,6 +65,18 @@
         "Each s_i is a suffix of the string s, so consider algorithms that can determine the longest prefix that is also a suffix.",
         "Could you use the Z array from the Z algorithm to find the score of each s_i?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long sumScores(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar sumScores = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:44.638Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.264Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.853Z"
 }

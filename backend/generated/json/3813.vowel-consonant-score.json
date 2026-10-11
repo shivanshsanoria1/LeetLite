@@ -39,6 +39,18 @@
     "hints": [
         "Simulate as described"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int vowelConsonantScore(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar vowelConsonantScore = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:18.754Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.346Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.071Z"
 }

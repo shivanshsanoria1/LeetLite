@@ -48,6 +48,18 @@
         "For a given amount of time, how can we count the total number of trips completed by all buses within that time?",
         "Consider using binary search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumTime(vector<int>& time, int totalTrips) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} time\n * @param {number} totalTrips\n * @return {number}\n */\nvar minimumTime = function(time, totalTrips) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:38.878Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.210Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.782Z"
 }

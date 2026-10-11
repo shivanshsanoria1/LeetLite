@@ -47,6 +47,18 @@
         "Try exploring all integers. (Credits: @annujoshi)",
         "Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mySqrt(int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} x\n * @return {number}\n */\nvar mySqrt = function(x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:39:19.577Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.236Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.923Z"
 }

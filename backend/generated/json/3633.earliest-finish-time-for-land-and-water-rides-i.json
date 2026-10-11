@@ -38,12 +38,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "[2,8]\n[4,1]\n[6]\n[3]\n[5]\n[3]\n[1]\n[10]",
     "meta": {
         "quesIdLCBackend": 3965,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,8]\n[4,1]\n[6]\n[3]\n[5]\n[3]\n[1]\n[10]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Brute Force Enumeration + Classification Discussion\n\n#### Intuition\n\nEnumerate all possible combinations of land and water activities. We can either perform a land activity first and then a water activity, or perform a water activity first and then a land activity. To find the earliest completion time, we compute the optimal result for both orders and take the minimum.\n\nConsider the order **\"land first, then water\"**:\n\n* For a land activity, its completion time is:\n\n$$\n\\textit{landStartTime}[i] + \\textit{landDuration}[i]\n$$\n\n* When starting the water activity, there are two possible cases:\n\n  * If the water activity is already available, we can start it immediately. The completion time is:\n\n$$\n\\textit{finishLand} + \\textit{waterDuration}[j]\n$$\n\n* If the water activity is not yet available, we must wait until its start time. The completion time is:\n\n$$\n\\textit{waterStartTime}[j] + \\textit{waterDuration}[j]\n$$\n\nThese two cases can be unified as:\n\n$$\n\\max(\\textit{finishLand}, \\textit{waterStartTime}[j]) + \\textit{waterDuration}[j]\n$$\n\nWe then repeat the same process for the order **\"water first, then land\"**.\n\nBy enumerating all possible combinations and both execution orders, we can return the minimum completion time.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/iDZspuUE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"iDZspuUE\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ and $m$ be the lengths of the input arrays.\n\n- Time complexity: $O(n \\times m)$.\n\n- Space complexity: $O(1)$.\n\n---\n\n### Approach 2: Linear Enumeration + Classification Discussion\n\n#### Intuition\n\nWe can either perform a land activity first and then a water activity, or vice versa. To find the earliest completion time, we compute the optimal result for both orders and take the minimum.\n\nSuppose the second activity is fixed. The final completion time is:\n\n$$\n\\max(\\textit{finish1}, \\textit{start2}) + \\textit{duration2}\n$$\n\nwhere:\n\n* $\\textit{finish1}$ is the completion time of the first activity.\n* $\\textit{start2}$ is the start time of the second activity.\n\nNotice that this expression is non-decreasing with respect to $\\textit{finish1}$. Therefore, to minimize the final completion time, we only need to consider the earliest possible completion time among all choices for the first activity.\n\nAssume we perform a land activity first. We first find the earliest completion time among all land activities. Then, using this completion time, we traverse all water activities and compute the earliest possible overall completion time.\n\nFinally, we reverse the order and repeat the same process for **\"water first, then land\"**. The smaller of the two results is the answer.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/R9qsxuLh/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"R9qsxuLh\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ and $m$ be the lengths of the input arrays.\n\n- Time complexity: $O(n + m)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -52,6 +52,18 @@
     "hints": [
         "Use brute force"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration, vector<int>& waterStartTime, vector<int>& waterDuration) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} landStartTime\n * @param {number[]} landDuration\n * @param {number[]} waterStartTime\n * @param {number[]} waterDuration\n * @return {number}\n */\nvar earliestFinishTime = function(landStartTime, landDuration, waterStartTime, waterDuration) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:21.059Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.637Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.685Z"
 }

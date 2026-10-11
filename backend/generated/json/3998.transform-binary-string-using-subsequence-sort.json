@@ -50,6 +50,18 @@
         "<p>For each string in <code>strs</code>, determine how many <code>'?'</code> characters must become <code>'1'</code>. To minimize the number of ones in every prefix, assign these ones to the rightmost possible <code>'?'</code> positions.</p>",
         "<p>After this assignment, check the prefix condition against <code>s</code>.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> transformStr(string s, vector<string>& strs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string[]} strs\n * @return {boolean[]}\n */\nvar transformStr = function(s, strs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:54.499Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.986Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.261Z"
 }

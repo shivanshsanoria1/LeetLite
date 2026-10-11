@@ -39,6 +39,18 @@
         "Try finding the largest prefix from a that matches a suffix in b",
         "Try string matching"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkPalindromeFormation(string a, string b) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} a\n * @param {string} b\n * @return {boolean}\n */\nvar checkPalindromeFormation = function(a, b) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:49.142Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.202Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.176Z"
 }

@@ -34,12 +34,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]\n2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]\n2\n[[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
     "meta": {
         "quesIdLCBackend": 3721,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]\n2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]\n2\n[[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Playback After Sorting\n\n#### Intuition\n\nWe first sort all events by time. For events with the same time, offline events should come first, because according to the problem statement, user state changes should be processed and synchronized before all other events that occur at the same time.\n\nAfter sorting, we process each event in chronological order from front to back. We can use a hash table to record each user's online time, and determine whether the user is online by comparing it with the current time. During traversal:\n\n1. For message events, the cases where the mentioned object is $\\textit{ALL}$ or $\\textit{HERE}$ are relatively easy to handle. However, for the other case, we need to parse a $\\textit{mentions_string}$ that contains multiple specified $\\textit{id}$s. This string is composed of multiple $\\textit{idx}$ separated by spaces, where $x$ is the integer we need to parse. In most languages, we can concatenate consecutive digits to form an $\\textit{id}$ and split when we reach the end of the string or the next character is a space. For languages that provide a string split method, we can split the string by space $\\textit{split}$, then remove the prefix of each entry to obtain each user $\\textit{id}$.\n2. For offline events, set the user's online status in the hash table for sixty units of time after the event.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/83aGK3LL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"83aGK3LL\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be $\\textit{numberOfUsers}$, $m$ be the length of $\\textit{events}$, and $t$ be the maximum timestamp.\n\n- Time complexity: $O(nm + m\\log m\\log t)$.\n  \n  The time complexity of sorting $\\textit{events}$ is $O(m\\log m\\log t)$, and timestamp parsing takes $O(\\log t)$. Traversing and processing each event takes $O(nm)$.\n\n- Space complexity: $O(n + m)$ or $O(n + \\log m)$.\n\n  $O(n)$ for the arrays used to track mentions and online status. Additionally, sorting the $m$ events requires extra space that depends on the sorting implementation, which can range from $O(\\log m)$ to $O(m)$.\n\n---"
@@ -49,6 +49,18 @@
         "Sort events by timestamp and then process each event.",
         "Maintain two sets for offline and online user IDs."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countMentions(int numberOfUsers, vector<vector<string>>& events) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} numberOfUsers\n * @param {string[][]} events\n * @return {number[]}\n */\nvar countMentions = function(numberOfUsers, events) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:41.253Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.393Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.395Z"
 }

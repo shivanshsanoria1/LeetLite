@@ -35,6 +35,13 @@
         "An async function is defined as function which returns a Promise.",
         "To create a Promise, you can code new Promise((resolve, reject) => {}). When you want the function to return a value, code resolve(value) inside the callback."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} millis\n * @return {Promise}\n */\nasync function sleep(millis) {\n    \n}\n\n/** \n * let t = Date.now()\n * sleep(100).then(() => console.log(Date.now() - t)) // 100\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:10.630Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.259Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.413Z"
 }

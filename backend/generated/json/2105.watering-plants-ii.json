@@ -46,6 +46,18 @@
         "Since watering each plant takes the same amount of time, where will Alice and Bob meet if they start watering the plants simultaneously? How can you use this to optimize your solution?",
         "What will you do when both Alice and Bob have to water the same plant?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumRefill(vector<int>& plants, int capacityA, int capacityB) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} plants\n * @param {number} capacityA\n * @param {number} capacityB\n * @return {number}\n */\nvar minimumRefill = function(plants, capacityA, capacityB) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:25.071Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.068Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.595Z"
 }

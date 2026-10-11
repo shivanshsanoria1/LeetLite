@@ -54,6 +54,18 @@
         "Find the cell <code>(i, j)</code> in which the element is present.",
         "You can store the coordinates for each value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class NeighborSum {\npublic:\n    NeighborSum(vector<vector<int>>& grid) {\n        \n    }\n    \n    int adjacentSum(int value) {\n        \n    }\n    \n    int diagonalSum(int value) {\n        \n    }\n};\n\n/**\n * Your NeighborSum object will be instantiated and called as such:\n * NeighborSum* obj = new NeighborSum(grid);\n * int param_1 = obj->adjacentSum(value);\n * int param_2 = obj->diagonalSum(value);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n */\nvar NeighborSum = function(grid) {\n    \n};\n\n/** \n * @param {number} value\n * @return {number}\n */\nNeighborSum.prototype.adjacentSum = function(value) {\n    \n};\n\n/** \n * @param {number} value\n * @return {number}\n */\nNeighborSum.prototype.diagonalSum = function(value) {\n    \n};\n\n/** \n * Your NeighborSum object will be instantiated and called as such:\n * var obj = new NeighborSum(grid)\n * var param_1 = obj.adjacentSum(value)\n * var param_2 = obj.diagonalSum(value)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:00.956Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.073Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.639Z"
 }

@@ -50,6 +50,18 @@
         "Similarly, for every index i, try to find the maximum possible sum of n elements with indices greater or equal to i, if possible.",
         "Now for all indices, check if we can consider it as the partitioning index and hence find the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumDifference(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumDifference = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:18.612Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.162Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.727Z"
 }

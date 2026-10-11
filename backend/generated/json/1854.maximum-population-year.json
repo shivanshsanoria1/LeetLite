@@ -45,6 +45,18 @@
         "For each year find the number of people whose birth_i ≤ year and death_i > year.",
         "Find the maximum value between all years."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumPopulation(vector<vector<int>>& logs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} logs\n * @return {number}\n */\nvar maximumPopulation = function(logs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:06.371Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.516Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.897Z"
 }

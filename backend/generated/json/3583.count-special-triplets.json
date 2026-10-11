@@ -30,12 +30,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "[6,3,6]\n[0,1,0,0]\n[8,4,2,8,4]",
     "meta": {
         "quesIdLCBackend": 3885,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[6,3,6]\n[0,1,0,0]\n[8,4,2,8,4]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Enumeration + Counting\n\n#### Intuition\n\nAccording to the problem statement, it is easy to observe that for the triplet (i, j, k), we have nums[i] = nums[k]. Consider counting by enumerating the numbers on both sides or in the middle.\n\nEnumerating numbers on both sides, for example enumerating $\\textit{nums}[i]$, and searching for valid $(j, k)$ pairs requires maintaining the relative position information between numbers in the $\\textit{nums}$ array, which is tedious and difficult to implement under this data range constraint.\n\nInstead, consider enumerating the middle element $\\textit{nums}[j]$. At this point, we only need to know how many numbers on both sides are equal to $\\textit{nums}[j] \\times 2$ so that we can compute the contribution of $\\textit{nums}[j]$ to the answer.\n\nSuppose there are $\\textit{LeftCnt}$ indices that meet the condition on the left side of the current position and $\\textit{RightCnt}$ indices that meet the condition on the right side. According to the multiplication principle for counting problems, their contribution to the answer is $\\textit{LeftCnt} \\times \\textit{RightCnt} \\bmod (10^9 + 7)$.\n\nNow consider how to calculate $\\textit{LeftCnt}$ and $\\textit{RightCnt}$.\n\nUse a hash table to count the elements in $\\textit{nums}$. Maintain two hash tables, $\\textit{numCnt}$ and $\\textit{numPartialCnt}$, representing the total number of occurrences of each element in the entire array and the number of occurrences up to the current traversal position, respectively.\n\nWe can precompute $\\textit{numCnt}$ and then update $\\textit{numPartialCnt}$ while enumerating. Let the target value to be searched at this point be $t$ (that is, twice $\\textit{nums}[j]$). It follows that $\\textit{LeftCnt} = \\textit{numPartialCnt}[t]$ and $\\textit{RightCnt} = \\textit{numCnt}[t] - \\textit{numPartialCnt}[t]$.\n\nFinally, note the impact of the current element when updating $\\textit{numPartialCnt}$. When $\\textit{nums}[j] = 0$, we are looking for three identical numbers, so the update must occur after calculating $\\textit{LeftCnt}$ and before calculating $\\textit{RightCnt}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/amc3G4Rn/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"amc3G4Rn\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n  \n  Traversing $\\textit{nums}$ takes $O(n)$ and accessing the hash table takes $O(1)$, so the total complexity is $O(n)$.\n\n- Space complexity: $O(n)$.\n  \n  The hash tables require $O(n)$ space.\n\n### Approach 2: Enumeration + Binary Search\n\n#### Intuition\n\nThe basic idea is the same as in the first method, the difference being that after building the position index, binary search is used to compute $\\textit{LeftCnt}$ and $\\textit{RightCnt}$.\n\nUse a hash table $\\textit{pos}$ to build the position index for each element, storing the sequence of indices where the element appears in $\\textit{nums}$.\n\nSince the length of the index sequence indicates the number of occurrences of each element, for the current position $j$, we can compute $\\textit{LeftCnt}$ and $\\textit{RightCnt}$ by performing a binary search to find the position of $j$ in the target element’s index sequence.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Nc3RTaK5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Nc3RTaK5\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n \\log n)$.\n  \n  Traversing $\\textit{nums}$ takes $O(n)$, hash table access takes $O(1)$, and binary search takes $O(\\log n)$, giving a total of $O(n \\log n)$.\n\n- Space complexity: $O(n)$.\n  \n  The hash table stores index sequences and requires $O(n)$ space on average.\n\n---"
@@ -45,6 +45,18 @@
         "Use frequency arrays or maps, e.g. <code>freqPrev</code> and <code>freqNext</code>—to track how many times each value appears before and after the current index.",
         "For each index <code>j</code> in the triplet (<code>i</code>,<code>j</code>,<code>k</code>), compute its contribution to the answer using your freqPrev and freqNext counts."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int specialTriplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar specialTriplets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:19.404Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.577Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.585Z"
 }

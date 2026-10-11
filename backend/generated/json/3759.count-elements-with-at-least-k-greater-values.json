@@ -52,6 +52,18 @@
         "Sort <code>nums</code>, build distinct <code>values</code> and <code>count</code>.",
         "For each <code>val</code>: find <code>upper_bound</code>, compute <code>greater = n - upper_bound_idx</code>; if <code>greater >= k</code> add <code>count[val]</code> to <code>ans</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countElements(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countElements = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:16.493Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.056Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.978Z"
 }

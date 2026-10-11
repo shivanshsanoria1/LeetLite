@@ -40,6 +40,18 @@
     "hints": [
         "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int monotoneIncreasingDigits(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar monotoneIncreasingDigits = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:00.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.279Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.025Z"
 }

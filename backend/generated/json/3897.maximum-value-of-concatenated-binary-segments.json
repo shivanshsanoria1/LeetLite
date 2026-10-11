@@ -45,6 +45,18 @@
         "Sort the segments by the number of ones in their prefix (in descending order).",
         "Start with segments that contain the most ones first."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxValue(vector<int>& nums1, vector<int>& nums0) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums0\n * @return {number}\n */\nvar maxValue = function(nums1, nums0) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:03.871Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.835Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.163Z"
 }

@@ -30,12 +30,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "100\n2\n44\n3",
     "meta": {
         "quesIdLCBackend": 3947,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "100\n2\n44\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -45,6 +45,18 @@
         "Use a recursive search <code>dfs(start, picked, prod, path)</code> that picks the next divisor from <code>divs[start...]</code>, multiplies it into <code>prod</code>, and appends to <code>path</code> until you have <code>k</code> factors whose product is <code>n</code>.",
         "During the search, keep track of the best <code>path</code> that minimizes max(path) – min(path) and return it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minDifference(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number[]}\n */\nvar minDifference = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:09:36.209Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.700Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.749Z"
 }

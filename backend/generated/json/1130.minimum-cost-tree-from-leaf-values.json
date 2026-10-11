@@ -55,6 +55,18 @@
         "Do a DP, where dp(i, j) is the answer for the subarray arr[i]..arr[j].",
         "For each possible way to partition the subarray i <= k < j, the answer is max(arr[i]..arr[k]) * max(arr[k+1]..arr[j]) + dp(i, k) + dp(k+1, j)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mctFromLeafValues(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar mctFromLeafValues = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:20.491Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.293Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.478Z"
 }

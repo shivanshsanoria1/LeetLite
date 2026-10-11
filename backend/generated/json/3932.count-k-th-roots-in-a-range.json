@@ -42,6 +42,18 @@
         "Be careful of edge case: <code>k == 1</code>.",
         "Be careful of this edge case: <code>l == 0</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countKthRoots(int l, int r, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} l\n * @param {number} r\n * @param {number} k\n * @return {number}\n */\nvar countKthRoots = function(l, r, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:40.331Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.862Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.195Z"
 }

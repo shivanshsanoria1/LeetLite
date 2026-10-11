@@ -44,6 +44,18 @@
         "Iterate through all possible consecutive substrings of k characters.",
         "Find the number of changes for each substring to make all blocks black, and return the minimum of these."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumRecolors(string blocks, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} blocks\n * @param {number} k\n * @return {number}\n */\nvar minimumRecolors = function(blocks, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:53.867Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.463Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.116Z"
 }

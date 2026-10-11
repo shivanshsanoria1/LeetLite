@@ -57,6 +57,18 @@
         "Can you think of the problem in terms of graphs?",
         "What algorithm allows you to find the order of nodes in a graph?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> buildMatrix(int k, vector<vector<int>>& rowConditions, vector<vector<int>>& colConditions) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @param {number[][]} rowConditions\n * @param {number[][]} colConditions\n * @return {number[][]}\n */\nvar buildMatrix = function(k, rowConditions, colConditions) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:04.413Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.477Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.130Z"
 }

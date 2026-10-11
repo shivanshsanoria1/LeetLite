@@ -42,6 +42,18 @@
     "hints": [
         "Use the maximum length of words to determine the length of the returned answer. However, don't forget to remove trailing spaces."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> printVertically(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar printVertically = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:38.451Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.500Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.716Z"
 }

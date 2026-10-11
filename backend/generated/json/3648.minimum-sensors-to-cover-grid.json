@@ -22,12 +22,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "5\n5\n1\n2\n2\n2",
     "meta": {
         "quesIdLCBackend": 3945,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "5\n5\n1\n2\n2\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -36,6 +36,18 @@
         "Let <code>s = 2*k + 1</code>, the side length each sensor covers.",
         "The minimum number is <code>ceil(n / s) * ceil(m / s)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSensors(int n, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number} k\n * @return {number}\n */\nvar minSensors = function(n, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:39.594Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.646Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.721Z"
 }

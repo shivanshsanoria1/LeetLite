@@ -61,6 +61,18 @@
         "If a new value is formed, we should recursively check if it can be merged with the value to its left.",
         "To simulate the merge efficiently, we can maintain a stack that stores processed elements. When we iterate through the array, we only compare with the top of the stack (which is the value to its left)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> replaceNonCoprimes(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar replaceNonCoprimes = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:47.376Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.228Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.801Z"
 }

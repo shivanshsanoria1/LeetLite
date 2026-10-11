@@ -44,6 +44,18 @@
         "If the minimum score is not equal to <code>0</code>, the only possible split will be to keep all elements in one subarray.",
         "Otherwise, all of the subarrays should have a score of <code>0</code>, we can greedily split the array while trying to make each subarray as small as possible."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:35.748Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.604Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.829Z"
 }

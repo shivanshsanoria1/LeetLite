@@ -28,12 +28,12 @@
             "slug": "string-matching"
         }
     ],
-    "exampleTestcases": "\"leetcode\"\n\"ee*e\"\n\"car\"\n\"c*v\"\n\"luck\"\n\"u*\"",
     "meta": {
         "quesIdLCBackend": 3684,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"leetcode\"\n\"ee*e\"\n\"car\"\n\"c*v\"\n\"luck\"\n\"u*\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -41,6 +41,18 @@
     "hints": [
         "Divide the pattern in two strings and search in the string."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool hasMatch(string s, string p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} p\n * @return {boolean}\n */\nvar hasMatch = function(s, p) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:48:42.649Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.332Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.375Z"
 }

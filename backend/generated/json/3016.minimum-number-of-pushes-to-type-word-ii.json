@@ -55,6 +55,18 @@
         "The optimal way is to map letters to keys evenly.",
         "Sort the letters by frequencies in the word in non-increasing order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumPushes(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar minimumPushes = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:37.391Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.767Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.340Z"
 }

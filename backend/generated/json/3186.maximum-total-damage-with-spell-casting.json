@@ -61,6 +61,18 @@
         "Think of dynamic programming.",
         "<code>dp[i][j]</code> represents the maximum damage considering up to the <code>i</code>-th unique spell and <code>j</code> represents the number of spells skipped (up to 3 as per constraints)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumTotalDamage(vector<int>& power) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} power\n * @return {number}\n */\nvar maximumTotalDamage = function(power) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:18.848Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.024Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.251Z"
 }

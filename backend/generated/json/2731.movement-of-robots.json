@@ -49,6 +49,18 @@
         "Observe that if you ignore collisions, the resultant positions of robots after d seconds would be the same.",
         "After d seconds, sort the ending positions and use prefix sum to calculate the distance sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int sumDistance(vector<int>& nums, string s, int d) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {string} s\n * @param {number} d\n * @return {number}\n */\nvar sumDistance = function(nums, s, d) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:43.714Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.391Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.541Z"
 }

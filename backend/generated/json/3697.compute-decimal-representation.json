@@ -26,12 +26,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "537\n102\n6",
     "meta": {
         "quesIdLCBackend": 4039,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "537\n102\n6",
     "solution": {
         "canSeeDetail": false
     },
@@ -41,6 +41,18 @@
         "Each nonzero digit contributes a base-10 component.",
         "Collect all components and return them in descending order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> decimalRepresentation(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar decimalRepresentation = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:12:03.239Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.718Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.825Z"
 }

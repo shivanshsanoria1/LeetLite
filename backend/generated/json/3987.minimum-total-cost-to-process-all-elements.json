@@ -45,6 +45,18 @@
         "<p>If <code>x</code> more operations are needed after already performing <code>cnt</code> operations, their cost is <code>(cnt + 1) + (cnt + 2) + ... + (cnt + x)</code>.</p>",
         "<p>Use the arithmetic progression formula to add this cost efficiently, then update the current resources and continue scanning <code>nums</code>.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumCost(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minimumCost = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:42.415Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.977Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.248Z"
 }

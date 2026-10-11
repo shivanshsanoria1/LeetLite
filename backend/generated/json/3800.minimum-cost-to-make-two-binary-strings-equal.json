@@ -44,6 +44,18 @@
         "If one mismatch remains (<code>r % 2 == 1</code>), pay <code>flipCost</code>.",
         "Sum all costs for the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumCost(string s, string t, int flipCost, int swapCost, int crossCost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} flipCost\n * @param {number} swapCost\n * @param {number} crossCost\n * @return {number}\n */\nvar minimumCost = function(s, t, flipCost, swapCost, crossCost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:02.256Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.308Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.043Z"
 }

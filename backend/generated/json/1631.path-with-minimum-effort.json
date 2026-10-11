@@ -69,6 +69,18 @@
         "If you are given threshold k, check if it is possible to go from (0, 0) to (n-1, m-1) using only edges of ≤ k cost.",
         "Binary search the k value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumEffortPath(vector<vector<int>>& heights) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} heights\n * @return {number}\n */\nvar minimumEffortPath = function(heights) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:06.163Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.272Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.206Z"
 }

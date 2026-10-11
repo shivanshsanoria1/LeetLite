@@ -53,6 +53,18 @@
         "Build array rank where rank[i][j] is the number of votes for team i to be the j-th rank.",
         "Sort the teams by rank array. if rank array is the same for two or more teams, sort them by the ID in ascending order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string rankTeams(vector<string>& votes) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} votes\n * @return {string}\n */\nvar rankTeams = function(votes) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:33.493Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.739Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.777Z"
 }

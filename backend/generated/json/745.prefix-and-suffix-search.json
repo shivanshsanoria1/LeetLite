@@ -55,6 +55,18 @@
         "If the query is: prefix = \"app\", suffix = \"le\", we can find it by querying our trie for\r\n\"le { app\".",
         "We use '{' because in ASCii Table, '{' is next to 'z', so we just need to create new TrieNode[27] instead of 26. Also, compared with traditional Trie, we add the attribute weight in class TrieNode.\r\nYou can still choose any different character."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class WordFilter {\npublic:\n    WordFilter(vector<string>& words) {\n        \n    }\n    \n    int f(string pref, string suff) {\n        \n    }\n};\n\n/**\n * Your WordFilter object will be instantiated and called as such:\n * WordFilter* obj = new WordFilter(words);\n * int param_1 = obj->f(pref,suff);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n */\nvar WordFilter = function(words) {\n    \n};\n\n/** \n * @param {string} pref \n * @param {string} suff\n * @return {number}\n */\nWordFilter.prototype.f = function(pref, suff) {\n    \n};\n\n/** \n * Your WordFilter object will be instantiated and called as such:\n * var obj = new WordFilter(words)\n * var param_1 = obj.f(pref,suff)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:05.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.332Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.030Z"
 }

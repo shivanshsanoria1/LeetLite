@@ -45,6 +45,18 @@
         "Each 3x3 submatrix has exactly one hourglass.",
         "Find the sum of each hourglass in the matrix and return the largest of these values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSum(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maxSum = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:33.257Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.557Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.179Z"
 }

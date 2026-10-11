@@ -45,6 +45,18 @@
         "Precompute binomial coefficients <code>C(n, k)</code> to count how many numbers with exactly <code>k</code> set bits exist for a given length.",
         "Determine the position of the most significant bit first, then greedily determine the remaining bits from MSB to LSB based on the remaining count <code>n</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long nthSmallest(long long n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar nthSmallest = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:29.812Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.377Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.085Z"
 }

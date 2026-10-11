@@ -44,6 +44,7 @@
         "<p>For one such feature, create a binary array <code>a</code> over the positions of <code>s</code>. If <code>cnt</code> is the number of ones, then for a reflection represented by <code>c</code>, the number of mirrored pairs with different feature values is <code>cnt - conv[c]</code>, where <code>conv[c] = sum(a[i] * a[(c - i) mod n])</code>.</p>",
         "<p>Compute these circular self-convolutions for all 13 features using FFT or NTT. For a left rotation by <code>r</code>, use <code>c = (2 * r - 1) mod n</code>, sum the 13 contributions, and minimize this palindrome cost plus <code>r</code>.</p>"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:07:24.201Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.009Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.320Z"
 }

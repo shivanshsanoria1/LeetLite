@@ -40,6 +40,18 @@
         "You can use two pointers for each version string to traverse them together while comparing the corresponding segments.",
         "Utilize the substring method to extract each version segment delimited by '.'. Ensure you're extracting the segments correctly by adjusting the start and end indices accordingly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int compareVersion(string version1, string version2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} version1\n * @param {string} version2\n * @return {number}\n */\nvar compareVersion = function(version1, version2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:55:38.187Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.300Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.373Z"
 }

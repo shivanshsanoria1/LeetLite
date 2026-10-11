@@ -56,6 +56,18 @@
         "Can we iterate over how many bags we should remove and choose the one that minimizes the total amount of beans to remove?",
         "Sort the bags of beans first."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minimumRemoval(vector<int>& beans) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} beans\n * @return {number}\n */\nvar minimumRemoval = function(beans) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:25.372Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.177Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.736Z"
 }

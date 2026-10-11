@@ -22,12 +22,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "2\n7\n4\n2\n5\n6\n1\n5\n3",
     "meta": {
         "quesIdLCBackend": 3830,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n7\n4\n2\n5\n6\n1\n5\n3",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Mathematics\n\n#### Intuition\n\nWe are asked to determine which of the first two people reaches the third person first, given that they all move at the same speed. Since speed is identical, the deciding factor is distance: the person closer to the third person will arrive sooner.\n\nLet the distance between the first and third person be\n\n$$\nd_{xz} = |x - z|\n$$\n\nand the distance between the second and third person be\n\n$$\nd_{yz} = |y - z|\n$$\n\nNow we simply compare these distances:\n\n- If $d_{xz} < d_{yz}$, then the first person is closer, so we return `1`.\n- If $d_{xz} > d_{yz}$, then the second person is closer, so we return `2`.\n- Otherwise, both are equally close, so we return `0`.\n\nThis reduces the problem to a straightforward comparison of absolute differences.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/CL62w2QN/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"CL62w2QN\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(1)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -36,6 +36,18 @@
     "hints": [
         "Compare the distances from Persons 1 and 2 to Person 3 to determine the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findClosest(int x, int y, int z) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} x\n * @param {number} y\n * @param {number} z\n * @return {number}\n */\nvar findClosest = function(x, y, z) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:01.151Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.538Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.537Z"
 }

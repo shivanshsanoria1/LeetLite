@@ -22,12 +22,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "1\n2\n5\n4\n0\n1\n2\n3\n1\n1\n2\n2",
     "meta": {
         "quesIdLCBackend": 3922,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "1\n2\n5\n4\n0\n1\n2\n3\n1\n1\n2\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -37,6 +37,18 @@
         "If the larger coordinate >= 2 × (the smaller), undo by halving the larger; otherwise undo by subtracting the smaller from the larger.",
         "Count these undo-steps until you hit <code>(sx, sy)</code> (return the count), or return -1 if you drop below or get stuck."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMoves(int sx, int sy, int tx, int ty) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} sx\n * @param {number} sy\n * @param {number} tx\n * @param {number} ty\n * @return {number}\n */\nvar minMoves = function(sx, sy, tx, ty) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:50.741Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.623Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.623Z"
 }

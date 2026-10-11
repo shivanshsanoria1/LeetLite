@@ -47,6 +47,18 @@
         "Let’s say k is the number of distinct elements in the array. Our goal is to find the number of subarrays with k distinct elements.",
         "Since the constraints are small, you can check every subarray."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCompleteSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countCompleteSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:36.543Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.498Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.611Z"
 }

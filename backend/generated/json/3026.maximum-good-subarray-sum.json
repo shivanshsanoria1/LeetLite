@@ -47,6 +47,18 @@
         "For the index <code>i</code> store the element at index <code>i + 1</code> as the key and the prefix sum till <code>i</code> as the value.",
         "For each prefix sum ending at <code>nums[i]</code>, try finding <code>nums[i] - k</code> and <code>nums[i] + k</code> in the HashMap and update the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumSubarraySum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maximumSubarraySum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:47.423Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.773Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.378Z"
 }

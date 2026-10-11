@@ -39,6 +39,7 @@
         "If you split <code>x</code> into <code>a</code> and <code>b</code>, then <code>f(x) = a * b + f(a) + f(b)</code>.",
         "Look for an invariant: the total cost may depend only on the final set of pieces, not on the order of splits."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-22T19:06:11.420Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.940Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.226Z"
 }

@@ -61,6 +61,18 @@
         "How can we find an integer x that divides all the elements of numsDivide?",
         "Will finding GCD (Greatest Common Divisor) help here?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, vector<int>& numsDivide) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} numsDivide\n * @return {number}\n */\nvar minOperations = function(nums, numsDivide) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:25.377Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.435Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.080Z"
 }

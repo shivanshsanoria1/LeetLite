@@ -51,6 +51,18 @@
         "Let’s start by making the leftmost and rightmost characters match with some number of swaps.",
         "If we figure out how to do that using the minimum number of swaps, then we can delete the leftmost and rightmost characters and solve the problem recursively."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMovesToMakePalindrome(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minMovesToMakePalindrome = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:43.588Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.224Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.796Z"
 }

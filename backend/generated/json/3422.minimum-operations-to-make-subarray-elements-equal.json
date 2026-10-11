@@ -41,12 +41,12 @@
             "slug": "heap-priority-queue"
         }
     ],
-    "exampleTestcases": "[4,-3,2,1,-4,6]\n3\n[-2,-2,3,1,4]\n2",
     "meta": {
         "quesIdLCBackend": 3698,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[4,-3,2,1,-4,6]\n3\n[-2,-2,3,1,4]\n2",
     "solution": {
         "canSeeDetail": false
     },
@@ -56,6 +56,7 @@
         "Use 2 multisets to maintain the median dynamically.",
         "Calculate the sums of the 2 multisets dynamically to accelerate the answer calculation."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:51:29.573Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.385Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.387Z"
 }

@@ -53,6 +53,18 @@
         "For each circle, how can you check whether or not a lattice point lies inside it?",
         "Since you need to reduce the search space, consider the minimum and maximum possible values of the coordinates of a lattice point contained in any circle."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countLatticePoints(vector<vector<int>>& circles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} circles\n * @return {number}\n */\nvar countLatticePoints = function(circles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:05.534Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.297Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.937Z"
 }

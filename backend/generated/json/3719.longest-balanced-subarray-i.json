@@ -38,12 +38,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[2,5,4,3]\n[3,2,2,5,4]\n[1,2,3,2]",
     "meta": {
         "quesIdLCBackend": 4045,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,5,4,3]\n[3,2,2,5,4]\n[1,2,3,2]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Brute Force\n\n#### Intuition\n\nThis problem is a simplified version of [3721. Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/), which can be solved directly using a brute force approach.\n\nWe can perform an $O(n^2)$ traversal over all possible subarrays. During this process, we use two hash tables to maintain the counts of odd and even numbers within the current subarray, and continuously update the maximum length that satisfies the balanced condition.\n\nIn terms of implementation, there are multiple ways to maintain these hash tables. The simplest approach is to initialize new hash tables each time the left boundary of the subarray is fixed, and then update the result while expanding the right boundary.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/3g7kDg7j/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3g7kDg7j\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n ^ 2)$.\n  \n  Traversing the interval requires $O(n^2)$, and maintaining the count of elements using a hash table requires $O(1)$.\n\n- Space complexity: $O(n)$.\n  \n  The hash table requires $O(n)$ space.\n\n---"
@@ -53,6 +53,18 @@
         "Use brute force",
         "Try every subarray and use a map/set data structure to track the distinct even and odd numbers"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestBalanced(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestBalanced = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T17:28:11.657Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.805Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.899Z"
 }

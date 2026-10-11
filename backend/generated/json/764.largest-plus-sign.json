@@ -41,6 +41,18 @@
     "hints": [
         "For each direction such as \"left\", find left[r][c] = the number of 1s you will see before a zero starting at r, c and walking left.  You can find this in N^2 time with a dp.  The largest plus sign at r, c is just the minimum of left[r][c], up[r][c] etc."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int orderOfLargestPlusSign(int n, vector<vector<int>>& mines) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} mines\n * @return {number}\n */\nvar orderOfLargestPlusSign = function(n, mines) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:18.943Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.350Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.050Z"
 }

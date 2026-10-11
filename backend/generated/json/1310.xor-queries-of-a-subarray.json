@@ -45,6 +45,18 @@
         "Compute the prefix sum for XOR.",
         "Process the queries with the prefix sum values."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> xorQueries(vector<int>& arr, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar xorQueries = function(arr, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:15.720Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.433Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.706Z"
 }

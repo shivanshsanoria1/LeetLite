@@ -47,6 +47,18 @@
         "Similarly if you cannot place balls such that the answer is x then you can do it for y where y > x.",
         "Binary search on the answer and greedily see if it is possible."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDistance(vector<int>& position, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} position\n * @param {number} m\n * @return {number}\n */\nvar maxDistance = function(position, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:02.003Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.045Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.053Z"
 }

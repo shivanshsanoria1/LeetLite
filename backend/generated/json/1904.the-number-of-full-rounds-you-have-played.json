@@ -39,6 +39,18 @@
         "Consider the day as 48 hours instead of 24.",
         "For each round check if you were playing."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfRounds(string loginTime, string logoutTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} loginTime\n * @param {string} logoutTime\n * @return {number}\n */\nvar numberOfRounds = function(loginTime, logoutTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:30.996Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.711Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.948Z"
 }

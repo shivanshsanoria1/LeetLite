@@ -38,12 +38,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[\"S.\", \"XL\"]\n2\n[\"LS\", \"RL\"]\n4\n[\"L.S\", \"RXL\"]\n3",
     "meta": {
         "quesIdLCBackend": 3870,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"S.\", \"XL\"]\n2\n[\"LS\", \"RL\"]\n4\n[\"L.S\", \"RXL\"]\n3",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Breadth-First Search\n\n#### Intuition\n\nWe can use Breadth-First Search (BFS) to calculate the shortest path. In addition to the basic position coordinates $x$ and $y$, our BFS state must also track the current energy $e$, the number of steps taken $\\textit{steps}$, and the set of already collected litter. We can efficiently represent the collected litter using a bitmask, where each piece of litter is assigned a unique bit identifier starting from $0$.\n\nDuring the search process, move in four directions from the current state $(x, y, \\textit{mask}, e, \\textit{steps})$, and update the state as follows:\n\n- Current position: $(\\textit{nx}, \\textit{ny})$.\n\n- Collected litter mask: If the current position is $\\text{'L'}$, add the identifier of this piece of litter to $\\textit{mask}$; otherwise, the mask remains unchanged.\n\n- If the current position is $\\text{'R'}$, update the energy of the current position to $\\textit{energy}$; otherwise, update it to $e - 1$.\n\n- Update the $\\textit{steps}$ of the current position to one more than the previous step.\n\nThe starting point of our BFS is $(\\textit{sx}, \\textit{sy}, 0, \\textit{energy}, 0)$, where $(\\textit{sx}, \\textit{sy})$ is the student's starting position. The target endpoint is any valid state where the mask equals $\\textit{fullMask}$ (representing the collection of all litter).\n\nDuring the BFS, we use a 3D array $\\textit{bestEnergy}[x][y][\\textit{mask}]$ to record the maximum energy value reached at position $(x, y)$ for each possible $\\textit{mask}$ state. We only enqueue a new state and update $\\textit{bestEnergy}[x][y][\\textit{mask}]$ if the remaining energy is strictly greater than the previously recorded energy for that configuration. This pruning prevents redundant cycles, such as repeatedly jumping back and forth between two positions.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Eprbgn2Z/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Eprbgn2Z\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ and $n$ be the number of rows and columns of the matrix respectively, $\\textit{energy}$ be the total energy, and $k$ be the number of occurrences of $\\text{'L'}$ in the matrix.\n\n- Time complexity: $O(mn \\cdot \\textit{energy} \\cdot 2^k)$.\n  \n  The state is determined by position and a binary mask, and the corresponding energy $\\textit{bestEnergy}[x][y][\\textit{mask}]$ for the same position and mask may take up to $\\textit{energy}$ different values.\n\n- Space complexity: $O(mn \\cdot \\textit{energy} \\cdot 2^k)$.\n  \n  This is the space required by the queue."
@@ -53,6 +53,18 @@
         "Use BFS with states <code>(x, y, mask, e, steps)</code>, initializing with <code>(sx, sy, 0, energy, 0)</code>, and for each move update <code>e</code> (–1 per step), update <code>mask</code> on 'L', reset <code>e=energy</code> on 'R', and return <code>steps</code> when <code>mask == fullMask</code>.",
         "Maintain a 3D array <code>bestEnergy[x][y][mask]</code> storing the maximum <code>e</code> seen for each <code>(x,y,mask)</code> and skip any new state with <code>e <= bestEnergy[x][y][mask]</code> to prune."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMoves(vector<string>& classroom, int energy) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} classroom\n * @param {number} energy\n * @return {number}\n */\nvar minMoves = function(classroom, energy) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:03.016Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.567Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.571Z"
 }

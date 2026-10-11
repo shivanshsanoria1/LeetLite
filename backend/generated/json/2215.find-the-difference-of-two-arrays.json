@@ -44,6 +44,18 @@
         "For each integer in nums1, check if it exists in nums2.",
         "Do the same for each integer in nums2."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number[][]}\n */\nvar findDifference = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:38.496Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.249Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.836Z"
 }

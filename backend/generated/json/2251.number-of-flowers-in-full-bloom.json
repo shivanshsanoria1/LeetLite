@@ -61,6 +61,18 @@
         "We can store the starting times in sorted order, which then allows us to binary search to find how many flowers have started blooming for a given time t.",
         "We do the same for the ending times to find how many flowers have stopped blooming at time t."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> fullBloomFlowers(vector<vector<int>>& flowers, vector<int>& people) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} flowers\n * @param {number[]} people\n * @return {number[]}\n */\nvar fullBloomFlowers = function(flowers, people) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:07.168Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.300Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.944Z"
 }

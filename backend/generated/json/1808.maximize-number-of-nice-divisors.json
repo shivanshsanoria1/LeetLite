@@ -47,6 +47,18 @@
         "If there are three 2s, you can replace them with two 3s to get a better product. Hence, you'll never have more than two 2s.",
         "Keep adding 3s as long as n ≥ 5."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNiceDivisors(int primeFactors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} primeFactors\n * @return {number}\n */\nvar maxNiceDivisors = function(primeFactors) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:20.541Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.488Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.805Z"
 }

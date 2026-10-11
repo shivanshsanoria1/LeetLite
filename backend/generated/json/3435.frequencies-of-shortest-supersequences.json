@@ -42,12 +42,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[\"ab\",\"ba\"]\n[\"aa\",\"ac\"]\n[\"aa\",\"bb\",\"cc\"]",
     "meta": {
         "quesIdLCBackend": 3713,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[\"ab\",\"ba\"]\n[\"aa\",\"ac\"]\n[\"aa\",\"bb\",\"cc\"]",
     "solution": {
         "canSeeDetail": false
     },
@@ -57,6 +57,18 @@
         "Construct every subset of possible characters (1 or 2).",
         "Check if a supersequence could be constructed using Topological Sort."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> supersequences(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {number[][]}\n */\nvar supersequences = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:43.000Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.394Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.396Z"
 }

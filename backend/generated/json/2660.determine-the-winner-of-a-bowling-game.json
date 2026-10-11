@@ -41,6 +41,18 @@
         "Think about simulating the process to calculate the answer.",
         "Iterate over each element and check the previous two elements. See if one of them is 10 and can affect the score."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int isWinner(vector<int>& player1, vector<int>& player2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} player1\n * @param {number[]} player2\n * @return {number}\n */\nvar isWinner = function(player1, player2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:43.703Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.340Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.463Z"
 }

@@ -38,6 +38,18 @@
         "Check the character before the empty space and the character after the empty space.",
         "Check the first character and the last character of the sentence."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isCircularSentence(string sentence) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} sentence\n * @return {boolean}\n */\nvar isCircularSentence = function(sentence) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:22.442Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.739Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.256Z"
 }

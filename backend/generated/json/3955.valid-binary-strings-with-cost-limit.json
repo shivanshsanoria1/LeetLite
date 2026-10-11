@@ -49,6 +49,18 @@
         "At index <code>i</code>, you can place <code>'1'</code> only if the previous character is not <code>'1'</code> and the new cost does not exceed <code>k</code>.",
         "Whenever the string reaches length <code>n</code>, add it to the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> generateValidStrings(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {string[]}\n */\nvar generateValidStrings = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:08.791Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.932Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.224Z"
 }

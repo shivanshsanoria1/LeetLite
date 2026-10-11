@@ -44,6 +44,18 @@
     "hints": [
         "How many characters may be there in the clipboard at the last step if n = 3? n = 7? n = 10? n = 24?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSteps(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar minSteps = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:14:58.867Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.193Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.852Z"
 }

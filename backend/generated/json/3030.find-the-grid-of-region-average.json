@@ -43,6 +43,18 @@
         "Keep two 2-D arrays <code>sum</code> and <code>num</code>, for each position <code>(x, y)</code> in a region, increase <code>sum[x][y]</code> by the average sum of the region and increase <code>num[x][y]</code> by <code>1</code>.",
         "For each position (x, y), <code>sum[x][y] / num[x][y]</code> is the answer. Note when <code>num[x][y] == 0</code>, we use the original value in <code>image</code> instead."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> resultGrid(vector<vector<int>>& image, int threshold) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} image\n * @param {number} threshold\n * @return {number[][]}\n */\nvar resultGrid = function(image, threshold) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:51.110Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.776Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.402Z"
 }

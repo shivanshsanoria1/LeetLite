@@ -36,6 +36,7 @@
         "If no timeout is in progress, immediately execute the function and create a timeout. If a timeout is in progress, set the currArguments to the new arguments.",
         "When the timeout is done: if currArguments is null, do nothing. Otherwise, execute the function with currArguments and create another timeout."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:40:56.708Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.352Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.474Z"
 }

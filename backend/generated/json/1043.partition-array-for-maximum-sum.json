@@ -44,6 +44,18 @@
         "Think dynamic programming:  dp[i] will be the answer for array A[0], ..., A[i-1].",
         "For j = 1 .. k that keeps everything in bounds, dp[i] is the maximum of dp[i-j] + max(A[i-1], ..., A[i-j]) * j ."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSumAfterPartitioning(vector<int>& arr, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} k\n * @return {number}\n */\nvar maxSumAfterPartitioning = function(arr, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:12.596Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.979Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.339Z"
 }

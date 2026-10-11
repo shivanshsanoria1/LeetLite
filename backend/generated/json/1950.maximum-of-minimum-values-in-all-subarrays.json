@@ -48,6 +48,7 @@
         "For each coming element nums[i], calculate L and R, the indices of the first smallest elements on the left and the right respectively.",
         "The answer of the queries from 1 to R-L+1 will be at least this element."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:03:08.576Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.786Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.045Z"
 }

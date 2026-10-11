@@ -54,6 +54,18 @@
         "When will three adjacent points lie on the same line? How can we generalize this for all points?",
         "Will calculating the slope of lines connecting adjacent points help us find the answer?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumLines(vector<vector<int>>& stockPrices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} stockPrices\n * @return {number}\n */\nvar minimumLines = function(stockPrices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:32.975Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.329Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.997Z"
 }

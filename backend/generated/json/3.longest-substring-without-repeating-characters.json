@@ -55,6 +55,18 @@
     "hints": [
         "There are less than 100 unique characters. We can check all substrings with length at most 100 for example. This is a good enough approximation."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLongestSubstring = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:32:28.959Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.752Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.246Z"
 }

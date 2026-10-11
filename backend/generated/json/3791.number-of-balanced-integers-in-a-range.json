@@ -39,6 +39,18 @@
         "Ignore leading zeros during transitions.",
         "Enforce the length constraint by counting only when at least two digits have been placed."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countBalanced(long long low, long long high) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number}\n */\nvar countBalanced = function(low, high) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:53.364Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.285Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.033Z"
 }

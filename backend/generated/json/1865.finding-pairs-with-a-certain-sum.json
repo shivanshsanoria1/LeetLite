@@ -48,6 +48,18 @@
         "The length of nums1 is small in comparison to that of nums2",
         "If we iterate over elements of nums1 we just need to find the count of tot - element for all elements in nums1"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class FindSumPairs {\npublic:\n    FindSumPairs(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n    \n    void add(int index, int val) {\n        \n    }\n    \n    int count(int tot) {\n        \n    }\n};\n\n/**\n * Your FindSumPairs object will be instantiated and called as such:\n * FindSumPairs* obj = new FindSumPairs(nums1, nums2);\n * obj->add(index,val);\n * int param_2 = obj->count(tot);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n */\nvar FindSumPairs = function(nums1, nums2) {\n    \n};\n\n/** \n * @param {number} index \n * @param {number} val\n * @return {void}\n */\nFindSumPairs.prototype.add = function(index, val) {\n    \n};\n\n/** \n * @param {number} tot\n * @return {number}\n */\nFindSumPairs.prototype.count = function(tot) {\n    \n};\n\n/** \n * Your FindSumPairs object will be instantiated and called as such:\n * var obj = new FindSumPairs(nums1, nums2)\n * obj.add(index,val)\n * var param_2 = obj.count(tot)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:19.441Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.523Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.904Z"
 }

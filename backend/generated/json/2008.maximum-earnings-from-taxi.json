@@ -55,6 +55,18 @@
         "Can we sort the array to help us solve the problem?",
         "We can use dynamic programming to keep track of the maximum at each position."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxTaxiEarnings(int n, vector<vector<int>>& rides) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} rides\n * @return {number}\n */\nvar maxTaxiEarnings = function(n, rides) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:58.756Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.895Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.175Z"
 }

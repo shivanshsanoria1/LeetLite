@@ -52,6 +52,18 @@
         "Maintain a sliding window of k 1s, and maintain the steps required to group them.",
         "When you slide the window across, should you move the group to the right? Once you move the group to the right, it will never need to slide to the left again."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMoves(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minMoves = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:25.807Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.342Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.618Z"
 }

@@ -42,6 +42,18 @@
         "If k > numOnes, after taking all items with the number 1, it is always optimal to take items with the number 0 written on them as much as possible.",
         "If k > numOnes + numZeroes we are forced to take k - numOnes - numZeroes -1s."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} numOnes\n * @param {number} numZeros\n * @param {number} numNegOnes\n * @param {number} k\n * @return {number}\n */\nvar kItemsWithMaximumSum = function(numOnes, numZeros, numNegOnes, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:54.230Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.244Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.400Z"
 }

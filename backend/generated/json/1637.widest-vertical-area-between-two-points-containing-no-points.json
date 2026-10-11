@@ -43,6 +43,18 @@
         "Try sorting the points",
         "Think whether the y-axis of a point is relevant"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxWidthOfVerticalArea(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar maxWidthOfVerticalArea = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:12.182Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.287Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.222Z"
 }

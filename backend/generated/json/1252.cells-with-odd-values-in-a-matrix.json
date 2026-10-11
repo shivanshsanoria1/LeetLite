@@ -43,6 +43,18 @@
         "Simulation : With small constraints, it is possible to apply changes to each row and column and count odd cells after applying it.",
         "You can accumulate the number you should add to each row and column and then you can count the number of odd cells."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int oddCells(int m, int n, vector<vector<int>>& indices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} indices\n * @return {number}\n */\nvar oddCells = function(m, n, indices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:42.912Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.001Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.643Z"
 }

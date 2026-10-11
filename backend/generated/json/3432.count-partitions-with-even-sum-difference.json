@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[10,10,3,7,6]\n[1,2,2]\n[2,4,6,8]",
     "meta": {
         "quesIdLCBackend": 3704,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[10,10,3,7,6]\n[1,2,2]\n[2,4,6,8]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Mathematics\n\n#### Intuition\n\nLet the sum of the elements in the array $\\text{nums}$ be $\\textit{sum}$, and let the sums of the two non-empty subarrays be $x$ and $y$, respectively. Clearly, $x + y = \\textit{sum}$.\n\n- If $\\textit{sum}$ is odd, then either $x$ is odd and $y$ is even, or $x$ is even and $y$ is odd, so $x - y$ is odd.\n\n- If $\\textit{sum}$ is even, then either both $x$ and $y$ are odd or both are even, so $x - y$ is even.\n\nFrom this, let $n$ be the number of elements in $\\textit{nums}$. When $\\textit{sum}$ is even, the number of partitioning schemes with an even difference is $n - 1$. When $\\textit{sum}$ is odd, the number of such schemes is $0$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/Bd4MEA3R/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"Bd4MEA3R\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$.\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -44,6 +44,18 @@
     "hints": [
         "If the parity of the sum is even, the partition is valid; otherwise, there is no partition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPartitions(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countPartitions = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:40.023Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.393Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.394Z"
 }

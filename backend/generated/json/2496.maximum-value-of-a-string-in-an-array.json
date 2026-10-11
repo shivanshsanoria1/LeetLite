@@ -41,6 +41,18 @@
         "For strings comprising only of digits, convert them into integers.",
         "For all other strings, calculate their length."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumValue(vector<string>& strs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} strs\n * @return {number}\n */\nvar maximumValue = function(strs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:26.843Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.744Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.268Z"
 }

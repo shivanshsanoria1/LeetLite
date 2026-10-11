@@ -44,6 +44,18 @@
         "How does the edge score for node edges[i] change? It increases by i.",
         "The edge score may not fit within a standard 32-bit integer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int edgeScore(vector<int>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} edges\n * @return {number}\n */\nvar edgeScore = function(edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:49.871Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.459Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.113Z"
 }

@@ -40,6 +40,18 @@
         "First consider the cases where no move is needed or where the target is unreachable. A bishop always remains on squares of the same color.",
         "Two squares are on the same diagonal if either <code>r - c</code> or <code>r + c</code> is equal for both squares. If the target is reachable but not on the same diagonal, determine how many moves are sufficient."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minBishopMoves(vector<int>& source, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} source\n * @param {number[]} target\n * @return {number}\n */\nvar minBishopMoves = function(source, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:33.493Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.014Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.329Z"
 }

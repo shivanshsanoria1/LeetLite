@@ -42,6 +42,18 @@
         "For each value <code>v</code> in nums1, enumerating all its factors <code>d</code> (in <code>sqrt(v)</code> time) and sum up all the <code>f[d]</code> to get the final answer.",
         "It is also possible to improve the complexity from <code>len(nums1) * sqrt(v)</code> to <code>len(nums1) * log(v)</code> - How?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numberOfPairs(vector<int>& nums1, vector<int>& nums2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k\n * @return {number}\n */\nvar numberOfPairs = function(nums1, nums2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:01.026Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.000Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.124Z"
 }

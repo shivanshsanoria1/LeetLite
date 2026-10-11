@@ -47,6 +47,18 @@
         "We can use sliding window and binary search.",
         "For each index <code>r</code>, find the maximum <code>l</code> such that both conditions are satisfied using binary search."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countOfSubstrings(string word, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @param {number} k\n * @return {number}\n */\nvar countOfSubstrings = function(word, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:51.560Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.179Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.022Z"
 }

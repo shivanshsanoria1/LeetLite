@@ -50,6 +50,18 @@
         "For an update <code>[x, y, val]</code>, fully covered blocks only increase their lazy value. Partially covered blocks are pushed/rebuilt manually.",
         "For a query <code>tot</code>, for every distinct value <code>a</code> in <code>nums1</code>, count how many values equal <code>tot - a</code> in <code>nums2</code> by checking each block’s frequency map after adjusting for lazy."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numberOfPairs(vector<int>& nums1, vector<int>& nums2, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar numberOfPairs = function(nums1, nums2, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:05:55.278Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.920Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.210Z"
 }

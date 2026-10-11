@@ -44,6 +44,18 @@
         "When a character is replaced by the one that comes before it on the alphabet, it makes the string lexicographically smaller, except for ‘a'.",
         "Find the leftmost substring that doesn’t contain the character 'a' and change all characters in it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string smallestString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar smallestString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:45.858Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.394Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.543Z"
 }

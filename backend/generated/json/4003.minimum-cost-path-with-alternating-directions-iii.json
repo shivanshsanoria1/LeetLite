@@ -54,6 +54,18 @@
         "<p>The transition cost depends on whether the chosen move follows the current parity rule. Waiting costs <code>penalty[i][j]</code>.</p>",
         "<p>All transition costs are non-negative, so use Dijkstra's algorithm on these states. The answer is the minimum distance to the destination with either parity.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCost(int m, int n, vector<vector<int>>& penalty) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} penalty\n * @return {number}\n */\nvar minCost = function(m, n, penalty) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:01.051Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.991Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.276Z"
 }

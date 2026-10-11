@@ -43,6 +43,18 @@
         "It is safe to assume the number of  operations isn't more than n",
         "The number is small enough to apply a brute force solution."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int reinitializePermutation(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar reinitializePermutation = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:54:18.844Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.487Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.802Z"
 }

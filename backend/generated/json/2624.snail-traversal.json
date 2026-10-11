@@ -35,6 +35,13 @@
         "Different ways to approach this problem. Perhaps store a boolean if you are moving up or down and a current column. Reverse the direction and increment the column every time you hits a wall.",
         "Is there a way way to do this without storing state - by just using math?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} rowsCount\n * @param {number} colsCount\n * @return {Array<Array<number>>}\n */\nArray.prototype.snail = function(rowsCount, colsCount) {\n    \n}\n\n/**\n * const arr = [1,2,3,4];\n * arr.snail(1,4); // [[1,2,3,4]]\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:12.987Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.262Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.416Z"
 }

@@ -40,6 +40,18 @@
         "Note that the distinct part means that every position in the array belongs to only one piece",
         "Note that you can get the piece every position belongs to naively"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number[][]} pieces\n * @return {boolean}\n */\nvar canFormArray = function(arr, pieces) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:15.747Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.291Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.232Z"
 }

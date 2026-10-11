@@ -50,6 +50,18 @@
         "We need a data structure that counts the number of integers greater than a given value <code>x</code> and supports insertion.",
         "Use Segment Tree or Binary Indexed Tree by compressing the numbers to the range <code>[1,n]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> resultArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar resultArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:24.902Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.865Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.611Z"
 }

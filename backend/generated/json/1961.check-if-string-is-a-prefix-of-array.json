@@ -45,6 +45,18 @@
         "There are only words.length prefix strings.",
         "Create all of them and see if s is one of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPrefixString(string s, vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string[]} words\n * @return {boolean}\n */\nvar isPrefixString = function(s, words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:16.974Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.795Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.070Z"
 }

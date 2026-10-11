@@ -38,12 +38,12 @@
             "slug": "minimum-spanning-tree"
         }
     ],
-    "exampleTestcases": "3\n[[0,1,2,1],[1,2,3,0]]\n1\n3\n[[0,1,4,0],[1,2,3,0],[0,2,1,0]]\n2\n3\n[[0,1,1,1],[1,2,1,1],[2,0,1,1]]\n0",
     "meta": {
         "quesIdLCBackend": 3902,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "3\n[[0,1,2,1],[1,2,3,0]]\n1\n3\n[[0,1,4,0],[1,2,3,0],[0,2,1,0]]\n2\n3\n[[0,1,1,1],[1,2,1,1],[2,0,1,1]]\n0",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Binary Answer + Minimum Spanning Tree\n\n#### Prerequisites\n\nThis method assumes that the reader is already familiar with:\n\n- The idea of binary search on the answer and its algorithmic framework.\n- The definition of a minimum spanning tree and the Kruskal algorithm used to construct it, including its core idea and implementation.\n\n#### Intuition\n\nThis problem essentially asks us to find the **maximum possible value of the minimum edge weight** in a spanning tree. Problems involving expressions such as \"maximize the minimum\" or \"minimize the maximum\" are often solved using a **binary search on the answer** framework. In this problem, we perform a binary search on the minimum edge weight and check whether it is possible to construct a spanning tree that satisfies this constraint.\n\nNext, consider the following question: for a given minimum edge weight constraint, what strategy should we use to construct a spanning tree? A greedy strategy is the natural choice. If it is impossible to construct a spanning tree while selecting edges that satisfy the constraint as much as possible, then selecting less optimal edges will certainly not help satisfy the requirement. This reasoning follows directly from the greedy properties of spanning tree algorithms.\n\nFirst, ignore the ability to double edge weights $k$ times. To make the selected edges satisfy the constraint as much as possible, we should greedily choose edges with **larger weights**. This is equivalent to constructing a **maximum spanning tree**. We use the $\\text{Kruskal}$ algorithm as the basic framework for building this spanning tree.\n\nNow consider the doubling strategy. Since we greedily choose edges with larger weights, the doubling opportunities are naturally used only when necessary. When we encounter an edge whose weight is less than the current constraint, we attempt to double its weight in order to satisfy the constraint and continue building the spanning tree. If the doubled weight is still less than the constraint, or if all doubling opportunities have already been used, then none of the remaining edges can satisfy the constraint, and this construction attempt fails.\n\nDuring preprocessing, we first **force-select** the edges with $\\textit{must} = 1$ to establish the initial state of the Union-Find structure. The minimum edge weight among these edges serves as the upper bound for the binary search. Meanwhile, to construct a maximum spanning tree, we sort the edges with $\\textit{must} = 0$ in **descending order of weight**.\n\nDuring the binary search process, we follow the steps of Kruskal's algorithm while applying the strategy described above. We continuously maintain the Union-Find structure to ensure correctness.\n\nThe problem states that the resulting spanning tree must satisfy three properties. Under the condition that the graph is **acyclic**, the properties of **connectivity** and **having exactly $n - 1$ edges** are equivalent. Since the Union-Find structure already guarantees that no cycles are formed, we simply check whether the number of selected edges is exactly $n - 1$ to determine whether a valid spanning tree has been constructed.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/9Jnryqbs/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9Jnryqbs\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the length of $\\textit{edges}$, and $v$ be the upper bound of the binary search.\n\n- Time complexity: $O(m \\log m + (n + m \\cdot \\log n) \\cdot \\log v)$.\n\n  The `find` operation in the Union-Find structure takes $O(\\log n)$ amortized time with path compression alone (without union by rank). Sorting the edges during preprocessing takes $O(m \\log m)$ time. Preprocessing the edges with $\\textit{must} = 1$ requires $O(m \\cdot \\log n)$ time.\n\n  The binary search runs for $O(\\log v)$ iterations. In each iteration, cloning the initial Union-Find state takes $O(n)$ time, and maintaining the Union-Find structure requires $O(m \\cdot \\log n)$. Therefore, the overall time complexity is $O(m \\log m + (n + m \\cdot \\log n) \\cdot \\log v)$.\n\n  > Note: The binary search is not strictly necessary here. Since Kruskal's algorithm processes edges in decreasing weight order, it naturally constructs a maximum spanning tree. After building the tree, the minimum edge weight (after optimally doubling the $k$ smallest tree edges) is the answer. This would simplify the time complexity to $O(m \\log m + m \\cdot \\log n)$.\n\n- Space complexity: $O(n + m)$.\n  \n  The Union-Find structure requires $O(n)$ space, and storing the separated edge lists requires $O(m)$ space.\n\n---"
@@ -56,6 +56,18 @@
         "Use a <code>DSU</code> with path compression and union by size/rank to maintain connected components.",
         "Don't forget the case where you cannot form an MST because more than one component remains after processing all edges."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxStability(int n, vector<vector<int>>& edges, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} k\n * @return {number}\n */\nvar maxStability = function(n, edges, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:40.092Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.618Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.615Z"
 }

@@ -49,6 +49,18 @@
         "<p>Before fighting monster <code>i</code>, your current strength is <code>max(0, initialStrength - prefixSum)</code>, where <code>prefixSum</code> is the total strength of all previously defeated monsters.</p>",
         "<p>If <code>bonus[i] &lt; monsters[i]</code>, then the initial strength must be at least <code>prefixSum + monsters[i] - bonus[i]</code>. Take the maximum of this value over all monsters.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minInitialStrength(vector<int>& monsters, vector<vector<int>>& boosts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} monsters\n * @param {number[][]} boosts\n * @return {number}\n */\nvar minInitialStrength = function(monsters, boosts) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:06.272Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.994Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.279Z"
 }

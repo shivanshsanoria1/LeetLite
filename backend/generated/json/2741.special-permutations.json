@@ -47,6 +47,18 @@
         "Can we solve this problem using DP with bit masking?",
         "You just need two states in DP which are last_ind in the permutation and the mask of numbers already used."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int specialPerm(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar specialPerm = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:50.979Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.398Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.549Z"
 }

@@ -43,6 +43,18 @@
         "Is there a way to build the solution from a base case?",
         "How many ways are there if we fix the position of one stick?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int rearrangeSticks(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar rearrangeSticks = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:20.808Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.523Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.905Z"
 }

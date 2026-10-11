@@ -43,6 +43,18 @@
     "hints": [
         "Convert each character to its 8-bit binary representation, concatenate the representations, and check whether the resulting string equals its reverse."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPalindromic(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar isPalindromic = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:30.114Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.012Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.326Z"
 }

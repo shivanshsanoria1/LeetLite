@@ -50,6 +50,18 @@
         "Calculate the differences between s[i] and t[i].",
         "Use a sliding window to track the longest valid substring."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int equalSubstring(string s, string t, int maxCost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} maxCost\n * @return {number}\n */\nvar equalSubstring = function(s, t, maxCost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:46.658Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.657Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.594Z"
 }

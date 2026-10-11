@@ -49,6 +49,18 @@
         "The best order of the array is in decreasing order.",
         "Sort the array in decreasing order and count the number of positive values in the prefix sum array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxScore = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:42.155Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.173Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.386Z"
 }

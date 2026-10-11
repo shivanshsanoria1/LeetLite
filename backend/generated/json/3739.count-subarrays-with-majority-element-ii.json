@@ -60,6 +60,18 @@
         "Use coordinate compression on all <code>pref</code> values and a Fenwick tree / ordered map: iterate <code>k</code> from <code>0..n</code>, query how many previous <code>pref</code> are < current, add to <code>ans</code>, then update.",
         "If <code>target</code> never appears return <code>0</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countMajoritySubarrays(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar countMajoritySubarrays = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:44:57.451Z",
-    "PARSED_ISO": "2026-09-22T18:46:49.976Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.942Z"
 }

@@ -65,6 +65,18 @@
         "Write a function f(k) to determine how many ugly numbers smaller than k. As f(k) is non-decreasing, try binary search.",
         "Find all ugly numbers in [1, LCM(a, b, c)] (LCM is Least Common Multiple). Use inclusion-exclusion principle to expand the result."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int nthUglyNumber(int n, int a, int b, int c) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number}\n */\nvar nthUglyNumber = function(n, a, b, c) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:38.118Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.632Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.589Z"
 }

@@ -52,6 +52,7 @@
         "Similarly if we have non integer values we have two options to put them flor(value) or ceil(value) = floor(value) + 1, so the idea is to just subtract floor(value).",
         "Now the problem is different for each position we can sum just add 0 or 1 in order to sum the target, minimizing the deltas. This can be solved with DP."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:36:23.511Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.015Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.355Z"
 }

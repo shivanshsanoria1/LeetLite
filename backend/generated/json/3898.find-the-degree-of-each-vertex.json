@@ -43,6 +43,18 @@
     "hints": [
         "The degree of node <code>i</code> is the sum of row <code>i</code> in the matrix"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> findDegrees(vector<vector<int>>& matrix) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} matrix\n * @return {number[]}\n */\nvar findDegrees = function(matrix) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:04.692Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.835Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.164Z"
 }

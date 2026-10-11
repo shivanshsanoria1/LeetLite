@@ -50,6 +50,18 @@
         "To speed up the next available server search, keep track of the available servers in a sorted structure such as an ordered set.",
         "To determine if a server is available, keep track of the end times for each task in a heap and add the server to the available set once the soonest task ending time is less than or equal to the next task to add."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @param {number[]} arrival\n * @param {number[]} load\n * @return {number[]}\n */\nvar busiestServers = function(k, arrival, load) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:37.769Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.191Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.161Z"
 }

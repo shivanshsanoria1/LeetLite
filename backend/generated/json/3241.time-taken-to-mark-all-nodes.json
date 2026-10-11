@@ -56,6 +56,18 @@
         "Store the two most distant children for each node.",
         "When re-rooting the tree, keep a variable for distance to the root node."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> timeTaken(vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} edges\n * @return {number[]}\n */\nvar timeTaken = function(edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:00.237Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.071Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.635Z"
 }

@@ -42,6 +42,18 @@
         "We now have the ‘range’ of the sequence (difference between min and max element), we can then calculate how many ways there are to fit this range into the given range of lower to upper.",
         "Answer is (upper - lower + 1) - (range of sequence)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfArrays(vector<int>& differences, int lower, int upper) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} differences\n * @param {number} lower\n * @param {number} upper\n * @return {number}\n */\nvar numberOfArrays = function(differences, lower, upper) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:04.534Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.101Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.703Z"
 }

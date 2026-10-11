@@ -45,6 +45,18 @@
         "To maximize XOR, try to place opposite bits: match <code>'1'</code> in <code>s</code> with <code>'0'</code> from <code>t</code>, and <code>'0'</code> in <code>s</code> with <code>'1'</code>.",
         "Greedily build the result from left to right, using available counts while maximizing each XOR bit."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maximumXor(string s, string t) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {string}\n */\nvar maximumXor = function(s, t) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:12.060Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.796Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.111Z"
 }

@@ -47,6 +47,18 @@
         "Try using dynamic programming.",
         "dp[i][j] is the maximum number of points you can have if points[i][j] is the most recent cell you picked."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxPoints(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar maxPoints = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:58.069Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.773Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.008Z"
 }

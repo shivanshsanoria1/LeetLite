@@ -66,6 +66,18 @@
         "To find if one edge is critical, delete that edge and re-run the MST algorithm and see if the weight of the new MST increases.",
         "To find if one edge is non-critical (in any MST), include that edge to the accepted edge list and continue the MST algorithm, then see if the resulting MST has the same weight of the initial MST of the entire graph."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> findCriticalAndPseudoCriticalEdges(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number[][]}\n */\nvar findCriticalAndPseudoCriticalEdges = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:25.993Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.972Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.916Z"
 }

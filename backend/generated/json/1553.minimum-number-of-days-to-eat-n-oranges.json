@@ -38,6 +38,18 @@
     "hints": [
         "In each step, choose between 2 options:\r\nminOranges = 1 + min( (n%2) + f(n/2), (n%3) + f(n/3) )\r\nwhere f(n) is the minimum number of days to eat n oranges."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDays(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar minDays = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:03.092Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.045Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.054Z"
 }

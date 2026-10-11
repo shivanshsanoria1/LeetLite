@@ -45,6 +45,18 @@
         "Thus, we find the maximum sum of the first k - 1 even elements which is less than finalSum.",
         "We then add the difference over to the kth element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> maximumEvenSplit(long long finalSum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} finalSum\n * @return {number[]}\n */\nvar maximumEvenSplit = function(finalSum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:30.893Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.194Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.744Z"
 }

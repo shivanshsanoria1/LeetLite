@@ -54,6 +54,18 @@
         "Sum the answer of all the indices <code>i</code> to get the final result.",
         "Is it possible to use DSU as an alternate solution?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long numberOfSubarrays(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar numberOfSubarrays = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:56:19.728Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.933Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.846Z"
 }

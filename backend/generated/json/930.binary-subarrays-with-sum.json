@@ -54,6 +54,18 @@
         "While iterating through the array, keep track of how many times each prefix sum has appeared so far.",
         "If the current prefix sum is <code>curr</code>, how many previous prefix sums equal to <code>curr - goal</code> exist?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numSubarraysWithSum(vector<int>& nums, int goal) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} goal\n * @return {number}\n */\nvar numSubarraysWithSum = function(nums, goal) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:34:48.909Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.789Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.404Z"
 }

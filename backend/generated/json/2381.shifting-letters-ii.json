@@ -52,6 +52,18 @@
         "Instead of shifting every character in each shift, could you keep track of which characters are shifted and by how much across all shifts?",
         "Try marking the start and ends of each shift, then perform a prefix sum of the shifts."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string shiftingLetters(string s, vector<vector<int>>& shifts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} shifts\n * @return {string}\n */\nvar shiftingLetters = function(s, shifts) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:55.503Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.466Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.119Z"
 }

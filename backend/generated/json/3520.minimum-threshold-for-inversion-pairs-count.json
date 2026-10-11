@@ -42,12 +42,12 @@
             "slug": "merge-sort"
         }
     ],
-    "exampleTestcases": "[1,2,3,4,3,2,1]\n7\n[10,9,9,9,1]\n4",
     "meta": {
         "quesIdLCBackend": 3861,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4,3,2,1]\n7\n[10,9,9,9,1]\n4",
     "solution": {
         "canSeeDetail": false
     },
@@ -56,6 +56,7 @@
         "Perform a binary search to find the minimum threshold",
         "Use a segment tree with value compression to count inversion pairs efficiently during the binary search"
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:53:05.513Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.541Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.541Z"
 }

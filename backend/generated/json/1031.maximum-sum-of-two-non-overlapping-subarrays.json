@@ -42,6 +42,18 @@
     "hints": [
         "We can use prefix sums to calculate any subarray sum quickly.\r\nFor each L length subarray, find the best possible M length subarray that occurs before and after it."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSumTwoNoOverlap(vector<int>& nums, int firstLen, int secondLen) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} firstLen\n * @param {number} secondLen\n * @return {number}\n */\nvar maxSumTwoNoOverlap = function(nums, firstLen, secondLen) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:03.972Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.926Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.321Z"
 }

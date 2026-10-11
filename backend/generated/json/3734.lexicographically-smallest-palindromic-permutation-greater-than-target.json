@@ -48,6 +48,18 @@
         "Use a backtracking approach or greedy selection for each position in the first half, trying the smallest available character that can still produce a valid palindrome.",
         "After building the first half, mirror it (and add the middle character if needed) to form the full palindrome and verify it is strictly greater than target."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string lexPalindromicPermutation(string s, string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} target\n * @return {string}\n */\nvar lexPalindromicPermutation = function(s, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-20T19:31:18.901Z",
-    "PARSED_ISO": "2026-09-20T19:31:20.193Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.936Z"
 }

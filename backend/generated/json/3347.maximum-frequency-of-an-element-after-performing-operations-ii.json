@@ -54,6 +54,18 @@
     "hints": [
         "The optimal values to check are <code>nums[i] - k</code>, <code>nums[i]</code>, and <code>nums[i] + k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxFrequency(vector<int>& nums, int k, int numOperations) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} numOperations\n * @return {number}\n */\nvar maxFrequency = function(nums, k, numOperations) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:23.422Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.206Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.241Z"
 }

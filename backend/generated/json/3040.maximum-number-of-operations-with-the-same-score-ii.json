@@ -43,6 +43,18 @@
         "After the first operation, the score of other operations is fixed.",
         "For the fixed score use dynamic programming <code>dp[l][r]</code> to find a maximum number of operations on the subarray <code>nums[l..r]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:59.609Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.782Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.447Z"
 }

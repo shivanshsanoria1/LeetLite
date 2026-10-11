@@ -49,6 +49,18 @@
         "Try to concatenate every two different strings from the list.",
         "Count the number of pairs with concatenation equals to target."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numOfPairs(vector<string>& nums, string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} nums\n * @param {string} target\n * @return {number}\n */\nvar numOfPairs = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:10.739Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.914Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.214Z"
 }

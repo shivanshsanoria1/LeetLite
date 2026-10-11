@@ -42,6 +42,18 @@
     "hints": [
         "Split <code>s</code> into <code>k</code> equal-sized substrings, use a map to track frequencies, and check if rearranging them can form <code>t</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPossibleToRearrange(string s, string t, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} k\n * @return {boolean}\n */\nvar isPossibleToRearrange = function(s, t, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:38.379Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.261Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.310Z"
 }

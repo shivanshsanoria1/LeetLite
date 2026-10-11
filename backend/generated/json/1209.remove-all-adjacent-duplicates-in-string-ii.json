@@ -44,6 +44,18 @@
         "Use a stack to store the characters, when there are k same characters, delete them.",
         "To make it more efficient, use a pair to store the value and the count of each character."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string removeDuplicates(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar removeDuplicates = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:28:48.255Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.669Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.595Z"
 }

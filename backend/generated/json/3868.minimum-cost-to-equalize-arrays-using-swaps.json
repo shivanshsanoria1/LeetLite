@@ -49,6 +49,18 @@
         "Let <code>cnt1[v]</code> and <code>cnt2[v]</code> be frequencies. If <code>cnt1[v] + cnt2[v]</code> is odd for any <code>v</code>, return <code>-1</code>.",
         "Let <code>diff[v] = abs(cnt1[v] - cnt2[v])</code>. Each cross swap fixes two mismatches, so minimum cost = <code>sum(diff[v]) / 4</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar minCost = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:32.221Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.813Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.135Z"
 }

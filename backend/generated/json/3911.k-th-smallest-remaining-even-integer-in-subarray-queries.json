@@ -41,6 +41,18 @@
         "For each query, since <code>nums</code> is strictly increasing, you can find the count of even integers in the range",
         "Subtract the count of even integers in the range from the current number you are checking in the binary search, and check whether, after removing the remaining numbers, this becomes the <code>k</code>-th"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> kthRemainingInteger(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar kthRemainingInteger = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:00:19.028Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.846Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.178Z"
 }

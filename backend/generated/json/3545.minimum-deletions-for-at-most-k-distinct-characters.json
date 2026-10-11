@@ -38,12 +38,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "\"abc\"\n2\n\"aabb\"\n2\n\"yyyzz\"\n1",
     "meta": {
         "quesIdLCBackend": 3871,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abc\"\n2\n\"aabb\"\n2\n\"yyyzz\"\n1",
     "solution": {
         "canSeeDetail": false
     },
@@ -54,6 +54,18 @@
         "Let <code>d</code> = (number of distinct characters) – <code>k</code>. If <code>d <= 0</code>, return 0.",
         "Otherwise, the minimum deletions is the sum of the first <code>d</code> entries in <code>counts</code> (removing the <code>d</code> least-frequent characters)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minDeletion(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar minDeletion = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:37.206Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.554Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.556Z"
 }

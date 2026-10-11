@@ -56,6 +56,18 @@
         "We will also have each segment tree node store the leftmost and rightmost character of the segment, the max length of a prefix substring consisting of only 1 repeating character, and the max length of a suffix substring consisting of only 1 repeating character.",
         "Use this information to properly merge the two segment tree nodes together."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> longestRepeating(string s, string queryCharacters, vector<int>& queryIndices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} queryCharacters\n * @param {number[]} queryIndices\n * @return {number[]}\n */\nvar longestRepeating = function(s, queryCharacters, queryIndices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:21:35.423Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.248Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.833Z"
 }

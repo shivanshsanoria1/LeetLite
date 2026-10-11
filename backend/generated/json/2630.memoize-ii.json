@@ -36,6 +36,13 @@
         "Javascript Maps are a could way to associate arbitrary data.",
         "Make a tree structure of Maps. The depth of the tree should match the number of input parameters."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Function} fn\n * @return {Function}\n */\nfunction memoize(fn) {\n    \n    return function() {\n        \n    }\n}\n\n\n/** \n * let callCount = 0;\n * const memoizedFn = memoize(function (a, b) {\n *\t callCount += 1;\n *   return a + b;\n * })\n * memoizedFn(2, 3) // 5\n * memoizedFn(2, 3) // 5\n * console.log(callCount) // 1 \n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:18.105Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.266Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.425Z"
 }

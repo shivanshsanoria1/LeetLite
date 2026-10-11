@@ -51,6 +51,18 @@
         "What can you say about the position of the shortest person? </br>\r\nIf the position of the shortest person is <i>i</i>, how many people would be in front of the shortest person?",
         "Once you fix the position of the shortest person, what can you say about the position of the second shortest person?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} people\n * @return {number[][]}\n */\nvar reconstructQueue = function(people) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:06:15.015Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.890Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.362Z"
 }

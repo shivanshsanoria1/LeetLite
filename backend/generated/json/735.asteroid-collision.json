@@ -48,6 +48,18 @@
     "hints": [
         "Say a row of asteroids is stable.  What happens when a new asteroid is added on the right?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> asteroidCollision(vector<int>& asteroids) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} asteroids\n * @return {number[]}\n */\nvar asteroidCollision = function(asteroids) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:15:58.524Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.276Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.023Z"
 }

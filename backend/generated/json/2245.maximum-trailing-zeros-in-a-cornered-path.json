@@ -49,6 +49,18 @@
         "We can then treat each cell as the elbow point and calculate the largest minimum (sum of 2 exponents, sum of 5 exponents) from the combination of top-left, top-right, bottom-left and bottom-right.",
         "To do this efficiently, we should use the prefix sum technique."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxTrailingZeros(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maxTrailingZeros = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:02.361Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.294Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.931Z"
 }

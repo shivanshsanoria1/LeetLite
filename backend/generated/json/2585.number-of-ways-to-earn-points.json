@@ -51,6 +51,18 @@
         "Let ways[i][points] be the number of ways to score a given number of points after solving some questions of the first i types.",
         "ways[i][points] is equal to the sum of ways[i-1][points - solved * marks[i] over 0 <= solved <= count_i"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int waysToReachTarget(int target, vector<vector<int>>& types) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} target\n * @param {number[][]} types\n * @return {number}\n */\nvar waysToReachTarget = function(target, types) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:40.934Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.172Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.384Z"
 }

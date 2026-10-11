@@ -35,6 +35,13 @@
         "Declare a variable \"res\" and set it it equal to the initial value.",
         "Loop over each value in the array and set \"res\" = fn(res, arr[i])."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {Function} fn\n * @param {number} init\n * @return {number}\n */\nvar reduce = function(nums, fn, init) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:14.827Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.263Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.418Z"
 }

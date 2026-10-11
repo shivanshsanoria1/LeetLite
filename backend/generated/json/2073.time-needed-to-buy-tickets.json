@@ -46,6 +46,18 @@
         "Loop through the line of people and decrement the number of tickets for each to buy one at a time as if simulating the line moving forward. Keep track of how many tickets have been sold up until person k has no more tickets to buy.",
         "Remember that those who have no more tickets to buy will leave the line."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int timeRequiredToBuy(vector<int>& tickets, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} tickets\n * @param {number} k\n * @return {number}\n */\nvar timeRequiredToBuy = function(tickets, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:59.577Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.988Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.451Z"
 }

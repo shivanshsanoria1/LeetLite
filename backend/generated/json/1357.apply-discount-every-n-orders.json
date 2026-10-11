@@ -45,6 +45,18 @@
         "Keep track of the count of the customers.",
         "Check if the count of the customers is divisible by n then apply the discount formula."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Cashier {\npublic:\n    Cashier(int n, int discount, vector<int>& products, vector<int>& prices) {\n        \n    }\n    \n    double getBill(vector<int> product, vector<int> amount) {\n        \n    }\n};\n\n/**\n * Your Cashier object will be instantiated and called as such:\n * Cashier* obj = new Cashier(n, discount, products, prices);\n * double param_1 = obj->getBill(product,amount);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} discount\n * @param {number[]} products\n * @param {number[]} prices\n */\nvar Cashier = function(n, discount, products, prices) {\n    \n};\n\n/** \n * @param {number[]} product \n * @param {number[]} amount\n * @return {number}\n */\nCashier.prototype.getBill = function(product, amount) {\n    \n};\n\n/** \n * Your Cashier object will be instantiated and called as such:\n * var obj = new Cashier(n, discount, products, prices)\n * var param_1 = obj.getBill(product,amount)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:20.542Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.708Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.760Z"
 }

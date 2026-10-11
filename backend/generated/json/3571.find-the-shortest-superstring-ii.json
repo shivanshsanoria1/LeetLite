@@ -24,12 +24,12 @@
             "slug": "string"
         }
     ],
-    "exampleTestcases": "\"aba\"\n\"bab\"\n\"aa\"\n\"aaa\"",
     "meta": {
         "quesIdLCBackend": 3911,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"aba\"\n\"bab\"\n\"aa\"\n\"aaa\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -37,6 +37,7 @@
     "hints": [
         "Check for the maximum suffix of one string that matches a prefix of the other (in both directions) and merge accordingly."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T16:54:05.679Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.570Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.575Z"
 }

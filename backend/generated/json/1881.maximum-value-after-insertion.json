@@ -40,6 +40,18 @@
         "In the case of maximum, if s[i] < x it's optimal that x is put before s[i].",
         "In the case of minimum, if s[i] > x it's optimal that x is put before s[i]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string maxValue(string n, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} n\n * @param {number} x\n * @return {string}\n */\nvar maxValue = function(n, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:38.421Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.588Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.920Z"
 }

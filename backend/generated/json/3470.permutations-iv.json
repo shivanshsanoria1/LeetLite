@@ -36,12 +36,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "4\n6\n3\n2\n2\n3",
     "meta": {
         "quesIdLCBackend": 3783,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "4\n6\n3\n2\n2\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -52,6 +52,18 @@
         "From smallest to largest, place each number and subtract the number of permutations from <code>k</code>.",
         "The number of permutations can be calculated using factorials."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> permute(int n, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number[]}\n */\nvar permute = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:17.722Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.465Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.484Z"
 }

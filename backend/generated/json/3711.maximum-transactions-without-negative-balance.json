@@ -32,12 +32,12 @@
             "slug": "heap-priority-queue"
         }
     ],
-    "exampleTestcases": "[2,-5,3,-1,-2]\n[-1,-2,-3]\n[3,-2,3,-2,1,-1]",
     "meta": {
         "quesIdLCBackend": 4081,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,-5,3,-1,-2]\n[-1,-2,-3]\n[3,-2,3,-2,1,-1]",
     "solution": {
         "canSeeDetail": false
     },
@@ -48,6 +48,7 @@
         "If a negative <code>t</code> can be paid (<code>balance + t >= 0</code>), accept it and record its absolute value in <code>accepted</code>.",
         "If a negative would make the balance go below zero, but you previously accepted a larger negative, replace that larger one with the current smaller one (restore balance, swap in the smaller): this trade increases the number of transactions you can keep."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-14T17:45:19.672Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.736Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.880Z"
 }

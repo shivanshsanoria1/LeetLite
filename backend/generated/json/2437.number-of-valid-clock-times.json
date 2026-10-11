@@ -42,6 +42,18 @@
         "Brute force all possible clock times.",
         "Checking if a clock time is valid can be done with Regex."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countTime(string time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} time\n * @return {number}\n */\nvar countTime = function(time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:40.747Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.614Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.187Z"
 }

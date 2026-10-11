@@ -43,6 +43,18 @@
         "Use Dynamic programming.",
         "Define dp[i][j][k] as the minimum cost where we have k neighborhoods in the first i houses and the i-th house is painted with the color j."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minCost(vector<int>& houses, vector<vector<int>>& cost, int m, int n, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} houses\n * @param {number[][]} cost\n * @param {number} m\n * @param {number} n\n * @param {number} target\n * @return {number}\n */\nvar minCost = function(houses, cost, m, n, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:01.004Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.915Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.887Z"
 }

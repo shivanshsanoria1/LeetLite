@@ -43,6 +43,18 @@
         "Let dp[i][0] (dp[i][1]) be the length of the longest non-decreasing ending with nums1[i] (nums2[i]).",
         "Initialize dp[i][0] to 1. If nums1[i] >= nums1[i - 1] then dp[i][0] may be dp[i - 1][0] + 1. If nums1[i] >= nums2[i - 1] then dp[i][0] may be dp[i - 1][1] + 1. Perform a similar calculation for nums2[i] and dp[i][1]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxNonDecreasingLength(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar maxNonDecreasingLength = function(nums1, nums2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:14.118Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.579Z"
 }

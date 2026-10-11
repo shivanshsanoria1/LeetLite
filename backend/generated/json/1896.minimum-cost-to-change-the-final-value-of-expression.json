@@ -47,6 +47,18 @@
         "How many possible states are there for a given expression?",
         "Is there a data structure that we can use to solve the problem optimally?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperationsToFlip(string expression) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} expression\n * @return {number}\n */\nvar minOperationsToFlip = function(expression) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:56.058Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.700Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.937Z"
 }

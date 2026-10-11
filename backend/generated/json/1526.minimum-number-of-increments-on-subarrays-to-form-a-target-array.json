@@ -51,6 +51,18 @@
     "hints": [
         "For a given range of values in target, an optimal strategy is to increment the entire range by the minimum value. The minimum in a range could be obtained with Range minimum query or Segment trees algorithm."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minNumberOperations(vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} target\n * @return {number}\n */\nvar minNumberOperations = function(target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:18.424Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.026Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.969Z"
 }

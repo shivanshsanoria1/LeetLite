@@ -46,6 +46,18 @@
         "Scenario 3: Delete from the front to remove one of the elements, and delete from the back to remove the other element.",
         "Compare which of the three scenarios results in the minimum number of moves."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDeletions(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumDeletions = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:13.708Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.006Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.545Z"
 }

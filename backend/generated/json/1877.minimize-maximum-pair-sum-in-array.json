@@ -48,6 +48,18 @@
         "Would sorting help find the optimal order?",
         "Given a specific element, how would you minimize its specific pairwise sum?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minPairSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minPairSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:34.327Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.570Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.917Z"
 }

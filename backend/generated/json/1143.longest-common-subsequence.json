@@ -50,6 +50,18 @@
         "Try dynamic programming. \r\nDP[i][j] represents the longest common subsequence of text1[0 ... i] & text2[0 ... j].",
         "DP[i][j] = DP[i - 1][j - 1] + 1 , if text1[i] == text2[j]\r\nDP[i][j] = max(DP[i - 1][j], DP[i][j - 1]) , otherwise"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestCommonSubsequence(string text1, string text2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} text1\n * @param {string} text2\n * @return {number}\n */\nvar longestCommonSubsequence = function(text1, text2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:36.670Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.328Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.531Z"
 }

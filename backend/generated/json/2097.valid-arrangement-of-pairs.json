@@ -60,6 +60,18 @@
         "Consider the pairs as edges and each number as a node.",
         "We have to find an Eulerian path of this graph. Hierholzer’s algorithm can be used."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> validArrangement(vector<vector<int>>& pairs) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} pairs\n * @return {number[][]}\n */\nvar validArrangement = function(pairs) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:18.519Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.059Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.561Z"
 }

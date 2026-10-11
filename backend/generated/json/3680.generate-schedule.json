@@ -32,12 +32,12 @@
             "slug": "greedy"
         }
     ],
-    "exampleTestcases": "3\n5",
     "meta": {
         "quesIdLCBackend": 3991,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "3\n5",
     "solution": {
         "canSeeDetail": false
     },
@@ -49,6 +49,18 @@
         "Among teams that didn't play the previous day, match a pair whose combined remaining games is highest.",
         "If a greedy choice leads to a dead end, try a different match order."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> generateSchedule(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number[][]}\n */\nvar generateSchedule = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:11:26.372Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.707Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.790Z"
 }

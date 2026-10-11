@@ -47,6 +47,18 @@
         "If we don’t use any coins, the smallest integer that we cannot obtain by sum is <code>1</code>. Suppose currently, for a fixed set of the first several coins the smallest integer that we cannot obtain is <code>x + 1</code>, namely we can form all integers in the range <code>[1, x]</code> but not <code>x + 1</code>.",
         "If the next unused coin’s value is NOT <code>x + 1</code> (note the array is sorted), we have to add <code>x + 1</code> to the array. After this addition, we can form all values from <code>x + 1</code> to <code>2 * x + 1</code> by adding <code>x + 1</code> in <code>[1, x]</code>'s formations. So now we can form all the numbers of <code>[1, 2 * x + 1]</code>. After this iteration the new value of <code>x</code> becomes <code>2 * x + 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumAddedCoins(vector<int>& coins, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} coins\n * @param {number} target\n * @return {number}\n */\nvar minimumAddedCoins = function(coins, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:44.450Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.694Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.049Z"
 }

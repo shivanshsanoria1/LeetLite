@@ -38,6 +38,18 @@
     "hints": [
         "Have a integer array of how many days there are per month.  February gets one extra day if its a leap year.  Then, we can manually count the ordinal as day + (number of days in months before this one)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int dayOfYear(string date) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} date\n * @return {number}\n */\nvar dayOfYear = function(date) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:27:49.562Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.397Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.548Z"
 }

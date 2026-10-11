@@ -44,6 +44,18 @@
         "That graph is uni-modal.",
         "Use ternary search on that graph to find the best value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findBestValue(vector<int>& arr, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} target\n * @return {number}\n */\nvar findBestValue = function(arr, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:02.611Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.379Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.695Z"
 }

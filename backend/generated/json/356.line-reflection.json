@@ -47,6 +47,7 @@
         "If there is a line then it should be at y = (minX + maxX) / 2.",
         "For each point, make sure that it has a reflected point in the opposite side."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T19:58:27.551Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.563Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.564Z"
 }

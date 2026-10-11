@@ -46,6 +46,18 @@
     "hints": [
         "Beware of overflow."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countDigitOne(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countDigitOne = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:56:40.710Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.422Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.045Z"
 }

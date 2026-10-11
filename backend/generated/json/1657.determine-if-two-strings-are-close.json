@@ -52,6 +52,18 @@
         "Operation 1 allows you to freely reorder the string.",
         "Operation 2 allows you to freely reassign the letters' frequencies."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool closeStrings(string word1, string word2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {boolean}\n */\nvar closeStrings = function(word1, word2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:31.211Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.306Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.422Z"
 }

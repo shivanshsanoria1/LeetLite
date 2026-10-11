@@ -43,6 +43,18 @@
     "hints": [
         "Write a function \"parse\" which calls helper functions \"parse_or\", \"parse_and\", \"parse_not\"."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool parseBoolExpr(string expression) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} expression\n * @return {boolean}\n */\nvar parseBoolExpr = function(expression) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:58.974Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.149Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.412Z"
 }

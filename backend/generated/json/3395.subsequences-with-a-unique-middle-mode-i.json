@@ -49,6 +49,18 @@
         "For each index, find the number of subsequences for which it is the unique middle mode. What combinations of values can the two numbers on the left and the right take?",
         "For example, we can have exactly 1 element on the left equal to the middle and all other elements differ. What other combinations are acceptable?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int subsequencesWithMiddleMode(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar subsequencesWithMiddleMode = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T19:00:03.208Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.313Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.355Z"
 }

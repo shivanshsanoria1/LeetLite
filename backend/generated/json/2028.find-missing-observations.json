@@ -47,6 +47,18 @@
         "What should the sum of the n rolls be?",
         "Could you generate an array of size n such that each element is between 1 and 6?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> missingRolls(vector<int>& rolls, int mean, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} rolls\n * @param {number} mean\n * @param {number} n\n * @return {number[]}\n */\nvar missingRolls = function(rolls, mean, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:14.623Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.917Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.221Z"
 }

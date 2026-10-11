@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "[1,1,1]\n[[0,2,1,4]]\n[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
     "meta": {
         "quesIdLCBackend": 3975,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,1,1]\n[[0,2,1,4]]\n[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Square Root Decomposition + Difference Array\n\n#### Intuition\n\nThe most straightforward approach is to simulate each query directly by multiplying elements one by one. The time complexity for a single query is $O(n)$, and for $q$ queries, it becomes $O(nq)$, which is around $10^{10}$ and will lead to a timeout. The main issue is that when $k$ is small, a single query accesses many elements, making it expensive.\n\nWe observe that the step size $k$ affects the complexity differently, so we divide the queries into two categories based on the relationship between $k$ and $\\sqrt{n}$, and handle each category separately:\n\n* When $k \\ge \\sqrt{n}$, each query touches at most $\\cfrac{n}{k} \\le \\sqrt{n}$ elements, so a brute force approach is acceptable. The total time complexity in this case is $O(q \\sqrt{n})$.\n* When $k < \\sqrt{n}$, a single query may access many elements, making the brute force approach inefficient.\n\nFor smaller step sizes ($k < \\sqrt{n}$), we group queries by their $k$ value so that queries with the same $k$ can be processed together. The key observation is that indices affected by the same $k$ form a fixed pattern. For example, when $k = 3$, the affected indices are $l, l + 3, l + 6, \\dots$.\n\nOnce $k$ is fixed, each query $[l, r, v]$ multiplies elements at positions $l, l + k, l + 2k, \\dots$ by $v$. This is equivalent to performing range multiplication on a subsequence defined by step size $k$.\n\nTo handle this efficiently, we use a difference array $\\textit{dif}$ initialized with all values set to $1$. For a query $[l, r, v]$, we determine the last affected index and denote the next position as $R$. For example, in the query $[2, 7, 3]$, the last affected index is $5$, so $R = 8$. We then apply:\n\n* $\\textit{dif}[l] = \\textit{dif}[l] \\times v$\n* $\\textit{dif}[R] = \\textit{dif}[R] \\times v^{-1}$\n\nHere, $v^{-1}$ is the modular inverse of $v$ under modulo $\\textit{M} = 10^9 + 7$, which can be computed using Fermat's Little Theorem as $v^{\\textit{M} - 2}$. Each query is processed in $O(\\log \\textit{M})$ time.\n\nAfter processing all queries for a fixed $k$, we traverse the difference array and compute prefix products:\n$\\textit{dif}[i] = \\textit{dif}[i] \\times \\textit{dif}[i - k]$.\n\nThis gives the cumulative multiplier for each position. We then apply these values back to the original array in $O(n)$ time.\n\nThe total time complexity for handling queries with small step sizes is $O(n \\sqrt{n} + q \\log \\textit{M})$.\n\nFinally, we need to compute $R$. The last affected index is:\n$$l + \\left\\lfloor \\cfrac{r - l}{k} \\right\\rfloor \\cdot k$$ \n\nSo,\n$$R = l + \\left( \\left\\lfloor \\cfrac{r - l}{k} \\right\\rfloor + 1 \\right) \\cdot k$$ \n\nThe maximum possible value of $R$ is $n + k$. For convenience, we use a difference array of size $n + T$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/FpSaEFTe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"FpSaEFTe\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O((n + q)\\sqrt{n} + q \\log \\textit{M})$.\n\n- Space complexity: $O(n + q)$\n\n  The difference array $\\textit{dif}$ has size $n + T = O(n + \\sqrt{n}) = O(n)$, and the $\\textit{groups}$ structure stores up to $q$ queries in total. Therefore, the overall space complexity is $O(n + q)$.\n\n---"
@@ -45,6 +45,18 @@
         "For <code>k <= B</code> (where <code>B = sqrt(n)</code>): group queries by <code>(k, l mod k)</code>; for each group maintain a diff-array of length <code>ceil(n/k)</code> to record multiplier updates, then sweep each bucket to apply them to <code>nums</code>.",
         "For <code>k > B</code>: for each query set <code>idx = l</code> and while <code>idx <= r</code> do <code>nums[idx] = (nums[idx] * v) mod (10^9+7)</code> and <code>idx += k</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} queries\n * @return {number}\n */\nvar xorAfterQueries = function(nums, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:50.963Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.652Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.730Z"
 }

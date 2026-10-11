@@ -42,6 +42,18 @@
         "Keep track of the min and max frequencies.",
         "The number to be eliminated must have a frequency of 1, same as the others or the same +1."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxEqualFreq(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxEqualFreq = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:09.144Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.864Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.612Z"
 }

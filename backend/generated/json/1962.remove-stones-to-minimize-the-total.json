@@ -49,6 +49,18 @@
         "Use a data structure that helps you find the mentioned pile each time efficiently.",
         "One such data structure is a Priority Queue."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minStoneSum(vector<int>& piles, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} piles\n * @param {number} k\n * @return {number}\n */\nvar minStoneSum = function(piles, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:17.997Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.795Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.071Z"
 }

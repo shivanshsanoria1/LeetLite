@@ -42,6 +42,18 @@
         "<p>The product is odd exactly when every element is odd. Write each element as <code>2 * x + 1</code> and count the resulting non-negative solutions.</p>",
         "<p>If <code>n - k</code> is odd, no sequence consisting entirely of odd integers exists. Otherwise, subtract <code>C((n + k) / 2 - 1, k - 1)</code>.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countValidSequences(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar countValidSequences = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:00.265Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.990Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.272Z"
 }

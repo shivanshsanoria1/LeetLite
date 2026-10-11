@@ -47,6 +47,18 @@
         "<p>For two letters <code>a</code> and <code>b</code>, the minimum number of increments needed to make them equal is <code>min(abs(a - b), 26 - abs(a - b))</code>.</p>",
         "<p>Try every rotation. For each one, sum this cost over all mirrored pairs and add the number of rotations. This gives an <code>O(n^2)</code> solution.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minOperations = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:19.098Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.004Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.310Z"
 }

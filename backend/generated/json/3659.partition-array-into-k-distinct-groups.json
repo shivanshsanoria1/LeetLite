@@ -30,12 +30,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "[1,2,3,4]\n2\n[3,5,2,2]\n2\n[1,5,2,3]\n3",
     "meta": {
         "quesIdLCBackend": 3979,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4]\n2\n[3,5,2,2]\n2\n[1,5,2,3]\n3",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
         "Use a frequency map <code>freq</code> to count the occurrences of each element.",
         "If the total number of elements <code>n</code> is not divisible by <code>k</code>, partitioning is impossible."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool partitionArray(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar partitionArray = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:55.879Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.654Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.736Z"
 }

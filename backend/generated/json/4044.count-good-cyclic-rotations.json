@@ -44,6 +44,18 @@
         "Let <code>total</code> be the sum of all elements and <code>first</code> be the sum of the first half of a rotation. The rotation is good exactly when <code>first &gt; total - first</code>.",
         "Maintain <code>first</code> using a circular sliding window of length <code>n / 2</code>. Moving to the next rotation removes one element from the window and adds one element."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGoodRotations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar countGoodRotations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:02.792Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.985Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.345Z"
 }

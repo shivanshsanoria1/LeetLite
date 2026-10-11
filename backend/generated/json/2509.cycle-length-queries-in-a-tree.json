@@ -56,6 +56,18 @@
         "distance(a, b) = depth(a) + depth(b) - 2 * depth(LCA(a, b)). Where depth(a) denotes depth from root to node “a” and LCA(a, b) denotes the lowest common ancestor of nodes “a” and “b”.",
         "To find LCA(a, b), iterate over all ancestors of node “a” and check if it is the ancestor of node “b” too. If so, take the one with maximum depth."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> cycleLengthQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar cycleLengthQueries = function(n, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:36.946Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.754Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.296Z"
 }

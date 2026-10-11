@@ -40,6 +40,18 @@
         "Precompute a prefix sum of ones ('1').",
         "Iterate from left to right counting the number of zeros ('0'), then use the precomputed prefix sum for counting ones ('1'). Update the answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxScore = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:51.186Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.817Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.828Z"
 }

@@ -38,12 +38,12 @@
             "slug": "ordered-set"
         }
     ],
-    "exampleTestcases": "\"110\"\n1\n\"0101\"\n3\n\"101\"\n2",
     "meta": {
         "quesIdLCBackend": 3983,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"110\"\n1\n\"0101\"\n3\n\"101\"\n2",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Breadth-First Search\n\n#### Intuition\n\nWe can represent the result of each flip operation by the number of `'0'` characters in the string $s$, since the operation defined in the problem is independent of the positions of the characters.\n\nLet $n$ be the length of the string $s$, and let $m$ denote the current number of `'0'` characters. In one operation, we choose $c$ zeros and $k - c$ ones to flip. The value of $c$ must satisfy the following constraints:\n\n1. We can select at most $\\min(m, k)$ zeros:\n\n$$\n0 \\le c \\le \\min(m, k)\n$$\n\n2. We can select at most $n - m$ ones:\n\n$$\nk - c \\le n - m\n$$\n\nCombining these constraints, we obtain:\n\n$$\n\\max(k - n + m, 0) \\le c \\le \\min(m, k)\n$$\n\nLet\n$c_1 = \\max(k - n + m, 0)$\n$c_2 = \\min(m, k)$\n\nAfter one operation, the new number of zeros becomes:\n\n$$\nm + k - 2c, \\quad c \\in [c_1, c_2]\n$$\n\nWe observe that the possible results form a continuous interval consisting entirely of either even or odd values. Therefore, we can apply breadth-first search to compute the minimum number of operations required to make all characters in the string equal to `'1'`.\n\nSince the number of zeros ranges from $0$ to $n$, we treat each possible value as a node. We use two ordered sets to store the unvisited states separately for even and odd values. We also maintain an array $\\textit{dist}$ to record the minimum number of operations required to reach each state. The flip result corresponding to the initial string is placed into the queue, and removed from the corresponding ordered set:\n\n1. Retrieve the element $m$ from the queue. The minimum flip result after one operation is $\\textit{lnode} = m + k - 2 \\times c_2$, and the maximum flip result is $\\textit{rnode} = m + k - 2 \\times c_1$.\n\n2. Select the corresponding ordered set based on the parity of $\\textit{lnode}$.\n\n3. Search the ordered set to find elements $m_2$ that satisfy $\\textit{lnode} \\le m_2 \\le \\textit{rnode}$. For each such element, set $\\textit{dist}[m_2] = \\textit{dist}[m] + 1$, add $m_2$ to the queue, and remove it from the ordered set.\n\n4. Terminate the process when the queue becomes empty.\n\nAfter performing the breadth-first search, if the flipped result $0$ can be reached, return $\\textit{dist}[0]$; otherwise, return $-1$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/RynqHNCx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RynqHNCx\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$.\n\n- Time complexity: $O(n \\log n)$\n  \n  Each ordered set operation takes $O(\\log n)$ time. Since each state is inserted and removed at most once, the total time complexity is $O(n \\log n)$.\n\n- Space complexity: $O(n)$\n\n---"
@@ -54,6 +54,18 @@
         "Build a graph on states <code>0..n</code> and run <code>BFS</code> from initial <code>z</code> to reach <code>0</code>; each edge from <code>z</code> goes to all <code>z'</code> in that computed interval.",
         "For speed, keep two ordered sets of unvisited states by parity and erase ranges with <code>lower_bound</code> while <code>BFSing</code> to achieve near <code>O(n log n)</code> time."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(string s, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar minOperations = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:09:28.615Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.699Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.744Z"
 }

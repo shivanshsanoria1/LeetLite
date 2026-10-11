@@ -47,6 +47,18 @@
         "Could you put the elements smaller than the pivot and greater than the pivot in a separate list as in the sequence that they occur?",
         "With the separate lists generated, could you then generate the result?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> pivotArray(vector<int>& nums, int pivot) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} pivot\n * @return {number[]}\n */\nvar pivotArray = function(nums, pivot) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:16.973Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.160Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.724Z"
 }

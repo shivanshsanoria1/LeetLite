@@ -53,6 +53,18 @@
         "Think of the inclusion-exclusion principle.",
         "Divide the array into multiple subarrays such that each number in each subarray is between minK and maxK inclusive, solve the previous problem for each subarray, and sum all the answers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countSubarrays(vector<int>& nums, int minK, int maxK) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} minK\n * @param {number} maxK\n * @return {number}\n */\nvar countSubarrays = function(nums, minK, maxK) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:45.780Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.622Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.196Z"
 }

@@ -42,6 +42,18 @@
         "The number of unique good subsequences is equal to the number of unique decimal values there are for all possible subsequences.",
         "Find the answer at each index based on the previous indexes' answers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfUniqueGoodSubsequences(string binary) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} binary\n * @return {number}\n */\nvar numberOfUniqueGoodSubsequences = function(binary) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:42.274Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.817Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.121Z"
 }

@@ -41,6 +41,18 @@
         "If you pay for wall <code>i</code>, it contributes <code>cost[i]</code> and effectively covers <code>time[i] + 1</code> walls: the paid wall itself plus up to <code>time[i]</code> walls that the free painter can paint while the paid painter works.",
         "Use DP over the number of walls covered, capped at n."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int paintWalls(vector<int>& cost, vector<int>& time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} cost\n * @param {number[]} time\n * @return {number}\n */\nvar paintWalls = function(cost, time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:51.900Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.399Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.549Z"
 }

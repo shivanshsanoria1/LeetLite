@@ -51,6 +51,18 @@
         "How to generate all K-palindromic strings of length <code>n</code>? Do we need to go through all <code>n</code> digits?",
         "Use permutations to calculate the number of possible rearrangements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countGoodIntegers(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar countGoodIntegers = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:26.262Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.096Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.848Z"
 }

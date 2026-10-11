@@ -43,6 +43,18 @@
         "Notice that the constraints are small enough for a brute force solution to pass.",
         "Loop through all triplets, and count the ones that are good."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countGoodTriplets(vector<int>& arr, int a, int b, int c) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number}\n */\nvar countGoodTriplets = function(arr, a, b, c) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:35.122Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.033Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.984Z"
 }

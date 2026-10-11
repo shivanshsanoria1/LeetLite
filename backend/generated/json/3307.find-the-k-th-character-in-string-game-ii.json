@@ -46,6 +46,18 @@
         "Try to replay the operations <code>k<sup>th</sup></code> character was part of.",
         "The <code>k<sup>th</sup></code> character is only affected if it is present in the first half of the string."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    char kthCharacter(long long k, vector<int>& operations) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @param {number[]} operations\n * @return {character}\n */\nvar kthCharacter = function(k, operations) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:52.201Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.180Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.029Z"
 }

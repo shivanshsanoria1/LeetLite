@@ -50,6 +50,18 @@
         "The total appeal of all substrings ending at index i is the total sum of the number of substrings that contain each alphabetic character.",
         "To find the total appeal of all substrings, we simply sum up the total appeal for each index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long appealSum(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar appealSum = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:17.405Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.311Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.975Z"
 }

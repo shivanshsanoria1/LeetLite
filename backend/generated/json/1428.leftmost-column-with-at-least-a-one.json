@@ -48,6 +48,7 @@
         "1. (Binary Search) For each row do a binary search to find the leftmost one on that row and update the answer.",
         "2. (Optimal Approach) Imagine there is a pointer p(x, y) starting from top right corner. p can only move left or down. If the value at p is 0, move down. If the value at p is 1, move left. Try to figure out the correctness and time complexity of this algorithm."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:34:06.730Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.822Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.831Z"
 }

@@ -55,6 +55,18 @@
         "Calculate the points for each student’s feedback.",
         "Sort the students accordingly to find the top <em>k</em> among them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> topStudents(vector<string>& positive_feedback, vector<string>& negative_feedback, vector<string>& report, vector<int>& student_id, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} positive_feedback\n * @param {string[]} negative_feedback\n * @param {string[]} report\n * @param {number[]} student_id\n * @param {number} k\n * @return {number[]}\n */\nvar topStudents = function(positive_feedback, negative_feedback, report, student_id, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:39.700Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.768Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.299Z"
 }

@@ -63,6 +63,18 @@
         "So, if we fix one of the numbers, say <code>x</code>, we have to scan the entire array to find the next number <code>y</code> which is <code>value - x</code> where value is the input parameter. Can we change our array somehow so that this search becomes faster?",
         "The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nvar twoSum = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:32:27.520Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.468Z"
+    "PARSED_ISO": "2026-10-11T11:14:48.904Z"
 }

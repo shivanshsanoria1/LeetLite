@@ -50,6 +50,18 @@
         "Make computations faster using prefix sums over columns to aggregate contributions from cells within Euclidean distance <code>d</code>.",
         "Combine <code>dp[r][c][0]</code> and <code>dp[r][c][1]</code> for all columns <code>c</code> in row <code>r</code> to produce the <code>dp</code> values used for row <code>r - 1</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfRoutes(vector<string>& grid, int d) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} grid\n * @param {number} d\n * @return {number}\n */\nvar numberOfRoutes = function(grid, d) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:59.703Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.301Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.040Z"
 }

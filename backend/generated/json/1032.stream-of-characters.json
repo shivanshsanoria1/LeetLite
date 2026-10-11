@@ -55,6 +55,18 @@
     "hints": [
         "Put the words into a trie, and manage a set of pointers within that trie."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class StreamChecker {\npublic:\n    StreamChecker(vector<string>& words) {\n        \n    }\n    \n    bool query(char letter) {\n        \n    }\n};\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker* obj = new StreamChecker(words);\n * bool param_1 = obj->query(letter);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n */\nvar StreamChecker = function(words) {\n    \n};\n\n/** \n * @param {character} letter\n * @return {boolean}\n */\nStreamChecker.prototype.query = function(letter) {\n    \n};\n\n/** \n * Your StreamChecker object will be instantiated and called as such:\n * var obj = new StreamChecker(words)\n * var param_1 = obj.query(letter)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:04.739Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.934Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.322Z"
 }

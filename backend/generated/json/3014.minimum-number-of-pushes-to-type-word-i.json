@@ -46,6 +46,18 @@
         "We have 8 keys in total. We can type 8 characters with one push each, 8 different characters with two pushes each, and so on.",
         "The optimal way is to map letters to keys evenly."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumPushes(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar minimumPushes = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:35.753Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.765Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.338Z"
 }

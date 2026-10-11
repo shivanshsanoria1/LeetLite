@@ -44,6 +44,18 @@
         "The key idea is the max absolute sum will be either the max sum or the min sum.",
         "So just run kadane twice, once calculating the max sum and once calculating the min sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxAbsoluteSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxAbsoluteSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:53:14.858Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.418Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.687Z"
 }

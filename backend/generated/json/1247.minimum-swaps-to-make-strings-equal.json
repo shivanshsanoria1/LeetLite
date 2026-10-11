@@ -47,6 +47,18 @@
         "(\"xx\", \"yy\") => 1 swap, (\"xy\", \"yx\") => 2 swaps",
         "So the strategy is, apply case 1 as much as possible, then apply case 2 if the last two unmatched are in this case, or fall into impossible if only one pair of unmatched left. This can be done via a simple math."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumSwap(string s1, string s2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s1\n * @param {string} s2\n * @return {number}\n */\nvar minimumSwap = function(s1, s2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:36.347Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.979Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.634Z"
 }

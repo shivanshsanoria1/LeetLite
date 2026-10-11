@@ -36,6 +36,18 @@
         "Use modulus operator (%) to compute the last digit.",
         "Generalise modulus operator idea to compute all digits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int subtractProductAndSum(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar subtractProductAndSum = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:39.504Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.127Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.671Z"
 }

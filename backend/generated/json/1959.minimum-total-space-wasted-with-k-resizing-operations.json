@@ -43,6 +43,18 @@
         "Given a range, how can you find the minimum waste if you can't perform any resize operations?",
         "Can we build our solution using dynamic programming using the current index and the number of resizing operations performed as the states?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSpaceWastedKResizing(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minSpaceWastedKResizing = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:15.438Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.792Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.067Z"
 }

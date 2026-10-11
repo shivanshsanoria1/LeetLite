@@ -53,6 +53,18 @@
         "If you sort the original array, it is optimal to apply the operations on one subarray such that all the elements of that subarray become equal.",
         "You can use binary search to find the longest subarray where we can make the elements equal in at most <code>k</code> operations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxFrequencyScore(vector<int>& nums, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxFrequencyScore = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:57.556Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.716Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.119Z"
 }

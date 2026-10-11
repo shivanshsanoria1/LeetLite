@@ -41,6 +41,18 @@
         "Which data structure will help you maintain distinct elements?",
         "Iterate over all possible prefix sizes. Then, use a nested loop to add the elements of the prefix to a set, and another nested loop to add the elements of the suffix to another set."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> distinctDifferenceArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar distinctDifferenceArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:52.103Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.348Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.470Z"
 }

@@ -43,6 +43,18 @@
         "What if we sort the intervals?  Considering the sorted intervals, how can we solve the problem with dynamic programming?",
         "Let's consider a DP(pos, limit) where pos represents the position of the current interval we are gonna take the decision and limit is the current covered area from [0 - limit]. This DP returns the minimum number of taken intervals or infinite if it's not possible to cover the [0 - T] section."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int videoStitching(vector<vector<int>>& clips, int time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} clips\n * @param {number} time\n * @return {number}\n */\nvar videoStitching = function(clips, time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:59.253Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.798Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.308Z"
 }

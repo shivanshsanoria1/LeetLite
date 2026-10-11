@@ -40,6 +40,18 @@
         "Create another helper function that takes the array of pairs and creates a new integer. For example, if you call this function with [[2,2], [3,2], [1,1], [4,5], [1, 2]], it should create \"22\"+\"23\"+\"11\"+\"54\"+\"21\" = \"2223115421\".",
         "Now, with the two helper functions, you can start with \"1\" and call the two functions alternatively n-1 times. The answer is the last integer you will obtain."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string countAndSay(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {string}\n */\nvar countAndSay = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:38:46.790Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.860Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.042Z"
 }

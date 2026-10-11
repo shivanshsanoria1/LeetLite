@@ -54,6 +54,7 @@
         "Could you trade extra space such that <code>move()</code> operation can be done in O(1)?",
         "You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T19:58:20.308Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.473Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.502Z"
 }

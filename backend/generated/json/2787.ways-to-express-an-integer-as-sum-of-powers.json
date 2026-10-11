@@ -40,6 +40,18 @@
         "You can use dynamic programming, where dp[k][j] represents the number of ways to express k as the sum of the x-th power of unique positive integers such that the biggest possible number we use is j.",
         "To calculate dp[k][j], you can iterate over the numbers smaller than j and try to use each one as a power of x to make our sum k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfWays(int n, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} x\n * @return {number}\n */\nvar numberOfWays = function(n, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:27.963Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.431Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.593Z"
 }

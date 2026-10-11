@@ -22,12 +22,12 @@
             "slug": "math"
         }
     ],
-    "exampleTestcases": "2\n3\n15\n3\n5\n20",
     "meta": {
         "quesIdLCBackend": 3817,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "2\n3\n15\n3\n5\n20",
     "solution": {
         "canSeeDetail": false
     },
@@ -36,6 +36,18 @@
         "What are the limits on the number of containers?",
         "We can load at most <code>min(n * n, maxWeight / w)</code> containers."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxContainers(int n, int w, int maxWeight) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} w\n * @param {number} maxWeight\n * @return {number}\n */\nvar maxContainers = function(n, w, maxWeight) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:38.415Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.483Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.513Z"
 }

@@ -37,6 +37,18 @@
         "Consider counting for each element in divisors the count of elements in nums divisible by it using bruteforce.",
         "After counting for each divisor, take the one with the maximum count. In case of a tie, take the minimum one of them."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxDivScore(vector<int>& nums, vector<int>& divisors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[]} divisors\n * @return {number}\n */\nvar maxDivScore = function(nums, divisors) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:30.274Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.278Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.445Z"
 }

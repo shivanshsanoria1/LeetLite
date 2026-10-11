@@ -48,6 +48,18 @@
         "Note when <code>x > 1</code>, <code>x<sup>2</sup></code>, <code>x<sup>4</sup></code>, <code>x<sup>8</sup></code>, … increases very fast, the longest subset with smallest value x cannot be very long. (The length is <code>O(log(log(10<sup>9</sup>)))</code>.",
         "Hence we can directly check all lengths less than <code>10</code> for all values of <code>x</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumLength(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maximumLength = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:40.570Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.770Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.351Z"
 }

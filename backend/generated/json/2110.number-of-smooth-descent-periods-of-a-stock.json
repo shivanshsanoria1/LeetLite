@@ -57,6 +57,18 @@
         "Think of a 2-pointer approach to traverse the array and find each longest possible period.",
         "Suppose you found the longest possible period with a length of k. How many periods are within that period? How can you count them quickly? Think of the formula to calculate the sum of 1, 2, 3, ..., k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long getDescentPeriods(vector<int>& prices) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar getDescentPeriods = function(prices) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:29.045Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.072Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.614Z"
 }

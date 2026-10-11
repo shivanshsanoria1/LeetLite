@@ -50,6 +50,18 @@
         "Since generating substrings is not an option, can we count the number of substrings a vowel appears in?",
         "How much does each vowel contribute to the total sum?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countVowels(string word) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @return {number}\n */\nvar countVowels = function(word) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:49.133Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.939Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.396Z"
 }

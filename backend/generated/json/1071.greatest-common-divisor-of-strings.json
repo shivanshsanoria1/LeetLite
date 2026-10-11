@@ -51,6 +51,18 @@
     "hints": [
         "The greatest common divisor must be a prefix of each string, so we can try all prefixes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string gcdOfStrings(string str1, string str2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {string}\n */\nvar gcdOfStrings = function(str1, str2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:33.055Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.069Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.374Z"
 }

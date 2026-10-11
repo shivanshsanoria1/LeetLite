@@ -43,6 +43,18 @@
         "The factors of n will be always in the range [1, n].",
         "Keep a list of all factors sorted.  Loop i from 1 to n and add i if n % i == 0. Return the kth factor if it exist in this list."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kthFactor(int n, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar kthFactor = function(n, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:35:29.472Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.976Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.918Z"
 }

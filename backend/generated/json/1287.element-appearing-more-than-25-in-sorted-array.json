@@ -37,6 +37,18 @@
         "The answer should be in one of the ends of the intervals.",
         "In order to check which is element is the answer we can count the frequency with binarySearch."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findSpecialInteger(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar findSpecialInteger = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:47.040Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.183Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.675Z"
 }

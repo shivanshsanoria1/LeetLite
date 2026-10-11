@@ -50,12 +50,12 @@
             "slug": "sorting"
         }
     ],
-    "exampleTestcases": "5\n[1,8,3,4,2]\n3\n[[0,3],[2,4]]\n5\n[5,3,1,9,10]\n2\n[[0,1],[0,2],[2,3],[4,3]]\n3\n[3,6,1]\n1\n[[0,0],[0,1],[1,2]]",
     "meta": {
         "quesIdLCBackend": 3852,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "5\n[1,8,3,4,2]\n3\n[[0,3],[2,4]]\n5\n[5,3,1,9,10]\n2\n[[0,1],[0,2],[2,3],[4,3]]\n3\n[3,6,1]\n1\n[[0,0],[0,1],[1,2]]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Two Pointer + Exponential Increment\n\n#### Intuition\n\n\"[3532. Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/)\" is the predecessor of this problem. Unlike the predecessor, the array $\\textit{nums}$ is **unordered**, and each query asks for the **shortest distance** between two nodes.\n\nFor convenience, let $n$ be the length of $\\textit{nums}$. We say that two nodes are **connected** if there exists a path between them.\n\nFrom the predecessor problem, we know that after sorting $\\textit{nums}$, if two adjacent nodes in the sorted order differ by at most `maxDiff`, then they are directly connected. Consequently, every connected component forms a contiguous interval in the sorted array. For each node, we define its **adjacent interval** as the maximal contiguous interval containing that node in which every pair of adjacent values differs by at most `maxDiff`.\n\nUsing a two-pointer algorithm, we can compute the left endpoint of the adjacent interval for every node. To facilitate answering queries, we first sort $\\textit{nums}$. Let $\\textit{pos}[i]$ denote the position of $\\textit{nums}[i]$ in the sorted array, and let $\\textit{idx}[i]$ denote the original index of the $i$-th element in the sorted array. These two arrays provide a bidirectional mapping between the original and sorted orders.\n\nNow consider a query between nodes $x$ and $y$. Convert them to their positions in the sorted array, $\\textit{pos}[x]$ and $\\textit{pos}[y]$. Assume $x$ is to the left of $y$ after sorting (otherwise, simply swap them).\n\nA straightforward approach is to repeatedly jump from $y$ to the left endpoint of its adjacent interval until it reaches or passes $x$. The number of jumps equals the shortest distance between the two nodes. However, performing these jumps one at a time is too slow when there are many queries.\n\nTo accelerate the process, we use **binary lifting**. Let $f[x][i]$ denote the node reached after making $2^i$ leftward jumps from node $x$, where $0 \\le i \\le \\lfloor \\log_2 n \\rfloor$. For each query, we greedily enumerate the powers of two from largest to smallest. Whenever jumping $2^i$ steps still leaves $y$ strictly to the right of $x$, we perform that jump. After all jumps are processed, there are two possibilities:\n\n* If $x$ and $y$ are connected, then $y$ will be exactly one jump away from reaching or passing $x$, so the answer is the accumulated number of jumps plus one.\n* Otherwise, $y$ has already reached the left endpoint of its connected component and can no longer move left, so no path exists.\n\nNote that if $x$ and $y$ are initially the same node, the answer is `0`.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/U5nsp4kT/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"U5nsp4kT\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of $\\textit{nums}$, and let $q$ be the number of queries.\n\n- Time complexity: $O(n \\log n + q \\log n)$.\n\n- Space complexity: $O(n \\log n)$.\n\n---"
@@ -66,6 +66,18 @@
         "Can we use binary jumping?",
         "Use binary jumping with a sparse table data structure."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} nums\n * @param {number} maxDiff\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar pathExistenceQueries = function(n, nums, maxDiff, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:23.891Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.548Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.548Z"
 }

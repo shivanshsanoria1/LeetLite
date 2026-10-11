@@ -45,6 +45,18 @@
         "You cannot do anything about colsum[i] = 2 case or colsum[i] = 0 case. Then you put colsum[i] = 1 case to the upper row until upper has reached. Then put the rest into lower row.",
         "Fill 0 and 2 first, then fill 1 in the upper row or lower row in turn but be careful about exhausting permitted 1s in each row."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> reconstructMatrix(int upper, int lower, vector<int>& colsum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} upper\n * @param {number} lower\n * @param {number[]} colsum\n * @return {number[][]}\n */\nvar reconstructMatrix = function(upper, lower, colsum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:44.237Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.005Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.644Z"
 }

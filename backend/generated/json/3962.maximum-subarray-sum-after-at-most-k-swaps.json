@@ -62,6 +62,18 @@
         "Enumerate the left endpoint and extend the right endpoint while maintaining the inside and outside elements in order-statistics data structures that support counts, sums, and the sum of the smallest or largest <code>t</code> elements.",
         "The marginal gains are non-increasing as <code>t</code> grows, so find the largest profitable <code>t <= k</code> and add its gain to the original subarray sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:06:15.059Z",
-    "PARSED_ISO": "2026-09-22T19:07:36.958Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.229Z"
 }

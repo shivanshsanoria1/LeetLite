@@ -60,6 +60,18 @@
         "The actual graph will always consist of at least one cycle and some other nodes.",
         "Calculate the answer for nodes in cycles the same way as in hint 1. How do you calculate the answer for the remaining nodes?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> countVisitedNodes(vector<int>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} edges\n * @return {number[]}\n */\nvar countVisitedNodes = function(edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:39.736Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.608Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.833Z"
 }

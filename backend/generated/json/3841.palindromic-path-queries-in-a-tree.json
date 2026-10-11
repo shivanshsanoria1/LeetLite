@@ -64,6 +64,18 @@
         "Use heavy light decomposition to break each path query into <code>O(log n)</code> segments.",
         "Represent characters as a 26-bit mask and maintain segment data with XOR. A path can form a palindrome if the resulting mask has at most one bit set."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> palindromePath(int n, vector<vector<int>>& edges, string s, vector<string>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {string} s\n * @param {string[]} queries\n * @return {boolean[]}\n */\nvar palindromePath = function(n, edges, s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:03.772Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.788Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.106Z"
 }

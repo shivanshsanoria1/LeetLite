@@ -42,6 +42,18 @@
         "What is the maximum number of rotations you have to check?",
         "Is there a formula you can use to rotate a matrix 90 degrees?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool findRotation(vector<vector<int>>& mat, vector<vector<int>>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @param {number[][]} target\n * @return {boolean}\n */\nvar findRotation = function(mat, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:44.976Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.604Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.927Z"
 }

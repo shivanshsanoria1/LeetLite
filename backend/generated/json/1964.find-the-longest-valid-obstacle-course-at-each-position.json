@@ -50,6 +50,18 @@
         "Can you keep track of the minimum height for each obstacle course length?",
         "You can use binary search to find the longest previous obstacle course length that satisfies the conditions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> longestObstacleCourseAtEachPosition(vector<int>& obstacles) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} obstacles\n * @return {number[]}\n */\nvar longestObstacleCourseAtEachPosition = function(obstacles) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:19.430Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.797Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.081Z"
 }

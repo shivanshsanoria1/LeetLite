@@ -48,6 +48,18 @@
         "Consider iterating over the first edge to remove, and then doing some precalculations on the 2 resulting connected components.",
         "Will calculating the XOR of each subtree help?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number[][]} edges\n * @return {number}\n */\nvar minimumScore = function(nums, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:05.429Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.035Z"
 }

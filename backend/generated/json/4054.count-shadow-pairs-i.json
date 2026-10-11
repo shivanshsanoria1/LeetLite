@@ -46,6 +46,18 @@
         "<p><strong>2a (Monotonic Stack + Fenwick Tree).</strong> For each index <code>i</code>, find the first index <code>r[i]</code> to its right with a strictly smaller value, or use <code>n</code> if none exists. Count indices <code>j</code> satisfying <code>i &lt; j &lt; r[i]</code> and <code>nums[j] &gt; nums[i]</code>.</p>",
         "<p><strong>2b (Monotonic Stack + Fenwick Tree).</strong> Process elements in decreasing order of value, storing their indices in a Fenwick tree. Query the required index interval before inserting the current group of equal values.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long shadowPairs(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar shadowPairs = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:09:13.351Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.993Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.357Z"
 }

@@ -44,6 +44,18 @@
         "Loop over all character from 'a' to 'z' and append the character if it exists and decrease frequency by 1. Do the same from 'z' to 'a'.",
         "Keep repeating until the frequency of all characters is zero."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string sortString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar sortString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:41.327Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.748Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.783Z"
 }

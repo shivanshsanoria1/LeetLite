@@ -41,6 +41,18 @@
         "Notice that each edge that we add changes the degree of exactly 2 nodes.",
         "The number of nodes with an odd degree in the original graph should be either 0, 2, or 4. Try to work on each of these cases."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isPossible(int n, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {boolean}\n */\nvar isPossible = function(n, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:35.705Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.753Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.295Z"
 }

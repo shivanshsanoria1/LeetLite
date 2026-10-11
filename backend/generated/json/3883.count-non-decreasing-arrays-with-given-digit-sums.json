@@ -46,6 +46,18 @@
         "<code>dp[j]</code> holds the number of ways ending exactly at the j-th candidate for the current position.",
         "Build prefix sums on the previous <code>dp</code>, then use <code>upper_bound</code> on the sorted previous list to count all values <= current."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countArrays(vector<int>& digitSum) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} digitSum\n * @return {number}\n */\nvar countArrays = function(digitSum) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:46.853Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.824Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.152Z"
 }

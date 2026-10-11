@@ -58,6 +58,18 @@
         "If the number of closing brackets is ever larger, you need to make a swap.",
         "Swap it with the opening bracket closest to the end of s."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minSwaps(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minSwaps = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:18.634Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.796Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.078Z"
 }

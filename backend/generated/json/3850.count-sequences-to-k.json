@@ -53,6 +53,18 @@
         "Use Dynamic Programming on the prime exponents: let <code>dp(idx, x, y, z)</code> be the number of ways to reach exponents <code>(x,y,z)</code> after processing index <code>idx</code>.",
         "When <code>idx == nums.length</code>, compare <code>(x, y, z)</code> to the prime exponent decomposition of <code>k</code> and count matches."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countSequences(vector<int>& nums, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countSequences = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:12.691Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.797Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.112Z"
 }

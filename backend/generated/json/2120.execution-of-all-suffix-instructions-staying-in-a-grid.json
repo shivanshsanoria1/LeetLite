@@ -42,6 +42,18 @@
         "The constraints are not very large. Can we simulate the execution by starting from each index of s?",
         "Before any of the stopping conditions is met, stop the simulation for that index and set the answer for that index."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> executeInstructions(int n, vector<int>& startPos, string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[]} startPos\n * @param {string} s\n * @return {number[]}\n */\nvar executeInstructions = function(n, startPos, s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:37.048Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.080Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.648Z"
 }

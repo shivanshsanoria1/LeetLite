@@ -26,12 +26,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "\"abc\"\n\"bcda\"\n\"zdce\"",
     "meta": {
         "quesIdLCBackend": 3867,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"abc\"\n\"bcda\"\n\"zdce\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -42,6 +42,18 @@
         "Now, try to build the ans using this DP",
         "Define ans[i] = lex smallest string that can be made in [i, n - 1], then ans[i] = lex_smallest of { choose one char s[j] in [i, n - 1] + ans[j + 1] }"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string lexicographicallySmallestString(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar lexicographicallySmallestString = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:58.306Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.565Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.567Z"
 }

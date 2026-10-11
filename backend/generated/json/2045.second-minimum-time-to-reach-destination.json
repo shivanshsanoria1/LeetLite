@@ -56,6 +56,18 @@
         "How much is change actually necessary while calculating the required path?",
         "How many extra edges do we need to add to the shortest path?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int secondMinimum(int n, vector<vector<int>>& edges, int time, int change) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} time\n * @param {number} change\n * @return {number}\n */\nvar secondMinimum = function(n, edges, time, change) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:28.181Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.929Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.293Z"
 }

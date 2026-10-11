@@ -43,6 +43,18 @@
         "It's optimal to finish the apples that will rot first before those that will rot last",
         "You need a structure to keep the apples sorted by their finish time"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int eatenApples(vector<int>& apples, vector<int>& days) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} apples\n * @param {number[]} days\n * @return {number}\n */\nvar eatenApples = function(apples, days) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:27.754Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.344Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.620Z"
 }

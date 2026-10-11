@@ -47,6 +47,18 @@
         "Create the permutation P=[1,2,...,m], it could be a list for example.",
         "For each i, find the position of queries[i] with a simple scan over P and then move this to the beginning."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> processQueries(vector<int>& queries, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} queries\n * @param {number} m\n * @return {number[]}\n */\nvar processQueries = function(queries, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:34.039Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.808Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.820Z"
 }

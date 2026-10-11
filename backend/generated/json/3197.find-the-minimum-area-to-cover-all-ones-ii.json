@@ -47,6 +47,18 @@
         "To find the minimum area, check all possible vertical and horizontal splits.",
         "For 3 rectangles, extend the idea to first covering using one rectangle, and then try splitting leftover ones both horizontally and vertically."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumSum(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minimumSum = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:27.631Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.035Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.305Z"
 }

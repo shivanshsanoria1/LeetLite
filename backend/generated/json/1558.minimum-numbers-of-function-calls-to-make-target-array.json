@@ -43,6 +43,18 @@
         "Work backwards: try to go from nums to arr.",
         "You should try to divide by 2 as much as possible, but you can only divide by 2 if everything is even."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:07.886Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.048Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.058Z"
 }

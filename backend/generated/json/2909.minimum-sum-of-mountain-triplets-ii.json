@@ -42,6 +42,18 @@
         "If you fix index <code>j</code>, <code>i</code> will be the smallest integer to the left of <code>j</code>, and <code>k</code> the largest integer to the right of <code>j</code>.",
         "To find <code>i</code> and <code>k</code>, preprocess the prefix minimum array <code>prefix_min[i] = min(nums[0], nums[1], ..., nums[i])</code>, and the suffix minimum array <code>suffix_min[i] = min(nums[i], nums[i + 1], ..., nums[i - 1])</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:10.042Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.629Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.889Z"
 }

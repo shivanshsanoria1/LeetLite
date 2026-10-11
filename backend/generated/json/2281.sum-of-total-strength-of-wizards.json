@@ -54,6 +54,18 @@
         "Can you efficiently calculate the total contribution to the answer for all subarrays that end at each index?",
         "Denote the total contribution of all subarrays ending at index i as solve[i]. Can you express solve[i] in terms of solve[m] for some m < i?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int totalStrength(vector<int>& strength) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} strength\n * @return {number}\n */\nvar totalStrength = function(strength) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:33.894Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.330Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.999Z"
 }

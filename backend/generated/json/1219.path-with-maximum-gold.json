@@ -43,6 +43,18 @@
     "hints": [
         "Use recursion to try all such paths and find the one with the maximum value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getMaximumGold(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar getMaximumGold = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:03.202Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.804Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.606Z"
 }

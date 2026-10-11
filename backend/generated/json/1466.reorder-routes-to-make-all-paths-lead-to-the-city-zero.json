@@ -45,6 +45,18 @@
     "hints": [
         "Treat the graph as undirected. Start a dfs from the root, if you come across an edge in the forward direction, you need to reverse the edge."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minReorder(int n, vector<vector<int>>& connections) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} connections\n * @return {number}\n */\nvar minReorder = function(n, connections) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:34:53.837Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.907Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.867Z"
 }

@@ -35,6 +35,18 @@
         "Convert each character of each word to its numerical value.",
         "Check if the numerical values satisfies the condition."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isSumEqual(string firstWord, string secondWord, string targetWord) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} firstWord\n * @param {string} secondWord\n * @param {string} targetWord\n * @return {boolean}\n */\nvar isSumEqual = function(firstWord, secondWord, targetWord) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:37.502Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.587Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.919Z"
 }

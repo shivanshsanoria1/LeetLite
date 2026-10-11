@@ -60,6 +60,7 @@
         "There is a total of 3 + 2 + 1 = 6 substrings that begin and end with \"a\".",
         "If a character appears i times in the string, there are i * (i + 1) / 2 substrings that begin and end with that character."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:05:07.153Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.999Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.512Z"
 }

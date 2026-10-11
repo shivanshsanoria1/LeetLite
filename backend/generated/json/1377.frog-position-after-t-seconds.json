@@ -49,6 +49,18 @@
         "Use a variation of DFS with parameters 'curent_vertex' and 'current_time'.",
         "Update the probability considering to jump to one of the children vertices."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double frogPosition(int n, vector<vector<int>>& edges, int t, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} t\n * @param {number} target\n * @return {number}\n */\nvar frogPosition = function(n, edges, t, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:52.391Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.779Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.789Z"
 }

@@ -52,6 +52,18 @@
         "To minimize the amount of time needed, you want to fill up as many cups as possible in each second. This means that you want to maximize the number of seconds where you are filling up two cups.",
         "You always want to fill up the two types of water with the most unfilled cups."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int fillCups(vector<int>& amount) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} amount\n * @return {number}\n */\nvar fillCups = function(amount) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:18.337Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.427Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.058Z"
 }

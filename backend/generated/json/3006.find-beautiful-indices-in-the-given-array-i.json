@@ -66,6 +66,18 @@
     "hints": [
         "For each <code>i</code>, you can iterate over all <code>j</code>s and determine if <code>i</code> is beautiful or not."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> beautifulIndices(string s, string a, string b, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {string} a\n * @param {string} b\n * @param {number} k\n * @return {number[]}\n */\nvar beautifulIndices = function(s, a, b, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:29.772Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.759Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.307Z"
 }

@@ -49,6 +49,18 @@
         "Use two sets ordered by frequency. One of the sets will only contain the top <code>x</code> frequent elements, and the second will contain all other elements.",
         "Update the two sets whenever you slide the window, and maintain a sum of the elements in the set with <code>x</code> elements"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> findXSum(vector<int>& nums, int k, int x) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} x\n * @return {number[]}\n */\nvar findXSum = function(nums, k, x) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:02.928Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.190Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.082Z"
 }

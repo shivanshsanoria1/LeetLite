@@ -43,6 +43,18 @@
         "How to construct f(date) ?",
         "For each year from 1900 to year - 1 sum up 365 or 366 in case of leap years. Then sum up for each month the number of days, consider the case when the current year is leap, finally sum up the days."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int daysBetweenDates(string date1, string date2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} date1\n * @param {string} date2\n * @return {number}\n */\nvar daysBetweenDates = function(date1, date2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:32:25.849Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.728Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.769Z"
 }

@@ -49,6 +49,7 @@
         "Then the answer will be false, because we eventually get trapped in the cycle forever.",
         "What if the we can't reach to a cycle from the source node? Then we need to ensure that from all visited nodes from source the unique node with indegree = 0 is the destination node."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:36:24.135Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.016Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.356Z"
 }

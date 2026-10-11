@@ -26,12 +26,12 @@
             "slug": "simulation"
         }
     ],
-    "exampleTestcases": "\"a#b%*\"\n1\n\"cd%#*#\"\n3\n\"z*#\"\n0",
     "meta": {
         "quesIdLCBackend": 3939,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "\"a#b%*\"\n1\n\"cd%#*#\"\n3\n\"z*#\"\n0",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Simulation\n\n#### Intuition\n\nThis problem is an enhanced version of [⌈3612. Process String with Special Operations I⌋](https://leetcode.com/problems/process-string-with-special-operations-i/description/). In this version, the length of the string $s$ can be up to $10^5$, and the length of $\\textit{result}$ can reach $10^{15}$. We are also asked to find the $k$-th character of $\\textit{result}$. Therefore, it is impossible to explicitly construct $\\textit{result}$ and then query its $k$-th character.\n\nSince directly simulating the construction of $\\textit{result}$ is infeasible, we need a different perspective. Instead of trying to determine which character ends up at position $k$ in the final string, we can work backward and determine which position in an earlier state of $\\textit{result}$ corresponds to the final position $k$.\n\nThe problem states that if $k$ is outside the valid index range of $\\textit{result}$, we should return $\\texttt{'.'}$. Since the final length of $\\textit{result}$ is not known in advance, we first simulate only its length, denoted by $\\textit{len}$. If $k + 1 > \\textit{len}$ after processing the entire string, then the requested position does not exist, and we can immediately return $\\texttt{'.'}$.\n\nOtherwise, we traverse the string $s$ from right to left and reverse each operation. During this process, we maintain the invariant $k + 1 \\le \\textit{len}$. The reverse operations are as follows:\n\n\n1. If the current character is `'*'`, then this operation previously deleted the last character of $\\textit{result}$. Reversing it restores that deleted character, so $\\textit{len}$ increases by one. The value of $k$ remains unchanged.\n\n2. If the current character is `'#'`, then this operation previously duplicated the entire string. Let the current length be $\\textit{len}$.\n   * If $k + 1 > \\Big\\lceil \\dfrac{\\textit{len}}{2} \\Big\\rceil$, then the current position lies in the duplicated half, so the corresponding position before duplication is: $$k - \\Big\\lfloor \\dfrac{\\textit{len}}{2} \\Big\\rfloor$$\n   * Otherwise, the current position lies in the original half, so $k$ remains unchanged.\n   After reversing the duplication, the copied half is removed, so: $$\\textit{len} = \\Big\\lceil \\dfrac{\\textit{len}}{2} \\Big\\rceil$$\n   \n3. If the current character is `'%'`, then the string was previously reversed. Reversing this operation maps position $k$ to: $$k = \\textit{len} - k - 1$$. The length does not change.\n\n4. If the current character is a lowercase letter, then this character was appended to the end of $\\textit{result}$.\n   * If $k + 1 = \\textit{len}$, then the queried position corresponds exactly to this appended character, so we have found the answer and can return it immediately.\n   * Otherwise, the queried position lies earlier in the string. We remove the appended character by decrementing $\\textit{len}$, while leaving $k$ unchanged.\n\nIf no character is found after processing all operations, we return $\\texttt{'.'}$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/2Sjdr2aY/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2Sjdr2aY\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the string $s$.\n\n- Time complexity: $O(n)$.\n  \n  We traverse the string once to compute the final length and once more in reverse to trace the position corresponding to the queried index.\n\n- Space complexity: $O(1)$.\n  \n  We only use a few variables, including $\\textit{len}$ and $k$, regardless of the size of the input.\n\n---"
@@ -41,6 +41,18 @@
         "Track the length of the string after each operation on <code>s</code>.",
         "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    char processStr(string s, long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {character}\n */\nvar processStr = function(s, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:55.659Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.626Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.629Z"
 }

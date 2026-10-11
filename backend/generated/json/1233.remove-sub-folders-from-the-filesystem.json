@@ -48,6 +48,18 @@
         "Sort the folders lexicographically.",
         "Insert the current element in an array and then loop until we get rid of all of their subfolders, repeat this until no element is left."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> removeSubfolders(vector<string>& folder) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} folder\n * @return {string[]}\n */\nvar removeSubfolders = function(folder) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:18.980Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.902Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.620Z"
 }

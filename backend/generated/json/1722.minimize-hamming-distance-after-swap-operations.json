@@ -48,6 +48,18 @@
         "Nodes within the same component can be freely swapped with each other.",
         "For each component, find the number of common elements. The elements that are not in common will contribute to the total Hamming distance."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} source\n * @param {number[]} target\n * @param {number[][]} allowedSwaps\n * @return {number}\n */\nvar minimumHammingDistance = function(source, target, allowedSwaps) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:52:46.594Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.399Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.647Z"
 }

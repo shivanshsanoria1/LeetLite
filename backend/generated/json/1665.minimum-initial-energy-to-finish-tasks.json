@@ -44,6 +44,18 @@
         "We can easily figure that the f(x) : does x solve this array is monotonic so binary Search is doable",
         "Figure a sorting pattern"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumEffort(vector<vector<int>>& tasks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} tasks\n * @return {number}\n */\nvar minimumEffort = function(tasks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:39.422Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.312Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.443Z"
 }

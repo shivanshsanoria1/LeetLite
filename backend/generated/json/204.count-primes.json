@@ -68,6 +68,18 @@
         "Since most of the numbers are not primes, we need a fast approach to exclude the non-prime integers.",
         "Use Sieve of Eratosthenes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPrimes(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countPrimes = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:56:11.869Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.925Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.270Z"
 }

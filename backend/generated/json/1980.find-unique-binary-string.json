@@ -52,6 +52,18 @@
         "We can convert the given strings into base 10 integers.",
         "Can we use recursion to generate all possible strings?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string findDifferentBinaryString(vector<string>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} nums\n * @return {string}\n */\nvar findDifferentBinaryString = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:36.555Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.812Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.104Z"
 }

@@ -38,12 +38,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "[1,2,3,4,5,4]\n[1,2,3,4,5]\n[2,2,2,4,4]",
     "meta": {
         "quesIdLCBackend": 3914,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4,5,4]\n[1,2,3,4,5]\n[2,2,2,4,4]",
     "solution": {
         "canSeeDetail": false
     },
@@ -52,6 +52,18 @@
         "Implement a function to check if a number is prime",
         "Find the frequencies of all the distinct elements in the array (using data structures like map in C++), check if there is any element with prime frequency"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkPrimeFrequency(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar checkPrimeFrequency = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:30.464Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.612Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.595Z"
 }

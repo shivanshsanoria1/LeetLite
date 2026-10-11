@@ -34,12 +34,12 @@
             "slug": "bitmask"
         }
     ],
-    "exampleTestcases": "[3,12,45]\n5\n[10,5]\n10\n[1,2,3]\n5",
     "meta": {
         "quesIdLCBackend": 3841,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[3,12,45]\n5\n[10,5]\n10\n[1,2,3]\n5",
     "solution": {
         "canSeeDetail": false
     },
@@ -50,6 +50,18 @@
         "Use the idea of bitmask-based dynamic programming.",
         "Use the idea to reconstruct the answer from the dynamic programming table using the state variables, such as <code>mask</code> and <code>remainder</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> concatenatedDivisibility(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar concatenatedDivisibility = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:22.661Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.548Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.548Z"
 }

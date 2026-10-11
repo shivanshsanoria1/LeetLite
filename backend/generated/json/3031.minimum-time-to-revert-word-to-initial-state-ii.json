@@ -49,6 +49,18 @@
         "Find the longest suffix which is also a prefix and whose length is a multiple of <code>K</code> in <code>O(N)</code>.",
         "Use Z-function."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTimeToInitialState(string word, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @param {number} k\n * @return {number}\n */\nvar minimumTimeToInitialState = function(word, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:51.878Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.777Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.410Z"
 }

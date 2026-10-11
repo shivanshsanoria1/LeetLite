@@ -59,6 +59,18 @@
         "How would you solve the problem if all courses take equal time?",
         "How would you generalize this approach?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumTime(int n, vector<vector<int>>& relations, vector<int>& time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} relations\n * @param {number[]} time\n * @return {number}\n */\nvar minimumTime = function(n, relations, time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:31.935Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.932Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.347Z"
 }

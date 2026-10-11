@@ -50,6 +50,18 @@
         "Precompute prefix and suffix GCDs, and also consider the case where no element is removed. For a fixed removed index <code>j</code>, splits entirely to either side of <code>j</code> can be expressed using the GCD of two unaffected ranges; if <code>0 < j < n - 1</code>, also consider the new split created between <code>nums[j - 1]</code> and <code>nums[j + 1]</code>.",
         "Do not examine every split separately for every <code>j</code>. As one endpoint of a range moves, its GCD can change only a small number of times: every strict decrease changes it to a proper divisor. Group consecutive split positions having the same GCD and process those groups together."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxValidSplits(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxValidSplits = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:08:56.981Z",
-    "PARSED_ISO": "2026-09-22T19:09:23.978Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.333Z"
 }

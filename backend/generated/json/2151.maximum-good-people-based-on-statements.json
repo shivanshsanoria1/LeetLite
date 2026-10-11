@@ -50,6 +50,18 @@
         "In each bitmask, if the person i is good, then his statements should be consistent with the bitmask in order for the assignment to be valid.",
         "If the assignment is valid, count how many people are good and keep track of the maximum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumGood(vector<vector<int>>& statements) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} statements\n * @return {number}\n */\nvar maximumGood = function(statements) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:09.295Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.106Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.713Z"
 }

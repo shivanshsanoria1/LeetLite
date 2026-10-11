@@ -42,12 +42,12 @@
             "slug": "graph"
         }
     ],
-    "exampleTestcases": "[[0,0],[0,2],[2,0],[2,2]]\n[[0,0],[0,1],[10,0]]",
     "meta": {
         "quesIdLCBackend": 4035,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[0,0],[0,2],[2,0],[2,2]]\n[[0,0],[0,1],[10,0]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -58,6 +58,18 @@
         "For a candidate <code>D</code>, add an edge between points <code>i</code> and <code>j</code> iff <code>Manhattan(i,j) < D</code> (they must be in different groups)",
         "Check whether the resulting graph is bipartite"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxPartitionFactor(vector<vector<int>>& points) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar maxPartitionFactor = function(points) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:23:35.089Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.735Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.877Z"
 }

@@ -71,6 +71,18 @@
         "Each point on the left would either be connected to exactly point already connected to some left node, or a subset of the nodes on the right which are not connected to any node",
         "Use dynamic programming with bitmasking, where the state will be (number of points assigned in first group, bitmask of points assigned in second group)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int connectTwoGroups(vector<vector<int>>& cost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} cost\n * @return {number}\n */\nvar connectTwoGroups = function(cost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:52.938Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.171Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.132Z"
 }

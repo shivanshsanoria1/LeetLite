@@ -43,6 +43,7 @@
         "Are there some paths which squirrel have to cover in any case? If yes, what are they?",
         "Did you notice only first nut traversed by squirrel matters? Obviously squirrel will choose first nut which will result in minimum distance."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-04T20:08:43.799Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.011Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.705Z"
 }

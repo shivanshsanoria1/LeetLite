@@ -40,6 +40,18 @@
     "hints": [
         "Use a three-layer loop to check all possible patterns by iterating through all possible starting positions, all indexes less than m, and if the character at the index is repeated k times."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool containsPattern(vector<int>& arr, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} m\n * @param {number} k\n * @return {boolean}\n */\nvar containsPattern = function(arr, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:17.609Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.054Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.071Z"
 }

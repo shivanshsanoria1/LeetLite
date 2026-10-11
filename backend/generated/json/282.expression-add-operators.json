@@ -53,6 +53,18 @@
         "Think carefully about the multiply operator. It has a higher precedence than the addition and subtraction operators. \r\n\r\n<br> 1 + 2 = 3  <br>\r\n1 + 2 - 4 --> 3 - 4 --> -1 <br>\r\n1 + 2 - 4 * 12 --> -1 * 12 --> -12 (WRONG!) <br>\r\n1 + 2 - 4 * 12 --> -1 - (-4) + (-4 * 12) --> 3 + (-48) --> -45 (CORRECT!)",
         "We simply need to keep track of the last operand in our expression and reverse it's effect on the expression's value while considering the multiply operator."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> addOperators(string num, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @param {number} target\n * @return {string[]}\n */\nvar addOperators = function(num, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T19:57:25.721Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.561Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.723Z"
 }

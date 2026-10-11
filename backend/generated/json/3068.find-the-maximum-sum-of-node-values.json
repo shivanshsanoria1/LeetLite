@@ -61,6 +61,18 @@
         "<code>dp[x][c] = max(sum(dp[y][cy]) + v(nums[x], sum(cy) + c))</code>\r\nwhere <code>cy</code> is <code>0</code> or <code>1</code>. \r\nWhen <code>sum(cy) + c</code> is odd, <code>v(nums[x], sum(cy) + c) = nums[x] XOR k</code>. \r\nWhen <code>sum(cy) + c</code> is even, <code>v(nums[x], sum(cy) + c) = nums[x]</code>.",
         "There’s also an easier solution - does the parity of the number of elements where <code>nums[i] XOR k > nums[i]</code> help?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maximumValueSum(vector<int>& nums, int k, vector<vector<int>>& edges) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number[][]} edges\n * @return {number}\n */\nvar maximumValueSum = function(nums, k, edges) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:21.583Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.860Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.584Z"
 }

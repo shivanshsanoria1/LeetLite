@@ -43,6 +43,18 @@
         "Use a set or map to keep track of the number of distinct elements.",
         "Use 2-pointers to maintain the size, the number of unique elements, and the sum of all the elements in all subarrays of size k from left to right dynamically.****"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxSum(vector<int>& nums, int m, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} m\n * @param {number} k\n * @return {number}\n */\nvar maxSum = function(nums, m, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:10.963Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.585Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.773Z"
 }

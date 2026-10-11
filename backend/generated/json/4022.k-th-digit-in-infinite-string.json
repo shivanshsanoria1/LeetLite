@@ -44,6 +44,18 @@
         "<p>Binary search for the first block <code>b</code> whose cumulative number of digits is at least <code>k</code>. Then subtract the number of digits before that block to obtain the 1-indexed position inside the block.</p>",
         "<p>For <code>b &gt; 0</code>, all 10 integers in the block have the same number of digits. Use the position inside the block to determine which integer and which digit it refers to. If <code>b</code> is odd, remember that the integers appear in decreasing order.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int kthDigit(long long k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} k\n * @return {number}\n */\nvar kthDigit = function(k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:19.889Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.005Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.310Z"
 }

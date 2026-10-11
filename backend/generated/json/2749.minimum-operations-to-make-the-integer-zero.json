@@ -49,6 +49,18 @@
         "Notice that, if it is possible to make num1 equal to 0, then we need at most 60 operations.",
         "Iterate on the number of operations."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int makeTheIntegerZero(int num1, int num2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} num1\n * @param {number} num2\n * @return {number}\n */\nvar makeTheIntegerZero = function(num1, num2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:41:57.020Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.403Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.555Z"
 }

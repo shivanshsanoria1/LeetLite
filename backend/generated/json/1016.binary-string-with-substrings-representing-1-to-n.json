@@ -46,6 +46,18 @@
     "hints": [
         "We only need to check substrings of length at most 30, because 10^9 has 30 bits."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool queryString(string s, int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} n\n * @return {boolean}\n */\nvar queryString = function(s, n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:35:53.695Z",
-    "PARSED_ISO": "2026-09-20T08:56:08.711Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.298Z"
 }

@@ -49,6 +49,18 @@
         "You do not need to consider substrings having lengths greater than 30.",
         "Pre-process all substrings with lengths not greater than 30, and add the best endpoints to a dictionary."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> substringXorQueries(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {number[][]}\n */\nvar substringXorQueries = function(s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:39:23.439Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.150Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.355Z"
 }

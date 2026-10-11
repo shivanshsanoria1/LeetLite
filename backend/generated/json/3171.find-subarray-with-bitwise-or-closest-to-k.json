@@ -50,6 +50,18 @@
         "We start from <code>nums[i]</code>, taking the bitwise <code>OR</code> result by including elements one by one from <code>i</code> towards left. Notice that only unset bits can become set on adding an element, and set bits never become unset again.",
         "Hence <code>dp[i]</code> can contain at most 30 elements."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDifference(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minimumDifference = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:06.964Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.013Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.176Z"
 }

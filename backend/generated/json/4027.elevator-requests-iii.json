@@ -56,6 +56,18 @@
         "<p>If the elevator is at <code>floor[i]</code> at time <code>t</code> and next serves request <code>j</code>, the earliest time it can fulfill <code>j</code> is <code>max(t + abs(floor[i] - floor[j]), arrival[j])</code>.</p>",
         "<p>Initialize each single-request state similarly using the distance from <code>start</code>, then take the minimum over all states containing every request.</p>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long elevatorRequests(int n, int start, vector<vector<int>>& requests) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} start\n * @param {number[][]} requests\n * @return {number}\n */\nvar elevatorRequests = function(n, start, requests) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T19:07:23.303Z",
-    "PARSED_ISO": "2026-09-22T19:07:37.008Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.316Z"
 }

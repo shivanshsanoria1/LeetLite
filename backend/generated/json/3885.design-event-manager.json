@@ -53,6 +53,18 @@
         "In <code>pollHighest</code>, keep popping until the top matches the live priority stored in the map.",
         "Use <code>{priority, -eventId}</code> ordering so the max-heap returns the highest priority first and the smallest <code>eventId</code> on ties."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class EventManager {\npublic:\n    EventManager(vector<vector<int>>& events) {\n        \n    }\n    \n    void updatePriority(int eventId, int newPriority) {\n        \n    }\n    \n    int pollHighest() {\n        \n    }\n};\n\n/**\n * Your EventManager object will be instantiated and called as such:\n * EventManager* obj = new EventManager(events);\n * obj->updatePriority(eventId,newPriority);\n * int param_2 = obj->pollHighest();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} events\n */\nvar EventManager = function(events) {\n    \n};\n\n/** \n * @param {number} eventId \n * @param {number} newPriority\n * @return {void}\n */\nEventManager.prototype.updatePriority = function(eventId, newPriority) {\n    \n};\n\n/**\n * @return {number}\n */\nEventManager.prototype.pollHighest = function() {\n    \n};\n\n/** \n * Your EventManager object will be instantiated and called as such:\n * var obj = new EventManager(events)\n * obj.updatePriority(eventId,newPriority)\n * var param_2 = obj.pollHighest()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:49.335Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.826Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.153Z"
 }

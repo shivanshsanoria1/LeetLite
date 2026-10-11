@@ -36,12 +36,12 @@
             "slug": "combinatorics"
         }
     ],
-    "exampleTestcases": "[1,2,3]\n[3,3,3,4,4,4]",
     "meta": {
         "quesIdLCBackend": 3864,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3]\n[3,3,3,4,4,4]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Brain Teaser\n\n#### Intuition\n\nThe password complexity of the computer with index $0$ is denoted as $T = \\textit{complexity}[0]$.\n\nIf there exists a computer with an index greater than $0$ whose password complexity is less than or equal to $T$, then we should pick the one with the smallest password complexity. Since no computer has a smaller complexity than that, it can never be unlocked, so the answer is $0$.\n\nIf no such computer exists, then every computer can be unlocked by computer $0$ at the start, and the rest can be unlocked in any order. Thus, the answer is $(n-1)!$.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/HLA8wDi5/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"HLA8wDi5\"></iframe>\n\n#### Complexity Analysis\n\n- Time complexity: $O(n)$.\n\n- Space complexity: $O(1)$.\n\n---"
@@ -52,6 +52,18 @@
         "Fix index 0 as the first in the unlocking order.",
         "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPermutations(vector<int>& complexity) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} complexity\n * @return {number}\n */\nvar countPermutations = function(complexity) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:11.619Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.573Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.579Z"
 }

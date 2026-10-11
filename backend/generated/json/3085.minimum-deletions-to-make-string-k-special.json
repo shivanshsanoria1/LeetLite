@@ -56,6 +56,18 @@
         "We will fix a character <code>c</code> and assume that it will be the character with the smallest frequency in the answer. Suppose its frequency is <code>x</code>.",
         "Then, for every other character, we will count the number of occurrences that will be deleted. Suppose that the current character has <code>y</code> occurrences. <ol> <li>If y < x, we need to delete all of them.</li> <li> if y > x + k, we should delete y - x - k of such character.</li> <li> Otherwise we don’t need to delete it.</li></ol>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDeletions(string word, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} word\n * @param {number} k\n * @return {number}\n */\nvar minimumDeletions = function(word, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:48:39.237Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.899Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.720Z"
 }

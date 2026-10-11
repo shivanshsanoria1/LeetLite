@@ -39,6 +39,18 @@
     "hints": [
         "Find the minimum prefix sum."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minStartValue(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minStartValue = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:39.289Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.811Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.822Z"
 }

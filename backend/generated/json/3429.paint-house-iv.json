@@ -28,12 +28,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "4\n[[3,5,7],[6,2,9],[4,8,1],[7,3,5]]\n6\n[[2,4,6],[5,3,8],[7,1,9],[4,6,2],[3,5,7],[8,2,4]]",
     "meta": {
         "quesIdLCBackend": 3737,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "4\n[[3,5,7],[6,2,9],[4,8,1],[7,3,5]]\n6\n[[2,4,6],[5,3,8],[7,1,9],[4,6,2],[3,5,7],[8,2,4]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -42,6 +42,18 @@
         "Use dynamic programming to calculate the minimum cost while ensuring that the adjacency and equidistant constraints are satisfied.",
         "Try all 9 combinations of colors for equidistant pairs to get the minimum cost."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long minCost(int n, vector<vector<int>>& cost) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} cost\n * @return {number}\n */\nvar minCost = function(n, cost) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:51:36.950Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.391Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.392Z"
 }

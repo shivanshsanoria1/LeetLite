@@ -34,12 +34,12 @@
             "slug": "enumeration"
         }
     ],
-    "exampleTestcases": "[1,3]\n[6,7,8,9]",
     "meta": {
         "quesIdLCBackend": 3820,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,3]\n[6,7,8,9]",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach 1: Enumeration\n\n#### Intuition\n\nObserve that the XOR operation never increases the number of bits required to represent a value. Let $m$ be the maximum element in $\\textit{nums}$, and let $U$ be the smallest power of $2$ that is greater than $m$. Then the XOR of any two or three elements must be less than $U$.\n\nWe can find $m$ with a single traversal of the array, compute $U$, and use a boolean array of size $U$ to record all possible XOR values.\n\nFirst, enumerate all possible XOR values of two elements (including the case where the same element is chosen twice). Then, XOR each of these values with every element in $\\textit{nums}$ to obtain all possible XOR values of three elements.\n\nThe algorithm proceeds as follows:\n1. Enumerate all pairs satisfying $i \\le j$, compute $\\textit{nums}[i] \\oplus \\textit{nums}[j]$, and record the result in set $S$.\n2. For each value $x$ in $S$, traverse every element $v$ in $\\textit{nums}$, compute $x \\oplus v$, and record the result in set $T$.\n3. The number of distinct values in $T$ is the answer.\n\nSince the value range is bounded, we can replace the hash sets with boolean arrays to reduce the constant factor.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/VSe9bXMV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VSe9bXMV\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array, and let $m$ be the maximum element in the array.\n\n- Time complexity: $O(n^2 + nm)$.\n  \n  The first double loop enumerates all XOR values of two elements in $O(n^2)$ time. The second phase enumerates the XOR of each two-element XOR value with every array element, resulting in $O(nm)$ time.\n\n- Space complexity: $O(m)$.\n  \n  Two boolean arrays of size $O(m)$ are used.\n\n---\n\n### Approach 2: Enumeration (Optimization)\n\n#### Intuition\n\nInstead of explicitly enumerating all pairs, we can build the set of attainable XOR values incrementally, similar to dynamic programming.\n\nDefine three sets:\n* $\\textit{one}$ stores all XOR values obtainable from a single element (that is, the element itself).\n* $\\textit{two}$ stores all XOR values obtainable from two elements (repetition is allowed).\n* $\\textit{three}$ stores all XOR values obtainable from three elements (repetition is allowed).\n\n**Stage 1:** Construct $\\textit{one}$ and $\\textit{two}$.\n\nTraverse the array $\\textit{nums}$. For each element $v$:\n* Add $v$ to $\\textit{one}$.\n* For every value $x$ currently in $\\textit{one}$, add $x \\oplus v$ to $\\textit{two}$.\n\n**Stage 2:** Construct $\\textit{three}$.\n\nAt this point, $\\textit{two}$ already contains every XOR value obtainable from two elements. Traverse $\\textit{nums}$ again, and for each element $v$ and every value $x$ in $\\textit{two}$, add $x \\oplus v$ to $\\textit{three}$.\n\nFinally, the number of distinct values in $\\textit{three}$ is the answer.\n\nAs in the previous approach, since the value range is bounded, boolean arrays can be used instead of sets.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/f2tHZbsK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"f2tHZbsK\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array, and let $m$ be the maximum element in the array.\n\n- Time complexity: $O(nm)$.\n  \n  For each array element, we traverse the entire value range once to perform the state transitions.\n\n- Space complexity: $O(m)$.\n  \n  Three boolean arrays of size $O(m)$ are used.\n\n---"
@@ -52,6 +52,18 @@
         "You can optimize the calculation by precomputing or reusing intermediate XOR results. For example, after fixing an index <code>i</code>, compute XORs of pairs <code>(j, k)</code> in <code>O(n<sup>2</sup>)</code> time instead of checking all three indices independently.",
         "Finally, count the number of unique XOR values obtained from all triplets."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int uniqueXorTriplets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar uniqueXorTriplets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:52:58.898Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.537Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.536Z"
 }

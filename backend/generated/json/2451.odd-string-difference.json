@@ -45,6 +45,18 @@
         "Find the difference integer array for each string.",
         "Compare them to find the odd one out."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string oddString(vector<string>& words) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar oddString = function(words) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:50.899Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.628Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.204Z"
 }

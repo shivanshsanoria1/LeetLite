@@ -44,6 +44,18 @@
         "Store the sizes of these maximal alternating groups in another data structure.",
         "Find the count of the alternating groups of size <code>k</code> with having the count of maximal alternating groups with size greater than or equal to <code>k</code> and the sum of their sizes."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> numberOfAlternatingGroups(vector<int>& colors, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} colors\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar numberOfAlternatingGroups = function(colors, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:58:02.898Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.075Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.693Z"
 }

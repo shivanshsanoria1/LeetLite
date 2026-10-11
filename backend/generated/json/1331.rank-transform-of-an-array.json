@@ -47,6 +47,18 @@
         "Use a temporary array to copy the array and sort it.",
         "The rank of each element is the number of unique elements smaller than it in the sorted array plus one."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> arrayRankTransform(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {number[]}\n */\nvar arrayRankTransform = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:31:47.159Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.524Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.721Z"
 }

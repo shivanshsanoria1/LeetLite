@@ -30,12 +30,12 @@
             "slug": "matrix"
         }
     ],
-    "exampleTestcases": "[[1,8],[3,-2]]\n2\n[[3,-1]]\n1\n[[1,-2,3],[2,3,5]]\n2",
     "meta": {
         "quesIdLCBackend": 3884,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,8],[3,-2]]\n2\n[[3,-1]]\n1\n[[1,-2,3],[2,3,5]]\n2",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Sorting\n\n#### Intuition\n\nWe enumerate every consecutive $k \\times k$ submatrix in the matrix $\\textit{grid}$. For each submatrix, we collect all its elements into an array $\\textit{kgrid}$ and sort it in ascending order.\n\nAfter sorting, we traverse $\\textit{kgrid}$ to compute the minimum absolute difference between all adjacent distinct elements. This value represents the minimum absolute difference within the submatrix.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/J4eZqfEN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"J4eZqfEN\"></iframe>\n\n#### Complexity Analysis\n\nLet $m$ be the number of rows in $\\textit{grid}$, $n$ be the number of columns, and $k$ be the given integer.\n\n- Time complexity: $O((m - k) \\times (n - k) \\times k^2 \\times \\log k)$\n  \n  We enumerate $O((m - k)(n - k))$ submatrices. Each submatrix contains $k^2$ elements, and sorting them takes $O(k^2 \\log k)$ time.\n  \n- Space complexity: $O(k^2)$. \n  \n  The temporary array $\\textit{kgrid}$ stores up to $k^2$ elements. The output array is not included in the space complexity.\n  \n---"
@@ -44,6 +44,18 @@
     "hints": [
         "Use bruteforce over the submatrices"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> minAbsDiff(vector<vector<int>>& grid, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number[][]}\n */\nvar minAbsDiff = function(grid, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:02.197Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.567Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.569Z"
 }

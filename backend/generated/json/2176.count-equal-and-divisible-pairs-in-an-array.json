@@ -38,6 +38,18 @@
     "hints": [
         "For every possible pair of indices (i, j) where i < j, check if it satisfies the given conditions."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countPairs(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar countPairs = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:29.463Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.193Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.741Z"
 }

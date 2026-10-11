@@ -51,6 +51,7 @@
         "Now if you are currently on pair <code>(nums[x], x)</code>, then <code>ans = max(ans, min_index - x)</code>.",
         "Now try to remove the first assumption."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:45:29.190Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.598Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.815Z"
 }

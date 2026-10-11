@@ -35,6 +35,18 @@
     "hints": [
         "Check every three consecutive numbers in the array for parity."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool threeConsecutiveOdds(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {boolean}\n */\nvar threeConsecutiveOdds = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:36:59.386Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.043Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.052Z"
 }

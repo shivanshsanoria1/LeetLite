@@ -59,6 +59,18 @@
         "Enumerate all subarrays and find the ones that satisfy all the conditions.",
         "Use any suitable method to hash the subarrays to avoid duplicates."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countDistinct(vector<int>& nums, int k, int p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} p\n * @return {number}\n */\nvar countDistinct = function(nums, k, p) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:22:16.587Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.310Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.972Z"
 }

@@ -38,12 +38,12 @@
             "slug": "bitmask"
         }
     ],
-    "exampleTestcases": "3\n[[0,1],[1,2]]\n\"aba\"\n3\n[[0,1],[0,2]]\n\"abc\"\n4\n[[0,2],[0,3],[3,1]]\n\"bbac\"",
     "meta": {
         "quesIdLCBackend": 3930,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "3\n[[0,1],[1,2]]\n\"aba\"\n3\n[[0,1],[0,2]]\n\"abc\"\n4\n[[0,2],[0,3],[3,1]]\n\"bbac\"",
     "solution": {
         "canSeeDetail": false
     },
@@ -54,6 +54,18 @@
         "Before adding new endpoints to the current palindrome, ensure their labels match the labels at the previous endpoints <code>prev_l</code> and <code>prev_r</code>.",
         "Memoize each state as <code>dp[mask][prev_l][prev_r]</code>, representing the maximum palindrome length achievable using the set of visited nodes in <code>mask</code> with current endpoints at <code>prev_l</code> and <code>prev_r</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxLen(int n, vector<vector<int>>& edges, string label) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {string} label\n * @return {number}\n */\nvar maxLen = function(n, edges, label) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:54:56.683Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.627Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.632Z"
 }

@@ -30,12 +30,12 @@
             "slug": "prefix-sum"
         }
     ],
-    "exampleTestcases": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]\n5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
     "meta": {
         "quesIdLCBackend": 3833,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]\n5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
     "solution": {
         "canSeeDetail": false
     },
@@ -46,6 +46,18 @@
         "Define <code>DP[i][j][s]</code> as the minimum travel time for positions <code>0..i</code> when <code>i</code> is kept, <code>j</code> deletions are done overall, and <code>s</code> consecutive deletions occurred immediately before <code>i</code>.",
         "Update the DP by either merging (increment <code>s</code> and <code>j</code>) or not merging (reset <code>s</code>) and adding the appropriate travel time."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minTravelTime(int l, int n, int k, vector<int>& position, vector<int>& time) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} l\n * @param {number} n\n * @param {number} k\n * @param {number[]} position\n * @param {number[]} time\n * @return {number}\n */\nvar minTravelTime = function(l, n, k, position, time) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:29.014Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.550Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.550Z"
 }

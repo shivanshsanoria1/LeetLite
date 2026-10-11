@@ -52,6 +52,18 @@
         "Sort prices and iterate from left to right. For some price[i] check if the price difference between the last taken candy and price[i] is at least x. If so, add the candy i to the basket.",
         "So, a candy basket with tastiness x can be achieved if the basket size is bigger than or equal to k."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumTastiness(vector<int>& price, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} price\n * @param {number} k\n * @return {number}\n */\nvar maximumTastiness = function(price, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:43.488Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.784Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.306Z"
 }

@@ -37,6 +37,18 @@
         "Handle ties by keeping the earliest index.",
         "Return <code>-1</code> if no valid box exists."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumIndex(vector<int>& capacity, int itemSize) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} capacity\n * @param {number} itemSize\n * @return {number}\n */\nvar minimumIndex = function(capacity, itemSize) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:24.235Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.808Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.123Z"
 }

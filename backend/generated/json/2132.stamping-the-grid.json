@@ -50,6 +50,18 @@
     "hints": [
         "Can we use prefix sums here?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool possibleToStamp(vector<vector<int>>& grid, int stampHeight, int stampWidth) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @param {number} stampHeight\n * @param {number} stampWidth\n * @return {boolean}\n */\nvar possibleToStamp = function(grid, stampHeight, stampWidth) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:05:46.668Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.092Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.685Z"
 }

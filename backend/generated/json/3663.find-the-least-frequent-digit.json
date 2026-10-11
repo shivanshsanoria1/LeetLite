@@ -34,12 +34,12 @@
             "slug": "counting"
         }
     ],
-    "exampleTestcases": "1553322\n723344511",
     "meta": {
         "quesIdLCBackend": 3994,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "1553322\n723344511",
     "solution": {
         "canSeeDetail": false
     },
@@ -47,6 +47,18 @@
     "hints": [
         "Simulate as described"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int getLeastFrequentDigit(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar getLeastFrequentDigit = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T17:01:52.066Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.697Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.741Z"
 }

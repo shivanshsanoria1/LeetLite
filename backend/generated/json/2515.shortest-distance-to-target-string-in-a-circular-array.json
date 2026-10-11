@@ -43,6 +43,18 @@
         "Find the first target word and record the distance.",
         "Choose the one with the minimum distance."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int closestTarget(vector<string>& words, string target, int startIndex) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {string} target\n * @param {number} startIndex\n * @return {number}\n */\nvar closestTarget = function(words, target, startIndex) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:41.852Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.771Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.303Z"
 }

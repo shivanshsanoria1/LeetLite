@@ -44,6 +44,18 @@
     "hints": [
         "Use three nested for loops to check all the triplets."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int distributeCandies(int n, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} limit\n * @return {number}\n */\nvar distributeCandies = function(n, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:25.009Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.679Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.933Z"
 }

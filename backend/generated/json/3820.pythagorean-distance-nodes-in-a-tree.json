@@ -40,6 +40,18 @@
         "Run a breadth-first search independently from <code>x</code>, <code>y</code>, and <code>z</code>. This gives you three distance arrays with full coverage.",
         "For each node, collect its three distances, sort them, and evaluate the Pythagorean condition on the sorted value."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int specialNodes(int n, vector<vector<int>>& edges, int x, int y, int z) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @param {number} x\n * @param {number} y\n * @param {number} z\n * @return {number}\n */\nvar specialNodes = function(n, edges, x, y, z) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:46:28.990Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.374Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.082Z"
 }

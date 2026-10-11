@@ -44,6 +44,18 @@
     "hints": [
         "If <code>nums</code> is sorted, then the elements of <code>averages</code> are <code>(nums[i] + nums[n - i - 1]) / 2</code>  for all <code>i < n / 2</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    double minimumAverage(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumAverage = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:57:25.196Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.034Z"
+    "PARSED_ISO": "2026-10-11T11:14:54.293Z"
 }

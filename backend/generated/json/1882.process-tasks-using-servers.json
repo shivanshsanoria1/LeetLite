@@ -41,6 +41,18 @@
         "You can maintain a Heap of available Servers and a Heap of unavailable servers",
         "Note that the tasks will be processed in the input order so you just need to find the x-th server that will be available according to the rules"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> assignTasks(vector<int>& servers, vector<int>& tasks) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} servers\n * @param {number[]} tasks\n * @return {number[]}\n */\nvar assignTasks = function(servers, tasks) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:55:39.523Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.589Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.920Z"
 }

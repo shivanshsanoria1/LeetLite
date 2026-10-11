@@ -48,6 +48,18 @@
         "Preprocess the binary palindromes",
         "For each <code>nums[i]</code> find the closest binary palindrome from the preprocessed values"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<int> minOperations(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar minOperations = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:23.052Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.127Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.987Z"
 }

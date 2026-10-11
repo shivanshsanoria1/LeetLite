@@ -52,6 +52,18 @@
     "hints": [
         "The implementation is long - we want to perfrom the following steps:\r\n\r\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\r\n\r\n* Disinfect the most viral region, adding it's perimeter to the answer.\r\n\r\n* Spread the virus in the remaining regions outward by 1 square."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int containVirus(vector<vector<int>>& isInfected) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} isInfected\n * @return {number}\n */\nvar containVirus = function(isInfected) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:16:08.401Z",
-    "PARSED_ISO": "2026-09-20T08:56:15.336Z"
+    "PARSED_ISO": "2026-10-11T11:14:57.036Z"
 }

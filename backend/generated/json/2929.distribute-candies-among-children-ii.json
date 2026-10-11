@@ -48,6 +48,18 @@
         "The 3rd child will hence get <code>n - i - j</code> candies and we should have <code>0 <= n - i - j <= limit</code>.",
         "After some transformations, for each <code>i</code>, we have <code>max(0, n - i - limit) <= j <= min(limit, n - i)</code>, each <code>j</code> corresponding to a solution.\r\nSo the number of solutions for some <code>i</code> is <code>max(min(limit, n - i) - max(0, n - i - limit) + 1, 0)</code>. Sum the expression for every <code>i</code> in <code>[0, min(n, limit)]</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long distributeCandies(int n, int limit) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number} limit\n * @return {number}\n */\nvar distributeCandies = function(n, limit) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:25.675Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.680Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.934Z"
 }

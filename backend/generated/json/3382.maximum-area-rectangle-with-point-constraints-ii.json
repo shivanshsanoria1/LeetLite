@@ -60,6 +60,18 @@
         "Use a segment tree to efficiently locate the nearest x-coordinate.",
         "Check if the points form a valid rectangle. How?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long maxRectangleArea(vector<int>& xCoord, vector<int>& yCoord) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} xCoord\n * @param {number[]} yCoord\n * @return {number}\n */\nvar maxRectangleArea = function(xCoord, yCoord) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:59:52.510Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.304Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.342Z"
 }

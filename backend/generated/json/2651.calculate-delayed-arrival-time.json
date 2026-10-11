@@ -35,6 +35,18 @@
         "Use the modulo operator to handle the case when the arrival time plus the delayed time goes beyond 24 hours.",
         "If the arrival time plus the delayed time is greater than or equal to 24, you can also subtract 24 to get the time in the 24-hour format."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findDelayedArrivalTime(int arrivalTime, int delayedTime) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} arrivalTime\n * @param {number} delayedTime\n * @return {number}\n */\nvar findDelayedArrivalTime = function(arrivalTime, delayedTime) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:35.821Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.283Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.457Z"
 }

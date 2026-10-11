@@ -43,6 +43,18 @@
         "After some sequence of moves, can the order of the pieces change?",
         "Try to match each piece in s with a piece in e."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool canChange(string start, string target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} start\n * @param {string} target\n * @return {boolean}\n */\nvar canChange = function(start, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:20.278Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.429Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.065Z"
 }

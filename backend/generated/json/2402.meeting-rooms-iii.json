@@ -60,6 +60,18 @@
         "Keep track of the number of times each room is used in an array.",
         "With each meeting, check if there are any free rooms. If there are, then use the room with the smallest number. Otherwise, assign the meeting to the room whose meeting will end the soonest."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int mostBooked(int n, vector<vector<int>>& meetings) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} meetings\n * @return {number}\n */\nvar mostBooked = function(n, meetings) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:11.992Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.486Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.141Z"
 }

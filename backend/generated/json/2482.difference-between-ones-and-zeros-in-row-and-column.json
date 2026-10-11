@@ -49,6 +49,18 @@
         "You need to reuse information about a row or a column many times. Try storing it to avoid computing it multiple times.",
         "Use an array to store the number of 1’s in each row and another array to store the number of 1’s in each column. Once you know the number of 1’s in each row or column, you can also easily calculate the number of 0’s."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number[][]}\n */\nvar onesMinusZeros = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:25:16.397Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.732Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.245Z"
 }

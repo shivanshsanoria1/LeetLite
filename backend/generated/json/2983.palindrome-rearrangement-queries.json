@@ -54,6 +54,18 @@
         "Finally, check whether the two frequency arrays are the same, and the indices that don't fall into any of the intervals are the same as well.",
         "Use prefix-sum + hashing to improve the time complexity."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<bool> canMakePalindromeQueries(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar canMakePalindromeQueries = function(s, queries) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:10.048Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.729Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.193Z"
 }

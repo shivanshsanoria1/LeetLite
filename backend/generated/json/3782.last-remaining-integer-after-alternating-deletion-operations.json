@@ -41,6 +41,18 @@
         "Maintain the start value, remaining length, and current direction using recursion.",
         "Track the current direction (left or right) and update the start value based on the parity of the remaining length."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long lastInteger(long long n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar lastInteger = function(n) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:45:42.504Z",
-    "PARSED_ISO": "2026-09-22T18:46:50.265Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.019Z"
 }

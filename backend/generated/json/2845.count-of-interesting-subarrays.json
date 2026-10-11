@@ -51,6 +51,18 @@
         "Rewriting <code>(count[i] - count[j]) % modulo == k</code> becomes <code>count[j] = (count[i] + modulo - k) % modulo</code>.",
         "Using a map data structure, for each <code>i = 0, 1, 2, ..., n</code>, we just sum up all <code>map[(count[i] + modulo - k) % modulo]</code> before increasing <code>map[count[i] % modulo]</code>, and the total sum is the final answer."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long countInterestingSubarrays(vector<int>& nums, int modulo, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} modulo\n * @param {number} k\n * @return {number}\n */\nvar countInterestingSubarrays = function(nums, modulo, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:14.032Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.587Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.781Z"
 }

@@ -52,6 +52,7 @@
         "If there are <code>t</code> occurrences of a character in a substring, there exists <code>t * (t + 1) / 2</code> Same-End substrings with that character.",
         "Try to calculate the number of occurrences of a character in a substring in <code>O(1)</code> using partial sum."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:46:47.217Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.696Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.073Z"
 }

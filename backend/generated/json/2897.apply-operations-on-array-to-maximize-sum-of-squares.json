@@ -49,6 +49,18 @@
         "The operation described only transfers some bits from one element to another in their binary representation.",
         "To have a maximum sum of squares, it is optimal to greedily make each number as big as possible."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxSum(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSum = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:46:00.492Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.621Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.867Z"
 }

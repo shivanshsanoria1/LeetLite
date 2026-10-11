@@ -52,6 +52,18 @@
         "You need to maintain a sorted list for each movie and a sorted list for rented movies",
         "When renting a movie remove it from its movies sorted list and added it to the rented list and vice versa in the case of dropping a movie"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class MovieRentingSystem {\npublic:\n    MovieRentingSystem(int n, vector<vector<int>>& entries) {\n        \n    }\n    \n    vector<int> search(int movie) {\n        \n    }\n    \n    void rent(int shop, int movie) {\n        \n    }\n    \n    void drop(int shop, int movie) {\n        \n    }\n    \n    vector<vector<int>> report() {\n        \n    }\n};\n\n/**\n * Your MovieRentingSystem object will be instantiated and called as such:\n * MovieRentingSystem* obj = new MovieRentingSystem(n, entries);\n * vector<int> param_1 = obj->search(movie);\n * obj->rent(shop,movie);\n * obj->drop(shop,movie);\n * vector<vector<int>> param_4 = obj->report();\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} entries\n */\nvar MovieRentingSystem = function(n, entries) {\n    \n};\n\n/** \n * @param {number} movie\n * @return {number[]}\n */\nMovieRentingSystem.prototype.search = function(movie) {\n    \n};\n\n/** \n * @param {number} shop \n * @param {number} movie\n * @return {void}\n */\nMovieRentingSystem.prototype.rent = function(shop, movie) {\n    \n};\n\n/** \n * @param {number} shop \n * @param {number} movie\n * @return {void}\n */\nMovieRentingSystem.prototype.drop = function(shop, movie) {\n    \n};\n\n/**\n * @return {number[][]}\n */\nMovieRentingSystem.prototype.report = function() {\n    \n};\n\n/** \n * Your MovieRentingSystem object will be instantiated and called as such:\n * var obj = new MovieRentingSystem(n, entries)\n * var param_1 = obj.search(movie)\n * obj.rent(shop,movie)\n * obj.drop(shop,movie)\n * var param_4 = obj.report()\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:02:37.862Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.730Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.955Z"
 }

@@ -49,6 +49,18 @@
         "How can we update the hash value efficiently while iterating instead of recalculating it each time?",
         "Use the rolling hash method."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string subStrHash(string s, int power, int modulo, int k, int hashValue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @param {number} power\n * @param {number} modulo\n * @param {number} k\n * @param {number} hashValue\n * @return {string}\n */\nvar subStrHash = function(s, power, modulo, k, hashValue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:06:13.491Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.110Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.717Z"
 }

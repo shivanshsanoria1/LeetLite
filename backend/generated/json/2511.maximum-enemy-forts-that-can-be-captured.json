@@ -43,6 +43,18 @@
         "If yes, find the closest empty positions satisfying all criteria.",
         "How can two-pointers be used to solve this problem optimally?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int captureForts(vector<int>& forts) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} forts\n * @return {number}\n */\nvar captureForts = function(forts) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:38.984Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.766Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.298Z"
 }

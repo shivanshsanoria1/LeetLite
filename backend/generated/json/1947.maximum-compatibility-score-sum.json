@@ -79,6 +79,18 @@
         "Calculate the compatibility score for each student-mentor pair.",
         "Try every permutation of students with the original mentors array."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} students\n * @param {number[][]} mentors\n * @return {number}\n */\nvar maxCompatibilitySum = function(students, mentors) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:06.323Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.784Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.037Z"
 }

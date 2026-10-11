@@ -48,6 +48,18 @@
         "Use a map to store the current “1” groups.",
         "At each step (going backwards) you need to split one group and update the map."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int findLatestStep(vector<int>& arr, int m) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @param {number} m\n * @return {number}\n */\nvar findLatestStep = function(arr, m) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:37:12.182Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.051Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.067Z"
 }

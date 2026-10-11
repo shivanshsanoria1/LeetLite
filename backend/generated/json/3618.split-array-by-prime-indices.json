@@ -30,12 +30,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "[2,3,4]\n[-1,5,7,0]",
     "meta": {
         "quesIdLCBackend": 3936,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[2,3,4]\n[-1,5,7,0]",
     "solution": {
         "canSeeDetail": false
     },
@@ -44,6 +44,18 @@
         "Generate all primes up to <code>nums.length</code> (e.g., with the Sieve of Eratosthenes).",
         "Iterate through <code>nums</code>, adding <code>nums[i]</code> to <code>sumA</code> if <code>i</code> is prime, otherwise to <code>sumB</code>, then return <code>|sumA - sumB|</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long splitArray(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar splitArray = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:55:00.373Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.628Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.640Z"
 }

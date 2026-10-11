@@ -49,6 +49,18 @@
         "Let the sum of all points be total_pts. You need to remove a sub-array from cardPoints with length n - k.",
         "Keep a window of size n - k over the array. The answer is max(answer, total_pts - sumOfCurrentWindow)"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxScore(vector<int>& cardPoints, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} cardPoints\n * @param {number} k\n * @return {number}\n */\nvar maxScore = function(cardPoints, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:56.900Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.818Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.828Z"
 }

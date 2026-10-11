@@ -30,12 +30,12 @@
             "slug": "dynamic-programming"
         }
     ],
-    "exampleTestcases": "[1,2,3,4,5]\n3\n[1,2,4,8,16,32]\n4\n[1,1,2,1,1]\n2",
     "meta": {
         "quesIdLCBackend": 3831,
         "hasSolution": true,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[1,2,3,4,5]\n3\n[1,2,4,8,16,32]\n4\n[1,1,2,1,1]\n2",
     "solution": {
         "canSeeDetail": true,
         "content": "### Approach: Dynamic Programming\n\n#### Intuition\n\nWe use $\\textit{nums}[i, j]$ to denote the subarray $[\\textit{nums}[i], \\textit{nums}[i + 1], \\dots, \\textit{nums}[j]]$. In particular, when $i > j$, the subarray is defined to be empty.\n\nAccording to the problem statement, in one operation, we can remove any non-overlapping prefix and suffix of $\\textit{nums}$ while keeping $\\textit{nums}$ non-empty. The remaining elements form a **non-empty subarray** $\\textit{nums}[i, j]$.\n\nFurthermore, there is a **one-to-one correspondence** between different subarrays $\\textit{nums}[i, j]$ and different valid operations. Specifically, to obtain $\\textit{nums}[i, j]$, we can only perform the following operation:\n\n- Remove the prefix $\\textit{nums}[0, i - 1]$ and the suffix $\\textit{nums}[j + 1, n - 1]$.\n\nTherefore, the problem asks us to count the number of subarrays in $\\textit{nums}$ whose product has a remainder of $x$ when divided by $k$.\n\nWe can solve this problem using dynamic programming.\n\nDefine $\\textit{dp}[i][r]$ as the number of non-empty subarrays ending at index $i$ whose product of elements has remainder $r$ when divided by $k$. Initially, all states are $0$.\n\nWhen considering index $i$, all non-empty subarrays ending at $i$ come from two sources:\n\n- A subarray of length $1$ containing only the element $\\textit{nums}[i]$;\n- A new subarray obtained by appending the element $\\textit{nums}[i]$ to the end of any non-empty subarray ending at $i - 1$.\n\nFor the first case, the product of the subarray modulo $k$ is\n\n$$\nr = \\textit{nums}[i] \\bmod k,\n$$\n\nso we have\n\n$$\n\\textit{dp}[i][r] \\mathrel{+}= 1.\n$$\n\nFor the second case, suppose the product of a subarray ending at $i - 1$ has remainder $r$ modulo $k$. After appending the element $\\textit{nums}[i]$, the product of the new subarray modulo $k$ becomes\n\n$$\n(r \\times \\textit{nums}[i]) \\bmod k.\n$$\n\nTherefore, we obtain the state transition equation:\n\n$$\n\\textit{dp}[i][(r \\times \\textit{nums}[i]) \\bmod k]\n\\mathrel{+}= \\textit{dp}[i - 1][r], \\qquad 0 \\le r < k.\n$$\n\nAfter completing the state transitions for all indices $i$, we sum $\\textit{dp}[i][x]$ across all $i$ to obtain the answer for each remainder $x$:\n\n$$\n\\textit{result}[x] = \\sum_{i=0}^{n-1} \\textit{dp}[i][x].\n$$\n\nThe space complexity of the dynamic programming method above is $O(nk)$, where $n$ is the length of $\\textit{nums}$. Since the state transition depends only on the state from the previous layer, we can use a rolling array to optimize the space complexity further to $O(k)$, as shown in the code implementation below.\n\n#### Implementation\n\n<iframe src=\"https://leetcode.com/playground/VcDJPucv/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VcDJPucv\"></iframe>\n\n#### Complexity Analysis\n\nLet $n$ be the length of the array $\\textit{nums}$.\n\n- Time complexity: $O(nk)$.\n  \n  For each of the $n$ elements in $\\textit{nums}$, we iterate through all $k$ possible remainders to perform the state transition.\n\n- Space complexity: $O(k)$.\n  \n  The rolling array $\\textit{dp}$ (and $\\textit{ndp}$) requires $O(k)$ auxiliary space.\n\n---"
@@ -46,6 +46,18 @@
         "Define <code>dp[i][r]</code> as the count of subarrays ending at index <code>i</code> whose product modulo <code>k</code> equals <code>r</code>.",
         "Compute <code>dp[i][r]</code> for each index <code>i</code> in <code>nums</code> and sum over all indices to get the final counts for each remainder."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<long long> resultArray(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar resultArray = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-14T16:53:10.371Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.543Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.542Z"
 }

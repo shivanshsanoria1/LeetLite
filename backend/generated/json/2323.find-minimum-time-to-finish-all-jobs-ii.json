@@ -47,6 +47,7 @@
         "It is always optimal to pair the worker with the least amount of time with the job that requires the least amount of time.",
         "Sort both arrays."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:23:06.354Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.418Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.036Z"
 }

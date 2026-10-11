@@ -43,6 +43,7 @@
         "Define an array dp[nums.length][2], where dp[i][0] is the max subarray sum including nums[i] and without squaring any element.",
         "dp[i][1] is the max subarray sum including nums[i] and having only one element squared."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T17:53:11.578Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.685Z"
 }

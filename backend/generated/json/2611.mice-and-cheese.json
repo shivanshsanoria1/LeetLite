@@ -49,6 +49,18 @@
         "The intended solution uses greedy approach.",
         "Imagine at first that the second mouse eats all the cheese, then we should choose k types of cheese with the maximum sum of - reward2[i] + reward1[i]."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int miceAndCheese(vector<int>& reward1, vector<int>& reward2, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} reward1\n * @param {number[]} reward2\n * @param {number} k\n * @return {number}\n */\nvar miceAndCheese = function(reward1, reward2, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:02.846Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.252Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.407Z"
 }

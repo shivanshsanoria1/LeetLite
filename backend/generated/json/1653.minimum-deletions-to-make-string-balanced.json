@@ -46,6 +46,18 @@
         "You need to find for every index the number of Bs before it and the number of A's after it",
         "You can speed up the finding of A's and B's in suffix and prefix using preprocessing"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumDeletions(string s) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar minimumDeletions = function(s) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:51:27.722Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.303Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.402Z"
 }

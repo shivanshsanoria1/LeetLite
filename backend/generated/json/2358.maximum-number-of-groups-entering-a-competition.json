@@ -51,6 +51,18 @@
         "If the last group is invalid, we can merge it with the previous group.",
         "This creates the maximum number of groups because we always greedily form the smallest possible group."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumGroups(vector<int>& grades) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} grades\n * @return {number}\n */\nvar maximumGroups = function(grades) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:23:36.201Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.446Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.097Z"
 }

@@ -59,6 +59,18 @@
         "Form pairs by combining smallest unpaired and largest unpaired elements.",
         "Compute gcd for each pair and sum them; ignore middle element if <code>n</code> is odd."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    long long gcdSum(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar gcdSum = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-22T18:59:30.590Z",
-    "PARSED_ISO": "2026-09-22T19:00:45.812Z"
+    "PARSED_ISO": "2026-10-11T11:14:56.134Z"
 }

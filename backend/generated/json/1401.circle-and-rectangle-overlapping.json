@@ -38,6 +38,18 @@
     "hints": [
         "Locate the closest point of the square to the circle, you can then find the distance from this point to the center of the circle and check if this is less than or equal to the radius."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool checkOverlap(int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} radius\n * @param {number} xCenter\n * @param {number} yCenter\n * @param {number} x1\n * @param {number} y1\n * @param {number} x2\n * @param {number} y2\n * @return {boolean}\n */\nvar checkOverlap = function(radius, xCenter, yCenter, x1, y1, x2, y2) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:24.543Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.803Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.815Z"
 }

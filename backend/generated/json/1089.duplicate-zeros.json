@@ -42,6 +42,18 @@
         "The main problem with not using additional memory is that we might override elements due to the zero duplication requirement of the problem statement. How do we get around that?",
         "If we had enough space available, we would be able to accommodate all the elements properly. The new length would be the original length of the array plus the number of zeros. Can we use this information somehow to solve the problem?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    void duplicateZeros(vector<int>& arr) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} arr\n * @return {void} Do not return anything, modify arr in-place instead.\n */\nvar duplicateZeros = function(arr) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-04T20:36:46.496Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.101Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.388Z"
 }

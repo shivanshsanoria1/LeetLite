@@ -42,12 +42,12 @@
             "slug": "number-theory"
         }
     ],
-    "exampleTestcases": "[[1,2],[3,4]]\n[[2,2],[2,2]]",
     "meta": {
         "quesIdLCBackend": 4069,
         "hasSolution": false,
         "hasVideoSolution": false
     },
+    "exampleTestcases": "[[1,2],[3,4]]\n[[2,2],[2,2]]",
     "solution": {
         "canSeeDetail": false
     },
@@ -59,6 +59,18 @@
         "For a row <code>i</code>, use the values from the previous row <code>i - 1</code> to build the values: for each previous gcd <code>g</code> and each value <code>v</code> in row <code>i</code>.",
         "The final answer is <code>dp[n-1][1]</code> (number of ways with gcd 1)."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int countCoprime(vector<vector<int>>& mat) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar countCoprime = function(mat) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-16T18:06:14.315Z",
-    "PARSED_ISO": "2026-09-20T08:56:14.837Z"
+    "PARSED_ISO": "2026-10-11T11:14:55.908Z"
 }

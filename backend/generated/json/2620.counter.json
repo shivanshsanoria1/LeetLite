@@ -35,6 +35,13 @@
         "In JavaScript, a function can return a closure. A closure is defined as a function and the variables declared around it (it's lexical environment).",
         "A count variable can be initialized in the outer function and mutated in the inner function."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {Function} counter\n */\nvar createCounter = function(n) {\n    \n    return function() {\n        \n    };\n};\n\n/** \n * const counter = createCounter(10)\n * counter() // 10\n * counter() // 11\n * counter() // 12\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:09.936Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.258Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.413Z"
 }

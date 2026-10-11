@@ -48,6 +48,18 @@
         "Define a dynamic programming array dp of size n, where dp[i] represents the maximum number of jumps from index 0 to index i.",
         "For each j iterate over all i < j. Set dp[j] = max(dp[j], dp[i] + 1) if -target <= nums[j] - nums[i] <= target."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumJumps(vector<int>& nums, int target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nvar maximumJumps = function(nums, target) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:42:13.406Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.417Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.578Z"
 }

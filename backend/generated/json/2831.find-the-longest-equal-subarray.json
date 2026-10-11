@@ -49,6 +49,18 @@
         "<div class=\"_1l1MA\">For each <code>indices<sub>x</sub></code>, find <code>i, j</code> such that <code>(indices<sub>x</sub>[j] - indices<sub>x</sub>[i]) - (j - i) <= k</code> and <code>j - i + 1</code> is maximized.</div>",
         "<div class=\"_1l1MA\">The answer would be the maximum of <code>j - i + 1</code> for all <code>indices<sub>x</sub></code>.</div>"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int longestEqualSubarray(vector<int>& nums, int k) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar longestEqualSubarray = function(nums, k) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:45:02.972Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.579Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.749Z"
 }

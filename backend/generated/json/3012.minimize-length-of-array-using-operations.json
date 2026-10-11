@@ -50,6 +50,18 @@
         "If there is a value <code>y</code> in <code>nums</code> such that <code>y % x</code> is not equal to <code>0</code>: The minimum achievable length in this case is <code>1</code> as well, because inserting <code>y % x</code> creates a new minimum, since <code>y % x < x</code>, returning to the first case.",
         "If neither of the previous cases holds, and <code>x</code> occurs <code>cnt</code> times: The minimum length of <code>nums</code> achievable in this case is <code>ceil(cnt / 2)</code>."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minimumArrayLength(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar minimumArrayLength = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:47:34.215Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.764Z"
+    "PARSED_ISO": "2026-10-11T11:14:53.333Z"
 }

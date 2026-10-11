@@ -43,6 +43,18 @@
         "Use gray code to generate a n-bit sequence.",
         "Rotate the sequence such that its first element is start."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\r\npublic:\r\n    vector<int> circularPermutation(int n, int start) {\r\n        \r\n    }\r\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\r\n * @param {number} n\r\n * @param {number} start\r\n * @return {number[]}\r\n */\r\nvar circularPermutation = function(n, start) {\r\n    \r\n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:29:24.714Z",
-    "PARSED_ISO": "2026-09-20T08:56:09.920Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.623Z"
 }

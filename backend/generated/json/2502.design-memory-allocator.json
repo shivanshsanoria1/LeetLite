@@ -47,6 +47,18 @@
         "Can you simulate the process?",
         "Use brute force to find the leftmost free block and free each occupied memory unit"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Allocator {\npublic:\n    Allocator(int n) {\n        \n    }\n    \n    int allocate(int size, int mID) {\n        \n    }\n    \n    int freeMemory(int mID) {\n        \n    }\n};\n\n/**\n * Your Allocator object will be instantiated and called as such:\n * Allocator* obj = new Allocator(n);\n * int param_1 = obj->allocate(size,mID);\n * int param_2 = obj->freeMemory(mID);\n */"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n */\nvar Allocator = function(n) {\n    \n};\n\n/** \n * @param {number} size \n * @param {number} mID\n * @return {number}\n */\nAllocator.prototype.allocate = function(size, mID) {\n    \n};\n\n/** \n * @param {number} mID\n * @return {number}\n */\nAllocator.prototype.freeMemory = function(mID) {\n    \n};\n\n/** \n * Your Allocator object will be instantiated and called as such:\n * var obj = new Allocator(n)\n * var param_1 = obj.allocate(size,mID)\n * var param_2 = obj.freeMemory(mID)\n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:38:31.312Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.750Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.289Z"
 }

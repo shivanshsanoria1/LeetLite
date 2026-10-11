@@ -49,6 +49,7 @@
         "Iterate over the array and check if the node at the top of the stack is its parent; if it’s not, then pop the last element of the stack and check until you reach the parent of the current node in the array.",
         "If the stack gets empty at any point, then the array is not the preorder."
     ],
+    "codeSnippets": [],
     "LC_SYNC_ISO": "2026-09-09T18:42:08.898Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.412Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.569Z"
 }

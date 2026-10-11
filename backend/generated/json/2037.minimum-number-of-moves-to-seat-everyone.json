@@ -49,6 +49,18 @@
         "Can we greedily match each student to a seat?",
         "The smallest positioned student will go to the smallest positioned chair, and then the next smallest positioned student will go to the next smallest positioned chair, and so on."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minMovesToSeat(vector<int>& seats, vector<int>& students) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} seats\n * @param {number[]} students\n * @return {number}\n */\nvar minMovesToSeat = function(seats, students) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:22.307Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.923Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.252Z"
 }

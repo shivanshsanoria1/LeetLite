@@ -57,6 +57,18 @@
         "How can sorting the events on the basis of their start times help? How about end times?",
         "How can we quickly get the maximum score of an interval not intersecting with the interval we chose?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maxTwoEvents(vector<vector<int>>& events) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} events\n * @return {number}\n */\nvar maxTwoEvents = function(events) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:04:35.825Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.934Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.355Z"
 }

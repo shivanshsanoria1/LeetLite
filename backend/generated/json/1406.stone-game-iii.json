@@ -62,6 +62,18 @@
         "The game can be mapped to minmax game. Alice tries to maximize the total score and Bob tries to minimize it.",
         "Use dynamic programming to simulate the game. If the total score was 0 the game is \"Tie\", and if it has positive value then \"Alice\" wins, otherwise \"Bob\" wins."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    string stoneGameIII(vector<int>& stoneValue) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} stoneValue\n * @return {string}\n */\nvar stoneGameIII = function(stoneValue) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:33:30.492Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.806Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.818Z"
 }

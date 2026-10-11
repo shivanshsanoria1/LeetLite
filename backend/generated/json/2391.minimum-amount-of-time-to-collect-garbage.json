@@ -44,6 +44,18 @@
         "Where can we save time? By not visiting all the houses.",
         "For each type of garbage, find the house with the highest index that has at least 1 unit of this type of garbage."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int garbageCollection(vector<string>& garbage, vector<int>& travel) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} garbage\n * @param {number[]} travel\n * @return {number}\n */\nvar garbageCollection = function(garbage, travel) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:24:03.693Z",
-    "PARSED_ISO": "2026-09-20T08:56:12.476Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.128Z"
 }

@@ -37,6 +37,13 @@
         "params is an array. Since you know all values in the array are numbers, you can turn it into a string with JSON.stringify().",
         "In the outerFunction, you can declare a Map or Object. In the inner function you can avoid executing the passed function if the params have already been passed before."
     ],
+    "codeSnippets": [
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {Function} fn\n * @return {Function}\n */\nfunction memoize(fn) {\n    \n    return function(...args) {\n        \n    }\n}\n\n\n/** \n * let callCount = 0;\n * const memoizedFn = memoize(function (a, b) {\n *\t callCount += 1;\n *   return a + b;\n * })\n * memoizedFn(2, 3) // 5\n * memoizedFn(2, 3) // 5\n * console.log(callCount) // 1 \n */"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:40:12.062Z",
-    "PARSED_ISO": "2026-09-20T08:56:13.261Z"
+    "PARSED_ISO": "2026-10-11T11:14:52.415Z"
 }

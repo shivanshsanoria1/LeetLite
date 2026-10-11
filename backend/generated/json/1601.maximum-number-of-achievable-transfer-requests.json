@@ -48,6 +48,18 @@
         "Think brute force",
         "When is a subset of requests okay?"
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int maximumRequests(int n, vector<vector<int>>& requests) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @param {number[][]} requests\n * @return {number}\n */\nvar maximumRequests = function(n, requests) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:50:30.842Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.180Z"
+    "PARSED_ISO": "2026-10-11T11:14:50.154Z"
 }

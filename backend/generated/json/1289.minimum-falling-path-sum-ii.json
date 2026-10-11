@@ -47,6 +47,18 @@
         "Let dp[i][j] be the answer for the first i rows such that column j is chosen from row i.",
         "Use the concept of cumulative array to optimize the complexity of the solution."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minFallingPathSum(vector<vector<int>>& grid) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minFallingPathSum = function(grid) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T17:30:49.503Z",
-    "PARSED_ISO": "2026-09-20T08:56:10.202Z"
+    "PARSED_ISO": "2026-10-11T11:14:49.677Z"
 }

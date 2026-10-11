@@ -71,6 +71,18 @@
         "Consider only the numbers which have a good prime factorization.",
         "Use brute force to find all possible good subsets and then calculate its frequency in nums."
     ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int numberOfGoodSubsets(vector<int>& nums) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar numberOfGoodSubsets = function(nums) {\n    \n};"
+        }
+    ],
     "LC_SYNC_ISO": "2026-09-09T18:03:47.591Z",
-    "PARSED_ISO": "2026-09-20T08:56:11.823Z"
+    "PARSED_ISO": "2026-10-11T11:14:51.137Z"
 }
