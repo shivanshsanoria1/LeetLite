@@ -81,6 +81,12 @@ function parseRawProblem(baseProblems, problemRaw, mode = 'full') {
 		parsedProblemObj.content = problemRaw.content
 		parsedProblemObj.hints = problemRaw.hints
 
+		parsedProblemObj.codeSnippets = problemRaw.codeSnippets ? problemRaw.codeSnippets.filter(({ langSlug }) => {
+			if (problemRaw.categoryTitle === 'Algorithms') return langSlug === 'cpp' || langSlug === 'javascript'
+			if (problemRaw.categoryTitle === 'JavaScript') return langSlug === 'javascript'
+			return false
+		}) : []
+
 		// timestamp of pulling the data from LC
 		parsedProblemObj.LC_SYNC_ISO = problemRaw.LAST_UPDATED_ISO
 		// timestamp of parsing

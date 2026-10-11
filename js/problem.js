@@ -815,33 +815,56 @@ if (themeSelectBtn && themeSelectBtn.nextElementSibling) {
 }
 
 // --- Helper: Verify Context ---
-function isJavaScriptProblem() {
-	const langSelect = document.getElementById('lang-select');
-	const selectedLang = langSelect ? langSelect.value.toLowerCase() : '';
-	if (selectedLang === 'js' || selectedLang === 'javascript') return true;
+// function isJavaScriptProblem() {
+// 	const langSelect = document.getElementById('lang-select');
+// 	const selectedLang = langSelect ? langSelect.value.toLowerCase() : '';
+// 	if (selectedLang === 'js' || selectedLang === 'javascript') return true;
 
-	if (currentProblemSolvedStats && currentProblemSolvedStats.type === 'javascript/typescript') return true;
-	if (currentProblemMasterData && currentProblemMasterData.categoryTitle?.toLowerCase().includes('javascript')) return true;
+// 	if (currentProblemSolvedStats && currentProblemSolvedStats.type === 'javascript/typescript') return true;
+// 	if (currentProblemMasterData && currentProblemMasterData.categoryTitle?.toLowerCase().includes('javascript')) return true;
 
-	return false;
-}
+// 	return false;
+// }
 
-// --- Execution Flow Parser (Groups final remaining lines into one step) ---
-function parseJsExecutionFlow(rawCode) {
+// --- Unified Multi-Language Execution Flow Parser ---
+function parseExecutionFlow(rawCode, lang) {
 	const lines = rawCode.split('\n');
 	const totalLines = lines.length;
 	const executionOrder = [];
 	const visited = new Set();
 
+	const ext = (lang || '').toLowerCase();
+
+	// 1. MySQL: Straight linear execution line-by-line
+	if (ext === 'mysql' || ext === 'sql') {
+		for (let i = 1; i <= totalLines; i++) {
+			if (lines[i - 1].trim() !== '') executionOrder.push([i]);
+		}
+		return executionOrder.length > 0 ? executionOrder : [[1]];
+	}
+
 	let mainFnStart = -1;
 	let mainFnEnd = -1;
 	let braceDepth = 0;
 
-	// 1. Locate primary function entry point
+	// 2. Locate primary function entry point for C++ and JS
 	for (let i = 0; i < totalLines; i++) {
-		if (lines[i].match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
-			mainFnStart = i + 1;
-			break;
+		const line = lines[i];
+
+		if (ext === 'js' || ext === 'javascript') {
+			if (line.match(/(?:var|let|const)\s+\w+\s*=\s*(?:async\s*)?function|function\s+\w+\s*\(/i)) {
+				mainFnStart = i + 1;
+				break;
+			}
+		} else if (ext === 'cpp') {
+			// Ignore the wrapper class and access modifiers to find the actual method
+			if (line.includes('class Solution') || line.trim() === 'public:' || line.trim() === 'private:') continue;
+
+			// Matches standard C++ method signatures: ReturnType methodName(...)
+			if (line.match(/^\s*(?:virtual\s+)?(?:static\s+)?[\w<>,:&\*]+\s+\w+\s*\([^)]*\)\s*(?:const)?\s*\{?/)) {
+				mainFnStart = i + 1;
+				break;
+			}
 		}
 	}
 
@@ -875,7 +898,7 @@ function parseJsExecutionFlow(rawCode) {
 		}
 	}
 
-	// Final Step: Group all unvisited lines (helpers, trailing closures) into a single block
+	// Final Step: Group all unvisited lines (helpers, includes, class wrappers) into a single block
 	const remainingLines = [];
 	for (let i = 1; i <= totalLines; i++) {
 		if (!visited.has(i) && lines[i - 1].trim() !== '') {
@@ -884,10 +907,45 @@ function parseJsExecutionFlow(rawCode) {
 	}
 
 	if (remainingLines.length > 0) {
-		executionOrder.push(remainingLines);
+		// If no main function was found, just reveal the remaining lines sequentially
+		if (mainFnStart === -1) {
+			remainingLines.forEach(lineNum => executionOrder.push([lineNum]));
+		} else {
+			// Otherwise, group them as the final step (e.g. trailing helpers, C++ class closing braces)
+			executionOrder.push(remainingLines);
+		}
 	}
 
 	return executionOrder.length > 0 ? executionOrder : [Array.from({ length: totalLines }, (_, i) => i + 1)];
+}
+
+// --- Controller Logic ---
+function setupPeekMode() {
+	const modalOption = document.getElementById('peek-mode-wrapper');
+	const toggle = document.getElementById('peek-mode-toggle');
+	const controls = document.getElementById('peek-controls');
+	const container = document.getElementById('code-editor-container');
+
+	const langSelect = document.getElementById('lang-select');
+	const currentLang = langSelect ? langSelect.value : '';
+
+	// Ensure the toggle wrapper is always visible now that all languages are supported
+	if (modalOption) modalOption.style.display = 'block';
+
+	if (!isPeekModeActive || !currentRawCode) {
+		if (controls) controls.classList.replace('d-flex', 'd-none');
+		if (container) container.classList.remove('peek-active');
+		return;
+	}
+
+	// Pass the current language dynamically to the parser
+	peekExecutionSteps = parseExecutionFlow(currentRawCode, currentLang);
+	peekCurrentStep = 0;
+
+	container.classList.add('peek-active');
+	controls.classList.replace('d-none', 'd-flex');
+
+	applyPeekStepState();
 }
 
 // --- DOM Highlight Helper ---
@@ -896,42 +954,6 @@ function getCodeRow(container, lineNum) {
 	if (lineEl) return lineEl.closest('tr');
 	const rows = container.querySelectorAll('table.hljs-ln tr');
 	return rows[lineNum - 1] || null;
-}
-
-// --- Controller Logic ---
-function setupPeekMode() {
-	const isJs = isJavaScriptProblem();
-	const modalOption = document.getElementById('peek-mode-wrapper');
-	const toggle = document.getElementById('peek-mode-toggle');
-	const controls = document.getElementById('peek-controls');
-	const container = document.getElementById('code-editor-container');
-
-	if (!modalOption) return;
-
-	if (!isJs) {
-		modalOption.style.display = 'none';
-		if (toggle) toggle.checked = false;
-		if (controls) controls.classList.replace('d-flex', 'd-none');
-		if (container) container.classList.remove('peek-active');
-		isPeekModeActive = false;
-		return;
-	}
-
-	modalOption.style.display = 'block';
-
-	if (!isPeekModeActive || !currentRawCode) {
-		if (controls) controls.classList.replace('d-flex', 'd-none');
-		if (container) container.classList.remove('peek-active');
-		return;
-	}
-
-	peekExecutionSteps = parseJsExecutionFlow(currentRawCode);
-	peekCurrentStep = 0;
-
-	container.classList.add('peek-active');
-	controls.classList.replace('d-none', 'd-flex');
-
-	applyPeekStepState();
 }
 
 function applyPeekStepState() {
