@@ -27,20 +27,13 @@
 		<div class="text-center mb-5 py-3">
 			<div class="d-inline-flex align-items-center justify-content-center gap-2 mb-3 flex-wrap">
 				<h1 class="fw-bold display-5 mb-0">Welcome to <span class="brand-gradient">LeetLite</span></h1>
-				<!-- Stoplights Logo -->
-				<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-					class="bi bi-stoplights flex-shrink-0 ms-1" viewBox="0 0 16 16">
-					<defs>
-						<linearGradient id="about-logo-grad-vertical" x1="0%" y1="0%" x2="0%" y2="100%">
-							<stop offset="0%" stop-color="#ef4743" />
-							<stop offset="50%" stop-color="#ffc01e" />
-							<stop offset="100%" stop-color="#2cbb5d" />
-						</linearGradient>
-					</defs>
-					<path fill="url(#about-logo-grad-vertical)"
-						d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m0 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m1.5 2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-					<path fill="url(#about-logo-grad-vertical)"
-						d="M4 2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v2h2c-.167.5-.8 1.6-2 2v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1c-1.2-.4-1.833-1.5-2-2h2V8c-1.2-.4-1.833-1.5-2-2h2V4c-1.2-.4-1.833-1.5-2-2zm2-1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+				<!-- LeetLite 3-Circle Stoplights Logo -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="56" viewBox="0 0 120 280">
+					<rect x="10" y="10" width="100" height="260" rx="12" fill="none" stroke="#f1f1f1"
+						stroke-width="3" />
+					<circle cx="60" cy="65" r="25" fill="#dc3545" />
+					<circle cx="60" cy="140" r="25" fill="#ffc107" />
+					<circle cx="60" cy="215" r="25" fill="#198754" />
 				</svg>
 			</div>
 
@@ -50,12 +43,12 @@
 					clean reference code.
 				</p>
 				<p class="about-card-text fs-6 mb-4">
-					LeetLite is not just a simple solution viewer for LeetCode—it is a comprehensive solution analyzer.
-					It comes packed with a line-by-line viewing experience, a clean complexity analysis tool, a stats
-					visualizer[cite: 7], and a similar problem path tracer[cite: 3]. I believe a site shouldn't have
-					unnecessary features, only exactly what you need to learn. There is absolutely no data privacy risk
-					here since no data is collected[cite: 4]. This makes everything incredibly fast and straight to the
-					point.
+					LeetLite is not just a simple solution viewer for LeetCode—it is a comprehensive solution
+					analyzer. It comes packed with a line-by-line viewing experience, a clean complexity
+					analysis tool, a stats visualizer, and a similar problem path tracer. I believe a site
+					shouldn't have unnecessary features, only exactly what you need to learn. There is absolutely no
+					data privacy risk here since no data is collected. This makes everything incredibly fast and
+					straight to the point.
 				</p>
 				<h5 class="fw-bold brand-gradient fst-italic mt-2">
 					"Trying and failing is better than not trying at all."
@@ -71,8 +64,8 @@
 					Most modern problem-solving platforms have grown heavy over the years, weighed down by tracking
 					scripts, slow page transitions, and constant prompts to sign in. I created LeetLite out of a desire
 					for something much more welcoming and straightforward: a fast, client-side directory that opens
-					immediately, filters without reloading, and genuinely respects your focus. Everything runs locally
-					right in your browser using pre-built static data files.
+					immediately, filters without reloading, and genuinely respects your focus. Everything
+					runs locally right in your browser using pre-built static data files.
 				</p>
 			</div>
 		</div>
@@ -151,8 +144,8 @@
 					<div class="card-body">
 						<h5 class="fw-bold color-green mb-2">Fast Search & Sorting</h5>
 						<p class="about-card-text fs-6 mb-0">
-							Type an ID or title to filter results instantly on keypress. Click any column header to sort
-							by difficulty, acceptance rate, or community like ratios.
+							Type an ID or title to filter results instantly on keypress. Click any column
+							header to sort by difficulty, acceptance rate, or community like ratios.
 						</p>
 					</div>
 				</div>
@@ -176,7 +169,7 @@
 						<h5 class="fw-bold text-primary mb-2">Split Workspace</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Read statements with clear math rendering on the left, and view multi-version code solutions
-							with syntax highlighting on the right[cite: 6].
+							with syntax highlighting on the right.
 						</p>
 					</div>
 				</div>
@@ -187,8 +180,8 @@
 					<div class="card-body">
 						<h5 class="fw-bold text-info mb-2">Visualizer</h5>
 						<p class="about-card-text fs-6 mb-0">
-							Explore related questions through a visual network graph. Clicking any connected problem
-							re-centers the graph around that problem to help identify common patterns[cite: 3].
+							Explore related questions through a visual network graph. Clicking any connected
+							problem re-centers the graph around that problem to help identify common patterns.
 						</p>
 					</div>
 				</div>
@@ -200,7 +193,7 @@
 						<h5 class="fw-bold color-yellow mb-2">Stats Dashboard</h5>
 						<p class="about-card-text fs-6 mb-0">
 							A simple overview comparing solved problem distributions against the complete question pool
-							across all difficulty levels and tags[cite: 7].
+							across all difficulty levels and tags.
 						</p>
 					</div>
 				</div>
@@ -212,7 +205,7 @@
 						<h5 class="fw-bold text-danger mb-2">Saved Preferences</h5>
 						<p class="about-card-text fs-6 mb-0">
 							Search terms, active filters, page size, and sorting choices stay saved securely in your
-							browser storage so your workspace is ready when you return[cite: 4].
+							browser storage so your workspace is ready when you return.
 						</p>
 					</div>
 				</div>
@@ -231,16 +224,15 @@
 					learning experience and take away your ability to think through the problem on your own.
 				</p>
 				<p class="about-card-text fs-6 mb-3">
-					That's exactly why I built Peek Mode[cite: 5]. Think of it as a highly advanced written text hint.
-					It lets you progressively reveal the code line by line using an execution array trace, giving you
-					just enough of a nudge in the right direction so you can catch the idea and comfortably solve the
-					rest yourself[cite: 5].
+					That's exactly why I built Peek Mode. Think of it as a highly advanced written text hint. It lets
+					you progressively reveal the code line by line, giving you just enough of a nudge in the right
+					direction so you can catch the idea and comfortably solve the rest yourself.
 				</p>
 				<div class="p-3 rounded bg-dark border border-secondary d-flex align-items-start gap-2 mt-4">
 					<div class="about-card-text small mb-0">
 						<strong class="text-light">Just a heads up:</strong> This is a brand new experimental feature
-						relying on custom heuristic execution tracing[cite: 5]. It might not work perfectly as intended
-						on every single problem just yet, but it's a great starting point!
+						relying on custom heuristic execution tracing. It might not work perfectly as intended on every
+						single problem just yet, but it's a great starting point!
 					</div>
 				</div>
 			</div>
@@ -256,7 +248,7 @@
 				<p class="text-light fs-5 mb-2">
 					Every code solution hosted on this site across <strong class="color-yellow">C++</strong>, <strong
 						class="color-yellow">JavaScript</strong>, and <strong class="color-yellow">MySQL</strong> was
-					written, tested, and submitted by me personally[cite: 6].
+					written, tested, and submitted by me personally.
 				</p>
 				<p class="about-card-text fs-6 mb-0">
 					None of the solutions are generated by AI or mass-scraped from web scrapers. Where helpful, multiple
@@ -277,14 +269,14 @@
 					<div class="card-body p-4">
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">👍 / 👎 Visible Dislike Counts:</strong> Shows problem
-								dislikes and calculated like ratios[cite: 3], metrics that were removed from the
+								dislikes and calculated like ratios, metrics that were removed from the
 								official frontend.</li>
 							<li><strong class="text-light">Instant Browsing:</strong> Filtering, sorting, and tag
 								selections happen directly on your device without server latency.</li>
 							<li><strong class="text-light">No Account Required:</strong> No login screens, cookie
-								tracking, or setup steps. Complete freedom[cite: 4].</li>
+								tracking, or setup steps. Complete freedom.</li>
 							<li><strong class="text-light">Connected Problem Graph:</strong> The visualizer helps
-								uncover links between related problem concepts[cite: 3].</li>
+								uncover links between related problem concepts.</li>
 							<li><strong class="text-light">Tested Reference Code:</strong> Human-written solutions
 								verified against official test cases.</li>
 						</ul>
@@ -300,13 +292,13 @@
 					<div class="card-body p-4">
 						<ul class="about-card-text fs-6 mb-0 ps-3 d-flex flex-column gap-3">
 							<li><strong class="text-light">No Live Metric Sync:</strong> Metrics like votes, total
-								submissions, and acceptance rates are pulled during periodic project updates[cite: 6],
+								submissions, and acceptance rates are pulled during periodic project updates,
 								so numbers may vary slightly from real-time figures.</li>
 							<li><strong class="text-light">No Built-in Code Execution:</strong> This site is designed as
 								a fast reference tool and problem index; code must be run and submitted on LeetCode.
 							</li>
 							<li><strong class="text-light">Local Storage Only:</strong> Saved filters and preferences
-								remain on your current browser and will not sync across different devices[cite: 4].</li>
+								remain on your current browser and will not sync across different devices.</li>
 							<li><strong class="text-light">No Premium Problem Data:</strong> Paid subscription
 								statements and locked editorial content are intentionally excluded.</li>
 						</ul>
@@ -423,7 +415,7 @@
 								<span class="badge bg-success mb-2">Source 2</span>
 								<h6 class="fw-bold color-green mb-1">LeetcodeSolutions Repo</h6>
 								<p class="about-card-text small mb-0">
-									The GitHub repository where I host all my hand-written solutions[cite: 3].
+									The GitHub repository where I host all my hand-written solutions.
 								</p>
 							</div>
 						</div>
@@ -470,7 +462,7 @@
 								<span class="badge bg-secondary mb-2">Stage 3</span>
 								<h6 class="fw-bold text-light mb-2">Static JSON Files</h6>
 								<p class="about-card-text small mb-2">
-									The script saves the clean data into highly optimized JSON files[cite: 3]:
+									The script saves the clean data into highly optimized JSON files:
 								</p>
 								<ul class="text-start about-card-text small ps-3 mb-0">
 									<li>A master problem list</li>
@@ -496,9 +488,9 @@
 					<span class="badge bg-success mb-2">Stage 4: Client Delivery</span>
 					<h5 class="fw-bold color-green mb-2">LeetLite Frontend</h5>
 					<p class="about-card-text fs-6 mb-0 mx-auto" style="max-width: 800px;">
-						Your browser fetches these static files directly. Because everything is loaded upfront, actions
-						like filtering, sorting, and graph navigation run locally in your memory with zero server
-						lag[cite: 6].
+						Your browser fetches these static files directly. Because everything is loaded upfront,
+						actions like filtering, sorting, and graph navigation run locally in your memory with zero
+						server lag.
 					</p>
 				</div>
 
@@ -507,7 +499,7 @@
 					<span class="text-warning fs-5 lh-1">⚠️</span>
 					<div class="about-card-text small mb-0">
 						<strong class="text-light">Periodic Sync Notice:</strong> Because this data is extracted and
-						synced periodically[cite: 6], numbers like total submissions, like-to-dislike counts, and
+						synced periodically, numbers like total submissions, like-to-dislike counts, and
 						acceptance rates may not reflect real-time live data from LeetCode.
 					</div>
 				</div>
