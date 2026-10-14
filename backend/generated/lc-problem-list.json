@@ -165121,5 +165121,240 @@
             "hasSolution": false,
             "hasVideoSolution": false
         }
+    },
+    {
+        "quesId": 4074,
+        "title": "Maximum Product Pair With Target Sum",
+        "titleSlug": "maximum-product-pair-with-target-sum",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "27K",
+            "totalSubmission": "59.2K",
+            "totalAcceptedRaw": 27001,
+            "totalSubmissionRaw": 59238,
+            "acRate": "45.6%",
+            "acRateRaw": 45.588036726978125,
+            "likes": 10,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4444,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4075,
+        "title": "Longest Resilient Subarray I",
+        "titleSlug": "longest-resilient-subarray-i",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "14.8K",
+            "totalSubmission": "40K",
+            "totalAcceptedRaw": 14750,
+            "totalSubmissionRaw": 39991,
+            "acRate": "36.9%",
+            "acRateRaw": 36.88092202305058,
+            "likes": 12,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            4076
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4438,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4076,
+        "title": "Longest Resilient Subarray II",
+        "titleSlug": "longest-resilient-subarray-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "10K",
+            "totalSubmission": "17.6K",
+            "totalAcceptedRaw": 10035,
+            "totalSubmissionRaw": 17596,
+            "acRate": "57.0%",
+            "acRateRaw": 57.031693740770194,
+            "likes": 8,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            4075
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4439,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4077,
+        "title": "Minimize Inversions in a Prefix Tree",
+        "titleSlug": "minimize-inversions-in-a-prefix-tree",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.9K",
+            "totalSubmission": "5K",
+            "totalAcceptedRaw": 1871,
+            "totalSubmissionRaw": 4984,
+            "acRate": "37.5%",
+            "acRateRaw": 37.56518251103088,
+            "likes": 6,
+            "dislikes": 4
+        },
+        "similarQuesIds": [],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4254,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4078,
+        "title": "Three Fibonacci Sum",
+        "titleSlug": "three-fibonacci-sum",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "36K",
+            "totalSubmission": "56.8K",
+            "totalAcceptedRaw": 35994,
+            "totalSubmissionRaw": 56832,
+            "acRate": "63.3%",
+            "acRateRaw": 63.33479827722598,
+            "likes": 16,
+            "dislikes": 0
+        },
+        "similarQuesIds": [
+            509
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4450,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4079,
+        "title": "Prime Subset Selection I",
+        "titleSlug": "prime-subset-selection-i",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "22.4K",
+            "totalSubmission": "51.2K",
+            "totalAcceptedRaw": 22430,
+            "totalSubmissionRaw": 51201,
+            "acRate": "43.8%",
+            "acRateRaw": 43.80465334166146,
+            "likes": 14,
+            "dislikes": 1
+        },
+        "similarQuesIds": [
+            4081
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4433,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4080,
+        "title": "Design Bus Seat Booking System",
+        "titleSlug": "design-bus-seat-booking-system",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "10.6K",
+            "totalSubmission": "23.2K",
+            "totalAcceptedRaw": 10593,
+            "totalSubmissionRaw": 23220,
+            "acRate": "45.6%",
+            "acRateRaw": 45.6368330464716,
+            "likes": 12,
+            "dislikes": 2
+        },
+        "similarQuesIds": [],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4377,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4081,
+        "title": "Prime Subset Selection II",
+        "titleSlug": "prime-subset-selection-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.4K",
+            "totalSubmission": "11K",
+            "totalAcceptedRaw": 4437,
+            "totalSubmissionRaw": 11029,
+            "acRate": "40.2%",
+            "acRateRaw": 40.229885057471265,
+            "likes": 20,
+            "dislikes": 2
+        },
+        "similarQuesIds": [
+            4079
+        ],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4434,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
+    },
+    {
+        "quesId": 4082,
+        "title": "Minimum Operations to Stabilize a Binary Tree",
+        "titleSlug": "minimum-operations-to-stabilize-a-binary-tree",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "59",
+            "totalSubmission": "98",
+            "totalAcceptedRaw": 59,
+            "totalSubmissionRaw": 98,
+            "acRate": "60.2%",
+            "acRateRaw": 60.204081632653065,
+            "likes": 0,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [],
+        "meta": {
+            "quesIdLCBackend": 4243,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        }
     }
 ]

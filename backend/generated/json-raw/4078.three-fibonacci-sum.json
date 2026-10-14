@@ -1,0 +1,125 @@
+{
+    "questionId": "4450",
+    "questionFrontendId": "4078",
+    "title": "Three Fibonacci Sum",
+    "titleSlug": "three-fibonacci-sum",
+    "difficulty": "Easy",
+    "likes": 16,
+    "dislikes": 0,
+    "acRate": 63.33479827722598,
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"36K\", \"totalSubmission\": \"56.8K\", \"totalAcceptedRaw\": 35994, \"totalSubmissionRaw\": 56832, \"acRate\": \"63.3%\"}",
+    "similarQuestions": "[{\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": "<p>You are given an integer <code>n</code>.</p>\n\n<p>The <strong>Fibonacci sequence</strong> starts with 0 and 1, and each subsequent number is the sum of the previous two numbers. Its first few terms are <code>0, 1, 1, 2, 3, 5, 8, 13, ...</code>.</p>\n\n<p>Return <code>true</code> if <code>n</code> can be expressed as the sum of <strong>three consecutive terms</strong> in the Fibonacci sequence, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 16</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The three consecutive terms 3, 5, and 8 have a sum of <code>3 + 5 + 8 = 16</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 8</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Although <code>1 + 2 + 5 = 8</code>, these terms are not consecutive in the Fibonacci sequence. No three consecutive terms have a sum of 8.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The first three terms have a sum of <code>0 + 1 + 1 = 2</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<strong>1a (Sequence Generation)</strong>: Generate consecutive Fibonacci triples and compare their sums with <code>n</code>. Stop when the sum exceeds <code>n</code>.",
+        "<strong>2a (Fibonacci Identity)</strong>: For consecutive Fibonacci terms <code>a</code>, <code>b</code>, and <code>c</code>, we have <code>a + b == c</code>, so their sum is <code>2 * c</code>.",
+        "<strong>2b (Fibonacci Identity)</strong>: Thus, <code>n</code> must be even and <code>n / 2</code> must be a positive Fibonacci number.",
+        "<strong>2c (Fibonacci Identity)</strong>: A positive integer <code>x</code> is Fibonacci exactly when <code>5 * x * x + 4</code> or <code>5 * x * x - 4</code> is a perfect square."
+    ],
+    "exampleTestcases": "16\r\n8\r\n2\r",
+    "solution": null,
+    "topicTags": [],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool threeFibonacciSum(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean threeFibonacciSum(int n) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def threeFibonacciSum(self, n: int) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def threeFibonacciSum(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar threeFibonacciSum = function(n) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function threeFibonacciSum(n: number): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool ThreeFibonacciSum(int n) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool threeFibonacciSum(int n) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func threeFibonacciSum(n int) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun threeFibonacciSum(n: Int): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func threeFibonacciSum(_ n: Int) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn three_fibonacci_sum(n: i32) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer} n\n# @return {Boolean}\ndef three_fibonacci_sum(n)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Boolean\n     */\n    function threeFibonacciSum($n) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool threeFibonacciSum(int n) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def threeFibonacciSum(n: Int): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec three_fibonacci_sum(n :: integer) :: boolean\n  def three_fibonacci_sum(n) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec three_fibonacci_sum(N :: integer()) -> boolean().\nthree_fibonacci_sum(N) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (three-fibonacci-sum n)\n  (-> exact-integer? boolean?)\n  )"
+        }
+    ],
+    "LAST_UPDATED_ISO": "2026-10-14T18:36:03.081Z"
+}

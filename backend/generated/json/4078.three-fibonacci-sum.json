@@ -1,0 +1,52 @@
+{
+    "quesId": 4078,
+    "title": "Three Fibonacci Sum",
+    "titleSlug": "three-fibonacci-sum",
+    "difficulty": "Easy",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "36K",
+        "totalSubmission": "56.8K",
+        "totalAcceptedRaw": 35994,
+        "totalSubmissionRaw": 56832,
+        "acRate": "63.3%",
+        "acRateRaw": 63.33479827722598,
+        "likes": 16,
+        "dislikes": 0
+    },
+    "similarQuesIds": [
+        509
+    ],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4450,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "16\r\n8\r\n2\r",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an integer <code>n</code>.</p>\n\n<p>The <strong>Fibonacci sequence</strong> starts with 0 and 1, and each subsequent number is the sum of the previous two numbers. Its first few terms are <code>0, 1, 1, 2, 3, 5, 8, 13, ...</code>.</p>\n\n<p>Return <code>true</code> if <code>n</code> can be expressed as the sum of <strong>three consecutive terms</strong> in the Fibonacci sequence, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 16</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The three consecutive terms 3, 5, and 8 have a sum of <code>3 + 5 + 8 = 16</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 8</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Although <code>1 + 2 + 5 = 8</code>, these terms are not consecutive in the Fibonacci sequence. No three consecutive terms have a sum of 8.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The first three terms have a sum of <code>0 + 1 + 1 = 2</code>.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+    "hints": [
+        "<strong>1a (Sequence Generation)</strong>: Generate consecutive Fibonacci triples and compare their sums with <code>n</code>. Stop when the sum exceeds <code>n</code>.",
+        "<strong>2a (Fibonacci Identity)</strong>: For consecutive Fibonacci terms <code>a</code>, <code>b</code>, and <code>c</code>, we have <code>a + b == c</code>, so their sum is <code>2 * c</code>.",
+        "<strong>2b (Fibonacci Identity)</strong>: Thus, <code>n</code> must be even and <code>n / 2</code> must be a positive Fibonacci number.",
+        "<strong>2c (Fibonacci Identity)</strong>: A positive integer <code>x</code> is Fibonacci exactly when <code>5 * x * x + 4</code> or <code>5 * x * x - 4</code> is a perfect square."
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool threeFibonacciSum(int n) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar threeFibonacciSum = function(n) {\n    \n};"
+        }
+    ],
+    "LC_SYNC_ISO": "2026-10-14T18:36:03.081Z",
+    "PARSED_ISO": "2026-10-14T18:36:50.448Z"
+}

@@ -1,0 +1,39 @@
+{
+    "quesId": 4082,
+    "title": "Minimum Operations to Stabilize a Binary Tree",
+    "titleSlug": "minimum-operations-to-stabilize-a-binary-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "59",
+        "totalSubmission": "98",
+        "totalAcceptedRaw": 59,
+        "totalSubmissionRaw": 98,
+        "acRate": "60.2%",
+        "acRateRaw": 60.204081632653065,
+        "likes": 0,
+        "dislikes": 1
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4243,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[5,8,3]\n[2,-1,-4]\n[0,-2,2,-3,null,1]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "<p>Try using tree DP. Let <code>dp[u](x)</code> represent the minimum number of operations needed to make the subtree rooted at <code>u</code> stable, assuming the final value of node <code>u</code> is <code>x</code>.</p>",
+        "<p>If node <code>u</code> has a child <code>v</code>, the final value of <code>v</code> must differ from <code>x</code> by at most 1. Therefore, the contribution of this child is <code>min(dp[v](x - 1), dp[v](x), dp[v](x + 1))</code>. How can you combine the contributions of all children?</p>",
+        "<p>Computing the DP for every possible value of <code>x</code> would be too expensive. Observe that each DP function is convex and piecewise linear. Can you represent such a function efficiently using its breakpoints instead of storing all its values?</p>",
+        "<p>Consider how taking the minimum over <code>[x - 1, x + 1]</code> changes the breakpoints of a convex function. Use an efficient data structure to maintain these breakpoints and merge the functions of different subtrees.</p>"
+    ],
+    "codeSnippets": [],
+    "LC_SYNC_ISO": "2026-10-14T18:36:05.951Z",
+    "PARSED_ISO": "2026-10-14T18:36:50.461Z"
+}

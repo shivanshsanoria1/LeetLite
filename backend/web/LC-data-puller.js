@@ -3,7 +3,6 @@ const fs = require('node:fs/promises')
 
 const webConfig = require('./web-config.json');
 const queries = require('./queries.js')
-const config = require('../config.json')
 const helper = require('../helper.js')
 const timer = require('../timer.js')
 const logger = require('../logger.js');
@@ -305,64 +304,3 @@ async function createBackupJSON(sourceFilePath) {
 		throw err;
 	}
 }
-
-async function createBackupDir(sourceDirPath) {
-	try {
-		await fs.access(sourceDirPath);
-	} catch (err) {
-		if (err.code === 'ENOENT') {
-			logger.info(`Source directory does not exist: ${sourceDirPath}`);
-			return null;
-		}
-
-		throw err;
-	}
-
-	try {
-		const backupDirPath = helper.getDirPath('webBackup');
-
-		const sourceDirName = path.basename(sourceDirPath);
-		const timestamp = timer.getFileSafeISOTimestamp();
-
-		const backupDirName = `${sourceDirName} [${timestamp}]`;
-		const backupDirFullPath = path.join(backupDirPath, backupDirName);
-
-		await fs.rename(sourceDirPath, backupDirFullPath);
-
-		logger.info(`Backup created: ${helper.getRootRelativePath(backupDirFullPath)}`);
-
-		return backupDirFullPath;
-	} catch (err) {
-		throw err;
-	}
-}
-
-// DEPRICIATED
-// process file writes in small batches instead of concurrently prcoessing in bulk
-/*async function batchWrite(problems, version) {
-	try {
-		const batchSize = webConfig.BATCH_SIZE ?? 10
-		for (let i = 0; i < problems.length; i += batchSize) {
-			const batch = []
-			for (let j = i; j < Math.min(problems.length, i + batchSize); j++) {
-				const { id, slug } = problems[j]
-
-				if (version === 'html') {
-					const { description } = problems[j]
-					batch.push(writeToHTML(id, slug, description))
-				} else if (version === 'md') {
-					const { solutionContent } = problems[j]
-					batch.push(writeToMD(id, slug, solutionContent))
-				} else {
-					throw new Error('Invalid batch write version ' + version)
-				}
-			}
-
-			await Promise.all(batch)
-		}
-	} catch (err) {
-		logger.info(err)
-		throw err
-	}
-}*/
-

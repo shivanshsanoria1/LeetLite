@@ -1,0 +1,50 @@
+{
+    "quesId": 4077,
+    "title": "Minimize Inversions in a Prefix Tree",
+    "titleSlug": "minimize-inversions-in-a-prefix-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.9K",
+        "totalSubmission": "5K",
+        "totalAcceptedRaw": 1871,
+        "totalSubmissionRaw": 4984,
+        "acRate": "37.5%",
+        "acRateRaw": 37.56518251103088,
+        "likes": 6,
+        "dislikes": 4
+    },
+    "similarQuesIds": [],
+    "topicTags": [],
+    "meta": {
+        "quesIdLCBackend": 4254,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "exampleTestcases": "[\"bad\",\"bag\",\"fig\",\"fed\"]\n[3,1,0,2]\n[\"ab\",\"ac\",\"ba\",\"bc\"]\n[0,3,1,2]",
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": "<p>You are given an array <code>words</code> of <code>n</code> <strong>unique</strong> strings containing only lowercase English letters from <code>&#39;a&#39;</code> to <code>&#39;j&#39;</code>. You are also given an integer array <code>target</code> containing each index from 0 to <code>n - 1</code> exactly once.</p>\n\n<p>Build a <strong>prefix tree</strong> from <code>words</code>:</p>\n\n<ul>\n\t<li>The root represents the empty string <code>&quot;&quot;</code>.</li>\n\t<li>Each other node represents a different non-empty <span data-keyword=\"string-prefix\">prefix</span> of a word. The parent of a node is the prefix obtained by removing its last character.</li>\n\t<li>The node representing the complete word <code>words[i]</code> is marked with index <code>i</code>. A marked node may also have children.</li>\n</ul>\n\n<p>You may choose the order of the children of <strong>each node independently</strong>. You cannot change which node is a child&#39;s parent.</p>\n\n<p>Traverse the tree starting at the root. When visiting a node, first record its index if it is marked. Then visit its children in the chosen order, completing the traversal of each child before moving to the next. This is a <strong>pre-order traversal</strong>.</p>\n\n<p>The recorded indices form an array <code>traversal</code> of length <code>n</code>. Let <code>pos[i]</code> be the position of index <code>i</code> in <code>target</code>.</p>\n\n<p>An <strong>inversion</strong> is a pair of positions <code>(a, b)</code> such that <code>0 &lt;= a &lt; b &lt; n</code> and <code>pos[traversal[a]] &gt; pos[traversal[b]]</code>.</p>\n\n<p>Return the <strong>minimum possible number of inversions</strong> over all choices of child orderings.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><img src=\"https://assets.leetcode.com/uploads/2026/03/04/screenshot-2026-03-04-at-55332pm.png\" style=\"width: 264px; height: 250px;\" />​​​​​​​​​​​​​​​​​​​​​</p>\n\n<p><strong>Input:</strong> <span class=\"example-io\">words = [&quot;bad&quot;,&quot;bag&quot;,&quot;fig&quot;,&quot;fed&quot;], target = [3,1,0,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Visit the root&#39;s <code>&quot;f&quot;</code> child before its <code>&quot;b&quot;</code> child. Within the <code>&quot;f&quot;</code> branch, visit <code>&quot;fed&quot;</code> before <code>&quot;fig&quot;</code>. Within the <code>&quot;b&quot;</code> branch, visit <code>&quot;bag&quot;</code> before <code>&quot;bad&quot;</code>.</p>\n\n<p>This produces <code>traversal = [3,2,1,0]</code>:</p>\n\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Traversal position</th>\n\t\t\t<th>Word index</th>\n\t\t\t<th>Word</th>\n\t\t\t<th>Position in target</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>0</td>\n\t\t\t<td>3</td>\n\t\t\t<td><code>&quot;fed&quot;</code></td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1</td>\n\t\t\t<td>2</td>\n\t\t\t<td><code>&quot;fig&quot;</code></td>\n\t\t\t<td>3</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2</td>\n\t\t\t<td>1</td>\n\t\t\t<td><code>&quot;bag&quot;</code></td>\n\t\t\t<td>1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3</td>\n\t\t\t<td>0</td>\n\t\t\t<td><code>&quot;bad&quot;</code></td>\n\t\t\t<td>2</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The positions in <code>target</code> are <code>[0,3,1,2]</code>. The inversions are the pairs of <strong>traversal positions</strong> <code>(1,2)</code> and <code>(1,3)</code>, since <code>3 &gt; 1</code> and <code>3 &gt; 2</code>.</p>\n\n<p>No child ordering produces fewer than 2 inversions.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">words = [&quot;ab&quot;,&quot;ac&quot;,&quot;ba&quot;,&quot;bc&quot;], target = [0,3,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Visit the root&#39;s <code>&quot;a&quot;</code> child before its <code>&quot;b&quot;</code> child. Within these branches, visit <code>&quot;ab&quot;</code> before <code>&quot;ac&quot;</code>, and <code>&quot;bc&quot;</code> before <code>&quot;ba&quot;</code>.</p>\n\n<p>This produces <code>traversal = [0,1,3,2]</code>:</p>\n\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Traversal position</th>\n\t\t\t<th>Word index</th>\n\t\t\t<th>Word</th>\n\t\t\t<th>Position in target</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>0</td>\n\t\t\t<td>0</td>\n\t\t\t<td><code>&quot;ab&quot;</code></td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1</td>\n\t\t\t<td>1</td>\n\t\t\t<td><code>&quot;ac&quot;</code></td>\n\t\t\t<td>2</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>2</td>\n\t\t\t<td>3</td>\n\t\t\t<td><code>&quot;bc&quot;</code></td>\n\t\t\t<td>1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>3</td>\n\t\t\t<td>2</td>\n\t\t\t<td><code>&quot;ba&quot;</code></td>\n\t\t\t<td>3</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>The positions in <code>target</code> are <code>[0,2,1,3]</code>. The only inversion is the pair of <strong>traversal positions</strong> <code>(1,2)</code>, since <code>2 &gt; 1</code>.</p>\n\n<p>No child ordering produces zero inversions.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == words.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 20</code></li>\n\t<li><code>words[i]</code> contains only lowercase English letters from <code>&#39;a&#39;</code> to <code>&#39;j&#39;</code>​​​​​​​</li>\n\t<li>All <code>words[i]</code> are <strong>unique</strong></li>\n\t<li><code>0 &lt;= target[i] &lt;= n - 1</code></li>\n\t<li><code>target</code> is a permutation of integers from 0 to <code>n - 1</code></li>\n</ul>\n",
+    "hints": [
+        "Each child's subtree appears as one contiguous block in the traversal. Its internal ordering does not affect inversions between different child blocks.",
+        "For each node, define <code>cost[a][b]</code> as the number of inversions contributed when child <code>a</code>'s block appears before child <code>b</code>'s block.",
+        "Compute these costs by processing words in <code>target</code> order. Along each word's path, maintain counts of previously processed words in each child subtree.",
+        "Each node has at most ten children, so use subset DP to find their best ordering. Appending child <code>b</code> adds <code>sum(cost[a][b])</code> over children already placed. Also count the fixed inversions between a marked node and its descendants, then sum the contributions across all nodes."
+    ],
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    int minInversions(vector<string>& words, vector<int>& target) {\n        \n    }\n};"
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string[]} words\n * @param {number[]} target\n * @return {number}\n */\nvar minInversions = function(words, target) {\n    \n};"
+        }
+    ],
+    "LC_SYNC_ISO": "2026-10-14T18:36:02.404Z",
+    "PARSED_ISO": "2026-10-14T18:36:50.447Z"
+}
