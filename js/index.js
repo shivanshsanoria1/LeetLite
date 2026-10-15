@@ -7,56 +7,76 @@ import {
 	DEFAULT_PAGE_SIZE
 } from './config.js';
 
-// --- 1. State Management ---
+// ==========================================
+// 1. STATE MANAGEMENT & VARIABLES
+// ==========================================
 let allProblems = [];
 let currentProblems = [];
 let currentSort = { column: 'id', direction: 'asc' };
 const STORAGE_KEY = 'leetcode_lite_settings';
 
-// Pagination & Tag variables
+// Pagination & Filtering Variables
 let pageSize = DEFAULT_PAGE_SIZE;
 let currentPage = 1;
-let selectedTags = []; // Stores slugs
+let selectedTags = [];
 let tagLogic = 'OR';
-let masterTagsList = []; // Will store the raw array from backend
-const topicTagMap = new Map(); // Maps slug -> { name, color, order }
+let masterTagsList = [];
+const topicTagMap = new Map();
 
-// DOM Elements: Tag Dropdown
-const tagDropdownMenu = document.getElementById('tagDropdownMenu');
-const tagDropdownText = document.getElementById('tagDropdownText');
-const tagSearchInput = document.getElementById('tagSearchInput');
-const tagLogicToggle = document.getElementById('tagLogicToggle');
-const tagLogicLabel = document.getElementById('tagLogicLabel');
+// ==========================================
+// 2. DOM ELEMENTS
+// ==========================================
+const DOM = {
+	// Core Table & Inputs
+	tableBody: document.getElementById('tableBody'),
+	searchInput: document.getElementById('searchInput'),
+	diffFilter: document.getElementById('diffFilter'),
+	paidFilter: document.getElementById('paidFilter'),
+	categoryFilter: document.getElementById('categoryFilter'),
+	pageSizeSelect: document.getElementById('pageSizeSelect'),
+	solutionFilter: document.getElementById('solutionFilter'),
+	resetBtn: document.getElementById('resetBtn'),
 
-// DOM Elements
-const tableBody = document.getElementById('tableBody');
-const searchInput = document.getElementById('searchInput');
-const diffFilter = document.getElementById('diffFilter');
-const paidFilter = document.getElementById('paidFilter');
-const categoryFilter = document.getElementById('categoryFilter');
-const pageSizeSelect = document.getElementById('pageSizeSelect');
-const solutionFilter = document.getElementById('solutionFilter');
-const resetBtn = document.getElementById('resetBtn');
+	// Tag Dropdown
+	tagDropdownMenu: document.getElementById('tagDropdownMenu'),
+	tagDropdownText: document.getElementById('tagDropdownText'),
+	tagSearchInput: document.getElementById('tagSearchInput'),
+	tagLogicToggle: document.getElementById('tagLogicToggle'),
+	tagLogicLabel: document.getElementById('tagLogicLabel'),
 
-// DOM Elements: Stats
-const statTotal = document.getElementById('stat-total');
-const statFree = document.getElementById('stat-free');
-const statPaid = document.getElementById('stat-paid');
-const statEasy = document.getElementById('stat-easy');
-const statMedium = document.getElementById('stat-medium');
-const statHard = document.getElementById('stat-hard');
+	// Stats
+	statTotal: document.getElementById('stat-total'),
+	statFree: document.getElementById('stat-free'),
+	statPaid: document.getElementById('stat-paid'),
+	statEasy: document.getElementById('stat-easy'),
+	statMedium: document.getElementById('stat-medium'),
+	statHard: document.getElementById('stat-hard'),
 
-// DOM Elements: Pagination
-const btnFirst = document.getElementById('btn-first');
-const btnPrev = document.getElementById('btn-prev');
-const btnNext = document.getElementById('btn-next');
-const btnLast = document.getElementById('btn-last');
-const pageInfo = document.getElementById('page-info');
+	// Pagination
+	btnFirst: document.getElementById('btn-first'),
+	btnPrev: document.getElementById('btn-prev'),
+	btnNext: document.getElementById('btn-next'),
+	btnLast: document.getElementById('btn-last'),
+	pageInfo: document.getElementById('page-info')
+};
 
-// --- 2. Data Fetching & Storage ---
+// ==========================================
+// 3. INITIALIZATION & DATA FETCHING
+// ==========================================
+
+/**
+ * Initializes the application by fetching data and setting up listeners.
+ */
+async function init() {
+	setupEventListeners();
+	await loadProblems();
+}
+
+/**
+ * Fetches all required JSON files concurrently, maps solved status, and triggers initial UI render.
+ */
 async function loadProblems() {
 	try {
-		// Fetch all three JSON files concurrently
 		const [probRes, tagsRes, solvedRes] = await Promise.all([
 			fetch(PATH_LC_PROBLEM_LIST),
 			fetch(PATH_LC_TOPIC_TAGS),
@@ -69,23 +89,21 @@ async function loadProblems() {
 		masterTagsList = await tagsRes.json();
 		const solvedList = await solvedRes.json();
 
-		// Create a fast Set for solved problems (isAccepted: true)
+		// Create a fast lookup set for solved problems
 		const solvedMap = new Set();
 		solvedList.forEach(p => {
 			if (p.isAccepted) solvedMap.add(p.quesId);
 		});
 
+		// Map tag metadata for table coloring and sorting
 		masterTagsList.forEach((tag, index) => {
 			topicTagMap.set(tag.slug, { ...tag, order: index });
 		});
 
-		// Append solution availability flags to the master problem list
-		// Append solution availability flags to the master problem list
+		// Append robust solution availability flags
 		allProblems.forEach(p => {
-			// Robust check: handles booleans, strings, and flattened JSON structures
 			const officialAvailable = p.meta?.hasSolution || p.hasSolution || p.solution?.canSeeDetail;
 			p.hasLeetcodeSolution = (officialAvailable === true || String(officialAvailable).toLowerCase() === 'true');
-
 			p.hasLeetLiteSolution = solvedMap.has(p.quesId);
 		});
 
@@ -98,329 +116,35 @@ async function loadProblems() {
 
 	} catch (error) {
 		console.error("Failed to load problem list:", error);
-		tableBody.innerHTML = `<tr><td colspan="8" class="text-center text-danger py-4">Error loading problem data. Please check your data directory.</td></tr>`;
+		DOM.tableBody.innerHTML = `<tr><td colspan="8" class="text-center text-danger py-4">Error loading problem data. Please check your data directory.</td></tr>`;
 	}
 }
 
-function saveSettings() {
-	const settings = {
-		search: searchInput.value,
-		diff: diffFilter.value,
-		paid: paidFilter.value,
-		category: categoryFilter.value,
-		solution: solutionFilter.value,
-		tags: selectedTags,
-		tagLogic: tagLogic, // Save the state
-		sort: currentSort,
-		page: currentPage,
-		pageSize: pageSize
-	};
-	localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
-}
+// ==========================================
+// 4. CORE LOGIC (FILTER, SORT, RENDER)
+// ==========================================
 
-function loadSettings() {
-	const saved = localStorage.getItem(STORAGE_KEY);
-	if (saved) {
-		try {
-			const settings = JSON.parse(saved);
-
-			searchInput.value = settings.search || '';
-			diffFilter.value = settings.diff || 'All';
-			paidFilter.value = settings.paid || 'All';
-			categoryFilter.value = settings.category || 'All';
-			solutionFilter.value = settings.solution || 'All';
-
-			if (settings.sort) currentSort = settings.sort;
-			if (settings.page) currentPage = settings.page;
-			if (settings.pageSize) {
-				pageSize = settings.pageSize;
-				pageSizeSelect.value = pageSize;
-			}
-			if (settings.tags) {
-				selectedTags = settings.tags;
-				updateTagDropdownText();
-
-				document.querySelectorAll('.tag-checkbox').forEach(cb => {
-					if (selectedTags.includes(cb.value)) {
-						cb.checked = true;
-					}
-				});
-			}
-			if (settings.tagLogic) {
-				tagLogic = settings.tagLogic;
-				tagLogicToggle.checked = (tagLogic === 'AND');
-				tagLogicLabel.textContent = tagLogic;
-				if (tagLogic === 'AND') {
-					tagLogicLabel.classList.replace('text-secondary', 'text-primary');
-				}
-			}
-
-		} catch (e) {
-			console.error("Failed to parse local settings", e);
-		}
-	}
-}
-
-// --- 3. Tag Dropdown Setup ---
-function populateTagDropdown() {
-	tagDropdownMenu.innerHTML = '';
-
-	// Directly iterate over the pre-sorted list from the backend
-	masterTagsList.forEach(tag => {
-		const li = document.createElement('li');
-		li.className = 'tag-item';
-		li.dataset.name = tag.name.toLowerCase();
-		li.innerHTML = `
-            <div class="dropdown-item form-check ms-1 me-1 mb-0 rounded" style="padding-left: 2.2rem;">
-                <input class="form-check-input tag-checkbox" type="checkbox" value="${tag.slug}" id="tag-${tag.slug}">
-                <label class="form-check-label w-100 d-flex justify-content-between pe-2" for="tag-${tag.slug}">
-                    <span class="text-truncate" style="max-width: 80%;">${tag.name}</span>
-                    <span class="small fw-semibold" style="color: ${tag.color};">(${tag.freq})</span>
-                </label>
-            </div>
-        `;
-		tagDropdownMenu.appendChild(li);
-	});
-
-	// Checkbox change listener
-	document.querySelectorAll('.tag-checkbox').forEach(cb => {
-		cb.addEventListener('change', (e) => {
-			if (e.target.checked) {
-				selectedTags.push(e.target.value);
-			} else {
-				selectedTags = selectedTags.filter(t => t !== e.target.value);
-			}
-			updateTagDropdownText();
-			currentPage = 1;
-			applyFilters();
-			saveSettings();
-		});
-	});
-
-	// Search Input listener for real-time filtering
-	tagSearchInput.addEventListener('input', (e) => {
-		const term = e.target.value.toLowerCase();
-		document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => {
-			if (li.dataset.name.includes(term)) {
-				li.style.display = '';
-			} else {
-				li.style.display = 'none';
-			}
-		});
-	});
-}
-
-function updateTagDropdownText() {
-	if (selectedTags.length === 0) {
-		tagDropdownText.textContent = 'Select Tags...';
-	} else if (selectedTags.length === 1) {
-		const tagData = topicTagMap.get(selectedTags[0]);
-		tagDropdownText.textContent = tagData ? tagData.name : selectedTags[0];
-	} else {
-		tagDropdownText.textContent = `${selectedTags.length} Tags Selected`;
-	}
-}
-
-// --- 4. Helper Functions ---
-function calculateLikeRate(likes, dislikes) {
-	const total = likes + dislikes;
-	if (total === 0) return 0;
-	return ((likes / total) * 100);
-}
-
-// Strictly truncates a number to 2 decimal places without rounding
-function truncateToTwoDecimals(num) {
-	return Math.trunc(num * 100) / 100;
-}
-
-function getRateColor(rate) {
-	if (rate >= 75) return 'color-green';
-	if (rate >= 50) return 'color-yellow';
-	return 'color-red';
-}
-
-function getDifficultyColor(difficulty) {
-	if (difficulty === 'Easy') return 'color-green';
-	if (difficulty === 'Medium') return 'color-yellow';
-	return 'color-red';
-}
-
-function updateStats() {
-	let easy = 0, medium = 0, hard = 0;
-	let free = 0, paid = 0;
-
-	currentProblems.forEach(p => {
-		if (p.difficulty === 'Easy') easy++;
-		else if (p.difficulty === 'Medium') medium++;
-		else if (p.difficulty === 'Hard') hard++;
-
-		if (p.isPaidOnly) paid++;
-		else free++;
-	});
-
-	statTotal.textContent = currentProblems.length;
-	statFree.textContent = free;
-	statPaid.textContent = paid;
-	statEasy.textContent = easy;
-	statMedium.textContent = medium;
-	statHard.textContent = hard;
-}
-
-function updatePaginationUI(totalPages) {
-	if (totalPages === 0) totalPages = 1;
-	pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-
-	btnFirst.disabled = currentPage === 1;
-	btnPrev.disabled = currentPage === 1;
-	btnNext.disabled = currentPage === totalPages;
-	btnLast.disabled = currentPage === totalPages;
-}
-
-// --- Category Dropdown Setup ---
-function populateCategoryDropdown() {
-	const categorySet = new Set();
-
-	// Extract unique categories, ignoring empty or null values
-	allProblems.forEach(p => {
-		if (p.categoryTitle && p.categoryTitle.trim() !== '') {
-			categorySet.add(p.categoryTitle);
-		}
-	});
-
-	// Alphabetize the categories
-	const sortedCategories = Array.from(categorySet).sort();
-
-	// Preserve the default "All Categories" option, then append dynamic options
-	categoryFilter.innerHTML = '<option value="All">All Categories</option>';
-
-	sortedCategories.forEach(cat => {
-		const option = document.createElement('option');
-		option.value = cat;
-		option.textContent = cat;
-		categoryFilter.appendChild(option);
-	});
-}
-
-function renderTable() {
-	tableBody.innerHTML = '';
-
-	if (currentProblems.length === 0) {
-		tableBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No problems found.</td></tr>';
-		updatePaginationUI(0);
-		updateStats(); // <-- Added this to fix the counter bug!
-		return;
-	}
-
-	const totalPages = Math.ceil(currentProblems.length / pageSize) || 1;
-	if (currentPage > totalPages) currentPage = totalPages;
-
-	const startIndex = (currentPage - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
-	const paginatedProblems = currentProblems.slice(startIndex, endIndex);
-
-	paginatedProblems.forEach(p => {
-		const totalVotes = (p.stats.likes || 0) + (p.stats.dislikes || 0);
-		const likeRate = calculateLikeRate(p.stats.likes || 0, p.stats.dislikes || 0);
-
-		const likeRateDisplay = totalVotes === 0 ? "NA" : `${likeRate.toFixed(2)}%`;
-		const likeRateClass = totalVotes === 0 ? "text-secondary" : getRateColor(likeRate);
-
-		const acRate = p.stats.acRateRaw || 0;
-
-		// Replace the star with a Bootstrap lock SVG for premium problems
-		const premiumLock = p.isPaidOnly ? `
-            <span class="text-warning ms-1 align-middle" title="Premium Problem">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
-                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
-                </svg>
-            </span>` : '';
-
-		const tags = p.topicTags || [];
-
-		let tagsHTML = '<span class="text-muted fw-semibold">N/A</span>';
-		let tagsTitle = 'N/A';
-
-		if (tags.length > 0) {
-			// Sort tags using the exact order index from the backend master list
-			tags.sort((a, b) => {
-				const orderA = topicTagMap.has(a.slug) ? topicTagMap.get(a.slug).order : 9999;
-				const orderB = topicTagMap.has(b.slug) ? topicTagMap.get(b.slug).order : 9999;
-				return orderA - orderB;
-			});
-
-			// Build HTML using standard badge classes but overriding the background color dynamically
-			tagsHTML = tags.map(t => {
-				const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : COLOR_PALETTE.charcoal;
-				return `<span class="badge" style="background-color: ${tagColor} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; margin-right: 5px; font-weight: 400; color: ${COLOR_PALETTE.white};">${t.name}</span>`;
-			}).join('');
-
-			tagsTitle = tags.map(t => t.name).join(', ');
-		}
-
-		const category = p.categoryTitle || '';
-
-		// Generate Solution Availability HTML string based on flags
-		let solHtml = '<span class="text-secondary fw-semibold">N/A</span>';
-
-		// Pill formatting exactly matching topic tags: colored background, white text, and border[cite: 4]
-		const badgeLeetLite = `<span class="badge" style="background-color: ${COLOR_PALETTE.green} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">LeetLite</span>`;
-		const badgeLeetcode = `<span class="badge" style="background-color: ${COLOR_PALETTE.yellow} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">Leetcode</span>`;
-
-		if (p.hasLeetcodeSolution && p.hasLeetLiteSolution) {
-			// LeetLite (custom) comes strictly before Leetcode (official) when both are present[cite: 4]
-			solHtml = `${badgeLeetLite} <span class="ms-1">${badgeLeetcode}</span>`;
-		} else if (p.hasLeetLiteSolution) {
-			solHtml = badgeLeetLite;
-		} else if (p.hasLeetcodeSolution) {
-			solHtml = badgeLeetcode;
-		}
-
-		const tr = document.createElement('tr');
-		tr.innerHTML = `
-            <td class="text-secondary fw-bold">${p.quesId}</td>
-            <td>
-                <a href="html/problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
-                    ${p.title}
-                </a>${premiumLock}
-            </td>
-            <td class="${getDifficultyColor(p.difficulty)}">${p.difficulty}</td>
-            <td class="${likeRateClass}">${likeRateDisplay}</td>
-            <td class="${getRateColor(acRate)}">${acRate.toFixed(2)}%</td>
-            <td class="${getCategoryColor(category)}">${category}</td>
-            <td>${solHtml}</td>
-            <td>
-                <div class="tags-wrapper" title="${tagsTitle}">
-                    ${tagsHTML}
-                </div>
-            </td>
-        `;
-
-		tableBody.appendChild(tr);
-	});
-
-	updateSortIcons();
-	updateStats();
-	updatePaginationUI(totalPages);
-}
-
-// --- 5. Filtering & Searching ---
+/**
+ * Filters the master problem list based on search term, category, difficulty, tags, and solution availability.
+ */
 function applyFilters() {
-	const searchTerm = searchInput.value.toLowerCase();
-	const diff = diffFilter.value;
-	const paid = paidFilter.value;
-	const cat = categoryFilter.value;
-	const sol = solutionFilter.value; // Get the solution value
+	const searchTerm = DOM.searchInput.value.toLowerCase();
+	const diff = DOM.diffFilter.value;
+	const paid = DOM.paidFilter.value;
+	const cat = DOM.categoryFilter.value;
+	const sol = DOM.solutionFilter.value;
 
 	currentProblems = allProblems.filter(p => {
 		const matchesSearch = p.quesId.toString() === searchTerm || p.title.toLowerCase().includes(searchTerm);
 		if (searchTerm && !matchesSearch) return false;
 
-		// Compound Difficulty Filter Logic
+		// Compound Difficulty Filter
 		if (diff !== "All") {
 			if (diff === "Easy and Medium" && p.difficulty === "Hard") return false;
 			else if (diff === "Medium and Hard" && p.difficulty === "Easy") return false;
 			else if (diff !== "Easy and Medium" && diff !== "Medium and Hard" && p.difficulty !== diff) return false;
 		}
+
 		if (paid === "Free" && p.isPaidOnly) return false;
 		if (paid === "Paid" && !p.isPaidOnly) return false;
 		if (cat !== "All" && p.categoryTitle !== cat) return false;
@@ -434,19 +158,14 @@ function applyFilters() {
 			if (sol === "LeetLite and Leetcode" && !(p.hasLeetLiteSolution && p.hasLeetcodeSolution)) return false;
 		}
 
-		// TAG FILTERING LOGIC: OR / AND condition
+		// Tag Filter Logic (OR / AND)
 		if (selectedTags.length > 0) {
 			const problemTags = p.topicTags || [];
-
 			if (tagLogic === 'OR') {
-				const hasAnySelectedTag = selectedTags.some(selectedTagSlug =>
-					problemTags.some(pt => pt.slug === selectedTagSlug)
-				);
+				const hasAnySelectedTag = selectedTags.some(selectedTagSlug => problemTags.some(pt => pt.slug === selectedTagSlug));
 				if (!hasAnySelectedTag) return false;
 			} else {
-				const hasAllSelectedTags = selectedTags.every(selectedTagSlug =>
-					problemTags.some(pt => pt.slug === selectedTagSlug)
-				);
+				const hasAllSelectedTags = selectedTags.every(selectedTagSlug => problemTags.some(pt => pt.slug === selectedTagSlug));
 				if (!hasAllSelectedTags) return false;
 			}
 		}
@@ -458,7 +177,9 @@ function applyFilters() {
 	applySort();
 }
 
-// --- 6. Sorting ---
+/**
+ * Sorts the filtered problems based on the active column and direction.
+ */
 function applySort() {
 	currentProblems.sort((a, b) => {
 		let valA, valB;
@@ -471,11 +192,9 @@ function applySort() {
 			const weight = { "Easy": 1, "Medium": 2, "Hard": 3 };
 			valA = weight[a.difficulty] || 0; valB = weight[b.difficulty] || 0;
 		} else if (currentSort.column === 'likeRate') {
-			// Apply strict truncation for comparison
 			valA = truncateToTwoDecimals(calculateLikeRate(a.stats.likes || 0, a.stats.dislikes || 0));
 			valB = truncateToTwoDecimals(calculateLikeRate(b.stats.likes || 0, b.stats.dislikes || 0));
 		} else if (currentSort.column === 'acRate') {
-			// Apply strict truncation for comparison
 			valA = truncateToTwoDecimals(a.stats.acRateRaw || 0);
 			valB = truncateToTwoDecimals(b.stats.acRateRaw || 0);
 		} else if (currentSort.column === 'category') {
@@ -495,152 +214,436 @@ function applySort() {
 		if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
 		if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
 
-		return a.quesId - b.quesId;
+		return a.quesId - b.quesId; // Default tie-breaker
 	});
 
 	renderTable();
 }
 
-function updateSortIcons() {
-	document.querySelectorAll('.sort-icon').forEach(icon => {
-		icon.innerHTML = '▲▼';
-		icon.classList.remove('active');
+/**
+ * Renders the paginated rows into the HTML table and updates layout UI.
+ */
+function renderTable() {
+
+	// --- Nested UI Formatting Helpers (Restricted to render scope) ---
+	const getRateColor = (rate) => rate >= 75 ? 'color-green' : (rate >= 50 ? 'color-yellow' : 'color-red');
+	const getDifficultyColor = (diff) => diff === 'Easy' ? 'color-green' : (diff === 'Medium' ? 'color-yellow' : 'color-red');
+	const getCategoryColor = (cat) => {
+		if (!cat) return 'text-secondary';
+		const c = cat.toLowerCase();
+		if (c === 'algorithms') return 'color-green';
+		if (c === 'database') return 'color-blue';
+		if (c.includes('javascript') || c.includes('typescript')) return 'color-yellow';
+		return 'text-secondary';
+	};
+
+	const updateStats = () => {
+		let easy = 0, medium = 0, hard = 0, free = 0, paid = 0;
+		currentProblems.forEach(p => {
+			if (p.difficulty === 'Easy') easy++;
+			else if (p.difficulty === 'Medium') medium++;
+			else if (p.difficulty === 'Hard') hard++;
+			if (p.isPaidOnly) paid++; else free++;
+		});
+		DOM.statTotal.textContent = currentProblems.length;
+		DOM.statFree.textContent = free;
+		DOM.statPaid.textContent = paid;
+		DOM.statEasy.textContent = easy;
+		DOM.statMedium.textContent = medium;
+		DOM.statHard.textContent = hard;
+	};
+
+	const updatePaginationUI = (totalPages) => {
+		if (totalPages === 0) totalPages = 1;
+		DOM.pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+		DOM.btnFirst.disabled = DOM.btnPrev.disabled = (currentPage === 1);
+		DOM.btnNext.disabled = DOM.btnLast.disabled = (currentPage === totalPages);
+	};
+
+	const updateSortIcons = () => {
+		document.querySelectorAll('.sort-icon').forEach(icon => {
+			icon.innerHTML = '▲▼';
+			icon.classList.remove('active');
+		});
+		const activeIcon = document.getElementById(`icon-${currentSort.column}`);
+		if (activeIcon) {
+			activeIcon.innerHTML = currentSort.direction === 'asc' ? '▲' : '▼';
+			activeIcon.classList.add('active');
+		}
+	};
+	// -----------------------------------------------------------------
+
+	DOM.tableBody.innerHTML = '';
+
+	if (currentProblems.length === 0) {
+		DOM.tableBody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No problems found.</td></tr>';
+		updatePaginationUI(0);
+		updateStats();
+		return;
+	}
+
+	const totalPages = Math.ceil(currentProblems.length / pageSize) || 1;
+	if (currentPage > totalPages) currentPage = totalPages;
+
+	const startIndex = (currentPage - 1) * pageSize;
+	const endIndex = startIndex + pageSize;
+	const paginatedProblems = currentProblems.slice(startIndex, endIndex);
+
+	paginatedProblems.forEach(p => {
+		const totalVotes = (p.stats.likes || 0) + (p.stats.dislikes || 0);
+		const likeRate = calculateLikeRate(p.stats.likes || 0, p.stats.dislikes || 0);
+
+		// Apply strict truncation to match the sorting comparator perfectly
+		const truncatedLikeRate = truncateToTwoDecimals(likeRate);
+		const likeRateDisplay = totalVotes === 0 ? "NA" : `${truncatedLikeRate.toFixed(2)}%`;
+		const likeRateClass = totalVotes === 0 ? "text-secondary" : getRateColor(truncatedLikeRate);
+
+		const acRate = p.stats.acRateRaw || 0;
+		const truncatedAcRate = truncateToTwoDecimals(acRate);
+
+		// Replace the star with a Bootstrap lock SVG for premium problems
+		const premiumLock = p.isPaidOnly ? `
+            <span class="text-warning ms-1 align-middle" title="Premium Problem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                </svg>
+            </span>` : '';
+
+		// FIX: Extract tags and category before they are evaluated[cite: 8]
+		const category = p.categoryTitle || '';
+		const tags = p.topicTags || [];
+
+		// Generate Tags HTML
+		let tagsHTML = '<span class="text-muted fw-semibold">N/A</span>';
+		let tagsTitle = 'N/A';
+
+		if (tags.length > 0) {
+			tags.sort((a, b) => {
+				const orderA = topicTagMap.has(a.slug) ? topicTagMap.get(a.slug).order : 9999;
+				const orderB = topicTagMap.has(b.slug) ? topicTagMap.get(b.slug).order : 9999;
+				return orderA - orderB;
+			});
+
+			tagsHTML = tags.map(t => {
+				const tagColor = topicTagMap.has(t.slug) ? topicTagMap.get(t.slug).color : COLOR_PALETTE.charcoal;
+				return `<span class="badge" style="background-color: ${tagColor} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; margin-right: 5px; font-weight: 400; color: ${COLOR_PALETTE.white};">${t.name}</span>`;
+			}).join('');
+			tagsTitle = tags.map(t => t.name).join(', ');
+		}
+
+		// Generate Solution HTML
+		let solHtml = '<span class="text-secondary fw-semibold">N/A</span>';
+		const badgeLeetLite = `<span class="badge" style="background-color: ${COLOR_PALETTE.green} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">LeetLite</span>`;
+		const badgeLeetcode = `<span class="badge" style="background-color: ${COLOR_PALETTE.yellow} !important; border: 1px solid ${COLOR_PALETTE.darkGray}; font-weight: 500; color: ${COLOR_PALETTE.white};">Leetcode</span>`;
+
+		if (p.hasLeetcodeSolution && p.hasLeetLiteSolution) solHtml = `${badgeLeetLite} <span class="ms-1">${badgeLeetcode}</span>`;
+		else if (p.hasLeetLiteSolution) solHtml = badgeLeetLite;
+		else if (p.hasLeetcodeSolution) solHtml = badgeLeetcode;
+
+		// Build Table Row
+		const tr = document.createElement('tr');
+		tr.innerHTML = `
+            <td class="text-secondary fw-bold">${p.quesId}</td>
+            <td>
+                <a href="html/problem.html?quesId=${p.quesId}" class="text-decoration-none text-reset fw-semibold" target="_blank">
+                    ${p.title}
+                </a>${premiumLock}
+            </td>
+            <td class="${getDifficultyColor(p.difficulty)}">${p.difficulty}</td>
+            <td class="${likeRateClass}">${likeRateDisplay}</td>
+            <td class="${getRateColor(truncatedAcRate)}">${truncatedAcRate.toFixed(2)}%</td>
+            <td class="${getCategoryColor(category)}">${category}</td>
+            <td>${solHtml}</td>
+            <td><div class="tags-wrapper" title="${tagsTitle}">${tagsHTML}</div></td>
+        `;
+		DOM.tableBody.appendChild(tr);
 	});
-	const activeIcon = document.getElementById(`icon-${currentSort.column}`);
-	if (activeIcon) {
-		activeIcon.innerHTML = currentSort.direction === 'asc' ? '▲' : '▼';
-		activeIcon.classList.add('active');
+
+	updateSortIcons();
+	updateStats();
+	updatePaginationUI(totalPages);
+}
+
+// ==========================================
+// 5. CALCULATION HELPERS
+// ==========================================
+function calculateLikeRate(likes, dislikes) {
+	const total = likes + dislikes;
+	return total === 0 ? 0 : ((likes / total) * 100);
+}
+
+function truncateToTwoDecimals(num) {
+	return Math.trunc(num * 100) / 100;
+}
+
+// ==========================================
+// 6. COMPONENT POPULATION & UI UPDATES
+// ==========================================
+
+/**
+ * Builds the searchable tag dropdown using metadata mapped from the backend.
+ */
+function populateTagDropdown() {
+	DOM.tagDropdownMenu.innerHTML = '';
+	masterTagsList.forEach(tag => {
+		const li = document.createElement('li');
+		li.className = 'tag-item';
+		li.dataset.name = tag.name.toLowerCase();
+		li.innerHTML = `
+            <div class="dropdown-item form-check ms-1 me-1 mb-0 rounded" style="padding-left: 2.2rem;">
+                <input class="form-check-input tag-checkbox" type="checkbox" value="${tag.slug}" id="tag-${tag.slug}">
+                <label class="form-check-label w-100 d-flex justify-content-between pe-2" for="tag-${tag.slug}">
+                    <span class="text-truncate" style="max-width: 80%;">${tag.name}</span>
+                    <span class="small fw-semibold" style="color: ${tag.color};">(${tag.freq})</span>
+                </label>
+            </div>
+        `;
+		DOM.tagDropdownMenu.appendChild(li);
+	});
+}
+
+/**
+ * Extracts unique categories and populates the custom Category dropdown.
+ */
+function populateCategoryDropdown() {
+	const categorySet = new Set();
+	allProblems.forEach(p => {
+		if (p.categoryTitle && p.categoryTitle.trim() !== '') categorySet.add(p.categoryTitle);
+	});
+
+	const sortedCategories = Array.from(categorySet).sort();
+	const catMenu = document.getElementById('categoryDropdownMenu');
+
+	catMenu.innerHTML = '<li><button class="dropdown-item" type="button" data-value="All">All Categories</button></li>';
+	sortedCategories.forEach(cat => {
+		const li = document.createElement('li');
+		li.innerHTML = `<button class="dropdown-item" type="button" data-value="${cat}">${cat}</button>`;
+		catMenu.appendChild(li);
+	});
+
+	const saved = localStorage.getItem(STORAGE_KEY);
+	if (saved) {
+		try {
+			const settings = JSON.parse(saved);
+			if (settings.category) setCustomDropdownUI('categoryFilter', settings.category);
+		} catch (e) { }
 	}
 }
 
-// --- 7. Event Listeners ---
-searchInput.addEventListener('keyup', () => { applyFilters(); saveSettings(); });
+/**
+ * Updates the text displayed on the tag dropdown button based on selection count.
+ */
+function updateTagDropdownText() {
+	if (selectedTags.length === 0) {
+		DOM.tagDropdownText.textContent = 'Select Tags...';
+	} else if (selectedTags.length === 1) {
+		const tagData = topicTagMap.get(selectedTags[0]);
+		DOM.tagDropdownText.textContent = tagData ? tagData.name : selectedTags[0];
+	} else {
+		DOM.tagDropdownText.textContent = `${selectedTags.length} Tags Selected`;
+	}
+}
 
-document.querySelectorAll('select.filter-ctrl:not(#pageSizeSelect)').forEach(select => {
-	select.addEventListener('change', () => { applyFilters(); saveSettings(); });
-});
+/**
+ * Synchronizes custom Bootstrap dropdown UI state with its hidden input.
+ */
+function setCustomDropdownUI(inputId, value) {
+	const input = document.getElementById(inputId);
+	const textSpan = document.getElementById(inputId + 'Text');
+	if (input) input.value = value;
 
-pageSizeSelect.addEventListener('change', () => {
-	pageSize = parseInt(pageSizeSelect.value, 10);
-	currentPage = 1;
-	renderTable();
-	saveSettings();
-});
+	const menu = document.querySelector(`.custom-dropdown-menu[data-target="${inputId}"]`);
+	if (menu && textSpan) {
+		const option = menu.querySelector(`[data-value="${value}"]`);
+		if (option) textSpan.textContent = option.textContent;
+	}
+}
 
-document.querySelectorAll('th.sortable').forEach(th => {
-	th.addEventListener('click', () => {
-		const column = th.getAttribute('data-sort');
-		if (currentSort.column === column) {
-			currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+// ==========================================
+// 7. STATE PERSISTENCE
+// ==========================================
+function saveSettings() {
+	const settings = {
+		search: DOM.searchInput.value,
+		diff: DOM.diffFilter.value,
+		paid: DOM.paidFilter.value,
+		category: DOM.categoryFilter.value,
+		solution: DOM.solutionFilter.value,
+		tags: selectedTags,
+		tagLogic: tagLogic,
+		sort: currentSort,
+		page: currentPage,
+		pageSize: pageSize
+	};
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+}
+
+function loadSettings() {
+	const saved = localStorage.getItem(STORAGE_KEY);
+	if (!saved) return;
+
+	try {
+		const settings = JSON.parse(saved);
+
+		DOM.searchInput.value = settings.search || '';
+		setCustomDropdownUI('diffFilter', settings.diff || 'All');
+		setCustomDropdownUI('paidFilter', settings.paid || 'All');
+		setCustomDropdownUI('solutionFilter', settings.solution || 'All');
+
+		if (settings.sort) currentSort = settings.sort;
+		if (settings.page) currentPage = settings.page;
+		if (settings.pageSize) {
+			pageSize = settings.pageSize;
+			setCustomDropdownUI('pageSizeSelect', pageSize);
+		}
+		if (settings.tags) {
+			selectedTags = settings.tags;
+			updateTagDropdownText();
+			document.querySelectorAll('.tag-checkbox').forEach(cb => {
+				if (selectedTags.includes(cb.value)) cb.checked = true;
+			});
+		}
+		if (settings.tagLogic) {
+			tagLogic = settings.tagLogic;
+			DOM.tagLogicToggle.checked = (tagLogic === 'AND');
+			DOM.tagLogicLabel.textContent = tagLogic;
+			if (tagLogic === 'AND') DOM.tagLogicLabel.classList.replace('text-secondary', 'text-primary');
+		}
+	} catch (e) {
+		console.error("Failed to parse local settings", e);
+	}
+}
+
+// ==========================================
+// 8. EVENT LISTENERS
+// ==========================================
+function setupEventListeners() {
+
+	// Search Input
+	DOM.searchInput.addEventListener('keyup', () => {
+		applyFilters();
+		saveSettings();
+	});
+
+	// Custom Dropdown Menus (Event Delegation)
+	document.addEventListener('click', (e) => {
+		if (e.target.matches('.custom-dropdown-menu .dropdown-item')) {
+			const val = e.target.getAttribute('data-value');
+			const text = e.target.textContent;
+			const targetId = e.target.closest('.custom-dropdown-menu').getAttribute('data-target');
+
+			const input = document.getElementById(targetId);
+			const textSpan = document.getElementById(targetId + 'Text');
+
+			if (input) input.value = val;
+			if (textSpan) textSpan.textContent = text;
+
+			if (targetId === 'pageSizeSelect') {
+				pageSize = parseInt(val, 10);
+				currentPage = 1;
+				renderTable();
+			} else {
+				currentPage = 1;
+				applyFilters();
+			}
+			saveSettings();
+		}
+	});
+
+	// Sortable Table Headers
+	document.querySelectorAll('th.sortable').forEach(th => {
+		th.addEventListener('click', () => {
+			const column = th.getAttribute('data-sort');
+			if (currentSort.column === column) {
+				currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+			} else {
+				currentSort.column = column;
+				currentSort.direction = 'asc';
+			}
+			currentPage = 1;
+			applySort();
+			saveSettings();
+		});
+	});
+
+	// Tag Logic Toggle Switch
+	DOM.tagLogicToggle.addEventListener('change', (e) => {
+		tagLogic = e.target.checked ? 'AND' : 'OR';
+		DOM.tagLogicLabel.textContent = tagLogic;
+		if (tagLogic === 'AND') {
+			DOM.tagLogicLabel.classList.replace('text-secondary', 'text-primary');
 		} else {
-			currentSort.column = column;
-			currentSort.direction = 'asc';
+			DOM.tagLogicLabel.classList.replace('text-primary', 'text-secondary');
 		}
 		currentPage = 1;
-		applySort();
+		applyFilters();
 		saveSettings();
 	});
-});
 
-resetBtn.addEventListener('click', () => {
-	searchInput.value = '';
-	diffFilter.value = 'All';
-	paidFilter.value = 'All';
-	categoryFilter.value = 'All';
-	solutionFilter.value = 'All'; // Reset solution filter
-	pageSizeSelect.value = '50';
+	// Tag Dropdown Menus (Checkbox Event Delegation)
+	DOM.tagDropdownMenu.addEventListener('change', (e) => {
+		if (e.target.matches('.tag-checkbox')) {
+			if (e.target.checked) {
+				selectedTags.push(e.target.value);
+			} else {
+				selectedTags = selectedTags.filter(t => t !== e.target.value);
+			}
+			updateTagDropdownText();
+			currentPage = 1;
+			applyFilters();
+			saveSettings();
+		}
+	});
 
-	// Reset Tag Selection & Search
-	selectedTags = [];
-	tagSearchInput.value = '';
-	document.querySelectorAll('.tag-checkbox').forEach(cb => cb.checked = false);
-	document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => li.style.display = ''); // Show all items
-	updateTagDropdownText();
+	// Tag Real-Time Search Filtering
+	DOM.tagSearchInput.addEventListener('input', (e) => {
+		const term = e.target.value.toLowerCase();
+		document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => {
+			li.style.display = li.dataset.name.includes(term) ? '' : 'none';
+		});
+	});
 
-	// Reset Tag Logic Toggle
-	tagLogic = 'OR';
-	tagLogicToggle.checked = false;
-	tagLogicLabel.textContent = 'OR';
-	tagLogicLabel.classList.replace('text-primary', 'text-secondary');
+	// Reset Button
+	DOM.resetBtn.addEventListener('click', () => {
+		DOM.searchInput.value = '';
+		setCustomDropdownUI('diffFilter', 'All');
+		setCustomDropdownUI('paidFilter', 'All');
+		setCustomDropdownUI('categoryFilter', 'All');
+		setCustomDropdownUI('solutionFilter', 'All');
+		setCustomDropdownUI('pageSizeSelect', '50');
 
-	currentSort = { column: 'id', direction: 'asc' };
-	currentPage = 1;
-	pageSize = DEFAULT_PAGE_SIZE;
+		selectedTags = [];
+		DOM.tagSearchInput.value = '';
+		document.querySelectorAll('.tag-checkbox').forEach(cb => cb.checked = false);
+		document.querySelectorAll('#tagDropdownMenu .tag-item').forEach(li => li.style.display = '');
+		updateTagDropdownText();
 
-	applyFilters();
-	saveSettings();
-});
-
-// Pagination Event Listeners
-btnFirst.addEventListener('click', () => {
-	currentPage = 1;
-	renderTable();
-	saveSettings();
-});
-
-btnPrev.addEventListener('click', () => {
-	if (currentPage > 1) {
-		currentPage--;
-		renderTable();
-		saveSettings();
-	}
-});
-
-btnNext.addEventListener('click', () => {
-	const totalPages = Math.ceil(currentProblems.length / pageSize) || 1;
-	if (currentPage < totalPages) {
-		currentPage++;
-		renderTable();
-		saveSettings();
-	}
-});
-
-btnLast.addEventListener('click', () => {
-	currentPage = Math.ceil(currentProblems.length / pageSize) || 1;
-	renderTable();
-	saveSettings();
-});
-
-// tagLogicToggle.addEventListener('click', () => {
-// 	tagLogic = tagLogic === 'OR' ? 'AND' : 'OR';
-// 	tagLogicToggle.textContent = tagLogic;
-
-// 	if (tagLogic === 'AND') {
-// 		tagLogicToggle.classList.replace('btn-outline-secondary', 'btn-outline-primary');
-// 	} else {
-// 		tagLogicToggle.classList.replace('btn-outline-primary', 'btn-outline-secondary');
-// 	}
-
-// 	currentPage = 1;
-// 	applyFilters();
-// 	saveSettings();
-// });
-
-tagLogicToggle.addEventListener('change', (e) => {
-	if (e.target.checked) {
-		tagLogic = 'AND';
-		tagLogicLabel.textContent = 'AND';
-		tagLogicLabel.classList.replace('text-secondary', 'text-primary');
-	} else {
 		tagLogic = 'OR';
-		tagLogicLabel.textContent = 'OR';
-		tagLogicLabel.classList.replace('text-primary', 'text-secondary');
-	}
-	currentPage = 1;
-	applyFilters();
-	saveSettings();
-});
+		DOM.tagLogicToggle.checked = false;
+		DOM.tagLogicLabel.textContent = 'OR';
+		DOM.tagLogicLabel.classList.replace('text-primary', 'text-secondary');
 
-// --- 8. Initialization ---
-loadProblems();
+		currentSort = { column: 'id', direction: 'asc' };
+		currentPage = 1;
+		pageSize = DEFAULT_PAGE_SIZE;
 
-function getCategoryColor(category) {
-	if (!category) return 'text-secondary';
-	const cat = category.toLowerCase();
+		applyFilters();
+		saveSettings();
+	});
 
-	if (cat === 'algorithms') return 'color-green';
-	if (cat === 'database') return 'color-blue';
-	if (cat.includes('javascript') || cat.includes('typescript')) return 'color-yellow';
-
-	return 'text-secondary'; // Fallback for any other categories
+	// Pagination Controls
+	DOM.btnFirst.addEventListener('click', () => { currentPage = 1; renderTable(); saveSettings(); });
+	DOM.btnPrev.addEventListener('click', () => { if (currentPage > 1) { currentPage--; renderTable(); saveSettings(); } });
+	DOM.btnNext.addEventListener('click', () => {
+		const totalPages = Math.ceil(currentProblems.length / pageSize) || 1;
+		if (currentPage < totalPages) { currentPage++; renderTable(); saveSettings(); }
+	});
+	DOM.btnLast.addEventListener('click', () => {
+		currentPage = Math.ceil(currentProblems.length / pageSize) || 1;
+		renderTable();
+		saveSettings();
+	});
 }
+
+// Bootstrap Application
+init();

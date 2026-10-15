@@ -87,34 +87,72 @@
 				<div class="row g-3">
 					<!-- 1. Difficulty -->
 					<div class="col-md-2">
-						<select id="diffFilter" class="form-select filter-ctrl bg-dark border-secondary">
-							<option value="All">All Difficulties</option>
-							<option value="Easy">Easy</option>
-							<option value="Medium">Medium</option>
-							<option value="Hard">Hard</option>
-							<option value="Easy and Medium">Easy and Medium</option>
-							<option value="Medium and Hard">Medium and Hard</option>
-						</select>
+						<div class="dropdown">
+							<input type="hidden" id="diffFilter" value="All">
+							<button
+								class="btn form-select filter-ctrl bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center"
+								type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span id="diffFilterText" class="text-truncate">All Difficulties</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm custom-dropdown-menu"
+								data-target="diffFilter">
+								<li><button class="dropdown-item" type="button" data-value="All">All
+										Difficulties</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Easy">Easy</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Medium">Medium</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Hard">Hard</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Easy and Medium">Easy and
+										Medium</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Medium and Hard">Medium and
+										Hard</button></li>
+							</ul>
+						</div>
 					</div>
 
 					<!-- 2. Category -->
 					<div class="col-md-2">
-						<select id="categoryFilter" class="form-select filter-ctrl bg-dark border-secondary">
-							<option value="All">All Categories</option>
-							<!-- Dynamic categories will be injected here -->
-						</select>
+						<div class="dropdown">
+							<input type="hidden" id="categoryFilter" value="All">
+							<button
+								class="btn form-select filter-ctrl bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center"
+								type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span id="categoryFilterText" class="text-truncate">All Categories</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm custom-dropdown-menu"
+								data-target="categoryFilter" id="categoryDropdownMenu"
+								style="max-height: 250px; overflow-y: auto;">
+								<li><button class="dropdown-item" type="button" data-value="All">All Categories</button>
+								</li>
+								<!-- Dynamic categories injected here -->
+							</ul>
+						</div>
 					</div>
 
 					<!-- 3. Solution Availability -->
 					<div class="col-md-2">
-						<select id="solutionFilter" class="form-select filter-ctrl bg-dark border-secondary">
-							<option value="All">All Solutions</option>
-							<option value="LeetLite">LeetLite</option>
-							<option value="Leetcode">Leetcode</option>
-							<option value="LeetLite and Leetcode">LeetLite and Leetcode</option>
-							<option value="LeetLite Only">LeetLite Only</option>
-							<option value="Leetcode Only">Leetcode Only</option>
-						</select>
+						<div class="dropdown">
+							<input type="hidden" id="solutionFilter" value="All">
+							<button
+								class="btn form-select filter-ctrl bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center"
+								type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span id="solutionFilterText" class="text-truncate">All Solutions</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm custom-dropdown-menu"
+								data-target="solutionFilter">
+								<li><button class="dropdown-item" type="button" data-value="All">All Solutions</button>
+								</li>
+								<li><button class="dropdown-item" type="button" data-value="LeetLite">LeetLite</button>
+								</li>
+								<li><button class="dropdown-item" type="button" data-value="Leetcode">Leetcode</button>
+								</li>
+								<li><button class="dropdown-item" type="button"
+										data-value="LeetLite and Leetcode">LeetLite and Leetcode</button></li>
+								<li><button class="dropdown-item" type="button" data-value="LeetLite Only">LeetLite
+										Only</button></li>
+								<li><button class="dropdown-item" type="button" data-value="Leetcode Only">Leetcode
+										Only</button></li>
+							</ul>
+						</div>
 					</div>
 
 					<!-- 4. Tags -->
@@ -150,23 +188,48 @@
 						</div>
 					</div>
 
-					<!-- 5. Status (Width reduced) -->
+					<!-- 5. Status -->
 					<div class="col-md-1">
-						<select id="paidFilter" class="form-select filter-ctrl bg-dark border-secondary px-2">
-							<option value="All">All Status</option>
-							<option value="Free">Free Only</option>
-							<option value="Paid">Paid Only</option>
-						</select>
+						<div class="dropdown">
+							<input type="hidden" id="paidFilter" value="All">
+							<button
+								class="btn form-select filter-ctrl bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center px-2"
+								type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span id="paidFilterText" class="text-truncate">All Status</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm custom-dropdown-menu"
+								data-target="paidFilter">
+								<li><button class="dropdown-item" type="button" data-value="All">All Status</button>
+								</li>
+								<li><button class="dropdown-item" type="button" data-value="Free">Free Only</button>
+								</li>
+								<li><button class="dropdown-item" type="button" data-value="Paid">Paid Only</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 
-					<!-- 6. Page Size (Width increased, full text restored) -->
+					<!-- 6. Page Size -->
 					<div class="col-md-2">
-						<select id="pageSizeSelect" class="form-select filter-ctrl bg-dark border-secondary">
-							<option value="25">25 items per page</option>
-							<option value="50" selected>50 items per page</option>
-							<option value="75">75 items per page</option>
-							<option value="100">100 items per page</option>
-						</select>
+						<div class="dropdown">
+							<input type="hidden" id="pageSizeSelect" value="50">
+							<button
+								class="btn form-select filter-ctrl bg-dark border-secondary text-light w-100 text-start d-flex justify-content-between align-items-center"
+								type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span id="pageSizeSelectText" class="text-truncate">50 items per page</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark w-100 shadow-sm custom-dropdown-menu"
+								data-target="pageSizeSelect">
+								<li><button class="dropdown-item" type="button" data-value="25">25 items per
+										page</button></li>
+								<li><button class="dropdown-item" type="button" data-value="50">50 items per
+										page</button></li>
+								<li><button class="dropdown-item" type="button" data-value="75">75 items per
+										page</button></li>
+								<li><button class="dropdown-item" type="button" data-value="100">100 items per
+										page</button></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
